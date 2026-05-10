@@ -1513,7 +1513,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 4,
+                "childCount": 5,
                 "children": [
                   {
                     "tag": "div",
@@ -1761,11 +1761,126 @@
                   },
                   {
                     "tag": "div",
-                    "classes": ["tree-item", "nav-file"],
+                    "classes": ["tree-item", "nav-folder"],
                     "attrs": {},
                     "styles": {
                       "color": "rgb(31, 41, 92)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(31, 41, 92)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/unopened",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(67, 74, 112)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(67, 74, 112)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(67, 74, 112)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(67, 74, 112)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(67, 74, 112)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(67, 74, 112)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "rgb(31, 41, 92)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(31, 41, 92) rgb(31, 41, 92) rgb(31, 41, 92) rgb(150, 157, 192)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(31, 41, 92)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(31, 41, 92)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(31, 41, 92)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(31, 41, 92)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(31, 41, 92)",
+                      "backgroundColor": "rgba(0, 0, 0, 0.03)",
                       "borderColor": "rgb(31, 41, 92)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
@@ -2227,7 +2342,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 27,
+                "childCount": 25,
                 "children": [
                   {
                     "tag": "div",

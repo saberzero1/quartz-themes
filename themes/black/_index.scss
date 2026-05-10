@@ -28,7 +28,7 @@
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #000) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
@@ -381,7 +381,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(0, 0, 0));
+    background-color: var(--background-primary);
     color: var(--text-normal);
   }
 
@@ -389,12 +389,12 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(0, 0, 0));
+    background-color: var(--background-primary);
     color: rgb(218, 218, 218);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(0, 0, 0));
+    background-color: var(--background-secondary);
     color: rgb(218, 218, 218);
   }
 
@@ -402,12 +402,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(0, 0, 0));
+    background-color: var(--tab-container-background);
     color: rgb(218, 218, 218);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(0, 0, 0));
+    background-color: var(--tab-container-background);
     color: rgb(218, 218, 218);
     border-left: 0px rgb(54, 54, 54);
   }
@@ -1283,7 +1283,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(0, 0, 0));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2007,7 +2007,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2066,7 +2066,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2124,7 +2124,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2182,7 +2182,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2240,7 +2240,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2298,7 +2298,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2356,7 +2356,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2414,7 +2414,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2472,7 +2472,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2530,7 +2530,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2588,7 +2588,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2646,7 +2646,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2704,7 +2704,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2762,7 +2762,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3751,7 +3751,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(0, 0, 0));
+    background-color: var(--background-secondary);
     border-color: rgb(218, 218, 218);
     box-shadow: var(--input-shadow);
   }
@@ -3804,7 +3804,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(0, 0, 0));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -3976,7 +3976,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(0, 0, 0));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -4149,11 +4149,11 @@ body {
 
   .stacked-page {
     border-color: rgb(218, 218, 218);
-    background-color: var(--background-secondary, rgb(0, 0, 0));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(0, 0, 0));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {

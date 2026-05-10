@@ -112,19 +112,19 @@
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--color-muslim-green, #00ac5a) !important;
+  --checkbox-color: var(--color-muslim-green) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--color-black, #000000) !important;
-  --checkbox-radius: var(--radius-s, 100px) !important;
+  --checkbox-marker-color: var(--color-black) !important;
+  --checkbox-radius: 100px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #1c1c1c) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--color-crescent-moon, #d8d2c9) !important;
+  --code-normal: var(--color-crescent-moon) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -141,10 +141,10 @@
   --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #909090) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal, #909090) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -2103,7 +2103,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2162,7 +2162,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2220,7 +2220,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2278,7 +2278,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2336,7 +2336,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2394,7 +2394,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2452,7 +2452,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2510,7 +2510,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2568,7 +2568,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2626,7 +2626,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2684,7 +2684,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2742,7 +2742,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2800,7 +2800,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2858,7 +2858,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -4272,7 +4272,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4290,7 +4289,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4312,7 +4310,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4330,7 +4327,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4352,7 +4348,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4370,7 +4365,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4392,7 +4386,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4410,7 +4403,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4432,7 +4424,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4450,7 +4441,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4472,7 +4462,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4490,7 +4479,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4512,7 +4500,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4530,7 +4517,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4552,7 +4538,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4570,7 +4555,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4592,7 +4576,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4610,7 +4593,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4632,7 +4614,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4650,7 +4631,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4672,7 +4652,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4690,7 +4669,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4712,7 +4690,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4730,7 +4707,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4752,7 +4728,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4770,7 +4745,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4792,7 +4766,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4810,7 +4783,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4832,7 +4804,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4850,7 +4821,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4872,7 +4842,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4890,7 +4859,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4912,7 +4880,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4930,7 +4897,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4952,7 +4918,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -4970,7 +4935,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -4992,7 +4956,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5010,7 +4973,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5032,7 +4994,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5050,7 +5011,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5072,7 +5032,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5090,7 +5049,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5112,7 +5070,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5130,7 +5087,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5152,7 +5108,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5170,7 +5125,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5192,7 +5146,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5210,7 +5163,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5232,7 +5184,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5250,7 +5201,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5272,7 +5222,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5290,7 +5239,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5312,7 +5260,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5330,7 +5277,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5352,7 +5298,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5370,7 +5315,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5392,7 +5336,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5410,7 +5353,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5432,7 +5374,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5450,7 +5391,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5472,7 +5412,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5490,7 +5429,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5512,7 +5450,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5530,7 +5467,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5552,7 +5488,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5570,7 +5505,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5592,7 +5526,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5610,7 +5543,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5632,7 +5564,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5650,7 +5581,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5672,7 +5602,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5690,7 +5619,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5712,7 +5640,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5730,7 +5657,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5752,7 +5678,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5770,7 +5695,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5792,7 +5716,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5810,7 +5733,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5832,7 +5754,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5850,7 +5771,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5872,7 +5792,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5890,7 +5809,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5912,7 +5830,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5930,7 +5847,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5952,7 +5868,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -5970,7 +5885,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -5992,7 +5906,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6010,7 +5923,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6032,7 +5944,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6050,7 +5961,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6072,7 +5982,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6090,7 +5999,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6112,7 +6020,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6130,7 +6037,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6152,7 +6058,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6170,7 +6075,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6192,7 +6096,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6210,7 +6113,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6232,7 +6134,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6250,7 +6151,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6272,7 +6172,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6290,7 +6189,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6312,7 +6210,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6330,7 +6227,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6352,7 +6248,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6370,7 +6265,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6392,7 +6286,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6410,7 +6303,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6432,7 +6324,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6450,7 +6341,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6472,7 +6362,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6490,7 +6379,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6512,7 +6400,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6530,7 +6417,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6552,7 +6438,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6570,7 +6455,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6592,7 +6476,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6610,7 +6493,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6632,7 +6514,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6650,7 +6531,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6672,7 +6552,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6690,7 +6569,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6712,7 +6590,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6730,7 +6607,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6752,7 +6628,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6770,7 +6645,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6792,7 +6666,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6810,7 +6683,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6832,7 +6704,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6850,7 +6721,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6872,7 +6742,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6890,7 +6759,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -6912,7 +6780,6 @@ body {
     --caret-color: #222222;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
@@ -6930,7 +6797,6 @@ body {
     --setting-group-heading-color: #222222;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color-focused-active-current: #222222;
@@ -7590,20 +7456,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(28, 28, 28));
-      color: var(--text-normal, rgb(144, 144, 144));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(28, 28, 28));
+      background-color: var(--background-primary);
       color: rgb(144, 144, 144);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(28, 28, 28));
+      background-color: var(--background-secondary);
       color: rgb(144, 144, 144);
     }
 
@@ -7611,12 +7477,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(28, 28, 28));
+      background-color: var(--tab-container-background);
       color: rgb(144, 144, 144);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(28, 28, 28));
+      background-color: var(--tab-container-background);
       color: rgb(144, 144, 144);
       border-left: 0px rgb(54, 54, 54);
     }
@@ -7628,7 +7494,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(85, 144, 217));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -7670,7 +7536,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(85, 144, 217));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -7711,7 +7577,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(85, 144, 217));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -7810,7 +7676,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(227, 66, 52));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -7851,7 +7717,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(227, 66, 52));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -7892,7 +7758,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(144, 144, 144));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -7933,7 +7799,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(144, 144, 144));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8052,7 +7918,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(227, 66, 52));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -8082,8 +7948,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, oklab(0.612904 0.174681 0.0974053 / 0.3));
-      color: var(--text-normal, rgb(244, 246, 240));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8213,8 +8079,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.08));
-      color: var(--pill-color, rgb(216, 210, 201));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -8325,7 +8191,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(28, 28, 28));
+      background-color: var(--code-background);
       border: 0px solid rgb(54, 54, 54);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -8335,7 +8201,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(216, 210, 201));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -8367,7 +8233,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.06));
+      background-color: var(--code-background);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -8430,8 +8296,8 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, oklab(0.653347 0.0000296831 0.0000130534 / 0.03));
-      color: var(--blockquote-color, rgb(216, 210, 201));
+      background-color: var(--blockquote-background-color);
+      color: var(--blockquote-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8447,7 +8313,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      font-style: var(--blockquote-font-style, italic);
+      font-style: var(--blockquote-font-style);
       line-height: 25.6px;
       padding-bottom: 16px;
       padding-top: 16px;
@@ -8474,7 +8340,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(144, 144, 144));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8492,7 +8358,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(28, 28, 28));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -8595,10 +8461,10 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(244, 246, 240));
+      color: var(--h1-color);
       font-family: var(--h1-font);
       font-size: var(--h1-size);
-      font-weight: var(--font-weight, 800);
+      font-weight: var(--font-weight);
       line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -8628,10 +8494,10 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(244, 246, 240));
+      color: var(--h2-color);
       font-family: var(--h2-font);
       font-size: var(--h2-size);
-      font-weight: var(--font-weight, 800);
+      font-weight: var(--font-weight);
       line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -8662,10 +8528,10 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(244, 246, 240));
+      color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
-      font-weight: var(--font-weight, 800);
+      font-weight: var(--font-weight);
       line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -8695,10 +8561,10 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(244, 246, 240));
+      color: var(--h4-color);
       font-family: var(--h4-font);
       font-size: var(--h4-size);
-      font-weight: var(--font-weight, 800);
+      font-weight: var(--font-weight);
       line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -8728,11 +8594,11 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(244, 246, 240));
+      color: var(--h5-color);
       font-family: var(--h5-font);
       font-size: var(--h5-size);
-      font-weight: var(--font-weight, 800);
-      line-height: var(--h5-line-height, 27.5456px);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h5-letter-spacing);
@@ -8761,11 +8627,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(244, 246, 240));
+      color: var(--h6-color);
       font-family: var(--h6-font);
       font-size: var(--h6-size);
-      font-weight: var(--font-weight, 800);
-      line-height: var(--h6-line-height, 25.6px);
+      font-weight: var(--font-weight);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -8795,7 +8661,7 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(144, 144, 144));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
@@ -9217,7 +9083,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -9276,7 +9142,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9334,7 +9200,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9392,7 +9258,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9450,7 +9316,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9508,7 +9374,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9566,7 +9432,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9624,7 +9490,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9682,7 +9548,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9740,7 +9606,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9798,7 +9664,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9856,7 +9722,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9914,7 +9780,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9972,7 +9838,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10089,7 +9955,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(144, 144, 144));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -10117,7 +9983,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(144, 144, 144));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -10311,7 +10177,7 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(28, 28, 28));
+      background-color: var(--background-primary-alt);
       color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(179, 179, 179);
@@ -10325,7 +10191,7 @@ html[saved-theme="dark"] {
     }
 
     .metadata {
-      background-color: var(--metadata-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.03));
+      background-color: var(--metadata-background);
       color: var(--text-muted);
       font-family:
         ui-sans-serif,
@@ -10539,9 +10405,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(28, 28, 28));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(216, 210, 201));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(216, 210, 201);
@@ -10935,7 +10801,7 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(144, 144, 144));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(54, 54, 54);
     }
@@ -10956,12 +10822,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(144, 144, 144));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(28, 28, 28));
+      background-color: var(--background-secondary);
       border-color: rgb(144, 144, 144);
       box-shadow: var(--input-shadow);
     }
@@ -10973,7 +10839,7 @@ html[saved-theme="dark"] {
     }
 
     .note-properties {
-      background-color: var(--metadata-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.03));
+      background-color: var(--metadata-background);
       border-color: rgb(54, 54, 54);
       border-radius: 8px;
     }
@@ -10988,8 +10854,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.08));
-      color: var(--pill-color, rgb(216, 210, 201));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 4px;
     }
 
@@ -11014,7 +10880,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(28, 28, 28));
+      background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
@@ -11141,7 +11007,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, oklab(0.612904 0.174681 0.0974053 / 0.7));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: oklab(0.612904 0.174681 0.0974053 / 0.7);
       border-width: 0px;
@@ -11186,11 +11052,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(28, 28, 28));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(144, 144, 144));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11322,8 +11188,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, oklab(0.653347 0.0000296831 0.0000130534 / 0.08));
-      color: var(--tag-color, rgb(216, 210, 201));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -11353,17 +11219,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(0, 172, 90));
+      background-color: var(--checkbox-color);
       border-color: rgb(0, 172, 90);
     }
 
     .stacked-page {
       border-color: rgb(144, 144, 144);
-      background-color: var(--background-secondary, rgb(28, 28, 28));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(28, 28, 28));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -11371,7 +11237,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(144, 144, 144));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
@@ -11386,7 +11252,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11404,7 +11269,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11426,7 +11290,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11444,7 +11307,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11466,7 +11328,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11484,7 +11345,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11506,7 +11366,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11524,7 +11383,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11546,7 +11404,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11564,7 +11421,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11586,7 +11442,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11604,7 +11459,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11626,7 +11480,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11644,7 +11497,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11666,7 +11518,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11684,7 +11535,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11706,7 +11556,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11724,7 +11573,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11746,7 +11594,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11764,7 +11611,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11786,7 +11632,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11804,7 +11649,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11826,7 +11670,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11844,7 +11687,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11866,7 +11708,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11884,7 +11725,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11906,7 +11746,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11924,7 +11763,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11946,7 +11784,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -11964,7 +11801,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -11986,7 +11822,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12004,7 +11839,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12026,7 +11860,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12044,7 +11877,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12066,7 +11898,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12084,7 +11915,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12106,7 +11936,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12124,7 +11953,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12146,7 +11974,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12164,7 +11991,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12186,7 +12012,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12204,7 +12029,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12226,7 +12050,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12244,7 +12067,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12266,7 +12088,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12284,7 +12105,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12306,7 +12126,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12324,7 +12143,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12346,7 +12164,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12364,7 +12181,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12386,7 +12202,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12404,7 +12219,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12426,7 +12240,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12444,7 +12257,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12466,7 +12278,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12484,7 +12295,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12506,7 +12316,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12524,7 +12333,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12546,7 +12354,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12564,7 +12371,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12586,7 +12392,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12604,7 +12409,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12626,7 +12430,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12644,7 +12447,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12666,7 +12468,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12684,7 +12485,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12706,7 +12506,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12724,7 +12523,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12746,7 +12544,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12764,7 +12561,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12786,7 +12582,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12804,7 +12599,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12826,7 +12620,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12844,7 +12637,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12866,7 +12658,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12884,7 +12675,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12906,7 +12696,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12924,7 +12713,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12946,7 +12734,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -12964,7 +12751,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -12986,7 +12772,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13004,7 +12789,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13026,7 +12810,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13044,7 +12827,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13066,7 +12848,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13084,7 +12865,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13106,7 +12886,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13124,7 +12903,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13146,7 +12924,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13164,7 +12941,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13186,7 +12962,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13204,7 +12979,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13226,7 +13000,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13244,7 +13017,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13266,7 +13038,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13284,7 +13055,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13306,7 +13076,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13324,7 +13093,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13346,7 +13114,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13364,7 +13131,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13386,7 +13152,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13404,7 +13169,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13426,7 +13190,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13444,7 +13207,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13466,7 +13228,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13484,7 +13245,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13506,7 +13266,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13524,7 +13283,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13546,7 +13304,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13564,7 +13321,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13586,7 +13342,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13604,7 +13359,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13626,7 +13380,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13644,7 +13397,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13666,7 +13418,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13684,7 +13435,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13706,7 +13456,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13724,7 +13473,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13746,7 +13494,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13764,7 +13511,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13786,7 +13532,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13804,7 +13549,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13826,7 +13570,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13844,7 +13587,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13866,7 +13608,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13884,7 +13625,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13906,7 +13646,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13924,7 +13663,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13946,7 +13684,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -13964,7 +13701,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -13986,7 +13722,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -14004,7 +13739,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;
@@ -14026,7 +13760,6 @@ html[saved-theme="dark"] {
       --caret-color: #dadada;
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
@@ -14044,7 +13777,6 @@ html[saved-theme="dark"] {
       --setting-group-heading-color: #dadada;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-text-color-focused-active-current: #dadada;

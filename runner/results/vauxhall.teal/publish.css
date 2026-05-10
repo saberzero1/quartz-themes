@@ -1423,7 +1423,6 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--h1-color) !important;
   --shadow-edges: 0 0 transparent !important;
   --h1-color: var(--cool-cyan) !important;
   --h2-color: var(--light-blue) !important;
@@ -1431,6 +1430,7 @@ body.theme-light {
   --h4-color: var(--blue-violet) !important;
   --h5-color: var(--violet) !important;
   --h6-color: var(--purple) !important;
+  --inline-title-color: var(--h1-color) !important;
   --light-blue: #54b6f8 !important;
   --purple: #c952ed !important;
   --text-highlight-bg-active: color-mix(
@@ -2494,13 +2494,13 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: var(--h1-color) !important;
   --h1-color: var(--cool-cyan) !important;
   --h2-color: var(--light-blue) !important;
   --h3-color: var(--blue) !important;
   --h4-color: var(--blue-violet) !important;
   --h5-color: var(--violet) !important;
   --h6-color: var(--purple) !important;
+  --inline-title-color: var(--h1-color) !important;
   --light-blue: #54b6f8 !important;
   --purple: #c952ed !important;
   --text-highlight-bg-active: color-mix(

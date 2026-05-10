@@ -395,20 +395,20 @@ body.theme-light {
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: var(--accent-color-bg, white) !important;
+  --background-primary: var(--accent-color-bg) !important;
   --background-primary-alt: var(--color-base-10) !important;
-  --background-secondary: var(--accent-color-bg2, white) !important;
-  --background-secondary-alt: var(--accent-color-bg2, white) !important;
-  --bases-cards-background: var(--background-primary, white) !important;
+  --background-secondary: var(--accent-color-bg2) !important;
+  --background-secondary-alt: var(--accent-color-bg2) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
-  --bases-cards-radius: var(--radius-m, 5px) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(--background-modifier-border) !important;
-  --bases-embed-border-radius: var(--radius-s, 5px) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -416,10 +416,7 @@ body.theme-light {
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    white
-  ) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt
   ) !important;
@@ -428,11 +425,11 @@ body.theme-light {
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
-  --bases-table-container-border-radius: var(--radius-s, 5px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-background: var(--background-primary, white) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -447,7 +444,7 @@ body.theme-light {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(--background-primary, white) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -485,14 +482,14 @@ body.theme-light {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 5px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, white) !important;
+  --canvas-background: var(--background-primary) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -502,18 +499,18 @@ body.theme-light {
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
-  --canvas-controls-radius: var(--radius-s, 5px) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
   --caret-color: var(--text-normal) !important;
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, white) !important;
-  --checkbox-radius: var(--radius-s, 5px) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 5px !important;
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
-  --clickable-icon-radius: var(--radius-s, 5px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -525,16 +522,13 @@ body.theme-light {
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s, 5px) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsla(
     var(--accent-h),
     var(--accent-s),
@@ -566,8 +560,8 @@ body.theme-light {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, white) !important;
-  --file-header-background-focused: var(--background-primary, white) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -606,7 +600,7 @@ body.theme-light {
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
   --footnote-padding-inline: var(--size-2-3) !important;
-  --footnote-radius: var(--radius-s, 5px) !important;
+  --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
@@ -614,7 +608,7 @@ body.theme-light {
   ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
@@ -624,7 +618,7 @@ body.theme-light {
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
@@ -650,11 +644,11 @@ body.theme-light {
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
   --interactive-hover: var(--color-base-10) !important;
   --interactive-normal: var(--color-base-00) !important;
-  --link-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --link-color: var(--text-accent) !important;
   --link-color-hover: var(--text-accent-hover) !important;
-  --link-external-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --link-external-color: var(--text-accent) !important;
   --link-external-color-hover: var(--text-accent-hover) !important;
-  --link-unresolved-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --link-unresolved-color: var(--text-accent) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -662,17 +656,14 @@ body.theme-light {
   --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint) !important;
-  --list-marker-color-collapsed: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(--background-secondary, white) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
-  --menu-radius: var(--radius-m, 5px) !important;
+  --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-divider-color: var(--background-modifier-border) !important;
@@ -704,13 +695,13 @@ body.theme-light {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, white) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
-  --modal-radius: var(--radius-l, 5px) !important;
+  --modal-radius: var(--radius-l) !important;
   --nav-collapse-icon-color: var(--collapse-icon-color) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal) !important;
@@ -731,28 +722,25 @@ body.theme-light {
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
   --nav-item-color-active: var(--text-normal) !important;
-  --nav-item-color-highlighted: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
-  --nav-item-radius: var(--radius-s, 5px) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small) !important;
   --nav-tag-color: var(--text-faint) !important;
   --nav-tag-color-active: var(--text-muted) !important;
   --nav-tag-color-hover: var(--text-muted) !important;
-  --nav-tag-radius: var(--radius-s, 5px) !important;
+  --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, white) !important;
-  --pdf-page-background: var(--background-primary, white) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(--background-primary, white) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pill-border-color: var(--background-modifier-border) !important;
@@ -761,23 +749,19 @@ body.theme-light {
   --pill-color: var(--text-muted) !important;
   --pill-color-hover: var(--text-normal) !important;
   --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, white) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, white 65%, transparent)
-      linear-gradient(white, color-mix(in srgb, white 65%, transparent))
-  ) !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary, white) !important;
-  --ribbon-background-collapsed: var(--background-primary, white) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -785,21 +769,21 @@ body.theme-light {
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: var(--radius-l, 5px) !important;
+  --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted) !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary, white) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(--background-primary-alt) !important;
   --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
-  --setting-items-radius: var(--radius-l, 5px) !important;
+  --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-code-background: var(--code-background) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 5px) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
   --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
@@ -833,15 +817,15 @@ body.theme-light {
     --background-modifier-border-hover
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
-  --slider-thumb-radius: var(--slider-thumb-height, 5px) !important;
+  --slider-thumb-radius: 5px !important;
   --slider-track-background: var(--background-modifier-border) !important;
-  --status-bar-background: var(--background-secondary, white) !important;
+  --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
-  --status-bar-radius: var(--radius-m, 5px 0 0 0) 0 0 0 !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary, white) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
   --sync-avatar-color-2: var(--color-orange) !important;
@@ -851,15 +835,15 @@ body.theme-light {
   --sync-avatar-color-6: var(--color-blue) !important;
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(--background-primary, white) !important;
-  --tab-container-background: var(--background-secondary, white) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-outline-color: var(--divider-color) !important;
-  --tab-radius: var(--radius-s, 5px) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(--background-secondary, white) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -873,10 +857,7 @@ body.theme-light {
   --tab-text-color-focused: var(--text-muted) !important;
   --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
-  --tab-text-color-focused-highlighted: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-border-color: var(--background-modifier-border) !important;
@@ -912,8 +893,8 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
-  --tag-color-hover: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --tag-color: var(--text-accent) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-size: var(--font-smaller) !important;
   --text-accent: hsla(
     var(--accent-h),
@@ -929,11 +910,8 @@ body.theme-light {
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, white) !important;
-  --titlebar-background-focused: var(
-    --background-secondary-alt,
-    white
-  ) !important;
+  --titlebar-background: var(--background-secondary) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
   --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
@@ -1572,20 +1550,20 @@ body.theme-dark {
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: var(--color-base-00, #2e2e2e) !important;
+  --background-primary: #2e2e2e !important;
   --background-primary-alt: var(--color-base-10) !important;
-  --background-secondary: var(--accent-color-bg_d, #2e2e2e) !important;
-  --background-secondary-alt: var(--accent-color-bg_d, #2e2e2e) !important;
-  --bases-cards-background: var(--background-primary, #2e2e2e) !important;
+  --background-secondary: var(--accent-color-bg_d) !important;
+  --background-secondary-alt: var(--accent-color-bg_d) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
-  --bases-cards-radius: var(--radius-m, 5px) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-color: var(--background-modifier-border) !important;
-  --bases-embed-border-radius: var(--radius-s, 5px) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -1593,10 +1571,7 @@ body.theme-dark {
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
   --bases-table-border-color: var(--table-border-color) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    #2e2e2e
-  ) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt
   ) !important;
@@ -1605,14 +1580,11 @@ body.theme-dark {
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
-  --bases-table-container-border-radius: var(--radius-s, 5px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    #2e2e2e
-  ) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -1627,17 +1599,11 @@ body.theme-dark {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    #2e2e2e
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --interactive-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blur-background: color-mix(
       in srgb,
       var(--interactive-normal) var(--blur-opacity-s),
@@ -1671,14 +1637,14 @@ body.theme-dark {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 5px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, #2e2e2e) !important;
+  --canvas-background: var(--background-primary) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -1688,18 +1654,18 @@ body.theme-dark {
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
-  --canvas-controls-radius: var(--radius-s, 5px) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
   --caret-color: var(--text-normal) !important;
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, hsla(258, 88%, 66%)) !important;
+  --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #2e2e2e) !important;
-  --checkbox-radius: var(--radius-s, 5px) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 5px !important;
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
-  --clickable-icon-radius: var(--radius-s, 5px) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -1711,16 +1677,13 @@ body.theme-dark {
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s, 5px) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsla(
     var(--accent-h),
     var(--accent-s),
@@ -1739,10 +1702,7 @@ body.theme-dark {
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
   --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(
-    --interactive-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
@@ -1755,11 +1715,8 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, #2e2e2e) !important;
-  --file-header-background-focused: var(
-    --background-primary,
-    #2e2e2e
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -1798,7 +1755,7 @@ body.theme-dark {
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
   --footnote-padding-inline: var(--size-2-3) !important;
-  --footnote-radius: var(--radius-s, 5px) !important;
+  --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
   --graph-line: var(
     --color-base-35,
@@ -1806,7 +1763,7 @@ body.theme-dark {
   ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
@@ -1816,7 +1773,7 @@ body.theme-dark {
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
@@ -1837,16 +1794,16 @@ body.theme-dark {
   --input-icon-inset: var(--size-4-1) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: var(--color-accent, hsla(258, 88%, 66%)) !important;
+  --interactive-accent: var(--color-accent) !important;
   --interactive-accent-hover: var(--color-accent-1) !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
   --interactive-hover: var(--color-base-35) !important;
   --interactive-normal: var(--color-base-30) !important;
-  --link-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --link-color: var(--text-accent) !important;
   --link-color-hover: var(--text-accent-hover) !important;
-  --link-external-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --link-external-color: var(--text-accent) !important;
   --link-external-color-hover: var(--text-accent-hover) !important;
-  --link-unresolved-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --link-unresolved-color: var(--text-accent) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -1854,17 +1811,14 @@ body.theme-dark {
   --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-marker-color: var(--text-faint) !important;
-  --list-marker-color-collapsed: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(--background-secondary, #2e2e2e) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
-  --menu-radius: var(--radius-m, 5px) !important;
+  --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-divider-color: var(--background-modifier-border) !important;
@@ -1896,13 +1850,13 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, #2e2e2e) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
-  --modal-radius: var(--radius-l, 5px) !important;
+  --modal-radius: var(--radius-l) !important;
   --nav-collapse-icon-color: var(--collapse-icon-color) !important;
   --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal) !important;
@@ -1923,27 +1877,24 @@ body.theme-dark {
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
   --nav-item-color-active: var(--text-normal) !important;
-  --nav-item-color-highlighted: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
-  --nav-item-radius: var(--radius-s, 5px) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small) !important;
   --nav-tag-color: var(--text-faint) !important;
   --nav-tag-color-active: var(--text-muted) !important;
   --nav-tag-color-hover: var(--text-muted) !important;
-  --nav-tag-radius: var(--radius-s, 5px) !important;
+  --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, #2e2e2e) !important;
-  --pdf-page-background: var(--background-primary, #2e2e2e) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary, #2e2e2e) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
@@ -1951,10 +1902,10 @@ body.theme-dark {
   --pill-color: var(--text-muted) !important;
   --pill-color-hover: var(--text-normal) !important;
   --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, #2e2e2e) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -1962,8 +1913,8 @@ body.theme-dark {
   --prompt-border-width: var(--border-width) !important;
   --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary, #2e2e2e) !important;
-  --ribbon-background-collapsed: var(--background-primary, #2e2e2e) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -1971,21 +1922,21 @@ body.theme-dark {
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: var(--radius-l, 5px) !important;
+  --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted) !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary, #2e2e2e) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(--background-primary-alt) !important;
   --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
-  --setting-items-radius: var(--radius-l, 5px) !important;
+  --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-code-background: var(--code-background) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 5px) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
   --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
@@ -2019,15 +1970,15 @@ body.theme-dark {
     --background-modifier-border-hover
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
-  --slider-thumb-radius: var(--slider-thumb-height, 5px) !important;
+  --slider-thumb-radius: 5px !important;
   --slider-track-background: var(--background-modifier-border) !important;
-  --status-bar-background: var(--background-secondary, #2e2e2e) !important;
+  --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
-  --status-bar-radius: var(--radius-m, 5px 0 0 0) 0 0 0 !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary, #2e2e2e) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
   --sync-avatar-color-2: var(--color-orange) !important;
@@ -2037,15 +1988,15 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue) !important;
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(--background-primary, #2e2e2e) !important;
-  --tab-container-background: var(--background-secondary, #2e2e2e) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-outline-color: var(--divider-color) !important;
-  --tab-radius: var(--radius-s, 5px) !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(--background-secondary, #2e2e2e) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -2059,10 +2010,7 @@ body.theme-dark {
   --tab-text-color-focused: var(--text-muted) !important;
   --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
-  --tab-text-color-focused-highlighted: var(
-    --text-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-border-color: var(--background-modifier-border) !important;
@@ -2070,8 +2018,7 @@ body.theme-dark {
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
-    --table-selection-border-color,
-    hsla(258, 88%, 66%)
+    --table-selection-border-color
   ) !important;
   --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent) !important;
@@ -2090,10 +2037,7 @@ body.theme-dark {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
-  --table-selection-border-color: var(
-    --interactive-accent,
-    hsla(258, 88%, 66%)
-  ) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
@@ -2102,8 +2046,8 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: var(--text-accent, hsla(258, 88%, 66%)) !important;
-  --tag-color-hover: var(--text-accent, hsla(258, 88%, 66%)) !important;
+  --tag-color: var(--text-accent) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-size: var(--font-smaller) !important;
   --text-accent: hsla(
     var(--accent-h),
@@ -2119,11 +2063,8 @@ body.theme-dark {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, #2e2e2e) !important;
-  --titlebar-background-focused: var(
-    --background-secondary-alt,
-    #2e2e2e
-  ) !important;
+  --titlebar-background: var(--background-secondary) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
   --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
@@ -3185,8 +3126,8 @@ body body.theme-light strong > em {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
-  color: var(--accent-color-inverse, rgb(0, 0, 0));
+  background-color: var(--accent-color-light10);
+  color: var(--accent-color-inverse);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3325,7 +3266,7 @@ body body.theme-light div.multi-select-pill {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 14px;
-  font-weight: var(--pill-weight, 300);
+  font-weight: var(--pill-weight);
   line-height: var(--line-height-tight);
   text-decoration: rgb(34, 34, 34);
   margin-inline-start: 0px;
@@ -3520,10 +3461,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered blockquote {
-  background-color: var(
-    --blockquote-background-color,
-    rgba(138, 92, 245, 0.05)
-  );
+  background-color: var(--blockquote-background-color);
   color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
@@ -3668,13 +3606,13 @@ body body.theme-light div.search-results .suggestion-item.is-selected {
 }
 body body.theme-light .published-container .markdown-rendered h1 {
   color: rgb(34, 34, 34);
-  font-family: var(--h1-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h1-size, 24px);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--h1-line-height, 28.8px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h1-letter-spacing, -0.36px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 0px 0px 16px;
@@ -3703,13 +3641,13 @@ body body.theme-light .published-container .markdown-rendered h1 {
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(34, 34, 34);
-  font-family: var(--h2-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h2-size, 24px);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--h2-line-height, 28.8px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h2-letter-spacing, -0.264px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 0px 0px 16px;
@@ -3738,13 +3676,13 @@ body body.theme-light .published-container .markdown-rendered h2 {
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(34, 34, 34);
-  font-family: var(--h3-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h3-size, 24px);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--h3-line-height, 31.2px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 0px 0px 16px;
@@ -3773,13 +3711,13 @@ body body.theme-light .published-container .markdown-rendered h3 {
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(34, 34, 34);
-  font-family: var(--h4-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h4-size, 24px);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--h4-line-height, 33.6px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h4-letter-spacing, -0.12px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -3808,13 +3746,13 @@ body body.theme-light .published-container .markdown-rendered h4 {
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(34, 34, 34);
-  font-family: var(--h5-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h5-size, 24px);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--h5-line-height, 36px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h5-letter-spacing, -0.048px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -3843,10 +3781,10 @@ body body.theme-light .published-container .markdown-rendered h5 {
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(34, 34, 34);
-  font-family: var(--h6-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h6-size, 24px);
+  font-family: var(--h6-font);
+  font-size: var(--h6-size);
   font-weight: var(--font-weight);
-  line-height: var(--h6-line-height, 36px);
+  line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h6-letter-spacing);
@@ -3882,7 +3820,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 300);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-light
@@ -3934,7 +3872,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -3950,7 +3888,7 @@ body body.theme-light .callout[data-callout="note"] {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -3974,13 +3912,13 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
-  color: var(--accent-color-inverse, rgb(0, 0, 0));
+  color: var(--accent-color-inverse);
   font-weight: var(--font-weight);
 }
 body body.theme-light .callout > .callout-content {
@@ -3996,8 +3934,8 @@ body body.theme-light .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 0, 191, 188);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-summary);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4031,14 +3969,14 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 8, 109, 221);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-info);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4072,14 +4010,14 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 8, 109, 221);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-todo);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4113,14 +4051,14 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 0, 191, 188);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-tip);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4154,14 +4092,14 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 8, 185, 78);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-success);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4195,14 +4133,14 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 236, 117, 0);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-question);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4236,14 +4174,14 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 236, 117, 0);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-warning);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4277,14 +4215,14 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 233, 49, 71);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-error);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4318,14 +4256,14 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 233, 49, 71);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-fail);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4359,14 +4297,14 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 233, 49, 71);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-bug);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4400,14 +4338,14 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 120, 82, 238);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-example);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4441,14 +4379,14 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-quote);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -4482,7 +4420,7 @@ body body.theme-light .callout[data-callout="quote"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -4516,10 +4454,7 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing, 15px);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 15px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -4548,7 +4483,7 @@ body body.theme-light .markdown-rendered tbody {
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
   color: var(--table-header-color);
-  font-weight: var(--table-header-weight, 300);
+  font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
@@ -4558,7 +4493,7 @@ body body.theme-light .markdown-rendered th {
   border-right: 1px solid rgb(138, 92, 245);
   border-top: var(--table-header-border-width) solid rgb(138, 92, 245);
   border-bottom: 1px solid rgb(138, 92, 245);
-  border-top-left-radius: var(--table-border-radius, 8px);
+  border-top-left-radius: var(--table-border-radius);
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -5290,7 +5225,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 300);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -5317,7 +5252,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 300);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
@@ -5332,7 +5267,7 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 5px;
 }
 body body.theme-light .site-footer {
-  background-color: var(--status-bar-background, rgb(255, 255, 255));
+  background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
@@ -5596,7 +5531,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-external-color, rgb(138, 92, 245));
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -5636,7 +5571,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-color, rgb(138, 92, 245));
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -5676,7 +5611,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-unresolved-color, rgb(138, 92, 245));
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
@@ -6027,8 +5962,8 @@ body body.theme-dark strong > em {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
-  color: var(--accent-color-inverse, rgb(0, 0, 0));
+  background-color: var(--accent-color-light10);
+  color: var(--accent-color-inverse);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6150,7 +6085,7 @@ body body.theme-dark .markdown-rendered hr {
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
   background-color: var(--pill-background);
-  color: var(--pill-color, rgb(138, 92, 245));
+  color: var(--pill-color);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -6167,7 +6102,7 @@ body body.theme-dark div.multi-select-pill {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 14px;
-  font-weight: var(--pill-weight, 300);
+  font-weight: var(--pill-weight);
   line-height: var(--line-height-tight);
   text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
@@ -6362,10 +6297,7 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: var(
-    --blockquote-background-color,
-    rgba(138, 92, 245, 0.05)
-  );
+  background-color: var(--blockquote-background-color);
   color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
@@ -6424,7 +6356,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: var(--prompt-background, rgb(46, 46, 46));
+  background-color: var(--prompt-background);
   border: 1px solid rgb(85, 85, 85);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -6510,13 +6442,13 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
-  font-family: var(--h1-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h1-size, 24px);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--h1-line-height, 28.8px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h1-letter-spacing, -0.36px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 0px 0px 16px;
@@ -6545,13 +6477,13 @@ body body.theme-dark .published-container .markdown-rendered h1 {
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
-  font-family: var(--h2-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h2-size, 24px);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--h2-line-height, 28.8px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h2-letter-spacing, -0.264px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 0px 0px 16px;
@@ -6580,13 +6512,13 @@ body body.theme-dark .published-container .markdown-rendered h2 {
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
-  font-family: var(--h3-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h3-size, 24px);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--h3-line-height, 31.2px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h3-letter-spacing, -0.192px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px 0px 0px 16px;
@@ -6615,13 +6547,13 @@ body body.theme-dark .published-container .markdown-rendered h3 {
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
-  font-family: var(--h4-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h4-size, 24px);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--h4-line-height, 33.6px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h4-letter-spacing, -0.12px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -6650,13 +6582,13 @@ body body.theme-dark .published-container .markdown-rendered h4 {
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
-  font-family: var(--h5-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h5-size, 24px);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--h5-line-height, 36px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h5-letter-spacing, -0.048px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -6685,10 +6617,10 @@ body body.theme-dark .published-container .markdown-rendered h5 {
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
-  font-family: var(--h6-font, menda, "Cascadia Code", inter, verdana);
-  font-size: var(--h6-size, 24px);
+  font-family: var(--h6-font);
+  font-size: var(--h6-size);
   font-weight: var(--font-weight);
-  line-height: var(--h6-line-height, 36px);
+  line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h6-letter-spacing);
@@ -6724,7 +6656,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 300);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-dark
@@ -6776,7 +6708,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -6792,7 +6724,7 @@ body body.theme-dark .callout[data-callout="note"] {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6816,13 +6748,13 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
-  color: var(--accent-color-inverse, rgb(0, 0, 0));
+  color: var(--accent-color-inverse);
   font-weight: var(--font-weight);
 }
 body body.theme-dark .callout > .callout-content {
@@ -6838,8 +6770,8 @@ body body.theme-dark .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 83, 223, 221);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-summary);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6873,14 +6805,14 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 2, 122, 255);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-info);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6914,14 +6846,14 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 2, 122, 255);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-todo);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6955,14 +6887,14 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 83, 223, 221);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-tip);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -6996,14 +6928,14 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 68, 207, 110);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-success);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7037,14 +6969,14 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 233, 151, 63);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-question);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7078,14 +7010,14 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 233, 151, 63);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-warning);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7119,14 +7051,14 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 251, 70, 76);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-error);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7160,14 +7092,14 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 251, 70, 76);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-fail);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7201,14 +7133,14 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 251, 70, 76);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-bug);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7242,14 +7174,14 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 168, 130, 255);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-example);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7283,14 +7215,14 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
-  background-color: var(--accent-color-light02, rgba(138, 92, 245, 0.02));
+  --callout-color: var(--callout-quote);
+  background-color: var(--accent-color-light02);
   background-image: none;
   background: rgba(138, 92, 245, 0.02) none repeat scroll 0% 0% / auto
     padding-box border-box;
@@ -7324,7 +7256,7 @@ body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  background-color: var(--accent-color-light10, rgb(138, 92, 245));
+  background-color: var(--accent-color-light10);
   background-image: none;
   background: rgb(138, 92, 245) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -7358,10 +7290,7 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: var(--heading-spacing, 15px);
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 15px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -7390,7 +7319,7 @@ body body.theme-dark .markdown-rendered tbody {
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
   color: var(--table-header-color);
-  font-weight: var(--table-header-weight, 300);
+  font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
@@ -7400,7 +7329,7 @@ body body.theme-dark .markdown-rendered th {
   border-right: 1px solid rgb(138, 92, 245);
   border-top: var(--table-header-border-width) solid rgb(138, 92, 245);
   border-bottom: 1px solid rgb(138, 92, 245);
-  border-top-left-radius: var(--table-border-radius, 8px);
+  border-top-left-radius: var(--table-border-radius);
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -8132,7 +8061,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 300);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -8159,7 +8088,7 @@ body
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: var(--nav-item-weight, 300);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
@@ -8174,7 +8103,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 5px;
 }
 body body.theme-dark .site-footer {
-  background-color: var(--status-bar-background, rgb(46, 46, 46));
+  background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
@@ -8416,7 +8345,7 @@ body body.theme-dark pre > code [data-highlighted-chars] {
 }
 body body.theme-dark .tag {
   background-color: var(--tag-background);
-  color: var(--tag-color, rgb(138, 92, 245));
+  color: var(--tag-color);
   border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;

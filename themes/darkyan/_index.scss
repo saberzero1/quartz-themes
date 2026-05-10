@@ -24,21 +24,21 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #4b5563) !important;
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, #00aaad) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #00aaad) !important;
-  --checkbox-marker-color: var(--background-primary, #111827) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #111827) !important;
-  --code-border-color: var(--background-modifier-border, #374151) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #4b5563) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #d1d5db) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -47,18 +47,18 @@
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #4b5563) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #00aaad) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #00aaad) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #4b5563) !important;
-  --graph-text: var(--text-normal, #d1d5db) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #00aaad) !important;
-  --icon-color-focused: var(--text-normal, #d1d5db) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -382,20 +382,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(17, 24, 39));
-    color: var(--text-normal, rgb(209, 213, 219));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(17, 24, 39));
+    background-color: var(--background-primary);
     color: rgb(209, 213, 219);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(31, 41, 55));
+    background-color: var(--background-secondary);
     color: rgb(209, 213, 219);
   }
 
@@ -403,12 +403,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(31, 41, 55));
+    background-color: var(--tab-container-background);
     color: rgb(209, 213, 219);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(31, 41, 55));
+    background-color: var(--tab-container-background);
     color: rgb(209, 213, 219);
     border-left: 0px rgb(55, 65, 81);
   }
@@ -420,7 +420,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(0, 170, 173));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -462,7 +462,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(0, 170, 173));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -503,7 +503,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(0, 170, 173));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -602,7 +602,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(209, 213, 219));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -643,7 +643,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(209, 213, 219));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -684,7 +684,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(209, 213, 219));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -725,7 +725,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(209, 213, 219));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -844,7 +844,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(209, 213, 219));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -874,8 +874,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(55, 65, 81));
-    color: var(--text-normal, rgb(209, 213, 219));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1006,7 +1006,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(0, 170, 173));
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1117,7 +1117,7 @@ body {
   }
 
   code {
-    background-color: var(--pre-code, rgb(0, 0, 0));
+    background-color: var(--pre-code);
     border: 0px solid rgb(55, 65, 81);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1127,7 +1127,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-block, rgb(209, 213, 219));
+    color: var(--code-block);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1159,7 +1159,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(17, 24, 39));
+    background-color: var(--code-background);
     border: 0px solid rgb(55, 65, 81);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1223,7 +1223,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(209, 213, 219));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1251,7 +1251,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(75, 85, 99));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1266,7 +1266,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(209, 213, 219));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1284,7 +1284,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(17, 24, 39));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1387,7 +1387,7 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(209, 213, 219));
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1420,7 +1420,7 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(209, 213, 219));
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
@@ -1453,7 +1453,7 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(209, 213, 219));
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
@@ -1486,7 +1486,7 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(209, 213, 219));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -1519,7 +1519,7 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(209, 213, 219));
+    color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
@@ -1552,7 +1552,7 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(209, 213, 219));
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
@@ -1586,7 +1586,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(209, 213, 219));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -2008,7 +2008,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2067,7 +2067,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2125,7 +2125,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2183,7 +2183,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2241,7 +2241,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2299,7 +2299,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2357,7 +2357,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2415,7 +2415,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2473,7 +2473,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2531,7 +2531,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2589,7 +2589,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2647,7 +2647,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2705,7 +2705,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2763,7 +2763,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2880,7 +2880,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(209, 213, 219));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2908,7 +2908,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(209, 213, 219));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3102,7 +3102,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(17, 24, 39));
+    background-color: var(--background-primary-alt);
     color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(179, 179, 179);
@@ -3330,9 +3330,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(17, 24, 39));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(209, 213, 219));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(209, 213, 219);
@@ -3726,7 +3726,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(209, 213, 219));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(55, 65, 81);
   }
@@ -3747,12 +3747,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(209, 213, 219));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(31, 41, 55));
+    background-color: var(--background-secondary);
     border-color: rgb(209, 213, 219);
     box-shadow: var(--input-shadow);
   }
@@ -3780,7 +3780,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(0, 170, 173));
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3805,7 +3805,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(31, 41, 55));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -3959,7 +3959,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(75, 85, 99));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3977,11 +3977,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(31, 41, 55));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(209, 213, 219));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4114,7 +4114,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--tag-color, rgb(0, 170, 173));
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4144,17 +4144,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(0, 170, 173));
+    background-color: var(--checkbox-color);
     border-color: rgb(0, 170, 173);
   }
 
   .stacked-page {
     border-color: rgb(209, 213, 219);
-    background-color: var(--background-secondary, rgb(31, 41, 55));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(31, 41, 55));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4162,18 +4162,13 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(209, 213, 219));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4191,8 +4186,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4226,21 +4219,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4258,8 +4240,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4293,21 +4273,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4325,8 +4294,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4360,21 +4327,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4392,8 +4348,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4427,21 +4381,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4459,8 +4402,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4494,21 +4435,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4526,8 +4456,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4561,21 +4489,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4593,8 +4510,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4628,21 +4543,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4660,8 +4564,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4695,21 +4597,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4727,8 +4618,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4762,21 +4651,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4794,8 +4672,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4829,21 +4705,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4861,8 +4726,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4896,21 +4759,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4928,8 +4780,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -4963,21 +4813,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4995,8 +4834,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5030,21 +4867,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5062,8 +4888,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5097,21 +4921,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5129,8 +4942,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5164,21 +4975,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5196,8 +4996,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5231,21 +5029,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5263,8 +5050,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5298,21 +5083,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5330,8 +5104,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5365,21 +5137,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5397,8 +5158,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5432,21 +5191,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5464,8 +5212,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5499,21 +5245,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5531,8 +5266,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5566,21 +5299,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5598,8 +5320,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5633,21 +5353,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5665,8 +5374,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5700,21 +5407,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5732,8 +5428,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5767,21 +5461,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5799,8 +5482,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5834,21 +5515,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5866,8 +5536,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5901,21 +5569,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5933,8 +5590,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -5968,21 +5623,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6000,8 +5644,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6035,21 +5677,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6067,8 +5698,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6102,21 +5731,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6134,8 +5752,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6169,21 +5785,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6201,8 +5806,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6236,21 +5839,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6268,8 +5860,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6303,21 +5893,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6335,8 +5914,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6370,21 +5947,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6402,8 +5968,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6437,21 +6001,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6469,8 +6022,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6504,21 +6055,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6536,8 +6076,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6571,21 +6109,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6603,8 +6130,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6638,21 +6163,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6670,8 +6184,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6705,21 +6217,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6737,8 +6238,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6772,21 +6271,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6804,8 +6292,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6839,21 +6325,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6871,8 +6346,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6906,21 +6379,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6938,8 +6400,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -6973,21 +6433,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7005,8 +6454,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7040,21 +6487,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7072,8 +6508,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7107,21 +6541,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7139,8 +6562,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7174,21 +6595,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7206,8 +6616,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7241,21 +6649,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7273,8 +6670,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7308,21 +6703,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7340,8 +6724,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7375,21 +6757,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7407,8 +6778,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7442,21 +6811,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7474,8 +6832,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7509,21 +6865,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7541,8 +6886,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7576,21 +6919,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7608,8 +6940,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7643,21 +6973,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7675,8 +6994,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7710,21 +7027,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7742,8 +7048,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7777,21 +7081,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7809,8 +7102,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7844,21 +7135,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7876,8 +7156,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7911,21 +7189,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7943,8 +7210,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -7978,21 +7243,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8010,8 +7264,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8045,21 +7297,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8077,8 +7318,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8112,21 +7351,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8144,8 +7372,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8179,21 +7405,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8211,8 +7426,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8246,21 +7459,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8278,8 +7480,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8313,21 +7513,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8345,8 +7534,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8380,21 +7567,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8412,8 +7588,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8447,21 +7621,10 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(209, 213, 219);
-    --background-modifier-border: #363636;
-    --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
-    --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8479,8 +7642,6 @@ body {
     --graph-text: #dadada;
     --heading-formatting: #666666;
     --hr-color: #363636;
-    --interactive-accent: hsl(258, 88%, 66%);
-    --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
     --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -8514,12 +7675,6 @@ body {
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --text-accent: hsl(255, 89.76%, 75.9%);
-    --text-accent-hover: hsl(253, 92.4%, 85.14%);
-    --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   --current-page-slug: attr(data-slug raw-string);

@@ -1384,9 +1384,14 @@ function generateFullExtractionScript(selectors) {
 
     for (const [resultSelector, props] of Object.entries(results)) {
       if (resultSelector.includes("::")) continue;
-      const el = resultSelector === "html" ? document.documentElement
-        : resultSelector === "body" ? document.body
-        : document.querySelector(resultSelector);
+      let el;
+      try {
+        el = resultSelector === "html" ? document.documentElement
+          : resultSelector === "body" ? document.body
+          : document.querySelector(resultSelector);
+      } catch (e) {
+        continue;
+      }
       if (!el) continue;
 
       for (const prop of Object.keys(props)) {

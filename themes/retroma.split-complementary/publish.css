@@ -1088,7 +1088,6 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--h1-color) !important;
   --shadow-edges: 0 0 transparent !important;
   --h1-color: var(--color-red) !important;
   --h2-color: var(--color-orange) !important;
@@ -1096,6 +1095,7 @@ body.theme-light {
   --h4-color: var(--color-green) !important;
   --h5-color: var(--color-blue) !important;
   --h6-color: var(--color-indigo) !important;
+  --inline-title-color: var(--h1-color) !important;
   --bold-color: oklch(
     from var(--base-accent) calc(var(--lightness) - 15%) var(--chroma)
       calc(h + 100)
@@ -2293,13 +2293,13 @@ body.theme-dark {
   --accent-2: oklch(
     from var(--base-accent) l c calc(h + var(--rotation-2))
   ) !important;
-  --inline-title-color: var(--h1-color) !important;
   --h1-color: var(--color-red) !important;
   --h2-color: var(--color-orange) !important;
   --h3-color: var(--color-yellow) !important;
   --h4-color: var(--color-green) !important;
   --h5-color: var(--color-blue) !important;
   --h6-color: var(--color-indigo) !important;
+  --inline-title-color: var(--h1-color) !important;
   --bold-color: oklch(
     from var(--base-accent) calc(var(--lightness) + 10%) var(--chroma)
       calc(h + 100)

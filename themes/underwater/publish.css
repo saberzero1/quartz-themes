@@ -1380,7 +1380,6 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--foam) !important;
   --shadow-edges: 0 0 transparent !important;
   --h1-color: var(--love) !important;
   --h2-color: var(--rose) !important;
@@ -1388,15 +1387,16 @@ body.theme-light {
   --h4-color: var(--pine) !important;
   --h5-color: var(--iris) !important;
   --h6-color: var(--text-normal) !important;
+  --inline-title-color: var(--foam) !important;
   --table-header-background-hover: var(--table-header-background) !important;
   --table-border-radius: 7px !important;
-  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--headings-font) !important;
   --h2-font: var(--headings-font) !important;
   --h3-font: var(--headings-font) !important;
   --h4-font: var(--headings-font) !important;
   --h5-font: var(--headings-font) !important;
   --h6-font: var(--headings-font) !important;
+  --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--love) !important;
   --italic-color: var(--foam) !important;
   --text: #575279 !important;
@@ -2405,22 +2405,22 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: var(--foam) !important;
   --h1-color: var(--love) !important;
   --h2-color: var(--rose) !important;
   --h3-color: var(--gold) !important;
   --h4-color: var(--pine) !important;
   --h5-color: var(--iris) !important;
   --h6-color: var(--text-normal) !important;
+  --inline-title-color: var(--foam) !important;
   --table-header-background-hover: var(--table-header-background) !important;
   --table-border-radius: 7px !important;
-  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--headings-font) !important;
   --h2-font: var(--headings-font) !important;
   --h3-font: var(--headings-font) !important;
   --h4-font: var(--headings-font) !important;
   --h5-font: var(--headings-font) !important;
   --h6-font: var(--headings-font) !important;
+  --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--love) !important;
   --italic-color: var(--foam) !important;
   --text: #e0def4 !important;

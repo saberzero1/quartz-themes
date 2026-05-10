@@ -1513,7 +1513,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 4,
+                "childCount": 5,
                 "children": [
                   {
                     "tag": "div",
@@ -1667,6 +1667,121 @@
                         ],
                         "attrs": {
                           "data-path": "folder/nested",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "color(srgb 0.451 0.2766 0.994)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "color(srgb 0.451 0.2766 0.994)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.451 0.2766 0.994)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.451 0.2766 0.994)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.451 0.2766 0.994)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.451 0.2766 0.994)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "color(srgb 0.125 0 0.5)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "color(srgb 0.125 0 0.5) color(srgb 0.125 0 0.5) color(srgb 0.125 0 0.5) color(srgb 0.853 0.8298 0.982)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.125 0 0.5)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.125 0 0.5)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.125 0 0.5)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.125 0 0.5)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-folder"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "color(srgb 0.125 0 0.5)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "color(srgb 0.125 0 0.5)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/unopened",
                           "draggable": "true"
                         },
                         "styles": {
@@ -2227,7 +2342,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 23,
+                "childCount": 21,
                 "children": [
                   {
                     "tag": "div",

@@ -1245,14 +1245,14 @@ body {
   }
 
   h1 {
-    color: var(--text-normal, rgb(34, 34, 34));
-    font-family: var(--header-font, "Caveat Brush");
-    font-size: var(--h1-size, 43.2px);
+    color: var(--text-normal);
+    font-family: var(--header-font);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 51.84px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.648px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1278,14 +1278,14 @@ body {
   }
 
   h2 {
-    color: var(--text-normal, rgb(34, 34, 34));
-    font-family: var(--header-font, "Caveat Brush");
-    font-size: var(--h2-size, 40px);
+    color: var(--text-normal);
+    font-family: var(--header-font);
+    font-size: var(--h2-size);
     font-weight: var(--font-weight);
-    line-height: var(--h2-line-height, 48px);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.44px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1311,14 +1311,14 @@ body {
   }
 
   h3 {
-    color: var(--text-normal, rgb(34, 34, 34));
-    font-family: var(--header-font, "Caveat Brush");
-    font-size: var(--h3-size, 33.6px);
+    color: var(--text-normal);
+    font-family: var(--header-font);
+    font-size: var(--h3-size);
     font-weight: var(--font-weight);
-    line-height: var(--h3-line-height, 43.68px);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.2688px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1344,14 +1344,14 @@ body {
   }
 
   h4 {
-    color: var(--text-normal, rgb(34, 34, 34));
-    font-family: var(--header-font, "Caveat Brush");
-    font-size: var(--h4-size, 30.4px);
+    color: var(--text-normal);
+    font-family: var(--header-font);
+    font-size: var(--h4-size);
     font-weight: var(--font-weight);
-    line-height: var(--h4-line-height, 42.56px);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.152px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1377,14 +1377,14 @@ body {
   }
 
   h5 {
-    color: var(--text-normal, rgb(34, 34, 34));
-    font-family: var(--header-font, "Caveat Brush");
-    font-size: var(--h5-size, 27.2px);
+    color: var(--text-normal);
+    font-family: var(--header-font);
+    font-size: var(--h5-size);
     font-weight: var(--font-weight);
-    line-height: var(--h5-line-height, 40.8px);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.0544px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1410,11 +1410,11 @@ body {
   }
 
   h6 {
-    color: var(--text-normal, rgb(34, 34, 34));
-    font-family: var(--header-font, "Caveat Brush");
-    font-size: var(--h6-size, 24px);
+    color: var(--text-normal);
+    font-family: var(--header-font);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight);
-    line-height: var(--h6-line-height, 36px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -1492,13 +1492,13 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 693px;
-    height: auto;
+    height: 4px;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: rgb(34, 34, 34);
   }
 
   h2::after {
@@ -1511,22 +1511,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 561px;
-    height: auto;
+    height: 4px;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: rgb(34, 34, 34);
   }
 
   h3::after {
@@ -1539,22 +1536,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 462px;
-    height: auto;
+    height: 4px;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: rgb(34, 34, 34);
   }
 
   h4::after {
@@ -1567,22 +1561,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 330px;
-    height: auto;
+    height: 4px;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: rgb(34, 34, 34);
   }
 
   h5::after {
@@ -1595,22 +1586,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 264px;
-    height: auto;
+    height: 4px;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--text-normal, rgb(34, 34, 34));
+    color: rgb(34, 34, 34);
   }
 
   h6::after {
@@ -1883,7 +1871,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1942,7 +1930,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2000,7 +1988,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2058,7 +2046,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2116,7 +2104,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2174,7 +2162,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2232,7 +2220,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2290,7 +2278,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2348,7 +2336,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2406,7 +2394,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2464,7 +2452,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2522,7 +2510,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2580,7 +2568,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2638,7 +2626,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5734,14 +5722,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--text-normal, rgb(218, 218, 218));
-      font-family: var(--header-font, "Caveat Brush");
-      font-size: var(--h1-size, 43.2px);
+      color: var(--text-normal);
+      font-family: var(--header-font);
+      font-size: var(--h1-size);
       font-weight: var(--font-weight);
-      line-height: var(--h1-line-height, 51.84px);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.648px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5767,14 +5755,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--text-normal, rgb(218, 218, 218));
-      font-family: var(--header-font, "Caveat Brush");
-      font-size: var(--h2-size, 40px);
+      color: var(--text-normal);
+      font-family: var(--header-font);
+      font-size: var(--h2-size);
       font-weight: var(--font-weight);
-      line-height: var(--h2-line-height, 48px);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.44px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5800,14 +5788,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--text-normal, rgb(218, 218, 218));
-      font-family: var(--header-font, "Caveat Brush");
-      font-size: var(--h3-size, 33.6px);
+      color: var(--text-normal);
+      font-family: var(--header-font);
+      font-size: var(--h3-size);
       font-weight: var(--font-weight);
-      line-height: var(--h3-line-height, 43.68px);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.2688px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5833,14 +5821,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--text-normal, rgb(218, 218, 218));
-      font-family: var(--header-font, "Caveat Brush");
-      font-size: var(--h4-size, 30.4px);
+      color: var(--text-normal);
+      font-family: var(--header-font);
+      font-size: var(--h4-size);
       font-weight: var(--font-weight);
-      line-height: var(--h4-line-height, 42.56px);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.152px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5866,14 +5854,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--text-normal, rgb(218, 218, 218));
-      font-family: var(--header-font, "Caveat Brush");
-      font-size: var(--h5-size, 27.2px);
+      color: var(--text-normal);
+      font-family: var(--header-font);
+      font-size: var(--h5-size);
       font-weight: var(--font-weight);
-      line-height: var(--h5-line-height, 40.8px);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.0544px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5899,11 +5887,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--text-normal, rgb(218, 218, 218));
-      font-family: var(--header-font, "Caveat Brush");
-      font-size: var(--h6-size, 24px);
+      color: var(--text-normal);
+      font-family: var(--header-font);
+      font-size: var(--h6-size);
       font-weight: var(--font-weight);
-      line-height: var(--h6-line-height, 36px);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -5981,13 +5969,13 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 693px;
-      height: auto;
+      height: 4px;
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: rgb(218, 218, 218);
     }
 
     h2::after {
@@ -6000,22 +5988,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 561px;
-      height: auto;
+      height: 4px;
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: rgb(218, 218, 218);
     }
 
     h3::after {
@@ -6028,22 +6013,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 462px;
-      height: auto;
+      height: 4px;
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: rgb(218, 218, 218);
     }
 
     h4::after {
@@ -6056,22 +6038,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 330px;
-      height: auto;
+      height: 4px;
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: rgb(218, 218, 218);
     }
 
     h5::after {
@@ -6084,22 +6063,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 264px;
-      height: auto;
+      height: 4px;
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
       background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--text-normal, rgb(218, 218, 218));
+      color: rgb(218, 218, 218);
     }
 
     h6::after {
@@ -6372,7 +6348,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6431,7 +6407,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6489,7 +6465,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6547,7 +6523,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6605,7 +6581,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6663,7 +6639,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6721,7 +6697,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6779,7 +6755,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6837,7 +6813,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6895,7 +6871,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6953,7 +6929,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7011,7 +6987,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7069,7 +7045,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7127,7 +7103,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;

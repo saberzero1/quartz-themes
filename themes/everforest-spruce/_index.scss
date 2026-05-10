@@ -110,42 +110,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #7a8478) !important;
-  --checkbox-border-color-hover: var(--text-muted, #9da9a0) !important;
-  --checkbox-color: var(--everforest-red, #e67e80) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--everforest-red) !important;
   --checkbox-color-hover: color-mix(in srgb, var(--checkbox-color), var(--darken-ratio) black) !important;
-  --checkbox-marker-color: var(--background-primary, #232a2e) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #2d353b) !important;
-  --code-border-color: var(--background-modifier-border, #343f44) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--everforest-grey1, #859289) !important;
-  --code-function: var(--everforest-green, #a7c080) !important;
-  --code-important: var(--everforest-red, #e67e80) !important;
-  --code-keyword: var(--everforest-red, #e67e80) !important;
-  --code-normal: var(--everforest-fg, #d3c6aa) !important;
-  --code-operator: var(--everforest-orange, #e69875) !important;
-  --code-property: var(--everforest-fg, #d3c6aa) !important;
-  --code-punctuation: var(--everforest-grey1, #859289) !important;
+  --code-comment: var(--everforest-grey1) !important;
+  --code-function: var(--everforest-green) !important;
+  --code-important: var(--everforest-red) !important;
+  --code-keyword: var(--everforest-red) !important;
+  --code-normal: var(--everforest-fg) !important;
+  --code-operator: var(--everforest-orange) !important;
+  --code-property: var(--everforest-fg) !important;
+  --code-punctuation: var(--everforest-grey1) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--everforest-green, #a7c080) !important;
-  --code-tag: var(--everforest-aqua, #83c092) !important;
-  --code-value: var(--everforest-purple, #d699b6) !important;
-  --collapse-icon-color: var(--text-faint, #7a8478) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(80, 34.68%, 72.45%)) !important;
+  --code-string: var(--everforest-green) !important;
+  --code-tag: var(--everforest-aqua) !important;
+  --code-value: var(--everforest-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #9da9a0) !important;
-  --graph-node-attachment: var(--color-yellow, #dbbc7f) !important;
-  --graph-node-focused: var(--text-accent, hsl(80, 34.68%, 72.45%)) !important;
-  --graph-node-tag: var(--color-green, #a7c080) !important;
-  --graph-node-unresolved: var(--text-faint, #7a8478) !important;
-  --graph-text: var(--text-normal, #d3c6aa) !important;
-  --icon-color: var(--text-muted, #9da9a0) !important;
-  --icon-color-active: var(--text-accent, hsl(80, 34.68%, 72.45%)) !important;
-  --icon-color-focused: var(--icon-color, #9da9a0) !important;
-  --icon-color-hover: var(--text-muted, #9da9a0) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--icon-color) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -2103,7 +2103,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2162,7 +2162,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2220,7 +2220,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2278,7 +2278,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2336,7 +2336,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2394,7 +2394,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2452,7 +2452,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2510,7 +2510,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2568,7 +2568,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2626,7 +2626,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2684,7 +2684,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2742,7 +2742,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2800,7 +2800,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2858,7 +2858,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -4359,17 +4359,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -4508,17 +4504,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -4657,17 +4649,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -4806,17 +4794,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -4955,17 +4939,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5104,17 +5084,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5253,17 +5229,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5402,17 +5374,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5551,17 +5519,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5700,17 +5664,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5849,17 +5809,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -5998,17 +5954,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -6147,17 +6099,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -6296,17 +6244,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -6445,17 +6389,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -6594,17 +6534,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -6743,17 +6679,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -6892,17 +6824,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7041,17 +6969,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7190,17 +7114,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7339,17 +7259,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7488,17 +7404,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7637,17 +7549,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7786,17 +7694,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -7935,17 +7839,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8084,17 +7984,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8233,17 +8129,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8382,17 +8274,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8531,17 +8419,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8680,17 +8564,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8829,17 +8709,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -8978,17 +8854,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -9127,17 +8999,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -9276,17 +9144,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -9425,17 +9289,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -9574,17 +9434,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -9723,17 +9579,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -9872,17 +9724,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10021,17 +9869,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10170,17 +10014,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10319,17 +10159,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10468,17 +10304,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10617,17 +10449,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10766,17 +10594,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -10915,17 +10739,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11064,17 +10884,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11213,17 +11029,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11362,17 +11174,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11511,17 +11319,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11660,17 +11464,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11809,17 +11609,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -11958,17 +11754,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -12107,17 +11899,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -12256,17 +12044,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -12405,17 +12189,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -12554,17 +12334,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -12703,17 +12479,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -12852,17 +12624,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13001,17 +12769,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13150,17 +12914,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13299,17 +13059,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13448,17 +13204,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13597,17 +13349,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13746,17 +13494,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -13895,17 +13639,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -14044,17 +13784,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -14193,17 +13929,13 @@ body {
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
     --table-border-color: #e0e0e0;
-    --table-column-first-border-width: 1px;
-    --table-column-last-border-width: 1px;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
     --table-drag-handle-color-active: white;
     --table-header-background: transparent;
     --table-header-border-color: #e0e0e0;
-    --table-header-border-width: 1px;
     --table-header-color: #222222;
     --table-header-weight: 600;
-    --table-row-last-border-width: 1px;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -14916,20 +14648,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(35, 42, 46));
-      color: var(--text-normal, rgb(211, 198, 170));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(35, 42, 46));
+      background-color: var(--background-primary);
       color: rgb(211, 198, 170);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(35, 42, 46));
+      background-color: var(--background-secondary);
       color: rgb(211, 198, 170);
     }
 
@@ -14937,12 +14669,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(35, 42, 46));
+      background-color: var(--tab-container-background);
       color: rgb(211, 198, 170);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(35, 42, 46));
+      background-color: var(--tab-container-background);
       color: rgb(211, 198, 170);
       border-left: 0px rgb(52, 63, 68);
     }
@@ -14954,7 +14686,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(127, 187, 179));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -14996,7 +14728,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(127, 187, 179));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -15037,7 +14769,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(133, 146, 137));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -15059,7 +14791,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(133, 146, 137) none 0px;
       text-decoration: underline rgba(168, 193, 129, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(168, 193, 129, 0.3));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -15095,7 +14827,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(157, 169, 160));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -15136,7 +14868,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(230, 152, 117));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15177,7 +14909,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(230, 152, 117));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15218,7 +14950,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(219, 188, 127));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15259,7 +14991,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(219, 188, 127));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15378,7 +15110,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(219, 188, 127));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -15408,8 +15140,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgb(84, 58, 72));
-      color: var(--text-normal, rgb(211, 198, 170));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15539,8 +15271,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(168, 193, 129, 0.1));
-      color: var(--pill-color, rgb(193, 209, 160));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -15651,7 +15383,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(45, 53, 59));
+      background-color: var(--code-background);
       border: 0px solid rgb(52, 63, 68);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15661,7 +15393,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(211, 198, 170));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -15693,7 +15425,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(45, 53, 59));
+      background-color: var(--code-background);
       border: 0px solid rgb(52, 63, 68);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15757,7 +15489,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color, rgb(131, 192, 146));
+      color: var(--blockquote-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15785,7 +15517,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(122, 132, 120));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -15800,7 +15532,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(211, 198, 170));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15818,7 +15550,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(35, 42, 46));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(71, 82, 88);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -15921,7 +15653,7 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(211, 198, 170));
+      color: var(--h1-color);
       font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
@@ -15954,7 +15686,7 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(211, 198, 170));
+      color: var(--h2-color);
       font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
@@ -15987,7 +15719,7 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(211, 198, 170));
+      color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
       font-weight: var(--font-weight);
@@ -16020,7 +15752,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(211, 198, 170));
+      color: var(--h4-color);
       font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
@@ -16053,7 +15785,7 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(211, 198, 170));
+      color: var(--h5-color);
       font-family: var(--h5-font);
       font-size: var(--h5-size);
       font-weight: var(--font-weight);
@@ -16086,7 +15818,7 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(211, 198, 170));
+      color: var(--h6-color);
       font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
@@ -16120,7 +15852,7 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(211, 198, 170));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
@@ -16542,7 +16274,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -16585,7 +16317,7 @@ html[saved-theme="dark"] {
 
     .callout .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
@@ -16601,7 +16333,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16643,7 +16375,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
@@ -16659,7 +16391,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16701,7 +16433,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
@@ -16717,7 +16449,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16759,7 +16491,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
@@ -16775,7 +16507,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16817,7 +16549,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
@@ -16833,7 +16565,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16875,7 +16607,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
@@ -16891,7 +16623,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16933,7 +16665,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
@@ -16949,7 +16681,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16991,7 +16723,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
@@ -17007,7 +16739,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17049,7 +16781,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
@@ -17065,7 +16797,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17107,7 +16839,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
@@ -17123,7 +16855,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17165,7 +16897,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
@@ -17181,7 +16913,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17223,7 +16955,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
@@ -17239,7 +16971,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17281,7 +17013,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
@@ -17297,7 +17029,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17339,7 +17071,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 400);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
@@ -17414,16 +17146,16 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(211, 198, 170));
-      font-weight: var(--table-header-weight, 400);
+      color: var(--table-header-color);
+      font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 0px) solid rgb(52, 63, 68);
+      border-left: var(--table-column-first-border-width) solid rgb(52, 63, 68);
       border-right: 1px solid rgb(52, 63, 68);
-      border-top: var(--table-header-border-width, 0px) solid rgb(52, 63, 68);
+      border-top: var(--table-header-border-width) solid rgb(52, 63, 68);
       border-bottom: 1px solid rgb(52, 63, 68);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -17442,14 +17174,14 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(211, 198, 170));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgb(52, 63, 68);
-      border-left: var(--table-column-first-border-width, 0px) solid rgb(52, 63, 68);
+      border-left: var(--table-column-first-border-width) solid rgb(52, 63, 68);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -17466,7 +17198,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgb(45, 53, 59));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -17636,8 +17368,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(45, 53, 59));
-      color: var(--text-muted, rgb(157, 169, 160));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(157, 169, 160);
       border-width: 0px;
@@ -17651,7 +17383,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(157, 169, 160));
+      color: var(--text-muted);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17774,7 +17506,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(157, 169, 160));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17864,9 +17596,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(45, 53, 59));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(211, 198, 170));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(211, 198, 170);
@@ -18186,7 +17918,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(157, 169, 160));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -18207,7 +17939,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(157, 169, 160));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -18232,7 +17964,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(157, 169, 160);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18260,8 +17992,8 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(211, 198, 170));
-      font-weight: var(--table-header-weight, 400);
+      color: var(--table-header-color);
+      font-weight: var(--table-header-weight);
       border-color: rgb(52, 63, 68);
     }
 
@@ -18281,12 +18013,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(211, 198, 170));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(35, 42, 46));
+      background-color: var(--background-secondary);
       border-color: rgb(211, 198, 170);
       box-shadow: var(--input-shadow);
     }
@@ -18313,8 +18045,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(168, 193, 129, 0.1));
-      color: var(--pill-color, rgb(193, 209, 160));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -18328,7 +18060,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(157, 169, 160));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(157, 169, 160);
       border-width: 0px;
@@ -18339,8 +18071,8 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(35, 42, 46));
-      color: var(--status-bar-text-color, rgb(157, 169, 160));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18401,7 +18133,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(157, 169, 160));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -18443,7 +18175,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(157, 169, 160));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
@@ -18466,7 +18198,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(157, 169, 160));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(157, 169, 160);
       border-width: 0px;
@@ -18493,7 +18225,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(122, 132, 120));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18511,11 +18243,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(35, 42, 46));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(211, 198, 170));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18647,8 +18379,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(168, 193, 129, 0.1));
-      color: var(--tag-color, rgb(193, 209, 160));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(168, 193, 129, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -18678,17 +18410,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(230, 126, 128));
+      background-color: var(--checkbox-color);
       border-color: rgb(230, 126, 128);
     }
 
     .stacked-page {
       border-color: rgb(211, 198, 170);
-      background-color: var(--background-secondary, rgb(35, 42, 46));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(35, 42, 46));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -18696,7 +18428,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(211, 198, 170));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
@@ -18798,17 +18530,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -18947,17 +18675,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19096,17 +18820,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19245,17 +18965,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19394,17 +19110,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19543,17 +19255,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19692,17 +19400,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19841,17 +19545,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -19990,17 +19690,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -20139,17 +19835,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -20288,17 +19980,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -20437,17 +20125,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -20586,17 +20270,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -20735,17 +20415,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -20884,17 +20560,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21033,17 +20705,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21182,17 +20850,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21331,17 +20995,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21480,17 +21140,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21629,17 +21285,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21778,17 +21430,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -21927,17 +21575,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22076,17 +21720,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22225,17 +21865,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22374,17 +22010,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22523,17 +22155,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22672,17 +22300,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22821,17 +22445,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -22970,17 +22590,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -23119,17 +22735,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -23268,17 +22880,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -23417,17 +23025,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -23566,17 +23170,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -23715,17 +23315,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -23864,17 +23460,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24013,17 +23605,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24162,17 +23750,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24311,17 +23895,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24460,17 +24040,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24609,17 +24185,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24758,17 +24330,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -24907,17 +24475,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25056,17 +24620,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25205,17 +24765,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25354,17 +24910,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25503,17 +25055,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25652,17 +25200,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25801,17 +25345,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -25950,17 +25490,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26099,17 +25635,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26248,17 +25780,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26397,17 +25925,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26546,17 +26070,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26695,17 +26215,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26844,17 +26360,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -26993,17 +26505,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -27142,17 +26650,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -27291,17 +26795,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -27440,17 +26940,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -27589,17 +27085,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -27738,17 +27230,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -27887,17 +27375,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -28036,17 +27520,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -28185,17 +27665,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -28334,17 +27810,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -28483,17 +27955,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -28632,17 +28100,13 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
       --table-border-color: #363636;
-      --table-column-first-border-width: 1px;
-      --table-column-last-border-width: 1px;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
       --table-drag-handle-color-active: white;
       --table-header-background: transparent;
       --table-header-border-color: #363636;
-      --table-header-border-width: 1px;
       --table-header-color: #dadada;
       --table-header-weight: 600;
-      --table-row-last-border-width: 1px;
       --table-selection: hsla(258, 88%, 66%, 0.1);
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-background: hsla(258, 88%, 66%, 0.1);

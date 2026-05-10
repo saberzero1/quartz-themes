@@ -1513,7 +1513,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 4,
+                "childCount": 5,
                 "children": [
                   {
                     "tag": "div",
@@ -1667,6 +1667,121 @@
                         ],
                         "attrs": {
                           "data-path": "folder/nested",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "color(srgb 0.2295 0.2043 0.0405)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "color(srgb 0.2295 0.2043 0.0405)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.2295 0.2043 0.0405)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.2295 0.2043 0.0405)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.2295 0.2043 0.0405)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.2295 0.2043 0.0405)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "color(srgb 0.0765 0.0681 0.0135)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "color(srgb 0.0765 0.0681 0.0135) color(srgb 0.0765 0.0681 0.0135) color(srgb 0.0765 0.0681 0.0135) color(srgb 0.765 0.681 0.135 / 0.25)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.0765 0.0681 0.0135)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.0765 0.0681 0.0135)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "color(srgb 0.0765 0.0681 0.0135)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "color(srgb 0.0765 0.0681 0.0135)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-folder"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "color(srgb 0.0765 0.0681 0.0135)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "color(srgb 0.0765 0.0681 0.0135)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/unopened",
                           "draggable": "true"
                         },
                         "styles": {
@@ -2227,7 +2342,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 20,
+                "childCount": 18,
                 "children": [
                   {
                     "tag": "div",

@@ -3589,7 +3589,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: oklch(0.5 0.12 26.4067);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3604,7 +3604,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .nav-files-container {
@@ -8033,7 +8033,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: oklch(0.7 0.08 26.4067);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8048,7 +8048,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 700;
     }
 
     .nav-files-container {

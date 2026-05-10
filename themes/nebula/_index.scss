@@ -25,23 +25,23 @@
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted, #efd1d1) !important;
-  --checkbox-color: var(--interactive-accent, #b44949) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #07053500) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #06094059) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #ffffffdd) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, #efd1d1) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
@@ -50,16 +50,16 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #efd1d1) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #ffffffdd) !important;
-  --icon-color: var(--text-muted, #efd1d1) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal, #ffffffdd) !important;
-  --icon-color-hover: var(--text-muted, #efd1d1) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -412,20 +412,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgba(7, 5, 53, 0));
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgba(7, 5, 53, 0));
+    background-color: var(--background-primary);
     color: rgba(255, 255, 255, 0.867);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgba(7, 5, 53, 0));
+    background-color: var(--background-secondary);
     color: rgba(255, 255, 255, 0.867);
   }
 
@@ -433,12 +433,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(255, 255, 255));
+    background-color: var(--tab-container-background);
     color: rgba(255, 255, 255, 0.867);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgba(7, 5, 53, 0));
+    background-color: var(--tab-container-background);
     color: rgba(255, 255, 255, 0.867);
     border-left: 0px rgb(54, 54, 54);
   }
@@ -450,7 +450,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(137, 192, 251));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -479,7 +479,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(137, 192, 251));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -507,7 +507,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(137, 192, 251));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -516,7 +516,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(137, 192, 251) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(137, 192, 251));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -552,7 +552,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(239, 209, 209));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -580,7 +580,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgba(255, 255, 255, 0.867));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -608,7 +608,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgba(255, 255, 255, 0.867));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -636,7 +636,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgba(255, 255, 255, 0.867));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -664,7 +664,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgba(255, 255, 255, 0.867));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -770,7 +770,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgba(255, 255, 255, 0.867));
+    color: var(--italic-color);
     cursor: grab;
     font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
     font-weight: 600;
@@ -787,8 +787,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(249, 151, 207, 0));
-    color: var(--text-normal, rgb(255, 179, 101));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -843,7 +843,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(221, 81, 81, 0.6));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -856,7 +856,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(221, 81, 81, 0.6));
+    background-color: var(--background-modifier-hover);
     border: 0px rgba(255, 255, 255, 0.867);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -911,7 +911,7 @@ body {
       sans-serif;
     font-size: 17.5px;
     font-weight: var(--pill-weight);
-    line-height: var(--line-height-tight, 17.5px);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(218, 218, 218);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -930,13 +930,13 @@ body {
   }
 
   ul > li {
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
+    color: var(--text-normal);
     text-align: start;
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.5px);
-    padding-bottom: var(--list-spacing, 1.5px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -967,13 +967,13 @@ body {
   }
 
   ol > li {
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
+    color: var(--text-normal);
     text-align: start;
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.5px);
-    padding-bottom: var(--list-spacing, 1.5px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1004,7 +1004,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgba(95, 171, 225, 0.38));
+    background-color: var(--code-background);
     border: 0px solid rgb(221, 221, 221);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -1014,8 +1014,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(233, 234, 255));
-    font-family: var(--mono-font, "Source Code Pro", Consolas, monospace);
+    color: var(--code-normal);
+    font-family: var(--mono-font);
     padding: 1.8px 7.2px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1046,7 +1046,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgba(6, 9, 64, 0.35));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1110,8 +1110,8 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
-    font-family: var(--nice-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
+    color: var(--text-normal);
+    font-family: var(--nice-font);
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 36px;
@@ -1125,7 +1125,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(137, 192, 251));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1140,12 +1140,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
+    color: var(--text-normal);
     font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--overlay-bg, rgba(16, 31, 97, 0.54));
+    background-color: var(--overlay-bg);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1222,7 +1222,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgba(255, 255, 255, 0.867);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(221, 81, 81, 0.6));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1235,14 +1235,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(255, 255, 255));
-    font-family: var(--h1-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--h1-size, 32.36px);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 38.832px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h1-letter-spacing, -0.4854px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1268,14 +1268,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(255, 223, 223));
-    font-family: var(--h2-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--h2-size, 29.24px);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
     font-weight: var(--font-weight);
-    line-height: var(--h2-line-height, 35.088px);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h2-letter-spacing, -0.32164px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1301,14 +1301,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(255, 207, 207));
-    font-family: var(--h3-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--h3-size, 26.36px);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
     font-weight: var(--font-weight);
-    line-height: var(--h3-line-height, 34.268px);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h3-letter-spacing, -0.21088px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1334,14 +1334,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(255, 175, 175));
-    font-family: var(--h4-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--h4-size, 23.76px);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
     font-weight: var(--font-weight);
-    line-height: var(--h4-line-height, 33.264px);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h4-letter-spacing, -0.1188px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1367,14 +1367,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(255, 143, 143));
-    font-family: var(--h5-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--h5-size, 21.52px);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
+    font-size: var(--h5-size);
     font-weight: var(--font-weight);
-    line-height: var(--h5-line-height, 32.28px);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h5-letter-spacing, -0.04304px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1400,11 +1400,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(255, 111, 111));
-    font-family: var(--h6-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--h6-size, 20px);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight);
-    line-height: var(--h6-line-height, 30px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h6-letter-spacing);
@@ -1434,11 +1434,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgba(255, 255, 255, 0.867));
-    font-family: var(--inline-title-font, Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif);
-    font-size: var(--inline-title-size, 32.36px);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 38.832px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.4854px;
@@ -1856,7 +1856,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1915,7 +1915,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1973,7 +1973,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2031,7 +2031,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2089,7 +2089,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2147,7 +2147,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2205,7 +2205,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2263,7 +2263,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2321,7 +2321,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2379,7 +2379,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2437,7 +2437,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2495,7 +2495,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2553,7 +2553,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2611,7 +2611,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2715,7 +2715,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgba(255, 255, 255, 0.867));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2743,7 +2743,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgba(255, 255, 255, 0.867));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2937,8 +2937,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgba(6, 9, 64, 0.35));
-    color: var(--text-muted, rgb(239, 209, 209));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(239, 209, 209);
     border-width: 0px;
@@ -2952,7 +2952,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(239, 209, 209));
+    color: var(--text-muted);
     font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 0px;
@@ -3036,7 +3036,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(239, 209, 209));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3126,11 +3126,11 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgba(6, 9, 64, 0.35));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgba(255, 255, 255, 0.867));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
-    font-size: var(--code-size, 17.5px);
+    font-size: var(--code-size);
     border: 0px rgba(255, 255, 255, 0.867);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3396,7 +3396,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(255, 223, 223));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
     font-weight: var(--nav-item-weight);
@@ -3404,7 +3404,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(255, 223, 223));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
     font-weight: var(--nav-item-weight);
@@ -3416,21 +3416,8 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: rgb(255, 223, 223);
+    font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
     font-weight: 400;
   }
 
@@ -3444,7 +3431,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgba(255, 255, 255, 0.867));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgba(0, 0, 0, 0);
   }
@@ -3465,12 +3452,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgba(7, 5, 53, 0));
+    background-color: var(--background-secondary);
     border-color: rgba(255, 255, 255, 0.867);
     box-shadow: var(--input-shadow);
   }
@@ -3512,7 +3499,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(239, 209, 209));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(239, 209, 209);
     border-width: 0px;
@@ -3523,8 +3510,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgba(35, 1, 1, 0.72));
-    color: var(--status-bar-text-color, rgb(239, 209, 209));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
@@ -3559,7 +3546,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(255, 223, 223));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3588,7 +3575,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(255, 223, 223));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3598,7 +3585,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(239, 209, 209));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(239, 209, 209);
     border-width: 0px;
@@ -3643,11 +3630,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgba(35, 1, 1, 0.72));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgba(255, 255, 255, 0.867));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3780,7 +3767,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--tag-color, rgb(137, 192, 251));
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 30.625px;
     border-top-right-radius: 30.625px;
@@ -3810,17 +3797,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgba(101, 115, 136, 0.76));
+    background-color: var(--checkbox-color);
     border-color: rgb(180, 73, 73);
   }
 
   .stacked-page {
     border-color: rgba(255, 255, 255, 0.867);
-    background-color: var(--background-secondary, rgba(7, 5, 53, 0));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgba(6, 9, 64, 0.35));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -3828,17 +3815,15 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgba(255, 255, 255, 0.867));
-    font-size: var(--inline-title-size, 32.36px);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -3850,7 +3835,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -3871,10 +3855,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3892,16 +3872,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task=","] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -3913,7 +3890,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -3934,10 +3910,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3955,16 +3927,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task=";"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -3976,7 +3945,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -3997,10 +3965,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4018,16 +3982,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task=":"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4039,7 +4000,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4060,10 +4020,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4081,16 +4037,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="."] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4102,7 +4055,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4123,10 +4075,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4144,16 +4092,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="'"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4165,7 +4110,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4186,10 +4130,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4207,16 +4147,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="@"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4228,7 +4165,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4249,10 +4185,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4270,16 +4202,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="&"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4291,7 +4220,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4312,10 +4240,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4333,16 +4257,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="#"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4354,7 +4275,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4375,10 +4295,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4396,16 +4312,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="%"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4417,7 +4330,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4438,10 +4350,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4459,16 +4367,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="`"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4480,7 +4385,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4501,10 +4405,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4522,16 +4422,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="+"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4543,7 +4440,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4564,10 +4460,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4585,16 +4477,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="<"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4606,7 +4495,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4627,10 +4515,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4648,16 +4532,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="="] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4669,7 +4550,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4690,10 +4570,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4711,16 +4587,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="|"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4732,7 +4605,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4753,10 +4625,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4774,16 +4642,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="~"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4795,7 +4660,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4816,10 +4680,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4837,16 +4697,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="$"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4858,7 +4715,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4879,10 +4735,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4900,16 +4752,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="0"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4921,7 +4770,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -4942,10 +4790,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4963,16 +4807,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="1"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4984,7 +4825,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5005,10 +4845,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5026,16 +4862,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="2"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5047,7 +4880,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5068,10 +4900,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5089,16 +4917,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="3"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5110,7 +4935,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5131,10 +4955,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5152,16 +4972,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="4"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5173,7 +4990,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5194,10 +5010,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5215,16 +5027,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="5"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5236,7 +5045,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5257,10 +5065,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5278,16 +5082,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="6"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5299,7 +5100,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5320,10 +5120,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5341,16 +5137,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="7"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5362,7 +5155,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5383,10 +5175,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5404,16 +5192,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="8"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5425,7 +5210,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5446,10 +5230,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5467,16 +5247,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="9"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5488,7 +5265,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5509,10 +5285,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5530,16 +5302,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="a"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5551,7 +5320,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5572,10 +5340,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5593,16 +5357,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="A"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5614,7 +5375,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5635,10 +5395,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5656,16 +5412,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="B"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5677,7 +5430,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5698,10 +5450,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5719,16 +5467,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="C"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5740,7 +5485,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5761,10 +5505,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5782,16 +5522,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="D"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5803,7 +5540,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5824,10 +5560,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5845,16 +5577,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="e"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5866,7 +5595,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5887,10 +5615,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5908,16 +5632,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="E"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5929,7 +5650,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -5950,10 +5670,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5971,16 +5687,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="F"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5992,7 +5705,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6013,10 +5725,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6034,16 +5742,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="g"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6055,7 +5760,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6076,10 +5780,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6097,16 +5797,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="G"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6118,7 +5815,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6139,10 +5835,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6160,16 +5852,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="h"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6181,7 +5870,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6202,10 +5890,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6223,16 +5907,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="H"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6244,7 +5925,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6265,10 +5945,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6286,16 +5962,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="j"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6307,7 +5980,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6328,10 +6000,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6349,16 +6017,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="J"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6370,7 +6035,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6391,10 +6055,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6412,16 +6072,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="K"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6433,7 +6090,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6454,10 +6110,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6475,16 +6127,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="L"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6496,7 +6145,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6517,10 +6165,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6538,16 +6182,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="m"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6559,7 +6200,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6580,10 +6220,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6601,16 +6237,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="M"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6622,7 +6255,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6643,10 +6275,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6664,16 +6292,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="n"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6685,7 +6310,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6706,10 +6330,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6727,16 +6347,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="N"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6748,7 +6365,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6769,10 +6385,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6790,16 +6402,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="o"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6811,7 +6420,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6832,10 +6440,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6853,16 +6457,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="O"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6874,7 +6475,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6895,10 +6495,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6916,16 +6512,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="P"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6937,7 +6530,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -6958,10 +6550,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6979,16 +6567,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="q"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7000,7 +6585,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7021,10 +6605,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7042,16 +6622,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7063,7 +6640,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7084,10 +6660,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7105,16 +6677,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="r"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7126,7 +6695,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7147,10 +6715,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7168,16 +6732,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="R"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7189,7 +6750,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7210,10 +6770,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7231,16 +6787,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="s"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7252,7 +6805,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7273,10 +6825,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7294,16 +6842,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="t"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7315,7 +6860,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7336,10 +6880,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7357,16 +6897,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="T"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7378,7 +6915,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7399,10 +6935,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7420,16 +6952,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="U"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7441,7 +6970,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7462,10 +6990,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7483,16 +7007,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="v"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7504,7 +7025,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7525,10 +7045,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7546,16 +7062,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="V"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7567,7 +7080,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7588,10 +7100,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7609,16 +7117,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="W"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7630,7 +7135,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7651,10 +7155,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7672,16 +7172,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="x"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7693,7 +7190,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7714,10 +7210,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7735,16 +7227,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="X"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7756,7 +7245,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7777,10 +7265,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7798,16 +7282,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="y"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7819,7 +7300,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7840,10 +7320,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7861,16 +7337,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7882,7 +7355,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7903,10 +7375,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7924,16 +7392,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="z"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7945,7 +7410,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -7966,10 +7430,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7987,16 +7447,13 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgba(255, 255, 255, 0.867);
     --background-primary: #1e1e1e;
-    --background-primary-alt: #242424;
     --background-secondary: #262626;
-    --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8008,7 +7465,6 @@ body {
     --flair-color: #dadada;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --interactive-accent: hsl(258, 88%, 66%);
     --menu-background: #262626;
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
@@ -8029,10 +7485,6 @@ body {
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-header-color: #dadada;
     --table-selection-border-color: hsl(258, 88%, 66%);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-muted: #b3b3b3;
-    --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -8050,8 +7502,7 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    border-color: rgb(218, 218, 218);
   }
 
   html {

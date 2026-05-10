@@ -1379,7 +1379,6 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--h1-color) !important;
   --shadow-edges: 0 0 transparent !important;
   --h1-color: var(--header-color) !important;
   --h2-color: var(--header-color) !important;
@@ -1387,6 +1386,7 @@ body.theme-light {
   --h4-color: var(--header-color) !important;
   --h5-color: var(--header-color) !important;
   --h6-color: var(--header-color) !important;
+  --inline-title-color: var(--h1-color) !important;
   --bold-color: #000000 !important;
   --italic-color: #343b58 !important;
   --header-color: #34548a !important;

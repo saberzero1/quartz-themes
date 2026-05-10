@@ -8,65 +8,65 @@
 
 :root:root {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--kuro-purple-normal-rgb, 158, 96, 236);
-  --callout-default: var(--kuro-blue-dark-rgb, 104, 144, 215);
-  --callout-error: var(--kuro-red-normal-rgb, 210, 62, 8);
-  --callout-example: var(--kuro-magenta-dark-rgb, 204, 131, 189);
-  --callout-fail: var(--kuro-red-dark-rgb, 182, 96, 86);
-  --callout-important: var(--kuro-cyan-normal-rgb, 30, 249, 245);
-  --callout-info: var(--kuro-blue-normal-rgb, 42, 185, 255);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 16px);
-  --callout-question: var(--kuro-orange-dark-rgb, 171, 123, 78);
-  --callout-radius: var(--radius-s, 8px);
-  --callout-success: var(--kuro-green-normal-rgb, 84, 202, 116);
-  --callout-summary: var(--kuro-purple-light-rgb, 169, 148, 255);
-  --callout-tip: var(--kuro-cyan-dark-rgb, 96, 190, 190);
+  --callout-bug: var(--kuro-purple-normal-rgb);
+  --callout-default: var(--kuro-blue-dark-rgb);
+  --callout-error: var(--kuro-red-normal-rgb);
+  --callout-example: var(--kuro-magenta-dark-rgb);
+  --callout-fail: var(--kuro-red-dark-rgb);
+  --callout-important: var(--kuro-cyan-normal-rgb);
+  --callout-info: var(--kuro-blue-normal-rgb);
+  --callout-padding: 16px;
+  --callout-question: var(--kuro-orange-dark-rgb);
+  --callout-radius: 8px;
+  --callout-success: var(--kuro-green-normal-rgb);
+  --callout-summary: var(--kuro-purple-light-rgb);
+  --callout-tip: var(--kuro-cyan-dark-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--kuro-blue-light-rgb, 161, 217, 255);
-  --callout-warning: var(--kuro-orange-normal-rgb, 229, 150, 5);
-  --checkbox-border-color: var(--kuro-white-dark, #94959b) !important;
-  --checkbox-border-color-hover: var(--kuro-white-light, #ffffff) !important;
-  --checkbox-color: var(--kuro-black-light, #515151) !important;
-  --checkbox-color-hover: var(--kuro-green-dark, #85b1a9) !important;
-  --checkbox-marker-color: var(--kuro-white-dark, #94959b) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size, 24px) !important;
-  --code-background: var(--kuro-code-bg, #141515) !important;
+  --callout-todo: var(--kuro-blue-light-rgb);
+  --callout-warning: var(--kuro-orange-normal-rgb);
+  --checkbox-border-color: var(--kuro-white-dark) !important;
+  --checkbox-border-color-hover: var(--kuro-white-light) !important;
+  --checkbox-color: var(--kuro-black-light) !important;
+  --checkbox-color-hover: var(--kuro-green-dark) !important;
+  --checkbox-marker-color: var(--kuro-white-dark) !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 24px !important;
+  --code-background: var(--kuro-code-bg) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--kuro-code-comment, #fcffb8) !important;
-  --code-function: var(--kuro-code-function, #dbbb43) !important;
-  --code-important: var(--kuro-cyan-normal, #1ef9f5) !important;
-  --code-keyword: var(--kuro-code-keyword, #6890d7) !important;
-  --code-normal: var(--kuro-code-fg, #ffffff) !important;
-  --code-operator: var(--kuro-code-operator, #94959b) !important;
-  --code-property: var(--kuro-code-variable, #cc83bd) !important;
-  --code-punctuation: var(--kuro-code-punctuation, #94959b) !important;
-  --code-radius: var(--radius-s, 12px) !important;
+  --code-comment: var(--kuro-code-comment) !important;
+  --code-function: var(--kuro-code-function) !important;
+  --code-important: var(--kuro-cyan-normal) !important;
+  --code-keyword: var(--kuro-code-keyword) !important;
+  --code-normal: var(--kuro-code-fg) !important;
+  --code-operator: var(--kuro-code-operator) !important;
+  --code-property: var(--kuro-code-variable) !important;
+  --code-punctuation: var(--kuro-code-punctuation) !important;
+  --code-radius: 12px !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--kuro-code-string, #85b1a9) !important;
-  --code-tag: var(--kuro-code-constant, #2ab9ff) !important;
-  --code-value: var(--kuro-code-variable-other, #9d5918) !important;
-  --collapse-icon-color: var(--kuro-white-normal, #ddd0c4) !important;
-  --collapse-icon-color-collapsed: var(--kuro-white-dark, #94959b) !important;
+  --code-string: var(--kuro-code-string) !important;
+  --code-tag: var(--kuro-code-constant) !important;
+  --code-value: var(--kuro-code-variable-other) !important;
+  --collapse-icon-color: var(--kuro-white-normal) !important;
+  --collapse-icon-color-collapsed: var(--kuro-white-dark) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, rgba(255, 255, 255, 0.8)) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(257.488, 18.58664%, 64.26476%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, rgba(255, 255, 255, 0.6)) !important;
-  --graph-text: var(--text-normal, rgb(255, 255, 255)) !important;
-  --icon-color: var(--kuro-white-normal, #ddd0c4) !important;
-  --icon-color-active: var(--kuro-purple-light, #a994ff) !important;
-  --icon-color-focused: var(--kuro-purple-normal, #9e60ec) !important;
-  --icon-color-hover: var(--kuro-yellow-dark, #dbbb43) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--kuro-white-normal) !important;
+  --icon-color-active: var(--kuro-purple-light) !important;
+  --icon-color-focused: var(--kuro-purple-normal) !important;
+  --icon-color-hover: var(--kuro-yellow-dark) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.45;
   --callout-border-width: 1px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-quote: var(--kuro-brown-normal-rgb, 157, 89, 24);
+  --callout-quote: var(--kuro-brown-normal-rgb);
   --callout-title-padding: 0;
   --checkbox-margin-inline-start: 0.85em !important;
   --code-border-width: 0px !important;
@@ -85,7 +85,7 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-inline: var(--kuro-yellow-dark, #dbbb43) !important;
+  --code-inline: var(--kuro-yellow-dark) !important;
 
   --font-interface-override: "??";
   --font-text-override: "Atkinson Hyperlegible", "serif";
@@ -437,20 +437,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(20, 21, 21));
-    color: var(--text-normal, rgb(255, 255, 255));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(20, 21, 21));
+    background-color: var(--background-primary);
     color: rgb(255, 255, 255);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(33, 33, 33));
+    background-color: var(--background-secondary);
     color: rgb(255, 255, 255);
   }
 
@@ -458,12 +458,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(33, 33, 33));
+    background-color: var(--tab-container-background);
     color: rgb(255, 255, 255);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(33, 33, 33));
+    background-color: var(--tab-container-background);
     color: rgb(255, 255, 255);
     border-left: 0px rgb(81, 81, 81);
   }
@@ -475,7 +475,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(84, 202, 116));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -519,7 +519,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(42, 185, 255));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -562,7 +562,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(157, 147, 181));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -586,7 +586,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(157, 147, 181) none 0px;
     text-decoration: underline rgba(136, 122, 163, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(136, 122, 163, 0.3));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -622,7 +622,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgba(255, 255, 255, 0.8));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -663,7 +663,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(255, 255, 255));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -706,7 +706,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(255, 255, 255));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -749,7 +749,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(255, 255, 255));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -792,7 +792,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(255, 255, 255));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -913,7 +913,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(255, 255, 255));
+    color: var(--bold-color);
     cursor: grab;
     font-family:
       "Atkinson Hyperlegible",
@@ -945,8 +945,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--kuro-yellow-dark, rgb(219, 187, 67));
-    color: var(--kuro-black-dark, rgb(20, 21, 21));
+    background-color: var(--kuro-yellow-dark);
+    color: var(--kuro-black-dark);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1080,8 +1080,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(136, 122, 163, 0.5));
-    color: var(--pill-color, rgb(221, 208, 196));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1098,7 +1098,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-size: 14px;
-    font-weight: var(--pill-weight, 100);
+    font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
     text-decoration: rgb(218, 218, 218);
     margin-inline-start: 0px;
@@ -1123,8 +1123,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 2px);
-    padding-bottom: var(--list-spacing, 2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1160,8 +1160,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 2px);
-    padding-bottom: var(--list-spacing, 2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1192,7 +1192,7 @@ body {
   }
 
   code {
-    background-color: var(--kuro-black-light, rgb(81, 81, 81));
+    background-color: var(--kuro-black-light);
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1202,8 +1202,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-inline, rgb(219, 187, 67));
-    font-family: var(--kuro-monospace-default, "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+    color: var(--code-inline);
+    font-family: var(--kuro-monospace-default);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1234,7 +1234,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--kuro-black-normal, rgb(20, 21, 21));
+    background-color: var(--kuro-black-normal);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1275,7 +1275,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 24px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1298,7 +1298,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(255, 198, 99));
+    color: var(--blockquote-color);
     font-family:
       "Atkinson Hyperlegible",
       "serif",
@@ -1316,7 +1316,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    font-style: var(--blockquote-font-style, italic);
+    font-style: var(--blockquote-font-style);
     line-height: 24px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -1328,7 +1328,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgba(255, 255, 255, 0.6));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1343,7 +1343,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(255, 255, 255));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1361,7 +1361,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(20, 21, 21));
+    background-color: var(--prompt-background);
     border: 2px solid rgb(136, 122, 163);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -1466,10 +1466,10 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(148, 149, 155));
-    font-family: var(--h1-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
     font-size: var(--h1-size);
-    font-weight: var(--font-weight, 900);
+    font-weight: var(--font-weight);
     line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: underline;
@@ -1499,10 +1499,10 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(96, 190, 190));
-    font-family: var(--h2-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
-    font-weight: var(--font-weight, 900);
+    font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: underline;
@@ -1532,10 +1532,10 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(204, 131, 189));
-    font-family: var(--h3-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
-    font-weight: var(--font-weight, 900);
+    font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: underline;
@@ -1565,10 +1565,10 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(219, 187, 67));
-    font-family: var(--h4-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
-    font-weight: var(--font-weight, 900);
+    font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: underline;
@@ -1598,10 +1598,10 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(182, 96, 86));
-    font-family: var(--h5-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
-    font-weight: var(--font-weight, 900);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: underline;
@@ -1631,10 +1631,10 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(104, 144, 215));
-    font-family: var(--h6-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
-    font-weight: var(--font-weight, 900);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: underline;
@@ -1665,11 +1665,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(148, 149, 155));
-    font-family: var(--inline-title-font, "Atkinson Hyperlegible", "serif", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--inline-title-size, 28px);
-    font-weight: var(--inline-title-weight, 600);
-    line-height: var(--inline-title-line-height, 33.6px);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.42px;
@@ -2087,7 +2087,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 104, 144, 215);
+    --callout-color: var(--callout-default);
     border: 1px solid rgba(104, 144, 215, 0.45);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2129,7 +2129,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2146,7 +2146,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 104, 144, 215);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(104, 144, 215, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2187,7 +2187,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2204,7 +2204,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 169, 148, 255);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(169, 148, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2245,7 +2245,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2262,7 +2262,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 42, 185, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(42, 185, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2303,7 +2303,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2320,7 +2320,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 161, 217, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(161, 217, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2361,7 +2361,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2378,7 +2378,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 96, 190, 190);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(96, 190, 190, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2419,7 +2419,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2436,7 +2436,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 84, 202, 116);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(84, 202, 116, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2477,7 +2477,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2494,7 +2494,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 171, 123, 78);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(171, 123, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2535,7 +2535,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2552,7 +2552,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 229, 150, 5);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(229, 150, 5, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2593,7 +2593,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2610,7 +2610,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 210, 62, 8);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(210, 62, 8, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2651,7 +2651,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2668,7 +2668,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 182, 96, 86);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(182, 96, 86, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2709,7 +2709,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2726,7 +2726,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 158, 96, 236);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 96, 236, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2767,7 +2767,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2784,7 +2784,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 204, 131, 189);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(204, 131, 189, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2825,7 +2825,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2842,7 +2842,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 157, 89, 24);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(157, 89, 24, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2883,7 +2883,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(104, 144, 215));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2961,8 +2961,8 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(255, 255, 255));
-    font-weight: var(--table-header-weight, 800);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
@@ -2989,7 +2989,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(255, 255, 255));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3184,7 +3184,7 @@ body {
 
   .file-embed {
     background-color: var(--background-primary-alt);
-    color: var(--text-muted, rgba(255, 255, 255, 0.8));
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgba(255, 255, 255, 0.8);
     border-width: 0px;
@@ -3198,7 +3198,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgba(255, 255, 255, 0.8));
+    color: var(--text-muted);
     font-family:
       "Atkinson Hyperlegible",
       "serif",
@@ -3327,7 +3327,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgba(255, 255, 255, 0.8));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3417,9 +3417,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(20, 21, 21));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(255, 255, 255));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(255, 255, 255);
@@ -3747,7 +3747,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgba(255, 255, 255, 0.8));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3768,7 +3768,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgba(255, 255, 255, 0.8));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3793,7 +3793,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
+    color: rgba(255, 255, 255, 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3821,8 +3821,8 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(255, 255, 255));
-    font-weight: var(--table-header-weight, 800);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     border-color: rgb(54, 54, 54);
   }
 
@@ -3842,12 +3842,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(255, 255, 255));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(33, 33, 33));
+    background-color: var(--background-secondary);
     border-color: rgb(255, 255, 255);
     box-shadow: var(--input-shadow);
   }
@@ -3874,8 +3874,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(136, 122, 163, 0.5));
-    color: var(--pill-color, rgb(221, 208, 196));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3889,7 +3889,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(221, 208, 196));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(221, 208, 196);
     border-width: 0px;
@@ -3900,8 +3900,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(20, 21, 21));
-    color: var(--status-bar-text-color, rgb(136, 122, 163));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3916,7 +3916,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 14px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -3962,7 +3962,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgba(255, 255, 255, 0.8));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4004,7 +4004,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgba(255, 255, 255, 0.8));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -4027,7 +4027,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(221, 208, 196));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(221, 208, 196);
     border-width: 0px;
@@ -4054,7 +4054,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgba(255, 255, 255, 0.6));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4072,11 +4072,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(20, 21, 21));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(255, 255, 255));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4208,8 +4208,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(136, 122, 163, 0.5));
-    color: var(--tag-color, rgb(221, 208, 196));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(136, 122, 163, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4239,13 +4239,13 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(81, 81, 81));
+    background-color: var(--checkbox-color);
     border-color: rgb(81, 81, 81);
   }
 
   .stacked-page {
     border-color: rgb(255, 255, 255);
-    background-color: var(--background-secondary, rgb(33, 33, 33));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
@@ -4257,19 +4257,17 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(148, 149, 155));
-    font-size: var(--inline-title-size, 28px);
-    font-weight: var(--inline-title-weight, 600);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4277,9 +4275,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4292,7 +4288,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4335,7 +4330,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -4383,8 +4377,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -4412,10 +4404,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4423,9 +4413,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4438,7 +4426,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4481,7 +4468,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -4529,8 +4515,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -4558,10 +4542,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4569,9 +4551,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4584,7 +4564,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4627,7 +4606,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -4675,8 +4653,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -4704,10 +4680,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4715,9 +4689,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4730,7 +4702,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4773,7 +4744,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -4821,8 +4791,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -4850,10 +4818,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4861,9 +4827,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4876,7 +4840,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4919,7 +4882,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -4967,8 +4929,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -4996,10 +4956,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5007,9 +4965,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5022,7 +4978,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5065,7 +5020,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5113,8 +5067,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -5142,10 +5094,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5153,9 +5103,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5168,7 +5116,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5211,7 +5158,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5259,8 +5205,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -5288,10 +5232,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5299,9 +5241,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5314,7 +5254,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5357,7 +5296,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5405,8 +5343,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -5434,10 +5370,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5445,9 +5379,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5460,7 +5392,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5503,7 +5434,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5551,8 +5481,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -5580,10 +5508,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5591,9 +5517,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5606,7 +5530,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5649,7 +5572,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5697,8 +5619,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -5726,10 +5646,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5737,9 +5655,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5752,7 +5668,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5795,7 +5710,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5843,8 +5757,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -5872,10 +5784,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5883,9 +5793,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5898,7 +5806,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5941,7 +5848,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -5989,8 +5895,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6018,10 +5922,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6029,9 +5931,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6044,7 +5944,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6087,7 +5986,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -6135,8 +6033,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6164,10 +6060,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6175,9 +6069,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6190,7 +6082,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6233,7 +6124,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -6281,8 +6171,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6310,10 +6198,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6321,9 +6207,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6336,7 +6220,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6379,7 +6262,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -6427,8 +6309,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6456,10 +6336,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6467,9 +6345,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6482,7 +6358,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6525,7 +6400,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -6573,8 +6447,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6602,10 +6474,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6613,9 +6483,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6628,7 +6496,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6671,7 +6538,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -6719,8 +6585,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6748,10 +6612,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6759,9 +6621,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6774,7 +6634,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6817,7 +6676,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -6865,8 +6723,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -6894,10 +6750,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6905,9 +6759,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6920,7 +6772,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6963,7 +6814,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7011,8 +6861,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7040,10 +6888,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7051,9 +6897,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7066,7 +6910,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7109,7 +6952,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7157,8 +6999,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7186,10 +7026,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7197,9 +7035,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7212,7 +7048,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7255,7 +7090,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7303,8 +7137,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7332,10 +7164,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7343,9 +7173,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7358,7 +7186,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7401,7 +7228,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7449,8 +7275,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7478,10 +7302,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7489,9 +7311,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7504,7 +7324,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7547,7 +7366,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7595,8 +7413,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7624,10 +7440,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7635,9 +7449,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7650,7 +7462,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7693,7 +7504,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7741,8 +7551,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7770,10 +7578,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7781,9 +7587,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7796,7 +7600,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7839,7 +7642,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -7887,8 +7689,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -7916,10 +7716,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7927,9 +7725,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7942,7 +7738,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7985,7 +7780,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8033,8 +7827,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8062,10 +7854,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8073,9 +7863,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8088,7 +7876,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8131,7 +7918,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8179,8 +7965,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8208,10 +7992,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8219,9 +8001,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8234,7 +8014,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8277,7 +8056,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8325,8 +8103,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8354,10 +8130,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8365,9 +8139,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8380,7 +8152,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8423,7 +8194,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8471,8 +8241,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8500,10 +8268,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8511,9 +8277,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8526,7 +8290,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8569,7 +8332,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8617,8 +8379,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8646,10 +8406,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8657,9 +8415,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8672,7 +8428,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8715,7 +8470,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8763,8 +8517,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8792,10 +8544,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8803,9 +8553,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8818,7 +8566,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8861,7 +8608,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -8909,8 +8655,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -8938,10 +8682,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8949,9 +8691,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8964,7 +8704,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9007,7 +8746,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9055,8 +8793,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9084,10 +8820,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9095,9 +8829,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9110,7 +8842,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9153,7 +8884,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9201,8 +8931,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9230,10 +8958,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9241,9 +8967,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9256,7 +8980,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9299,7 +9022,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9347,8 +9069,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9376,10 +9096,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9387,9 +9105,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9402,7 +9118,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9445,7 +9160,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9493,8 +9207,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9522,10 +9234,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9533,9 +9243,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9548,7 +9256,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9591,7 +9298,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9639,8 +9345,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9668,10 +9372,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9679,9 +9381,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9694,7 +9394,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9737,7 +9436,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9785,8 +9483,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9814,10 +9510,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9825,9 +9519,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9840,7 +9532,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9883,7 +9574,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -9931,8 +9621,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -9960,10 +9648,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9971,9 +9657,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9986,7 +9670,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10029,7 +9712,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10077,8 +9759,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10106,10 +9786,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10117,9 +9795,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10132,7 +9808,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10175,7 +9850,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10223,8 +9897,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10252,10 +9924,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10263,9 +9933,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10278,7 +9946,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10321,7 +9988,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10369,8 +10035,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10398,10 +10062,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10409,9 +10071,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10424,7 +10084,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10467,7 +10126,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10515,8 +10173,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10544,10 +10200,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10555,9 +10209,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10570,7 +10222,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10613,7 +10264,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10661,8 +10311,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10690,10 +10338,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10701,9 +10347,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10716,7 +10360,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10759,7 +10402,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10807,8 +10449,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10836,10 +10476,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10847,9 +10485,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10862,7 +10498,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10905,7 +10540,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -10953,8 +10587,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -10982,10 +10614,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10993,9 +10623,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11008,7 +10636,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11051,7 +10678,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11099,8 +10725,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -11128,10 +10752,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11139,9 +10761,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11154,7 +10774,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11197,7 +10816,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11245,8 +10863,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -11274,10 +10890,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11285,9 +10899,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11300,7 +10912,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11343,7 +10954,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11391,8 +11001,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -11420,10 +11028,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11431,9 +11037,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11446,7 +11050,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11489,7 +11092,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11537,8 +11139,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -11566,10 +11166,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11577,9 +11175,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11592,7 +11188,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11635,7 +11230,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11683,8 +11277,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -11712,10 +11304,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11723,9 +11313,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11738,7 +11326,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11781,7 +11368,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11829,8 +11415,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -11858,10 +11442,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11869,9 +11451,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11884,7 +11464,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11927,7 +11506,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -11975,8 +11553,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12004,10 +11580,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12015,9 +11589,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12030,7 +11602,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12073,7 +11644,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12121,8 +11691,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12150,10 +11718,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12161,9 +11727,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12176,7 +11740,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12219,7 +11782,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12267,8 +11829,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12296,10 +11856,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12307,9 +11865,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12322,7 +11878,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12365,7 +11920,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12413,8 +11967,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12442,10 +11994,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12453,9 +12003,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12468,7 +12016,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12511,7 +12058,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12559,8 +12105,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12588,10 +12132,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12599,9 +12141,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12614,7 +12154,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12657,7 +12196,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12705,8 +12243,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12734,10 +12270,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12745,9 +12279,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12760,7 +12292,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12803,7 +12334,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12851,8 +12381,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -12880,10 +12408,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12891,9 +12417,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12906,7 +12430,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12949,7 +12472,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -12997,8 +12519,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13026,10 +12546,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13037,9 +12555,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13052,7 +12568,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13095,7 +12610,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -13143,8 +12657,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13172,10 +12684,8 @@ body {
     color: rgb(148, 149, 155);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13183,9 +12693,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13198,7 +12706,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13241,7 +12748,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -13289,8 +12795,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13318,10 +12822,8 @@ body {
     color: rgb(148, 149, 155);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13329,9 +12831,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13344,7 +12844,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13387,7 +12886,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -13435,8 +12933,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13464,10 +12960,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13475,9 +12969,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13490,7 +12982,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13533,7 +13024,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -13581,8 +13071,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13610,10 +13098,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13621,9 +13107,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13636,7 +13120,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13679,7 +13162,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -13727,8 +13209,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13756,10 +13236,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13767,9 +13245,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13782,7 +13258,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13825,7 +13300,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -13873,8 +13347,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -13902,10 +13374,8 @@ body {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --bold-weight: 600;
-    --button-radius: 5px;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13913,9 +13383,7 @@ body {
     --callout-fail: 251, 70, 76;
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
-    --callout-padding: 12px 12px 12px 24px;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13928,7 +13396,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -13971,7 +13438,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
-    --tab-font-size: 13px;
     --tab-outline-color: #363636;
     --tab-stacked-font-size: 13px;
     --tab-switcher-background: #262626;
@@ -14019,8 +13485,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --callout-quote: 158, 158, 158;
     --h1-style: normal;
     --h1-variant: normal;
@@ -14063,31 +13527,31 @@ body {
     --kuro-brown-light-rgb: 249, 207, 185;
     --kuro-brown-normal: #9d5918;
     --kuro-brown-normal-rgb: 157, 89, 24;
-    --kuro-code-attribute: var(--kuro-yellow-normal, #fff700);
-    --kuro-code-bg: var(--kuro-black-dark, #141515);
-    --kuro-code-comment: var(--kuro-yellow-light, #fcffb8);
-    --kuro-code-constant: var(--kuro-blue-normal, #2ab9ff);
-    --kuro-code-constant-builtin: var(--kuro-blue-normal, #2ab9ff);
-    --kuro-code-constant-builtin-bg: var(--kuro-blue-dark, #6890d7);
-    --kuro-code-constant-character-escape: var(--kuro-brown-light, #f9cfb9);
-    --kuro-code-constant-numeric: var(--kuro-cyan-dark, #60bebe);
-    --kuro-code-constructor: var(--kuro-cyan-normal, #1ef9f5);
-    --kuro-code-fg: var(--kuro-white-light, #ffffff);
-    --kuro-code-function: var(--kuro-yellow-dark, #dbbb43);
-    --kuro-code-function-macro: var(--kuro-purple-light, #a994ff);
-    --kuro-code-keyword: var(--kuro-blue-dark, #6890d7);
-    --kuro-code-label: var(--kuro-yellow-light, #fcffb8);
-    --kuro-code-namespace: var(--kuro-cyan-normal, #1ef9f5);
-    --kuro-code-operator: var(--kuro-white-dark, #94959b);
-    --kuro-code-punctuation: var(--kuro-white-dark, #94959b);
-    --kuro-code-special: var(--kuro-green-light, #c1ffae);
-    --kuro-code-string: var(--kuro-green-dark, #85b1a9);
-    --kuro-code-type: var(--kuro-orange-normal, #e59605);
-    --kuro-code-type-builtin: var(--kuro-blue-light, #a1d9ff);
-    --kuro-code-type-enum-variant: var(--kuro-yellow-light, #fcffb8);
-    --kuro-code-variable: var(--kuro-magenta-dark, #cc83bd);
-    --kuro-code-variable-other: var(--kuro-brown-normal, #9d5918);
-    --kuro-code-variable-other-member: var(--kuro-orange-dark, #ab7b4e);
+    --kuro-code-attribute: var(--kuro-yellow-normal);
+    --kuro-code-bg: var(--kuro-black-dark);
+    --kuro-code-comment: var(--kuro-yellow-light);
+    --kuro-code-constant: var(--kuro-blue-normal);
+    --kuro-code-constant-builtin: var(--kuro-blue-normal);
+    --kuro-code-constant-builtin-bg: var(--kuro-blue-dark);
+    --kuro-code-constant-character-escape: var(--kuro-brown-light);
+    --kuro-code-constant-numeric: var(--kuro-cyan-dark);
+    --kuro-code-constructor: var(--kuro-cyan-normal);
+    --kuro-code-fg: var(--kuro-white-light);
+    --kuro-code-function: var(--kuro-yellow-dark);
+    --kuro-code-function-macro: var(--kuro-purple-light);
+    --kuro-code-keyword: var(--kuro-blue-dark);
+    --kuro-code-label: var(--kuro-yellow-light);
+    --kuro-code-namespace: var(--kuro-cyan-normal);
+    --kuro-code-operator: var(--kuro-white-dark);
+    --kuro-code-punctuation: var(--kuro-white-dark);
+    --kuro-code-special: var(--kuro-green-light);
+    --kuro-code-string: var(--kuro-green-dark);
+    --kuro-code-type: var(--kuro-orange-normal);
+    --kuro-code-type-builtin: var(--kuro-blue-light);
+    --kuro-code-type-enum-variant: var(--kuro-yellow-light);
+    --kuro-code-variable: var(--kuro-magenta-dark);
+    --kuro-code-variable-other: var(--kuro-brown-normal);
+    --kuro-code-variable-other-member: var(--kuro-orange-dark);
     --kuro-cyan-dark: #60bebe;
     --kuro-cyan-dark-rgb: 96, 190, 190;
     --kuro-cyan-light: #8efff3;

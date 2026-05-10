@@ -490,7 +490,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(250, 250, 250));
+    background-color: var(--background-secondary);
     color: rgb(34, 34, 34);
   }
 
@@ -498,12 +498,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(250, 250, 250));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(250, 250, 250));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
     border-left: 0px rgb(224, 224, 224);
   }
@@ -515,7 +515,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(44, 84, 242));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -557,7 +557,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(44, 84, 242));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -598,7 +598,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(44, 84, 242));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -697,7 +697,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(138, 92, 245));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -738,7 +738,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(138, 92, 245));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -939,7 +939,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(138, 92, 245));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -1582,7 +1582,7 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(138, 92, 245));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -2104,7 +2104,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2163,7 +2163,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2221,7 +2221,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2279,7 +2279,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2337,7 +2337,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2395,7 +2395,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2453,7 +2453,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2511,7 +2511,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2569,7 +2569,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2627,7 +2627,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2685,7 +2685,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2743,7 +2743,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2801,7 +2801,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2859,7 +2859,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3028,7 +3028,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgb(255, 255, 255));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3041,11 +3041,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgb(255, 255, 255));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgb(255, 255, 255));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3828,7 +3828,7 @@ body {
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgb(255, 255, 255));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3901,7 +3901,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(250, 250, 250));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -4073,7 +4073,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(250, 250, 250));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -4246,7 +4246,7 @@ body {
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: var(--background-secondary, rgb(250, 250, 250));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
@@ -4949,7 +4949,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(89, 128, 247));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -4991,7 +4991,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(89, 128, 247));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -5032,7 +5032,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(89, 128, 247));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -5131,7 +5131,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(166, 138, 249));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -5172,7 +5172,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(166, 138, 249));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -5373,7 +5373,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(166, 138, 249));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -6016,7 +6016,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(166, 138, 249));
+      color: var(--h4-color);
       font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
@@ -6538,7 +6538,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6597,7 +6597,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6655,7 +6655,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6713,7 +6713,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6771,7 +6771,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6829,7 +6829,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6887,7 +6887,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6945,7 +6945,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7003,7 +7003,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7061,7 +7061,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7119,7 +7119,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7177,7 +7177,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7235,7 +7235,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7293,7 +7293,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7462,7 +7462,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgb(30, 30, 30));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7475,11 +7475,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgb(30, 30, 30));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgb(30, 30, 30));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -8262,7 +8262,7 @@ html[saved-theme="dark"] {
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgb(30, 30, 30));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {

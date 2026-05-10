@@ -1513,7 +1513,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 4,
+                "childCount": 5,
                 "children": [
                   {
                     "tag": "div",
@@ -1667,6 +1667,121 @@
                         ],
                         "attrs": {
                           "data-path": "folder/nested",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "oklab(0.74221 -0.0506973 -0.0432923)",
+                          "backgroundColor": "oklab(0.597207 -0.0792402 -0.0676556 / 0.075)",
+                          "borderColor": "oklab(0.74221 -0.0506973 -0.0432923)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "oklch(0.6375 0.0175 265)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "oklch(0.6375 0.0175 265)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "oklab(0.74221 -0.0506973 -0.0432923)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "oklab(0.74221 -0.0506973 -0.0432923)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "oklch(0.85 0.01125 265)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "oklch(0.85 0.01125 265) oklch(0.85 0.01125 265) oklch(0.85 0.01125 265) oklch(1 0.075 265 / 0.1)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "oklch(0.85 0.01125 265)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "oklch(0.85 0.01125 265)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "oklch(0.85 0.01125 265)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "oklch(0.85 0.01125 265)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-folder"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "oklch(0.85 0.01125 265)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "oklch(0.85 0.01125 265)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/unopened",
                           "draggable": "true"
                         },
                         "styles": {
@@ -2227,7 +2342,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 16,
+                "childCount": 14,
                 "children": [
                   {
                     "tag": "div",

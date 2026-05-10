@@ -14,12 +14,6 @@
       "aspect": "toc"
     },
     {
-      "property": "--art-deco-color",
-      "references": "--callout-color",
-      "selector": ".callout[data-callout=\"comic-panel\"]",
-      "aspect": "callouts"
-    },
-    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

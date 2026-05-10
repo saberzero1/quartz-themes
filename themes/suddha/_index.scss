@@ -24,42 +24,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, hsl(0, 0%, calc(95% - 3s5%))) !important;
-  --checkbox-border-color-hover: var(--text-muted, hsl(0, 0%, 40%)) !important;
-  --checkbox-color: var(--interactive-accent, hsl(258, 88%, 66%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(258, 88%, 56%)) !important;
-  --checkbox-marker-color: var(--background-primary, hsl(0, 0%, 90%)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, hsl(0, 0%, 93%)) !important;
-  --code-border-color: var(--background-modifier-border, hsl(0, 0%, 87%)) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, hsl(0, 0%, calc(95% - 3s5%))) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, hsl(0, 0%, -5%)) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, hsl(0, 0%, 40%)) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, hsl(0, 0%, calc(95% - 3s5%))) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(258, 88%, 66%)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, hsl(0, 0%, 40%)) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(258, 88%, 66%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(0, 0%, calc(95% - 3s5%))) !important;
-  --graph-text: var(--text-normal, hsl(0, 0%, -5%)) !important;
-  --icon-color: var(--text-muted, hsl(0, 0%, 40%)) !important;
-  --icon-color-active: var(--text-accent, hsl(258, 88%, 66%)) !important;
-  --icon-color-focused: var(--text-normal, hsl(0, 0%, -5%)) !important;
-  --icon-color-hover: var(--text-muted, hsl(0, 0%, 40%)) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -113,42 +113,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, hsl(0, 0%, 30%)) !important;
-  --checkbox-border-color-hover: var(--text-muted, hsl(0, 0%, 55%)) !important;
-  --checkbox-color: var(--interactive-accent, hsl(258, 88%, 85%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(258, 88%, 95%)) !important;
-  --checkbox-marker-color: var(--background-primary, hsl(0, 0%, 6%)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, hsl(0, 0%, 7%)) !important;
-  --code-border-color: var(--background-modifier-border, hsl(0, 0%, 15%)) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, hsl(0, 0%, 30%)) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, hsl(0, 0%, 80%)) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, hsl(0, 0%, 55%)) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, hsl(0, 0%, 30%)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(258, 88%, 85%)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, hsl(0, 0%, 55%)) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(258, 88%, 85%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(0, 0%, 30%)) !important;
-  --graph-text: var(--text-normal, hsl(0, 0%, 80%)) !important;
-  --icon-color: var(--text-muted, hsl(0, 0%, 55%)) !important;
-  --icon-color-active: var(--text-accent, hsl(258, 88%, 85%)) !important;
-  --icon-color-focused: var(--text-normal, hsl(0, 0%, 80%)) !important;
-  --icon-color-hover: var(--text-muted, hsl(0, 0%, 55%)) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -475,20 +475,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(230, 230, 230));
-    color: var(--text-normal, rgb(0, 0, 0));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(230, 230, 230));
+    background-color: var(--background-primary);
     color: rgb(0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(242, 242, 242));
+    background-color: var(--background-secondary);
     color: rgb(0, 0, 0);
   }
 
@@ -496,12 +496,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(242, 242, 242));
+    background-color: var(--tab-container-background);
     color: rgb(0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(242, 242, 242));
+    background-color: var(--tab-container-background);
     color: rgb(0, 0, 0);
     border-left: 0px rgb(222, 222, 222);
   }
@@ -513,7 +513,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--color-accent-bright, rgb(228, 103, 103));
+    color: var(--color-accent-bright);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -555,7 +555,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--background-modifier-accent, rgb(145, 102, 245));
+    color: var(--background-modifier-accent);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -574,7 +574,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 300);
+    font-weight: var(--link-weight);
     outline: rgb(145, 102, 245) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(145, 102, 245);
@@ -596,9 +596,9 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-faint, rgb(0, 0, 0));
+    color: var(--text-faint);
     cursor: var(--cursor-link);
-    filter: var(--link-unresolved-filter, opacity(0.3));
+    filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
     font-family:
@@ -615,7 +615,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 300);
+    font-weight: var(--link-weight);
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgba(138, 92, 245, 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color);
@@ -654,7 +654,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -682,7 +682,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(0, 0, 0));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -701,7 +701,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--bold-weight, 600);
+    font-weight: var(--bold-weight);
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(0, 0, 0);
@@ -723,7 +723,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(0, 0, 0));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -742,7 +742,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--bold-weight, 600);
+    font-weight: var(--bold-weight);
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(0, 0, 0);
@@ -764,7 +764,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -805,7 +805,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -924,7 +924,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -954,8 +954,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(255, 251, 104, 0.32));
-    color: var(--text-normal, rgb(0, 0, 0));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1103,8 +1103,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-size: 12.32px;
-    font-weight: var(--pill-weight, 150);
-    line-height: var(--line-height-tight, 12.32px);
+    font-weight: var(--pill-weight);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -1128,8 +1128,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.0032px);
-    padding-bottom: var(--list-spacing, 1.0032px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1165,8 +1165,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.0032px);
-    padding-bottom: var(--list-spacing, 1.0032px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1197,7 +1197,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(237, 237, 237));
+    background-color: var(--code-background);
     border: 0px solid rgb(222, 222, 222);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1207,7 +1207,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 1.848px 3.696px;
     padding-block-end: 0px;
@@ -1239,7 +1239,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(237, 237, 237));
+    background-color: var(--code-background);
     border: 0px solid rgb(222, 222, 222);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1280,7 +1280,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 10px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1303,7 +1303,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1331,7 +1331,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(0, 0, 0));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1346,12 +1346,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p");
+    color: var(--text-normal);
+    font-family: var(--text);
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--background-secondary-alt, rgb(242, 242, 242));
+    background-color: var(--background-secondary-alt);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1453,14 +1453,14 @@ body {
   }
 
   h1 {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h1-size, 22px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h1-line-height, 26.4px);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.33px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1486,14 +1486,14 @@ body {
   }
 
   h2 {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h2-size, 16px);
-    font-weight: var(--font-weight, 300);
-    line-height: var(--h2-line-height, 19.2px);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.176px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1519,14 +1519,14 @@ body {
   }
 
   h3 {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h3-size, 13px);
-    font-weight: var(--font-weight, 300);
-    line-height: var(--h3-line-height, 15.6px);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.104px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1535,10 +1535,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 21.7656px);
-    margin-bottom: 21.7656px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 21.7656px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1555,14 +1552,14 @@ body {
   }
 
   h4 {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h4-size, 13px);
-    font-weight: var(--font-weight, 300);
-    line-height: var(--h4-line-height, 15.6px);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.065px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1571,10 +1568,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 21.7656px);
-    margin-bottom: 21.7656px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 21.7656px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1591,14 +1585,14 @@ body {
   }
 
   h5 {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h5-size, 13px);
-    font-weight: var(--font-weight, 300);
-    line-height: var(--h5-line-height, 15.6px);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.026px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1607,10 +1601,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 21.7656px);
-    margin-bottom: 21.7656px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 21.7656px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1627,11 +1618,11 @@ body {
   }
 
   h6 {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h6-size, 13px);
-    font-weight: var(--font-weight, 300);
-    line-height: var(--h6-line-height, 15.6px);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -1661,11 +1652,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(0, 0, 0));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
-    font-size: var(--inline-title-size, 22.7814px);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 27.3377px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.341722px;
@@ -2032,7 +2023,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 300);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -2083,7 +2074,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2142,7 +2133,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2200,7 +2191,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2258,7 +2249,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2316,7 +2307,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2374,7 +2365,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2432,7 +2423,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2490,7 +2481,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2548,7 +2539,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2606,7 +2597,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2664,7 +2655,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2722,7 +2713,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2780,7 +2771,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2838,7 +2829,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2924,10 +2915,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 30px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 30px 0px 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2958,7 +2946,7 @@ body {
 
   th {
     background-color: rgb(242, 242, 242);
-    color: var(--table-header-color, rgb(0, 0, 0));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: center;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2986,7 +2974,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(0, 0, 0));
+    color: var(--table-text-color);
     font-weight: 150;
     text-align: left;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3010,7 +2998,7 @@ body {
   }
 
   tr {
-    background-color: var(--background-secondary-table, rgba(0, 0, 0, 0));
+    background-color: var(--background-secondary-table);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3180,8 +3168,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(237, 237, 237));
-    color: var(--text-muted, rgb(102, 102, 102));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(102, 102, 102);
     border-width: 0px;
@@ -3195,7 +3183,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3318,8 +3306,8 @@ body {
 
   input[type="text"] {
     background-color: rgb(250, 250, 250);
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p");
+    color: var(--text-normal);
+    font-family: var(--text);
     border: 1px solid rgb(222, 222, 222);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3395,11 +3383,11 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(237, 237, 237));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
-    font-size: var(--code-size, 12.32px);
+    font-size: var(--code-size);
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3717,18 +3705,18 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
     cursor: var(--cursor);
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
-    font-weight: var(--nav-item-weight, 300);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
     cursor: var(--cursor);
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
-    font-weight: var(--nav-item-weight, 300);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3737,22 +3725,9 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-weight: 400;
+    color: var(--text-normal);
+    font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
+    font-weight: 300;
   }
 
   .nav-files-container {
@@ -3765,7 +3740,7 @@ body {
 
   .bases-table thead th {
     background-color: rgb(242, 242, 242);
-    color: var(--table-header-color, rgb(0, 0, 0));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(222, 222, 222);
   }
@@ -3786,12 +3761,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(230, 230, 230));
+    background-color: var(--background-primary);
     border-color: rgb(0, 0, 0);
     box-shadow: var(--input-shadow);
   }
@@ -3833,7 +3808,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(102, 102, 102));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(102, 102, 102);
     border-width: 0px;
@@ -3844,10 +3819,10 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(242, 242, 242));
-    color: var(--status-bar-text-color, rgb(102, 102, 102));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
-    font-size: var(--status-bar-font-size, 11.2px);
+    font-size: var(--status-bar-font-size);
     text-align: justify;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -3880,11 +3855,11 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
   }
 
@@ -3909,17 +3884,17 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--text-muted, rgb(102, 102, 102));
+    color: var(--text-muted);
   }
 
   li.section-li > .section .meta {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
   }
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(102, 102, 102));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(102, 102, 102);
     border-width: 0px;
@@ -3946,7 +3921,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(102, 102, 102));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3964,12 +3939,12 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(242, 242, 242));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(0, 0, 0));
-    font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--text-normal);
+    font-family: var(--font-family-preview);
     font-size: 12px;
     font-weight: 400;
     line-height: 15.6px;
@@ -4119,17 +4094,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
+    background-color: var(--checkbox-color);
     border-color: rgba(0, 0, 0, 0);
   }
 
   .stacked-page {
     border-color: rgb(0, 0, 0);
-    background-color: var(--background-secondary, rgb(242, 242, 242));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(242, 242, 242));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4137,8 +4112,8 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(0, 0, 0));
-    font-size: var(--inline-title-size, 22.7814px);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -4218,16 +4193,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4316,16 +4287,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4414,16 +4381,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4512,16 +4475,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4610,16 +4569,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4708,16 +4663,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4806,16 +4757,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -4904,16 +4851,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5002,16 +4945,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5100,16 +5039,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5198,16 +5133,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5296,16 +5227,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5394,16 +5321,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5492,16 +5415,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5590,16 +5509,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5688,16 +5603,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5786,16 +5697,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5884,16 +5791,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -5982,16 +5885,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6080,16 +5979,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6178,16 +6073,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6276,16 +6167,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6374,16 +6261,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6472,16 +6355,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6570,16 +6449,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6668,16 +6543,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6766,16 +6637,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6864,16 +6731,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -6962,16 +6825,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7060,16 +6919,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7158,16 +7013,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7256,16 +7107,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7354,16 +7201,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7452,16 +7295,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7550,16 +7389,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7648,16 +7483,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7746,16 +7577,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7844,16 +7671,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -7942,16 +7765,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8040,16 +7859,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8138,16 +7953,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8236,16 +8047,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8334,16 +8141,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8432,16 +8235,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8530,16 +8329,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8628,16 +8423,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8726,16 +8517,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8824,16 +8611,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -8922,16 +8705,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9020,16 +8799,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9118,16 +8893,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9216,16 +8987,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9314,16 +9081,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9412,16 +9175,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9510,16 +9269,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9608,16 +9363,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9706,16 +9457,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9804,16 +9551,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -9902,16 +9645,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10000,16 +9739,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10098,16 +9833,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10196,16 +9927,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10294,16 +10021,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10392,16 +10115,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10490,16 +10209,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10588,16 +10303,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -10686,16 +10397,12 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    padding-bottom: 0px;
     padding-left: 0px;
-    padding-top: 0px;
     --accent-h: 258;
     --accent-l: 66%;
     --accent-s: 88%;
@@ -11389,20 +11096,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(15, 15, 15));
-      color: var(--text-normal, rgb(204, 204, 204));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(15, 15, 15));
+      background-color: var(--background-primary);
       color: rgb(204, 204, 204);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(26, 26, 26));
+      background-color: var(--background-secondary);
       color: rgb(204, 204, 204);
     }
 
@@ -11410,12 +11117,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(26, 26, 26));
+      background-color: var(--tab-container-background);
       color: rgb(204, 204, 204);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(26, 26, 26));
+      background-color: var(--tab-container-background);
       color: rgb(204, 204, 204);
       border-left: 0px rgb(38, 38, 38);
     }
@@ -11427,7 +11134,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--color-accent-bright, rgba(240, 168, 168, 0.9));
+      color: var(--color-accent-bright);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -11469,7 +11176,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--background-modifier-accent, rgb(169, 135, 247));
+      color: var(--background-modifier-accent);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -11488,7 +11195,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 300);
+      font-weight: var(--link-weight);
       outline: rgb(169, 135, 247) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(169, 135, 247);
@@ -11510,9 +11217,9 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-faint, rgb(77, 77, 77));
+      color: var(--text-faint);
       cursor: var(--cursor-link);
-      filter: var(--link-unresolved-filter, brightness(1.2));
+      filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
       font-family:
@@ -11529,7 +11236,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 300);
+      font-weight: var(--link-weight);
       outline: rgb(77, 77, 77) none 0px;
       text-decoration: rgba(138, 92, 245, 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color);
@@ -11568,7 +11275,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -11596,7 +11303,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(204, 204, 204));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11615,7 +11322,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--bold-weight, 600);
+      font-weight: var(--bold-weight);
       outline: rgb(204, 204, 204) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(204, 204, 204);
@@ -11637,7 +11344,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(204, 204, 204));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11656,7 +11363,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--bold-weight, 600);
+      font-weight: var(--bold-weight);
       outline: rgb(204, 204, 204) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(204, 204, 204);
@@ -11678,7 +11385,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(204, 204, 204));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11719,7 +11426,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(204, 204, 204));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11838,7 +11545,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(204, 204, 204));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -11868,8 +11575,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgba(255, 251, 104, 0.06));
-      color: var(--text-normal, rgb(255, 252, 125));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -12000,7 +11707,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
-      color: var(--pill-color, rgb(203, 183, 250));
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -12017,8 +11724,8 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-size: 12.32px;
-      font-weight: var(--pill-weight, 150);
-      line-height: var(--line-height-tight, 12.32px);
+      font-weight: var(--pill-weight);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgba(138, 92, 245, 0.15);
@@ -12042,8 +11749,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.0032px);
-      padding-bottom: var(--list-spacing, 1.0032px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -12079,8 +11786,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.0032px);
-      padding-bottom: var(--list-spacing, 1.0032px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -12111,7 +11818,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(18, 18, 18));
+      background-color: var(--code-background);
       border: 0px solid rgb(38, 38, 38);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -12121,7 +11828,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(204, 204, 204));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 1.848px 3.696px;
       padding-block-end: 0px;
@@ -12153,7 +11860,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(18, 18, 18));
+      background-color: var(--code-background);
       border: 0px solid rgb(38, 38, 38);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -12194,7 +11901,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 10px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -12217,7 +11924,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12245,7 +11952,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(77, 77, 77));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -12260,12 +11967,12 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p");
+      color: var(--text-normal);
+      font-family: var(--text);
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--background-secondary-alt, rgb(26, 26, 26));
+      background-color: var(--background-secondary-alt);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -12367,14 +12074,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h1-size, 22px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h1-line-height, 26.4px);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
+      font-size: var(--h1-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.33px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12400,14 +12107,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h2-size, 16px);
-      font-weight: var(--font-weight, 300);
-      line-height: var(--h2-line-height, 19.2px);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.176px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12433,14 +12140,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h3-size, 13px);
-      font-weight: var(--font-weight, 300);
-      line-height: var(--h3-line-height, 15.6px);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.104px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12449,10 +12156,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 21.7656px);
-      margin-bottom: 21.7656px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 21.7656px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -12469,14 +12173,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h4-size, 13px);
-      font-weight: var(--font-weight, 300);
-      line-height: var(--h4-line-height, 15.6px);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.065px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12485,10 +12189,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 21.7656px);
-      margin-bottom: 21.7656px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 21.7656px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -12505,14 +12206,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h5-size, 13px);
-      font-weight: var(--font-weight, 300);
-      line-height: var(--h5-line-height, 15.6px);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.026px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12521,10 +12222,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 21.7656px);
-      margin-bottom: 21.7656px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 21.7656px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -12541,11 +12239,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h6-size, 13px);
-      font-weight: var(--font-weight, 300);
-      line-height: var(--h6-line-height, 15.6px);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
+      font-size: var(--h6-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -12575,11 +12273,11 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(204, 204, 204));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
-      font-size: var(--inline-title-size, 22.7814px);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
-      line-height: var(--inline-title-line-height, 27.3377px);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.341722px;
@@ -12946,7 +12644,7 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: var(--nav-item-weight, 300);
+      font-weight: var(--nav-item-weight);
     }
 
     ::-webkit-scrollbar {
@@ -12997,7 +12695,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -13056,7 +12754,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13114,7 +12812,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13172,7 +12870,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13230,7 +12928,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13288,7 +12986,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13346,7 +13044,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13404,7 +13102,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13462,7 +13160,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13520,7 +13218,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13578,7 +13276,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13636,7 +13334,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13694,7 +13392,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13752,7 +13450,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13838,10 +13536,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 30px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 30px 0px 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -13872,7 +13567,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgb(26, 26, 26);
-      color: var(--table-header-color, rgb(204, 204, 204));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: center;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -13900,7 +13595,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(204, 204, 204));
+      color: var(--table-text-color);
       font-weight: 150;
       text-align: left;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -13924,7 +13619,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--background-secondary-table, rgba(0, 0, 0, 0));
+      background-color: var(--background-secondary-table);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -14094,8 +13789,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(18, 18, 18));
-      color: var(--text-muted, rgb(140, 140, 140));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(140, 140, 140);
       border-width: 0px;
@@ -14109,7 +13804,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14232,8 +13927,8 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgb(63, 63, 63);
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p");
+      color: var(--text-normal);
+      font-family: var(--text);
       border: 1px solid rgb(38, 38, 38);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -14309,11 +14004,11 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(18, 18, 18));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(204, 204, 204));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
-      font-size: var(--code-size, 12.32px);
+      font-size: var(--code-size);
       border: 0px rgb(204, 204, 204);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -14631,18 +14326,18 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
       cursor: var(--cursor);
       font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
-      font-weight: var(--nav-item-weight, 300);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
       cursor: var(--cursor);
       font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
-      font-weight: var(--nav-item-weight, 300);
+      font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -14651,22 +14346,9 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      font-weight: 400;
+      color: var(--text-normal);
+      font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
+      font-weight: 300;
     }
 
     .nav-files-container {
@@ -14679,7 +14361,7 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgb(26, 26, 26);
-      color: var(--table-header-color, rgb(204, 204, 204));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(38, 38, 38);
     }
@@ -14700,12 +14382,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(204, 204, 204));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(26, 26, 26));
+      background-color: var(--background-secondary);
       border-color: rgb(204, 204, 204);
       box-shadow: var(--input-shadow);
     }
@@ -14733,7 +14415,7 @@ html[saved-theme="dark"] {
 
     .note-properties-tags {
       background-color: var(--pill-background);
-      color: var(--pill-color, rgb(203, 183, 250));
+      color: var(--pill-color);
       border-radius: 24.64px;
     }
 
@@ -14747,7 +14429,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(140, 140, 140));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(140, 140, 140);
       border-width: 0px;
@@ -14758,10 +14440,10 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(26, 26, 26));
-      color: var(--status-bar-text-color, rgb(140, 140, 140));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
-      font-size: var(--status-bar-font-size, 11.2px);
+      font-size: var(--status-bar-font-size);
       text-align: justify;
       padding-top: 0px;
       padding-bottom: 0px;
@@ -14794,11 +14476,11 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: var(--text-normal, rgb(204, 204, 204));
+      color: var(--text-normal);
       font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
     }
 
@@ -14823,17 +14505,17 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--text-muted, rgb(140, 140, 140));
+      color: var(--text-muted);
     }
 
     li.section-li > .section .meta {
-      color: var(--text-normal, rgb(204, 204, 204));
+      color: var(--text-normal);
       font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
     }
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(140, 140, 140));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(140, 140, 140);
       border-width: 0px;
@@ -14860,7 +14542,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(77, 77, 77));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14878,12 +14560,12 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(26, 26, 26));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(204, 204, 204));
-      font-family: var(--font-family-preview, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--text-normal);
+      font-family: var(--font-family-preview);
       font-size: 12px;
       font-weight: 400;
       line-height: 15.6px;
@@ -15003,7 +14685,7 @@ html[saved-theme="dark"] {
 
     ul.tags > li {
       background-color: var(--tag-background);
-      color: var(--tag-color, rgb(203, 183, 250));
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 21.56px;
       border-top-right-radius: 21.56px;
@@ -15033,17 +14715,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
+      background-color: var(--checkbox-color);
       border-color: rgba(0, 0, 0, 0);
     }
 
     .stacked-page {
       border-color: rgb(204, 204, 204);
-      background-color: var(--background-secondary, rgb(26, 26, 26));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(26, 26, 26));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -15051,8 +14733,8 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(204, 204, 204));
-      font-size: var(--inline-title-size, 22.7814px);
+      color: var(--inline-title-color);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
 
@@ -15132,16 +14814,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15230,16 +14908,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15328,16 +15002,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15426,16 +15096,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15524,16 +15190,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15622,16 +15284,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15720,16 +15378,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15818,16 +15472,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -15916,16 +15566,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16014,16 +15660,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16112,16 +15754,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16210,16 +15848,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16308,16 +15942,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16406,16 +16036,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16504,16 +16130,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16602,16 +16224,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16700,16 +16318,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16798,16 +16412,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16896,16 +16506,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -16994,16 +16600,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17092,16 +16694,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17190,16 +16788,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17288,16 +16882,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17386,16 +16976,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17484,16 +17070,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17582,16 +17164,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17680,16 +17258,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17778,16 +17352,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17876,16 +17446,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -17974,16 +17540,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18072,16 +17634,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18170,16 +17728,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18268,16 +17822,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18366,16 +17916,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18464,16 +18010,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18562,16 +18104,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18660,16 +18198,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18758,16 +18292,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18856,16 +18386,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -18954,16 +18480,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19052,16 +18574,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19150,16 +18668,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19248,16 +18762,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19346,16 +18856,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19444,16 +18950,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19542,16 +19044,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19640,16 +19138,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19738,16 +19232,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19836,16 +19326,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -19934,16 +19420,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20032,16 +19514,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20130,16 +19608,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20228,16 +19702,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20326,16 +19796,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20424,16 +19890,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20522,16 +19984,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20620,16 +20078,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20718,16 +20172,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20816,16 +20266,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -20914,16 +20360,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21012,16 +20454,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21110,16 +20548,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21208,16 +20642,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21306,16 +20736,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21404,16 +20830,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21502,16 +20924,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;
@@ -21600,16 +21018,12 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-size: 15px;
       font-weight: 400;
       line-height: 1.3;
-      padding-bottom: 0px;
       padding-left: 0px;
-      padding-top: 0px;
       --accent-h: 258;
       --accent-l: 66%;
       --accent-s: 88%;

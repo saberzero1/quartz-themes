@@ -3017,6 +3017,7 @@
     "--nav-item-weight": ".nav-folder-title"
   },
   ".tree-item-children": { "--focus-ring-color": ":root *" },
+  ".nav-folder-title-content": { "--focus-ring-color": ":root *" },
   ".nav-files-container": { "--focus-ring-color": ":root *" },
   ".multi-select-pill": {
     "--focus-ring-color": ":root *",

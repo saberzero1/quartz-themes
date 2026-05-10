@@ -382,7 +382,7 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--tr, transparent) !important;
+  --background-modifier-border: var(--tr) !important;
   --background-modifier-border-focus: var(--color-base-40) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-error: var(--color-red) !important;
@@ -395,11 +395,11 @@ body.theme-light {
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: var(--tr, transparent) !important;
+  --background-primary: var(--tr) !important;
   --background-primary-alt: var(--color-base-10) !important;
-  --background-secondary: var(--tr, transparent) !important;
+  --background-secondary: var(--tr) !important;
   --background-secondary-alt: var(--color-base-05) !important;
-  --bases-cards-background: var(--background-primary, transparent) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(--background-primary-alt) !important;
@@ -407,10 +407,7 @@ body.theme-light {
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
@@ -418,11 +415,8 @@ body.theme-light {
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, transparent) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt
   ) !important;
@@ -435,10 +429,7 @@ body.theme-light {
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -453,10 +444,7 @@ body.theme-light {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -501,7 +489,7 @@ body.theme-light {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, transparent) !important;
+  --canvas-background: var(--background-primary) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -518,16 +506,13 @@ body.theme-light {
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, transparent) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--background-primary-alt) !important;
-  --code-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
@@ -561,7 +546,7 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--tr, transparent) !important;
+  --divider-color: var(--tr) !important;
   --divider-color-hover: var(--interactive-accent) !important;
   --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
@@ -575,11 +560,8 @@ body.theme-light {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, transparent) !important;
-  --file-header-background-focused: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -603,10 +585,7 @@ body.theme-light {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(
-    --metadata-divider-color,
-    transparent
-  ) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
@@ -637,7 +616,7 @@ body.theme-light {
   --h6-line-height: var(--line-height-normal) !important;
   --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: var(--background-modifier-border, transparent) !important;
+  --hr-color: var(--background-modifier-border) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
@@ -653,7 +632,7 @@ body.theme-light {
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
-  --input-border-width: var(--border-width) !important;
+  --input-border-width: 1px !important;
   --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
@@ -679,21 +658,15 @@ body.theme-light {
   --list-marker-color: var(--text-faint) !important;
   --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(--background-secondary, transparent) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
   --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
@@ -722,7 +695,7 @@ body.theme-light {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, transparent) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -763,17 +736,14 @@ body.theme-light {
   --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, transparent) !important;
-  --pdf-page-background: var(--background-primary, transparent) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(--background-primary, transparent) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
   --pill-color: var(--text-muted) !important;
@@ -782,26 +752,16 @@ body.theme-light {
   --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, transparent) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, transparent 65%, transparent)
-      linear-gradient(
-        transparent,
-        color-mix(in srgb, transparent 65%, transparent)
-      )
-  ) !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary, transparent) !important;
-  --ribbon-background-collapsed: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -813,15 +773,12 @@ body.theme-light {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted) !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary, transparent) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
@@ -837,10 +794,7 @@ body.theme-light {
   --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
   --shiki-gutter-text-color: var(--text-faint) !important;
   --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
@@ -864,17 +818,14 @@ body.theme-light {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
-  --status-bar-background: var(--background-secondary, transparent) !important;
-  --status-bar-border-color: var(--divider-color, transparent) !important;
+  --slider-track-background: var(--background-modifier-border) !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary, transparent) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
   --sync-avatar-color-2: var(--color-orange) !important;
@@ -884,21 +835,15 @@ body.theme-light {
   --sync-avatar-color-6: var(--color-blue) !important;
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(--background-primary, transparent) !important;
-  --tab-container-background: var(
-    --background-secondary,
-    transparent
-  ) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(--divider-color, transparent) !important;
+  --tab-outline-color: var(--divider-color) !important;
   --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(
-    --background-secondary,
-    transparent
-  ) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -913,15 +858,9 @@ body.theme-light {
   --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --table-border-color: var(--background-modifier-border) !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
@@ -931,10 +870,7 @@ body.theme-light {
   --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-header-background: var(--table-background) !important;
-  --table-header-border-color: var(
-    --table-border-color,
-    transparent
-  ) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
@@ -970,12 +906,9 @@ body.theme-light {
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, transparent) !important;
+  --titlebar-background: var(--background-secondary) !important;
   --titlebar-background-focused: var(--background-secondary-alt) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
@@ -1003,7 +936,7 @@ body.theme-light {
   --accent-l: 66% !important;
   --accent-s: 88% !important;
   --anim-duration-fast: calc(var(--animationspeed)/2) !important;
-  --anim-duration-moderate: var(--animationspeed, 500ms) !important;
+  --anim-duration-moderate: var(--animationspeed) !important;
   --anim-duration-none: 0 !important;
   --anim-duration-slow: calc(var(--animationspeed) * 2) !important;
   --anim-duration-superfast: calc(var(--animationspeed)/4) !important;
@@ -1454,11 +1387,8 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--tr, transparent) !important;
-  --background-modifier-border-focus: var(
-    --color-base-40,
-    #55555560
-  ) !important;
+  --background-modifier-border: var(--tr) !important;
+  --background-modifier-border-focus: #55555560 !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
@@ -1470,11 +1400,11 @@ body.theme-dark {
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: var(--tr, transparent) !important;
+  --background-primary: var(--tr) !important;
   --background-primary-alt: var(--color-base-10) !important;
-  --background-secondary: var(--tr, transparent) !important;
+  --background-secondary: var(--tr) !important;
   --background-secondary-alt: var(--color-base-30) !important;
-  --bases-cards-background: var(--background-primary, transparent) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
   --bases-cards-cover-background: var(--background-primary-alt) !important;
@@ -1482,10 +1412,7 @@ body.theme-dark {
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
@@ -1493,11 +1420,8 @@ body.theme-dark {
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, transparent) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt
   ) !important;
@@ -1510,10 +1434,7 @@ body.theme-dark {
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
   --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -1528,10 +1449,7 @@ body.theme-dark {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
@@ -1576,7 +1494,7 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, transparent) !important;
+  --canvas-background: var(--background-primary) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -1593,16 +1511,13 @@ body.theme-dark {
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, transparent) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --clickable-icon-radius: var(--radius-s) !important;
   --code-background: var(--background-primary-alt) !important;
-  --code-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
@@ -1636,10 +1551,10 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--tr, transparent) !important;
+  --divider-color: var(--tr) !important;
   --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal, #00000060) !important;
-  --dropdown-background-hover: var(--interactive-hover, #00000060) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -1650,18 +1565,15 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, transparent) !important;
-  --file-header-background-focused: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
-  --flair-background: var(--interactive-normal, #00000060) !important;
+  --flair-background: var(--interactive-normal) !important;
   --flair-color: var(--text-normal) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -1678,10 +1590,7 @@ body.theme-dark {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(
-    --metadata-divider-color,
-    transparent
-  ) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
@@ -1712,7 +1621,7 @@ body.theme-dark {
   --h6-line-height: var(--line-height-normal) !important;
   --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: var(--background-modifier-border, transparent) !important;
+  --hr-color: var(--background-modifier-border) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
@@ -1728,7 +1637,7 @@ body.theme-dark {
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
-  --input-border-width: var(--border-width) !important;
+  --input-border-width: 1px !important;
   --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
@@ -1738,8 +1647,8 @@ body.theme-dark {
   --interactive-accent: var(--color-accent) !important;
   --interactive-accent-hover: var(--color-accent-1) !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
-  --interactive-hover: var(--tr06, #00000060) !important;
-  --interactive-normal: var(--tr06, #00000060) !important;
+  --interactive-hover: var(--tr06) !important;
+  --interactive-normal: var(--tr06) !important;
   --link-color: var(--text-accent) !important;
   --link-color-hover: var(--text-accent-hover) !important;
   --link-external-color: var(--text-accent) !important;
@@ -1754,21 +1663,15 @@ body.theme-dark {
   --list-marker-color: var(--text-faint) !important;
   --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(--background-secondary, transparent) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
   --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
@@ -1797,7 +1700,7 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, transparent) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -1838,15 +1741,12 @@ body.theme-dark {
   --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, transparent) !important;
-  --pdf-page-background: var(--background-primary, transparent) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary, transparent) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
   --pill-color: var(--text-muted) !important;
@@ -1855,23 +1755,16 @@ body.theme-dark {
   --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, transparent) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, #00000060 65%, transparent)
-      linear-gradient(#00000060, color-mix(in srgb, #00000060 65%, transparent))
-  ) !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary, transparent) !important;
-  --ribbon-background-collapsed: var(
-    --background-primary,
-    transparent
-  ) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -1883,15 +1776,12 @@ body.theme-dark {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --search-clear-button-color: var(--text-muted) !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary, transparent) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
   --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
   --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
@@ -1907,10 +1797,7 @@ body.theme-dark {
   --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
   --shiki-gutter-text-color: var(--text-faint) !important;
   --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
@@ -1934,17 +1821,14 @@ body.theme-dark {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
-  --status-bar-background: var(--background-secondary, transparent) !important;
-  --status-bar-border-color: var(--divider-color, transparent) !important;
+  --slider-track-background: var(--background-modifier-border) !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
   --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary, transparent) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
   --sync-avatar-color-2: var(--color-orange) !important;
@@ -1954,21 +1838,15 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue) !important;
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(--background-primary, transparent) !important;
-  --tab-container-background: var(
-    --background-secondary,
-    transparent
-  ) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(--divider-color, transparent) !important;
+  --tab-outline-color: var(--divider-color) !important;
   --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(
-    --background-secondary,
-    transparent
-  ) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -1983,15 +1861,9 @@ body.theme-dark {
   --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --table-border-color: var(--background-modifier-border) !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
@@ -2001,10 +1873,7 @@ body.theme-dark {
   --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-header-background: var(--table-background) !important;
-  --table-header-border-color: var(
-    --table-border-color,
-    transparent
-  ) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
   --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
@@ -2040,12 +1909,9 @@ body.theme-dark {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, transparent) !important;
+  --titlebar-background: var(--background-secondary) !important;
   --titlebar-background-focused: var(--background-secondary-alt) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    transparent
-  ) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
@@ -2073,7 +1939,7 @@ body.theme-dark {
   --accent-l: 66% !important;
   --accent-s: 88% !important;
   --anim-duration-fast: calc(var(--animationspeed)/2) !important;
-  --anim-duration-moderate: var(--animationspeed, 500ms) !important;
+  --anim-duration-moderate: var(--animationspeed) !important;
   --anim-duration-none: 0 !important;
   --anim-duration-slow: calc(var(--animationspeed) * 2) !important;
   --anim-duration-superfast: calc(var(--animationspeed)/4) !important;
@@ -3191,7 +3057,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: var(--tr06, rgba(0, 0, 0, 0));
+  background-color: var(--tr06);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3231,7 +3097,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: var(--tr06, rgba(0, 0, 0, 0));
+  background-color: var(--tr06);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3330,7 +3196,7 @@ body body.theme-light .footnote-backref {
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
-  background-color: var(--tr06, rgba(0, 0, 0, 0));
+  background-color: var(--tr06);
   border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -3357,7 +3223,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: var(--overlay-color, rgba(0, 0, 0, 0));
+  background-color: var(--overlay-color);
   border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3709,7 +3575,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3771,7 +3637,7 @@ body body.theme-light .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 0, 191, 188);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3812,7 +3678,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 8, 109, 221);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3853,7 +3719,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 8, 109, 221);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3894,7 +3760,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 0, 191, 188);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3935,7 +3801,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 8, 185, 78);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -3976,7 +3842,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 236, 117, 0);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4017,7 +3883,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 236, 117, 0);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4058,7 +3924,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 233, 49, 71);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4099,7 +3965,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 233, 49, 71);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4140,7 +4006,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 233, 49, 71);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4181,7 +4047,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 120, 82, 238);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -4222,7 +4088,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -4531,7 +4397,7 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: var(--tr06, rgba(0, 0, 0, 0));
+  background-color: var(--tr06);
   color: var(--text-muted);
   border-radius: 8px;
   border-color: rgb(92, 92, 92);
@@ -4660,7 +4526,7 @@ body body.theme-light input[type="range"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light input[type="text"] {
-  background-color: var(--tr06, rgba(0, 0, 0, 0));
+  background-color: var(--tr06);
   color: var(--text-normal);
   font-family:
     ui-sans-serif,
@@ -5046,7 +4912,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--kolorboku, rgb(29, 29, 31));
+  color: var(--kolorboku);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -5073,7 +4939,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--kolorboku, rgb(29, 29, 31));
+  color: var(--kolorboku);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -5094,7 +4960,7 @@ body
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(0, 0, 0));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(0, 0, 0);
   border-width: 0px;
@@ -5104,7 +4970,7 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-light .site-footer {
-  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+  background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
@@ -5161,7 +5027,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: var(--kolorboku, rgb(29, 29, 31));
+  color: var(--kolorboku);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(29, 29, 31);
@@ -5191,7 +5057,7 @@ body body.theme-light .nav-files-container {
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(0, 0, 0));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(0, 0, 0);
   border-width: 0px;
@@ -6028,7 +5894,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+  background-color: var(--tr06);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -6068,7 +5934,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+  background-color: var(--tr06);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -6167,7 +6033,7 @@ body body.theme-dark .footnote-backref {
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
-  background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+  background-color: var(--tr06);
   border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -6194,7 +6060,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: var(--overlay-color, rgba(0, 0, 0, 0.5));
+  background-color: var(--overlay-color);
   border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -6546,7 +6412,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -6608,7 +6474,7 @@ body body.theme-dark .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 83, 223, 221);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -6649,7 +6515,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 2, 122, 255);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6690,7 +6556,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 2, 122, 255);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6731,7 +6597,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 83, 223, 221);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -6772,7 +6638,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 68, 207, 110);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -6813,7 +6679,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 233, 151, 63);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -6854,7 +6720,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 233, 151, 63);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -6895,7 +6761,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 251, 70, 76);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6936,7 +6802,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 251, 70, 76);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -6977,7 +6843,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 251, 70, 76);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -7018,7 +6884,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 168, 130, 255);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -7059,7 +6925,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -7368,7 +7234,7 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+  background-color: var(--tr06);
   color: var(--text-muted);
   border-radius: 8px;
   border-color: rgb(179, 179, 179);
@@ -7497,7 +7363,7 @@ body body.theme-dark input[type="range"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark input[type="text"] {
-  background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+  background-color: var(--tr06);
   color: var(--text-normal);
   font-family:
     ui-sans-serif,
@@ -7883,7 +7749,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--kolorboku, rgb(226, 224, 220));
+  color: var(--kolorboku);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -7910,7 +7776,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--kolorboku, rgb(226, 224, 220));
+  color: var(--kolorboku);
   cursor: var(--cursor);
   font-family:
     ui-sans-serif,
@@ -7931,7 +7797,7 @@ body
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(255, 255, 255));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(255, 255, 255);
   border-width: 0px;
@@ -7941,7 +7807,7 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+  background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
@@ -7998,7 +7864,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: var(--kolorboku, rgb(226, 224, 220));
+  color: var(--kolorboku);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(226, 224, 220);
@@ -8028,7 +7894,7 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(255, 255, 255));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(255, 255, 255);
   border-width: 0px;

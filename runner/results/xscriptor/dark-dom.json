@@ -1513,7 +1513,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 4,
+                "childCount": 5,
                 "children": [
                   {
                     "tag": "div",
@@ -1722,6 +1722,121 @@
                           "color": "rgb(255, 255, 255)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
                           "borderColor": "rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) rgb(85, 163, 255)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-folder"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 255)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/unopened",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(42, 42, 42) rgb(42, 42, 42) rgb(42, 42, 42) rgb(162, 155, 254)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(208, 208, 208)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(208, 208, 208)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) rgb(162, 155, 254)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -2227,7 +2342,7 @@
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
-                "childCount": 28,
+                "childCount": 26,
                 "children": [
                   {
                     "tag": "div",

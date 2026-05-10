@@ -1,0 +1,65 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--folder-bg-opacity",
+      "references": "--folder-bg-opacity-setting",
+      "selector": ".spacer",
+      "aspect": "misc"
+    },
+    {
+      "property": "--folder-hover-opacity",
+      "references": "--folder-hover-opacity-setting",
+      "selector": ".spacer",
+      "aspect": "misc"
+    },
+    {
+      "property": "--folder-sub-bg-opacity",
+      "references": "--folder-sub-bg-opacity-setting",
+      "selector": ".spacer",
+      "aspect": "misc"
+    },
+    {
+      "property": "--folder-sub-text-opacity",
+      "references": "--folder-sub-text-opacity-setting",
+      "selector": ".spacer",
+      "aspect": "misc"
+    },
+    {
+      "property": "--folder-text-opacity",
+      "references": "--folder-text-opacity-setting",
+      "selector": ".spacer",
+      "aspect": "misc"
+    },
+    {
+      "property": "--nav-collapse-icon-color",
+      "references": "--folder-text-2",
+      "selector": "li.depth-0",
+      "aspect": "toc"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--nav-collapse-icon-color",
+      "references": "--folder-text-2",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-collapse-icon-color",
+      "references": "--folder-text-2",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    }
+  ]
+}

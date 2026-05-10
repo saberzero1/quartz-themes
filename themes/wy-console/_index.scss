@@ -24,42 +24,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #20542c) !important;
-  --checkbox-border-color-hover: var(--text-muted, #20542c) !important;
-  --checkbox-color: var(--interactive-accent, #437a41) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #20542c) !important;
-  --checkbox-marker-color: var(--background-primary, #d7ddd9) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, black) !important;
-  --code-border-color: var(--background-modifier-border, #c9d3cb) !important;
-  --code-bracket-background: var(--background-modifier-hover, #86c66c) !important;
-  --code-comment: var(--text-faint, #20542c) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #20542c) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, #20542c) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #20542c) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #20542c) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #20542c) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #20542c) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #20542c) !important;
-  --graph-text: var(--text-normal, #20542c) !important;
-  --icon-color: var(--text-muted, #20542c) !important;
-  --icon-color-active: var(--text-accent, #20542c) !important;
-  --icon-color-focused: var(--text-normal, #20542c) !important;
-  --icon-color-hover: var(--text-muted, #20542c) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -110,42 +110,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #99e5b5) !important;
-  --checkbox-border-color-hover: var(--text-muted, #99e5b5) !important;
-  --checkbox-color: var(--interactive-accent, #3fff8c) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #99e5b5) !important;
-  --checkbox-marker-color: var(--background-primary, #0b1510) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, black) !important;
-  --code-border-color: var(--background-modifier-border, #020704) !important;
-  --code-bracket-background: var(--background-modifier-hover, #163f26) !important;
-  --code-comment: var(--text-faint, #99e5b5) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #99e5b5) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, #99e5b5) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #99e5b5) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #99e5b5) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #99e5b5) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #99e5b5) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #99e5b5) !important;
-  --graph-text: var(--text-normal, #99e5b5) !important;
-  --icon-color: var(--text-muted, #99e5b5) !important;
-  --icon-color-active: var(--text-accent, #99e5b5) !important;
-  --icon-color-focused: var(--text-normal, #99e5b5) !important;
-  --icon-color-hover: var(--text-muted, #99e5b5) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -222,20 +222,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(215, 221, 217));
-    color: var(--text-normal, rgb(32, 84, 44));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(215, 221, 217));
+    background-color: var(--background-primary);
     color: rgb(32, 84, 44);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(215, 221, 217));
+    background-color: var(--background-secondary);
     color: rgb(32, 84, 44);
   }
 
@@ -243,12 +243,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(215, 221, 217));
+    background-color: var(--tab-container-background);
     color: rgb(32, 84, 44);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(215, 221, 217));
+    background-color: var(--tab-container-background);
     color: rgb(32, 84, 44);
     border-left: 0px rgb(201, 211, 203);
   }
@@ -260,7 +260,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-ed-hyperlink, rgb(4, 87, 229));
+    color: var(--col-ed-hyperlink);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -288,8 +288,8 @@ body {
 
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
-    background-color: var(--col-ed-hyperlink, rgba(0, 0, 0, 0));
-    color: var(--col-ed-hyperlink, rgb(4, 87, 229));
+    background-color: var(--col-ed-hyperlink);
+    color: var(--col-ed-hyperlink);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -316,8 +316,8 @@ body {
   }
 
   a.internal-link.broken {
-    background-color: var(--col-ed-hyperlink, rgba(0, 0, 0, 0));
-    color: var(--col-pr-hyperlink-broken, rgb(255, 0, 0));
+    background-color: var(--col-ed-hyperlink);
+    color: var(--col-pr-hyperlink-broken);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -326,7 +326,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(255, 0, 0) none 0px;
     text-decoration: underline;
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(255, 0, 0));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -362,7 +362,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(32, 84, 44));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -390,7 +390,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-pr-txt-strong, rgb(67, 122, 65));
+    color: var(--col-pr-txt-strong);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -418,7 +418,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-pr-txt-strong, rgb(67, 122, 65));
+    color: var(--col-pr-txt-strong);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -446,7 +446,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-pr-txt-italic, rgb(67, 122, 65));
+    color: var(--col-pr-txt-italic);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -474,7 +474,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-pr-txt-italic, rgb(67, 122, 65));
+    color: var(--col-pr-txt-italic);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -580,7 +580,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-pr-txt-italic, rgb(67, 122, 65));
+    color: var(--col-pr-txt-italic);
     cursor: grab;
     font-family: "ModeSeven Regular";
     font-weight: 600;
@@ -597,8 +597,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--col-ed-bckg-highlight, rgb(100, 160, 85));
-    color: var(--col-ed-txt-highlight, rgb(201, 211, 203));
+    background-color: var(--col-ed-bckg-highlight);
+    color: var(--col-ed-txt-highlight);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -625,7 +625,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-pr-txt-strikethrough, rgb(134, 198, 108));
+    color: var(--col-pr-txt-strikethrough);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -653,7 +653,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgb(134, 198, 108));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -666,7 +666,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgb(134, 198, 108));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(32, 84, 44);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -702,13 +702,13 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(0, 0, 0, 0));
-    color: var(--pill-color, rgb(32, 84, 44));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family: "ModeSeven Regular";
     font-size: 13.125px;
     font-weight: var(--pill-weight);
-    line-height: var(--line-height-tight, 13.125px);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgb(32, 84, 44);
@@ -732,8 +732,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.125px);
-    padding-bottom: var(--list-spacing, 1.125px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -769,8 +769,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.125px);
-    padding-bottom: var(--list-spacing, 1.125px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -801,7 +801,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(0, 0, 0));
+    background-color: var(--code-background);
     border: 0px solid rgb(201, 211, 203);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -811,7 +811,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(32, 84, 44));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 1.96875px 3.9375px;
     padding-block-end: 0px;
@@ -843,7 +843,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--col-pr-bckg-codeblock, rgb(134, 198, 108));
+    background-color: var(--col-pr-bckg-codeblock);
     border: 0px solid rgb(201, 211, 203);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -907,7 +907,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(32, 84, 44));
+    color: var(--blockquote-color);
     font-family: "ModeSeven Regular";
     font-weight: 400;
     font-style: var(--blockquote-font-style);
@@ -922,7 +922,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(32, 84, 44));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -937,12 +937,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(32, 84, 44));
+    color: var(--text-normal);
     font-family: "ModeSeven Regular";
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(215, 221, 217));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1019,7 +1019,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(32, 84, 44);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgb(134, 198, 108));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1032,14 +1032,14 @@ body {
   }
 
   h1 {
-    color: var(--col-pr-txt-h1, rgb(67, 122, 65));
-    font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-    font-size: var(--siz-pr-txt-h1, 26.25px);
+    color: var(--col-pr-txt-h1);
+    font-family: var(--fnt-pr-headers);
+    font-size: var(--siz-pr-txt-h1);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 31.5px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1066,14 +1066,14 @@ body {
   }
 
   h2 {
-    color: var(--col-pr-txt-h2, rgb(67, 122, 65));
-    font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-    font-size: var(--siz-pr-txt-h2, 24px);
+    color: var(--col-pr-txt-h2);
+    font-family: var(--fnt-pr-headers);
+    font-size: var(--siz-pr-txt-h2);
     font-weight: var(--font-weight);
-    line-height: var(--line-height-pr-headers, 20px);
+    line-height: var(--line-height-pr-headers);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1099,14 +1099,14 @@ body {
   }
 
   h3 {
-    color: var(--col-pr-txt-h3, rgb(67, 122, 65));
-    font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-    font-size: var(--siz-pr-txt-h3, 21.75px);
+    color: var(--col-pr-txt-h3);
+    font-family: var(--fnt-pr-headers);
+    font-size: var(--siz-pr-txt-h3);
     font-weight: var(--font-weight);
-    line-height: var(--line-height-pr-headers, 20px);
+    line-height: var(--line-height-pr-headers);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1132,14 +1132,14 @@ body {
   }
 
   h4 {
-    color: var(--col-pr-txt-h4, rgb(67, 122, 65));
-    font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-    font-size: var(--siz-pr-txt-h4, 19.5px);
+    color: var(--col-pr-txt-h4);
+    font-family: var(--fnt-pr-headers);
+    font-size: var(--siz-pr-txt-h4);
     font-weight: var(--font-weight);
-    line-height: var(--line-height-pr-headers, 20px);
+    line-height: var(--line-height-pr-headers);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1165,14 +1165,14 @@ body {
   }
 
   h5 {
-    color: var(--col-pr-txt-h5, rgb(67, 122, 65));
-    font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-    font-size: var(--siz-pr-txt-h5, 17.25px);
+    color: var(--col-pr-txt-h5);
+    font-family: var(--fnt-pr-headers);
+    font-size: var(--siz-pr-txt-h5);
     font-weight: var(--font-weight);
-    line-height: var(--line-height-pr-headers, 20px);
+    line-height: var(--line-height-pr-headers);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1198,14 +1198,14 @@ body {
   }
 
   h6 {
-    color: var(--col-pr-txt-h6, rgb(67, 122, 65));
-    font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-    font-size: var(--siz-pr-txt-h6, 15px);
+    color: var(--col-pr-txt-h6);
+    font-family: var(--fnt-pr-headers);
+    font-size: var(--siz-pr-txt-h6);
     font-weight: var(--font-weight);
-    line-height: var(--line-height-pr-headers, 20px);
+    line-height: var(--line-height-pr-headers);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1232,14 +1232,14 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--col-pr-txt-title, rgb(32, 84, 44));
-    font-family: var(--inline-title-font, "Scifi Title");
-    font-size: var(--inline-title-size, 30px);
+    color: var(--col-pr-txt-title);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 36px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+    letter-spacing: var(--letterspacing-pr-headers);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1654,7 +1654,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1696,7 +1696,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -1713,8 +1713,8 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-default);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -1754,7 +1754,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -1771,8 +1771,8 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-summary);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -1812,7 +1812,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -1829,8 +1829,8 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-info);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -1870,7 +1870,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -1887,8 +1887,8 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-todo);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -1928,7 +1928,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -1945,8 +1945,8 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-tip);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -1986,7 +1986,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2003,8 +2003,8 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-success);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2044,7 +2044,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2061,8 +2061,8 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-question);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2102,7 +2102,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2119,11 +2119,11 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
-    background-color: var(--col-ed-bckg-quote-warning, rgb(134, 198, 108));
+    --callout-color: var(--callout-warning);
+    background-color: var(--col-ed-bckg-quote-warning);
     background-image: none;
     background: rgb(134, 198, 108) none repeat scroll 0% 0% / auto padding-box border-box;
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
     border-top-left-radius: 4px;
@@ -2160,7 +2160,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2177,8 +2177,8 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-error);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2218,7 +2218,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2235,8 +2235,8 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-fail);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2276,7 +2276,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2293,8 +2293,8 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-bug);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2334,7 +2334,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2351,8 +2351,8 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
-    background-color: var(--col-ed-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-example);
+    background-color: var(--col-ed-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2392,7 +2392,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2409,8 +2409,8 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
-    background-color: var(--col-pr-bckg-quote-callout, rgb(172, 213, 128));
+    --callout-color: var(--callout-quote);
+    background-color: var(--col-pr-bckg-quote-callout);
     background-image: none;
     background: rgb(172, 213, 128) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(32, 84, 44);
@@ -2450,7 +2450,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--col-ed-txt-quote, rgb(32, 84, 44));
+    color: var(--col-ed-txt-quote);
     font-weight: var(--font-weight);
   }
 
@@ -2467,9 +2467,9 @@ body {
   }
 
   table {
-    background-color: var(--col-pr-bckg-table, rgb(215, 221, 217));
+    background-color: var(--col-pr-bckg-table);
     border-collapse: separate;
-    color: var(--col-pr-txt-table, rgb(201, 211, 203));
+    color: var(--col-pr-txt-table);
     font-family: "ModeSeven Regular";
     table-layout: auto;
     text-align: start;
@@ -2495,7 +2495,7 @@ body {
   }
 
   thead {
-    background-color: var(--col-pr-bckg-tableh, rgb(100, 160, 85));
+    background-color: var(--col-pr-bckg-tableh);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2512,8 +2512,8 @@ body {
   }
 
   th {
-    background-color: var(--col-pr-bckg-tableh, rgb(100, 160, 85));
-    color: var(--col-pr-txt-tableh, rgb(32, 84, 44));
+    background-color: var(--col-pr-bckg-tableh);
+    color: var(--col-pr-txt-tableh);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2541,7 +2541,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(201, 211, 203));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2722,8 +2722,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(0, 0, 0));
-    color: var(--text-muted, rgb(32, 84, 44));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(32, 84, 44);
     border-width: 0px;
@@ -2737,7 +2737,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(32, 84, 44));
+    color: var(--text-muted);
     font-family: "ModeSeven Regular";
     border: 0px solid rgb(201, 211, 203);
     border-top-left-radius: 0px;
@@ -2779,14 +2779,14 @@ body {
 
   .metadata-property-key {
     color: rgb(32, 84, 44);
-    font-family: var(--metadata-label-font, "ModeSeven Regular");
+    font-family: var(--metadata-label-font);
     font-size: 15px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(32, 84, 44);
-    font-family: var(--metadata-input-font, "ModeSeven Regular");
+    font-family: var(--metadata-input-font);
     font-size: 15px;
   }
 
@@ -2821,7 +2821,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(32, 84, 44));
+    color: var(--text-normal);
     font-family: "ModeSeven Regular";
     border: 0px solid rgb(32, 84, 44);
     border-top-left-radius: 0px;
@@ -2898,11 +2898,11 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(0, 0, 0));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(32, 84, 44));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
-    font-size: var(--code-size, 13.125px);
+    font-size: var(--code-size);
     border: 0px rgb(32, 84, 44);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2990,7 +2990,7 @@ body {
   }
 
   sup {
-    color: var(--col-pr-txt-strikethrough, rgb(134, 198, 108));
+    color: var(--col-pr-txt-strikethrough);
     font-size: 12.5px;
     vertical-align: super;
   }
@@ -3168,7 +3168,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(32, 84, 44));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: "ModeSeven Regular";
     font-weight: var(--nav-item-weight);
@@ -3176,7 +3176,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(32, 84, 44));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: "ModeSeven Regular";
     font-weight: var(--nav-item-weight);
@@ -3188,26 +3188,13 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: rgb(32, 84, 44);
+    font-family: "ModeSeven Regular";
     font-weight: 400;
   }
 
   .nav-files-container {
-    background-color: var(--col-bckg-mainpanels, rgb(201, 211, 203));
+    background-color: var(--col-bckg-mainpanels);
   }
 
   .bases-table {
@@ -3215,8 +3202,8 @@ body {
   }
 
   .bases-table thead th {
-    background-color: var(--col-pr-bckg-tableh, rgb(100, 160, 85));
-    color: var(--col-pr-txt-tableh, rgb(32, 84, 44));
+    background-color: var(--col-pr-bckg-tableh);
+    color: var(--col-pr-txt-tableh);
     font-weight: var(--table-header-weight);
     border-color: rgb(201, 211, 203);
   }
@@ -3237,12 +3224,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(32, 84, 44));
-    background-color: var(--col-pr-background, rgb(215, 221, 217));
+    color: var(--text-normal);
+    background-color: var(--col-pr-background);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(215, 221, 217));
+    background-color: var(--background-primary);
     border-color: rgb(32, 84, 44);
     box-shadow: var(--input-shadow);
   }
@@ -3269,8 +3256,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(0, 0, 0, 0));
-    color: var(--pill-color, rgb(32, 84, 44));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 26.25px;
   }
 
@@ -3284,7 +3271,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(32, 84, 44));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(32, 84, 44);
     border-width: 0px;
@@ -3295,8 +3282,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(215, 221, 217));
-    color: var(--status-bar-text-color, rgb(32, 84, 44));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family: "ModeSeven Regular";
     font-size: var(--status-bar-font-size);
     text-align: start;
@@ -3331,16 +3318,16 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(32, 84, 44));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
-    color: var(--col-txt-titles, rgb(67, 122, 65));
+    color: var(--col-txt-titles);
     font-family: "ModeSeven Regular";
   }
 
   ul.section-ul {
-    background-color: var(--col-bckg-mainpanels, rgb(201, 211, 203));
+    background-color: var(--col-bckg-mainpanels);
     border-color: rgb(32, 84, 44);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3360,17 +3347,17 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(32, 84, 44));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
-    color: var(--col-txt-titles, rgb(67, 122, 65));
+    color: var(--col-txt-titles);
     font-family: "ModeSeven Regular";
   }
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--col-icons, rgb(32, 84, 44));
+    color: var(--col-icons);
     cursor: var(--cursor);
     border-color: rgb(32, 84, 44);
     border-width: 0px;
@@ -3397,16 +3384,16 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(32, 84, 44));
+    color: var(--text-faint);
     font-family: "ModeSeven Regular";
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(215, 221, 217));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(32, 84, 44));
+    color: var(--text-normal);
     font-family: "ModeSeven Regular";
     font-size: 13px;
     font-weight: 400;
@@ -3525,8 +3512,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--col-pr-bckg-tag, rgb(4, 87, 229));
-    color: var(--col-pr-txt-tag, rgb(134, 198, 108));
+    background-color: var(--col-pr-bckg-tag);
+    color: var(--col-pr-txt-tag);
     border: 0px solid rgb(134, 198, 108);
     border-top-left-radius: 22.9688px;
     border-top-right-radius: 22.9688px;
@@ -3556,17 +3543,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--col-ed-bckg-checkbox-full, rgb(32, 84, 44));
+    background-color: var(--col-ed-bckg-checkbox-full);
     border-color: rgb(32, 84, 44);
   }
 
   .stacked-page {
     border-color: rgb(32, 84, 44);
-    background-color: var(--background-secondary, rgb(215, 221, 217));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--col-txt-titlebars, rgb(229, 234, 231));
+    background-color: var(--col-txt-titlebars);
   }
 
   .stacked-page.active {
@@ -3574,8 +3561,8 @@ body {
   }
 
   h1.article-title {
-    color: var(--col-pr-txt-title, rgb(32, 84, 44));
-    font-size: var(--inline-title-size, 30px);
+    color: var(--col-pr-txt-title);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -3594,7 +3581,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -3698,8 +3684,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -3720,7 +3704,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -3824,8 +3807,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -3846,7 +3827,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -3950,8 +3930,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -3972,7 +3950,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4076,8 +4053,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4098,7 +4073,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4202,8 +4176,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4224,7 +4196,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4328,8 +4299,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4350,7 +4319,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4454,8 +4422,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4476,7 +4442,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4580,8 +4545,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4602,7 +4565,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4706,8 +4668,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4728,7 +4688,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4832,8 +4791,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4854,7 +4811,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -4958,8 +4914,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -4980,7 +4934,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5084,8 +5037,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5106,7 +5057,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5210,8 +5160,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5232,7 +5180,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5336,8 +5283,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5358,7 +5303,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5462,8 +5406,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5484,7 +5426,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5588,8 +5529,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5610,7 +5549,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5714,8 +5652,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5736,7 +5672,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5840,8 +5775,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5862,7 +5795,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -5966,8 +5898,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -5988,7 +5918,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6092,8 +6021,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6114,7 +6041,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6218,8 +6144,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6240,7 +6164,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6344,8 +6267,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6366,7 +6287,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6470,8 +6390,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6492,7 +6410,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6596,8 +6513,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6618,7 +6533,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6722,8 +6636,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6744,7 +6656,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6848,8 +6759,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6870,7 +6779,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -6974,8 +6882,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -6996,7 +6902,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7100,8 +7005,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7122,7 +7025,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7226,8 +7128,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7248,7 +7148,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7352,8 +7251,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7374,7 +7271,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7478,8 +7374,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7500,7 +7394,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7604,8 +7497,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7626,7 +7517,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7730,8 +7620,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7752,7 +7640,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7856,8 +7743,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -7878,7 +7763,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -7982,8 +7866,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8004,7 +7886,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8108,8 +7989,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8130,7 +8009,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8234,8 +8112,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8256,7 +8132,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8360,8 +8235,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8382,7 +8255,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8486,8 +8358,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8508,7 +8378,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8612,8 +8481,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8634,7 +8501,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8738,8 +8604,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8760,7 +8624,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8864,8 +8727,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -8886,7 +8747,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -8990,8 +8850,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9012,7 +8870,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9116,8 +8973,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9138,7 +8993,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9242,8 +9096,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9264,7 +9116,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9368,8 +9219,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9390,7 +9239,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9494,8 +9342,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9516,7 +9362,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9620,8 +9465,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9642,7 +9485,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9746,8 +9588,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9768,7 +9608,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9872,8 +9711,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -9894,7 +9731,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -9998,8 +9834,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10020,7 +9854,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10124,8 +9957,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10146,7 +9977,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10250,8 +10080,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10272,7 +10100,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10376,8 +10203,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10398,7 +10223,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10502,8 +10326,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10524,7 +10346,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10628,8 +10449,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10650,7 +10469,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10754,8 +10572,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10776,7 +10592,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -10880,8 +10695,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -10902,7 +10715,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11006,8 +10818,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11028,7 +10838,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11132,8 +10941,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11154,7 +10961,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11258,8 +11064,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11280,7 +11084,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11384,8 +11187,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11406,7 +11207,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11510,8 +11310,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11532,7 +11330,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11636,8 +11433,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11658,7 +11453,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11762,8 +11556,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11784,7 +11576,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -11888,8 +11679,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -11910,7 +11699,6 @@ body {
     --background-modifier-success: #08b94e;
     --background-modifier-success-rgb: 8, 185, 78;
     --background-primary: #ffffff;
-    --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
@@ -12014,8 +11802,6 @@ body {
     font-size: 15px;
     line-height: 1.3;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --text-on-accent: white;
     letter-spacing: normal;
@@ -12051,7 +11837,7 @@ body {
     --siz-txt-h6: 1em;
     --siz-txt-p: 1em;
     --siz-txt-title: 2em;
-    --text-selection: var(--col-base, #318c54);
+    --text-selection: var(--col-base);
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -12702,20 +12488,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(11, 21, 16));
-      color: var(--text-normal, rgb(153, 229, 181));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(11, 21, 16));
+      background-color: var(--background-primary);
       color: rgb(153, 229, 181);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(11, 21, 16));
+      background-color: var(--background-secondary);
       color: rgb(153, 229, 181);
     }
 
@@ -12723,12 +12509,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(11, 21, 16));
+      background-color: var(--tab-container-background);
       color: rgb(153, 229, 181);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(11, 21, 16));
+      background-color: var(--tab-container-background);
       color: rgb(153, 229, 181);
       border-left: 0px rgb(2, 7, 4);
     }
@@ -12740,7 +12526,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-ed-hyperlink, rgb(255, 211, 3));
+      color: var(--col-ed-hyperlink);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -12768,8 +12554,8 @@ html[saved-theme="dark"] {
 
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
-      background-color: var(--col-ed-hyperlink, rgba(0, 0, 0, 0));
-      color: var(--col-ed-hyperlink, rgb(255, 211, 3));
+      background-color: var(--col-ed-hyperlink);
+      color: var(--col-ed-hyperlink);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -12796,8 +12582,8 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.broken {
-      background-color: var(--col-ed-hyperlink, rgba(0, 0, 0, 0));
-      color: var(--col-pr-hyperlink-broken, rgb(255, 0, 0));
+      background-color: var(--col-ed-hyperlink);
+      color: var(--col-pr-hyperlink-broken);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -12806,7 +12592,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(255, 0, 0) none 0px;
       text-decoration: underline;
-      text-decoration-color: var(--link-unresolved-decoration-color, rgb(255, 0, 0));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -12842,7 +12628,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(153, 229, 181));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -12870,7 +12656,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-pr-txt-strong, rgb(63, 255, 140));
+      color: var(--col-pr-txt-strong);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -12898,7 +12684,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-pr-txt-strong, rgb(63, 255, 140));
+      color: var(--col-pr-txt-strong);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -12926,7 +12712,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-pr-txt-italic, rgb(63, 255, 140));
+      color: var(--col-pr-txt-italic);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -12954,7 +12740,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-pr-txt-italic, rgb(63, 255, 140));
+      color: var(--col-pr-txt-italic);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -13060,7 +12846,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-pr-txt-italic, rgb(63, 255, 140));
+      color: var(--col-pr-txt-italic);
       cursor: grab;
       font-family: "ModeSeven Regular";
       font-weight: 600;
@@ -13077,8 +12863,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--col-ed-bckg-highlight, rgb(64, 178, 102));
-      color: var(--col-ed-txt-highlight, rgb(2, 7, 4));
+      background-color: var(--col-ed-bckg-highlight);
+      color: var(--col-ed-txt-highlight);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -13105,7 +12891,7 @@ html[saved-theme="dark"] {
 
     del {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-pr-txt-strikethrough, rgb(22, 63, 38));
+      color: var(--col-pr-txt-strikethrough);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -13133,7 +12919,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgb(22, 63, 38));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -13146,7 +12932,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgb(22, 63, 38));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(153, 229, 181);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -13182,13 +12968,13 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(0, 0, 0, 0));
-      color: var(--pill-color, rgb(153, 229, 181));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family: "ModeSeven Regular";
       font-size: 13.125px;
       font-weight: var(--pill-weight);
-      line-height: var(--line-height-tight, 13.125px);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgb(153, 229, 181);
@@ -13212,8 +12998,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.125px);
-      padding-bottom: var(--list-spacing, 1.125px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -13249,8 +13035,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.125px);
-      padding-bottom: var(--list-spacing, 1.125px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -13281,7 +13067,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(0, 0, 0));
+      background-color: var(--code-background);
       border: 0px solid rgb(2, 7, 4);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -13291,7 +13077,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(153, 229, 181));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 1.96875px 3.9375px;
       padding-block-end: 0px;
@@ -13323,7 +13109,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--col-pr-bckg-codeblock, rgb(22, 63, 38));
+      background-color: var(--col-pr-bckg-codeblock);
       border: 0px solid rgb(2, 7, 4);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -13387,7 +13173,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color, rgb(153, 229, 181));
+      color: var(--blockquote-color);
       font-family: "ModeSeven Regular";
       font-weight: 400;
       font-style: var(--blockquote-font-style);
@@ -13402,7 +13188,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(153, 229, 181));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -13417,12 +13203,12 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(153, 229, 181));
+      color: var(--text-normal);
       font-family: "ModeSeven Regular";
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(11, 21, 16));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -13499,7 +13285,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(153, 229, 181);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgb(22, 63, 38));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -13512,14 +13298,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--col-pr-txt-h1, rgb(63, 255, 140));
-      font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-      font-size: var(--siz-pr-txt-h1, 26.25px);
+      color: var(--col-pr-txt-h1);
+      font-family: var(--fnt-pr-headers);
+      font-size: var(--siz-pr-txt-h1);
       font-weight: var(--font-weight);
-      line-height: var(--h1-line-height, 31.5px);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13546,14 +13332,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--col-pr-txt-h2, rgb(63, 255, 140));
-      font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-      font-size: var(--siz-pr-txt-h2, 24px);
+      color: var(--col-pr-txt-h2);
+      font-family: var(--fnt-pr-headers);
+      font-size: var(--siz-pr-txt-h2);
       font-weight: var(--font-weight);
-      line-height: var(--line-height-pr-headers, 20px);
+      line-height: var(--line-height-pr-headers);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13579,14 +13365,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--col-pr-txt-h3, rgb(63, 255, 140));
-      font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-      font-size: var(--siz-pr-txt-h3, 21.75px);
+      color: var(--col-pr-txt-h3);
+      font-family: var(--fnt-pr-headers);
+      font-size: var(--siz-pr-txt-h3);
       font-weight: var(--font-weight);
-      line-height: var(--line-height-pr-headers, 20px);
+      line-height: var(--line-height-pr-headers);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13612,14 +13398,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--col-pr-txt-h4, rgb(63, 255, 140));
-      font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-      font-size: var(--siz-pr-txt-h4, 19.5px);
+      color: var(--col-pr-txt-h4);
+      font-family: var(--fnt-pr-headers);
+      font-size: var(--siz-pr-txt-h4);
       font-weight: var(--font-weight);
-      line-height: var(--line-height-pr-headers, 20px);
+      line-height: var(--line-height-pr-headers);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13645,14 +13431,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--col-pr-txt-h5, rgb(63, 255, 140));
-      font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-      font-size: var(--siz-pr-txt-h5, 17.25px);
+      color: var(--col-pr-txt-h5);
+      font-family: var(--fnt-pr-headers);
+      font-size: var(--siz-pr-txt-h5);
       font-weight: var(--font-weight);
-      line-height: var(--line-height-pr-headers, 20px);
+      line-height: var(--line-height-pr-headers);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13678,14 +13464,14 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--col-pr-txt-h6, rgb(63, 255, 140));
-      font-family: var(--fnt-pr-headers, "ModeSeven Regular");
-      font-size: var(--siz-pr-txt-h6, 15px);
+      color: var(--col-pr-txt-h6);
+      font-family: var(--fnt-pr-headers);
+      font-size: var(--siz-pr-txt-h6);
       font-weight: var(--font-weight);
-      line-height: var(--line-height-pr-headers, 20px);
+      line-height: var(--line-height-pr-headers);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13712,14 +13498,14 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--col-pr-txt-title, rgb(153, 229, 181));
-      font-family: var(--inline-title-font, "Scifi Title");
-      font-size: var(--inline-title-size, 30px);
+      color: var(--col-pr-txt-title);
+      font-family: var(--inline-title-font);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
-      line-height: var(--inline-title-line-height, 36px);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--letterspacing-pr-headers, 1.5px);
+      letter-spacing: var(--letterspacing-pr-headers);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -14134,7 +13920,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -14176,7 +13962,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14193,8 +13979,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-default);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14234,7 +14020,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14251,8 +14037,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-summary);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14292,7 +14078,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14309,8 +14095,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-info);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14350,7 +14136,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14367,8 +14153,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-todo);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14408,7 +14194,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14425,8 +14211,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-tip);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14466,7 +14252,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14483,8 +14269,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-success);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14524,7 +14310,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14541,8 +14327,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-question);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14582,7 +14368,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14599,11 +14385,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
-      background-color: var(--col-ed-bckg-quote-warning, rgb(49, 140, 84));
+      --callout-color: var(--callout-warning);
+      background-color: var(--col-ed-bckg-quote-warning);
       background-image: none;
       background: rgb(49, 140, 84) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       mix-blend-mode: normal;
       border: 0px solid rgba(233, 151, 63, 0.25);
       border-top-left-radius: 4px;
@@ -14640,7 +14426,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14657,8 +14443,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-error);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14698,7 +14484,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14715,8 +14501,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-fail);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14756,7 +14542,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14773,8 +14559,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-bug);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14814,7 +14600,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14831,8 +14617,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
-      background-color: var(--col-ed-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-example);
+      background-color: var(--col-ed-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14872,7 +14658,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14889,8 +14675,8 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
-      background-color: var(--col-pr-bckg-quote-callout, rgb(22, 63, 38));
+      --callout-color: var(--callout-quote);
+      background-color: var(--col-pr-bckg-quote-callout);
       background-image: none;
       background: rgb(22, 63, 38) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(153, 229, 181);
@@ -14930,7 +14716,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--col-ed-txt-quote, rgb(153, 229, 181));
+      color: var(--col-ed-txt-quote);
       font-weight: var(--font-weight);
     }
 
@@ -14947,9 +14733,9 @@ html[saved-theme="dark"] {
     }
 
     table {
-      background-color: var(--col-pr-bckg-table, rgb(11, 21, 16));
+      background-color: var(--col-pr-bckg-table);
       border-collapse: separate;
-      color: var(--col-pr-txt-table, rgb(2, 7, 4));
+      color: var(--col-pr-txt-table);
       font-family: "ModeSeven Regular";
       table-layout: auto;
       text-align: start;
@@ -14975,7 +14761,7 @@ html[saved-theme="dark"] {
     }
 
     thead {
-      background-color: var(--col-pr-bckg-tableh, rgb(64, 178, 102));
+      background-color: var(--col-pr-bckg-tableh);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -14992,8 +14778,8 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: var(--col-pr-bckg-tableh, rgb(64, 178, 102));
-      color: var(--col-pr-txt-tableh, rgb(153, 229, 181));
+      background-color: var(--col-pr-bckg-tableh);
+      color: var(--col-pr-txt-tableh);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -15021,7 +14807,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(2, 7, 4));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -15202,8 +14988,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(0, 0, 0));
-      color: var(--text-muted, rgb(153, 229, 181));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(153, 229, 181);
       border-width: 0px;
@@ -15217,7 +15003,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(153, 229, 181));
+      color: var(--text-muted);
       font-family: "ModeSeven Regular";
       border: 0px solid rgb(2, 7, 4);
       border-top-left-radius: 0px;
@@ -15259,14 +15045,14 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(153, 229, 181);
-      font-family: var(--metadata-label-font, "ModeSeven Regular");
+      font-family: var(--metadata-label-font);
       font-size: 15px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(153, 229, 181);
-      font-family: var(--metadata-input-font, "ModeSeven Regular");
+      font-family: var(--metadata-input-font);
       font-size: 15px;
     }
 
@@ -15301,7 +15087,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(153, 229, 181));
+      color: var(--text-normal);
       font-family: "ModeSeven Regular";
       border: 0px solid rgb(153, 229, 181);
       border-top-left-radius: 0px;
@@ -15378,11 +15164,11 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(0, 0, 0));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(153, 229, 181));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
-      font-size: var(--code-size, 13.125px);
+      font-size: var(--code-size);
       border: 0px rgb(153, 229, 181);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15470,7 +15256,7 @@ html[saved-theme="dark"] {
     }
 
     sup {
-      color: var(--col-pr-txt-strikethrough, rgb(22, 63, 38));
+      color: var(--col-pr-txt-strikethrough);
       font-size: 12.5px;
       vertical-align: super;
     }
@@ -15648,7 +15434,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(153, 229, 181));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: "ModeSeven Regular";
       font-weight: var(--nav-item-weight);
@@ -15656,7 +15442,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(153, 229, 181));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: "ModeSeven Regular";
       font-weight: var(--nav-item-weight);
@@ -15668,26 +15454,13 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      color: rgb(153, 229, 181);
+      font-family: "ModeSeven Regular";
       font-weight: 400;
     }
 
     .nav-files-container {
-      background-color: var(--col-bckg-mainpanels, rgb(2, 7, 4));
+      background-color: var(--col-bckg-mainpanels);
     }
 
     .bases-table {
@@ -15695,8 +15468,8 @@ html[saved-theme="dark"] {
     }
 
     .bases-table thead th {
-      background-color: var(--col-pr-bckg-tableh, rgb(64, 178, 102));
-      color: var(--col-pr-txt-tableh, rgb(153, 229, 181));
+      background-color: var(--col-pr-bckg-tableh);
+      color: var(--col-pr-txt-tableh);
       font-weight: var(--table-header-weight);
       border-color: rgb(2, 7, 4);
     }
@@ -15717,12 +15490,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(153, 229, 181));
-      background-color: var(--col-pr-background, rgb(11, 21, 16));
+      color: var(--text-normal);
+      background-color: var(--col-pr-background);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(11, 21, 16));
+      background-color: var(--background-secondary);
       border-color: rgb(153, 229, 181);
       box-shadow: var(--input-shadow);
     }
@@ -15749,8 +15522,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(0, 0, 0, 0));
-      color: var(--pill-color, rgb(153, 229, 181));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 26.25px;
     }
 
@@ -15764,7 +15537,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(153, 229, 181));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(153, 229, 181);
       border-width: 0px;
@@ -15775,8 +15548,8 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(11, 21, 16));
-      color: var(--status-bar-text-color, rgb(153, 229, 181));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family: "ModeSeven Regular";
       font-size: var(--status-bar-font-size);
       text-align: start;
@@ -15811,16 +15584,16 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(153, 229, 181));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: var(--col-txt-titles, rgb(63, 255, 140));
+      color: var(--col-txt-titles);
       font-family: "ModeSeven Regular";
     }
 
     ul.section-ul {
-      background-color: var(--col-bckg-mainpanels, rgb(2, 7, 4));
+      background-color: var(--col-bckg-mainpanels);
       border-color: rgb(153, 229, 181);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -15840,17 +15613,17 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(153, 229, 181));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
-      color: var(--col-txt-titles, rgb(63, 255, 140));
+      color: var(--col-txt-titles);
       font-family: "ModeSeven Regular";
     }
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--col-icons, rgb(153, 229, 181));
+      color: var(--col-icons);
       cursor: var(--cursor);
       border-color: rgb(153, 229, 181);
       border-width: 0px;
@@ -15877,16 +15650,16 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(153, 229, 181));
+      color: var(--text-faint);
       font-family: "ModeSeven Regular";
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(11, 21, 16));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(153, 229, 181));
+      color: var(--text-normal);
       font-family: "ModeSeven Regular";
       font-size: 13px;
       font-weight: 400;
@@ -16005,8 +15778,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--col-pr-bckg-tag, rgb(255, 211, 3));
-      color: var(--col-pr-txt-tag, rgb(22, 63, 38));
+      background-color: var(--col-pr-bckg-tag);
+      color: var(--col-pr-txt-tag);
       border: 0px solid rgb(22, 63, 38);
       border-top-left-radius: 22.9688px;
       border-top-right-radius: 22.9688px;
@@ -16036,17 +15809,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--col-ed-bckg-checkbox-full, rgb(153, 229, 181));
+      background-color: var(--col-ed-bckg-checkbox-full);
       border-color: rgb(153, 229, 181);
     }
 
     .stacked-page {
       border-color: rgb(153, 229, 181);
-      background-color: var(--background-secondary, rgb(11, 21, 16));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--col-txt-titlebars, rgb(7, 7, 7));
+      background-color: var(--col-txt-titlebars);
     }
 
     .stacked-page.active {
@@ -16054,8 +15827,8 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--col-pr-txt-title, rgb(153, 229, 181));
-      font-size: var(--inline-title-size, 30px);
+      color: var(--col-pr-txt-title);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
 
@@ -16074,7 +15847,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16178,8 +15950,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16200,7 +15970,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16304,8 +16073,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16326,7 +16093,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16430,8 +16196,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16452,7 +16216,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16556,8 +16319,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16578,7 +16339,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16682,8 +16442,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16704,7 +16462,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16808,8 +16565,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16830,7 +16585,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -16934,8 +16688,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -16956,7 +16708,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17060,8 +16811,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17082,7 +16831,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17186,8 +16934,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17208,7 +16954,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17312,8 +17057,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17334,7 +17077,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17438,8 +17180,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17460,7 +17200,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17564,8 +17303,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17586,7 +17323,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17690,8 +17426,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17712,7 +17446,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17816,8 +17549,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17838,7 +17569,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -17942,8 +17672,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -17964,7 +17692,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18068,8 +17795,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18090,7 +17815,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18194,8 +17918,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18216,7 +17938,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18320,8 +18041,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18342,7 +18061,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18446,8 +18164,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18468,7 +18184,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18572,8 +18287,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18594,7 +18307,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18698,8 +18410,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18720,7 +18430,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18824,8 +18533,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18846,7 +18553,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -18950,8 +18656,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -18972,7 +18676,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19076,8 +18779,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19098,7 +18799,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19202,8 +18902,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19224,7 +18922,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19328,8 +19025,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19350,7 +19045,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19454,8 +19148,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19476,7 +19168,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19580,8 +19271,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19602,7 +19291,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19706,8 +19394,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19728,7 +19414,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19832,8 +19517,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19854,7 +19537,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -19958,8 +19640,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -19980,7 +19660,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20084,8 +19763,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20106,7 +19783,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20210,8 +19886,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20232,7 +19906,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20336,8 +20009,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20358,7 +20029,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20462,8 +20132,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20484,7 +20152,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20588,8 +20255,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20610,7 +20275,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20714,8 +20378,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20736,7 +20398,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20840,8 +20501,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20862,7 +20521,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -20966,8 +20624,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -20988,7 +20644,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21092,8 +20747,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21114,7 +20767,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21218,8 +20870,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21240,7 +20890,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21344,8 +20993,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21366,7 +21013,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21470,8 +21116,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21492,7 +21136,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21596,8 +21239,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21618,7 +21259,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21722,8 +21362,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21744,7 +21382,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21848,8 +21485,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21870,7 +21505,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -21974,8 +21608,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -21996,7 +21628,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22100,8 +21731,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22122,7 +21751,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22226,8 +21854,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22248,7 +21874,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22352,8 +21977,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22374,7 +21997,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22478,8 +22100,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22500,7 +22120,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22604,8 +22223,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22626,7 +22243,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22730,8 +22346,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22752,7 +22366,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22856,8 +22469,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -22878,7 +22489,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -22982,8 +22592,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23004,7 +22612,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23108,8 +22715,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23130,7 +22735,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23234,8 +22838,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23256,7 +22858,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23360,8 +22961,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23382,7 +22981,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23486,8 +23084,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23508,7 +23104,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23612,8 +23207,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23634,7 +23227,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23738,8 +23330,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23760,7 +23350,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23864,8 +23453,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -23886,7 +23473,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -23990,8 +23576,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -24012,7 +23596,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -24116,8 +23699,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -24138,7 +23719,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -24242,8 +23822,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -24264,7 +23842,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -24368,8 +23945,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -24390,7 +23965,6 @@ html[saved-theme="dark"] {
       --background-modifier-success: #44cf6e;
       --background-modifier-success-rgb: 68, 207, 110;
       --background-primary: #1e1e1e;
-      --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
       --blockquote-border-color: hsl(258, 88%, 66%);
@@ -24494,8 +24068,6 @@ html[saved-theme="dark"] {
       font-size: 15px;
       line-height: 1.3;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --background-modifier-message: rgba(0, 0, 0, 0.9);
       --text-on-accent: white;
       letter-spacing: normal;
@@ -24531,7 +24103,7 @@ html[saved-theme="dark"] {
       --siz-txt-h6: 1em;
       --siz-txt-p: 1em;
       --siz-txt-title: 2em;
-      --text-selection: var(--col-base, #318c54);
+      --text-selection: var(--col-base);
     }
   }
 }

@@ -1,0 +1,1319 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--blurple",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--blurple-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--blurple-hover",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--blurple-inverted",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--blurple-inverted-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--blurple-st",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-05a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-100",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-10a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-130",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-15a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-160",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-200",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-20a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-230",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-25a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-260",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-300",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-30a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-330",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-35a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-360",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-400",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-40a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-430",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-45a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-460",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-500",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-50a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-530",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-55a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-560",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-600",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-60a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-630",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-65a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-660",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-700",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-70a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-730",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-75a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-760",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-800",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-80a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-830",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-85a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-860",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-900",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-90a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--brand-experiment-95a",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8bl9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8blGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8br9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8brGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8d9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8dGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8gr9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8grGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8l9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8lGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8or9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8orGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8pr9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8prGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rd9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8rdGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl0v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl1v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl2v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl3v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl4v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl5v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl6v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl7v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl8v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8yl9v",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylAv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylBv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylCv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylDv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylEv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylFv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--d8ylGv",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--green",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--green-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--green-hover",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--green-inverted",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--green-inverted-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--red",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--red-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--red-hover",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--red-inverted",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--red-inverted-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--yellow",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--yellow-hover",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--yellow-inverted",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--yellow-inverted-active",
+      "references": "--saturation-factor",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--line-height-normal",
+      "references": "--lineMultiplier",
+      "selector": ".canvas-node-file",
+      "aspect": "canvas"
+    }
+  ]
+}

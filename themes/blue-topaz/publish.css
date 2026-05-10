@@ -18,24 +18,18 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--color-base-30, #dddddd) !important;
+  --background-modifier-border: #dddddd !important;
   --background-modifier-border-focus: var(--color-base-40) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
-  --background-modifier-error: var(--color-red, #e68787) !important;
-  --background-modifier-error-hover: var(--color-red, #ff9494) !important;
-  --background-modifier-error-rgb: var(
-    --color-red-rgb,
-    230,
-    135,
-    135
-  ) !important;
-  --background-modifier-form-field: var(--color-base-00, #fff) !important;
+  --background-modifier-error: #e68787 !important;
+  --background-modifier-error-hover: #ff9494 !important;
+  --background-modifier-error-rgb: 230, 135, 135 !important;
+  --background-modifier-form-field: #fff !important;
   --background-modifier-form-field-hover: var(
-    --background-modifier-form-field,
-    #fff
+    --background-modifier-form-field
   ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: var(--color-green, #a4e7c3) !important;
+  --background-modifier-success: #a4e7c3 !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
   --background-primary: var(--background-primary-bg-4-bt, #ffffff) !important;
   --background-primary-alt: var(
@@ -53,51 +47,38 @@ body.theme-light {
   --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    #e9e9e9
-  ) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
-  --bases-cards-radius: var(--radius-m, 7px) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
-  --bases-embed-border-radius: var(--radius-s, 5px) !important;
-  --bases-group-heading-property-color: var(--text-muted, #7f7f7f) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, #7d7d7d) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
   --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    #e9e9e9
+    --background-primary-alt
   ) !important;
-  --bases-table-cell-background-selected: var(
-    --table-selection,
-    hsla(207, 77%, 54%, 0.1)
-  ) !important;
+  --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
-  --bases-table-container-border-radius: var(--radius-s, 5px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    #e9e9e9
-  ) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --bases-table-header-color: var(--text-muted, #7f7f7f) !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -112,10 +93,7 @@ body.theme-light {
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --interactive-accent,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blur-background: color-mix(
       in srgb,
       var(--background-primary) var(--blur-opacity-s),
@@ -149,7 +127,7 @@ body.theme-light {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 5px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
@@ -157,7 +135,7 @@ body.theme-light {
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint, #7f7f7f) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
   --canvas-color-3: var(--color-yellow-rgb) !important;
@@ -166,45 +144,36 @@ body.theme-light {
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
-  --canvas-controls-radius: var(--radius-s, 5px) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
-  --caret-color: var(--text-normal, #0e0e0e) !important;
-  --checkbox-border-color: var(--text-faint, #7f7f7f) !important;
-  --checkbox-border-color-hover: var(--text-muted, #7f7f7f) !important;
-  --checkbox-color: var(
-    --interactive-accent,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --checkbox-color-hover: var(
-    --interactive-accent-hover,
-    hsl(204, 78.54%, 62.1%)
-  ) !important;
+  --caret-color: var(--text-normal) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s, 5px) !important;
-  --checkbox-size: var(--font-text-size, 0.9rem) !important;
-  --checklist-done-color: var(--text-muted, #7f7f7f) !important;
-  --clickable-icon-radius: var(--radius-s, 5px) !important;
-  --code-background: var(--background-code, #e6e6e671) !important;
-  --code-border-color: var(--background-modifier-border, #dddddd) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: 0.9rem !important;
+  --checklist-done-color: var(--text-muted) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
+  --code-background: var(--background-code) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--darkgreen, #068a5e) !important;
-  --code-function: var(--red, #bf616a) !important;
-  --code-important: var(--blue-green, #3bd4da) !important;
-  --code-keyword: var(--blue-green, #3bd4da) !important;
-  --code-normal: var(--text-normal, #000000) !important;
-  --code-operator: var(--code-property, #5e81ac) !important;
-  --code-property: var(--blue, #5e81ac) !important;
-  --code-punctuation: var(--text-muted, #7f7f7f) !important;
-  --code-radius: var(--radius-s, 5px) !important;
+  --code-comment: var(--darkgreen) !important;
+  --code-function: var(--red) !important;
+  --code-important: var(--blue-green) !important;
+  --code-keyword: var(--blue-green) !important;
+  --code-normal: #000000 !important;
+  --code-operator: var(--code-property) !important;
+  --code-property: var(--blue) !important;
+  --code-punctuation: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
-  --code-tag: var(--purple, #c74df7) !important;
-  --code-value: var(--green, #a3be8c) !important;
-  --collapse-icon-color: var(--text-faint, #7f7f7f) !important;
-  --collapse-icon-color-collapsed: var(
-    --text-accent,
-    hsl(207, 77%, 54%)
-  ) !important;
+  --code-tag: var(--purple) !important;
+  --code-value: var(--green) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -222,13 +191,10 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--background-modifier-border, #e3e3e3) !important;
-  --divider-color-hover: var(
-    --interactive-accent,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --dropdown-background: var(--interactive-normal, #efefef) !important;
-  --dropdown-background-hover: var(--interactive-hover, #e6e6e6) !important;
+  --divider-color: #e3e3e3 !important;
+  --divider-color-hover: var(--interactive-accent) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -242,55 +208,19 @@ body.theme-light {
   --file-header-background: var(--background-primary) !important;
   --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
-  --flair-background: var(--interactive-normal, #efefef) !important;
-  --flair-color: var(--text-normal, #0e0e0e) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
-  --font-mermaid: var(
-    --font-text,
-    "??",
-    Bookerly,
-    "Inter",
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --font-mermaid: var(--font-text) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -300,14 +230,14 @@ body.theme-light {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color, #dddddd) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
-  --footnote-id-color: var(--text-muted, #7f7f7f) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint, #7f7f7f) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active
@@ -315,27 +245,24 @@ body.theme-light {
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
   --footnote-padding-inline: var(--size-2-3) !important;
-  --footnote-radius: var(--radius-s, 5px) !important;
+  --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
-  --graph-node: var(--text-muted, #7f7f7f) !important;
+  --graph-line: #b1b1b1 !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(207, 77%, 54%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #7f7f7f) !important;
-  --graph-text: var(--text-normal, #0e0e0e) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --h5-line-height: var(--line-height-normal) !important;
   --h6-line-height: var(--line-height-normal) !important;
-  --heading-formatting: var(--text-faint, #7f7f7f) !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: var(--background-modifier-border, #dddddd) !important;
-  --icon-color: var(--text-muted, #7f7f7f) !important;
-  --icon-color-active: var(--text-accent, hsl(207, 77%, 54%)) !important;
-  --icon-color-focused: var(--text-normal, #0e0e0e) !important;
-  --icon-color-hover: var(--text-muted, #7f7f7f) !important;
+  --hr-color: var(--background-modifier-border) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
@@ -343,113 +270,57 @@ body.theme-light {
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height) !important;
-  --inline-title-size: var(--h1-size, 1.5625em) !important;
+  --inline-title-size: var(--h1-size) !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
   --input-border-width: var(--border-width) !important;
   --input-corner-shape: var(--corner-shape) !important;
-  --input-date-separator: var(--text-faint, #7f7f7f) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --input-placeholder-color: var(--text-faint, #7f7f7f) !important;
-  --interactive-accent: var(
-    --color-accent-1,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --interactive-accent-hover: var(
-    --color-accent-2,
-    hsl(204, 78.54%, 62.1%)
-  ) !important;
-  --interactive-accent-hsl: var(--color-accent-hsl, 207, 77%, 54%) !important;
-  --interactive-hover: var(--color-base-10, #e6e6e6) !important;
-  --interactive-normal: var(--color-base-00, #efefef) !important;
-  --link-color: var(--text-accent, hsl(207, 77%, 54%)) !important;
-  --link-color-hover: var(
-    --text-accent-hover,
-    hsl(204, 78.54%, 62.1%)
-  ) !important;
-  --link-external-color: var(--text-accent, hsl(207, 77%, 54%)) !important;
-  --link-external-color-hover: var(
-    --text-accent-hover,
-    hsl(204, 78.54%, 62.1%)
-  ) !important;
-  --link-unresolved-color: var(--text-accent, hsl(207, 77%, 54%)) !important;
-  --link-unresolved-decoration-color: var(
-    --graph-unresolved,
-    #db4e4ecc
-  ) !important;
+  --input-placeholder-color: var(--text-faint) !important;
+  --interactive-accent: var(--color-accent-1) !important;
+  --interactive-accent-hover: var(--color-accent-2) !important;
+  --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: #e6e6e6 !important;
+  --interactive-normal: #efefef !important;
+  --link-color: var(--text-accent) !important;
+  --link-color-hover: var(--text-accent-hover) !important;
+  --link-external-color: var(--text-accent) !important;
+  --link-external-color-hover: var(--text-accent-hover) !important;
+  --link-unresolved-color: var(--text-accent) !important;
+  --link-unresolved-decoration-color: var(--graph-unresolved) !important;
   --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
-  --list-marker-color: var(--text-faint, #7f7f7f) !important;
-  --list-marker-color-collapsed: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --list-marker-color-hover: var(--text-muted, #7f7f7f) !important;
-  --menu-background: var(--background-secondary, #fcfcfc) !important;
+  --list-marker-color: var(--text-faint) !important;
+  --list-marker-color-collapsed: var(--theme-color) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
-  --menu-radius: var(--radius-m, 7px) !important;
+  --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --metadata-input-font: var(--font-interface) !important;
   --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --metadata-input-text-color: var(--text-normal, #0e0e0e) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
-  --metadata-label-text-color: var(--text-muted, #7f7f7f) !important;
-  --metadata-label-text-color-hover: var(--text-muted, #7f7f7f) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover
@@ -469,13 +340,13 @@ body.theme-light {
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
-  --modal-radius: var(--radius-l, 15px) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color, #7f7f7f) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint, #7f7f7f) !important;
-  --nav-heading-color: var(--text-normal, #0e0e0e) !important;
-  --nav-heading-color-collapsed: var(--text-faint, #7f7f7f) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted, #7f7f7f) !important;
-  --nav-heading-color-hover: var(--text-normal, #0e0e0e) !important;
+  --modal-radius: var(--radius-l) !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
@@ -488,24 +359,21 @@ body.theme-light {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
-  --nav-item-color: var(--text-muted, #7f7f7f) !important;
-  --nav-item-color-active: var(--text-normal, #0e0e0e) !important;
-  --nav-item-color-highlighted: var(
-    --text-accent,
-    hsl(207, 77%, 54%)
-  ) !important;
-  --nav-item-color-hover: var(--text-normal, #0e0e0e) !important;
-  --nav-item-color-selected: var(--text-normal, #0e0e0e) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--text-normal) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
-  --nav-item-radius: var(--radius-s, 5px) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small) !important;
-  --nav-tag-color: var(--text-faint, #7f7f7f) !important;
-  --nav-tag-color-active: var(--text-muted, #7f7f7f) !important;
-  --nav-tag-color-hover: var(--text-muted, #7f7f7f) !important;
-  --nav-tag-radius: var(--radius-s, 5px) !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
+  --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --pdf-background: var(--background-primary) !important;
   --pdf-page-background: var(--background-primary) !important;
@@ -514,13 +382,13 @@ body.theme-light {
   --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(--background-modifier-border, #dddddd) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
-  --pill-color: var(--text-muted, #7f7f7f) !important;
-  --pill-color-hover: var(--text-normal, #0e0e0e) !important;
-  --pill-color-remove: var(--text-faint, #7f7f7f) !important;
-  --pill-color-remove-hover: var(--text-accent, hsl(207, 77%, 54%)) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
   --prompt-background: var(--background-primary) !important;
@@ -531,72 +399,57 @@ body.theme-light {
   --prompt-border-width: var(--border-width) !important;
   --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary-alt, #f3f3f3) !important;
-  --ribbon-background-collapsed: var(
-    --background-secondary-alt,
-    #f3f3f3
-  ) !important;
+  --ribbon-background: var(--background-secondary-alt) !important;
+  --ribbon-background-collapsed: var(--background-secondary-alt) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
+  --scrollbar-active-thumb-bg: #ddddddd9 !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: var(--radius-l, 15px) !important;
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: var(--text-muted, #7f7f7f) !important;
-  --search-icon-color: var(--text-muted, #7f7f7f) !important;
+  --scrollbar-radius: var(--radius-l) !important;
+  --scrollbar-thumb-bg: #dcdcdcbe !important;
+  --search-clear-button-color: var(--text-muted) !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal, #0e0e0e) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
-  --setting-items-background: var(--background-primary-alt, #e9e9e9) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
-  --setting-items-radius: var(--radius-l, 15px) !important;
-  --shiki-active-tab-border-color: var(
-    --shiki-highlight-neutral,
-    #7f7f7f
-  ) !important;
-  --shiki-code-background: var(--code-background, #e6e6e671) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 5px) !important;
+  --setting-items-radius: var(--radius-l) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
+  --shiki-code-background: var(--code-background) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
-  --shiki-code-comment: var(--text-faint, #7f7f7f) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
-  --shiki-code-normal: var(--text-muted, #7f7f7f) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
-  --shiki-code-punctuation: var(--text-muted, #7f7f7f) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
-  --shiki-gutter-text-color: var(--text-faint, #7f7f7f) !important;
-  --shiki-gutter-text-color-highlight: var(
-    --shiki-code-normal,
-    #7f7f7f
-  ) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal, #7f7f7f) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: var(--text-faint, #7f7f7f) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
@@ -604,16 +457,13 @@ body.theme-light {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
-  --status-bar-background: var(--background-secondary, #fcfcfc) !important;
-  --status-bar-border-color: var(--divider-color, #e3e3e3) !important;
+  --slider-track-background: var(--background-modifier-border) !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
-  --status-bar-radius: var(--radius-m, 7px 0 0 0) 0 0 0 !important;
-  --status-bar-text-color: var(--text-muted, #7f7f7f) !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
@@ -625,14 +475,14 @@ body.theme-light {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --tab-background-active: var(--background-primary) !important;
-  --tab-container-background: var(--background-secondary, #fcfcfc) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(--divider-color, #e3e3e3) !important;
-  --tab-radius: var(--radius-s, 5px) !important;
+  --tab-outline-color: #e3e3e3 !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(--background-secondary, #fcfcfc) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -641,37 +491,27 @@ body.theme-light {
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint, #7f7f7f) !important;
-  --tab-text-color-active: var(--text-muted, #7f7f7f) !important;
-  --tab-text-color-focused: var(--text-muted, #7f7f7f) !important;
-  --tab-text-color-focused-active: var(--text-muted, #7f7f7f) !important;
-  --tab-text-color-focused-active-current: var(
-    --text-normal,
-    #0e0e0e
-  ) !important;
-  --tab-text-color-focused-highlighted: var(
-    --text-accent,
-    hsl(207, 77%, 54%)
-  ) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
+  --tab-text-color-focused-active-current: var(--text-normal) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--background-modifier-border, #7d7d7d) !important;
+  --table-border-color: #7d7d7d !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
-    --table-selection-border-color,
-    hsl(206, 77.77%, 58.05%)
+    --table-selection-border-color
   ) !important;
-  --table-drag-handle-color: var(--text-faint, #7f7f7f) !important;
-  --table-drag-handle-color-active: var(--text-on-accent, #ffffff) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
+  --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-header-background: var(--table-background) !important;
-  --table-header-border-color: var(--table-border-color, #7d7d7d) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
-  --table-header-color: var(--text-normal, #0e0e0e) !important;
+  --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -683,10 +523,7 @@ body.theme-light {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
-  --table-selection-border-color: var(
-    --interactive-accent,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: calc(var(--font-text-size) * 0.9375) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
@@ -695,38 +532,29 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: var(--text-accent, hsl(207, 77%, 54%)) !important;
-  --tag-color-hover: var(--text-accent, hsl(207, 77%, 54%)) !important;
+  --tag-color: var(--text-accent) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-size: var(--font-smaller) !important;
-  --text-accent: var(--color-accent, hsl(207, 77%, 54%)) !important;
-  --text-accent-hover: var(
-    --color-accent-2,
-    hsl(204, 78.54%, 62.1%)
-  ) !important;
-  --text-error: var(--color-red, #e75545) !important;
-  --text-faint: var(--color-base-50, #7f7f7f) !important;
+  --text-accent: var(--color-accent) !important;
+  --text-accent-hover: var(--color-accent-2) !important;
+  --text-error: #e75545 !important;
+  --text-faint: #7f7f7f !important;
   --text-highlight-bg: hsla(
     var(--text-highlight-bg-h-light),
     var(--text-highlight-bg-s-light),
     var(--text-highlight-bg-l-light),
     var(--text-highlight-bg-a-light)
   ) !important;
-  --text-muted: var(--color-base-70, #7f7f7f) !important;
-  --text-normal: var(--color-base-100, #0e0e0e) !important;
-  --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
+  --text-muted: #7f7f7f !important;
+  --text-normal: #0e0e0e !important;
+  --text-selection: #a9d1c859 !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, #fcfcfc) !important;
-  --titlebar-background-focused: var(
-    --background-secondary-alt,
-    #f3f3f3
-  ) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
-  --titlebar-text-color: var(--text-muted, #7f7f7f) !important;
-  --titlebar-text-color-focused: var(--text-normal, #0e0e0e) !important;
+  --titlebar-background: var(--background-secondary) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --touch-radius-l: var(--touch-size-l) !important;
   --touch-radius-m: var(--touch-size-m) !important;
@@ -736,8 +564,8 @@ body.theme-light {
   --touch-radius-xxs: var(--touch-size-xxs) !important;
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
-  --vault-profile-color: var(--text-normal, #0e0e0e) !important;
-  --vault-profile-color-hover: var(--vault-profile-color, #0e0e0e) !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
@@ -1189,7 +1017,6 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--h1-color, hsl(216, 88%, 26%)) !important;
   --shadow-edges: 0 0 transparent !important;
   --h1-color: var(--print-h1-color, hsl(216, 88%, 26%)) !important;
   --h2-color: var(--print-h2-color, hsl(212, 100%, 33%)) !important;
@@ -1197,132 +1024,71 @@ body.theme-light {
   --h4-color: var(--print-h4-color, hsl(208, 58%, 49%)) !important;
   --h5-color: var(--print-h5-color, hsl(209, 70%, 62%)) !important;
   --h6-color: var(--print-h6-color, hsl(209, 65%, 72%)) !important;
+  --inline-title-color: var(--h1-color) !important;
   --accent-strong: #000000 !important;
   --text-error-hover: #f86959 !important;
   --background-modifier-form-field-highlighted: #fff !important;
   --light-purple: #b74ff3 !important;
   --light-yellow: #ab9a02 !important;
-  --inline-title-font: var(
-    --h1-font,
-    "??",
-    Bookerly,
-    "Inter",
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
   --h1-font: var(--font-text), var(--font-default) !important;
   --h2-font: var(--font-text), var(--font-default) !important;
   --h3-font: var(--font-text), var(--font-default) !important;
   --h4-font: var(--font-text), var(--font-default) !important;
+  --inline-title-font: var(--h1-font) !important;
   --folder-title: #000000 !important;
   --panel-border-color: #dbdbdc !important;
-  --green: var(--nord14, #a3be8c) !important;
+  --green: var(--nord14) !important;
   --orange: #db9600 !important;
   --purple: #c74df7 !important;
-  --red: var(--nord11, #bf616a) !important;
+  --red: var(--nord11) !important;
   --yellow: #e48100 !important;
-  --blue: var(--nord10, #5e81ac) !important;
+  --blue: var(--nord10) !important;
   --gray-1: #383a42 !important;
   --gray-2: #383a42 !important;
   --green-1: #3dc730 !important;
   --red-1: #f16464f5 !important;
-  --aqua: var(--nord8, #88c0d0) !important;
+  --aqua: var(--nord8) !important;
   --font-size-code: 0.825em !important;
   --text-search-highlight-bg: #ffd1dd !important;
   --accent-l-alt: calc(var(--accent-l) * 0.9) !important;
-  --activeline-background: var(
-    --theme-color-translucent-005,
-    hsla(207, 77%, 54%, 0.05)
-  ) !important;
-  --background-asymm-split-left: var(
-    --background-secondary-alt,
-    #f3f3f3
-  ) !important;
+  --activeline-background: var(--theme-color-translucent-005) !important;
+  --background-asymm-split-left: var(--background-secondary-alt) !important;
   --background-code: #e6e6e671 !important;
-  --background-popover: var(--color-base-10, #fafafa) !important;
+  --background-popover: var(--color-base-10) !important;
   --background-titlebar-inner: hsla(
     var(--accent-h),
     var(--accent-s),
     var(--accent-l),
     10%
   ) !important;
-  --bt-bubble-border-color: var(
-    --background-modifier-border,
-    #dddddd
-  ) !important;
-  --bt-indentation-gradient-color-1: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --calendar-active-color: var(
-    --theme-color-translucent-02,
-    hsla(207, 77%, 54%, 0.2)
-  ) !important;
-  --calendar-hover-color: var(
-    --theme-color-translucent-01,
-    hsla(207, 77%, 54%, 0.1)
-  ) !important;
-  --cloze-bg-color: var(--accent-strong, #000000) !important;
-  --cloze-decoration-color-2: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --cloze-decoration-color-3: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --code-active-line-background-color: var(
-    --activeline-background,
-    hsla(207, 77%, 54%, 0.05)
-  ) !important;
-  --code-atom: var(--orange-1, #cc7523) !important;
-  --code-attribute: var(--code-function, #bf616a) !important;
-  --code-hr: var(--code-punctuation, #7f7f7f) !important;
-  --code-language: var(--text-muted, #7f7f7f) !important;
-  --code-qualifier: var(--aqua, #88c0d0) !important;
-  --code-selection-background: var(--text-selection, #a9d1c859) !important;
-  --code-selection-color: var(--code-normal, #000000) !important;
-  --code-string-2: var(--orange-1, #cc7523) !important;
-  --code-type: var(--code-function, #bf616a) !important;
+  --bt-bubble-border-color: var(--background-modifier-border) !important;
+  --bt-indentation-gradient-color-1: var(--theme-color) !important;
+  --calendar-active-color: var(--theme-color-translucent-02) !important;
+  --calendar-hover-color: var(--theme-color-translucent-01) !important;
+  --cloze-bg-color: var(--accent-strong) !important;
+  --cloze-decoration-color-2: var(--theme-color) !important;
+  --cloze-decoration-color-3: var(--theme-color) !important;
+  --code-atom: var(--orange-1) !important;
+  --code-attribute: var(--code-function) !important;
+  --code-hr: var(--code-punctuation) !important;
+  --code-language: var(--text-muted) !important;
+  --code-qualifier: var(--aqua) !important;
+  --code-selection-background: var(--text-selection) !important;
+  --code-selection-color: var(--code-normal) !important;
+  --code-string-2: var(--orange-1) !important;
+  --code-type: var(--code-function) !important;
   --code-variable: #f07178 !important;
-  --color-highlight-1: var(--text-normal, #0e0e0e) !important;
-  --color-highlight-2: var(--text-normal, #0e0e0e) !important;
-  --color-highlight-3: var(--text-normal, #0e0e0e) !important;
-  --custom-titlebar-bg: var(--background-secondary-alt, #f3f3f3) !important;
+  --color-highlight-1: var(--text-normal) !important;
+  --color-highlight-2: var(--text-normal) !important;
+  --color-highlight-3: var(--text-normal) !important;
+  --custom-titlebar-bg: var(--background-secondary-alt) !important;
   --embed-color: hsla(
     calc(var(--accent-h) * 1),
     calc(var(--accent-s) * 0.8),
     calc(var(--accent-l) * 1),
     0.035
   ) !important;
-  --external-link-color: var(
-    --internal-link-color,
-    hsl(207, 77%, 54%)
-  ) !important;
+  --external-link-color: var(--internal-link-color) !important;
   --font-family-folder-file-title:
     var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
     "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
@@ -1331,25 +1097,10 @@ body.theme-light {
   --font-family-strong:
     Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
     "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface) !important;
-  --font-loading-text: var(
-    --font-monospace-theme,
-    "JetBrains Mono",
-    Consolas,
-    Monaco,
-    "等距更纱黑体 SC",
-    "Source Han Mono",
-    "Microsoft Yahei Mono",
-    "Segoe UI Emoji",
-    "Microsoft YaHei",
-    "Source Code Pro",
-    monospace
-  ) !important;
-  --font-size-outline: var(--nav-item-size, 13px) !important;
-  --graph-canvas-bg: var(--background-primary, #ffffff) !important;
-  --graph-circle-fill-highlight: var(
-    --interactive-accent,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
+  --font-loading-text: var(--font-monospace-theme) !important;
+  --font-size-outline: var(--nav-item-size) !important;
+  --graph-canvas-bg: var(--background-primary) !important;
+  --graph-circle-fill-highlight: var(--interactive-accent) !important;
   --graph-line-fill-highlight: rgb(var(--interactive-accent-rgb)) !important;
   --h1-bg-color: color-mix(
     in srgb,
@@ -1381,91 +1132,56 @@ body.theme-light {
     var(--h6-color) 15%,
     transparent
   ) !important;
-  --he-title-bar-active-action: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --he-title-bar-active-bg: var(
-    --theme-color-translucent-005,
-    hsla(207, 77%, 54%, 0.05)
-  ) !important;
-  --he-title-bar-active-fg: var(--text-normal, #0e0e0e) !important;
+  --he-title-bar-active-action: var(--theme-color) !important;
+  --he-title-bar-active-bg: var(--theme-color-translucent-005) !important;
+  --he-title-bar-active-fg: var(--text-normal) !important;
   --he-title-bar-active-pinned-bg: var(
-    --theme-color-translucent-005,
-    hsla(207, 77%, 54%, 0.05)
+    --theme-color-translucent-005
   ) !important;
-  --he-title-bar-inactive-action: var(--text-normal, #0e0e0e) !important;
-  --he-title-bar-inactive-bg: var(
-    --theme-color-translucent-001,
-    hsla(207, 77%, 54%, 0.01)
-  ) !important;
-  --he-title-bar-inactive-fg: var(--text-muted, #7f7f7f) !important;
+  --he-title-bar-inactive-action: var(--text-normal) !important;
+  --he-title-bar-inactive-bg: var(--theme-color-translucent-001) !important;
+  --he-title-bar-inactive-fg: var(--text-muted) !important;
   --he-title-bar-inactive-pinned-bg: var(
-    --theme-color-translucent-001,
-    hsla(207, 77%, 54%, 0.01)
+    --theme-color-translucent-001
   ) !important;
-  --hr-color-1: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-2: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-3: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-4: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-icon-1: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-icon-2: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-icon-3: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-icon-4: var(--theme-color, hsl(206, 77.77%, 58.05%)) !important;
-  --hr-color-numbers-bg-color: var(
-    --theme-color-translucent-015,
-    hsla(207, 77%, 54%, 0.15)
-  ) !important;
-  --hr-color-numbers-color: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --hr-color-numbers-line-1: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --hr-color-numbers-line-2: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --hr-color-numbers-line-3: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --hr-color-numbers-line-4: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --hr-numbers-text-stroke: var(--text-normal, #0e0e0e) !important;
+  --hr-color-1: var(--theme-color) !important;
+  --hr-color-2: var(--theme-color) !important;
+  --hr-color-3: var(--theme-color) !important;
+  --hr-color-4: var(--theme-color) !important;
+  --hr-color-icon-1: var(--theme-color) !important;
+  --hr-color-icon-2: var(--theme-color) !important;
+  --hr-color-icon-3: var(--theme-color) !important;
+  --hr-color-icon-4: var(--theme-color) !important;
+  --hr-color-numbers-bg-color: var(--theme-color-translucent-015) !important;
+  --hr-color-numbers-color: var(--theme-color) !important;
+  --hr-color-numbers-line-1: var(--theme-color) !important;
+  --hr-color-numbers-line-2: var(--theme-color) !important;
+  --hr-color-numbers-line-3: var(--theme-color) !important;
+  --hr-color-numbers-line-4: var(--theme-color) !important;
+  --hr-numbers-text-stroke: var(--text-normal) !important;
   --inline-title-bg-color: color-mix(
     in srgb,
     var(--h1-color) 15%,
     transparent
   ) !important;
-  --internal-link-color: var(--text-accent, hsl(207, 77%, 54%)) !important;
-  --list-ol-number-color: var(--list-marker-color, #7f7f7f) !important;
-  --list-ul-marker-color: var(--list-marker-color, #7f7f7f) !important;
-  --loading-diy-text-color: var(--text-normal, #0e0e0e) !important;
-  --matrix-1: var(--p-kanban-color-2, #7cdddd65) !important;
-  --matrix-2: var(--p-kanban-color-3, #8ce38465) !important;
-  --matrix-4: var(--p-kanban-color-5, #eeb36f65) !important;
-  --matrix-5: var(--p-kanban-color-6, #f18e8e65) !important;
-  --mjx-inline-math-color: var(--text-normal, #0e0e0e) !important;
-  --mjx-math-color: var(--text-normal, #0e0e0e) !important;
-  --page-border-bottom: var(--background-secondary-alt, #f3f3f3) !important;
-  --print-em-color: var(--accent-em, #099d4e) !important;
-  --search-result-file-title-color: var(--text-normal, #0e0e0e) !important;
-  --status-bar-bg: var(--background-secondary-alt, #f3f3f3) !important;
-  --table-thead-background-color: var(
-    --theme-color-translucent-01,
-    hsla(207, 77%, 54%, 0.1)
-  ) !important;
-  --text-folder-file-icon: var(
-    --theme-color,
-    hsl(206, 77.77%, 58.05%)
-  ) !important;
-  --text-highlight: var(--text-normal, #0e0e0e) !important;
-  --theme-color: var(--interactive-accent, hsl(206, 77.77%, 58.05%)) !important;
+  --internal-link-color: var(--text-accent) !important;
+  --list-ol-number-color: var(--list-marker-color) !important;
+  --list-ul-marker-color: var(--list-marker-color) !important;
+  --loading-diy-text-color: var(--text-normal) !important;
+  --matrix-1: var(--p-kanban-color-2) !important;
+  --matrix-2: var(--p-kanban-color-3) !important;
+  --matrix-4: var(--p-kanban-color-5) !important;
+  --matrix-5: var(--p-kanban-color-6) !important;
+  --mjx-inline-math-color: var(--text-normal) !important;
+  --mjx-math-color: var(--text-normal) !important;
+  --page-border-bottom: var(--background-secondary-alt) !important;
+  --print-em-color: var(--accent-em) !important;
+  --search-result-file-title-color: var(--text-normal) !important;
+  --status-bar-bg: var(--background-secondary-alt) !important;
+  --table-thead-background-color: var(--theme-color-translucent-01) !important;
+  --text-folder-file-icon: var(--theme-color) !important;
+  --text-highlight: var(--text-normal) !important;
+  --theme-color: var(--interactive-accent) !important;
   --theme-color-translucent-001: hsla(
     var(--interactive-accent-hsl),
     0.01
@@ -1494,7 +1210,7 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.6
   ) !important;
-  --unresolved-link: var(--graph-unresolved, #db4e4ecc) !important;
+  --unresolved-link: var(--graph-unresolved) !important;
   --accent-em: #099d4e !important;
   --admonition-bg-color: #ffffff00 !important;
   --background-4-sliding-pane: #ffffffef !important;
@@ -1594,6 +1310,7 @@ body.theme-light {
   --cloze-decoration-2: dashed !important;
   --cloze-decoration-3: dashed !important;
   --cloze-decoration-color: red !important;
+  --code-active-line-background-color: var(--activeline-background) !important;
   --code-attribute-in-comment: #c792ea !important;
   --code-bracket: #ff5370 !important;
   --code-builtin: #ffcb6b !important;
@@ -1604,10 +1321,10 @@ body.theme-light {
   --code-header: #da7dae !important;
   --code-link: #696d70 !important;
   --code-matching-bracket: #ffffff !important;
-  --code-meta: var(--text-faint, #7f7f7f) !important;
+  --code-meta: var(--text-faint) !important;
   --code-number: #ff5370 !important;
   --code-tag-in-comment: #ff5370 !important;
-  --code-variable-2: var(--light-purple, #b74ff3) !important;
+  --code-variable-2: var(--light-purple) !important;
   --code-variable-3: #e7852fe7 !important;
   --color-view-header-gradient-1: #ffffffce !important;
   --color-view-header-gradient-2: #ffffffce !important;
@@ -1921,24 +1638,19 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--color-base-30, #343434) !important;
+  --background-modifier-border: #343434 !important;
   --background-modifier-border-focus: var(--color-base-40) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
-  --background-modifier-error: var(--color-red, #9b4343) !important;
+  --background-modifier-error: #9b4343 !important;
   --background-modifier-error-hover: var(--color-red) !important;
-  --background-modifier-error-rgb: var(--color-red-rgb, 155, 67, 67) !important;
+  --background-modifier-error-rgb: 155, 67, 67 !important;
   --background-modifier-form-field: var(--color-base-25) !important;
   --background-modifier-form-field-hover: var(
     --background-modifier-form-field
   ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: var(--color-green, #539126) !important;
-  --background-modifier-success-rgb: var(
-    --color-green-rgb,
-    83,
-    145,
-    38
-  ) !important;
+  --background-modifier-success: #539126 !important;
+  --background-modifier-success-rgb: 83, 145, 38 !important;
   --background-primary: var(--background-primary-bg-4-bt, #202020) !important;
   --background-primary-alt: var(
     --background-primary-alt-bg-4-bt,
@@ -1952,60 +1664,41 @@ body.theme-dark {
     --background-secondary-alt-bg-4-bt,
     #000000
   ) !important;
-  --bases-cards-background: var(--background-primary, #202020) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    #444444
-  ) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
-  --bases-cards-radius: var(--radius-m, 7px) !important;
+  --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
-  --bases-embed-border-radius: var(--radius-s, 5px) !important;
-  --bases-group-heading-property-color: var(--text-muted, #8a8a8a) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
+  --bases-embed-border-radius: var(--radius-s) !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, #4a4a4a) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    #202020
-  ) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    #444444
+    --background-primary-alt
   ) !important;
-  --bases-table-cell-background-selected: var(
-    --table-selection,
-    hsla(208, 64%, 49%, 0.1)
-  ) !important;
+  --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
-  --bases-table-container-border-radius: var(--radius-s, 5px) !important;
+  --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    #444444
-  ) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    #202020
-  ) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --bases-table-header-color: var(--text-muted, #8a8a8a) !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -2016,17 +1709,11 @@ body.theme-dark {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    #202020
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --interactive-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blur-background: color-mix(
       in srgb,
       var(--interactive-normal) var(--blur-opacity-s),
@@ -2060,15 +1747,15 @@ body.theme-dark {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 5px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, #202020) !important;
-  --canvas-card-label-color: var(--text-faint, #797979) !important;
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
   --canvas-color-3: var(--color-yellow-rgb) !important;
@@ -2077,42 +1764,36 @@ body.theme-dark {
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
-  --canvas-controls-radius: var(--radius-s, 5px) !important;
+  --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
-  --caret-color: var(--text-normal, #c6c6c6) !important;
-  --checkbox-border-color: var(--text-faint, #797979) !important;
-  --checkbox-border-color-hover: var(--text-muted, #8a8a8a) !important;
-  --checkbox-color: var(--interactive-accent, hsl(208, 64%, 49%)) !important;
-  --checkbox-color-hover: var(
-    --interactive-accent-hover,
-    hsl(203, 67.2%, 63.21%)
-  ) !important;
-  --checkbox-marker-color: var(--background-primary, #202020) !important;
-  --checkbox-radius: var(--radius-s, 5px) !important;
-  --checkbox-size: var(--font-text-size, 0.9rem) !important;
-  --checklist-done-color: var(--text-muted, #8a8a8a) !important;
-  --clickable-icon-radius: var(--radius-s, 5px) !important;
-  --code-background: var(--background-code, #1111118c) !important;
-  --code-border-color: var(--background-modifier-border, #343434) !important;
+  --caret-color: var(--text-normal) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: 0.9rem !important;
+  --checklist-done-color: var(--text-muted) !important;
+  --clickable-icon-radius: var(--radius-s) !important;
+  --code-background: var(--background-code) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--darkgreen, #568060) !important;
-  --code-function: var(--light-yellow, #cac685) !important;
-  --code-important: var(--darkblue, #478fee) !important;
-  --code-keyword: var(--darkblue, #478fee) !important;
-  --code-normal: var(--text-normal, #ebdbb2) !important;
-  --code-operator: var(--code-property, #a89984) !important;
-  --code-property: var(--blue, #a0c7e9) !important;
-  --code-punctuation: var(--gray-2, #abb2bf) !important;
-  --code-radius: var(--radius-s, 5px) !important;
+  --code-comment: var(--darkgreen) !important;
+  --code-function: var(--light-yellow) !important;
+  --code-important: var(--darkblue) !important;
+  --code-keyword: var(--darkblue) !important;
+  --code-normal: #ebdbb2 !important;
+  --code-operator: #a89984 !important;
+  --code-property: var(--blue) !important;
+  --code-punctuation: var(--gray-2) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--green, #abd58e) !important;
-  --code-tag: var(--red, #db7c84) !important;
-  --code-value: var(--green, #abd58e) !important;
-  --collapse-icon-color: var(--text-faint, #797979) !important;
-  --collapse-icon-color-collapsed: var(
-    --text-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
+  --code-string: var(--green) !important;
+  --code-tag: var(--red) !important;
+  --code-value: var(--green) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -2130,13 +1811,10 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--background-modifier-border, #000000) !important;
-  --divider-color-hover: var(
-    --interactive-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
-  --dropdown-background: var(--interactive-normal, #2b2b2b) !important;
-  --dropdown-background-hover: var(--interactive-hover, #373737) !important;
+  --divider-color: #000000 !important;
+  --divider-color-hover: var(--interactive-accent) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -2147,61 +1825,22 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, #202020) !important;
-  --file-header-background-focused: var(
-    --background-primary,
-    #202020
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
-  --flair-background: var(--interactive-normal, #2b2b2b) !important;
-  --flair-color: var(--text-normal, #c6c6c6) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
-  --font-mermaid: var(
-    --font-text,
-    "??",
-    Bookerly,
-    "Inter",
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --font-mermaid: var(--font-text) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -2211,14 +1850,14 @@ body.theme-dark {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color, #343434) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
-  --footnote-id-color: var(--text-muted, #8a8a8a) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint, #797979) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active
@@ -2226,27 +1865,24 @@ body.theme-dark {
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
   --footnote-padding-inline: var(--size-2-3) !important;
-  --footnote-radius: var(--radius-s, 5px) !important;
+  --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
-  --graph-node: var(--text-muted, #8a8a8a) !important;
+  --graph-line: #8c8c8c !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(208, 64%, 49%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #797979) !important;
-  --graph-text: var(--text-normal, #c6c6c6) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --h5-line-height: var(--line-height-normal) !important;
   --h6-line-height: var(--line-height-normal) !important;
-  --heading-formatting: var(--text-faint, #797979) !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: var(--color-base-10, #242424) !important;
-  --icon-color: var(--text-muted, #8a8a8a) !important;
-  --icon-color-active: var(--text-accent, hsl(208, 64%, 49%)) !important;
-  --icon-color-focused: var(--text-normal, #c6c6c6) !important;
-  --icon-color-hover: var(--text-muted, #8a8a8a) !important;
+  --hr-color: var(--color-base-10) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
@@ -2254,110 +1890,57 @@ body.theme-dark {
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height) !important;
-  --inline-title-size: var(--h1-size, 1.5625em) !important;
+  --inline-title-size: var(--h1-size) !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
   --input-border-width: var(--border-width) !important;
   --input-corner-shape: var(--corner-shape) !important;
-  --input-date-separator: var(--text-faint, #797979) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --input-placeholder-color: var(--text-faint, #797979) !important;
-  --interactive-accent: var(--color-accent, hsl(208, 64%, 49%)) !important;
-  --interactive-accent-hover: var(
-    --color-accent-2,
-    hsl(203, 67.2%, 63.21%)
-  ) !important;
-  --interactive-accent-hsl: var(--color-accent-hsl, 208, 64%, 49%) !important;
-  --interactive-hover: var(--color-base-35, #373737) !important;
-  --interactive-normal: var(--color-base-30, #2b2b2b) !important;
-  --link-color: var(--text-accent, hsl(208, 64%, 49%)) !important;
-  --link-color-hover: var(
-    --text-accent-hover,
-    hsl(203, 67.2%, 63.21%)
-  ) !important;
-  --link-external-color: var(--text-accent, hsl(208, 64%, 49%)) !important;
-  --link-external-color-hover: var(
-    --text-accent-hover,
-    hsl(203, 67.2%, 63.21%)
-  ) !important;
-  --link-unresolved-color: var(--text-accent, hsl(208, 64%, 49%)) !important;
-  --link-unresolved-decoration-color: var(
-    --graph-unresolved,
-    #f08080de
-  ) !important;
+  --input-placeholder-color: var(--text-faint) !important;
+  --interactive-accent: var(--color-accent) !important;
+  --interactive-accent-hover: var(--color-accent-2) !important;
+  --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: #373737 !important;
+  --interactive-normal: #2b2b2b !important;
+  --link-color: var(--text-accent) !important;
+  --link-color-hover: var(--text-accent-hover) !important;
+  --link-external-color: var(--text-accent) !important;
+  --link-external-color-hover: var(--text-accent-hover) !important;
+  --link-unresolved-color: var(--text-accent) !important;
+  --link-unresolved-decoration-color: var(--graph-unresolved) !important;
   --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
-  --list-marker-color: var(--text-faint, #797979) !important;
-  --list-marker-color-collapsed: var(
-    --theme-color,
-    hsl(208, 64%, 49%)
-  ) !important;
-  --list-marker-color-hover: var(--text-muted, #8a8a8a) !important;
-  --menu-background: var(--background-secondary, #151515) !important;
+  --list-marker-color: var(--text-faint) !important;
+  --list-marker-color-collapsed: var(--theme-color) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
-  --menu-radius: var(--radius-m, 7px) !important;
+  --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --metadata-input-font: var(--font-interface) !important;
   --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --metadata-input-text-color: var(--text-normal, #c6c6c6) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
+  --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
-  --metadata-label-text-color: var(--text-muted, #8a8a8a) !important;
-  --metadata-label-text-color-hover: var(--text-muted, #8a8a8a) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover
@@ -2371,19 +1954,19 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, #202020) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
-  --modal-radius: var(--radius-l, 15px) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color, #797979) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint, #797979) !important;
-  --nav-heading-color: var(--text-normal, #c6c6c6) !important;
-  --nav-heading-color-collapsed: var(--text-faint, #797979) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted, #8a8a8a) !important;
-  --nav-heading-color-hover: var(--text-normal, #c6c6c6) !important;
+  --modal-radius: var(--radius-l) !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
@@ -2396,117 +1979,95 @@ body.theme-dark {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
-  --nav-item-color: var(--text-muted, #8a8a8a) !important;
-  --nav-item-color-active: var(--text-normal, #c6c6c6) !important;
-  --nav-item-color-highlighted: var(
-    --text-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
-  --nav-item-color-hover: var(--text-normal, #c6c6c6) !important;
-  --nav-item-color-selected: var(--text-normal, #c6c6c6) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--text-normal) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
-  --nav-item-radius: var(--radius-s, 5px) !important;
+  --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small) !important;
-  --nav-tag-color: var(--text-faint, #797979) !important;
-  --nav-tag-color-active: var(--text-muted, #8a8a8a) !important;
-  --nav-tag-color-hover: var(--text-muted, #8a8a8a) !important;
-  --nav-tag-radius: var(--radius-s, 5px) !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
+  --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, #202020) !important;
-  --pdf-page-background: var(--background-primary, #202020) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary, #202020) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(--background-modifier-border, #343434) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
-  --pill-color: var(--text-muted, #8a8a8a) !important;
-  --pill-color-hover: var(--text-normal, #c6c6c6) !important;
-  --pill-color-remove: var(--text-faint, #797979) !important;
-  --pill-color-remove-hover: var(--text-accent, hsl(208, 64%, 49%)) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, #202020) !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --prompt-border-width: var(--border-width) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, #2b2b2b 65%, transparent)
-      linear-gradient(#2b2b2b, color-mix(in srgb, #2b2b2b 65%, transparent))
-  ) !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary-alt, #000000) !important;
-  --ribbon-background-collapsed: var(
-    --background-secondary-alt,
-    #000000
-  ) !important;
+  --ribbon-background: var(--background-secondary-alt) !important;
+  --ribbon-background-collapsed: var(--background-secondary-alt) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
+  --scrollbar-active-thumb-bg: #4d4d4d88 !important;
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
-  --scrollbar-radius: var(--radius-l, 15px) !important;
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: var(--text-muted, #8a8a8a) !important;
-  --search-icon-color: var(--text-muted, #8a8a8a) !important;
+  --scrollbar-radius: var(--radius-l) !important;
+  --scrollbar-thumb-bg: #3f3f3f7e !important;
+  --search-clear-button-color: var(--text-muted) !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal, #c6c6c6) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
-  --setting-items-background: var(--background-primary-alt, #444444) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
-  --setting-items-radius: var(--radius-l, 15px) !important;
-  --shiki-active-tab-border-color: var(
-    --shiki-highlight-neutral,
-    #8a8a8a
-  ) !important;
-  --shiki-code-background: var(--code-background, #1111118c) !important;
-  --shiki-code-block-border-radius: var(--code-radius, 5px) !important;
+  --setting-items-radius: var(--radius-l) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
+  --shiki-code-background: var(--code-background) !important;
+  --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
-  --shiki-code-comment: var(--text-faint, #797979) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
-  --shiki-code-normal: var(--text-muted, #8a8a8a) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
-  --shiki-code-punctuation: var(--text-muted, #8a8a8a) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
-  --shiki-gutter-text-color: var(--text-faint, #797979) !important;
-  --shiki-gutter-text-color-highlight: var(
-    --shiki-code-normal,
-    #8a8a8a
-  ) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal, #8a8a8a) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: var(--text-faint, #797979) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
@@ -2514,17 +2075,14 @@ body.theme-dark {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
-  --status-bar-background: var(--background-secondary, #151515) !important;
-  --status-bar-border-color: var(--divider-color, #000000) !important;
+  --slider-track-background: var(--background-modifier-border) !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
-  --status-bar-radius: var(--radius-m, 7px 0 0 0) 0 0 0 !important;
-  --status-bar-text-color: var(--text-muted, #8a8a8a) !important;
-  --suggestion-background: var(--background-primary, #202020) !important;
+  --status-bar-radius: var(--radius-m) 0 0 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
   --sync-avatar-color-2: var(--color-orange) !important;
@@ -2534,15 +2092,15 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue) !important;
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(--background-primary, #202020) !important;
-  --tab-container-background: var(--background-secondary, #151515) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(--divider-color, #151515) !important;
-  --tab-radius: var(--radius-s, 5px) !important;
+  --tab-outline-color: #151515 !important;
+  --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(--background-secondary, #151515) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -2551,37 +2109,27 @@ body.theme-dark {
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint, #797979) !important;
-  --tab-text-color-active: var(--text-muted, #8a8a8a) !important;
-  --tab-text-color-focused: var(--text-muted, #8a8a8a) !important;
-  --tab-text-color-focused-active: var(--text-muted, #8a8a8a) !important;
-  --tab-text-color-focused-active-current: var(
-    --text-normal,
-    #c6c6c6
-  ) !important;
-  --tab-text-color-focused-highlighted: var(
-    --text-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
+  --tab-text-color-focused-active-current: var(--text-normal) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--background-modifier-border, #4a4a4a) !important;
+  --table-border-color: #4a4a4a !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
-    --table-selection-border-color,
-    hsl(208, 64%, 49%)
+    --table-selection-border-color
   ) !important;
-  --table-drag-handle-color: var(--text-faint, #797979) !important;
-  --table-drag-handle-color-active: var(--text-on-accent, #e4e4e4) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
+  --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-header-background: var(--table-background) !important;
-  --table-header-border-color: var(--table-border-color, #4a4a4a) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
-  --table-header-color: var(--text-normal, #c6c6c6) !important;
+  --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -2593,10 +2141,7 @@ body.theme-dark {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
-  --table-selection-border-color: var(
-    --interactive-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: calc(var(--font-text-size) * 0.9375) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
@@ -2605,38 +2150,29 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: var(--text-accent, hsl(208, 64%, 49%)) !important;
-  --tag-color-hover: var(--text-accent, hsl(208, 64%, 49%)) !important;
+  --tag-color: var(--text-accent) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-size: var(--font-smaller) !important;
-  --text-accent: var(--color-accent, hsl(208, 64%, 49%)) !important;
-  --text-accent-hover: var(
-    --color-accent-2,
-    hsl(203, 67.2%, 63.21%)
-  ) !important;
-  --text-error: var(--color-red, #e16d76) !important;
-  --text-faint: var(--color-base-50, #797979) !important;
+  --text-accent: var(--color-accent) !important;
+  --text-accent-hover: var(--color-accent-2) !important;
+  --text-error: #e16d76 !important;
+  --text-faint: #797979 !important;
   --text-highlight-bg: hsla(
     var(--text-highlight-bg-h-dark),
     var(--text-highlight-bg-s-dark),
     var(--text-highlight-bg-l-dark),
     var(--text-highlight-bg-a-dark)
   ) !important;
-  --text-muted: var(--color-base-70, #8a8a8a) !important;
-  --text-normal: var(--color-base-100, #c6c6c6) !important;
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
+  --text-muted: #8a8a8a !important;
+  --text-normal: #c6c6c6 !important;
+  --text-selection: #3b767160 !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, #151515) !important;
-  --titlebar-background-focused: var(
-    --background-secondary-alt,
-    #000000
-  ) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
-  --titlebar-text-color: var(--text-muted, #8a8a8a) !important;
-  --titlebar-text-color-focused: var(--text-normal, #c6c6c6) !important;
+  --titlebar-background: var(--background-secondary) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --touch-radius-l: var(--touch-size-l) !important;
   --touch-radius-m: var(--touch-size-m) !important;
@@ -2646,8 +2182,8 @@ body.theme-dark {
   --touch-radius-xxs: var(--touch-size-xxs) !important;
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
-  --vault-profile-color: var(--text-normal, #c6c6c6) !important;
-  --vault-profile-color-hover: var(--vault-profile-color, #c6c6c6) !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6) !important;
@@ -3089,52 +2625,21 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 45, 130, 204 !important;
-  --inline-title-color: var(--h1-color, hsl(78, 62%, 47%)) !important;
   --h1-color: var(--print-h1-color, hsl(78, 62%, 47%)) !important;
   --h2-color: var(--print-h2-color, hsl(118, 42%, 49%)) !important;
   --h3-color: var(--print-h3-color, hsl(180, 53%, 48%)) !important;
   --h4-color: var(--print-h4-color, hsl(216, 69%, 68%)) !important;
   --h5-color: var(--print-h5-color, hsl(258, 79%, 77%)) !important;
   --h6-color: var(--print-h6-color, hsl(290, 85%, 81%)) !important;
+  --inline-title-color: var(--h1-color) !important;
   --accent-strong: #e7e7e7 !important;
   --text-error-hover: #c9626a !important;
   --light-yellow: #cac685 !important;
-  --inline-title-font: var(
-    --h1-font,
-    "??",
-    Bookerly,
-    "Inter",
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  ) !important;
   --h1-font: var(--font-text), var(--font-default) !important;
   --h2-font: var(--font-text), var(--font-default) !important;
   --h3-font: var(--font-text), var(--font-default) !important;
   --h4-font: var(--font-text), var(--font-default) !important;
+  --inline-title-font: var(--h1-font) !important;
   --folder-title: #ffffff !important;
   --panel-border-color: #18191e !important;
   --green: #abd58e !important;
@@ -3152,69 +2657,44 @@ body.theme-dark {
   --font-size-code: 0.825em !important;
   --text-search-highlight-bg: #bb4361 !important;
   --accent-l-alt: calc(var(--accent-l) * 1.05) !important;
-  --activeline-background: var(
-    --theme-color-translucent-005,
-    hsla(208, 64%, 49%, 0.05)
-  ) !important;
-  --background-asymm-split-left: var(
-    --background-secondary-alt,
-    #000000
-  ) !important;
+  --activeline-background: var(--theme-color-translucent-005) !important;
+  --background-asymm-split-left: var(--background-secondary-alt) !important;
   --background-code: #1111118c !important;
-  --background-popover: var(--color-base-10, #242424) !important;
+  --background-popover: var(--color-base-10) !important;
   --background-titlebar-inner: hsla(
     var(--accent-h),
     var(--accent-s),
     var(--accent-l),
     10%
   ) !important;
-  --bt-bubble-border-color: var(
-    --background-modifier-border,
-    #343434
-  ) !important;
-  --bt-indentation-gradient-color-1: var(
-    --theme-color,
-    hsl(208, 64%, 49%)
-  ) !important;
-  --calendar-active-color: var(
-    --theme-color-translucent-04,
-    hsla(208, 64%, 49%, 0.4)
-  ) !important;
-  --calendar-hover-color: var(
-    --theme-color-translucent-02,
-    hsla(208, 64%, 49%, 0.2)
-  ) !important;
-  --cloze-bg-color: var(--accent-strong, #e7e7e7) !important;
-  --cloze-decoration-color-2: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --cloze-decoration-color-3: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --code-active-line-background-color: var(
-    --activeline-background,
-    #111111eb
-  ) !important;
-  --code-atom: var(--orange-1, #da904b) !important;
-  --code-attribute: var(--code-function, #cac685) !important;
-  --code-hr: var(--code-punctuation, #abb2bf) !important;
-  --code-language: var(--text-muted, #8a8a8a) !important;
-  --code-qualifier: var(--aqua, #35bed0) !important;
-  --code-selection-background: var(--text-selection, #3b767160) !important;
-  --code-selection-color: var(--code-normal, #ebdbb2) !important;
-  --code-string-2: var(--yellow, #d6b87f) !important;
-  --code-type: var(--code-function, #cac685) !important;
-  --code-variable: var(--red, #db7c84) !important;
-  --color-highlight-1: var(--text-normal, #c6c6c6) !important;
-  --color-highlight-2: var(--text-normal, #c6c6c6) !important;
-  --color-highlight-3: var(--text-normal, #c6c6c6) !important;
-  --custom-titlebar-bg: var(--background-secondary-alt, #000000) !important;
+  --bt-bubble-border-color: var(--background-modifier-border) !important;
+  --bt-indentation-gradient-color-1: var(--theme-color) !important;
+  --calendar-active-color: var(--theme-color-translucent-04) !important;
+  --calendar-hover-color: var(--theme-color-translucent-02) !important;
+  --cloze-bg-color: var(--accent-strong) !important;
+  --cloze-decoration-color-2: var(--theme-color) !important;
+  --cloze-decoration-color-3: var(--theme-color) !important;
+  --code-atom: var(--orange-1) !important;
+  --code-attribute: var(--code-function) !important;
+  --code-hr: var(--code-punctuation) !important;
+  --code-language: var(--text-muted) !important;
+  --code-qualifier: var(--aqua) !important;
+  --code-selection-background: var(--text-selection) !important;
+  --code-selection-color: var(--code-normal) !important;
+  --code-string-2: var(--yellow) !important;
+  --code-type: var(--code-function) !important;
+  --code-variable: var(--red) !important;
+  --color-highlight-1: var(--text-normal) !important;
+  --color-highlight-2: var(--text-normal) !important;
+  --color-highlight-3: var(--text-normal) !important;
+  --custom-titlebar-bg: var(--background-secondary-alt) !important;
   --embed-color: hsla(
     calc(var(--accent-h) * 1),
     calc(var(--accent-s) * 1.2),
     calc(var(--accent-l) * 2),
     0.055
   ) !important;
-  --external-link-color: var(
-    --internal-link-color,
-    hsl(208, 64%, 49%)
-  ) !important;
+  --external-link-color: var(--internal-link-color) !important;
   --font-family-folder-file-title:
     var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
     "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
@@ -3223,25 +2703,10 @@ body.theme-dark {
   --font-family-strong:
     Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
     "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface) !important;
-  --font-loading-text: var(
-    --font-monospace-theme,
-    "JetBrains Mono",
-    Consolas,
-    Monaco,
-    "等距更纱黑体 SC",
-    "Source Han Mono",
-    "Microsoft Yahei Mono",
-    "Segoe UI Emoji",
-    "Microsoft YaHei",
-    "Source Code Pro",
-    monospace
-  ) !important;
-  --font-size-outline: var(--nav-item-size, 13px) !important;
-  --graph-canvas-bg: var(--background-primary, #202020) !important;
-  --graph-circle-fill-highlight: var(
-    --interactive-accent,
-    hsl(208, 64%, 49%)
-  ) !important;
+  --font-loading-text: var(--font-monospace-theme) !important;
+  --font-size-outline: var(--nav-item-size) !important;
+  --graph-canvas-bg: var(--background-primary) !important;
+  --graph-circle-fill-highlight: var(--interactive-accent) !important;
   --graph-line-fill-highlight: rgb(var(--interactive-accent-rgb)) !important;
   --h1-bg-color: color-mix(
     in srgb,
@@ -3273,73 +2738,56 @@ body.theme-dark {
     var(--h6-color) 15%,
     transparent
   ) !important;
-  --he-title-bar-active-action: var(
-    --theme-color,
-    hsl(208, 64%, 49%)
-  ) !important;
-  --he-title-bar-active-bg: var(
-    --theme-color-translucent-005,
-    hsla(208, 64%, 49%, 0.05)
-  ) !important;
-  --he-title-bar-active-fg: var(--text-normal, #c6c6c6) !important;
+  --he-title-bar-active-action: var(--theme-color) !important;
+  --he-title-bar-active-bg: var(--theme-color-translucent-005) !important;
+  --he-title-bar-active-fg: var(--text-normal) !important;
   --he-title-bar-active-pinned-bg: var(
-    --theme-color-translucent-005,
-    hsla(208, 64%, 49%, 0.05)
+    --theme-color-translucent-005
   ) !important;
-  --he-title-bar-inactive-action: var(--text-normal, #c6c6c6) !important;
-  --he-title-bar-inactive-bg: var(
-    --theme-color-translucent-001,
-    hsla(208, 64%, 49%, 0.01)
-  ) !important;
-  --he-title-bar-inactive-fg: var(--text-muted, #8a8a8a) !important;
+  --he-title-bar-inactive-action: var(--text-normal) !important;
+  --he-title-bar-inactive-bg: var(--theme-color-translucent-001) !important;
+  --he-title-bar-inactive-fg: var(--text-muted) !important;
   --he-title-bar-inactive-pinned-bg: var(
-    --theme-color-translucent-001,
-    hsla(208, 64%, 49%, 0.01)
+    --theme-color-translucent-001
   ) !important;
-  --hr-color-1: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-2: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-3: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-4: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-icon-1: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-icon-2: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-icon-3: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-icon-4: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-numbers-bg-color: var(
-    --theme-color-translucent-015,
-    hsla(208, 64%, 49%, 0.15)
-  ) !important;
-  --hr-color-numbers-color: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-numbers-line-1: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-numbers-line-2: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-numbers-line-3: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-color-numbers-line-4: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --hr-numbers-text-stroke: var(--text-normal, #c6c6c6) !important;
+  --hr-color-1: var(--theme-color) !important;
+  --hr-color-2: var(--theme-color) !important;
+  --hr-color-3: var(--theme-color) !important;
+  --hr-color-4: var(--theme-color) !important;
+  --hr-color-icon-1: var(--theme-color) !important;
+  --hr-color-icon-2: var(--theme-color) !important;
+  --hr-color-icon-3: var(--theme-color) !important;
+  --hr-color-icon-4: var(--theme-color) !important;
+  --hr-color-numbers-bg-color: var(--theme-color-translucent-015) !important;
+  --hr-color-numbers-color: var(--theme-color) !important;
+  --hr-color-numbers-line-1: var(--theme-color) !important;
+  --hr-color-numbers-line-2: var(--theme-color) !important;
+  --hr-color-numbers-line-3: var(--theme-color) !important;
+  --hr-color-numbers-line-4: var(--theme-color) !important;
+  --hr-numbers-text-stroke: var(--text-normal) !important;
   --inline-title-bg-color: color-mix(
     in srgb,
     var(--h1-color) 15%,
     transparent
   ) !important;
-  --internal-link-color: var(--text-accent, hsl(208, 64%, 49%)) !important;
-  --list-ol-number-color: var(--list-marker-color, #797979) !important;
-  --list-ul-marker-color: var(--list-marker-color, #797979) !important;
-  --loading-diy-text-color: var(--text-normal, #c6c6c6) !important;
-  --matrix-1: var(--p-kanban-color-2, #2ec4c452) !important;
-  --matrix-2: var(--p-kanban-color-3, #38ce2a52) !important;
-  --matrix-4: var(--p-kanban-color-5, #eb973752) !important;
-  --matrix-5: var(--p-kanban-color-6, #f3424252) !important;
-  --mjx-inline-math-color: var(--text-normal, #c6c6c6) !important;
-  --mjx-math-color: var(--text-normal, #c6c6c6) !important;
-  --page-border-bottom: var(--background-secondary-alt, #000000) !important;
-  --print-em-color: var(--accent-em, #a4ca8e) !important;
-  --search-result-file-title-color: var(--text-normal, #c6c6c6) !important;
-  --status-bar-bg: var(--background-secondary-alt, #000000) !important;
-  --table-thead-background-color: var(
-    --theme-color-translucent-01,
-    hsla(208, 64%, 49%, 0.1)
-  ) !important;
-  --text-folder-file-icon: var(--theme-color, hsl(208, 64%, 49%)) !important;
-  --text-highlight: var(--text-normal, #c6c6c6) !important;
-  --theme-color: var(--interactive-accent, hsl(208, 64%, 49%)) !important;
+  --internal-link-color: var(--text-accent) !important;
+  --list-ol-number-color: var(--list-marker-color) !important;
+  --list-ul-marker-color: var(--list-marker-color) !important;
+  --loading-diy-text-color: var(--text-normal) !important;
+  --matrix-1: var(--p-kanban-color-2) !important;
+  --matrix-2: var(--p-kanban-color-3) !important;
+  --matrix-4: var(--p-kanban-color-5) !important;
+  --matrix-5: var(--p-kanban-color-6) !important;
+  --mjx-inline-math-color: var(--text-normal) !important;
+  --mjx-math-color: var(--text-normal) !important;
+  --page-border-bottom: var(--background-secondary-alt) !important;
+  --print-em-color: var(--accent-em) !important;
+  --search-result-file-title-color: var(--text-normal) !important;
+  --status-bar-bg: var(--background-secondary-alt) !important;
+  --table-thead-background-color: var(--theme-color-translucent-01) !important;
+  --text-folder-file-icon: var(--theme-color) !important;
+  --text-highlight: var(--text-normal) !important;
+  --theme-color: var(--interactive-accent) !important;
   --theme-color-translucent-001: hsla(
     var(--interactive-accent-hsl),
     0.01
@@ -3368,7 +2816,7 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.6
   ) !important;
-  --unresolved-link: var(--graph-unresolved, #f08080de) !important;
+  --unresolved-link: var(--graph-unresolved) !important;
   --accent-em: #a4ca8e !important;
   --admonition-bg-color: #11111100 !important;
   --background-4-sliding-pane: #252525ed !important;
@@ -3468,6 +2916,7 @@ body.theme-dark {
   --cloze-decoration-2: dashed !important;
   --cloze-decoration-3: dashed !important;
   --cloze-decoration-color: red !important;
+  --code-active-line-background-color: #111111eb !important;
   --code-attribute-in-comment: #c792ea !important;
   --code-bracket: #ff5370 !important;
   --code-builtin: #ffcb6b !important;
@@ -3816,7 +3265,7 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--external-link-color, rgb(47, 147, 228));
+  color: var(--external-link-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -3860,31 +3309,12 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--internal-link-color, rgb(47, 147, 228));
+  color: var(--internal-link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-strong);
   font-weight: var(--link-weight);
   outline: rgb(47, 147, 228) none 0px;
   text-decoration: underline;
@@ -3906,38 +3336,16 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--unresolved-link, rgba(219, 78, 78, 0.8));
+  color: var(--unresolved-link);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-strong);
   font-weight: var(--link-weight);
   outline: rgba(219, 78, 78, 0.8) none 0px;
   text-decoration: underline rgba(219, 78, 78, 0.8);
-  text-decoration-color: var(
-    --link-unresolved-decoration-color,
-    rgba(219, 78, 78, 0.8)
-  );
+  text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -3968,7 +3376,7 @@ body body.theme-light .markdown-rendered a.internal-link:hover {
 }
 body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-muted, rgb(127, 127, 127));
+  color: var(--text-muted);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -4005,34 +3413,13 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--accent-strong, rgb(0, 0, 0));
+  color: var(--accent-strong);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family: var(
-    --font-family-strong,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-weight: var(--font-weight-strong, 700);
+  font-family: var(--font-family-strong);
+  font-weight: var(--font-weight-strong);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
@@ -4052,34 +3439,13 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--accent-strong, rgb(0, 0, 0));
+  color: var(--accent-strong);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family: var(
-    --font-family-strong,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-weight: var(--font-weight-strong, 700);
+  font-family: var(--font-family-strong);
+  font-weight: var(--font-weight-strong);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
@@ -4099,29 +3465,12 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(9, 157, 78));
+  color: var(--accent-em);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-em);
   font-weight: 400;
   outline: rgb(9, 157, 78) none 0px;
   text-decoration: rgb(34, 34, 34);
@@ -4142,29 +3491,12 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(9, 157, 78));
+  color: var(--accent-em);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-em);
   font-weight: 400;
   outline: rgb(9, 157, 78) none 0px;
   text-decoration: rgb(34, 34, 34);
@@ -4259,30 +3591,9 @@ body body.theme-light s {
 }
 body body.theme-light strong > em {
   background-color: rgb(245, 84, 84);
-  color: var(--italic-color, rgb(0, 0, 0));
+  color: var(--italic-color);
   cursor: grab;
-  font-family: var(
-    --font-family-strong,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--font-family-strong);
   font-weight: 700;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -4296,8 +3607,13 @@ body body.theme-light strong > em {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: var(--text-highlight-bg, rgba(255, 211, 153, 0.847));
-  color: var(--text-normal, rgb(14, 14, 14));
+  background-color: hsla(
+    var(--text-highlight-bg-h-light),
+    var(--text-highlight-bg-s-light),
+    var(--text-highlight-bg-l-light),
+    var(--text-highlight-bg-a-light)
+  );
+  color: var(--text-highlight);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -4382,10 +3698,7 @@ body body.theme-light del {
   animation-play-state: running;
 }
 body body.theme-light .suggestion-item.is-selected {
-  background-color: var(
-    --theme-color-translucent-015,
-    rgba(47, 147, 228, 0.15)
-  );
+  background-color: var(--theme-color-translucent-015);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -4397,10 +3710,7 @@ body body.theme-light .suggestion-item.is-selected {
   color: rgb(14, 14, 14);
 }
 body body.theme-light div.suggestion-item {
-  background-color: var(
-    --theme-color-translucent-015,
-    rgba(47, 147, 228, 0.15)
-  );
+  background-color: var(--theme-color-translucent-015);
   border: 0px rgb(14, 14, 14);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -4433,8 +3743,8 @@ body body.theme-light .markdown-rendered hr {
 }
 body body.theme-light div.multi-select-pill {
   align-items: normal;
-  background-color: var(--pill-background, rgba(47, 147, 228, 0.1));
-  color: var(--pill-color, rgb(47, 147, 228));
+  background-color: var(--pill-background);
+  color: var(--pill-color);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -4537,7 +3847,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: var(--code-background, rgba(204, 204, 204, 0.384));
+  background-color: var(--background-code-2);
   border: 0px solid rgb(221, 221, 221);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -4547,20 +3857,8 @@ body body.theme-light .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: var(--text-color-code, rgb(233, 93, 0));
-  font-family: var(
-    --font-family-inline-code,
-    "JetBrains Mono",
-    Consolas,
-    Monaco,
-    "等距更纱黑体 SC",
-    "Source Han Mono",
-    "Microsoft Yahei Mono",
-    "Segoe UI Emoji",
-    "Microsoft YaHei",
-    "Source Code Pro",
-    monospace
-  );
+  color: var(--text-color-code);
+  font-family: var(--font-family-inline-code);
   padding: 2px 2px 1px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -4589,7 +3887,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: var(--code-background, rgba(230, 230, 230, 0.443));
+  background-color: var(--background-code);
   border: 0px solid rgb(221, 221, 221);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -4633,7 +3931,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 14.3906px);
+  width: var(--checkbox-size);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -4656,11 +3954,8 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered blockquote {
-  background-color: var(
-    --blockquote-background-color,
-    rgba(213, 213, 213, 0.173)
-  );
-  color: var(--blockquote-color, rgb(14, 14, 14));
+  background-color: var(--background-blockquote);
+  color: var(--blockquote-color);
   font-family:
     Bookerly,
     Inter,
@@ -4691,7 +3986,7 @@ body body.theme-light .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-light .footnote-backref {
-  color: var(--text-faint, rgb(127, 127, 127));
+  color: var(--text-faint);
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -4705,7 +4000,7 @@ body body.theme-light .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: var(--text-normal, rgb(14, 14, 14));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4733,8 +4028,8 @@ body body.theme-light .search-results {
   box-shadow: 0 0 10px 1px var(--prompt-box-shadow);
 }
 body body.theme-light .search-results > * {
-  background-color: var(--scrollbar-active-thumb-bg, rgba(0, 0, 0, 0));
-  color: var(--text-normal, rgb(14, 14, 14));
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(14, 14, 14);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -4803,53 +4098,20 @@ body body.theme-light div.search-results .suggestion-item {
 body body.theme-light .search-results .suggestion-item.is-selected {
   color: rgb(14, 14, 14);
   font-weight: 400;
-  background-color: var(
-    --theme-color-translucent-015,
-    rgba(47, 147, 228, 0.15)
-  );
+  background-color: var(--theme-color-translucent-015);
 }
 body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(14, 14, 14);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h1-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h1-size, 25px);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--h1-line-height, 30px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h1-letter-spacing, -0.375px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4878,43 +4140,13 @@ body body.theme-light .published-container .markdown-rendered h1 {
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h2-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h2-size, 23px);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--h2-line-height, 27.6px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h2-letter-spacing, -0.253px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4943,43 +4175,13 @@ body body.theme-light .published-container .markdown-rendered h2 {
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h3-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h3-size, 21px);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--h3-line-height, 27.3px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h3-letter-spacing, -0.168px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -5008,43 +4210,13 @@ body body.theme-light .published-container .markdown-rendered h3 {
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h4-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h4-size, 19px);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--h4-line-height, 26.6px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h4-letter-spacing, -0.095px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -5073,32 +4245,13 @@ body body.theme-light .published-container .markdown-rendered h4 {
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h5-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h5-size, 17px);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--h5-line-height, 25.5px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h5-letter-spacing, -0.034px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -5127,26 +4280,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h6-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--h6-font);
   font-size: var(--h6-size);
   font-weight: var(--font-weight);
   line-height: var(--h6-line-height);
@@ -5185,7 +4319,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 600);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-light
@@ -5237,7 +4371,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-left-color: rgba(8, 109, 221, 0.15);
   border-top-left-radius: 5px;
@@ -5300,7 +4434,7 @@ body body.theme-light .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 0, 191, 188);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5342,7 +4476,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 8, 109, 221);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5384,7 +4518,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 8, 109, 221);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5426,7 +4560,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 0, 191, 188);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5468,7 +4602,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 8, 185, 78);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5510,7 +4644,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 236, 117, 0);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5552,7 +4686,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 236, 117, 0);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5594,7 +4728,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 233, 49, 71);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5636,7 +4770,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 233, 49, 71);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5678,7 +4812,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 233, 49, 71);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5720,7 +4854,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 120, 82, 238);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -5762,7 +4896,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -5836,10 +4970,7 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: calc(var(--p-spacing) * 0.5);
-  margin-bottom: calc(var(--p-spacing) * 0.5);
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 20px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -5866,18 +4997,17 @@ body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered th {
-  background-color: rgba(47, 147, 228, 0.1);
-  color: var(--table-header-color, rgb(14, 14, 14));
+  background-color: var(--table-thead-background-color);
+  color: var(--table-header-color);
   font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 0px) solid
-    rgb(125, 125, 125);
+  border-left: var(--table-column-first-border-width) solid rgb(125, 125, 125);
   border-right: 0px solid rgb(125, 125, 125);
-  border-top: var(--table-header-border-width, 0px) solid rgb(125, 125, 125);
+  border-top: var(--table-header-border-width) solid rgb(125, 125, 125);
   border-bottom: 0px solid rgb(125, 125, 125);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5895,14 +5025,14 @@ body body.theme-light .markdown-rendered th {
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--table-text-color, rgb(14, 14, 14));
+  color: var(--table-text-color);
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   border: 0px solid rgb(14, 14, 14);
-  border-left: var(--table-column-first-border-width, 0px) solid rgb(14, 14, 14);
+  border-left: var(--table-column-first-border-width) solid rgb(14, 14, 14);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5930,10 +5060,10 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(241, 241, 241, 0.463));
+  background-color: var(--table-background-color);
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(255, 255, 255, 0.44));
+  background-color: var(--table-background-color-odd);
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 0px;
@@ -6046,7 +5176,7 @@ body body.theme-light .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-light .internal-embed {
-  background-color: var(--embed-color, rgba(65, 145, 210, 0.035));
+  background-color: var(--embed-color);
   color: rgb(14, 14, 14);
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -6070,8 +5200,8 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: var(--background-primary-alt, rgba(0, 0, 0, 0));
-  color: var(--text-muted, rgb(127, 127, 127));
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
   border-radius: 15px;
   border: 2px solid rgba(65, 145, 210, 0.035);
   border-top-left-radius: 15px;
@@ -6083,7 +5213,7 @@ body body.theme-light .file-embed {
 }
 body body.theme-light .metadata-container {
   background-color: var(--metadata-background);
-  color: var(--text-muted, rgb(127, 127, 127));
+  color: var(--text-muted);
   font-family:
     Bookerly,
     Inter,
@@ -6173,39 +5303,13 @@ body body.theme-light .metadata-container .metadata-property {
 }
 body body.theme-light .metadata-property-key {
   color: rgb(127, 127, 127);
-  font-family: var(
-    --metadata-label-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-light .metadata-property-value {
   color: rgb(127, 127, 127);
-  font-family: var(
-    --metadata-input-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-light progress {
@@ -6237,7 +5341,7 @@ body body.theme-light input[type="range"] {
 }
 body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-normal, rgb(127, 127, 127));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6321,33 +5425,10 @@ body body.theme-light details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-light kbd {
-  background-color: var(--code-background, rgba(230, 230, 230, 0.443));
+  background-color: var(--code-background);
   box-shadow: none;
-  color: var(--code-normal, rgb(0, 0, 0));
-  font-family: var(
-    --font-monospace,
-    "JetBrains Mono",
-    Consolas,
-    Monaco,
-    "等距更纱黑体 SC",
-    "Source Han Mono",
-    "Microsoft Yahei Mono",
-    "Segoe UI Emoji",
-    "Microsoft YaHei",
-    "Source Code Pro",
-    monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
   font-size: var(--code-size);
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 5px;
@@ -6661,16 +5742,8 @@ body
   > .tree-item-self {
   color: color-mix(in hsl, var(--tab-color), black 20%);
   cursor: var(--cursor);
-  font-family: var(
-    --font-family-folder-file-title,
-    Arlrdbd,
-    "Source Han Sans",
-    "Noto Sans CJK",
-    "Source Sans Pro",
-    "Segoe UI Emoji",
-    sans-serif
-  );
-  font-weight: var(--nav-item-weight, 600);
+  font-family: var(--font-family-folder-file-title);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body
@@ -6683,21 +5756,13 @@ body
   > .tree-item-self {
   color: color-mix(in hsl, var(--tab-color), black 20%);
   cursor: var(--cursor);
-  font-family: var(
-    --font-family-folder-file-title,
-    Arlrdbd,
-    "Source Han Sans",
-    "Noto Sans CJK",
-    "Source Sans Pro",
-    "Segoe UI Emoji",
-    sans-serif
-  );
-  font-weight: var(--nav-item-weight, 600);
+  font-family: var(--font-family-folder-file-title);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(127, 127, 127));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(127, 127, 127);
   border-width: 0px;
@@ -6707,8 +5772,8 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 5px;
 }
 body body.theme-light .site-footer {
-  background-color: var(--status-bar-bg, rgb(243, 243, 243));
-  color: var(--status-bar-text-color, rgb(127, 127, 127));
+  background-color: var(--status-bar-bg);
+  color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6760,7 +5825,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 3px;
 }
 body body.theme-light .nav-file-title {
-  color: var(--text-folder-file, rgb(39, 39, 39));
+  color: var(--text-folder-file);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(39, 39, 39);
@@ -6769,7 +5834,7 @@ body body.theme-light .nav-file-title-content {
     "Segoe UI Emoji", sans-serif;
 }
 body body.theme-light .nav-files-container {
-  background-color: var(--scrollbar-active-thumb-bg, rgba(0, 0, 0, 0));
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgb(14, 14, 14);
   border-width: 0px;
   border-top-left-radius: 0px;
@@ -6779,7 +5844,7 @@ body body.theme-light .nav-files-container {
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--theme-color, rgb(65, 159, 231));
+  color: var(--theme-color);
   cursor: var(--cursor);
   border-color: rgb(65, 159, 231);
   border-width: 0px;
@@ -6803,7 +5868,7 @@ body body.theme-light .view-header-breadcrumb {
   border-bottom-right-radius: 5px;
 }
 body body.theme-light .view-header-breadcrumb-separator {
-  color: var(--text-faint, rgb(127, 127, 127));
+  color: var(--text-faint);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6818,7 +5883,7 @@ body body.theme-light .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-light .page-header .page-title {
-  color: var(--text-normal, rgb(14, 14, 14));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -6831,7 +5896,7 @@ body body.theme-light .page-header .page-title {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-size: var(--font-size-file-header-title, 11.7px);
+  font-size: var(--font-size-file-header-title);
   font-weight: 700;
   line-height: 15.21px;
   background-color: rgba(0, 0, 0, 0);
@@ -6929,8 +5994,8 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .tag {
-  background-color: var(--tag-background, rgba(47, 147, 228, 0.1));
-  color: var(--tag-color, rgb(47, 147, 228));
+  background-color: var(--tag-background);
+  color: var(--tag-color);
   border: 1px solid rgba(47, 147, 228, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;
@@ -6952,7 +6017,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--external-link-color, rgb(45, 130, 205));
+  color: var(--external-link-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -6996,31 +6061,12 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--internal-link-color, rgb(45, 130, 205));
+  color: var(--internal-link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-strong);
   font-weight: var(--link-weight);
   outline: rgb(45, 130, 205) none 0px;
   text-decoration: underline;
@@ -7042,38 +6088,16 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--unresolved-link, rgba(240, 128, 128, 0.87));
+  color: var(--unresolved-link);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-strong);
   font-weight: var(--link-weight);
   outline: rgba(240, 128, 128, 0.87) none 0px;
   text-decoration: underline rgba(240, 128, 128, 0.87);
-  text-decoration-color: var(
-    --link-unresolved-decoration-color,
-    rgba(240, 128, 128, 0.87)
-  );
+  text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -7104,7 +6128,7 @@ body body.theme-dark .markdown-rendered a.internal-link:hover {
 }
 body body.theme-dark .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-muted, rgb(138, 138, 138));
+  color: var(--text-muted);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -7141,34 +6165,13 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--accent-strong, rgb(231, 231, 231));
+  color: var(--accent-strong);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family: var(
-    --font-family-strong,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-weight: var(--font-weight-strong, 700);
+  font-family: var(--font-family-strong);
+  font-weight: var(--font-weight-strong);
   outline: rgb(231, 231, 231) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(231, 231, 231);
@@ -7188,34 +6191,13 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--accent-strong, rgb(231, 231, 231));
+  color: var(--accent-strong);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family: var(
-    --font-family-strong,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-weight: var(--font-weight-strong, 700);
+  font-family: var(--font-family-strong);
+  font-weight: var(--font-weight-strong);
   outline: rgb(231, 231, 231) none 0px;
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(231, 231, 231);
@@ -7235,29 +6217,12 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(164, 202, 142));
+  color: var(--accent-em);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-em);
   font-weight: 400;
   outline: rgb(164, 202, 142) none 0px;
   text-decoration: rgb(218, 218, 218);
@@ -7278,29 +6243,12 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color, rgb(164, 202, 142));
+  color: var(--accent-em);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+  font-family: var(--font-family-em);
   font-weight: 400;
   outline: rgb(164, 202, 142) none 0px;
   text-decoration: rgb(218, 218, 218);
@@ -7395,30 +6343,9 @@ body body.theme-dark s {
 }
 body body.theme-dark strong > em {
   background-color: rgb(245, 84, 84);
-  color: var(--italic-color, rgb(231, 231, 231));
+  color: var(--italic-color);
   cursor: grab;
-  font-family: var(
-    --font-family-strong,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--font-family-strong);
   font-weight: 700;
   outline: rgb(231, 231, 231) none 0px;
   text-decoration-color: rgb(231, 231, 231);
@@ -7432,8 +6359,13 @@ body body.theme-dark strong > em {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: var(--text-highlight-bg, rgba(136, 132, 58, 0.54));
-  color: var(--text-normal, rgb(198, 198, 198));
+  background-color: hsla(
+    var(--text-highlight-bg-h-dark),
+    var(--text-highlight-bg-s-dark),
+    var(--text-highlight-bg-l-dark),
+    var(--text-highlight-bg-a-dark)
+  );
+  color: var(--text-highlight);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -7518,10 +6450,7 @@ body body.theme-dark del {
   animation-play-state: running;
 }
 body body.theme-dark .suggestion-item.is-selected {
-  background-color: var(
-    --theme-color-translucent-015,
-    rgba(45, 130, 205, 0.15)
-  );
+  background-color: var(--theme-color-translucent-015);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -7533,10 +6462,7 @@ body body.theme-dark .suggestion-item.is-selected {
   color: rgb(198, 198, 198);
 }
 body body.theme-dark div.suggestion-item {
-  background-color: var(
-    --theme-color-translucent-015,
-    rgba(45, 130, 205, 0.15)
-  );
+  background-color: var(--theme-color-translucent-015);
   border: 0px rgb(198, 198, 198);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -7569,8 +6495,8 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: var(--pill-background, rgba(45, 130, 205, 0.1));
-  color: var(--pill-color, rgb(45, 130, 205));
+  background-color: var(--pill-background);
+  color: var(--pill-color);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -7673,7 +6599,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: var(--code-background, rgba(76, 76, 76, 0.69));
+  background-color: var(--background-code-2);
   border: 0px solid rgb(52, 52, 52);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -7683,20 +6609,8 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: var(--text-color-code, rgb(213, 128, 0));
-  font-family: var(
-    --font-family-inline-code,
-    "JetBrains Mono",
-    Consolas,
-    Monaco,
-    "等距更纱黑体 SC",
-    "Source Han Mono",
-    "Microsoft Yahei Mono",
-    "Segoe UI Emoji",
-    "Microsoft YaHei",
-    "Source Code Pro",
-    monospace
-  );
+  color: var(--text-color-code);
+  font-family: var(--font-family-inline-code);
   padding: 2px 2px 1px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -7725,7 +6639,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: var(--code-background, rgba(17, 17, 17, 0.55));
+  background-color: var(--background-code);
   border: 0px solid rgb(52, 52, 52);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -7769,7 +6683,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 14.3906px);
+  width: var(--checkbox-size);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -7792,11 +6706,8 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: var(
-    --blockquote-background-color,
-    rgba(145, 145, 145, 0.11)
-  );
-  color: var(--blockquote-color, rgb(198, 198, 198));
+  background-color: var(--background-blockquote);
+  color: var(--blockquote-color);
   font-family:
     Bookerly,
     Inter,
@@ -7827,7 +6738,7 @@ body body.theme-dark .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-dark .footnote-backref {
-  color: var(--text-faint, rgb(121, 121, 121));
+  color: var(--text-faint);
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -7841,7 +6752,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: var(--text-normal, rgb(198, 198, 198));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -7869,8 +6780,8 @@ body body.theme-dark .search-results {
   box-shadow: 0 0 10px 1px var(--prompt-box-shadow);
 }
 body body.theme-dark .search-results > * {
-  background-color: var(--scrollbar-active-thumb-bg, rgba(0, 0, 0, 0));
-  color: var(--text-normal, rgb(198, 198, 198));
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(198, 198, 198);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -7939,53 +6850,20 @@ body body.theme-dark div.search-results .suggestion-item {
 body body.theme-dark .search-results .suggestion-item.is-selected {
   color: rgb(198, 198, 198);
   font-weight: 400;
-  background-color: var(
-    --theme-color-translucent-015,
-    rgba(45, 130, 205, 0.15)
-  );
+  background-color: var(--theme-color-translucent-015);
 }
 body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: rgb(198, 198, 198);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h1-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h1-size, 25px);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--h1-line-height, 30px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h1-letter-spacing, -0.375px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -8014,43 +6892,13 @@ body body.theme-dark .published-container .markdown-rendered h1 {
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h2-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h2-size, 23px);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--h2-line-height, 27.6px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h2-letter-spacing, -0.253px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -8079,43 +6927,13 @@ body body.theme-dark .published-container .markdown-rendered h2 {
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h3-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h3-size, 21px);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--h3-line-height, 27.3px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h3-letter-spacing, -0.168px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -8144,43 +6962,13 @@ body body.theme-dark .published-container .markdown-rendered h3 {
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h4-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h4-size, 19px);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--h4-line-height, 26.6px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h4-letter-spacing, -0.095px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -8209,32 +6997,13 @@ body body.theme-dark .published-container .markdown-rendered h4 {
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h5-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
-  font-size: var(--h5-size, 17px);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--h5-line-height, 25.5px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h5-letter-spacing, -0.034px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -8263,26 +7032,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h6-font,
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--h6-font);
   font-size: var(--h6-size);
   font-weight: var(--font-weight);
   line-height: var(--h6-line-height);
@@ -8321,7 +7071,7 @@ body
   .outline-view
   .tree-item
   > .tree-item-self {
-  font-weight: var(--nav-item-weight, 600);
+  font-weight: var(--nav-item-weight);
 }
 body
   body.theme-dark
@@ -8373,7 +7123,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-left-color: rgba(2, 122, 255, 0.15);
   border-top-left-radius: 5px;
@@ -8436,7 +7186,7 @@ body body.theme-dark .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 83, 223, 221);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -8478,7 +7228,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 2, 122, 255);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8520,7 +7270,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 2, 122, 255);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8562,7 +7312,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 83, 223, 221);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -8604,7 +7354,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 68, 207, 110);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -8646,7 +7396,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 233, 151, 63);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -8688,7 +7438,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 233, 151, 63);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -8730,7 +7480,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 251, 70, 76);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8772,7 +7522,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 251, 70, 76);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8814,7 +7564,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 251, 70, 76);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8856,7 +7606,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 168, 130, 255);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -8898,7 +7648,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -8972,10 +7722,7 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin-top: calc(var(--p-spacing) * 0.5);
-  margin-bottom: calc(var(--p-spacing) * 0.5);
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 20px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -9002,17 +7749,17 @@ body body.theme-dark .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered th {
-  background-color: rgba(45, 130, 205, 0.1);
-  color: var(--table-header-color, rgb(198, 198, 198));
+  background-color: var(--table-thead-background-color);
+  color: var(--table-header-color);
   font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width, 0px) solid rgb(74, 74, 74);
+  border-left: var(--table-column-first-border-width) solid rgb(74, 74, 74);
   border-right: 0px solid rgb(74, 74, 74);
-  border-top: var(--table-header-border-width, 0px) solid rgb(74, 74, 74);
+  border-top: var(--table-header-border-width) solid rgb(74, 74, 74);
   border-bottom: 0px solid rgb(74, 74, 74);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -9030,15 +7777,14 @@ body body.theme-dark .markdown-rendered th {
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--table-text-color, rgb(198, 198, 198));
+  color: var(--table-text-color);
   font-weight: 400;
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   border: 0px solid rgb(198, 198, 198);
-  border-left: var(--table-column-first-border-width, 0px) solid
-    rgb(198, 198, 198);
+  border-left: var(--table-column-first-border-width) solid rgb(198, 198, 198);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -9066,10 +7812,10 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: var(--table-background, rgba(47, 47, 47, 0.196));
+  background-color: var(--table-background-color);
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: var(--table-row-alt-background, rgba(0, 0, 0, 0.2));
+  background-color: var(--table-background-color-odd);
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
@@ -9182,7 +7928,7 @@ body body.theme-dark .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-dark .internal-embed {
-  background-color: var(--embed-color, rgba(246, 250, 254, 0.055));
+  background-color: var(--embed-color);
   color: rgb(198, 198, 198);
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -9206,8 +7952,8 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: var(--background-primary-alt, rgba(0, 0, 0, 0));
-  color: var(--text-muted, rgb(138, 138, 138));
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
   border-radius: 15px;
   border: 2px solid rgba(246, 250, 254, 0.055);
   border-top-left-radius: 15px;
@@ -9219,7 +7965,7 @@ body body.theme-dark .file-embed {
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background);
-  color: var(--text-muted, rgb(138, 138, 138));
+  color: var(--text-muted);
   font-family:
     Bookerly,
     Inter,
@@ -9309,39 +8055,13 @@ body body.theme-dark .metadata-container .metadata-property {
 }
 body body.theme-dark .metadata-property-key {
   color: rgb(138, 138, 138);
-  font-family: var(
-    --metadata-label-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-dark .metadata-property-value {
   color: rgb(138, 138, 138);
-  font-family: var(
-    --metadata-input-font,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-dark progress {
@@ -9373,7 +8093,7 @@ body body.theme-dark input[type="range"] {
 }
 body body.theme-dark input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-normal, rgb(138, 138, 138));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -9457,33 +8177,10 @@ body body.theme-dark details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-dark kbd {
-  background-color: var(--code-background, rgba(17, 17, 17, 0.55));
+  background-color: var(--code-background);
   box-shadow: none;
-  color: var(--code-normal, rgb(235, 219, 178));
-  font-family: var(
-    --font-monospace,
-    "JetBrains Mono",
-    Consolas,
-    Monaco,
-    "等距更纱黑体 SC",
-    "Source Han Mono",
-    "Microsoft Yahei Mono",
-    "Segoe UI Emoji",
-    "Microsoft YaHei",
-    "Source Code Pro",
-    monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
   font-size: var(--code-size);
   border: 0px rgb(235, 219, 178);
   border-top-left-radius: 5px;
@@ -9797,16 +8494,8 @@ body
   > .tree-item-self {
   color: color-mix(in hsl, var(--tab-color), white 38%);
   cursor: var(--cursor);
-  font-family: var(
-    --font-family-folder-file-title,
-    Arlrdbd,
-    "Source Han Sans",
-    "Noto Sans CJK",
-    "Source Sans Pro",
-    "Segoe UI Emoji",
-    sans-serif
-  );
-  font-weight: var(--nav-item-weight, 600);
+  font-family: var(--font-family-folder-file-title);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body
@@ -9819,21 +8508,13 @@ body
   > .tree-item-self {
   color: color-mix(in hsl, var(--tab-color), white 38%);
   cursor: var(--cursor);
-  font-family: var(
-    --font-family-folder-file-title,
-    Arlrdbd,
-    "Source Han Sans",
-    "Noto Sans CJK",
-    "Source Sans Pro",
-    "Segoe UI Emoji",
-    sans-serif
-  );
-  font-weight: var(--nav-item-weight, 600);
+  font-family: var(--font-family-folder-file-title);
+  font-weight: var(--nav-item-weight);
   text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(138, 138, 138));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(138, 138, 138);
   border-width: 0px;
@@ -9843,8 +8524,8 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 5px;
 }
 body body.theme-dark .site-footer {
-  background-color: var(--status-bar-bg, rgb(0, 0, 0));
-  color: var(--status-bar-text-color, rgb(138, 138, 138));
+  background-color: var(--status-bar-bg);
+  color: var(--status-bar-text-color);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -9896,7 +8577,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 3px;
 }
 body body.theme-dark .nav-file-title {
-  color: var(--text-folder-file, rgb(179, 179, 179));
+  color: var(--text-folder-file);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(179, 179, 179);
@@ -9905,7 +8586,7 @@ body body.theme-dark .nav-file-title-content {
     "Segoe UI Emoji", sans-serif;
 }
 body body.theme-dark .nav-files-container {
-  background-color: var(--scrollbar-active-thumb-bg, rgba(0, 0, 0, 0));
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgb(198, 198, 198);
   border-width: 0px;
   border-top-left-radius: 0px;
@@ -9915,7 +8596,7 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--theme-color, rgb(45, 130, 205));
+  color: var(--theme-color);
   cursor: var(--cursor);
   border-color: rgb(45, 130, 205);
   border-width: 0px;
@@ -9939,7 +8620,7 @@ body body.theme-dark .view-header-breadcrumb {
   border-bottom-right-radius: 5px;
 }
 body body.theme-dark .view-header-breadcrumb-separator {
-  color: var(--text-faint, rgb(121, 121, 121));
+  color: var(--text-faint);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -9954,7 +8635,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: var(--text-normal, rgb(198, 198, 198));
+  color: var(--text-normal);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -9967,7 +8648,7 @@ body body.theme-dark .page-header .page-title {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-size: var(--font-size-file-header-title, 11.7px);
+  font-size: var(--font-size-file-header-title);
   font-weight: 700;
   line-height: 15.21px;
   background-color: rgba(0, 0, 0, 0);
@@ -10065,8 +8746,8 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .tag {
-  background-color: var(--tag-background, rgba(45, 130, 205, 0.1));
-  color: var(--tag-color, rgb(45, 130, 205));
+  background-color: var(--tag-background);
+  color: var(--tag-color);
   border: 1px solid rgba(45, 130, 205, 0.15);
   border-top-left-radius: 24.5px;
   border-top-right-radius: 24.5px;

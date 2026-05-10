@@ -24,17 +24,17 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #565f8988) !important;
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #1a1b26) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #1a1b26) !important;
-  --code-border-color: var(--background-modifier-border, #999999) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #565f8988) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
@@ -47,14 +47,14 @@
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #565f8988) !important;
+  --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-40, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #565f8988) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
@@ -372,7 +372,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(26, 27, 38));
+    background-color: var(--background-primary);
     color: var(--text-normal);
   }
 
@@ -380,12 +380,12 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(26, 27, 38));
+    background-color: var(--background-primary);
     color: rgb(218, 218, 218);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(26, 27, 38));
+    background-color: var(--background-secondary);
     color: rgb(218, 218, 218);
   }
 
@@ -393,12 +393,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(26, 27, 38));
+    background-color: var(--tab-container-background);
     color: rgb(218, 218, 218);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(26, 27, 38));
+    background-color: var(--tab-container-background);
     color: rgb(218, 218, 218);
     border-left: 0px rgb(153, 153, 153);
   }
@@ -592,7 +592,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(187, 154, 247));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -633,7 +633,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(187, 154, 247));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -674,7 +674,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(154, 165, 206));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -715,7 +715,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(154, 165, 206));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -834,7 +834,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(154, 165, 206));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -864,7 +864,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(158, 206, 106, 0.4));
+    background-color: var(--text-highlight-bg);
     color: var(--text-normal);
     cursor: grab;
     filter: none;
@@ -1107,7 +1107,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(26, 27, 38));
+    background-color: var(--code-background);
     border: 0px solid rgb(153, 153, 153);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1149,7 +1149,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(26, 27, 38));
+    background-color: var(--code-background);
     border: 0px solid rgb(153, 153, 153);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1241,7 +1241,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgba(86, 95, 137, 0.533));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1274,7 +1274,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(26, 27, 38));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1377,14 +1377,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(122, 162, 247));
+    color: var(--h1-color);
     font-family: var(--h1-font);
-    font-size: var(--h1-size, 20px);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 24px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h1-letter-spacing, -0.3px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1410,14 +1410,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(122, 162, 247));
+    color: var(--h2-color);
     font-family: var(--h2-font);
-    font-size: var(--h2-size, 20px);
+    font-size: var(--h2-size);
     font-weight: var(--font-weight);
-    line-height: var(--h2-line-height, 24px);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h2-letter-spacing, -0.22px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1443,14 +1443,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(122, 162, 247));
+    color: var(--h3-color);
     font-family: var(--h3-font);
-    font-size: var(--h3-size, 20px);
+    font-size: var(--h3-size);
     font-weight: var(--font-weight);
-    line-height: var(--h3-line-height, 26px);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h3-letter-spacing, -0.16px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1476,14 +1476,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(122, 162, 247));
+    color: var(--h4-color);
     font-family: var(--h4-font);
-    font-size: var(--h4-size, 20px);
+    font-size: var(--h4-size);
     font-weight: var(--font-weight);
-    line-height: var(--h4-line-height, 28px);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h4-letter-spacing, -0.1px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1509,14 +1509,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(122, 162, 247));
+    color: var(--h5-color);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 20px);
+    font-size: var(--h5-size);
     font-weight: var(--font-weight);
-    line-height: var(--h5-line-height, 30px);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h5-letter-spacing, -0.04px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1542,11 +1542,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(122, 162, 247));
+    color: var(--h6-color);
     font-family: var(--h6-font);
-    font-size: var(--h6-size, 20px);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight);
-    line-height: var(--h6-line-height, 30px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h6-letter-spacing);
@@ -1576,11 +1576,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(122, 162, 247));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
-    font-size: var(--inline-title-size, 20px);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 24px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.3px;
@@ -1998,7 +1998,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2057,7 +2057,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2115,7 +2115,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2173,7 +2173,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2231,7 +2231,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2289,7 +2289,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2347,7 +2347,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2405,7 +2405,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2463,7 +2463,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2521,7 +2521,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2579,7 +2579,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2637,7 +2637,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2695,7 +2695,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2753,7 +2753,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3092,7 +3092,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(26, 27, 38));
+    background-color: var(--background-primary-alt);
     color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(179, 179, 179);
@@ -3320,7 +3320,7 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(26, 27, 38));
+    background-color: var(--code-background);
     box-shadow: none;
     color: var(--code-normal);
     font-family: var(--font-monospace);
@@ -3742,7 +3742,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(26, 27, 38));
+    background-color: var(--background-secondary);
     border-color: rgb(218, 218, 218);
     box-shadow: var(--input-shadow);
   }
@@ -3795,7 +3795,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(26, 27, 38));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -3811,7 +3811,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 13px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -3949,7 +3949,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgba(86, 95, 137, 0.533));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3967,7 +3967,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(26, 27, 38));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -4140,11 +4140,11 @@ body {
 
   .stacked-page {
     border-color: rgb(218, 218, 218);
-    background-color: var(--background-secondary, rgb(26, 27, 38));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(26, 27, 38));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4152,8 +4152,8 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(122, 162, 247));
-    font-size: var(--inline-title-size, 20px);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 

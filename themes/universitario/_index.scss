@@ -15,51 +15,51 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 4px 11px 11px 11px);
+  --callout-padding: 4px 11px 11px 11px;
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 10px);
+  --callout-radius: 10px;
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, hsl(108, 20%, 30%)) !important;
-  --checkbox-border-color-hover: var(--text-muted, black) !important;
-  --checkbox-color: var(--interactive-accent, hsl(27, 70.7%, 75.25%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(25, 71.4%, 80.5%)) !important;
-  --checkbox-marker-color: var(--background-primary, hsl(28, 60%, 95%)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, hsl(48, 30%, 90%)) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.075)) !important;
-  --code-comment: var(--text-faint, hsl(108, 20%, 30%)) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-muted, black) !important;
+  --code-normal: var(--text-muted) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, black) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, hsl(108, 20%, 30%)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(28, 70%, 70%)) !important;
-  --graph-line: var(--text-accent, hsl(28, 70%, 70%)) !important;
-  --graph-node: var(--text-accent, hsl(28, 70%, 70%)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
+  --graph-line: var(--text-accent) !important;
+  --graph-node: var(--text-accent) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(28, 70%, 70%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(108, 20%, 30%)) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 50%)) !important;
-  --icon-color-active: var(--icon-color, hsl(28, 70%, 20%)) !important;
+  --icon-color-active: var(--icon-color) !important;
   --icon-color-focused: var(--text-normal) !important;
-  --icon-color-hover: var(--text-muted, black) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0;
@@ -107,51 +107,51 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6, 4px 11px 11px 11px);
+  --callout-padding: 4px 11px 11px 11px;
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 10px);
+  --callout-radius: 10px;
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, hsl(300, 30%, 75%)) !important;
-  --checkbox-border-color-hover: var(--text-muted, white) !important;
-  --checkbox-color: var(--interactive-accent, hsl(220, 80%, 65%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(217, 81.6%, 74.75%)) !important;
-  --checkbox-marker-color: var(--background-primary, hsl(210, 15%, 10%)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, hsl(220, 10%, 15%)) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.075)) !important;
-  --code-comment: var(--text-faint, hsl(300, 30%, 75%)) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-muted, white) !important;
+  --code-normal: var(--text-muted) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, white) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, hsl(300, 30%, 75%)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(217, 81.6%, 74.75%)) !important;
-  --graph-line: var(--text-accent, hsl(217, 81.6%, 74.75%)) !important;
-  --graph-node: var(--text-accent, hsl(217, 81.6%, 74.75%)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
+  --graph-line: var(--text-accent) !important;
+  --graph-node: var(--text-accent) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(217, 81.6%, 74.75%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(300, 30%, 75%)) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%)) !important;
-  --icon-color-active: var(--text-accent, hsl(217, 81.6%, 74.75%)) !important;
+  --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
-  --icon-color-hover: var(--text-muted, white) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0;
@@ -489,7 +489,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(250, 242, 235));
+    background-color: var(--background-primary);
     color: var(--text-normal);
   }
 
@@ -497,12 +497,12 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(250, 242, 235));
+    background-color: var(--background-primary);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-primary, rgb(250, 242, 235));
+    background-color: var(--background-primary);
     color: rgb(34, 34, 34);
   }
 
@@ -510,12 +510,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(250, 242, 235));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(250, 242, 235));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
     border-left: 0px rgba(0, 0, 0, 0);
   }
@@ -527,7 +527,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(232, 175, 125));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -569,7 +569,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(107, 74, 46));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -610,7 +610,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(232, 175, 125));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -632,7 +632,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(232, 175, 125) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(232, 175, 125));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -668,7 +668,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(0, 0, 0));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -709,7 +709,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(107, 95, 46));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -750,7 +750,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(107, 95, 46));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -791,7 +791,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(125, 111, 54));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -832,7 +832,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(125, 111, 54));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -951,7 +951,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(125, 111, 54));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -981,7 +981,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(235, 212, 173));
+    background-color: var(--text-highlight-bg);
     color: var(--text-normal);
     cursor: grab;
     filter: none;
@@ -1063,7 +1063,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-secondary, rgb(228, 216, 205));
+    background-color: var(--background-secondary);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -1076,7 +1076,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-secondary, rgb(228, 216, 205));
+    background-color: var(--background-secondary);
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -1112,8 +1112,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(232, 175, 125, 0.1));
-    color: var(--pill-color, rgb(232, 175, 125));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1155,8 +1155,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 3.2px);
-    padding-bottom: var(--list-spacing, 3.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1192,8 +1192,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 3.2px);
-    padding-bottom: var(--list-spacing, 3.2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1224,7 +1224,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgba(0, 0, 0, 0));
+    background-color: var(--code-background);
     border: 0px solid rgb(0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1234,8 +1234,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--ec-codeFg, rgb(0, 0, 0));
-    font-family: var(--ec-codeFontFml, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+    color: var(--ec-codeFg);
+    font-family: var(--ec-codeFontFml);
     padding: 12px 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1266,7 +1266,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(237, 234, 222));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1329,8 +1329,8 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgb(224, 189, 184));
-    color: var(--text-muted, rgb(0, 0, 0));
+    background-color: var(--blockquote-background-color);
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1346,7 +1346,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    font-style: var(--blockquote-font-style, italic);
+    font-style: var(--blockquote-font-style);
     line-height: 26.4px;
     padding-bottom: 8px;
     padding-top: 8px;
@@ -1358,7 +1358,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(67, 92, 61));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1391,7 +1391,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(250, 242, 235));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1481,7 +1481,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(34, 34, 34);
     font-weight: 400;
-    background-color: var(--background-secondary, rgb(228, 216, 205));
+    background-color: var(--background-secondary);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1496,12 +1496,12 @@ body {
   h1 {
     color: var(--h1-color);
     font-family: var(--h1-font);
-    font-size: var(--h1-size, 40px);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 48px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.6px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(to left, var(--background-table), var(--background-secondary));
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(232, 175, 125, 0.3), rgba(232, 175, 125, 0.5), rgba(232, 175, 125, 0.5) 95%) repeat scroll 0% 0% / auto padding-box border-box;
@@ -1529,12 +1529,12 @@ body {
   h2 {
     color: var(--h2-color);
     font-family: var(--h2-font);
-    font-size: var(--h2-size, 32px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h2-line-height, 38.4px);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.352px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1562,12 +1562,12 @@ body {
   h3 {
     color: var(--h3-color);
     font-family: var(--h3-font);
-    font-size: var(--h3-size, 27.2px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h3-line-height, 35.36px);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.2176px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1596,12 +1596,12 @@ body {
   h4 {
     color: var(--h4-color);
     font-family: var(--h4-font);
-    font-size: var(--h4-size, 24px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h4-line-height, 33.6px);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.12px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1630,12 +1630,12 @@ body {
   h5 {
     color: var(--h5-color);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 20.8px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h5-line-height, 31.2px);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.0416px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1663,9 +1663,9 @@ body {
   h6 {
     color: var(--h6-color);
     font-family: var(--h6-font);
-    font-size: var(--h6-size, 19.2px);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight);
-    line-height: var(--h6-line-height, 28.8px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -1697,9 +1697,9 @@ body {
   h2.page-title a {
     color: var(--inline-title-color);
     font-family: var(--inline-title-font);
-    font-size: var(--inline-title-size, 40px);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 48px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.6px;
@@ -2117,7 +2117,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 20, 120, 200);
+    --callout-color: 20, 120, 200;
     border: 3px solid rgba(20, 120, 200, 0);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -2159,12 +2159,12 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2176,7 +2176,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 20, 120, 200);
+    --callout-color: 20, 120, 200;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(20, 120, 200, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2217,12 +2217,12 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2234,7 +2234,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 50, 100, 140);
+    --callout-color: 50, 100, 140;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(50, 100, 140, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2275,12 +2275,12 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2292,7 +2292,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 10, 220, 0);
+    --callout-color: 10, 220, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(10, 220, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2333,12 +2333,12 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2350,7 +2350,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 40, 150, 15);
+    --callout-color: 40, 150, 15;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(40, 150, 15, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2391,12 +2391,12 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2408,7 +2408,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 210, 100, 100);
+    --callout-color: 210, 100, 100;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(210, 100, 100, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2449,12 +2449,12 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2466,7 +2466,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 137, 68, 198);
+    --callout-color: 137, 68, 198;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(137, 68, 198, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2507,12 +2507,12 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2524,7 +2524,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 255, 0, 183);
+    --callout-color: 255, 0, 183;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 0, 183, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2565,12 +2565,12 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2582,7 +2582,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 244, 138, 74);
+    --callout-color: 244, 138, 74;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(244, 138, 74, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2623,12 +2623,12 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2640,7 +2640,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 255, 74, 74);
+    --callout-color: 255, 74, 74;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 74, 74, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2681,12 +2681,12 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2698,7 +2698,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 255, 74, 74);
+    --callout-color: 255, 74, 74;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 74, 74, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2739,12 +2739,12 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2756,7 +2756,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 255, 0, 0);
+    --callout-color: 255, 0, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2797,12 +2797,12 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2814,7 +2814,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 72, 122, 33);
+    --callout-color: 72, 122, 33;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(72, 122, 33, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2855,12 +2855,12 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2872,7 +2872,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 0, 100, 255);
+    --callout-color: 0, 100, 255;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 100, 255, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2913,12 +2913,12 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(0, 0, 0));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: var(--callout-content-background, rgba(0, 0, 0, 0.15));
+    background-color: var(--callout-content-background);
     background-image: none;
     background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
@@ -2996,9 +2996,9 @@ body {
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 0px) solid rgb(224, 224, 224);
+    border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
     border-right: 0px solid rgb(224, 224, 224);
-    border-top: var(--table-header-border-width, 0px) solid rgb(224, 224, 224);
+    border-top: var(--table-header-border-width) solid rgb(224, 224, 224);
     border-bottom: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3065,7 +3065,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: 70%;
     object-fit: fill;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -3142,7 +3142,7 @@ body {
     border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: 70%;
     object-fit: contain;
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -3209,8 +3209,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(237, 234, 222));
-    color: var(--text-muted, rgb(0, 0, 0));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(0, 0, 0);
     border-width: 0px;
@@ -3224,7 +3224,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(0, 0, 0));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3347,7 +3347,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-important, rgb(61, 60, 15));
+    color: var(--text-important);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3437,9 +3437,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(237, 234, 222));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(0, 0, 0);
@@ -3759,7 +3759,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--text-important, rgb(61, 60, 15));
+    color: var(--text-important);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3780,7 +3780,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--text-important, rgb(61, 60, 15));
+    color: var(--text-important);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3805,7 +3805,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(61, 60, 15);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3859,7 +3859,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(250, 242, 235));
+    background-color: var(--background-primary);
     border-color: rgb(34, 34, 34);
     box-shadow: var(--input-shadow);
   }
@@ -3886,8 +3886,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(232, 175, 125, 0.1));
-    color: var(--pill-color, rgb(232, 175, 125));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3901,7 +3901,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(87, 49, 15));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(87, 49, 15);
     border-width: 0px;
@@ -3912,8 +3912,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(228, 216, 205));
-    color: var(--status-bar-text-color, rgb(0, 0, 0));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3963,7 +3963,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li {
-    background-color: var(--colorful, rgb(230, 219, 209));
+    background-color: var(--colorful);
     color: rgb(34, 34, 34);
     border-color: rgb(34, 34, 34);
     border-width: 0px;
@@ -3974,7 +3974,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--text-important, rgb(61, 60, 15));
+    color: var(--text-important);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4006,7 +4006,7 @@ body {
   }
 
   li.section-li {
-    background-color: var(--colorful, rgb(230, 219, 209));
+    background-color: var(--colorful);
     border-color: rgb(34, 34, 34);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -4016,7 +4016,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--text-important, rgb(61, 60, 15));
+    color: var(--text-important);
   }
 
   li.section-li > .section .meta {
@@ -4039,7 +4039,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(87, 49, 15));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(87, 49, 15);
     border-width: 0px;
@@ -4051,7 +4051,7 @@ body {
 
   .darkmode svg {
     stroke: rgb(87, 49, 15);
-    color: var(--icon-color, rgb(87, 49, 15));
+    color: var(--icon-color);
   }
 
   .breadcrumb-container {
@@ -4066,7 +4066,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(67, 92, 61));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4084,7 +4084,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(228, 216, 205));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -4220,8 +4220,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgb(224, 189, 184));
-    color: var(--tag-color, rgb(71, 71, 71));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(232, 175, 125, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4251,17 +4251,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(237, 187, 147));
+    background-color: var(--checkbox-color);
     border-color: rgb(237, 187, 147);
   }
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: var(--background-primary, rgb(250, 242, 235));
+    background-color: var(--background-primary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(250, 242, 235));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4270,7 +4270,7 @@ body {
 
   h1.article-title {
     color: var(--inline-title-color);
-    font-size: var(--inline-title-size, 40px);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -4281,9 +4281,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 0, 0, 0);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 0, 0, 0;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -4297,7 +4295,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -4313,7 +4310,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -4335,7 +4331,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -4358,7 +4353,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -4383,6 +4377,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -4430,7 +4425,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4463,8 +4457,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -4567,9 +4566,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 102, 10, 50);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 102, 10, 50;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -4583,7 +4580,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -4599,7 +4595,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -4621,7 +4616,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -4644,7 +4638,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -4669,6 +4662,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -4716,7 +4710,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4749,8 +4742,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -4853,9 +4851,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 0, 84, 84);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 0, 84, 84;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -4869,7 +4865,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -4885,7 +4880,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -4907,7 +4901,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -4930,7 +4923,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -4955,6 +4947,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -5002,7 +4995,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5035,8 +5027,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -5139,9 +5136,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 74, 202, 234);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 74, 202, 234;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -5155,7 +5150,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -5171,7 +5165,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -5193,7 +5186,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -5216,7 +5208,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -5241,6 +5232,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -5288,7 +5280,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5321,8 +5312,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -5425,9 +5421,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 234, 183, 74);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 234, 183, 74;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -5441,7 +5435,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -5457,7 +5450,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -5479,7 +5471,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -5502,7 +5493,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -5527,6 +5517,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -5574,7 +5565,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5607,8 +5597,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -5711,9 +5706,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 50, 150, 50);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 50, 150, 50;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -5727,7 +5720,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -5743,7 +5735,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -5765,7 +5756,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -5788,7 +5778,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -5813,6 +5802,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -5860,7 +5850,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5893,8 +5882,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -5997,9 +5991,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 8, 109, 221);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: var(--callout-default);
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -6013,7 +6005,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -6029,7 +6020,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -6051,7 +6041,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -6074,7 +6063,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -6099,6 +6087,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -6146,7 +6135,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -6179,8 +6167,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -6283,9 +6276,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 99, 180, 102);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 99, 180, 102;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -6299,7 +6290,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -6315,7 +6305,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -6337,7 +6326,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -6360,7 +6348,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -6385,6 +6372,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -6432,7 +6420,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -6465,8 +6452,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -6569,9 +6561,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 50, 100, 150);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 50, 100, 150;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -6585,7 +6575,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -6601,7 +6590,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -6623,7 +6611,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -6646,7 +6633,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -6671,6 +6657,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -6718,7 +6705,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -6751,8 +6737,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -6855,9 +6846,7 @@ body {
     --background-primary-alt: hsl(48, 30%, 90%);
     --background-secondary: hsl(28, 30%, 85%);
     --blockquote-border-color: hsl(27, 70.7%, 75.25%);
-    --callout-color: var(--callout-default, 0, 120, 255);
-    --callout-padding: 4px 11px 11px 11px;
-    --callout-radius: 10px;
+    --callout-color: 0, 120, 255;
     --canvas-background: hsl(28, 60%, 95%);
     --checkbox-border-color: hsl(108, 20%, 30%);
     --checkbox-border-color-hover: black;
@@ -6871,7 +6860,6 @@ body {
     --color-accent-1: hsl(27, 70.7%, 75.25%);
     --color-accent-2: hsl(25, 71.4%, 80.5%);
     --color-accent-hsl: 28, 70%, 70%;
-    --divider-color: transparent;
     --divider-color-hover: hsl(27, 70.7%, 75.25%);
     --graph-line: hsl(28, 70%, 70%);
     --graph-node: hsl(28, 70%, 70%);
@@ -6887,7 +6875,6 @@ body {
     --link-external-color-hover: hsl(25, 71.4%, 80.5%);
     --link-unresolved-color: hsl(28, 70%, 70%);
     --link-unresolved-decoration-color: hsla(28, 70%, 70%, 0.3);
-    --list-indent: 3em;
     --menu-background: hsl(28, 30%, 85%);
     --pdf-background: hsl(28, 60%, 95%);
     --pdf-page-background: hsl(28, 60%, 95%);
@@ -6909,7 +6896,6 @@ body {
     --shiki-highlight-neutral: black;
     --shiki-terminal-dots-color: hsl(108, 20%, 30%);
     --suggestion-background: hsl(28, 60%, 95%);
-    --tab-background-active: transparent;
     --tab-outline-color: transparent;
     --tab-switcher-background: hsl(28, 30%, 85%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(28, 30%, 85%), transparent);
@@ -6932,7 +6918,6 @@ body {
     --text-accent: hsl(28, 70%, 70%);
     --text-accent-hover: hsl(25, 71.4%, 80.5%);
     --text-faint: hsl(108, 20%, 30%);
-    --text-muted: black;
     --text-selection: hsla(28, 70%, 70%, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -6957,6 +6942,7 @@ body {
     --background-tertiary: hsl(8, 40%, 80%);
     --bold-color: hsl(48, 40%, 30%);
     --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+    --divider-vertical-height: 100%;
     --italic-color: hsl(48, 40%, 35%);
     --red: hsla(28, 70%, 70%, 0.9);
     --table-drag-padding: 16px;
@@ -7004,7 +6990,6 @@ body {
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --clickable-icon-radius: 4px;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -7037,8 +7022,13 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent) linear-gradient(hsl(28, 60%, 95%), color-mix(in srgb, hsl(28, 60%, 95%) 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-radius: 12px;
     --setting-group-heading-color: #222222;
     --setting-group-heading-size: 15px;
@@ -7141,8 +7131,6 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --callout-padding: 12px 12px 12px 24px;
-    --callout-radius: 4px;
     --canvas-background: #ffffff;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
@@ -7156,7 +7144,6 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
-    --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --graph-line: #d4d4d4;
     --graph-node: #5c5c5c;
@@ -7172,7 +7159,6 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-    --list-indent: 2.25em;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7185,7 +7171,6 @@ body {
     --search-result-background: #ffffff;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
@@ -7208,10 +7193,8 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-muted: #5c5c5c;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
+    --divider-vertical-height: 100%;
     color: rgb(0, 0, 0);
   }
 
@@ -7222,8 +7205,6 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --callout-padding: 12px 12px 12px 24px;
-    --callout-radius: 4px;
     --canvas-background: #ffffff;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
@@ -7237,7 +7218,6 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
-    --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --graph-line: #d4d4d4;
     --graph-node: #5c5c5c;
@@ -7253,7 +7233,6 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-    --list-indent: 2.25em;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7266,7 +7245,6 @@ body {
     --search-result-background: #ffffff;
     --setting-items-background: #fafafa;
     --suggestion-background: #ffffff;
-    --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
@@ -7289,10 +7267,8 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
-    --text-muted: #5c5c5c;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
+    --divider-vertical-height: 100%;
     color: rgb(0, 0, 0);
   }
 
@@ -7987,7 +7963,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(22, 26, 29));
+      background-color: var(--background-primary);
       color: var(--text-normal);
     }
 
@@ -7995,12 +7971,12 @@ html[saved-theme="dark"] {
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(22, 26, 29));
+      background-color: var(--background-primary);
       color: rgb(218, 218, 218);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-primary, rgb(22, 26, 29));
+      background-color: var(--background-primary);
       color: rgb(218, 218, 218);
     }
 
@@ -8008,12 +7984,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(22, 26, 29));
+      background-color: var(--tab-container-background);
       color: rgb(218, 218, 218);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(22, 26, 29));
+      background-color: var(--tab-container-background);
       color: rgb(218, 218, 218);
       border-left: 0px rgba(0, 0, 0, 0);
     }
@@ -8025,7 +8001,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(138, 178, 243));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -8067,7 +8043,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(172, 197, 246));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -8108,7 +8084,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(138, 178, 243));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -8130,7 +8106,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(138, 178, 243) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgb(138, 178, 243));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -8166,7 +8142,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(255, 255, 255));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -8207,7 +8183,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(140, 140, 217));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8248,7 +8224,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(140, 140, 217));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8289,7 +8265,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(202, 159, 223));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8330,7 +8306,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(202, 159, 223));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8449,7 +8425,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(202, 159, 223));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -8479,7 +8455,7 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgb(81, 38, 89));
+      background-color: var(--text-highlight-bg);
       color: var(--text-normal);
       cursor: grab;
       filter: none;
@@ -8561,7 +8537,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-secondary, rgb(73, 74, 80));
+      background-color: var(--background-secondary);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
       border-bottom-left-radius: 6px;
@@ -8574,7 +8550,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-secondary, rgb(73, 74, 80));
+      background-color: var(--background-secondary);
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -8610,8 +8586,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(94, 142, 237, 0.1));
-      color: var(--pill-color, rgb(138, 178, 243));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -8653,8 +8629,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 3.2px);
-      padding-bottom: var(--list-spacing, 3.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -8690,8 +8666,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 3.2px);
-      padding-bottom: var(--list-spacing, 3.2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -8722,7 +8698,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgba(0, 0, 0, 0));
+      background-color: var(--code-background);
       border: 0px solid rgb(255, 255, 255);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8732,8 +8708,8 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--ec-codeFg, rgb(255, 255, 255));
-      font-family: var(--ec-codeFontFml, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace);
+      color: var(--ec-codeFg);
+      font-family: var(--ec-codeFontFml);
       padding: 12px 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8764,7 +8740,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(34, 37, 42));
+      background-color: var(--code-background);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -8827,8 +8803,8 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgb(46, 53, 56));
-      color: var(--text-muted, rgb(255, 255, 255));
+      background-color: var(--blockquote-background-color);
+      color: var(--text-muted);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8844,7 +8820,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      font-style: var(--blockquote-font-style, italic);
+      font-style: var(--blockquote-font-style);
       line-height: 26.4px;
       padding-bottom: 8px;
       padding-top: 8px;
@@ -8856,7 +8832,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(210, 172, 210));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -8889,7 +8865,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(22, 26, 29));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -8979,7 +8955,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(218, 218, 218);
       font-weight: 400;
-      background-color: var(--background-secondary, rgb(73, 74, 80));
+      background-color: var(--background-secondary);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -8994,12 +8970,12 @@ html[saved-theme="dark"] {
     h1 {
       color: var(--h1-color);
       font-family: var(--h1-font);
-      font-size: var(--h1-size, 40px);
+      font-size: var(--h1-size);
       font-weight: var(--font-weight);
-      line-height: var(--h1-line-height, 48px);
+      line-height: var(--h1-line-height);
       text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.6px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(to left, var(--background-table), var(--background-secondary));
       background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(77, 77, 77), rgb(73, 74, 80)) repeat scroll 0% 0% / auto padding-box border-box;
@@ -9027,12 +9003,12 @@ html[saved-theme="dark"] {
     h2 {
       color: var(--h2-color);
       font-family: var(--h2-font);
-      font-size: var(--h2-size, 32px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h2-line-height, 38.4px);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.352px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9060,12 +9036,12 @@ html[saved-theme="dark"] {
     h3 {
       color: var(--h3-color);
       font-family: var(--h3-font);
-      font-size: var(--h3-size, 27.2px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h3-line-height, 35.36px);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.2176px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9094,12 +9070,12 @@ html[saved-theme="dark"] {
     h4 {
       color: var(--h4-color);
       font-family: var(--h4-font);
-      font-size: var(--h4-size, 24px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h4-line-height, 33.6px);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.12px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9126,14 +9102,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(225, 170, 255));
+      color: var(--h5-color);
       font-family: var(--h5-font);
-      font-size: var(--h5-size, 20.8px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h5-line-height, 31.2px);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.0416px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9159,11 +9135,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(255, 175, 200));
+      color: var(--h6-color);
       font-family: var(--h6-font);
-      font-size: var(--h6-size, 19.2px);
+      font-size: var(--h6-size);
       font-weight: var(--font-weight);
-      line-height: var(--h6-line-height, 28.8px);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -9195,9 +9171,9 @@ html[saved-theme="dark"] {
     h2.page-title a {
       color: var(--inline-title-color);
       font-family: var(--inline-title-font);
-      font-size: var(--inline-title-size, 40px);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
-      line-height: var(--inline-title-line-height, 48px);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.6px;
@@ -9615,7 +9591,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 255, 130, 255);
+      --callout-color: 255, 130, 255;
       border: 3px solid rgba(255, 130, 255, 0);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
@@ -9657,12 +9633,12 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -9674,7 +9650,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 255, 130, 255);
+      --callout-color: 255, 130, 255;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(255, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9715,12 +9691,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -9732,7 +9708,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 74, 176, 255);
+      --callout-color: 74, 176, 255;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(74, 176, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9773,12 +9749,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -9790,7 +9766,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 74, 176, 255);
+      --callout-color: 74, 176, 255;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(74, 176, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9831,12 +9807,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -9848,7 +9824,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 170, 230, 89);
+      --callout-color: 170, 230, 89;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(170, 230, 89, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9889,12 +9865,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -9906,7 +9882,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 244, 138, 74);
+      --callout-color: 244, 138, 74;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(244, 138, 74, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -9947,12 +9923,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -9964,7 +9940,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 77, 224, 185);
+      --callout-color: 77, 224, 185;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(77, 224, 185, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10005,12 +9981,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10022,7 +9998,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 255, 128, 183);
+      --callout-color: 255, 128, 183;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(255, 128, 183, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10063,12 +10039,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10080,7 +10056,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 244, 138, 74);
+      --callout-color: 244, 138, 74;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(244, 138, 74, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10121,12 +10097,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10138,7 +10114,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 255, 74, 74);
+      --callout-color: 255, 74, 74;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(255, 74, 74, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10179,12 +10155,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10196,7 +10172,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 255, 74, 74);
+      --callout-color: 255, 74, 74;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(255, 74, 74, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10237,12 +10213,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10254,7 +10230,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 252, 95, 142);
+      --callout-color: 252, 95, 142;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(252, 95, 142, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10295,12 +10271,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10312,7 +10288,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 184, 148, 255);
+      --callout-color: 184, 148, 255;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(184, 148, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10353,12 +10329,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10370,7 +10346,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 184, 148, 255);
+      --callout-color: 184, 148, 255;
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(184, 148, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10411,12 +10387,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(100, 255, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
-      background-color: var(--callout-content-background, rgba(100, 255, 255, 0.1));
+      background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(100, 255, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(218, 218, 218);
@@ -10494,9 +10470,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 0px) solid rgb(54, 54, 54);
+      border-left: var(--table-column-first-border-width) solid rgb(54, 54, 54);
       border-right: 0px solid rgb(54, 54, 54);
-      border-top: var(--table-header-border-width, 0px) solid rgb(54, 54, 54);
+      border-top: var(--table-header-border-width) solid rgb(54, 54, 54);
       border-bottom: 0px solid rgb(54, 54, 54);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -10563,7 +10539,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: 100%;
+      max-width: 70%;
       object-fit: fill;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -10640,7 +10616,7 @@ html[saved-theme="dark"] {
       border-radius: 0px;
       box-shadow: none;
       filter: none;
-      max-width: 100%;
+      max-width: 70%;
       object-fit: contain;
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -10707,8 +10683,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(34, 37, 42));
-      color: var(--text-muted, rgb(255, 255, 255));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(255, 255, 255);
       border-width: 0px;
@@ -10722,7 +10698,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(255, 255, 255));
+      color: var(--text-muted);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -10845,7 +10821,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-important, rgb(232, 235, 252));
+      color: var(--text-important);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -10935,9 +10911,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(34, 37, 42));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(255, 255, 255));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(255, 255, 255);
@@ -11257,7 +11233,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--text-important, rgb(232, 235, 252));
+      color: var(--text-important);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -11278,7 +11254,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--text-important, rgb(232, 235, 252));
+      color: var(--text-important);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -11303,7 +11279,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(232, 235, 252);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11357,7 +11333,7 @@ html[saved-theme="dark"] {
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(73, 74, 80));
+      background-color: var(--background-secondary);
       border-color: rgb(218, 218, 218);
       box-shadow: var(--input-shadow);
     }
@@ -11384,8 +11360,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(94, 142, 237, 0.1));
-      color: var(--pill-color, rgb(138, 178, 243));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -11399,7 +11375,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(209, 223, 250));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(209, 223, 250);
       border-width: 0px;
@@ -11410,8 +11386,8 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(46, 53, 56));
-      color: var(--status-bar-text-color, rgb(255, 255, 255));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11461,7 +11437,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li {
-      background-color: var(--colorful, rgb(54, 61, 73));
+      background-color: var(--colorful);
       color: rgb(218, 218, 218);
       border-color: rgb(218, 218, 218);
       border-width: 0px;
@@ -11472,7 +11448,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--text-important, rgb(232, 235, 252));
+      color: var(--text-important);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -11504,7 +11480,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li {
-      background-color: var(--colorful, rgb(54, 61, 73));
+      background-color: var(--colorful);
       border-color: rgb(218, 218, 218);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -11514,7 +11490,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--text-important, rgb(232, 235, 252));
+      color: var(--text-important);
     }
 
     li.section-li > .section .meta {
@@ -11537,7 +11513,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(209, 223, 250));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(209, 223, 250);
       border-width: 0px;
@@ -11549,7 +11525,7 @@ html[saved-theme="dark"] {
 
     .darkmode svg {
       stroke: rgb(209, 223, 250);
-      color: var(--icon-color, rgb(209, 223, 250));
+      color: var(--icon-color);
     }
 
     .breadcrumb-container {
@@ -11564,7 +11540,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(210, 172, 210));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11582,7 +11558,7 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(46, 53, 56));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
@@ -11718,8 +11694,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgb(46, 53, 56));
-      color: var(--tag-color, rgb(186, 186, 186));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(94, 142, 237, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -11749,17 +11725,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(94, 142, 237));
+      background-color: var(--checkbox-color);
       border-color: rgb(94, 142, 237);
     }
 
     .stacked-page {
       border-color: rgb(218, 218, 218);
-      background-color: var(--background-primary, rgb(22, 26, 29));
+      background-color: var(--background-primary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(22, 26, 29));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -11768,7 +11744,7 @@ html[saved-theme="dark"] {
 
     h1.article-title {
       color: var(--inline-title-color);
-      font-size: var(--inline-title-size, 40px);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
 
@@ -11779,9 +11755,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 100, 255, 255);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 100, 255, 255;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -11795,7 +11769,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -11811,7 +11784,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -11833,7 +11805,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -11856,7 +11827,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -11881,6 +11851,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -11928,7 +11901,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -11961,8 +11933,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -12065,9 +12042,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 255, 240, 100);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 255, 240, 100;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -12081,7 +12056,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -12097,7 +12071,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -12119,7 +12092,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -12142,7 +12114,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -12167,6 +12138,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -12214,7 +12188,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -12247,8 +12220,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -12351,9 +12329,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 255, 84, 84);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 255, 84, 84;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -12367,7 +12343,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -12383,7 +12358,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -12405,7 +12379,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -12428,7 +12401,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -12453,6 +12425,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -12500,7 +12475,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -12533,8 +12507,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -12637,9 +12616,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 74, 202, 234);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 74, 202, 234;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -12653,7 +12630,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -12669,7 +12645,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -12691,7 +12666,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -12714,7 +12688,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -12739,6 +12712,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -12786,7 +12762,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -12819,8 +12794,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -12923,9 +12903,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 234, 183, 74);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 234, 183, 74;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -12939,7 +12917,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -12955,7 +12932,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -12977,7 +12953,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -13000,7 +12975,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -13025,6 +12999,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -13072,7 +13049,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13105,8 +13081,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -13209,9 +13190,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 238, 255, 139);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 238, 255, 139;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -13225,7 +13204,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -13241,7 +13219,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -13263,7 +13240,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -13286,7 +13262,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -13311,6 +13286,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -13358,7 +13336,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13391,8 +13368,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -13495,9 +13477,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 2, 122, 255);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: var(--callout-default);
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -13511,7 +13491,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -13527,7 +13506,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -13549,7 +13527,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -13572,7 +13549,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -13597,6 +13573,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -13644,7 +13623,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13677,8 +13655,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -13781,9 +13764,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 99, 180, 102);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 99, 180, 102;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -13797,7 +13778,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -13813,7 +13793,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -13835,7 +13814,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -13858,7 +13836,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -13883,6 +13860,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -13930,7 +13910,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13963,8 +13942,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -14067,9 +14051,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 65, 201, 108);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 65, 201, 108;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -14083,7 +14065,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -14099,7 +14080,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -14121,7 +14101,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -14144,7 +14123,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -14169,6 +14147,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -14216,7 +14197,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -14249,8 +14229,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -14353,9 +14338,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: hsl(220, 10%, 15%);
       --background-secondary: hsl(230, 5%, 30%);
       --blockquote-border-color: hsl(220, 80%, 65%);
-      --callout-color: var(--callout-default, 184, 148, 255);
-      --callout-padding: 4px 11px 11px 11px;
-      --callout-radius: 10px;
+      --callout-color: 184, 148, 255;
       --canvas-background: hsl(210, 15%, 10%);
       --checkbox-border-color: hsl(300, 30%, 75%);
       --checkbox-border-color-hover: white;
@@ -14369,7 +14352,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(217, 81.6%, 74.75%);
       --color-accent-2: hsl(215, 84%, 83.85%);
       --color-accent-hsl: 220, 80%, 65%;
-      --divider-color: transparent;
       --divider-color-hover: hsl(220, 80%, 65%);
       --graph-line: hsl(217, 81.6%, 74.75%);
       --graph-node: hsl(217, 81.6%, 74.75%);
@@ -14385,7 +14367,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(215, 84%, 83.85%);
       --link-unresolved-color: hsl(217, 81.6%, 74.75%);
       --link-unresolved-decoration-color: hsla(220, 80%, 65%, 0.3);
-      --list-indent: 3em;
       --menu-background: hsl(230, 5%, 30%);
       --pdf-background: hsl(210, 15%, 10%);
       --pdf-page-background: hsl(210, 15%, 10%);
@@ -14407,7 +14388,6 @@ html[saved-theme="dark"] {
       --shiki-highlight-neutral: white;
       --shiki-terminal-dots-color: hsl(300, 30%, 75%);
       --suggestion-background: hsl(210, 15%, 10%);
-      --tab-background-active: transparent;
       --tab-outline-color: transparent;
       --tab-switcher-background: hsl(230, 5%, 30%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(230, 5%, 30%), transparent);
@@ -14430,7 +14410,6 @@ html[saved-theme="dark"] {
       --text-accent: hsl(217, 81.6%, 74.75%);
       --text-accent-hover: hsl(215, 84%, 83.85%);
       --text-faint: hsl(300, 30%, 75%);
-      --text-muted: white;
       --text-selection: hsla(220, 80%, 65%, 0.33);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -14455,6 +14434,9 @@ html[saved-theme="dark"] {
       --background-tertiary: hsl(200, 10%, 20%);
       --bold-color: hsl(240, 50%, 70%);
       --cards-columns: repeat(auto-fit, minmax(180px, 1fr));
+      --divider-vertical-height: 100%;
+      --h5-color: #e1aaff;
+      --h6-color: #ffafc8;
       --italic-color: hsl(280, 50%, 75%);
       --red: hsla(220, 80%, 65%, 0.9);
       --table-drag-padding: 16px;
@@ -14502,7 +14484,6 @@ html[saved-theme="dark"] {
       --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --clickable-icon-radius: 4px;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -14535,8 +14516,13 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #363636;
       --pdf-thumbnail-shadow: 0 0 0 1px #363636;
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-radius: 12px;
       --setting-group-heading-color: #dadada;
       --setting-group-heading-size: 15px;
@@ -14639,8 +14625,6 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --blockquote-border-color: hsl(258, 88%, 66%);
-      --callout-padding: 12px 12px 12px 24px;
-      --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
@@ -14654,7 +14638,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
-      --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --graph-line: #3f3f3f;
       --graph-node: #b3b3b3;
@@ -14670,7 +14653,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-      --list-indent: 2.25em;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14683,7 +14665,6 @@ html[saved-theme="dark"] {
       --search-result-background: #1e1e1e;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
@@ -14706,10 +14687,8 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-muted: #b3b3b3;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
+      --divider-vertical-height: 100%;
       color: rgb(255, 255, 255);
     }
 
@@ -14720,8 +14699,6 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --blockquote-border-color: hsl(258, 88%, 66%);
-      --callout-padding: 12px 12px 12px 24px;
-      --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
@@ -14735,7 +14712,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
-      --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --graph-line: #3f3f3f;
       --graph-node: #b3b3b3;
@@ -14751,7 +14727,6 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
-      --list-indent: 2.25em;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14764,7 +14739,6 @@ html[saved-theme="dark"] {
       --search-result-background: #1e1e1e;
       --setting-items-background: #242424;
       --suggestion-background: #1e1e1e;
-      --tab-background-active: #1e1e1e;
       --tab-outline-color: #363636;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
@@ -14787,10 +14761,8 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-faint: #666666;
-      --text-muted: #b3b3b3;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
+      --divider-vertical-height: 100%;
       color: rgb(255, 255, 255);
     }
 

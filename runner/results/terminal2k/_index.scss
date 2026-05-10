@@ -26,19 +26,19 @@
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, #00e077) !important;
+  --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #fafafa) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #f5f5f5) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #1f1f1f) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -48,17 +48,17 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #00e077) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #00e077) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #1f1f1f) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #00e077) !important;
-  --icon-color-focused: var(--text-normal, #1f1f1f) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -85,12 +85,12 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-builtin-color: var(--green-forest, #00ad65) !important;
-  --code-comment-color: var(--grey-dark, #7f7f7f) !important;
-  --code-function-color: var(--green-forest, #00ad65) !important;
-  --code-operator-color: var(--green-forest, #00ad65) !important;
-  --code-string-color: var(--grey-dark, #7f7f7f) !important;
-  --code-variable-color: var(--black-light-light, #1f1f1f) !important;
+  --code-builtin-color: var(--green-forest) !important;
+  --code-comment-color: var(--grey-dark) !important;
+  --code-function-color: var(--green-forest) !important;
+  --code-operator-color: var(--green-forest) !important;
+  --code-string-color: var(--grey-dark) !important;
+  --code-variable-color: var(--black-light-light) !important;
   --code-text-size: 0.9rem !important;
   --code-text-size-header: 0.9em !important;
 
@@ -120,19 +120,19 @@
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, #00e077) !important;
+  --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #111111) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #141715) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #ffffff) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -142,17 +142,17 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #00e077) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #00e077) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #ffffff) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #00e077) !important;
-  --icon-color-focused: var(--text-normal, #ffffff) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -179,12 +179,12 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-builtin-color: var(--green-bright, #00e077) !important;
-  --code-comment-color: var(--green-dark, #004c29) !important;
-  --code-function-color: var(--green-forest, #00ad65) !important;
-  --code-operator-color: var(--green-bright, #00e077) !important;
-  --code-string-color: var(--green-forest, #00ad65) !important;
-  --code-variable-color: var(--white, #ffffff) !important;
+  --code-builtin-color: var(--green-bright) !important;
+  --code-comment-color: var(--green-dark) !important;
+  --code-function-color: var(--green-forest) !important;
+  --code-operator-color: var(--green-bright) !important;
+  --code-string-color: var(--green-forest) !important;
+  --code-variable-color: var(--white) !important;
   --code-text-size: 0.9rem !important;
   --code-text-size-header: 0.9em !important;
 
@@ -493,20 +493,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(250, 250, 250));
-    color: var(--text-normal, rgb(31, 31, 31));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(250, 250, 250));
+    background-color: var(--background-primary);
     color: rgb(31, 31, 31);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(245, 245, 245));
+    background-color: var(--background-secondary);
     color: rgb(31, 31, 31);
   }
 
@@ -514,12 +514,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(245, 245, 245));
+    background-color: var(--tab-container-background);
     color: rgb(31, 31, 31);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(245, 245, 245));
+    background-color: var(--tab-container-background);
     color: rgb(31, 31, 31);
     border-left: 0px rgb(153, 204, 167);
   }
@@ -531,7 +531,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(31, 31, 31));
+    color: var(--text-normal);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -573,7 +573,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(0, 173, 101));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -614,7 +614,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(31, 31, 31));
+    color: var(--text-normal);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -636,7 +636,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(31, 31, 31) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(31, 31, 31));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -713,7 +713,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(0, 173, 101));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -754,7 +754,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(0, 173, 101));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -795,7 +795,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(31, 31, 31));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -836,7 +836,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(31, 31, 31));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -955,7 +955,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 173, 101));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -985,8 +985,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--highlight-color, rgb(201, 255, 230));
-    color: var(--text-normal, rgb(31, 31, 31));
+    background-color: var(--highlight-color);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1117,7 +1117,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(0, 224, 119));
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1228,7 +1228,7 @@ body {
   }
 
   code {
-    background-color: var(--codeblock-background, rgb(235, 235, 235));
+    background-color: var(--codeblock-background);
     border: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 4.32px;
     border-top-right-radius: 4.32px;
@@ -1238,7 +1238,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--inline-code-color, rgb(0, 173, 101));
+    color: var(--inline-code-color);
     font-family: var(--font-monospace);
     padding: 0.8px 3.2px;
     padding-block-end: 0px;
@@ -1270,7 +1270,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--codeblock-background, rgb(245, 245, 245));
+    background-color: var(--codeblock-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1333,8 +1333,8 @@ body {
   }
 
   blockquote {
-    background-color: var(--quote-background, rgb(235, 235, 235));
-    color: var(--blockquote-color, rgb(31, 31, 31));
+    background-color: var(--quote-background);
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1377,7 +1377,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(31, 31, 31));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1395,7 +1395,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(250, 250, 250));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1498,7 +1498,7 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(0, 173, 101));
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1531,7 +1531,7 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(0, 173, 101));
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
@@ -1547,10 +1547,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 7.0176px);
-    margin-bottom: 11.696px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 7.0176px 0px 11.696px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1567,7 +1564,7 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(0, 173, 101));
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
@@ -1583,10 +1580,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 6.3264px);
-    margin-bottom: 6.3264px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 6.3264px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1603,7 +1597,7 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(0, 173, 101));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -1636,7 +1630,7 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(0, 173, 101));
+    color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
@@ -1669,7 +1663,7 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(0, 173, 101));
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
@@ -1703,7 +1697,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(0, 173, 101));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -2125,7 +2119,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2184,7 +2178,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2242,7 +2236,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2300,7 +2294,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2358,7 +2352,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2416,7 +2410,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2474,7 +2468,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2532,7 +2526,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2590,7 +2584,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2648,7 +2642,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2706,7 +2700,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2764,7 +2758,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2822,7 +2816,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2880,7 +2874,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2997,7 +2991,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(31, 31, 31));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3025,7 +3019,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(31, 31, 31));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3219,7 +3213,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(245, 245, 245));
+    background-color: var(--background-primary-alt);
     color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(92, 92, 92);
@@ -3447,9 +3441,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(245, 245, 245));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(31, 31, 31));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(31, 31, 31);
@@ -3815,7 +3809,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: var(--folder-title-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3852,7 +3846,7 @@ body {
     font-size: 11.7px;
     font-weight: 400;
     text-align: start;
-    color: var(--file-title-color, rgb(31, 31, 31));
+    color: rgb(31, 31, 31);
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -3866,7 +3860,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(31, 31, 31));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(224, 224, 224);
   }
@@ -3887,12 +3881,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(31, 31, 31));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(250, 250, 250));
+    background-color: var(--background-primary);
     border-color: rgb(31, 31, 31);
     box-shadow: var(--input-shadow);
   }
@@ -3920,7 +3914,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(0, 224, 119));
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3945,7 +3939,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(245, 245, 245));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -4011,7 +4005,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
-    color: var(--file-title-color, rgb(31, 31, 31));
+    color: var(--file-title-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4053,7 +4047,7 @@ body {
   }
 
   li.section-li > .section .meta {
-    color: var(--file-title-color, rgb(31, 31, 31));
+    color: var(--file-title-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4117,11 +4111,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(245, 245, 245));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(31, 31, 31));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4253,8 +4247,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--hashtag-background, rgb(235, 235, 235));
-    color: var(--hashtag-color, rgb(0, 173, 101));
+    background-color: var(--hashtag-background);
+    color: var(--hashtag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4284,17 +4278,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(0, 224, 119));
+    background-color: var(--checkbox-color);
     border-color: rgb(0, 224, 119);
   }
 
   .stacked-page {
     border-color: rgb(31, 31, 31);
-    background-color: var(--background-secondary, rgb(245, 245, 245));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(245, 245, 245));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4302,7 +4296,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(0, 173, 101));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -8328,20 +8322,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(17, 17, 17));
-      color: var(--text-normal, rgb(255, 255, 255));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(17, 17, 17));
+      background-color: var(--background-primary);
       color: rgb(255, 255, 255);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(20, 23, 21));
+      background-color: var(--background-secondary);
       color: rgb(255, 255, 255);
     }
 
@@ -8349,12 +8343,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(20, 23, 21));
+      background-color: var(--tab-container-background);
       color: rgb(255, 255, 255);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(20, 23, 21));
+      background-color: var(--tab-container-background);
       color: rgb(255, 255, 255);
       border-left: 0px rgb(0, 41, 34);
     }
@@ -8366,7 +8360,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(255, 255, 255));
+      color: var(--text-normal);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -8408,7 +8402,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(0, 224, 119));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -8449,7 +8443,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(255, 255, 255));
+      color: var(--text-normal);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -8471,7 +8465,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgb(255, 255, 255));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -8548,7 +8542,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(0, 173, 101));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8589,7 +8583,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(0, 173, 101));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8630,7 +8624,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(255, 255, 255));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8671,7 +8665,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(255, 255, 255));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8790,7 +8784,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(0, 173, 101));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -8820,8 +8814,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--highlight-color, rgb(0, 173, 101));
-      color: var(--text-normal, rgb(255, 255, 255));
+      background-color: var(--highlight-color);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8952,7 +8946,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
-      color: var(--pill-color, rgb(0, 224, 119));
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -9063,7 +9057,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--codeblock-background, rgb(19, 26, 22));
+      background-color: var(--codeblock-background);
       border: 0px solid rgb(54, 54, 54);
       border-top-left-radius: 4.32px;
       border-top-right-radius: 4.32px;
@@ -9073,7 +9067,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--inline-code-color, rgb(0, 224, 119));
+      color: var(--inline-code-color);
       font-family: var(--font-monospace);
       padding: 0.8px 3.2px;
       padding-block-end: 0px;
@@ -9105,7 +9099,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--codeblock-background, rgb(20, 23, 21));
+      background-color: var(--codeblock-background);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -9168,8 +9162,8 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--quote-background, rgb(19, 26, 22));
-      color: var(--blockquote-color, rgb(255, 255, 255));
+      background-color: var(--quote-background);
+      color: var(--blockquote-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9212,7 +9206,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(255, 255, 255));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9230,7 +9224,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(17, 17, 17));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -9333,7 +9327,7 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(0, 173, 101));
+      color: var(--h1-color);
       font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
@@ -9366,7 +9360,7 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(0, 173, 101));
+      color: var(--h2-color);
       font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
@@ -9382,10 +9376,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 7.0176px);
-      margin-bottom: 11.696px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 7.0176px 0px 11.696px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -9402,7 +9393,7 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(0, 173, 101));
+      color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
       font-weight: var(--font-weight);
@@ -9418,10 +9409,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 6.3264px);
-      margin-bottom: 6.3264px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 6.3264px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -9438,7 +9426,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(0, 173, 101));
+      color: var(--h4-color);
       font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
@@ -9471,7 +9459,7 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(0, 173, 101));
+      color: var(--h5-color);
       font-family: var(--h5-font);
       font-size: var(--h5-size);
       font-weight: var(--font-weight);
@@ -9504,7 +9492,7 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(0, 173, 101));
+      color: var(--h6-color);
       font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
@@ -9538,7 +9526,7 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(0, 173, 101));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
@@ -9960,7 +9948,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -10019,7 +10007,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10077,7 +10065,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10135,7 +10123,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10193,7 +10181,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10251,7 +10239,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10309,7 +10297,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10367,7 +10355,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10425,7 +10413,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10483,7 +10471,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10541,7 +10529,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10599,7 +10587,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10657,7 +10645,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10715,7 +10703,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10832,7 +10820,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(255, 255, 255));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -10860,7 +10848,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(255, 255, 255));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -11054,7 +11042,7 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(20, 23, 21));
+      background-color: var(--background-primary-alt);
       color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(179, 179, 179);
@@ -11282,9 +11270,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(20, 23, 21));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(255, 255, 255));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(255, 255, 255);
@@ -11650,7 +11638,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: var(--folder-title-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11687,7 +11675,7 @@ html[saved-theme="dark"] {
       font-size: 11.7px;
       font-weight: 400;
       text-align: start;
-      color: var(--file-title-color, rgb(235, 235, 235));
+      color: rgb(235, 235, 235);
       background-color: rgba(0, 0, 0, 0);
     }
 
@@ -11701,7 +11689,7 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(255, 255, 255));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(54, 54, 54);
     }
@@ -11722,12 +11710,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(255, 255, 255));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(20, 23, 21));
+      background-color: var(--background-secondary);
       border-color: rgb(255, 255, 255);
       box-shadow: var(--input-shadow);
     }
@@ -11755,7 +11743,7 @@ html[saved-theme="dark"] {
 
     .note-properties-tags {
       background-color: var(--pill-background);
-      color: var(--pill-color, rgb(0, 224, 119));
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -11780,7 +11768,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(20, 23, 21));
+      background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
@@ -11846,7 +11834,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: var(--file-title-color, rgb(235, 235, 235));
+      color: var(--file-title-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11888,7 +11876,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section .meta {
-      color: var(--file-title-color, rgb(235, 235, 235));
+      color: var(--file-title-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -11952,11 +11940,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(20, 23, 21));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(255, 255, 255));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12088,8 +12076,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--hashtag-background, rgb(0, 41, 34));
-      color: var(--hashtag-color, rgb(0, 224, 119));
+      background-color: var(--hashtag-background);
+      color: var(--hashtag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -12119,17 +12107,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(0, 224, 119));
+      background-color: var(--checkbox-color);
       border-color: rgb(0, 224, 119);
     }
 
     .stacked-page {
       border-color: rgb(255, 255, 255);
-      background-color: var(--background-secondary, rgb(20, 23, 21));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(20, 23, 21));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -12137,7 +12125,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(0, 173, 101));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }

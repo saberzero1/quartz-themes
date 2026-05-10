@@ -1445,13 +1445,13 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: var(--magenta) !important;
   --h1-color: var(--red) !important;
   --h2-color: var(--yellow) !important;
   --h3-color: var(--green) !important;
   --h4-color: var(--cyan) !important;
   --h5-color: var(--blue) !important;
   --h6-color: var(--magenta) !important;
+  --inline-title-color: var(--magenta) !important;
   --default-font: "JetBrains Mono Nerd Font", monospace !important;
   --text-error-hover: var(--red) !important;
   --background-modifier-form-field-highlighted: var(--bg_dark) !important;

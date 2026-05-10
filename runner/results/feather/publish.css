@@ -500,67 +500,45 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--color-base-30, #ebedf0) !important;
+  --background-modifier-border: var(--color-base-30) !important;
   --background-modifier-border-focus: var(--color-base-40) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
-  --background-modifier-error: var(--color-red, #e4374b) !important;
-  --background-modifier-error-hover: var(--color-red, #e4374b) !important;
-  --background-modifier-error-rgb: var(--color-red-rgb, 228, 55, 75) !important;
-  --background-modifier-form-field: var(--color-base-00, #f4f4f2) !important;
+  --background-modifier-error: var(--color-red) !important;
+  --background-modifier-error-hover: var(--color-red) !important;
+  --background-modifier-error-rgb: var(--color-red-rgb) !important;
+  --background-modifier-form-field: var(--color-base-00) !important;
   --background-modifier-form-field-hover: var(
-    --background-modifier-form-field,
-    #f4f4f2
+    --background-modifier-form-field
   ) !important;
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
-  --background-modifier-success: var(--color-green, #0cb54f) !important;
-  --background-modifier-success-rgb: var(
-    --color-green-rgb,
-    12,
-    181,
-    79
-  ) !important;
-  --background-primary: var(--color-base-00, #f4f4f2) !important;
-  --background-primary-alt: var(--color-base-10, #f6f7f8) !important;
-  --background-secondary: var(--color-base-20, #e8e8e8) !important;
+  --background-modifier-hover: #e2e5e9 !important;
+  --background-modifier-success: var(--color-green) !important;
+  --background-modifier-success-rgb: var(--color-green-rgb) !important;
+  --background-primary: var(--color-base-00) !important;
+  --background-primary-alt: var(--color-base-10) !important;
+  --background-secondary: var(--color-base-20) !important;
   --background-secondary-alt: var(--color-base-05) !important;
-  --bases-cards-background: var(--background-primary, #f4f4f2) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    #f6f7f8
-  ) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
-  --bases-group-heading-property-color: var(
-    --text-muted,
-    hsl(212, 10%, 37%)
-  ) !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, #494e6a) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    #f4f4f2
-  ) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    #f6f7f8
+    --background-primary-alt
   ) !important;
-  --bases-table-cell-background-selected: var(
-    --table-selection,
-    hsla(215, 75%, 60%, 0.1)
-  ) !important;
+  --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
@@ -568,19 +546,12 @@ body.theme-light {
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    #f6f7f8
-  ) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    #f4f4f2
-  ) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
-    --background-modifier-hover,
-    #e2e5e9
+    --background-modifier-hover
   ) !important;
-  --bases-table-header-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -591,18 +562,11 @@ body.theme-light {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    #f4f4f2
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
-    --background-modifier-hover,
-    #e2e5e9
+    --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --interactive-accent,
-    hsl(215, 75%, 62.5%)
-  ) !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blur-background: color-mix(
       in srgb,
       var(--background-primary) var(--blur-opacity-s),
@@ -626,72 +590,63 @@ body.theme-light {
   --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb, 228, 55, 75);
+  --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb, 228, 55, 75);
+  --callout-error: var(--color-red-rgb);
   --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb, 228, 55, 75);
+  --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb, 12, 181, 79);
+  --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, #f4f4f2) !important;
-  --canvas-card-label-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --canvas-color-1: var(--color-red-rgb, 228, 55, 75) !important;
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
+  --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
   --canvas-color-3: var(--color-yellow-rgb) !important;
-  --canvas-color-4: var(--color-green-rgb, 12, 181, 79) !important;
+  --canvas-color-4: var(--color-green-rgb) !important;
   --canvas-color-5: var(--color-cyan-rgb) !important;
   --canvas-color-6: var(--color-purple-rgb) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
-  --canvas-dot-pattern: var(--color-base-30, #ebedf0) !important;
+  --canvas-dot-pattern: var(--color-base-30) !important;
   --caret-color: var(--text-normal) !important;
-  --checkbox-border-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --checkbox-border-color-hover: var(
-    --text-muted,
-    hsl(212, 10%, 37%)
-  ) !important;
-  --checkbox-color: var(--interactive-accent, hsl(215, 75%, 62.5%)) !important;
-  --checkbox-color-hover: var(--blue, #4da2f8) !important;
-  --checkbox-marker-color: var(--background-primary, #f4f4f2) !important;
-  --checkbox-radius: var(--radius-s, 30%) !important;
-  --checkbox-size: var(--font-text-size, 1.1rem) !important;
-  --checklist-done-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--blue) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 30% !important;
+  --checkbox-size: 1.1rem !important;
+  --checklist-done-color: var(--text-muted) !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--l2, #e8e8e8) !important;
-  --code-border-color: var(--background-modifier-border, #ebedf0) !important;
-  --code-bracket-background: var(
-    --background-modifier-hover,
-    #e2e5e9
-  ) !important;
-  --code-comment: var(--slate-blue, #7b89cf) !important;
-  --code-function: var(--green, #79e3aa) !important;
-  --code-important: var(--red, #f03063) !important;
-  --code-keyword: var(--purple, #895ef7) !important;
+  --code-background: var(--l2) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--slate-blue) !important;
+  --code-function: var(--green) !important;
+  --code-important: var(--red) !important;
+  --code-keyword: var(--purple) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--teal, #1fcbdc) !important;
-  --code-property: var(--red, #f03063) !important;
-  --code-punctuation: var(--green, #79e3aa) !important;
+  --code-operator: var(--teal) !important;
+  --code-property: var(--red) !important;
+  --code-punctuation: var(--green) !important;
   --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller, 1rem) !important;
-  --code-string: var(--green, #79e3aa) !important;
-  --code-tag: var(--red, #f03063) !important;
-  --code-value: var(--orange, #ff7641) !important;
-  --collapse-icon-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --collapse-icon-color-collapsed: var(
-    --text-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
+  --code-size: 1rem !important;
+  --code-string: var(--green) !important;
+  --code-tag: var(--red) !important;
+  --code-value: var(--orange) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -709,13 +664,10 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--background-modifier-border, #ebedf0) !important;
-  --divider-color-hover: var(
-    --interactive-accent,
-    hsl(215, 75%, 62.5%)
-  ) !important;
-  --dropdown-background: var(--interactive-normal, #f4f4f2) !important;
-  --dropdown-background-hover: var(--interactive-hover, #f6f7f8) !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
+  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -726,72 +678,22 @@ body.theme-light {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, #f4f4f2) !important;
-  --file-header-background-focused: var(
-    --background-primary,
-    #f4f4f2
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --file-header-font-size: var(--font-ui-small, 1rem) !important;
+  --file-header-font: var(--font-interface) !important;
+  --file-header-font-size: 1rem !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
-  --flair-background: var(--interactive-normal, #f4f4f2) !important;
+  --flair-background: var(--interactive-normal) !important;
   --flair-color: var(--text-normal) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
-  --font-mermaid: var(
-    --font-text,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --font-mermaid: var(--font-text) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -801,21 +703,17 @@ body.theme-light {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color, #ebedf0) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
-  --footnote-id-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --footnote-id-color-no-occurrences: var(
-    --text-faint,
-    hsl(212, 10%, 67%)
-  ) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
-    --metadata-input-background-active,
-    #e2e5e9
+    --metadata-input-background-active
   ) !important;
   --footnote-line-height: var(--line-height-normal) !important;
   --footnote-padding-block: var(--size-2-3) !important;
@@ -826,160 +724,89 @@ body.theme-light {
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --graph-node-attachment: var(--color-yellow, #bd8e37) !important;
-  --graph-node-focused: var(--text-accent, hsl(215, 75%, 60%)) !important;
-  --graph-node-tag: var(--color-green, #0cb54f) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(212, 10%, 67%)) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --h5-line-height: var(--line-height-normal) !important;
   --h6-line-height: var(--line-height-normal) !important;
-  --heading-formatting: var(--text-faint, hsl(212, 10%, 67%)) !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: var(--slate-60, #494e6a) !important;
-  --icon-color: var(--d1, #333547) !important;
-  --icon-color-active: var(--d2, #272835) !important;
-  --icon-color-focused: var(--d1, #333547) !important;
-  --icon-color-hover: var(--d2, #272835) !important;
+  --hr-color: var(--slate-60) !important;
+  --icon-color: var(--d1) !important;
+  --icon-color-active: var(--d2) !important;
+  --icon-color-focused: var(--d1) !important;
+  --icon-color-hover: var(--d2) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;
-  --inline-title-line-height: var(--h1-line-height, 4rem) !important;
-  --inline-title-size: var(--h1-size, 2rem) !important;
+  --inline-title-line-height: 4rem !important;
+  --inline-title-size: var(--h1-size) !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
-  --inline-title-weight: var(--h1-weight) !important;
+  --inline-title-weight: 700 !important;
   --input-border-width: var(--border-width) !important;
   --input-corner-shape: var(--corner-shape) !important;
-  --input-date-separator: var(--text-faint, hsl(212, 10%, 67%)) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --input-placeholder-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --interactive-accent: var(--color-accent-1, hsl(215, 75%, 62.5%)) !important;
-  --interactive-accent-hover: var(
-    --color-accent-2,
-    hsl(215, 75%, 65%)
-  ) !important;
-  --interactive-accent-hsl: var(--color-accent-hsl, 215, 75%, 60%) !important;
-  --interactive-hover: var(--color-base-10, #f6f7f8) !important;
-  --interactive-normal: var(--color-base-00, #f4f4f2) !important;
-  --link-color: var(--text-accent, hsl(215, 75%, 60%)) !important;
-  --link-color-hover: var(--text-accent-hover, hsl(215, 75%, 50%)) !important;
-  --link-external-color: var(--green, #79e3aa) !important;
+  --input-placeholder-color: var(--text-faint) !important;
+  --interactive-accent: var(--color-accent-1) !important;
+  --interactive-accent-hover: var(--color-accent-2) !important;
+  --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: var(--color-base-10) !important;
+  --interactive-normal: var(--color-base-00) !important;
+  --link-color: var(--text-accent) !important;
+  --link-color-hover: var(--text-accent-hover) !important;
+  --link-external-color: var(--green) !important;
   --link-external-color-hover: hsl(
     140,
     var(--accent-s),
     var(--accent-l)
   ) !important;
-  --link-unresolved-color: var(--text-accent, hsl(215, 75%, 60%)) !important;
+  --link-unresolved-color: var(--text-accent) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
   ) !important;
   --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
-  --list-marker-color: var(--slate-blue, #7b89cf) !important;
-  --list-marker-color-collapsed: var(
-    --text-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
-  --list-marker-color-hover: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --menu-background: var(--background-secondary, #e8e8e8) !important;
+  --list-marker-color: var(--slate-blue) !important;
+  --list-marker-color-collapsed: var(--text-accent) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
   --menu-radius: var(--radius-m) !important;
-  --menu-shadow: var(
-    --shadow-s,
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  ) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
+  --menu-shadow: var(--shadow-s) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
-    --background-modifier-hover,
-    #e2e5e9
+    --background-modifier-hover
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --metadata-input-font: var(--font-interface) !important;
   --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
   --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background-active: var(
-    --background-modifier-hover,
-    #e2e5e9
+    --background-modifier-hover
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
-  --metadata-label-text-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --metadata-label-text-color-hover: var(
-    --text-muted,
-    hsl(212, 10%, 37%)
-  ) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
-    --background-modifier-hover,
-    #e2e5e9
+    --background-modifier-hover
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
@@ -990,55 +817,34 @@ body.theme-light {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, #f4f4f2) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
-  --modal-radius: var(--radius-l, 1rem) !important;
-  --nav-collapse-icon-color: var(
-    --collapse-icon-color,
-    hsl(212, 10%, 67%)
-  ) !important;
-  --nav-collapse-icon-color-collapsed: var(
-    --text-faint,
-    hsl(212, 10%, 67%)
-  ) !important;
+  --modal-radius: 1rem !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(
-    --text-faint,
-    hsl(212, 10%, 67%)
-  ) !important;
-  --nav-heading-color-collapsed-hover: var(
-    --text-muted,
-    hsl(212, 10%, 37%)
-  ) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
   --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width) !important;
-  --nav-item-background-active: var(
-    --background-modifier-hover,
-    #e2e5e9
-  ) !important;
-  --nav-item-background-hover: var(
-    --background-modifier-hover,
-    #e2e5e9
-  ) !important;
+  --nav-item-background-active: var(--background-modifier-hover) !important;
+  --nav-item-background-hover: var(--background-modifier-hover) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
     0.15
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
-  --nav-item-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
+  --nav-item-color: var(--text-muted) !important;
   --nav-item-color-active: var(--text-normal) !important;
-  --nav-item-color-highlighted: var(
-    --text-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
@@ -1047,38 +853,34 @@ body.theme-light {
   --nav-item-parent-padding: var(--nav-item-padding) !important;
   --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small) !important;
-  --nav-tag-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --nav-tag-color-active: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --nav-tag-color-hover: var(--text-muted, hsl(212, 10%, 37%)) !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, #f4f4f2) !important;
-  --pdf-page-background: var(--background-primary, #f4f4f2) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(--background-primary, #f4f4f2) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(--background-modifier-border, #ebedf0) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
-  --pill-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
+  --pill-color: var(--text-muted) !important;
   --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --pill-color-remove-hover: var(--text-accent, hsl(215, 75%, 60%)) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, #f4f4f2) !important;
-  --prompt-border-color: var(--slate-blue, #7b89cf) !important;
+  --prompt-background: var(--background-primary) !important;
+  --prompt-border-color: var(--slate-blue) !important;
   --prompt-border-width: var(--border-width) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, #f4f4f2 65%, transparent)
-      linear-gradient(#f4f4f2, color-mix(in srgb, #f4f4f2 65%, transparent))
-  ) !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary, #e8e8e8) !important;
-  --ribbon-background-collapsed: var(--background-primary, #f4f4f2) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -1088,61 +890,46 @@ body.theme-light {
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --search-icon-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --search-result-background: var(--background-primary, #f4f4f2) !important;
+  --search-clear-button-color: var(--text-muted) !important;
+  --search-icon-color: var(--text-muted) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
-  --setting-items-background: var(--background-primary-alt, #f6f7f8) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
-  --shiki-active-tab-border-color: var(
-    --shiki-highlight-neutral,
-    hsl(212, 10%, 37%)
-  ) !important;
-  --shiki-code-background: var(--code-background, #e8e8e8) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
-  --shiki-code-comment: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --shiki-code-function: var(--color-green, #0cb54f) !important;
-  --shiki-code-important: var(--color-orange, #d96c00) !important;
-  --shiki-code-keyword: var(--color-pink, #c32b74) !important;
-  --shiki-code-normal: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --shiki-code-property: var(--color-cyan, #2db7b5) !important;
-  --shiki-code-punctuation: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --shiki-code-string: var(--color-yellow, #bd8e37) !important;
-  --shiki-code-value: var(--color-purple, #876be0) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
+  --shiki-code-comment: var(--text-faint) !important;
+  --shiki-code-function: var(--color-green) !important;
+  --shiki-code-important: var(--color-orange) !important;
+  --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
+  --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
+  --shiki-code-string: var(--color-yellow) !important;
+  --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
-  --shiki-gutter-text-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --shiki-gutter-text-color-highlight: var(
-    --shiki-code-normal,
-    hsl(212, 10%, 37%)
-  ) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: var(
-    --shiki-code-normal,
-    hsl(212, 10%, 37%)
-  ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
@@ -1150,35 +937,32 @@ body.theme-light {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
-  --status-bar-background: var(--background-secondary, #e8e8e8) !important;
-  --status-bar-border-color: var(--divider-color, #ebedf0) !important;
+  --slider-track-background: var(--background-modifier-border) !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
-  --status-bar-text-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --suggestion-background: var(--background-primary, #f4f4f2) !important;
+  --status-bar-text-color: var(--text-muted) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
-  --sync-avatar-color-1: var(--color-red, #e4374b) !important;
-  --sync-avatar-color-2: var(--color-orange, #d96c00) !important;
-  --sync-avatar-color-3: var(--color-yellow, #bd8e37) !important;
-  --sync-avatar-color-4: var(--color-green, #0cb54f) !important;
-  --sync-avatar-color-5: var(--color-cyan, #2db7b5) !important;
+  --sync-avatar-color-1: var(--color-red) !important;
+  --sync-avatar-color-2: var(--color-orange) !important;
+  --sync-avatar-color-3: var(--color-yellow) !important;
+  --sync-avatar-color-4: var(--color-green) !important;
+  --sync-avatar-color-5: var(--color-cyan) !important;
   --sync-avatar-color-6: var(--color-blue) !important;
-  --sync-avatar-color-7: var(--color-purple, #876be0) !important;
-  --sync-avatar-color-8: var(--color-pink, #c32b74) !important;
-  --tab-background-active: var(--background-primary, #f4f4f2) !important;
-  --tab-container-background: var(--background-secondary, #e8e8e8) !important;
+  --sync-avatar-color-7: var(--color-purple) !important;
+  --sync-avatar-color-8: var(--color-pink) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(--divider-color, #ebedf0) !important;
+  --tab-outline-color: var(--divider-color) !important;
   --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(--background-secondary, #e8e8e8) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -1187,39 +971,29 @@ body.theme-light {
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
-  --tab-text-color-active: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --tab-text-color-focused: var(--text-muted, hsl(212, 10%, 37%)) !important;
-  --tab-text-color-focused-active: var(
-    --text-muted,
-    hsl(212, 10%, 37%)
-  ) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
-  --tab-text-color-focused-highlighted: var(
-    --text-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--slate-60, #494e6a) !important;
+  --table-border-color: var(--slate-60) !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
-    --table-selection-border-color,
-    hsl(215, 75%, 62.5%)
+    --table-selection-border-color
   ) !important;
-  --table-drag-handle-color: var(--text-faint, hsl(212, 10%, 67%)) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-header-background: var(--table-background) !important;
-  --table-header-border-color: var(--table-border-color, #494e6a) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
-  --table-header-color: var(--slate-blue, #7b89cf) !important;
+  --table-header-color: var(--slate-blue) !important;
   --table-header-size: var(--table-text-size) !important;
-  --table-header-weight: var(--font-black, 900) !important;
+  --table-header-weight: var(--font-black) !important;
   --table-line-height: var(--line-height-tight) !important;
   --table-row-alt-background: var(--table-background) !important;
   --table-row-alt-background-hover: var(--table-background) !important;
@@ -1227,10 +1001,7 @@ body.theme-light {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
-  --table-selection-border-color: var(
-    --interactive-accent,
-    hsl(215, 75%, 62.5%)
-  ) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
@@ -1239,9 +1010,9 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: var(--slate-blue, #7b89cf) !important;
-  --tag-color-hover: var(--text-accent, hsl(215, 75%, 60%)) !important;
-  --tag-size: var(--font-smaller, 1rem) !important;
+  --tag-color: var(--slate-blue) !important;
+  --tag-color-hover: var(--text-accent) !important;
+  --tag-size: 1rem !important;
   --text-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1252,16 +1023,13 @@ body.theme-light {
     var(--accent-s),
     calc(var(--accent-l) - 10%)
   ) !important;
-  --text-error: var(--color-red, #e4374b) !important;
+  --text-error: var(--color-red) !important;
   --text-faint: hsl(
     var(--base-h),
     calc(var(--base-s) - 5%),
     calc(var(--base-l) - 30%)
   ) !important;
-  --text-highlight-bg: var(
-    --text-highlight-bg-l,
-    rgba(255, 208, 0, 0.4)
-  ) !important;
+  --text-highlight-bg: var(--text-highlight-bg-l) !important;
   --text-muted: hsl(
     var(--base-h),
     calc(var(--base-s) - 5%),
@@ -1269,15 +1037,12 @@ body.theme-light {
   ) !important;
   --text-normal: var(--color-base-100) !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
-  --text-success: var(--color-green, #0cb54f) !important;
-  --text-warning: var(--color-orange, #d96c00) !important;
-  --titlebar-background: var(--background-secondary, #e8e8e8) !important;
-  --titlebar-background-focused: var(--l2, #e8e8e8) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    #ebedf0
-  ) !important;
-  --titlebar-text-color: var(--text-muted, hsl(212, 10%, 37%)) !important;
+  --text-success: var(--color-green) !important;
+  --text-warning: var(--color-orange) !important;
+  --titlebar-background: var(--background-secondary) !important;
+  --titlebar-background-focused: var(--l2) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
+  --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --touch-radius-l: var(--touch-size-l) !important;
@@ -1356,11 +1121,11 @@ body.theme-light {
   --checklist-done-decoration: line-through !important;
   --code-border-width: 0px !important;
   --code-white-space: pre-wrap !important;
-  --color-base-00: var(--l1, #f4f4f2) !important;
+  --color-base-00: var(--l1) !important;
   --color-base-05: #fcfcfc !important;
   --color-base-10: #f6f7f8 !important;
   --color-base-100: #222222 !important;
-  --color-base-20: var(--l2, #e8e8e8) !important;
+  --color-base-20: var(--l2) !important;
   --color-base-25: #f0f0f0 !important;
   --color-base-30: #ebedf0 !important;
   --color-base-35: #d4d4d4 !important;
@@ -1419,16 +1184,7 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme: var(
-    --y,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif
-  ) !important;
+  --font-interface-theme: var(--y) !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-monospace-default:
@@ -1747,14 +1503,14 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--h1-color, #222222) !important;
   --shadow-edges: 0 0 transparent !important;
-  --h1-color: var(--text-normal, #222222) !important;
-  --h2-color: var(--text-normal, #222222) !important;
-  --h3-color: var(--blue, #4da2f8) !important;
-  --h4-color: var(--yellow, #ffc63c) !important;
-  --h5-color: var(--red, #f03063) !important;
-  --h6-color: var(--purple, #895ef7) !important;
+  --h1-color: var(--text-normal) !important;
+  --h2-color: var(--text-normal) !important;
+  --h3-color: var(--blue) !important;
+  --h4-color: var(--yellow) !important;
+  --h5-color: var(--red) !important;
+  --h6-color: var(--purple) !important;
+  --inline-title-color: var(--h1-color) !important;
   --green: #79e3aa !important;
   --orange: #ff7641 !important;
   --purple: #895ef7 !important;
@@ -1766,19 +1522,19 @@ body.theme-light {
   --base-h: 212 !important;
   --base-l: 97% !important;
   --base-s: 15% !important;
-  --em-color: var(--teal, #1fcbdc) !important;
+  --em-color: var(--teal) !important;
   --font-editor-theme:
     system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
-  --strong-color: var(--pink-light, #ff82b2) !important;
+  --strong-color: var(--pink-light) !important;
   --blue: #4da2f8 !important;
   --pink: #ff22b1 !important;
   --indigo: #6a84ed !important;
   --white: #f8fafc !important;
-  --table-text-color: var(--text-normal, #222222) !important;
+  --table-text-color: var(--text-normal) !important;
   --callout-title-size: 1.2rem;
   --teal: #1fcbdc !important;
-  --base: var(--blue, #4da2f8) !important;
-  --quotes-color: var(--text-normal, #222222) !important;
+  --base: var(--blue) !important;
+  --quotes-color: var(--text-normal) !important;
   --text-formatted: hsl(
     var(--base-h),
     calc(var(--base-s) - 5%),
@@ -1815,62 +1571,45 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.1
   ) !important;
-  --background-modifier-border: var(--color-base-30, #35393e) !important;
-  --background-modifier-border-focus: var(--color-base-40, #555) !important;
+  --background-modifier-border: var(--color-base-30) !important;
+  --background-modifier-border-focus: var(--color-base-40) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
-  --background-modifier-form-field: var(--color-base-25, #2c313c) !important;
+  --background-modifier-form-field: var(--color-base-25) !important;
   --background-modifier-form-field-hover: var(
-    --background-modifier-form-field,
-    #2c313c
+    --background-modifier-form-field
   ) !important;
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: var(--color-base-00, #333547) !important;
-  --background-primary-alt: var(--color-base-10, #282c34) !important;
-  --background-secondary: var(--color-base-20, #272835) !important;
-  --background-secondary-alt: var(--color-base-30, #35393e) !important;
-  --bases-cards-background: var(--background-primary, #333547) !important;
+  --background-primary: var(--color-base-00) !important;
+  --background-primary-alt: var(--color-base-10) !important;
+  --background-secondary: var(--color-base-20) !important;
+  --background-secondary-alt: var(--color-base-30) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
-  --bases-cards-cover-background: var(
-    --background-primary-alt,
-    #282c34
-  ) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
+  --bases-embed-border-color: var(--background-modifier-border) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
-  --bases-group-heading-property-color: var(
-    --text-muted,
-    hsl(212, 15%, 78%)
-  ) !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
   --bases-header-border-width: 0 0 var(--border-width) 0 !important;
-  --bases-table-border-color: var(--table-border-color, #494e6a) !important;
-  --bases-table-cell-background-active: var(
-    --background-primary,
-    #333547
-  ) !important;
+  --bases-table-border-color: var(--table-border-color) !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
   --bases-table-cell-background-disabled: var(
-    --background-primary-alt,
-    #282c34
+    --background-primary-alt
   ) !important;
-  --bases-table-cell-background-selected: var(
-    --table-selection,
-    hsla(215, 75%, 60%, 0.1)
-  ) !important;
+  --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
@@ -1878,18 +1617,12 @@ body.theme-dark {
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(
-    --background-primary-alt,
-    #282c34
-  ) !important;
-  --bases-table-header-background: var(
-    --background-primary,
-    #333547
-  ) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-header-background: var(--background-primary) !important;
   --bases-table-header-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --bases-table-header-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
@@ -1900,17 +1633,11 @@ body.theme-dark {
     --table-row-background-hover
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
-  --bases-table-summary-background: var(
-    --background-primary,
-    #333547
-  ) !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --interactive-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blur-background: color-mix(
       in srgb,
       var(--interactive-normal) var(--blur-opacity-s),
@@ -1951,8 +1678,8 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary, #333547) !important;
-  --canvas-card-label-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
   --canvas-color-3: var(--color-yellow-rgb) !important;
@@ -1962,41 +1689,35 @@ body.theme-dark {
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
-  --canvas-dot-pattern: var(--color-base-30, #35393e) !important;
+  --canvas-dot-pattern: var(--color-base-30) !important;
   --caret-color: var(--text-normal) !important;
-  --checkbox-border-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --checkbox-border-color-hover: var(
-    --text-muted,
-    hsl(212, 15%, 78%)
-  ) !important;
-  --checkbox-color: var(--interactive-accent, hsl(215, 75%, 60%)) !important;
-  --checkbox-color-hover: var(--blue, #4da2f8) !important;
-  --checkbox-marker-color: var(--background-primary, #333547) !important;
-  --checkbox-radius: var(--radius-s, 30%) !important;
-  --checkbox-size: var(--font-text-size, 1.1rem) !important;
-  --checklist-done-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--blue) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 30% !important;
+  --checkbox-size: 1.1rem !important;
+  --checklist-done-color: var(--text-muted) !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--slate, #1d1c39) !important;
-  --code-border-color: var(--background-modifier-border, #35393e) !important;
+  --code-background: var(--slate) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--slate-blue, #7b89cf) !important;
-  --code-function: var(--green, #79e3aa) !important;
-  --code-important: var(--red, #f03063) !important;
-  --code-keyword: var(--purple, #895ef7) !important;
+  --code-comment: var(--slate-blue) !important;
+  --code-function: var(--green) !important;
+  --code-important: var(--red) !important;
+  --code-keyword: var(--purple) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--teal, #1fcbdc) !important;
-  --code-property: var(--red, #f03063) !important;
-  --code-punctuation: var(--green, #79e3aa) !important;
+  --code-operator: var(--teal) !important;
+  --code-property: var(--red) !important;
+  --code-punctuation: var(--green) !important;
   --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller, 1rem) !important;
-  --code-string: var(--green, #79e3aa) !important;
-  --code-tag: var(--red, #f03063) !important;
-  --code-value: var(--orange, #ff7641) !important;
-  --collapse-icon-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --collapse-icon-color-collapsed: var(
-    --text-accent,
-    hsl(215, 75%, 70%)
-  ) !important;
+  --code-size: 1rem !important;
+  --code-string: var(--green) !important;
+  --code-tag: var(--red) !important;
+  --code-value: var(--orange) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -2014,12 +1735,9 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--background-modifier-border, #35393e) !important;
-  --divider-color-hover: var(
-    --interactive-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
-  --dropdown-background: var(--interactive-normal, #35393e) !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
@@ -2031,72 +1749,22 @@ body.theme-dark {
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
-  --file-header-background: var(--background-primary, #333547) !important;
-  --file-header-background-focused: var(
-    --background-primary,
-    #333547
-  ) !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
-  --file-header-font: var(
-    --font-interface,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
-  --file-header-font-size: var(--font-ui-small, 1rem) !important;
+  --file-header-font: var(--font-interface) !important;
+  --file-header-font-size: 1rem !important;
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
-  --flair-background: var(--interactive-normal, #35393e) !important;
+  --flair-background: var(--interactive-normal) !important;
   --flair-color: var(--text-normal) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
-  --font-mermaid: var(
-    --font-text,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --font-mermaid: var(--font-text) !important;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default) !important;
@@ -2106,17 +1774,14 @@ body.theme-dark {
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-weight: var(--font-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color, #35393e) !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
-  --footnote-id-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --footnote-id-color-no-occurrences: var(
-    --text-faint,
-    hsl(212, 15%, 43%)
-  ) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
     --metadata-input-background-active
@@ -2130,116 +1795,75 @@ body.theme-dark {
     --color-base-35,
     var(--background-modifier-border-focus)
   ) !important;
-  --graph-node: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(215, 75%, 70%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --h5-line-height: var(--line-height-normal) !important;
   --h6-line-height: var(--line-height-normal) !important;
-  --heading-formatting: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
-  --hr-color: var(--slate-60, #494e6a) !important;
-  --icon-color: var(--l1, #f4f4f2) !important;
-  --icon-color-active: var(--l2, #e8e8e8) !important;
-  --icon-color-focused: var(--l1, #f4f4f2) !important;
-  --icon-color-hover: var(--l2, #e8e8e8) !important;
+  --hr-color: var(--slate-60) !important;
+  --icon-color: var(--l1) !important;
+  --icon-color-active: var(--l2) !important;
+  --icon-color-focused: var(--l1) !important;
+  --icon-color-hover: var(--l2) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12) !important;
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3) !important;
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;
-  --inline-title-line-height: var(--h1-line-height, 4rem) !important;
-  --inline-title-size: var(--h1-size, 2rem) !important;
+  --inline-title-line-height: 4rem !important;
+  --inline-title-size: var(--h1-size) !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
-  --inline-title-weight: var(--h1-weight) !important;
+  --inline-title-weight: 700 !important;
   --input-border-width: var(--border-width) !important;
   --input-corner-shape: var(--corner-shape) !important;
-  --input-date-separator: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --input-placeholder-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --interactive-accent: var(--color-accent, hsl(215, 75%, 60%)) !important;
-  --interactive-accent-hover: var(
-    --color-accent-1,
-    hsl(215, 75%, 56.2%)
-  ) !important;
-  --interactive-accent-hsl: var(--color-accent-hsl, 215, 75%, 60%) !important;
+  --input-placeholder-color: var(--text-faint) !important;
+  --interactive-accent: var(--color-accent) !important;
+  --interactive-accent-hover: var(--color-accent-1) !important;
+  --interactive-accent-hsl: var(--color-accent-hsl) !important;
   --interactive-hover: var(--color-base-35) !important;
-  --interactive-normal: var(--color-base-30, #35393e) !important;
-  --link-color: var(--text-accent, hsl(215, 75%, 70%)) !important;
-  --link-color-hover: var(--text-accent-hover, hsl(215, 75%, 82%)) !important;
-  --link-external-color: var(--green, #79e3aa) !important;
+  --interactive-normal: var(--color-base-30) !important;
+  --link-color: var(--text-accent) !important;
+  --link-color-hover: var(--text-accent-hover) !important;
+  --link-external-color: var(--green) !important;
   --link-external-color-hover: hsl(
     140,
     var(--accent-s),
     var(--accent-l)
   ) !important;
-  --link-unresolved-color: var(--text-accent, hsl(215, 75%, 70%)) !important;
+  --link-unresolved-color: var(--text-accent) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
   ) !important;
   --link-weight: var(--font-weight) !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
-  --list-marker-color: var(--slate-blue, #7b89cf) !important;
-  --list-marker-color-collapsed: var(
-    --text-accent,
-    hsl(215, 75%, 70%)
-  ) !important;
-  --list-marker-color-hover: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --menu-background: var(--background-secondary, #272835) !important;
+  --list-marker-color: var(--slate-blue) !important;
+  --list-marker-color-collapsed: var(--text-accent) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
   --menu-padding: var(--size-2-3) !important;
   --menu-radius: var(--radius-m) !important;
-  --menu-shadow: var(
-    --shadow-s,
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3)
-  ) !important;
-  --metadata-border-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
-  --metadata-divider-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
+  --menu-shadow: var(--shadow-s) !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
-  --metadata-input-font: var(
-    --font-interface,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --metadata-input-font: var(--font-interface) !important;
   --metadata-input-font-size: var(--font-smaller) !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
@@ -2247,37 +1871,10 @@ body.theme-dark {
   --metadata-label-background-active: var(
     --background-modifier-hover
   ) !important;
-  --metadata-label-font: var(
-    --font-interface,
-    "??",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  ) !important;
+  --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
-  --metadata-label-text-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --metadata-label-text-color-hover: var(
-    --text-muted,
-    hsl(212, 15%, 78%)
-  ) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-padding: var(--size-4-2) 0 !important;
   --metadata-property-background-active: var(
     --background-modifier-hover
@@ -2291,30 +1888,18 @@ body.theme-dark {
   --metadata-property-corner-shape-hover: var(--corner-shape) !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary, #333547) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
   ) !important;
   --modal-border-width: var(--border-width) !important;
-  --modal-radius: var(--radius-l, 1rem) !important;
-  --nav-collapse-icon-color: var(
-    --collapse-icon-color,
-    hsl(212, 15%, 43%)
-  ) !important;
-  --nav-collapse-icon-color-collapsed: var(
-    --text-faint,
-    hsl(212, 15%, 43%)
-  ) !important;
+  --modal-radius: 1rem !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
   --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(
-    --text-faint,
-    hsl(212, 15%, 43%)
-  ) !important;
-  --nav-heading-color-collapsed-hover: var(
-    --text-muted,
-    hsl(212, 15%, 78%)
-  ) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
   --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
@@ -2328,12 +1913,9 @@ body.theme-dark {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
-  --nav-item-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --nav-item-color: var(--text-muted) !important;
   --nav-item-color-active: var(--text-normal) !important;
-  --nav-item-color-highlighted: var(
-    --text-accent,
-    hsl(215, 75%, 70%)
-  ) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
@@ -2342,36 +1924,32 @@ body.theme-dark {
   --nav-item-parent-padding: var(--nav-item-padding) !important;
   --nav-item-radius: var(--radius-s) !important;
   --nav-item-size: var(--font-ui-small) !important;
-  --nav-tag-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --nav-tag-color-active: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --nav-tag-color-hover: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --pdf-background: var(--background-primary, #333547) !important;
-  --pdf-page-background: var(--background-primary, #333547) !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary, #333547) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(--background-modifier-border, #35393e) !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
-  --pill-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --pill-color: var(--text-muted) !important;
   --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --pill-color-remove-hover: var(--text-accent, hsl(215, 75%, 70%)) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --popover-font-size: var(--font-text-size) !important;
   --preferred-text-scale: 1 !important;
-  --prompt-background: var(--background-primary, #333547) !important;
-  --prompt-border-color: var(--slate-blue, #7b89cf) !important;
+  --prompt-background: var(--background-primary) !important;
+  --prompt-border-color: var(--slate-blue) !important;
   --prompt-border-width: var(--border-width) !important;
-  --raised-background: var(
-    --blur-background,
-    color-mix(in srgb, #35393e 65%, transparent)
-      linear-gradient(#35393e, color-mix(in srgb, #35393e 65%, transparent))
-  ) !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
-  --ribbon-background: var(--background-secondary, #272835) !important;
-  --ribbon-background-collapsed: var(--background-primary, #333547) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
@@ -2381,61 +1959,46 @@ body.theme-dark {
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
   --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
-  --search-clear-button-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --search-icon-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --search-result-background: var(--background-primary, #333547) !important;
+  --search-clear-button-color: var(--text-muted) !important;
+  --search-icon-color: var(--text-muted) !important;
+  --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
-  --setting-items-background: var(--background-primary-alt, #282c34) !important;
-  --setting-items-border-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
-  --shiki-active-tab-border-color: var(
-    --shiki-highlight-neutral,
-    hsl(212, 15%, 78%)
-  ) !important;
-  --shiki-code-background: var(--code-background, #1d1c39) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
-  --shiki-code-comment: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
-  --shiki-code-normal: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
-  --shiki-code-punctuation: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
-  --shiki-gutter-border-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
-  --shiki-gutter-text-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --shiki-gutter-text-color-highlight: var(
-    --shiki-code-normal,
-    hsl(212, 15%, 78%)
-  ) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
-  --shiki-highlight-neutral: var(
-    --shiki-code-normal,
-    hsl(212, 15%, 78%)
-  ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
-  --shiki-terminal-dots-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9) !important;
   --slider-thumb-border-color: var(
@@ -2443,17 +2006,14 @@ body.theme-dark {
   ) !important;
   --slider-thumb-border-width: var(--border-width) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
-  --slider-track-background: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
-  --status-bar-background: var(--background-secondary, #272835) !important;
-  --status-bar-border-color: var(--divider-color, #35393e) !important;
+  --slider-track-background: var(--background-modifier-border) !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
-  --status-bar-text-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --suggestion-background: var(--background-primary, #333547) !important;
+  --status-bar-text-color: var(--text-muted) !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
   --sync-avatar-color-1: var(--color-red) !important;
   --sync-avatar-color-2: var(--color-orange) !important;
@@ -2463,15 +2023,15 @@ body.theme-dark {
   --sync-avatar-color-6: var(--color-blue) !important;
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
-  --tab-background-active: var(--background-primary, #333547) !important;
-  --tab-container-background: var(--background-secondary, #272835) !important;
+  --tab-background-active: var(--background-primary) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
-  --tab-outline-color: var(--divider-color, #35393e) !important;
+  --tab-outline-color: var(--divider-color) !important;
   --tab-radius: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-header-width: var(--header-height) !important;
-  --tab-switcher-background: var(--background-secondary, #272835) !important;
+  --tab-switcher-background: var(--background-secondary) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
     var(--background-secondary),
@@ -2480,39 +2040,29 @@ body.theme-dark {
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
-  --tab-text-color-active: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --tab-text-color-focused: var(--text-muted, hsl(212, 15%, 78%)) !important;
-  --tab-text-color-focused-active: var(
-    --text-muted,
-    hsl(212, 15%, 78%)
-  ) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
-  --tab-text-color-focused-highlighted: var(
-    --text-accent,
-    hsl(215, 75%, 70%)
-  ) !important;
-  --table-add-button-border-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--slate-60, #494e6a) !important;
+  --table-border-color: var(--slate-60) !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
   --table-drag-handle-background-active: var(
-    --table-selection-border-color,
-    hsl(215, 75%, 60%)
+    --table-selection-border-color
   ) !important;
-  --table-drag-handle-color: var(--text-faint, hsl(212, 15%, 43%)) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
   --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-header-background: var(--table-background) !important;
-  --table-header-border-color: var(--table-border-color, #494e6a) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
-  --table-header-color: var(--slate-blue, #7b89cf) !important;
+  --table-header-color: var(--slate-blue) !important;
   --table-header-size: var(--table-text-size) !important;
-  --table-header-weight: var(--font-black, 900) !important;
+  --table-header-weight: var(--font-black) !important;
   --table-line-height: var(--line-height-tight) !important;
   --table-row-alt-background: var(--table-background) !important;
   --table-row-alt-background-hover: var(--table-background) !important;
@@ -2520,10 +2070,7 @@ body.theme-dark {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
-  --table-selection-border-color: var(
-    --interactive-accent,
-    hsl(215, 75%, 60%)
-  ) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: var(--font-text-size) !important;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
@@ -2532,9 +2079,9 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.15
   ) !important;
-  --tag-color: var(--slate-blue, #7b89cf) !important;
-  --tag-color-hover: var(--text-accent, hsl(215, 75%, 70%)) !important;
-  --tag-size: var(--font-smaller, 1rem) !important;
+  --tag-color: var(--slate-blue) !important;
+  --tag-color-hover: var(--text-accent) !important;
+  --tag-size: 1rem !important;
   --text-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -2551,10 +2098,7 @@ body.theme-dark {
     var(--base-s),
     calc(var(--base-d) + 30%)
   ) !important;
-  --text-highlight-bg: var(
-    --text-highlight-bg-d,
-    rgba(255, 208, 0, 0.4)
-  ) !important;
+  --text-highlight-bg: var(--text-highlight-bg-d) !important;
   --text-muted: hsl(
     var(--base-h),
     var(--base-s),
@@ -2564,13 +2108,10 @@ body.theme-dark {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background: var(--background-secondary, #272835) !important;
-  --titlebar-background-focused: var(--d2, #272835) !important;
-  --titlebar-border-color: var(
-    --background-modifier-border,
-    #35393e
-  ) !important;
-  --titlebar-text-color: var(--text-muted, hsl(212, 15%, 78%)) !important;
+  --titlebar-background: var(--background-secondary) !important;
+  --titlebar-background-focused: var(--d2) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
+  --titlebar-text-color: var(--text-muted) !important;
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --touch-radius-l: var(--touch-size-l) !important;
@@ -2649,11 +2190,11 @@ body.theme-dark {
   --checklist-done-decoration: line-through !important;
   --code-border-width: 0px !important;
   --code-white-space: pre-wrap !important;
-  --color-base-00: var(--d1, #333547) !important;
+  --color-base-00: var(--d1) !important;
   --color-base-05: #212121 !important;
   --color-base-10: #282c34 !important;
   --color-base-100: #dadada !important;
-  --color-base-20: var(--d2, #272835) !important;
+  --color-base-20: var(--d2) !important;
   --color-base-25: #2c313c !important;
   --color-base-30: #35393e !important;
   --color-base-35: #3f3f3f !important;
@@ -2712,16 +2253,7 @@ body.theme-dark {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme: var(
-    --y,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif
-  ) !important;
+  --font-interface-theme: var(--y) !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-monospace-default:
@@ -3030,13 +2562,13 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: var(--h1-color, #dadada) !important;
-  --h1-color: var(--text-normal, #dadada) !important;
-  --h2-color: var(--text-normal, #dadada) !important;
-  --h3-color: var(--blue, #4da2f8) !important;
-  --h4-color: var(--yellow, #ffc63c) !important;
-  --h5-color: var(--red, #f03063) !important;
-  --h6-color: var(--purple, #895ef7) !important;
+  --h1-color: var(--text-normal) !important;
+  --h2-color: var(--text-normal) !important;
+  --h3-color: var(--blue) !important;
+  --h4-color: var(--yellow) !important;
+  --h5-color: var(--red) !important;
+  --h6-color: var(--purple) !important;
+  --inline-title-color: var(--h1-color) !important;
   --green: #79e3aa !important;
   --orange: #ff7641 !important;
   --purple: #895ef7 !important;
@@ -3048,19 +2580,19 @@ body.theme-dark {
   --base-h: 212 !important;
   --base-l: 97% !important;
   --base-s: 15% !important;
-  --em-color: var(--teal, #1fcbdc) !important;
+  --em-color: var(--teal) !important;
   --font-editor-theme:
     system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
-  --strong-color: var(--pink-light, #ff82b2) !important;
+  --strong-color: var(--pink-light) !important;
   --blue: #4da2f8 !important;
   --pink: #ff22b1 !important;
   --indigo: #6a84ed !important;
   --white: #f8fafc !important;
-  --table-text-color: var(--text-normal, #dadada) !important;
+  --table-text-color: var(--text-normal) !important;
   --callout-title-size: 1.2rem;
   --teal: #1fcbdc !important;
-  --base: var(--blue, #4da2f8) !important;
-  --quotes-color: var(--text-normal, #dadada) !important;
+  --base: var(--blue) !important;
+  --quotes-color: var(--text-normal) !important;
   --text-formatted: hsl(
     var(--base-h),
     var(--base-s),
@@ -3113,7 +2645,7 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-external-color, rgb(121, 227, 170));
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -3160,7 +2692,7 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-color, rgb(77, 140, 230));
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -3207,7 +2739,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-unresolved-color, rgb(77, 140, 230));
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
@@ -3236,10 +2768,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   font-weight: var(--link-weight);
   outline: rgb(77, 140, 230) none 0px;
   text-decoration: underline rgba(77, 140, 230, 0.3);
-  text-decoration-color: var(
-    --link-unresolved-decoration-color,
-    rgba(77, 140, 230, 0.3)
-  );
+  text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -3270,7 +2799,7 @@ body body.theme-light .markdown-rendered a.internal-link:hover {
 }
 body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-muted, rgb(85, 94, 104));
+  color: var(--text-muted);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -3316,7 +2845,7 @@ body body.theme-light .markdown-rendered p {
 }
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--strong-color, rgb(255, 130, 178));
+  color: var(--strong-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3362,7 +2891,7 @@ body body.theme-light strong {
 }
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--strong-color, rgb(255, 130, 178));
+  color: var(--strong-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3408,7 +2937,7 @@ body body.theme-light b {
 }
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--em-color, rgb(31, 203, 220));
+  color: var(--em-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3454,7 +2983,7 @@ body body.theme-light em {
 }
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--em-color, rgb(31, 203, 220));
+  color: var(--em-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -3574,7 +3103,7 @@ body body.theme-light s {
 }
 body body.theme-light strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--em-color, rgb(31, 203, 220));
+  color: var(--em-color);
   cursor: grab;
   font-family:
     -apple-system,
@@ -3702,7 +3231,7 @@ body body.theme-light del {
   animation-play-state: running;
 }
 body body.theme-light .suggestion-item.is-selected {
-  background-color: var(--background-modifier-hover, rgb(226, 229, 233));
+  background-color: var(--background-modifier-hover);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3714,7 +3243,7 @@ body body.theme-light .suggestion-item.is-selected {
   color: rgb(34, 34, 34);
 }
 body body.theme-light div.suggestion-item {
-  background-color: var(--background-modifier-hover, rgb(226, 229, 233));
+  background-color: var(--background-modifier-hover);
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3747,8 +3276,8 @@ body body.theme-light .markdown-rendered hr {
 }
 body body.theme-light div.multi-select-pill {
   align-items: normal;
-  background-color: var(--pill-background, rgba(77, 140, 230, 0.1));
-  color: var(--pill-color, rgb(123, 137, 207));
+  background-color: var(--pill-background);
+  color: var(--pill-color);
   display: flex;
   font-family:
     -apple-system,
@@ -3860,7 +3389,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: var(--code-background, rgb(232, 232, 232));
+  background-color: var(--code-background);
   border: 0px solid rgb(235, 237, 240);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3871,27 +3400,7 @@ body body.theme-light .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: var(--code-normal);
-  font-family: var(
-    --font-monospace,
-    "JetBrains Mono",
-    "Fira Code",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
+  font-family: var(--font-monospace);
   padding: 2.4px 4.8px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -3920,7 +3429,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light :not(pre) > code[class*="language-"],
 body body.theme-light pre[class*="language-"] {
-  background-color: var(--code-background, rgb(232, 232, 232));
+  background-color: var(--code-background);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3964,7 +3473,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 17.5938px);
+  width: var(--checkbox-size);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -3988,7 +3497,7 @@ body
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color);
-  color: var(--quotes-color, rgb(34, 34, 34));
+  color: var(--quotes-color);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -4022,7 +3531,7 @@ body body.theme-light .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-light .footnote-backref {
-  color: var(--text-faint, rgb(162, 170, 179));
+  color: var(--text-faint);
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -4060,7 +3569,7 @@ body body.theme-light .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-light .search-results {
-  background-color: var(--prompt-background, rgb(244, 244, 242));
+  background-color: var(--prompt-background);
   border: 1px solid rgb(123, 137, 207);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -4070,12 +3579,7 @@ body body.theme-light .search-results {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  box-shadow: var(
-    --shadow-l,
-    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px
-  );
+  box-shadow: var(--shadow-l);
 }
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -4151,42 +3655,20 @@ body body.theme-light div.search-results .suggestion-item {
 body body.theme-light .search-results .suggestion-item.is-selected {
   color: rgb(34, 34, 34);
   font-weight: 400;
-  background-color: var(--background-modifier-hover, rgb(226, 229, 233));
+  background-color: var(--background-modifier-hover);
 }
 body body.theme-light div.search-results .suggestion-item.is-selected {
   color: rgb(34, 34, 34);
 }
 body body.theme-light .published-container .markdown-rendered h1 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h1-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h1-size, 32px);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--h1-line-height, 38.4px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4215,35 +3697,13 @@ body body.theme-light .published-container .markdown-rendered h1 {
 }
 body body.theme-light .published-container .markdown-rendered h2 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h2-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h2-size, 28.8px);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--h2-line-height, 34.56px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h2-letter-spacing, -0.3168px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4272,35 +3732,13 @@ body body.theme-light .published-container .markdown-rendered h2 {
 }
 body body.theme-light .published-container .markdown-rendered h3 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h3-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h3-size, 25.6px);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--h3-line-height, 33.28px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h3-letter-spacing, -0.2048px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4329,35 +3767,13 @@ body body.theme-light .published-container .markdown-rendered h3 {
 }
 body body.theme-light .published-container .markdown-rendered h4 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h4-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h4-size, 22.4px);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--h4-line-height, 31.36px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h4-letter-spacing, -0.112px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4386,35 +3802,13 @@ body body.theme-light .published-container .markdown-rendered h4 {
 }
 body body.theme-light .published-container .markdown-rendered h5 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h5-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h5-size, 19.2px);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--h5-line-height, 28.8px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: var(--h5-letter-spacing, -0.0384px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -4443,29 +3837,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
 }
 body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(34, 34, 34);
-  font-family: var(
-    --h6-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--h6-font);
   font-size: var(--h6-size);
   font-weight: var(--font-weight);
   line-height: var(--h6-line-height);
@@ -4556,7 +3928,7 @@ body body.theme-light body {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 8, 109, 221);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -4618,7 +3990,7 @@ body body.theme-light .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 0, 191, 188);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4659,7 +4031,7 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 8, 109, 221);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4700,7 +4072,7 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 8, 109, 221);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4741,7 +4113,7 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 0, 191, 188);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4782,7 +4154,7 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 12, 181, 79);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(12, 181, 79, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4823,7 +4195,7 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 236, 117, 0);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4864,7 +4236,7 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 236, 117, 0);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4905,7 +4277,7 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 228, 55, 75);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(228, 55, 75, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4946,7 +4318,7 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 228, 55, 75);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(228, 55, 75, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -4987,7 +4359,7 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 228, 55, 75);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(228, 55, 75, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -5028,7 +4400,7 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 120, 82, 238);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
@@ -5069,7 +4441,7 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -5173,8 +4545,8 @@ body body.theme-light .markdown-rendered tbody {
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--table-header-color, rgb(123, 137, 207));
-  font-weight: var(--table-header-weight, 900);
+  color: var(--table-header-color);
+  font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
@@ -5392,8 +4764,8 @@ body body.theme-light .markdown-embed {
   padding: 0px;
 }
 body body.theme-light .file-embed {
-  background-color: var(--background-primary-alt, rgb(246, 247, 248));
-  color: var(--text-muted, rgb(85, 94, 104));
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
   border-radius: 8px;
   border-color: rgb(85, 94, 104);
   border-width: 0px;
@@ -5406,7 +4778,7 @@ body body.theme-light .file-embed {
 }
 body body.theme-light .metadata-container {
   background-color: var(--metadata-background);
-  color: var(--text-muted, rgb(85, 94, 104));
+  color: var(--text-muted);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -5505,57 +4877,13 @@ body body.theme-light .metadata-container .metadata-property {
 }
 body body.theme-light .metadata-property-key {
   color: rgb(85, 94, 104);
-  font-family: var(
-    --metadata-label-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-light .metadata-property-value {
   color: rgb(85, 94, 104);
-  font-family: var(
-    --metadata-input-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-light progress {
@@ -5587,7 +4915,7 @@ body body.theme-light input[type="range"] {
 }
 body body.theme-light input[type="text"] {
   background-color: rgb(38, 40, 53);
-  color: var(--text-normal, rgb(85, 94, 104));
+  color: var(--text-normal);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -5680,31 +5008,11 @@ body body.theme-light details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-light kbd {
-  background-color: var(--code-background, rgb(232, 232, 232));
+  background-color: var(--code-background);
   box-shadow: none;
   color: var(--code-normal);
-  font-family: var(
-    --font-monospace,
-    "JetBrains Mono",
-    "Fira Code",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
-  font-size: var(--code-size, 16px);
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
   border: 0px rgb(34, 34, 34);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -6027,7 +5335,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(85, 94, 104));
+  color: var(--nav-item-color);
   cursor: var(--cursor);
   font-family:
     -apple-system,
@@ -6061,7 +5369,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(85, 94, 104));
+  color: var(--nav-item-color);
   cursor: var(--cursor);
   font-family:
     -apple-system,
@@ -6089,7 +5397,7 @@ body
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(51, 53, 71));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(51, 53, 71);
   border-width: 0px;
@@ -6099,8 +5407,8 @@ body body.theme-light .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-light .site-footer {
-  background-color: var(--status-bar-background, rgb(232, 232, 232));
-  color: var(--status-bar-text-color, rgb(85, 94, 104));
+  background-color: var(--status-bar-background);
+  color: var(--status-bar-text-color);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -6170,7 +5478,7 @@ body body.theme-light .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .nav-file-title {
-  color: var(--nav-item-color, rgb(85, 94, 104));
+  color: var(--nav-item-color);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(85, 94, 104);
@@ -6207,7 +5515,7 @@ body body.theme-light .nav-files-container {
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(51, 53, 71));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(51, 53, 71);
   border-width: 0px;
@@ -6231,7 +5539,7 @@ body body.theme-light .view-header-breadcrumb {
   border-bottom-right-radius: 4px;
 }
 body body.theme-light .view-header-breadcrumb-separator {
-  color: var(--text-faint, rgb(162, 170, 179));
+  color: var(--text-faint);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -6375,8 +5683,8 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .tag {
-  background-color: var(--tag-background, rgba(77, 140, 230, 0.1));
-  color: var(--tag-color, rgb(123, 137, 207));
+  background-color: var(--tag-background);
+  color: var(--tag-color);
   border: 0px solid rgba(77, 140, 230, 0.15);
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
@@ -6398,7 +5706,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-external-color, rgb(121, 227, 170));
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -6445,7 +5753,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-color, rgb(121, 169, 236));
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -6492,7 +5800,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--link-unresolved-color, rgb(121, 169, 236));
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
@@ -6521,10 +5829,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   font-weight: var(--link-weight);
   outline: rgb(121, 169, 236) none 0px;
   text-decoration: underline rgba(77, 140, 230, 0.3);
-  text-decoration-color: var(
-    --link-unresolved-decoration-color,
-    rgba(77, 140, 230, 0.3)
-  );
+  text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: var(--link-unresolved-decoration-style);
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -6555,7 +5860,7 @@ body body.theme-dark .markdown-rendered a.internal-link:hover {
 }
 body body.theme-dark .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-muted, rgb(190, 198, 207));
+  color: var(--text-muted);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -6601,7 +5906,7 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--strong-color, rgb(255, 130, 178));
+  color: var(--strong-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6647,7 +5952,7 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--strong-color, rgb(255, 130, 178));
+  color: var(--strong-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6693,7 +5998,7 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--em-color, rgb(31, 203, 220));
+  color: var(--em-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6739,7 +6044,7 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--em-color, rgb(31, 203, 220));
+  color: var(--em-color);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -6859,7 +6164,7 @@ body body.theme-dark s {
 }
 body body.theme-dark strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--em-color, rgb(31, 203, 220));
+  color: var(--em-color);
   cursor: grab;
   font-family:
     -apple-system,
@@ -7032,8 +6337,8 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: var(--pill-background, rgba(77, 140, 230, 0.1));
-  color: var(--pill-color, rgb(123, 137, 207));
+  background-color: var(--pill-background);
+  color: var(--pill-color);
   display: flex;
   font-family:
     -apple-system,
@@ -7145,7 +6450,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: var(--code-background, rgb(29, 28, 57));
+  background-color: var(--code-background);
   border: 0px solid rgb(53, 57, 62);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -7156,27 +6461,7 @@ body body.theme-dark .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: var(--code-normal);
-  font-family: var(
-    --font-monospace,
-    "JetBrains Mono",
-    "Fira Code",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
+  font-family: var(--font-monospace);
   padding: 2.4px 4.8px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -7205,7 +6490,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: var(--code-background, rgb(29, 28, 57));
+  background-color: var(--code-background);
   border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -7249,7 +6534,7 @@ body
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: var(--checkbox-size, 17.5938px);
+  width: var(--checkbox-size);
   transition: box-shadow 0.15s ease-in-out;
   position: relative;
   top: auto;
@@ -7273,7 +6558,7 @@ body
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color);
-  color: var(--quotes-color, rgb(218, 218, 218));
+  color: var(--quotes-color);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -7307,7 +6592,7 @@ body body.theme-dark .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-dark .footnote-backref {
-  color: var(--text-faint, rgb(93, 109, 126));
+  color: var(--text-faint);
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -7345,7 +6630,7 @@ body body.theme-dark .site-body-left-column input.search-bar {
     sans-serif;
 }
 body body.theme-dark .search-results {
-  background-color: var(--prompt-background, rgb(51, 53, 71));
+  background-color: var(--prompt-background);
   border: 1px solid rgb(123, 137, 207);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -7438,35 +6723,13 @@ body body.theme-dark div.search-results .suggestion-item.is-selected {
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h1-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h1-size, 32px);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--h1-line-height, 38.4px);
+  line-height: var(--h1-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h1-letter-spacing, -0.48px);
+  letter-spacing: var(--h1-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -7495,35 +6758,13 @@ body body.theme-dark .published-container .markdown-rendered h1 {
 }
 body body.theme-dark .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h2-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h2-size, 28.8px);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--h2-line-height, 34.56px);
+  line-height: var(--h2-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h2-letter-spacing, -0.3168px);
+  letter-spacing: var(--h2-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -7552,35 +6793,13 @@ body body.theme-dark .published-container .markdown-rendered h2 {
 }
 body body.theme-dark .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h3-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h3-size, 25.6px);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--h3-line-height, 33.28px);
+  line-height: var(--h3-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h3-letter-spacing, -0.2048px);
+  letter-spacing: var(--h3-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -7609,35 +6828,13 @@ body body.theme-dark .published-container .markdown-rendered h3 {
 }
 body body.theme-dark .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h4-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h4-size, 22.4px);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--h4-line-height, 31.36px);
+  line-height: var(--h4-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h4-letter-spacing, -0.112px);
+  letter-spacing: var(--h4-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -7666,35 +6863,13 @@ body body.theme-dark .published-container .markdown-rendered h4 {
 }
 body body.theme-dark .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h5-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
-  font-size: var(--h5-size, 19.2px);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--h5-line-height, 28.8px);
+  line-height: var(--h5-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: var(--h5-letter-spacing, -0.0384px);
+  letter-spacing: var(--h5-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   padding: 0px;
@@ -7723,29 +6898,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
 }
 body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
-  font-family: var(
-    --h6-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--h6-font);
   font-size: var(--h6-size);
   font-weight: var(--font-weight);
   line-height: var(--h6-line-height);
@@ -7836,7 +6989,7 @@ body body.theme-dark body {
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
-  --callout-color: var(--callout-default, 2, 122, 255);
+  --callout-color: var(--callout-default);
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -7898,7 +7051,7 @@ body body.theme-dark .callout > .callout-content {
   padding-inline-start: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
-  --callout-color: var(--callout-summary, 83, 223, 221);
+  --callout-color: var(--callout-summary);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -7939,7 +7092,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
-  --callout-color: var(--callout-info, 2, 122, 255);
+  --callout-color: var(--callout-info);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -7980,7 +7133,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
-  --callout-color: var(--callout-todo, 2, 122, 255);
+  --callout-color: var(--callout-todo);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8021,7 +7174,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
-  --callout-color: var(--callout-tip, 83, 223, 221);
+  --callout-color: var(--callout-tip);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
@@ -8062,7 +7215,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
-  --callout-color: var(--callout-success, 68, 207, 110);
+  --callout-color: var(--callout-success);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
@@ -8103,7 +7256,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
-  --callout-color: var(--callout-question, 233, 151, 63);
+  --callout-color: var(--callout-question);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -8144,7 +7297,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
-  --callout-color: var(--callout-warning, 233, 151, 63);
+  --callout-color: var(--callout-warning);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
@@ -8185,7 +7338,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
-  --callout-color: var(--callout-error, 251, 70, 76);
+  --callout-color: var(--callout-error);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8226,7 +7379,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
-  --callout-color: var(--callout-fail, 251, 70, 76);
+  --callout-color: var(--callout-fail);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8267,7 +7420,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
-  --callout-color: var(--callout-bug, 251, 70, 76);
+  --callout-color: var(--callout-bug);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
@@ -8308,7 +7461,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
-  --callout-color: var(--callout-example, 168, 130, 255);
+  --callout-color: var(--callout-example);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
@@ -8349,7 +7502,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
     border-box;
 }
 body body.theme-dark .callout[data-callout="quote"] {
-  --callout-color: var(--callout-quote, 158, 158, 158);
+  --callout-color: var(--callout-quote);
   background-color: rgba(var(--callout-color), 0.1);
   background-image: none;
   background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
@@ -8453,8 +7606,8 @@ body body.theme-dark .markdown-rendered tbody {
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--table-header-color, rgb(123, 137, 207));
-  font-weight: var(--table-header-weight, 900);
+  color: var(--table-header-color);
+  font-weight: var(--table-header-weight);
   text-align: start;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
@@ -8672,8 +7825,8 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: var(--background-primary-alt, rgb(40, 44, 52));
-  color: var(--text-muted, rgb(190, 198, 207));
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
   border-radius: 8px;
   border-color: rgb(190, 198, 207);
   border-width: 0px;
@@ -8686,7 +7839,7 @@ body body.theme-dark .file-embed {
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background);
-  color: var(--text-muted, rgb(190, 198, 207));
+  color: var(--text-muted);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -8785,57 +7938,13 @@ body body.theme-dark .metadata-container .metadata-property {
 }
 body body.theme-dark .metadata-property-key {
   color: rgb(190, 198, 207);
-  font-family: var(
-    --metadata-label-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-dark .metadata-property-value {
   color: rgb(190, 198, 207);
-  font-family: var(
-    --metadata-input-font,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    Ubuntu,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif
-  );
+  font-family: var(--metadata-input-font);
   font-size: 16px;
 }
 body body.theme-dark progress {
@@ -8867,7 +7976,7 @@ body body.theme-dark input[type="range"] {
 }
 body body.theme-dark input[type="text"] {
   background-color: rgb(38, 40, 53);
-  color: var(--text-normal, rgb(190, 198, 207));
+  color: var(--text-normal);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -8960,31 +8069,11 @@ body body.theme-dark details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-dark kbd {
-  background-color: var(--code-background, rgb(29, 28, 57));
+  background-color: var(--code-background);
   box-shadow: none;
   color: var(--code-normal);
-  font-family: var(
-    --font-monospace,
-    "JetBrains Mono",
-    "Fira Code",
-    Menlo,
-    SFMono-Regular,
-    Consolas,
-    "Roboto Mono",
-    monospace,
-    ui-monospace,
-    SFMono-Regular,
-    "Cascadia Mono",
-    "Roboto Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Source Code Pro",
-    monospace
-  );
-  font-size: var(--code-size, 16px);
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -9307,7 +8396,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(190, 198, 207));
+  color: var(--nav-item-color);
   cursor: var(--cursor);
   font-family:
     -apple-system,
@@ -9341,7 +8430,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: var(--nav-item-color, rgb(190, 198, 207));
+  color: var(--nav-item-color);
   cursor: var(--cursor);
   font-family:
     -apple-system,
@@ -9369,7 +8458,7 @@ body
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(244, 244, 242));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(244, 244, 242);
   border-width: 0px;
@@ -9379,8 +8468,8 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-footer {
-  background-color: var(--status-bar-background, rgb(39, 40, 53));
-  color: var(--status-bar-text-color, rgb(190, 198, 207));
+  background-color: var(--status-bar-background);
+  color: var(--status-bar-text-color);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -9450,7 +8539,7 @@ body body.theme-dark .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .nav-file-title {
-  color: var(--nav-item-color, rgb(190, 198, 207));
+  color: var(--nav-item-color);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(190, 198, 207);
@@ -9487,7 +8576,7 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--icon-color, rgb(244, 244, 242));
+  color: var(--icon-color);
   cursor: var(--cursor);
   border-color: rgb(244, 244, 242);
   border-width: 0px;
@@ -9511,7 +8600,7 @@ body body.theme-dark .view-header-breadcrumb {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .view-header-breadcrumb-separator {
-  color: var(--text-faint, rgb(93, 109, 126));
+  color: var(--text-faint);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -9655,8 +8744,8 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .tag {
-  background-color: var(--tag-background, rgba(77, 140, 230, 0.1));
-  color: var(--tag-color, rgb(123, 137, 207));
+  background-color: var(--tag-background);
+  color: var(--tag-color);
   border: 0px solid rgba(77, 140, 230, 0.15);
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;

@@ -1001,8 +1001,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --inline-title-color: var(--color-base-100) !important;
   --vault-name-color: var(--text-normal) !important;
-  --inline-title-font: var(--font-title) !important;
   --h1-font: var(--font-title) !important;
+  --inline-title-font: var(--font-title) !important;
   --font-title: "Peace Sans", sans-serif !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;

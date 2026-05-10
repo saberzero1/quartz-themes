@@ -8,58 +8,58 @@
 
 :root:root {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb, 255, 112, 166);
-  --callout-default: var(--color-blue-rgb, 136, 192, 208);
-  --callout-error: var(--color-red-rgb, 255, 112, 166);
-  --callout-example: var(--color-purple-rgb, 104, 182, 239);
-  --callout-fail: var(--color-red-rgb, 255, 112, 166);
-  --callout-important: var(--color-cyan-rgb, 0, 168, 224);
-  --callout-info: var(--color-blue-rgb, 136, 192, 208);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb, 255, 214, 112);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb, 132, 220, 198);
-  --callout-summary: var(--color-cyan-rgb, 0, 168, 224);
-  --callout-tip: var(--color-cyan-rgb, 0, 168, 224);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 136, 192, 208);
-  --callout-warning: var(--color-orange-rgb, 255, 214, 112);
-  --checkbox-border-color: var(--text-faint, #b2b6bf) !important;
-  --checkbox-border-color-hover: var(--text-muted, #bfc2ca) !important;
-  --checkbox-color: var(--flatcap-12, #88c0d0) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #88c0d0) !important;
-  --checkbox-marker-color: var(--background-primary, #121418) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--flatcap-12) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--flatcap-1, #191c22) !important;
-  --code-border-color: var(--background-modifier-border, #303540) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.05)) !important;
-  --code-comment: var(--text-faint, #b2b6bf) !important;
-  --code-function: var(--color-yellow, #ffd670) !important;
-  --code-important: var(--color-orange, #ffd670) !important;
-  --code-keyword: var(--color-pink, #ff70a6) !important;
-  --code-normal: var(--flatcap-6, #bfc2ca) !important;
-  --code-operator: var(--color-red, #ff70a6) !important;
-  --code-property: var(--color-cyan, #00a8e0) !important;
-  --code-punctuation: var(--text-muted, #bfc2ca) !important;
+  --code-background: var(--flatcap-1) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--flatcap-6) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, #84dcc6) !important;
-  --code-tag: var(--color-red, #ff70a6) !important;
-  --code-value: var(--color-purple, #68b6ef) !important;
-  --collapse-icon-color: var(--text-faint, #b2b6bf) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #88c0d0) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #bfc2ca) !important;
-  --graph-node-attachment: var(--color-yellow, #ffd670) !important;
-  --graph-node-focused: var(--text-accent, #88c0d0) !important;
-  --graph-node-tag: var(--color-green, #84dcc6) !important;
-  --graph-node-unresolved: var(--text-faint, #b2b6bf) !important;
-  --graph-text: var(--text-normal, #cbced5) !important;
-  --icon-color: var(--flatcap-5, #b2b6bf) !important;
-  --icon-color-active: var(--flatcap-7, #cbced5) !important;
-  --icon-color-focused: var(--flatcap-7, #cbced5) !important;
-  --icon-color-hover: var(--flatcap-6, #bfc2ca) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--flatcap-5) !important;
+  --icon-color-active: var(--flatcap-7) !important;
+  --icon-color-focused: var(--flatcap-7) !important;
+  --icon-color-hover: var(--flatcap-6) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -85,7 +85,7 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --icon-hex: var(--flatcap-0, #121418) !important;
+  --icon-hex: var(--flatcap-0) !important;
   --icon-muted: 0.5 !important;
 
   --font-interface-override: "??";
@@ -383,20 +383,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(18, 20, 24));
-    color: var(--text-normal, rgb(203, 206, 213));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(18, 20, 24));
+    background-color: var(--background-primary);
     color: rgb(203, 206, 213);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(25, 28, 34));
+    background-color: var(--background-secondary);
     color: rgb(203, 206, 213);
   }
 
@@ -404,12 +404,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(18, 20, 24));
+    background-color: var(--tab-container-background);
     color: rgb(203, 206, 213);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(18, 20, 24));
+    background-color: var(--tab-container-background);
     color: rgb(203, 206, 213);
     border-left: 0px rgb(48, 53, 64);
   }
@@ -421,7 +421,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(136, 192, 208));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -463,7 +463,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(136, 192, 208));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -504,7 +504,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(136, 192, 208));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -562,7 +562,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(191, 194, 202));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -603,7 +603,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(203, 206, 213));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -644,7 +644,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(203, 206, 213));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -685,7 +685,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(203, 206, 213));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -726,7 +726,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(203, 206, 213));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -845,7 +845,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(203, 206, 213));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -875,8 +875,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(209, 154, 102, 0.3));
-    color: var(--text-normal, rgb(203, 206, 213));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -957,7 +957,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.05));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -970,7 +970,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.05));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(203, 206, 213);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1007,7 +1007,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(136, 192, 208));
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1025,7 +1025,7 @@ body {
       sans-serif;
     font-size: 13.91px;
     font-weight: var(--pill-weight);
-    line-height: var(--line-height-tight, 13.91px);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(218, 218, 218);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -1118,7 +1118,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(25, 28, 34));
+    background-color: var(--code-background);
     border: 0px solid rgb(48, 53, 64);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1128,7 +1128,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(191, 194, 202));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1160,7 +1160,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(25, 28, 34));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1224,7 +1224,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(191, 194, 202));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1252,7 +1252,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(178, 182, 191));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1267,12 +1267,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(203, 206, 213));
-    font-family: var(--font-interface, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--text-normal);
+    font-family: var(--font-interface);
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(18, 20, 24));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(72, 79, 92);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1362,7 +1362,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(203, 206, 213);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.05));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1375,14 +1375,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(203, 206, 213));
+    color: var(--h1-color);
     font-family: var(--h1-font);
-    font-size: var(--h1-size, 18px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h1-line-height, 21.6px);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h1-letter-spacing, -0.27px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1408,14 +1408,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(203, 206, 213));
+    color: var(--h2-color);
     font-family: var(--h2-font);
-    font-size: var(--h2-size, 16.8px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h2-line-height, 20.16px);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h2-letter-spacing, -0.1848px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1441,14 +1441,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(203, 206, 213));
+    color: var(--h3-color);
     font-family: var(--h3-font);
-    font-size: var(--h3-size, 16px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h3-line-height, 20.8px);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h3-letter-spacing, -0.128px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1457,10 +1457,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 28px);
-    margin-bottom: 28px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 28px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1477,14 +1474,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(203, 206, 213));
+    color: var(--h4-color);
     font-family: var(--h4-font);
-    font-size: var(--h4-size, 14.4px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h4-line-height, 20.16px);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h4-letter-spacing, -0.072px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1493,10 +1490,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 28px);
-    margin-bottom: 28px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 28px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1513,14 +1507,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(203, 206, 213));
+    color: var(--h5-color);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 13.6px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h5-line-height, 20.4px);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h5-letter-spacing, -0.0272px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1529,10 +1523,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 28px);
-    margin-bottom: 28px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 28px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1549,11 +1540,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(203, 206, 213));
+    color: var(--h6-color);
     font-family: var(--h6-font);
-    font-size: var(--h6-size, 13.6px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h6-line-height, 20.4px);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h6-letter-spacing);
@@ -1583,11 +1574,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(203, 206, 213));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
-    font-size: var(--inline-title-size, 18px);
-    font-weight: var(--inline-title-weight, 600);
-    line-height: var(--inline-title-line-height, 21.6px);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.27px;
@@ -2005,7 +1996,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 136, 192, 208);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(136, 192, 208, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2047,7 +2038,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2064,7 +2055,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 136, 192, 208);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(136, 192, 208, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2105,7 +2096,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2122,7 +2113,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 168, 224);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 168, 224, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2163,7 +2154,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2180,7 +2171,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 136, 192, 208);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(136, 192, 208, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2221,7 +2212,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2238,7 +2229,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 136, 192, 208);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(136, 192, 208, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2279,7 +2270,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2296,7 +2287,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 168, 224);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 168, 224, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2337,7 +2328,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2354,7 +2345,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 132, 220, 198);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(132, 220, 198, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2395,7 +2386,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2412,7 +2403,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 255, 214, 112);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 214, 112, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2453,7 +2444,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2470,7 +2461,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 255, 214, 112);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 214, 112, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2511,7 +2502,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2528,7 +2519,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 255, 112, 166);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 112, 166, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2569,7 +2560,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2586,7 +2577,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 255, 112, 166);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 112, 166, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2627,7 +2618,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2644,7 +2635,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 255, 112, 166);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 112, 166, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2685,7 +2676,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2702,7 +2693,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 104, 182, 239);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(104, 182, 239, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2743,7 +2734,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2760,7 +2751,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2801,7 +2792,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(136, 192, 208));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2846,10 +2837,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 28px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 28px 0px 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2880,7 +2868,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(203, 206, 213));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2908,7 +2896,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(203, 206, 213));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3102,8 +3090,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(25, 28, 34));
-    color: var(--text-muted, rgb(191, 194, 202));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(191, 194, 202);
     border-width: 0px;
@@ -3117,7 +3105,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(191, 194, 202));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3240,8 +3228,8 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(191, 194, 202));
-    font-family: var(--font-interface, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--text-normal);
+    font-family: var(--font-interface);
     border: 0px solid rgb(191, 194, 202);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3317,9 +3305,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(25, 28, 34));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(191, 194, 202));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(191, 194, 202);
@@ -3639,7 +3627,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(178, 182, 191));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3660,7 +3648,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(178, 182, 191));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3685,7 +3673,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
+    color: rgb(178, 182, 191);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3713,7 +3701,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(203, 206, 213));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(48, 53, 64);
   }
@@ -3734,12 +3722,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(203, 206, 213));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(25, 28, 34));
+    background-color: var(--background-secondary);
     border-color: rgb(203, 206, 213);
     box-shadow: var(--input-shadow);
   }
@@ -3767,7 +3755,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(136, 192, 208));
+    color: var(--pill-color);
     border-radius: 27.82px;
   }
 
@@ -3781,7 +3769,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(178, 182, 191));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(178, 182, 191);
     border-width: 0px;
@@ -3792,8 +3780,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(25, 28, 34));
-    color: var(--status-bar-text-color, rgb(191, 194, 202));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3808,7 +3796,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: var(--status-bar-font-size, 11px);
+    font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -3854,7 +3842,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(178, 182, 191));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3896,7 +3884,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(178, 182, 191));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3919,7 +3907,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(178, 182, 191));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(178, 182, 191);
     border-width: 0px;
@@ -3946,7 +3934,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(178, 182, 191));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3964,11 +3952,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(25, 28, 34));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(203, 206, 213));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4101,7 +4089,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--tag-color, rgb(136, 192, 208));
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4131,17 +4119,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(136, 192, 208));
+    background-color: var(--checkbox-color);
     border-color: rgb(136, 192, 208);
   }
 
   .stacked-page {
     border-color: rgb(203, 206, 213);
-    background-color: var(--background-secondary, rgb(25, 28, 34));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(25, 28, 34));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4149,9 +4137,9 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(203, 206, 213));
-    font-size: var(--inline-title-size, 18px);
-    font-weight: var(--inline-title-weight, 600);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
@@ -4160,11 +4148,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -4209,7 +4195,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -4220,7 +4205,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4230,7 +4214,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4259,7 +4242,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -4276,10 +4258,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -4301,11 +4281,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -4350,7 +4328,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -4361,7 +4338,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4371,7 +4347,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4400,7 +4375,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -4417,10 +4391,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -4442,11 +4414,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -4491,7 +4461,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -4502,7 +4471,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4512,7 +4480,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4541,7 +4508,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -4558,10 +4524,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -4583,11 +4547,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -4632,7 +4594,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -4643,7 +4604,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4653,7 +4613,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4682,7 +4641,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -4699,10 +4657,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -4724,11 +4680,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -4773,7 +4727,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -4784,7 +4737,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4794,7 +4746,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4823,7 +4774,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -4840,10 +4790,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -4865,11 +4813,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -4914,7 +4860,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -4925,7 +4870,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4935,7 +4879,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4964,7 +4907,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -4981,10 +4923,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5006,11 +4946,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5055,7 +4993,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5066,7 +5003,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5076,7 +5012,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5105,7 +5040,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5122,10 +5056,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5147,11 +5079,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5196,7 +5126,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5207,7 +5136,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5217,7 +5145,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5246,7 +5173,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5263,10 +5189,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5288,11 +5212,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5337,7 +5259,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5348,7 +5269,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5358,7 +5278,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5387,7 +5306,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5404,10 +5322,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5429,11 +5345,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5478,7 +5392,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5489,7 +5402,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5499,7 +5411,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5528,7 +5439,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5545,10 +5455,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5570,11 +5478,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5619,7 +5525,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5630,7 +5535,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5640,7 +5544,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5669,7 +5572,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5686,10 +5588,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5711,11 +5611,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5760,7 +5658,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5771,7 +5668,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5781,7 +5677,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5810,7 +5705,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5827,10 +5721,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5852,11 +5744,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -5901,7 +5791,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -5912,7 +5801,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5922,7 +5810,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5951,7 +5838,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -5968,10 +5854,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -5993,11 +5877,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6042,7 +5924,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6053,7 +5934,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6063,7 +5943,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6092,7 +5971,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6109,10 +5987,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6134,11 +6010,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6183,7 +6057,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6194,7 +6067,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6204,7 +6076,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6233,7 +6104,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6250,10 +6120,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6275,11 +6143,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6324,7 +6190,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6335,7 +6200,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6345,7 +6209,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6374,7 +6237,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6391,10 +6253,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6416,11 +6276,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6465,7 +6323,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6476,7 +6333,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6486,7 +6342,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6515,7 +6370,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6532,10 +6386,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6557,11 +6409,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6606,7 +6456,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6617,7 +6466,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6627,7 +6475,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6656,7 +6503,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6673,10 +6519,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6698,11 +6542,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6747,7 +6589,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6758,7 +6599,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6768,7 +6608,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6797,7 +6636,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6814,10 +6652,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6839,11 +6675,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -6888,7 +6722,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -6899,7 +6732,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6909,7 +6741,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6938,7 +6769,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -6955,10 +6785,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -6980,11 +6808,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7029,7 +6855,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7040,7 +6865,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7050,7 +6874,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7079,7 +6902,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7096,10 +6918,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7121,11 +6941,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7170,7 +6988,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7181,7 +6998,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7191,7 +7007,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7220,7 +7035,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7237,10 +7051,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7262,11 +7074,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7311,7 +7121,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7322,7 +7131,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7332,7 +7140,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7361,7 +7168,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7378,10 +7184,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7403,11 +7207,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7452,7 +7254,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7463,7 +7264,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7473,7 +7273,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7502,7 +7301,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7519,10 +7317,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7544,11 +7340,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7593,7 +7387,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7604,7 +7397,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7614,7 +7406,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7643,7 +7434,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7660,10 +7450,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7685,11 +7473,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7734,7 +7520,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7745,7 +7530,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7755,7 +7539,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7784,7 +7567,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7801,10 +7583,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7826,11 +7606,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -7875,7 +7653,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -7886,7 +7663,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7896,7 +7672,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7925,7 +7700,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -7942,10 +7716,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -7967,11 +7739,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8016,7 +7786,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8027,7 +7796,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8037,7 +7805,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8066,7 +7833,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8083,10 +7849,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8108,11 +7872,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8157,7 +7919,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8168,7 +7929,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8178,7 +7938,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8207,7 +7966,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8224,10 +7982,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8249,11 +8005,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8298,7 +8052,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8309,7 +8062,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8319,7 +8071,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8348,7 +8099,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8365,10 +8115,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8390,11 +8138,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8439,7 +8185,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8450,7 +8195,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8460,7 +8204,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8489,7 +8232,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8506,10 +8248,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8531,11 +8271,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8580,7 +8318,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8591,7 +8328,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8601,7 +8337,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8630,7 +8365,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8647,10 +8381,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8672,11 +8404,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8721,7 +8451,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8732,7 +8461,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8742,7 +8470,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8771,7 +8498,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8788,10 +8514,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8813,11 +8537,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -8862,7 +8584,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -8873,7 +8594,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8883,7 +8603,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8912,7 +8631,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -8929,10 +8647,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -8954,11 +8670,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9003,7 +8717,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9014,7 +8727,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9024,7 +8736,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9053,7 +8764,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9070,10 +8780,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9095,11 +8803,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9144,7 +8850,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9155,7 +8860,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9165,7 +8869,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9194,7 +8897,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9211,10 +8913,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9236,11 +8936,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9285,7 +8983,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9296,7 +8993,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9306,7 +9002,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9335,7 +9030,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9352,10 +9046,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9377,11 +9069,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9426,7 +9116,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9437,7 +9126,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9447,7 +9135,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9476,7 +9163,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9493,10 +9179,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9518,11 +9202,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9567,7 +9249,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9578,7 +9259,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9588,7 +9268,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9617,7 +9296,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9634,10 +9312,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9659,11 +9335,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9708,7 +9382,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9719,7 +9392,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9729,7 +9401,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9758,7 +9429,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9775,10 +9445,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9800,11 +9468,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9849,7 +9515,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -9860,7 +9525,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -9870,7 +9534,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9899,7 +9562,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -9916,10 +9578,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -9941,11 +9601,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -9990,7 +9648,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10001,7 +9658,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10011,7 +9667,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10040,7 +9695,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10057,10 +9711,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10082,11 +9734,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10131,7 +9781,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10142,7 +9791,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10152,7 +9800,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10181,7 +9828,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10198,10 +9844,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10223,11 +9867,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10272,7 +9914,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10283,7 +9924,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10293,7 +9933,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10322,7 +9961,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10339,10 +9977,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10364,11 +10000,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10413,7 +10047,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10424,7 +10057,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10434,7 +10066,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10463,7 +10094,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10480,10 +10110,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10505,11 +10133,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10554,7 +10180,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10565,7 +10190,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10575,7 +10199,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10604,7 +10227,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10621,10 +10243,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10646,11 +10266,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10695,7 +10313,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10706,7 +10323,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10716,7 +10332,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10745,7 +10360,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10762,10 +10376,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10787,11 +10399,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10836,7 +10446,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10847,7 +10456,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10857,7 +10465,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10886,7 +10493,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -10903,10 +10509,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -10928,11 +10532,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -10977,7 +10579,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -10988,7 +10589,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -10998,7 +10598,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11027,7 +10626,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11044,10 +10642,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11069,11 +10665,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11118,7 +10712,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11129,7 +10722,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11139,7 +10731,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11168,7 +10759,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11185,10 +10775,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11210,11 +10798,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11259,7 +10845,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11270,7 +10855,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11280,7 +10864,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11309,7 +10892,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11326,10 +10908,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11351,11 +10931,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11400,7 +10978,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11411,7 +10988,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11421,7 +10997,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11450,7 +11025,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11467,10 +11041,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11492,11 +11064,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11541,7 +11111,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11552,7 +11121,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11562,7 +11130,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11591,7 +11158,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11608,10 +11174,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11633,11 +11197,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11682,7 +11244,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11693,7 +11254,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11703,7 +11263,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11732,7 +11291,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11749,10 +11307,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11774,11 +11330,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11823,7 +11377,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11834,7 +11387,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11844,7 +11396,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11873,7 +11424,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -11890,10 +11440,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -11915,11 +11463,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -11964,7 +11510,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -11975,7 +11520,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -11985,7 +11529,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12014,7 +11557,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12031,10 +11573,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12056,11 +11596,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12105,7 +11643,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12116,7 +11653,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12126,7 +11662,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12155,7 +11690,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12172,10 +11706,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12197,11 +11729,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12246,7 +11776,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12257,7 +11786,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12267,7 +11795,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12296,7 +11823,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12313,10 +11839,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12338,11 +11862,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12387,7 +11909,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12398,7 +11919,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12408,7 +11928,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12437,7 +11956,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12454,10 +11972,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12479,11 +11995,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12528,7 +12042,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12539,7 +12052,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12549,7 +12061,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12578,7 +12089,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12595,10 +12105,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12620,11 +12128,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12669,7 +12175,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12680,7 +12185,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12690,7 +12194,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12719,7 +12222,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12736,10 +12238,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12761,11 +12261,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12810,7 +12308,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12821,7 +12318,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12831,7 +12327,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12860,7 +12355,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -12877,10 +12371,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -12902,11 +12394,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -12951,7 +12441,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -12962,7 +12451,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -12972,7 +12460,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13001,7 +12488,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -13018,10 +12504,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -13043,11 +12527,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -13092,7 +12574,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -13103,7 +12584,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -13113,7 +12593,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13142,7 +12621,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -13159,10 +12637,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -13184,11 +12660,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -13233,7 +12707,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -13244,7 +12717,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -13254,7 +12726,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13283,7 +12754,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -13300,10 +12770,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -13325,11 +12793,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -13374,7 +12840,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -13385,7 +12850,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -13395,7 +12859,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13424,7 +12887,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -13441,10 +12903,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;
@@ -13466,11 +12926,9 @@ body {
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
-    --background-modifier-error-hover: #fb464c;
     --background-modifier-error-rgb: 251, 70, 76;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
-    --background-modifier-hover: rgba(255, 255, 255, 0.067);
     --background-modifier-success: #44cf6e;
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
@@ -13515,7 +12973,6 @@ body {
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
     --heading-formatting: #666666;
-    --heading-spacing: 2.5rem;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
     --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
@@ -13526,7 +12983,6 @@ body {
     --link-external-color: hsl(255, 89.76%, 75.9%);
     --link-external-color-hover: hsl(253, 92.4%, 85.14%);
     --link-unresolved-color: hsl(255, 89.76%, 75.9%);
-    --list-indent: 2.25em;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -13536,7 +12992,6 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13565,7 +13020,6 @@ body {
     --tab-text-color-focused-active-current: #dadada;
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
-    --table-add-button-border-width: 1px;
     --table-border-color: #363636;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
@@ -13582,10 +13036,8 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-faint: #666666;
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
     --color-blue: #027aff;

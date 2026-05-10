@@ -17,7 +17,7 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 20px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
@@ -26,9 +26,9 @@
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075))) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15))) !important;
-  --checkbox-marker-color: var(--background-primary, #d8d9cf) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
@@ -48,21 +48,21 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(#d8d9cf, 91%, 55%)) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #e26868) !important;
-  --graph-node-attachment: var(--color-yellow, #ededed) !important;
-  --graph-node-focused: var(--text-accent, #ff8787) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, gray) !important;
-  --graph-text: var(--text-normal, #e26868) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, hsl(#d8d9cf, 91%, 55%)) !important;
+  --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
-  --callout-border-opacity: 0.7;
+  --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
@@ -103,7 +103,7 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 20px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
@@ -112,8 +112,8 @@
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, hsl(#d8d9cf, 91%, 55%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15))) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
@@ -134,21 +134,21 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15))) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #e26868) !important;
-  --graph-node-attachment: var(--color-yellow, rgb(75, 75, 75)) !important;
-  --graph-node-focused: var(--text-accent, #ff8787) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #d8d9cf) !important;
-  --graph-text: var(--text-normal, #e26868) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15))) !important;
+  --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
-  --callout-border-opacity: 0.7;
+  --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
@@ -222,7 +222,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(216, 217, 207));
+    background-color: var(--background-primary);
     color: var(--text-normal);
   }
 
@@ -230,12 +230,12 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(216, 217, 207));
+    background-color: var(--background-primary);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(237, 237, 237));
+    background-color: var(--background-secondary);
     color: rgb(34, 34, 34);
   }
 
@@ -243,12 +243,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(237, 237, 237));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(237, 237, 237));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
     border-left: 0px rgb(224, 224, 224);
   }
@@ -260,7 +260,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(255, 135, 135));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -302,7 +302,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(255, 135, 135));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -343,7 +343,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(34, 34, 34));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -365,7 +365,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(34, 34, 34) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(34, 34, 34));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -714,7 +714,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(255, 135, 135));
+    background-color: var(--text-highlight-bg);
     color: var(--text-normal);
     cursor: grab;
     filter: none;
@@ -845,8 +845,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(0, 0, 0, 0));
-    color: var(--pill-color, rgb(34, 34, 34));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1124,7 +1124,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(216, 217, 207));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1227,14 +1227,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(255, 135, 135));
-    font-family: var(--h1-font, Arvo, serif);
-    font-size: var(--h1-size, 32px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h1-line-height, 38.4px);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.48px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1260,14 +1260,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(255, 135, 135));
-    font-family: var(--h2-font, Arvo, serif);
-    font-size: var(--h2-size, 27.2px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h2-line-height, 32.64px);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.2992px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1293,14 +1293,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(255, 135, 135));
-    font-family: var(--h3-font, Arvo, serif);
-    font-size: var(--h3-size, 24px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h3-line-height, 31.2px);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.192px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1326,14 +1326,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(255, 135, 135));
-    font-family: var(--h4-font, Arvo, serif);
-    font-size: var(--h4-size, 20.8px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h4-line-height, 29.12px);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.104px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1359,14 +1359,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(255, 135, 135));
-    font-family: var(--h5-font, Arvo, serif);
-    font-size: var(--h5-size, 17.6px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h5-line-height, 26.4px);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.0352px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1392,11 +1392,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(255, 135, 135));
-    font-family: var(--h6-font, Arvo, serif);
-    font-size: var(--h6-size, 12.8px);
-    font-weight: var(--font-weight, 400);
-    line-height: var(--h6-line-height, 19.2px);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -1426,11 +1426,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(226, 104, 104));
-    font-family: var(--inline-title-font, "Permanent Marker", cursive);
-    font-size: var(--inline-title-size, 38.4px);
-    font-weight: var(--inline-title-weight, 400);
-    line-height: var(--inline-title-line-height, 46.08px);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.576px;
@@ -1848,7 +1848,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.7);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -1907,7 +1907,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1965,7 +1965,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2023,7 +2023,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2081,7 +2081,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2139,7 +2139,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2197,7 +2197,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2255,7 +2255,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2313,7 +2313,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2371,7 +2371,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2429,7 +2429,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2487,7 +2487,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2545,7 +2545,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2603,7 +2603,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2720,7 +2720,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(226, 104, 104));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3564,7 +3564,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(226, 104, 104));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(0, 0, 0);
   }
@@ -3590,7 +3590,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(216, 217, 207));
+    background-color: var(--background-primary);
     border-color: rgb(34, 34, 34);
     box-shadow: var(--input-shadow);
   }
@@ -3617,8 +3617,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(0, 0, 0, 0));
-    color: var(--pill-color, rgb(34, 34, 34));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3632,7 +3632,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(255, 135, 135));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(255, 135, 135);
     border-width: 0px;
@@ -3643,7 +3643,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(237, 237, 237));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -3770,7 +3770,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(255, 135, 135));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(255, 135, 135);
     border-width: 0px;
@@ -3815,7 +3815,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(237, 237, 237));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -3951,8 +3951,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(0, 0, 0, 0));
-    color: var(--tag-color, rgb(34, 34, 34));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgb(34, 34, 34);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -3982,13 +3982,13 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
+    background-color: var(--checkbox-color);
     border-color: rgb(0, 0, 0);
   }
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: var(--background-secondary, rgb(237, 237, 237));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
@@ -4000,9 +4000,9 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(226, 104, 104));
-    font-size: var(--inline-title-size, 38.4px);
-    font-weight: var(--inline-title-weight, 400);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   html {
@@ -4700,7 +4700,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(255, 135, 135));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -4742,7 +4742,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(255, 135, 135));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -4783,7 +4783,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(218, 218, 218));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -4805,7 +4805,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(218, 218, 218) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgb(218, 218, 218));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -5154,7 +5154,7 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgb(226, 104, 104));
+      background-color: var(--text-highlight-bg);
       color: var(--text-normal);
       cursor: grab;
       filter: none;
@@ -5285,8 +5285,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(0, 0, 0, 0));
-      color: var(--pill-color, rgb(218, 218, 218));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -5667,14 +5667,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(237, 237, 237));
-      font-family: var(--h1-font, Arvo, serif);
-      font-size: var(--h1-size, 32px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h1-line-height, 38.4px);
+      color: var(--h1-color);
+      font-family: var(--h1-font);
+      font-size: var(--h1-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.48px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5700,14 +5700,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(237, 237, 237));
-      font-family: var(--h2-font, Arvo, serif);
-      font-size: var(--h2-size, 27.2px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h2-line-height, 32.64px);
+      color: var(--h2-color);
+      font-family: var(--h2-font);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.2992px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5733,14 +5733,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(237, 237, 237));
-      font-family: var(--h3-font, Arvo, serif);
-      font-size: var(--h3-size, 24px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h3-line-height, 31.2px);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.192px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5766,14 +5766,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(237, 237, 237));
-      font-family: var(--h4-font, Arvo, serif);
-      font-size: var(--h4-size, 20.8px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h4-line-height, 29.12px);
+      color: var(--h4-color);
+      font-family: var(--h4-font);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.104px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5799,14 +5799,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(237, 237, 237));
-      font-family: var(--h5-font, Arvo, serif);
-      font-size: var(--h5-size, 17.6px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h5-line-height, 26.4px);
+      color: var(--h5-color);
+      font-family: var(--h5-font);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.0352px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5832,11 +5832,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(237, 237, 237));
-      font-family: var(--h6-font, Arvo, serif);
-      font-size: var(--h6-size, 12.8px);
-      font-weight: var(--font-weight, 400);
-      line-height: var(--h6-line-height, 19.2px);
+      color: var(--h6-color);
+      font-family: var(--h6-font);
+      font-size: var(--h6-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -5866,11 +5866,11 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(226, 104, 104));
-      font-family: var(--inline-title-font, "Permanent Marker", cursive);
-      font-size: var(--inline-title-size, 38.4px);
-      font-weight: var(--inline-title-weight, 400);
-      line-height: var(--inline-title-line-height, 46.08px);
+      color: var(--inline-title-color);
+      font-family: var(--inline-title-font);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.576px;
@@ -6288,7 +6288,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.7);
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -6347,7 +6347,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6405,7 +6405,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6463,7 +6463,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6521,7 +6521,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6579,7 +6579,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6637,7 +6637,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6695,7 +6695,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6753,7 +6753,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6811,7 +6811,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6869,7 +6869,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6927,7 +6927,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6985,7 +6985,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7043,7 +7043,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7160,7 +7160,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(226, 104, 104));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -8004,7 +8004,7 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(226, 104, 104));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(255, 255, 255);
     }
@@ -8057,8 +8057,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(0, 0, 0, 0));
-      color: var(--pill-color, rgb(218, 218, 218));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -8072,7 +8072,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(255, 135, 135));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(255, 135, 135);
       border-width: 0px;
@@ -8210,7 +8210,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(255, 135, 135));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(255, 135, 135);
       border-width: 0px;
@@ -8391,8 +8391,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(0, 0, 0, 0));
-      color: var(--tag-color, rgb(218, 218, 218));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgb(218, 218, 218);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -8422,7 +8422,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgba(0, 0, 0, 0));
+      background-color: var(--checkbox-color);
       border-color: rgb(255, 255, 255);
     }
 
@@ -8440,9 +8440,9 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(226, 104, 104));
-      font-size: var(--inline-title-size, 38.4px);
-      font-weight: var(--inline-title-weight, 400);
+      color: var(--inline-title-color);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
     }
 
     html {

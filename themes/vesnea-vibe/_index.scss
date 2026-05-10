@@ -24,42 +24,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--attribute-psionic, #ce36be) !important;
-  --checkbox-border-color-hover: var(--attribute-nature, #70bb74) !important;
-  --checkbox-color: var(--attribute-nature, #70bb74) !important;
-  --checkbox-color-hover: var(--attribute-psionic, #ce36be) !important;
-  --checkbox-marker-color: var(--background-primary, hsl(0, 60%, 99%)) !important;
-  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-border-color: var(--attribute-psionic) !important;
+  --checkbox-border-color-hover: var(--attribute-nature) !important;
+  --checkbox-color: var(--attribute-nature) !important;
+  --checkbox-color-hover: var(--attribute-psionic) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 4px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, hsl(281, 24%, 95%)) !important;
-  --code-border-color: var(--background-modifier-border, #c6b0cf) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, hsl(275, 24%, 55%)) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, hsl(248, 31%, 20%)) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, hsl(251, 29%, 55%)) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, hsl(275, 24%, 55%)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(333, 77%, 78%)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, hsl(251, 29%, 55%)) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(333, 77%, 78%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(275, 24%, 55%)) !important;
-  --graph-text: var(--text-normal, hsl(248, 31%, 20%)) !important;
-  --icon-color: var(--text-muted, hsl(251, 29%, 55%)) !important;
-  --icon-color-active: var(--text-accent, hsl(333, 77%, 78%)) !important;
-  --icon-color-focused: var(--text-normal, hsl(248, 31%, 20%)) !important;
-  --icon-color-hover: var(--text-muted, hsl(251, 29%, 55%)) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -110,42 +110,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--attribute-psionic, #ce36be) !important;
-  --checkbox-border-color-hover: var(--attribute-nature, #70bb74) !important;
-  --checkbox-color: var(--attribute-nature, #70bb74) !important;
-  --checkbox-color-hover: var(--attribute-psionic, #ce36be) !important;
-  --checkbox-marker-color: var(--background-primary, #2c233d) !important;
-  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-border-color: var(--attribute-psionic) !important;
+  --checkbox-border-color-hover: var(--attribute-nature) !important;
+  --checkbox-color: var(--attribute-nature) !important;
+  --checkbox-color-hover: var(--attribute-psionic) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 4px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, hsl(from #2c233d h s calc(l - 10))) !important;
-  --code-border-color: var(--background-modifier-border, hsl(from #181621 h calc(s + 3) calc(l + 4))) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #c6b0cf) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #f9e8ec) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, #fdc4d3) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #c6b0cf) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(330, 78.54%, 89.7%)) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #fdc4d3) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(330, 78.54%, 89.7%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #c6b0cf) !important;
-  --graph-text: var(--text-normal, #f9e8ec) !important;
-  --icon-color: var(--text-muted, #fdc4d3) !important;
-  --icon-color-active: var(--text-accent, hsl(330, 78.54%, 89.7%)) !important;
-  --icon-color-focused: var(--text-normal, #f9e8ec) !important;
-  --icon-color-hover: var(--text-muted, #fdc4d3) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -222,20 +222,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(254, 251, 251));
-    color: var(--text-normal, rgb(39, 35, 67));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(254, 251, 251));
+    background-color: var(--background-primary);
     color: rgb(39, 35, 67);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(239, 237, 247));
+    background-color: var(--background-secondary);
     color: rgb(39, 35, 67);
   }
 
@@ -243,12 +243,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(239, 237, 247));
+    background-color: var(--tab-container-background);
     color: rgb(39, 35, 67);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(239, 237, 247));
+    background-color: var(--tab-container-background);
     color: rgb(39, 35, 67);
     border-left: 0px rgb(198, 176, 207);
   }
@@ -260,7 +260,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(242, 156, 195));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -304,7 +304,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(242, 156, 195));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -347,7 +347,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(242, 156, 195));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -371,7 +371,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(242, 156, 195) none 0px;
     text-decoration: underline rgba(242, 156, 195, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(242, 156, 195, 0.3));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -407,7 +407,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(119, 107, 174));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -450,7 +450,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(214, 45, 100));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -493,7 +493,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(214, 45, 100));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -536,7 +536,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, color(srgb 0.165775 0.680214 0.916578));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -579,7 +579,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, color(srgb 0.165775 0.680214 0.916578));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -700,7 +700,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, color(srgb 0.396078 0.568627 0.456863));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       "Josefin Sans",
@@ -732,8 +732,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(253, 196, 211));
-    color: var(--text-normal, rgb(39, 35, 67));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -799,7 +799,7 @@ body {
     font-weight: 400;
     outline: color(srgb 0.46735 0.4195 0.6805 / 0.6) none 0px;
     text-decoration: line-through rgb(214, 51, 132);
-    text-decoration-color: var(--cutepink2, rgb(214, 51, 132));
+    text-decoration-color: var(--cutepink2);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     transition: all;
@@ -867,8 +867,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(242, 156, 195, 0.1));
-    color: var(--pill-color, rgb(242, 156, 195));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       "Work Sans",
@@ -912,8 +912,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 2px);
-    padding-bottom: var(--list-spacing, 2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -949,8 +949,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 2px);
-    padding-bottom: var(--list-spacing, 2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -981,7 +981,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(243, 239, 245));
+    background-color: var(--code-background);
     border: 0px solid rgb(198, 176, 207);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -991,7 +991,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(39, 35, 67));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1023,7 +1023,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(243, 239, 245));
+    background-color: var(--code-background);
     border: 0px solid rgb(198, 176, 207);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1087,7 +1087,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(39, 35, 67));
+    color: var(--blockquote-color);
     font-family:
       "Josefin Sans",
       sans-serif,
@@ -1117,7 +1117,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(145, 113, 168));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1132,7 +1132,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(39, 35, 67));
+    color: var(--text-normal);
     font-family:
       "Work Sans",
       sans-serif,
@@ -1152,7 +1152,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(254, 251, 251));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(162, 129, 177);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1162,7 +1162,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, color(srgb 0.776471 0.690196 0.811765 / 0.5) 0px 30px 90px 0px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1257,8 +1257,8 @@ body {
   }
 
   h1 {
-    color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-    font-family: var(--h1-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--C-SeaWeb_Purple);
+    font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
     line-height: var(--h1-line-height);
@@ -1293,8 +1293,8 @@ body {
   }
 
   h2 {
-    color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-    font-family: var(--h2-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--C-SeaWeb_Purple);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
@@ -1329,8 +1329,8 @@ body {
   }
 
   h3 {
-    color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-    font-family: var(--h3-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--C-SeaWeb_Purple);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
@@ -1365,8 +1365,8 @@ body {
   }
 
   h4 {
-    color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-    font-family: var(--h4-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--C-SeaWeb_Purple);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
@@ -1401,8 +1401,8 @@ body {
   }
 
   h5 {
-    color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-    font-family: var(--h5-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--C-SeaWeb_Purple);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
@@ -1437,8 +1437,8 @@ body {
   }
 
   h6 {
-    color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-    font-family: var(--h6-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--C-SeaWeb_Purple);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
@@ -1474,8 +1474,8 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(39, 35, 67));
-    font-family: var(--inline-title-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
     line-height: var(--inline-title-line-height);
@@ -1896,7 +1896,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1939,7 +1939,7 @@ body {
 
   .callout .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout > .callout-content {
@@ -1955,7 +1955,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1997,7 +1997,7 @@ body {
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="note"] > .callout-content {
@@ -2013,7 +2013,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2055,7 +2055,7 @@ body {
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="abstract"] > .callout-content {
@@ -2071,7 +2071,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2113,7 +2113,7 @@ body {
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="info"] > .callout-content {
@@ -2129,7 +2129,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2171,7 +2171,7 @@ body {
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="todo"] > .callout-content {
@@ -2187,7 +2187,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2229,7 +2229,7 @@ body {
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="tip"] > .callout-content {
@@ -2245,7 +2245,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2287,7 +2287,7 @@ body {
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="success"] > .callout-content {
@@ -2303,7 +2303,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2345,7 +2345,7 @@ body {
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="question"] > .callout-content {
@@ -2361,7 +2361,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2403,7 +2403,7 @@ body {
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="warning"] > .callout-content {
@@ -2419,7 +2419,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2461,7 +2461,7 @@ body {
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="danger"] > .callout-content {
@@ -2477,7 +2477,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2519,7 +2519,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="failure"] > .callout-content {
@@ -2535,7 +2535,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2577,7 +2577,7 @@ body {
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="bug"] > .callout-content {
@@ -2593,7 +2593,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2635,7 +2635,7 @@ body {
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="example"] > .callout-content {
@@ -2651,7 +2651,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2693,7 +2693,7 @@ body {
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
     color: var(--callout-title-color);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
   }
 
   .callout[data-callout="quote"] > .callout-content {
@@ -2770,8 +2770,8 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(39, 35, 67));
-    font-weight: var(--table-header-weight, 700);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
@@ -2798,7 +2798,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(39, 35, 67));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2822,7 +2822,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, color(srgb 0.9494 0.6106 0.76306 / 0.2));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2994,8 +2994,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(243, 239, 245));
-    color: var(--text-muted, rgb(119, 107, 174));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 6px;
     border-color: rgb(119, 107, 174);
     border-width: 0px;
@@ -3009,7 +3009,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(119, 107, 174));
+    color: var(--text-muted);
     font-family:
       "Josefin Sans",
       sans-serif,
@@ -3096,14 +3096,14 @@ body {
 
   .metadata-property-key {
     color: rgb(119, 107, 174);
-    font-family: var(--metadata-label-font, "Work Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(119, 107, 174);
-    font-family: var(--metadata-input-font, "Work Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-input-font);
     font-size: 16px;
   }
 
@@ -3138,7 +3138,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(119, 107, 174));
+    color: var(--text-normal);
     font-family:
       "Work Sans",
       sans-serif,
@@ -3230,9 +3230,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(243, 239, 245));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(39, 35, 67));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(39, 35, 67);
@@ -3560,7 +3560,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(119, 107, 174));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       "Work Sans",
@@ -3583,7 +3583,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(119, 107, 174));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       "Work Sans",
@@ -3610,8 +3610,10 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(119, 107, 174);
     font-family:
+      "Work Sans",
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3638,8 +3640,8 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(39, 35, 67));
-    font-weight: var(--table-header-weight, 700);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
     border-color: rgb(198, 176, 207);
   }
 
@@ -3659,12 +3661,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(39, 35, 67));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(254, 251, 251));
+    background-color: var(--background-primary);
     border-color: rgb(39, 35, 67);
     box-shadow: var(--input-shadow);
   }
@@ -3691,8 +3693,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(242, 156, 195, 0.1));
-    color: var(--pill-color, rgb(242, 156, 195));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3706,7 +3708,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(119, 107, 174));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(119, 107, 174);
     border-width: 0px;
@@ -3717,8 +3719,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(239, 237, 247));
-    color: var(--status-bar-text-color, rgb(119, 107, 174));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       "Work Sans",
       sans-serif,
@@ -3783,7 +3785,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(119, 107, 174));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3827,7 +3829,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(119, 107, 174));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3852,7 +3854,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(119, 107, 174));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(119, 107, 174);
     border-width: 0px;
@@ -3879,7 +3881,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(145, 113, 168));
+    color: var(--text-faint);
     font-family:
       "Work Sans",
       sans-serif,
@@ -3899,11 +3901,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(239, 237, 247));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(39, 35, 67));
+    color: var(--text-normal);
     font-family:
       "Work Sans",
       sans-serif,
@@ -4037,8 +4039,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(242, 156, 195, 0.1));
-    color: var(--tag-color, rgb(242, 156, 195));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(242, 156, 195, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4068,17 +4070,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(112, 187, 116));
+    background-color: var(--checkbox-color);
     border-color: rgb(112, 187, 116);
   }
 
   .stacked-page {
     border-color: rgb(39, 35, 67);
-    background-color: var(--background-secondary, rgb(239, 237, 247));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(248, 246, 249));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4086,7 +4088,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(39, 35, 67));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -4110,7 +4112,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -4222,8 +4223,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -4260,7 +4259,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -4372,8 +4370,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -4410,7 +4406,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -4522,8 +4517,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -4560,7 +4553,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -4672,8 +4664,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -4710,7 +4700,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -4822,8 +4811,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -4860,7 +4847,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -4972,8 +4958,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5010,7 +4994,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -5122,8 +5105,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5160,7 +5141,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -5272,8 +5252,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5310,7 +5288,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -5422,8 +5399,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5460,7 +5435,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -5572,8 +5546,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5610,7 +5582,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -5722,8 +5693,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5760,7 +5729,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -5872,8 +5840,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -5910,7 +5876,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6022,8 +5987,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6060,7 +6023,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6172,8 +6134,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6210,7 +6170,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6322,8 +6281,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6360,7 +6317,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6472,8 +6428,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6510,7 +6464,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6622,8 +6575,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6660,7 +6611,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6772,8 +6722,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6810,7 +6758,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -6922,8 +6869,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -6960,7 +6905,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7072,8 +7016,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -7110,7 +7052,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7222,8 +7163,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -7260,7 +7199,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7372,8 +7310,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -7410,7 +7346,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7522,8 +7457,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -7560,7 +7493,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7672,8 +7604,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -7710,7 +7640,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7822,8 +7751,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -7860,7 +7787,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -7972,8 +7898,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8010,7 +7934,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -8122,8 +8045,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8160,7 +8081,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -8272,8 +8192,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8310,7 +8228,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -8422,8 +8339,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8460,7 +8375,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -8572,8 +8486,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8610,7 +8522,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -8722,8 +8633,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8760,7 +8669,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -8872,8 +8780,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -8910,7 +8816,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9022,8 +8927,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9060,7 +8963,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9172,8 +9074,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9210,7 +9110,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9322,8 +9221,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9360,7 +9257,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9472,8 +9368,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9510,7 +9404,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9622,8 +9515,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9660,7 +9551,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9772,8 +9662,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9810,7 +9698,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -9922,8 +9809,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -9960,7 +9845,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10072,8 +9956,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -10110,7 +9992,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10222,8 +10103,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -10260,7 +10139,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10372,8 +10250,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -10410,7 +10286,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10522,8 +10397,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -10560,7 +10433,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10672,8 +10544,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -10710,7 +10580,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10822,8 +10691,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -10860,7 +10727,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -10972,8 +10838,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11010,7 +10874,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -11122,8 +10985,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11160,7 +11021,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -11272,8 +11132,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11310,7 +11168,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -11422,8 +11279,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11460,7 +11315,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -11572,8 +11426,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11610,7 +11462,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -11722,8 +11573,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11760,7 +11609,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -11872,8 +11720,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -11910,7 +11756,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12022,8 +11867,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12060,7 +11903,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12172,8 +12014,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12210,7 +12050,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12322,8 +12161,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12360,7 +12197,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12472,8 +12308,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12510,7 +12344,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12622,8 +12455,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12660,7 +12491,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12772,8 +12602,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12810,7 +12638,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -12922,8 +12749,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -12960,7 +12785,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13072,8 +12896,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -13110,7 +12932,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13222,8 +13043,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -13260,7 +13079,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13372,8 +13190,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -13410,7 +13226,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13522,8 +13337,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -13560,7 +13373,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13672,8 +13484,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -13710,7 +13520,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13822,8 +13631,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -13860,7 +13667,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -13972,8 +13778,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -14010,7 +13814,6 @@ body {
     --callout-title-weight: 600;
     --canvas-background: #ffffff;
     --canvas-dot-pattern: #e0e0e0;
-    --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
     --checkbox-color: hsl(257, 88.88%, 70.95%);
@@ -14122,8 +13925,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     --color-base-00: #ffffff;
     --color-base-05: #fcfcfc;
     --color-base-10: #fafafa;
@@ -14153,8 +13954,8 @@ body {
     --attribute-psionic: #ce36be;
     --attribute-sound: #ec6f97;
     --attribute-spirit: #70488c;
-    --attribute-text-seawebdarkpurple: var(--C-SeaWeb_Dark_Purple, #181621);
-    --attribute-text-vesneawhite: var(--C-Vesnea_white, #fefcfc);
+    --attribute-text-seawebdarkpurple: var(--C-SeaWeb_Dark_Purple);
+    --attribute-text-vesneawhite: var(--C-Vesnea_white);
     --attribute-void: #1c1b1d;
     --attribute-water: #3e4f7b;
     --attribute-wind: #9be2c9;
@@ -14852,20 +14653,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(44, 35, 61));
-      color: var(--text-normal, rgb(249, 232, 236));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(44, 35, 61));
+      background-color: var(--background-primary);
       color: rgb(249, 232, 236);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(24, 22, 33));
+      background-color: var(--background-secondary);
       color: rgb(249, 232, 236);
     }
 
@@ -14873,12 +14674,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(24, 22, 33));
+      background-color: var(--tab-container-background);
       color: rgb(249, 232, 236);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(24, 22, 33));
+      background-color: var(--tab-container-background);
       color: rgb(249, 232, 236);
       border-left: 0px color(srgb 0.126204 0.113839 0.181847);
     }
@@ -14890,7 +14691,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(249, 208, 229));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -14934,7 +14735,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(249, 208, 229));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -14977,7 +14778,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(249, 208, 229));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -15001,7 +14802,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(249, 208, 229) none 0px;
       text-decoration: underline rgba(242, 156, 195, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(242, 156, 195, 0.3));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -15037,7 +14838,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(253, 196, 211));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -15080,7 +14881,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(242, 156, 194));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15123,7 +14924,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(242, 156, 194));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15166,7 +14967,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(253, 196, 211));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15209,7 +15010,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(253, 196, 211));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15330,7 +15131,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, color(srgb 0.698039 0.803922 0.47451));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         "Josefin Sans",
@@ -15362,8 +15163,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, color(srgb 0.758824 0.260784 0.540385 / 0.85));
-      color: var(--text-normal, rgb(249, 232, 236));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15429,7 +15230,7 @@ html[saved-theme="dark"] {
       font-weight: 400;
       outline: color(srgb 0.992157 0.768627 0.827451 / 0.6) none 0px;
       text-decoration: line-through rgb(214, 51, 132);
-      text-decoration-color: var(--cutepink2, rgb(214, 51, 132));
+      text-decoration-color: var(--cutepink2);
       text-decoration-line: line-through;
       text-decoration-style: solid;
       transition: all;
@@ -15497,8 +15298,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(242, 156, 195, 0.1));
-      color: var(--pill-color, rgb(249, 208, 229));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         "Work Sans",
@@ -15542,8 +15343,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 2px);
-      padding-bottom: var(--list-spacing, 2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -15579,8 +15380,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 2px);
-      padding-bottom: var(--list-spacing, 2px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -15611,7 +15412,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, color(srgb 0.0808824 0.0643382 0.112132));
+      background-color: var(--code-background);
       border: 0px solid color(srgb 0.126204 0.113839 0.181847);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15621,7 +15422,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(249, 232, 236));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -15653,7 +15454,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, color(srgb 0.0808824 0.0643382 0.112132));
+      background-color: var(--code-background);
       border: 0px solid color(srgb 0.126204 0.113839 0.181847);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15717,7 +15518,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color, rgb(249, 232, 236));
+      color: var(--blockquote-color);
       font-family:
         "Josefin Sans",
         sans-serif,
@@ -15747,7 +15548,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(198, 176, 207));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -15762,7 +15563,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(249, 232, 236));
+      color: var(--text-normal);
       font-family:
         "Work Sans",
         sans-serif,
@@ -15782,7 +15583,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(44, 35, 61));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(242, 156, 194);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -15792,7 +15593,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, color(srgb 0.9494 0.6106 0.76306 / 0.5) 0px 30px 90px 0px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -15887,8 +15688,8 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-      font-family: var(--h1-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--C-SeaWeb_Purple);
+      font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
       line-height: var(--h1-line-height);
@@ -15923,8 +15724,8 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-      font-family: var(--h2-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--C-SeaWeb_Purple);
+      font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
       line-height: var(--h2-line-height);
@@ -15959,8 +15760,8 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-      font-family: var(--h3-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--C-SeaWeb_Purple);
+      font-family: var(--h3-font);
       font-size: var(--h3-size);
       font-weight: var(--font-weight);
       line-height: var(--h3-line-height);
@@ -15995,8 +15796,8 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-      font-family: var(--h4-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--C-SeaWeb_Purple);
+      font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
       line-height: var(--h4-line-height);
@@ -16031,8 +15832,8 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-      font-family: var(--h5-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--C-SeaWeb_Purple);
+      font-family: var(--h5-font);
       font-size: var(--h5-size);
       font-weight: var(--font-weight);
       line-height: var(--h5-line-height);
@@ -16067,8 +15868,8 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--C-SeaWeb_Purple, rgb(44, 35, 61));
-      font-family: var(--h6-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--C-SeaWeb_Purple);
+      font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
       line-height: var(--h6-line-height);
@@ -16104,8 +15905,8 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(249, 232, 236));
-      font-family: var(--inline-title-font, "Josefin Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--inline-title-color);
+      font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
       line-height: var(--inline-title-line-height);
@@ -16526,7 +16327,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -16569,7 +16370,7 @@ html[saved-theme="dark"] {
 
     .callout .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout > .callout-content {
@@ -16585,7 +16386,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16627,7 +16428,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="note"] > .callout-content {
@@ -16643,7 +16444,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16685,7 +16486,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="abstract"] > .callout-content {
@@ -16701,7 +16502,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16743,7 +16544,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="info"] > .callout-content {
@@ -16759,7 +16560,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16801,7 +16602,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="todo"] > .callout-content {
@@ -16817,7 +16618,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16859,7 +16660,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="tip"] > .callout-content {
@@ -16875,7 +16676,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16917,7 +16718,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="success"] > .callout-content {
@@ -16933,7 +16734,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16975,7 +16776,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="question"] > .callout-content {
@@ -16991,7 +16792,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17033,7 +16834,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="warning"] > .callout-content {
@@ -17049,7 +16850,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17091,7 +16892,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="danger"] > .callout-content {
@@ -17107,7 +16908,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17149,7 +16950,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="failure"] > .callout-content {
@@ -17165,7 +16966,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17207,7 +17008,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="bug"] > .callout-content {
@@ -17223,7 +17024,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17265,7 +17066,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="example"] > .callout-content {
@@ -17281,7 +17082,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17323,7 +17124,7 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
-      font-weight: var(--font-weight, 700);
+      font-weight: var(--font-weight);
     }
 
     .callout[data-callout="quote"] > .callout-content {
@@ -17400,8 +17201,8 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(249, 232, 236));
-      font-weight: var(--table-header-weight, 700);
+      color: var(--table-header-color);
+      font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
@@ -17428,7 +17229,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(249, 232, 236));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -17452,7 +17253,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, color(srgb 0.9494 0.6106 0.76306 / 0.2));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -17624,8 +17425,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, color(srgb 0.0808824 0.0643382 0.112132));
-      color: var(--text-muted, rgb(253, 196, 211));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 6px;
       border-color: rgb(253, 196, 211);
       border-width: 0px;
@@ -17639,7 +17440,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(253, 196, 211));
+      color: var(--text-muted);
       font-family:
         "Josefin Sans",
         sans-serif,
@@ -17726,14 +17527,14 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(253, 196, 211);
-      font-family: var(--metadata-label-font, "Work Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-family: var(--metadata-label-font);
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(253, 196, 211);
-      font-family: var(--metadata-input-font, "Work Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-family: var(--metadata-input-font);
       font-size: 16px;
     }
 
@@ -17768,7 +17569,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(253, 196, 211));
+      color: var(--text-normal);
       font-family:
         "Work Sans",
         sans-serif,
@@ -17860,9 +17661,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, color(srgb 0.0808824 0.0643382 0.112132));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(249, 232, 236));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(249, 232, 236);
@@ -18190,7 +17991,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(253, 196, 211));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
         "Work Sans",
@@ -18213,7 +18014,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(253, 196, 211));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
         "Work Sans",
@@ -18240,8 +18041,10 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(253, 196, 211);
       font-family:
+        "Work Sans",
+        sans-serif,
         ui-sans-serif,
         -apple-system,
         BlinkMacSystemFont,
@@ -18268,8 +18071,8 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(249, 232, 236));
-      font-weight: var(--table-header-weight, 700);
+      color: var(--table-header-color);
+      font-weight: var(--table-header-weight);
       border-color: color(srgb 0.9494 0.6106 0.76306 / 0.4);
     }
 
@@ -18289,12 +18092,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(249, 232, 236));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(24, 22, 33));
+      background-color: var(--background-secondary);
       border-color: rgb(249, 232, 236);
       box-shadow: var(--input-shadow);
     }
@@ -18321,8 +18124,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(242, 156, 195, 0.1));
-      color: var(--pill-color, rgb(249, 208, 229));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -18336,7 +18139,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(253, 196, 211));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(253, 196, 211);
       border-width: 0px;
@@ -18347,8 +18150,8 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(24, 22, 33));
-      color: var(--status-bar-text-color, rgb(253, 196, 211));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family:
         "Work Sans",
         sans-serif,
@@ -18413,7 +18216,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(253, 196, 211));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -18457,7 +18260,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(253, 196, 211));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
@@ -18482,7 +18285,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(253, 196, 211));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(253, 196, 211);
       border-width: 0px;
@@ -18509,7 +18312,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(198, 176, 207));
+      color: var(--text-faint);
       font-family:
         "Work Sans",
         sans-serif,
@@ -18529,11 +18332,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(24, 22, 33));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(249, 232, 236));
+      color: var(--text-normal);
       font-family:
         "Work Sans",
         sans-serif,
@@ -18667,8 +18470,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(242, 156, 195, 0.1));
-      color: var(--tag-color, rgb(249, 208, 229));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(242, 156, 195, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -18698,17 +18501,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(112, 187, 116));
+      background-color: var(--checkbox-color);
       border-color: rgb(112, 187, 116);
     }
 
     .stacked-page {
       border-color: rgb(249, 232, 236);
-      background-color: var(--background-secondary, rgb(24, 22, 33));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, color(srgb 0.126204 0.113839 0.181847));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -18716,7 +18519,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(249, 232, 236));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
@@ -18740,7 +18543,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -18852,8 +18654,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -18890,7 +18690,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19002,8 +18801,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19040,7 +18837,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19152,8 +18948,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19190,7 +18984,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19302,8 +19095,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19340,7 +19131,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19452,8 +19242,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19490,7 +19278,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19602,8 +19389,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19640,7 +19425,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19752,8 +19536,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19790,7 +19572,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -19902,8 +19683,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -19940,7 +19719,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20052,8 +19830,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20090,7 +19866,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20202,8 +19977,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20240,7 +20013,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20352,8 +20124,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20390,7 +20160,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20502,8 +20271,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20540,7 +20307,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20652,8 +20418,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20690,7 +20454,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20802,8 +20565,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20840,7 +20601,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -20952,8 +20712,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -20990,7 +20748,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -21102,8 +20859,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -21140,7 +20895,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -21252,8 +21006,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -21290,7 +21042,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -21402,8 +21153,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -21440,7 +21189,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -21552,8 +21300,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -21590,7 +21336,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -21702,8 +21447,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -21740,7 +21483,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -21852,8 +21594,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -21890,7 +21630,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22002,8 +21741,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22040,7 +21777,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22152,8 +21888,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22190,7 +21924,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22302,8 +22035,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22340,7 +22071,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22452,8 +22182,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22490,7 +22218,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22602,8 +22329,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22640,7 +22365,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22752,8 +22476,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22790,7 +22512,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -22902,8 +22623,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -22940,7 +22659,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23052,8 +22770,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23090,7 +22806,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23202,8 +22917,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23240,7 +22953,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23352,8 +23064,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23390,7 +23100,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23502,8 +23211,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23540,7 +23247,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23652,8 +23358,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23690,7 +23394,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23802,8 +23505,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23840,7 +23541,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -23952,8 +23652,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -23990,7 +23688,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -24102,8 +23799,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -24140,7 +23835,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -24252,8 +23946,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -24290,7 +23982,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -24402,8 +24093,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -24440,7 +24129,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -24552,8 +24240,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -24590,7 +24276,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -24702,8 +24387,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -24740,7 +24423,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -24852,8 +24534,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -24890,7 +24570,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25002,8 +24681,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25040,7 +24717,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25152,8 +24828,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25190,7 +24864,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25302,8 +24975,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25340,7 +25011,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25452,8 +25122,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25490,7 +25158,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25602,8 +25269,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25640,7 +25305,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25752,8 +25416,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25790,7 +25452,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -25902,8 +25563,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -25940,7 +25599,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26052,8 +25710,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26090,7 +25746,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26202,8 +25857,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26240,7 +25893,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26352,8 +26004,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26390,7 +26040,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26502,8 +26151,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26540,7 +26187,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26652,8 +26298,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26690,7 +26334,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26802,8 +26445,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26840,7 +26481,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -26952,8 +26592,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -26990,7 +26628,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -27102,8 +26739,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -27140,7 +26775,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -27252,8 +26886,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -27290,7 +26922,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -27402,8 +27033,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -27440,7 +27069,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -27552,8 +27180,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -27590,7 +27216,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -27702,8 +27327,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -27740,7 +27363,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -27852,8 +27474,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -27890,7 +27510,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -28002,8 +27621,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -28040,7 +27657,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -28152,8 +27768,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -28190,7 +27804,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -28302,8 +27915,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -28340,7 +27951,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -28452,8 +28062,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -28490,7 +28098,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -28602,8 +28209,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -28640,7 +28245,6 @@ html[saved-theme="dark"] {
       --callout-title-weight: 600;
       --canvas-background: #1e1e1e;
       --canvas-dot-pattern: #363636;
-      --caret-color: #dadada;
       --checkbox-border-color: #666666;
       --checkbox-border-color-hover: #b3b3b3;
       --checkbox-color: hsl(258, 88%, 66%);
@@ -28752,8 +28356,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
       --color-base-00: #1e1e1e;
       --color-base-05: #212121;
       --color-base-10: #242424;
@@ -28783,8 +28385,8 @@ html[saved-theme="dark"] {
       --attribute-psionic: #ce36be;
       --attribute-sound: #ec6f97;
       --attribute-spirit: #70488c;
-      --attribute-text-seawebdarkpurple: var(--C-SeaWeb_Dark_Purple, #181621);
-      --attribute-text-vesneawhite: var(--C-Vesnea_white, #fefcfc);
+      --attribute-text-seawebdarkpurple: var(--C-SeaWeb_Dark_Purple);
+      --attribute-text-vesneawhite: var(--C-Vesnea_white);
       --attribute-void: #1c1b1d;
       --attribute-water: #3e4f7b;
       --attribute-wind: #9be2c9;

@@ -3516,8 +3516,10 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
+    color: rgb(198, 198, 198);
     font-family:
+      Inter,
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3531,7 +3533,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .nav-files-container {

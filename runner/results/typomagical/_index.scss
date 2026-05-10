@@ -38,7 +38,7 @@
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #4db95a) !important;
+  --code-normal: #4db95a !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -96,7 +96,7 @@
   --line-height-body: 1.45;
   --ss-background-color: #000000;
   --font-interface-override: "??";
-  --font-text-override: var(--font-default, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  --font-text-override: var(--font-default);
   --font-monospace-override: "??";
 
   --quartz-icon-color: currentColor;
@@ -121,8 +121,8 @@
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, hsl(258, 88%, 79%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(255, 89.76%, 90.85%)) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
@@ -133,7 +133,7 @@
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #62d770) !important;
+  --code-normal: #62d770 !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -143,16 +143,16 @@
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(255, 89.76%, 90.85%)) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(255, 89.76%, 90.85%)) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, hsl(255, 89.76%, 90.85%)) !important;
+  --icon-color-active: var(--text-accent) !important;
   --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
@@ -191,7 +191,7 @@
   --line-height-body: 1.45;
   --ss-background-color: #000000;
   --font-interface-override: "??";
-  --font-text-override: var(--font-default, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+  --font-text-override: var(--font-default);
   --font-monospace-override: "??";
 
   --quartz-icon-color: currentColor;
@@ -578,12 +578,12 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(47, 155, 183));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+    font-family: var(--font-links);
     font-weight: var(--link-weight);
     outline: rgb(47, 155, 183) none 0px;
     text-decoration: underline;
@@ -612,7 +612,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+    font-family: var(--font-links);
     font-weight: var(--link-weight);
     outline: rgb(138, 92, 245) none 0px;
     text-decoration: underline;
@@ -635,12 +635,12 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(213, 174, 207));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+    font-family: var(--font-links);
     font-weight: var(--link-weight);
     outline: rgb(213, 174, 207) none 0px;
     text-decoration: rgba(138, 92, 245, 0.3);
@@ -1003,7 +1003,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(0, 0, 0, 0));
+    background-color: var(--text-highlight-bg);
     color: var(--text-normal);
     cursor: grab;
     filter: none;
@@ -1140,10 +1140,10 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgb(238, 182, 98));
-    color: var(--pill-color, rgb(34, 34, 34));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
-    font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+    font-family: var(--font-links);
     font-size: 14px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -1249,7 +1249,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(77, 185, 90));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1510,11 +1510,11 @@ body {
   }
 
   h1 {
-    color: var(--text-title-h1, rgb(34, 34, 34));
-    font-family: var(--font-title, "Playfair Display");
+    color: var(--text-title-h1);
+    font-family: var(--font-title);
     font-size: var(--h1-size);
-    font-weight: var(--title-weight, 400);
-    line-height: var(--line-height-headings, 31.0656px);
+    font-weight: var(--title-weight);
+    line-height: var(--line-height-headings);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h1-letter-spacing);
@@ -1543,14 +1543,14 @@ body {
   }
 
   h2 {
-    color: var(--text-title-h2, rgb(34, 34, 34));
-    font-family: var(--h2-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    color: var(--text-title-h2);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
-    font-weight: var(--heading-weight, 600);
-    line-height: var(--line-height-headings, 28.0704px);
+    font-weight: var(--heading-weight);
+    line-height: var(--line-height-headings);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.70176px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1576,14 +1576,14 @@ body {
   }
 
   h3 {
-    color: var(--text-title-h3, rgb(34, 34, 34));
-    font-family: var(--h3-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    color: var(--text-title-h3);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
-    font-weight: var(--heading-weight, 600);
-    line-height: var(--line-height-headings, 25.3056px);
+    font-weight: var(--heading-weight);
+    line-height: var(--line-height-headings);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.63264px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1609,14 +1609,14 @@ body {
   }
 
   h4 {
-    color: var(--text-title-h4, rgb(34, 34, 34));
-    font-family: var(--h4-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    color: var(--text-title-h4);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
-    font-weight: var(--heading-weight, 600);
-    line-height: var(--line-height-headings, 22.8096px);
+    font-weight: var(--heading-weight);
+    line-height: var(--line-height-headings);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.57024px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1642,14 +1642,14 @@ body {
   }
 
   h5 {
-    color: var(--text-title-h5, rgb(34, 34, 34));
-    font-family: var(--h5-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    color: var(--text-title-h5);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
-    font-weight: var(--heading-weight, 600);
-    line-height: var(--line-height-headings, 20.6592px);
+    font-weight: var(--heading-weight);
+    line-height: var(--line-height-headings);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.51648px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1675,14 +1675,14 @@ body {
   }
 
   h6 {
-    color: var(--text-title-h6, rgb(34, 34, 34));
-    font-family: var(--h6-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    color: var(--text-title-h6);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
-    font-weight: var(--heading-weight, 600);
-    line-height: var(--line-height-headings, 19.2px);
+    font-weight: var(--heading-weight);
+    line-height: var(--line-height-headings);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h6-letter-spacing, -0.48px);
+    letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1709,10 +1709,10 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--text-title-h1, rgb(34, 34, 34));
-    font-family: var(--inline-title-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    color: var(--text-title-h1);
+    font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
-    font-weight: var(--inline-title-weight, 400);
+    font-weight: var(--inline-title-weight);
     line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -2131,7 +2131,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 1px solid rgba(8, 109, 221, 0.25);
     border-left-width: 0px;
     border-top-left-radius: 4px;
@@ -2191,7 +2191,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2250,7 +2250,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2309,7 +2309,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2368,7 +2368,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2427,7 +2427,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2486,7 +2486,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2545,7 +2545,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2604,7 +2604,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2663,7 +2663,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2722,7 +2722,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2781,7 +2781,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2840,7 +2840,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2899,7 +2899,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3023,13 +3023,13 @@ body {
     color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
-    vertical-align: var(--table-cell-vertical-alignment, bottom);
+    vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 0px) solid rgba(0, 0, 0, 0);
+    border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
     border-right: 1px solid rgba(0, 0, 0, 0);
-    border-top: var(--table-header-border-width, 0px) solid rgb(224, 224, 224);
+    border-top: var(--table-header-border-width) solid rgb(224, 224, 224);
     border-bottom: 1px solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3054,7 +3054,7 @@ body {
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    border-left: var(--table-column-first-border-width, 0px) solid rgba(0, 0, 0, 0);
+    border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
     border-right: 1px solid rgba(0, 0, 0, 0);
     border-top: 1px solid rgb(224, 224, 224);
     border-bottom: 1px solid rgb(224, 224, 224);
@@ -3344,14 +3344,14 @@ body {
 
   .metadata-property-key {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-label-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-input-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+    font-family: var(--metadata-input-font);
     font-size: 16px;
   }
 
@@ -3473,7 +3473,7 @@ body {
   kbd {
     background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(77, 185, 90));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(77, 185, 90);
@@ -3843,19 +3843,14 @@ body {
   .explorer .folder-container > div {
     color: rgb(92, 92, 92);
     font-family:
-      ui-sans-serif,
+      Spectral,
       -apple-system,
       BlinkMacSystemFont,
-      system-ui,
       "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      sans-serif;
+      serif;
     font-weight: 400;
   }
 
@@ -3922,8 +3917,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgb(238, 182, 98));
-    color: var(--pill-color, rgb(34, 34, 34));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -4226,8 +4221,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgb(238, 182, 98));
-    color: var(--tag-color, rgb(34, 34, 34));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4275,9 +4270,9 @@ body {
   }
 
   h1.article-title {
-    color: var(--text-title-h1, rgb(34, 34, 34));
+    color: var(--text-title-h1);
     font-size: var(--inline-title-size);
-    font-weight: var(--inline-title-weight, 400);
+    font-weight: var(--inline-title-weight);
   }
 
   html {
@@ -4978,12 +4973,12 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(127, 202, 230));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+      font-family: var(--font-links);
       font-weight: var(--link-weight);
       outline: rgb(127, 202, 230) none 0px;
       text-decoration: underline;
@@ -5007,12 +5002,12 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(221, 211, 253));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+      font-family: var(--font-links);
       font-weight: var(--link-weight);
       outline: rgb(221, 211, 253) none 0px;
       text-decoration: underline;
@@ -5035,16 +5030,16 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(213, 174, 207));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+      font-family: var(--font-links);
       font-weight: var(--link-weight);
       outline: rgb(213, 174, 207) none 0px;
       text-decoration: rgba(183, 154, 249, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(183, 154, 249, 0.3));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -5403,7 +5398,7 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgba(0, 0, 0, 0));
+      background-color: var(--text-highlight-bg);
       color: var(--text-normal);
       cursor: grab;
       filter: none;
@@ -5540,10 +5535,10 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(183, 154, 249, 0.1));
-      color: var(--pill-color, rgb(238, 182, 98));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
-      font-family: var(--font-links, "Alegreya SC", Spectral, serif);
+      font-family: var(--font-links);
       font-size: 14px;
       font-weight: var(--pill-weight);
       line-height: var(--line-height-tight);
@@ -5649,7 +5644,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(98, 215, 112));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -5910,11 +5905,11 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--text-title-h1, rgb(218, 218, 218));
-      font-family: var(--font-title, "Playfair Display");
+      color: var(--text-title-h1);
+      font-family: var(--font-title);
       font-size: var(--h1-size);
-      font-weight: var(--title-weight, 400);
-      line-height: var(--line-height-headings, 31.0656px);
+      font-weight: var(--title-weight);
+      line-height: var(--line-height-headings);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h1-letter-spacing);
@@ -5943,14 +5938,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--text-title-h2, rgb(218, 218, 218));
-      font-family: var(--h2-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      color: var(--text-title-h2);
+      font-family: var(--h2-font);
       font-size: var(--h2-size);
-      font-weight: var(--heading-weight, 600);
-      line-height: var(--line-height-headings, 28.0704px);
+      font-weight: var(--heading-weight);
+      line-height: var(--line-height-headings);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.70176px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5976,14 +5971,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--text-title-h3, rgb(218, 218, 218));
-      font-family: var(--h3-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      color: var(--text-title-h3);
+      font-family: var(--h3-font);
       font-size: var(--h3-size);
-      font-weight: var(--heading-weight, 600);
-      line-height: var(--line-height-headings, 25.3056px);
+      font-weight: var(--heading-weight);
+      line-height: var(--line-height-headings);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.63264px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6009,14 +6004,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--text-title-h4, rgb(218, 218, 218));
-      font-family: var(--h4-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      color: var(--text-title-h4);
+      font-family: var(--h4-font);
       font-size: var(--h4-size);
-      font-weight: var(--heading-weight, 600);
-      line-height: var(--line-height-headings, 22.8096px);
+      font-weight: var(--heading-weight);
+      line-height: var(--line-height-headings);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.57024px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6042,14 +6037,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--text-title-h5, rgb(218, 218, 218));
-      font-family: var(--h5-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      color: var(--text-title-h5);
+      font-family: var(--h5-font);
       font-size: var(--h5-size);
-      font-weight: var(--heading-weight, 600);
-      line-height: var(--line-height-headings, 20.6592px);
+      font-weight: var(--heading-weight);
+      line-height: var(--line-height-headings);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.51648px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6075,14 +6070,14 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--text-title-h6, rgb(218, 218, 218));
-      font-family: var(--h6-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      color: var(--text-title-h6);
+      font-family: var(--h6-font);
       font-size: var(--h6-size);
-      font-weight: var(--heading-weight, 600);
-      line-height: var(--line-height-headings, 19.2px);
+      font-weight: var(--heading-weight);
+      line-height: var(--line-height-headings);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h6-letter-spacing, -0.48px);
+      letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6109,10 +6104,10 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--text-title-h1, rgb(218, 218, 218));
-      font-family: var(--inline-title-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      color: var(--text-title-h1);
+      font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
-      font-weight: var(--inline-title-weight, 400);
+      font-weight: var(--inline-title-weight);
       line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -6531,7 +6526,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 1px solid rgba(2, 122, 255, 0.25);
       border-left-width: 0px;
       border-top-left-radius: 4px;
@@ -6591,7 +6586,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6650,7 +6645,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6709,7 +6704,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6768,7 +6763,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6827,7 +6822,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6886,7 +6881,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6945,7 +6940,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7004,7 +6999,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7063,7 +7058,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7122,7 +7117,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7181,7 +7176,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7240,7 +7235,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7299,7 +7294,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7423,13 +7418,13 @@ html[saved-theme="dark"] {
       color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
-      vertical-align: var(--table-cell-vertical-alignment, bottom);
+      vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width, 0px) solid rgba(0, 0, 0, 0);
+      border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
       border-right: 1px solid rgba(0, 0, 0, 0);
-      border-top: var(--table-header-border-width, 0px) solid rgb(54, 54, 54);
+      border-top: var(--table-header-border-width) solid rgb(54, 54, 54);
       border-bottom: 1px solid rgb(54, 54, 54);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7454,7 +7449,7 @@ html[saved-theme="dark"] {
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border-left: var(--table-column-first-border-width, 0px) solid rgba(0, 0, 0, 0);
+      border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
       border-right: 1px solid rgba(0, 0, 0, 0);
       border-top: 1px solid rgb(54, 54, 54);
       border-bottom: 1px solid rgb(54, 54, 54);
@@ -7744,14 +7739,14 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-label-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      font-family: var(--metadata-label-font);
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-input-font, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif);
+      font-family: var(--metadata-input-font);
       font-size: 16px;
     }
 
@@ -7873,7 +7868,7 @@ html[saved-theme="dark"] {
     kbd {
       background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(98, 215, 112));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(98, 215, 112);
@@ -8243,19 +8238,14 @@ html[saved-theme="dark"] {
     .explorer .folder-container > div {
       color: rgb(179, 179, 179);
       font-family:
-        ui-sans-serif,
+        Spectral,
         -apple-system,
         BlinkMacSystemFont,
-        system-ui,
         "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
         "Apple Color Emoji",
         "Segoe UI Emoji",
         "Segoe UI Symbol",
-        sans-serif;
+        serif;
       font-weight: 400;
     }
 
@@ -8322,8 +8312,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(183, 154, 249, 0.1));
-      color: var(--pill-color, rgb(238, 182, 98));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -8626,8 +8616,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(183, 154, 249, 0.1));
-      color: var(--tag-color, rgb(238, 182, 98));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(183, 154, 249, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -8657,7 +8647,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(183, 154, 249));
+      background-color: var(--checkbox-color);
       border-color: rgb(183, 154, 249);
     }
 
@@ -8675,9 +8665,9 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--text-title-h1, rgb(218, 218, 218));
+      color: var(--text-title-h1);
       font-size: var(--inline-title-size);
-      font-weight: var(--inline-title-weight, 400);
+      font-weight: var(--inline-title-weight);
     }
 
     html {

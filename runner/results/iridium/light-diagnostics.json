@@ -1,0 +1,35 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--nav-item-weight",
+      "references": "--i-lt-folder-weight",
+      "selector": "li.depth-0",
+      "aspect": "toc"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--nav-item-weight",
+      "references": "--i-lt-folder-weight",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-weight",
+      "references": "--i-lt-folder-weight",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-05-04T10:04:09.705Z",
+  "extractedAt": "2026-05-10T19:19:03.772Z",
   "sourceTheme": "Ultra Lobster",
   "fonts": [
     {
@@ -197,6 +197,26 @@
       "style": "italic",
       "weight": "500 1000",
       "file": "inter-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Newsreader",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "newsreader.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Newsreader",
+      "style": "italic",
+      "weight": "100 900",
+      "file": "newsreader-1.woff2",
       "format": "woff2",
       "unicodeRange": null,
       "sourceType": "base64",

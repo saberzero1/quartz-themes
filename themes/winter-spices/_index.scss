@@ -7,7 +7,7 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
+  --callout-blend-mode: normal;
   --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb);
@@ -17,49 +17,49 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 0px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #a48783) !important;
-  --checkbox-border-color-hover: var(--text-muted, #c1aeac) !important;
-  --checkbox-color: var(--interactive-accent, #7f6c5e) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: #7f6c5e !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #fcfef3) !important;
-  --checkbox-radius: var(--radius-s, 10px) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 10px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #4b213909) !important;
-  --code-border-color: var(--background-modifier-border, #a48783) !important;
+  --code-background: #4b213909 !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #a48783) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #666666) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, #c1aeac) !important;
-  --code-radius: var(--radius-s, 0px) !important;
+  --code-punctuation: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
-  --collapse-icon-color: var(--text-faint, #a48783) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #527a98) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #c1aeac) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #527a98) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #a48783) !important;
-  --graph-text: var(--text-normal, #666666) !important;
-  --icon-color: var(--text-muted, #c8bcac) !important;
-  --icon-color-active: var(--text-accent, #527a98) !important;
-  --icon-color-focused: var(--text-normal, #fff) !important;
-  --icon-color-hover: var(--text-muted, #41250c) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: #c8bcac !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: #fff !important;
+  --icon-color-hover: #41250c !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -381,20 +381,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(252, 254, 243));
-    color: var(--text-normal, rgb(102, 102, 102));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(252, 254, 243));
+    background-color: var(--background-primary);
     color: rgb(102, 102, 102);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(75, 33, 57));
+    background-color: var(--background-secondary);
     color: rgb(102, 102, 102);
   }
 
@@ -402,12 +402,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(75, 33, 57));
+    background-color: var(--tab-container-background);
     color: rgb(102, 102, 102);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(75, 33, 57));
+    background-color: var(--tab-container-background);
     color: rgb(102, 102, 102);
     border-left: 0px rgba(0, 0, 0, 0);
   }
@@ -419,7 +419,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(82, 122, 152));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -461,7 +461,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(82, 122, 152));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -502,7 +502,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(82, 122, 152));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -560,7 +560,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(193, 174, 172));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -601,7 +601,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(102, 102, 102));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -642,7 +642,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(102, 102, 102));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -683,7 +683,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(102, 102, 102));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -724,7 +724,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(102, 102, 102));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -843,7 +843,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(102, 102, 102));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -874,7 +874,7 @@ body {
 
   .text-highlight {
     background-color: var(--text-highlight-bg);
-    color: var(--text-normal, rgb(102, 102, 102));
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1004,8 +1004,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(0, 0, 0, 0));
-    color: var(--pill-color, rgb(164, 135, 131));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1116,7 +1116,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgba(75, 33, 57, 0.035));
+    background-color: var(--code-background);
     border: 0px solid rgb(164, 135, 131);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1126,7 +1126,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(102, 102, 102));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1158,7 +1158,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgba(75, 33, 57, 0.035));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1222,7 +1222,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(102, 102, 102));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1250,7 +1250,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(164, 135, 131));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1265,7 +1265,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(102, 102, 102));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1283,7 +1283,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(252, 254, 243));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(32, 36, 48);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1386,10 +1386,10 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(164, 135, 131));
-    font-family: var(--h1-font, Georgia, serif);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
     font-size: var(--h1-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1419,10 +1419,10 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(164, 135, 131));
-    font-family: var(--h2-font, Georgia, serif);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1452,10 +1452,10 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(164, 135, 131));
-    font-family: var(--h3-font, Georgia, serif);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1468,10 +1468,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 40px);
-    margin-bottom: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 40px 0px 16px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1488,10 +1485,10 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(164, 135, 131));
-    font-family: var(--h4-font, Georgia, serif);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1504,10 +1501,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 40px);
-    margin-bottom: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 40px 0px 16px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1524,10 +1518,10 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(164, 135, 131));
-    font-family: var(--h5-font, Georgia, serif);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1540,10 +1534,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 40px);
-    margin-bottom: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 40px 0px 16px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1560,10 +1551,10 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(164, 135, 131));
-    font-family: var(--h6-font, Georgia, serif);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1594,11 +1585,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(164, 135, 131));
-    font-family: var(--inline-title-font, georgia, serif);
-    font-size: var(--inline-title-size, 32px);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 38.4px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.48px;
@@ -2016,7 +2007,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 2px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2058,7 +2049,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2075,7 +2066,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2116,7 +2107,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2133,7 +2124,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2174,7 +2165,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2191,7 +2182,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2232,7 +2223,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2249,7 +2240,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2290,7 +2281,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2307,7 +2298,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2348,7 +2339,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2365,7 +2356,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2406,7 +2397,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2423,7 +2414,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2464,7 +2455,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2481,7 +2472,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2522,7 +2513,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2539,7 +2530,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2580,7 +2571,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2597,7 +2588,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2638,7 +2629,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2655,7 +2646,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2696,7 +2687,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2713,7 +2704,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2754,7 +2745,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2771,7 +2762,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2812,7 +2803,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(164, 135, 131));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2888,7 +2879,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(102, 102, 102));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2916,7 +2907,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(102, 102, 102));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3110,8 +3101,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(164, 135, 131));
-    color: var(--text-muted, rgb(193, 174, 172));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 0px;
     border-color: rgb(193, 174, 172);
     border-width: 0px;
@@ -3125,7 +3116,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(193, 174, 172));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3248,7 +3239,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(193, 174, 172));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3338,9 +3329,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgba(75, 33, 57, 0.035));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(102, 102, 102));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(102, 102, 102);
@@ -3660,7 +3651,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(255, 255, 255));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: georgia, serif;
     font-weight: var(--nav-item-weight);
@@ -3668,7 +3659,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(255, 255, 255));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: georgia, serif;
     font-weight: var(--nav-item-weight);
@@ -3680,21 +3671,8 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: georgia, serif;
     font-weight: 400;
   }
 
@@ -3708,7 +3686,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(102, 102, 102));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgba(0, 0, 0, 0);
   }
@@ -3729,12 +3707,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(102, 102, 102));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(252, 254, 243));
+    background-color: var(--background-primary);
     border-color: rgb(102, 102, 102);
     box-shadow: var(--input-shadow);
   }
@@ -3761,8 +3739,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(0, 0, 0, 0));
-    color: var(--pill-color, rgb(164, 135, 131));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3776,7 +3754,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(200, 188, 172));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(200, 188, 172);
     border-width: 0px;
@@ -3787,8 +3765,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(75, 33, 57));
-    color: var(--status-bar-text-color, rgb(193, 174, 172));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3849,7 +3827,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(255, 255, 255));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3878,7 +3856,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(255, 255, 255));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3888,7 +3866,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(200, 188, 172));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(200, 188, 172);
     border-width: 0px;
@@ -3915,7 +3893,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(164, 135, 131));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3933,11 +3911,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(75, 33, 57));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(102, 102, 102));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4069,8 +4047,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(0, 0, 0, 0));
-    color: var(--tag-color, rgb(164, 135, 131));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4100,17 +4078,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(127, 108, 94));
+    background-color: var(--checkbox-color);
     border-color: rgb(127, 108, 94);
   }
 
   .stacked-page {
     border-color: rgb(102, 102, 102);
-    background-color: var(--background-secondary, rgb(75, 33, 57));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(164, 135, 131));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4118,8 +4096,8 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(164, 135, 131));
-    font-size: var(--inline-title-size, 32px);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -4136,7 +4114,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4144,14 +4121,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4162,9 +4136,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4187,7 +4158,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4199,16 +4169,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4227,7 +4190,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4235,14 +4197,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4253,9 +4212,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4278,7 +4234,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4290,16 +4245,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4318,7 +4266,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4326,14 +4273,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4344,9 +4288,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4369,7 +4310,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4381,16 +4321,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4409,7 +4342,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4417,14 +4349,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4435,9 +4364,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4460,7 +4386,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4472,16 +4397,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4500,7 +4418,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4508,14 +4425,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4526,9 +4440,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4551,7 +4462,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4563,16 +4473,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4591,7 +4494,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4599,14 +4501,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4617,9 +4516,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4642,7 +4538,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4654,16 +4549,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4682,7 +4570,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4690,14 +4577,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4708,9 +4592,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4733,7 +4614,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4745,16 +4625,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4773,7 +4646,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4781,14 +4653,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4799,9 +4668,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4824,7 +4690,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4836,16 +4701,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4864,7 +4722,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4872,14 +4729,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4890,9 +4744,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -4915,7 +4766,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -4927,16 +4777,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -4955,7 +4798,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -4963,14 +4805,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4981,9 +4820,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5006,7 +4842,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5018,16 +4853,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5046,7 +4874,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5054,14 +4881,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5072,9 +4896,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5097,7 +4918,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5109,16 +4929,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5137,7 +4950,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5145,14 +4957,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5163,9 +4972,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5188,7 +4994,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5200,16 +5005,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5228,7 +5026,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5236,14 +5033,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5254,9 +5048,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5279,7 +5070,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5291,16 +5081,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5319,7 +5102,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5327,14 +5109,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5345,9 +5124,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5370,7 +5146,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5382,16 +5157,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5410,7 +5178,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5418,14 +5185,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5436,9 +5200,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5461,7 +5222,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5473,16 +5233,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5501,7 +5254,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5509,14 +5261,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5527,9 +5276,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5552,7 +5298,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5564,16 +5309,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5592,7 +5330,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5600,14 +5337,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5618,9 +5352,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5643,7 +5374,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5655,16 +5385,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5683,7 +5406,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5691,14 +5413,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5709,9 +5428,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5734,7 +5450,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5746,16 +5461,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5774,7 +5482,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5782,14 +5489,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5800,9 +5504,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5825,7 +5526,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5837,16 +5537,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5865,7 +5558,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5873,14 +5565,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5891,9 +5580,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -5916,7 +5602,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -5928,16 +5613,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -5956,7 +5634,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -5964,14 +5641,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -5982,9 +5656,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6007,7 +5678,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6019,16 +5689,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6047,7 +5710,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6055,14 +5717,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6073,9 +5732,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6098,7 +5754,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6110,16 +5765,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6138,7 +5786,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6146,14 +5793,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6164,9 +5808,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6189,7 +5830,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6201,16 +5841,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6229,7 +5862,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6237,14 +5869,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6255,9 +5884,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6280,7 +5906,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6292,16 +5917,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6320,7 +5938,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6328,14 +5945,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6346,9 +5960,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6371,7 +5982,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6383,16 +5993,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6411,7 +6014,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6419,14 +6021,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6437,9 +6036,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6462,7 +6058,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6474,16 +6069,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6502,7 +6090,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6510,14 +6097,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6528,9 +6112,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6553,7 +6134,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6565,16 +6145,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6593,7 +6166,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6601,14 +6173,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6619,9 +6188,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6644,7 +6210,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6656,16 +6221,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6684,7 +6242,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6692,14 +6249,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6710,9 +6264,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6735,7 +6286,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6747,16 +6297,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6775,7 +6318,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6783,14 +6325,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6801,9 +6340,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6826,7 +6362,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6838,16 +6373,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6866,7 +6394,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6874,14 +6401,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6892,9 +6416,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -6917,7 +6438,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -6929,16 +6449,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -6957,7 +6470,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -6965,14 +6477,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -6983,9 +6492,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7008,7 +6514,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7020,16 +6525,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7048,7 +6546,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7056,14 +6553,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7074,9 +6568,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7099,7 +6590,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7111,16 +6601,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7139,7 +6622,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7147,14 +6629,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7165,9 +6644,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7190,7 +6666,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7202,16 +6677,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7230,7 +6698,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7238,14 +6705,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7256,9 +6720,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7281,7 +6742,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7293,16 +6753,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7321,7 +6774,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7329,14 +6781,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7347,9 +6796,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7372,7 +6818,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7384,16 +6829,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7412,7 +6850,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7420,14 +6857,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7438,9 +6872,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7463,7 +6894,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7475,16 +6905,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7503,7 +6926,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7511,14 +6933,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7529,9 +6948,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7554,7 +6970,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7566,16 +6981,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7594,7 +7002,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7602,14 +7009,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7620,9 +7024,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7645,7 +7046,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7657,16 +7057,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7685,7 +7078,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7693,14 +7085,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7711,9 +7100,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7736,7 +7122,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7748,16 +7133,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7776,7 +7154,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7784,14 +7161,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7802,9 +7176,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7827,7 +7198,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7839,16 +7209,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7867,7 +7230,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7875,14 +7237,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7893,9 +7252,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -7918,7 +7274,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -7930,16 +7285,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -7958,7 +7306,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -7966,14 +7313,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -7984,9 +7328,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8009,7 +7350,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8021,16 +7361,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8049,7 +7382,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8057,14 +7389,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8075,9 +7404,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8100,7 +7426,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8112,16 +7437,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8140,7 +7458,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8148,14 +7465,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8166,9 +7480,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8191,7 +7502,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8203,16 +7513,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8231,7 +7534,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8239,14 +7541,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8257,9 +7556,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8282,7 +7578,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8294,16 +7589,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8322,7 +7610,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8330,14 +7617,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8348,9 +7632,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8373,7 +7654,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8385,16 +7665,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8413,7 +7686,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8421,14 +7693,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8439,9 +7708,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8464,7 +7730,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8476,16 +7741,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8504,7 +7762,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8512,14 +7769,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8530,9 +7784,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8555,7 +7806,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8567,16 +7817,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8595,7 +7838,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8603,14 +7845,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8621,9 +7860,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8646,7 +7882,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8658,16 +7893,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8686,7 +7914,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8694,14 +7921,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8712,9 +7936,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8737,7 +7958,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8749,16 +7969,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8777,7 +7990,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8785,14 +7997,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8803,9 +8012,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8828,7 +8034,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8840,16 +8045,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8868,7 +8066,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8876,14 +8073,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8894,9 +8088,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -8919,7 +8110,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -8931,16 +8121,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -8959,7 +8142,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -8967,14 +8149,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -8985,9 +8164,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9010,7 +8186,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9022,16 +8197,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9050,7 +8218,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9058,14 +8225,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9076,9 +8240,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9101,7 +8262,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9113,16 +8273,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9141,7 +8294,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9149,14 +8301,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9167,9 +8316,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9192,7 +8338,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9204,16 +8349,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9232,7 +8370,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9240,14 +8377,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9258,9 +8392,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9283,7 +8414,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9295,16 +8425,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9323,7 +8446,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9331,14 +8453,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9349,9 +8468,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9374,7 +8490,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9386,16 +8501,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9414,7 +8522,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9422,14 +8529,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9440,9 +8544,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9465,7 +8566,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9477,16 +8577,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9505,7 +8598,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9513,14 +8605,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9531,9 +8620,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9556,7 +8642,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9568,16 +8653,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9596,7 +8674,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9604,14 +8681,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9622,9 +8696,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9647,7 +8718,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9659,16 +8729,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9687,7 +8750,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9695,14 +8757,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9713,9 +8772,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9738,7 +8794,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9750,16 +8805,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9778,7 +8826,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9786,14 +8833,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9804,9 +8848,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9829,7 +8870,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9841,16 +8881,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9869,7 +8902,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9877,14 +8909,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9895,9 +8924,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -9920,7 +8946,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -9932,16 +8957,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -9960,7 +8978,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -9968,14 +8985,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -9986,9 +9000,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -10011,7 +9022,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -10023,16 +9033,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -10051,7 +9054,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -10059,14 +9061,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -10077,9 +9076,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -10102,7 +9098,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -10114,16 +9109,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;
@@ -10142,7 +9130,6 @@ body {
     --background-secondary-alt: #fcfcfc;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --button-radius: 5px;
-    --callout-blend-mode: darken;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
@@ -10150,14 +9137,11 @@ body {
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
     --checkbox-border-color-hover: #5c5c5c;
-    --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --clickable-icon-radius: 4px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
-    --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -10168,9 +9152,6 @@ body {
     --graph-node-unresolved: #ababab;
     --graph-text: #222222;
     --heading-formatting: #ababab;
-    --hr-color: #e0e0e0;
-    --interactive-hover: #fafafa;
-    --interactive-normal: #ffffff;
     --link-color: hsl(258, 88%, 66%);
     --link-color-hover: hsl(255, 89.76%, 75.9%);
     --link-external-color: hsl(258, 88%, 66%);
@@ -10193,7 +9174,6 @@ body {
     --setting-items-radius: 12px;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
-    --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
     --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
@@ -10205,16 +9185,9 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
-    --table-border-color: #e0e0e0;
     --table-drag-handle-color: #ababab;
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
-    --tag-background: hsla(258, 88%, 66%, 0.1);
-    --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-    --tag-color: hsl(258, 88%, 66%);
-    --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-faint: #ababab;
     --text-muted: #5c5c5c;
     --text-normal: #222222;

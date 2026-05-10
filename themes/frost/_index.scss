@@ -564,8 +564,8 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--color-bg-primary, rgb(255, 255, 255));
-    color: var(--color-text-primary, rgb(26, 32, 44));
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
   }
 
   &[data-slug],
@@ -602,7 +602,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--color-link, rgb(26, 32, 44));
+    color: var(--color-link);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -624,10 +624,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(26, 32, 44) none 0px;
     text-decoration: underline 1px;
-    text-decoration-color: var(--accent, rgb(26, 32, 44));
+    text-decoration-color: var(--accent);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
-    text-decoration-thickness: var(--link-decoration-thickness, 1px);
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: 0.2s;
     transform: none;
     user-select: text;
@@ -644,7 +644,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--color-link, rgb(26, 32, 44));
+    color: var(--color-link);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -666,10 +666,10 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(26, 32, 44) none 0px;
     text-decoration: underline 1px;
-    text-decoration-color: var(--accent, rgb(26, 32, 44));
+    text-decoration-color: var(--accent);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
-    text-decoration-thickness: var(--link-decoration-thickness, 1px);
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -685,7 +685,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--color-link, rgb(26, 32, 44));
+    color: var(--color-link);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -710,7 +710,7 @@ body {
     text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
-    text-decoration-thickness: var(--link-decoration-thickness, 1px);
+    text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
     user-select: text;
@@ -1376,7 +1376,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: -24px;
-    margin-right: var(--spacing-sm, 8px);
+    margin-right: var(--spacing-sm);
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -1432,7 +1432,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--color-link, rgb(26, 32, 44));
+    color: var(--color-link);
     text-decoration: underline 1px;
   }
 
@@ -1580,8 +1580,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--spacing-lg, 0px);
-    margin-bottom: var(--spacing-md, 16px);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     margin-left: 0px;
     margin-right: 0px;
     margin-block-end: 16px;
@@ -1616,8 +1616,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--spacing-lg, 0px);
-    margin-bottom: var(--spacing-md, 16px);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     margin-left: 0px;
     margin-right: 0px;
     margin-block-end: 16px;
@@ -1652,8 +1652,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--spacing-lg, 24px);
-    margin-bottom: var(--spacing-md, 16px);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     margin-left: 0px;
     margin-right: 0px;
     margin-block-end: 16px;
@@ -1688,8 +1688,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--spacing-lg, 24px);
-    margin-bottom: var(--spacing-md, 16px);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     margin-left: 0px;
     margin-right: 0px;
     margin-block-end: 16px;
@@ -1724,8 +1724,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--spacing-lg, 24px);
-    margin-bottom: var(--spacing-md, 16px);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     margin-left: 0px;
     margin-right: 0px;
     margin-block-end: 16px;
@@ -1760,8 +1760,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--spacing-lg, 24px);
-    margin-bottom: var(--spacing-md, 16px);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     margin-left: 0px;
     margin-right: 0px;
     margin-block-end: 16px;
@@ -2203,7 +2203,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2262,7 +2262,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2320,7 +2320,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2378,7 +2378,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2436,7 +2436,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2494,7 +2494,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2552,7 +2552,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2610,7 +2610,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2668,7 +2668,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2726,7 +2726,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2784,7 +2784,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2842,7 +2842,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2900,7 +2900,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2958,7 +2958,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3074,7 +3074,7 @@ body {
   }
 
   th {
-    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
+    background-color: var(--color-bg-secondary);
     color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
@@ -3847,7 +3847,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--color-text-primary, rgb(26, 32, 44));
+    color: var(--color-text-primary);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3864,7 +3864,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--color-text-primary, rgb(26, 32, 44));
+    color: var(--color-text-primary);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3885,20 +3885,16 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(26, 32, 44);
     font-family:
       ui-sans-serif,
+      system-ui,
       -apple-system,
       BlinkMacSystemFont,
-      system-ui,
       "Segoe UI",
-      "Google Sans Flex",
       Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      "Helvetica Neue",
+      Arial,
       sans-serif;
     font-weight: 400;
   }
@@ -3912,7 +3908,7 @@ body {
   }
 
   .bases-table thead th {
-    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
+    background-color: var(--color-bg-secondary);
     color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(224, 224, 224);
@@ -3935,7 +3931,7 @@ body {
 
   .canvas-node-file {
     color: var(--text-normal);
-    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
+    background-color: var(--color-bg-secondary);
   }
 
   .canvas-sidebar {
@@ -4046,7 +4042,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--color-text-primary, rgb(26, 32, 44));
+    color: var(--color-text-primary);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4084,7 +4080,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--color-text-primary, rgb(26, 32, 44));
+    color: var(--color-text-primary);
   }
 
   li.section-li > .section .meta {
@@ -4211,7 +4207,7 @@ body {
   }
 
   .spacer {
-    background-color: var(--color-bg-secondary, rgb(248, 249, 250));
+    background-color: var(--color-bg-secondary);
   }
 
   ul.overflow {
@@ -4986,8 +4982,8 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--color-bg-primary, rgb(26, 32, 44));
-      color: var(--color-text-primary, rgb(237, 242, 247));
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-primary);
     }
 
     &[data-slug],
@@ -5024,7 +5020,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--color-link, rgb(218, 218, 218));
+      color: var(--color-link);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -5046,10 +5042,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(218, 218, 218) none 0px;
       text-decoration: underline 1px;
-      text-decoration-color: var(--accent, rgb(218, 218, 218));
+      text-decoration-color: var(--accent);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
-      text-decoration-thickness: var(--link-decoration-thickness, 1px);
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: 0.2s;
       transform: none;
       user-select: text;
@@ -5066,7 +5062,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--color-link, rgb(218, 218, 218));
+      color: var(--color-link);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -5088,10 +5084,10 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(218, 218, 218) none 0px;
       text-decoration: underline 1px;
-      text-decoration-color: var(--accent, rgb(218, 218, 218));
+      text-decoration-color: var(--accent);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
-      text-decoration-thickness: var(--link-decoration-thickness, 1px);
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -5107,7 +5103,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--color-link, rgb(218, 218, 218));
+      color: var(--color-link);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -5132,7 +5128,7 @@ html[saved-theme="dark"] {
       text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
-      text-decoration-thickness: var(--link-decoration-thickness, 1px);
+      text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.14s ease-in-out;
       transform: none;
       user-select: text;
@@ -5798,7 +5794,7 @@ html[saved-theme="dark"] {
       margin-top: 0px;
       margin-bottom: 0px;
       margin-left: -24px;
-      margin-right: var(--spacing-sm, 8px);
+      margin-right: var(--spacing-sm);
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -5854,7 +5850,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--color-link, rgb(218, 218, 218));
+      color: var(--color-link);
       text-decoration: underline 1px;
     }
 
@@ -6002,8 +5998,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--spacing-lg, 0px);
-      margin-bottom: var(--spacing-md, 16px);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
       margin-left: 0px;
       margin-right: 0px;
       margin-block-end: 16px;
@@ -6038,8 +6034,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--spacing-lg, 0px);
-      margin-bottom: var(--spacing-md, 16px);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
       margin-left: 0px;
       margin-right: 0px;
       margin-block-end: 16px;
@@ -6074,8 +6070,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--spacing-lg, 24px);
-      margin-bottom: var(--spacing-md, 16px);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
       margin-left: 0px;
       margin-right: 0px;
       margin-block-end: 16px;
@@ -6110,8 +6106,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--spacing-lg, 24px);
-      margin-bottom: var(--spacing-md, 16px);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
       margin-left: 0px;
       margin-right: 0px;
       margin-block-end: 16px;
@@ -6146,8 +6142,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--spacing-lg, 24px);
-      margin-bottom: var(--spacing-md, 16px);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
       margin-left: 0px;
       margin-right: 0px;
       margin-block-end: 16px;
@@ -6182,8 +6178,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--spacing-lg, 24px);
-      margin-bottom: var(--spacing-md, 16px);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
       margin-left: 0px;
       margin-right: 0px;
       margin-block-end: 16px;
@@ -6625,7 +6621,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6684,7 +6680,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6742,7 +6738,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6800,7 +6796,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6858,7 +6854,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6916,7 +6912,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6974,7 +6970,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7032,7 +7028,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7090,7 +7086,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7148,7 +7144,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7206,7 +7202,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7264,7 +7260,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7322,7 +7318,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7380,7 +7376,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7496,7 +7492,7 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
+      background-color: var(--color-bg-secondary);
       color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
@@ -8269,7 +8265,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--color-text-primary, rgb(237, 242, 247));
+      color: var(--color-text-primary);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -8286,7 +8282,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--color-text-primary, rgb(237, 242, 247));
+      color: var(--color-text-primary);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -8307,20 +8303,16 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(237, 242, 247);
       font-family:
         ui-sans-serif,
+        system-ui,
         -apple-system,
         BlinkMacSystemFont,
-        system-ui,
         "Segoe UI",
-        "Google Sans Flex",
         Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
+        "Helvetica Neue",
+        Arial,
         sans-serif;
       font-weight: 400;
     }
@@ -8334,7 +8326,7 @@ html[saved-theme="dark"] {
     }
 
     .bases-table thead th {
-      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
+      background-color: var(--color-bg-secondary);
       color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(54, 54, 54);
@@ -8357,7 +8349,7 @@ html[saved-theme="dark"] {
 
     .canvas-node-file {
       color: var(--text-normal);
-      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
+      background-color: var(--color-bg-secondary);
     }
 
     .canvas-sidebar {
@@ -8468,7 +8460,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--color-text-primary, rgb(237, 242, 247));
+      color: var(--color-text-primary);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -8506,7 +8498,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--color-text-primary, rgb(237, 242, 247));
+      color: var(--color-text-primary);
     }
 
     li.section-li > .section .meta {
@@ -8633,7 +8625,7 @@ html[saved-theme="dark"] {
     }
 
     .spacer {
-      background-color: var(--color-bg-secondary, rgb(45, 55, 72));
+      background-color: var(--color-bg-secondary);
     }
 
     ul.overflow {

@@ -7,59 +7,59 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode, normal);
-  --callout-bug: var(--color-red-rgb, 228, 111, 125);
-  --callout-default: var(--color-blue-rgb, 86, 174, 214);
-  --callout-error: var(--color-red-rgb, 228, 111, 125);
-  --callout-example: var(--color-purple-rgb, 181, 132, 199);
-  --callout-fail: var(--color-red-rgb, 228, 111, 125);
-  --callout-important: var(--color-cyan-rgb, 111, 210, 194);
-  --callout-info: var(--color-blue-rgb, 86, 174, 214);
+  --callout-blend-mode: normal;
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb, 251, 179, 108);
-  --callout-radius: var(--radius-s, 2em);
-  --callout-success: var(--color-green-rgb, 165, 209, 140);
-  --callout-summary: var(--color-cyan-rgb, 111, 210, 194);
-  --callout-tip: var(--color-cyan-rgb, 111, 210, 194);
+  --callout-question: var(--color-orange-rgb);
+  --callout-radius: 2em;
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 86, 174, 214);
-  --callout-warning: var(--color-orange-rgb, 251, 179, 108);
-  --checkbox-border-color: var(--text-faint, #5f6980) !important;
-  --checkbox-border-color-hover: var(--text-muted, #8890a6) !important;
-  --checkbox-color: var(--glow-color, white) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #cdd1df) !important;
-  --checkbox-marker-color: var(--background-primary, transparent) !important;
-  --checkbox-radius: var(--radius-s, 20px) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--glow-color) !important;
+  --checkbox-color-hover: vaR(--text-normal) !important;
+  --checkbox-marker-color: transparent !important;
+  --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: calc(var(--font-text-size) + 4px) !important;
-  --code-background: var(--background-primary-alt, #222a38) !important;
-  --code-border-color: var(--background-modifier-border, #3b3f56) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #5f6980) !important;
-  --code-function: var(--color-yellow, #ffde73) !important;
-  --code-important: var(--color-orange, #fbb36c) !important;
-  --code-keyword: var(--color-pink, #ff94c8) !important;
-  --code-normal: var(--text-normal, #cdd1df) !important;
-  --code-operator: var(--color-red, #e46f7d) !important;
-  --code-property: var(--color-cyan, #6fd2c2) !important;
-  --code-punctuation: var(--text-muted, #8890a6) !important;
-  --code-radius: var(--radius-s, 20px) !important;
+  --code-comment: var(--text-faint) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--text-normal) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, #a5d18c) !important;
-  --code-tag: var(--color-red, #e46f7d) !important;
-  --code-value: var(--color-purple, #b584c7) !important;
-  --collapse-icon-color: var(--text-faint, #5f6980) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(38, 102%, 115%)) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #8890a6) !important;
-  --graph-node-attachment: var(--color-yellow, #ffde73) !important;
-  --graph-node-focused: var(--text-accent, hsl(38, 102%, 115%)) !important;
-  --graph-node-tag: var(--color-green, #a5d18c) !important;
-  --graph-node-unresolved: var(--text-faint, #5f6980) !important;
-  --graph-text: var(--text-normal, #cdd1df) !important;
-  --icon-color: var(--text-muted, #8890a6) !important;
-  --icon-color-active: var(--text-accent, hsl(38, 102%, 115%)) !important;
-  --icon-color-focused: var(--text-normal, #cdd1df) !important;
-  --icon-color-hover: var(--text-muted, #8890a6) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -85,11 +85,11 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --callout-title-color: var(--glow-color, white);
+  --callout-title-color: var(--glow-color);
 
   --font-text-theme: var(--font-serif);
   --heading-font: var(--font-cursive);
-  --font-interface-override: var(--font-sans, "Avenir Next");
+  --font-interface-override: var(--font-sans);
   --font-text-override: var(--font-serif), "Source Han Serif", "Noto Serif JP";
   --font-monospace-override: "??";
 
@@ -171,20 +171,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(42, 49, 65));
-    color: var(--text-normal, rgb(205, 209, 223));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(42, 49, 65));
+    background-color: var(--background-primary);
     color: rgb(205, 209, 223);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(38, 43, 59));
+    background-color: var(--background-secondary);
     color: rgb(205, 209, 223);
   }
 
@@ -192,12 +192,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(38, 43, 59));
+    background-color: var(--tab-container-background);
     color: rgb(205, 209, 223);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(38, 43, 59));
+    background-color: var(--tab-container-background);
     color: rgb(205, 209, 223);
     border-left: 0px rgb(59, 63, 86);
   }
@@ -209,7 +209,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(255, 255, 255));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -254,7 +254,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(255, 255, 255));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -298,7 +298,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(255, 255, 255));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -323,7 +323,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: underline rgba(255, 255, 255, 0.5);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(255, 255, 255, 0.5));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -359,7 +359,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(136, 144, 166));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -401,7 +401,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(205, 209, 223));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -445,7 +445,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(205, 209, 223));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -489,7 +489,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(205, 209, 223));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -533,7 +533,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(205, 209, 223));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -655,7 +655,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(205, 209, 223));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       Bookerly,
@@ -689,7 +689,7 @@ body {
 
   .text-highlight {
     background-color: var(--text-highlight-bg);
-    color: var(--text-normal, rgb(205, 209, 223));
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -825,8 +825,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgb(38, 43, 59));
-    color: var(--pill-color, rgb(255, 255, 255));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       "Avenir Next",
@@ -844,7 +844,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-size: 14px;
-    font-weight: var(--pill-weight, 300);
+    font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
     text-decoration: rgb(218, 218, 218);
     margin-inline-start: 0px;
@@ -938,7 +938,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(34, 42, 56));
+    background-color: var(--code-background);
     border: 0px solid rgb(59, 63, 86);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -948,7 +948,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(205, 209, 223));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -980,7 +980,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(34, 42, 56));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -1021,7 +1021,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 20px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1043,8 +1043,8 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgb(38, 43, 59));
-    color: var(--blockquote-color, rgb(255, 255, 255));
+    background-color: var(--blockquote-background-color);
+    color: var(--blockquote-color);
     font-family:
       Bookerly,
       "Source Han Serif",
@@ -1063,7 +1063,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 300;
-    font-style: var(--blockquote-font-style, italic);
+    font-style: var(--blockquote-font-style);
     line-height: 24px;
     padding-bottom: 16px;
     padding-top: 16px;
@@ -1075,7 +1075,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(95, 105, 128));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1090,7 +1090,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(205, 209, 223));
+    color: var(--text-normal);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -1109,7 +1109,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(42, 49, 65));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(81, 91, 113);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -1215,16 +1215,16 @@ body {
   }
 
   h1 {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--h1-font, Merienda);
-    font-size: var(--h1-size, 32px);
-    font-weight: var(--font-weight, 900);
-    line-height: var(--h1-line-height, 38.4px);
+    color: var(--glow-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
       rgba(93, 182, 255, 0.318) 0px 0px 10px;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h1-letter-spacing, -0.48px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1250,10 +1250,10 @@ body {
   }
 
   h2 {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--h2-font, Merienda);
+    color: var(--glow-color);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
-    font-weight: var(--font-weight, 800);
+    font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
@@ -1285,10 +1285,10 @@ body {
   }
 
   h3 {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--h3-font, Merienda);
+    color: var(--glow-color);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
-    font-weight: var(--font-weight, 700);
+    font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
@@ -1320,10 +1320,10 @@ body {
   }
 
   h4 {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--h4-font, Merienda);
+    color: var(--glow-color);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
@@ -1355,10 +1355,10 @@ body {
   }
 
   h5 {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--h5-font, Merienda);
+    color: var(--glow-color);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
-    font-weight: var(--font-weight, 500);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
@@ -1390,10 +1390,10 @@ body {
   }
 
   h6 {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--h6-font, Merienda);
+    color: var(--glow-color);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
-    font-weight: var(--font-weight, 400);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
@@ -1426,11 +1426,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-family: var(--inline-title-font, Hatolie, Bookerly, "Source Han Serif", "Noto Serif JP", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--inline-title-size, 64px);
-    font-weight: var(--inline-title-weight, 400);
-    line-height: var(--inline-title-line-height, 76.8px);
+    color: var(--glow-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow:
       rgba(255, 255, 255, 0.61) 0px 0px 30px,
       rgba(93, 182, 255, 0.318) 0px 0px 10px;
@@ -1850,7 +1850,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 86, 174, 214);
+    --callout-color: var(--callout-default);
     border: 1px solid rgba(74, 78, 98, 0.984);
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
@@ -1892,7 +1892,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -1909,8 +1909,8 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 86, 174, 214);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-default);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -1950,7 +1950,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -1967,8 +1967,8 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 111, 210, 194);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-summary);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2008,7 +2008,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2025,8 +2025,8 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 86, 174, 214);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-info);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2066,7 +2066,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2083,8 +2083,8 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 86, 174, 214);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-todo);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2124,7 +2124,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2141,8 +2141,8 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 111, 210, 194);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-tip);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2182,7 +2182,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2199,8 +2199,8 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 165, 209, 140);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-success);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2240,7 +2240,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2257,8 +2257,8 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 251, 179, 108);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-question);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2298,7 +2298,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2315,8 +2315,8 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 251, 179, 108);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-warning);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2356,7 +2356,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2373,8 +2373,8 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 228, 111, 125);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-error);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2414,7 +2414,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2431,8 +2431,8 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 228, 111, 125);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-fail);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2472,7 +2472,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2489,8 +2489,8 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 228, 111, 125);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-bug);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2530,7 +2530,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2547,8 +2547,8 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 181, 132, 199);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-example);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2588,7 +2588,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2605,8 +2605,8 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
+    --callout-color: var(--callout-quote);
+    background-color: var(--background-primary-alt);
     background-image: none;
     background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
@@ -2646,7 +2646,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(255, 255, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2725,7 +2725,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(205, 209, 223));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2753,7 +2753,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(205, 209, 223));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2948,8 +2948,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(34, 42, 56));
-    color: var(--text-muted, rgb(136, 144, 166));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 26px;
     border-color: rgb(136, 144, 166);
     border-width: 0px;
@@ -2962,8 +2962,8 @@ body {
   }
 
   .metadata {
-    background-color: var(--background-secondary, rgb(38, 43, 59));
-    color: var(--text-muted, rgb(136, 144, 166));
+    background-color: var(--background-secondary);
+    color: var(--text-muted);
     font-family:
       Bookerly,
       "Source Han Serif",
@@ -3054,14 +3054,14 @@ body {
 
   .metadata-property-key {
     color: rgb(136, 144, 166);
-    font-family: var(--metadata-label-font, "Avenir Next", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(136, 144, 166);
-    font-family: var(--metadata-input-font, "Avenir Next", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-input-font);
     font-size: 16px;
   }
 
@@ -3096,7 +3096,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(136, 144, 166));
+    color: var(--text-normal);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -3187,9 +3187,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(34, 42, 56));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(205, 209, 223));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(205, 209, 223);
@@ -3521,7 +3521,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(136, 144, 166));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       "Avenir Next",
@@ -3543,7 +3543,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(136, 144, 166));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       "Avenir Next",
@@ -3569,8 +3569,9 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
+    color: rgb(136, 144, 166);
     font-family:
+      "Avenir Next",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3597,7 +3598,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(205, 209, 223));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(59, 63, 86);
   }
@@ -3618,12 +3619,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(205, 209, 223));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(38, 43, 59));
+    background-color: var(--background-secondary);
     border-color: rgb(205, 209, 223);
     box-shadow: var(--input-shadow);
   }
@@ -3635,7 +3636,7 @@ body {
   }
 
   .note-properties {
-    background-color: var(--background-secondary, rgb(38, 43, 59));
+    background-color: var(--background-secondary);
     border-color: rgb(59, 63, 86) rgb(59, 63, 86) rgb(59, 63, 86) rgb(255, 255, 255);
     border-radius: 20px;
   }
@@ -3650,8 +3651,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgb(38, 43, 59));
-    color: var(--pill-color, rgb(255, 255, 255));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 14px;
   }
 
@@ -3665,7 +3666,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(136, 144, 166));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(136, 144, 166);
     border-width: 0px;
@@ -3676,8 +3677,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(38, 43, 59));
-    color: var(--status-bar-text-color, rgb(136, 144, 166));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -3740,7 +3741,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(136, 144, 166));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3783,7 +3784,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(136, 144, 166));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3807,7 +3808,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(136, 144, 166));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(136, 144, 166);
     border-width: 0px;
@@ -3834,7 +3835,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(95, 105, 128));
+    color: var(--text-faint);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -3853,11 +3854,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(38, 43, 59));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(205, 209, 223));
+    color: var(--text-normal);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -3990,8 +3991,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgb(38, 43, 59));
-    color: var(--tag-color, rgb(255, 255, 255));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-top-left-radius: 12.25px;
     border-top-right-radius: 12.25px;
@@ -4021,17 +4022,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(255, 255, 255));
+    background-color: var(--checkbox-color);
     border-color: rgb(255, 255, 255);
   }
 
   .stacked-page {
     border-color: rgb(205, 209, 223);
-    background-color: var(--background-secondary, rgb(38, 43, 59));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(29, 35, 47));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4039,15 +4040,14 @@ body {
   }
 
   h1.article-title {
-    color: var(--glow-color, rgb(255, 255, 255));
-    font-size: var(--inline-title-size, 64px);
-    font-weight: var(--inline-title-weight, 400);
+    color: var(--glow-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -4063,7 +4063,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4072,7 +4071,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4086,7 +4084,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -4212,13 +4209,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -4234,7 +4231,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4243,7 +4239,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4257,7 +4252,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -4383,13 +4377,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -4405,7 +4399,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4414,7 +4407,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4428,7 +4420,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -4554,13 +4545,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -4576,7 +4567,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4585,7 +4575,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4599,7 +4588,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -4725,13 +4713,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -4747,7 +4735,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4756,7 +4743,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4770,7 +4756,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -4896,13 +4881,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -4918,7 +4903,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -4927,7 +4911,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4941,7 +4924,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -5067,13 +5049,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -5089,7 +5071,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5098,7 +5079,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5112,7 +5092,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -5238,13 +5217,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -5260,7 +5239,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5269,7 +5247,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5283,7 +5260,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -5409,13 +5385,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -5431,7 +5407,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5440,7 +5415,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5454,7 +5428,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -5580,13 +5553,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -5602,7 +5575,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5611,7 +5583,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5625,7 +5596,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -5751,13 +5721,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -5773,7 +5743,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5782,7 +5751,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5796,7 +5764,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -5922,13 +5889,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -5944,7 +5911,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -5953,7 +5919,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5967,7 +5932,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -6093,13 +6057,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -6115,7 +6079,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6124,7 +6087,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6138,7 +6100,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -6264,13 +6225,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -6286,7 +6247,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6295,7 +6255,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6309,7 +6268,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -6435,13 +6393,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -6457,7 +6415,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6466,7 +6423,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6480,7 +6436,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -6606,13 +6561,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -6628,7 +6583,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6637,7 +6591,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6651,7 +6604,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -6777,13 +6729,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -6799,7 +6751,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6808,7 +6759,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6822,7 +6772,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -6948,13 +6897,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -6970,7 +6919,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -6979,7 +6927,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6993,7 +6940,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -7119,13 +7065,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -7141,7 +7087,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7150,7 +7095,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7164,7 +7108,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -7290,13 +7233,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -7312,7 +7255,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7321,7 +7263,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7335,7 +7276,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -7461,13 +7401,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -7483,7 +7423,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7492,7 +7431,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7506,7 +7444,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -7632,13 +7569,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -7654,7 +7591,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7663,7 +7599,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7677,7 +7612,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -7803,13 +7737,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -7825,7 +7759,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -7834,7 +7767,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7848,7 +7780,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -7974,13 +7905,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -7996,7 +7927,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8005,7 +7935,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8019,7 +7948,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -8145,13 +8073,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -8167,7 +8095,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8176,7 +8103,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8190,7 +8116,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -8316,13 +8241,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -8338,7 +8263,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8347,7 +8271,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8361,7 +8284,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -8487,13 +8409,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -8509,7 +8431,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8518,7 +8439,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8532,7 +8452,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -8658,13 +8577,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -8680,7 +8599,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8689,7 +8607,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8703,7 +8620,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -8829,13 +8745,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -8851,7 +8767,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -8860,7 +8775,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8874,7 +8788,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -9000,13 +8913,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -9022,7 +8935,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9031,7 +8943,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9045,7 +8956,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -9171,13 +9081,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -9193,7 +9103,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9202,7 +9111,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9216,7 +9124,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -9342,13 +9249,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -9364,7 +9271,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9373,7 +9279,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9387,7 +9292,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -9513,13 +9417,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -9535,7 +9439,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9544,7 +9447,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9558,7 +9460,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -9684,13 +9585,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -9706,7 +9607,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9715,7 +9615,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9729,7 +9628,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -9855,13 +9753,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -9877,7 +9775,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -9886,7 +9783,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9900,7 +9796,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -10026,13 +9921,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -10048,7 +9943,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10057,7 +9951,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10071,7 +9964,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -10197,13 +10089,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -10219,7 +10111,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10228,7 +10119,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10242,7 +10132,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -10368,13 +10257,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -10390,7 +10279,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10399,7 +10287,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10413,7 +10300,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -10539,13 +10425,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -10561,7 +10447,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10570,7 +10455,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10584,7 +10468,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -10710,13 +10593,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -10732,7 +10615,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10741,7 +10623,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10755,7 +10636,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -10881,13 +10761,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -10903,7 +10783,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -10912,7 +10791,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10926,7 +10804,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -11052,13 +10929,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -11074,7 +10951,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11083,7 +10959,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11097,7 +10972,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -11223,13 +11097,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -11245,7 +11119,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11254,7 +11127,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11268,7 +11140,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -11394,13 +11265,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -11416,7 +11287,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11425,7 +11295,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11439,7 +11308,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -11565,13 +11433,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -11587,7 +11455,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11596,7 +11463,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11610,7 +11476,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -11736,13 +11601,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -11758,7 +11623,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11767,7 +11631,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11781,7 +11644,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -11907,13 +11769,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -11929,7 +11791,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -11938,7 +11799,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11952,7 +11812,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -12078,13 +11937,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -12100,7 +11959,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12109,7 +11967,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12123,7 +11980,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -12249,13 +12105,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -12271,7 +12127,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12280,7 +12135,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12294,7 +12148,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -12420,13 +12273,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -12442,7 +12295,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12451,7 +12303,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12465,7 +12316,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -12591,13 +12441,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -12613,7 +12463,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12622,7 +12471,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12636,7 +12484,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -12762,13 +12609,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -12784,7 +12631,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12793,7 +12639,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12807,7 +12652,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -12933,13 +12777,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -12955,7 +12799,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -12964,7 +12807,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12978,7 +12820,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -13104,13 +12945,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -13126,7 +12967,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13135,7 +12975,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13149,7 +12988,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -13275,13 +13113,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -13297,7 +13135,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13306,7 +13143,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13320,7 +13156,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -13446,13 +13281,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -13468,7 +13303,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13477,7 +13311,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13491,7 +13324,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -13617,13 +13449,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -13639,7 +13471,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13648,7 +13479,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13662,7 +13492,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -13788,13 +13617,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -13810,7 +13639,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13819,7 +13647,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13833,7 +13660,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -13959,13 +13785,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -13981,7 +13807,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -13990,7 +13815,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -14004,7 +13828,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -14130,13 +13953,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -14152,7 +13975,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -14161,7 +13983,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -14175,7 +13996,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -14301,13 +14121,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -14323,7 +14143,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -14332,7 +14151,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -14346,7 +14164,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -14472,13 +14289,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -14494,7 +14311,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -14503,7 +14319,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -14517,7 +14332,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -14643,13 +14457,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(255, 255, 255);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -14665,7 +14479,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -14674,7 +14487,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -14688,7 +14500,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -14814,13 +14625,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -14836,7 +14647,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -14845,7 +14655,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -14859,7 +14668,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -14985,13 +14793,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -15007,7 +14815,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -15016,7 +14823,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -15030,7 +14836,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -15156,13 +14961,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -15178,7 +14983,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -15187,7 +14991,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -15201,7 +15004,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -15327,13 +15129,13 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(205, 209, 223);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-    --background-modifier-border: #363636;
     --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
@@ -15349,7 +15151,6 @@ body {
     --background-secondary-alt: #363636;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --callout-blend-mode: lighten;
     --callout-bug: 251, 70, 76;
     --callout-default: 2, 122, 255;
     --callout-error: 251, 70, 76;
@@ -15358,7 +15159,6 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
-    --callout-radius: 4px;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -15372,7 +15172,6 @@ body {
     --checkbox-border-color-hover: #b3b3b3;
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
-    --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --checklist-done-color: #b3b3b3;
@@ -15498,6 +15297,7 @@ body {
     --text-on-accent: white;
     text-shadow: none;
     text-decoration-line: none;
+    border-color: rgb(218, 218, 218);
     font-style: normal;
   }
 

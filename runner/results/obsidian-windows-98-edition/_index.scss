@@ -3413,21 +3413,8 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: "Pixelated MS Sans Serif";
     font-weight: 400;
   }
 
@@ -3439,6 +3426,7 @@ body {
     text-align: start;
     color: rgb(0, 0, 0);
     width: 12px;
+    height: 0px;
     background-color: rgba(0, 0, 0, 0);
   }
 

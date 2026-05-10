@@ -747,12 +747,12 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(0, 0, 0));
+    color: var(--pill-color);
     display: flex;
     font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12.6px;
     font-weight: var(--pill-weight);
-    line-height: var(--line-height-tight, 12.6px);
+    line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
     border: 0px solid rgba(138, 92, 245, 0.15);
@@ -776,8 +776,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.08px);
-    padding-bottom: var(--list-spacing, 1.08px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -813,8 +813,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 1.08px);
-    padding-bottom: var(--list-spacing, 1.08px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1076,14 +1076,14 @@ body {
   }
 
   h1 {
-    color: var(--heading-text-color, rgb(55, 53, 47));
-    font-family: var(--h1-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--size-h1, 24px);
+    color: var(--heading-text-color);
+    font-family: var(--h1-font);
+    font-size: var(--size-h1);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 28.8px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.36px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1109,14 +1109,14 @@ body {
   }
 
   h2 {
-    color: var(--heading-text-color, rgb(55, 53, 47));
-    font-family: var(--h2-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--size-h2, 20.4px);
+    color: var(--heading-text-color);
+    font-family: var(--h2-font);
+    font-size: var(--size-h2);
     font-weight: var(--font-weight);
-    line-height: var(--h2-line-height, 24.48px);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.2244px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1142,14 +1142,14 @@ body {
   }
 
   h3 {
-    color: var(--heading-text-color, rgb(55, 53, 47));
-    font-family: var(--h3-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--size-h3, 20px);
+    color: var(--heading-text-color);
+    font-family: var(--h3-font);
+    font-size: var(--size-h3);
     font-weight: var(--font-weight);
-    line-height: var(--h3-line-height, 24px);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.16px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1175,14 +1175,14 @@ body {
   }
 
   h4 {
-    color: var(--heading-text-color, rgb(55, 53, 47));
-    font-family: var(--h4-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--size-h4, 15.6px);
+    color: var(--heading-text-color);
+    font-family: var(--h4-font);
+    font-size: var(--size-h4);
     font-weight: var(--font-weight);
-    line-height: var(--h4-line-height, 18.72px);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.078px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1208,14 +1208,14 @@ body {
   }
 
   h5 {
-    color: var(--heading-text-color, rgb(55, 53, 47));
-    font-family: var(--h5-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--size-h5, 13.792px);
+    color: var(--heading-text-color);
+    font-family: var(--h5-font);
+    font-size: var(--size-h5);
     font-weight: var(--font-weight);
-    line-height: var(--h5-line-height, 16.5504px);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.027584px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1241,11 +1241,11 @@ body {
   }
 
   h6 {
-    color: var(--heading-text-color, rgb(55, 53, 47));
-    font-family: var(--h6-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--size-h6, 12px);
+    color: var(--heading-text-color);
+    font-family: var(--h6-font);
+    font-size: var(--size-h6);
     font-weight: var(--font-weight);
-    line-height: var(--h6-line-height, 14.4px);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -1276,10 +1276,10 @@ body {
   h2.page-title,
   h2.page-title a {
     color: var(--inline-title-color);
-    font-family: var(--inline-title-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-    font-size: var(--inline-title-size, 23.2992px);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 27.959px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.349488px;
@@ -1697,7 +1697,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1756,7 +1756,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1814,7 +1814,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1872,7 +1872,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1930,7 +1930,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1988,7 +1988,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2046,7 +2046,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2104,7 +2104,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2162,7 +2162,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2220,7 +2220,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2278,7 +2278,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2336,7 +2336,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2394,7 +2394,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2452,7 +2452,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2525,10 +2525,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: calc(var(--heading-spacing) + 5px);
-    margin-bottom: calc(var(--heading-spacing) - 12px);
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2825,14 +2822,14 @@ body {
 
   .metadata-property-key {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-label-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-family: var(--metadata-label-font);
     font-size: 14.4px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-input-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-family: var(--metadata-input-font);
     font-size: 14.4px;
   }
 
@@ -2948,7 +2945,7 @@ body {
     box-shadow: none;
     color: var(--code-normal);
     font-family: var(--font-monospace);
-    font-size: var(--code-size, 12.6px);
+    font-size: var(--code-size);
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3214,16 +3211,16 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(114, 113, 109));
-    cursor: var(--cursor, pointer);
+    color: var(--nav-item-color);
+    cursor: var(--cursor);
     font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(114, 113, 109));
-    cursor: var(--cursor, pointer);
+    color: var(--nav-item-color);
+    cursor: var(--cursor);
     font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
@@ -3234,26 +3231,13 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-weight: 400;
+    color: rgb(114, 113, 109);
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
   }
 
   .nav-files-container {
-    background-color: var(--color-base-10, rgb(250, 250, 250));
+    background-color: var(--color-base-10);
   }
 
   .bases-table {
@@ -3316,7 +3300,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(0, 0, 0));
+    color: var(--pill-color);
     border-radius: 5px;
   }
 
@@ -3331,7 +3315,7 @@ body {
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
-    cursor: var(--cursor, pointer);
+    cursor: var(--cursor);
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3377,7 +3361,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(114, 113, 109));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3386,7 +3370,7 @@ body {
   }
 
   ul.section-ul {
-    background-color: var(--color-base-10, rgb(250, 250, 250));
+    background-color: var(--color-base-10);
     border-color: rgb(34, 34, 34);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3406,7 +3390,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(114, 113, 109));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3417,7 +3401,7 @@ body {
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
-    cursor: var(--cursor, pointer);
+    cursor: var(--cursor);
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3573,7 +3557,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--tag-color, rgb(0, 0, 0));
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -3622,7 +3606,7 @@ body {
 
   h1.article-title {
     color: var(--inline-title-color);
-    font-size: var(--inline-title-size, 23.2992px);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -4578,7 +4562,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(200, 200, 200));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -4606,7 +4590,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(200, 200, 200));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -4634,7 +4618,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(200, 200, 200));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -4662,7 +4646,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(200, 200, 200));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -4768,7 +4752,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(200, 200, 200));
+      color: var(--italic-color);
       cursor: grab;
       font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 600;
@@ -4890,13 +4874,13 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(0, 0, 0, 0));
-      color: var(--pill-color, rgb(255, 255, 255));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 12.6px;
       font-weight: var(--pill-weight);
-      line-height: var(--line-height-tight, 12.6px);
+      line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
       border: 0px solid rgba(138, 92, 245, 0.15);
@@ -4920,8 +4904,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.08px);
-      padding-bottom: var(--list-spacing, 1.08px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -4957,8 +4941,8 @@ html[saved-theme="dark"] {
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 1.08px);
-      padding-bottom: var(--list-spacing, 1.08px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -5220,14 +5204,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--heading-text-color, rgb(255, 255, 255));
-      font-family: var(--h1-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--size-h1, 24px);
+      color: var(--heading-text-color);
+      font-family: var(--h1-font);
+      font-size: var(--size-h1);
       font-weight: var(--font-weight);
-      line-height: var(--h1-line-height, 28.8px);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.36px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5253,14 +5237,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--heading-text-color, rgb(255, 255, 255));
-      font-family: var(--h2-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--size-h2, 20.4px);
+      color: var(--heading-text-color);
+      font-family: var(--h2-font);
+      font-size: var(--size-h2);
       font-weight: var(--font-weight);
-      line-height: var(--h2-line-height, 24.48px);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.2244px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5286,14 +5270,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--heading-text-color, rgb(255, 255, 255));
-      font-family: var(--h3-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--size-h3, 20px);
+      color: var(--heading-text-color);
+      font-family: var(--h3-font);
+      font-size: var(--size-h3);
       font-weight: var(--font-weight);
-      line-height: var(--h3-line-height, 24px);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.16px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5319,14 +5303,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--heading-text-color, rgb(255, 255, 255));
-      font-family: var(--h4-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--size-h4, 15.6px);
+      color: var(--heading-text-color);
+      font-family: var(--h4-font);
+      font-size: var(--size-h4);
       font-weight: var(--font-weight);
-      line-height: var(--h4-line-height, 18.72px);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.078px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5352,14 +5336,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--heading-text-color, rgb(255, 255, 255));
-      font-family: var(--h5-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--size-h5, 13.792px);
+      color: var(--heading-text-color);
+      font-family: var(--h5-font);
+      font-size: var(--size-h5);
       font-weight: var(--font-weight);
-      line-height: var(--h5-line-height, 16.5504px);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.027584px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5385,11 +5369,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--heading-text-color, rgb(255, 255, 255));
-      font-family: var(--h6-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--size-h6, 12px);
+      color: var(--heading-text-color);
+      font-family: var(--h6-font);
+      font-size: var(--size-h6);
       font-weight: var(--font-weight);
-      line-height: var(--h6-line-height, 14.4px);
+      line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -5420,10 +5404,10 @@ html[saved-theme="dark"] {
     h2.page-title,
     h2.page-title a {
       color: var(--inline-title-color);
-      font-family: var(--inline-title-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
-      font-size: var(--inline-title-size, 23.2992px);
+      font-family: var(--inline-title-font);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
-      line-height: var(--inline-title-line-height, 27.959px);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.349488px;
@@ -5841,7 +5825,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -5900,7 +5884,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5958,7 +5942,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6016,7 +6000,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6074,7 +6058,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6132,7 +6116,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6190,7 +6174,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6248,7 +6232,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6306,7 +6290,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6364,7 +6348,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6422,7 +6406,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6480,7 +6464,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6538,7 +6522,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6596,7 +6580,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6669,10 +6653,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: calc(var(--heading-spacing) + 5px);
-      margin-bottom: calc(var(--heading-spacing) - 12px);
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -6969,14 +6950,14 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-label-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-family: var(--metadata-label-font);
       font-size: 14.4px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-input-font, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif);
+      font-family: var(--metadata-input-font);
       font-size: 14.4px;
     }
 
@@ -7092,7 +7073,7 @@ html[saved-theme="dark"] {
       box-shadow: none;
       color: var(--code-normal);
       font-family: var(--font-monospace);
-      font-size: var(--code-size, 12.6px);
+      font-size: var(--code-size);
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -7358,16 +7339,16 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(155, 155, 155));
-      cursor: var(--cursor, pointer);
+      color: var(--nav-item-color);
+      cursor: var(--cursor);
       font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(155, 155, 155));
-      cursor: var(--cursor, pointer);
+      color: var(--nav-item-color);
+      cursor: var(--cursor);
       font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
@@ -7378,26 +7359,13 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      font-weight: 400;
+      color: rgb(155, 155, 155);
+      font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 600;
     }
 
     .nav-files-container {
-      background-color: var(--color-base-25, rgb(42, 42, 42));
+      background-color: var(--color-base-25);
     }
 
     .bases-table {
@@ -7459,8 +7427,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(0, 0, 0, 0));
-      color: var(--pill-color, rgb(255, 255, 255));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 5px;
     }
 
@@ -7475,7 +7443,7 @@ html[saved-theme="dark"] {
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
-      cursor: var(--cursor, pointer);
+      cursor: var(--cursor);
       border-color: rgb(179, 179, 179);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -7521,7 +7489,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(155, 155, 155));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -7530,7 +7498,7 @@ html[saved-theme="dark"] {
     }
 
     ul.section-ul {
-      background-color: var(--color-base-25, rgb(42, 42, 42));
+      background-color: var(--color-base-25);
       border-color: rgb(218, 218, 218);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -7550,7 +7518,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(155, 155, 155));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
@@ -7561,7 +7529,7 @@ html[saved-theme="dark"] {
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
-      cursor: var(--cursor, pointer);
+      cursor: var(--cursor);
       border-color: rgb(179, 179, 179);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -7716,8 +7684,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(255, 255, 255, 0.1));
-      color: var(--tag-color, rgb(0, 0, 0));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -7766,7 +7734,7 @@ html[saved-theme="dark"] {
 
     h1.article-title {
       color: var(--inline-title-color);
-      font-size: var(--inline-title-size, 23.2992px);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
   }

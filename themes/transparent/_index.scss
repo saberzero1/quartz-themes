@@ -28,11 +28,11 @@
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, transparent) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
-  --code-border-color: var(--background-modifier-border, transparent) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
@@ -120,11 +120,11 @@
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, transparent) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
-  --code-border-color: var(--background-modifier-border, transparent) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
@@ -489,7 +489,7 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgba(0, 0, 0, 0));
+    background-color: var(--background-primary);
     color: var(--text-normal);
   }
 
@@ -497,12 +497,12 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgba(0, 0, 0, 0));
+    background-color: var(--background-primary);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+    background-color: var(--background-secondary);
     color: rgb(34, 34, 34);
   }
 
@@ -510,12 +510,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
     border-left: 0px rgba(0, 0, 0, 0);
   }
@@ -1224,7 +1224,7 @@ body {
   }
 
   code {
-    background-color: var(--tr06, rgba(0, 0, 0, 0));
+    background-color: var(--tr06);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1266,7 +1266,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--tr06, rgba(0, 0, 0, 0));
+    background-color: var(--tr06);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1363,7 +1363,7 @@ body {
   }
 
   .search > .search-button {
-    background-color: var(--tr06, rgba(0, 0, 0, 0));
+    background-color: var(--tr06);
     border: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1391,7 +1391,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--overlay-color, rgba(0, 0, 0, 0));
+    background-color: var(--overlay-color);
     border: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2115,7 +2115,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2174,7 +2174,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2232,7 +2232,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2290,7 +2290,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2348,7 +2348,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2406,7 +2406,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2464,7 +2464,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2522,7 +2522,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2580,7 +2580,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2638,7 +2638,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2696,7 +2696,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2754,7 +2754,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2812,7 +2812,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2870,7 +2870,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3209,7 +3209,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--tr06, rgba(0, 0, 0, 0));
+    background-color: var(--tr06);
     color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(92, 92, 92);
@@ -3346,7 +3346,7 @@ body {
   }
 
   input[type="text"] {
-    background-color: var(--tr06, rgba(0, 0, 0, 0));
+    background-color: var(--tr06);
     color: var(--text-normal);
     font-family:
       ui-sans-serif,
@@ -3759,7 +3759,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--kolorboku, rgb(29, 29, 31));
+    color: var(--kolorboku);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3780,7 +3780,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--kolorboku, rgb(29, 29, 31));
+    color: var(--kolorboku);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3805,7 +3805,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(29, 29, 31);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3859,7 +3859,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgba(0, 0, 0, 0));
+    background-color: var(--background-primary);
     border-color: rgb(34, 34, 34);
     box-shadow: var(--input-shadow);
   }
@@ -3901,7 +3901,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(0, 0, 0));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(0, 0, 0);
     border-width: 0px;
@@ -3912,7 +3912,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -3974,7 +3974,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--kolorboku, rgb(29, 29, 31));
+    color: var(--kolorboku);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4016,7 +4016,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--kolorboku, rgb(29, 29, 31));
+    color: var(--kolorboku);
   }
 
   li.section-li > .section .meta {
@@ -4039,7 +4039,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(0, 0, 0));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(0, 0, 0);
     border-width: 0px;
@@ -4084,7 +4084,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -4257,11 +4257,11 @@ body {
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tr, rgba(0, 0, 0, 0));
+    background-color: var(--tr);
   }
 
   .stacked-page.active {
@@ -4934,7 +4934,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgba(0, 0, 0, 0));
+      background-color: var(--background-primary);
       color: var(--text-normal);
     }
 
@@ -4942,12 +4942,12 @@ html[saved-theme="dark"] {
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgba(0, 0, 0, 0));
+      background-color: var(--background-primary);
       color: rgb(218, 218, 218);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+      background-color: var(--background-secondary);
       color: rgb(218, 218, 218);
     }
 
@@ -4955,12 +4955,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+      background-color: var(--tab-container-background);
       color: rgb(218, 218, 218);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgba(0, 0, 0, 0));
+      background-color: var(--tab-container-background);
       color: rgb(218, 218, 218);
       border-left: 0px rgba(0, 0, 0, 0);
     }
@@ -5669,7 +5669,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+      background-color: var(--tr06);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -5711,7 +5711,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+      background-color: var(--tr06);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -5808,7 +5808,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-button {
-      background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+      background-color: var(--tr06);
       border: 1px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -5836,7 +5836,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--overlay-color, rgba(0, 0, 0, 0.5));
+      background-color: var(--overlay-color);
       border: 1px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6560,7 +6560,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6619,7 +6619,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6677,7 +6677,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6735,7 +6735,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6793,7 +6793,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6851,7 +6851,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6909,7 +6909,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6967,7 +6967,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7025,7 +7025,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7083,7 +7083,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7141,7 +7141,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7199,7 +7199,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7257,7 +7257,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7315,7 +7315,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7654,7 +7654,7 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+      background-color: var(--tr06);
       color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(179, 179, 179);
@@ -7791,7 +7791,7 @@ html[saved-theme="dark"] {
     }
 
     input[type="text"] {
-      background-color: var(--tr06, rgba(0, 0, 0, 0.376));
+      background-color: var(--tr06);
       color: var(--text-normal);
       font-family:
         ui-sans-serif,
@@ -8204,7 +8204,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--kolorboku, rgb(226, 224, 220));
+      color: var(--kolorboku);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -8225,7 +8225,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--kolorboku, rgb(226, 224, 220));
+      color: var(--kolorboku);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -8250,7 +8250,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(226, 224, 220);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8304,7 +8304,7 @@ html[saved-theme="dark"] {
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+      background-color: var(--background-secondary);
       border-color: rgb(218, 218, 218);
       box-shadow: var(--input-shadow);
     }
@@ -8346,7 +8346,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(255, 255, 255));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(255, 255, 255);
       border-width: 0px;
@@ -8357,7 +8357,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+      background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
@@ -8419,7 +8419,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--kolorboku, rgb(226, 224, 220));
+      color: var(--kolorboku);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -8461,7 +8461,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--kolorboku, rgb(226, 224, 220));
+      color: var(--kolorboku);
     }
 
     li.section-li > .section .meta {
@@ -8484,7 +8484,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(255, 255, 255));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(255, 255, 255);
       border-width: 0px;
@@ -8529,7 +8529,7 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgba(0, 0, 0, 0));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
@@ -8702,11 +8702,11 @@ html[saved-theme="dark"] {
 
     .stacked-page {
       border-color: rgb(218, 218, 218);
-      background-color: var(--background-secondary, rgba(0, 0, 0, 0));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tr, rgba(0, 0, 0, 0));
+      background-color: var(--tr);
     }
 
     .stacked-page.active {

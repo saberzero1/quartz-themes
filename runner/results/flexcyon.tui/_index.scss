@@ -4255,7 +4255,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -20441,7 +20441,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       font-family:
         ui-sans-serif,
         -apple-system,

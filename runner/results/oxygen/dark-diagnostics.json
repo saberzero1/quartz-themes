@@ -1,0 +1,23 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--background-secondary",
+      "references": "--enhanced-border-right-sidebar-bg",
+      "selector": ".page > div#quartz-body div.sidebar.right",
+      "aspect": "base"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    }
+  ]
+}

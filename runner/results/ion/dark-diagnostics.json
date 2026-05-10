@@ -1,0 +1,689 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout",
+      "aspect": "scrollbars"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout",
+      "aspect": "scrollbars"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"note\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"note\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"note\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"note\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"note\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"note\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"note\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"note\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"abstract\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"abstract\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"abstract\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"abstract\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"abstract\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"abstract\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"info\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"info\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"info\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"info\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"info\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"info\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"todo\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"todo\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"todo\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"todo\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"todo\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"todo\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"tip\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"tip\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"tip\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"tip\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"tip\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"tip\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"success\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"success\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"success\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"success\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"success\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"success\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"question\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"question\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"question\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"question\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"question\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"question\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"warning\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"warning\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"warning\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"warning\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"warning\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"warning\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"danger\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"danger\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"danger\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"danger\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"danger\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"danger\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"failure\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"failure\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"failure\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"failure\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"failure\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"failure\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"bug\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"bug\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"bug\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"bug\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"bug\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"bug\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"example\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"example\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"example\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"example\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"example\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"example\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"quote\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"quote\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"quote\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"quote\"] .callout-title",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-h",
+      "references": "--callout-h",
+      "selector": ".callout[data-callout=\"quote\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ion-s",
+      "references": "--callout-s",
+      "selector": ".callout[data-callout=\"quote\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    }
+  ]
+}

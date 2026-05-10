@@ -4108,8 +4108,10 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(84, 81, 81);
     font-family:
+      inter,
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -18452,8 +18454,10 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(199, 197, 194);
       font-family:
+        inter,
+        sans-serif,
         ui-sans-serif,
         -apple-system,
         BlinkMacSystemFont,

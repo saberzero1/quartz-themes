@@ -1011,13 +1011,13 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: white !important;
   --h1-color: var(--level-1) !important;
   --h2-color: var(--level-2) !important;
   --h3-color: var(--level-3) !important;
   --h4-color: var(--level-4) !important;
   --h5-color: var(--level-5) !important;
   --h6-color: var(--level-6) !important;
+  --inline-title-color: white !important;
   --interactive-before: var(--s-bg-transparent) !important;
   --gray: 158, 158, 158 !important;
   --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast)

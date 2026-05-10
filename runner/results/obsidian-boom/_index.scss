@@ -453,7 +453,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(16, 107, 163));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -495,7 +495,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(16, 107, 163));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -536,7 +536,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(16, 107, 163));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -635,7 +635,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(32, 43, 51));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -676,7 +676,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(32, 43, 51));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -717,7 +717,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(32, 43, 51));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -758,7 +758,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(32, 43, 51));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -877,7 +877,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(32, 43, 51));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -907,7 +907,7 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(0, 231, 255, 0.29));
+    background-color: var(--text-highlight-bg);
     color: var(--text-normal);
     cursor: grab;
     filter: none;
@@ -1056,7 +1056,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-size: 14px;
-    font-weight: var(--pill-weight, 500);
+    font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
@@ -1161,7 +1161,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--code-normal);
-    font-family: var(--code-font-family, Hack);
+    font-family: var(--code-font-family);
     padding: 2.4px 4.8px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1256,7 +1256,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(32, 43, 51));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1284,7 +1284,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--link-color, rgb(16, 107, 163));
+    color: var(--link-color);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1420,7 +1420,7 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(32, 43, 51));
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1453,7 +1453,7 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(32, 43, 51));
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
@@ -1486,7 +1486,7 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(32, 43, 51));
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
@@ -1502,10 +1502,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 14px);
-    margin-bottom: 14px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 14px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1522,7 +1519,7 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(32, 43, 51));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -1538,10 +1535,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 14px);
-    margin-bottom: 14px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 14px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1558,14 +1552,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(32, 43, 51));
+    color: var(--h5-color);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 14px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h5-line-height, 21px);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.028px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1574,10 +1568,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 14px);
-    margin-bottom: 14px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 14px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1594,11 +1585,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(32, 43, 51));
+    color: var(--h6-color);
     font-family: var(--h6-font);
-    font-size: var(--h6-size, 14px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h6-line-height, 21px);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -1628,7 +1619,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(32, 43, 51));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -1999,7 +1990,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: var(--nav-item-weight, 700);
+    font-weight: var(--nav-item-weight);
   }
 
   ::-webkit-scrollbar {
@@ -2050,7 +2041,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2109,7 +2100,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2167,7 +2158,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2225,7 +2216,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2283,7 +2274,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2341,7 +2332,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2399,7 +2390,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2457,7 +2448,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2515,7 +2506,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2573,7 +2564,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2631,7 +2622,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2689,7 +2680,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2747,7 +2738,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2805,7 +2796,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2891,10 +2882,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 14px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 14px 0px 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2953,7 +2941,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(32, 43, 51));
+    color: var(--table-text-color);
     font-weight: 500;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3697,7 +3685,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(92, 112, 128));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3713,12 +3701,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 700);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(92, 112, 128));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3734,7 +3722,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--nav-item-weight, 700);
+    font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
 
@@ -3743,7 +3731,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(92, 112, 128);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3758,7 +3746,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .nav-files-container {
@@ -3792,7 +3780,7 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(32, 43, 51));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -3912,7 +3900,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(92, 112, 128));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3954,7 +3942,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(92, 112, 128));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -4159,7 +4147,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--link-color, rgb(16, 107, 163));
+    color: var(--link-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4207,462 +4195,397 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(32, 43, 51));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(32, 43, 51);
-    --link-color: hsl(258, 88%, 66%);
     font-weight: 400;
     margin-bottom: 0px;
   }

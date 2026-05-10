@@ -8,65 +8,65 @@
 
 :root:root {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--neutral-red_x, 204, 36, 29);
-  --callout-default: var(--neutral-blue_x, 69, 133, 136);
-  --callout-error: var(--neutral-red_x, 204, 36, 29);
-  --callout-example: var(--neutral-purple_x, 177, 98, 134);
-  --callout-fail: var(--neutral-red_x, 204, 36, 29);
-  --callout-important: var(--neutral-aqua_x, 104, 157, 106);
-  --callout-info: var(--neutral-blue_x, 69, 133, 136);
+  --callout-bug: var(--neutral-red_x);
+  --callout-default: var(--neutral-blue_x);
+  --callout-error: var(--neutral-red_x);
+  --callout-example: var(--neutral-purple_x);
+  --callout-fail: var(--neutral-red_x);
+  --callout-important: var(--neutral-aqua_x);
+  --callout-info: var(--neutral-blue_x);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--neutral-yellow_x, 215, 153, 33);
+  --callout-question: var(--neutral-yellow_x);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--neutral-green_x, 152, 151, 26);
-  --callout-summary: var(--neutral-aqua_x, 104, 157, 106);
-  --callout-tip: var(--neutral-aqua_x, 104, 157, 106);
+  --callout-success: var(--neutral-green_x);
+  --callout-summary: var(--neutral-aqua_x);
+  --callout-tip: var(--neutral-aqua_x);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--neutral-blue_x, 69, 133, 136);
-  --callout-warning: var(--neutral-orange_x, 214, 93, 14);
-  --checkbox-border-color: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-border-color-hover: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-color: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-color-hover: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-marker-color: var(--background-primary, rgb(249, 245, 215)) !important;
-  --checkbox-radius: var(--radius-s, 0) !important;
+  --callout-todo: var(--neutral-blue_x);
+  --callout-warning: var(--neutral-orange_x);
+  --checkbox-border-color: var(--light4) !important;
+  --checkbox-border-color-hover: var(--light4) !important;
+  --checkbox-color: var(--light4) !important;
+  --checkbox-color-hover: var(--light4) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 0 !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--light1, rgb(235, 219, 178)) !important;
-  --code-border-color: var(--background-modifier-border, rgb(213, 196, 161)) !important;
+  --code-background: var(--light1) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, rgb(102, 92, 84)) !important;
-  --code-function: var(--color-yellow, rgb(215, 153, 33)) !important;
-  --code-important: var(--color-orange, rgb(214, 93, 14)) !important;
-  --code-keyword: var(--color-pink, rgb(211, 134, 155)) !important;
-  --code-normal: var(--bright-blue, rgb(131, 165, 152)) !important;
-  --code-operator: var(--color-red, rgb(204, 36, 29)) !important;
-  --code-property: var(--color-cyan, rgb(69, 133, 136)) !important;
-  --code-punctuation: var(--text-muted, rgb(80, 73, 69)) !important;
+  --code-comment: var(--text-faint) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--bright-blue) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, rgb(152, 151, 26)) !important;
-  --code-tag: var(--color-red, rgb(204, 36, 29)) !important;
-  --code-value: var(--color-purple, rgb(177, 98, 134)) !important;
-  --collapse-icon-color: var(--text-faint, rgb(102, 92, 84)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, rgb(214, 93, 14)) !important;
-  --graph-line: var(--light1, rgb(235, 219, 178)) !important;
-  --graph-node: var(--gray, rgb(146, 131, 116)) !important;
-  --graph-node-attachment: var(--bright-green, rgb(184, 187, 38)) !important;
-  --graph-node-focused: var(--text-accent, rgb(214, 93, 14)) !important;
-  --graph-node-tag: var(--neutral-red, rgb(204, 36, 29)) !important;
-  --graph-node-unresolved: var(--text-faint, rgb(102, 92, 84)) !important;
-  --graph-text: var(--text-normal, rgb(40, 40, 40)) !important;
-  --icon-color: var(--text-muted, rgb(80, 73, 69)) !important;
-  --icon-color-active: var(--text-accent, rgb(214, 93, 14)) !important;
-  --icon-color-focused: var(--bright-blue, rgb(131, 165, 152)) !important;
-  --icon-color-hover: var(--bright-red, rgb(251, 73, 52)) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
+  --graph-line: var(--light1) !important;
+  --graph-node: var(--gray) !important;
+  --graph-node-attachment: var(--bright-green) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--neutral-red) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--bright-blue) !important;
+  --icon-color-hover: var(--bright-red) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-quote: var(--gray_x, 146, 131, 116);
+  --callout-quote: var(--gray_x);
   --callout-title-padding: 0;
   --checkbox-margin-inline-start: 0.85em !important;
   --code-border-width: 0px !important;
@@ -85,7 +85,7 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --callout-note: var(--neutral-blue_x, 69, 133, 136);
+  --callout-note: var(--neutral-blue_x);
 
   --font-interface-override: "??";
   --font-text-override: "??";
@@ -95,65 +95,65 @@
 }
 :root:root[saved-theme="dark"] {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--neutral-red_x, 204, 36, 29);
-  --callout-default: var(--neutral-blue_x, 69, 133, 136);
-  --callout-error: var(--neutral-red_x, 204, 36, 29);
-  --callout-example: var(--neutral-purple_x, 177, 98, 134);
-  --callout-fail: var(--neutral-red_x, 204, 36, 29);
-  --callout-important: var(--neutral-aqua_x, 104, 157, 106);
-  --callout-info: var(--neutral-blue_x, 69, 133, 136);
+  --callout-bug: var(--neutral-red_x);
+  --callout-default: var(--neutral-blue_x);
+  --callout-error: var(--neutral-red_x);
+  --callout-example: var(--neutral-purple_x);
+  --callout-fail: var(--neutral-red_x);
+  --callout-important: var(--neutral-aqua_x);
+  --callout-info: var(--neutral-blue_x);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--neutral-yellow_x, 215, 153, 33);
+  --callout-question: var(--neutral-yellow_x);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--neutral-green_x, 152, 151, 26);
-  --callout-summary: var(--neutral-aqua_x, 104, 157, 106);
-  --callout-tip: var(--neutral-aqua_x, 104, 157, 106);
+  --callout-success: var(--neutral-green_x);
+  --callout-summary: var(--neutral-aqua_x);
+  --callout-tip: var(--neutral-aqua_x);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--neutral-blue_x, 69, 133, 136);
-  --callout-warning: var(--neutral-orange_x, 214, 93, 14);
-  --checkbox-border-color: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-border-color-hover: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-color: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-color-hover: var(--light4, rgb(168, 153, 132)) !important;
-  --checkbox-marker-color: var(--background-primary, rgb(40, 40, 40)) !important;
-  --checkbox-radius: var(--radius-s, 0) !important;
+  --callout-todo: var(--neutral-blue_x);
+  --callout-warning: var(--neutral-orange_x);
+  --checkbox-border-color: var(--light4) !important;
+  --checkbox-border-color-hover: var(--light4) !important;
+  --checkbox-color: var(--light4) !important;
+  --checkbox-color-hover: var(--light4) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 0 !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--dark1, rgb(60, 56, 54)) !important;
-  --code-border-color: var(--background-modifier-border, rgb(60, 56, 54)) !important;
+  --code-background: var(--dark1) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, rgb(235, 219, 178)) !important;
-  --code-function: var(--color-yellow, rgb(215, 153, 33)) !important;
-  --code-important: var(--color-orange, rgb(214, 93, 14)) !important;
-  --code-keyword: var(--color-pink, rgb(211, 134, 155)) !important;
-  --code-normal: var(--bright-blue, rgb(131, 165, 152)) !important;
-  --code-operator: var(--color-red, rgb(204, 36, 29)) !important;
-  --code-property: var(--color-cyan, rgb(69, 133, 136)) !important;
-  --code-punctuation: var(--text-muted, rgb(213, 196, 161)) !important;
+  --code-comment: var(--text-faint) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--bright-blue) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, rgb(152, 151, 26)) !important;
-  --code-tag: var(--color-red, rgb(204, 36, 29)) !important;
-  --code-value: var(--color-purple, rgb(177, 98, 134)) !important;
-  --collapse-icon-color: var(--text-faint, rgb(235, 219, 178)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, rgb(214, 93, 14)) !important;
-  --graph-line: var(--dark2, rgb(80, 73, 69)) !important;
-  --graph-node: var(--light3, rgb(189, 174, 147)) !important;
-  --graph-node-attachment: var(--neutral-green, rgb(152, 151, 26)) !important;
-  --graph-node-focused: var(--text-accent, rgb(214, 93, 14)) !important;
-  --graph-node-tag: var(--neutral-red, rgb(204, 36, 29)) !important;
-  --graph-node-unresolved: var(--text-faint, rgb(235, 219, 178)) !important;
-  --graph-text: var(--text-normal, rgb(251, 241, 199)) !important;
-  --icon-color: var(--text-muted, rgb(213, 196, 161)) !important;
-  --icon-color-active: var(--text-accent, rgb(214, 93, 14)) !important;
-  --icon-color-focused: var(--bright-blue, rgb(131, 165, 152)) !important;
-  --icon-color-hover: var(--bright-red, rgb(251, 73, 52)) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
+  --graph-line: var(--dark2) !important;
+  --graph-node: var(--light3) !important;
+  --graph-node-attachment: var(--neutral-green) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--neutral-red) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--bright-blue) !important;
+  --icon-color-hover: var(--bright-red) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-quote: var(--gray_x, 146, 131, 116);
+  --callout-quote: var(--gray_x);
   --callout-title-padding: 0;
   --checkbox-margin-inline-start: 0.85em !important;
   --code-border-width: 0px !important;
@@ -172,7 +172,7 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --callout-note: var(--neutral-blue_x, 69, 133, 136);
+  --callout-note: var(--neutral-blue_x);
 
   --font-interface-override: "??";
   --font-text-override: "??";
@@ -479,20 +479,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(249, 245, 215));
-    color: var(--text-normal, rgb(40, 40, 40));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(249, 245, 215));
+    background-color: var(--background-primary);
     color: rgb(40, 40, 40);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(235, 219, 178));
+    background-color: var(--background-secondary);
     color: rgb(40, 40, 40);
   }
 
@@ -500,12 +500,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(235, 219, 178));
+    background-color: var(--tab-container-background);
     color: rgb(40, 40, 40);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(235, 219, 178));
+    background-color: var(--tab-container-background);
     color: rgb(40, 40, 40);
     border-left: 0px rgb(213, 196, 161);
   }
@@ -517,7 +517,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(214, 93, 14));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -559,7 +559,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(214, 93, 14));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -600,7 +600,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(214, 93, 14));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -622,7 +622,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(214, 93, 14) none 0px;
     text-decoration: rgba(163, 33, 0, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(163, 33, 0, 0.3));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -658,7 +658,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(80, 73, 69));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -699,7 +699,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(215, 153, 33));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -740,7 +740,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(215, 153, 33));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -781,7 +781,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(215, 153, 33));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -822,7 +822,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(215, 153, 33));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -941,7 +941,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(215, 153, 33));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -971,8 +971,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(250, 189, 47));
-    color: var(--text-highlight-fg, rgb(40, 40, 40));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-highlight-fg);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1102,8 +1102,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgb(235, 219, 178));
-    color: var(--pill-color, rgb(104, 157, 106));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1214,7 +1214,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(235, 219, 178));
+    background-color: var(--code-background);
     border: 0px solid rgb(213, 196, 161);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1224,7 +1224,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(131, 165, 152));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1256,7 +1256,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(235, 219, 178));
+    background-color: var(--code-background);
     border: 0px solid rgb(213, 196, 161);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1320,7 +1320,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(40, 40, 40));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1348,7 +1348,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(102, 92, 84));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1363,7 +1363,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(40, 40, 40));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1381,7 +1381,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(249, 245, 215));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1484,7 +1484,7 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(204, 36, 29));
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1517,7 +1517,7 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(215, 153, 33));
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
@@ -1550,7 +1550,7 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(152, 151, 26));
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
@@ -1583,7 +1583,7 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(104, 157, 106));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -1616,7 +1616,7 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(69, 133, 136));
+    color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
@@ -1649,7 +1649,7 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(177, 98, 134));
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
@@ -1683,7 +1683,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(250, 189, 47));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -2105,7 +2105,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 69, 133, 136);
+    --callout-color: var(--callout-default);
     border: 1px solid rgba(69, 133, 136, 0.4);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2147,7 +2147,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2164,7 +2164,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 69, 133, 136);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(69, 133, 136, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2205,7 +2205,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2222,7 +2222,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 104, 157, 106);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(104, 157, 106, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2263,7 +2263,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2280,7 +2280,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 69, 133, 136);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(69, 133, 136, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2321,7 +2321,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2338,7 +2338,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 69, 133, 136);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(69, 133, 136, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2379,7 +2379,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2396,7 +2396,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 104, 157, 106);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(104, 157, 106, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2437,7 +2437,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2454,7 +2454,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 152, 151, 26);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(152, 151, 26, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2495,7 +2495,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2512,7 +2512,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 215, 153, 33);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(215, 153, 33, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2553,7 +2553,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2570,7 +2570,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 214, 93, 14);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(214, 93, 14, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2611,7 +2611,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2628,7 +2628,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 204, 36, 29);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(204, 36, 29, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2669,7 +2669,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2686,7 +2686,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 204, 36, 29);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(204, 36, 29, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2727,7 +2727,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2744,7 +2744,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 204, 36, 29);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(204, 36, 29, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2785,7 +2785,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2802,7 +2802,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 177, 98, 134);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(177, 98, 134, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2843,7 +2843,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2860,7 +2860,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 146, 131, 116);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.2);
     background-image: none;
     background: rgba(146, 131, 116, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2901,7 +2901,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(69, 133, 136));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2978,7 +2978,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(40, 40, 40));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3006,7 +3006,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(40, 40, 40));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3032,7 +3032,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgba(189, 174, 147, 0.4));
+    background-color: var(--table-header-background);
     border: 0px rgb(235, 219, 178);
     border-bottom: 0px rgb(213, 196, 161);
     border-top-left-radius: 0px;
@@ -3046,11 +3046,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-row-even-background, rgba(235, 219, 178, 0.2));
+    background-color: var(--table-row-even-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-odd-background, rgba(235, 219, 178, 0.7));
+    background-color: var(--table-row-odd-background);
   }
 
   img {
@@ -3203,8 +3203,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(249, 245, 215));
-    color: var(--text-muted, rgb(80, 73, 69));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(80, 73, 69);
     border-width: 0px;
@@ -3218,7 +3218,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(80, 73, 69));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3341,7 +3341,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(80, 73, 69));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3431,9 +3431,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(235, 219, 178));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(131, 165, 152));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(131, 165, 152);
@@ -3753,7 +3753,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(80, 73, 69));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3774,7 +3774,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(80, 73, 69));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3799,7 +3799,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(80, 73, 69);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3827,13 +3827,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(40, 40, 40));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(235, 219, 178);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-odd-background, rgba(235, 219, 178, 0.7));
+    background-color: var(--table-row-odd-background);
   }
 
   .canvas-node {
@@ -3848,12 +3848,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(40, 40, 40));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(249, 245, 215));
+    background-color: var(--background-primary);
     border-color: rgb(40, 40, 40);
     box-shadow: var(--input-shadow);
   }
@@ -3880,8 +3880,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgb(235, 219, 178));
-    color: var(--pill-color, rgb(104, 157, 106));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 7px;
   }
 
@@ -3895,7 +3895,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(80, 73, 69));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(80, 73, 69);
     border-width: 0px;
@@ -3906,8 +3906,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(235, 219, 178));
-    color: var(--status-bar-text-color, rgb(80, 73, 69));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3968,7 +3968,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(80, 73, 69));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4010,7 +4010,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(80, 73, 69));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -4033,7 +4033,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(80, 73, 69));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(80, 73, 69);
     border-width: 0px;
@@ -4060,7 +4060,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(102, 92, 84));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4078,11 +4078,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(235, 219, 178));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(40, 40, 40));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4214,8 +4214,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgb(235, 219, 178));
-    color: var(--tag-color, rgb(104, 157, 106));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(163, 33, 0, 0.15);
     border-top-left-radius: 6.125px;
     border-top-right-radius: 6.125px;
@@ -4245,17 +4245,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(168, 153, 132));
+    background-color: var(--checkbox-color);
     border-color: rgb(168, 153, 132);
   }
 
   .stacked-page {
     border-color: rgb(40, 40, 40);
-    background-color: var(--background-secondary, rgb(235, 219, 178));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(235, 219, 178));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4263,7 +4263,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(250, 189, 47));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -4302,7 +4302,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -4442,7 +4441,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -4582,7 +4580,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -4722,7 +4719,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -4862,7 +4858,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5002,7 +4997,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5142,7 +5136,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5282,7 +5275,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5422,7 +5414,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5562,7 +5553,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5702,7 +5692,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5842,7 +5831,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5982,7 +5970,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6122,7 +6109,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6262,7 +6248,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6402,7 +6387,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6542,7 +6526,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6682,7 +6665,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6822,7 +6804,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6962,7 +6943,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7102,7 +7082,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7242,7 +7221,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7382,7 +7360,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7522,7 +7499,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7662,7 +7638,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7802,7 +7777,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7942,7 +7916,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8082,7 +8055,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8222,7 +8194,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8362,7 +8333,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8502,7 +8472,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8642,7 +8611,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8782,7 +8750,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8922,7 +8889,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9062,7 +9028,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9202,7 +9167,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9342,7 +9306,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9482,7 +9445,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9622,7 +9584,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9762,7 +9723,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9902,7 +9862,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10042,7 +10001,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10182,7 +10140,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10322,7 +10279,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10462,7 +10418,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10602,7 +10557,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10742,7 +10696,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10882,7 +10835,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11022,7 +10974,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11162,7 +11113,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11302,7 +11252,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11442,7 +11391,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11582,7 +11530,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11722,7 +11669,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -11862,7 +11808,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12002,7 +11947,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12142,7 +12086,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12282,7 +12225,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12422,7 +12364,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12562,7 +12503,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12702,7 +12642,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12842,7 +12781,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -12982,7 +12920,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -13122,7 +13059,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -13262,7 +13198,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -13402,7 +13337,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -13542,7 +13476,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -14371,20 +14304,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(40, 40, 40));
-      color: var(--text-normal, rgb(251, 241, 199));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(40, 40, 40));
+      background-color: var(--background-primary);
       color: rgb(251, 241, 199);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(29, 32, 33));
+      background-color: var(--background-secondary);
       color: rgb(251, 241, 199);
     }
 
@@ -14392,12 +14325,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(29, 32, 33));
+      background-color: var(--tab-container-background);
       color: rgb(251, 241, 199);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(29, 32, 33));
+      background-color: var(--tab-container-background);
       color: rgb(251, 241, 199);
       border-left: 0px rgb(60, 56, 54);
     }
@@ -14409,7 +14342,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(214, 93, 14));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -14451,7 +14384,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(214, 93, 14));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -14492,7 +14425,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(214, 93, 14));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -14514,7 +14447,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(214, 93, 14) none 0px;
       text-decoration: rgba(163, 33, 0, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(163, 33, 0, 0.3));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -14550,7 +14483,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(213, 196, 161));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -14591,7 +14524,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(215, 153, 33));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -14632,7 +14565,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(215, 153, 33));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -14673,7 +14606,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(215, 153, 33));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -14714,7 +14647,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(215, 153, 33));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -14833,7 +14766,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(215, 153, 33));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -14863,8 +14796,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgb(215, 153, 33));
-      color: var(--text-highlight-fg, rgb(29, 32, 33));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-highlight-fg);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -14994,8 +14927,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgb(80, 73, 69));
-      color: var(--pill-color, rgb(142, 192, 124));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -15106,7 +15039,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(60, 56, 54));
+      background-color: var(--code-background);
       border: 0px solid rgb(60, 56, 54);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15116,7 +15049,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(131, 165, 152));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -15148,7 +15081,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(60, 56, 54));
+      background-color: var(--code-background);
       border: 0px solid rgb(60, 56, 54);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15212,7 +15145,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color, rgb(251, 241, 199));
+      color: var(--blockquote-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15240,7 +15173,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(235, 219, 178));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -15255,7 +15188,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(251, 241, 199));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15273,7 +15206,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(40, 40, 40));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -15376,7 +15309,7 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(204, 36, 29));
+      color: var(--h1-color);
       font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
@@ -15409,7 +15342,7 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(215, 153, 33));
+      color: var(--h2-color);
       font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
@@ -15442,7 +15375,7 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(152, 151, 26));
+      color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
       font-weight: var(--font-weight);
@@ -15475,7 +15408,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(104, 157, 106));
+      color: var(--h4-color);
       font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
@@ -15508,7 +15441,7 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(69, 133, 136));
+      color: var(--h5-color);
       font-family: var(--h5-font);
       font-size: var(--h5-size);
       font-weight: var(--font-weight);
@@ -15541,7 +15474,7 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(177, 98, 134));
+      color: var(--h6-color);
       font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
@@ -15575,7 +15508,7 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(250, 189, 47));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
@@ -15997,7 +15930,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 69, 133, 136);
+      --callout-color: var(--callout-default);
       border: 1px solid rgba(69, 133, 136, 0.4);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -16039,7 +15972,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16056,7 +15989,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 69, 133, 136);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(69, 133, 136, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16097,7 +16030,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16114,7 +16047,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 104, 157, 106);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(104, 157, 106, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16155,7 +16088,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16172,7 +16105,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 69, 133, 136);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(69, 133, 136, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16213,7 +16146,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16230,7 +16163,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 69, 133, 136);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(69, 133, 136, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16271,7 +16204,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16288,7 +16221,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 104, 157, 106);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(104, 157, 106, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16329,7 +16262,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16346,7 +16279,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 152, 151, 26);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(152, 151, 26, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16387,7 +16320,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16404,7 +16337,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 215, 153, 33);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(215, 153, 33, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16445,7 +16378,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16462,7 +16395,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 214, 93, 14);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(214, 93, 14, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16503,7 +16436,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16520,7 +16453,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 204, 36, 29);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(204, 36, 29, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16561,7 +16494,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16578,7 +16511,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 204, 36, 29);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(204, 36, 29, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16619,7 +16552,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16636,7 +16569,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 204, 36, 29);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(204, 36, 29, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16677,7 +16610,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16694,7 +16627,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 177, 98, 134);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(177, 98, 134, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16735,7 +16668,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16752,7 +16685,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 146, 131, 116);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.2);
       background-image: none;
       background: rgba(146, 131, 116, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16793,7 +16726,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(69, 133, 136));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16870,7 +16803,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(251, 241, 199));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -16898,7 +16831,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(251, 241, 199));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -16924,7 +16857,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgba(40, 40, 40, 0.2));
+      background-color: var(--table-header-background);
       border: 0px rgb(29, 32, 33);
       border-bottom: 0px rgb(60, 56, 54);
       border-top-left-radius: 0px;
@@ -16938,11 +16871,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-row-even-background, rgba(80, 73, 69, 0.2));
+      background-color: var(--table-row-even-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-odd-background, rgba(80, 73, 69, 0.4));
+      background-color: var(--table-row-odd-background);
     }
 
     img {
@@ -17095,8 +17028,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(40, 40, 40));
-      color: var(--text-muted, rgb(213, 196, 161));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(213, 196, 161);
       border-width: 0px;
@@ -17110,7 +17043,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(213, 196, 161));
+      color: var(--text-muted);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17233,7 +17166,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(213, 196, 161));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17323,9 +17256,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(60, 56, 54));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(131, 165, 152));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(131, 165, 152);
@@ -17645,7 +17578,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(213, 196, 161));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -17666,7 +17599,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(213, 196, 161));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
         ui-sans-serif,
@@ -17691,7 +17624,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(213, 196, 161);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17719,13 +17652,13 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(251, 241, 199));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(29, 32, 33);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-odd-background, rgba(80, 73, 69, 0.4));
+      background-color: var(--table-row-odd-background);
     }
 
     .canvas-node {
@@ -17740,12 +17673,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(251, 241, 199));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(29, 32, 33));
+      background-color: var(--background-secondary);
       border-color: rgb(251, 241, 199);
       box-shadow: var(--input-shadow);
     }
@@ -17772,8 +17705,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgb(80, 73, 69));
-      color: var(--pill-color, rgb(142, 192, 124));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 7px;
     }
 
@@ -17787,7 +17720,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(213, 196, 161));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(213, 196, 161);
       border-width: 0px;
@@ -17798,8 +17731,8 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(29, 32, 33));
-      color: var(--status-bar-text-color, rgb(213, 196, 161));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17860,7 +17793,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(213, 196, 161));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -17902,7 +17835,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(213, 196, 161));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
@@ -17925,7 +17858,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(213, 196, 161));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(213, 196, 161);
       border-width: 0px;
@@ -17952,7 +17885,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(235, 219, 178));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17970,11 +17903,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(29, 32, 33));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(251, 241, 199));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18106,8 +18039,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgb(80, 73, 69));
-      color: var(--tag-color, rgb(142, 192, 124));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(163, 33, 0, 0.15);
       border-top-left-radius: 6.125px;
       border-top-right-radius: 6.125px;
@@ -18137,17 +18070,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(168, 153, 132));
+      background-color: var(--checkbox-color);
       border-color: rgb(168, 153, 132);
     }
 
     .stacked-page {
       border-color: rgb(251, 241, 199);
-      background-color: var(--background-secondary, rgb(29, 32, 33));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(60, 56, 54));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -18155,7 +18088,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(250, 189, 47));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
@@ -18194,7 +18127,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18334,7 +18266,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18474,7 +18405,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18614,7 +18544,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18754,7 +18683,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18894,7 +18822,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19034,7 +18961,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19174,7 +19100,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19314,7 +19239,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19454,7 +19378,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19594,7 +19517,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19734,7 +19656,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19874,7 +19795,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20014,7 +19934,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20154,7 +20073,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20294,7 +20212,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20434,7 +20351,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20574,7 +20490,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20714,7 +20629,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20854,7 +20768,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20994,7 +20907,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21134,7 +21046,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21274,7 +21185,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21414,7 +21324,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21554,7 +21463,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21694,7 +21602,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21834,7 +21741,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21974,7 +21880,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22114,7 +22019,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22254,7 +22158,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22394,7 +22297,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22534,7 +22436,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22674,7 +22575,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22814,7 +22714,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -22954,7 +22853,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23094,7 +22992,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23234,7 +23131,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23374,7 +23270,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23514,7 +23409,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23654,7 +23548,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23794,7 +23687,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -23934,7 +23826,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24074,7 +23965,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24214,7 +24104,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24354,7 +24243,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24494,7 +24382,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24634,7 +24521,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24774,7 +24660,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -24914,7 +24799,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25054,7 +24938,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25194,7 +25077,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25334,7 +25216,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25474,7 +25355,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25614,7 +25494,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25754,7 +25633,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -25894,7 +25772,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26034,7 +25911,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26174,7 +26050,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26314,7 +26189,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26454,7 +26328,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26594,7 +26467,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26734,7 +26606,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -26874,7 +26745,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -27014,7 +26884,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -27154,7 +27023,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -27294,7 +27162,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -27434,7 +27301,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);

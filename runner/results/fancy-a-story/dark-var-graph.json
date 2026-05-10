@@ -374,41 +374,77 @@
     ".pdfViewer .page": ["--scale-factor", "--user-unit"]
   },
   "--h1-weight": {
-    ".markdown-preview-view:not(.newspaper": ["--h-stroke-weight"],
-    ".is-live-preview:not(.newspaper": ["--font-extralight"],
+    ".markdown-preview-view:not(.newspaper, .movie-script, .minimalist, .h1-display, .h1-display-left-aligned) h1": [
+      "--h-stroke-weight"
+    ],
+    ".is-live-preview:not(.newspaper, .movie-script, .minimalist, .h1-display, .h1-display-left-aligned) .HyperMD-header-1": [
+      "--font-extralight"
+    ],
     ".markdown-preview-view.movie-script": ["--font-weight"],
     ".newspaper": ["--font-semibold"],
-    ":is(.markdown-preview-view": ["--h-display-art-deco-weight"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-stroke-left-aligned, .h1-normal, .sci-fi) :is(.el-h1 > h1, .markdown-preview-view > * > h1, .HyperMD-header-1):not(.callout *, ul *, ol *)": [
+      "--h-display-art-deco-weight"
+    ]
   },
   "--h2-weight": {
-    ".markdown-preview-view:not(.newspaper": ["--h-stroke-weight"],
-    ".is-live-preview:not(.newspaper": ["--font-extralight"],
+    ".markdown-preview-view:not(.newspaper, .movie-script, .minimalist, .h2-display, .h2-display-left-aligned) h2": [
+      "--h-stroke-weight"
+    ],
+    ".is-live-preview:not(.newspaper, .movie-script, .minimalist, .h2-display, .h2-display-left-aligned) .HyperMD-header-2": [
+      "--font-extralight"
+    ],
     ".markdown-preview-view.movie-script": ["--font-weight"],
-    ":is(.markdown-preview-view": ["--h-display-art-deco-weight"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-stroke-left-aligned, .h2-normal, .sci-fi) :is(.el-h2 > h2, .markdown-preview-view > * > h2, .HyperMD-header-2):not(.callout *, ul *, ol *)": [
+      "--h-display-art-deco-weight"
+    ]
   },
   "--h3-weight": {
-    ".markdown-preview-view:not(.newspaper": ["--h-stroke-weight"],
-    ".is-live-preview:not(.newspaper": ["--font-extralight"],
+    ".markdown-preview-view:not(.newspaper, .movie-script, .minimalist, .h3-display, .h3-display-left-aligned) h3": [
+      "--h-stroke-weight"
+    ],
+    ".is-live-preview:not(.newspaper, .movie-script, .minimalist, .h3-display, .h3-display-left-aligned) .HyperMD-header-3": [
+      "--font-extralight"
+    ],
     ".markdown-preview-view.movie-script": ["--font-weight"],
-    ":is(.markdown-preview-view": ["--h-display-art-deco-weight"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-stroke-left-aligned, .h3-normal, .sci-fi) :is(.el-h3 > h3, .markdown-preview-view > * > h3, .HyperMD-header-3):not(.callout *, ul *, ol *)": [
+      "--h-display-art-deco-weight"
+    ]
   },
   "--h4-weight": {
-    ".markdown-preview-view:not(.newspaper": ["--h-stroke-weight"],
-    ".is-live-preview:not(.newspaper": ["--font-extralight"],
+    ".markdown-preview-view:not(.newspaper, .movie-script, .minimalist, .h4-display, .h4-display-left-aligned) h4": [
+      "--h-stroke-weight"
+    ],
+    ".is-live-preview:not(.newspaper, .movie-script, .minimalist, .h4-display, .h4-display-left-aligned) .HyperMD-header-4": [
+      "--font-extralight"
+    ],
     ".markdown-preview-view.movie-script": ["--font-weight"],
-    ":is(.markdown-preview-view": ["--h-display-art-deco-weight"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-stroke-left-aligned, .h4-normal, .sci-fi) :is(.el-h4 > h4, .markdown-preview-view > * > h4, .HyperMD-header-4):not(.callout *, ul *, ol *)": [
+      "--h-display-art-deco-weight"
+    ]
   },
   "--h5-weight": {
-    ".markdown-preview-view:not(.newspaper": ["--h-stroke-weight"],
-    ".is-live-preview:not(.newspaper": ["--font-extralight"],
+    ".markdown-preview-view:not(.newspaper, .movie-script, .minimalist, .h5-display, .h5-display-left-aligned) h5": [
+      "--h-stroke-weight"
+    ],
+    ".is-live-preview:not(.newspaper, .movie-script, .minimalist, .h5-display, .h5-display-left-aligned) .HyperMD-header-5": [
+      "--font-extralight"
+    ],
     ".markdown-preview-view.movie-script": ["--font-weight"],
-    ":is(.markdown-preview-view": ["--h-display-art-deco-weight"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-stroke-left-aligned, .h5-normal, .sci-fi) :is(.el-h5 > h5, .markdown-preview-view > * > h5, .HyperMD-header-5):not(.callout *, ul *, ol *)": [
+      "--h-display-art-deco-weight"
+    ]
   },
   "--h6-weight": {
-    ".markdown-preview-view:not(.newspaper": ["--h-stroke-weight"],
-    ".is-live-preview:not(.newspaper": ["--font-extralight"],
+    ".markdown-preview-view:not(.newspaper, .movie-script, .minimalist, .h6-display, .h6-display-left-aligned) h6": [
+      "--h-stroke-weight"
+    ],
+    ".is-live-preview:not(.newspaper, .movie-script, .minimalist, .h6-display, .h6-display-left-aligned) .HyperMD-header-6": [
+      "--font-extralight"
+    ],
     ".markdown-preview-view.movie-script": ["--font-weight"],
-    ":is(.markdown-preview-view": ["--h-display-art-deco-weight"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-stroke-left-aligned, .h6-normal, .sci-fi) :is(.el-h6 > h6, .markdown-preview-view > * > h6, .HyperMD-header-6):not(.callout *, ul *, ol *)": [
+      "--h-display-art-deco-weight"
+    ]
   },
   "--bases-header-border-width": {
     "body": ["--border-width"],
@@ -504,7 +540,9 @@
   "--bases-cards-shadow": { "body": ["--background-modifier-border"] },
   "--blockquote-border-color": {
     "body": ["--interactive-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent"
+    ]
   },
   "--bold-color": {
     ".callout[data-callout=\"conversation-minimalist\"] > .callout-content > *": [
@@ -518,7 +556,9 @@
     "body.fas-ribbon-horizontal-floating-hover .workspace-ribbon.mod-left": [
       "--radius-m"
     ],
-    ":where(body:not(.is-popout-window": ["--radius-m"]
+    ":where(body:not(.is-popout-window, .is-mobile)).fas-status-bar-default-hover .status-bar": [
+      "--radius-m"
+    ]
   },
   "--button-radius": { "body": ["--radius-s"] },
   "--button-corner-shape": { "body": ["--corner-shape"] },
@@ -631,7 +671,7 @@
     ".callout[data-callout=\"timeline\"] > .callout-content > .callout": [
       "--card-padding"
     ],
-    ".compact:is(.markdown-source-view": [
+    ".compact:is(.markdown-source-view, .markdown-preview-view) > *": [
       "--size-2-3",
       "--size-2-3",
       "--size-2-3",
@@ -692,9 +732,118 @@
       "--color-red"
     ],
     ".callout[data-callout=\"autopsy\"] .callout": ["--callout-color"],
-    ":is(.HyperMD-task-line": ["--color-yellow"],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]": [
+      "--color-base-50"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]": [
+      "--color-base-50"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]": [
+      "--interactive-accent"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]": [
+      "--interactive-accent"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]": [
+      "--interactive-accent"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\">\"]": [
+      "--color-base-50"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"<\"]": [
+      "--color-base-50"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"?\"]": [
+      "--color-yellow"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"!\"]": [
+      "--color-orange"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"$\"]": [
+      "--color-green"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"*\"]": [
+      "--color-yellow"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"a\"]": [
+      "--color-blue"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"b\"]": [
+      "--color-orange"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"B\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"c\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"d\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"e\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"f\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"g\"]": [
+      "--color-blue"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"h\"]": [
+      "--color-green"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"H\"]": [
+      "--color-pink"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"I\"]": [
+      "--color-yellow"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"l\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"L\"]": [
+      "--color-accent"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"m\"]": [
+      "--color-blue"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"M\"]": [
+      "--color-green"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"n\"]": [
+      "--color-blue"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"p\"]": [
+      "--color-green"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"t\"]": [
+      "--color-red"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"T\"]": [
+      "--color-cyan"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"u\"]": [
+      "--color-green"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"U\"]": [
+      "--color-base-50"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"w\"]": [
+      "--color-yellow"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"W\"]": [
+      "--color-cyan"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"z\"]": [
+      "--color-yellow"
+    ],
     ".minimalist": ["--text-normal"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent"],
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent"
+    ],
     "[data-task=\"/\"]:checked": ["--color-base-50"]
   },
   "--checkbox-color-hover": {
@@ -703,9 +852,28 @@
       "--checkbox-color",
       "--mono-rgb-100"
     ],
-    ":is(.HyperMD-task-line": ["--interactive-accent-hover"],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]": [
+      "--checkbox-border-color-hover"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]": [
+      "--checkbox-border-color-hover"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]": [
+      "--interactive-accent-hover"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]": [
+      "--interactive-accent-hover"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]": [
+      "--color-red-hover"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]": [
+      "--interactive-accent-hover"
+    ],
     ".minimalist": ["--text-muted"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hover"],
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hover"
+    ],
     "[data-task=\"!\"]:checked": ["--color-yellow"],
     "[data-task=\"-\"]:checked": ["--color-red"],
     "[data-task=\"/\"]:checked": ["--color-base-50"]
@@ -760,7 +928,9 @@
   "--collapse-icon-color-collapsed": {
     "body": ["--text-accent"],
     ".callout[data-callout=\"screen\"]": ["--list-marker-color-collapsed"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--dialog-max-width": {
     ".is-phone .modal-container": [
@@ -778,7 +948,9 @@
   "--divider-color": { "body": ["--background-modifier-border"] },
   "--divider-color-hover": {
     "body": ["--color-base-50"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent"
+    ]
   },
   "--divider-vertical-height": { "body": ["--header-height"] },
   "--dropdown-background-position": {
@@ -796,7 +968,9 @@
   "--embed-max-height": { ".markdown-embed": ["--card-height"] },
   "--embed-border-start": {
     "body": ["--interactive-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent"
+    ]
   },
   "--embed-padding": { "body": ["--size-4-6"], ".mod-rtl": ["--size-4-6"] },
   "--embed-block-shadow-hover": {
@@ -904,72 +1078,175 @@
     "body": ["--p-spacing"],
     ".callout[data-callout=\"fas-infobox\"]": ["--p-spacing"],
     ".callout[data-callout=\"infobox\"]": ["--p-spacing"],
-    ".compact:is(.markdown-source-view": ["--p-spacing"]
+    ".compact:is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--p-spacing"
+    ]
   },
   "--h1-color": {
-    ":is(.markdown-preview-view": ["--h-display-color"],
-    ":is(.markdown-source-view": ["--color-rainbow-1"],
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-stroke-left-aligned, .h1-normal, .sci-fi) :is(.el-h1 > h1, .markdown-preview-view > * > h1, .HyperMD-header-1):not(.callout *, ul *, ol *)": [
+      "--h-display-color"
+    ],
+    ":is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--color-rainbow-1"
+    ],
     ".newspaper": ["--text-normal"],
-    ":is(.note-accent-1": ["--color-accent"],
+    ":is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6) > *": [
+      "--color-accent"
+    ],
     ".style-settings-container": ["--text-accent"]
   },
   "--h2-color": {
-    ":is(.markdown-preview-view": ["--h-display-color"],
-    ":is(.markdown-source-view": ["--color-rainbow-2"],
-    ":is(.note-accent-1": ["--h1-color", "--text-normal"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-stroke-left-aligned, .h2-normal, .sci-fi) :is(.el-h2 > h2, .markdown-preview-view > * > h2, .HyperMD-header-2):not(.callout *, ul *, ol *)": [
+      "--h-display-color"
+    ],
+    ":is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--color-rainbow-2"
+    ],
+    ":is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6) > *": [
+      "--h1-color",
+      "--text-normal"
+    ]
   },
   "--h3-color": {
-    ":is(.markdown-preview-view": ["--h-display-color"],
-    ":is(.markdown-source-view": ["--color-rainbow-3"],
-    ":is(.note-accent-1": ["--h1-color", "--text-normal"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-stroke-left-aligned, .h3-normal, .sci-fi) :is(.el-h3 > h3, .markdown-preview-view > * > h3, .HyperMD-header-3):not(.callout *, ul *, ol *)": [
+      "--h-display-color"
+    ],
+    ":is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--color-rainbow-3"
+    ],
+    ":is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6) > *": [
+      "--h1-color",
+      "--text-normal"
+    ]
   },
   "--h4-color": {
-    ":is(.markdown-preview-view": ["--h-display-color"],
-    ":is(.markdown-source-view": ["--color-rainbow-4"],
-    ":is(.note-accent-1": ["--h1-color", "--text-normal"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-stroke-left-aligned, .h4-normal, .sci-fi) :is(.el-h4 > h4, .markdown-preview-view > * > h4, .HyperMD-header-4):not(.callout *, ul *, ol *)": [
+      "--h-display-color"
+    ],
+    ":is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--color-rainbow-4"
+    ],
+    ":is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6) > *": [
+      "--h1-color",
+      "--text-normal"
+    ]
   },
   "--h5-color": {
-    ":is(.markdown-preview-view": ["--h-display-color"],
-    ":is(.markdown-source-view": ["--color-rainbow-5"],
-    ":is(.note-accent-1": ["--h1-color", "--text-normal"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-stroke-left-aligned, .h5-normal, .sci-fi) :is(.el-h5 > h5, .markdown-preview-view > * > h5, .HyperMD-header-5):not(.callout *, ul *, ol *)": [
+      "--h-display-color"
+    ],
+    ":is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--color-rainbow-5"
+    ],
+    ":is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6) > *": [
+      "--h1-color",
+      "--text-normal"
+    ]
   },
   "--h6-color": {
-    ":is(.markdown-preview-view": ["--h-display-color"],
-    ":is(.markdown-source-view": ["--color-rainbow-6"],
-    ":is(.note-accent-1": ["--h1-color", "--text-normal"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-stroke-left-aligned, .h6-normal, .sci-fi) :is(.el-h6 > h6, .markdown-preview-view > * > h6, .HyperMD-header-6):not(.callout *, ul *, ol *)": [
+      "--h-display-color"
+    ],
+    ":is(.markdown-source-view, .markdown-preview-view) > *": [
+      "--color-rainbow-6"
+    ],
+    ":is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6) > *": [
+      "--h1-color",
+      "--text-normal"
+    ]
   },
-  "--h1-font": { ":is(.markdown-preview-view": ["--h-display-font"] },
-  "--h2-font": { ":is(.markdown-preview-view": ["--h-display-font"] },
-  "--h3-font": { ":is(.markdown-preview-view": ["--h-display-font"] },
-  "--h4-font": { ":is(.markdown-preview-view": ["--h-display-font"] },
-  "--h5-font": { ":is(.markdown-preview-view": ["--h-display-font"] },
-  "--h6-font": { ":is(.markdown-preview-view": ["--h-display-font"] },
+  "--h1-font": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-stroke-left-aligned, .h1-normal, .sci-fi) :is(.el-h1 > h1, .markdown-preview-view > * > h1, .HyperMD-header-1):not(.callout *, ul *, ol *)": [
+      "--h-display-font"
+    ]
+  },
+  "--h2-font": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-stroke-left-aligned, .h2-normal, .sci-fi) :is(.el-h2 > h2, .markdown-preview-view > * > h2, .HyperMD-header-2):not(.callout *, ul *, ol *)": [
+      "--h-display-font"
+    ]
+  },
+  "--h3-font": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-stroke-left-aligned, .h3-normal, .sci-fi) :is(.el-h3 > h3, .markdown-preview-view > * > h3, .HyperMD-header-3):not(.callout *, ul *, ol *)": [
+      "--h-display-font"
+    ]
+  },
+  "--h4-font": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-stroke-left-aligned, .h4-normal, .sci-fi) :is(.el-h4 > h4, .markdown-preview-view > * > h4, .HyperMD-header-4):not(.callout *, ul *, ol *)": [
+      "--h-display-font"
+    ]
+  },
+  "--h5-font": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-stroke-left-aligned, .h5-normal, .sci-fi) :is(.el-h5 > h5, .markdown-preview-view > * > h5, .HyperMD-header-5):not(.callout *, ul *, ol *)": [
+      "--h-display-font"
+    ]
+  },
+  "--h6-font": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-stroke-left-aligned, .h6-normal, .sci-fi) :is(.el-h6 > h6, .markdown-preview-view > * > h6, .HyperMD-header-6):not(.callout *, ul *, ol *)": [
+      "--h-display-font"
+    ]
+  },
   "--h1-line-height": {
-    ":is(.markdown-preview-view": ["--h-display-line-height"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-stroke-left-aligned, .h1-normal, .sci-fi) :is(.el-h1 > h1, .markdown-preview-view > * > h1, .HyperMD-header-1):not(.callout *, ul *, ol *)": [
+      "--h-display-line-height"
+    ]
   },
   "--h2-line-height": {
-    ":is(.markdown-preview-view": ["--h-display-line-height"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-stroke-left-aligned, .h2-normal, .sci-fi) :is(.el-h2 > h2, .markdown-preview-view > * > h2, .HyperMD-header-2):not(.callout *, ul *, ol *)": [
+      "--h-display-line-height"
+    ]
   },
   "--h3-line-height": {
-    ":is(.markdown-preview-view": ["--h-display-line-height"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-stroke-left-aligned, .h3-normal, .sci-fi) :is(.el-h3 > h3, .markdown-preview-view > * > h3, .HyperMD-header-3):not(.callout *, ul *, ol *)": [
+      "--h-display-line-height"
+    ]
   },
   "--h4-line-height": {
-    ":is(.markdown-preview-view": ["--h-display-line-height"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-stroke-left-aligned, .h4-normal, .sci-fi) :is(.el-h4 > h4, .markdown-preview-view > * > h4, .HyperMD-header-4):not(.callout *, ul *, ol *)": [
+      "--h-display-line-height"
+    ]
   },
   "--h5-line-height": {
     "body": ["--line-height-normal"],
-    ":is(.markdown-preview-view": ["--h-display-line-height"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-stroke-left-aligned, .h5-normal, .sci-fi) :is(.el-h5 > h5, .markdown-preview-view > * > h5, .HyperMD-header-5):not(.callout *, ul *, ol *)": [
+      "--h-display-line-height"
+    ]
   },
   "--h6-line-height": {
     "body": ["--line-height-normal"],
-    ":is(.markdown-preview-view": ["--h-display-line-height"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-stroke-left-aligned, .h6-normal, .sci-fi) :is(.el-h6 > h6, .markdown-preview-view > * > h6, .HyperMD-header-6):not(.callout *, ul *, ol *)": [
+      "--h-display-line-height"
+    ]
   },
-  "--h1-size": { ":is(.markdown-preview-view": ["--h1-display-size"] },
-  "--h2-size": { ":is(.markdown-preview-view": ["--h2-display-size"] },
-  "--h3-size": { ":is(.markdown-preview-view": ["--h3-display-size"] },
-  "--h4-size": { ":is(.markdown-preview-view": ["--h4-display-size"] },
-  "--h5-size": { ":is(.markdown-preview-view": ["--h5-display-size"] },
-  "--h6-size": { ":is(.markdown-preview-view": ["--h6-display-size"] },
+  "--h1-size": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-stroke-left-aligned, .h1-normal, .sci-fi) :is(.el-h1 > h1, .markdown-preview-view > * > h1, .HyperMD-header-1):not(.callout *, ul *, ol *)": [
+      "--h1-display-size"
+    ]
+  },
+  "--h2-size": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-stroke-left-aligned, .h2-normal, .sci-fi) :is(.el-h2 > h2, .markdown-preview-view > * > h2, .HyperMD-header-2):not(.callout *, ul *, ol *)": [
+      "--h2-display-size"
+    ]
+  },
+  "--h3-size": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-stroke-left-aligned, .h3-normal, .sci-fi) :is(.el-h3 > h3, .markdown-preview-view > * > h3, .HyperMD-header-3):not(.callout *, ul *, ol *)": [
+      "--h3-display-size"
+    ]
+  },
+  "--h4-size": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-stroke-left-aligned, .h4-normal, .sci-fi) :is(.el-h4 > h4, .markdown-preview-view > * > h4, .HyperMD-header-4):not(.callout *, ul *, ol *)": [
+      "--h4-display-size"
+    ]
+  },
+  "--h5-size": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-stroke-left-aligned, .h5-normal, .sci-fi) :is(.el-h5 > h5, .markdown-preview-view > * > h5, .HyperMD-header-5):not(.callout *, ul *, ol *)": [
+      "--h5-display-size"
+    ]
+  },
+  "--h6-size": {
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-stroke-left-aligned, .h6-normal, .sci-fi) :is(.el-h6 > h6, .markdown-preview-view > * > h6, .HyperMD-header-6):not(.callout *, ul *, ol *)": [
+      "--h6-display-size"
+    ]
+  },
   "--hr-color": {
     "body": ["--background-modifier-border"],
     ".callout[data-callout=\"fas-infobox\"]": [
@@ -1272,7 +1549,9 @@
     "body.is-tablet .sidebar-toggle-button": ["--text-normal"],
     ".mobile-navbar-actions": ["--text-normal"],
     ".mobile-tab-switcher-menubar": ["--text-normal"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--icon-color-focused": {
     "body": ["--text-normal"],
@@ -1351,13 +1630,17 @@
     ".bases-group-heading": ["--bases-group-heading-value-color"],
     ".bases-cards-property.mod-title": ["--text-normal"],
     ".minimalist": ["--text-normal"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--link-color-hover": {
     "body": ["--text-accent-hover"],
     ".bases-group-heading": ["--bases-group-heading-value-color"],
     ".minimalist": ["--text-normal"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent-hover"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent-hover"
+    ]
   },
   "--link-decoration-hover": { "body": ["--link-decoration"] },
   "--link-weight": {
@@ -1381,12 +1664,16 @@
   "--link-external-color": {
     "body": ["--text-accent"],
     ".minimalist": ["--text-normal"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--link-external-color-hover": {
     "body": ["--text-accent-hover"],
     ".minimalist": ["--text-normal"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent-hover"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent-hover"
+    ]
   },
   "--link-external-decoration-hover": {
     "body": ["--link-external-decoration"]
@@ -1396,12 +1683,16 @@
     ".bases-group-heading": ["--bases-group-heading-value-color"],
     ".bases-cards-property.mod-title": ["--text-normal"],
     ".minimalist": ["--text-muted"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--link-unresolved-decoration-color": {
     "body": ["--interactive-accent-hsl"],
     ".minimalist": ["--text-muted"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--list-indent": { "body": ["--indent-unit", "--indent-size"] },
   "--list-marker-color": {
@@ -1523,7 +1814,9 @@
   "--list-marker-color-collapsed": {
     "body": ["--text-accent"],
     ".callout[data-callout=\"screen\"]": ["--callout-color", "--mono-rgb-0"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--nav-item-size": {
     "body": ["--font-ui-small"],
@@ -1618,7 +1911,7 @@
       "--size-4-2",
       "--size-4-2"
     ],
-    ".compact:is(.markdown-source-view": [
+    ".compact:is(.markdown-source-view, .markdown-preview-view) > *": [
       "--size-4-3",
       "--size-4-1",
       "--size-4-1",
@@ -1841,13 +2134,15 @@
   "--ribbon-background-collapsed": { "body": ["--background-primary"] },
   "--ribbon-width": { ".is-mobile": ["--touch-size-xl"] },
   "--ribbon-padding": { "body": ["--size-4-2", "--size-4-1", "--size-4-3"] },
-  "--scrollbar-width": { "body:not(.is-ios": ["--scrollbar-width-base"] },
+  "--scrollbar-width": {
+    "body:not(.is-ios, .is-android)": ["--scrollbar-width-base"]
+  },
   "--scrollbar-radius": { "body": ["--radius-l"] },
   "--scrollbar-active-thumb-bg": { "body": ["--mono-rgb-100"] },
   "--scrollbar-bg": { "body": ["--mono-rgb-100"] },
   "--scrollbar-thumb-bg": {
     "body": ["--mono-rgb-100"],
-    "body:not(.is-ios": ["--color-base-20"]
+    "body:not(.is-ios, .is-android)": ["--color-base-20"]
   },
   "--search-clear-button-color": { "body": ["--text-muted"] },
   "--search-icon-color": {
@@ -1908,7 +2203,9 @@
   "--status-bar-font-size": { "body": ["--font-ui-smaller"] },
   "--status-bar-text-color": {
     "body": ["--text-muted"],
-    ":where(body:not(.is-popout-window": ["--workspace-foreground-muted"]
+    ":where(body:not(.is-popout-window, .is-mobile)).fas-status-bar-ribbon": [
+      "--workspace-foreground-muted"
+    ]
   },
   "--status-bar-radius": { "body": ["--radius-m"] },
   "--suggestion-background": {
@@ -2095,12 +2392,16 @@
   "--table-row-last-border-width": { "body": ["--table-border-width"] },
   "--table-selection": {
     "body": ["--color-accent-hsl"],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent-hsl"
+    ]
   },
   "--table-selection-blend-mode": { "body": ["--highlight-mix-blend-mode"] },
   "--table-selection-border-color": {
     "body": ["--interactive-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent"
+    ]
   },
   "--table-drag-handle-background-active": {
     "body": ["--table-selection-border-color"]
@@ -2108,7 +2409,9 @@
   "--table-drag-handle-color": { "body": ["--text-faint"] },
   "--table-drag-handle-color-active": {
     "body": ["--text-on-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-on-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-on-accent"
+    ]
   },
   "--table-add-button-border-width": { "body": ["--table-border-width"] },
   "--table-add-button-border-color": {
@@ -2125,11 +2428,15 @@
       "--text-accent",
       "--mono-rgb-100"
     ],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--tag-color-hover": {
     "body": ["--text-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--text-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--text-accent"
+    ]
   },
   "--tag-background": {
     "body": ["--interactive-accent-hsl"],
@@ -2164,19 +2471,27 @@
     ".callout[data-callout=\"data-header\"][data-callout-metadata~=\"pf2\"] .callout-title": [
       "--interactive-accent-hsl"
     ],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--tag-background-hover": {
     "body": ["--interactive-accent-hsl"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--tag-border-color": {
     "body": ["--interactive-accent-hsl"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--tag-border-color-hover": {
     "body": ["--interactive-accent-hsl"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--traffic-lights-offset-x": { "body": ["--header-height"] },
   "--traffic-lights-offset-y": { "body": ["--header-height"] },
@@ -2263,7 +2578,9 @@
   "--background-modifier-active-hover": {
     "body": ["--interactive-accent-hsl"],
     ".callout[data-callout=\"screen\"]": ["--list-marker-color-collapsed"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--background-modifier-border": { "body": ["--color-base-30"] },
   "--background-modifier-border-hover": { "body": ["--color-base-35"] },
@@ -2301,7 +2618,9 @@
   "--text-selection": {
     "body": ["--color-accent-hsl"],
     ".theme-dark": ["--interactive-accent-hsl"],
-    ".markdown-preview-view:is(.note-accent-1": ["--interactive-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--interactive-accent-hsl"
+    ]
   },
   "--text-highlight-bg": { "body": ["--text-highlight-bg-rgb"] },
   "--text-accent": {
@@ -2331,11 +2650,15 @@
       "--accent-s",
       "--accent-l"
     ],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent-1"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent-1"
+    ]
   },
   "--text-accent-hover": {
     "body": ["--color-accent-2"],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent-2"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent-2"
+    ]
   },
   "--interactive-normal": {
     "body": ["--color-base-00"],
@@ -2353,17 +2676,23 @@
   },
   "--interactive-accent-hsl": {
     "body": ["--color-accent-hsl"],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent-hsl"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent-hsl"
+    ]
   },
   "--interactive-accent": {
     "body": ["--color-accent-1"],
     ".theme-dark": ["--color-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent"
+    ]
   },
   "--interactive-accent-hover": {
     "body": ["--color-accent-2"],
     ".theme-dark": ["--color-accent-1"],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent-1"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent-1"
+    ]
   },
   "--dropdown-background": {
     ".theme-light": ["--interactive-normal"],
@@ -2465,7 +2794,7 @@
   "--color-accent-hsl": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    ".markdown-preview-view:is(.note-accent-1": [
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--accent-h",
       "--accent-s",
       "--accent-l"
@@ -2474,7 +2803,7 @@
   "--color-accent": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    ".markdown-preview-view:is(.note-accent-1": [
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--accent-h",
       "--accent-s",
       "--accent-l"
@@ -2483,7 +2812,7 @@
   "--color-accent-1": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    ".markdown-preview-view:is(.note-accent-1": [
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--accent-h",
       "--accent-s",
       "--accent-l"
@@ -2492,7 +2821,7 @@
   "--color-accent-2": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    ".markdown-preview-view:is(.note-accent-1": [
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--accent-h",
       "--accent-s",
       "--accent-l"
@@ -3245,7 +3574,9 @@
   },
   "--banner-slope-border-color": {
     "body": ["--color-accent"],
-    ".markdown-preview-view:is(.note-accent-1": ["--color-accent"]
+    ".markdown-preview-view:is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
+      "--color-accent"
+    ]
   },
   "--banner-width": { "body": ["--file-margins-inline"] },
   "--footer-img-color": {
@@ -3274,8 +3605,13 @@
   "--tree-view-guide-color": { "body": ["--background-secondary"] },
   "--art-deco-color": {
     "body": ["--art-deco-color-custom"],
-    ".callout:not(:where([data-callout~=\"blank\"]": ["--callout-color"],
-    ".callout[data-callout=\"page-break\"]:is([data-callout-metadata~=\"gray\"]": [
+    ".callout:not(:where([data-callout~=\"blank\"], [data-callout-metadata~=\"blank\"], [data-callout-metadata~=\"no-deco\"], [data-callout=\"autopsy\"], [data-callout=\"caption\"], [data-callout=\"clue\"], [data-callout=\"comic\"], [data-callout=\"header\"], [data-callout=\"film-strip\"], [data-callout=\"full-width-image\"], [data-callout=\"full-w-img\"], [data-callout=\"fwi\"], [data-callout=\"full-width-panoramic-image-:jack_o_lantern:\"], [data-callout=\"fwpi-jol\"], [data-callout=\"grid\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"letter\"], [data-callout=\"masonry\"], [data-callout=\"paper-fold\"], [data-callout=\"pinned\"], [data-callout=\"poem\"], [data-callout=\"polaroid\"], [data-callout=\"table-cards\"], [data-callout=\"tooltip\"], [data-callout-metadata~=\"inline\"])):not(:where([data-callout=\"autopsy\"], [data-callout=\"comic\"], [data-callout=\"email\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"timeline\"]) *):not(li *)[data-callout-metadata~=\"accent\"]::after": [
+      "--color-accent"
+    ],
+    ".callout:not(:where([data-callout~=\"blank\"], [data-callout-metadata~=\"blank\"], [data-callout-metadata~=\"no-deco\"], [data-callout=\"autopsy\"], [data-callout=\"caption\"], [data-callout=\"clue\"], [data-callout=\"comic\"], [data-callout=\"header\"], [data-callout=\"film-strip\"], [data-callout=\"full-width-image\"], [data-callout=\"full-w-img\"], [data-callout=\"fwi\"], [data-callout=\"full-width-panoramic-image-:jack_o_lantern:\"], [data-callout=\"fwpi-jol\"], [data-callout=\"grid\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"letter\"], [data-callout=\"masonry\"], [data-callout=\"paper-fold\"], [data-callout=\"pinned\"], [data-callout=\"poem\"], [data-callout=\"polaroid\"], [data-callout=\"table-cards\"], [data-callout=\"tooltip\"], [data-callout-metadata~=\"inline\"])):not(:where([data-callout=\"autopsy\"], [data-callout=\"comic\"], [data-callout=\"email\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"timeline\"]) *):not(li *):not(:where([data-callout=\"page-break\"]))::after": [
+      "--callout-color"
+    ],
+    ".callout[data-callout=\"page-break\"]:is([data-callout-metadata~=\"gray\"], [data-callout-metadata~=\"brown\"], [data-callout-metadata~=\"red\"], [data-callout-metadata~=\"orange\"], [data-callout-metadata~=\"yellow\"], [data-callout-metadata~=\"green\"], [data-callout-metadata~=\"cyan\"], [data-callout-metadata~=\"blue\"], [data-callout-metadata~=\"purple\"], [data-callout-metadata~=\"pink\"], [data-callout-metadata~=\"black\"], [data-callout-metadata~=\"white\"])": [
       "--callout-color"
     ]
   },
@@ -3287,7 +3623,7 @@
       "--art-deco-color",
       "--art-deco-color"
     ],
-    ".callout:not(:where([data-callout~=\"blank\"]": [
+    ".callout:not(:where([data-callout~=\"blank\"], [data-callout-metadata~=\"blank\"], [data-callout-metadata~=\"no-deco\"], [data-callout=\"autopsy\"], [data-callout=\"caption\"], [data-callout=\"clue\"], [data-callout=\"comic\"], [data-callout=\"header\"], [data-callout=\"film-strip\"], [data-callout=\"full-width-image\"], [data-callout=\"full-w-img\"], [data-callout=\"fwi\"], [data-callout=\"full-width-panoramic-image-:jack_o_lantern:\"], [data-callout=\"fwpi-jol\"], [data-callout=\"grid\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"letter\"], [data-callout=\"masonry\"], [data-callout=\"paper-fold\"], [data-callout=\"pinned\"], [data-callout=\"poem\"], [data-callout=\"polaroid\"], [data-callout=\"table-cards\"], [data-callout=\"tooltip\"], [data-callout-metadata~=\"inline\"])):not(:where([data-callout=\"autopsy\"], [data-callout=\"comic\"], [data-callout=\"email\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"timeline\"]) *):not(li *):not(:where([data-callout-metadata~=\"no-deco\"]))::after": [
       "--art-deco-color",
       "--art-deco-color",
       "--art-deco-color",
@@ -3624,7 +3960,7 @@
     ".markdown-preview-view .callout[data-callout-metadata~=\"wide\"]": [
       "--file-margins-inline"
     ],
-    ".markdown-preview-view [alt~=\"wide\"]:is(img:not(.image-embed img)": [
+    ".markdown-preview-view [alt~=\"wide\"]:is(img:not(.image-embed img), .image-embed, .markdown-embed, .file-embed)": [
       "--file-margins-inline"
     ],
     ".markdown-reading-view .dataview-wide": ["--file-margins-inline"]
@@ -3715,27 +4051,262 @@
     ".file-embed.mod-empty:hover": ["--color-red-rgb"]
   },
   "--h1-background": {
-    ":is(.markdown-preview-view": ["--h-display-background"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-stroke-left-aligned, .h1-normal, .sci-fi) :is(.el-h1 > h1, .markdown-preview-view > * > h1, .HyperMD-header-1):not(.callout *, ul *, ol *)": [
+      "--h-display-background"
+    ]
   },
   "--h2-background": {
-    ":is(.markdown-preview-view": ["--h-display-background"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-stroke-left-aligned, .h2-normal, .sci-fi) :is(.el-h2 > h2, .markdown-preview-view > * > h2, .HyperMD-header-2):not(.callout *, ul *, ol *)": [
+      "--h-display-background"
+    ]
   },
   "--h3-background": {
-    ":is(.markdown-preview-view": ["--h-display-background"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-stroke-left-aligned, .h3-normal, .sci-fi) :is(.el-h3 > h3, .markdown-preview-view > * > h3, .HyperMD-header-3):not(.callout *, ul *, ol *)": [
+      "--h-display-background"
+    ]
   },
   "--h4-background": {
-    ":is(.markdown-preview-view": ["--h-display-background"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-stroke-left-aligned, .h4-normal, .sci-fi) :is(.el-h4 > h4, .markdown-preview-view > * > h4, .HyperMD-header-4):not(.callout *, ul *, ol *)": [
+      "--h-display-background"
+    ]
   },
   "--h5-background": {
-    ":is(.markdown-preview-view": ["--h-display-background"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-stroke-left-aligned, .h5-normal, .sci-fi) :is(.el-h5 > h5, .markdown-preview-view > * > h5, .HyperMD-header-5):not(.callout *, ul *, ol *)": [
+      "--h-display-background"
+    ]
   },
   "--h6-background": {
-    ":is(.markdown-preview-view": ["--h-display-background"]
+    ":is(.markdown-preview-view, .is-live-preview):not(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-stroke-left-aligned, .h6-normal, .sci-fi) :is(.el-h6 > h6, .markdown-preview-view > * > h6, .HyperMD-header-6):not(.callout *, ul *, ol *)": [
+      "--h-display-background"
+    ]
   },
   "--header-gradient-base-color": {
-    ":is(.markdown-source-view": ["--text-accent"]
+    ":is(.markdown-source-view, .markdown-preview-view) > *": ["--text-accent"]
   },
-  "--checkbox-icon": { ":is(.HyperMD-task-line": ["--icon-doodle-zap"] },
+  "--checkbox-icon": {
+    ":is(.HyperMD-task-line, .task-list-item):where(:nth-child(6n+1))": [
+      "--box-doodle-checked-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item):where(:nth-child(6n+2))": [
+      "--box-doodle-checked-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item):where(:nth-child(6n+3))": [
+      "--box-doodle-checked-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item):where(:nth-child(6n+4))": [
+      "--box-doodle-checked-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item):where(:nth-child(6n+5))": [
+      "--box-doodle-checked-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item):where(:nth-child(6n+6))": [
+      "--box-doodle-checked-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]:where(:nth-child(6n+1))": [
+      "--box-doodle-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]:where(:nth-child(6n+2))": [
+      "--box-doodle-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]:where(:nth-child(6n+3))": [
+      "--box-doodle-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]:where(:nth-child(6n+4))": [
+      "--box-doodle-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]:where(:nth-child(6n+5))": [
+      "--box-doodle-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\" \"]:where(:nth-child(6n+6))": [
+      "--box-doodle-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]:where(:nth-child(6n+1))": [
+      "--box-doodle-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]:where(:nth-child(6n+2))": [
+      "--box-doodle-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]:where(:nth-child(6n+3))": [
+      "--box-doodle-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]:where(:nth-child(6n+4))": [
+      "--box-doodle-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]:where(:nth-child(6n+5))": [
+      "--box-doodle-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"\"]:where(:nth-child(6n+6))": [
+      "--box-doodle-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]:where(:nth-child(6n+1))": [
+      "--box-doodle-checked-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]:where(:nth-child(6n+2))": [
+      "--box-doodle-checked-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]:where(:nth-child(6n+3))": [
+      "--box-doodle-checked-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]:where(:nth-child(6n+4))": [
+      "--box-doodle-checked-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]:where(:nth-child(6n+5))": [
+      "--box-doodle-checked-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"x\"]:where(:nth-child(6n+6))": [
+      "--box-doodle-checked-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]:where(:nth-child(6n+1))": [
+      "--box-doodle-checked-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]:where(:nth-child(6n+2))": [
+      "--box-doodle-checked-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]:where(:nth-child(6n+3))": [
+      "--box-doodle-checked-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]:where(:nth-child(6n+4))": [
+      "--box-doodle-checked-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]:where(:nth-child(6n+5))": [
+      "--box-doodle-checked-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"X\"]:where(:nth-child(6n+6))": [
+      "--box-doodle-checked-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]": [
+      "--icon-canceled"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]": [
+      "--icon-incomplete"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]:where(:nth-child(6n+1))": [
+      "--box-doodle-canceled-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]:where(:nth-child(6n+2))": [
+      "--box-doodle-canceled-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]:where(:nth-child(6n+3))": [
+      "--box-doodle-canceled-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]:where(:nth-child(6n+4))": [
+      "--box-doodle-canceled-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]:where(:nth-child(6n+5))": [
+      "--box-doodle-canceled-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"-\"]:where(:nth-child(6n+6))": [
+      "--box-doodle-canceled-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]:where(:nth-child(6n+1))": [
+      "--box-doodle-incomplete-1"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]:where(:nth-child(6n+2))": [
+      "--box-doodle-incomplete-2"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]:where(:nth-child(6n+3))": [
+      "--box-doodle-incomplete-3"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]:where(:nth-child(6n+4))": [
+      "--box-doodle-incomplete-4"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]:where(:nth-child(6n+5))": [
+      "--box-doodle-incomplete-5"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item)[data-task=\"/\"]:where(:nth-child(6n+6))": [
+      "--box-doodle-incomplete-6"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\">\"]": [
+      "--icon-doodle-forwarded"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"<\"]": [
+      "--icon-doodle-scheduling"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"?\"]": [
+      "--icon-doodle-question"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"!\"]": [
+      "--icon-doodle-important"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"$\"]": [
+      "--icon-doodle-dollar"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"*\"]": [
+      "--icon-doodle-star"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"a\"]": [
+      "--icon-doodle-anchor"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"b\"]": [
+      "--icon-doodle-bookmark"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"B\"]": [
+      "--icon-doodle-Blood"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"c\"]": [
+      "--icon-doodle-cons"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"d\"]": [
+      "--icon-doodle-down"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"e\"]": [
+      "--icon-doodle-error"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"f\"]": [
+      "--icon-doodle-fire"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"g\"]": [
+      "--icon-doodle-goal"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"h\"]": [
+      "--icon-doodle-health"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"H\"]": [
+      "--icon-doodle-Heart"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"I\"]": [
+      "--icon-doodle-Idea"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"l\"]": [
+      "--icon-doodle-location"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"L\"]": [
+      "--icon-doodle-Link"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"m\"]": [
+      "--icon-doodle-mail"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"M\"]": [
+      "--icon-doodle-Music"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"n\"]": [
+      "--icon-doodle-note"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"p\"]": [
+      "--icon-doodle-pros"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"t\"]": [
+      "--icon-doodle-trash"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"T\"]": [
+      "--icon-doodle-Travel"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"u\"]": [
+      "--icon-doodle-up"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"U\"]": [
+      "--icon-doodle-User"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"w\"]": [
+      "--icon-doodle-win"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"W\"]": [
+      "--icon-doodle-Write"
+    ],
+    ":is(.HyperMD-task-line, .task-list-item.task-list-item)[data-task=\"z\"]": [
+      "--icon-doodle-zap"
+    ]
+  },
   "--heading-padding-inline": {
     "[data-type=\"markdown\"] .metadata-properties-heading": ["--size-4-6"],
     ".newspaper .metadata-properties-heading": ["--size-4-1"]
@@ -3791,7 +4362,7 @@
     ".fas-statblocks-accent": ["--color-accent"],
     ".fas-statblocks-hue": ["--middle-color"],
     ".fas-statblocks-complement": ["--middle-color-complement"],
-    ".fas-statblocks-custom.fas-statblocks-accent :is(.note-accent-1": [
+    ".fas-statblocks-custom.fas-statblocks-accent :is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--accent-color"
     ]
   },
@@ -3800,7 +4371,7 @@
   },
   "--statblock-rule-color": {
     ".fas-statblocks-custom": ["--fas-statblock-accent-color"],
-    ".fas-statblocks-custom.fas-statblocks-accent :is(.note-accent-1": [
+    ".fas-statblocks-custom.fas-statblocks-accent :is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--fas-statblock-accent-color"
     ],
     ".fas-skin-sci-fi.fas-statblocks-custom": ["--sci-fi-color-rgb"]
@@ -3811,7 +4382,7 @@
   },
   "--statblock-bar-color": {
     ".fas-statblocks-custom": ["--fas-statblock-accent-color"],
-    ".fas-statblocks-custom.fas-statblocks-accent :is(.note-accent-1": [
+    ".fas-statblocks-custom.fas-statblocks-accent :is(.note-accent-1, .note-accent-2, .note-accent-3, .note-accent-4, .note-accent-5, .note-accent-6)": [
       "--fas-statblock-accent-color"
     ]
   },
@@ -3887,13 +4458,18 @@
   "--hr-ornament-height": {
     "body > :not(.titlebar)": ["--line-height-normal"]
   },
-  "--r": { ".callout:not(:where([data-callout~=\"blank\"]": ["--H", "--h"] },
+  "--r": {
+    ".callout:not(:where([data-callout~=\"blank\"], [data-callout-metadata~=\"blank\"], [data-callout-metadata~=\"no-deco\"], [data-callout=\"autopsy\"], [data-callout=\"caption\"], [data-callout=\"clue\"], [data-callout=\"comic\"], [data-callout=\"header\"], [data-callout=\"film-strip\"], [data-callout=\"full-width-image\"], [data-callout=\"full-w-img\"], [data-callout=\"fwi\"], [data-callout=\"full-width-panoramic-image-:jack_o_lantern:\"], [data-callout=\"fwpi-jol\"], [data-callout=\"grid\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"letter\"], [data-callout=\"masonry\"], [data-callout=\"paper-fold\"], [data-callout=\"pinned\"], [data-callout=\"poem\"], [data-callout=\"polaroid\"], [data-callout=\"table-cards\"], [data-callout=\"tooltip\"], [data-callout-metadata~=\"inline\"])):not(:where([data-callout=\"autopsy\"], [data-callout=\"comic\"], [data-callout=\"email\"], [data-callout=\"infobox\"], [data-callout=\"fas-infobox\"], [data-callout=\"timeline\"]) *):not(li *):not(:where([data-callout-metadata~=\"no-deco\"]))::after": [
+      "--H",
+      "--h"
+    ]
+  },
   "--page-break-color": {
     ".callout[data-callout=\"page-break\"]": ["--art-deco-color"],
     ".callout[data-callout=\"page-break\"][data-callout-metadata~=\"accent\"]": [
       "--color-accent"
     ],
-    ".callout[data-callout=\"page-break\"]:is([data-callout-metadata~=\"gray\"]": [
+    ".callout[data-callout=\"page-break\"]:is([data-callout-metadata~=\"gray\"], [data-callout-metadata~=\"brown\"], [data-callout-metadata~=\"red\"], [data-callout-metadata~=\"orange\"], [data-callout-metadata~=\"yellow\"], [data-callout-metadata~=\"green\"], [data-callout-metadata~=\"cyan\"], [data-callout-metadata~=\"blue\"], [data-callout-metadata~=\"purple\"], [data-callout-metadata~=\"pink\"], [data-callout-metadata~=\"black\"], [data-callout-metadata~=\"white\"])": [
       "--callout-color"
     ]
   },

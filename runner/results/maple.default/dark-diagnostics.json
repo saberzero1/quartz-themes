@@ -1,0 +1,53 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--h5-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h6-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h1-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h2-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h3-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h4-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    }
+  ]
+}

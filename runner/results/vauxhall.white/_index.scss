@@ -3793,7 +3793,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: color(srgb 0.261 0.2646 0.279);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -15261,7 +15261,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: color(srgb 0.5584 0.579707 0.6276);
       font-family:
         ui-sans-serif,
         -apple-system,

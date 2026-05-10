@@ -17,7 +17,7 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 0px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
@@ -28,37 +28,37 @@
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #fff) !important;
-  --checkbox-radius: var(--radius-s, 0px) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 0px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #efeded) !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #000) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s, 0px) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #4476e5) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #4476e5) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #000) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #4476e5) !important;
-  --icon-color-focused: var(--text-normal, #000) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -103,7 +103,7 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s, 0px);
+  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
@@ -114,37 +114,37 @@
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #1e1f22) !important;
-  --checkbox-radius: var(--radius-s, 0px) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 0px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #404348) !important;
+  --code-background: #404348 !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #bcbec4) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s, 0px) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #56a8f5) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #56a8f5) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #bcbec4) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #56a8f5) !important;
-  --icon-color-focused: var(--text-normal, #bcbec4) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -223,7 +223,7 @@ html {
 body {
   div#quartz-root {
     background-color: var(--background-primary);
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
   }
 
   &[data-slug],
@@ -260,7 +260,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(68, 118, 229));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -304,7 +304,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(68, 118, 229));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -347,7 +347,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(68, 118, 229));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -448,7 +448,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(144, 169, 57));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -491,7 +491,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(144, 169, 57));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -534,7 +534,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -577,7 +577,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(0, 0, 0));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -698,7 +698,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(144, 169, 57));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       Theme-Font,
@@ -730,8 +730,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-hightlight-bg, rgb(248, 248, 118));
-    color: var(--text-normal, rgb(0, 0, 0));
+    background-color: var(--text-hightlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -866,7 +866,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(68, 118, 229));
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -977,7 +977,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(239, 237, 237));
+    background-color: var(--code-background);
     border: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -987,7 +987,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1019,7 +1019,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(239, 237, 237));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1083,7 +1083,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(0, 0, 0));
+    color: var(--blockquote-color);
     font-family:
       Theme-Font,
       sans-serif,
@@ -1128,7 +1128,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1251,15 +1251,15 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(0, 0, 0));
-    font-family: var(--h1-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
     line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h1-letter-spacing);
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
@@ -1284,15 +1284,15 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(0, 0, 0));
-    font-family: var(--h2-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h2-letter-spacing);
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
@@ -1317,15 +1317,15 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(0, 0, 0));
-    font-family: var(--h3-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h3-letter-spacing);
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
@@ -1333,10 +1333,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 10px);
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 10px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1353,15 +1350,15 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(0, 0, 0));
-    font-family: var(--h4-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h4-letter-spacing);
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
@@ -1369,10 +1366,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 10px);
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 10px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1389,15 +1383,15 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(0, 0, 0));
-    font-family: var(--h5-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h5-letter-spacing);
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
@@ -1405,10 +1399,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 10px);
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 10px 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1425,8 +1416,8 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(0, 0, 0));
-    font-family: var(--h6-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
@@ -1459,8 +1450,8 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(0, 0, 0));
-    font-family: var(--inline-title-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
     line-height: var(--inline-title-line-height);
@@ -1469,7 +1460,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(132deg, rgb(176, 176, 255), rgb(252, 125, 125), rgb(199, 123, 123), rgb(255, 255, 255));
-    background: rgba(0, 0, 0, 0) linear-gradient(132deg, rgb(176, 176, 255), rgb(252, 125, 125), rgb(199, 123, 123), rgb(255, 255, 255)) repeat scroll 11.8538% 50% / 600% 600% padding-box border-box;
+    background: rgba(0, 0, 0, 0) linear-gradient(132deg, rgb(176, 176, 255), rgb(252, 125, 125), rgb(199, 123, 123), rgb(255, 255, 255)) repeat scroll 12.2386% 50% / 600% 600% padding-box border-box;
     padding: 12.944px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1507,13 +1498,13 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 700px;
-    height: auto;
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
+    height: 1px;
+    background-color: var(--myst-header-line-color);
     background-image: none;
     background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--h1-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   h2::after {
@@ -1526,22 +1517,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 662px;
-    height: auto;
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
+    height: 1px;
+    background-color: var(--myst-header-line-color);
     background-image: none;
     background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--h2-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   h3::after {
@@ -1554,22 +1542,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 662px;
-    height: auto;
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
+    height: 1px;
+    background-color: var(--myst-header-line-color);
     background-image: none;
     background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--h3-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   h4::after {
@@ -1582,22 +1567,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 662px;
-    height: auto;
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
+    height: 1px;
+    background-color: var(--myst-header-line-color);
     background-image: none;
     background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--h4-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   h5::after {
@@ -1610,22 +1592,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 0px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 662px;
-    height: auto;
-    background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0.314));
+    height: 1px;
+    background-color: var(--myst-header-line-color);
     background-image: none;
     background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--h5-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   h6::after {
@@ -1644,13 +1623,13 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 662px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.314);
+    height: 1px;
+    background-color: var(--myst-header-line-color);
     background-image: none;
     background: rgba(0, 0, 0, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "";
     display: block;
-    color: var(--h6-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   h2.page-title,
@@ -1845,7 +1824,7 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "edit";
     display: inline-block;
-    color: var(--inline-title-color, rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
   }
 
   li.depth-0 {
@@ -1900,7 +1879,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1959,7 +1938,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2017,7 +1996,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2075,7 +2054,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2133,7 +2112,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2191,7 +2170,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2249,7 +2228,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2307,7 +2286,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2365,7 +2344,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2423,7 +2402,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2481,7 +2460,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2539,7 +2518,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2597,7 +2576,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2655,7 +2634,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2743,10 +2722,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin-top: var(--heading-spacing, 10px);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 10px 0px 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2777,7 +2753,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(0, 0, 0));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2805,7 +2781,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(0, 0, 0));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3233,9 +3209,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(239, 237, 237));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(0, 0, 0));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(0, 0, 0);
@@ -3635,6 +3611,7 @@ body {
     text-align: start;
     color: rgb(125, 105, 135);
     width: 14.0156px;
+    height: 0px;
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -3648,7 +3625,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(0, 0, 0));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(224, 224, 224);
   }
@@ -3669,7 +3646,7 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -3702,7 +3679,7 @@ body {
 
   .note-properties-tags {
     background-color: var(--pill-background);
-    color: var(--pill-color, rgb(68, 118, 229));
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3903,7 +3880,7 @@ body {
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(0, 0, 0));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4036,7 +4013,7 @@ body {
 
   ul.tags > li {
     background-color: var(--tag-background);
-    color: var(--tag-color, rgb(68, 118, 229));
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4084,21 +4061,19 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(0, 0, 0));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4127,9 +4102,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4150,14 +4122,12 @@ body {
 
   li.task-list-item[data-task=","] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4186,9 +4156,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4209,14 +4176,12 @@ body {
 
   li.task-list-item[data-task=";"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4245,9 +4210,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4268,14 +4230,12 @@ body {
 
   li.task-list-item[data-task=":"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4304,9 +4264,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4327,14 +4284,12 @@ body {
 
   li.task-list-item[data-task="."] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4363,9 +4318,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4386,14 +4338,12 @@ body {
 
   li.task-list-item[data-task="'"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4422,9 +4372,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4445,14 +4392,12 @@ body {
 
   li.task-list-item[data-task="@"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4481,9 +4426,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4504,14 +4446,12 @@ body {
 
   li.task-list-item[data-task="&"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4540,9 +4480,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4563,14 +4500,12 @@ body {
 
   li.task-list-item[data-task="#"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4599,9 +4534,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4622,14 +4554,12 @@ body {
 
   li.task-list-item[data-task="%"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4658,9 +4588,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4681,14 +4608,12 @@ body {
 
   li.task-list-item[data-task="`"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4717,9 +4642,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4740,14 +4662,12 @@ body {
 
   li.task-list-item[data-task="+"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4776,9 +4696,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4799,14 +4716,12 @@ body {
 
   li.task-list-item[data-task="<"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4835,9 +4750,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4858,14 +4770,12 @@ body {
 
   li.task-list-item[data-task="="] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4894,9 +4804,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4917,14 +4824,12 @@ body {
 
   li.task-list-item[data-task="|"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -4953,9 +4858,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4976,14 +4878,12 @@ body {
 
   li.task-list-item[data-task="~"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5012,9 +4912,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5035,14 +4932,12 @@ body {
 
   li.task-list-item[data-task="$"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5071,9 +4966,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5094,14 +4986,12 @@ body {
 
   li.task-list-item[data-task="0"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5130,9 +5020,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5153,14 +5040,12 @@ body {
 
   li.task-list-item[data-task="1"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5189,9 +5074,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5212,14 +5094,12 @@ body {
 
   li.task-list-item[data-task="2"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5248,9 +5128,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5271,14 +5148,12 @@ body {
 
   li.task-list-item[data-task="3"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5307,9 +5182,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5330,14 +5202,12 @@ body {
 
   li.task-list-item[data-task="4"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5366,9 +5236,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5389,14 +5256,12 @@ body {
 
   li.task-list-item[data-task="5"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5425,9 +5290,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5448,14 +5310,12 @@ body {
 
   li.task-list-item[data-task="6"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5484,9 +5344,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5507,14 +5364,12 @@ body {
 
   li.task-list-item[data-task="7"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5543,9 +5398,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5566,14 +5418,12 @@ body {
 
   li.task-list-item[data-task="8"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5602,9 +5452,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5625,14 +5472,12 @@ body {
 
   li.task-list-item[data-task="9"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5661,9 +5506,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5684,14 +5526,12 @@ body {
 
   li.task-list-item[data-task="a"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5720,9 +5560,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5743,14 +5580,12 @@ body {
 
   li.task-list-item[data-task="A"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5779,9 +5614,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5802,14 +5634,12 @@ body {
 
   li.task-list-item[data-task="B"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5838,9 +5668,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5861,14 +5688,12 @@ body {
 
   li.task-list-item[data-task="C"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5897,9 +5722,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5920,14 +5742,12 @@ body {
 
   li.task-list-item[data-task="D"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -5956,9 +5776,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5979,14 +5796,12 @@ body {
 
   li.task-list-item[data-task="e"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6015,9 +5830,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6038,14 +5850,12 @@ body {
 
   li.task-list-item[data-task="E"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6074,9 +5884,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6097,14 +5904,12 @@ body {
 
   li.task-list-item[data-task="F"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6133,9 +5938,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6156,14 +5958,12 @@ body {
 
   li.task-list-item[data-task="g"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6192,9 +5992,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6215,14 +6012,12 @@ body {
 
   li.task-list-item[data-task="G"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6251,9 +6046,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6274,14 +6066,12 @@ body {
 
   li.task-list-item[data-task="h"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6310,9 +6100,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6333,14 +6120,12 @@ body {
 
   li.task-list-item[data-task="H"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6369,9 +6154,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6392,14 +6174,12 @@ body {
 
   li.task-list-item[data-task="j"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6428,9 +6208,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6451,14 +6228,12 @@ body {
 
   li.task-list-item[data-task="J"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6487,9 +6262,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6510,14 +6282,12 @@ body {
 
   li.task-list-item[data-task="K"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6546,9 +6316,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6569,14 +6336,12 @@ body {
 
   li.task-list-item[data-task="L"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6605,9 +6370,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6628,14 +6390,12 @@ body {
 
   li.task-list-item[data-task="m"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6664,9 +6424,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6687,14 +6444,12 @@ body {
 
   li.task-list-item[data-task="M"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6723,9 +6478,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6746,14 +6498,12 @@ body {
 
   li.task-list-item[data-task="n"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6782,9 +6532,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6805,14 +6552,12 @@ body {
 
   li.task-list-item[data-task="N"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6841,9 +6586,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6864,14 +6606,12 @@ body {
 
   li.task-list-item[data-task="o"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6900,9 +6640,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6923,14 +6660,12 @@ body {
 
   li.task-list-item[data-task="O"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -6959,9 +6694,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6982,14 +6714,12 @@ body {
 
   li.task-list-item[data-task="P"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7018,9 +6748,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7041,14 +6768,12 @@ body {
 
   li.task-list-item[data-task="q"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7077,9 +6802,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7100,14 +6822,12 @@ body {
 
   li.task-list-item[data-task="Q"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7136,9 +6856,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7159,14 +6876,12 @@ body {
 
   li.task-list-item[data-task="r"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7195,9 +6910,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7218,14 +6930,12 @@ body {
 
   li.task-list-item[data-task="R"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7254,9 +6964,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7277,14 +6984,12 @@ body {
 
   li.task-list-item[data-task="s"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7313,9 +7018,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7336,14 +7038,12 @@ body {
 
   li.task-list-item[data-task="t"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7372,9 +7072,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7395,14 +7092,12 @@ body {
 
   li.task-list-item[data-task="T"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7431,9 +7126,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7454,14 +7146,12 @@ body {
 
   li.task-list-item[data-task="U"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7490,9 +7180,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7513,14 +7200,12 @@ body {
 
   li.task-list-item[data-task="v"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7549,9 +7234,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7572,14 +7254,12 @@ body {
 
   li.task-list-item[data-task="V"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7608,9 +7288,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7631,14 +7308,12 @@ body {
 
   li.task-list-item[data-task="W"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7667,9 +7342,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7690,14 +7362,12 @@ body {
 
   li.task-list-item[data-task="y"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7726,9 +7396,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7749,14 +7416,12 @@ body {
 
   li.task-list-item[data-task="Y"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7785,9 +7450,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7808,14 +7470,12 @@ body {
 
   li.task-list-item[data-task="z"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7844,9 +7504,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -7867,14 +7524,12 @@ body {
 
   li.task-list-item[data-task="Z"] {
     color: rgb(0, 0, 0);
-    --background-primary: #ffffff;
     --button-radius: 5px;
     --callout-radius: 4px;
     --canvas-background: #ffffff;
     --canvas-controls-radius: 4px;
     --caret-color: #222222;
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --clickable-icon-radius: 4px;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
     --flair-color: #222222;
@@ -7903,9 +7558,6 @@ body {
     --table-header-color: #222222;
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --text-accent: hsl(258, 88%, 66%);
-    --text-normal: #222222;
-    --text-selection: hsla(258, 88%, 66%, 0.2);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -8572,15 +8224,15 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(30, 31, 34));
-      color: var(--text-normal, rgb(188, 190, 196));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(30, 31, 34));
+      background-color: var(--background-primary);
       color: rgb(188, 190, 196);
     }
 
@@ -8610,7 +8262,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(86, 168, 245));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -8654,7 +8306,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(86, 168, 245));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -8697,7 +8349,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(86, 168, 245));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -8798,7 +8450,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(144, 169, 57));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8841,7 +8493,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(144, 169, 57));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8884,7 +8536,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(188, 190, 196));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -8927,7 +8579,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(188, 190, 196));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9048,7 +8700,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(144, 169, 57));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         Theme-Font,
@@ -9080,8 +8732,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-hightlight-bg, rgb(248, 248, 118));
-      color: var(--text-normal, rgb(0, 0, 0));
+      background-color: var(--text-hightlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9216,7 +8868,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
-      color: var(--pill-color, rgb(86, 168, 245));
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -9327,7 +8979,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(64, 67, 72));
+      background-color: var(--code-background);
       border: 0px solid rgb(54, 54, 54);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9337,7 +8989,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(188, 190, 196));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -9369,7 +9021,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(64, 67, 72));
+      background-color: var(--code-background);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9433,7 +9085,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color, rgb(188, 190, 196));
+      color: var(--blockquote-color);
       font-family:
         Theme-Font,
         sans-serif,
@@ -9478,7 +9130,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(188, 190, 196));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9496,7 +9148,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(30, 31, 34));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9601,15 +9253,15 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(188, 190, 196));
-      font-family: var(--h1-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h1-color);
+      font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
       line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h1-letter-spacing);
-      background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
@@ -9634,15 +9286,15 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(188, 190, 196));
-      font-family: var(--h2-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h2-color);
+      font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
       line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h2-letter-spacing);
-      background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
@@ -9667,15 +9319,15 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(188, 190, 196));
-      font-family: var(--h3-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
       font-size: var(--h3-size);
       font-weight: var(--font-weight);
       line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h3-letter-spacing);
-      background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
@@ -9683,10 +9335,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 10px);
-      margin-bottom: 10px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 10px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -9703,15 +9352,15 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(188, 190, 196));
-      font-family: var(--h4-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h4-color);
+      font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
       line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h4-letter-spacing);
-      background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
@@ -9719,10 +9368,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 10px);
-      margin-bottom: 10px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 10px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -9739,15 +9385,15 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(188, 190, 196));
-      font-family: var(--h5-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h5-color);
+      font-family: var(--h5-font);
       font-size: var(--h5-size);
       font-weight: var(--font-weight);
       line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h5-letter-spacing);
-      background-color: var(--myst-header-line-color, rgba(0, 0, 0, 0));
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
@@ -9755,10 +9401,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 10px);
-      margin-bottom: 10px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 10px 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -9775,8 +9418,8 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(188, 190, 196));
-      font-family: var(--h6-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h6-color);
+      font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
       line-height: var(--h6-line-height);
@@ -9809,8 +9452,8 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(188, 190, 196));
-      font-family: var(--inline-title-font, Theme-Font, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--inline-title-color);
+      font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
       line-height: var(--inline-title-line-height);
@@ -9819,7 +9462,7 @@ html[saved-theme="dark"] {
       letter-spacing: -0.38832px;
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(132deg, rgb(1, 1, 153), rgb(1, 93, 1), rgb(88, 0, 0), rgb(0, 0, 0));
-      background: rgba(0, 0, 0, 0) linear-gradient(132deg, rgb(1, 1, 153), rgb(1, 93, 1), rgb(88, 0, 0), rgb(0, 0, 0)) repeat scroll 11.7152% 50% / 600% 600% padding-box border-box;
+      background: rgba(0, 0, 0, 0) linear-gradient(132deg, rgb(1, 1, 153), rgb(1, 93, 1), rgb(88, 0, 0), rgb(0, 0, 0)) repeat scroll 11.9955% 50% / 600% 600% padding-box border-box;
       padding: 12.944px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -9857,13 +9500,13 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 700px;
-      height: auto;
-      background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
+      height: 1px;
+      background-color: var(--myst-header-line-color);
       background-image: none;
       background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--h1-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     h2::after {
@@ -9876,22 +9519,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 662px;
-      height: auto;
-      background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
+      height: 1px;
+      background-color: var(--myst-header-line-color);
       background-image: none;
       background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--h2-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     h3::after {
@@ -9904,22 +9544,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 662px;
-      height: auto;
-      background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
+      height: 1px;
+      background-color: var(--myst-header-line-color);
       background-image: none;
       background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--h3-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     h4::after {
@@ -9932,22 +9569,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 662px;
-      height: auto;
-      background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
+      height: 1px;
+      background-color: var(--myst-header-line-color);
       background-image: none;
       background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--h4-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     h5::after {
@@ -9960,22 +9594,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 0px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 662px;
-      height: auto;
-      background-color: var(--myst-header-line-color, rgba(201, 201, 201, 0.314));
+      height: 1px;
+      background-color: var(--myst-header-line-color);
       background-image: none;
       background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--h5-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     h6::after {
@@ -9994,13 +9625,13 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       width: 662px;
-      height: auto;
-      background-color: rgba(201, 201, 201, 0.314);
+      height: 1px;
+      background-color: var(--myst-header-line-color);
       background-image: none;
       background: rgba(201, 201, 201, 0.314) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "";
       display: block;
-      color: var(--h6-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     h2.page-title,
@@ -10195,7 +9826,7 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       content: "edit";
       display: inline-block;
-      color: var(--inline-title-color, rgb(188, 190, 196));
+      color: rgb(188, 190, 196);
     }
 
     li.depth-0 {
@@ -10250,7 +9881,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(2, 122, 255, 0.25);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -10309,7 +9940,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10367,7 +9998,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10425,7 +10056,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10483,7 +10114,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10541,7 +10172,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10599,7 +10230,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10657,7 +10288,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10715,7 +10346,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10773,7 +10404,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10831,7 +10462,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10889,7 +10520,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10947,7 +10578,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11005,7 +10636,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11093,10 +10724,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      margin-top: var(--heading-spacing, 10px);
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 10px 0px 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -11127,7 +10755,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(188, 190, 196));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -11155,7 +10783,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(188, 190, 196));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -11583,9 +11211,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(64, 67, 72));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(188, 190, 196));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(188, 190, 196);
@@ -11985,6 +11613,7 @@ html[saved-theme="dark"] {
       text-align: start;
       color: rgb(134, 130, 136);
       width: 14.0156px;
+      height: 0px;
       background-color: rgba(0, 0, 0, 0);
     }
 
@@ -11998,7 +11627,7 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(188, 190, 196));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(54, 54, 54);
     }
@@ -12019,7 +11648,7 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(188, 190, 196));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
@@ -12052,7 +11681,7 @@ html[saved-theme="dark"] {
 
     .note-properties-tags {
       background-color: var(--pill-background);
-      color: var(--pill-color, rgb(86, 168, 245));
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -12253,7 +11882,7 @@ html[saved-theme="dark"] {
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(188, 190, 196));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12386,7 +12015,7 @@ html[saved-theme="dark"] {
 
     ul.tags > li {
       background-color: var(--tag-background);
-      color: var(--tag-color, rgb(86, 168, 245));
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -12434,21 +12063,19 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(188, 190, 196));
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
 
     li.task-list-item[data-task="_"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12477,9 +12104,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12500,14 +12124,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=","] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12536,9 +12158,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12559,14 +12178,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=";"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12595,9 +12212,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12618,14 +12232,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=":"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12654,9 +12266,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12677,14 +12286,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="."] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12713,9 +12320,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12736,14 +12340,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="'"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12772,9 +12374,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12795,14 +12394,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="@"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12831,9 +12428,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12854,14 +12448,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="&"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12890,9 +12482,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12913,14 +12502,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="#"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -12949,9 +12536,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12972,14 +12556,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="%"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13008,9 +12590,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13031,14 +12610,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="`"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13067,9 +12644,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13090,14 +12664,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="+"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13126,9 +12698,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13149,14 +12718,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="<"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13185,9 +12752,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13208,14 +12772,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="="] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13244,9 +12806,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13267,14 +12826,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="|"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13303,9 +12860,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13326,14 +12880,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="~"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13362,9 +12914,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13385,14 +12934,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="$"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13421,9 +12968,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13444,14 +12988,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="0"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13480,9 +13022,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13503,14 +13042,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="1"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13539,9 +13076,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13562,14 +13096,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="2"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13598,9 +13130,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13621,14 +13150,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="3"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13657,9 +13184,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13680,14 +13204,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="4"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13716,9 +13238,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13739,14 +13258,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="5"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13775,9 +13292,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13798,14 +13312,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="6"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13834,9 +13346,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13857,14 +13366,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="7"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13893,9 +13400,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13916,14 +13420,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="8"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -13952,9 +13454,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13975,14 +13474,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="9"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14011,9 +13508,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14034,14 +13528,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="a"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14070,9 +13562,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14093,14 +13582,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="A"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14129,9 +13616,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14152,14 +13636,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="B"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14188,9 +13670,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14211,14 +13690,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="C"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14247,9 +13724,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14270,14 +13744,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="D"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14306,9 +13778,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14329,14 +13798,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="e"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14365,9 +13832,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14388,14 +13852,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="E"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14424,9 +13886,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14447,14 +13906,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="F"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14483,9 +13940,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14506,14 +13960,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="g"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14542,9 +13994,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14565,14 +14014,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="G"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14601,9 +14048,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14624,14 +14068,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="h"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14660,9 +14102,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14683,14 +14122,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="H"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14719,9 +14156,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14742,14 +14176,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="j"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14778,9 +14210,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14801,14 +14230,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="J"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14837,9 +14264,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14860,14 +14284,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="K"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14896,9 +14318,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14919,14 +14338,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="L"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -14955,9 +14372,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -14978,14 +14392,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="m"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15014,9 +14426,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15037,14 +14446,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="M"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15073,9 +14480,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15096,14 +14500,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="n"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15132,9 +14534,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15155,14 +14554,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="N"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15191,9 +14588,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15214,14 +14608,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="o"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15250,9 +14642,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15273,14 +14662,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="O"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15309,9 +14696,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15332,14 +14716,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="P"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15368,9 +14750,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15391,14 +14770,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="q"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15427,9 +14804,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15450,14 +14824,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="Q"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15486,9 +14858,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15509,14 +14878,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="r"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15545,9 +14912,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15568,14 +14932,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="R"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15604,9 +14966,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15627,14 +14986,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="s"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15663,9 +15020,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15686,14 +15040,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="t"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15722,9 +15074,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15745,14 +15094,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="T"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15781,9 +15128,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15804,14 +15148,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="U"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15840,9 +15182,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15863,14 +15202,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="v"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15899,9 +15236,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15922,14 +15256,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="V"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -15958,9 +15290,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15981,14 +15310,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="W"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -16017,9 +15344,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16040,14 +15364,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="y"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -16076,9 +15398,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16099,14 +15418,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="Y"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -16135,9 +15452,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16158,14 +15472,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="z"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -16194,9 +15506,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -16217,14 +15526,12 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="Z"] {
       color: rgb(188, 190, 196);
-      --background-primary: #1e1e1e;
       --button-radius: 5px;
       --callout-radius: 4px;
       --canvas-background: #1e1e1e;
       --canvas-controls-radius: 4px;
       --caret-color: #dadada;
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --clickable-icon-radius: 4px;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
       --flair-color: #dadada;
@@ -16253,9 +15560,6 @@ html[saved-theme="dark"] {
       --table-header-color: #dadada;
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --text-accent: hsl(255, 89.76%, 75.9%);
-      --text-normal: #dadada;
-      --text-selection: hsla(258, 88%, 66%, 0.33);
       font-family:
         ui-sans-serif,
         -apple-system,

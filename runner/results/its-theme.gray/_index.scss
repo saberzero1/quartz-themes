@@ -3960,22 +3960,22 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(23, 28, 34);
     font-family:
-      ui-sans-serif,
+      Inter,
       -apple-system,
       BlinkMacSystemFont,
-      system-ui,
       "Segoe UI",
-      "Google Sans Flex",
       Roboto,
-      "Inter Variable",
-      Inter,
+      Helvetica,
+      Arial,
+      sans-serif,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
+      "Microsoft YaHei Light",
       sans-serif;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .explorer .explorer-content ul.explorer-ul li > a::before {
@@ -30593,22 +30593,22 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(170, 179, 202);
       font-family:
-        ui-sans-serif,
+        Inter,
         -apple-system,
         BlinkMacSystemFont,
-        system-ui,
         "Segoe UI",
-        "Google Sans Flex",
         Roboto,
-        "Inter Variable",
-        Inter,
+        Helvetica,
+        Arial,
+        sans-serif,
         "Apple Color Emoji",
         "Segoe UI Emoji",
         "Segoe UI Symbol",
+        "Microsoft YaHei Light",
         sans-serif;
-      font-weight: 400;
+      font-weight: 700;
     }
 
     .explorer .explorer-content ul.explorer-ul li > a::before {

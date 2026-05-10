@@ -137,6 +137,7 @@ body {
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
   --highlight-mix-blend-mode: darken;
+  --settings-items-background: var(--surface-variant);
   --focus: var(--surface4);
   --hover: var(--surface2);
   --text-on-accent: var(--text-muted);
@@ -461,10 +462,10 @@ span.cm-def.cm-hmd-frontmatter {
 .frontmatter-container .frontmatter-container-header:hover {
   color: var(--secondary);
 }
-.frontmatter-container .frontmatter-collapse-indicator {
+.frontmatter-container .frontmatter-collapse-indicator:hover {
   color: var(--secondary);
 }
-.frontmatter-container .frontmatter-collapse-indicator:hover {
+.frontmatter-container .frontmatter-collapse-indicator {
   color: var(--secondary);
 }
 .frontmatter-container .tag {
@@ -589,9 +590,6 @@ div.HyperMD-codeblock-end-bg {
   padding-right: 1.5em;
   display: block;
   margin: auto;
-  padding-left: 16px;
-  padding-right: 24px;
-  vertical-align: middle;
 }
 .is-mobile .empty-state-action:nth-child(2)::before {
   content: "";
@@ -611,6 +609,11 @@ div.HyperMD-codeblock-end-bg {
   transform: translateY(4px);
   margin-right: 8px;
 }
+.is-mobile .empty-state-action:nth-child(2) {
+  padding-left: 16px;
+  padding-right: 24px;
+  vertical-align: middle;
+}
 .is-mobile .empty-state-action:first-of-type {
   transform: translate(0px, 30px);
   background-color: inherit;
@@ -629,9 +632,6 @@ div.HyperMD-codeblock-end-bg {
   padding-right: 1.5em;
   display: block;
   margin: auto;
-  padding-left: 16px;
-  padding-right: 24px;
-  vertical-align: middle;
 }
 .is-mobile .empty-state-action:first-of-type::before {
   content: "";
@@ -651,6 +651,11 @@ div.HyperMD-codeblock-end-bg {
   transform: translateY(4px);
   margin-right: 8px;
 }
+.is-mobile .empty-state-action:first-of-type {
+  padding-left: 16px;
+  padding-right: 24px;
+  vertical-align: middle;
+}
 .is-mobile .empty-state-action:nth-child(3) {
   background-color: inherit;
   color: var(--primary);
@@ -668,9 +673,6 @@ div.HyperMD-codeblock-end-bg {
   padding-right: 1.5em;
   display: block;
   margin: auto;
-  padding-left: 16px;
-  padding-right: 24px;
-  vertical-align: middle;
 }
 .is-mobile .empty-state-action:nth-child(3)::before {
   content: "";
@@ -689,6 +691,11 @@ div.HyperMD-codeblock-end-bg {
   mask-size: cover;
   transform: translateY(4px);
   margin-right: 8px;
+}
+.is-mobile .empty-state-action:nth-child(3) {
+  padding-left: 16px;
+  padding-right: 24px;
+  vertical-align: middle;
 }
 
 progress {
@@ -837,11 +844,6 @@ a.tag:after {
 .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) td {
   background-color: var(--surface-mid);
 }
-.markdown-preview-view table thead tr:nth-child(even) table, .markdown-preview-view table tbody tr:nth-child(even) table,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) table {
-  margin-bottom: 10px;
-}
 .markdown-preview-view table thead tr:nth-child(even) table th, .markdown-preview-view table thead tr:nth-child(even) table td, .markdown-preview-view table tbody tr:nth-child(even) table th, .markdown-preview-view table tbody tr:nth-child(even) table td,
 .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table th,
 .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table td,
@@ -849,9 +851,9 @@ a.tag:after {
 .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) table td {
   background-color: var(--surface);
 }
-.markdown-preview-view table thead tr:nth-child(odd) table, .markdown-preview-view table tbody tr:nth-child(odd) table,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) table,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table {
+.markdown-preview-view table thead tr:nth-child(even) table, .markdown-preview-view table tbody tr:nth-child(even) table,
+.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table,
+.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) table {
   margin-bottom: 10px;
 }
 .markdown-preview-view table thead tr:nth-child(odd) table th, .markdown-preview-view table thead tr:nth-child(odd) table td, .markdown-preview-view table tbody tr:nth-child(odd) table th, .markdown-preview-view table tbody tr:nth-child(odd) table td,
@@ -860,6 +862,11 @@ a.tag:after {
 .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table th,
 .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table td {
   background-color: var(--surface-mid);
+}
+.markdown-preview-view table thead tr:nth-child(odd) table, .markdown-preview-view table tbody tr:nth-child(odd) table,
+.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) table,
+.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table {
+  margin-bottom: 10px;
 }
 
 @media print {
@@ -936,11 +943,6 @@ body.is-phone.hide-buttons-mobile .view-action:not(.page-header-button) {
 }
 
 /* Floating Action Button (FAB)*/
-body.is-phone.fab-enabled-mobile:not(.custom-page-header),
-body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) {
-  /* Advanced Mobile Toolbar Mode */
-  /* Shrink FAB on small displays */
-}
 body.is-phone.fab-enabled-mobile:not(.custom-page-header) .view-action:nth-last-of-type(4),
 body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) .view-action:nth-last-of-type(4) {
   color: var(--on-tertiary-container);
@@ -965,9 +967,17 @@ body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) .view-action:nt
   width: 24px;
   height: 24px;
 }
+body.is-phone.fab-enabled-mobile:not(.custom-page-header),
+body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) {
+  /* Advanced Mobile Toolbar Mode */
+}
 body.is-phone.fab-enabled-mobile:not(.custom-page-header) body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4),
 body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
   top: calc(90vh - var(--at-button-height) * var(--at-row-count));
+}
+body.is-phone.fab-enabled-mobile:not(.custom-page-header),
+body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) {
+  /* Shrink FAB on small displays */
 }
 @media screen and (max-height: 400px) {
   body.is-phone.fab-enabled-mobile:not(.custom-page-header) .view-action:nth-of-type(4),
@@ -976,11 +986,6 @@ body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) body:not(:not(.
   }
 }
 
-body.is-phone.fab-enabled-mobile.custom-page-header,
-body:not(.is-phone).fab-enabled-desktop.custom-page-header {
-  /* Advanced Mobile Toolbar Mode */
-  /* Shrink FAB on small displays */
-}
 body.is-phone.fab-enabled-mobile.custom-page-header .view-action:first-child,
 body:not(.is-phone).fab-enabled-desktop.custom-page-header .view-action:first-child {
   color: var(--on-tertiary-container);
@@ -1005,9 +1010,17 @@ body:not(.is-phone).fab-enabled-desktop.custom-page-header .view-action:first-ch
   width: 24px;
   height: 24px;
 }
+body.is-phone.fab-enabled-mobile.custom-page-header,
+body:not(.is-phone).fab-enabled-desktop.custom-page-header {
+  /* Advanced Mobile Toolbar Mode */
+}
 body.is-phone.fab-enabled-mobile.custom-page-header body:not(:not(.advanced-toolbar-mode)) .view-action:nth-last-of-type(5),
 body:not(.is-phone).fab-enabled-desktop.custom-page-header body:not(:not(.advanced-toolbar-mode)) .view-action:nth-last-of-type(5) {
   top: calc(90vh - var(--at-button-height) * var(--at-row-count));
+}
+body.is-phone.fab-enabled-mobile.custom-page-header,
+body:not(.is-phone).fab-enabled-desktop.custom-page-header {
+  /* Shrink FAB on small displays */
 }
 @media screen and (max-height: 400px) {
   body.is-phone.fab-enabled-mobile.custom-page-header .view-action:nth-last-of-type(5),
@@ -1548,9 +1561,6 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
 .view-content.excalidraw-view .ToolIcon__icon:hover {
   background: var(--surface-variant) !important;
 }
-.view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container {
-  right: -10px;
-}
 .view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container .ToolIcon {
   margin-left: 4px;
   margin-right: 4px;
@@ -1564,6 +1574,9 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
 }
 .view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container .ToolIcon:last-child {
   margin-bottom: 4px;
+}
+.view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container {
+  right: -10px;
 }
 .view-content.excalidraw-view .layer-ui__wrapper__top-right .ToolIcon {
   margin-right: 8px;
@@ -1699,6 +1712,19 @@ body {
   right: -1px;
 }
 
+.setting-group .setting-items {
+  background-color: var(--surface);
+  --background-modifier-border: var(--background-secondary);
+}
+
+.vertical-tab-nav-item, .horizontal-tab-nav-item {
+  color: var(--on-surface-variant);
+}
+
+.horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active {
+  color: var(--text-normal) !important;
+}
+
 .view-header {
   background: var(--tab-background-active) !important;
 }
@@ -1709,7 +1735,19 @@ body {
 }
 
 .workspace-tab-header-container-inner {
-  margin-left: -15px;
+  margin-left: -23px;
+}
+
+.workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container-inner {
+  padding-left: 8px;
+}
+
+.workspace-tab-header-container .sidebar-toggle-button.mod-left:first-child {
+  margin-right: 23px;
+}
+
+body.mod-windows.hide-toolbar-desktop .workspace-tabs.mod-top-left-space .workspace-tab-header-container, body.mod-linux.hide-toolbar-desktop .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+  margin-left: calc(var(--ribbon-width) * 1.2) !important;
 }
 
 body:not(.is-popout-window) .workspace-tab-header-container, .workspace-tabs, .mod-root, .app-container,
@@ -1850,10 +1888,6 @@ body.theme-dark .canvas-wrapper .canvas-node.is-themed .markdown-embed-content {
   background-color: rgba(255, 255, 255, 0.062745098);
 }
 
-body.theme-light .canvas-wrapper {
-  --shadow-stationary: none;
-  --canvas-dot-pattern: #BBB;
-}
 body.theme-light .canvas-wrapper .canvas-node {
   box-shadow: rgba(0, 0, 0, 0.1882352941) 0px 3px 10px;
   border: none;
@@ -1861,6 +1895,10 @@ body.theme-light .canvas-wrapper .canvas-node {
 }
 body.theme-light .canvas-wrapper .canvas-node-container {
   border: none;
+}
+body.theme-light .canvas-wrapper {
+  --shadow-stationary: none;
+  --canvas-dot-pattern: #BBB;
 }
 
 .mod-inside-iframe {
@@ -2229,9 +2267,6 @@ div.titlebar .titlebar-text {
   font-weight: normal;
 }
 
-body.mod-windows {
-  --frame-right-space: 142px !important;
-}
 body.mod-windows .titlebar-text {
   justify-content: start;
   padding-left: 50px;
@@ -2243,6 +2278,9 @@ body.mod-windows .titlebar-button-container .titlebar-button {
 body.mod-windows .titlebar-button-container .titlebar-button svg {
   width: 11px;
   height: 11px;
+}
+body.mod-windows {
+  --frame-right-space: 142px !important;
 }
 
 body {
@@ -2284,12 +2322,13 @@ body.mod-windows.win-menu div.menu {
   background-color: rgba(248, 248, 248, 0.6274509804) !important;
   border: 1px solid rgba(54, 54, 54, 0.0705882353);
   padding: 1px 5px;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   --menu-text-color: black;
   --win-blue: #0078d4;
   box-shadow: 0px 8px 8px 3px rgba(0, 0, 0, 0.05), 0px 7px 9px -7px rgba(0, 0, 0, 0.13);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -6px;
+  margin-left: -4px;
 }
 body.mod-windows.win-menu div.menu .menu-item {
   border-radius: 4px !important;
@@ -2342,7 +2381,7 @@ body.mod-windows.win-menu div.menu .menu-item.selected:not(.is-disabled):not(.is
 }
 body.mod-windows.win-menu div.menu .menu-separator {
   border-color: rgba(54, 54, 54, 0.0705882353);
-  margin: 6px 0 !important;
+  margin: 1px 0 !important;
 }
 
 body.mod-windows.win-menu.theme-dark div.menu {
@@ -2361,11 +2400,13 @@ body.mod-windows.win-menu.theme-dark div.menu .menu-item {
 body.mod-windows.win-menu.theme-dark div.menu .menu-item .menu-item-icon svg {
   fill: none;
 }
+body.mod-windows.win-menu.theme-dark div.menu .menu-scroll {
+  padding: 0;
+}
 
 body.mod-windows.win-menu.enable-mica div.menu {
   background-color: rgba(250, 250, 250, 0.9411764706) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-          backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
 }
 
 body.mod-windows.win-menu.enable-mica.theme-dark div.menu {

@@ -25,23 +25,23 @@
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted, #bababa) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary, #0f111a) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, rgba(39, 41, 49, 0.2)) !important;
-  --code-border-color: var(--background-modifier-border, #0f111a) !important;
+  --code-background: rgba(39, 41, 49, 0.2) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal, #a6accd) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted, #bababa) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
@@ -50,16 +50,16 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #bababa) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal, #a6accd) !important;
-  --icon-color: var(--text-muted, #4b4f62) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: #4b4f62 !important;
   --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal, #a6accd) !important;
-  --icon-color-hover: var(--text-muted, #a6accd) !important;
+  --icon-color-focused: #a6accd !important;
+  --icon-color-hover: #a6accd !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -381,20 +381,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(15, 17, 26));
-    color: var(--text-normal, rgb(166, 172, 205));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(15, 17, 26));
+    background-color: var(--background-primary);
     color: rgb(166, 172, 205);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(15, 17, 26));
+    background-color: var(--background-secondary);
     color: rgb(166, 172, 205);
   }
 
@@ -402,12 +402,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(15, 17, 26));
+    background-color: var(--tab-container-background);
     color: rgb(166, 172, 205);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(15, 17, 26));
+    background-color: var(--tab-container-background);
     color: rgb(166, 172, 205);
     border-left: 0px rgb(15, 17, 26);
   }
@@ -560,7 +560,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(186, 186, 186));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -601,7 +601,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(166, 172, 205));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -642,7 +642,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(166, 172, 205));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -683,7 +683,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(166, 172, 205));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -724,7 +724,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(166, 172, 205));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -843,7 +843,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(166, 172, 205));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -874,7 +874,7 @@ body {
 
   .text-highlight {
     background-color: var(--text-highlight-bg);
-    color: var(--text-normal, rgb(166, 172, 205));
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1116,7 +1116,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgba(39, 41, 49, 0.2));
+    background-color: var(--code-background);
     border: 0px solid rgb(15, 17, 26);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1126,7 +1126,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(166, 172, 205));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1158,7 +1158,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgba(39, 41, 49, 0.2));
+    background-color: var(--code-background);
     border: 0px solid rgb(15, 17, 26);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1222,7 +1222,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(166, 172, 205));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1265,7 +1265,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(166, 172, 205));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1283,7 +1283,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(15, 17, 26));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1386,7 +1386,7 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(166, 172, 205));
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1419,7 +1419,7 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(166, 172, 205));
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
@@ -1452,7 +1452,7 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(166, 172, 205));
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
@@ -1485,7 +1485,7 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(166, 172, 205));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -1518,7 +1518,7 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(166, 172, 205));
+    color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
@@ -1551,7 +1551,7 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(166, 172, 205));
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
@@ -1585,7 +1585,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(166, 172, 205));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -2007,7 +2007,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2066,7 +2066,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2124,7 +2124,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2182,7 +2182,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2240,7 +2240,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2298,7 +2298,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2356,7 +2356,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2414,7 +2414,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2472,7 +2472,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2530,7 +2530,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2588,7 +2588,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2646,7 +2646,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2704,7 +2704,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2762,7 +2762,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2879,7 +2879,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(166, 172, 205));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2907,7 +2907,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(166, 172, 205));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3101,8 +3101,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(15, 17, 26));
-    color: var(--text-muted, rgb(186, 186, 186));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(186, 186, 186);
     border-width: 0px;
@@ -3116,7 +3116,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(186, 186, 186));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3239,7 +3239,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(255, 255, 255, 0);
-    color: var(--text-normal, rgb(186, 186, 186));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3329,9 +3329,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgba(39, 41, 49, 0.2));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(166, 172, 205));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(166, 172, 205);
@@ -3651,7 +3651,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(166, 172, 205));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3672,7 +3672,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(166, 172, 205));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3697,7 +3697,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
+    color: rgb(166, 172, 205);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3725,7 +3725,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(166, 172, 205));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(166, 172, 205);
   }
@@ -3746,12 +3746,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(166, 172, 205));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(15, 17, 26));
+    background-color: var(--background-secondary);
     border-color: rgb(166, 172, 205);
     box-shadow: var(--input-shadow);
   }
@@ -3793,7 +3793,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(75, 79, 98));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(75, 79, 98);
     border-width: 0px;
@@ -3804,8 +3804,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(15, 17, 26));
-    color: var(--status-bar-text-color, rgb(186, 186, 186));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3866,7 +3866,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(166, 172, 205));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3908,7 +3908,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(166, 172, 205));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3931,7 +3931,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(75, 79, 98));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(75, 79, 98);
     border-width: 0px;
@@ -3976,11 +3976,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(15, 17, 26));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(166, 172, 205));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4149,11 +4149,11 @@ body {
 
   .stacked-page {
     border-color: rgb(166, 172, 205);
-    background-color: var(--background-secondary, rgb(15, 17, 26));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(15, 17, 26));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4161,7 +4161,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(166, 172, 205));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -4191,9 +4191,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4219,7 +4217,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4251,9 +4248,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4279,7 +4274,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4311,9 +4305,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4339,7 +4331,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4371,9 +4362,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4399,7 +4388,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4431,9 +4419,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4459,7 +4445,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4491,9 +4476,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4519,7 +4502,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4551,9 +4533,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4579,7 +4559,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4611,9 +4590,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4639,7 +4616,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4671,9 +4647,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4699,7 +4673,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4731,9 +4704,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4759,7 +4730,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4791,9 +4761,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4819,7 +4787,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4851,9 +4818,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4879,7 +4844,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4911,9 +4875,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4939,7 +4901,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -4971,9 +4932,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -4999,7 +4958,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5031,9 +4989,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5059,7 +5015,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5091,9 +5046,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5119,7 +5072,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5151,9 +5103,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5179,7 +5129,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5211,9 +5160,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5239,7 +5186,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5271,9 +5217,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5299,7 +5243,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5331,9 +5274,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5359,7 +5300,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5391,9 +5331,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5419,7 +5357,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5451,9 +5388,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5479,7 +5414,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5511,9 +5445,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5539,7 +5471,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5571,9 +5502,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5599,7 +5528,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5631,9 +5559,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5659,7 +5585,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5691,9 +5616,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5719,7 +5642,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5751,9 +5673,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5779,7 +5699,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5811,9 +5730,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5839,7 +5756,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5871,9 +5787,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5899,7 +5813,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5931,9 +5844,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -5959,7 +5870,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -5991,9 +5901,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6019,7 +5927,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6051,9 +5958,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6079,7 +5984,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6111,9 +6015,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6139,7 +6041,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6171,9 +6072,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6199,7 +6098,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6231,9 +6129,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6259,7 +6155,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6291,9 +6186,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6319,7 +6212,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6351,9 +6243,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6379,7 +6269,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6411,9 +6300,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6439,7 +6326,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6471,9 +6357,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6499,7 +6383,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6531,9 +6414,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6559,7 +6440,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6591,9 +6471,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6619,7 +6497,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6651,9 +6528,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6679,7 +6554,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6711,9 +6585,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6739,7 +6611,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6771,9 +6642,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6799,7 +6668,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6831,9 +6699,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6859,7 +6725,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6891,9 +6756,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6919,7 +6782,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -6951,9 +6813,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -6979,7 +6839,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7011,9 +6870,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7039,7 +6896,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7071,9 +6927,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7099,7 +6953,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7131,9 +6984,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7159,7 +7010,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7191,9 +7041,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7219,7 +7067,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7251,9 +7098,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7279,7 +7124,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7311,9 +7155,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7339,7 +7181,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7371,9 +7212,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7399,7 +7238,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7431,9 +7269,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7459,7 +7295,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7491,9 +7326,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7519,7 +7352,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7551,9 +7383,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7579,7 +7409,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7611,9 +7440,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7639,7 +7466,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7671,9 +7497,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7699,7 +7523,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7731,9 +7554,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7759,7 +7580,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7791,9 +7611,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7819,7 +7637,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7851,9 +7668,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7879,7 +7694,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7911,9 +7725,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7939,7 +7751,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -7971,9 +7782,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -7999,7 +7808,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -8031,9 +7839,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8059,7 +7865,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -8091,9 +7896,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8119,7 +7922,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;
@@ -8151,9 +7953,7 @@ body {
     --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-text: #dadada;
-    --hr-color: #363636;
     --interactive-hover: #3f3f3f;
-    --interactive-normal: #363636;
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
     --pdf-background: #1e1e1e;
@@ -8179,7 +7979,6 @@ body {
     --tab-text-color-focused-active: #b3b3b3;
     --tab-text-color-focused-active-current: #dadada;
     --table-add-button-border-color: #363636;
-    --table-border-color: #363636;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
     --text-muted: #b3b3b3;

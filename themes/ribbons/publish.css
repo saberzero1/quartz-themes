@@ -996,16 +996,16 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --inline-title-color: var(--h1-color) !important;
   --shadow-edges: 0 0 transparent !important;
   --h1-color: var(--text-title) !important;
   --h3-color: var(--text-subtitle) !important;
   --h4-color: var(--text-subtitle) !important;
   --h5-color: var(--text-subtitle) !important;
-  --inline-title-font: var(--h1-font) !important;
+  --inline-title-color: var(--h1-color) !important;
   --h1-font: "My Title font", "SF Compact Display" !important;
   --h3-font: "My Headings font", "New York Extra Large" !important;
   --h5-font: "My Table font", "SF Compact Rounded" !important;
+  --inline-title-font: var(--h1-font) !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 251, 146, 76 !important;
   --chbx-B: 182, 118, 255 !important;
@@ -2032,15 +2032,15 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: var(--h1-color) !important;
   --h1-color: var(--text-title) !important;
   --h3-color: var(--text-subtitle) !important;
   --h4-color: var(--text-subtitle) !important;
   --h5-color: var(--text-subtitle) !important;
-  --inline-title-font: var(--h1-font) !important;
+  --inline-title-color: var(--h1-color) !important;
   --h1-font: "My Title font", "SF Compact Display" !important;
   --h3-font: "My Headings font", "New York Extra Large" !important;
   --h5-font: "My Table font", "SF Compact Rounded" !important;
+  --inline-title-font: var(--h1-font) !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 230, 129, 63 !important;
   --chbx-B: 136, 94, 233 !important;

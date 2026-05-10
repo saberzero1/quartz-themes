@@ -17,22 +17,22 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
+  --callout-radius: 4px;
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--accent-brighter-30, color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff)) !important;
-  --checkbox-border-color-hover: var(--theme-color, hsl(258, 88%, 66%)) !important;
-  --checkbox-color: var(--theme-color, hsl(258, 88%, 66%)) !important;
-  --checkbox-color-hover: var(--accent-brighter-30, color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff)) !important;
+  --checkbox-border-color: var(--accent-brighter-30) !important;
+  --checkbox-border-color-hover: var(--theme-color) !important;
+  --checkbox-color: var(--theme-color) !important;
+  --checkbox-color-hover: var(--accent-brighter-30) !important;
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #ffffff) !important;
-  --code-border-color: var(--background-modifier-border, color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent)) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
@@ -110,22 +110,22 @@
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
+  --callout-radius: 4px;
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--accent-brighter-30, color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff)) !important;
-  --checkbox-border-color-hover: var(--theme-color, hsl(258, 88%, 66%)) !important;
-  --checkbox-color: var(--theme-color, hsl(258, 88%, 66%)) !important;
-  --checkbox-color-hover: var(--accent-brighter-30, color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff)) !important;
-  --checkbox-marker-color: var(--background-primary, #111111) !important;
+  --checkbox-border-color: var(--accent-brighter-30) !important;
+  --checkbox-border-color-hover: var(--theme-color) !important;
+  --checkbox-color: var(--theme-color) !important;
+  --checkbox-color-hover: var(--accent-brighter-30) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt, #0d0b12) !important;
-  --code-border-color: var(--background-modifier-border, color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent)) !important;
+  --code-background: var(--background-primary-alt) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
@@ -543,7 +543,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(238, 238, 238));
+    background-color: var(--background-secondary);
     color: rgb(34, 34, 34);
   }
 
@@ -551,12 +551,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(238, 238, 238));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(238, 238, 238));
+    background-color: var(--tab-container-background);
     color: rgb(34, 34, 34);
     border-left: 0px color(srgb 0.54032 0.3608 0.9592 / 0.05);
   }
@@ -568,7 +568,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--alt-color, rgb(17, 17, 17));
+    color: var(--alt-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -610,7 +610,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--alt-color, rgb(17, 17, 17));
+    color: var(--alt-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -629,7 +629,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 700);
+    font-weight: var(--link-weight);
     outline: rgb(17, 17, 17) none 0px;
     text-decoration: underline;
     text-decoration-color: rgb(17, 17, 17);
@@ -651,7 +651,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--alt-color, rgb(17, 17, 17));
+    color: var(--alt-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -670,10 +670,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: var(--link-weight, 700);
+    font-weight: var(--link-weight);
     outline: rgb(17, 17, 17) none 0px;
     text-decoration: underline rgba(138, 92, 245, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(17, 17, 17));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -756,7 +756,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgba(0, 0, 0, 0));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -797,7 +797,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgba(0, 0, 0, 0));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -838,12 +838,12 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--accent-brighter-10, color(srgb 0.586288 0.42472 0.96328));
+    color: var(--accent-brighter-10);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: var(--default-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif);
+    font-family: var(--default-font);
     font-weight: 400;
     outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -866,12 +866,12 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--accent-brighter-10, color(srgb 0.586288 0.42472 0.96328));
+    color: var(--accent-brighter-10);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: var(--default-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif);
+    font-family: var(--default-font);
     font-weight: 400;
     outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -972,9 +972,9 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--accent-brighter-10, color(srgb 0.586288 0.42472 0.96328));
+    color: var(--accent-brighter-10);
     cursor: grab;
-    font-family: var(--default-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif);
+    font-family: var(--default-font);
     font-weight: 700;
     outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
     text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
@@ -989,8 +989,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--accent-opacity-50, color(srgb 0.54032 0.3608 0.9592 / 0.5));
-    color: var(--alt-color, rgb(17, 17, 17));
+    background-color: var(--accent-opacity-50);
+    color: var(--alt-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1120,7 +1120,7 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
+    background-color: var(--pill-background);
     color: var(--pill-color);
     display: flex;
     font-family:
@@ -1238,7 +1238,7 @@ body {
   }
 
   code {
-    background-color: var(--accent-opacity-10, color(srgb 0.54032 0.3608 0.9592 / 0.1));
+    background-color: var(--accent-opacity-10);
     border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.05);
     border-top-left-radius: 4.8px;
     border-top-right-radius: 4.8px;
@@ -1248,7 +1248,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--theme-color, rgb(138, 92, 245));
+    color: var(--theme-color);
     font-family: var(--font-monospace);
     padding: 0px 5px;
     padding-block-end: 0px;
@@ -1280,7 +1280,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(255, 255, 255));
+    background-color: var(--code-background);
     border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.05);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1514,14 +1514,14 @@ body {
   }
 
   h1 {
-    color: var(--text-title-h1, rgb(0, 229, 255));
+    color: var(--text-title-h1);
     font-family: var(--h1-font);
-    font-size: var(--h1-size, 34px);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 40.8px);
+    line-height: var(--h1-line-height);
     text-shadow: 0 0 0.5em var(--text-title-h1);
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.51px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1548,14 +1548,14 @@ body {
   }
 
   h2 {
-    color: var(--text-title-h2, rgb(255, 202, 40));
+    color: var(--text-title-h2);
     font-family: var(--h2-font);
-    font-size: var(--h2-size, 26px);
+    font-size: var(--h2-size);
     font-weight: var(--font-weight);
-    line-height: var(--h2-line-height, 31.2px);
+    line-height: var(--h2-line-height);
     text-shadow: 0 0 0.5em var(--text-title-h2);
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.286px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1582,14 +1582,14 @@ body {
   }
 
   h3 {
-    color: var(--text-title-h3, rgb(255, 93, 104));
+    color: var(--text-title-h3);
     font-family: var(--h3-font);
-    font-size: var(--h3-size, 22px);
+    font-size: var(--h3-size);
     font-weight: var(--font-weight);
-    line-height: var(--h3-line-height, 28.6px);
+    line-height: var(--h3-line-height);
     text-shadow: 0 0 0.5em var(--text-title-h3);
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.176px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1598,10 +1598,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 45px);
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 45px 0px 20px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1619,14 +1616,14 @@ body {
   }
 
   h4 {
-    color: var(--text-title-h4, rgb(213, 0, 249));
+    color: var(--text-title-h4);
     font-family: var(--h4-font);
-    font-size: var(--h4-size, 18px);
+    font-size: var(--h4-size);
     font-weight: var(--font-weight);
-    line-height: var(--h4-line-height, 25.2px);
+    line-height: var(--h4-line-height);
     text-shadow: 0 0 0.5em var(--text-title-h4);
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.09px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1635,10 +1632,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 45px);
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 45px 0px 20px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1656,14 +1650,14 @@ body {
   }
 
   h5 {
-    color: var(--text-title-h5, rgb(46, 204, 113));
+    color: var(--text-title-h5);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 18px);
+    font-size: var(--h5-size);
     font-weight: var(--font-weight);
-    line-height: var(--h5-line-height, 27px);
+    line-height: var(--h5-line-height);
     text-shadow: 0 0 0.5em var(--text-title-h5);
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.036px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1672,10 +1666,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin-top: var(--heading-spacing, 45px);
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 45px 0px 20px;
     margin-block-end: 16px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
@@ -1693,11 +1684,11 @@ body {
   }
 
   h6 {
-    color: var(--text-title-h6, rgb(219, 62, 177));
+    color: var(--text-title-h6);
     font-family: var(--h6-font);
-    font-size: var(--h6-size, 18px);
+    font-size: var(--h6-size);
     font-weight: var(--font-weight);
-    line-height: var(--h6-line-height, 27px);
+    line-height: var(--h6-line-height);
     text-shadow: 0 0 0.5em var(--text-title-h6);
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
@@ -2150,7 +2141,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-color-purple, 150, 100, 250);
+    --callout-color: var(--callout-color-purple);
     border: 0px solid rgba(150, 100, 250, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2192,7 +2183,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2209,7 +2200,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-color-purple, 150, 100, 250);
+    --callout-color: var(--callout-color-purple);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(150, 100, 250, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2250,7 +2241,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2267,7 +2258,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(0, 191, 188, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2308,7 +2299,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2325,7 +2316,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-color-blue, 50, 150, 255);
+    --callout-color: var(--callout-color-blue);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2366,7 +2357,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2383,7 +2374,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(8, 109, 221, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2424,7 +2415,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2441,7 +2432,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(0, 191, 188, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2482,7 +2473,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2499,7 +2490,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-color-green, 50, 200, 100);
+    --callout-color: var(--callout-color-green);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(50, 200, 100, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2540,7 +2531,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2557,7 +2548,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(236, 117, 0, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2598,7 +2589,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2615,7 +2606,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-color-yellow, 255, 204, 0);
+    --callout-color: var(--callout-color-yellow);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(255, 204, 0, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2656,7 +2647,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2673,7 +2664,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(233, 49, 71, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2714,7 +2705,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2731,7 +2722,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(233, 49, 71, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2772,7 +2763,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2789,7 +2780,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-color-red, 255, 80, 80);
+    --callout-color: var(--callout-color-red);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(255, 80, 80, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2830,7 +2821,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2847,7 +2838,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(120, 82, 238, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2888,7 +2879,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2905,7 +2896,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-color-blue, 50, 150, 255);
+    --callout-color: var(--callout-color-blue);
     background-color: rgba(var(--callout-color), var(--callout-background-opacity));
     background-image: none;
     background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2946,7 +2937,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(50, 150, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -3250,7 +3241,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(255, 255, 255));
+    background-color: var(--background-primary-alt);
     color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(92, 92, 92);
@@ -3346,14 +3337,14 @@ body {
 
   .metadata-property-key {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-label-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
     color: rgb(92, 92, 92);
-    font-family: var(--metadata-input-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    font-family: var(--metadata-input-font);
     font-size: 16px;
   }
 
@@ -3484,7 +3475,7 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(255, 255, 255));
+    background-color: var(--code-background);
     box-shadow: none;
     color: var(--code-normal);
     font-family: var(--font-monospace);
@@ -3866,6 +3857,12 @@ body {
   .explorer .folder-container > div {
     color: rgb(92, 92, 92);
     font-family:
+      Rubik,
+      "Segoe UI",
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3945,7 +3942,7 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
+    background-color: var(--pill-background);
     color: var(--pill-color);
     border-radius: 5px;
   }
@@ -3971,7 +3968,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(238, 238, 238));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       Rubik,
@@ -4122,7 +4119,7 @@ body {
 
   .darkmode {
     background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-    color: var(--theme-color, rgb(138, 92, 245));
+    color: var(--theme-color);
     cursor: var(--cursor);
     border-color: rgb(138, 92, 245);
     border-width: 0px;
@@ -4173,7 +4170,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(238, 238, 238));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
@@ -4315,7 +4312,7 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
+    background-color: var(--tag-background);
     color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 5px;
@@ -4346,17 +4343,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(138, 92, 245));
+    background-color: var(--checkbox-color);
     border-color: rgb(138, 92, 245);
   }
 
   .stacked-page {
     border-color: rgb(34, 34, 34);
-    background-color: var(--background-secondary, rgb(238, 238, 238));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(238, 238, 238));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4371,11 +4368,6 @@ body {
 
   .callout[data-callout="analysis"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-blue, 50, 150, 255);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -4431,6 +4423,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-blue);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -4460,7 +4453,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4484,7 +4476,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4528,8 +4519,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -4656,11 +4652,6 @@ body {
 
   .callout[data-callout="bookmark"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-orange, 255, 150, 50);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -4716,6 +4707,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-orange);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -4745,7 +4737,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4769,7 +4760,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4813,8 +4803,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -4941,11 +4936,6 @@ body {
 
   .callout[data-callout="calendar"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-yellow, 255, 204, 0);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -5001,6 +4991,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-yellow);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5030,7 +5021,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5054,7 +5044,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5098,8 +5087,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -5226,11 +5220,6 @@ body {
 
   .callout[data-callout="celebration"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-orange, 255, 150, 50);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -5286,6 +5275,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-orange);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5315,7 +5305,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5339,7 +5328,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5383,8 +5371,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -5511,11 +5504,6 @@ body {
 
   .callout[data-callout="code"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-purple, 150, 100, 250);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -5571,6 +5559,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-purple);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5600,7 +5589,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5624,7 +5612,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5668,8 +5655,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -5796,11 +5788,6 @@ body {
 
   .callout[data-callout="gift"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-orange, 255, 150, 50);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -5856,6 +5843,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-orange);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5885,7 +5873,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5909,7 +5896,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5953,8 +5939,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -6081,11 +6072,6 @@ body {
 
   .callout[data-callout="goal"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-green, 50, 200, 100);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -6141,6 +6127,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-green);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6170,7 +6157,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6194,7 +6180,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -6238,8 +6223,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -6366,11 +6356,6 @@ body {
 
   .callout[data-callout="highlight"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-yellow, 255, 204, 0);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -6426,6 +6411,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-yellow);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6455,7 +6441,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6479,7 +6464,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -6523,8 +6507,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -6651,11 +6640,6 @@ body {
 
   .callout[data-callout="idea"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-purple, 150, 100, 250);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -6711,6 +6695,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-purple);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6740,7 +6725,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6764,7 +6748,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -6808,8 +6791,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -6936,11 +6924,6 @@ body {
 
   .callout[data-callout="inspiration"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-yellow, 255, 204, 0);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -6996,6 +6979,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-yellow);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -7025,7 +7009,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7049,7 +7032,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -7093,8 +7075,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -7221,11 +7208,6 @@ body {
 
   .callout[data-callout="puzzle"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-purple, 150, 100, 250);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -7281,6 +7263,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-purple);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -7310,7 +7293,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7334,7 +7316,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -7378,8 +7359,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -7506,11 +7492,6 @@ body {
 
   .callout[data-callout="reminder"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-green, 50, 200, 100);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -7566,6 +7547,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-green);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -7595,7 +7577,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7619,7 +7600,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -7663,8 +7643,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -7791,11 +7776,6 @@ body {
 
   .callout[data-callout="task"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-green, 50, 200, 100);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -7851,6 +7831,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-green);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -7880,7 +7861,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7904,7 +7884,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -7948,8 +7927,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -8082,11 +8066,6 @@ body {
 
   .callout[data-callout="team"] {
     --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #eeeeee;
-    --background-secondary-alt: #eeeeee;
-    --callout-color: var(--callout-color-orange, 255, 150, 50);
     --canvas-background: #ffffff;
     --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
     --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -8142,6 +8121,7 @@ body {
     --color-italic: hsl(258, 88%, 66%);
     --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
     --theme-color: hsl(258, 88%, 66%);
+    --callout-color: var(--callout-color-orange);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -8171,7 +8151,6 @@ body {
     --callout-info: 8, 109, 221;
     --callout-padding: 12px 12px 12px 24px;
     --callout-question: 236, 117, 0;
-    --callout-radius: 4px;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8195,7 +8174,6 @@ body {
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -8239,8 +8217,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -9062,7 +9045,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(17, 17, 17));
+      background-color: var(--background-primary);
       color: var(--text-normal);
     }
 
@@ -9070,12 +9053,12 @@ html[saved-theme="dark"] {
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(17, 17, 17));
+      background-color: var(--background-primary);
       color: rgb(218, 218, 218);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(26, 26, 26));
+      background-color: var(--background-secondary);
       color: rgb(218, 218, 218);
     }
 
@@ -9083,12 +9066,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(26, 26, 26));
+      background-color: var(--tab-container-background);
       color: rgb(218, 218, 218);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(26, 26, 26));
+      background-color: var(--tab-container-background);
       color: rgb(218, 218, 218);
       border-left: 0px color(srgb 0.54032 0.3608 0.9592 / 0.05);
     }
@@ -9100,7 +9083,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--alt-color, rgb(255, 255, 255));
+      color: var(--alt-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -9142,7 +9125,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--alt-color, rgb(255, 255, 255));
+      color: var(--alt-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -9161,7 +9144,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 700);
+      font-weight: var(--link-weight);
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(255, 255, 255);
@@ -9183,7 +9166,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--alt-color, rgb(255, 255, 255));
+      color: var(--alt-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -9202,10 +9185,10 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: var(--link-weight, 700);
+      font-weight: var(--link-weight);
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgb(255, 255, 255));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -9288,7 +9271,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgba(0, 0, 0, 0));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9329,7 +9312,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgba(0, 0, 0, 0));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9370,12 +9353,12 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--accent-brighter-10, color(srgb 0.586288 0.42472 0.96328));
+      color: var(--accent-brighter-10);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: var(--default-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif);
+      font-family: var(--default-font);
       font-weight: 400;
       outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -9398,12 +9381,12 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--accent-brighter-10, color(srgb 0.586288 0.42472 0.96328));
+      color: var(--accent-brighter-10);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: var(--default-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif);
+      font-family: var(--default-font);
       font-weight: 400;
       outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -9504,9 +9487,9 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--accent-brighter-10, color(srgb 0.586288 0.42472 0.96328));
+      color: var(--accent-brighter-10);
       cursor: grab;
-      font-family: var(--default-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif);
+      font-family: var(--default-font);
       font-weight: 700;
       outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
       text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
@@ -9521,8 +9504,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--accent-opacity-50, color(srgb 0.54032 0.3608 0.9592 / 0.5));
-      color: var(--alt-color, rgb(255, 255, 255));
+      background-color: var(--accent-opacity-50);
+      color: var(--alt-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -9652,8 +9635,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
-      color: var(--pill-color, rgb(138, 92, 245));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         Rubik,
@@ -9770,7 +9753,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--accent-opacity-10, color(srgb 0.54032 0.3608 0.9592 / 0.1));
+      background-color: var(--accent-opacity-10);
       border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.05);
       border-top-left-radius: 4.8px;
       border-top-right-radius: 4.8px;
@@ -9780,7 +9763,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--theme-color, rgb(138, 92, 245));
+      color: var(--theme-color);
       font-family: var(--font-monospace);
       padding: 0px 5px;
       padding-block-end: 0px;
@@ -9812,7 +9795,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(13, 11, 18));
+      background-color: var(--code-background);
       border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.05);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -9943,7 +9926,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(17, 17, 17));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -10046,14 +10029,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--text-title-h1, rgb(0, 229, 255));
+      color: var(--text-title-h1);
       font-family: var(--h1-font);
-      font-size: var(--h1-size, 34px);
+      font-size: var(--h1-size);
       font-weight: var(--font-weight);
-      line-height: var(--h1-line-height, 40.8px);
+      line-height: var(--h1-line-height);
       text-shadow: 0 0 0.5em var(--text-title-h1);
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.51px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10080,14 +10063,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--text-title-h2, rgb(255, 202, 40));
+      color: var(--text-title-h2);
       font-family: var(--h2-font);
-      font-size: var(--h2-size, 26px);
+      font-size: var(--h2-size);
       font-weight: var(--font-weight);
-      line-height: var(--h2-line-height, 31.2px);
+      line-height: var(--h2-line-height);
       text-shadow: 0 0 0.5em var(--text-title-h2);
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.286px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10114,14 +10097,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--text-title-h3, rgb(255, 93, 104));
+      color: var(--text-title-h3);
       font-family: var(--h3-font);
-      font-size: var(--h3-size, 22px);
+      font-size: var(--h3-size);
       font-weight: var(--font-weight);
-      line-height: var(--h3-line-height, 28.6px);
+      line-height: var(--h3-line-height);
       text-shadow: 0 0 0.5em var(--text-title-h3);
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.176px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10130,10 +10113,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 45px);
-      margin-bottom: 20px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 45px 0px 20px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -10151,14 +10131,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--text-title-h4, rgb(213, 0, 249));
+      color: var(--text-title-h4);
       font-family: var(--h4-font);
-      font-size: var(--h4-size, 18px);
+      font-size: var(--h4-size);
       font-weight: var(--font-weight);
-      line-height: var(--h4-line-height, 25.2px);
+      line-height: var(--h4-line-height);
       text-shadow: 0 0 0.5em var(--text-title-h4);
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.09px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10167,10 +10147,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 45px);
-      margin-bottom: 20px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 45px 0px 20px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -10188,14 +10165,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--text-title-h5, rgb(46, 204, 113));
+      color: var(--text-title-h5);
       font-family: var(--h5-font);
-      font-size: var(--h5-size, 18px);
+      font-size: var(--h5-size);
       font-weight: var(--font-weight);
-      line-height: var(--h5-line-height, 27px);
+      line-height: var(--h5-line-height);
       text-shadow: 0 0 0.5em var(--text-title-h5);
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.036px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10204,10 +10181,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin-top: var(--heading-spacing, 45px);
-      margin-bottom: 20px;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 45px 0px 20px;
       margin-block-end: 16px;
       margin-block-start: 16px;
       margin-inline-end: 0px;
@@ -10225,11 +10199,11 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--text-title-h6, rgb(219, 62, 177));
+      color: var(--text-title-h6);
       font-family: var(--h6-font);
-      font-size: var(--h6-size, 18px);
+      font-size: var(--h6-size);
       font-weight: var(--font-weight);
-      line-height: var(--h6-line-height, 27px);
+      line-height: var(--h6-line-height);
       text-shadow: 0 0 0.5em var(--text-title-h6);
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
@@ -10682,7 +10656,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-color-purple, 150, 100, 250);
+      --callout-color: var(--callout-color-purple);
       border: 0px solid rgba(150, 100, 250, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -10724,7 +10698,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10741,7 +10715,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-color-purple, 150, 100, 250);
+      --callout-color: var(--callout-color-purple);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(150, 100, 250, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10782,7 +10756,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10799,7 +10773,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(83, 223, 221, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10840,7 +10814,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10857,7 +10831,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-color-blue, 50, 150, 255);
+      --callout-color: var(--callout-color-blue);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10898,7 +10872,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10915,7 +10889,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(2, 122, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10956,7 +10930,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -10973,7 +10947,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(83, 223, 221, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11014,7 +10988,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11031,7 +11005,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-color-green, 50, 200, 100);
+      --callout-color: var(--callout-color-green);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(50, 200, 100, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11072,7 +11046,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11089,7 +11063,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(233, 151, 63, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11130,7 +11104,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11147,7 +11121,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-color-yellow, 255, 204, 0);
+      --callout-color: var(--callout-color-yellow);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(255, 204, 0, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11188,7 +11162,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11205,7 +11179,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(251, 70, 76, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11246,7 +11220,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11263,7 +11237,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(251, 70, 76, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11304,7 +11278,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11321,7 +11295,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-color-red, 255, 80, 80);
+      --callout-color: var(--callout-color-red);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(255, 80, 80, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11362,7 +11336,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11379,7 +11353,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(168, 130, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11420,7 +11394,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11437,7 +11411,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-color-blue, 50, 150, 255);
+      --callout-color: var(--callout-color-blue);
       background-color: rgba(var(--callout-color), var(--callout-background-opacity));
       background-image: none;
       background: rgba(50, 150, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -11478,7 +11452,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(50, 150, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -11782,7 +11756,7 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(13, 11, 18));
+      background-color: var(--background-primary-alt);
       color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(179, 179, 179);
@@ -11878,14 +11852,14 @@ html[saved-theme="dark"] {
 
     .metadata-property-key {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-label-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-family: var(--metadata-label-font);
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
       color: rgb(179, 179, 179);
-      font-family: var(--metadata-input-font, Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      font-family: var(--metadata-input-font);
       font-size: 16px;
     }
 
@@ -12016,7 +11990,7 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(13, 11, 18));
+      background-color: var(--code-background);
       box-shadow: none;
       color: var(--code-normal);
       font-family: var(--font-monospace);
@@ -12398,6 +12372,12 @@ html[saved-theme="dark"] {
     .explorer .folder-container > div {
       color: rgb(179, 179, 179);
       font-family:
+        Rubik,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif,
+        sans-serif,
         ui-sans-serif,
         -apple-system,
         BlinkMacSystemFont,
@@ -12450,7 +12430,7 @@ html[saved-theme="dark"] {
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(26, 26, 26));
+      background-color: var(--background-secondary);
       border-color: rgb(218, 218, 218);
       box-shadow: var(--input-shadow);
     }
@@ -12477,8 +12457,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
-      color: var(--pill-color, rgb(138, 92, 245));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 5px;
     }
 
@@ -12503,7 +12483,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(26, 26, 26));
+      background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
       font-family:
         Rubik,
@@ -12654,7 +12634,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-      color: var(--theme-color, rgb(138, 92, 245));
+      color: var(--theme-color);
       cursor: var(--cursor);
       border-color: rgb(138, 92, 245);
       border-width: 0px;
@@ -12705,7 +12685,7 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(26, 26, 26));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
@@ -12847,8 +12827,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, color(srgb 0.54032 0.3608 0.9592 / 0.1));
-      color: var(--tag-color, rgb(138, 92, 245));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -12884,11 +12864,11 @@ html[saved-theme="dark"] {
 
     .stacked-page {
       border-color: rgb(218, 218, 218);
-      background-color: var(--background-secondary, rgb(26, 26, 26));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(13, 11, 18));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -12903,11 +12883,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="analysis"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-blue, 50, 150, 255);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -12963,6 +12938,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-blue);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -12992,7 +12968,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -13016,7 +12991,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13060,8 +13034,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -13188,11 +13167,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bookmark"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-orange, 255, 150, 50);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -13248,6 +13222,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-orange);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -13277,7 +13252,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -13301,7 +13275,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13345,8 +13318,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -13473,11 +13451,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="calendar"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-yellow, 255, 204, 0);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -13533,6 +13506,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-yellow);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -13562,7 +13536,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -13586,7 +13559,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13630,8 +13602,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -13758,11 +13735,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="celebration"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-orange, 255, 150, 50);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -13818,6 +13790,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-orange);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -13847,7 +13820,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -13871,7 +13843,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -13915,8 +13886,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -14043,11 +14019,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="code"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-purple, 150, 100, 250);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -14103,6 +14074,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-purple);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -14132,7 +14104,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -14156,7 +14127,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -14200,8 +14170,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -14328,11 +14303,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="gift"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-orange, 255, 150, 50);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -14388,6 +14358,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-orange);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -14417,7 +14388,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -14441,7 +14411,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -14485,8 +14454,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -14613,11 +14587,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="goal"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-green, 50, 200, 100);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -14673,6 +14642,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-green);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -14702,7 +14672,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -14726,7 +14695,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -14770,8 +14738,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -14898,11 +14871,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="highlight"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-yellow, 255, 204, 0);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -14958,6 +14926,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-yellow);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -14987,7 +14956,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -15011,7 +14979,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15055,8 +15022,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -15183,11 +15155,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="idea"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-purple, 150, 100, 250);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -15243,6 +15210,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-purple);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -15272,7 +15240,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -15296,7 +15263,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15340,8 +15306,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -15468,11 +15439,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="inspiration"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-yellow, 255, 204, 0);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -15528,6 +15494,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-yellow);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -15557,7 +15524,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -15581,7 +15547,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15625,8 +15590,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -15753,11 +15723,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="puzzle"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-purple, 150, 100, 250);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -15813,6 +15778,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-purple);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -15842,7 +15808,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -15866,7 +15831,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15910,8 +15874,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -16038,11 +16007,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="reminder"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-green, 50, 200, 100);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -16098,6 +16062,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-green);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16127,7 +16092,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -16151,7 +16115,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -16195,8 +16158,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -16323,11 +16291,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="task"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-green, 50, 200, 100);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -16383,6 +16346,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-green);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16412,7 +16376,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -16436,7 +16399,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -16480,8 +16442,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -16614,11 +16581,6 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="team"] {
       --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent);
-      --background-primary: #111111;
-      --background-primary-alt: #0d0b12;
-      --background-secondary: #1a1a1a;
-      --background-secondary-alt: #0d0b12;
-      --callout-color: var(--callout-color-orange, 255, 150, 50);
       --canvas-background: #111111;
       --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
       --checkbox-border-color-hover: hsl(258, 88%, 66%);
@@ -16674,6 +16636,7 @@ html[saved-theme="dark"] {
       --color-italic: hsl(258, 88%, 66%);
       --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
       --theme-color: hsl(258, 88%, 66%);
+      --callout-color: var(--callout-color-orange);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16703,7 +16666,6 @@ html[saved-theme="dark"] {
       --callout-info: 2, 122, 255;
       --callout-padding: 12px 12px 12px 24px;
       --callout-question: 233, 151, 63;
-      --callout-radius: 4px;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -16727,7 +16689,6 @@ html[saved-theme="dark"] {
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
       --divider-color-hover: hsl(258, 88%, 66%);
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -16771,8 +16732,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
       --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);

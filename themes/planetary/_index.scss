@@ -8,58 +8,58 @@
 
 :root:root {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb, 248, 92, 81);
-  --callout-default: var(--color-blue-rgb, 214, 233, 255);
-  --callout-error: var(--color-red-rgb, 248, 92, 81);
-  --callout-example: var(--color-purple-rgb, 162, 155, 254);
-  --callout-fail: var(--color-red-rgb, 248, 92, 81);
-  --callout-important: var(--color-cyan-rgb, 14, 205, 201);
-  --callout-info: var(--color-blue-rgb, 214, 233, 255);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb, 233, 151, 63);
+  --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb, 12, 199, 124);
-  --callout-summary: var(--color-cyan-rgb, 14, 205, 201);
-  --callout-tip: var(--color-cyan-rgb, 14, 205, 201);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 214, 233, 255);
-  --callout-warning: var(--color-orange-rgb, 233, 151, 63);
-  --checkbox-border-color: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --checkbox-border-color-hover: var(--text-muted, #b29688) !important;
-  --checkbox-color: var(--interactive-accent, hsl(4, 89%, 64%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(4, 89%, 49%)) !important;
-  --checkbox-marker-color: var(--background-primary, #fffefd) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--canvas3, #fdf9f5) !important;
-  --code-border-color: var(--background-modifier-border, #f8f1eb) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(0, 0, 0, 0.075)) !important;
-  --code-comment: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --code-function: var(--color-yellow, #eacf00) !important;
-  --code-important: var(--color-orange, #e9973f) !important;
-  --code-keyword: var(--color-pink, #f22c96) !important;
-  --code-normal: var(--canvas-contrast-medium, #765c4f) !important;
-  --code-operator: var(--color-red, #f85c51) !important;
-  --code-property: var(--color-cyan, #0ecdc9) !important;
-  --code-punctuation: var(--text-muted, #b29688) !important;
+  --code-background: var(--canvas3) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--canvas-contrast-medium) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, #0cc77c) !important;
-  --code-tag: var(--color-red, #f85c51) !important;
-  --code-value: var(--color-purple, #a29bfe) !important;
-  --collapse-icon-color: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(4, 89%, 64%)) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--canvas-contrast-high, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #b29688) !important;
-  --graph-node-attachment: var(--color-yellow, #eacf00) !important;
-  --graph-node-focused: var(--text-accent, hsl(4, 89%, 64%)) !important;
-  --graph-node-tag: var(--color-green, #0cc77c) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --graph-text: var(--text-normal, #4a3827) !important;
-  --icon-color: var(--text-muted, #b29688) !important;
-  --icon-color-active: var(--text-accent, hsl(4, 89%, 64%)) !important;
-  --icon-color-focused: var(--text-normal, #4a3827) !important;
-  --icon-color-hover: var(--text-muted, #b29688) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -94,58 +94,58 @@
 }
 :root:root[saved-theme="dark"] {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb, 248, 92, 81);
-  --callout-default: var(--color-blue-rgb, 105, 175, 255);
-  --callout-error: var(--color-red-rgb, 248, 92, 81);
-  --callout-example: var(--color-purple-rgb, 162, 155, 254);
-  --callout-fail: var(--color-red-rgb, 248, 92, 81);
-  --callout-important: var(--color-cyan-rgb, 10, 206, 203);
-  --callout-info: var(--color-blue-rgb, 105, 175, 255);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb, 35, 209, 140);
-  --callout-summary: var(--color-cyan-rgb, 10, 206, 203);
-  --callout-tip: var(--color-cyan-rgb, 10, 206, 203);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 105, 175, 255);
+  --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --checkbox-border-color-hover: var(--text-muted, #807874) !important;
-  --checkbox-color: var(--interactive-accent, hsl(4, 89%, 64%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(4, 89%, 49%)) !important;
-  --checkbox-marker-color: var(--background-primary, #121110) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--canvas3, #181716) !important;
-  --code-border-color: var(--background-modifier-border, #232120) !important;
-  --code-bracket-background: var(--background-modifier-hover, rgba(255, 255, 255, 0.075)) !important;
-  --code-comment: var(--text-faint, hsl(4, 89%, 64%)) !important;
+  --code-background: var(--canvas3) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--canvas-contrast-medium, #989692) !important;
-  --code-operator: var(--color-red, #f85c51) !important;
-  --code-property: var(--color-cyan, #0acecb) !important;
-  --code-punctuation: var(--text-muted, #807874) !important;
+  --code-normal: var(--canvas-contrast-medium) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, #23d18c) !important;
-  --code-tag: var(--color-red, #f85c51) !important;
-  --code-value: var(--color-purple, #a29bfe) !important;
-  --collapse-icon-color: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(4, 89%, 64%)) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--canvas-contrast-high, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted, #807874) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, hsl(4, 89%, 64%)) !important;
-  --graph-node-tag: var(--color-green, #23d18c) !important;
-  --graph-node-unresolved: var(--text-faint, hsl(4, 89%, 64%)) !important;
-  --graph-text: var(--text-normal, #ffebd1) !important;
-  --icon-color: var(--text-muted, #807874) !important;
-  --icon-color-active: var(--text-accent, hsl(4, 89%, 64%)) !important;
-  --icon-color-focused: var(--text-normal, #ffebd1) !important;
-  --icon-color-hover: var(--text-muted, #807874) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -234,20 +234,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(255, 254, 253));
-    color: var(--text-normal, rgb(74, 56, 39));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(255, 254, 253));
+    background-color: var(--background-primary);
     color: rgb(74, 56, 39);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(253, 249, 245));
+    background-color: var(--background-secondary);
     color: rgb(74, 56, 39);
   }
 
@@ -255,12 +255,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(253, 249, 245));
+    background-color: var(--tab-container-background);
     color: rgb(74, 56, 39);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(253, 249, 245));
+    background-color: var(--tab-container-background);
     color: rgb(74, 56, 39);
     border-left: 0px rgb(248, 241, 235);
   }
@@ -272,7 +272,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(245, 92, 81));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -316,7 +316,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(245, 92, 81));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -359,7 +359,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(245, 92, 81));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -383,7 +383,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(245, 92, 81) none 0px;
     text-decoration: underline rgba(245, 92, 81, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(245, 92, 81, 0.3));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -419,7 +419,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(178, 150, 136));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -447,7 +447,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(245, 92, 81));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -490,7 +490,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(245, 92, 81));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -533,7 +533,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(14, 205, 201));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -576,7 +576,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(14, 205, 201));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -697,7 +697,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(14, 205, 201));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       "IBM Plex Sans",
@@ -729,8 +729,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgba(245, 92, 81, 0.2));
-    color: var(--text-normal, rgb(74, 56, 39));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -815,7 +815,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.075));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -828,7 +828,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.075));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(74, 56, 39);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -864,8 +864,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(245, 92, 81, 0.15));
-    color: var(--pill-color, rgb(245, 92, 81));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -976,7 +976,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(253, 249, 245));
+    background-color: var(--code-background);
     border: 0px solid rgb(248, 241, 235);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -986,7 +986,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(118, 92, 79));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1018,7 +1018,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(253, 249, 245));
+    background-color: var(--code-background);
     border: 0px solid rgb(248, 241, 235);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1082,7 +1082,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(74, 56, 39));
+    color: var(--blockquote-color);
     font-family:
       "IBM Plex Sans",
       sans-serif,
@@ -1112,7 +1112,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(245, 92, 81));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1127,12 +1127,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(74, 56, 39));
+    color: var(--text-normal);
     font-family: "IBM Plex Sans", sans-serif;
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(255, 254, 253));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(178, 150, 136);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1224,7 +1224,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(74, 56, 39);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgba(0, 0, 0, 0.075));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1237,14 +1237,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(245, 92, 81));
-    font-family: var(--h1-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h1-size, 32px);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 38.4px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.48px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1270,14 +1270,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(245, 101, 91));
-    font-family: var(--h2-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h2-size, 28.8px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h2-line-height, 34.56px);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.3168px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1303,14 +1303,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(246, 110, 101));
-    font-family: var(--h3-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h3-size, 22.4px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h3-line-height, 29.12px);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.1792px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1336,14 +1336,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(247, 119, 110));
-    font-family: var(--h4-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h4-size, 19.2px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h4-line-height, 26.88px);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.096px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1369,14 +1369,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(247, 129, 120));
-    font-family: var(--h5-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--h5-size, 18px);
-    font-weight: var(--font-weight, 600);
-    line-height: var(--h5-line-height, 27px);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.036px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1402,8 +1402,8 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(248, 138, 130));
-    font-family: var(--h6-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
@@ -1436,11 +1436,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(245, 92, 81));
-    font-family: var(--inline-title-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-    font-size: var(--inline-title-size, 32px);
+    color: var(--inline-title-color);
+    font-family: var(--inline-title-font);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 38.4px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.48px;
@@ -1858,7 +1858,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 214, 233, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(214, 233, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1900,7 +1900,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -1917,7 +1917,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 214, 233, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(214, 233, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1958,7 +1958,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -1975,7 +1975,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 14, 205, 201);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(14, 205, 201, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2016,7 +2016,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2033,7 +2033,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 214, 233, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(214, 233, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2074,7 +2074,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2091,7 +2091,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 214, 233, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(214, 233, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2132,7 +2132,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2149,7 +2149,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 14, 205, 201);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(14, 205, 201, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2190,7 +2190,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2207,7 +2207,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 12, 199, 124);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(12, 199, 124, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2248,7 +2248,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2265,7 +2265,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2306,7 +2306,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2323,7 +2323,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2364,7 +2364,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2381,7 +2381,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 248, 92, 81);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(248, 92, 81, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2422,7 +2422,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2439,7 +2439,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 248, 92, 81);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(248, 92, 81, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2480,7 +2480,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2497,7 +2497,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 248, 92, 81);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(248, 92, 81, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2538,7 +2538,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2555,7 +2555,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 162, 155, 254);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(162, 155, 254, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2596,7 +2596,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2613,7 +2613,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2654,7 +2654,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(214, 233, 255));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2732,7 +2732,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(245, 92, 81));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2743,7 +2743,7 @@ body {
     border-right: 1px solid rgb(248, 241, 235);
     border-top: var(--table-header-border-width) solid rgb(248, 241, 235);
     border-bottom: 1px solid rgb(248, 241, 235);
-    border-top-left-radius: var(--table-border-radius, 8px);
+    border-top-left-radius: var(--table-border-radius);
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -2760,7 +2760,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(74, 56, 39));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2786,7 +2786,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgb(253, 249, 245));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2956,8 +2956,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(248, 241, 235));
-    color: var(--text-muted, rgb(178, 150, 136));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(178, 150, 136);
     border-width: 0px;
@@ -2971,7 +2971,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(178, 150, 136));
+    color: var(--text-muted);
     font-family:
       "IBM Plex Sans",
       sans-serif,
@@ -3100,7 +3100,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(178, 150, 136));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3190,9 +3190,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(253, 249, 245));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(118, 92, 79));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(118, 92, 79);
@@ -3520,7 +3520,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(178, 150, 136));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: var(--nav-item-weight);
@@ -3528,7 +3528,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(178, 150, 136));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: var(--nav-item-weight);
@@ -3540,21 +3540,8 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: rgb(178, 150, 136);
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
   }
 
@@ -3568,7 +3555,7 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(245, 92, 81));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(248, 241, 235);
   }
@@ -3589,12 +3576,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(74, 56, 39));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(255, 254, 253));
+    background-color: var(--background-primary);
     border-color: rgb(74, 56, 39);
     box-shadow: var(--input-shadow);
   }
@@ -3621,8 +3608,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(245, 92, 81, 0.15));
-    color: var(--pill-color, rgb(245, 92, 81));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3636,7 +3623,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(178, 150, 136));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(178, 150, 136);
     border-width: 0px;
@@ -3647,8 +3634,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(253, 249, 245));
-    color: var(--status-bar-text-color, rgb(178, 150, 136));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family: "IBM Plex Sans", sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
@@ -3683,7 +3670,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(178, 150, 136));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3712,7 +3699,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(178, 150, 136));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3722,7 +3709,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(178, 150, 136));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(178, 150, 136);
     border-width: 0px;
@@ -3749,7 +3736,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(245, 92, 81));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3767,11 +3754,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(253, 249, 245));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(74, 56, 39));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3903,8 +3890,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(245, 92, 81, 0.15));
-    color: var(--tag-color, rgb(245, 92, 81));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(245, 92, 81, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -3934,17 +3921,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(245, 92, 81));
+    background-color: var(--checkbox-color);
     border-color: rgb(245, 92, 81);
   }
 
   .stacked-page {
     border-color: rgb(74, 56, 39);
-    background-color: var(--background-secondary, rgb(253, 249, 245));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(253, 249, 245));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -3952,8 +3939,8 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(245, 92, 81));
-    font-size: var(--inline-title-size, 32px);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -4055,7 +4042,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4105,6 +4091,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -4207,7 +4194,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4257,6 +4243,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -4359,7 +4346,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4409,6 +4395,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -4511,7 +4498,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4561,6 +4547,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -4663,7 +4650,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4713,6 +4699,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -4815,7 +4802,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4865,6 +4851,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -4967,7 +4954,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5017,6 +5003,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -5119,7 +5106,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5169,6 +5155,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -5271,7 +5258,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5321,6 +5307,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -5423,7 +5410,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5473,6 +5459,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -5575,7 +5562,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5625,6 +5611,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -5727,7 +5714,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5777,6 +5763,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -5879,7 +5866,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5929,6 +5915,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6031,7 +6018,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6081,6 +6067,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6183,7 +6170,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6233,6 +6219,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6335,7 +6322,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6385,6 +6371,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6487,7 +6474,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6537,6 +6523,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6639,7 +6626,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6689,6 +6675,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6791,7 +6778,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6841,6 +6827,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -6943,7 +6930,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6993,6 +6979,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -7095,7 +7082,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7145,6 +7131,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -7247,7 +7234,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7297,6 +7283,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -7399,7 +7386,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7449,6 +7435,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -7551,7 +7538,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7601,6 +7587,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -7703,7 +7690,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7753,6 +7739,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -7855,7 +7842,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7905,6 +7891,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8007,7 +7994,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8057,6 +8043,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8159,7 +8146,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8209,6 +8195,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8311,7 +8298,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8361,6 +8347,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8463,7 +8450,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8513,6 +8499,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8615,7 +8602,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8665,6 +8651,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8767,7 +8754,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8817,6 +8803,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -8919,7 +8906,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8969,6 +8955,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9071,7 +9058,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9121,6 +9107,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9223,7 +9210,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9273,6 +9259,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9375,7 +9362,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9425,6 +9411,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9527,7 +9514,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9577,6 +9563,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9679,7 +9666,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9729,6 +9715,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9831,7 +9818,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9881,6 +9867,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -9983,7 +9970,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10033,6 +10019,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -10135,7 +10122,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10185,6 +10171,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -10287,7 +10274,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10337,6 +10323,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -10439,7 +10426,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10489,6 +10475,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -10591,7 +10578,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10641,6 +10627,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -10743,7 +10730,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10793,6 +10779,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -10895,7 +10882,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10945,6 +10931,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11047,7 +11034,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -11097,6 +11083,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11199,7 +11186,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -11249,6 +11235,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11351,7 +11338,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -11401,6 +11387,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11503,7 +11490,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -11553,6 +11539,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11655,7 +11642,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -11705,6 +11691,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11807,7 +11794,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -11857,6 +11843,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -11959,7 +11946,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12009,6 +11995,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -12111,7 +12098,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12161,6 +12147,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -12263,7 +12250,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12313,6 +12299,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -12415,7 +12402,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12465,6 +12451,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -12567,7 +12554,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12617,6 +12603,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -12719,7 +12706,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12769,6 +12755,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -12871,7 +12858,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -12921,6 +12907,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13023,7 +13010,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13073,6 +13059,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13175,7 +13162,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13225,6 +13211,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13327,7 +13314,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13377,6 +13363,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13479,7 +13466,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13529,6 +13515,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13631,7 +13618,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13681,6 +13667,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13783,7 +13770,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13833,6 +13819,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -13935,7 +13922,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -13985,6 +13971,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -14087,7 +14074,6 @@ body {
     --tab-background-active: #ffffff;
     --tab-divider-color: #d4d4d4;
     --tab-outline-color: #e0e0e0;
-    --tab-radius: 4px;
     --tab-switcher-background: #f6f6f6;
     --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -14137,6 +14123,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     margin-left: 0px;
+    --divider-vertical-height: 100%;
     --font-monospace-theme: "??";
     --text-on-accent: white;
   }
@@ -14794,20 +14781,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(18, 17, 16));
-      color: var(--text-normal, rgb(255, 235, 209));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(18, 17, 16));
+      background-color: var(--background-primary);
       color: rgb(255, 235, 209);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(24, 23, 22));
+      background-color: var(--background-secondary);
       color: rgb(255, 235, 209);
     }
 
@@ -14815,12 +14802,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--tab-container-background, rgb(24, 23, 22));
+      background-color: var(--tab-container-background);
       color: rgb(255, 235, 209);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--tab-container-background, rgb(24, 23, 22));
+      background-color: var(--tab-container-background);
       color: rgb(255, 235, 209);
       border-left: 0px rgb(35, 33, 32);
     }
@@ -14832,7 +14819,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(245, 92, 81));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -14876,7 +14863,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(245, 92, 81));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -14919,7 +14906,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(245, 92, 81));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -14943,7 +14930,7 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(245, 92, 81) none 0px;
       text-decoration: underline rgba(245, 92, 81, 0.3);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgba(245, 92, 81, 0.3));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -14979,7 +14966,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-muted, rgb(128, 120, 116));
+      color: var(--text-muted);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -15007,7 +14994,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(245, 92, 81));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15050,7 +15037,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--bold-color, rgb(245, 92, 81));
+      color: var(--bold-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15093,7 +15080,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(10, 206, 203));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15136,7 +15123,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(10, 206, 203));
+      color: var(--italic-color);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15257,7 +15244,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color, rgb(10, 206, 203));
+      color: var(--italic-color);
       cursor: grab;
       font-family:
         "IBM Plex Sans",
@@ -15289,8 +15276,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgba(245, 92, 81, 0.2));
-      color: var(--text-normal, rgb(255, 235, 209));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -15375,7 +15362,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+      background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -15388,7 +15375,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+      background-color: var(--background-modifier-hover);
       border: 0px rgb(255, 235, 209);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15424,8 +15411,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(245, 92, 81, 0.15));
-      color: var(--pill-color, rgb(245, 92, 81));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -15536,7 +15523,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(24, 23, 22));
+      background-color: var(--code-background);
       border: 0px solid rgb(35, 33, 32);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15546,7 +15533,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(152, 150, 146));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       padding: 2.1px 4.2px;
       padding-block-end: 0px;
@@ -15578,7 +15565,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(24, 23, 22));
+      background-color: var(--code-background);
       border: 0px solid rgb(35, 33, 32);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -15642,7 +15629,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color, rgb(255, 235, 209));
+      color: var(--blockquote-color);
       font-family:
         "IBM Plex Sans",
         sans-serif,
@@ -15672,7 +15659,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(245, 92, 81));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -15687,12 +15674,12 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(255, 235, 209));
+      color: var(--text-normal);
       font-family: "IBM Plex Sans", sans-serif;
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(18, 17, 16));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(128, 120, 116);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -15784,7 +15771,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(255, 235, 209);
       font-weight: 400;
-      background-color: var(--background-modifier-hover, rgba(255, 255, 255, 0.075));
+      background-color: var(--background-modifier-hover);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -15797,14 +15784,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(245, 92, 81));
-      font-family: var(--h1-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h1-size, 32px);
+      color: var(--h1-color);
+      font-family: var(--h1-font);
+      font-size: var(--h1-size);
       font-weight: var(--font-weight);
-      line-height: var(--h1-line-height, 38.4px);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.48px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -15830,14 +15817,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(240, 87, 76));
-      font-family: var(--h2-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h2-size, 28.8px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h2-line-height, 34.56px);
+      color: var(--h2-color);
+      font-family: var(--h2-font);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.3168px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -15863,14 +15850,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(236, 81, 70));
-      font-family: var(--h3-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h3-size, 22.4px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h3-line-height, 29.12px);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.1792px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -15896,14 +15883,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(230, 76, 65));
-      font-family: var(--h4-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h4-size, 19.2px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h4-line-height, 26.88px);
+      color: var(--h4-color);
+      font-family: var(--h4-font);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.096px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -15929,14 +15916,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(225, 72, 61));
-      font-family: var(--h5-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--h5-size, 18px);
-      font-weight: var(--font-weight, 600);
-      line-height: var(--h5-line-height, 27px);
+      color: var(--h5-color);
+      font-family: var(--h5-font);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.036px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -15962,8 +15949,8 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(219, 68, 57));
-      font-family: var(--h6-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
+      color: var(--h6-color);
+      font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
       line-height: var(--h6-line-height);
@@ -15996,11 +15983,11 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(245, 92, 81));
-      font-family: var(--inline-title-font, "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif);
-      font-size: var(--inline-title-size, 32px);
+      color: var(--inline-title-color);
+      font-family: var(--inline-title-font);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
-      line-height: var(--inline-title-line-height, 38.4px);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.48px;
@@ -16418,7 +16405,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 105, 175, 255);
+      --callout-color: var(--callout-default);
       border: 0px solid rgba(105, 175, 255, 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -16460,7 +16447,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16477,7 +16464,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 105, 175, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(105, 175, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16518,7 +16505,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16535,7 +16522,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 10, 206, 203);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(10, 206, 203, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16576,7 +16563,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16593,7 +16580,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 105, 175, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(105, 175, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16634,7 +16621,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16651,7 +16638,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 105, 175, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(105, 175, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16692,7 +16679,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16709,7 +16696,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 10, 206, 203);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(10, 206, 203, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16750,7 +16737,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16767,7 +16754,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 35, 209, 140);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(35, 209, 140, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16808,7 +16795,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16825,7 +16812,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16866,7 +16853,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16883,7 +16870,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16924,7 +16911,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16941,7 +16928,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 248, 92, 81);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(248, 92, 81, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -16982,7 +16969,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -16999,7 +16986,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 248, 92, 81);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(248, 92, 81, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17040,7 +17027,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -17057,7 +17044,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 248, 92, 81);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(248, 92, 81, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17098,7 +17085,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -17115,7 +17102,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 162, 155, 254);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(162, 155, 254, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17156,7 +17143,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -17173,7 +17160,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -17214,7 +17201,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-      color: var(--callout-title-color, rgb(105, 175, 255));
+      color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
 
@@ -17292,7 +17279,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(245, 92, 81));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -17303,7 +17290,7 @@ html[saved-theme="dark"] {
       border-right: 1px solid rgb(35, 33, 32);
       border-top: var(--table-header-border-width) solid rgb(35, 33, 32);
       border-bottom: 1px solid rgb(35, 33, 32);
-      border-top-left-radius: var(--table-border-radius, 8px);
+      border-top-left-radius: var(--table-border-radius);
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
@@ -17320,7 +17307,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(255, 235, 209));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -17346,7 +17333,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgb(24, 23, 22));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -17516,8 +17503,8 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--background-primary-alt, rgb(35, 33, 32));
-      color: var(--text-muted, rgb(128, 120, 116));
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(128, 120, 116);
       border-width: 0px;
@@ -17531,7 +17518,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: var(--metadata-background);
-      color: var(--text-muted, rgb(128, 120, 116));
+      color: var(--text-muted);
       font-family:
         "IBM Plex Sans",
         sans-serif,
@@ -17660,7 +17647,7 @@ html[saved-theme="dark"] {
 
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal, rgb(128, 120, 116));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -17750,9 +17737,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(24, 23, 22));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(152, 150, 146));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(152, 150, 146);
@@ -18080,7 +18067,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(128, 120, 116));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: "IBM Plex Sans", sans-serif;
       font-weight: var(--nav-item-weight);
@@ -18088,7 +18075,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-      color: var(--nav-item-color, rgb(128, 120, 116));
+      color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: "IBM Plex Sans", sans-serif;
       font-weight: var(--nav-item-weight);
@@ -18100,21 +18087,8 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      color: rgb(128, 120, 116);
+      font-family: "IBM Plex Sans", sans-serif;
       font-weight: 400;
     }
 
@@ -18128,7 +18102,7 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(245, 92, 81));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(35, 33, 32);
     }
@@ -18149,12 +18123,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(255, 235, 209));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(24, 23, 22));
+      background-color: var(--background-secondary);
       border-color: rgb(255, 235, 209);
       box-shadow: var(--input-shadow);
     }
@@ -18181,8 +18155,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(245, 92, 81, 0.15));
-      color: var(--pill-color, rgb(245, 92, 81));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -18196,7 +18170,7 @@ html[saved-theme="dark"] {
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(128, 120, 116));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(128, 120, 116);
       border-width: 0px;
@@ -18207,8 +18181,8 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(24, 23, 22));
-      color: var(--status-bar-text-color, rgb(128, 120, 116));
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
       font-family: "IBM Plex Sans", sans-serif;
       font-size: var(--status-bar-font-size);
       text-align: start;
@@ -18243,7 +18217,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(128, 120, 116));
+      color: var(--nav-item-color);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -18272,7 +18246,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: var(--nav-item-color, rgb(128, 120, 116));
+      color: var(--nav-item-color);
     }
 
     li.section-li > .section .meta {
@@ -18282,7 +18256,7 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--icon-color, rgb(128, 120, 116));
+      color: var(--icon-color);
       cursor: var(--cursor);
       border-color: rgb(128, 120, 116);
       border-width: 0px;
@@ -18309,7 +18283,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(245, 92, 81));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18327,11 +18301,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(24, 23, 22));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(255, 235, 209));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -18463,8 +18437,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(245, 92, 81, 0.15));
-      color: var(--tag-color, rgb(245, 92, 81));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(245, 92, 81, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -18494,17 +18468,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(245, 92, 81));
+      background-color: var(--checkbox-color);
       border-color: rgb(245, 92, 81);
     }
 
     .stacked-page {
       border-color: rgb(255, 235, 209);
-      background-color: var(--background-secondary, rgb(24, 23, 22));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(24, 23, 22));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -18512,8 +18486,8 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(245, 92, 81));
-      font-size: var(--inline-title-size, 32px);
+      color: var(--inline-title-color);
+      font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
 
@@ -18615,7 +18589,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -18665,6 +18638,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -18767,7 +18741,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -18817,6 +18790,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -18919,7 +18893,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -18969,6 +18942,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19071,7 +19045,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -19121,6 +19094,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19223,7 +19197,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -19273,6 +19246,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19375,7 +19349,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -19425,6 +19398,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19527,7 +19501,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -19577,6 +19550,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19679,7 +19653,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -19729,6 +19702,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19831,7 +19805,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -19881,6 +19854,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -19983,7 +19957,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20033,6 +20006,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -20135,7 +20109,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20185,6 +20158,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -20287,7 +20261,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20337,6 +20310,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -20439,7 +20413,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20489,6 +20462,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -20591,7 +20565,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20641,6 +20614,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -20743,7 +20717,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20793,6 +20766,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -20895,7 +20869,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -20945,6 +20918,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21047,7 +21021,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -21097,6 +21070,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21199,7 +21173,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -21249,6 +21222,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21351,7 +21325,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -21401,6 +21374,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21503,7 +21477,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -21553,6 +21526,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21655,7 +21629,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -21705,6 +21678,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21807,7 +21781,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -21857,6 +21830,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -21959,7 +21933,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22009,6 +21982,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -22111,7 +22085,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22161,6 +22134,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -22263,7 +22237,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22313,6 +22286,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -22415,7 +22389,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22465,6 +22438,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -22567,7 +22541,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22617,6 +22590,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -22719,7 +22693,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22769,6 +22742,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -22871,7 +22845,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -22921,6 +22894,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23023,7 +22997,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23073,6 +23046,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23175,7 +23149,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23225,6 +23198,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23327,7 +23301,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23377,6 +23350,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23479,7 +23453,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23529,6 +23502,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23631,7 +23605,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23681,6 +23654,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23783,7 +23757,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23833,6 +23806,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -23935,7 +23909,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -23985,6 +23958,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24087,7 +24061,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -24137,6 +24110,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24239,7 +24213,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -24289,6 +24262,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24391,7 +24365,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -24441,6 +24414,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24543,7 +24517,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -24593,6 +24566,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24695,7 +24669,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -24745,6 +24718,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24847,7 +24821,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -24897,6 +24870,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -24999,7 +24973,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25049,6 +25022,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -25151,7 +25125,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25201,6 +25174,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -25303,7 +25277,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25353,6 +25326,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -25455,7 +25429,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25505,6 +25478,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -25607,7 +25581,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25657,6 +25630,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -25759,7 +25733,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25809,6 +25782,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -25911,7 +25885,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -25961,6 +25934,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26063,7 +26037,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -26113,6 +26086,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26215,7 +26189,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -26265,6 +26238,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26367,7 +26341,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -26417,6 +26390,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26519,7 +26493,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -26569,6 +26542,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26671,7 +26645,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -26721,6 +26694,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26823,7 +26797,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -26873,6 +26846,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -26975,7 +26949,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27025,6 +26998,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -27127,7 +27101,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27177,6 +27150,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -27279,7 +27253,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27329,6 +27302,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -27431,7 +27405,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27481,6 +27454,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -27583,7 +27557,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27633,6 +27606,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -27735,7 +27709,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27785,6 +27758,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -27887,7 +27861,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -27937,6 +27910,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -28039,7 +28013,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -28089,6 +28062,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -28191,7 +28165,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -28241,6 +28214,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -28343,7 +28317,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -28393,6 +28366,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -28495,7 +28469,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -28545,6 +28518,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }
@@ -28647,7 +28621,6 @@ html[saved-theme="dark"] {
       --tab-background-active: #1e1e1e;
       --tab-divider-color: #3f3f3f;
       --tab-outline-color: #363636;
-      --tab-radius: 4px;
       --tab-switcher-background: #262626;
       --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -28697,6 +28670,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       margin-left: 0px;
+      --divider-vertical-height: 100%;
       --font-monospace-theme: "??";
       --text-on-accent: white;
     }

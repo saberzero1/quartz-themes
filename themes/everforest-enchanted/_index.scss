@@ -24,41 +24,41 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #939f91) !important;
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent, #3a94c5) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #5a93a2) !important;
-  --checkbox-marker-color: var(--background-primary, #fffbef) !important;
-  --checkbox-radius: var(--radius-s, 25%) !important;
-  --checkbox-size: var(--font-text-size, 14px) !important;
-  --code-background: var(--background-primary-alt, #f2efdf) !important;
-  --code-border-color: var(--background-modifier-border, #bec5b2) !important;
+  --checkbox-color: var(--fg-blue) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 25% !important;
+  --checkbox-size: calc(var(--font-text-size) - 2px) !important;
+  --code-background: var(--bg-dim) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #939f91) !important;
-  --code-function: var(--color-yellow, #8da101) !important;
-  --code-important: var(--color-orange, #f85552) !important;
-  --code-keyword: var(--color-pink, #3a94c5) !important;
-  --code-normal: var(--text-normal, #5c6a72) !important;
-  --code-operator: var(--color-red, #f57d26) !important;
-  --code-property: var(--color-cyan, #35a77c) !important;
-  --code-punctuation: var(--text-muted, #939f91) !important;
+  --code-comment: var(--grey1) !important;
+  --code-function: var(--fg-green) !important;
+  --code-important: var(--fg-red) !important;
+  --code-keyword: var(--fg-blue) !important;
+  --code-normal: var(--fg) !important;
+  --code-operator: var(--fg-orange) !important;
+  --code-property: var(--fg-aqua) !important;
+  --code-punctuation: var(--grey1) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, #dfa000) !important;
-  --code-tag: var(--color-red, #f57d26) !important;
-  --code-value: var(--color-purple, #df69ba) !important;
-  --collapse-icon-color: var(--text-faint, #939f91) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #5a93a2) !important;
+  --code-string: var(--fg-yellow) !important;
+  --code-tag: var(--fg-orange) !important;
+  --code-value: var(--fg-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #5a93a2) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #939f91) !important;
-  --graph-text: var(--text-normal, #5c6a72) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #5a93a2) !important;
-  --icon-color-focused: var(--text-normal, #5c6a72) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -86,7 +86,7 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --code-header: #0004 !important;
-  --code-inline: #3a94c5 !important;
+  --code-inline: var(--fg-blue) !important;
 
   --readable-line-length-custom: 700px;
   --wide-width-readable-line-length-custom: 1000px;
@@ -132,41 +132,41 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #859289) !important;
+  --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--fg-blue, #7fbbb3) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, #5a93a2) !important;
-  --checkbox-marker-color: var(--background-primary, #333c43) !important;
-  --checkbox-radius: var(--radius-s, 25%) !important;
+  --checkbox-color: var(--fg-blue) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 25% !important;
   --checkbox-size: calc(var(--font-text-size) - 2px) !important;
-  --code-background: var(--bg-dim, #293136) !important;
-  --code-border-color: var(--background-modifier-border, #5d6b66) !important;
+  --code-background: var(--bg-dim) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--grey1, #859289) !important;
-  --code-function: var(--fg-green, #a7c080) !important;
-  --code-important: var(--fg-red, #e67e80) !important;
-  --code-keyword: var(--fg-blue, #7fbbb3) !important;
-  --code-normal: var(--fg, #d3c6aa) !important;
-  --code-operator: var(--fg-orange, #e69875) !important;
-  --code-property: var(--fg-aqua, #83c092) !important;
-  --code-punctuation: var(--grey1, #859289) !important;
+  --code-comment: var(--grey1) !important;
+  --code-function: var(--fg-green) !important;
+  --code-important: var(--fg-red) !important;
+  --code-keyword: var(--fg-blue) !important;
+  --code-normal: var(--fg) !important;
+  --code-operator: var(--fg-orange) !important;
+  --code-property: var(--fg-aqua) !important;
+  --code-punctuation: var(--grey1) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--fg-yellow, #dbbc7f) !important;
-  --code-tag: var(--fg-orange, #e69875) !important;
-  --code-value: var(--fg-purple, #d699b6) !important;
-  --collapse-icon-color: var(--text-faint, #859289) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #5a93a2) !important;
+  --code-string: var(--fg-yellow) !important;
+  --code-tag: var(--fg-orange) !important;
+  --code-value: var(--fg-purple) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent, #5a93a2) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint, #859289) !important;
-  --graph-text: var(--text-normal, #d3c6aa) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent, #5a93a2) !important;
-  --icon-color-focused: var(--text-normal, #d3c6aa) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
@@ -194,7 +194,7 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --code-header: #0004 !important;
-  --code-inline: var(--fg-blue, #7fbbb3) !important;
+  --code-inline: var(--fg-blue) !important;
 
   --readable-line-length-custom: 700px;
   --wide-width-readable-line-length-custom: 1000px;
@@ -521,20 +521,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(255, 251, 239));
-    color: var(--text-normal, rgb(92, 106, 114));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(255, 251, 239));
+    background-color: var(--background-primary);
     color: rgb(92, 106, 114);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(255, 251, 239));
+    background-color: var(--background-secondary);
     color: rgb(92, 106, 114);
   }
 
@@ -542,12 +542,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--background-partially-transparent, rgb(255, 251, 239));
+    background-color: var(--tab-container-background);
     color: rgb(92, 106, 114);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--background-partially-transparent, rgb(255, 251, 239));
+    background-color: var(--tab-container-background);
     color: rgb(92, 106, 114);
     border-left: 0px rgb(190, 197, 178);
   }
@@ -559,7 +559,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(90, 147, 162));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -601,7 +601,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(86, 157, 121));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -642,7 +642,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(90, 147, 162));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -664,9 +664,9 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(90, 147, 162) none 0px;
     text-decoration: underline dashed rgb(255, 231, 222);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(255, 231, 222));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
-    text-decoration-style: var(--link-unresolved-decoration-style, dashed);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -741,7 +741,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--fg-purple, rgb(223, 105, 186));
+    color: var(--fg-purple);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -782,7 +782,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--fg-purple, rgb(223, 105, 186));
+    color: var(--fg-purple);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -823,7 +823,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--fg-purple, rgb(223, 105, 186));
+    color: var(--fg-purple);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -864,7 +864,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--fg-purple, rgb(223, 105, 186));
+    color: var(--fg-purple);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -983,7 +983,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--fg-purple, rgb(223, 105, 186));
+    color: var(--fg-purple);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -1013,8 +1013,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(254, 242, 213));
-    color: var(--text-normal, rgb(92, 106, 114));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1054,7 +1054,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-faint, rgb(147, 159, 145));
+    color: var(--text-faint);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1144,8 +1144,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
-    color: var(--pill-color, rgb(90, 147, 162));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1182,13 +1182,13 @@ body {
   }
 
   ul > li {
-    color: var(--code-inline, rgb(92, 106, 114));
+    color: rgb(92, 106, 114);
     text-align: start;
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 0px);
-    padding-bottom: var(--list-spacing, 0px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1219,13 +1219,13 @@ body {
   }
 
   ol > li {
-    color: var(--code-inline, rgb(92, 106, 114));
+    color: rgb(92, 106, 114);
     text-align: start;
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 0px);
-    padding-bottom: var(--list-spacing, 0px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1256,7 +1256,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(242, 239, 223));
+    background-color: var(--code-background);
     border: 0px solid rgb(190, 197, 178);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1266,7 +1266,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(58, 148, 197));
+    color: var(--code-inline);
     font-family: var(--font-monospace);
     padding: 1.4px 3.5px;
     padding-block-end: 0px;
@@ -1298,7 +1298,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(242, 239, 223));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1339,7 +1339,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: var(--checkbox-size, 14px);
+    width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
     top: auto;
@@ -1361,8 +1361,8 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgba(238, 236, 213, 0.7));
-    color: var(--blockquote-color, rgb(92, 106, 114));
+    background-color: var(--blockquote-background-color);
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1390,7 +1390,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(147, 159, 145));
+    color: var(--text-faint);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -1405,7 +1405,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(92, 106, 114));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1423,7 +1423,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(255, 251, 239));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1433,7 +1433,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.4) 0px 4px 14px -2px);
+    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
@@ -1526,14 +1526,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(248, 85, 82));
+    color: var(--h1-color);
     font-family: var(--h1-font);
-    font-size: var(--h1-size, 34px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h1-line-height, 51px);
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h1-letter-spacing, -0.51px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1559,14 +1559,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(248, 143, 68));
+    color: var(--h2-color);
     font-family: var(--h2-font);
-    font-size: var(--h2-size, 26px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h2-line-height, 39px);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h2-letter-spacing, -0.286px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1592,14 +1592,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(243, 185, 49));
+    color: var(--h3-color);
     font-family: var(--h3-font);
-    font-size: var(--h3-size, 22px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h3-line-height, 33px);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h3-letter-spacing, -0.176px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1625,14 +1625,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(171, 209, 19));
+    color: var(--h4-color);
     font-family: var(--h4-font);
-    font-size: var(--h4-size, 20px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h4-line-height, 30px);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h4-letter-spacing, -0.1px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1658,14 +1658,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(90, 147, 162));
+    color: var(--h5-color);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 18px);
-    font-weight: var(--font-weight, 500);
-    line-height: var(--h5-line-height, 27px);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: var(--h5-letter-spacing, -0.036px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1691,10 +1691,10 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(221, 43, 141));
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
-    font-weight: var(--font-weight, 500);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
@@ -1725,11 +1725,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(248, 85, 82));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
-    font-size: var(--inline-title-size, 34px);
-    font-weight: var(--inline-title-weight, 500);
-    line-height: var(--inline-title-line-height, 51px);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: -0.51px;
@@ -2147,7 +2147,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     border: 1px solid rgba(8, 109, 221, 0.3);
     border-left: 2px solid rgba(8, 109, 221, 0.7);
     border-top-left-radius: 4px;
@@ -2207,7 +2207,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 8, 109, 221);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2266,7 +2266,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 0, 191, 188);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2325,7 +2325,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 8, 109, 221);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2384,7 +2384,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 8, 109, 221);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2443,7 +2443,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 0, 191, 188);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2502,7 +2502,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 8, 185, 78);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2561,7 +2561,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 236, 117, 0);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2620,7 +2620,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 236, 117, 0);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2679,7 +2679,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 233, 49, 71);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2738,7 +2738,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 233, 49, 71);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2797,7 +2797,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 233, 49, 71);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2856,7 +2856,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 120, 82, 238);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2915,7 +2915,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2976,7 +2976,7 @@ body {
   table {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
-    color: var(--code-inline, rgb(92, 106, 114));
+    color: rgb(92, 106, 114);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3033,7 +3033,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(92, 106, 114));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3061,7 +3061,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(92, 106, 114));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -3085,7 +3085,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgb(243, 245, 217));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3098,11 +3098,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgb(242, 239, 223));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgb(248, 245, 228));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3223,7 +3223,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--blockquote-background-color, rgba(238, 236, 213, 0.7));
+    background-color: var(--blockquote-background-color);
     color: rgb(92, 106, 114);
     border-radius: 0px;
     border-color: rgb(92, 106, 114);
@@ -3255,7 +3255,7 @@ body {
   }
 
   .file-embed {
-    background-color: var(--blockquote-background-color, rgba(238, 236, 213, 0.7));
+    background-color: var(--blockquote-background-color);
     color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(92, 92, 92);
@@ -3483,9 +3483,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(242, 239, 223));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(92, 106, 114));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(92, 106, 114);
@@ -3879,13 +3879,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(92, 106, 114));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(190, 197, 178);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgb(248, 245, 228));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3900,12 +3900,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(92, 106, 114));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-primary, rgb(255, 251, 239));
+    background-color: var(--background-primary);
     border-color: rgb(92, 106, 114);
     box-shadow: var(--input-shadow);
   }
@@ -3932,8 +3932,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
-    color: var(--pill-color, rgb(90, 147, 162));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3958,7 +3958,7 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(255, 251, 239));
+    background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
@@ -4112,7 +4112,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(147, 159, 145));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4130,11 +4130,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(255, 251, 239));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(92, 106, 114));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4265,8 +4265,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(139, 108, 239, 0.1));
-    color: var(--tag-color, rgb(90, 147, 162));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(138, 92, 245, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4296,17 +4296,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(58, 148, 197));
+    background-color: var(--checkbox-color);
     border-color: rgb(58, 148, 197);
   }
 
   .stacked-page {
     border-color: rgb(92, 106, 114);
-    background-color: var(--background-secondary, rgb(255, 251, 239));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(255, 251, 239));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4314,9 +4314,9 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(248, 85, 82));
-    font-size: var(--inline-title-size, 34px);
-    font-weight: var(--inline-title-weight, 500);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
   }
 
   .callout[data-callout="code"] {
@@ -4327,7 +4327,6 @@ body {
     --background-secondary: #fffbef;
     --background-secondary-alt: #fffbef;
     --blockquote-border-color: #569d79;
-    --callout-color: var(--callout-default, 76, 175, 80);
     --canvas-background: #fffbef;
     --canvas-dot-pattern: #ababab;
     --caret-color: #5c6a72;
@@ -4335,7 +4334,6 @@ body {
     --checkbox-color: #3a94c5;
     --checkbox-color-hover: #5a93a2;
     --checkbox-marker-color: #fffbef;
-    --checkbox-radius: 25%;
     --checkbox-size: 14px;
     --collapse-icon-color: #939f91;
     --collapse-icon-color-collapsed: #5a93a2;
@@ -4402,12 +4400,24 @@ body {
     --text-selection: #ded8db;
     color: rgb(92, 106, 114);
     padding: 0px;
-    --blockquote-background-color: transparent;
+    --background-embed: rgb(238 236 213 / 70%);
+    --background-primary-rgb: 255, 251, 239;
+    --blockquote-background-color: rgb(238 236 213 / 70%);
     --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
     --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
     --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-    --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
-    --table-background: transparent;
+    --callout-content-padding: var(--size-4-2) var(--size-4-4);
+    --h1-color: #f85552;
+    --h2-color: #f88f44;
+    --h3-color: #f3b931;
+    --h4-color: #abd113;
+    --h5-color: #5a93a2;
+    --h6-color: #dd2b8d;
+    --interactive-before: #e8e5d5;
+    --link-unresolved-color-hover: #dd2b8d;
+    --link-unresolved-decoration-color-hover: #f85552;
+    --table-background: #f2efdf;
+    --table-header-background-hover: #f3f5d9;
     box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
@@ -4428,6 +4438,7 @@ body {
     --button-radius: 5px;
     --callout-blend-mode: darken;
     --callout-bug: 233, 49, 71;
+    --callout-color: 76, 175, 80;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -4453,7 +4464,6 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4470,8 +4480,6 @@ body {
     --graph-node: #5c5c5c;
     --graph-node-attachment: #e0ac00;
     --graph-node-tag: #08b94e;
-    --h5-line-height: 1.5;
-    --h6-line-height: 1.5;
     --heading-spacing: 2.5rem;
     --interactive-accent-hsl: 258, 88%, 66%;
     --interactive-hover: #fafafa;
@@ -4483,8 +4491,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fffbef 65%, transparent) linear-gradient(#fffbef, color-mix(in srgb, #fffbef 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -4595,7 +4608,6 @@ body {
     --background-secondary: #fffbef;
     --background-secondary-alt: #fffbef;
     --blockquote-border-color: #569d79;
-    --callout-color: var(--callout-default, 255, 152, 0);
     --canvas-background: #fffbef;
     --canvas-dot-pattern: #ababab;
     --caret-color: #5c6a72;
@@ -4603,7 +4615,6 @@ body {
     --checkbox-color: #3a94c5;
     --checkbox-color-hover: #5a93a2;
     --checkbox-marker-color: #fffbef;
-    --checkbox-radius: 25%;
     --checkbox-size: 14px;
     --collapse-icon-color: #939f91;
     --collapse-icon-color-collapsed: #5a93a2;
@@ -4670,12 +4681,24 @@ body {
     --text-selection: #ded8db;
     color: rgb(92, 106, 114);
     padding: 0px;
-    --blockquote-background-color: transparent;
+    --background-embed: rgb(238 236 213 / 70%);
+    --background-primary-rgb: 255, 251, 239;
+    --blockquote-background-color: rgb(238 236 213 / 70%);
     --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
     --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
     --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-    --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
-    --table-background: transparent;
+    --callout-content-padding: var(--size-4-2) var(--size-4-4);
+    --h1-color: #f85552;
+    --h2-color: #f88f44;
+    --h3-color: #f3b931;
+    --h4-color: #abd113;
+    --h5-color: #5a93a2;
+    --h6-color: #dd2b8d;
+    --interactive-before: #e8e5d5;
+    --link-unresolved-color-hover: #dd2b8d;
+    --link-unresolved-decoration-color-hover: #f85552;
+    --table-background: #f2efdf;
+    --table-header-background-hover: #f3f5d9;
     box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
@@ -4696,6 +4719,7 @@ body {
     --button-radius: 5px;
     --callout-blend-mode: darken;
     --callout-bug: 233, 49, 71;
+    --callout-color: 255, 152, 0;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -4721,7 +4745,6 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -4738,8 +4761,6 @@ body {
     --graph-node: #5c5c5c;
     --graph-node-attachment: #e0ac00;
     --graph-node-tag: #08b94e;
-    --h5-line-height: 1.5;
-    --h6-line-height: 1.5;
     --heading-spacing: 2.5rem;
     --interactive-accent-hsl: 258, 88%, 66%;
     --interactive-hover: #fafafa;
@@ -4751,8 +4772,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fffbef 65%, transparent) linear-gradient(#fffbef, color-mix(in srgb, #fffbef 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -4863,7 +4889,6 @@ body {
     --background-secondary: #fffbef;
     --background-secondary-alt: #fffbef;
     --blockquote-border-color: #569d79;
-    --callout-color: var(--callout-default, 234, 128, 252);
     --canvas-background: #fffbef;
     --canvas-dot-pattern: #ababab;
     --caret-color: #5c6a72;
@@ -4871,7 +4896,6 @@ body {
     --checkbox-color: #3a94c5;
     --checkbox-color-hover: #5a93a2;
     --checkbox-marker-color: #fffbef;
-    --checkbox-radius: 25%;
     --checkbox-size: 14px;
     --collapse-icon-color: #939f91;
     --collapse-icon-color-collapsed: #5a93a2;
@@ -4938,12 +4962,24 @@ body {
     --text-selection: #ded8db;
     color: rgb(92, 106, 114);
     padding: 0px;
-    --blockquote-background-color: transparent;
+    --background-embed: rgb(238 236 213 / 70%);
+    --background-primary-rgb: 255, 251, 239;
+    --blockquote-background-color: rgb(238 236 213 / 70%);
     --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
     --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
     --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-    --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
-    --table-background: transparent;
+    --callout-content-padding: var(--size-4-2) var(--size-4-4);
+    --h1-color: #f85552;
+    --h2-color: #f88f44;
+    --h3-color: #f3b931;
+    --h4-color: #abd113;
+    --h5-color: #5a93a2;
+    --h6-color: #dd2b8d;
+    --interactive-before: #e8e5d5;
+    --link-unresolved-color-hover: #dd2b8d;
+    --link-unresolved-decoration-color-hover: #f85552;
+    --table-background: #f2efdf;
+    --table-header-background-hover: #f3f5d9;
     box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
@@ -4964,6 +5000,7 @@ body {
     --button-radius: 5px;
     --callout-blend-mode: darken;
     --callout-bug: 233, 49, 71;
+    --callout-color: 234, 128, 252;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -4989,7 +5026,6 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5006,8 +5042,6 @@ body {
     --graph-node: #5c5c5c;
     --graph-node-attachment: #e0ac00;
     --graph-node-tag: #08b94e;
-    --h5-line-height: 1.5;
-    --h6-line-height: 1.5;
     --heading-spacing: 2.5rem;
     --interactive-accent-hsl: 258, 88%, 66%;
     --interactive-hover: #fafafa;
@@ -5019,8 +5053,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fffbef 65%, transparent) linear-gradient(#fffbef, color-mix(in srgb, #fffbef 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -5131,7 +5170,6 @@ body {
     --background-secondary: #fffbef;
     --background-secondary-alt: #fffbef;
     --blockquote-border-color: #569d79;
-    --callout-color: var(--callout-default, 132, 255, 255);
     --canvas-background: #fffbef;
     --canvas-dot-pattern: #ababab;
     --caret-color: #5c6a72;
@@ -5139,7 +5177,6 @@ body {
     --checkbox-color: #3a94c5;
     --checkbox-color-hover: #5a93a2;
     --checkbox-marker-color: #fffbef;
-    --checkbox-radius: 25%;
     --checkbox-size: 14px;
     --collapse-icon-color: #939f91;
     --collapse-icon-color-collapsed: #5a93a2;
@@ -5206,12 +5243,24 @@ body {
     --text-selection: #ded8db;
     color: rgb(92, 106, 114);
     padding: 0px;
-    --blockquote-background-color: transparent;
+    --background-embed: rgb(238 236 213 / 70%);
+    --background-primary-rgb: 255, 251, 239;
+    --blockquote-background-color: rgb(238 236 213 / 70%);
     --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
     --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
     --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-    --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
-    --table-background: transparent;
+    --callout-content-padding: var(--size-4-2) var(--size-4-4);
+    --h1-color: #f85552;
+    --h2-color: #f88f44;
+    --h3-color: #f3b931;
+    --h4-color: #abd113;
+    --h5-color: #5a93a2;
+    --h6-color: #dd2b8d;
+    --interactive-before: #e8e5d5;
+    --link-unresolved-color-hover: #dd2b8d;
+    --link-unresolved-decoration-color-hover: #f85552;
+    --table-background: #f2efdf;
+    --table-header-background-hover: #f3f5d9;
     box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
@@ -5232,6 +5281,7 @@ body {
     --button-radius: 5px;
     --callout-blend-mode: darken;
     --callout-bug: 233, 49, 71;
+    --callout-color: 132, 255, 255;
     --callout-default: 8, 109, 221;
     --callout-error: 233, 49, 71;
     --callout-example: 120, 82, 238;
@@ -5257,7 +5307,6 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
-    --divider-vertical-height: 100%;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
     --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -5274,8 +5323,6 @@ body {
     --graph-node: #5c5c5c;
     --graph-node-attachment: #e0ac00;
     --graph-node-tag: #08b94e;
-    --h5-line-height: 1.5;
-    --h6-line-height: 1.5;
     --heading-spacing: 2.5rem;
     --interactive-accent-hsl: 258, 88%, 66%;
     --interactive-hover: #fafafa;
@@ -5287,8 +5334,13 @@ body {
     --menu-radius: 8px;
     --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
     --popover-font-size: 16px;
+    --preferred-text-scale: 1;
     --raised-background: color-mix(in srgb, #fffbef 65%, transparent) linear-gradient(#fffbef, color-mix(in srgb, #fffbef 65%, transparent));
     --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+    --safe-area-inset-bottom: 0px;
+    --safe-area-inset-left: 0px;
+    --safe-area-inset-right: 0px;
+    --safe-area-inset-top: 0px;
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-radius: 12px;
@@ -5407,7 +5459,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5468,8 +5519,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5490,7 +5539,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5551,8 +5599,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5573,7 +5619,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5634,8 +5679,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5656,7 +5699,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5717,8 +5759,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5739,7 +5779,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5800,8 +5839,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5822,7 +5859,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5883,8 +5919,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5905,7 +5939,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -5966,8 +5999,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -5988,7 +6019,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6049,8 +6079,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6071,7 +6099,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6132,8 +6159,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6154,7 +6179,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6215,8 +6239,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6237,7 +6259,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6298,8 +6319,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6320,7 +6339,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6381,8 +6399,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6403,7 +6419,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6464,8 +6479,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6486,7 +6499,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6547,8 +6559,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6569,7 +6579,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6630,8 +6639,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6652,7 +6659,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6713,8 +6719,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6735,7 +6739,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6796,8 +6799,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6818,7 +6819,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6879,8 +6879,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6901,7 +6899,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -6962,8 +6959,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -6984,7 +6979,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7045,8 +7039,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7067,7 +7059,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7128,8 +7119,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7150,7 +7139,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7211,8 +7199,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7233,7 +7219,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7294,8 +7279,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7316,7 +7299,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7377,8 +7359,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7399,7 +7379,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7460,8 +7439,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7482,7 +7459,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7543,8 +7519,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7565,7 +7539,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7626,8 +7599,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7648,7 +7619,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7709,8 +7679,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7731,7 +7699,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7792,8 +7759,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7814,7 +7779,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7875,8 +7839,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7897,7 +7859,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -7958,8 +7919,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -7980,7 +7939,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8041,8 +7999,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8063,7 +8019,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8124,8 +8079,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8146,7 +8099,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8207,8 +8159,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8229,7 +8179,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8290,8 +8239,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8312,7 +8259,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8373,8 +8319,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8395,7 +8339,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8456,8 +8399,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8478,7 +8419,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8539,8 +8479,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8561,7 +8499,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8622,8 +8559,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8644,7 +8579,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8705,8 +8639,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8727,7 +8659,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8788,8 +8719,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8810,7 +8739,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8871,8 +8799,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8893,7 +8819,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -8954,8 +8879,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -8976,7 +8899,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9037,8 +8959,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9059,7 +8979,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9120,8 +9039,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9142,7 +9059,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9203,8 +9119,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9225,7 +9139,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9286,8 +9199,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9308,7 +9219,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9369,8 +9279,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9391,7 +9299,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9452,8 +9359,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9474,7 +9379,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9535,8 +9439,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9557,7 +9459,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9618,8 +9519,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9640,7 +9539,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9701,8 +9599,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9723,7 +9619,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9784,8 +9679,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9806,7 +9699,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9867,8 +9759,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9889,7 +9779,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -9950,8 +9839,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -9972,7 +9859,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10033,8 +9919,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10055,7 +9939,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10116,8 +9999,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10138,7 +10019,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10199,8 +10079,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10221,7 +10099,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10282,8 +10159,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10304,7 +10179,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10365,8 +10239,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10387,7 +10259,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10448,8 +10319,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10470,7 +10339,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10531,8 +10399,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10553,7 +10419,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10614,8 +10479,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10636,7 +10499,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10697,8 +10559,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -10719,7 +10579,6 @@ body {
     --checkbox-color: hsl(257, 88.88%, 70.95%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #ffffff;
-    --checkbox-radius: 4px;
     --checkbox-size: 16px;
     --collapse-icon-color: #ababab;
     --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
@@ -10780,8 +10639,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #222222;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --blockquote-background-color: transparent;
     --table-background: transparent;
   }
@@ -11446,20 +11303,20 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 html[saved-theme="dark"] {
   body {
     div#quartz-root {
-      background-color: var(--background-primary, rgb(51, 60, 67));
-      color: var(--text-normal, rgb(211, 198, 170));
+      background-color: var(--background-primary);
+      color: var(--text-normal);
     }
 
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
-      background-color: var(--background-primary, rgb(51, 60, 67));
+      background-color: var(--background-primary);
       color: rgb(211, 198, 170);
     }
 
     .page > div#quartz-body div.sidebar {
-      background-color: var(--background-secondary, rgb(51, 60, 67));
+      background-color: var(--background-secondary);
       color: rgb(211, 198, 170);
     }
 
@@ -11467,12 +11324,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: var(--background-partially-transparent, rgb(51, 60, 67));
+      background-color: var(--tab-container-background);
       color: rgb(211, 198, 170);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: var(--background-partially-transparent, rgb(51, 60, 67));
+      background-color: var(--tab-container-background);
       color: rgb(211, 198, 170);
       border-left: 0px rgb(93, 107, 102);
     }
@@ -11484,7 +11341,7 @@ html[saved-theme="dark"] {
     a.external-link,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-external-color, rgb(90, 147, 162));
+      color: var(--link-external-color);
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
@@ -11526,7 +11383,7 @@ html[saved-theme="dark"] {
     a.internal-link,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-color, rgb(86, 157, 121));
+      color: var(--link-color);
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
@@ -11567,7 +11424,7 @@ html[saved-theme="dark"] {
 
     a.internal-link.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--link-unresolved-color, rgb(90, 147, 162));
+      color: var(--link-unresolved-color);
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
@@ -11589,9 +11446,9 @@ html[saved-theme="dark"] {
       font-weight: var(--link-weight);
       outline: rgb(90, 147, 162) none 0px;
       text-decoration: underline dashed rgb(89, 70, 76);
-      text-decoration-color: var(--link-unresolved-decoration-color, rgb(89, 70, 76));
+      text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
-      text-decoration-style: var(--link-unresolved-decoration-style, dashed);
+      text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
       transition: opacity 0.14s ease-in-out;
       transform: none;
@@ -11666,7 +11523,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong,
     strong {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--fg-purple, rgb(214, 153, 182));
+      color: var(--fg-purple);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11707,7 +11564,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > b,
     b {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--fg-purple, rgb(214, 153, 182));
+      color: var(--fg-purple);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11748,7 +11605,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > em,
     em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--fg-purple, rgb(214, 153, 182));
+      color: var(--fg-purple);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11789,7 +11646,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > i,
     i {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--fg-purple, rgb(214, 153, 182));
+      color: var(--fg-purple);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11908,7 +11765,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--fg-purple, rgb(214, 153, 182));
+      color: var(--fg-purple);
       cursor: grab;
       font-family:
         ui-sans-serif,
@@ -11938,8 +11795,8 @@ html[saved-theme="dark"] {
     }
 
     .text-highlight {
-      background-color: var(--text-highlight-bg, rgb(85, 84, 74));
-      color: var(--text-normal, rgb(211, 198, 170));
+      background-color: var(--text-highlight-bg);
+      color: var(--text-normal);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -11979,7 +11836,7 @@ html[saved-theme="dark"] {
 
     del {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--text-faint, rgb(133, 146, 137));
+      color: var(--text-faint);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
@@ -12069,8 +11926,8 @@ html[saved-theme="dark"] {
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
-      color: var(--pill-color, rgb(90, 147, 162));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -12107,13 +11964,13 @@ html[saved-theme="dark"] {
     }
 
     ul > li {
-      color: var(--code-inline, rgb(211, 198, 170));
+      color: rgb(211, 198, 170);
       text-align: start;
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 0px);
-      padding-bottom: var(--list-spacing, 0px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -12144,13 +12001,13 @@ html[saved-theme="dark"] {
     }
 
     ol > li {
-      color: var(--code-inline, rgb(211, 198, 170));
+      color: rgb(211, 198, 170);
       text-align: start;
       list-style-type: "​";
       list-style-position: outside;
       list-style-image: none;
-      padding-top: var(--list-spacing, 0px);
-      padding-bottom: var(--list-spacing, 0px);
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
       padding-block-end: 0px;
@@ -12181,7 +12038,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background, rgb(41, 49, 54));
+      background-color: var(--code-background);
       border: 0px solid rgb(93, 107, 102);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -12191,7 +12048,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal, rgb(127, 187, 179));
+      color: var(--code-inline);
       font-family: var(--font-monospace);
       padding: 1.4px 3.5px;
       padding-block-end: 0px;
@@ -12223,7 +12080,7 @@ html[saved-theme="dark"] {
     }
 
     pre:has(> code) {
-      background-color: var(--code-background, rgb(41, 49, 54));
+      background-color: var(--code-background);
       border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -12264,7 +12121,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      width: var(--checkbox-size, 14px);
+      width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
       top: auto;
@@ -12286,8 +12143,8 @@ html[saved-theme="dark"] {
     }
 
     blockquote {
-      background-color: var(--blockquote-background-color, rgba(62, 75, 80, 0.7));
-      color: var(--blockquote-color, rgb(211, 198, 170));
+      background-color: var(--blockquote-background-color);
+      color: var(--blockquote-color);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12315,7 +12172,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: var(--text-faint, rgb(133, 146, 137));
+      color: var(--text-faint);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -12330,7 +12187,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--text-normal, rgb(211, 198, 170));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -12348,7 +12205,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background, rgb(51, 60, 67));
+      background-color: var(--prompt-background);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -12358,7 +12215,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l, rgba(0, 0, 0, 0.4) 0px 4px 14px -2px);
+      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
@@ -12451,14 +12308,14 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--h1-color, rgb(218, 99, 98));
+      color: var(--h1-color);
       font-family: var(--h1-font);
-      font-size: var(--h1-size, 34px);
-      font-weight: var(--font-weight, 500);
-      line-height: var(--h1-line-height, 51px);
+      font-size: var(--h1-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h1-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h1-letter-spacing, -0.51px);
+      letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12484,14 +12341,14 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--h2-color, rgb(215, 127, 72));
+      color: var(--h2-color);
       font-family: var(--h2-font);
-      font-size: var(--h2-size, 26px);
-      font-weight: var(--font-weight, 500);
-      line-height: var(--h2-line-height, 39px);
+      font-size: var(--h2-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h2-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h2-letter-spacing, -0.286px);
+      letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12517,14 +12374,14 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--h3-color, rgb(191, 152, 61));
+      color: var(--h3-color);
       font-family: var(--h3-font);
-      font-size: var(--h3-size, 22px);
-      font-weight: var(--font-weight, 500);
-      line-height: var(--h3-line-height, 33px);
+      font-size: var(--h3-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h3-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h3-letter-spacing, -0.176px);
+      letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12550,14 +12407,14 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--h4-color, rgb(137, 156, 64));
+      color: var(--h4-color);
       font-family: var(--h4-font);
-      font-size: var(--h4-size, 20px);
-      font-weight: var(--font-weight, 500);
-      line-height: var(--h4-line-height, 30px);
+      font-size: var(--h4-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h4-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h4-letter-spacing, -0.1px);
+      letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12583,14 +12440,14 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--h5-color, rgb(90, 147, 162));
+      color: var(--h5-color);
       font-family: var(--h5-font);
-      font-size: var(--h5-size, 18px);
-      font-weight: var(--font-weight, 500);
-      line-height: var(--h5-line-height, 27px);
+      font-size: var(--h5-size);
+      font-weight: var(--font-weight);
+      line-height: var(--h5-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: var(--h5-letter-spacing, -0.036px);
+      letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -12616,10 +12473,10 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--h6-color, rgb(184, 123, 157));
+      color: var(--h6-color);
       font-family: var(--h6-font);
       font-size: var(--h6-size);
-      font-weight: var(--font-weight, 500);
+      font-weight: var(--font-weight);
       line-height: var(--h6-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
@@ -12650,11 +12507,11 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color, rgb(218, 99, 98));
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
-      font-size: var(--inline-title-size, 34px);
-      font-weight: var(--inline-title-weight, 500);
-      line-height: var(--inline-title-line-height, 51px);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
+      line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: -0.51px;
@@ -13072,7 +12929,7 @@ html[saved-theme="dark"] {
     }
 
     .callout {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       border: 1px solid rgba(2, 122, 255, 0.3);
       border-left: 2px solid rgba(2, 122, 255, 0.7);
       border-top-left-radius: 4px;
@@ -13132,7 +12989,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] {
-      --callout-color: var(--callout-default, 2, 122, 255);
+      --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13191,7 +13048,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] {
-      --callout-color: var(--callout-summary, 83, 223, 221);
+      --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13250,7 +13107,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] {
-      --callout-color: var(--callout-info, 2, 122, 255);
+      --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13309,7 +13166,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] {
-      --callout-color: var(--callout-todo, 2, 122, 255);
+      --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13368,7 +13225,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] {
-      --callout-color: var(--callout-tip, 83, 223, 221);
+      --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13427,7 +13284,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] {
-      --callout-color: var(--callout-success, 68, 207, 110);
+      --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13486,7 +13343,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] {
-      --callout-color: var(--callout-question, 233, 151, 63);
+      --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13545,7 +13402,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] {
-      --callout-color: var(--callout-warning, 233, 151, 63);
+      --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13604,7 +13461,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] {
-      --callout-color: var(--callout-error, 251, 70, 76);
+      --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13663,7 +13520,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] {
-      --callout-color: var(--callout-fail, 251, 70, 76);
+      --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13722,7 +13579,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] {
-      --callout-color: var(--callout-bug, 251, 70, 76);
+      --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13781,7 +13638,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] {
-      --callout-color: var(--callout-example, 168, 130, 255);
+      --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13840,7 +13697,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] {
-      --callout-color: var(--callout-quote, 158, 158, 158);
+      --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
       background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -13901,7 +13758,7 @@ html[saved-theme="dark"] {
     table {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
-      color: var(--code-inline, rgb(211, 198, 170));
+      color: rgb(211, 198, 170);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -13958,7 +13815,7 @@ html[saved-theme="dark"] {
 
     th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(211, 198, 170));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -13986,7 +13843,7 @@ html[saved-theme="dark"] {
 
     td {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-text-color, rgb(211, 198, 170));
+      color: var(--table-text-color);
       font-weight: 400;
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
@@ -14010,7 +13867,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: var(--table-header-background, rgb(72, 88, 78));
+      background-color: var(--table-header-background);
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -14023,11 +13880,11 @@ html[saved-theme="dark"] {
     }
 
     tbody tr:nth-child(even) {
-      background-color: var(--table-background, rgb(67, 79, 85));
+      background-color: var(--table-background);
     }
 
     tbody tr:nth-child(odd) {
-      background-color: var(--table-row-alt-background, rgb(58, 70, 76));
+      background-color: var(--table-row-alt-background);
     }
 
     img {
@@ -14148,7 +14005,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: var(--blockquote-background-color, rgba(62, 75, 80, 0.7));
+      background-color: var(--blockquote-background-color);
       color: rgb(211, 198, 170);
       border-radius: 0px;
       border-color: rgb(211, 198, 170);
@@ -14180,7 +14037,7 @@ html[saved-theme="dark"] {
     }
 
     .file-embed {
-      background-color: var(--blockquote-background-color, rgba(62, 75, 80, 0.7));
+      background-color: var(--blockquote-background-color);
       color: var(--text-muted);
       border-radius: 8px;
       border-color: rgb(179, 179, 179);
@@ -14408,9 +14265,9 @@ html[saved-theme="dark"] {
     }
 
     kbd {
-      background-color: var(--code-background, rgb(41, 49, 54));
+      background-color: var(--code-background);
       box-shadow: none;
-      color: var(--code-normal, rgb(211, 198, 170));
+      color: var(--code-normal);
       font-family: var(--font-monospace);
       font-size: var(--code-size);
       border: 0px rgb(211, 198, 170);
@@ -14804,13 +14661,13 @@ html[saved-theme="dark"] {
 
     .bases-table thead th {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--table-header-color, rgb(211, 198, 170));
+      color: var(--table-header-color);
       font-weight: var(--table-header-weight);
       border-color: rgb(93, 107, 102);
     }
 
     .bases-table tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt-background, rgb(58, 70, 76));
+      background-color: var(--table-row-alt-background);
     }
 
     .canvas-node {
@@ -14825,12 +14682,12 @@ html[saved-theme="dark"] {
     }
 
     .canvas-node-file {
-      color: var(--text-normal, rgb(211, 198, 170));
+      color: var(--text-normal);
       background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-sidebar {
-      background-color: var(--background-secondary, rgb(51, 60, 67));
+      background-color: var(--background-secondary);
       border-color: rgb(211, 198, 170);
       box-shadow: var(--input-shadow);
     }
@@ -14857,8 +14714,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background, rgba(139, 108, 239, 0.1));
-      color: var(--pill-color, rgb(90, 147, 162));
+      background-color: var(--pill-background);
+      color: var(--pill-color);
       border-radius: 28px;
     }
 
@@ -14883,7 +14740,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: var(--status-bar-background, rgb(51, 60, 67));
+      background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
       font-family:
         ui-sans-serif,
@@ -15037,7 +14894,7 @@ html[saved-theme="dark"] {
     }
 
     .breadcrumb-element p {
-      color: var(--text-faint, rgb(133, 146, 137));
+      color: var(--text-faint);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15055,11 +14912,11 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: var(--status-bar-background, rgb(51, 60, 67));
+      background-color: var(--status-bar-background);
     }
 
     .page-header h2.page-title {
-      color: var(--text-normal, rgb(211, 198, 170));
+      color: var(--text-normal);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -15190,8 +15047,8 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--tag-background, rgba(139, 108, 239, 0.1));
-      color: var(--tag-color, rgb(90, 147, 162));
+      background-color: var(--tag-background);
+      color: var(--tag-color);
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 24.5px;
       border-top-right-radius: 24.5px;
@@ -15221,17 +15078,17 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color, rgb(127, 187, 179));
+      background-color: var(--checkbox-color);
       border-color: rgb(127, 187, 179);
     }
 
     .stacked-page {
       border-color: rgb(211, 198, 170);
-      background-color: var(--background-secondary, rgb(51, 60, 67));
+      background-color: var(--background-secondary);
     }
 
     .stacked-page-header {
-      background-color: var(--tab-container-background, rgb(51, 60, 67));
+      background-color: var(--tab-container-background);
     }
 
     .stacked-page.active {
@@ -15239,9 +15096,9 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color, rgb(218, 99, 98));
-      font-size: var(--inline-title-size, 34px);
-      font-weight: var(--inline-title-weight, 500);
+      color: var(--inline-title-color);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
     }
 
     .callout[data-callout="code"] {
@@ -15252,7 +15109,6 @@ html[saved-theme="dark"] {
       --background-secondary: #333c43;
       --background-secondary-alt: #333c43;
       --blockquote-border-color: #569d79;
-      --callout-color: var(--callout-default, 76, 175, 80);
       --canvas-background: #333c43;
       --canvas-dot-pattern: #666666;
       --caret-color: #d3c6aa;
@@ -15260,7 +15116,6 @@ html[saved-theme="dark"] {
       --checkbox-color: #7fbbb3;
       --checkbox-color-hover: #5a93a2;
       --checkbox-marker-color: #333c43;
-      --checkbox-radius: 25%;
       --checkbox-size: 14px;
       --collapse-icon-color: #859289;
       --collapse-icon-color-collapsed: #5a93a2;
@@ -15333,7 +15188,7 @@ html[saved-theme="dark"] {
       --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
       --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
       --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-      --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
+      --callout-content-padding: var(--size-4-2) var(--size-4-4);
       --h1-color: #da6362;
       --h2-color: #d77f48;
       --h3-color: #bf983d;
@@ -15365,6 +15220,7 @@ html[saved-theme="dark"] {
       --button-radius: 5px;
       --callout-blend-mode: lighten;
       --callout-bug: 251, 70, 76;
+      --callout-color: 76, 175, 80;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -15390,7 +15246,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15407,8 +15262,6 @@ html[saved-theme="dark"] {
       --graph-node: #b3b3b3;
       --graph-node-attachment: #e0de71;
       --graph-node-tag: #44cf6e;
-      --h5-line-height: 1.5;
-      --h6-line-height: 1.5;
       --heading-spacing: 2.5rem;
       --interactive-accent-hsl: 258, 88%, 66%;
       --interactive-hover: #3f3f3f;
@@ -15420,8 +15273,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -15532,7 +15390,6 @@ html[saved-theme="dark"] {
       --background-secondary: #333c43;
       --background-secondary-alt: #333c43;
       --blockquote-border-color: #569d79;
-      --callout-color: var(--callout-default, 255, 152, 0);
       --canvas-background: #333c43;
       --canvas-dot-pattern: #666666;
       --caret-color: #d3c6aa;
@@ -15540,7 +15397,6 @@ html[saved-theme="dark"] {
       --checkbox-color: #7fbbb3;
       --checkbox-color-hover: #5a93a2;
       --checkbox-marker-color: #333c43;
-      --checkbox-radius: 25%;
       --checkbox-size: 14px;
       --collapse-icon-color: #859289;
       --collapse-icon-color-collapsed: #5a93a2;
@@ -15613,7 +15469,7 @@ html[saved-theme="dark"] {
       --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
       --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
       --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-      --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
+      --callout-content-padding: var(--size-4-2) var(--size-4-4);
       --h1-color: #da6362;
       --h2-color: #d77f48;
       --h3-color: #bf983d;
@@ -15645,6 +15501,7 @@ html[saved-theme="dark"] {
       --button-radius: 5px;
       --callout-blend-mode: lighten;
       --callout-bug: 251, 70, 76;
+      --callout-color: 255, 152, 0;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -15670,7 +15527,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15687,8 +15543,6 @@ html[saved-theme="dark"] {
       --graph-node: #b3b3b3;
       --graph-node-attachment: #e0de71;
       --graph-node-tag: #44cf6e;
-      --h5-line-height: 1.5;
-      --h6-line-height: 1.5;
       --heading-spacing: 2.5rem;
       --interactive-accent-hsl: 258, 88%, 66%;
       --interactive-hover: #3f3f3f;
@@ -15700,8 +15554,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -15812,7 +15671,6 @@ html[saved-theme="dark"] {
       --background-secondary: #333c43;
       --background-secondary-alt: #333c43;
       --blockquote-border-color: #569d79;
-      --callout-color: var(--callout-default, 234, 128, 252);
       --canvas-background: #333c43;
       --canvas-dot-pattern: #666666;
       --caret-color: #d3c6aa;
@@ -15820,7 +15678,6 @@ html[saved-theme="dark"] {
       --checkbox-color: #7fbbb3;
       --checkbox-color-hover: #5a93a2;
       --checkbox-marker-color: #333c43;
-      --checkbox-radius: 25%;
       --checkbox-size: 14px;
       --collapse-icon-color: #859289;
       --collapse-icon-color-collapsed: #5a93a2;
@@ -15893,7 +15750,7 @@ html[saved-theme="dark"] {
       --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
       --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
       --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-      --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
+      --callout-content-padding: var(--size-4-2) var(--size-4-4);
       --h1-color: #da6362;
       --h2-color: #d77f48;
       --h3-color: #bf983d;
@@ -15925,6 +15782,7 @@ html[saved-theme="dark"] {
       --button-radius: 5px;
       --callout-blend-mode: lighten;
       --callout-bug: 251, 70, 76;
+      --callout-color: 234, 128, 252;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -15950,7 +15808,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -15967,8 +15824,6 @@ html[saved-theme="dark"] {
       --graph-node: #b3b3b3;
       --graph-node-attachment: #e0de71;
       --graph-node-tag: #44cf6e;
-      --h5-line-height: 1.5;
-      --h6-line-height: 1.5;
       --heading-spacing: 2.5rem;
       --interactive-accent-hsl: 258, 88%, 66%;
       --interactive-hover: #3f3f3f;
@@ -15980,8 +15835,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -16092,7 +15952,6 @@ html[saved-theme="dark"] {
       --background-secondary: #333c43;
       --background-secondary-alt: #333c43;
       --blockquote-border-color: #569d79;
-      --callout-color: var(--callout-default, 132, 255, 255);
       --canvas-background: #333c43;
       --canvas-dot-pattern: #666666;
       --caret-color: #d3c6aa;
@@ -16100,7 +15959,6 @@ html[saved-theme="dark"] {
       --checkbox-color: #7fbbb3;
       --checkbox-color-hover: #5a93a2;
       --checkbox-marker-color: #333c43;
-      --checkbox-radius: 25%;
       --checkbox-size: 14px;
       --collapse-icon-color: #859289;
       --collapse-icon-color-collapsed: #5a93a2;
@@ -16173,7 +16031,7 @@ html[saved-theme="dark"] {
       --callout-border-dashed: 1px dashed rgba(var(--callout-color), 0.4);
       --callout-border-solid: 1px solid rgba(var(--callout-color), 0.3);
       --callout-content-color: rgba(var(--bg-dim-rgb), 0.3);
-      --callout-content-padding: var(--size-4-2) var(--size-4-4, 8px 16px);
+      --callout-content-padding: var(--size-4-2) var(--size-4-4);
       --h1-color: #da6362;
       --h2-color: #d77f48;
       --h3-color: #bf983d;
@@ -16205,6 +16063,7 @@ html[saved-theme="dark"] {
       --button-radius: 5px;
       --callout-blend-mode: lighten;
       --callout-bug: 251, 70, 76;
+      --callout-color: 132, 255, 255;
       --callout-default: 2, 122, 255;
       --callout-error: 251, 70, 76;
       --callout-example: 168, 130, 255;
@@ -16230,7 +16089,6 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
-      --divider-vertical-height: 100%;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
       --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -16247,8 +16105,6 @@ html[saved-theme="dark"] {
       --graph-node: #b3b3b3;
       --graph-node-attachment: #e0de71;
       --graph-node-tag: #44cf6e;
-      --h5-line-height: 1.5;
-      --h6-line-height: 1.5;
       --heading-spacing: 2.5rem;
       --interactive-accent-hsl: 258, 88%, 66%;
       --interactive-hover: #3f3f3f;
@@ -16260,8 +16116,13 @@ html[saved-theme="dark"] {
       --menu-radius: 8px;
       --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
       --popover-font-size: 16px;
+      --preferred-text-scale: 1;
       --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --raised-blur: blur(6px) saturate(1.5) brightness(1.15);
+      --safe-area-inset-bottom: 0px;
+      --safe-area-inset-left: 0px;
+      --safe-area-inset-right: 0px;
+      --safe-area-inset-top: 0px;
       --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
       --scrollbar-bg: rgba(255, 255, 255, 0.05);
       --scrollbar-radius: 12px;
@@ -16380,7 +16241,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16441,8 +16301,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16463,7 +16321,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16524,8 +16381,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16546,7 +16401,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16607,8 +16461,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16629,7 +16481,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16690,8 +16541,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16712,7 +16561,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16773,8 +16621,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16795,7 +16641,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16856,8 +16701,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16878,7 +16721,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -16939,8 +16781,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -16961,7 +16801,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17022,8 +16861,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17044,7 +16881,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17105,8 +16941,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17127,7 +16961,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17188,8 +17021,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17210,7 +17041,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17271,8 +17101,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17293,7 +17121,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17354,8 +17181,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17376,7 +17201,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17437,8 +17261,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17459,7 +17281,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17520,8 +17341,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17542,7 +17361,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17603,8 +17421,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17625,7 +17441,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17686,8 +17501,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17708,7 +17521,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17769,8 +17581,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17791,7 +17601,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17852,8 +17661,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17874,7 +17681,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -17935,8 +17741,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -17957,7 +17761,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18018,8 +17821,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18040,7 +17841,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18101,8 +17901,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18123,7 +17921,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18184,8 +17981,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18206,7 +18001,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18267,8 +18061,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18289,7 +18081,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18350,8 +18141,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18372,7 +18161,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18433,8 +18221,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18455,7 +18241,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18516,8 +18301,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18538,7 +18321,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18599,8 +18381,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18621,7 +18401,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18682,8 +18461,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18704,7 +18481,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18765,8 +18541,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18787,7 +18561,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18848,8 +18621,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18870,7 +18641,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -18931,8 +18701,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -18953,7 +18721,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19014,8 +18781,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19036,7 +18801,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19097,8 +18861,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19119,7 +18881,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19180,8 +18941,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19202,7 +18961,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19263,8 +19021,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19285,7 +19041,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19346,8 +19101,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19368,7 +19121,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19429,8 +19181,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19451,7 +19201,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19512,8 +19261,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19534,7 +19281,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19595,8 +19341,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19617,7 +19361,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19678,8 +19421,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19700,7 +19441,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19761,8 +19501,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19783,7 +19521,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19844,8 +19581,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19866,7 +19601,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -19927,8 +19661,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -19949,7 +19681,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20010,8 +19741,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20032,7 +19761,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20093,8 +19821,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20115,7 +19841,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20176,8 +19901,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20198,7 +19921,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20259,8 +19981,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20281,7 +20001,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20342,8 +20061,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20364,7 +20081,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20425,8 +20141,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20447,7 +20161,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20508,8 +20221,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20530,7 +20241,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20591,8 +20301,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20613,7 +20321,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20674,8 +20381,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20696,7 +20401,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20757,8 +20461,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20779,7 +20481,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20840,8 +20541,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20862,7 +20561,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -20923,8 +20621,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -20945,7 +20641,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21006,8 +20701,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21028,7 +20721,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21089,8 +20781,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21111,7 +20801,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21172,8 +20861,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21194,7 +20881,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21255,8 +20941,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21277,7 +20961,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21338,8 +21021,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21360,7 +21041,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21421,8 +21101,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21443,7 +21121,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21504,8 +21181,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21526,7 +21201,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21587,8 +21261,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21609,7 +21281,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21670,8 +21341,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }
@@ -21692,7 +21361,6 @@ html[saved-theme="dark"] {
       --checkbox-color: hsl(258, 88%, 66%);
       --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
       --checkbox-marker-color: #1e1e1e;
-      --checkbox-radius: 4px;
       --checkbox-size: 16px;
       --collapse-icon-color: #666666;
       --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -21753,8 +21421,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-normal: #dadada;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      padding-bottom: 0px;
-      padding-top: 0px;
       --blockquote-background-color: transparent;
       --table-background: transparent;
     }

@@ -1,0 +1,101 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"note\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"abstract\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"info\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"todo\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"tip\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"success\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"question\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"warning\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"danger\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"failure\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"bug\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"example\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--quote-qutter-background",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"quote\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    }
+  ]
+}

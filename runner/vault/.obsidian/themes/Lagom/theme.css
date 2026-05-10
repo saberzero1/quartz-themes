@@ -31,7 +31,7 @@ body {
   --icon-file-size: 15px;
   --inline-title-align: center;
   --inline-title-size: 20px;
-  --inline-code-font-size: calc(var(--default-font-size) - 1.5 px);
+  --inline-code-font-size: calc(var(--default-font-size) - 1.5px);
   --code-size-edit-mode: 13.9px; /* Font Size */
   --code-size: 14px; /* Font Size */
   --macos-button-size: 16px;
@@ -47,7 +47,7 @@ body {
   --callout-font-size-title: 16px;
   --properties-icon-size: unset;
   --separator-icon: "o0o";
-  --separator-icon-color: #6C6C6C6B
+  --separator-icon-color: #6C6C6C6B;
   --show-explorer-buttons: none;
   --explorer-bar-position: absolute;
   --icon-settings: none;
@@ -84,7 +84,7 @@ body {
   --filename-separator-style: dotted;
   --input-border-width: 1px;
   --setting-items-background: none !important;
-
+  --embed-font-size: 16px;
 }
 
 
@@ -100,7 +100,7 @@ body.is-mobile {
   /* Individual tool/option icons in left sidebar (new note, new folder, sort, etc.) */
   --clickable-icon-radius: 11.5px;
   /* Mobile bottom navbar (forward/back, search, new tab, etc.) */
-  --navbar-radius 11.5px;
+  --navbar-radius: 11.5px;
   /* Dropdown menus & text input fields, selection items in popup menus (i.e. Command Palette items, Quick Switcher items, etc.) */
   --touch-radius-xxs: 11.5px;
   --touch-radius-xs: 11.5px;
@@ -120,7 +120,7 @@ body.is-mobile {
 
 /* Bottom action bar, settings button, close modal button, container for reading view & ellipses menu buttons, sync status icon */
 .mod-raised {
-  background-color: none !important;
+  background-color: transparent !important;
   border-radius: var(--touch-radius-s) !important;
 }
 
@@ -183,7 +183,7 @@ body.theme-light {
 /* TABS */ 
 .mobile-tab-title {
   order: 1;
-  white-space: wrap;
+  white-space: normal;
 }
 
 .mobile-tab-preview {
@@ -191,7 +191,7 @@ body.theme-light {
   height: var(--tabs-height);
 }
 
-.mobile-tab-switcher-scroll::webkit-scrollbar {
+.mobile-tab-switcher-scroll::-webkit-scrollbar {
   display: none;
 }
 
@@ -208,7 +208,7 @@ body.theme-light {
 
 /* EDITOR MODE */
 .markdown-preview-view .metadata-add-button {}
-.theme-light, .cm-s-obsidian::not(.theme-dark) {}
+.theme-light, .cm-s-obsidian:not(.theme-dark) {}
 .mod-cm6 .cm-editor {
   top: -80px !important;
 
@@ -235,7 +235,7 @@ body.theme-light {
 
 /* Style page for editor mode */
 .page-style-editor-mode .cm-s-obsidian {
-  position: relative !important;
+  position: sticky !important;
   padding-left: calc(var(--padding-note-content) - 5%);
   padding-right: calc(var(--padding-note-content) - 5%);
   margin: 80px 15px 0px 15px !important;
@@ -250,17 +250,16 @@ body.theme-light {
 .workspace-split.mod-root .view-content {}
 
 .markdown-preview-view {
-  padding: auto !important;
+  /* padding: auto removed — not a valid CSS value */
   letter-spacing: var(--letter-spacing-note); 
   line-height: var(--line-height-note) !important;
 }
 
 
-/* Style page for read mode */
-.page-style-read-mode .markdown-preview-view{
-  position: relative !important;
+/* Style page for read mode — excludes embedded notes */
+.page-style-read-mode .markdown-preview-view:not(.markdown-embed .markdown-preview-view) {
   padding-top: 5px !important;
-  top: 80px !important;
+  top: 85px !important;
   margin: 0px 15px 0px 15px !important;
   border-top-left-radius: var(--radius-s);
   border-top-right-radius: var(--radius-s);
@@ -268,6 +267,19 @@ body.theme-light {
   padding-right: var(--padding-note-content);
   border: 0.5px solid var(--background-modifier-border);
   box-shadow: var(--mac-terminal-shadow);
+}
+
+/* Reset page style for embedded notes (read & editor mode) */
+.page-style-read-mode .markdown-embed .markdown-preview-view,
+.page-style-editor-mode .markdown-embed .markdown-preview-view {
+  margin: 0 !important;
+  top: unset !important;
+  padding-top: unset !important;
+  padding-left: var(--padding-default-note-style) !important;
+  padding-right: var(--padding-default-note-style) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 
@@ -319,7 +331,13 @@ body.theme-light {
 }
 
 
-/* INLINE TITLE -  MAGAZINE STYLE */ 
+/* INLINE TITLE - SEPARATOR */
+.enable-inline-title-separator .cm-editor .inline-title {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+
+/* INLINE TITLE -  MAGAZINE STYLE */
 .magazine-style .inline-title {
   font-family: var(--magazine-title-font) !important;
   height: 90vh !important;
@@ -348,7 +366,7 @@ body.theme-light {
         transparent 100%
     );
   text-align: var(--inline-title-align) !important;
-  font-size: var(--inline-title-size);
+  /* font-size: var(--inline-title-size); — removed: duplicate, overridden by 200% !important above */
   font-weight: var(--inline-title-bold);
   letter-spacing: var(--letter-spacing-note);
 }
@@ -361,6 +379,11 @@ body.theme-light {
   pointer-events: none;
 }
 
+
+.workspace-leaf-content[data-mode="preview"] .markdown-preview-view .mod-header .inline-title {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 /* HIGHLIGHTS */
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .markdown-preview-view mark {
@@ -433,7 +456,7 @@ blockquote::before {
 .markdown-preview-view ol ol,
 .markdown-source-view.cm-s-obsidian ul ul,
 .markdown-source-view.cm-s-obsidian ol ol {
-  padding 0px;
+  padding: 0px;
   margin-left: 0.6em;
 }
 
@@ -928,6 +951,10 @@ body {
   --embed-border-left: none;
 }
 
+.markdown-embed .markdown-preview-view {
+  font-size: var(--embed-font-size); /* ajusta este valor */
+}
+
 /* HIDE EMBED ICON NOTE */
 .markdown-embed-link {
   color: var(--hide-icon-link-embed-notes) !important;
@@ -935,6 +962,15 @@ body {
   border-radius: 100%;
   background: var(--background-secondary);
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;  
+  height: 20px;   
+}
+  
+  
 }
 
 
@@ -1327,12 +1363,11 @@ body.is-mobile .workspace-drawer-header {
   margin-left: 34px;
   margin-right: 34px;
   border-radius: var(--radius-s);
-  margin-bottom: 10px;
-  width: 85%;
+  width: 85% !important;
   height: fit-content;
   padding: 0px !important;
   bottom: auto !important;
-  top: 0px !important;
+  top: -10px !important;
   display: flex !important;
    justify-content: center !important;
    align-items: center !important;
@@ -1518,19 +1553,21 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
   display: none;
 }
 
+
 /* ICON FILE */
-.nav-file-title:before {
-  content: var(--icon-file-indicator) !important;
-  padding-right: 7px;
-  font-size: var(--icon-file-size);
-  padding-bottom: 7px;
-  margin-left: -18px;
+.nav-file-title {
+  border-radius: 0px !important;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
 }
 
-.nav-folder-children .nav-folder .nav-file:last-child {}
-
-.workspace-leaf-content[data-type="starred"] .nav-file-title::before {
-  display: none;
+.enable-icon-file .nav-file-title::after {
+  content: var(--icon-file-indicator) !important;
+  font-size: var(--icon-file-size) !important;
+  padding-right: 5px;
+  margin-left: -15px;
+  order: -1;
 }
 
 
@@ -2139,6 +2176,11 @@ settings:
       type: heading
       level: 2
       collapsed: true
+  -
+      id: enable-inline-title-separator
+      title: Inline title separator
+      type: class-toggle
+      default: true
   - 
       id: magazine-style
       title: Magazine style
@@ -2340,8 +2382,6 @@ settings:
               label: Right
               value: right
   - 
-      
-  - 
       id: embed-section
       title: Embed notes
       type: heading
@@ -2352,6 +2392,12 @@ settings:
       title: Hide  embed title
       type: class-toggle
       default: true
+  -    
+      id: embed-font-size
+      title: Font size
+      type: variable-number
+      default: 16
+      format: px
   - 
       id: hide-icon-link-embed-notes
       title: Show icon
@@ -2511,11 +2557,16 @@ name: Explorer & Files
 id: files-folders
 settings:
   - 
-      id: icon-file
+      id: icon-file-indicator
       title: Icon file
       type: variable-text
-      default: "·"
+      default: "•"
       quotes: true 
+  -
+      id: enable-icon-file
+      title: Enable icon file
+      type: class-toggle
+      default: true
   -
       id: icon-file-size
       title: Icon file

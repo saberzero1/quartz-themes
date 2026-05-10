@@ -8,60 +8,60 @@
 
 :root:root {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb, 239, 107, 115);
-  --callout-default: var(--color-blue-rgb, 112, 153, 219);
-  --callout-error: var(--color-red-rgb, 239, 107, 115);
-  --callout-example: var(--color-purple-rgb, 195, 166, 255);
-  --callout-fail: var(--color-red-rgb, 239, 107, 115);
-  --callout-important: var(--color-cyan-rgb, 92, 207, 230);
-  --callout-info: var(--color-blue-rgb, 112, 153, 219);
-  --callout-padding: var(--size-4-3) var(--size-4-6, 12px 24px);
-  --callout-question: var(--color-orange-rgb, 255, 174, 87);
-  --callout-radius: var(--radius-s, 2px);
-  --callout-success: var(--color-green-rgb, 186, 230, 126);
-  --callout-summary: var(--color-cyan-rgb, 92, 207, 230);
-  --callout-tip: var(--color-cyan-rgb, 92, 207, 230);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb, 112, 153, 219);
-  --callout-warning: var(--color-orange-rgb, 255, 174, 87);
-  --checkbox-border-color: var(--dark-castle-palette-dark-purple, #aa1b86) !important;
-  --checkbox-border-color-hover: var(--dark-castle-palette-purple, #9354ff) !important;
-  --checkbox-color: var(--dark-castle-palette-dark-purple, #aa1b86) !important;
-  --checkbox-color-hover: var(--dark-castle-palette-purple, #9354ff) !important;
-  --checkbox-marker-color: var(--background-primary, #000000) !important;
-  --checkbox-radius: var(--radius-s, 2px) !important;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --checkbox-border-color: var(--dark-castle-palette-dark-purple) !important;
+  --checkbox-border-color-hover: var(--dark-castle-palette-purple) !important;
+  --checkbox-color: var(--dark-castle-palette-dark-purple) !important;
+  --checkbox-color-hover: var(--dark-castle-palette-purple) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--dark-castle-palette-black-02, #1a1a1a) !important;
-  --code-border-color: var(--background-modifier-border, #292929) !important;
-  --code-bracket-background: var(--background-modifier-hover, #292929) !important;
-  --code-comment: var(--dark-castle-palette-dark-green, #0d8501) !important;
-  --code-function: var(--dark-castle-code-function, #ff5503) !important;
-  --code-important: var(--dark-castle-code-error, #ff8040) !important;
-  --code-keyword: var(--dark-castle-code-keyword, #aa1b86) !important;
-  --code-normal: var(--dark-castle-palette-green, #08d220) !important;
-  --code-operator: var(--dark-castle-code-operator, #ff8040) !important;
-  --code-property: var(--text-muted, #9c9c9c) !important;
-  --code-punctuation: var(--dark-castle-accent, #ff8040) !important;
-  --code-radius: var(--radius-s, 2px) !important;
+  --code-background: var(--dark-castle-palette-black-02) !important;
+  --code-border-color: var(--background-modifier-border) !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--dark-castle-palette-dark-green) !important;
+  --code-function: var(--dark-castle-code-function) !important;
+  --code-important: var(--dark-castle-code-error) !important;
+  --code-keyword: var(--dark-castle-code-keyword) !important;
+  --code-normal: var(--dark-castle-palette-green) !important;
+  --code-operator: var(--dark-castle-code-operator) !important;
+  --code-property: var(--text-muted) !important;
+  --code-punctuation: var(--dark-castle-accent) !important;
+  --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--dark-castle-palette-red, #ff000f) !important;
-  --code-tag: var(--dark-castle-palette-light-blue, #4dbced) !important;
-  --code-value: var(--dark-castle-palette-white, #ffffff) !important;
-  --collapse-icon-color: var(--text-faint, #ff8040) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, #ff8040) !important;
-  --graph-line: var(--dark-castle-palette-dark-gray, #292929) !important;
-  --graph-node: var(--text-muted, #9c9c9c) !important;
-  --graph-node-attachment: var(--color-yellow, #ffd580) !important;
-  --graph-node-focused: var(--text-accent, #ff8040) !important;
-  --graph-node-tag: var(--dark-castle-accent, #ff8040) !important;
-  --graph-node-unresolved: var(--dark-castle-accent, #ff8040) !important;
-  --graph-text: var(--text-normal, #ffd580) !important;
-  --icon-color: var(--text-muted, #9c9c9c) !important;
-  --icon-color-active: var(--dark-castle-palette-light-yellow, #ffd580) !important;
-  --icon-color-focused: var(--dark-castle-palette-light-yellow, #ffd580) !important;
-  --icon-color-hover: var(--text-muted, #9c9c9c) !important;
+  --code-string: var(--dark-castle-palette-red) !important;
+  --code-tag: var(--dark-castle-palette-light-blue) !important;
+  --code-value: var(--dark-castle-palette-white) !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
+  --graph-line: var(--dark-castle-palette-dark-gray) !important;
+  --graph-node: var(--text-muted) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
+  --graph-node-tag: var(--dark-castle-accent) !important;
+  --graph-node-unresolved: var(--dark-castle-accent) !important;
+  --graph-text: var(--text-normal) !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--dark-castle-palette-light-yellow) !important;
+  --icon-color-focused: var(--dark-castle-palette-light-yellow) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
-  --icon-stroke: var(--icon-m-stroke-width, 2px) !important;
+  --icon-stroke: 2px !important;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-content-background: transparent;
@@ -381,20 +381,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(0, 0, 0));
-    color: var(--text-normal, rgb(255, 213, 128));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(0, 0, 0));
+    background-color: var(--background-primary);
     color: rgb(255, 213, 128);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(0, 0, 0));
+    background-color: var(--background-secondary);
     color: rgb(255, 213, 128);
   }
 
@@ -402,12 +402,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(0, 0, 0));
+    background-color: var(--tab-container-background);
     color: rgb(255, 213, 128);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(0, 0, 0));
+    background-color: var(--tab-container-background);
     color: rgb(255, 213, 128);
     border-left: 0px rgb(41, 41, 41);
   }
@@ -419,7 +419,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(255, 128, 64));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -461,7 +461,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(255, 128, 64));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -502,7 +502,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(255, 128, 64));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -524,9 +524,9 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(255, 128, 64) none 0px;
     text-decoration: underline dashed rgb(65, 100, 255);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgb(65, 100, 255));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
-    text-decoration-style: var(--link-unresolved-decoration-style, dashed);
+    text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
     transition: opacity 0.14s ease-in-out;
     transform: none;
@@ -560,7 +560,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(156, 156, 156));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -601,7 +601,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(77, 188, 237));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -642,7 +642,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(77, 188, 237));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -683,7 +683,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(77, 188, 237));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -724,7 +724,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(77, 188, 237));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -843,7 +843,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(77, 188, 237));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -873,8 +873,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(41, 41, 41));
-    color: var(--text-normal, rgb(255, 213, 128));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -955,7 +955,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover, rgb(41, 41, 41));
+    background-color: var(--background-modifier-hover);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -968,7 +968,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover, rgb(41, 41, 41));
+    background-color: var(--background-modifier-hover);
     border: 0px rgb(255, 213, 128);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -1004,8 +1004,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgb(0, 123, 136));
-    color: var(--pill-color, rgb(255, 255, 255));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1116,7 +1116,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgb(26, 26, 26));
+    background-color: var(--code-background);
     border: 0px solid rgb(41, 41, 41);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -1126,7 +1126,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal, rgb(8, 210, 32));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.1px 4.2px;
     padding-block-end: 0px;
@@ -1158,7 +1158,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(26, 26, 26));
+    background-color: var(--code-background);
     border: 0px solid rgb(41, 41, 41);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -1222,7 +1222,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color, rgb(170, 27, 134));
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1250,12 +1250,12 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(255, 128, 64));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
   .search > .search-button {
-    background-color: var(--background-primary, rgb(0, 0, 0));
+    background-color: var(--background-primary);
     border: 1px solid rgb(41, 41, 41);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1265,7 +1265,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(255, 213, 128));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1283,7 +1283,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(0, 0, 0));
+    background-color: var(--prompt-background);
     border: 1px solid rgb(87, 87, 87);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -1373,7 +1373,7 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(255, 213, 128);
     font-weight: 400;
-    background-color: var(--background-modifier-hover, rgb(41, 41, 41));
+    background-color: var(--background-modifier-hover);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1386,7 +1386,7 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(186, 230, 126));
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1419,10 +1419,10 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(255, 0, 15));
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
-    font-weight: var(--font-weight, 675);
+    font-weight: var(--font-weight);
     line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1452,10 +1452,10 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(255, 0, 15));
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
-    font-weight: var(--font-weight, 650);
+    font-weight: var(--font-weight);
     line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1485,10 +1485,10 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(255, 0, 15));
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
-    font-weight: var(--font-weight, 625);
+    font-weight: var(--font-weight);
     line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1518,10 +1518,10 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(255, 0, 15));
+    color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
-    font-weight: var(--font-weight, 600);
+    font-weight: var(--font-weight);
     line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1551,10 +1551,10 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(255, 0, 15));
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
-    font-weight: var(--font-weight, 575);
+    font-weight: var(--font-weight);
     line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1585,7 +1585,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(186, 230, 126));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -2007,7 +2007,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 112, 153, 219);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(112, 153, 219, 0.25);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2049,7 +2049,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2066,7 +2066,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 112, 153, 219);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(112, 153, 219, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2107,7 +2107,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2124,7 +2124,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 92, 207, 230);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(92, 207, 230, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2165,7 +2165,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2182,7 +2182,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 112, 153, 219);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(112, 153, 219, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2223,7 +2223,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2240,7 +2240,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 112, 153, 219);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(112, 153, 219, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2281,7 +2281,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2298,7 +2298,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 92, 207, 230);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(92, 207, 230, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2339,7 +2339,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2356,7 +2356,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 186, 230, 126);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(186, 230, 126, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2397,7 +2397,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2414,7 +2414,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 255, 174, 87);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 174, 87, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2455,7 +2455,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2472,7 +2472,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 255, 174, 87);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(255, 174, 87, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2513,7 +2513,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2530,7 +2530,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 239, 107, 115);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(239, 107, 115, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2571,7 +2571,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2588,7 +2588,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 239, 107, 115);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(239, 107, 115, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2629,7 +2629,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2646,7 +2646,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 239, 107, 115);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(239, 107, 115, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2687,7 +2687,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2704,7 +2704,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 195, 166, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(195, 166, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2745,7 +2745,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2762,7 +2762,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2803,7 +2803,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: var(--callout-title-color, rgb(112, 153, 219));
+    color: var(--callout-title-color);
     font-weight: var(--font-weight);
   }
 
@@ -2879,7 +2879,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(255, 213, 128));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2907,7 +2907,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(255, 213, 128));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
@@ -2931,7 +2931,7 @@ body {
   }
 
   tr {
-    background-color: var(--table-header-background, rgb(0, 0, 0));
+    background-color: var(--table-header-background);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2944,11 +2944,11 @@ body {
   }
 
   tbody tr:nth-child(even) {
-    background-color: var(--table-background, rgb(0, 0, 0));
+    background-color: var(--table-background);
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgb(0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3101,8 +3101,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-primary-alt, rgb(41, 41, 41));
-    color: var(--text-muted, rgb(156, 156, 156));
+    background-color: var(--background-primary-alt);
+    color: var(--text-muted);
     border-radius: 4px;
     border-color: rgb(156, 156, 156);
     border-width: 0px;
@@ -3116,7 +3116,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(156, 156, 156));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3239,7 +3239,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(77, 188, 237));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3329,9 +3329,9 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(26, 26, 26));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(8, 210, 32));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
     border: 0px rgb(8, 210, 32);
@@ -3651,7 +3651,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(156, 156, 156));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3672,7 +3672,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(156, 156, 156));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family:
       ui-sans-serif,
@@ -3697,7 +3697,7 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
+    color: rgb(156, 156, 156);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3725,13 +3725,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(255, 213, 128));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(41, 41, 41);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgb(0, 0, 0));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3746,12 +3746,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(255, 213, 128));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(0, 0, 0));
+    background-color: var(--background-secondary);
     border-color: rgb(255, 213, 128);
     box-shadow: var(--input-shadow);
   }
@@ -3778,8 +3778,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgb(0, 123, 136));
-    color: var(--pill-color, rgb(255, 255, 255));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3793,7 +3793,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(156, 156, 156));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(156, 156, 156);
     border-width: 0px;
@@ -3804,8 +3804,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(0, 0, 0));
-    color: var(--status-bar-text-color, rgb(156, 156, 156));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3866,7 +3866,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(156, 156, 156));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3908,7 +3908,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(156, 156, 156));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3931,7 +3931,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(156, 156, 156));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(156, 156, 156);
     border-width: 0px;
@@ -3958,7 +3958,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(255, 128, 64));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3976,11 +3976,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(0, 0, 0));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(255, 213, 128));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4112,8 +4112,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgb(0, 123, 136));
-    color: var(--tag-color, rgb(255, 255, 255));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(255, 204, 102, 0.15);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
@@ -4143,17 +4143,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(170, 27, 134));
+    background-color: var(--checkbox-color);
     border-color: rgb(170, 27, 134);
   }
 
   .stacked-page {
     border-color: rgb(255, 213, 128);
-    background-color: var(--background-secondary, rgb(0, 0, 0));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(0, 0, 0));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4161,7 +4161,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(186, 230, 126));
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -4212,7 +4212,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -4254,7 +4253,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4275,7 +4273,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -4292,7 +4289,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -4304,7 +4300,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -4389,7 +4384,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -4431,7 +4425,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4452,7 +4445,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -4469,7 +4461,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -4481,7 +4472,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -4566,7 +4556,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -4608,7 +4597,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4629,7 +4617,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -4646,7 +4633,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -4658,7 +4644,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -4743,7 +4728,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -4785,7 +4769,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4806,7 +4789,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -4823,7 +4805,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -4835,7 +4816,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -4920,7 +4900,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -4962,7 +4941,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -4983,7 +4961,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -5000,7 +4977,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -5012,7 +4988,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -5097,7 +5072,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -5139,7 +5113,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5160,7 +5133,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -5177,7 +5149,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -5189,7 +5160,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -5274,7 +5244,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -5316,7 +5285,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5337,7 +5305,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -5354,7 +5321,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -5366,7 +5332,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -5451,7 +5416,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -5493,7 +5457,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5514,7 +5477,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -5531,7 +5493,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -5543,7 +5504,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -5628,7 +5588,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -5670,7 +5629,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5691,7 +5649,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -5708,7 +5665,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -5720,7 +5676,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -5805,7 +5760,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -5847,7 +5801,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -5868,7 +5821,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -5885,7 +5837,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -5897,7 +5848,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -5982,7 +5932,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -6024,7 +5973,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6045,7 +5993,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -6062,7 +6009,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -6074,7 +6020,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -6159,7 +6104,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -6201,7 +6145,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6222,7 +6165,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -6239,7 +6181,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -6251,7 +6192,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -6336,7 +6276,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -6378,7 +6317,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6399,7 +6337,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -6416,7 +6353,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -6428,7 +6364,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -6513,7 +6448,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -6555,7 +6489,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6576,7 +6509,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -6593,7 +6525,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -6605,7 +6536,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -6690,7 +6620,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -6732,7 +6661,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6753,7 +6681,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -6770,7 +6697,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -6782,7 +6708,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -6867,7 +6792,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -6909,7 +6833,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -6930,7 +6853,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -6947,7 +6869,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -6959,7 +6880,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -7044,7 +6964,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -7086,7 +7005,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7107,7 +7025,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -7124,7 +7041,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -7136,7 +7052,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -7221,7 +7136,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -7263,7 +7177,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7284,7 +7197,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -7301,7 +7213,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -7313,7 +7224,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -7398,7 +7308,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -7440,7 +7349,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7461,7 +7369,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -7478,7 +7385,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -7490,7 +7396,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -7575,7 +7480,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -7617,7 +7521,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7638,7 +7541,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -7655,7 +7557,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -7667,7 +7568,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -7752,7 +7652,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -7794,7 +7693,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7815,7 +7713,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -7832,7 +7729,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -7844,7 +7740,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -7929,7 +7824,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -7971,7 +7865,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -7992,7 +7885,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -8009,7 +7901,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -8021,7 +7912,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -8106,7 +7996,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -8148,7 +8037,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8169,7 +8057,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -8186,7 +8073,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -8198,7 +8084,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -8283,7 +8168,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -8325,7 +8209,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8346,7 +8229,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -8363,7 +8245,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -8375,7 +8256,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -8460,7 +8340,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -8502,7 +8381,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8523,7 +8401,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -8540,7 +8417,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -8552,7 +8428,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -8637,7 +8512,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -8679,7 +8553,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8700,7 +8573,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -8717,7 +8589,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -8729,7 +8600,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -8814,7 +8684,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -8856,7 +8725,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -8877,7 +8745,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -8894,7 +8761,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -8906,7 +8772,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -8991,7 +8856,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -9033,7 +8897,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9054,7 +8917,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -9071,7 +8933,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -9083,7 +8944,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -9168,7 +9028,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -9210,7 +9069,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9231,7 +9089,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -9248,7 +9105,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -9260,7 +9116,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -9345,7 +9200,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -9387,7 +9241,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9408,7 +9261,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -9425,7 +9277,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -9437,7 +9288,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -9522,7 +9372,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -9564,7 +9413,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9585,7 +9433,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -9602,7 +9449,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -9614,7 +9460,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -9699,7 +9544,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -9741,7 +9585,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9762,7 +9605,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -9779,7 +9621,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -9791,7 +9632,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -9876,7 +9716,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -9918,7 +9757,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -9939,7 +9777,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -9956,7 +9793,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -9968,7 +9804,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -10053,7 +9888,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -10095,7 +9929,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10116,7 +9949,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -10133,7 +9965,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -10145,7 +9976,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -10230,7 +10060,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -10272,7 +10101,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10293,7 +10121,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -10310,7 +10137,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -10322,7 +10148,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -10407,7 +10232,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -10449,7 +10273,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10470,7 +10293,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -10487,7 +10309,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -10499,7 +10320,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -10584,7 +10404,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -10626,7 +10445,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10647,7 +10465,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -10664,7 +10481,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -10676,7 +10492,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -10761,7 +10576,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -10803,7 +10617,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -10824,7 +10637,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -10841,7 +10653,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -10853,7 +10664,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -10938,7 +10748,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -10980,7 +10789,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11001,7 +10809,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -11018,7 +10825,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -11030,7 +10836,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -11115,7 +10920,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -11157,7 +10961,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11178,7 +10981,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -11195,7 +10997,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -11207,7 +11008,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -11292,7 +11092,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -11334,7 +11133,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11355,7 +11153,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -11372,7 +11169,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -11384,7 +11180,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -11469,7 +11264,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -11511,7 +11305,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11532,7 +11325,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -11549,7 +11341,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -11561,7 +11352,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -11646,7 +11436,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -11688,7 +11477,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11709,7 +11497,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -11726,7 +11513,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -11738,7 +11524,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -11823,7 +11608,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -11865,7 +11649,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -11886,7 +11669,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -11903,7 +11685,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -11915,7 +11696,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -12000,7 +11780,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -12042,7 +11821,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12063,7 +11841,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -12080,7 +11857,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -12092,7 +11868,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -12177,7 +11952,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -12219,7 +11993,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12240,7 +12013,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -12257,7 +12029,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -12269,7 +12040,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -12354,7 +12124,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -12396,7 +12165,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12417,7 +12185,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -12434,7 +12201,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -12446,7 +12212,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -12531,7 +12296,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -12573,7 +12337,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12594,7 +12357,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -12611,7 +12373,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -12623,7 +12384,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -12708,7 +12468,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -12750,7 +12509,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12771,7 +12529,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -12788,7 +12545,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -12800,7 +12556,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -12885,7 +12640,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -12927,7 +12681,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -12948,7 +12701,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -12965,7 +12717,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -12977,7 +12728,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -13062,7 +12812,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -13104,7 +12853,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13125,7 +12873,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -13142,7 +12889,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -13154,7 +12900,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -13239,7 +12984,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -13281,7 +13025,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13302,7 +13045,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -13319,7 +13061,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -13331,7 +13072,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -13416,7 +13156,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -13458,7 +13197,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13479,7 +13217,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -13496,7 +13233,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -13508,7 +13244,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -13593,7 +13328,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -13635,7 +13369,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13656,7 +13389,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -13673,7 +13405,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -13685,7 +13416,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -13770,7 +13500,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -13812,7 +13541,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -13833,7 +13561,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -13850,7 +13577,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -13862,7 +13588,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -13947,7 +13672,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -13989,7 +13713,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -14010,7 +13733,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -14027,7 +13749,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -14039,7 +13760,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -14124,7 +13844,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -14166,7 +13885,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -14187,7 +13905,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -14204,7 +13921,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -14216,7 +13932,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -14301,7 +14016,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -14343,7 +14057,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -14364,7 +14077,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -14381,7 +14093,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -14393,7 +14104,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -14478,7 +14188,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -14520,7 +14229,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -14541,7 +14249,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -14558,7 +14265,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -14570,7 +14276,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -14655,7 +14360,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -14697,7 +14401,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -14718,7 +14421,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -14735,7 +14437,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -14747,7 +14448,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -14832,7 +14532,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -14874,7 +14573,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -14895,7 +14593,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -14912,7 +14609,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -14924,7 +14620,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -15009,7 +14704,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -15051,7 +14745,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -15072,7 +14765,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -15089,7 +14781,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -15101,7 +14792,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -15186,7 +14876,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -15228,7 +14917,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -15249,7 +14937,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -15266,7 +14953,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -15278,7 +14964,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -15363,7 +15048,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -15405,7 +15089,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -15426,7 +15109,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -15443,7 +15125,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -15455,7 +15136,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -15540,7 +15220,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -15582,7 +15261,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -15603,7 +15281,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -15620,7 +15297,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -15632,7 +15308,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -15717,7 +15392,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -15759,7 +15433,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -15780,7 +15453,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -15797,7 +15469,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -15809,7 +15480,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
@@ -15894,7 +15564,6 @@ body {
     --checkbox-marker-color: #1e1e1e;
     --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
-    --clickable-icon-radius: 4px;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
     --color-accent: hsl(258, 88%, 66%);
@@ -15936,7 +15605,6 @@ body {
     --pdf-sidebar-background: #1e1e1e;
     --pdf-thumbnail-shadow: 0 0 0 1px #363636;
     --raised-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-radius: 12px;
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
@@ -15957,7 +15625,6 @@ body {
     --tab-background-active: #1e1e1e;
     --tab-divider-color: #3f3f3f;
     --tab-outline-color: #363636;
-    --tab-radius: 4px;
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-radius: 16px;
@@ -15974,7 +15641,6 @@ body {
     --table-header-background: transparent;
     --table-header-border-color: #363636;
     --table-header-color: #dadada;
-    --table-header-size: 16px;
     --table-row-alt-background: transparent;
     --table-row-alt-background-hover: transparent;
     --table-row-background-hover: transparent;
@@ -15986,7 +15652,6 @@ body {
     --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
     --tag-color: hsl(255, 89.76%, 75.9%);
     --tag-color-hover: hsl(255, 89.76%, 75.9%);
-    --tag-size: 0.875em;
     --text-accent: hsl(255, 89.76%, 75.9%);
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;

@@ -24,42 +24,42 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --checkbox-border-color: var(--text-faint, #cad2e2) !important;
-  --checkbox-border-color-hover: var(--text-muted, #a4b1cd) !important;
-  --checkbox-color: var(--interactive-accent, hsl(80, 100%, 47%)) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover, hsl(77, 102%, 54.05%)) !important;
-  --checkbox-marker-color: var(--background-primary, #141d2b) !important;
-  --checkbox-radius: var(--radius-s, 3px) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--interactive-accent) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-marker-color: var(--background-primary) !important;
+  --checkbox-radius: 3px !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-secondary, #1a2331) !important;
-  --code-border-color: var(--background-modifier-border, #4a5466) !important;
+  --code-background: var(--background-secondary) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint, #c5d1eb) !important;
-  --code-function: var(--color-yellow, #ffcc5c) !important;
-  --code-important: var(--color-orange, #ffaf00) !important;
-  --code-keyword: var(--color-pink, #cf8dfb) !important;
-  --code-normal: var(--text-normal, #a4b1cd) !important;
-  --code-operator: var(--color-red, #ff8484) !important;
-  --code-property: var(--color-cyan, #a4b1cd) !important;
-  --code-punctuation: var(--text-muted, #a4b1cd) !important;
+  --code-comment: #c5d1eb !important;
+  --code-function: #ffcc5c !important;
+  --code-important: #ffaf00 !important;
+  --code-keyword: #cf8dfb !important;
+  --code-normal: #a4b1cd !important;
+  --code-operator: #ff8484 !important;
+  --code-property: #a4b1cd !important;
+  --code-punctuation: #a4b1cd !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green, #c5f467) !important;
-  --code-tag: var(--color-red, #ffaf00) !important;
-  --code-value: var(--color-purple, #5cb2ff) !important;
-  --collapse-icon-color: var(--text-faint, #cad2e2) !important;
-  --collapse-icon-color-collapsed: var(--text-accent, hsl(77, 102%, 54.05%)) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--htb-heading, #cad2e2) !important;
+  --code-string: #c5f467 !important;
+  --code-tag: #ffaf00 !important;
+  --code-value: #5cb2ff !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
+  --graph-line: #4a5466 !important;
+  --graph-node: var(--htb-heading) !important;
   --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--htb-lime, #9fef00) !important;
+  --graph-node-focused: var(--htb-lime) !important;
   --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--code-normal, #a4b1cd) !important;
-  --graph-text: var(--htb-text-color, #a4b1cd) !important;
-  --icon-color: var(--htb-text-color, #a4b1cd) !important;
-  --icon-color-active: var(--text-accent, red) !important;
-  --icon-color-focused: var(--htb-lime, #9fef00) !important;
-  --icon-color-hover: var(--htb-heading, #cad2e2) !important;
+  --graph-node-unresolved: var(--code-normal) !important;
+  --graph-text: var(--htb-text-color) !important;
+  --icon-color: var(--htb-text-color) !important;
+  --icon-color-active: red !important;
+  --icon-color-focused: var(--htb-lime) !important;
+  --icon-color-hover: var(--htb-heading) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --callout-border-opacity: 0.25;
@@ -464,20 +464,20 @@ html {
 
 body {
   div#quartz-root {
-    background-color: var(--background-primary, rgb(20, 29, 43));
-    color: var(--text-normal, rgb(164, 177, 205));
+    background-color: var(--background-primary);
+    color: var(--text-normal);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: var(--background-primary, rgb(20, 29, 43));
+    background-color: var(--background-primary);
     color: rgb(164, 177, 205);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: var(--background-secondary, rgb(26, 35, 49));
+    background-color: var(--background-secondary);
     color: rgb(164, 177, 205);
   }
 
@@ -485,12 +485,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: var(--tab-container-background, rgb(26, 35, 49));
+    background-color: var(--tab-container-background);
     color: rgb(164, 177, 205);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: var(--tab-container-background, rgb(26, 35, 49));
+    background-color: var(--tab-container-background);
     color: rgb(164, 177, 205);
     border-left: 0px rgb(74, 84, 102);
   }
@@ -502,7 +502,7 @@ body {
   a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-external-color, rgb(0, 123, 255));
+    color: var(--link-external-color);
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
@@ -544,7 +544,7 @@ body {
   a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-color, rgb(159, 239, 0));
+    color: var(--link-color);
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
@@ -585,7 +585,7 @@ body {
 
   a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--link-unresolved-color, rgb(255, 132, 132));
+    color: var(--link-unresolved-color);
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
@@ -607,7 +607,7 @@ body {
     font-weight: var(--link-weight);
     outline: rgb(255, 132, 132) none 0px;
     text-decoration: rgba(160, 240, 0, 0.3);
-    text-decoration-color: var(--link-unresolved-decoration-color, rgba(160, 240, 0, 0.3));
+    text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -643,7 +643,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-muted, rgb(164, 177, 205));
+    color: var(--text-muted);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -671,7 +671,7 @@ body {
   .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(164, 177, 205));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -712,7 +712,7 @@ body {
   .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--bold-color, rgb(164, 177, 205));
+    color: var(--bold-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -753,7 +753,7 @@ body {
   .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(164, 177, 205));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -794,7 +794,7 @@ body {
   .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(164, 177, 205));
+    color: var(--italic-color);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -913,7 +913,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color, rgb(164, 177, 205));
+    color: var(--italic-color);
     cursor: grab;
     font-family:
       ui-sans-serif,
@@ -943,8 +943,8 @@ body {
   }
 
   .text-highlight {
-    background-color: var(--text-highlight-bg, rgb(159, 239, 0));
-    color: var(--text-normal, rgb(164, 177, 205));
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
     cursor: grab;
     filter: none;
     backdrop-filter: none;
@@ -1074,8 +1074,8 @@ body {
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background, rgba(160, 240, 0, 0.1));
-    color: var(--pill-color, rgb(189, 255, 21));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1117,8 +1117,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 2px);
-    padding-bottom: var(--list-spacing, 2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1154,8 +1154,8 @@ body {
     list-style-type: "​";
     list-style-position: outside;
     list-style-image: none;
-    padding-top: var(--list-spacing, 2px);
-    padding-bottom: var(--list-spacing, 2px);
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
     padding-block-end: 0px;
@@ -1186,7 +1186,7 @@ body {
   }
 
   code {
-    background-color: var(--code-background, rgba(0, 0, 0, 0));
+    background-color: var(--code-background);
     border: 0px solid rgb(74, 84, 102);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1196,7 +1196,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--htb-lime, rgb(159, 239, 0));
+    color: var(--htb-lime);
     font-family: var(--font-monospace);
     padding: 0px;
     padding-block-end: 0px;
@@ -1228,7 +1228,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: var(--code-background, rgb(26, 35, 49));
+    background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1291,8 +1291,8 @@ body {
   }
 
   blockquote {
-    background-color: var(--blockquote-background-color, rgb(11, 18, 31));
-    color: var(--blockquote-color, rgb(164, 177, 205));
+    background-color: var(--blockquote-background-color);
+    color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1308,7 +1308,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    font-style: var(--blockquote-font-style, italic);
+    font-style: var(--blockquote-font-style);
     line-height: 24px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -1320,7 +1320,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: var(--text-faint, rgb(202, 210, 226));
+    color: var(--text-faint);
     text-decoration: underline rgb(166, 138, 249);
   }
 
@@ -1335,12 +1335,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--text-normal, rgb(164, 177, 205));
+    color: var(--text-normal);
     font-family: Helvetica, Arial, sans-serif;
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background, rgb(20, 29, 43));
+    background-color: var(--prompt-background);
     border: 2px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1443,14 +1443,14 @@ body {
   }
 
   h1 {
-    color: var(--h1-color, rgb(202, 210, 226));
+    color: var(--h1-color);
     font-family: var(--h1-font);
-    font-size: var(--h1-size, 32px);
+    font-size: var(--h1-size);
     font-weight: var(--font-weight);
-    line-height: var(--h1-line-height, 38.4px);
+    line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h1-letter-spacing, -0.48px);
+    letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1476,14 +1476,14 @@ body {
   }
 
   h2 {
-    color: var(--h2-color, rgb(202, 210, 226));
+    color: var(--h2-color);
     font-family: var(--h2-font);
-    font-size: var(--h2-size, 25.6px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h2-line-height, 30.72px);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h2-letter-spacing, -0.2816px);
+    letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1509,14 +1509,14 @@ body {
   }
 
   h3 {
-    color: var(--h3-color, rgb(202, 210, 226));
+    color: var(--h3-color);
     font-family: var(--h3-font);
-    font-size: var(--h3-size, 21.92px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h3-line-height, 28.496px);
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h3-letter-spacing, -0.17536px);
+    letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1542,14 +1542,14 @@ body {
   }
 
   h4 {
-    color: var(--h4-color, rgb(202, 210, 226));
+    color: var(--h4-color);
     font-family: var(--h4-font);
-    font-size: var(--h4-size, 20px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h4-line-height, 28px);
+    font-size: var(--h4-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h4-letter-spacing, -0.1px);
+    letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1575,14 +1575,14 @@ body {
   }
 
   h5 {
-    color: var(--h5-color, rgb(202, 210, 226));
+    color: var(--h5-color);
     font-family: var(--h5-font);
-    font-size: var(--h5-size, 17.92px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h5-line-height, 26.88px);
+    font-size: var(--h5-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    letter-spacing: var(--h5-letter-spacing, -0.03584px);
+    letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1608,11 +1608,11 @@ body {
   }
 
   h6 {
-    color: var(--h6-color, rgb(202, 210, 226));
+    color: var(--h6-color);
     font-family: var(--h6-font);
-    font-size: var(--h6-size, 17.92px);
-    font-weight: var(--font-weight, 700);
-    line-height: var(--h6-line-height, 26.88px);
+    font-size: var(--h6-size);
+    font-weight: var(--font-weight);
+    line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: var(--h6-letter-spacing);
@@ -1642,11 +1642,11 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color, rgb(202, 210, 226));
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
-    font-size: var(--inline-title-size, 32px);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
-    line-height: var(--inline-title-line-height, 38.4px);
+    line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: -0.48px;
@@ -2064,7 +2064,7 @@ body {
   }
 
   .callout {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2123,7 +2123,7 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: var(--callout-default, 2, 122, 255);
+    --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2181,7 +2181,7 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: var(--callout-summary, 83, 223, 221);
+    --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2239,7 +2239,7 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: var(--callout-info, 2, 122, 255);
+    --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2297,7 +2297,7 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: var(--callout-todo, 2, 122, 255);
+    --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2355,7 +2355,7 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: var(--callout-tip, 83, 223, 221);
+    --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2413,7 +2413,7 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: var(--callout-success, 68, 207, 110);
+    --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2471,7 +2471,7 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: var(--callout-question, 233, 151, 63);
+    --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2529,7 +2529,7 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: var(--callout-warning, 233, 151, 63);
+    --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2587,7 +2587,7 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: var(--callout-error, 251, 70, 76);
+    --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2645,7 +2645,7 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: var(--callout-fail, 251, 70, 76);
+    --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2703,7 +2703,7 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: var(--callout-bug, 251, 70, 76);
+    --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2761,7 +2761,7 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: var(--callout-example, 168, 130, 255);
+    --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2819,7 +2819,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: var(--callout-quote, 158, 158, 158);
+    --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
     background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2936,18 +2936,18 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(202, 210, 226));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(218, 218, 218);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width, 2px) solid rgb(74, 84, 102);
+    border-left: var(--table-column-first-border-width) solid rgb(74, 84, 102);
     border-right: 2px solid rgb(74, 84, 102);
-    border-top: var(--table-header-border-width, 2px) solid rgb(74, 84, 102);
+    border-top: var(--table-header-border-width) solid rgb(74, 84, 102);
     border-bottom: 2px solid rgb(74, 84, 102);
-    border-top-left-radius: var(--table-border-radius, 8px);
+    border-top-left-radius: var(--table-border-radius);
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -2964,13 +2964,13 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-text-color, rgb(164, 177, 205));
+    color: var(--table-text-color);
     font-weight: 400;
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(218, 218, 218);
-    border-left: var(--table-column-first-border-width, 2px) solid rgb(74, 84, 102);
+    border-left: var(--table-column-first-border-width) solid rgb(74, 84, 102);
     border-right: 2px solid rgb(74, 84, 102);
     border-top: 0px solid rgb(74, 84, 102);
     border-bottom: 2px solid rgb(74, 84, 102);
@@ -3007,7 +3007,7 @@ body {
   }
 
   tbody tr:nth-child(odd) {
-    background-color: var(--table-row-alt-background, rgb(26, 35, 49));
+    background-color: var(--table-row-alt-background);
   }
 
   img {
@@ -3128,7 +3128,7 @@ body {
   }
 
   .transclude {
-    background-color: var(--embed-background, rgb(26, 35, 49));
+    background-color: var(--embed-background);
     color: rgb(164, 177, 205);
     border-radius: 0px;
     border-color: rgb(164, 177, 205);
@@ -3145,7 +3145,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: var(--embed-background, rgb(26, 35, 49));
+    background-color: var(--embed-background);
     color: rgb(164, 177, 205);
     border-radius: 0px;
     border-left: solid;
@@ -3160,8 +3160,8 @@ body {
   }
 
   .file-embed {
-    background-color: var(--background-secondary, rgb(26, 35, 49));
-    color: var(--text-muted, rgb(255, 132, 132));
+    background-color: var(--background-secondary);
+    color: var(--text-muted);
     border-radius: 8px;
     border-color: rgb(255, 132, 132);
     border-width: 0px;
@@ -3175,7 +3175,7 @@ body {
 
   .metadata {
     background-color: var(--metadata-background);
-    color: var(--text-muted, rgb(164, 177, 205));
+    color: var(--text-muted);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3298,7 +3298,7 @@ body {
 
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal, rgb(202, 210, 226));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3388,11 +3388,11 @@ body {
   }
 
   kbd {
-    background-color: var(--code-background, rgb(26, 35, 49));
+    background-color: var(--code-background);
     box-shadow: none;
-    color: var(--code-normal, rgb(164, 177, 205));
+    color: var(--code-normal);
     font-family: var(--font-monospace);
-    font-size: var(--code-size, 16px);
+    font-size: var(--code-size);
     border: 0px rgb(164, 177, 205);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3710,7 +3710,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(164, 177, 205));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: Helvetica, Arial, sans-serif;
     font-weight: var(--nav-item-weight);
@@ -3718,7 +3718,7 @@ body {
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
-    color: var(--nav-item-color, rgb(164, 177, 205));
+    color: var(--nav-item-color);
     cursor: var(--cursor);
     font-family: Helvetica, Arial, sans-serif;
     font-weight: var(--nav-item-weight);
@@ -3730,21 +3730,8 @@ body {
   }
 
   .explorer .folder-container > div {
-    color: rgb(179, 179, 179);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: rgb(164, 177, 205);
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 400;
   }
 
@@ -3758,13 +3745,13 @@ body {
 
   .bases-table thead th {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--table-header-color, rgb(202, 210, 226));
+    color: var(--table-header-color);
     font-weight: var(--table-header-weight);
     border-color: rgb(74, 84, 102);
   }
 
   .bases-table tbody tr:nth-child(even) {
-    background-color: var(--table-row-alt-background, rgb(26, 35, 49));
+    background-color: var(--table-row-alt-background);
   }
 
   .canvas-node {
@@ -3779,12 +3766,12 @@ body {
   }
 
   .canvas-node-file {
-    color: var(--text-normal, rgb(164, 177, 205));
+    color: var(--text-normal);
     background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-sidebar {
-    background-color: var(--background-secondary, rgb(26, 35, 49));
+    background-color: var(--background-secondary);
     border-color: rgb(164, 177, 205);
     box-shadow: var(--input-shadow);
   }
@@ -3811,8 +3798,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background, rgba(160, 240, 0, 0.1));
-    color: var(--pill-color, rgb(189, 255, 21));
+    background-color: var(--pill-background);
+    color: var(--pill-color);
     border-radius: 28px;
   }
 
@@ -3826,7 +3813,7 @@ body {
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(164, 177, 205));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(164, 177, 205);
     border-width: 0px;
@@ -3837,8 +3824,8 @@ body {
   }
 
   footer {
-    background-color: var(--status-bar-background, rgb(26, 35, 49));
-    color: var(--status-bar-text-color, rgb(164, 177, 205));
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
     font-family: Helvetica, Arial, sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
@@ -3873,7 +3860,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(164, 177, 205));
+    color: var(--nav-item-color);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3902,7 +3889,7 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: var(--nav-item-color, rgb(164, 177, 205));
+    color: var(--nav-item-color);
   }
 
   li.section-li > .section .meta {
@@ -3912,7 +3899,7 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--icon-color, rgb(164, 177, 205));
+    color: var(--icon-color);
     cursor: var(--cursor);
     border-color: rgb(164, 177, 205);
     border-width: 0px;
@@ -3939,7 +3926,7 @@ body {
   }
 
   .breadcrumb-element p {
-    color: var(--text-faint, rgb(202, 210, 226));
+    color: var(--text-faint);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3957,11 +3944,11 @@ body {
   }
 
   .navigation-progress {
-    background-color: var(--status-bar-background, rgb(26, 35, 49));
+    background-color: var(--status-bar-background);
   }
 
   .page-header h2.page-title {
-    color: var(--text-normal, rgb(164, 177, 205));
+    color: var(--text-normal);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4093,8 +4080,8 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--tag-background, rgba(160, 240, 0, 0.1));
-    color: var(--tag-color, rgb(189, 255, 21));
+    background-color: var(--tag-background);
+    color: var(--tag-color);
     border: 0px solid rgba(160, 240, 0, 0.15);
     border-top-left-radius: 24.5px;
     border-top-right-radius: 24.5px;
@@ -4124,17 +4111,17 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color, rgb(160, 240, 0));
+    background-color: var(--checkbox-color);
     border-color: rgb(160, 240, 0);
   }
 
   .stacked-page {
     border-color: rgb(164, 177, 205);
-    background-color: var(--background-secondary, rgb(26, 35, 49));
+    background-color: var(--background-secondary);
   }
 
   .stacked-page-header {
-    background-color: var(--tab-container-background, rgb(26, 35, 49));
+    background-color: var(--tab-container-background);
   }
 
   .stacked-page.active {
@@ -4142,8 +4129,8 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color, rgb(202, 210, 226));
-    font-size: var(--inline-title-size, 32px);
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
 
@@ -4151,18 +4138,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4170,7 +4153,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4184,7 +4166,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4198,9 +4179,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4257,10 +4235,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4271,18 +4246,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4290,7 +4261,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4304,7 +4274,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4318,9 +4287,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4377,10 +4343,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4391,18 +4354,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4410,7 +4369,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4424,7 +4382,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4438,9 +4395,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4497,10 +4451,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4511,18 +4462,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4530,7 +4477,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4544,7 +4490,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4558,9 +4503,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4617,10 +4559,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4631,18 +4570,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4650,7 +4585,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4664,7 +4598,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4678,9 +4611,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4737,10 +4667,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4751,18 +4678,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4770,7 +4693,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4784,7 +4706,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4798,9 +4719,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4857,10 +4775,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4871,18 +4786,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -4890,7 +4801,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -4904,7 +4814,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -4918,9 +4827,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -4977,10 +4883,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -4991,18 +4894,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5010,7 +4909,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5024,7 +4922,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5038,9 +4935,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5097,10 +4991,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5111,18 +5002,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5130,7 +5017,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5144,7 +5030,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5158,9 +5043,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5217,10 +5099,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5231,18 +5110,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5250,7 +5125,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5264,7 +5138,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5278,9 +5151,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5337,10 +5207,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5351,18 +5218,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5370,7 +5233,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5384,7 +5246,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5398,9 +5259,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5457,10 +5315,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5471,18 +5326,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5490,7 +5341,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5504,7 +5354,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5518,9 +5367,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5577,10 +5423,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5591,18 +5434,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5610,7 +5449,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5624,7 +5462,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5638,9 +5475,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5697,10 +5531,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5711,18 +5542,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5730,7 +5557,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5744,7 +5570,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5758,9 +5583,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5817,10 +5639,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5831,18 +5650,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5850,7 +5665,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5864,7 +5678,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5878,9 +5691,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -5937,10 +5747,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -5951,18 +5758,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -5970,7 +5773,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -5984,7 +5786,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -5998,9 +5799,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6057,10 +5855,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6071,18 +5866,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6090,7 +5881,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6104,7 +5894,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6118,9 +5907,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6177,10 +5963,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6191,18 +5974,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6210,7 +5989,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6224,7 +6002,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6238,9 +6015,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6297,10 +6071,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6311,18 +6082,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6330,7 +6097,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6344,7 +6110,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6358,9 +6123,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6417,10 +6179,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6431,18 +6190,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6450,7 +6205,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6464,7 +6218,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6478,9 +6231,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6537,10 +6287,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6551,18 +6298,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6570,7 +6313,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6584,7 +6326,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6598,9 +6339,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6657,10 +6395,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6671,18 +6406,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6690,7 +6421,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6704,7 +6434,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6718,9 +6447,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6777,10 +6503,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6791,18 +6514,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6810,7 +6529,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6824,7 +6542,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6838,9 +6555,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -6897,10 +6611,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -6911,18 +6622,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -6930,7 +6637,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -6944,7 +6650,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -6958,9 +6663,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7017,10 +6719,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7031,18 +6730,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7050,7 +6745,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7064,7 +6758,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7078,9 +6771,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7137,10 +6827,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7151,18 +6838,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7170,7 +6853,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7184,7 +6866,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7198,9 +6879,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7257,10 +6935,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7271,18 +6946,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7290,7 +6961,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7304,7 +6974,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7318,9 +6987,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7377,10 +7043,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7391,18 +7054,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7410,7 +7069,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7424,7 +7082,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7438,9 +7095,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7497,10 +7151,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7511,18 +7162,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7530,7 +7177,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7544,7 +7190,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7558,9 +7203,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7617,10 +7259,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7631,18 +7270,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7650,7 +7285,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7664,7 +7298,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7678,9 +7311,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7737,10 +7367,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7751,18 +7378,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7770,7 +7393,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7784,7 +7406,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7798,9 +7419,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7857,10 +7475,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7871,18 +7486,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -7890,7 +7501,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -7904,7 +7514,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -7918,9 +7527,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -7977,10 +7583,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -7991,18 +7594,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8010,7 +7609,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8024,7 +7622,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8038,9 +7635,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8097,10 +7691,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8111,18 +7702,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8130,7 +7717,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8144,7 +7730,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8158,9 +7743,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8217,10 +7799,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8231,18 +7810,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8250,7 +7825,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8264,7 +7838,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8278,9 +7851,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8337,10 +7907,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8351,18 +7918,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8370,7 +7933,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8384,7 +7946,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8398,9 +7959,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8457,10 +8015,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8471,18 +8026,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8490,7 +8041,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8504,7 +8054,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8518,9 +8067,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8577,10 +8123,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8591,18 +8134,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8610,7 +8149,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8624,7 +8162,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8638,9 +8175,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8697,10 +8231,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8711,18 +8242,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8730,7 +8257,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8744,7 +8270,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8758,9 +8283,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8817,10 +8339,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8831,18 +8350,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8850,7 +8365,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8864,7 +8378,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8878,9 +8391,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -8937,10 +8447,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -8951,18 +8458,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -8970,7 +8473,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -8984,7 +8486,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -8998,9 +8499,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9057,10 +8555,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9071,18 +8566,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9090,7 +8581,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9104,7 +8594,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9118,9 +8607,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9177,10 +8663,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9191,18 +8674,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9210,7 +8689,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9224,7 +8702,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9238,9 +8715,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9297,10 +8771,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9311,18 +8782,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9330,7 +8797,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9344,7 +8810,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9358,9 +8823,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9417,10 +8879,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9431,18 +8890,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9450,7 +8905,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9464,7 +8918,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9478,9 +8931,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9537,10 +8987,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9551,18 +8998,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9570,7 +9013,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9584,7 +9026,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9598,9 +9039,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9657,10 +9095,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9671,18 +9106,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9690,7 +9121,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9704,7 +9134,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9718,9 +9147,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9777,10 +9203,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9791,18 +9214,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9810,7 +9229,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9824,7 +9242,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9838,9 +9255,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -9897,10 +9311,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -9911,18 +9322,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -9930,7 +9337,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -9944,7 +9350,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -9958,9 +9363,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10017,10 +9419,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10031,18 +9430,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10050,7 +9445,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10064,7 +9458,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10078,9 +9471,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10137,10 +9527,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10151,18 +9538,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10170,7 +9553,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10184,7 +9566,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10198,9 +9579,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10257,10 +9635,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10271,18 +9646,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10290,7 +9661,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10304,7 +9674,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10318,9 +9687,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10377,10 +9743,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10391,18 +9754,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10410,7 +9769,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10424,7 +9782,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10438,9 +9795,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10497,10 +9851,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10511,18 +9862,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10530,7 +9877,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10544,7 +9890,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10558,9 +9903,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10617,10 +9959,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10631,18 +9970,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10650,7 +9985,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10664,7 +9998,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10678,9 +10011,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10737,10 +10067,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10751,18 +10078,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10770,7 +10093,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10784,7 +10106,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10798,9 +10119,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10857,10 +10175,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10871,18 +10186,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -10890,7 +10201,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -10904,7 +10214,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -10918,9 +10227,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -10977,10 +10283,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -10991,18 +10294,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11010,7 +10309,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11024,7 +10322,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11038,9 +10335,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11097,10 +10391,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11111,18 +10402,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11130,7 +10417,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11144,7 +10430,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11158,9 +10443,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11217,10 +10499,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11231,18 +10510,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11250,7 +10525,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11264,7 +10538,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11278,9 +10551,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11337,10 +10607,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11351,18 +10618,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11370,7 +10633,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11384,7 +10646,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11398,9 +10659,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11457,10 +10715,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11471,18 +10726,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11490,7 +10741,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11504,7 +10754,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11518,9 +10767,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11577,10 +10823,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11591,18 +10834,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11610,7 +10849,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11624,7 +10862,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11638,9 +10875,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11697,10 +10931,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11711,18 +10942,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11730,7 +10957,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11744,7 +10970,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11758,9 +10983,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11817,10 +11039,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11831,18 +11050,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11850,7 +11065,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11864,7 +11078,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11878,9 +11091,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -11937,10 +11147,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -11951,18 +11158,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -11970,7 +11173,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -11984,7 +11186,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -11998,9 +11199,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -12057,10 +11255,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
@@ -12071,18 +11266,14 @@ body {
     color: rgb(164, 177, 205);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #363636;
-    --background-modifier-border-focus: #555555;
     --background-modifier-border-hover: #3f3f3f;
     --background-modifier-error: #fb464c;
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-success: #44cf6e;
-    --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
-    --background-secondary: #262626;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
-    --button-radius: 5px;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
     --checkbox-border-color: #666666;
@@ -12090,7 +11281,6 @@ body {
     --checkbox-color: hsl(258, 88%, 66%);
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
-    --checkbox-radius: 4px;
     --checklist-done-color: #b3b3b3;
     --collapse-icon-color: #666666;
     --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
@@ -12104,7 +11294,6 @@ body {
     --dropdown-background-hover: #3f3f3f;
     --flair-background: #363636;
     --flair-color: #dadada;
-    --graph-line: #3f3f3f;
     --graph-node: #b3b3b3;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
@@ -12118,9 +11307,6 @@ body {
     --interactive-normal: #363636;
     --link-color: hsl(255, 89.76%, 75.9%);
     --link-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-external-color: hsl(255, 89.76%, 75.9%);
-    --link-external-color-hover: hsl(253, 92.4%, 85.14%);
-    --link-unresolved-color: hsl(255, 89.76%, 75.9%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
     --menu-background: #262626;
     --menu-border-color: #3f3f3f;
@@ -12177,10 +11363,7 @@ body {
     --text-faint: #666666;
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
-    --text-normal: #dadada;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    padding-bottom: 0px;
-    padding-top: 0px;
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --color-base-25: #2a2a2a;
     --color-base-50: #666666;
