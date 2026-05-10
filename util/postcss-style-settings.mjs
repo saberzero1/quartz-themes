@@ -93,9 +93,33 @@ function parseSettingsLineByLine(text) {
   let currentOption = null
   let seenSettingsKey = false
 
+  // Detect the indentation level used for top-level entry dashes (e.g. "    -").
+  // Options sub-array dashes will be more deeply indented.
+  let entryDashIndent = -1
+  for (const l of lines) {
+    const m = l.match(/^(\s*)-\s*$/)
+    if (m) { entryDashIndent = m[1].length; break }
+  }
+
   for (const rawLine of lines) {
     const line = rawLine.trim()
     if (!line || line === "-") {
+      // Determine whether this bare dash is an option-level delimiter or
+      // a top-level entry delimiter by comparing its indentation to the
+      // canonical entry dash indent.
+      const dashIndent = rawLine.search(/\S/)
+      const isOptionDash = inOptions && entryDashIndent >= 0 && dashIndent > entryDashIndent
+
+      if (isOptionDash) {
+        // Inside an options array, bare dashes are option delimiters — flush the
+        // current option but keep collecting more options for the same entry.
+        if (currentOption && currentOption.value) {
+          if (!current.options) current.options = []
+          current.options.push(currentOption)
+        }
+        currentOption = null
+        continue
+      }
       // Bare dash or empty line: flush current entry if it has an id+type
       if (current && current.id && current.type) {
         if (currentOption && currentOption.value) {

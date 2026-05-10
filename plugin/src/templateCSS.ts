@@ -527,7 +527,7 @@ body a.internal-link {
 /**
  * Styles that must override both Quartz base and theme CSS.
  * Injected in @layer quartz-themes-base (above obsidian-theme,
- * below un-layered custom.scss).
+ * below obsidian-theme-overrides and un-layered custom.scss).
  */
 export const TEMPLATE_OVERRIDE_CSS = `
 /* heading sizes */

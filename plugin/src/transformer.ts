@@ -61,7 +61,7 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
   if (resolvedCSS) {
     cssResources.push({
       content:
-        `@layer quartz-base, obsidian-theme, obsidian-theme-overrides, quartz-themes-base;\n` +
+        `@layer quartz-base, obsidian-theme, quartz-themes-base, obsidian-theme-overrides;\n` +
         `@layer obsidian-theme {\n${resolvedCSS}\n}`,
       inline: true,
     });
