@@ -3,28 +3,28 @@
   font-family: "iA Writer Quattro V";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian_ia/ia-writer-quattro-v.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/obsidian_ia/ia-writer-quattro-v.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro V";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian_ia/ia-writer-quattro-v-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/obsidian_ia/ia-writer-quattro-v-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono V";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian_ia/ia-writer-mono-v.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/obsidian_ia/ia-writer-mono-v.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono V";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian_ia/ia-writer-mono-v-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/obsidian_ia/ia-writer-mono-v-1.woff2")
     format("woff2");
 }
 body.theme-light {

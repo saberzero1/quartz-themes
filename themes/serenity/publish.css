@@ -3,84 +3,84 @@
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-quattro-s.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-quattro-s.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-quattro-s-1.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-quattro-s-1.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-quattro-s-2.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-quattro-s-2.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-quattro-s-3.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-quattro-s-3.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-mono-s.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-mono-s.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-mono-s-1.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-mono-s-1.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-mono-s-2.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-mono-s-2.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-mono-s-3.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-mono-s-3.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-duo-s.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-duo-s.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-duo-s-1.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-duo-s-1.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-duo-s-2.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-duo-s-2.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/serenity/ia-writer-duo-s-3.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/serenity/ia-writer-duo-s-3.woff")
     format("woff");
 }
 body.theme-light {

@@ -3,14 +3,14 @@
   font-family: "Arvo";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/mistymauve/arvo.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/mistymauve/arvo.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Permanent Marker";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/mistymauve/permanent-marker.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/mistymauve/permanent-marker.woff2")
     format("woff2");
 }
 body.theme-light {
