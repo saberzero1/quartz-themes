@@ -52,4 +52,3 @@ export function normalizeRuntimeEvidenceRecords(sidecar) {
 
   return candidateRecords.map((record) => normalizeRecord(record)).filter(Boolean);
 }
-
