@@ -505,10 +505,130 @@ function impactPath(effectKind) {
   return { pathKind: "css-variable", direct: true };
 }
 
+/**
+ * Attach bounded runtime-observed evidence to static selector impacts.
+ *
+ * This layer is additive-only:
+ * - static selector impacts remain the source-of-truth for inferred reachability
+ * - runtime evidence only marks impacts that were observed in bounded single-setting diffs
+ * - missing evidence does not mean an impact is impossible
+ */
+function applyRuntimeEvidenceLayer(selectorImpacts, runtimeEvidenceRecords) {
+  if (!Array.isArray(runtimeEvidenceRecords) || runtimeEvidenceRecords.length === 0) {
+    return;
+  }
+
+  const recordsBySetting = new Map();
+  for (const record of runtimeEvidenceRecords) {
+    if (!record?.settingId) continue;
+    if (!recordsBySetting.has(record.settingId)) {
+      recordsBySetting.set(record.settingId, []);
+    }
+    recordsBySetting.get(record.settingId).push(record);
+  }
+
+  const normalizeClassChanges = (changes) =>
+    [...new Set((changes || []).map((value) => String(value).trim()).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b));
+  const compareByCompositeKey = (left, right, keyFn) =>
+    keyFn(left).localeCompare(keyFn(right));
+
+  for (const [selector, record] of Object.entries(selectorImpacts || {})) {
+    record.impacts = record.impacts.map((impact) => {
+      const records = recordsBySetting.get(impact.settingId);
+      if (!records?.length) return impact;
+
+      const observedKinds = new Set();
+      const observedModes = new Set();
+      const bodyClassChanges = { added: [], removed: [] };
+      const cssVariableChanges = [];
+      const computedStyleChanges = [];
+
+      for (const observation of records) {
+        if (observation.mode) observedModes.add(observation.mode);
+
+        const changedBodyClasses = observation.changedBodyClasses || {
+          added: [],
+          removed: [],
+        };
+        const toggledClasses = new Set([
+          ...changedBodyClasses.added,
+          ...changedBodyClasses.removed,
+        ]);
+        // body-class-toggle emits `className`; body-class-select emits `classValue`.
+        // Runtime evidence matches whichever class token was encoded by the effect kind.
+        const impactedClass = impact.className || impact.classValue;
+        if (impactedClass && toggledClasses.has(impactedClass)) {
+          observedKinds.add("body-class");
+          bodyClassChanges.added.push(...(changedBodyClasses.added || []));
+          bodyClassChanges.removed.push(...(changedBodyClasses.removed || []));
+        }
+
+        const changedCssVariables = Array.isArray(observation.changedCssVariables)
+          ? observation.changedCssVariables
+          : [];
+        const impactVariables = new Set([
+          impact.selectorVariable,
+          ...(impact.variablePath || []),
+        ]);
+        const matchedVarChanges = changedCssVariables.filter((entry) =>
+          impactVariables.has(entry.name),
+        );
+        if (matchedVarChanges.length > 0) {
+          observedKinds.add("css-variable");
+          cssVariableChanges.push(...matchedVarChanges);
+        }
+
+        const changedComputedStyles = Array.isArray(observation.changedComputedStyles)
+          ? observation.changedComputedStyles
+          : [];
+        const matchedComputedChanges = changedComputedStyles.filter(
+          (entry) => entry.selector === selector,
+        );
+        if (matchedComputedChanges.length > 0) {
+          observedKinds.add("computed-style");
+          computedStyleChanges.push(...matchedComputedChanges);
+        }
+      }
+
+      if (observedKinds.size === 0) return impact;
+
+      return {
+        ...impact,
+        runtimeEvidence: {
+          observed: true,
+          observedModes: [...observedModes].sort((a, b) => a.localeCompare(b)),
+          observedKinds: [...observedKinds].sort((a, b) => a.localeCompare(b)),
+          bodyClassChanges: {
+            added: normalizeClassChanges(bodyClassChanges.added),
+            removed: normalizeClassChanges(bodyClassChanges.removed),
+          },
+          cssVariableChanges: cssVariableChanges.sort((a, b) =>
+            compareByCompositeKey(
+              a,
+              b,
+              (entry) => `${entry.name}|${entry.before || ""}|${entry.after || ""}`,
+            ),
+          ),
+          computedStyleChanges: computedStyleChanges.sort((a, b) =>
+            compareByCompositeKey(
+              a,
+              b,
+              (entry) =>
+                `${entry.selector}|${entry.property}|${entry.before || ""}|${entry.after || ""}`,
+            ),
+          ),
+        },
+      };
+    });
+  }
+}
+
 export function buildSelectorImpactGraph({
   effectRecords,
   classSettings,
   modeCss,
+  runtimeEvidenceRecords,
 }) {
   const selectorImpacts = new Map();
   const classSelectors = buildClassSelectorIndex(classSettings);
@@ -626,5 +746,6 @@ export function buildSelectorImpactGraph({
       interactionGroups: record.interactionGroups,
     };
   }
+  applyRuntimeEvidenceLayer(output, runtimeEvidenceRecords);
   return output;
 }

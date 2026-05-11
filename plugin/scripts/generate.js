@@ -10,6 +10,7 @@ import {
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 import { filterObsidianCSS } from "../../util/obsidian-selectors.mjs";
 import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
+import { normalizeRuntimeEvidenceRecords } from "../../util/style-settings-runtime-evidence.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
 
@@ -1676,6 +1677,9 @@ async function main() {
       alternates: await readJsonIfExists(
         path.join(themeDir, "dark-alternates.json"),
       ),
+      runtimeEvidence: await readJsonIfExists(
+        path.join(themeDir, "dark-style-settings-runtime-evidence.json"),
+      ),
     };
     const lightSidecars = {
       varGraph: await readJsonIfExists(
@@ -1686,6 +1690,9 @@ async function main() {
       ),
       alternates: await readJsonIfExists(
         path.join(themeDir, "light-alternates.json"),
+      ),
+      runtimeEvidence: await readJsonIfExists(
+        path.join(themeDir, "light-style-settings-runtime-evidence.json"),
       ),
     };
 
@@ -1794,6 +1801,10 @@ async function main() {
       }
     }
 
+    const runtimeEvidenceRecords = [darkSidecars, lightSidecars].flatMap(
+      (sidecar) => normalizeRuntimeEvidenceRecords(sidecar.runtimeEvidence),
+    );
+
     const selectorImpacts = buildSelectorImpactGraph({
       effectRecords: styleSettingsEffects,
       classSettings,
@@ -1801,6 +1812,7 @@ async function main() {
         dark: flattenAspectCssToString(darkAspectCSS),
         light: flattenAspectCssToString(lightAspectCSS),
       },
+      runtimeEvidenceRecords,
     });
 
     // Extract and write diagnostics, then remove from aspectCSS
