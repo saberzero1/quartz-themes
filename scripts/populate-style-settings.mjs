@@ -5,7 +5,7 @@
  *   node scripts/populate-style-settings.mjs              # populate themes.json from existing .yaml files
  *   node scripts/populate-style-settings.mjs --extract    # re-extract .yaml from theme.css first, then populate
  *   node scripts/populate-style-settings.mjs --extract --recover-legacy-missing-ids
- *                                                   # opt in to legacy ID recovery when extracting sidecars
+ *     # opt in to legacy ID recovery when extracting sidecars
  */
 import {
   mkdirSync,
