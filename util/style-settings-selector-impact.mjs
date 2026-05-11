@@ -4,6 +4,7 @@
  * Scope limits (intentional):
  * - No full CSS cascade simulation or DOM state modeling.
  * - Only direct selector rules and explicit var(...) consumers are tracked.
+ * - Nested at-rule parsing (@media/@supports) is intentionally out of scope in V1.
  * - Impacts are explainable via canonical effect primitives + static CSS reads.
  */
 

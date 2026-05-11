@@ -1364,6 +1364,10 @@ function renderThemeModule(themeData) {
   return JSON.stringify(themeData, null, 2);
 }
 
+/**
+ * Flattens a mode's aspect CSS object (aspect -> cssText) into one CSS string.
+ * Used for variable-consumer scanning during selector-impact graph generation.
+ */
 function flattenAspectCssToString(aspectCss) {
   return Object.values(aspectCss || {})
     .filter((value) => typeof value === "string" && value.trim().length > 0)
