@@ -14,6 +14,7 @@ import {
   statSync,
 } from "fs";
 import { createRequire } from "module";
+import { tmpdir } from "os";
 import { join } from "path";
 import { pathToFileURL } from "url";
 import { build } from "esbuild";
@@ -22,7 +23,7 @@ import { sanitizeFilenamePreservingEmojis as sanitize } from "../util/util.mjs";
 
 const THEMES_JSON_PATH = "./themes.json";
 const OBSIDIAN_DIR = "./obsidian";
-const TEMP_PARSER_DIR = join("/home/runner/work/_temp", "style-settings-fork");
+const TEMP_PARSER_DIR = join(tmpdir(), "style-settings-fork");
 const TEMP_PARSER_PATH = join(TEMP_PARSER_DIR, "StyleSettingsParser.bundle.mjs");
 
 const shouldExtract = process.argv.includes("--extract");
