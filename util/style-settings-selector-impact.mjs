@@ -297,11 +297,7 @@ function collectVariablePaths(directVariables, dependencyIndex) {
       if (currentPath.path.includes(dependency.variable)) continue;
       const nextChainLength = currentPath.chainLength + 1;
       const existing = paths.get(dependency.variable);
-      if (
-        existing &&
-        existing.chainLength <= nextChainLength &&
-        existing.path[0] === currentPath.path[0]
-      ) {
+      if (existing && existing.chainLength <= nextChainLength) {
         continue;
       }
       paths.set(dependency.variable, {

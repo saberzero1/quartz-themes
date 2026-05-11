@@ -257,7 +257,12 @@ describe("buildSelectorImpactGraph", () => {
     });
 
     assert.ok(graph[".within-bound"]);
+    assert.equal(graph[".within-bound"].impacts.length, 1);
     assert.equal(graph[".within-bound"].impacts[0].variableChainLength, 4);
+    assert.equal(
+      graph[".within-bound"].impacts[0].variableConsumerKind,
+      "transitive",
+    );
     assert.deepEqual(graph[".within-bound"].impacts[0].variablePath, [
       "--v0",
       "--v1",
