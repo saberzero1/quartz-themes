@@ -21,7 +21,7 @@ function formatAtRuleContext(node) {
   return prelude ? `@${node.name} ${prelude}` : `@${node.name}`;
 }
 
-function collectRuleSelectors(prelude) {
+function collectSelectorsFromPrelude(prelude) {
   const selectors = [];
   if (!prelude || prelude.type !== "SelectorList") return selectors;
   for (const selectorNode of prelude.children || []) {
@@ -39,6 +39,7 @@ function collectRuleVariables(block) {
     enter(node) {
       if (node.name !== "var") return;
       const firstArg = node.children?.first;
+      // var() always starts with a custom-property name token (Identifier in css-tree).
       if (!firstArg || firstArg.type !== "Identifier") return;
       if (firstArg.name.startsWith("--")) variables.add(firstArg.name);
     },
@@ -60,7 +61,7 @@ function parseCssRules(css, mode) {
     if (!node) return;
     if (node.type === "Rule") {
       if (inKeyframes) return;
-      const selectors = collectRuleSelectors(node.prelude);
+      const selectors = collectSelectorsFromPrelude(node.prelude);
       if (!selectors.length) return;
       rules.push({
         selectors,
@@ -71,6 +72,7 @@ function parseCssRules(css, mode) {
       return;
     }
     if (node.type === "Atrule" && node.block?.children) {
+      // Include vendor-prefixed keyframes (for example, -webkit-keyframes).
       const isKeyframesRule = /keyframes$/i.test(node.name);
       const nextContext = isKeyframesRule
         ? context
