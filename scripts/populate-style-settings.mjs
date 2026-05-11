@@ -4,6 +4,8 @@
  * Usage:
  *   node scripts/populate-style-settings.mjs              # populate themes.json from existing .yaml files
  *   node scripts/populate-style-settings.mjs --extract    # re-extract .yaml from theme.css first, then populate
+ *   node scripts/populate-style-settings.mjs --extract --recover-legacy-missing-ids
+ *                                                   # opt in to legacy ID recovery when extracting sidecars
  */
 import {
   mkdirSync,
@@ -27,6 +29,9 @@ const TEMP_PARSER_DIR = join(tmpdir(), "style-settings-fork");
 const TEMP_PARSER_PATH = join(TEMP_PARSER_DIR, "StyleSettingsParser.bundle.mjs");
 
 const shouldExtract = process.argv.includes("--extract");
+const shouldRecoverLegacyMissingIds = process.argv.includes(
+  "--recover-legacy-missing-ids",
+);
 
 const obsidianDirs = readdirSync(OBSIDIAN_DIR).filter((name) =>
   statSync(join(OBSIDIAN_DIR, name)).isDirectory(),
@@ -258,10 +263,9 @@ if (shouldExtract) {
       }
     }
 
-    const { sections, addedIds } = mergeMissingSettingsById(
-      parsedSections,
-      existingSections,
-    );
+    const { sections, addedIds } = shouldRecoverLegacyMissingIds
+      ? mergeMissingSettingsById(parsedSections, existingSections)
+      : { sections: parsedSections, addedIds: [] };
     recoveredSettings += addedIds.length;
 
     const sidecarDoc = {
@@ -310,6 +314,11 @@ if (shouldExtract) {
   console.log(
     `Extract diagnostics: ${diagnosticThemes} themes with parser diagnostics, ${recoveredSettings} legacy settings IDs recovered from existing sidecars.`,
   );
+  if (!shouldRecoverLegacyMissingIds) {
+    console.log(
+      "Extract legacy recovery: disabled by default; pass --recover-legacy-missing-ids to opt in.",
+    );
+  }
 }
 
 // --- Phase 2: Populate themes.json from style-settings.yaml ---
