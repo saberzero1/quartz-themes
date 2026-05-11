@@ -258,6 +258,13 @@ describe("buildSelectorImpactGraph", () => {
 
     assert.ok(graph[".within-bound"]);
     assert.equal(graph[".within-bound"].impacts[0].variableChainLength, 4);
+    assert.deepEqual(graph[".within-bound"].impacts[0].variablePath, [
+      "--v0",
+      "--v1",
+      "--v2",
+      "--v3",
+      "--v4",
+    ]);
     assert.equal(graph[".beyond-bound"], undefined);
   });
 

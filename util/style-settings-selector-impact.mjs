@@ -294,6 +294,7 @@ function collectVariablePaths(directVariables, dependencyIndex) {
       continue;
     }
     for (const dependency of dependencyIndex.get(current) || []) {
+      if (currentPath.path.includes(dependency.variable)) continue;
       const nextChainLength = currentPath.chainLength + 1;
       const existing = paths.get(dependency.variable);
       if (
