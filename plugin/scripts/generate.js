@@ -9,6 +9,7 @@ import {
 } from "../../util/postcss-style-settings.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 import { filterObsidianCSS } from "../../util/obsidian-selectors.mjs";
+import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
 
@@ -1363,6 +1364,16 @@ function renderThemeModule(themeData) {
   return JSON.stringify(themeData, null, 2);
 }
 
+/**
+ * Flattens a mode's aspect CSS object (aspect -> cssText) into one CSS string.
+ * Used for variable-consumer scanning during selector-impact graph generation.
+ */
+function flattenAspectCssToString(aspectCss) {
+  return Object.values(aspectCss || {})
+    .filter((value) => typeof value === "string" && value.trim().length > 0)
+    .join("\n");
+}
+
 const reservedIdentifiers = new Set([
   "default",
   "class",
@@ -1708,6 +1719,11 @@ async function main() {
     const normalizedId = resolveThemeKey(themeId, themesMeta);
     const fileBaseName = normalizedId.replace(/[^a-zA-Z0-9-_]/g, "-");
     const outputPath = path.join(outputDir, `${fileBaseName}.json`);
+    const styleSettingsEffects = Array.isArray(
+      themeMeta.style_settings?.effects,
+    )
+      ? themeMeta.style_settings.effects
+      : [];
 
     let extras = null;
     try {
@@ -1778,6 +1794,15 @@ async function main() {
       }
     }
 
+    const selectorImpacts = buildSelectorImpactGraph({
+      effectRecords: styleSettingsEffects,
+      classSettings,
+      modeCss: {
+        dark: flattenAspectCssToString(darkAspectCSS),
+        light: flattenAspectCssToString(lightAspectCSS),
+      },
+    });
+
     // Extract and write diagnostics, then remove from aspectCSS
     for (const [mode, aspectCSS] of [
       ["dark", darkAspectCSS],
@@ -1804,6 +1829,7 @@ async function main() {
       light: lightAspectCSS,
       extras,
       classSettings,
+      selectorImpacts,
     });
 
     await fs.writeFile(outputPath, moduleContent, "utf8");
