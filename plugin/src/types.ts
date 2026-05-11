@@ -107,7 +107,12 @@ export interface SelectorImpact {
   resolvedMode?: "both" | "dark" | "light";
   /** Static nested at-rule relation between bridge context(s) and selector consumer context. */
   contextRelation?: "none" | "consumer-nested" | "bridge-nested" | "divergent";
-  /** Deterministic static precision level for this path under known mode/context constraints. */
+  /**
+   * Deterministic static precision level for this path under known mode/context constraints.
+   * - exact: consumer scope is fully covered by bridge/effect scope
+   * - conditional: valid only under narrower mode/bridge conditions
+   * - possible: contexts diverge without static alignment
+   */
   compatibility?: "exact" | "conditional" | "possible";
   sourceVariable?: string;
   sourceVariables?: string[];

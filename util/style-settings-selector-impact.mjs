@@ -181,8 +181,8 @@ function isAtRuleContextPrefix(prefix, full) {
 /**
  * Compare transitive bridge and consumer nested at-rule chains.
  * - none: neither side is nested
- * - consumer-nested: consumer is in same or narrower nested context
- * - bridge-nested: bridge is in narrower nested context than consumer
+ * - consumer-nested: bridge is equal/broader, consumer is same or narrower
+ * - bridge-nested: bridge is narrower than the consumer context
  * - divergent: nested chains differ without a prefix relationship
  */
 function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
@@ -201,9 +201,13 @@ function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
 
 /**
  * Deterministic precision model for selector-impact compatibility:
- * - exact: mode/context remain aligned with the effect scope
- * - conditional: scope narrows by mode or bridge-only nesting
+ * - exact: consumer context is fully covered by effect/bridge context
+ * - conditional: path exists but requires narrower mode or bridge-only nesting
  * - possible: nested at-rule chains diverge
+ *
+ * Notes:
+ * - consumer-nested remains exact because a broader bridge still satisfies a narrower consumer.
+ * - bridge-nested is conditional because the bridge only exists in a narrower condition.
  */
 function evaluateCompatibility(effectMode, resolvedMode, contextRelation) {
   let compatibility = "exact";

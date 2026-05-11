@@ -354,6 +354,79 @@ describe("buildSelectorImpactGraph", () => {
     ]);
   });
 
+  test("treats broader bridge + narrower consumer as exact context match", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "light",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          ":root { --ui: var(--source); } @media (min-width: 768px) { .card { color: var(--ui); } }",
+      },
+    });
+
+    const impact = graph[".card"].impacts[0];
+    assert.equal(impact.contextRelation, "consumer-nested");
+    assert.equal(impact.compatibility, "exact");
+    assert.equal(impact.resolvedMode, "light");
+  });
+
+  test("marks divergent nested at-rule chains as possible", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "light",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          "@supports (display: grid) { :root { --ui: var(--source); } } @media (min-width: 768px) { .card { color: var(--ui); } }",
+      },
+    });
+
+    const impact = graph[".card"].impacts[0];
+    assert.equal(impact.contextRelation, "divergent");
+    assert.equal(impact.compatibility, "possible");
+  });
+
   test("preserves materially distinct bridge paths across contexts", () => {
     const graph = buildSelectorImpactGraph({
       effectRecords: [
