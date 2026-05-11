@@ -10,6 +10,7 @@ import {
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 import { filterObsidianCSS } from "../../util/obsidian-selectors.mjs";
 import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
+import { normalizeRuntimeEvidenceRecords } from "../../util/style-settings-runtime-evidence.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
 
@@ -1800,23 +1801,9 @@ async function main() {
       }
     }
 
-    const runtimeEvidenceRecords = [darkSidecars, lightSidecars]
-      .map((sidecar) => sidecar.runtimeEvidence)
-      .filter((entry) => entry?.settingId && entry?.diff)
-      .map((entry) => ({
-        settingId: entry.settingId,
-        mode: entry.mode,
-        changedBodyClasses: entry.diff.changedBodyClasses || {
-          added: [],
-          removed: [],
-        },
-        changedCssVariables: Array.isArray(entry.diff.changedCssVariables)
-          ? entry.diff.changedCssVariables
-          : [],
-        changedComputedStyles: Array.isArray(entry.diff.changedComputedStyles)
-          ? entry.diff.changedComputedStyles
-          : [],
-      }));
+    const runtimeEvidenceRecords = [darkSidecars, lightSidecars].flatMap(
+      (sidecar) => normalizeRuntimeEvidenceRecords(sidecar.runtimeEvidence),
+    );
 
     const selectorImpacts = buildSelectorImpactGraph({
       effectRecords: styleSettingsEffects,

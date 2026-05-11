@@ -1247,16 +1247,28 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
 
         const evidenceOutputDir = join(RESULTS_DIR, themeSlug);
         mkdirSync(evidenceOutputDir, { recursive: true });
+        const observedAt = new Date().toISOString();
         writeFileSync(
           join(evidenceOutputDir, `${mode}-style-settings-runtime-evidence.json`),
           JSON.stringify(
             {
-              observedAt: new Date().toISOString(),
+              formatVersion: 1,
+              observedAt,
               settingId: observationPayload.settingId,
               mode,
               selectors: selectorsForSetting,
               diff: runtimeDiff,
               selectorImpacts: evidenceGraph,
+              records: [
+                {
+                  observedAt,
+                  settingId: observationPayload.settingId,
+                  mode,
+                  selectors: selectorsForSetting,
+                  observedImpactCount,
+                  diff: runtimeDiff,
+                },
+              ],
               note: "Runtime evidence confirms observed single-setting diffs only; static impacts remain inferred source-of-truth.",
             },
             null,
