@@ -6,11 +6,14 @@ import { generate, parse, walk } from "css-tree";
  * Scope limits (intentional):
  * - No full CSS cascade simulation or DOM state modeling.
  * - Static selector rules and explicit var(...) consumers are tracked.
+ * - Bounded static var(...) bridge traversal links transitive consumers.
  * - Structured CSS parsing is used for selector/consumer discovery.
  * - Nested at-rule containers are tracked for explainability (for example @media/@supports).
  * - Keyframe steps are intentionally ignored as selector targets.
  * - Impacts are explainable via canonical effect primitives + static CSS reads.
  */
+
+const MAX_TRANSITIVE_VAR_HOPS = 4;
 
 function normalizeSelector(selector) {
   return selector.replace(/\s+/g, " ").trim();
@@ -48,12 +51,40 @@ function collectRuleVariables(block) {
   return variables;
 }
 
+function collectCssVarReferences(node) {
+  const references = new Set();
+  if (!node) return references;
+  walk(node, {
+    visit: "Function",
+    enter(fn) {
+      if (fn.name !== "var" || !fn.children) return;
+      const firstArg = fn.children.first;
+      if (!firstArg || firstArg.type !== "Identifier") return;
+      if (firstArg.name.startsWith("--")) references.add(firstArg.name);
+    },
+  });
+  return references;
+}
+
+function collectVariableDefinitions(block) {
+  const definitions = [];
+  if (!block?.children) return definitions;
+  for (const node of block.children) {
+    if (node.type !== "Declaration" || !node.property?.startsWith("--")) continue;
+    definitions.push({
+      variable: node.property,
+      references: [...collectCssVarReferences(node.value)],
+    });
+  }
+  return definitions;
+}
+
 function parseCssRules(css, mode) {
   const rules = [];
   if (!css) return rules;
   let ast;
   try {
-    ast = parse(css);
+    ast = parse(css, { parseCustomProperty: true });
   } catch {
     return rules;
   }
@@ -67,6 +98,7 @@ function parseCssRules(css, mode) {
       rules.push({
         selectors,
         variables: collectRuleVariables(node.block),
+        variableDefinitions: collectVariableDefinitions(node.block),
         mode,
         atRuleContext: context,
       });
@@ -107,6 +139,21 @@ function collectVariableConsumers(css, mode, targetMap) {
   }
 }
 
+function collectVariableDependencies(css, mode, dependencyMap) {
+  for (const rule of parseCssRules(css, mode)) {
+    for (const definition of rule.variableDefinitions) {
+      for (const reference of definition.references) {
+        if (!dependencyMap.has(reference)) dependencyMap.set(reference, []);
+        dependencyMap.get(reference).push({
+          variable: definition.variable,
+          mode: rule.mode,
+          atRuleContext: rule.atRuleContext,
+        });
+      }
+    }
+  }
+}
+
 function shouldIncludeMode(effectMode, selectorMode) {
   return effectMode === "both" || effectMode === selectorMode;
 }
@@ -125,6 +172,9 @@ function addImpact(store, selector, impact) {
     impact.classValue || "",
     impact.interactionGroup,
     impact.pathKind,
+    impact.variableConsumerKind || "",
+    impact.variableChainLength ?? "",
+    (impact.variablePath || []).join("->"),
     (impact.atRuleContext || []).join(" > "),
     impact.targetKind,
     impact.operation,
@@ -213,6 +263,55 @@ function buildVariableConsumerIndex(modeCss, classSettings) {
   return byVariable;
 }
 
+function buildVariableDependencyIndex(modeCss, classSettings) {
+  const byDependency = new Map();
+  collectVariableDependencies(modeCss?.dark, "dark", byDependency);
+  collectVariableDependencies(modeCss?.light, "light", byDependency);
+  for (const entry of Object.values(classSettings || {})) {
+    collectVariableDependencies(entry.general, "both", byDependency);
+    collectVariableDependencies(entry.dark, "dark", byDependency);
+    collectVariableDependencies(entry.light, "light", byDependency);
+  }
+  return byDependency;
+}
+
+function collectVariablePaths(directVariables, variableDependencyIndex) {
+  const paths = new Map();
+  const queue = [];
+  for (const variable of directVariables) {
+    paths.set(variable, {
+      path: [variable],
+      chainLength: 0,
+      consumerKind: "direct",
+    });
+    queue.push(variable);
+  }
+
+  while (queue.length > 0) {
+    const current = queue.shift();
+    const currentPath = paths.get(current);
+    if (currentPath.chainLength >= MAX_TRANSITIVE_VAR_HOPS) {
+      continue;
+    }
+    for (const dependency of variableDependencyIndex.get(current) || []) {
+      if (currentPath.path.includes(dependency.variable)) continue;
+      const nextChainLength = currentPath.chainLength + 1;
+      const existing = paths.get(dependency.variable);
+      if (existing && existing.chainLength <= nextChainLength) {
+        continue;
+      }
+      paths.set(dependency.variable, {
+        path: [...currentPath.path, dependency.variable],
+        chainLength: nextChainLength,
+        consumerKind: "transitive",
+      });
+      queue.push(dependency.variable);
+    }
+  }
+
+  return paths;
+}
+
 function impactPath(effectKind) {
   if (effectKind === "body-class-toggle" || effectKind === "body-class-select") {
     return { pathKind: "body-class", direct: true };
@@ -234,6 +333,7 @@ export function buildSelectorImpactGraph({
   const selectorImpacts = new Map();
   const classSelectors = buildClassSelectorIndex(classSettings);
   const variableConsumers = buildVariableConsumerIndex(modeCss, classSettings);
+  const variableDependencies = buildVariableDependencyIndex(modeCss, classSettings);
 
   for (const record of effectRecords || []) {
     for (const effect of record.effects || []) {
@@ -291,12 +391,20 @@ export function buildSelectorImpactGraph({
         }
       }
 
-      for (const variable of directVariables) {
+      const variablePaths = collectVariablePaths(
+        directVariables,
+        variableDependencies,
+      );
+
+      for (const [variable, traversal] of variablePaths) {
         for (const hit of variableConsumers.get(variable) || []) {
           if (!shouldIncludeMode(effect.mode, hit.mode)) continue;
           addImpact(selectorImpacts, hit.selector, {
             ...baseImpact,
             selectorVariable: variable,
+            variablePath: traversal.path,
+            variableChainLength: traversal.chainLength,
+            variableConsumerKind: traversal.consumerKind,
             sourceVariable: effect.sourceVariable,
             sourceVariables: effect.sourceVariables,
             derivedFrom: effect.derivedFrom,
