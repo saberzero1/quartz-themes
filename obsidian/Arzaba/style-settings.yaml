@@ -8,7 +8,7 @@ sections:
         title: 🖼️ Select a Design
         type: class-select
         allowEmpty: false
-        default: ''
+        default: arzaba-default
         options:
           - label: 🖌️ Default
             value: arzaba-default
