@@ -1,9 +1,12 @@
-- name: Vileplume settings
-  id: vileplume-settings
-  settings:
-    - id: h1-size
-      title: Title size
-      description: Font size of your level 1 headings (#), in ems
-      type: variable-number
-      default: 3
-      format: em
+mode: replace
+sections:
+  - name: Vileplume settings
+    id: vileplume-settings
+    collapsed: false
+    settings:
+      - id: h1-size
+        title: Title size
+        description: Font size of your level 1 headings (#), in ems
+        type: variable-number
+        default: 3
+        format: em

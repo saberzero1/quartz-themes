@@ -1,157 +1,142 @@
-- name: Theme Settings
-  id: Brainhack
-  description: Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3
-  settings:
-    - id: morespace
-      title: More Space
-      type: class-toggle
-    - id: smartlists
-      title: Smart Lists (WIP)
-      type: class-toggle
-    - id: Text and Spacing
-      title: Text and Spacing
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: custom-font-weight
-      title: Adjust Font Weight
-      description: null
-      type: variable-number-slider
-      default: 300
-      min: 100
-      max: 900
-      step: 100
-    - id: custom-letter-spacing
-      title: Adjust Letter Spacing
-      description: null
-      type: variable-number-slider
-      format: px
-      default: 0.1
-      min: '-.5'
-      max: 1.5
-      step: 0.1
-    - id: custom-line-height
-      title: Adjust Line Spacing
-      description: null
-      type: variable-number-slider
-      format: null
-      default: 1.5
-      min: 1.5
-      max: 2.5
-      step: 0.1
-    - id: Headings
-      title: Headings
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: Heading variants
-      title: Heading variants
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-        - label: default Headings
-          value: default
-        - label: Variant 1
-          value: hv1
-        - label: Variant 2
-          value: hv2
-    - id: Blockquotes
-      title: Blockquotes
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: Blockquote variants
-      title: Blockquote variants
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-        - label: default Blockquote
-          value: default
-        - label: Variant 1
-          value: bv1
-    - id: Callouts
-      title: Callouts
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: Callout variants
-      title: Callout variants
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-        - label: default Callout
-          value: default
-        - label: Variant 1
-          value: cv1
-    - id: Canvas
-      title: Canvas
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: Node Colors
-      title: Node Colors
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-        - label: default Nodes
-          value: default
-        - label: Colored Nodes
-          value: nc
-    - id: Colors
-      title: Colors
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: bgt_s
-      title: Adjust Background Saturation
-      type: variable-number-slider
-      default: 1
-      min: 0
-      max: 100
-      step: 1
-    - id: bgt_l
-      title: Adjust Background Brightness
-      type: variable-number-slider
-      default: 0
-      min: -10
-      max: 10
-      step: 1
-    - id: Experimental Settings
-      title: Experimental Settings
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: cbr
-      title: Custom Workspace Border Radius
-      type: variable-number-slider
-      default: 20
-      min: 0
-      max: 50
-      step: 1
-      format: px
-    - id: crm
-      title: Custom Workspace Element Radius
-      type: variable-number-slider
-      default: 1
-      min: 0
-      max: 2
-      step: 0.1
-      format: em
-    - id: status-bar-hover
-      title: Hide Status Bar
-      description: Only show the status bar when hovering over it
-      type: class-toggle
-    - id: greyscale-toggle
-      title: Enable Greyscale Images
-      type: class-toggle
-    - id: enhanced-folders
-      title: Enable Enhanced Folders
-      description: Opened folders get highlighted
-      type: class-toggle
-    - id: hide-scrollbars
-      title: Hide scrollbars
-      type: class-toggle
+mode: replace
+sections:
+  - name: Theme Settings
+    id: Brainhack
+    collapsed: false
+    settings:
+      - id: morespace
+        title: More Space
+        type: class-toggle
+      - id: smartlists
+        title: Smart Lists (WIP)
+        type: class-toggle
+      - id: Text and Spacing
+        title: Text and Spacing
+        type: heading
+        level: 2
+      - id: custom-font-weight
+        title: Adjust Font Weight
+        description: null
+        type: variable-number-slider
+        default: 300
+        min: 100
+        max: 900
+        step: 100
+      - id: custom-line-height
+        title: Adjust Line Spacing
+        description: null
+        type: variable-number-slider
+        default: 1.5
+        min: 1.5
+        max: 2.5
+        step: 0.1
+      - id: Headings
+        title: Headings
+        type: heading
+        level: 2
+      - id: Heading variants
+        title: Heading variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+          - label: default Headings
+            value: default
+          - label: Variant 1
+            value: hv1
+          - label: Variant 2
+            value: hv2
+      - id: Blockquotes
+        title: Blockquotes
+        type: heading
+        level: 2
+      - id: Blockquote variants
+        title: Blockquote variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+          - label: default Blockquote
+            value: default
+          - label: Variant 1
+            value: bv1
+      - id: Callouts
+        title: Callouts
+        type: heading
+        level: 2
+      - id: Callout variants
+        title: Callout variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+          - label: default Callout
+            value: default
+          - label: Variant 1
+            value: cv1
+      - id: Canvas
+        title: Canvas
+        type: heading
+        level: 2
+      - id: Node Colors
+        title: Node Colors
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+          - label: default Nodes
+            value: default
+          - label: Colored Nodes
+            value: nc
+      - id: Colors
+        title: Colors
+        type: heading
+        level: 2
+      - id: bgt_s
+        title: Adjust Background Saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 100
+        step: 1
+      - id: bgt_l
+        title: Adjust Background Brightness
+        type: variable-number-slider
+        default: 0
+        min: -10
+        max: 10
+        step: 1
+      - id: Experimental Settings
+        title: Experimental Settings
+        type: heading
+        level: 2
+      - id: cbr
+        title: Custom Workspace Border Radius
+        type: variable-number-slider
+        default: 20
+        min: 0
+        max: 50
+        step: 1
+        format: px
+      - id: crm
+        title: Custom Workspace Element Radius
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 2
+        step: 0.1
+        format: em
+      - id: status-bar-hover
+        title: Hide Status Bar
+        description: Only show the status bar when hovering over it
+        type: class-toggle
+      - id: greyscale-toggle
+        title: Enable Greyscale Images
+        type: class-toggle
+      - id: enhanced-folders
+        title: Enable Enhanced Folders
+        description: Opened folders get highlighted
+        type: class-toggle
+      - id: hide-scrollbars
+        title: Hide scrollbars
+        type: class-toggle

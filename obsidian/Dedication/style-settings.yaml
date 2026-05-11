@@ -1,229 +1,236 @@
-- name: Dedication Theme Settings
-  id: dedication-theme
-  settings:
-    - id: theme-presets
-      title: Theme Presets
-      type: heading
-      level: 1
-      collapsed: false
-    - id: theme-preset
-      title: Theme Preset
-      type: class-select
-      allowEmpty: false
-      default: custom
-      options:
-        - label: Custom
-          value: custom
-        - label: Dark Modern
-          value: theme-preset-dark-modern
-        - label: Dracula
-          value: theme-preset-dracula
-        - label: Nord
-          value: theme-preset-nord
-        - label: Gruvbox
-          value: theme-preset-gruvbox
-        - label: Monokai
-          value: theme-preset-monokai
-    - id: colors
-      title: Colors
-      type: heading
-      level: 1
-      collapsed: true
-    - id: dark-colors
-      title: Dark Theme Colors
-      type: heading
-      level: 2
-      collapsed: true
-    - id: dark-bg-primary
-      title: Primary Background
-      type: variable-color
-      default: '#060335'
-      format: hex
-    - id: dark-bg-secondary
-      title: Secondary Background
-      type: variable-color
-      default: '#191919'
-      format: hex
-    - id: dark-bg-primary-alt
-      title: Primary Alt Background
-      type: variable-color
-      default: '#242424'
-      format: hex
-    - id: dark-bg-secondary-alt
-      title: Secondary Alt Background
-      type: variable-color
-      default: '#3D3D3D'
-      format: hex
-    - id: dark-text-normal
-      title: Text Color
-      type: variable-color
-      default: '#faf2d6'
-      format: hex
-    - id: dark-text-faint
-      title: Faint Text Color
-      type: variable-color
-      default: '#c0b0a0'
-      format: hex
-    - id: light-colors
-      title: Light Theme Colors
-      type: heading
-      level: 2
-      collapsed: true
-    - id: light-bg-primary
-      title: Primary Background
-      type: variable-color
-      default: '#EDEDED'
-      format: hex
-    - id: light-bg-secondary
-      title: Secondary Background
-      type: variable-color
-      default: '#C4C4C4'
-      format: hex
-    - id: light-bg-primary-alt
-      title: Primary Alt Background
-      type: variable-color
-      default: '#d4d4d4'
-      format: hex
-    - id: light-bg-secondary-alt
-      title: Secondary Alt Background
-      type: variable-color
-      default: '#707070'
-      format: hex
-    - id: light-text-normal
-      title: Text Color
-      type: variable-color
-      default: '#1A2023'
-      format: hex
-    - id: light-text-faint
-      title: Faint Text Color
-      type: variable-color
-      default: '#999999'
-      format: hex
-    - id: accent-colors
-      title: Accent Colors
-      type: heading
-      level: 2
-      collapsed: true
-    - id: color-accent
-      title: Accent Color
-      type: variable-color
-      default: '#0066cc'
-      format: hex
-    - id: color-accent-hover
-      title: Accent Hover Color
-      type: variable-color
-      default: '#004499'
-      format: hex
-    - id: color-border
-      title: Border Color
-      type: variable-color
-      default: '#00ffff'
-      format: hex
-    - id: adaptive-accent
-      title: Adaptive Accent
-      description: Dynamically adapt accent color for better contrast
-      type: class-toggle
-      default: false
-    - id: heading-colors
-      title: Heading Colors
-      type: heading
-      level: 1
-      collapsed: true
-    - id: h1-color
-      title: H1 Color
-      type: variable-color
-      default: '#cc00c4'
-      format: hex
-    - id: h2-color
-      title: H2 Color
-      type: variable-color
-      default: '#00b7eb'
-      format: hex
-    - id: h3-color
-      title: H3 Color
-      type: variable-color
-      default: '#ff8c00'
-      format: hex
-    - id: h4-color
-      title: H4 Color
-      type: variable-color
-      default: '#0000cc'
-      format: hex
-    - id: h5-color
-      title: H5 Color
-      type: variable-color
-      default: '#cc0000'
-      format: hex
-    - id: h6-color
-      title: H6 Color
-      type: variable-color
-      default: '#cccc00'
-      format: hex
-    - id: typography
-      title: Typography
-      type: heading
-      level: 1
-      collapsed: true
-    - id: font-family
-      title: Font Family
-      type: variable-select
-      default: system-ui
-      options:
-        - label: System UI
-          value: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
-        - label: Roboto
-          value: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-        - label: Inter
-          value: Inter, system-ui, sans-serif
-        - label: Georgia Serif
-          value: Georgia, 'Times New Roman', Times, serif
-        - label: Monospace
-          value: '''JetBrains Mono'', ''Fira Code'', ''Cascadia Code'', monospace'
-        - label: Custom
-          value: var(--custom-font-family)
-    - id: custom-font-family
-      title: Custom Font Family
-      type: variable-text
-      default: Arial, sans-serif
-    - id: base-font-size
-      title: Base Font Size
-      type: variable-number
-      default: 16
-      format: px
-    - id: line-height
-      title: Line Height
-      type: variable-number
-      default: 1.6
-    - id: layout
-      title: Layout
-      type: heading
-      level: 1
-      collapsed: true
-    - id: sidebar-width
-      title: Sidebar Width
-      type: variable-number
-      default: 300
-      format: px
-    - id: content-max-width
-      title: Content Max Width
-      type: variable-text
-      default: 100%
-    - id: file-explorer
-      title: File Explorer
-      type: heading
-      level: 1
-      collapsed: true
-    - id: rainbow-folders
-      title: Rainbow Folders
-      type: class-toggle
-      default: true
-    - id: folder-indentation
-      title: Folder Indentation
-      type: variable-number
-      default: 12
-      format: px
-    - id: nav-item-padding
-      title: Item Vertical Padding
-      type: variable-number
-      default: 4
-      format: px
+mode: replace
+sections:
+  - name: Dedication Theme Settings
+    id: dedication-theme
+    collapsed: false
+    settings:
+      - id: theme-presets
+        title: Theme Presets
+        type: heading
+        level: 1
+        collapsed: false
+      - id: theme-preset
+        title: Theme Preset
+        type: class-select
+        allowEmpty: false
+        default: custom
+        options:
+          - label: Custom
+            value: custom
+          - label: Dark Modern
+            value: theme-preset-dark-modern
+          - label: Dracula
+            value: theme-preset-dracula
+          - label: Nord
+            value: theme-preset-nord
+          - label: Gruvbox
+            value: theme-preset-gruvbox
+          - label: Monokai
+            value: theme-preset-monokai
+      - id: colors
+        title: Colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: dark-colors
+        title: Dark Theme Colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: dark-bg-primary
+        title: Primary Background
+        type: variable-color
+        default: '#060335'
+        format: hex
+        alt-format: []
+      - id: dark-bg-secondary
+        title: Secondary Background
+        type: variable-color
+        default: '#191919'
+        format: hex
+        alt-format: []
+      - id: dark-bg-primary-alt
+        title: Primary Alt Background
+        type: variable-color
+        default: '#242424'
+        format: hex
+        alt-format: []
+      - id: dark-bg-secondary-alt
+        title: Secondary Alt Background
+        type: variable-color
+        default: '#3D3D3D'
+        format: hex
+        alt-format: []
+      - id: dark-text-normal
+        title: Text Color
+        type: variable-color
+        default: '#faf2d6'
+        format: hex
+        alt-format: []
+      - id: dark-text-faint
+        title: Faint Text Color
+        type: variable-color
+        default: '#c0b0a0'
+        format: hex
+        alt-format: []
+      - id: light-colors
+        title: Light Theme Colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: light-bg-primary
+        title: Primary Background
+        type: variable-color
+        default: '#EDEDED'
+        format: hex
+        alt-format: []
+      - id: light-bg-secondary
+        title: Secondary Background
+        type: variable-color
+        default: '#C4C4C4'
+        format: hex
+        alt-format: []
+      - id: light-bg-primary-alt
+        title: Primary Alt Background
+        type: variable-color
+        default: '#d4d4d4'
+        format: hex
+        alt-format: []
+      - id: light-bg-secondary-alt
+        title: Secondary Alt Background
+        type: variable-color
+        default: '#707070'
+        format: hex
+        alt-format: []
+      - id: light-text-normal
+        title: Text Color
+        type: variable-color
+        default: '#1A2023'
+        format: hex
+        alt-format: []
+      - id: light-text-faint
+        title: Faint Text Color
+        type: variable-color
+        default: '#999999'
+        format: hex
+        alt-format: []
+      - id: accent-colors
+        title: Accent Colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: color-accent
+        title: Accent Color
+        type: variable-color
+        default: '#0066cc'
+        format: hex
+        alt-format: []
+      - id: color-accent-hover
+        title: Accent Hover Color
+        type: variable-color
+        default: '#004499'
+        format: hex
+        alt-format: []
+      - id: color-border
+        title: Border Color
+        type: variable-color
+        default: '#00ffff'
+        format: hex
+        alt-format: []
+      - id: adaptive-accent
+        title: Adaptive Accent
+        description: Dynamically adapt accent color for better contrast
+        type: class-toggle
+        default: false
+      - id: heading-colors
+        title: Heading Colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: h1-color
+        title: H1 Color
+        type: variable-color
+        default: '#cc00c4'
+        format: hex
+        alt-format: []
+      - id: h2-color
+        title: H2 Color
+        type: variable-color
+        default: '#00b7eb'
+        format: hex
+        alt-format: []
+      - id: h3-color
+        title: H3 Color
+        type: variable-color
+        default: '#ff8c00'
+        format: hex
+        alt-format: []
+      - id: h4-color
+        title: H4 Color
+        type: variable-color
+        default: '#0000cc'
+        format: hex
+        alt-format: []
+      - id: h5-color
+        title: H5 Color
+        type: variable-color
+        default: '#cc0000'
+        format: hex
+        alt-format: []
+      - id: h6-color
+        title: H6 Color
+        type: variable-color
+        default: '#cccc00'
+        format: hex
+        alt-format: []
+      - id: typography
+        title: Typography
+        type: heading
+        level: 1
+        collapsed: true
+      - id: custom-font-family
+        title: Custom Font Family
+        type: variable-text
+        default: Arial, sans-serif
+      - id: base-font-size
+        title: Base Font Size
+        type: variable-number
+        default: 16
+        format: px
+      - id: line-height
+        title: Line Height
+        type: variable-number
+        default: 1.6
+      - id: layout
+        title: Layout
+        type: heading
+        level: 1
+        collapsed: true
+      - id: sidebar-width
+        title: Sidebar Width
+        type: variable-number
+        default: 300
+        format: px
+      - id: content-max-width
+        title: Content Max Width
+        type: variable-text
+        default: 100%
+      - id: file-explorer
+        title: File Explorer
+        type: heading
+        level: 1
+        collapsed: true
+      - id: rainbow-folders
+        title: Rainbow Folders
+        type: class-toggle
+        default: true
+      - id: folder-indentation
+        title: Folder Indentation
+        type: variable-number
+        default: 12
+        format: px
+      - id: nav-item-padding
+        title: Item Vertical Padding
+        type: variable-number
+        default: 4
+        format: px

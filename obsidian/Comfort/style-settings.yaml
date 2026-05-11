@@ -1,47 +1,55 @@
-- name: 🍵 Comfort Light Theme
-  id: comfort-light-theme
-  settings:
-    - id: background-primary
-      title: Background-primary Color
-      title.zh: 一级背景色
-      type: variable-themed-color
-      format: hex
-      opacity: false
-      default-light: '#fcfef3'
-      default-dark: '#000000'
-    - id: background-secondary
-      title: Background-secondary Color
-      title.zh: 二级背景色
-      type: variable-themed-color
-      format: hex
-      opacity: false
-      default-light: '#f8f6ea'
-      default-dark: '#000000'
-    - id: background-secondary-alt
-      title: background-secondary-alt Color
-      title.zh: 顶部导航色
-      type: variable-themed-color
-      format: hex
-      opacity: false
-      default-light: '#a3d5aa'
-      default-dark: '#000000'
-    - id: tab-container-background
-      title: tab-container-background Color
-      title.zh: 导航色
-      type: variable-themed-color
-      format: hex
-      opacity: false
-      default-light: '#a3d5aa'
-      default-dark: '#000000'
-    - id: ribbon-background
-      title: ribbon-background Color
-      title.zh: 最左边状态栏
-      type: variable-color
-      format: hex
-      opacity: false
-      default: '#a3d5aa'
-    - id: font-family
-      title: font-family
-      description: Font used for the user interface
-      type: variable-text
-      default: 宋体, SimSun, -apple-system, sans-serif
+mode: replace
+sections:
+  - name: 🍵 Comfort Light Theme
+    id: comfort-light-theme
+    collapsed: false
+    settings:
+      - id: background-primary
+        title: Background-primary Color
+        title.zh: 一级背景色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#fcfef3'
+        default-dark: '#000000'
+        alt-format: []
+      - id: background-secondary
+        title: Background-secondary Color
+        title.zh: 二级背景色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f8f6ea'
+        default-dark: '#000000'
+        alt-format: []
+      - id: background-secondary-alt
+        title: background-secondary-alt Color
+        title.zh: 顶部导航色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#a3d5aa'
+        default-dark: '#000000'
+        alt-format: []
+      - id: tab-container-background
+        title: tab-container-background Color
+        title.zh: 导航色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#a3d5aa'
+        default-dark: '#000000'
+        alt-format: []
+      - id: ribbon-background
+        title: ribbon-background Color
+        title.zh: 最左边状态栏
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#a3d5aa'
+        alt-format: []
+      - id: font-family
+        title: font-family
+        description: Font used for the user interface
+        type: variable-text
+        default: 宋体, SimSun, -apple-system, sans-serif

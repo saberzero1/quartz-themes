@@ -1,364 +1,368 @@
-- name: TerraFlow
-  id: seasonal-themes
-  settings:
-    - id: seasonal-heading
-      title: 🍂 Seasonal Color Schemes
-      type: heading
-      level: 2
-      collapsed: false
-    - id: season-selector
-      title: Active Season
-      description: Choose your seasonal color palette
-      type: class-select
-      allowEmpty: false
-      default: autumn-theme
-      options:
-        - label: 🌱 Spring
-          value: spring-theme
-        - label: ☀️ Summer
-          value: summer-theme
-        - label: 🍂 Autumn
-          value: autumn-theme
-        - label: ❄️ Winter
-          value: winter-theme
-        - label: 🧊 Iceberg
-          value: iceberg-theme
-        - label: 📚 Academia (Dark ONLY)
-          value: academia-theme
-        - label: 🌙 Twilight
-          value: twilight-theme
-        - label: 📄 Paper
-          value: paper-theme
-        - label: 🍃 Calm Focus
-          value: calm-focus-theme
-    - id: focus-mode-heading
-      title: 🔬 Deep Focus Mode
-      description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
-      type: heading
-      level: 2
-      collapsed: true
-    - id: focus-mode
-      title: Enable Deep Focus Mode
-      description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
-      type: class-toggle
-      default: false
-    - id: focus-mode-dim-paragraphs
-      title: Typewriter Dimming
-      description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
-      type: class-toggle
-      default: false
-    - id: focus-mode-hide-sidebars
-      title: Hide Sidebar Panels
-      description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
-      type: class-toggle
-      default: false
-    - id: focus-mode-keep-chrome
-      title: Keep Ribbon & Status Bar
-      description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
-      type: class-toggle
-      default: false
-    - id: visual-appearance-heading
-      title: 🎨 Visual & Appearance
-      type: heading
-      level: 2
-      collapsed: true
-    - id: interface-heading
-      title: Interface
-      type: heading
-      level: 3
-      collapsed: true
-    - id: layout-style
-      title: Interface Layout
-      description: Choose the overall layout structure of the application
-      type: class-select
-      allowEmpty: false
-      default: layout-default
-      options:
-        - label: Default
-          value: layout-default
-        - label: Card
-          value: layout-card
-    - id: depth-shadows
-      title: Depth & Shadows
-      description: Add realistic multi-layer shadows for visual depth and hierarchy
-      type: class-toggle
-      default: true
-    - id: depth-warm
-      title: Tinted Ambient Shadows
-      description: Tint shadows with the accent colour for a warm, Apple-style ambient elevation (requires Depth & Shadows)
-      type: class-toggle
-      default: false
-    - id: terraflow-quiet
-      title: Quiet Mode (Rams Reduction)
-      description: Soften hover lifts, mute accent backgrounds, remove link glow — a calmer, less expressive interface
-      type: class-toggle
-      default: false
-    - id: use-custom-accent
-      title: Custom Accent Colour
-      description: Enable to override the seasonal accent with the colour below
-      type: class-toggle
-      default: false
-    - id: custom-accent
-      title: Accent Colour (when override is on)
-      description: The accent colour used when Custom Accent Override is enabled
-      type: variable-color
-      default: '#5E7D6E'
-      opacity: false
-      format: hex
-    - id: enable-monochrome
-      title: Monochrome Mode
-      description: Desaturate the interface to grayscale
-      type: class-toggle
-      default: false
-    - id: animations-heading
-      title: Animations
-      type: heading
-      level: 3
-      collapsed: true
-    - id: animation-style
-      title: Animation Style
-      description: Choose the animation personality for the interface
-      type: class-select
-      allowEmpty: false
-      default: animation-style-default
-      options:
-        - label: Default (Subtle Pop)
-          value: animation-style-default
-        - label: Whimsy (Bouncy)
-          value: animation-style-whimsy
-    - id: content-styles-heading
-      title: Content Styles
-      type: heading
-      level: 3
-      collapsed: true
-    - id: heading-style-selector
-      title: Heading Style
-      description: Choose a visual style for your headings
-      type: class-select
-      allowEmpty: false
-      default: heading-style-default
-      options:
-        - label: Default (Background)
-          value: heading-style-default
-        - label: Underline
-          value: heading-style-underline
-        - label: Border Accent
-          value: heading-style-border
-        - label: Minimal
-          value: heading-style-minimal
-        - label: Gradient
-          value: heading-style-gradient
-        - label: Glass (Frosted)
-          value: heading-style-glass
-        - label: Badge (Pill)
-          value: heading-style-badge
-        - label: Outline
-          value: heading-style-outline
-        - label: 3D Embossed
-          value: heading-style-3d
-        - label: Vibrant Glow
-          value: heading-style-vibrant
-    - id: heading-alignment
-      title: Heading Alignment
-      description: Choose the alignment for headings
-      type: class-select
-      allowEmpty: false
-      default: heading-align-left
-      options:
-        - label: Left
-          value: heading-align-left
-        - label: Center
-          value: heading-align-center
-    - id: heading-font
-      title: Heading Font
-      description: Enter the name of a font installed on your system to use for headings (leave as 'inherit' to use the default theme font)
-      type: variable-text
-      default: inherit
-    - id: link-style-selector
-      title: Link Style
-      description: Choose a visual style for links in your notes
-      type: class-select
-      allowEmpty: false
-      default: link-style-default
-      options:
-        - label: Default (Subtle Pill)
-          value: link-style-default
-        - label: Plain (No Background)
-          value: link-style-plain
-        - label: Underline Accent
-          value: link-style-underline
-        - label: Neon Glow
-          value: link-style-glow
-        - label: Retro Wavy
-          value: link-style-wavy
-    - id: highlight-style-selector
-      title: Highlight Style
-      description: Choose a visual style for text highlights
-      type: class-select
-      allowEmpty: false
-      default: highlight-style-default
-      options:
-        - label: Default
-          value: highlight-style-default
-        - label: Glass
-          value: highlight-style-glass
-    - id: blockquote-style-selector
-      title: Blockquote Style
-      description: Choose a visual style for blockquotes in your notes
-      type: class-select
-      allowEmpty: false
-      default: blockquote-style-default
-      options:
-        - label: Default
-          value: blockquote-style-default
-        - label: Modern Glass
-          value: blockquote-style-glass
-        - label: Bold Dramatic
-          value: blockquote-style-bold
-    - id: callout-style-selector
-      title: Callout Style
-      description: Choose a visual style for your callouts
-      type: class-select
-      allowEmpty: false
-      default: callout-style-default
-      options:
-        - label: Default (Gradient)
-          value: callout-style-default
-        - label: Vintage Paper
-          value: callout-style-vintage
-        - label: Modern Glass
-          value: callout-style-glass
-        - label: Vibrant Glow
-          value: callout-style-vibrant
-        - label: Bold Border
-          value: callout-style-bold
-    - id: inline-code-accent
-      title: Accent Inline Code
-      description: Highlight inline code with gradient backgrounds and accent colors
-      type: class-toggle
-      default: false
-    - id: heading-tight-tracking
-      title: Tight Heading Tracking
-      description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
-      type: class-toggle
-      default: false
-    - id: tabular-numerics
-      title: Tabular Numerics
-      description: Use tabular (fixed-width) numerals in metadata, tables, and status bar for precise alignment
-      type: class-toggle
-      default: false
-    - id: caret-accent
-      title: Accent Caret & Selection
-      description: Colour the cursor caret and text-selection with the accent colour (visionOS-style)
-      type: class-toggle
-      default: false
-    - id: text-appearance-heading
-      title: ✍️ Heading Uppercase
-      description: Customize the typography case for individual heading levels
-      type: heading
-      level: 3
-      collapsed: true
-    - id: h1-uppercase
-      title: H1 Uppercase
-      type: class-toggle
-      default: false
-    - id: h2-uppercase
-      title: H2 Uppercase
-      type: class-toggle
-      default: false
-    - id: h3-uppercase
-      title: H3 Uppercase
-      type: class-toggle
-      default: false
-    - id: h4-uppercase
-      title: H4 Uppercase
-      type: class-toggle
-      default: false
-    - id: h5-uppercase
-      title: H5 Uppercase
-      type: class-toggle
-      default: false
-    - id: h6-uppercase
-      title: H6 Uppercase
-      type: class-toggle
-      default: false
-    - id: ui-elements-heading
-      title: 🖼️ UI Elements
-      type: heading
-      level: 2
-      collapsed: true
-    - id: enable-fancy-bullets
-      title: Fancy Multilevel Bullet Styles
-      description: Toggle unique custom bullet shapes
-      type: class-toggle
-      default: false
-    - id: tag-chips
-      title: Braun Tag Chips
-      description: Restyle inline tags as minimal uppercase chips — no background, hairline border, tight tracking
-      type: class-toggle
-      default: false
-    - id: enable-floating-nav
-      title: Floating Nav Buttons
-      description: Transform sidebar navigation buttons into a floating pill that expands on hover.
-      type: class-toggle
-      default: false
-    - id: show-header-on-hover
-      title: Show View Header on Hover
-      description: Only show the entire view header (title and buttons) when hovering over the top area.
-      type: class-toggle
-      default: false
-    - id: layout-heading
-      title: 📐 Layout & Spacing
-      type: heading
-      level: 2
-      collapsed: true
-    - id: line-width
-      title: Line Width
-      description: Maximum width for editor and reading view content
-      type: variable-text
-      default: 64ch
-    - id: editor-line-height
-      title: Editor Line Height
-      description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
-      type: variable-text
-      default: '1.6'
-    - id: focus-grid
-      title: Focus Dot Grid
-      description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
-      type: class-toggle
-      default: false
-    - id: performance-heading
-      title: ⚡ Performance & Accessibility
-      type: heading
-      level: 2
-      collapsed: true
-    - id: disable-ui-animations
-      title: Disable UI Animations
-      description: Turn off subtle pop-up animations for menus and modals (Enabled by default)
-      type: class-toggle
-      default: false
-    - id: disable-modal-frost
-      title: Disable Modal Frost
-      description: Turn off frosted glass effect for modal backgrounds (Enabled by default)
-      type: class-toggle
-      default: false
-    - id: disable-glass-menus
-      title: Disable Glass Menus
-      description: Turn off glass effects for menus, popovers, and suggestions.
-      type: class-toggle
-      default: false
-    - id: disable-shadows
-      title: Disable Box Shadows
-      description: Remove all box-shadows and elevation styling for maximum speed and flat look.
-      type: class-toggle
-      default: false
-    - id: disable-scrollbars
-      title: Disable Scrollbar Styling
-      description: Disable the custom scrollbars
-      type: class-toggle
-      default: false
-    - id: disable-status-bar
-      title: Disable Status Bar Styling
-      description: Disable the status bar style
-      type: class-toggle
-      default: false
+mode: replace
+sections:
+  - name: TerraFlow
+    id: seasonal-themes
+    collapsed: false
+    settings:
+      - id: seasonal-heading
+        title: 🍂 Seasonal Color Schemes
+        type: heading
+        level: 2
+        collapsed: false
+      - id: season-selector
+        title: Active Season
+        description: Choose your seasonal color palette
+        type: class-select
+        allowEmpty: false
+        default: autumn-theme
+        options:
+          - label: 🌱 Spring
+            value: spring-theme
+          - label: ☀️ Summer
+            value: summer-theme
+          - label: 🍂 Autumn
+            value: autumn-theme
+          - label: ❄️ Winter
+            value: winter-theme
+          - label: 🧊 Iceberg
+            value: iceberg-theme
+          - label: 📚 Academia (Dark ONLY)
+            value: academia-theme
+          - label: 🌙 Twilight
+            value: twilight-theme
+          - label: 📄 Paper
+            value: paper-theme
+          - label: 🍃 Calm Focus
+            value: calm-focus-theme
+      - id: focus-mode-heading
+        title: 🔬 Deep Focus Mode
+        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: focus-mode
+        title: Enable Deep Focus Mode
+        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
+        type: class-toggle
+        default: false
+      - id: focus-mode-dim-paragraphs
+        title: Typewriter Dimming
+        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
+        type: class-toggle
+        default: false
+      - id: focus-mode-hide-sidebars
+        title: Hide Sidebar Panels
+        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
+        type: class-toggle
+        default: false
+      - id: focus-mode-keep-chrome
+        title: Keep Ribbon & Status Bar
+        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
+        type: class-toggle
+        default: false
+      - id: visual-appearance-heading
+        title: 🎨 Visual & Appearance
+        type: heading
+        level: 2
+        collapsed: true
+      - id: interface-heading
+        title: Interface
+        type: heading
+        level: 3
+        collapsed: true
+      - id: layout-style
+        title: Interface Layout
+        description: Choose the overall layout structure of the application
+        type: class-select
+        allowEmpty: false
+        default: layout-default
+        options:
+          - label: Default
+            value: layout-default
+          - label: Card
+            value: layout-card
+      - id: depth-shadows
+        title: Depth & Shadows
+        description: Add realistic multi-layer shadows for visual depth and hierarchy
+        type: class-toggle
+        default: true
+      - id: depth-warm
+        title: Tinted Ambient Shadows
+        description: Tint shadows with the accent colour for a warm, Apple-style ambient elevation (requires Depth & Shadows)
+        type: class-toggle
+        default: false
+      - id: terraflow-quiet
+        title: Quiet Mode (Rams Reduction)
+        description: Soften hover lifts, mute accent backgrounds, remove link glow — a calmer, less expressive interface
+        type: class-toggle
+        default: false
+      - id: use-custom-accent
+        title: Custom Accent Colour
+        description: Enable to override the seasonal accent with the colour below
+        type: class-toggle
+        default: false
+      - id: custom-accent
+        title: Accent Colour (when override is on)
+        description: The accent colour used when Custom Accent Override is enabled
+        type: variable-color
+        default: '#5E7D6E'
+        opacity: false
+        format: hex
+        alt-format: []
+      - id: enable-monochrome
+        title: Monochrome Mode
+        description: Desaturate the interface to grayscale
+        type: class-toggle
+        default: false
+      - id: animations-heading
+        title: Animations
+        type: heading
+        level: 3
+        collapsed: true
+      - id: animation-style
+        title: Animation Style
+        description: Choose the animation personality for the interface
+        type: class-select
+        allowEmpty: false
+        default: animation-style-default
+        options:
+          - label: Default (Subtle Pop)
+            value: animation-style-default
+          - label: Whimsy (Bouncy)
+            value: animation-style-whimsy
+      - id: content-styles-heading
+        title: Content Styles
+        type: heading
+        level: 3
+        collapsed: true
+      - id: heading-style-selector
+        title: Heading Style
+        description: Choose a visual style for your headings
+        type: class-select
+        allowEmpty: false
+        default: heading-style-default
+        options:
+          - label: Default (Background)
+            value: heading-style-default
+          - label: Underline
+            value: heading-style-underline
+          - label: Border Accent
+            value: heading-style-border
+          - label: Minimal
+            value: heading-style-minimal
+          - label: Gradient
+            value: heading-style-gradient
+          - label: Glass (Frosted)
+            value: heading-style-glass
+          - label: Badge (Pill)
+            value: heading-style-badge
+          - label: Outline
+            value: heading-style-outline
+          - label: 3D Embossed
+            value: heading-style-3d
+          - label: Vibrant Glow
+            value: heading-style-vibrant
+      - id: heading-alignment
+        title: Heading Alignment
+        description: Choose the alignment for headings
+        type: class-select
+        allowEmpty: false
+        default: heading-align-left
+        options:
+          - label: Left
+            value: heading-align-left
+          - label: Center
+            value: heading-align-center
+      - id: heading-font
+        title: Heading Font
+        description: Enter the name of a font installed on your system to use for headings (leave as 'inherit' to use the default theme font)
+        type: variable-text
+        default: inherit
+      - id: link-style-selector
+        title: Link Style
+        description: Choose a visual style for links in your notes
+        type: class-select
+        allowEmpty: false
+        default: link-style-default
+        options:
+          - label: Default (Subtle Pill)
+            value: link-style-default
+          - label: Plain (No Background)
+            value: link-style-plain
+          - label: Underline Accent
+            value: link-style-underline
+          - label: Neon Glow
+            value: link-style-glow
+          - label: Retro Wavy
+            value: link-style-wavy
+      - id: highlight-style-selector
+        title: Highlight Style
+        description: Choose a visual style for text highlights
+        type: class-select
+        allowEmpty: false
+        default: highlight-style-default
+        options:
+          - label: Default
+            value: highlight-style-default
+          - label: Glass
+            value: highlight-style-glass
+      - id: blockquote-style-selector
+        title: Blockquote Style
+        description: Choose a visual style for blockquotes in your notes
+        type: class-select
+        allowEmpty: false
+        default: blockquote-style-default
+        options:
+          - label: Default
+            value: blockquote-style-default
+          - label: Modern Glass
+            value: blockquote-style-glass
+          - label: Bold Dramatic
+            value: blockquote-style-bold
+      - id: callout-style-selector
+        title: Callout Style
+        description: Choose a visual style for your callouts
+        type: class-select
+        allowEmpty: false
+        default: callout-style-default
+        options:
+          - label: Default (Gradient)
+            value: callout-style-default
+          - label: Vintage Paper
+            value: callout-style-vintage
+          - label: Modern Glass
+            value: callout-style-glass
+          - label: Vibrant Glow
+            value: callout-style-vibrant
+          - label: Bold Border
+            value: callout-style-bold
+      - id: inline-code-accent
+        title: Accent Inline Code
+        description: Highlight inline code with gradient backgrounds and accent colors
+        type: class-toggle
+        default: false
+      - id: heading-tight-tracking
+        title: Tight Heading Tracking
+        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
+        type: class-toggle
+        default: false
+      - id: tabular-numerics
+        title: Tabular Numerics
+        description: Use tabular (fixed-width) numerals in metadata, tables, and status bar for precise alignment
+        type: class-toggle
+        default: false
+      - id: caret-accent
+        title: Accent Caret & Selection
+        description: Colour the cursor caret and text-selection with the accent colour (visionOS-style)
+        type: class-toggle
+        default: false
+      - id: text-appearance-heading
+        title: ✍️ Heading Uppercase
+        description: Customize the typography case for individual heading levels
+        type: heading
+        level: 3
+        collapsed: true
+      - id: h1-uppercase
+        title: H1 Uppercase
+        type: class-toggle
+        default: false
+      - id: h2-uppercase
+        title: H2 Uppercase
+        type: class-toggle
+        default: false
+      - id: h3-uppercase
+        title: H3 Uppercase
+        type: class-toggle
+        default: false
+      - id: h4-uppercase
+        title: H4 Uppercase
+        type: class-toggle
+        default: false
+      - id: h5-uppercase
+        title: H5 Uppercase
+        type: class-toggle
+        default: false
+      - id: h6-uppercase
+        title: H6 Uppercase
+        type: class-toggle
+        default: false
+      - id: ui-elements-heading
+        title: 🖼️ UI Elements
+        type: heading
+        level: 2
+        collapsed: true
+      - id: enable-fancy-bullets
+        title: Fancy Multilevel Bullet Styles
+        description: Toggle unique custom bullet shapes
+        type: class-toggle
+        default: false
+      - id: tag-chips
+        title: Braun Tag Chips
+        description: Restyle inline tags as minimal uppercase chips — no background, hairline border, tight tracking
+        type: class-toggle
+        default: false
+      - id: enable-floating-nav
+        title: Floating Nav Buttons
+        description: Transform sidebar navigation buttons into a floating pill that expands on hover.
+        type: class-toggle
+        default: false
+      - id: show-header-on-hover
+        title: Show View Header on Hover
+        description: Only show the entire view header (title and buttons) when hovering over the top area.
+        type: class-toggle
+        default: false
+      - id: layout-heading
+        title: 📐 Layout & Spacing
+        type: heading
+        level: 2
+        collapsed: true
+      - id: line-width
+        title: Line Width
+        description: Maximum width for editor and reading view content
+        type: variable-text
+        default: 64ch
+      - id: editor-line-height
+        title: Editor Line Height
+        description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
+        type: variable-text
+        default: '1.6'
+      - id: focus-grid
+        title: Focus Dot Grid
+        description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
+        type: class-toggle
+        default: false
+      - id: performance-heading
+        title: ⚡ Performance & Accessibility
+        type: heading
+        level: 2
+        collapsed: true
+      - id: disable-ui-animations
+        title: Disable UI Animations
+        description: Turn off subtle pop-up animations for menus and modals (Enabled by default)
+        type: class-toggle
+        default: false
+      - id: disable-modal-frost
+        title: Disable Modal Frost
+        description: Turn off frosted glass effect for modal backgrounds (Enabled by default)
+        type: class-toggle
+        default: false
+      - id: disable-glass-menus
+        title: Disable Glass Menus
+        description: Turn off glass effects for menus, popovers, and suggestions.
+        type: class-toggle
+        default: false
+      - id: disable-shadows
+        title: Disable Box Shadows
+        description: Remove all box-shadows and elevation styling for maximum speed and flat look.
+        type: class-toggle
+        default: false
+      - id: disable-scrollbars
+        title: Disable Scrollbar Styling
+        description: Disable the custom scrollbars
+        type: class-toggle
+        default: false
+      - id: disable-status-bar
+        title: Disable Status Bar Styling
+        description: Disable the status bar style
+        type: class-toggle
+        default: false

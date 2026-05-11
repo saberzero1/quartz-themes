@@ -89,6 +89,18 @@ function flattenSettings(blocks) {
   );
 }
 
+function getThemeSettings(themeEntry) {
+  if (Array.isArray(themeEntry?.style_settings?.sections)) {
+    return themeEntry.style_settings.sections.flatMap((section) =>
+      Array.isArray(section?.settings) ? section.settings : [],
+    );
+  }
+  if (Array.isArray(themeEntry?.style_settings?.settings)) {
+    return themeEntry.style_settings.settings;
+  }
+  return [];
+}
+
 function getSettingTypeDistribution(settings) {
   const distribution = {};
   for (const setting of settings) {
@@ -215,9 +227,7 @@ function verifyYamlExtraction(themeSlug, themeEntry) {
   const blockIds = blocks.map((block) => block?.id).filter(Boolean);
   const blockCount = blocks.length;
 
-  const expectedHasSettings =
-    Array.isArray(themeEntry?.style_settings?.settings) &&
-    themeEntry.style_settings.settings.length > 0;
+  const expectedHasSettings = getThemeSettings(themeEntry).length > 0;
 
   let pass = true;
   if (expectedHasSettings && settingCount === 0) {
@@ -242,6 +252,10 @@ function verifyYamlExtraction(themeSlug, themeEntry) {
         if (Array.isArray(raw)) {
           // Array of blocks — flatten all settings
           storedSettings = raw.flatMap((b) =>
+            Array.isArray(b?.settings) ? b.settings : [],
+          );
+        } else if (Array.isArray(raw?.sections)) {
+          storedSettings = raw.sections.flatMap((b) =>
             Array.isArray(b?.settings) ? b.settings : [],
           );
         } else if (raw?.settings) {
@@ -362,9 +376,7 @@ function verifyThemesJson(themeSlug, extractedSettings, blockIds, themeEntry) {
 
 function verifyCompileDefaults(themeSlug, themeEntry) {
   const failures = [];
-  const settings = Array.isArray(themeEntry?.style_settings?.settings)
-    ? themeEntry.style_settings.settings
-    : [];
+  const settings = getThemeSettings(themeEntry);
 
   if (settings.length === 0) {
     return {
@@ -517,9 +529,7 @@ function verifyCompileDefaults(themeSlug, themeEntry) {
 function verifyClassSettings(themeSlug, themeEntry) {
   const failures = [];
   const classIds = [];
-  const settings = Array.isArray(themeEntry?.style_settings?.settings)
-    ? themeEntry.style_settings.settings
-    : [];
+  const settings = getThemeSettings(themeEntry);
 
   for (const setting of settings) {
     if (!setting || !setting.type) continue;
@@ -902,9 +912,7 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
     };
   }
 
-  const settings = Array.isArray(themeEntry?.style_settings?.settings)
-    ? themeEntry.style_settings.settings
-    : [];
+  const settings = getThemeSettings(themeEntry);
   if (settings.length === 0) {
     return {
       pass: true,

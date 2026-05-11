@@ -1578,7 +1578,9 @@ async function main() {
     // themes.json only stores the primary id; the CSS may have additional blocks.
     let styleSettingsId = undefined;
     let cssSettingsBlocks = null;
-    const primaryId = themeMeta.style_settings?.id;
+    const primaryId =
+      themeMeta.style_settings?.id ||
+      themeMeta.style_settings?.sections?.[0]?.id;
     if (primaryId) {
       const dirName = obsidianSlugToDir.get(themeId);
       const cssPath = dirName
@@ -1612,7 +1614,9 @@ async function main() {
     const allStyleSettings =
       cssSettingsBlocks && cssSettingsBlocks.length > 0
         ? cssSettingsBlocks.flatMap((b) => b?.settings ?? [])
-        : (themeMeta.style_settings?.settings ?? []);
+        : (themeMeta.style_settings?.sections ?? []).flatMap((section) =>
+            Array.isArray(section?.settings) ? section.settings : [],
+          );
     const classToggleVarPrefixes = allStyleSettings
       .filter(
         (s) =>

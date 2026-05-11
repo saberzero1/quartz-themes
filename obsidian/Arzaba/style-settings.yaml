@@ -1,29 +1,32 @@
-- name: Arzaba Theme
-  id: arzaba-theme-settings
-  settings:
-    - id: arzaba-sub-theme
-      title: 🖼️ Select a Design
-      type: class-select
-      allowEmpty: false
-      default: ''
-      options:
-        - label: 🖌️ Default
-          value: arzaba-default
-        - label: 💕 Ivy
-          value: arzaba-ivy
-        - label: 📄 Wiki
-          value: arzaba-wiki
-        - label: ⚪ Black And White
-          value: arzaba-black-and-white
-        - label: 🤖 Future
-          value: arzaba-future
-        - label: 📼 Retro
-          value: arzaba-retro
-        - label: 🏺 Past
-          value: arzaba-past
-    - id: arzaba-font-override
-      title: 📏 Use recommended Font Sizes
-      description: Forces recommended font sizes. Enabling this will override user font size !
-      type: class-toggle
-      default: false
-      value: arzaba-font-override
+mode: replace
+sections:
+  - name: Arzaba Theme
+    id: arzaba-theme-settings
+    collapsed: false
+    settings:
+      - id: arzaba-sub-theme
+        title: 🖼️ Select a Design
+        type: class-select
+        allowEmpty: false
+        default: arzaba-default
+        options:
+          - label: 🖌️ Default
+            value: arzaba-default
+          - label: 💕 Ivy
+            value: arzaba-ivy
+          - label: 📄 Wiki
+            value: arzaba-wiki
+          - label: ⚪ Black And White
+            value: arzaba-black-and-white
+          - label: 🤖 Future
+            value: arzaba-future
+          - label: 📼 Retro
+            value: arzaba-retro
+          - label: 🏺 Past
+            value: arzaba-past
+      - id: arzaba-font-override
+        title: 📏 Use recommended Font Sizes
+        description: Forces recommended font sizes. Enabling this will override user font size !
+        type: class-toggle
+        default: false
+        value: arzaba-font-override

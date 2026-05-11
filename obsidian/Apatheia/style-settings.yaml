@@ -1,399 +1,511 @@
-- name: Apatheia
-  id: ap-theme
-  settings:
-    - id: ap-radius-s
-      title: Border radius S
-      description: variable-number-slider
-      type: variable-number-slider
-      default: 4
-      min: 0
-      max: 20
-      step: px
-      format: px
-    - id: ap-radius-m
-      title: Border radius M
-      description: variable-number-slider
-      type: variable-number-slider
-      default: 8
-      min: 0
-      max: 20
-      step: px
-      format: px
-    - id: ap-radius-l
-      title: Border radius L
-      description: variable-number-slider
-      type: variable-number-slider
-      default: 10
-      min: 0
-      max: 20
-      step: px
-      format: px
-    - id: a-theme-settings
-      title: Theme settings
-      description: Change theme appearance here
-      type: heading
-      level: 1
-      collapsed: true
-    - id: theme-dark
-      title: Theme variant
-      description: Select theme variant
-      type: class-select
-      default: a-theme-apatheia
-      allowEmpty: false
-      options:
-        - label: 🗿 Apatheia
-          value: a-theme-apatheia
-        - label: 👾 Purple
-          value: a-theme-purple
-        - label: 🌿 Catpuccin Mocha
-          value: a-catpuccin-mocha
-        - label: ☕ Catpuccin Espresso
-          value: a-catpuccin-espresso
-        - label: ❄ Winter
-          value: a-winter
-    - id: a-theme-purple-settings
-      title: Test theme settings
-      description: Settings for the test theme
-      type: heading
-      level: 2
-      collapsed: true
-    - id: a-theme-purple-test
-      title: Toggle test
-      description: toggle to test
-      type: class-toggle
-    - id: a-effect-settings
-      title: Effects
-      description: Add effects
-      type: heading
-      level: 1
-      collapsed: true
-    - id: glassMorphism
-      title: Glassmorphism
-      description: Add glassmorphism to your theme
-      type: class-toggle
-    - id: smoothIndent
-      title: Smooth indent
-      description: Smooth Indent headers. Vim users may experience weird glitches
-      type: class-toggle
-    - id: Fade
-      title: Fade
-      description: Fade
-      type: class-toggle
-    - id: Hover
-      title: Hover effect
-      description: On hover transition on components
-      type: class-toggle
-    - id: a-font-settings
-      title: Fonts
-      description: Select fonts
-      type: heading
-      level: 1
-      collapsed: true
-    - id: inline-title-font
-      title: Title font
-      description: Change title font
-      type: variable-select
-      default: Open Sans
-      options:
-        - Alegreya
-        - Anybody
-        - Archivo
-        - Archivo Narrow
-        - Asap
-        - Assistant
-        - Azeret Mono
-        - Baloo 2
-        - Besley
-        - Bitter
-        - Bodoni Moda
-        - Cabin
-        - Cairo
-        - Cairo Play
-        - Catamaran
-        - Cinzel
-        - Comfortaa
-        - Crimson Pro
-        - Domine
-        - Dosis
-        - EB Garamond
-        - Encode Sans
-        - Epilogue
-        - Exo 2
-        - Figtree
-        - Finlandica
-        - Heebo
-        - Inconsolata
-        - Inter
-        - Josefin Sans
-        - Jost
-        - Jura
-        - Karla
-        - Lexend
-        - Lexend Deca
-        - Lexend Exa
-        - Libre Franklin
-        - Lora
-        - M PLUS 1
-        - Manrope
-        - Maven Pro
-        - Merriweather Sans
-        - Montserrat
-        - Mulish
-        - MuseoModerno
-        - Noto Sans Display
-        - Nunito
-        - Open Sans
-        - Oswald
-        - Outfit
-        - Overpass
-        - Podkova
-        - Public Sans
-        - Quicksand
-        - Raleway
-        - Readex Pro
-        - Recursive
-        - Red Hat Display
-        - Red Hat Text
-        - Red Rose
-        - Rosario
-        - Rubik
-        - STIX Two Text
-        - Saira
-        - Signika
-        - Signika Negative
-        - Space Grotesk
-        - Syne
-        - Vollkorn
-        - Work Sans
-        - Yanone Kaffeesatz
-    - id: font-interface
-      title: Interface font
-      description: Change interface font
-      type: variable-select
-      default: Open Sans
-      options:
-        - Alegreya
-        - Anybody
-        - Archivo
-        - Archivo Narrow
-        - Asap
-        - Assistant
-        - Azeret Mono
-        - Baloo 2
-        - Besley
-        - Bitter
-        - Bodoni Moda
-        - Cabin
-        - Cairo
-        - Cairo Play
-        - Catamaran
-        - Cinzel
-        - Comfortaa
-        - Crimson Pro
-        - Domine
-        - Dosis
-        - EB Garamond
-        - Encode Sans
-        - Epilogue
-        - Exo 2
-        - Figtree
-        - Finlandica
-        - Heebo
-        - Inconsolata
-        - Inter
-        - Josefin Sans
-        - Jost
-        - Jura
-        - Karla
-        - Lexend
-        - Lexend Deca
-        - Lexend Exa
-        - Libre Franklin
-        - Lora
-        - M PLUS 1
-        - Manrope
-        - Maven Pro
-        - Merriweather Sans
-        - Montserrat
-        - Mulish
-        - MuseoModerno
-        - Noto Sans Display
-        - Nunito
-        - Open Sans
-        - Oswald
-        - Outfit
-        - Overpass
-        - Podkova
-        - Public Sans
-        - Quicksand
-        - Raleway
-        - Readex Pro
-        - Recursive
-        - Red Hat Display
-        - Red Hat Text
-        - Red Rose
-        - Rosario
-        - Rubik
-        - STIX Two Text
-        - Saira
-        - Signika
-        - Signika Negative
-        - Space Grotesk
-        - Syne
-        - Vollkorn
-        - Work Sans
-        - Yanone Kaffeesatz
-    - id: font-text
-      title: Text font
-      description: Change text font
-      type: variable-select
-      default: Open Sans
-      options:
-        - Alegreya
-        - Anybody
-        - Archivo
-        - Archivo Narrow
-        - Asap
-        - Assistant
-        - Azeret Mono
-        - Baloo 2
-        - Besley
-        - Bitter
-        - Bodoni Moda
-        - Cabin
-        - Cairo
-        - Cairo Play
-        - Catamaran
-        - Cinzel
-        - Comfortaa
-        - Crimson Pro
-        - Domine
-        - Dosis
-        - EB Garamond
-        - Encode Sans
-        - Epilogue
-        - Exo 2
-        - Figtree
-        - Finlandica
-        - Heebo
-        - Inconsolata
-        - Inter
-        - Josefin Sans
-        - Jost
-        - Jura
-        - Karla
-        - Lexend
-        - Lexend Deca
-        - Lexend Exa
-        - Libre Franklin
-        - Lora
-        - M PLUS 1
-        - Manrope
-        - Maven Pro
-        - Merriweather Sans
-        - Montserrat
-        - Mulish
-        - MuseoModerno
-        - Noto Sans Display
-        - Nunito
-        - Open Sans
-        - Oswald
-        - Outfit
-        - Overpass
-        - Podkova
-        - Public Sans
-        - Quicksand
-        - Raleway
-        - Readex Pro
-        - Recursive
-        - Red Hat Display
-        - Red Hat Text
-        - Red Rose
-        - Rosario
-        - Rubik
-        - STIX Two Text
-        - Saira
-        - Signika
-        - Signika Negative
-        - Space Grotesk
-        - Syne
-        - Vollkorn
-        - Work Sans
-        - Yanone Kaffeesatz
-    - id: font-monospace
-      title: Monospace font
-      description: Change the monospace font
-      type: variable-select
-      default: Source code pro
-      options:
-        - Alegreya
-        - Anybody
-        - Archivo
-        - Archivo Narrow
-        - Asap
-        - Assistant
-        - Azeret Mono
-        - Baloo 2
-        - Besley
-        - Bitter
-        - Bodoni Moda
-        - Cabin
-        - Cairo
-        - Cairo Play
-        - Catamaran
-        - Cinzel
-        - Comfortaa
-        - Crimson Pro
-        - Domine
-        - Dosis
-        - EB Garamond
-        - Encode Sans
-        - Epilogue
-        - Exo 2
-        - Figtree
-        - Finlandica
-        - Heebo
-        - Inconsolata
-        - Inter
-        - Josefin Sans
-        - Jost
-        - Jura
-        - Karla
-        - Lexend
-        - Lexend Deca
-        - Lexend Exa
-        - Libre Franklin
-        - Lora
-        - M PLUS 1
-        - Manrope
-        - Maven Pro
-        - Merriweather Sans
-        - Montserrat
-        - Mulish
-        - MuseoModerno
-        - Noto Sans Display
-        - Nunito
-        - Open Sans
-        - Oswald
-        - Outfit
-        - Overpass
-        - Podkova
-        - Public Sans
-        - Quicksand
-        - Raleway
-        - Readex Pro
-        - Recursive
-        - Red Hat Display
-        - Red Hat Text
-        - Red Rose
-        - Rosario
-        - Rubik
-        - STIX Two Text
-        - Saira
-        - Signika
-        - Signika Negative
-        - Space Grotesk
-        - Syne
-        - Vollkorn
-        - Work Sans
-        - Yanone Kaffeesatz
+mode: replace
+sections:
+  - name: Apatheia
+    id: ap-theme
+    collapsed: false
+    settings:
+      - id: a-theme-settings
+        title: Theme settings
+        description: Change theme appearance here
+        type: heading
+        level: 1
+        collapsed: true
+      - id: theme-dark
+        title: Theme variant
+        description: Select theme variant
+        type: class-select
+        default: a-theme-apatheia
+        allowEmpty: false
+        options:
+          - label: 🗿 Apatheia
+            value: a-theme-apatheia
+          - label: 👾 Purple
+            value: a-theme-purple
+          - label: 🌿 Catpuccin Mocha
+            value: a-catpuccin-mocha
+          - label: ☕ Catpuccin Espresso
+            value: a-catpuccin-espresso
+          - label: ❄ Winter
+            value: a-winter
+      - id: a-theme-purple-settings
+        title: Test theme settings
+        description: Settings for the test theme
+        type: heading
+        level: 2
+        collapsed: true
+      - id: a-theme-purple-test
+        title: Toggle test
+        description: toggle to test
+        type: class-toggle
+      - id: a-effect-settings
+        title: Effects
+        description: Add effects
+        type: heading
+        level: 1
+        collapsed: true
+      - id: glassMorphism
+        title: Glassmorphism
+        description: Add glassmorphism to your theme
+        type: class-toggle
+      - id: smoothIndent
+        title: Smooth indent
+        description: Smooth Indent headers. Vim users may experience weird glitches
+        type: class-toggle
+      - id: Fade
+        title: Fade
+        description: Fade
+        type: class-toggle
+      - id: Hover
+        title: Hover effect
+        description: On hover transition on components
+        type: class-toggle
+      - id: a-font-settings
+        title: Fonts
+        description: Select fonts
+        type: heading
+        level: 1
+        collapsed: true
+      - id: inline-title-font
+        title: Title font
+        description: Change title font
+        type: variable-select
+        default: Open Sans
+        options:
+          - label: Alegreya
+            value: Alegreya
+          - label: Anybody
+            value: Anybody
+          - label: Archivo
+            value: Archivo
+          - label: Archivo Narrow
+            value: Archivo Narrow
+          - label: Asap
+            value: Asap
+          - label: Assistant
+            value: Assistant
+          - label: Azeret Mono
+            value: Azeret Mono
+          - label: Baloo 2
+            value: Baloo 2
+          - label: Besley
+            value: Besley
+          - label: Bitter
+            value: Bitter
+          - label: Bodoni Moda
+            value: Bodoni Moda
+          - label: Cabin
+            value: Cabin
+          - label: Cairo
+            value: Cairo
+          - label: Cairo Play
+            value: Cairo Play
+          - label: Catamaran
+            value: Catamaran
+          - label: Cinzel
+            value: Cinzel
+          - label: Comfortaa
+            value: Comfortaa
+          - label: Crimson Pro
+            value: Crimson Pro
+          - label: Domine
+            value: Domine
+          - label: Dosis
+            value: Dosis
+          - label: EB Garamond
+            value: EB Garamond
+          - label: Encode Sans
+            value: Encode Sans
+          - label: Epilogue
+            value: Epilogue
+          - label: Exo 2
+            value: Exo 2
+          - label: Figtree
+            value: Figtree
+          - label: Finlandica
+            value: Finlandica
+          - label: Heebo
+            value: Heebo
+          - label: Inconsolata
+            value: Inconsolata
+          - label: Inter
+            value: Inter
+          - label: Josefin Sans
+            value: Josefin Sans
+          - label: Jost
+            value: Jost
+          - label: Jura
+            value: Jura
+          - label: Karla
+            value: Karla
+          - label: Lexend
+            value: Lexend
+          - label: Lexend Deca
+            value: Lexend Deca
+          - label: Lexend Exa
+            value: Lexend Exa
+          - label: Libre Franklin
+            value: Libre Franklin
+          - label: Lora
+            value: Lora
+          - label: M PLUS 1
+            value: M PLUS 1
+          - label: Manrope
+            value: Manrope
+          - label: Maven Pro
+            value: Maven Pro
+          - label: Merriweather Sans
+            value: Merriweather Sans
+          - label: Montserrat
+            value: Montserrat
+          - label: Mulish
+            value: Mulish
+          - label: MuseoModerno
+            value: MuseoModerno
+          - label: Noto Sans Display
+            value: Noto Sans Display
+          - label: Nunito
+            value: Nunito
+          - label: Open Sans
+            value: Open Sans
+          - label: Oswald
+            value: Oswald
+          - label: Outfit
+            value: Outfit
+          - label: Overpass
+            value: Overpass
+          - label: Podkova
+            value: Podkova
+          - label: Public Sans
+            value: Public Sans
+          - label: Quicksand
+            value: Quicksand
+          - label: Raleway
+            value: Raleway
+          - label: Readex Pro
+            value: Readex Pro
+          - label: Recursive
+            value: Recursive
+          - label: Red Hat Display
+            value: Red Hat Display
+          - label: Red Hat Text
+            value: Red Hat Text
+          - label: Red Rose
+            value: Red Rose
+          - label: Rosario
+            value: Rosario
+          - label: Rubik
+            value: Rubik
+          - label: STIX Two Text
+            value: STIX Two Text
+          - label: Saira
+            value: Saira
+          - label: Signika
+            value: Signika
+          - label: Signika Negative
+            value: Signika Negative
+          - label: Space Grotesk
+            value: Space Grotesk
+          - label: Syne
+            value: Syne
+          - label: Vollkorn
+            value: Vollkorn
+          - label: Work Sans
+            value: Work Sans
+          - label: Yanone Kaffeesatz
+            value: Yanone Kaffeesatz
+      - id: font-interface
+        title: Interface font
+        description: Change interface font
+        type: variable-select
+        default: Open Sans
+        options:
+          - label: Alegreya
+            value: Alegreya
+          - label: Anybody
+            value: Anybody
+          - label: Archivo
+            value: Archivo
+          - label: Archivo Narrow
+            value: Archivo Narrow
+          - label: Asap
+            value: Asap
+          - label: Assistant
+            value: Assistant
+          - label: Azeret Mono
+            value: Azeret Mono
+          - label: Baloo 2
+            value: Baloo 2
+          - label: Besley
+            value: Besley
+          - label: Bitter
+            value: Bitter
+          - label: Bodoni Moda
+            value: Bodoni Moda
+          - label: Cabin
+            value: Cabin
+          - label: Cairo
+            value: Cairo
+          - label: Cairo Play
+            value: Cairo Play
+          - label: Catamaran
+            value: Catamaran
+          - label: Cinzel
+            value: Cinzel
+          - label: Comfortaa
+            value: Comfortaa
+          - label: Crimson Pro
+            value: Crimson Pro
+          - label: Domine
+            value: Domine
+          - label: Dosis
+            value: Dosis
+          - label: EB Garamond
+            value: EB Garamond
+          - label: Encode Sans
+            value: Encode Sans
+          - label: Epilogue
+            value: Epilogue
+          - label: Exo 2
+            value: Exo 2
+          - label: Figtree
+            value: Figtree
+          - label: Finlandica
+            value: Finlandica
+          - label: Heebo
+            value: Heebo
+          - label: Inconsolata
+            value: Inconsolata
+          - label: Inter
+            value: Inter
+          - label: Josefin Sans
+            value: Josefin Sans
+          - label: Jost
+            value: Jost
+          - label: Jura
+            value: Jura
+          - label: Karla
+            value: Karla
+          - label: Lexend
+            value: Lexend
+          - label: Lexend Deca
+            value: Lexend Deca
+          - label: Lexend Exa
+            value: Lexend Exa
+          - label: Libre Franklin
+            value: Libre Franklin
+          - label: Lora
+            value: Lora
+          - label: M PLUS 1
+            value: M PLUS 1
+          - label: Manrope
+            value: Manrope
+          - label: Maven Pro
+            value: Maven Pro
+          - label: Merriweather Sans
+            value: Merriweather Sans
+          - label: Montserrat
+            value: Montserrat
+          - label: Mulish
+            value: Mulish
+          - label: MuseoModerno
+            value: MuseoModerno
+          - label: Noto Sans Display
+            value: Noto Sans Display
+          - label: Nunito
+            value: Nunito
+          - label: Open Sans
+            value: Open Sans
+          - label: Oswald
+            value: Oswald
+          - label: Outfit
+            value: Outfit
+          - label: Overpass
+            value: Overpass
+          - label: Podkova
+            value: Podkova
+          - label: Public Sans
+            value: Public Sans
+          - label: Quicksand
+            value: Quicksand
+          - label: Raleway
+            value: Raleway
+          - label: Readex Pro
+            value: Readex Pro
+          - label: Recursive
+            value: Recursive
+          - label: Red Hat Display
+            value: Red Hat Display
+          - label: Red Hat Text
+            value: Red Hat Text
+          - label: Red Rose
+            value: Red Rose
+          - label: Rosario
+            value: Rosario
+          - label: Rubik
+            value: Rubik
+          - label: STIX Two Text
+            value: STIX Two Text
+          - label: Saira
+            value: Saira
+          - label: Signika
+            value: Signika
+          - label: Signika Negative
+            value: Signika Negative
+          - label: Space Grotesk
+            value: Space Grotesk
+          - label: Syne
+            value: Syne
+          - label: Vollkorn
+            value: Vollkorn
+          - label: Work Sans
+            value: Work Sans
+          - label: Yanone Kaffeesatz
+            value: Yanone Kaffeesatz
+      - id: font-text
+        title: Text font
+        description: Change text font
+        type: variable-select
+        default: Open Sans
+        options:
+          - label: Alegreya
+            value: Alegreya
+          - label: Anybody
+            value: Anybody
+          - label: Archivo
+            value: Archivo
+          - label: Archivo Narrow
+            value: Archivo Narrow
+          - label: Asap
+            value: Asap
+          - label: Assistant
+            value: Assistant
+          - label: Azeret Mono
+            value: Azeret Mono
+          - label: Baloo 2
+            value: Baloo 2
+          - label: Besley
+            value: Besley
+          - label: Bitter
+            value: Bitter
+          - label: Bodoni Moda
+            value: Bodoni Moda
+          - label: Cabin
+            value: Cabin
+          - label: Cairo
+            value: Cairo
+          - label: Cairo Play
+            value: Cairo Play
+          - label: Catamaran
+            value: Catamaran
+          - label: Cinzel
+            value: Cinzel
+          - label: Comfortaa
+            value: Comfortaa
+          - label: Crimson Pro
+            value: Crimson Pro
+          - label: Domine
+            value: Domine
+          - label: Dosis
+            value: Dosis
+          - label: EB Garamond
+            value: EB Garamond
+          - label: Encode Sans
+            value: Encode Sans
+          - label: Epilogue
+            value: Epilogue
+          - label: Exo 2
+            value: Exo 2
+          - label: Figtree
+            value: Figtree
+          - label: Finlandica
+            value: Finlandica
+          - label: Heebo
+            value: Heebo
+          - label: Inconsolata
+            value: Inconsolata
+          - label: Inter
+            value: Inter
+          - label: Josefin Sans
+            value: Josefin Sans
+          - label: Jost
+            value: Jost
+          - label: Jura
+            value: Jura
+          - label: Karla
+            value: Karla
+          - label: Lexend
+            value: Lexend
+          - label: Lexend Deca
+            value: Lexend Deca
+          - label: Lexend Exa
+            value: Lexend Exa
+          - label: Libre Franklin
+            value: Libre Franklin
+          - label: Lora
+            value: Lora
+          - label: M PLUS 1
+            value: M PLUS 1
+          - label: Manrope
+            value: Manrope
+          - label: Maven Pro
+            value: Maven Pro
+          - label: Merriweather Sans
+            value: Merriweather Sans
+          - label: Montserrat
+            value: Montserrat
+          - label: Mulish
+            value: Mulish
+          - label: MuseoModerno
+            value: MuseoModerno
+          - label: Noto Sans Display
+            value: Noto Sans Display
+          - label: Nunito
+            value: Nunito
+          - label: Open Sans
+            value: Open Sans
+          - label: Oswald
+            value: Oswald
+          - label: Outfit
+            value: Outfit
+          - label: Overpass
+            value: Overpass
+          - label: Podkova
+            value: Podkova
+          - label: Public Sans
+            value: Public Sans
+          - label: Quicksand
+            value: Quicksand
+          - label: Raleway
+            value: Raleway
+          - label: Readex Pro
+            value: Readex Pro
+          - label: Recursive
+            value: Recursive
+          - label: Red Hat Display
+            value: Red Hat Display
+          - label: Red Hat Text
+            value: Red Hat Text
+          - label: Red Rose
+            value: Red Rose
+          - label: Rosario
+            value: Rosario
+          - label: Rubik
+            value: Rubik
+          - label: STIX Two Text
+            value: STIX Two Text
+          - label: Saira
+            value: Saira
+          - label: Signika
+            value: Signika
+          - label: Signika Negative
+            value: Signika Negative
+          - label: Space Grotesk
+            value: Space Grotesk
+          - label: Syne
+            value: Syne
+          - label: Vollkorn
+            value: Vollkorn
+          - label: Work Sans
+            value: Work Sans
+          - label: Yanone Kaffeesatz
+            value: Yanone Kaffeesatz

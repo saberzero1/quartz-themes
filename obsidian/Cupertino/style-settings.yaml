@@ -1,113 +1,115 @@
-- name: Cupertino
-  id: cupertino
-  settings:
-    - id: cupertino-desc
-      description: Cupertino offers simplified, native-style UI. For granular controls, try [Baseline](obsidian://show-theme?name=Baseline).
-      type: info-text
-      markdown: true
-    - id: colorful-frame
-      title: Tinted sidebar
-      description: Apply a subtle tint to the sidebar based on accent color.
-      type: class-toggle
-    - id: material-color
-      title: Dynamic color
-      description: Apply dynamic theming based on accent color.
-      type: class-toggle
-    - id: adaptive-mode-off
-      title: Disable adaptive mode
-      description: Prevent automatic styling based on operating system.
-      type: class-toggle
-    - id: tab-floating
-      title: Disable centered tabs
-      type: class-toggle
-    - id: desktop-header
-      title: Desktop
-      type: heading
-      level: 1
-      collapsed: true
-    - id: hover-ribbon
-      title: Hover ribbon
-      description: Reveal ribbon by hovering over left window edge.
-      type: class-toggle
-    - id: hover-sidedock
-      title: Hover sidebar
-      description: Reveal collapsed sidebars by hovering over window edges.
-      type: class-toggle
-    - id: focus-view
-      title: Focus view
-      description: Hide tabs and table title bar when both sidebars are collapsed.
-      type: class-toggle
-    - id: nav-action-center
-      title: Disable compact panel actions
-      type: class-toggle
-    - id: tab-icon
-      title: Disable compact sidebar tabs
-      type: class-toggle
-    - id: status-bar-baseline
-      title: Disable compact status bar
-      type: class-toggle
-    - id: zoom-off
-      title: Disable media zoom
-      type: class-toggle
-    - id: editor
-      title: Editor
-      type: heading
-      level: 1
-      collapsed: true
-    - id: active-line-off
-      title: Disable active line highlight
-      type: class-toggle
-    - id: banner-off
-      title: Disable banner
-      type: class-toggle
-    - id: block-width-off
-      title: Disable block width
-      type: class-toggle
-    - id: font-variant-off
-      title: Disable font variants
-      type: class-toggle
-    - id: full-width-media-off
-      title: Disable full-width elements
-      type: class-toggle
-    - id: mode-switcher-off
-      title: Disable quick mode switcher
-      type: class-toggle
-    - id: accessibility
-      title: Accessibility
-      type: heading
-      level: 1
-      collapsed: true
-    - id: reduce-contrast-change
-      title: Reduce contrast change
-      description: Minimize contrast shifts when window loses focus.
-      type: class-toggle
-    - id: reduce-motion
-      title: Reduce motion
-      description: Minimize animation effects.
-      type: class-toggle
-    - id: dynamic-type-off
-      title: Standard font size
-      description: Disable operating system-based dynamic font sizes.
-      type: class-toggle
-    - id: font-ui-modifier
-      title: Interface font size
-      description: Fine-tune interface text size.
-      type: variable-number-slider
-      default: 0
-      min: -8
-      max: 8
-      step: 1
-      format: px
-    - id: icon-size-modifier
-      title: Icon size
-      description: Fine-tune icon size.
-      type: variable-number-slider
-      default: 0
-      min: -4
-      max: 4
-      step: 1
-      format: px
-    - id: clean-link-off
-      title: Underlined links
-      description: Always underline links for improved visibility.
-      type: class-toggle
+mode: replace
+sections:
+  - name: Cupertino
+    id: cupertino
+    collapsed: false
+    settings:
+      - id: colorful-frame
+        title: Tinted sidebar
+        description: Apply a subtle tint to the sidebar based on accent color.
+        type: class-toggle
+      - id: material-color
+        title: Dynamic color
+        description: Apply dynamic theming based on accent color.
+        type: class-toggle
+      - id: adaptive-mode-off
+        title: Disable adaptive mode
+        description: Prevent automatic styling based on operating system.
+        type: class-toggle
+      - id: tab-floating
+        title: Disable centered tabs
+        type: class-toggle
+      - id: desktop-header
+        title: Desktop
+        type: heading
+        level: 1
+        collapsed: true
+      - id: hover-ribbon
+        title: Hover ribbon
+        description: Reveal ribbon by hovering over left window edge.
+        type: class-toggle
+        addCommand: true
+      - id: hover-sidedock
+        title: Hover sidebar
+        description: Reveal collapsed sidebars by hovering over window edges.
+        type: class-toggle
+        addCommand: true
+      - id: focus-view
+        title: Focus view
+        description: Hide tabs and table title bar when both sidebars are collapsed.
+        type: class-toggle
+        addCommand: true
+      - id: nav-action-center
+        title: Disable compact panel actions
+        type: class-toggle
+      - id: tab-icon
+        title: Disable compact sidebar tabs
+        type: class-toggle
+      - id: status-bar-baseline
+        title: Disable compact status bar
+        type: class-toggle
+      - id: zoom-off
+        title: Disable media zoom
+        type: class-toggle
+      - id: editor
+        title: Editor
+        type: heading
+        level: 1
+        collapsed: true
+      - id: active-line-off
+        title: Disable active line highlight
+        type: class-toggle
+      - id: banner-off
+        title: Disable banner
+        type: class-toggle
+      - id: block-width-off
+        title: Disable block width
+        type: class-toggle
+      - id: font-variant-off
+        title: Disable font variants
+        type: class-toggle
+      - id: full-width-media-off
+        title: Disable full-width elements
+        type: class-toggle
+      - id: mode-switcher-off
+        title: Disable quick mode switcher
+        type: class-toggle
+      - id: accessibility
+        title: Accessibility
+        type: heading
+        level: 1
+        collapsed: true
+      - id: reduce-contrast-change
+        title: Reduce contrast change
+        description: Minimize contrast shifts when window loses focus.
+        type: class-toggle
+      - id: reduce-motion
+        title: Reduce motion
+        description: Minimize animation effects.
+        type: class-toggle
+      - id: dynamic-type-off
+        title: Standard font size
+        description: Disable operating system-based dynamic font sizes.
+        type: class-toggle
+      - id: font-ui-modifier
+        title: Interface font size
+        description: Fine-tune interface text size.
+        type: variable-number-slider
+        default: 0
+        min: -8
+        max: 8
+        step: 1
+        format: px
+      - id: icon-size-modifier
+        title: Icon size
+        description: Fine-tune icon size.
+        type: variable-number-slider
+        default: 0
+        min: -4
+        max: 4
+        step: 1
+        format: px
+      - id: clean-link-off
+        title: Underlined links
+        description: Always underline links for improved visibility.
+        type: class-toggle
