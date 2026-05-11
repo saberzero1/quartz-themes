@@ -290,7 +290,7 @@ function collectVariablePaths(directVariables, dependencyIndex) {
   while (queue.length > 0) {
     const current = queue.shift();
     const currentPath = paths.get(current);
-    if (!currentPath || currentPath.chainLength >= MAX_TRANSITIVE_VAR_HOPS) {
+    if (currentPath.chainLength >= MAX_TRANSITIVE_VAR_HOPS) {
       continue;
     }
     for (const dependency of dependencyIndex.get(current) || []) {
