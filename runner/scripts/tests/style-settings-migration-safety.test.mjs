@@ -66,17 +66,23 @@ function collectParsedIdsFromSidecar(filePath) {
 }
 
 function collectSidecarPaths(dirPath) {
-  const sidecars = [];
-  for (const entry of readdirSync(dirPath)) {
-    const fullPath = join(dirPath, entry);
-    const stat = statSync(fullPath);
-    if (stat.isDirectory()) {
-      sidecars.push(...collectSidecarPaths(fullPath));
-      continue;
+  try {
+    const sidecars = [];
+    for (const entry of readdirSync(dirPath)) {
+      const fullPath = join(dirPath, entry);
+      const stat = statSync(fullPath);
+      if (stat.isDirectory()) {
+        sidecars.push(...collectSidecarPaths(fullPath));
+        continue;
+      }
+      if (entry === "style-settings.yaml") sidecars.push(fullPath);
     }
-    if (entry === "style-settings.yaml") sidecars.push(fullPath);
+    return sidecars;
+  } catch (error) {
+    throw new Error(`Failed to collect sidecar paths from ${dirPath}`, {
+      cause: error,
+    });
   }
-  return sidecars;
 }
 
 describe("style settings migration safety", () => {
@@ -100,7 +106,7 @@ describe("style settings migration safety", () => {
     for (const filePath of [blurPath, arzabaPath]) {
       const rawIds = collectRawIdsFromSidecar(filePath);
       const parsedIds = collectParsedIdsFromSidecar(filePath);
-      const droppedIds = [...rawIds].filter((id) => !parsedIds.has(id));
+      const droppedIds = Array.from(rawIds).filter((id) => !parsedIds.has(id));
       assert.equal(
         droppedIds.length,
         0,
