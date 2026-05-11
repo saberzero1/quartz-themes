@@ -531,6 +531,150 @@ sections:
         type: heading
         level: 2
         collapsed: true
+      - id: code-background-dark
+        title: Dark Mode Code Background
+        title.zh: 暗模式下代码背景颜色
+        type: variable-color
+        format: hex
+        default: '#2d2d2d'
+      - id: code-normal-dark
+        title: Dark Mode Code Normal Color
+        title.zh: 暗模式下非高亮语法颜色
+        type: variable-color
+        format: hex
+        default: '#ffffff'
+      - id: code-comment-dark
+        title: Dark Mode Code Comment Color
+        title.zh: 暗模式下注释颜色
+        type: variable-color
+        format: hex
+        default: '#999988'
+      - id: code-function-dark
+        title: Dark Mode Code Function Color
+        title.zh: 暗模式下函数颜色
+        type: variable-color
+        format: hex
+        default: '#a6e22e'
+      - id: code-important-dark
+        title: Dark Mode Code Important Color
+        title.zh: 暗模式下重要内容, 正则表达式颜色
+        type: variable-color
+        format: hex
+        default: '#f92672'
+      - id: code-keyword-dark
+        title: Dark Mode Code Keyword Color
+        title.zh: 暗模式下关键词颜色
+        type: variable-color
+        format: hex
+        default: '#f92672'
+      - id: code-operator-dark
+        title: Dark Mode Code Operator Color
+        title.zh: 暗模式下操作符颜色
+        type: variable-color
+        format: hex
+        default: '#f92672'
+      - id: code-property-dark
+        title: Dark Mode Code Property Color
+        title.zh: 暗模式下属性颜色
+        type: variable-color
+        format: hex
+        default: '#66d9ef'
+      - id: code-punctuation-dark
+        title: Dark Mode Code Punctuation Color
+        title.zh: 暗模式下标点颜色
+        type: variable-color
+        format: hex
+        default: '#ffffff'
+      - id: code-string-dark
+        title: Dark Mode Code String Color
+        title.zh: 暗模式下字符串颜色
+        type: variable-color
+        format: hex
+        default: '#e6db74'
+      - id: code-tag-dark
+        title: Dark Mode Code Tag Color
+        title.zh: 暗模式下标签, 符号, 常量颜色
+        type: variable-color
+        format: hex
+        default: '#a6e22e'
+      - id: code-value-dark
+        title: Dark Mode Code Value Color
+        title.zh: 暗模式下值颜色
+        type: variable-color
+        format: hex
+        default: '#ae81ff'
+      - id: code-background-light
+        title: Light Mode Code Background
+        title.zh: 亮模式下代码背景颜色
+        type: variable-color
+        format: hex
+        default: '#f5f5f5'
+      - id: code-normal-light
+        title: Light Mode Code Normal Color
+        title.zh: 亮模式下非高亮语法颜色
+        type: variable-color
+        format: hex
+        default: '#000000'
+      - id: code-comment-light
+        title: Light Mode Code Comment Color
+        title.zh: 亮模式下注释颜色
+        type: variable-color
+        format: hex
+        default: '#6a737d'
+      - id: code-function-light
+        title: Light Mode Code Function Color
+        title.zh: 亮模式下函数颜色
+        type: variable-color
+        format: hex
+        default: '#6f42c1'
+      - id: code-important-light
+        title: Light Mode Code Important Color
+        title.zh: 亮模式下重要内容, 正则表达式颜色
+        type: variable-color
+        format: hex
+        default: '#d73a49'
+      - id: code-keyword-light
+        title: Light Mode Code Keyword Color
+        title.zh: 亮模式下关键词颜色
+        type: variable-color
+        format: hex
+        default: '#d73a49'
+      - id: code-operator-light
+        title: Light Mode Code Operator Color
+        title.zh: 亮模式下操作符颜色
+        type: variable-color
+        format: hex
+        default: '#d73a49'
+      - id: code-property-light
+        title: Light Mode Code Property Color
+        title.zh: 亮模式下属性颜色
+        type: variable-color
+        format: hex
+        default: '#005cc5'
+      - id: code-punctuation-light
+        title: Light Mode Code Punctuation Color
+        title.zh: 亮模式下标点颜色
+        type: variable-color
+        format: hex
+        default: '#24292e'
+      - id: code-string-light
+        title: Light Mode Code String Color
+        title.zh: 亮模式下字符串颜色
+        type: variable-color
+        format: hex
+        default: '#032f62'
+      - id: code-tag-light
+        title: Light Mode Code Tag Color
+        title.zh: 亮模式下标签, 符号, 常量颜色
+        type: variable-color
+        format: hex
+        default: '#22863a'
+      - id: code-value-light
+        title: Light Mode Code Value Color
+        title.zh: 亮模式下值颜色
+        type: variable-color
+        format: hex
+        default: '#b31d28'
       - id: alternative-checkboxes
         title: Alternative Checkboxes ✅
         title.zh: 其他复选框样式 ✅
