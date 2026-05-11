@@ -41,6 +41,8 @@ const obsidianDirs = readdirSync(OBSIDIAN_DIR).filter((name) =>
 );
 
 const require = createRequire(import.meta.url);
+// Use StyleSettingsCore so downstream metadata includes canonical schema effects
+// from buildSchemaEffects in addition to parser normalization output.
 const parserEntryPoint =
   require.resolve("obsidian-style-settings/src/StyleSettingsCore.ts");
 mkdirSync(TEMP_PARSER_DIR, { recursive: true });

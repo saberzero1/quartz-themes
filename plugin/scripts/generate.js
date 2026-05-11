@@ -1364,7 +1364,7 @@ function renderThemeModule(themeData) {
   return JSON.stringify(themeData, null, 2);
 }
 
-function flattenAspectCssByMode(aspectCss) {
+function flattenAspectCssToString(aspectCss) {
   return Object.values(aspectCss || {})
     .filter((value) => typeof value === "string" && value.trim().length > 0)
     .join("\n");
@@ -1794,8 +1794,8 @@ async function main() {
       effectRecords: styleSettingsEffects,
       classSettings,
       modeCss: {
-        dark: flattenAspectCssByMode(darkAspectCSS),
-        light: flattenAspectCssByMode(lightAspectCSS),
+        dark: flattenAspectCssToString(darkAspectCSS),
+        light: flattenAspectCssToString(lightAspectCSS),
       },
     });
 
@@ -1825,7 +1825,7 @@ async function main() {
       light: lightAspectCSS,
       extras,
       classSettings,
-      ...(Object.keys(selectorImpacts).length > 0 ? { selectorImpacts } : {}),
+      selectorImpacts,
     });
 
     await fs.writeFile(outputPath, moduleContent, "utf8");

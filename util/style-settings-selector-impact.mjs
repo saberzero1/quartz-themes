@@ -14,31 +14,23 @@ function normalizeSelector(selector) {
 function collectRuleSelectors(css) {
   const selectors = new Set();
   if (!css) return selectors;
-  const ruleRegex = /([^{}]+)\{[^{}]*\}/g;
-  let match = ruleRegex.exec(css);
-  while (match) {
+  for (const match of css.matchAll(/([^{}]+)\{[^{}]*\}/g)) {
     for (const selector of match[1].split(",")) {
       const normalized = normalizeSelector(selector);
       if (normalized) selectors.add(normalized);
     }
-    match = ruleRegex.exec(css);
   }
   return selectors;
 }
 
 function collectVariableConsumers(css, mode, targetMap) {
   if (!css) return;
-  const ruleRegex = /([^{}]+)\{([^{}]*)\}/g;
-  const varRegex = /var\(\s*(--[A-Za-z0-9_-]+)/g;
-  let ruleMatch = ruleRegex.exec(css);
-  while (ruleMatch) {
+  for (const ruleMatch of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
     const selectorGroup = ruleMatch[1];
     const body = ruleMatch[2];
     const vars = new Set();
-    let varMatch = varRegex.exec(body);
-    while (varMatch) {
+    for (const varMatch of body.matchAll(/var\(\s*(--[A-Za-z0-9_-]+)/g)) {
       vars.add(varMatch[1]);
-      varMatch = varRegex.exec(body);
     }
     for (const selector of selectorGroup.split(",")) {
       const normalizedSelector = normalizeSelector(selector);
@@ -48,7 +40,6 @@ function collectVariableConsumers(css, mode, targetMap) {
         targetMap.get(variable).push({ selector: normalizedSelector, mode });
       }
     }
-    ruleMatch = ruleRegex.exec(css);
   }
 }
 
@@ -61,7 +52,18 @@ function addImpact(store, selector, impact) {
     store.set(selector, { impacts: [], interactionGroups: [] });
   }
   const record = store.get(selector);
-  const key = JSON.stringify(impact);
+  const key = [
+    impact.settingId,
+    impact.effectKind,
+    impact.mode,
+    impact.selectorVariable || "",
+    impact.className || "",
+    impact.classValue || "",
+    impact.interactionGroup,
+    impact.pathKind,
+    impact.targetKind,
+    impact.operation,
+  ].join("|");
   if (!record._impactKeys) record._impactKeys = new Set();
   if (!record._impactKeys.has(key)) {
     record._impactKeys.add(key);
