@@ -164,6 +164,8 @@ function shouldIncludeMode(effectMode, selectorMode) {
  * Intersect two static mode scopes.
  * - "both" acts as the unconstrained mode.
  * - light ∩ dark is incompatible and returns null.
+ *
+ * @returns {"both" | "light" | "dark" | null}
  */
 function intersectModes(left, right) {
   if (left === right) return left;
@@ -172,7 +174,11 @@ function intersectModes(left, right) {
   return null;
 }
 
-/** True when `prefix` matches the leading nested at-rule chain in `full`. */
+/**
+ * True when `prefix` matches the leading nested at-rule chain in `full`.
+ *
+ * @returns {boolean}
+ */
 function isAtRuleContextPrefix(prefix, full) {
   if (prefix.length > full.length) return false;
   return prefix.every((item, i) => item === full[i]);
@@ -184,6 +190,10 @@ function isAtRuleContextPrefix(prefix, full) {
  * - consumer-nested: bridge is equal/broader, consumer is same or narrower
  * - bridge-nested: bridge is narrower than the consumer context
  * - divergent: nested chains differ without a prefix relationship
+ *
+ * @param {string[]} bridgeContext
+ * @param {string[]} consumerContext
+ * @returns {"none" | "consumer-nested" | "bridge-nested" | "divergent"}
  */
 function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
   if (bridgeContext.length === 0 && consumerContext.length === 0) return "none";
@@ -208,6 +218,11 @@ function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
  * Notes:
  * - consumer-nested remains exact because a broader bridge still satisfies a narrower consumer.
  * - bridge-nested is conditional because the bridge only exists in a narrower condition.
+ *
+ * @param {"both" | "light" | "dark"} effectMode
+ * @param {"both" | "light" | "dark"} resolvedMode
+ * @param {"none" | "consumer-nested" | "bridge-nested" | "divergent"} contextRelation
+ * @returns {"exact" | "conditional" | "possible"}
  */
 function evaluateCompatibility(effectMode, resolvedMode, contextRelation) {
   let compatibility = "exact";
@@ -378,6 +393,12 @@ const CONTEXT_RELATION_PRIORITY = {
   divergent: 3,
 };
 
+/**
+ * Return whichever context relation has higher static incompatibility priority.
+ * Priority: divergent > bridge-nested > consumer-nested > none.
+ *
+ * @returns {"none" | "consumer-nested" | "bridge-nested" | "divergent"}
+ */
 function mergeContextRelation(current, relation) {
   return CONTEXT_RELATION_PRIORITY[relation] > CONTEXT_RELATION_PRIORITY[current]
     ? relation
@@ -386,6 +407,8 @@ function mergeContextRelation(current, relation) {
 
 /**
  * Collect bounded direct/transitive variable paths while propagating mode constraints.
+ *
+ * @param {"both" | "light" | "dark"} effectMode
  */
 function collectVariablePaths(directVariables, variableDependencyIndex, effectMode) {
   const paths = new Map();
