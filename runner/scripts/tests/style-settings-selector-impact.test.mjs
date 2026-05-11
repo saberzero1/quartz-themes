@@ -164,6 +164,103 @@ describe("buildSelectorImpactGraph", () => {
     );
   });
 
+  test("traces transitive variable bridges with explainable path metadata", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "accent-source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "accent-source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--accent-source",
+              variables: ["--accent-source"],
+              interactionGroup: "css-variable:--accent-source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light: `
+          :root {
+            --accent-bridge: var(--accent-source);
+            --accent-ui: var(--accent-bridge);
+          }
+          .button { color: var(--accent-ui); }
+          .badge { border-color: var(--accent-source); }
+        `,
+      },
+    });
+
+    const directImpact = graph[".badge"].impacts[0];
+    assert.equal(directImpact.variableConsumerKind, "direct");
+    assert.equal(directImpact.variableChainLength, 0);
+    assert.deepEqual(directImpact.variablePath, ["--accent-source"]);
+
+    const transitiveImpact = graph[".button"].impacts[0];
+    assert.equal(transitiveImpact.variableConsumerKind, "transitive");
+    assert.equal(transitiveImpact.variableChainLength, 2);
+    assert.deepEqual(transitiveImpact.variablePath, [
+      "--accent-source",
+      "--accent-bridge",
+      "--accent-ui",
+    ]);
+  });
+
+  test("bounds transitive variable tracing depth", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-text",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-text",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--v0",
+              variables: ["--v0"],
+              interactionGroup: "css-variable:--v0",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light: `
+          :root {
+            --v1: var(--v0);
+            --v2: var(--v1);
+            --v3: var(--v2);
+            --v4: var(--v3);
+            --v5: var(--v4);
+          }
+          .within-bound { color: var(--v4); }
+          .beyond-bound { color: var(--v5); }
+        `,
+      },
+    });
+
+    assert.ok(graph[".within-bound"]);
+    assert.equal(graph[".within-bound"].impacts[0].variableChainLength, 4);
+    assert.equal(graph[".beyond-bound"], undefined);
+  });
+
   test("adds interaction notes when multiple settings share a selector target group", () => {
     const graph = buildSelectorImpactGraph({
       effectRecords: [

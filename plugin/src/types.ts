@@ -93,6 +93,14 @@ export interface SelectorImpact {
     | "gradient-variable";
   direct: boolean;
   selectorVariable?: string;
+  /**
+   * Variable traversal metadata for explainability.
+   * Direct impact: variablePath=["--x"], variableChainLength=0, variableConsumerKind="direct".
+   * Transitive bridge: variablePath=["--x","--y",...], chainLength>0, kind="transitive".
+   */
+  variablePath?: string[];
+  variableChainLength?: number;
+  variableConsumerKind?: "direct" | "transitive";
   sourceVariable?: string;
   sourceVariables?: string[];
   derivedFrom?: "alt-format" | "gradient";
