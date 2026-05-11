@@ -235,6 +235,11 @@ const RUNTIME_STYLE_PROPS = [
 const MAX_RUNTIME_SELECTORS = 12;
 const MAX_RUNTIME_CSS_VARIABLE_DIFFS = 80;
 const MAX_RUNTIME_STYLE_DIFFS = 120;
+// Fixed deterministic probe values for bounded runtime differential observation.
+// 13 is intentionally non-zero/non-default to maximize chance of visible style deltas.
+// The text token is unique and grep-friendly in emitted evidence files.
+const RUNTIME_OBSERVATION_TEST_NUMBER = 13;
+const RUNTIME_OBSERVATION_TEXT_VALUE = "__qt_runtime_evidence__";
 
 async function captureRuntimeSnapshot(cli, selectors) {
   const selectorList = selectors.slice(0, MAX_RUNTIME_SELECTORS);
@@ -257,7 +262,10 @@ async function captureRuntimeSnapshot(cli, selectors) {
         let el = null;
         try {
           el = document.querySelector(selector);
-        } catch {}
+        } catch {
+          // Ignore invalid selectors in bounded probes; selector validity is
+          // already covered by static parsing and this snapshot is best-effort.
+        }
         if (!el) continue;
         const computed = window.getComputedStyle(el);
         const values = {};
@@ -346,11 +354,14 @@ function createRuntimeObservationPayload(themeId, setting) {
     setting.type === "variable-number" ||
     setting.type === "variable-number-slider"
   ) {
-    const value = `${13}${setting.format || ""}`;
+    const value = `${RUNTIME_OBSERVATION_TEST_NUMBER}${setting.format || ""}`;
     return { settingId: setting.id, payload: { [key]: value } };
   }
   if (setting.type === "variable-text") {
-    return { settingId: setting.id, payload: { [key]: "__qt_runtime_evidence__" } };
+    return {
+      settingId: setting.id,
+      payload: { [key]: RUNTIME_OBSERVATION_TEXT_VALUE },
+    };
   }
   return null;
 }

@@ -530,6 +530,8 @@ function applyRuntimeEvidenceLayer(selectorImpacts, runtimeEvidenceRecords) {
   const normalizeClassChanges = (changes) =>
     [...new Set((changes || []).map((value) => String(value).trim()).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b));
+  const compareByCompositeKey = (left, right, keyFn) =>
+    keyFn(left).localeCompare(keyFn(right));
 
   for (const [selector, record] of Object.entries(selectorImpacts || {})) {
     record.impacts = record.impacts.map((impact) => {
@@ -553,6 +555,8 @@ function applyRuntimeEvidenceLayer(selectorImpacts, runtimeEvidenceRecords) {
           ...changedBodyClasses.added,
           ...changedBodyClasses.removed,
         ]);
+        // body-class-toggle emits `className`; body-class-select emits `classValue`.
+        // Runtime evidence matches whichever class token was encoded by the effect kind.
         const impactedClass = impact.className || impact.classValue;
         if (impactedClass && toggledClasses.has(impactedClass)) {
           observedKinds.add("body-class");
@@ -600,13 +604,18 @@ function applyRuntimeEvidenceLayer(selectorImpacts, runtimeEvidenceRecords) {
             removed: normalizeClassChanges(bodyClassChanges.removed),
           },
           cssVariableChanges: cssVariableChanges.sort((a, b) =>
-            `${a.name}|${a.before || ""}|${a.after || ""}`.localeCompare(
-              `${b.name}|${b.before || ""}|${b.after || ""}`,
+            compareByCompositeKey(
+              a,
+              b,
+              (entry) => `${entry.name}|${entry.before || ""}|${entry.after || ""}`,
             ),
           ),
           computedStyleChanges: computedStyleChanges.sort((a, b) =>
-            `${a.selector}|${a.property}|${a.before || ""}|${a.after || ""}`.localeCompare(
-              `${b.selector}|${b.property}|${b.before || ""}|${b.after || ""}`,
+            compareByCompositeKey(
+              a,
+              b,
+              (entry) =>
+                `${entry.selector}|${entry.property}|${entry.before || ""}|${entry.after || ""}`,
             ),
           ),
         },
