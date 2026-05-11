@@ -1,10 +1,14 @@
+import { generate, parse, walk } from "css-tree";
+
 /**
- * Build a deterministic V1 selector-impact graph from canonical SettingEffect records.
+ * Build a deterministic V2 selector-impact graph from canonical SettingEffect records.
  *
  * Scope limits (intentional):
  * - No full CSS cascade simulation or DOM state modeling.
- * - Only direct selector rules and explicit var(...) consumers are tracked.
- * - Nested at-rule parsing (@media/@supports) is intentionally out of scope in V1.
+ * - Static selector rules and explicit var(...) consumers are tracked.
+ * - Structured CSS parsing is used for selector/consumer discovery.
+ * - Nested at-rule containers are tracked for explainability (for example @media/@supports).
+ * - Keyframe steps are intentionally ignored as selector targets.
  * - Impacts are explainable via canonical effect primitives + static CSS reads.
  */
 
@@ -12,33 +16,88 @@ function normalizeSelector(selector) {
   return selector.replace(/\s+/g, " ").trim();
 }
 
-function collectRuleSelectors(css) {
-  const selectors = new Set();
-  if (!css) return selectors;
-  for (const match of css.matchAll(/([^{}]+)\{[^{}]*\}/g)) {
-    for (const selector of match[1].split(",")) {
-      const normalized = normalizeSelector(selector);
-      if (normalized) selectors.add(normalized);
-    }
+function formatAtRuleContext(node) {
+  const prelude = node.prelude ? normalizeSelector(generate(node.prelude)) : "";
+  return prelude ? `@${node.name} ${prelude}` : `@${node.name}`;
+}
+
+function collectRuleSelectors(prelude) {
+  const selectors = [];
+  if (!prelude || prelude.type !== "SelectorList") return selectors;
+  for (const selectorNode of prelude.children || []) {
+    const normalized = normalizeSelector(generate(selectorNode));
+    if (normalized) selectors.push(normalized);
   }
   return selectors;
 }
 
-function collectVariableConsumers(css, mode, targetMap) {
-  if (!css) return;
-  for (const ruleMatch of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
-    const selectorGroup = ruleMatch[1];
-    const body = ruleMatch[2];
-    const vars = new Set();
-    for (const varMatch of body.matchAll(/var\(\s*(--[A-Za-z0-9_-]+)/g)) {
-      vars.add(varMatch[1]);
+function collectRuleVariables(block) {
+  const variables = new Set();
+  if (!block) return variables;
+  walk(block, {
+    visit: "Function",
+    enter(node) {
+      if (node.name !== "var") return;
+      const firstArg = node.children?.first;
+      if (!firstArg || firstArg.type !== "Identifier") return;
+      if (firstArg.name.startsWith("--")) variables.add(firstArg.name);
+    },
+  });
+  return variables;
+}
+
+function parseCssRules(css, mode) {
+  const rules = [];
+  if (!css) return rules;
+  let ast;
+  try {
+    ast = parse(css);
+  } catch {
+    return rules;
+  }
+
+  const visitNode = (node, context = [], inKeyframes = false) => {
+    if (!node) return;
+    if (node.type === "Rule") {
+      if (inKeyframes) return;
+      const selectors = collectRuleSelectors(node.prelude);
+      if (!selectors.length) return;
+      rules.push({
+        selectors,
+        variables: collectRuleVariables(node.block),
+        mode,
+        atRuleContext: context,
+      });
+      return;
     }
-    for (const selector of selectorGroup.split(",")) {
-      const normalizedSelector = normalizeSelector(selector);
-      if (!normalizedSelector) continue;
-      for (const variable of vars) {
+    if (node.type === "Atrule" && node.block?.children) {
+      const isKeyframesRule = /keyframes$/i.test(node.name);
+      const nextContext = isKeyframesRule
+        ? context
+        : [...context, formatAtRuleContext(node)];
+      for (const child of node.block.children) {
+        visitNode(child, nextContext, inKeyframes || isKeyframesRule);
+      }
+    }
+  };
+
+  for (const child of ast.children || []) {
+    visitNode(child, [], false);
+  }
+
+  return rules;
+}
+
+function collectVariableConsumers(css, mode, targetMap) {
+  for (const rule of parseCssRules(css, mode)) {
+    for (const selector of rule.selectors) {
+      for (const variable of rule.variables) {
         if (!targetMap.has(variable)) targetMap.set(variable, []);
-        targetMap.get(variable).push({ selector: normalizedSelector, mode });
+        targetMap.get(variable).push({
+          selector,
+          mode: rule.mode,
+          atRuleContext: rule.atRuleContext,
+        });
       }
     }
   }
@@ -62,6 +121,7 @@ function addImpact(store, selector, impact) {
     impact.classValue || "",
     impact.interactionGroup,
     impact.pathKind,
+    (impact.atRuleContext || []).join(" > "),
     impact.targetKind,
     impact.operation,
   ].join("|");
@@ -119,9 +179,15 @@ function buildClassSelectorIndex(classSettings) {
   const byClass = new Map();
   for (const [className, entry] of Object.entries(classSettings || {})) {
     const addSelectors = (mode, css) => {
-      for (const selector of collectRuleSelectors(css)) {
+      for (const rule of parseCssRules(css, mode)) {
         if (!byClass.has(className)) byClass.set(className, []);
-        byClass.get(className).push({ selector, mode });
+        for (const selector of rule.selectors) {
+          byClass.get(className).push({
+            selector,
+            mode: rule.mode,
+            atRuleContext: rule.atRuleContext,
+          });
+        }
       }
     };
     addSelectors("both", entry.general);
@@ -188,6 +254,7 @@ export function buildSelectorImpactGraph({
           addImpact(selectorImpacts, hit.selector, {
             ...baseImpact,
             className: effect.className,
+            atRuleContext: hit.atRuleContext,
           });
         }
         continue;
@@ -203,6 +270,7 @@ export function buildSelectorImpactGraph({
             addImpact(selectorImpacts, hit.selector, {
               ...baseImpact,
               classValue,
+              atRuleContext: hit.atRuleContext,
             });
           }
         }
@@ -228,6 +296,7 @@ export function buildSelectorImpactGraph({
             sourceVariable: effect.sourceVariable,
             sourceVariables: effect.sourceVariables,
             derivedFrom: effect.derivedFrom,
+            atRuleContext: hit.atRuleContext,
           });
         }
       }
