@@ -175,10 +175,7 @@ function intersectModes(left, right) {
 /** True when `prefix` matches the leading nested at-rule chain in `full`. */
 function isAtRuleContextPrefix(prefix, full) {
   if (prefix.length > full.length) return false;
-  for (let i = 0; i < prefix.length; i += 1) {
-    if (prefix[i] !== full[i]) return false;
-  }
-  return true;
+  return prefix.every((item, i) => item === full[i]);
 }
 
 /**
@@ -535,19 +532,28 @@ export function buildSelectorImpactGraph({
           for (const traversal of traversals) {
             const resolvedMode = intersectModes(traversal.traversalMode, hit.mode);
             if (!resolvedMode) continue;
-            const bridgeContextRelations = traversal.bridgeAtRuleContexts.map((ctx) =>
-              compareAtRuleContext(ctx, hit.atRuleContext),
+            const bridgeContextRelations = traversal.bridgeAtRuleContexts.map(
+              (ctx) => compareAtRuleContext(ctx, hit.atRuleContext),
             );
             let contextRelation = "none";
-            if (bridgeContextRelations.includes("divergent")) {
-              contextRelation = "divergent";
-            } else if (bridgeContextRelations.includes("bridge-nested")) {
-              contextRelation = "bridge-nested";
-            } else if (
-              bridgeContextRelations.includes("consumer-nested") ||
-              bridgeContextRelations.length > 0
-            ) {
-              contextRelation = "consumer-nested";
+            for (const relation of bridgeContextRelations) {
+              if (relation === "divergent") {
+                contextRelation = "divergent";
+                break;
+              }
+              if (relation === "bridge-nested") {
+                contextRelation = "bridge-nested";
+                continue;
+              }
+              if (
+                relation === "consumer-nested" &&
+                contextRelation !== "bridge-nested"
+              ) {
+                contextRelation = "consumer-nested";
+              }
+              if (relation === "none" && contextRelation === "none") {
+                contextRelation = "consumer-nested";
+              }
             }
             addImpact(selectorImpacts, hit.selector, {
               ...baseImpact,
