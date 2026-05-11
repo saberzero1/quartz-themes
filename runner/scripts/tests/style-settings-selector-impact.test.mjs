@@ -217,7 +217,7 @@ describe("buildSelectorImpactGraph", () => {
     ]);
     assert.equal(transitiveImpact.compatibility, "conditional");
     assert.equal(transitiveImpact.resolvedMode, "light");
-    assert.equal(transitiveImpact.contextRelation, "consumer-nested");
+    assert.equal(transitiveImpact.contextRelation, "none");
   });
 
   test("bounds transitive variable tracing depth", () => {
@@ -394,7 +394,7 @@ describe("buildSelectorImpactGraph", () => {
     assert.equal(chipImpacts.length, 2);
     assert.deepEqual(
       chipImpacts.map((impact) => impact.contextRelation).sort(),
-      ["bridge-nested", "consumer-nested"],
+      ["bridge-nested", "none"],
     );
   });
 

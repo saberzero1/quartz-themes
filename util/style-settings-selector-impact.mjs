@@ -343,7 +343,8 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
 
 /**
  * Build a unique traversal key for deduping bounded transitive paths.
- * Control-character delimiters avoid ambiguity with normal CSS text.
+ * Control-character delimiters avoid ambiguity with normal CSS text and
+ * are non-printable so they do not collide with normal CSS identifier chars.
  */
 function buildTraversalStateKey({
   variable,
@@ -532,11 +533,11 @@ export function buildSelectorImpactGraph({
           for (const traversal of traversals) {
             const resolvedMode = intersectModes(traversal.traversalMode, hit.mode);
             if (!resolvedMode) continue;
-            const bridgeContextRelations = traversal.bridgeAtRuleContexts.map(
+            const perHopContextRelations = traversal.bridgeAtRuleContexts.map(
               (ctx) => compareAtRuleContext(ctx, hit.atRuleContext),
             );
             let contextRelation = "none";
-            for (const relation of bridgeContextRelations) {
+            for (const relation of perHopContextRelations) {
               if (relation === "divergent") {
                 contextRelation = "divergent";
                 break;
@@ -549,9 +550,6 @@ export function buildSelectorImpactGraph({
                 relation === "consumer-nested" &&
                 contextRelation !== "bridge-nested"
               ) {
-                contextRelation = "consumer-nested";
-              }
-              if (relation === "none" && contextRelation === "none") {
                 contextRelation = "consumer-nested";
               }
             }
