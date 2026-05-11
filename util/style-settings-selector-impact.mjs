@@ -363,9 +363,13 @@ function collectVariablePaths(directVariables, variableDependencyIndex, effectMo
       if (!traversalMode) continue;
       const nextChainLength = currentPath.chainLength + 1;
       const nextPath = [...currentPath.path, dependency.variable];
-      const stateKey = `${dependency.variable}|${traversalMode}|${nextPath.join("->")}|${currentPath.bridgeAtRuleContexts
-        .map((ctx) => ctx.join(">"))
-        .join("||")}|${dependency.atRuleContext.join(">")}`;
+      const stateKey = JSON.stringify({
+        variable: dependency.variable,
+        traversalMode,
+        nextPath,
+        bridgeAtRuleContexts: currentPath.bridgeAtRuleContexts,
+        dependencyContext: dependency.atRuleContext,
+      });
       if (seenStates.has(stateKey)) continue;
       seenStates.add(stateKey);
 
