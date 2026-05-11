@@ -1,7 +1,8 @@
 import { generate, parse, walk } from "css-tree";
 
 /**
- * Build a deterministic selector-impact graph from canonical SettingEffect records.
+ * Build a deterministic selector-impact graph via `buildSelectorImpactGraph`
+ * from canonical SettingEffect records.
  *
  * Scope limits (intentional):
  * - No full CSS cascade simulation or DOM state modeling.
@@ -166,7 +167,7 @@ function intersectModes(left, right) {
   return null;
 }
 
-function isContextPrefix(prefix, full) {
+function isAtRuleContextPrefix(prefix, full) {
   if (prefix.length > full.length) return false;
   for (let i = 0; i < prefix.length; i += 1) {
     if (prefix[i] !== full[i]) return false;
@@ -176,22 +177,16 @@ function isContextPrefix(prefix, full) {
 
 function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
   if (bridgeContext.length === 0 && consumerContext.length === 0) return "none";
-  if (bridgeContext.length === 0 || isContextPrefix(bridgeContext, consumerContext)) {
+  if (
+    bridgeContext.length === 0 ||
+    isAtRuleContextPrefix(bridgeContext, consumerContext)
+  ) {
     return "consumer-nested";
   }
-  if (isContextPrefix(consumerContext, bridgeContext)) {
+  if (isAtRuleContextPrefix(consumerContext, bridgeContext)) {
     return "bridge-nested";
   }
   return "divergent";
-}
-
-function mergeCompatibility(left, right) {
-  const order = {
-    exact: 0,
-    conditional: 1,
-    possible: 2,
-  };
-  return order[left] >= order[right] ? left : right;
 }
 
 function evaluateCompatibility(effectMode, resolvedMode, contextRelation) {
@@ -200,7 +195,7 @@ function evaluateCompatibility(effectMode, resolvedMode, contextRelation) {
     compatibility = "conditional";
   }
   if (contextRelation === "bridge-nested") {
-    compatibility = mergeCompatibility(compatibility, "conditional");
+    if (compatibility === "exact") compatibility = "conditional";
   } else if (contextRelation === "divergent") {
     compatibility = "possible";
   }
@@ -330,6 +325,27 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
   return byDependency;
 }
 
+function buildTraversalStateKey({
+  variable,
+  traversalMode,
+  path,
+  bridgeAtRuleContexts,
+  dependencyContext,
+}) {
+  // Use control-character delimiters so we can keep deterministic string keys
+  // without ambiguity from normal CSS text:
+  // - \u0000 between top-level components
+  // - \u0001 between items inside one array
+  // - \u0002 between nested arrays
+  return [
+    variable,
+    traversalMode,
+    path.join("\u0001"),
+    bridgeAtRuleContexts.map((ctx) => ctx.join("\u0001")).join("\u0002"),
+    dependencyContext.join("\u0001"),
+  ].join("\u0000");
+}
+
 function collectVariablePaths(directVariables, variableDependencyIndex, effectMode) {
   const paths = new Map();
   const queue = [];
@@ -345,7 +361,15 @@ function collectVariablePaths(directVariables, variableDependencyIndex, effectMo
     if (!paths.has(variable)) paths.set(variable, []);
     paths.get(variable).push(traversal);
     queue.push({ variable, traversal });
-    seenStates.add(`${variable}|${effectMode}|${variable}`);
+    seenStates.add(
+      buildTraversalStateKey({
+        variable,
+        traversalMode: effectMode,
+        path: [variable],
+        bridgeAtRuleContexts: [],
+        dependencyContext: [],
+      }),
+    );
   }
 
   while (queue.length > 0) {
@@ -363,10 +387,10 @@ function collectVariablePaths(directVariables, variableDependencyIndex, effectMo
       if (!traversalMode) continue;
       const nextChainLength = currentPath.chainLength + 1;
       const nextPath = [...currentPath.path, dependency.variable];
-      const stateKey = JSON.stringify({
+      const stateKey = buildTraversalStateKey({
         variable: dependency.variable,
         traversalMode,
-        nextPath,
+        path: nextPath,
         bridgeAtRuleContexts: currentPath.bridgeAtRuleContexts,
         dependencyContext: dependency.atRuleContext,
       });
@@ -485,17 +509,17 @@ export function buildSelectorImpactGraph({
           for (const traversal of traversals) {
             const resolvedMode = intersectModes(traversal.traversalMode, hit.mode);
             if (!resolvedMode) continue;
-            const contextRelations = traversal.bridgeAtRuleContexts.map((ctx) =>
+            const bridgeContextRelations = traversal.bridgeAtRuleContexts.map((ctx) =>
               compareAtRuleContext(ctx, hit.atRuleContext),
             );
             let contextRelation = "none";
-            if (contextRelations.includes("divergent")) {
+            if (bridgeContextRelations.includes("divergent")) {
               contextRelation = "divergent";
-            } else if (contextRelations.includes("bridge-nested")) {
+            } else if (bridgeContextRelations.includes("bridge-nested")) {
               contextRelation = "bridge-nested";
             } else if (
-              contextRelations.includes("consumer-nested") ||
-              contextRelations.length > 0
+              bridgeContextRelations.includes("consumer-nested") ||
+              bridgeContextRelations.length > 0
             ) {
               contextRelation = "consumer-nested";
             }

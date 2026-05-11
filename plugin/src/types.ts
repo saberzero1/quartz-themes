@@ -57,7 +57,10 @@ export interface ThemeData {
    * - `light`: CSS that should only apply in light mode
    */
   classSettings?: Record<string, ClassSettingCSS>;
-  /** Selector-impact graph derived from canonical Style Settings effects. */
+  /**
+   * Selector-impact graph derived from canonical Style Settings effects.
+   * Maps selectors to the setting effects that can influence them.
+   */
   selectorImpacts?: Record<string, SelectorImpactRecord>;
 }
 
