@@ -38,7 +38,8 @@ function collectRuleVariables(block) {
     visit: "Function",
     enter(node) {
       if (node.name !== "var") return;
-      const firstArg = node.children?.first;
+      if (!node.children) return;
+      const firstArg = node.children.first;
       // var() always starts with a custom-property name token (Identifier in css-tree).
       if (!firstArg || firstArg.type !== "Identifier") return;
       if (firstArg.name.startsWith("--")) variables.add(firstArg.name);
@@ -72,8 +73,9 @@ function parseCssRules(css, mode) {
       return;
     }
     if (node.type === "Atrule" && node.block?.children) {
-      // Include vendor-prefixed keyframes (for example, -webkit-keyframes).
-      const isKeyframesRule = /keyframes$/i.test(node.name);
+      const isKeyframesRule = /^(-webkit-|-moz-|-o-|-ms-)?keyframes$/i.test(
+        node.name,
+      );
       const nextContext = isKeyframesRule
         ? context
         : [...context, formatAtRuleContext(node)];
