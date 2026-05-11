@@ -3064,6 +3064,7 @@ sections:
     description: Choose between Default and Custom colors for the Light Theme Status Bar.
     default: pt-status-bar-default-lt
     type: class-select
+    allowEmpty: false
     options:
     - label: Default
       value: pt-status-bar-default-lt
@@ -3074,6 +3075,7 @@ sections:
     description: Choose the color used for the Light Theme Status Bar Text/Icons.
     default: pt-status-bar-text-dark-lt
     type: class-select
+    allowEmpty: false
     options:
     - label: Light
       value: pt-status-bar-text-light-lt
@@ -3087,6 +3089,7 @@ sections:
     default: pt-status-bar-default-dt
     level: 2
     type: class-select
+    allowEmpty: false
     options:
     - label: Default
       value: pt-status-bar-default-dt
@@ -3097,6 +3100,7 @@ sections:
     description: Choose the color used for the Dark Theme Status Bar Text/Icons.
     default: pt-status-bar-text-light-dt
     type: class-select
+    allowEmpty: false
     options:
     - label: Light
       value: pt-status-bar-text-light-dt
@@ -3111,12 +3115,15 @@ sections:
     default: 12
     min: 5
     max: 20
+    step: 1
     format: px
   - id: theme-info-buttons
+    title: Prism resources
     type: info-text
     markdown: true
     description: <div class="styleSettingsButton prism-wiki"><a href="https://github.com/damiankorcz/Prism-Theme/wiki"><span class="styleSettingsButtonEmoji">🏛️</span>Prism Wiki</a></div><div class="styleSettingsButton prism-releases"><a href="https://github.com/damiankorcz/Prism-Theme/releases"><span class="styleSettingsButtonEmoji">📦</span>Prism Releases & Changelog</a></div>
   - id: support-buttons
+    title: Prism support
     type: info-text
     markdown: true
     description: <div class="styleSettingsButton prism-star"><a href="https://github.com/damiankorcz/Prism-Theme"><span class="styleSettingsButtonEmoji">🌠</span>Star the project on GitHub</a></div><div class="styleSettingsButton prism-issue"><a href="https://github.com/damiankorcz/Prism-Theme/issues"><span class="styleSettingsButtonEmoji">⚠️</span>Submit an Issue</a></div><div class="styleSettingsButton prism-coffee"><a href="https://www.buymeacoffee.com/DamianKorcz"><span class="styleSettingsButtonEmoji">☕</span> Buy me a coffee!</a></div>

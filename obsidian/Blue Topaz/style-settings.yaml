@@ -4162,43 +4162,44 @@ sections:
     description: eg：var(--font-text-override),"Microsoft YaHei"
     description.zh: 填入var(--font-text-override)调用Ob字体设置，填入"Microsoft YaHei" 为指定具体字体名称
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: h2-font
     title: Header 2 font family
     title.zh: 标题 2 字体
     description: eg：var(--font-text-override),"Microsoft YaHei"
     description.zh: 填入var(--font-text-override)调用Ob字体设置，填入"Microsoft YaHei" 为指定具体字体名称
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: h3-font
     title: Header 3 font family
     title.zh: 标题 3 字体
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: h4-font
     title: Header 4 font family
     title.zh: 标题 4 字体
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: h5-font
     title: Header 5 font family
     title.zh: 标题 5 字体
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: h6-font
     title: Header 6 font family
     title.zh: 标题 6 字体
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: inline-title-font
     title: Inline title font
     title.zh: 页面内文件名字体
     type: variable-text
-    default: ''
+    default: var(--font-text-override)
   - id: table-width
     title: Table width
     title.zh: md表格默认宽度
     type: class-select
+    allowEmpty: false
     default: table-width-100
     options:
     - label: 100%
@@ -4208,11 +4209,11 @@ sections:
   - id: loading-page-custom-gif-caption
     title: Image caption
     type: variable-text
-    default: ' '
+    default: Loading image
   - id: loading-page-custom-gif-caption-alt
     title: Image caption
     type: variable-text
-    default: ' '
+    default: Loading image
 - name: 🥑Blue Topaz Codebox Settings
   id: Blue-Topaz-Codebox-Highlight
   collapsed: false

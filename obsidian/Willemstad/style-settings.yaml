@@ -3142,122 +3142,122 @@ sections:
   - id: color-pax-l-accent-textfield
     title: Custom Accent Colour
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default accent colour. If left empty, defaults to the preset accent. Accepts any valid CSS colour format (e.g., hex, RGB(A), HSL, OKLCH, var(--interactive-accent)).
   - id: color-pax-l-accent-1-textfield
     title: Custom Accent Colour — Secondary
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default secondary accent colour. If left empty, falls back to the preset. Accepts any valid CSS colour format (e.g., hex, RGB, HSL, OKLCH).
   - id: color-pax-l-accent-2-textfield
     title: Custom Accent Colour — Tertiary
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default tertiary accent colour. If left empty, falls back to the preset. Accepts any valid CSS colour format (e.g., hex, RGB, HSL, OKLCH).
   - id: color-pax-l-red
     title: Custom Colour — Red
     type: variable-text
-    default: ''
+    default: red
     description: Overrides the default Red colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-orange
     title: Custom Colour — Orange
     type: variable-text
-    default: ''
+    default: orange
     description: Overrides the default Orange colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-yellow
     title: Custom Colour — Yellow
     type: variable-text
-    default: ''
+    default: yellow
     description: Overrides the default Yellow colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-green
     title: Custom Colour — Green
     type: variable-text
-    default: ''
+    default: green
     description: Overrides the default Green colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-cyan
     title: Custom Colour — Cyan
     type: variable-text
-    default: ''
+    default: cyan
     description: Overrides the default Cyan colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-blue
     title: Custom Colour — Blue
     type: variable-text
-    default: ''
+    default: blue
     description: Overrides the default Blue colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-purple
     title: Custom Colour — Purple
     type: variable-text
-    default: ''
+    default: purple
     description: Overrides the default Purple colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-pink
     title: Custom Colour — Pink
     type: variable-text
-    default: ''
+    default: pink
     description: Overrides the default Pink colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-l-selection
     title: Custom Selection Colour
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default selection colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-accent-textfield
     title: Custom Accent Colour
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default accent colour. If left empty, defaults to the preset accent. Accepts any valid CSS colour format (e.g., hex, RGB(A), HSL, OKLCH, var(--interactive-accent)).
   - id: color-pax-d-accent-1-textfield
     title: Custom Accent Colour — Secondary
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default secondary accent colour. If left empty, falls back to the preset. Accepts any valid CSS colour format (e.g., hex, RGB, HSL, OKLCH).
   - id: color-pax-d-accent-2-textfield
     title: Custom Accent Colour — Tertiary
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default tertiary accent colour. If left empty, falls back to the preset. Accepts any valid CSS colour format (e.g., hex, RGB, HSL, OKLCH).
   - id: color-pax-d-red
     title: Custom Colour — Red
     type: variable-text
-    default: ''
+    default: red
     description: Overrides the default Red colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-orange
     title: Custom Colour — Orange
     type: variable-text
-    default: ''
+    default: orange
     description: Overrides the default Orange colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-yellow
     title: Custom Colour — Yellow
     type: variable-text
-    default: ''
+    default: yellow
     description: Overrides the default Yellow colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-green
     title: Custom Colour — Green
     type: variable-text
-    default: ''
+    default: green
     description: Overrides the default Green colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-cyan
     title: Custom Colour — Cyan
     type: variable-text
-    default: ''
+    default: cyan
     description: Overrides the default Cyan colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-blue
     title: Custom Colour — Blue
     type: variable-text
-    default: ''
+    default: blue
     description: Overrides the default Blue colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-purple
     title: Custom Colour — Purple
     type: variable-text
-    default: ''
+    default: purple
     description: Overrides the default Purple colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-pink
     title: Custom Colour — Pink
     type: variable-text
-    default: ''
+    default: pink
     description: Overrides the default Pink colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
   - id: color-pax-d-selection
     title: Custom Selection Colour
     type: variable-text
-    default: ''
+    default: var(--interactive-accent)
     description: Overrides the default selection colour. If left empty, defaults to the preset colour. Accepts all valid CSS colour values (e.g., hex, RGB, HSL, var(--interactive-accent)).
 - name: App UI
   id: V1-Willemstad-UI
@@ -3870,6 +3870,7 @@ sections:
     default: 5
     min: 1
     max: 7
+    step: 1
 - name: Editor
   id: V1-Willemstad-Editor
   collapsed: false
@@ -5390,6 +5391,7 @@ sections:
   - id: ssopt-codeblock-language
     title: Codeblock Language Display
     type: class-select
+    allowEmpty: false
     document: ED00-Elements
     description: Use the dropdown to choose a codeblock language display type.
     default: default
@@ -5403,6 +5405,7 @@ sections:
   - id: ssopt-headers-old-style-col-palette
     title: Old Header Colour Palettes
     type: class-select
+    allowEmpty: false
     document: EH12-HCol-OldStad
     notes: (Requires 'No Background Coloured Headers' disabled; Requires 'Old Willemstad Header Colours' enabled)
     description: Use the dropdown to choose either the original Willemstad colours, or the old Willemstad-style Nord colours.

@@ -94,4 +94,42 @@ describe("style settings migration safety", () => {
       );
     }
   });
+
+  test("remaining known lossy themes retain representative IDs", () => {
+    const adrenalinePath = join(repoRoot, "obsidian/Adrenaline/style-settings.yaml");
+    const blueTopazPath = join(repoRoot, "obsidian/Blue Topaz/style-settings.yaml");
+    const prismPath = join(repoRoot, "obsidian/Prism/style-settings.yaml");
+    const willemstadPath = join(repoRoot, "obsidian/Willemstad/style-settings.yaml");
+
+    const adrenalineRawIds = collectRawIdsFromSidecar(adrenalinePath);
+    const blueTopazRawIds = collectRawIdsFromSidecar(blueTopazPath);
+    const prismRawIds = collectRawIdsFromSidecar(prismPath);
+    const willemstadRawIds = collectRawIdsFromSidecar(willemstadPath);
+
+    assert(adrenalineRawIds.has("custom-letter-spacing"));
+    assert(blueTopazRawIds.has("inline-title-font"));
+    assert(blueTopazRawIds.has("table-width"));
+    assert(prismRawIds.has("scroll-bar-size"));
+    assert(prismRawIds.has("support-buttons"));
+    assert(willemstadRawIds.has("color-pax-d-selection"));
+    assert(willemstadRawIds.has("ssopt-codeblock-language"));
+  });
+
+  test("remaining known lossy themes now parse losslessly for setting IDs", () => {
+    const adrenalinePath = join(repoRoot, "obsidian/Adrenaline/style-settings.yaml");
+    const blueTopazPath = join(repoRoot, "obsidian/Blue Topaz/style-settings.yaml");
+    const prismPath = join(repoRoot, "obsidian/Prism/style-settings.yaml");
+    const willemstadPath = join(repoRoot, "obsidian/Willemstad/style-settings.yaml");
+
+    for (const filePath of [adrenalinePath, blueTopazPath, prismPath, willemstadPath]) {
+      const rawIds = collectRawIdsFromSidecar(filePath);
+      const parsedIds = collectParsedIdsFromSidecar(filePath);
+      const droppedIds = [...rawIds].filter((id) => !parsedIds.has(id));
+      assert.equal(
+        droppedIds.length,
+        0,
+        `${filePath} dropped IDs during parser import: ${droppedIds.join(", ")}`,
+      );
+    }
+  });
 });
