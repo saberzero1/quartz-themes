@@ -14,6 +14,7 @@ import {
   extractStyleSettingsFromFile,
   extractClassToggleCss,
 } from "../../util/postcss-style-settings.mjs";
+import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
 import yaml from "js-yaml";
 
 const VAULT_PATH = resolve("./runner/vault");
@@ -176,6 +177,205 @@ function parseStyleSettingsId(themeContent) {
   }
   const singleMatch = themeContent.match(/styleSettingsId:\s*["']([^"']+)["']/);
   return singleMatch ? [singleMatch[1]] : [];
+}
+
+function resolveStyleSettingsIds(themeEntry, themeFileContent) {
+  const fromThemeEntry = themeEntry?.style_settings?.id;
+  if (Array.isArray(fromThemeEntry) && fromThemeEntry.length > 0) {
+    return fromThemeEntry.filter(Boolean);
+  }
+  if (typeof fromThemeEntry === "string" && fromThemeEntry.trim()) {
+    return [fromThemeEntry.trim()];
+  }
+  return parseStyleSettingsId(themeFileContent || "");
+}
+
+function collectClassSettingsForGraph(themeSlug, settings) {
+  const classIds = [];
+  for (const setting of settings || []) {
+    if (!setting?.type) continue;
+    if (setting.type === "class-toggle" && setting.id) {
+      classIds.push(setting.id);
+    } else if (setting.type === "class-select" && Array.isArray(setting.options)) {
+      for (const option of setting.options) {
+        if (option?.value && option.value !== "none") classIds.push(option.value);
+      }
+    }
+  }
+  if (classIds.length === 0) return {};
+
+  const { css } = readThemeCss(themeSlug);
+  if (!css) return {};
+
+  const output = {};
+  for (const classId of classIds) {
+    try {
+      const [general, dark, light] = extractClassToggleCss(css, classId);
+      if (!general && !dark && !light) continue;
+      output[classId] = {};
+      if (general) output[classId].general = general;
+      if (dark) output[classId].dark = dark;
+      if (light) output[classId].light = light;
+    } catch {
+      // Ignore malformed class extraction for this bounded verification helper.
+    }
+  }
+  return output;
+}
+
+const RUNTIME_STYLE_PROPS = [
+  "color",
+  "background-color",
+  "border-color",
+  "font-size",
+  "font-weight",
+  "opacity",
+  "display",
+];
+const MAX_RUNTIME_SELECTORS = 12;
+const MAX_RUNTIME_CSS_VARIABLE_DIFFS = 80;
+const MAX_RUNTIME_STYLE_DIFFS = 120;
+
+async function captureRuntimeSnapshot(cli, selectors) {
+  const selectorList = selectors.slice(0, MAX_RUNTIME_SELECTORS);
+  return cli.eval(`
+    (() => {
+      const selectors = ${JSON.stringify(selectorList)};
+      const styleProps = ${JSON.stringify(RUNTIME_STYLE_PROPS)};
+      const bodyClasses = Array.from(document.body?.classList || []).sort();
+
+      const cssVariables = {};
+      const rootStyle = window.getComputedStyle(document.body || document.documentElement);
+      for (const prop of Array.from(rootStyle)) {
+        if (!prop.startsWith("--")) continue;
+        const value = rootStyle.getPropertyValue(prop).trim();
+        if (value) cssVariables[prop] = value;
+      }
+
+      const selectorStyles = {};
+      for (const selector of selectors) {
+        let el = null;
+        try {
+          el = document.querySelector(selector);
+        } catch {}
+        if (!el) continue;
+        const computed = window.getComputedStyle(el);
+        const values = {};
+        for (const prop of styleProps) {
+          const value = computed.getPropertyValue(prop).trim();
+          if (value) values[prop] = value;
+        }
+        if (Object.keys(values).length > 0) selectorStyles[selector] = values;
+      }
+
+      return { bodyClasses, cssVariables, selectorStyles };
+    })();
+  `);
+}
+
+function diffRuntimeSnapshots(before, after) {
+  const beforeClasses = new Set(before?.bodyClasses || []);
+  const afterClasses = new Set(after?.bodyClasses || []);
+  const changedBodyClasses = {
+    added: [...afterClasses].filter((name) => !beforeClasses.has(name)).sort(),
+    removed: [...beforeClasses]
+      .filter((name) => !afterClasses.has(name))
+      .sort(),
+  };
+
+  const beforeVars = before?.cssVariables || {};
+  const afterVars = after?.cssVariables || {};
+  const variableNames = new Set([...Object.keys(beforeVars), ...Object.keys(afterVars)]);
+  const changedCssVariables = [...variableNames]
+    .sort((a, b) => a.localeCompare(b))
+    .flatMap((name) => {
+      const prior = beforeVars[name] || "";
+      const next = afterVars[name] || "";
+      if (prior === next) return [];
+      return [{ name, before: prior || undefined, after: next || undefined }];
+    })
+    .slice(0, MAX_RUNTIME_CSS_VARIABLE_DIFFS);
+
+  const beforeStyles = before?.selectorStyles || {};
+  const afterStyles = after?.selectorStyles || {};
+  const selectors = new Set([
+    ...Object.keys(beforeStyles),
+    ...Object.keys(afterStyles),
+  ]);
+  const changedComputedStyles = [...selectors]
+    .sort((a, b) => a.localeCompare(b))
+    .flatMap((selector) => {
+      const prior = beforeStyles[selector] || {};
+      const next = afterStyles[selector] || {};
+      const props = new Set([...Object.keys(prior), ...Object.keys(next)]);
+      return [...props]
+        .sort((a, b) => a.localeCompare(b))
+        .flatMap((property) => {
+          const beforeValue = prior[property] || "";
+          const afterValue = next[property] || "";
+          if (beforeValue === afterValue) return [];
+          return [
+            {
+              selector,
+              property,
+              before: beforeValue || undefined,
+              after: afterValue || undefined,
+            },
+          ];
+        });
+    })
+    .slice(0, MAX_RUNTIME_STYLE_DIFFS);
+
+  return { changedBodyClasses, changedCssVariables, changedComputedStyles };
+}
+
+function createRuntimeObservationPayload(themeId, setting) {
+  if (!themeId || !setting?.id || !setting?.type) return null;
+  const key = `${themeId}@@${setting.id}`;
+  if (setting.type === "class-toggle") {
+    return { settingId: setting.id, payload: { [key]: true } };
+  }
+  if (setting.type === "class-select" && Array.isArray(setting.options)) {
+    const option = setting.options.find(
+      (entry) => entry?.value && entry.value !== "none",
+    );
+    if (!option) return null;
+    return { settingId: setting.id, payload: { [key]: option.value } };
+  }
+  if (
+    setting.type === "variable-number" ||
+    setting.type === "variable-number-slider"
+  ) {
+    const value = `${13}${setting.format || ""}`;
+    return { settingId: setting.id, payload: { [key]: value } };
+  }
+  if (setting.type === "variable-text") {
+    return { settingId: setting.id, payload: { [key]: "__qt_runtime_evidence__" } };
+  }
+  return null;
+}
+
+function pickRuntimeObservationSetting(settings, selectorImpacts) {
+  const effectSettingIds = new Set(
+    Object.values(selectorImpacts || {}).flatMap((record) =>
+      record.impacts.map((impact) => impact.settingId),
+    ),
+  );
+  const candidates = (settings || []).filter((setting) =>
+    effectSettingIds.has(setting?.id),
+  );
+  const byTypePriority = [
+    "class-toggle",
+    "class-select",
+    "variable-number-slider",
+    "variable-number",
+    "variable-text",
+  ];
+  for (const type of byTypePriority) {
+    const match = candidates.find((setting) => setting?.type === type);
+    if (match) return match;
+  }
+  return null;
 }
 
 function resolveObsidianDirName(themeSlug) {
@@ -899,7 +1099,7 @@ function writeStyleSettingsData(data) {
 
 async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
   const failures = [];
-  const styleSettingsIds = parseStyleSettingsId(themeFileContent || "");
+  const styleSettingsIds = resolveStyleSettingsIds(themeEntry, themeFileContent);
   const themeId = styleSettingsIds[0];
   if (!themeId) {
     return {
@@ -927,9 +1127,13 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
   const mode = modes.includes("dark") ? "dark" : "light";
 
   configureVaultAppearance(themeSlug, mode);
+  writeStyleSettingsData({});
+  await cli.reload();
+  await cli.waitForReady({ label: `${themeSlug} ${mode} baseline` });
 
   let tested = 0;
   let passed = 0;
+  let runtimeEvidence = null;
 
   const expect = (condition, message) => {
     tested += 1;
@@ -952,6 +1156,113 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
     (setting) =>
       setting?.type === "class-select" && Array.isArray(setting.options),
   );
+
+  const effectRecords = Array.isArray(themeEntry?.style_settings?.effects)
+    ? themeEntry.style_settings.effects
+    : [];
+  if (effectRecords.length > 0) {
+    try {
+      const { css } = readThemeCss(themeSlug);
+      const selectorImpacts = buildSelectorImpactGraph({
+        effectRecords,
+        classSettings: collectClassSettingsForGraph(themeSlug, settings),
+        modeCss: mode === "dark" ? { dark: css || "" } : { light: css || "" },
+      });
+
+      const observationSetting = pickRuntimeObservationSetting(
+        settings,
+        selectorImpacts,
+      );
+      const observationPayload = createRuntimeObservationPayload(
+        themeId,
+        observationSetting,
+      );
+      if (observationSetting && observationPayload) {
+        const selectorsForSetting = Object.entries(selectorImpacts)
+          .filter(([, record]) =>
+            record.impacts.some(
+              (impact) => impact.settingId === observationPayload.settingId,
+            ),
+          )
+          .map(([selector]) => selector)
+          .slice(0, MAX_RUNTIME_SELECTORS);
+
+        const baselineSnapshot = await captureRuntimeSnapshot(
+          cli,
+          selectorsForSetting,
+        );
+
+        writeStyleSettingsData(observationPayload.payload);
+        await cli.reload();
+        await cli.waitForReady({
+          label: `${themeSlug} runtime evidence ${observationPayload.settingId}`,
+        });
+
+        const changedSnapshot = await captureRuntimeSnapshot(
+          cli,
+          selectorsForSetting,
+        );
+
+        const runtimeDiff = diffRuntimeSnapshots(baselineSnapshot, changedSnapshot);
+        const evidenceRecord = {
+          settingId: observationPayload.settingId,
+          mode,
+          ...runtimeDiff,
+        };
+        const evidenceGraph = buildSelectorImpactGraph({
+          effectRecords,
+          classSettings: collectClassSettingsForGraph(themeSlug, settings),
+          modeCss: mode === "dark" ? { dark: css || "" } : { light: css || "" },
+          runtimeEvidenceRecords: [evidenceRecord],
+        });
+
+        const observedImpactCount = Object.values(evidenceGraph).reduce(
+          (count, record) =>
+            count +
+            record.impacts.filter((impact) => impact.runtimeEvidence?.observed)
+              .length,
+          0,
+        );
+
+        runtimeEvidence = {
+          mode,
+          settingId: observationPayload.settingId,
+          selectorsSampled: selectorsForSetting.length,
+          observedImpactCount,
+          changedBodyClasses: runtimeDiff.changedBodyClasses,
+          changedCssVariableCount: runtimeDiff.changedCssVariables.length,
+          changedComputedStyleCount: runtimeDiff.changedComputedStyles.length,
+        };
+
+        const evidenceOutputDir = join(RESULTS_DIR, themeSlug);
+        mkdirSync(evidenceOutputDir, { recursive: true });
+        writeFileSync(
+          join(evidenceOutputDir, `${mode}-style-settings-runtime-evidence.json`),
+          JSON.stringify(
+            {
+              observedAt: new Date().toISOString(),
+              settingId: observationPayload.settingId,
+              mode,
+              selectors: selectorsForSetting,
+              diff: runtimeDiff,
+              selectorImpacts: evidenceGraph,
+              note: "Runtime evidence confirms observed single-setting diffs only; static impacts remain inferred source-of-truth.",
+            },
+            null,
+            2,
+          ),
+        );
+
+        writeStyleSettingsData({});
+        await cli.reload();
+        await cli.waitForReady({
+          label: `${themeSlug} runtime evidence reset`,
+        });
+      }
+    } catch (error) {
+      failures.push(`Runtime evidence observation failed: ${error.message}`);
+    }
+  }
 
   for (const setting of variableSettings.slice(0, 3)) {
     const rawValue = setting.type === "variable-text" ? "test-value" : 12;
@@ -1016,7 +1327,13 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
     }
   }
 
-  return { pass: failures.length === 0, tested, passed, failures };
+  return {
+    pass: failures.length === 0,
+    tested,
+    passed,
+    failures,
+    ...(runtimeEvidence ? { runtimeEvidence } : {}),
+  };
 }
 
 function collectFailureReasons(report) {

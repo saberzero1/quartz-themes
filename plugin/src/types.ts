@@ -117,6 +117,8 @@ export interface SelectorImpact {
    * - possible: contexts diverge without static alignment
    */
   compatibility?: "exact" | "conditional" | "possible";
+  /** Optional bounded runtime-observed evidence correlated to this static impact path. */
+  runtimeEvidence?: RuntimeSelectorImpactEvidence;
   sourceVariable?: string;
   sourceVariables?: string[];
   derivedFrom?: "alt-format" | "gradient";
@@ -124,6 +126,31 @@ export interface SelectorImpact {
   classValue?: string;
   /** Optional nested at-rule path that scoped the selector (e.g. @media → @supports). */
   atRuleContext?: string[];
+}
+
+export interface RuntimeSelectorImpactEvidence {
+  observed: boolean;
+  observedModes: Array<"both" | "dark" | "light">;
+  observedKinds: Array<"body-class" | "css-variable" | "computed-style">;
+  bodyClassChanges: {
+    added: string[];
+    removed: string[];
+  };
+  cssVariableChanges: RuntimeCssVariableChange[];
+  computedStyleChanges: RuntimeComputedStyleChange[];
+}
+
+export interface RuntimeCssVariableChange {
+  name: string;
+  before?: string;
+  after?: string;
+}
+
+export interface RuntimeComputedStyleChange {
+  selector: string;
+  property: string;
+  before?: string;
+  after?: string;
 }
 
 export interface SelectorInteractionGroup {

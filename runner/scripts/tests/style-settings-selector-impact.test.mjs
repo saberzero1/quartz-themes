@@ -471,6 +471,103 @@ describe("buildSelectorImpactGraph", () => {
     );
   });
 
+  test("adds bounded runtime evidence metadata without replacing static impacts", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "accent-source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "accent-source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--accent-source",
+              variables: ["--accent-source"],
+              interactionGroup: "css-variable:--accent-source",
+              interactionMode: "override",
+            },
+          ],
+        },
+        {
+          settingId: "fancy-toggle",
+          sectionId: "main",
+          settingType: "class-toggle",
+          effects: [
+            {
+              settingId: "fancy-toggle",
+              sectionId: "main",
+              settingType: "class-toggle",
+              effectKind: "body-class-toggle",
+              targetKind: "body-class",
+              operation: "toggle",
+              mode: "both",
+              className: "fancy",
+              interactionGroup: "body-class:fancy",
+              interactionMode: "additive",
+            },
+          ],
+        },
+      ],
+      classSettings: {
+        fancy: { general: ".fancy .badge { color: var(--accent-ui); }" },
+      },
+      modeCss: {
+        light:
+          ":root { --accent-ui: var(--accent-source); } .button { color: var(--accent-ui); }",
+      },
+      runtimeEvidenceRecords: [
+        {
+          settingId: "accent-source",
+          mode: "light",
+          changedBodyClasses: { added: [], removed: [] },
+          changedCssVariables: [
+            { name: "--accent-ui", before: "#111111", after: "#ff00ff" },
+          ],
+          changedComputedStyles: [
+            {
+              selector: ".button",
+              property: "color",
+              before: "rgb(17, 17, 17)",
+              after: "rgb(255, 0, 255)",
+            },
+          ],
+        },
+        {
+          settingId: "fancy-toggle",
+          mode: "light",
+          changedBodyClasses: { added: ["fancy"], removed: [] },
+          changedCssVariables: [],
+          changedComputedStyles: [],
+        },
+      ],
+    });
+
+    const variableImpact = graph[".button"].impacts[0];
+    assert.equal(variableImpact.compatibility, "conditional");
+    assert.equal(variableImpact.runtimeEvidence.observed, true);
+    assert.deepEqual(variableImpact.runtimeEvidence.observedKinds, [
+      "computed-style",
+      "css-variable",
+    ]);
+    assert.equal(variableImpact.runtimeEvidence.cssVariableChanges.length, 1);
+
+    const classImpact = graph[".fancy .badge"].impacts.find(
+      (impact) => impact.settingId === "fancy-toggle",
+    );
+    assert.equal(classImpact.runtimeEvidence.observed, true);
+    assert.deepEqual(classImpact.runtimeEvidence.observedKinds, ["body-class"]);
+    assert.deepEqual(classImpact.runtimeEvidence.bodyClassChanges, {
+      added: ["fancy"],
+      removed: [],
+    });
+  });
+
   test("adds interaction notes when multiple settings share a selector target group", () => {
     const graph = buildSelectorImpactGraph({
       effectRecords: [

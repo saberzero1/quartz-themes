@@ -1676,6 +1676,9 @@ async function main() {
       alternates: await readJsonIfExists(
         path.join(themeDir, "dark-alternates.json"),
       ),
+      runtimeEvidence: await readJsonIfExists(
+        path.join(themeDir, "dark-style-settings-runtime-evidence.json"),
+      ),
     };
     const lightSidecars = {
       varGraph: await readJsonIfExists(
@@ -1686,6 +1689,9 @@ async function main() {
       ),
       alternates: await readJsonIfExists(
         path.join(themeDir, "light-alternates.json"),
+      ),
+      runtimeEvidence: await readJsonIfExists(
+        path.join(themeDir, "light-style-settings-runtime-evidence.json"),
       ),
     };
 
@@ -1794,6 +1800,24 @@ async function main() {
       }
     }
 
+    const runtimeEvidenceRecords = [darkSidecars, lightSidecars]
+      .map((sidecar) => sidecar.runtimeEvidence)
+      .filter((entry) => entry?.settingId && entry?.diff)
+      .map((entry) => ({
+        settingId: entry.settingId,
+        mode: entry.mode,
+        changedBodyClasses: entry.diff.changedBodyClasses || {
+          added: [],
+          removed: [],
+        },
+        changedCssVariables: Array.isArray(entry.diff.changedCssVariables)
+          ? entry.diff.changedCssVariables
+          : [],
+        changedComputedStyles: Array.isArray(entry.diff.changedComputedStyles)
+          ? entry.diff.changedComputedStyles
+          : [],
+      }));
+
     const selectorImpacts = buildSelectorImpactGraph({
       effectRecords: styleSettingsEffects,
       classSettings,
@@ -1801,6 +1825,7 @@ async function main() {
         dark: flattenAspectCssToString(darkAspectCSS),
         light: flattenAspectCssToString(lightAspectCSS),
       },
+      runtimeEvidenceRecords,
     });
 
     // Extract and write diagnostics, then remove from aspectCSS
