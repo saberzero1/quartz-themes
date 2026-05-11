@@ -377,6 +377,8 @@ function buildTraversalStateKey({
 }) {
   // Use control-character delimiters so we can keep deterministic string keys
   // without ambiguity from normal CSS text:
+  // Control chars U+0000-U+001F are invalid in CSS identifiers, preventing
+  // collisions with legitimate selector/custom-property text.
   // - \u0000 between top-level components
   // - \u0001 between items inside one array
   // - \u0002 between nested arrays
@@ -462,8 +464,9 @@ function collectVariablePaths(directVariables, variableDependencyIndex, effectMo
         dependencyContext: dependency.atRuleContext,
       });
       // Deduping is traversal-only (variable+mode+path+bridge contexts).
-      // Consumer-level compatibility cannot be resolved here because selector hits
-      // vary per variable consumer and are only known in buildSelectorImpactGraph().
+      // Consumer-level compatibility cannot be resolved here because each
+      // variable can have multiple selector consumers with different at-rule
+      // contexts, only available in buildSelectorImpactGraph().
       if (seenStates.has(stateKey)) continue;
       seenStates.add(stateKey);
 
