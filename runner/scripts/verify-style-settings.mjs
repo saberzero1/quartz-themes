@@ -15,6 +15,9 @@ import {
   extractClassToggleCss,
 } from "../../util/postcss-style-settings.mjs";
 import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
+import {
+  enumerateRuntimeObservationPayloads,
+} from "../../util/style-settings-runtime-evidence.mjs";
 import yaml from "js-yaml";
 
 const VAULT_PATH = resolve("./runner/vault");
@@ -235,11 +238,6 @@ const RUNTIME_STYLE_PROPS = [
 const MAX_RUNTIME_SELECTORS = 12;
 const MAX_RUNTIME_CSS_VARIABLE_DIFFS = 80;
 const MAX_RUNTIME_STYLE_DIFFS = 120;
-// Fixed deterministic probe values for bounded runtime differential observation.
-// 13 is intentionally non-zero/non-default to maximize chance of visible style deltas.
-// The text token is unique and grep-friendly in emitted evidence files.
-const RUNTIME_OBSERVATION_TEST_NUMBER = 13;
-const RUNTIME_OBSERVATION_TEXT_VALUE = "__qt_runtime_evidence__";
 
 async function captureRuntimeSnapshot(cli, selectors) {
   const selectorList = selectors.slice(0, MAX_RUNTIME_SELECTORS);
@@ -335,58 +333,6 @@ function diffRuntimeSnapshots(before, after) {
     .slice(0, MAX_RUNTIME_STYLE_DIFFS);
 
   return { changedBodyClasses, changedCssVariables, changedComputedStyles };
-}
-
-function createRuntimeObservationPayload(themeId, setting) {
-  if (!themeId || !setting?.id || !setting?.type) return null;
-  const key = `${themeId}@@${setting.id}`;
-  if (setting.type === "class-toggle") {
-    return { settingId: setting.id, payload: { [key]: true } };
-  }
-  if (setting.type === "class-select" && Array.isArray(setting.options)) {
-    const option = setting.options.find(
-      (entry) => entry?.value && entry.value !== "none",
-    );
-    if (!option) return null;
-    return { settingId: setting.id, payload: { [key]: option.value } };
-  }
-  if (
-    setting.type === "variable-number" ||
-    setting.type === "variable-number-slider"
-  ) {
-    const value = `${RUNTIME_OBSERVATION_TEST_NUMBER}${setting.format || ""}`;
-    return { settingId: setting.id, payload: { [key]: value } };
-  }
-  if (setting.type === "variable-text") {
-    return {
-      settingId: setting.id,
-      payload: { [key]: RUNTIME_OBSERVATION_TEXT_VALUE },
-    };
-  }
-  return null;
-}
-
-function pickRuntimeObservationSetting(settings, selectorImpacts) {
-  const effectSettingIds = new Set(
-    Object.values(selectorImpacts || {}).flatMap((record) =>
-      record.impacts.map((impact) => impact.settingId),
-    ),
-  );
-  const candidates = (settings || []).filter((setting) =>
-    effectSettingIds.has(setting?.id),
-  );
-  const byTypePriority = [
-    "class-toggle",
-    "class-select",
-    "variable-number-slider",
-    "variable-number",
-    "variable-text",
-  ];
-  for (const type of byTypePriority) {
-    const match = candidates.find((setting) => setting?.type === type);
-    if (match) return match;
-  }
-  return null;
 }
 
 function resolveObsidianDirName(themeSlug) {
@@ -1174,60 +1120,105 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
   if (effectRecords.length > 0) {
     try {
       const { css } = readThemeCss(themeSlug);
+      const classSettings = collectClassSettingsForGraph(themeSlug, settings);
+      const modeCss = mode === "dark" ? { dark: css || "" } : { light: css || "" };
       const selectorImpacts = buildSelectorImpactGraph({
         effectRecords,
-        classSettings: collectClassSettingsForGraph(themeSlug, settings),
-        modeCss: mode === "dark" ? { dark: css || "" } : { light: css || "" },
+        classSettings,
+        modeCss,
       });
 
-      const observationSetting = pickRuntimeObservationSetting(
-        settings,
-        selectorImpacts,
+      // Collect the setting IDs that have known selector impacts so we can limit
+      // observations to settings that are meaningfully connected to the impact graph.
+      const effectSettingIds = new Set(
+        Object.values(selectorImpacts).flatMap((record) =>
+          record.impacts.map((impact) => impact.settingId),
+        ),
       );
-      const observationPayload = createRuntimeObservationPayload(
+
+      // Enumerate all single-setting observation payloads for broad bounded coverage:
+      //   - class-toggle: one payload per eligible setting
+      //   - class-select: one payload per non-default non-"none" option
+      //   - variable-number / slider: representative probe values (min/mid/max)
+      //   - variable-text: one payload per eligible setting
+      // Each payload is independent (single-setting only; no combinations).
+      const observationPayloads = enumerateRuntimeObservationPayloads(
         themeId,
-        observationSetting,
+        settings,
+        effectSettingIds,
       );
-      if (observationSetting && observationPayload) {
-        const selectorsForSetting = Object.entries(selectorImpacts)
-          .filter(([, record]) =>
-            record.impacts.some(
-              (impact) => impact.settingId === observationPayload.settingId,
-            ),
-          )
-          .map(([selector]) => selector)
-          .slice(0, MAX_RUNTIME_SELECTORS);
 
-        const baselineSnapshot = await captureRuntimeSnapshot(
-          cli,
-          selectorsForSetting,
-        );
+      if (observationPayloads.length > 0) {
+        // sidecarRecords stores the nested-diff format written to the evidence file.
+        // evidenceRecords stores the flat format consumed by buildSelectorImpactGraph.
+        const sidecarRecords = [];
+        const evidenceRecords = [];
 
-        writeStyleSettingsData(observationPayload.payload);
-        await cli.reload();
-        await cli.waitForReady({
-          label: `${themeSlug} runtime evidence ${observationPayload.settingId}`,
-        });
+        for (const observationPayload of observationPayloads) {
+          const selectorsForSetting = Object.entries(selectorImpacts)
+            .filter(([, record]) =>
+              record.impacts.some(
+                (impact) => impact.settingId === observationPayload.settingId,
+              ),
+            )
+            .map(([selector]) => selector)
+            .slice(0, MAX_RUNTIME_SELECTORS);
 
-        const changedSnapshot = await captureRuntimeSnapshot(
-          cli,
-          selectorsForSetting,
-        );
+          // Baseline is captured from the current clean/reset state.
+          // The first observation uses the initial baseline established before this
+          // block; each subsequent observation uses the reset state from the previous one.
+          const baselineSnapshot = await captureRuntimeSnapshot(
+            cli,
+            selectorsForSetting,
+          );
 
-        const runtimeDiff = diffRuntimeSnapshots(baselineSnapshot, changedSnapshot);
-        const evidenceRecord = {
-          settingId: observationPayload.settingId,
-          mode,
-          ...runtimeDiff,
-        };
+          writeStyleSettingsData(observationPayload.payload);
+          await cli.reload();
+          await cli.waitForReady({
+            label: `${themeSlug} runtime evidence ${observationPayload.settingId}`,
+          });
+
+          const changedSnapshot = await captureRuntimeSnapshot(
+            cli,
+            selectorsForSetting,
+          );
+
+          const runtimeDiff = diffRuntimeSnapshots(baselineSnapshot, changedSnapshot);
+          const observedAt = new Date().toISOString();
+
+          // Sidecar record: nested diff, used for file storage and future normalization.
+          sidecarRecords.push({
+            observedAt,
+            settingId: observationPayload.settingId,
+            mode,
+            selectors: selectorsForSetting,
+            diff: runtimeDiff,
+          });
+
+          // Flat record: spread diff fields, used by buildSelectorImpactGraph.
+          evidenceRecords.push({
+            settingId: observationPayload.settingId,
+            mode,
+            ...runtimeDiff,
+          });
+
+          // Reset to clean baseline state for the next observation.
+          writeStyleSettingsData({});
+          await cli.reload();
+          await cli.waitForReady({
+            label: `${themeSlug} runtime evidence reset`,
+          });
+        }
+
+        // Build the final evidence graph annotated with all accumulated observations.
         const evidenceGraph = buildSelectorImpactGraph({
           effectRecords,
-          classSettings: collectClassSettingsForGraph(themeSlug, settings),
-          modeCss: mode === "dark" ? { dark: css || "" } : { light: css || "" },
-          runtimeEvidenceRecords: [evidenceRecord],
+          classSettings,
+          modeCss,
+          runtimeEvidenceRecords: evidenceRecords,
         });
 
-        const observedImpactCount = Object.values(evidenceGraph).reduce(
+        const totalObservedImpactCount = Object.values(evidenceGraph).reduce(
           (count, record) =>
             count +
             record.impacts.filter((impact) => impact.runtimeEvidence?.observed)
@@ -1237,12 +1228,16 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
 
         runtimeEvidence = {
           mode,
-          settingId: observationPayload.settingId,
-          selectorsSampled: selectorsForSetting.length,
-          observedImpactCount,
-          changedBodyClasses: runtimeDiff.changedBodyClasses,
-          changedCssVariableCount: runtimeDiff.changedCssVariables.length,
-          changedComputedStyleCount: runtimeDiff.changedComputedStyles.length,
+          settingsObserved: sidecarRecords.length,
+          totalObservedImpactCount,
+          totalChangedCssVariableCount: evidenceRecords.reduce(
+            (sum, r) => sum + (r.changedCssVariables?.length || 0),
+            0,
+          ),
+          totalChangedComputedStyleCount: evidenceRecords.reduce(
+            (sum, r) => sum + (r.changedComputedStyles?.length || 0),
+            0,
+          ),
         };
 
         const evidenceOutputDir = join(RESULTS_DIR, themeSlug);
@@ -1252,35 +1247,22 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
           join(evidenceOutputDir, `${mode}-style-settings-runtime-evidence.json`),
           JSON.stringify(
             {
-              formatVersion: 1,
+              // formatVersion 2: multi-record sidecar with one record per single-setting
+              // observation. Older single-record sidecars remain readable via
+              // normalizeRuntimeEvidenceRecords (backward-compat shim).
+              formatVersion: 2,
               observedAt,
-              settingId: observationPayload.settingId,
               mode,
-              selectors: selectorsForSetting,
-              diff: runtimeDiff,
+              settingsObserved: sidecarRecords.length,
+              totalObservedImpactCount,
               selectorImpacts: evidenceGraph,
-              records: [
-                {
-                  observedAt,
-                  settingId: observationPayload.settingId,
-                  mode,
-                  selectors: selectorsForSetting,
-                  observedImpactCount,
-                  diff: runtimeDiff,
-                },
-              ],
-              note: "Runtime evidence confirms observed single-setting diffs only; static impacts remain inferred source-of-truth.",
+              records: sidecarRecords,
+              note: "Runtime evidence: bounded single-setting coverage across all eligible settings. Static impacts remain the inferred source-of-truth; runtime evidence is additive confirmation only.",
             },
             null,
             2,
           ),
         );
-
-        writeStyleSettingsData({});
-        await cli.reload();
-        await cli.waitForReady({
-          label: `${themeSlug} runtime evidence reset`,
-        });
       }
     } catch (error) {
       failures.push(`Runtime evidence observation failed: ${error.message}`);
