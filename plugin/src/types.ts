@@ -57,10 +57,7 @@ export interface ThemeData {
    * - `light`: CSS that should only apply in light mode
    */
   classSettings?: Record<string, ClassSettingCSS>;
-  /**
-   * V2 selector-impact graph derived from canonical Style Settings effects.
-   * Maps selectors to the setting effects that can influence them.
-   */
+  /** Selector-impact graph derived from canonical Style Settings effects. */
   selectorImpacts?: Record<string, SelectorImpactRecord>;
 }
 
@@ -101,6 +98,14 @@ export interface SelectorImpact {
   variablePath?: string[];
   variableChainLength?: number;
   variableConsumerKind?: "direct" | "transitive";
+  /** Per-hop nested at-rule context for variable bridge declarations in variablePath order (excluding the first source variable). */
+  bridgeAtRuleContexts?: string[][];
+  /** Mode after intersecting effect mode, transitive bridge mode(s), and consumer mode. */
+  resolvedMode?: "both" | "dark" | "light";
+  /** Static nested at-rule relation between bridge context(s) and selector consumer context. */
+  contextRelation?: "none" | "consumer-nested" | "bridge-nested" | "divergent";
+  /** Deterministic static precision level for this path under known mode/context constraints. */
+  compatibility?: "exact" | "conditional" | "possible";
   sourceVariable?: string;
   sourceVariables?: string[];
   derivedFrom?: "alt-format" | "gradient";
