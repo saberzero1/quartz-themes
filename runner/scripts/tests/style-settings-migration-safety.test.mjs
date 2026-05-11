@@ -1,6 +1,6 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, mkdirSync } from "node:fs";
+import { readFileSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { createRequire } from "node:module";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -63,6 +63,20 @@ function collectParsedIdsFromSidecar(filePath) {
     }
   }
   return ids;
+}
+
+function collectSidecarPaths(dirPath) {
+  const sidecars = [];
+  for (const entry of readdirSync(dirPath)) {
+    const fullPath = join(dirPath, entry);
+    const stat = statSync(fullPath);
+    if (stat.isDirectory()) {
+      sidecars.push(...collectSidecarPaths(fullPath));
+      continue;
+    }
+    if (entry === "style-settings.yaml") sidecars.push(fullPath);
+  }
+  return sidecars;
 }
 
 describe("style settings migration safety", () => {
@@ -133,6 +147,19 @@ describe("style settings migration safety", () => {
       prismPath,
       willemstadPath,
     ]) {
+      const rawIds = collectRawIdsFromSidecar(filePath);
+      const parsedIds = collectParsedIdsFromSidecar(filePath);
+      const droppedIds = [...rawIds].filter((id) => !parsedIds.has(id));
+      assert.equal(
+        droppedIds.length,
+        0,
+        `${filePath} dropped IDs during parser import: ${droppedIds.join(", ")}`,
+      );
+    }
+  });
+
+  test("all sidecar files parse losslessly for setting IDs", () => {
+    for (const filePath of collectSidecarPaths(join(repoRoot, "obsidian"))) {
       const rawIds = collectRawIdsFromSidecar(filePath);
       const parsedIds = collectParsedIdsFromSidecar(filePath);
       const droppedIds = [...rawIds].filter((id) => !parsedIds.has(id));
