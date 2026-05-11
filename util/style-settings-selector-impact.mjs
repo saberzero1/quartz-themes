@@ -348,7 +348,7 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
 /**
  * Build a unique traversal key for deduping bounded transitive paths.
  * Control-character delimiters avoid ambiguity with normal CSS text and
- * are non-printable so they do not collide with normal CSS identifier chars.
+ * are non-printable (U+0000-U+001F), which are not valid in CSS identifiers.
  */
 function buildTraversalStateKey({
   variable,
@@ -369,6 +369,19 @@ function buildTraversalStateKey({
     bridgeAtRuleContexts.map((ctx) => ctx.join("\u0001")).join("\u0002"),
     dependencyContext.join("\u0001"),
   ].join("\u0000");
+}
+
+const CONTEXT_RELATION_PRIORITY = {
+  none: 0,
+  "consumer-nested": 1,
+  "bridge-nested": 2,
+  divergent: 3,
+};
+
+function mergeContextRelation(current, relation) {
+  return CONTEXT_RELATION_PRIORITY[relation] > CONTEXT_RELATION_PRIORITY[current]
+    ? relation
+    : current;
 }
 
 /**
@@ -422,6 +435,8 @@ function collectVariablePaths(directVariables, variableDependencyIndex, effectMo
         bridgeAtRuleContexts: currentPath.bridgeAtRuleContexts,
         dependencyContext: dependency.atRuleContext,
       });
+      // Deduping is traversal-only (variable+mode+path+bridge contexts).
+      // Consumer-level compatibility is intentionally evaluated later per selector hit.
       if (seenStates.has(stateKey)) continue;
       seenStates.add(stateKey);
 
@@ -542,20 +557,8 @@ export function buildSelectorImpactGraph({
             );
             let contextRelation = "none";
             for (const relation of perHopContextRelations) {
-              if (relation === "divergent") {
-                contextRelation = "divergent";
-                break;
-              }
-              if (relation === "bridge-nested") {
-                contextRelation = "bridge-nested";
-                continue;
-              }
-              if (
-                relation === "consumer-nested" &&
-                contextRelation !== "bridge-nested"
-              ) {
-                contextRelation = "consumer-nested";
-              }
+              contextRelation = mergeContextRelation(contextRelation, relation);
+              if (contextRelation === "divergent") break;
             }
             addImpact(selectorImpacts, hit.selector, {
               ...baseImpact,
