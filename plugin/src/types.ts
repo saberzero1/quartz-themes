@@ -101,7 +101,10 @@ export interface SelectorImpact {
   variablePath?: string[];
   variableChainLength?: number;
   variableConsumerKind?: "direct" | "transitive";
-  /** Per-hop nested at-rule context for variable bridges; bridgeAtRuleContexts[i] maps to variablePath[i+1]. */
+  /**
+   * Per-hop nested at-rule context for variable bridges; bridgeAtRuleContexts[i] maps to variablePath[i+1].
+   * Example: variablePath=["--a","--b","--c"] => bridgeAtRuleContexts[0] scopes the --a→--b hop.
+   */
   bridgeAtRuleContexts?: string[][];
   /** Mode after intersecting effect mode, transitive bridge mode(s), and consumer mode. */
   resolvedMode?: "both" | "dark" | "light";

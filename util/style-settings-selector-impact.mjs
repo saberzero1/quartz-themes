@@ -165,6 +165,8 @@ function shouldIncludeMode(effectMode, selectorMode) {
  * - "both" acts as the unconstrained mode.
  * - light ∩ dark is incompatible and returns null.
  *
+ * @param {"both" | "light" | "dark"} left
+ * @param {"both" | "light" | "dark"} right
  * @returns {"both" | "light" | "dark" | null}
  */
 function intersectModes(left, right) {
@@ -364,6 +366,7 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
  * Build a unique traversal key for deduping bounded transitive paths.
  * Control-character delimiters avoid ambiguity with normal CSS text and
  * are non-printable (U+0000-U+001F), which are not valid in CSS identifiers.
+ * This keeps keys compact/deterministic without JSON serialization overhead.
  */
 function buildTraversalStateKey({
   variable,
@@ -459,7 +462,8 @@ function collectVariablePaths(directVariables, variableDependencyIndex, effectMo
         dependencyContext: dependency.atRuleContext,
       });
       // Deduping is traversal-only (variable+mode+path+bridge contexts).
-      // Consumer-level compatibility is intentionally evaluated later per selector hit.
+      // Consumer-level compatibility cannot be resolved here because selector hits
+      // vary per variable consumer and are only known in buildSelectorImpactGraph().
       if (seenStates.has(stateKey)) continue;
       seenStates.add(stateKey);
 
