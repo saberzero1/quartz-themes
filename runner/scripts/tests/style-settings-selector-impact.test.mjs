@@ -205,6 +205,7 @@ describe("buildSelectorImpactGraph", () => {
     assert.equal(directImpact.variableConsumerKind, "direct");
     assert.equal(directImpact.variableChainLength, 0);
     assert.deepEqual(directImpact.variablePath, ["--accent-source"]);
+    assert.equal(directImpact.compatibility, "conditional");
 
     const transitiveImpact = graph[".button"].impacts[0];
     assert.equal(transitiveImpact.variableConsumerKind, "transitive");
@@ -214,6 +215,9 @@ describe("buildSelectorImpactGraph", () => {
       "--accent-bridge",
       "--accent-ui",
     ]);
+    assert.equal(transitiveImpact.compatibility, "conditional");
+    assert.equal(transitiveImpact.resolvedMode, "light");
+    assert.equal(transitiveImpact.contextRelation, "none");
   });
 
   test("bounds transitive variable tracing depth", () => {
@@ -271,6 +275,200 @@ describe("buildSelectorImpactGraph", () => {
       "--v4",
     ]);
     assert.equal(graph[".beyond-bound"], undefined);
+  });
+
+  test("filters transitive bridges that only exist in one mode", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          ":root { --bridge: var(--source); --ui: var(--bridge); } .light-card { color: var(--ui); }",
+        dark: ".dark-card { color: var(--ui); }",
+      },
+    });
+
+    assert.ok(graph[".light-card"]);
+    assert.equal(graph[".light-card"].impacts[0].resolvedMode, "light");
+    assert.equal(graph[".light-card"].impacts[0].compatibility, "conditional");
+    assert.equal(graph[".dark-card"], undefined);
+  });
+
+  test("captures nested at-rule compatibility metadata for conditional paths", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          "@media (min-width: 768px) { :root { --ui: var(--source); } } .card { color: var(--ui); }",
+      },
+    });
+
+    const impact = graph[".card"].impacts[0];
+    assert.equal(impact.contextRelation, "bridge-nested");
+    assert.equal(impact.compatibility, "conditional");
+    assert.deepEqual(impact.bridgeAtRuleContexts, [
+      ["@media (min-width:768px)"],
+    ]);
+  });
+
+  test("treats broader bridge + narrower consumer as exact context match", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "light",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          ":root { --ui: var(--source); } @media (min-width: 768px) { .card { color: var(--ui); } }",
+      },
+    });
+
+    const impact = graph[".card"].impacts[0];
+    assert.equal(impact.contextRelation, "consumer-nested");
+    assert.equal(impact.compatibility, "exact");
+    assert.equal(impact.resolvedMode, "light");
+  });
+
+  test("marks divergent nested at-rule chains as possible", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "light",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          "@supports (display: grid) { :root { --ui: var(--source); } } @media (min-width: 768px) { .card { color: var(--ui); } }",
+      },
+    });
+
+    const impact = graph[".card"].impacts[0];
+    assert.equal(impact.contextRelation, "divergent");
+    assert.equal(impact.compatibility, "possible");
+  });
+
+  test("preserves materially distinct bridge paths across contexts", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "source",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "source",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--source",
+              variables: ["--source"],
+              interactionGroup: "css-variable:--source",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light: `
+          :root { --ui: var(--source); }
+          @media (min-width: 768px) { :root { --ui: var(--source); } }
+          .chip { color: var(--ui); }
+        `,
+      },
+    });
+
+    const chipImpacts = graph[".chip"].impacts.filter(
+      (impact) => impact.selectorVariable === "--ui",
+    );
+    assert.equal(chipImpacts.length, 2);
+    assert.deepEqual(
+      chipImpacts.map((impact) => impact.contextRelation).sort(),
+      ["bridge-nested", "none"],
+    );
   });
 
   test("adds interaction notes when multiple settings share a selector target group", () => {
@@ -429,9 +627,7 @@ describe("buildSelectorImpactGraph", () => {
         },
       ],
       classSettings: {},
-      modeCss: {
-        light: ".wrap :is(.a, .b), .other { color: var(--accent); }",
-      },
+      modeCss: { light: ".wrap :is(.a, .b), .other { color: var(--accent); }" },
     });
 
     assert.ok(graph[".wrap :is(.a,.b)"]);

@@ -58,7 +58,7 @@ export interface ThemeData {
    */
   classSettings?: Record<string, ClassSettingCSS>;
   /**
-   * V2 selector-impact graph derived from canonical Style Settings effects.
+   * Selector-impact graph derived from canonical Style Settings effects.
    * Maps selectors to the setting effects that can influence them.
    */
   selectorImpacts?: Record<string, SelectorImpactRecord>;
@@ -101,6 +101,22 @@ export interface SelectorImpact {
   variablePath?: string[];
   variableChainLength?: number;
   variableConsumerKind?: "direct" | "transitive";
+  /**
+   * Per-hop nested at-rule context for variable bridges; bridgeAtRuleContexts[i] maps to variablePath[i+1].
+   * Example: variablePath=["--a","--b","--c"] => bridgeAtRuleContexts[0] scopes the --a→--b hop.
+   */
+  bridgeAtRuleContexts?: string[][];
+  /** Mode after intersecting effect mode, transitive bridge mode(s), and consumer mode. */
+  resolvedMode?: "both" | "dark" | "light";
+  /** Static nested at-rule relation between bridge context(s) and selector consumer context. */
+  contextRelation?: "none" | "consumer-nested" | "bridge-nested" | "divergent";
+  /**
+   * Deterministic static precision level for this path under known mode/context constraints.
+   * - exact: consumer scope is fully covered by bridge/effect scope
+   * - conditional: valid only under narrower mode/bridge conditions
+   * - possible: contexts diverge without static alignment
+   */
+  compatibility?: "exact" | "conditional" | "possible";
   sourceVariable?: string;
   sourceVariables?: string[];
   derivedFrom?: "alt-format" | "gradient";

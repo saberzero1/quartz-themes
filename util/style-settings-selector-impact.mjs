@@ -1,7 +1,8 @@
 import { generate, parse, walk } from "css-tree";
 
 /**
- * Build a deterministic V2 selector-impact graph from canonical SettingEffect records.
+ * Build a deterministic selector-impact graph via `buildSelectorImpactGraph`
+ * from canonical SettingEffect records.
  *
  * Scope limits (intentional):
  * - No full CSS cascade simulation or DOM state modeling.
@@ -9,6 +10,7 @@ import { generate, parse, walk } from "css-tree";
  * - Bounded static var(...) bridge traversal links transitive consumers.
  * - Structured CSS parsing is used for selector/consumer discovery.
  * - Nested at-rule containers are tracked for explainability (for example @media/@supports).
+ * - Path compatibility is statically refined with mode + nested at-rule context metadata.
  * - Keyframe steps are intentionally ignored as selector targets.
  * - Impacts are explainable via canonical effect primitives + static CSS reads.
  */
@@ -158,6 +160,85 @@ function shouldIncludeMode(effectMode, selectorMode) {
   return effectMode === "both" || effectMode === selectorMode;
 }
 
+/**
+ * Intersect two static mode scopes.
+ * - "both" acts as the unconstrained mode.
+ * - light ∩ dark is incompatible and returns null.
+ *
+ * @param {"both" | "light" | "dark"} left
+ * @param {"both" | "light" | "dark"} right
+ * @returns {"both" | "light" | "dark" | null}
+ */
+function intersectModes(left, right) {
+  if (left === right) return left;
+  if (left === "both") return right;
+  if (right === "both") return left;
+  return null;
+}
+
+/**
+ * True when `prefix` matches the leading nested at-rule chain in `full`.
+ *
+ * @returns {boolean}
+ */
+function isAtRuleContextPrefix(prefix, full) {
+  if (prefix.length > full.length) return false;
+  return prefix.every((item, i) => item === full[i]);
+}
+
+/**
+ * Compare transitive bridge and consumer nested at-rule chains.
+ * - none: neither side is nested
+ * - consumer-nested: bridge is equal/broader, consumer is same or narrower
+ * - bridge-nested: bridge is narrower than the consumer context
+ * - divergent: nested chains differ without a prefix relationship
+ *
+ * @param {string[]} bridgeContext
+ * @param {string[]} consumerContext
+ * @returns {"none" | "consumer-nested" | "bridge-nested" | "divergent"}
+ */
+function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
+  if (bridgeContext.length === 0 && consumerContext.length === 0) return "none";
+  if (
+    bridgeContext.length === 0 ||
+    isAtRuleContextPrefix(bridgeContext, consumerContext)
+  ) {
+    return "consumer-nested";
+  }
+  if (isAtRuleContextPrefix(consumerContext, bridgeContext)) {
+    return "bridge-nested";
+  }
+  return "divergent";
+}
+
+/**
+ * Deterministic precision model for selector-impact compatibility:
+ * - exact: consumer context is fully covered by effect/bridge context
+ * - conditional: path exists but requires narrower mode or bridge-only nesting
+ * - possible: nested at-rule chains diverge
+ *
+ * Notes:
+ * - consumer-nested remains exact because a broader bridge still satisfies a narrower consumer.
+ * - bridge-nested is conditional because the bridge only exists in a narrower condition.
+ *
+ * @param {"both" | "light" | "dark"} effectMode
+ * @param {"both" | "light" | "dark"} resolvedMode
+ * @param {"none" | "consumer-nested" | "bridge-nested" | "divergent"} contextRelation
+ * @returns {"exact" | "conditional" | "possible"}
+ */
+function evaluateCompatibility(effectMode, resolvedMode, contextRelation) {
+  let compatibility = "exact";
+  if (resolvedMode !== effectMode) {
+    compatibility = "conditional";
+  }
+  if (contextRelation === "bridge-nested") {
+    if (compatibility === "exact") compatibility = "conditional";
+  } else if (contextRelation === "divergent") {
+    compatibility = "possible";
+  }
+  return compatibility;
+}
+
 function addImpact(store, selector, impact) {
   if (!store.has(selector)) {
     store.set(selector, { impacts: [], interactionGroups: [] });
@@ -176,6 +257,12 @@ function addImpact(store, selector, impact) {
     impact.variableChainLength ?? "",
     (impact.variablePath || []).join("->"),
     (impact.atRuleContext || []).join(" > "),
+    (impact.bridgeAtRuleContexts || [])
+      .map((ctx) => ctx.join(" > "))
+      .join(" || "),
+    impact.contextRelation || "",
+    impact.compatibility || "",
+    impact.resolvedMode || "",
     impact.targetKind,
     impact.operation,
   ].join("|");
@@ -275,37 +362,130 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
   return byDependency;
 }
 
-function collectVariablePaths(directVariables, variableDependencyIndex) {
+/**
+ * Build a unique traversal key for deduping bounded transitive paths.
+ * Control-character delimiters avoid ambiguity with normal CSS text and
+ * are non-printable (U+0000-U+001F), which are not valid in CSS identifiers.
+ * This keeps keys compact/deterministic without JSON serialization overhead.
+ */
+function buildTraversalStateKey({
+  variable,
+  traversalMode,
+  path,
+  bridgeAtRuleContexts,
+  dependencyContext,
+}) {
+  // Use control-character delimiters so we can keep deterministic string keys
+  // without ambiguity from normal CSS text:
+  // Control chars U+0000-U+001F are invalid in CSS identifiers, preventing
+  // collisions with legitimate selector/custom-property text.
+  // - \u0000 between top-level components
+  // - \u0001 between items inside one array
+  // - \u0002 between nested arrays
+  return [
+    variable,
+    traversalMode,
+    path.join("\u0001"),
+    bridgeAtRuleContexts.map((ctx) => ctx.join("\u0001")).join("\u0002"),
+    dependencyContext.join("\u0001"),
+  ].join("\u0000");
+}
+
+const CONTEXT_RELATION_PRIORITY = {
+  none: 0,
+  "consumer-nested": 1,
+  "bridge-nested": 2,
+  divergent: 3,
+};
+
+/**
+ * Return whichever context relation has higher static incompatibility priority.
+ * Priority: divergent > bridge-nested > consumer-nested > none.
+ *
+ * @returns {"none" | "consumer-nested" | "bridge-nested" | "divergent"}
+ */
+function mergeContextRelation(current, relation) {
+  return CONTEXT_RELATION_PRIORITY[relation] > CONTEXT_RELATION_PRIORITY[current]
+    ? relation
+    : current;
+}
+
+/**
+ * Collect bounded direct/transitive variable paths while propagating mode constraints.
+ *
+ * @param {"both" | "light" | "dark"} effectMode
+ */
+function collectVariablePaths(directVariables, variableDependencyIndex, effectMode) {
   const paths = new Map();
   const queue = [];
+  const seenStates = new Set();
   for (const variable of directVariables) {
-    paths.set(variable, {
+    const traversal = {
       path: [variable],
       chainLength: 0,
       consumerKind: "direct",
-    });
-    queue.push(variable);
+      traversalMode: effectMode,
+      bridgeAtRuleContexts: [],
+    };
+    if (!paths.has(variable)) paths.set(variable, []);
+    paths.get(variable).push(traversal);
+    queue.push({ variable, traversal });
+    seenStates.add(
+      buildTraversalStateKey({
+        variable,
+        traversalMode: effectMode,
+        path: [variable],
+        bridgeAtRuleContexts: [],
+        dependencyContext: [],
+      }),
+    );
   }
 
   while (queue.length > 0) {
     const current = queue.shift();
-    const currentPath = paths.get(current);
+    const currentPath = current.traversal;
     if (currentPath.chainLength >= MAX_TRANSITIVE_VAR_HOPS) {
       continue;
     }
-    for (const dependency of variableDependencyIndex.get(current) || []) {
+    for (const dependency of variableDependencyIndex.get(current.variable) || []) {
       if (currentPath.path.includes(dependency.variable)) continue;
+      const traversalMode = intersectModes(
+        currentPath.traversalMode,
+        dependency.mode,
+      );
+      if (!traversalMode) continue;
       const nextChainLength = currentPath.chainLength + 1;
-      const existing = paths.get(dependency.variable);
-      if (existing && existing.chainLength <= nextChainLength) {
-        continue;
-      }
-      paths.set(dependency.variable, {
-        path: [...currentPath.path, dependency.variable],
+      const nextPath = [...currentPath.path, dependency.variable];
+      const stateKey = buildTraversalStateKey({
+        variable: dependency.variable,
+        traversalMode,
+        path: nextPath,
+        bridgeAtRuleContexts: currentPath.bridgeAtRuleContexts,
+        dependencyContext: dependency.atRuleContext,
+      });
+      // Deduping is traversal-only (variable+mode+path+bridge contexts).
+      // Consumer-level compatibility cannot be resolved here because each
+      // variable can have multiple selector consumers with different at-rule
+      // contexts, only available in buildSelectorImpactGraph().
+      if (seenStates.has(stateKey)) continue;
+      seenStates.add(stateKey);
+
+      const traversal = {
+        path: nextPath,
         chainLength: nextChainLength,
         consumerKind: "transitive",
-      });
-      queue.push(dependency.variable);
+        traversalMode,
+        bridgeAtRuleContexts: [
+          ...currentPath.bridgeAtRuleContexts,
+          dependency.atRuleContext,
+        ],
+      };
+      if (!paths.has(dependency.variable)) {
+        paths.set(dependency.variable, [traversal]);
+      } else {
+        paths.get(dependency.variable).push(traversal);
+      }
+      queue.push({ variable: dependency.variable, traversal });
     }
   }
 
@@ -394,22 +574,42 @@ export function buildSelectorImpactGraph({
       const variablePaths = collectVariablePaths(
         directVariables,
         variableDependencies,
+        effect.mode,
       );
 
-      for (const [variable, traversal] of variablePaths) {
+      for (const [variable, traversals] of variablePaths) {
         for (const hit of variableConsumers.get(variable) || []) {
-          if (!shouldIncludeMode(effect.mode, hit.mode)) continue;
-          addImpact(selectorImpacts, hit.selector, {
-            ...baseImpact,
-            selectorVariable: variable,
-            variablePath: traversal.path,
-            variableChainLength: traversal.chainLength,
-            variableConsumerKind: traversal.consumerKind,
-            sourceVariable: effect.sourceVariable,
-            sourceVariables: effect.sourceVariables,
-            derivedFrom: effect.derivedFrom,
-            atRuleContext: hit.atRuleContext,
-          });
+          for (const traversal of traversals) {
+            const resolvedMode = intersectModes(traversal.traversalMode, hit.mode);
+            if (!resolvedMode) continue;
+            const perHopContextRelations = traversal.bridgeAtRuleContexts.map(
+              (ctx) => compareAtRuleContext(ctx, hit.atRuleContext),
+            );
+            let contextRelation = "none";
+            for (const relation of perHopContextRelations) {
+              contextRelation = mergeContextRelation(contextRelation, relation);
+              if (contextRelation === "divergent") break;
+            }
+            addImpact(selectorImpacts, hit.selector, {
+              ...baseImpact,
+              selectorVariable: variable,
+              variablePath: traversal.path,
+              variableChainLength: traversal.chainLength,
+              variableConsumerKind: traversal.consumerKind,
+              sourceVariable: effect.sourceVariable,
+              sourceVariables: effect.sourceVariables,
+              derivedFrom: effect.derivedFrom,
+              atRuleContext: hit.atRuleContext,
+              bridgeAtRuleContexts: traversal.bridgeAtRuleContexts,
+              resolvedMode,
+              contextRelation,
+              compatibility: evaluateCompatibility(
+                effect.mode,
+                resolvedMode,
+                contextRelation,
+              ),
+            });
+          }
         }
       }
     }
