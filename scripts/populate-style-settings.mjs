@@ -70,56 +70,148 @@ function toSerializable(value) {
   return value;
 }
 
-function parseCssToSections(css, sourceName) {
-  const parsed = parseStyleSettingsStylesheetText(css, { sourceName });
-  return parsed.sections || [];
+function parseCssToResult(css, sourceName) {
+  return parseStyleSettingsStylesheetText(css, { sourceName });
 }
 
-function parseYamlToSections(yamlText, sourceName) {
-  const parsed = parseStyleSettingsStandaloneYamlText(yamlText, {
+function parseYamlToResult(yamlText, sourceName) {
+  return parseStyleSettingsStandaloneYamlText(yamlText, {
     sourceName,
     defaultMode: "replace",
   });
-  return parsed.sections || [];
 }
 
-function buildThemeStyleSettingsFromSections(sections) {
-  const normalized = buildNormalizedStyleSettingsSchema({
-    sections,
-    diagnostics: [],
-  });
-  const normalizedSections = normalized.sections.map((section) => ({
-    id: section.id,
-    name: section.name,
-    collapsed: !!section.collapsed,
-    settings: section.settings.map((setting) => ({
-      id: setting.id,
-      title: setting.title,
-      description: setting.description,
-      type: setting.type,
-      default: setting.default,
-      defaults: setting.defaults,
-      options: setting.options,
-      constraints: setting.constraints,
-      binding: setting.binding,
-      bindings: setting.bindings,
-      derivedBindings: setting.derivedBindings,
+function normalizeLooseYamlSections(raw) {
+  if (Array.isArray(raw)) {
+    return raw
+      .filter((entry) => entry && typeof entry === "object")
+      .map((entry) => ({
+        name: entry.name || "",
+        id: entry.id || "",
+        collapsed: !!entry.collapsed,
+        settings: Array.isArray(entry.settings) ? entry.settings : [],
+      }));
+  }
+
+  if (raw && typeof raw === "object" && Array.isArray(raw.sections)) {
+    return raw.sections
+      .filter((entry) => entry && typeof entry === "object")
+      .map((entry) => ({
+        name: entry.name || "",
+        id: entry.id || "",
+        collapsed: !!entry.collapsed,
+        settings: Array.isArray(entry.settings) ? entry.settings : [],
+      }));
+  }
+
+  if (raw && typeof raw === "object") {
+    return [
+      {
+        name: raw.name || "",
+        id: raw.id || "",
+        collapsed: !!raw.collapsed,
+        settings: Array.isArray(raw.settings) ? raw.settings : [],
+      },
+    ];
+  }
+
+  return [];
+}
+
+function collectSettingIdsFromSections(sections) {
+  const ids = new Set();
+  for (const section of sections || []) {
+    for (const setting of section.settings || []) {
+      if (setting && typeof setting === "object" && setting.id) {
+        ids.add(setting.id);
+      }
+    }
+  }
+  return ids;
+}
+
+function mergeMissingSettingsById(parsedSections, existingSections) {
+  const merged = parsedSections.map((section) => ({
+    ...section,
+    settings: Array.isArray(section.settings) ? [...section.settings] : [],
+  }));
+  const parsedIds = collectSettingIdsFromSections(merged);
+  const addedIds = [];
+
+  for (const existingSection of existingSections) {
+    const existingSettings = Array.isArray(existingSection.settings)
+      ? existingSection.settings
+      : [];
+    for (const setting of existingSettings) {
+      if (!setting || typeof setting !== "object" || !setting.id) {
+        continue;
+      }
+      if (parsedIds.has(setting.id)) {
+        continue;
+      }
+
+      let target =
+        merged.find((section) => section.id === existingSection.id) ||
+        merged.find((section) => section.name === existingSection.name) ||
+        merged[0];
+
+      if (!target) {
+        target = {
+          name: existingSection.name || "Style Settings",
+          id: existingSection.id || "style-settings",
+          collapsed: !!existingSection.collapsed,
+          settings: [],
+        };
+        merged.push(target);
+      }
+
+      target.settings.push(setting);
+      parsedIds.add(setting.id);
+      addedIds.push(setting.id);
+    }
+  }
+
+  return { sections: merged, addedIds };
+}
+
+function stripHeavySourceFields(source) {
+  if (!source || typeof source !== "object") {
+    return source;
+  }
+  const { rawYaml: _rawYaml, rawComment: _rawComment, ...lightweight } = source;
+  return lightweight;
+}
+
+function sanitizeNormalizedSections(sections) {
+  return (sections || []).map((section) => ({
+    ...section,
+    source: stripHeavySourceFields(section.source),
+    settings: (section.settings || []).map((setting) => ({
+      ...setting,
+      source: stripHeavySourceFields(setting.source),
     })),
   }));
-  const primary = normalizedSections[0] || {};
+}
+
+function sanitizeNormalizedDiagnostics(diagnostics) {
+  return (diagnostics || []).map((diag) => ({
+    ...diag,
+    source: stripHeavySourceFields(diag.source),
+  }));
+}
+
+function buildThemeStyleSettingsFromParsedResult(parsedResult) {
+  const normalized = buildNormalizedStyleSettingsSchema(parsedResult);
+  const sanitizedSections = sanitizeNormalizedSections(normalized.sections);
+  const primary = sanitizedSections[0] || {};
 
   return {
     version: normalized.version,
     source: "saberzero1/obsidian-style-settings",
-    sections: normalizedSections,
-    diagnostics: normalized.diagnostics.map((diag) => ({
-      severity: diag.severity,
-      code: diag.code,
-      message: diag.message,
-      sectionId: diag.sectionId,
-      settingId: diag.settingId,
-      path: diag.path,
-    })),
+    sections: toSerializable(sanitizedSections),
+    diagnostics: toSerializable(
+      sanitizeNormalizedDiagnostics(normalized.diagnostics),
+    ),
     // Compatibility field currently used by existing Quartz scripts.
     id: primary.id || "",
     name: primary.name || "",
@@ -132,6 +224,8 @@ if (shouldExtract) {
   let extracted = 0;
   let unchanged = 0;
   let noSettings = 0;
+  let recoveredSettings = 0;
+  let diagnosticThemes = 0;
 
   for (const dirName of obsidianDirs) {
     const cssPath = join(OBSIDIAN_DIR, dirName, "theme.css");
@@ -141,11 +235,34 @@ if (shouldExtract) {
     }
 
     const css = readFileSync(cssPath, "utf8");
-    const sections = parseCssToSections(css, `${dirName}/theme.css`);
-    if (sections.length === 0) {
+    const yamlPath = join(OBSIDIAN_DIR, dirName, "style-settings.yaml");
+    const existingYaml = existsSync(yamlPath) ? readFileSync(yamlPath, "utf8") : "";
+
+    const parsedCss = parseCssToResult(css, `${dirName}/theme.css`);
+    if ((parsedCss.diagnostics || []).length > 0) {
+      diagnosticThemes++;
+    }
+
+    const parsedSections = parsedCss.sections || [];
+    if (parsedSections.length === 0) {
       noSettings++;
       continue;
     }
+
+    let existingSections = [];
+    if (existingYaml) {
+      try {
+        existingSections = normalizeLooseYamlSections(yaml.load(existingYaml));
+      } catch {
+        existingSections = [];
+      }
+    }
+
+    const { sections, addedIds } = mergeMissingSettingsById(
+      parsedSections,
+      existingSections,
+    );
+    recoveredSettings += addedIds.length;
 
     const sidecarDoc = {
       mode: "replace",
@@ -170,10 +287,16 @@ if (shouldExtract) {
       forceQuotes: false,
     });
 
-    const yamlPath = join(OBSIDIAN_DIR, dirName, "style-settings.yaml");
-    const existing = existsSync(yamlPath) ? readFileSync(yamlPath, "utf8") : "";
+    const existingIds = collectSettingIdsFromSections(existingSections);
+    const outputIds = collectSettingIdsFromSections(sidecarDoc.sections);
+    const droppedIds = [...existingIds].filter((id) => !outputIds.has(id));
+    if (droppedIds.length > 0) {
+      console.warn(
+        `[style-settings] ${dirName}: possible ID drops after extraction (${droppedIds.length})`,
+      );
+    }
 
-    if (yamlOut.trim() === existing.trim()) {
+    if (yamlOut.trim() === existingYaml.trim()) {
       unchanged++;
     } else {
       writeFileSync(yamlPath, yamlOut);
@@ -183,6 +306,9 @@ if (shouldExtract) {
 
   console.log(
     `Extract: ${extracted} written, ${unchanged} unchanged, ${noSettings} themes without @settings.`,
+  );
+  console.log(
+    `Extract diagnostics: ${diagnosticThemes} themes with parser diagnostics, ${recoveredSettings} legacy settings IDs recovered from existing sidecars.`,
   );
 }
 
@@ -200,6 +326,7 @@ for (const dirName of obsidianDirs) {
 
 let populated = 0;
 let skipped = 0;
+let populatedWithDiagnostics = 0;
 
 for (const [themeSlug, themeMeta] of Object.entries(themesJson.themes)) {
   const dirName = slugToDirName.get(themeSlug);
@@ -214,24 +341,43 @@ for (const [themeSlug, themeMeta] of Object.entries(themesJson.themes)) {
     continue;
   }
 
-  let sections;
+  const yamlText = readFileSync(yamlPath, "utf8");
+  let parsedYaml;
   try {
-    sections = parseYamlToSections(readFileSync(yamlPath, "utf8"), yamlPath);
+    parsedYaml = parseYamlToResult(yamlText, yamlPath);
   } catch {
     skipped++;
     continue;
   }
 
+  const sections = parsedYaml.sections || [];
   if (!Array.isArray(sections) || sections.length === 0) {
     skipped++;
     continue;
   }
 
-  themeMeta.style_settings = buildThemeStyleSettingsFromSections(sections);
+  const rawExistingSections = normalizeLooseYamlSections(yaml.load(yamlText));
+  const rawIds = collectSettingIdsFromSections(rawExistingSections);
+  const parsedIds = collectSettingIdsFromSections(sections);
+  const droppedIds = [...rawIds].filter((id) => !parsedIds.has(id));
+  if (droppedIds.length > 0) {
+    console.warn(
+      `[style-settings] ${themeSlug}: parser did not retain ${droppedIds.length} setting IDs from sidecar YAML`,
+    );
+  }
+
+  if ((parsedYaml.diagnostics || []).length > 0) {
+    populatedWithDiagnostics++;
+  }
+
+  themeMeta.style_settings = buildThemeStyleSettingsFromParsedResult(parsedYaml);
   populated++;
 }
 
 writeFileSync(THEMES_JSON_PATH, JSON.stringify(themesJson, null, 2) + "\n");
 console.log(
   `Populate: ${populated} themes updated in themes.json, ${skipped} skipped.`,
+);
+console.log(
+  `Populate diagnostics: ${populatedWithDiagnostics} themes include parser diagnostics in themes.json.style_settings.`,
 );
