@@ -9,6 +9,7 @@ import {
 } from "../../util/postcss-style-settings.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 import { filterObsidianCSS } from "../../util/obsidian-selectors.mjs";
+import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
 
@@ -1363,6 +1364,12 @@ function renderThemeModule(themeData) {
   return JSON.stringify(themeData, null, 2);
 }
 
+function flattenAspectCssByMode(aspectCss) {
+  return Object.values(aspectCss || {})
+    .filter((value) => typeof value === "string" && value.trim().length > 0)
+    .join("\n");
+}
+
 const reservedIdentifiers = new Set([
   "default",
   "class",
@@ -1708,6 +1715,11 @@ async function main() {
     const normalizedId = resolveThemeKey(themeId, themesMeta);
     const fileBaseName = normalizedId.replace(/[^a-zA-Z0-9-_]/g, "-");
     const outputPath = path.join(outputDir, `${fileBaseName}.json`);
+    const styleSettingsEffects = Array.isArray(
+      themeMeta.style_settings?.effects,
+    )
+      ? themeMeta.style_settings.effects
+      : [];
 
     let extras = null;
     try {
@@ -1778,6 +1790,15 @@ async function main() {
       }
     }
 
+    const selectorImpacts = buildSelectorImpactGraph({
+      effectRecords: styleSettingsEffects,
+      classSettings,
+      modeCss: {
+        dark: flattenAspectCssByMode(darkAspectCSS),
+        light: flattenAspectCssByMode(lightAspectCSS),
+      },
+    });
+
     // Extract and write diagnostics, then remove from aspectCSS
     for (const [mode, aspectCSS] of [
       ["dark", darkAspectCSS],
@@ -1804,6 +1825,7 @@ async function main() {
       light: lightAspectCSS,
       extras,
       classSettings,
+      ...(Object.keys(selectorImpacts).length > 0 ? { selectorImpacts } : {}),
     });
 
     await fs.writeFile(outputPath, moduleContent, "utf8");

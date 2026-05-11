@@ -26,7 +26,10 @@ import { sanitizeFilenamePreservingEmojis as sanitize } from "../util/util.mjs";
 const THEMES_JSON_PATH = "./themes.json";
 const OBSIDIAN_DIR = "./obsidian";
 const TEMP_PARSER_DIR = join(tmpdir(), "style-settings-fork");
-const TEMP_PARSER_PATH = join(TEMP_PARSER_DIR, "StyleSettingsParser.bundle.mjs");
+const TEMP_PARSER_PATH = join(
+  TEMP_PARSER_DIR,
+  "StyleSettingsParser.bundle.mjs",
+);
 
 const shouldExtract = process.argv.includes("--extract");
 const shouldRecoverLegacyMissingIds = process.argv.includes(
@@ -38,9 +41,8 @@ const obsidianDirs = readdirSync(OBSIDIAN_DIR).filter((name) =>
 );
 
 const require = createRequire(import.meta.url);
-const parserEntryPoint = require.resolve(
-  "obsidian-style-settings/src/StyleSettingsParser.ts",
-);
+const parserEntryPoint =
+  require.resolve("obsidian-style-settings/src/StyleSettingsCore.ts");
 mkdirSync(TEMP_PARSER_DIR, { recursive: true });
 
 await build({
@@ -57,6 +59,7 @@ const {
   parseStyleSettingsStylesheetText,
   parseStyleSettingsStandaloneYamlText,
   buildNormalizedStyleSettingsSchema,
+  buildSchemaEffects,
 } = await import(pathToFileURL(TEMP_PARSER_PATH).href);
 
 function toSerializable(value) {
@@ -214,6 +217,7 @@ function buildThemeStyleSettingsFromParsedResult(parsedResult) {
     version: normalized.version,
     source: "saberzero1/obsidian-style-settings",
     sections: toSerializable(sanitizedSections),
+    effects: toSerializable(buildSchemaEffects(normalized)),
     diagnostics: toSerializable(
       sanitizeNormalizedDiagnostics(normalized.diagnostics),
     ),
@@ -241,7 +245,9 @@ if (shouldExtract) {
 
     const css = readFileSync(cssPath, "utf8");
     const yamlPath = join(OBSIDIAN_DIR, dirName, "style-settings.yaml");
-    const existingYaml = existsSync(yamlPath) ? readFileSync(yamlPath, "utf8") : "";
+    const existingYaml = existsSync(yamlPath)
+      ? readFileSync(yamlPath, "utf8")
+      : "";
 
     const parsedCss = parseCssToResult(css, `${dirName}/theme.css`);
     if ((parsedCss.diagnostics || []).length > 0) {
@@ -275,10 +281,7 @@ if (shouldExtract) {
         id: section.id,
         collapsed: !!section.collapsed,
         settings: (section.settings || []).map((setting) =>
-          toSerializable({
-            ...setting,
-            source: undefined,
-          }),
+          toSerializable({ ...setting, source: undefined }),
         ),
       })),
     };
@@ -379,7 +382,8 @@ for (const [themeSlug, themeMeta] of Object.entries(themesJson.themes)) {
     populatedWithDiagnostics++;
   }
 
-  themeMeta.style_settings = buildThemeStyleSettingsFromParsedResult(parsedYaml);
+  themeMeta.style_settings =
+    buildThemeStyleSettingsFromParsedResult(parsedYaml);
   populated++;
 }
 

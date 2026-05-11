@@ -57,6 +57,11 @@ export interface ThemeData {
    * - `light`: CSS that should only apply in light mode
    */
   classSettings?: Record<string, ClassSettingCSS>;
+  /**
+   * V1 selector-impact graph derived from canonical Style Settings effects.
+   * Maps selectors to the setting effects that can influence them.
+   */
+  selectorImpacts?: Record<string, SelectorImpactRecord>;
 }
 
 /** Mode-scoped CSS for a single class-toggle or class-select setting. */
@@ -64,6 +69,44 @@ export interface ClassSettingCSS {
   general?: string;
   dark?: string;
   light?: string;
+}
+
+export interface SelectorImpactRecord {
+  impacts: SelectorImpact[];
+  interactionGroups: SelectorInteractionGroup[];
+}
+
+export interface SelectorImpact {
+  settingId: string;
+  sectionId: string;
+  settingType: string;
+  effectKind: string;
+  targetKind: string;
+  operation: string;
+  mode: "both" | "dark" | "light";
+  interactionGroup: string;
+  interactionMode: string;
+  pathKind:
+    | "body-class"
+    | "css-variable"
+    | "derived-variable"
+    | "gradient-variable";
+  direct: boolean;
+  selectorVariable?: string;
+  sourceVariable?: string;
+  sourceVariables?: string[];
+  derivedFrom?: "alt-format" | "gradient";
+  className?: string;
+  classValue?: string;
+}
+
+export interface SelectorInteractionGroup {
+  interactionGroup: string;
+  interactionMode: string;
+  mode: "both" | "dark" | "light";
+  settingIds: string[];
+  effectKinds: string[];
+  note: string;
 }
 
 /** Metadata about a theme (modes, variations, fonts). */
