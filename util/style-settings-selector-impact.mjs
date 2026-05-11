@@ -51,7 +51,7 @@ function collectRuleVariables(block) {
   return variables;
 }
 
-function collectVarReferences(node) {
+function collectCssVarReferences(node) {
   const references = new Set();
   if (!node) return references;
   walk(node, {
@@ -73,7 +73,7 @@ function collectVariableDefinitions(block) {
     if (node.type !== "Declaration" || !node.property?.startsWith("--")) continue;
     definitions.push({
       variable: node.property,
-      references: [...collectVarReferences(node.value)],
+      references: [...collectCssVarReferences(node.value)],
     });
   }
   return definitions;
@@ -275,7 +275,7 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
   return byDependency;
 }
 
-function collectVariablePaths(directVariables, dependencyIndex) {
+function collectVariablePaths(directVariables, variableDependencyIndex) {
   const paths = new Map();
   const queue = [];
   for (const variable of directVariables) {
@@ -293,7 +293,7 @@ function collectVariablePaths(directVariables, dependencyIndex) {
     if (currentPath.chainLength >= MAX_TRANSITIVE_VAR_HOPS) {
       continue;
     }
-    for (const dependency of dependencyIndex.get(current) || []) {
+    for (const dependency of variableDependencyIndex.get(current) || []) {
       if (currentPath.path.includes(dependency.variable)) continue;
       const nextChainLength = currentPath.chainLength + 1;
       const existing = paths.get(dependency.variable);
