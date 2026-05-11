@@ -160,6 +160,11 @@ function shouldIncludeMode(effectMode, selectorMode) {
   return effectMode === "both" || effectMode === selectorMode;
 }
 
+/**
+ * Intersect two static mode scopes.
+ * - "both" acts as the unconstrained mode.
+ * - light ∩ dark is incompatible and returns null.
+ */
 function intersectModes(left, right) {
   if (left === right) return left;
   if (left === "both") return right;
@@ -167,6 +172,7 @@ function intersectModes(left, right) {
   return null;
 }
 
+/** True when `prefix` matches the leading nested at-rule chain in `full`. */
 function isAtRuleContextPrefix(prefix, full) {
   if (prefix.length > full.length) return false;
   for (let i = 0; i < prefix.length; i += 1) {
@@ -175,6 +181,13 @@ function isAtRuleContextPrefix(prefix, full) {
   return true;
 }
 
+/**
+ * Compare transitive bridge and consumer nested at-rule chains.
+ * - none: neither side is nested
+ * - consumer-nested: consumer is in same or narrower nested context
+ * - bridge-nested: bridge is in narrower nested context than consumer
+ * - divergent: nested chains differ without a prefix relationship
+ */
 function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
   if (bridgeContext.length === 0 && consumerContext.length === 0) return "none";
   if (
@@ -189,6 +202,12 @@ function compareAtRuleContext(bridgeContext = [], consumerContext = []) {
   return "divergent";
 }
 
+/**
+ * Deterministic precision model for selector-impact compatibility:
+ * - exact: mode/context remain aligned with the effect scope
+ * - conditional: scope narrows by mode or bridge-only nesting
+ * - possible: nested at-rule chains diverge
+ */
 function evaluateCompatibility(effectMode, resolvedMode, contextRelation) {
   let compatibility = "exact";
   if (resolvedMode !== effectMode) {
@@ -325,6 +344,10 @@ function buildVariableDependencyIndex(modeCss, classSettings) {
   return byDependency;
 }
 
+/**
+ * Build a unique traversal key for deduping bounded transitive paths.
+ * Control-character delimiters avoid ambiguity with normal CSS text.
+ */
 function buildTraversalStateKey({
   variable,
   traversalMode,
@@ -346,6 +369,9 @@ function buildTraversalStateKey({
   ].join("\u0000");
 }
 
+/**
+ * Collect bounded direct/transitive variable paths while propagating mode constraints.
+ */
 function collectVariablePaths(directVariables, variableDependencyIndex, effectMode) {
   const paths = new Map();
   const queue = [];
