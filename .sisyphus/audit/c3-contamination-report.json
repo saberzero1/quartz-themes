@@ -1,0 +1,104 @@
+{
+  "themes": [
+    {
+      "theme": "80s-neon",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "abate",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "agate",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "aged-whisky",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "agora",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "abyssal",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "adrenaline",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "adwaita",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "allium",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "anuppuccin",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "its-theme",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "minimal",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "catppuccin",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "blue-topaz",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "tokyo-night",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "origami",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "hidden-grotto",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "prism",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    },
+    {
+      "theme": "shimmering-focus",
+      "undefinedRefs": [],
+      "baselineMatches": []
+    }
+  ],
+  "summary": {
+    "totalUndefinedRefs": 0,
+    "totalBaselineMatches": 0,
+    "themesWithIssues": []
+  }
+}

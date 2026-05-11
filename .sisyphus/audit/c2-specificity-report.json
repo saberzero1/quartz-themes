@@ -1,0 +1,87 @@
+{
+  "themes": [
+    {
+      "theme": "80s-neon",
+      "duplicates": []
+    },
+    {
+      "theme": "abate",
+      "duplicates": []
+    },
+    {
+      "theme": "agate",
+      "duplicates": []
+    },
+    {
+      "theme": "aged-whisky",
+      "duplicates": []
+    },
+    {
+      "theme": "agora",
+      "duplicates": []
+    },
+    {
+      "theme": "abyssal",
+      "duplicates": []
+    },
+    {
+      "theme": "adrenaline",
+      "duplicates": []
+    },
+    {
+      "theme": "adwaita",
+      "duplicates": []
+    },
+    {
+      "theme": "allium",
+      "duplicates": []
+    },
+    {
+      "theme": "anuppuccin",
+      "duplicates": []
+    },
+    {
+      "theme": "its-theme",
+      "duplicates": []
+    },
+    {
+      "theme": "minimal",
+      "duplicates": []
+    },
+    {
+      "theme": "catppuccin",
+      "duplicates": []
+    },
+    {
+      "theme": "blue-topaz",
+      "duplicates": []
+    },
+    {
+      "theme": "tokyo-night",
+      "duplicates": []
+    },
+    {
+      "theme": "origami",
+      "duplicates": []
+    },
+    {
+      "theme": "hidden-grotto",
+      "duplicates": []
+    },
+    {
+      "theme": "prism",
+      "duplicates": []
+    },
+    {
+      "theme": "shimmering-focus",
+      "duplicates": []
+    }
+  ],
+  "summary": {
+    "totalDuplicates": 0,
+    "overlappingConflicts": 0,
+    "disjointOnly": 0,
+    "themesWithConflicts": [],
+    "themesWithDuplicates": []
+  }
+}
