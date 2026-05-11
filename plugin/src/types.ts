@@ -58,7 +58,7 @@ export interface ThemeData {
    */
   classSettings?: Record<string, ClassSettingCSS>;
   /**
-   * V1 selector-impact graph derived from canonical Style Settings effects.
+   * V2 selector-impact graph derived from canonical Style Settings effects.
    * Maps selectors to the setting effects that can influence them.
    */
   selectorImpacts?: Record<string, SelectorImpactRecord>;
@@ -98,6 +98,8 @@ export interface SelectorImpact {
   derivedFrom?: "alt-format" | "gradient";
   className?: string;
   classValue?: string;
+  /** Optional nested at-rule path that scoped the selector (e.g. @media → @supports). */
+  atRuleContext?: string[];
 }
 
 export interface SelectorInteractionGroup {

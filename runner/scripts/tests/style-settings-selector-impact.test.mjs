@@ -216,4 +216,116 @@ describe("buildSelectorImpactGraph", () => {
     assert.equal(notes.length, 1);
     assert.deepEqual(notes[0].settingIds, ["setting-a", "setting-b"]);
   });
+
+  test("tracks variable consumers inside nested at-rules with explainable context", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "accent",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "accent",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--accent",
+              variables: ["--accent"],
+              interactionGroup: "css-variable:--accent",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light:
+          "@media (min-width: 768px) { @supports (display: grid) { .card, .panel { color: var(--accent); } } }",
+      },
+    });
+
+    assert.ok(graph[".card"]);
+    assert.ok(graph[".panel"]);
+    assert.deepEqual(graph[".card"].impacts[0].atRuleContext, [
+      "@media (min-width:768px)",
+      "@supports (display:grid)",
+    ]);
+  });
+
+  test("maps body-class effects to selectors inside nested at-rules", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "fancy-toggle",
+          sectionId: "main",
+          settingType: "class-toggle",
+          effects: [
+            {
+              settingId: "fancy-toggle",
+              sectionId: "main",
+              settingType: "class-toggle",
+              effectKind: "body-class-toggle",
+              targetKind: "body-class",
+              operation: "toggle",
+              mode: "both",
+              className: "fancy",
+              interactionGroup: "body-class:fancy",
+              interactionMode: "additive",
+            },
+          ],
+        },
+      ],
+      classSettings: {
+        fancy: {
+          general:
+            "@media (prefers-reduced-motion: no-preference) { @supports (display: grid) { .fancy .callout { color: red; } } }",
+        },
+      },
+      modeCss: {},
+    });
+
+    assert.ok(graph[".fancy .callout"]);
+    assert.deepEqual(graph[".fancy .callout"].impacts[0].atRuleContext, [
+      "@media (prefers-reduced-motion:no-preference)",
+      "@supports (display:grid)",
+    ]);
+  });
+
+  test("handles selector groups with nested commas via structured parsing", () => {
+    const graph = buildSelectorImpactGraph({
+      effectRecords: [
+        {
+          settingId: "accent",
+          sectionId: "main",
+          settingType: "variable-color",
+          effects: [
+            {
+              settingId: "accent",
+              sectionId: "main",
+              settingType: "variable-color",
+              effectKind: "css-variable",
+              targetKind: "css-variable",
+              operation: "set",
+              mode: "both",
+              variable: "--accent",
+              variables: ["--accent"],
+              interactionGroup: "css-variable:--accent",
+              interactionMode: "override",
+            },
+          ],
+        },
+      ],
+      classSettings: {},
+      modeCss: {
+        light: ".wrap :is(.a, .b), .other { color: var(--accent); }",
+      },
+    });
+
+    assert.ok(graph[".wrap :is(.a,.b)"]);
+    assert.ok(graph[".other"]);
+  });
 });
