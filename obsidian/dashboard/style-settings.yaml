@@ -1,15 +1,24 @@
-- name: Dashboard theme
-  id: dashboard-theme
-  settings:
-    - id: theme-variant
-      title: Theme variant
-      type: class-select
-      allowEmpty: false
-      default: matcha
-      options:
-        - matcha
-        - dreamscape
-        - peach
-        - pool
-        - strawberry
-        - vanilla
+mode: replace
+sections:
+  - name: Dashboard theme
+    id: dashboard-theme
+    collapsed: false
+    settings:
+      - id: theme-variant
+        title: Theme variant
+        type: class-select
+        allowEmpty: false
+        default: matcha
+        options:
+          - label: matcha
+            value: matcha
+          - label: dreamscape
+            value: dreamscape
+          - label: peach
+            value: peach
+          - label: pool
+            value: pool
+          - label: strawberry
+            value: strawberry
+          - label: vanilla
+            value: vanilla

@@ -1,198 +1,187 @@
-- name: Theme Settings
-  id: Adrenaline
-  description: Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3
-  settings:
-    - id: Info-Text
-      title: Information
-      description: Thank you for using my theme! If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3
-      type: info-text
-      markdown: true
-    - null
-    - id: Theme variants
-      title: Theme variants
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-        - label: default Adrenaline
-          value: default
-        - label: Variant 1
-          value: tv1
-    - id: Text and Spacing
-      title: Text and Spacing
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: custom-font-weight
-      title: Adjust Font Weight
-      description: null
-      type: variable-number-slider
-      default: 300
-      min: 100
-      max: 900
-      step: 100
-    - id: custom-letter-spacing
-      title: Adjust Letter Spacing
-      description: null
-      type: variable-number-slider
-      format: px
-      default: 0.1
-      min: '-.5'
-      max: 1.5
-      step: 0.1
-    - id: custom-line-height
-      title: Adjust Line Spacing
-      description: null
-      type: variable-number-slider
-      format: null
-      default: 1.5
-      min: 1
-      max: 2.5
-      step: 0.1
-    - id: dynamic-heading-spacing
-      title: Adjust Dynamic Heading Spacing
-      description: null
-      type: variable-number-slider
-      format: em
-      default: 3
-      min: 0
-      max: 10
-      step: 0.1
-    - id: Colors
-      title: Colors
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: Background Tint
-      title: Background Tint
-      type: heading
-      collapsed: ture
-      level: 3
-    - id: bgt_s
-      title: Adjust Background Saturation
-      type: variable-number-slider
-      default: 1
-      min: 0
-      max: 100
-      step: 1
-    - id: bgt_l
-      title: Adjust Background Brightness
-      type: variable-number-slider
-      default: 0
-      min: -10
-      max: 10
-      step: 1
-    - id: Individual Heading Colors
-      title: Individual Heading Colors
-      type: heading
-      collapsed: ture
-      level: 3
-    - id: general-heading-color
-      title: General Heading Color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: custom-h1-color
-      title: Custom H1 color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: custom-h2-color
-      title: Custom H2 color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: custom-h3-color
-      title: Custom H3 color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: custom-h4-color
-      title: Custom H4 color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: custom-h5-color
-      title: Custom H5 color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: custom-h6-color
-      title: Custom H6 color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: Individual Bold Color
-      title: Individual Bold Color
-      type: heading
-      collapsed: ture
-      level: 3
-    - id: custom-accent-bold
-      title: Set Bold Color to Accent Color
-      type: class-toggle
-    - id: custom-bold
-      title: Custom Bold Color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: Individual Italic Color
-      title: Individual Italic Color
-      type: heading
-      collapsed: ture
-      level: 3
-    - id: custom-accent-italic
-      title: Set Italic Color to Accent Color
-      type: class-toggle
-    - id: custom-italic
-      title: Custom Italic Color
-      type: variable-color
-      opacity: false
-      format: hex
-      default: '#none'
-    - id: heading-highlighting
-      title: Highlight Headings
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: heading-highlighting
-      title: Highlight Headings
-      type: class-toggle
-    - id: Experimental Settings
-      title: Experimental Settings
-      type: heading
-      collapsed: ture
-      level: 2
-    - id: status-bar-hover
-      title: Hide Status Bar
-      description: Only show the status bar when hovering over it
-      type: class-toggle
-    - id: enhanced-buttons-disable
-      title: Disable Enhanced Buttons
-      description: Hide the highlighting on buttons, giving them a more "boxy" look
-      type: class-toggle
-    - id: disable-line-indicator
-      title: Disable Line Indicator
-      type: class-toggle
-    - id: enhanced-cursor
-      title: Enable Block Caret-Cursor
-      description: Enables a blocky caret, similar to that in a command prompt - NINJA CURSOR PLUGIN REQUIRED - please not that this fix, and the plugin itself is kind of buggy, so please don't expect wonders from it
-      type: class-toggle
-    - id: blend-images
-      title: Blend embedded Image Background
-      type: class-toggle
-    - id: cbr
-      title: Custom Workspace Border Radius
-      type: variable-number-slider
-      default: 7
-      min: 0
-      max: 50
-      step: 1
-      format: px
+mode: replace
+sections:
+  - name: Theme Settings
+    id: Adrenaline
+    collapsed: false
+    settings:
+      - id: Info-Text
+        title: Information
+        description: Thank you for using my theme! If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3
+        type: info-text
+        markdown: true
+      - id: Theme variants
+        title: Theme variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+          - label: default Adrenaline
+            value: default
+          - label: Variant 1
+            value: tv1
+      - id: Text and Spacing
+        title: Text and Spacing
+        type: heading
+        level: 2
+      - id: custom-font-weight
+        title: Adjust Font Weight
+        description: null
+        type: variable-number-slider
+        default: 300
+        min: 100
+        max: 900
+        step: 100
+      - id: custom-line-height
+        title: Adjust Line Spacing
+        description: null
+        type: variable-number-slider
+        default: 1.5
+        min: 1
+        max: 2.5
+        step: 0.1
+      - id: dynamic-heading-spacing
+        title: Adjust Dynamic Heading Spacing
+        description: null
+        type: variable-number-slider
+        format: em
+        default: 3
+        min: 0
+        max: 10
+        step: 0.1
+      - id: Colors
+        title: Colors
+        type: heading
+        level: 2
+      - id: Background Tint
+        title: Background Tint
+        type: heading
+        level: 3
+      - id: bgt_s
+        title: Adjust Background Saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 100
+        step: 1
+      - id: bgt_l
+        title: Adjust Background Brightness
+        type: variable-number-slider
+        default: 0
+        min: -10
+        max: 10
+        step: 1
+      - id: Individual Heading Colors
+        title: Individual Heading Colors
+        type: heading
+        level: 3
+      - id: general-heading-color
+        title: General Heading Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: custom-h1-color
+        title: Custom H1 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: custom-h2-color
+        title: Custom H2 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: custom-h3-color
+        title: Custom H3 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: custom-h4-color
+        title: Custom H4 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: custom-h5-color
+        title: Custom H5 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: custom-h6-color
+        title: Custom H6 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: Individual Bold Color
+        title: Individual Bold Color
+        type: heading
+        level: 3
+      - id: custom-accent-bold
+        title: Set Bold Color to Accent Color
+        type: class-toggle
+      - id: custom-bold
+        title: Custom Bold Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: Individual Italic Color
+        title: Individual Italic Color
+        type: heading
+        level: 3
+      - id: custom-accent-italic
+        title: Set Italic Color to Accent Color
+        type: class-toggle
+      - id: custom-italic
+        title: Custom Italic Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+        alt-format: []
+      - id: heading-highlighting
+        title: Highlight Headings
+        type: heading
+        level: 2
+      - id: Experimental Settings
+        title: Experimental Settings
+        type: heading
+        level: 2
+      - id: status-bar-hover
+        title: Hide Status Bar
+        description: Only show the status bar when hovering over it
+        type: class-toggle
+      - id: enhanced-buttons-disable
+        title: Disable Enhanced Buttons
+        description: Hide the highlighting on buttons, giving them a more "boxy" look
+        type: class-toggle
+      - id: disable-line-indicator
+        title: Disable Line Indicator
+        type: class-toggle
+      - id: enhanced-cursor
+        title: Enable Block Caret-Cursor
+        description: Enables a blocky caret, similar to that in a command prompt - NINJA CURSOR PLUGIN REQUIRED - please not that this fix, and the plugin itself is kind of buggy, so please don't expect wonders from it
+        type: class-toggle
+      - id: blend-images
+        title: Blend embedded Image Background
+        type: class-toggle
+      - id: cbr
+        title: Custom Workspace Border Radius
+        type: variable-number-slider
+        default: 7
+        min: 0
+        max: 50
+        step: 1
+        format: px

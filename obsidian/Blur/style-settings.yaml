@@ -1,82 +1,20 @@
-- name: Theme Settings
-  id: theme-settings
-  settings:
-    - id: custom-wallpaper
-      title: Custom Wallpaper URL
-      description: Enter a direct image link e.g. url(https://i.postimg.cc/XXXXXX/image.png)
-      type: variable-text
-      default: none
-    - id: toggle-glow
-      title: Enable Glow
-      description: Toggle glow effect on or off
-      type: class-toggle
-      default: true
-    - id: glow-title
-      title: Glow Daily Notes and General Notes
-      type: heading
-      level: 3
-    - id: selector-glow
-      title: Headers and special text For Daily Notes
-      type: class-select
-      default: none
-      options:
-        - label: None
-          value: none
-        - label: White Glow
-          value: white-glow
-        - label: Rainbow Glow
-          value: rainbow-glow
-    - id: custom-glow-preset
-      title: More Colors
-      type: class-select
-      default: none
-      options:
-        - label: None
-          value: none
-        - label: Soft Blue
-          value: blue-glow
-        - label: Pink Neon
-          value: pink-glow
-        - label: Purple
-          value: purple-glow
-        - label: Yellow
-          value: yellow-glow
-        - label: Green
-          value: green-glow
-        - label: Aqua
-          value: aqua-glow
-        - label: Red
-          value: red-glow
-        - label: Orange
-          value: orange-glow
-        - label: Brown
-          value: brown-glow
-    - id: custom-general-notes-theme
-      title: General Notes Themes
-      type: class-select
-      default: none
-      options:
-        - label: None
-          value: none
-        - label: White Glow G
-          value: white-glow-general
-        - label: Rainbow Glow G
-          value: rainbow-glow-general
-        - label: Soft Blue G
-          value: blue-glow-general
-        - label: Pink Neon G
-          value: pink-glow-general
-        - label: Purple G
-          value: purple-glow-general
-        - label: Yellow G
-          value: yellow-glow-general
-        - label: Green G
-          value: green-glow-general
-        - label: Aqua G
-          value: aqua-glow-general
-        - label: Red G
-          value: red-glow-general
-        - label: Orange G
-          value: orange-glow-general
-        - label: Brown G
-          value: brown-glow-general
+mode: replace
+sections:
+  - name: Theme Settings
+    id: theme-settings
+    collapsed: false
+    settings:
+      - id: custom-wallpaper
+        title: Custom Wallpaper URL
+        description: Enter a direct image link e.g. url(https://i.postimg.cc/XXXXXX/image.png)
+        type: variable-text
+        default: none
+      - id: toggle-glow
+        title: Enable Glow
+        description: Toggle glow effect on or off
+        type: class-toggle
+        default: true
+      - id: glow-title
+        title: Glow Daily Notes and General Notes
+        type: heading
+        level: 3

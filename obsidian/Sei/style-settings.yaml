@@ -1,84 +1,88 @@
-- name: Sei
-  id: sei
-  collapsed: false
-  settings:
-    - id: sei-text-global-description
-      title: ℹ️ Information
-      description: |-
-        The settings provided here are designed to disable or tweak some features of the theme.
-        This theme does **NOT** aim to be overly-customizable.
-      type: info-text
-      markdown: true
-    - id: sei-header-headings
-      title: 📯 Headings
-      type: heading
-      level: 2
-      collapsed: false
-    - id: sei-remove-divider-inline-title
-      title: Remove divider line below Inline title
-      type: class-toggle
-    - id: sei-remove-divider-h1
-      title: Remove divider line below H1
-      type: class-toggle
-    - id: sei-disable-header-indicators
-      title: Disable Header indicators in the gutter
-      description: Replace the Header indicators with the vanilla arrows
-      type: class-toggle
-    - id: sei-header-tabs
-      title: 📑 Tabs
-      type: heading
-      level: 2
-      collapsed: false
-    - id: sei-disable-centered-tabs
-      title: Disable centered tabs
-      description: Align tabs back to the left
-      type: class-toggle
-    - id: sei-select-labeled-nav
-      title: Enable Labeled Navs
-      description: Replace navigation buttons with icon + label style
-      type: class-select
-      allowEmpty: false
-      default: sei-enable-labeled-nav
-      options:
-        - label: Disable
-          value: sei-disable-labeled-nav
-        - label: Labeled nav
-          value: sei-enable-labeled-nav
-        - label: Labaled nav everywhere
-          value: sei-enable-labeled-nav-everywhere
-    - id: sei-header-colors
-      title: 🎨 Colors
-      description: Top color picker for light theme, bottom color picker for dark theme
-      type: heading
-      level: 2
-      collapsed: false
-    - id: sei-accented-frame-opacity
-      title: Accented window frame
-      description: Higher value reduces overall interface contrast.
-      type: variable-number-slider
-      default: 0
-      min: 0
-      max: 100
-      step: 5
-    - id: sei-colors-bold
-      title: Bold text color
-      type: variable-themed-color
-      opacity: false
-      format: hex
-      default-light: '#A187E9'
-      default-dark: '#A187E9'
-    - id: sei-colors-italic
-      title: Italic text color
-      type: variable-themed-color
-      opacity: false
-      format: hex
-      default-light: '#898f9d'
-      default-dark: '#898f9d'
-    - id: sei-header-hide
-      title: 👻 Hide elements
-      type: heading
-      level: 2
-      collapsed: false
-    - id: sei-hide-backlinks-status-bar
-      title: Hide Backlinks from status bar
-      type: class-toggle
+mode: replace
+sections:
+  - name: Sei
+    id: sei
+    collapsed: false
+    settings:
+      - id: sei-text-global-description
+        title: ℹ️ Information
+        description: |-
+          The settings provided here are designed to disable or tweak some features of the theme.
+          This theme does **NOT** aim to be overly-customizable.
+        type: info-text
+        markdown: true
+      - id: sei-header-headings
+        title: 📯 Headings
+        type: heading
+        level: 2
+        collapsed: false
+      - id: sei-remove-divider-inline-title
+        title: Remove divider line below Inline title
+        type: class-toggle
+      - id: sei-remove-divider-h1
+        title: Remove divider line below H1
+        type: class-toggle
+      - id: sei-disable-header-indicators
+        title: Disable Header indicators in the gutter
+        description: Replace the Header indicators with the vanilla arrows
+        type: class-toggle
+      - id: sei-header-tabs
+        title: 📑 Tabs
+        type: heading
+        level: 2
+        collapsed: false
+      - id: sei-disable-centered-tabs
+        title: Disable centered tabs
+        description: Align tabs back to the left
+        type: class-toggle
+      - id: sei-select-labeled-nav
+        title: Enable Labeled Navs
+        description: Replace navigation buttons with icon + label style
+        type: class-select
+        allowEmpty: false
+        default: sei-enable-labeled-nav
+        options:
+          - label: Disable
+            value: sei-disable-labeled-nav
+          - label: Labeled nav
+            value: sei-enable-labeled-nav
+          - label: Labaled nav everywhere
+            value: sei-enable-labeled-nav-everywhere
+      - id: sei-header-colors
+        title: 🎨 Colors
+        description: Top color picker for light theme, bottom color picker for dark theme
+        type: heading
+        level: 2
+        collapsed: false
+      - id: sei-accented-frame-opacity
+        title: Accented window frame
+        description: Higher value reduces overall interface contrast.
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 100
+        step: 5
+      - id: sei-colors-bold
+        title: Bold text color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#A187E9'
+        default-dark: '#A187E9'
+        alt-format: []
+      - id: sei-colors-italic
+        title: Italic text color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#898f9d'
+        default-dark: '#898f9d'
+        alt-format: []
+      - id: sei-header-hide
+        title: 👻 Hide elements
+        type: heading
+        level: 2
+        collapsed: false
+      - id: sei-hide-backlinks-status-bar
+        title: Hide Backlinks from status bar
+        type: class-toggle

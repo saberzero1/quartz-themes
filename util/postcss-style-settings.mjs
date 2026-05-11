@@ -248,12 +248,30 @@ export function extractStyleSettings(cssString) {
 export function extractStyleSettingsFromFile(filePath) {
   try {
     const yamlString = fs.readFileSync(filePath, 'utf8')
-    const settings = yaml.load(yamlString)
-    return settings
+    const data = yaml.load(yamlString)
+    if (Array.isArray(data)) {
+      return {
+        id: data[0]?.id || "",
+        name: data[0]?.name || "",
+        settings: data.flatMap((entry) =>
+          Array.isArray(entry?.settings) ? entry.settings : []
+        ),
+      }
+    }
+    if (Array.isArray(data?.sections)) {
+      return {
+        id: data.sections[0]?.id || "",
+        name: data.sections[0]?.name || "",
+        settings: data.sections.flatMap((entry) =>
+          Array.isArray(entry?.settings) ? entry.settings : []
+        ),
+      }
+    }
+    return data
       ? {
-          id: settings.id || "",
-          name: settings.name || "",
-          settings: Array.isArray(settings.settings) ? settings.settings : [],
+          id: data.id || "",
+          name: data.name || "",
+          settings: Array.isArray(data.settings) ? data.settings : [],
         }
       : { id: "", name: "", settings: [] }
   } catch (e) {
@@ -322,5 +340,4 @@ export function replaceVariableValue(cssString, variableId, value) {
   const regex = new RegExp(`^\s*?(?!\@container).*?(--${variableId}\s*:\s*)([^;]+)(;)`, 'g')
   return cssString.replace(regex, `$1${value}$3`)
 }
-
 

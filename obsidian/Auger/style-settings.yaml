@@ -1,66 +1,91 @@
-- name: Auger
-  id: auger
-  settings:
-    - id: interface-heading
-      title: Interface
-      type: heading
-      level: 3
-    - id: is-light-canvas
-      title: Light canvas
-      description: In dark mode, keeps the note canvas light.
-      type: class-toggle
-      default: 'false'
-    - id: inactive-blur
-      title: Inactive window blur
-      description: When the window is not focused, blur the content.
-      type: class-toggle
-      default: 'false'
-    - id: colors-heading
-      title: Colors
-      type: heading
-      level: 3
-    - id: bold-color
-      title: Bold text color
-      type: variable-themed-color
-      format: hex
-      default-light: '#FF3B30'
-      default-dark: '#FF453A'
-    - id: italic-color
-      title: Italic text color
-      type: variable-themed-color
-      format: hex
-      default-light: '#FF9500'
-      default-dark: '#FF9F0A'
-    - id: fonts-heading
-      title: Fonts
-      type: heading
-      level: 3
-    - id: font-smoothing-off
-      title: Turn off font smoothing
-      description: Disables anti-aliasing. Text may appear sharper but more jagged.
-      type: class-toggle
-      default: 'false'
-    - id: inline-title-font
-      title: Inline title font
-      description: The font family name; "inherit" uses the Appearance > Text Font setting.
-      type: variable-text
-      default: inherit
-    - id: inline-title-weight
-      title: Inline title weight
-      type: variable-select
-      default: 400
-    - id: inline-title-size
-      title: Inline title size
-      type: variable-number-slider
-      default: 3
-      min: 0.75
-      max: 8
-      step: 0.25
-      format: rem
-    - id: inline-title-line-height
-      title: Inline title line height
-      type: variable-number-slider
-      default: 1.2
-      min: 0
-      max: 4
-      step: 0.1
+mode: replace
+sections:
+  - name: Auger
+    id: auger
+    collapsed: false
+    settings:
+      - id: interface-heading
+        title: Interface
+        type: heading
+        level: 3
+      - id: is-light-canvas
+        title: Light canvas
+        description: In dark mode, keeps the note canvas light.
+        type: class-toggle
+        default: false
+      - id: inactive-blur
+        title: Inactive window blur
+        description: When the window is not focused, blur the content.
+        type: class-toggle
+        default: false
+      - id: colors-heading
+        title: Colors
+        type: heading
+        level: 3
+      - id: bold-color
+        title: Bold text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#FF3B30'
+        default-dark: '#FF453A'
+        alt-format: []
+      - id: italic-color
+        title: Italic text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#FF9500'
+        default-dark: '#FF9F0A'
+        alt-format: []
+      - id: fonts-heading
+        title: Fonts
+        type: heading
+        level: 3
+      - id: font-smoothing-off
+        title: Turn off font smoothing
+        description: Disables anti-aliasing. Text may appear sharper but more jagged.
+        type: class-toggle
+        default: false
+      - id: inline-title-font
+        title: Inline title font
+        description: The font family name; "inherit" uses the Appearance > Text Font setting.
+        type: variable-text
+        default: inherit
+        quotes: true
+      - id: inline-title-weight
+        title: Inline title weight
+        type: variable-select
+        default: '400'
+        options:
+          - label: 100 (Thin)
+            value: '100'
+          - label: 200 (Extra Light)
+            value: '200'
+          - label: 300 (Light)
+            value: '300'
+          - label: 400 (Normal)
+            value: '400'
+          - label: 500 (Medium)
+            value: '500'
+          - label: 600 (Semibold)
+            value: '600'
+          - label: 700 (Bold)
+            value: '700'
+          - label: 800 (Extra Bold)
+            value: '800'
+          - label: 900 (Black)
+            value: '900'
+      - id: inline-title-size
+        title: Inline title size
+        type: variable-number-slider
+        default: 3
+        min: 0.75
+        max: 8
+        step: 0.25
+        format: rem
+      - id: inline-title-line-height
+        title: Inline title line height
+        type: variable-number-slider
+        default: 1.2
+        min: 0
+        max: 4
+        step: 0.1

@@ -1,118 +1,120 @@
-- name: Color Controls
-  id: hidden-grotto-style
-  collapsed: false
-  settings:
-    - id: color-palettes
-      title: Color Presets
-      type: class-select
-      allowEmpty: false
-      default: preset-clobbopus
-      options:
-        - label: Absol
-          value: preset-absol
-        - label: Aegislash
-          value: preset-aegislash
-        - label: Aggron
-          value: preset-aggron
-        - label: Arcanine
-          value: preset-arcanine
-        - label: Aromatisse
-          value: preset-aromatisse
-        - label: Calyrex
-          value: preset-calyrex
-        - label: Clobbopus
-          value: preset-clobbopus
-        - label: Cryogonal
-          value: preset-cryogonal
-        - label: Darkrai
-          value: preset-darkrai
-        - label: Diancie
-          value: preset-diancie
-        - label: Hisuian Typhlosion
-          value: preset-hisuian-typhlosion
-        - label: Manectric
-          value: preset-manectric
-        - label: Mareep
-          value: preset-mareep
-        - label: Mega Lucario
-          value: preset-mega-lucario
-        - label: Meloetta
-          value: preset-meloetta
-        - label: Necrozma
-          value: preset-necrozma
-        - label: Pirouette Meloetta
-          value: preset-pirouette-meloetta
-        - label: Poltchageist
-          value: preset-poltchageist
-        - label: Scolipede
-          value: preset-scolipede
-        - label: Swampert
-          value: preset-swampert
-        - label: Ursaluna
-          value: preset-ursaluna
-- name: Tag Controls
-  id: hidden-grotto-tag
-  collapsed: false
-  settings:
-    - id: grotto-tag-rounded
-      title: Tag Shape
-      description: Enable to use rounded tags
-      type: class-toggle
-      default: false
-    - id: grotto-tag-accented
-      title: Tag Accent
-      description: Enable to use accented tags
-      type: class-toggle
-      default: false
-- name: Text Controls
-  id: hidden-grotto-text
-  collapsed: false
-  settings:
-    - id: grotto-font-weight
-      title: Font Weight
-      description: Adjust the font weight
-      type: variable-number-slider
-      default: 500
-      min: 200
-      max: 800
-      step: 100
-- name: Calendar Plugin Controls
-  id: hidden-grotto-calendar
-  collapsed: false
-  settings:
-    - id: grotto-calendar-view-height
-      title: Calendar Position
-      description: Adjust calendar position in the sidebar. This is for mobile only.
-      type: variable-number-slider
-      format: vh
-      default: 0
-      min: 0
-      max: 50
-      step: 1
-- name: UI Design Controls
-  id: hidden-grotto-ui
-  collapsed: false
-  settings:
-    - id: grotto-rounded-ui
-      title: UI Border Shape
-      description: Toggle between square and rounded UI elements
-      type: class-toggle
-      default: false
-    - id: grotto-global-border-width
-      title: UI Border Width
-      description: Adjust border width of UI elements
-      type: variable-number-slider
-      format: px
-      default: 1
-      min: 0
-      max: 2
-      step: 1
-- name: Privacy Controls
-  id: hidden-grotto-privacy
-  collapsed: false
-  settings:
-    - id: grotto-blur
-      title: Obscure
-      description: Enable to obscure everything
-      type: class-toggle
-      default: false
+mode: replace
+sections:
+  - name: Color Controls
+    id: hidden-grotto-style
+    collapsed: false
+    settings:
+      - id: color-palettes
+        title: Color Presets
+        type: class-select
+        allowEmpty: false
+        default: preset-clobbopus
+        options:
+          - label: Absol
+            value: preset-absol
+          - label: Aegislash
+            value: preset-aegislash
+          - label: Aggron
+            value: preset-aggron
+          - label: Arcanine
+            value: preset-arcanine
+          - label: Aromatisse
+            value: preset-aromatisse
+          - label: Calyrex
+            value: preset-calyrex
+          - label: Clobbopus
+            value: preset-clobbopus
+          - label: Cryogonal
+            value: preset-cryogonal
+          - label: Darkrai
+            value: preset-darkrai
+          - label: Diancie
+            value: preset-diancie
+          - label: Hisuian Typhlosion
+            value: preset-hisuian-typhlosion
+          - label: Manectric
+            value: preset-manectric
+          - label: Mareep
+            value: preset-mareep
+          - label: Mega Lucario
+            value: preset-mega-lucario
+          - label: Meloetta
+            value: preset-meloetta
+          - label: Necrozma
+            value: preset-necrozma
+          - label: Pirouette Meloetta
+            value: preset-pirouette-meloetta
+          - label: Poltchageist
+            value: preset-poltchageist
+          - label: Scolipede
+            value: preset-scolipede
+          - label: Swampert
+            value: preset-swampert
+          - label: Ursaluna
+            value: preset-ursaluna
+  - name: Tag Controls
+    id: hidden-grotto-tag
+    collapsed: false
+    settings:
+      - id: grotto-tag-rounded
+        title: Tag Shape
+        description: Enable to use rounded tags
+        type: class-toggle
+        default: false
+      - id: grotto-tag-accented
+        title: Tag Accent
+        description: Enable to use accented tags
+        type: class-toggle
+        default: false
+  - name: Text Controls
+    id: hidden-grotto-text
+    collapsed: false
+    settings:
+      - id: grotto-font-weight
+        title: Font Weight
+        description: Adjust the font weight
+        type: variable-number-slider
+        default: 500
+        min: 200
+        max: 800
+        step: 100
+  - name: Calendar Plugin Controls
+    id: hidden-grotto-calendar
+    collapsed: false
+    settings:
+      - id: grotto-calendar-view-height
+        title: Calendar Position
+        description: Adjust calendar position in the sidebar. This is for mobile only.
+        type: variable-number-slider
+        format: vh
+        default: 0
+        min: 0
+        max: 50
+        step: 1
+  - name: UI Design Controls
+    id: hidden-grotto-ui
+    collapsed: false
+    settings:
+      - id: grotto-rounded-ui
+        title: UI Border Shape
+        description: Toggle between square and rounded UI elements
+        type: class-toggle
+        default: false
+      - id: grotto-global-border-width
+        title: UI Border Width
+        description: Adjust border width of UI elements
+        type: variable-number-slider
+        format: px
+        default: 1
+        min: 0
+        max: 2
+        step: 1
+  - name: Privacy Controls
+    id: hidden-grotto-privacy
+    collapsed: false
+    settings:
+      - id: grotto-blur
+        title: Obscure
+        description: Enable to obscure everything
+        type: class-toggle
+        default: false

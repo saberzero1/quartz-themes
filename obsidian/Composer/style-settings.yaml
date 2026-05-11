@@ -1,634 +1,651 @@
-- name: Composer Theme
-  id: obsidian-composer-theme
-  settings:
-    - id: learn-about-components-plugin
-      title: About Components
-      title.zh: 关于 Components
-      description: '[https://cp.cc1234.cc/](https://cp.cc1234.cc/)'
-      type: info-text
-      markdown: true
-    - id: theme-variant-light
-      title: Color Scheme
-      title.zh: 亮色主题配色方案
-      description: Choose a color scheme for the theme
-      description.zh: 为亮色主题选择一个预设的配色方案
-      type: class-select
-      allowEmpty: false
-      default: composer--XiaScheme-light
-      options:
-        - label: Sù 素
-          value: composer--SuScheme-light
-        - label: Ní 霓
-          value: composer--NiScheme-light
-        - label: Xiá 霞
-          value: composer--XiaScheme-light
-        - label: Qīng 青
-          value: composer--QingScheme-light
-    - id: theme-variant-dark
-      title: Color Scheme
-      title.zh: 暗色主题配色方案
-      description: Choose a color scheme for the theme
-      description.zh: 为暗色主题选择一个预设的配色方案
-      type: class-select
-      allowEmpty: false
-      default: composer--XiaScheme-dark
-      options:
-        - label: Sù 素
-          value: composer--SuScheme-dark
-        - label: Ní 霓
-          value: composer--NiScheme-dark
-        - label: Xiá 霞
-          value: composer--XiaScheme-dark
-        - label: Qīng 青
-          value: composer--QingScheme-dark
-    - id: typograph-settings
-      title: Typograph Settings
-      title.zh: 排版设置
-      type: heading
-      level: 2
-      collapsed: true
-    - id: file-line-width
-      title: Content Area width
-      title.zh: 内容区域宽度
-      description: The maximum line width
-      description.zh: 最大行宽
-      type: variable-number-slider
-      default: 700
-      min: 420
-      max: 1200
-      format: px
-      step: 1
-    - id: callout-setting
-      title: Callout
-      title.zh: Callout
-      type: heading
-      level: 3
-      collapsed: true
-    - id: callout-style
-      title: Callout Style
-      title.zh: Callout 样式
-      description: Choose prefered Callout style
-      description.zh: 选择喜欢的 Callout 风格
-      type: class-select
-      allowEmpty: false
-      default: composer--DefaultCalloutStyle
-      options:
-        - label: Default 默认
-          value: composer--DefaultCalloutStyle
-        - label: Subtle Grid 渐隐网格
-          value: composer--SubtleGridCallout
-        - label: Clean Line 简洁线条
-          value: composer--CleanLineCallout
-        - label: Github Style
-          value: composer--GithubCallout
-        - label: Window Panel 窗格
-          value: composer--WindowPanelCallout
-    - id: table-setting
-      title: Table
-      title.zh: 表格
-      type: heading
-      level: 3
-      collapsed: true
-    - id: table-style
-      title: Table Style
-      title.zh: 表格样式
-      description: Choose prefered table style
-      description.zh: 选择表格的样式
-      type: class-select
-      allowEmpty: false
-      default: composer--DefaultTableStyle
-      options:
-        - label: Default 默认
-          value: composer--DefaultTableStyle
-        - label: Obsidian
-          value: composer--ObsidianTableStyle
-        - label: Borderless 无边框
-          value: composer--BorderlessTableStyle
-        - label: Three Line(Academic) 三线表(学术)
-          value: composer--AcademicTableStyle
-    - id: composer--HideStripedTableBackground
-      title: Hide Striped Background
-      title.zh: 关闭斑马纹背景
-      type: class-toggle
-    - id: typograph-paragraph
-      title: Paragraph
-      title.zh: 段落
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--ParagraphIndent
-      title: Paragraph Indent
-      title.zh: 段落首行缩进
-      description: indent the first line of a paragraph
-      description.zh: 段落首行自动缩进 2 个字符
-      type: class-toggle
-    - id: paragraph-line-height
-      title: Paragraph Line Height
-      title.zh: 段落行高
-      description: Set the line height of the paragraph
-      description.zh: 设置段落的行高
-      type: variable-number
-      default: 1.7
-      min: 1.2
-      max: 2.5
-    - id: paragraph-letter-spacing
-      title: Paragraph Letter Spacing
-      title.zh: 段落字间距
-      description: Set the letter spacing of the paragraph, you should specify the unit em or px
-      description.zh: 设置段落的字间距，需要指定单位 em 或 px
-      type: variable-text
-      default: 0.035em
-    - id: paragraph-word-spacing
-      title: Paragraph Word Spacing
-      title.zh: 段落词间距
-      description: Set the word spacing of the paragraph, you should specify the unit em or px
-      description.zh: 设置段落的词间距，需要指定单位 em 或 px
-      type: variable-text
-      default: 0.035em
-    - id: bold-style-setting
-      title: Bold
-      title.zh: 加粗
-      type: heading
-      level: 3
-      collapsed: true
-    - id: bold-color
-      title: Bold Color
-      title.zh: 加粗颜色
-      type: variable-themed-color
-      format: hex
-      default-light: '#2d3748'
-      default-dark: '#f0f4f8'
-    - id: bold-modifier
-      title: Bold Weight
-      title.zh: 加粗粗细
-      type: variable-number
-      default: 200
-    - id: italic-style-setting
-      title: Italic
-      title.zh: 斜体
-      type: heading
-      level: 3
-      collapsed: true
-    - id: italic-color
-      title: Italic Color
-      title.zh: 斜体颜色
-      type: variable-themed-color
-      format: hex
-      default-light: '#2d3748'
-      default-dark: '#f0f4f8'
-    - id: task-setting
-      title: Task Settings
-      title.zh: 任务
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--RemoveTaskCompletedDecoration
-      title: Remove Task Completed Decoration
-      title.zh: 移除任务完成装饰
-      description: Remove the strikethrough for completed tasks
-      description.zh: 移除完成任务的划线
-      type: class-toggle
-    - id: inline-code-style-setting
-      title: Inline Code Style
-      title.zh: 内联代码
-      type: heading
-      level: 3
-      collapsed: true
-    - id: inline-code-normal
-      title: Inline Code Text Color
-      title.zh: 内联代码文本色
-      type: variable-themed-color
-      format: hex
-      default-light: '#eb5757'
-      default-dark: '#ff7b72'
-    - id: inline-code-background
-      title: Inline Code Background Color
-      title.zh: 内联代码背景色
-      type: variable-themed-color
-      format: hsl
-      default-light: hsla(31, 41%, 90%, 0.6)
-      default-dark: hsla(204, 15%, 25%, 0.4)
-    - id: typograph-heading-decoration-setting
-      title: Heading Decoration
-      title.zh: 标题装饰
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--DisableHeadingLineEditingHighlight
-      title: Disable Heading Line Editing Highlight
-      title.zh: 禁用标题行编辑时高亮
-      description: Disable line highlight when editing heading
-      description.zh: 编辑标题时是否高亮所在行
-      type: class-toggle
-      default: false
-    - id: composer--DisableHeadingDecoration-ReadingView
-      title: Disable Heading Decoration (Reading View)
-      title.zh: 禁用标题装饰（阅读模式）
-      description: Disable decoration before heading (reading view)
-      description.zh: 禁用标题前方的竖杠装饰（阅读模式）
-      type: class-toggle
-      default: false
-    - id: composer--DisableHeadingDecoration-LivePreview
-      title: Disable Heading Decoration (Live Preview View)
-      title.zh: 禁用标题装饰（实时编辑模式）
-      description: Disable decoration before heading (live preview view)
-      description.zh: 禁用标题前方的竖杠装饰（实时编辑模式）
-      type: class-toggle
-      default: false
-    - id: typograph-heading-size
-      title: Heading Font Size (H1-H6)
-      title.zh: 标题字体大小（H1-H6）
-      type: heading
-      level: 3
-      collapsed: true
-    - id: h1-size
-      title: H1 Size
-      title.zh: 一级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.69em
-    - id: h2-size
-      title: H2 Size
-      title.zh: 二级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.51em
-    - id: h3-size
-      title: H3 Size
-      title.zh: 三级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.35em
-    - id: h4-size
-      title: H4 Size
-      title.zh: 四级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.21em
-    - id: h5-size
-      title: H5 Size
-      title.zh: 五级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.1em
-    - id: h6-size
-      title: H6 Size
-      title.zh: 六级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1em
-    - id: typograph-heading-color-setting
-      title: Heading Font Color (H1-H6)
-      title.zh: 标题字体颜色（H1-H6）
-      type: heading
-      level: 3
-      collapsed: true
-    - id: h1-color
-      title: H1
-      type: variable-themed-color
-      format: hex
-      default-light: '#2d3748'
-      default-dark: '#e2e6eb'
-    - id: h2-color
-      title: H2
-      type: variable-themed-color
-      format: hex
-      default-light: '#4a556b'
-      default-dark: '#c5cad4'
-    - id: h3-color
-      title: H3
-      type: variable-themed-color
-      format: hex
-      default-light: '#66788d'
-      default-dark: '#a8aeb9'
-    - id: h4-color
-      title: H4
-      type: variable-themed-color
-      format: hex
-      default-light: '#7f8a9b'
-      default-dark: '#8f96a1'
-    - id: h5-color
-      title: H5
-      type: variable-themed-color
-      format: hex
-      default-light: '#9aa5b5'
-      default-dark: '#787f8a'
-    - id: h6-color
-      title: H6
-      type: variable-themed-color
-      format: hex
-      default-light: '#808080'
-      default-dark: '#666d78'
-    - id: layout-settings
-      title: Layout Settings
-      title.zh: 布局设置
-      type: heading
-      level: 2
-      collapsed: true
-    - id: composer--DisableNavHeaderAutoHide
-      title: Disable Nav Header Auto Hide
-      title.zh: 关闭自动隐藏导航栏
-      description: Enable this option to disable the auto-hide of the nav header
-      description.zh: 启用以后，相关视图的导航栏将会常驻（比如文件列表、标签、目录栏的导航栏菜单），不会在失去焦点时自动隐藏
-      type: class-toggle
-    - id: composer--DisableFileFolderIcon
-      title: Disable File Folder Icon
-      title.zh: 禁用目录列表文件夹图标
-      type: class-toggle
-    - id: composer--EnableIndentationGuidLine
-      title: Enable Indentation Guide Line
-      title.zh: 启用缩进指导线
-      description: show indentation guide line for file tree, ordered list, unordered list, and task list
-      description.zh: 显示文件树、有序列表、无序列表和任务列表的缩进指导线
-      type: class-toggle
-    - id: modal-bg-blur
-      title: Modal Backdrop Blur Intensity
-      title.zh: 模态框背景模糊强度
-      type: variable-number-slider
-      default: 3
-      min: 0
-      max: 10
-      step: 1
-      format: px
-    - id: composer--DisableDesktopViewHeaderTitleParent
-      title: Toggle Desktop View Header Title Parent
-      title.zh: 桌面端视图标题路径折叠
-      type: class-toggle
-      default: true
-    - id: nav-file-settings
-      title: Nav File Settings
-      title.zh: 导航文件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--EnableFilenameLineFeed
-      title: Enable Filename Line Feed
-      title.zh: 启用文件名换行
-      description: enable line feed for filename
-      description.zh: 文件名换行显示
-      type: class-toggle
-    - id: composer--EnableHiddenFileTag
-      title: Enable Hidden File Tag
-      title.zh: 启用隐藏文件标签
-      description: enable hidden file tag
-      description.zh: 隐藏文件后缀标签
-      type: class-toggle
-    - id: composer--EnableHiddenFileTagHover
-      title: Enable Hidden File Tag Hover
-      title.zh: 文件标签悬停显示
-      description: enable hidden file tag hover
-      description.zh: 文件后缀标签鼠标悬停显示
-      type: class-toggle
-    - id: outline-settings
-      title: Outline Settings
-      title.zh: 大纲
-      type: heading
-      level: 3
-      collapsed: true
-    - id: outline-style
-      title: Outline Style
-      title.zh: 大纲样式
-      description: Choose prefered outline style
-      description.zh: 选择大纲的样式
-      type: class-select
-      allowEmpty: false
-      default: composer--DefaultOutlineStyle
-      options:
-        - label: Default 默认
-          value: composer--DefaultOutlineStyle
-        - label: Node 节点
-          value: composer--NodeOutlineStyle
-    - id: outline-collapsed-icon-opacity
-      title: Outline Collapsed Icon Opacity
-      title.zh: 大纲折叠图标透明度
-      description: Set the opacity of the collapsed icon
-      description.zh: 设置折叠图标的透明度
-      type: variable-number-slider
-      default: 1
-      min: 0
-      max: 1
-      step: 0.1
-    - id: color-settings
-      title: Color Settings
-      title.zh: 色彩设置
-      type: heading
-      level: 2
-      collapsed: true
-    - id: color-hue-settings
-      title: Color Hue Settings(Only for Ní)
-      title.zh: 色调设置（仅适用于 Ní）
-      type: heading
-      level: 3
-      collapsed: true
-    - id: light-primary-hue
-      title: Light Primary Hue (Only for Ní Scheme)
-      title.zh: 亮色主题主色调（仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 2
-      min: 0
-      max: 360
-      step: 1
-    - id: light-secondary-hue
-      title: Light Secondary Hue (Only for Ní Scheme)
-      title.zh: 亮色主题副色调（仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 330
-      min: 0
-      max: 360
-      step: 1
-    - id: dark-primary-hue
-      title: Dark Primary Hue (Only for Ní Scheme)
-      title.zh: 暗色主题主色调 （仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 282
-      min: 0
-      max: 360
-      step: 1
-    - id: dark-secondary-hue
-      title: Dark Secondary Hue (Only for Ní Scheme)
-      title.zh: 暗色主题副色调 （仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 330
-      min: 0
-      max: 360
-      step: 1
-    - id: background-colors
-      title: Background Colors
-      title.zh: 背景色
-      type: heading
-      level: 3
-      collapsed: true
-    - id: background-primary
-      title: Background Primary
-      title.zh: 主要背景色
-      type: variable-themed-color
-      format: hex
-      default-light: '#fafafa'
-      default-dark: '#1a1e24'
-    - id: background-primary-alt
-      title: Background Primary Alt
-      title.zh: 主要背景色（备用）
-      type: variable-themed-color
-      format: hex
-      default-light: '#e8eaee'
-      default-dark: '#252a32'
-    - id: background-secondary
-      title: Background Secondary
-      title.zh: 次要背景色
-      type: variable-themed-color
-      format: hex
-      default-light: '#f1f0ee'
-      default-dark: '#2d333b'
-    - id: background-secondary-alt
-      title: Background Secondary Alt
-      title.zh: 次要背景色（备用）
-      type: variable-themed-color
-      format: hex
-      default-light: '#dddfe3'
-      default-dark: '#373e48'
-    - id: rainbow-tree-settings
-      title: Rainbow Tree Settings
-      title.zh: 彩虹目录
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--DisableRainbowTree
-      title: Disable Rainbow Tree
-      title.zh: 禁用彩虹目录
-      description: disable rainbow tree for file explorer
-      description.zh: 为文件资源管理器禁用彩虹目录
-      type: class-toggle
-    - id: folder-bg-opacity-setting
-      title: Folder Background Opacity
-      title.zh: 文件夹背景不透明度
-      description: Set the background opacity of the folder
-      description.zh: 设置文件夹的背景不透明度
-      type: variable-number
-      default: 0.08
-      min: 0
-      max: 1
-    - id: folder-text-opacity-setting
-      title: Folder Text Opacity
-      title.zh: 文件夹文本不透明度
-      description: Set the text opacity of the folder
-      description.zh: 设置文件夹的文本不透明度
-      type: variable-number
-      default: 0.85
-      min: 0
-      max: 1
-    - id: folder-hover-opacity-setting
-      title: Folder Hover Opacity
-      title.zh: 文件夹悬停不透明度
-      description: Set the hover opacity of the folder
-      description.zh: 设置文件夹的悬停不透明度
-      type: variable-number
-      default: 0.12
-      min: 0
-      max: 1
-    - id: folder-sub-bg-opacity-setting
-      title: Folder Sub Background Opacity
-      title.zh: 子文件夹背景不透明度
-      description: Set the background opacity of the sub-folder
-      description.zh: 设置子文件夹的背景不透明度
-      type: variable-number
-      default: 0.04
-      min: 0
-      max: 1
-    - id: folder-sub-text-opacity-setting
-      title: Folder Sub Text Opacity
-      title.zh: 子文件夹文本不透明度
-      description: Set the text opacity of the sub-folder
-      description.zh: 设置子文件夹的文本不透明度
-      type: variable-number
-      default: 0.7
-      min: 0
-      max: 1
-    - id: plugin-components
-      title: Components Plugin
-      title.zh: Components 插件
-      type: heading
-      level: 2
-      collapsed: true
-    - id: dynamic-dataview-component
-      title: Dynamic Dataview
-      title.zh: 数据视图
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--ComponentsSimpleTag
-      title: Simple Tag Style
-      title.zh: 简单标签样式
-      description: switch to simple tag style to select / multi-select / group-name...
-      description.zh: 改变数据视图中单选、多选项的样式
-      type: class-toggle
-    - id: composer--ComponentsFilledGallaryCover
-      title: Notion Style Gallary Cover
-      title.zh: Notion 风格的封面
-      description: remove Gallary dynamic data view's cover padding
-      description.zh: 移除动态数据视图中的封面内边距
-      type: class-toggle
-    - id: count-component
-      title: Count Component
-      title.zh: 统计数字组件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: components--count-component-value-font-size
-      title: Value Font Size
-      title.zh: 数值字体大小
-      type: variable-number
-      default: 1.6
-      format: rem
-    - id: quote-component
-      title: Quote Component
-      title.zh: 摘录组件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: components-quote-title-font-size
-      title: Title Font Size
-      title.zh: 标题字体大小
-      description: rem
-      type: variable-number
-      default: 1
-      format: rem
-    - id: components-quote-content-font-size
-      title: Content Font Size
-      title.zh: 内容字体大小
-      description: rem
-      type: variable-number
-      default: 0.875
-      format: rem
-    - id: card-component
-      title: Card Component
-      title.zh: 卡片组件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: components--card-component-title-icon-size
-      title: Title Icon Size
-      title.zh: 标题图标大小
-      description: rem
-      type: variable-number
-      default: 1
-      format: rem
-    - id: components--card-component-title-font-size
-      title: Title Font Size
-      title.zh: 标题字体大小
-      description: rem
-      type: variable-number
-      default: 1
-      format: rem
-    - id: components--card-component-description-font-size
-      title: Content Font Size
-      title.zh: 描述字体大小
-      description: rem
-      type: variable-number
-      default: 0.8125
-      format: rem
+mode: replace
+sections:
+  - name: Composer Theme
+    id: obsidian-composer-theme
+    collapsed: false
+    settings:
+      - id: learn-about-components-plugin
+        title: About Components
+        title.zh: 关于 Components
+        description: '[https://cp.cc1234.cc/](https://cp.cc1234.cc/)'
+        type: info-text
+        markdown: true
+      - id: theme-variant-light
+        title: Color Scheme
+        title.zh: 亮色主题配色方案
+        description: Choose a color scheme for the theme
+        description.zh: 为亮色主题选择一个预设的配色方案
+        type: class-select
+        allowEmpty: false
+        default: composer--XiaScheme-light
+        options:
+          - label: Sù 素
+            value: composer--SuScheme-light
+          - label: Ní 霓
+            value: composer--NiScheme-light
+          - label: Xiá 霞
+            value: composer--XiaScheme-light
+          - label: Qīng 青
+            value: composer--QingScheme-light
+      - id: theme-variant-dark
+        title: Color Scheme
+        title.zh: 暗色主题配色方案
+        description: Choose a color scheme for the theme
+        description.zh: 为暗色主题选择一个预设的配色方案
+        type: class-select
+        allowEmpty: false
+        default: composer--XiaScheme-dark
+        options:
+          - label: Sù 素
+            value: composer--SuScheme-dark
+          - label: Ní 霓
+            value: composer--NiScheme-dark
+          - label: Xiá 霞
+            value: composer--XiaScheme-dark
+          - label: Qīng 青
+            value: composer--QingScheme-dark
+      - id: typograph-settings
+        title: Typograph Settings
+        title.zh: 排版设置
+        type: heading
+        level: 2
+        collapsed: true
+      - id: file-line-width
+        title: Content Area width
+        title.zh: 内容区域宽度
+        description: The maximum line width
+        description.zh: 最大行宽
+        type: variable-number-slider
+        default: 700
+        min: 420
+        max: 1200
+        format: px
+        step: 1
+      - id: callout-setting
+        title: Callout
+        title.zh: Callout
+        type: heading
+        level: 3
+        collapsed: true
+      - id: callout-style
+        title: Callout Style
+        title.zh: Callout 样式
+        description: Choose prefered Callout style
+        description.zh: 选择喜欢的 Callout 风格
+        type: class-select
+        allowEmpty: false
+        default: composer--DefaultCalloutStyle
+        options:
+          - label: Default 默认
+            value: composer--DefaultCalloutStyle
+          - label: Subtle Grid 渐隐网格
+            value: composer--SubtleGridCallout
+          - label: Clean Line 简洁线条
+            value: composer--CleanLineCallout
+          - label: Github Style
+            value: composer--GithubCallout
+          - label: Window Panel 窗格
+            value: composer--WindowPanelCallout
+      - id: table-setting
+        title: Table
+        title.zh: 表格
+        type: heading
+        level: 3
+        collapsed: true
+      - id: table-style
+        title: Table Style
+        title.zh: 表格样式
+        description: Choose prefered table style
+        description.zh: 选择表格的样式
+        type: class-select
+        allowEmpty: false
+        default: composer--DefaultTableStyle
+        options:
+          - label: Default 默认
+            value: composer--DefaultTableStyle
+          - label: Obsidian
+            value: composer--ObsidianTableStyle
+          - label: Borderless 无边框
+            value: composer--BorderlessTableStyle
+          - label: Three Line(Academic) 三线表(学术)
+            value: composer--AcademicTableStyle
+      - id: composer--HideStripedTableBackground
+        title: Hide Striped Background
+        title.zh: 关闭斑马纹背景
+        type: class-toggle
+      - id: typograph-paragraph
+        title: Paragraph
+        title.zh: 段落
+        type: heading
+        level: 3
+        collapsed: true
+      - id: composer--ParagraphIndent
+        title: Paragraph Indent
+        title.zh: 段落首行缩进
+        description: indent the first line of a paragraph
+        description.zh: 段落首行自动缩进 2 个字符
+        type: class-toggle
+      - id: paragraph-line-height
+        title: Paragraph Line Height
+        title.zh: 段落行高
+        description: Set the line height of the paragraph
+        description.zh: 设置段落的行高
+        type: variable-number
+        default: 1.7
+        min: 1.2
+        max: 2.5
+      - id: paragraph-letter-spacing
+        title: Paragraph Letter Spacing
+        title.zh: 段落字间距
+        description: Set the letter spacing of the paragraph, you should specify the unit em or px
+        description.zh: 设置段落的字间距，需要指定单位 em 或 px
+        type: variable-text
+        default: 0.035em
+      - id: paragraph-word-spacing
+        title: Paragraph Word Spacing
+        title.zh: 段落词间距
+        description: Set the word spacing of the paragraph, you should specify the unit em or px
+        description.zh: 设置段落的词间距，需要指定单位 em 或 px
+        type: variable-text
+        default: 0.035em
+      - id: bold-style-setting
+        title: Bold
+        title.zh: 加粗
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bold-color
+        title: Bold Color
+        title.zh: 加粗颜色
+        type: variable-themed-color
+        format: hex
+        default-light: '#2d3748'
+        default-dark: '#f0f4f8'
+        alt-format: []
+      - id: bold-modifier
+        title: Bold Weight
+        title.zh: 加粗粗细
+        type: variable-number
+        default: 200
+      - id: italic-style-setting
+        title: Italic
+        title.zh: 斜体
+        type: heading
+        level: 3
+        collapsed: true
+      - id: italic-color
+        title: Italic Color
+        title.zh: 斜体颜色
+        type: variable-themed-color
+        format: hex
+        default-light: '#2d3748'
+        default-dark: '#f0f4f8'
+        alt-format: []
+      - id: task-setting
+        title: Task Settings
+        title.zh: 任务
+        type: heading
+        level: 3
+        collapsed: true
+      - id: composer--RemoveTaskCompletedDecoration
+        title: Remove Task Completed Decoration
+        title.zh: 移除任务完成装饰
+        description: Remove the strikethrough for completed tasks
+        description.zh: 移除完成任务的划线
+        type: class-toggle
+      - id: inline-code-style-setting
+        title: Inline Code Style
+        title.zh: 内联代码
+        type: heading
+        level: 3
+        collapsed: true
+      - id: inline-code-normal
+        title: Inline Code Text Color
+        title.zh: 内联代码文本色
+        type: variable-themed-color
+        format: hex
+        default-light: '#eb5757'
+        default-dark: '#ff7b72'
+        alt-format: []
+      - id: inline-code-background
+        title: Inline Code Background Color
+        title.zh: 内联代码背景色
+        type: variable-themed-color
+        format: hsl
+        default-light: hsla(31, 41%, 90%, 0.6)
+        default-dark: hsla(204, 15%, 25%, 0.4)
+        alt-format: []
+      - id: typograph-heading-decoration-setting
+        title: Heading Decoration
+        title.zh: 标题装饰
+        type: heading
+        level: 3
+        collapsed: true
+      - id: composer--DisableHeadingLineEditingHighlight
+        title: Disable Heading Line Editing Highlight
+        title.zh: 禁用标题行编辑时高亮
+        description: Disable line highlight when editing heading
+        description.zh: 编辑标题时是否高亮所在行
+        type: class-toggle
+        default: false
+      - id: composer--DisableHeadingDecoration-ReadingView
+        title: Disable Heading Decoration (Reading View)
+        title.zh: 禁用标题装饰（阅读模式）
+        description: Disable decoration before heading (reading view)
+        description.zh: 禁用标题前方的竖杠装饰（阅读模式）
+        type: class-toggle
+        default: false
+      - id: composer--DisableHeadingDecoration-LivePreview
+        title: Disable Heading Decoration (Live Preview View)
+        title.zh: 禁用标题装饰（实时编辑模式）
+        description: Disable decoration before heading (live preview view)
+        description.zh: 禁用标题前方的竖杠装饰（实时编辑模式）
+        type: class-toggle
+        default: false
+      - id: typograph-heading-size
+        title: Heading Font Size (H1-H6)
+        title.zh: 标题字体大小（H1-H6）
+        type: heading
+        level: 3
+        collapsed: true
+      - id: h1-size
+        title: H1 Size
+        title.zh: 一级标题大小
+        description: you should specify the unit em or px
+        description.zh: 需要指定单位 em 或 px
+        type: variable-text
+        default: 1.69em
+      - id: h2-size
+        title: H2 Size
+        title.zh: 二级标题大小
+        description: you should specify the unit em or px
+        description.zh: 需要指定单位 em 或 px
+        type: variable-text
+        default: 1.51em
+      - id: h3-size
+        title: H3 Size
+        title.zh: 三级标题大小
+        description: you should specify the unit em or px
+        description.zh: 需要指定单位 em 或 px
+        type: variable-text
+        default: 1.35em
+      - id: h4-size
+        title: H4 Size
+        title.zh: 四级标题大小
+        description: you should specify the unit em or px
+        description.zh: 需要指定单位 em 或 px
+        type: variable-text
+        default: 1.21em
+      - id: h5-size
+        title: H5 Size
+        title.zh: 五级标题大小
+        description: you should specify the unit em or px
+        description.zh: 需要指定单位 em 或 px
+        type: variable-text
+        default: 1.1em
+      - id: h6-size
+        title: H6 Size
+        title.zh: 六级标题大小
+        description: you should specify the unit em or px
+        description.zh: 需要指定单位 em 或 px
+        type: variable-text
+        default: 1em
+      - id: typograph-heading-color-setting
+        title: Heading Font Color (H1-H6)
+        title.zh: 标题字体颜色（H1-H6）
+        type: heading
+        level: 3
+        collapsed: true
+      - id: h1-color
+        title: H1
+        type: variable-themed-color
+        format: hex
+        default-light: '#2d3748'
+        default-dark: '#e2e6eb'
+        alt-format: []
+      - id: h2-color
+        title: H2
+        type: variable-themed-color
+        format: hex
+        default-light: '#4a556b'
+        default-dark: '#c5cad4'
+        alt-format: []
+      - id: h3-color
+        title: H3
+        type: variable-themed-color
+        format: hex
+        default-light: '#66788d'
+        default-dark: '#a8aeb9'
+        alt-format: []
+      - id: h4-color
+        title: H4
+        type: variable-themed-color
+        format: hex
+        default-light: '#7f8a9b'
+        default-dark: '#8f96a1'
+        alt-format: []
+      - id: h5-color
+        title: H5
+        type: variable-themed-color
+        format: hex
+        default-light: '#9aa5b5'
+        default-dark: '#787f8a'
+        alt-format: []
+      - id: h6-color
+        title: H6
+        type: variable-themed-color
+        format: hex
+        default-light: '#808080'
+        default-dark: '#666d78'
+        alt-format: []
+      - id: layout-settings
+        title: Layout Settings
+        title.zh: 布局设置
+        type: heading
+        level: 2
+        collapsed: true
+      - id: composer--DisableNavHeaderAutoHide
+        title: Disable Nav Header Auto Hide
+        title.zh: 关闭自动隐藏导航栏
+        description: Enable this option to disable the auto-hide of the nav header
+        description.zh: 启用以后，相关视图的导航栏将会常驻（比如文件列表、标签、目录栏的导航栏菜单），不会在失去焦点时自动隐藏
+        type: class-toggle
+      - id: composer--DisableFileFolderIcon
+        title: Disable File Folder Icon
+        title.zh: 禁用目录列表文件夹图标
+        type: class-toggle
+      - id: composer--EnableIndentationGuidLine
+        title: Enable Indentation Guide Line
+        title.zh: 启用缩进指导线
+        description: show indentation guide line for file tree, ordered list, unordered list, and task list
+        description.zh: 显示文件树、有序列表、无序列表和任务列表的缩进指导线
+        type: class-toggle
+      - id: modal-bg-blur
+        title: Modal Backdrop Blur Intensity
+        title.zh: 模态框背景模糊强度
+        type: variable-number-slider
+        default: 3
+        min: 0
+        max: 10
+        step: 1
+        format: px
+      - id: composer--DisableDesktopViewHeaderTitleParent
+        title: Toggle Desktop View Header Title Parent
+        title.zh: 桌面端视图标题路径折叠
+        type: class-toggle
+        default: true
+      - id: nav-file-settings
+        title: Nav File Settings
+        title.zh: 导航文件
+        type: heading
+        level: 3
+        collapsed: true
+      - id: composer--EnableFilenameLineFeed
+        title: Enable Filename Line Feed
+        title.zh: 启用文件名换行
+        description: enable line feed for filename
+        description.zh: 文件名换行显示
+        type: class-toggle
+      - id: composer--EnableHiddenFileTag
+        title: Enable Hidden File Tag
+        title.zh: 启用隐藏文件标签
+        description: enable hidden file tag
+        description.zh: 隐藏文件后缀标签
+        type: class-toggle
+      - id: composer--EnableHiddenFileTagHover
+        title: Enable Hidden File Tag Hover
+        title.zh: 文件标签悬停显示
+        description: enable hidden file tag hover
+        description.zh: 文件后缀标签鼠标悬停显示
+        type: class-toggle
+      - id: outline-settings
+        title: Outline Settings
+        title.zh: 大纲
+        type: heading
+        level: 3
+        collapsed: true
+      - id: outline-style
+        title: Outline Style
+        title.zh: 大纲样式
+        description: Choose prefered outline style
+        description.zh: 选择大纲的样式
+        type: class-select
+        allowEmpty: false
+        default: composer--DefaultOutlineStyle
+        options:
+          - label: Default 默认
+            value: composer--DefaultOutlineStyle
+          - label: Node 节点
+            value: composer--NodeOutlineStyle
+      - id: outline-collapsed-icon-opacity
+        title: Outline Collapsed Icon Opacity
+        title.zh: 大纲折叠图标透明度
+        description: Set the opacity of the collapsed icon
+        description.zh: 设置折叠图标的透明度
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.1
+      - id: color-settings
+        title: Color Settings
+        title.zh: 色彩设置
+        type: heading
+        level: 2
+        collapsed: true
+      - id: color-hue-settings
+        title: Color Hue Settings(Only for Ní)
+        title.zh: 色调设置（仅适用于 Ní）
+        type: heading
+        level: 3
+        collapsed: true
+      - id: light-primary-hue
+        title: Light Primary Hue (Only for Ní Scheme)
+        title.zh: 亮色主题主色调（仅适用于 Ní 方案）
+        type: variable-number-slider
+        default: 2
+        min: 0
+        max: 360
+        step: 1
+      - id: light-secondary-hue
+        title: Light Secondary Hue (Only for Ní Scheme)
+        title.zh: 亮色主题副色调（仅适用于 Ní 方案）
+        type: variable-number-slider
+        default: 330
+        min: 0
+        max: 360
+        step: 1
+      - id: dark-primary-hue
+        title: Dark Primary Hue (Only for Ní Scheme)
+        title.zh: 暗色主题主色调 （仅适用于 Ní 方案）
+        type: variable-number-slider
+        default: 282
+        min: 0
+        max: 360
+        step: 1
+      - id: dark-secondary-hue
+        title: Dark Secondary Hue (Only for Ní Scheme)
+        title.zh: 暗色主题副色调 （仅适用于 Ní 方案）
+        type: variable-number-slider
+        default: 330
+        min: 0
+        max: 360
+        step: 1
+      - id: background-colors
+        title: Background Colors
+        title.zh: 背景色
+        type: heading
+        level: 3
+        collapsed: true
+      - id: background-primary
+        title: Background Primary
+        title.zh: 主要背景色
+        type: variable-themed-color
+        format: hex
+        default-light: '#fafafa'
+        default-dark: '#1a1e24'
+        alt-format: []
+      - id: background-primary-alt
+        title: Background Primary Alt
+        title.zh: 主要背景色（备用）
+        type: variable-themed-color
+        format: hex
+        default-light: '#e8eaee'
+        default-dark: '#252a32'
+        alt-format: []
+      - id: background-secondary
+        title: Background Secondary
+        title.zh: 次要背景色
+        type: variable-themed-color
+        format: hex
+        default-light: '#f1f0ee'
+        default-dark: '#2d333b'
+        alt-format: []
+      - id: background-secondary-alt
+        title: Background Secondary Alt
+        title.zh: 次要背景色（备用）
+        type: variable-themed-color
+        format: hex
+        default-light: '#dddfe3'
+        default-dark: '#373e48'
+        alt-format: []
+      - id: rainbow-tree-settings
+        title: Rainbow Tree Settings
+        title.zh: 彩虹目录
+        type: heading
+        level: 3
+        collapsed: true
+      - id: composer--DisableRainbowTree
+        title: Disable Rainbow Tree
+        title.zh: 禁用彩虹目录
+        description: disable rainbow tree for file explorer
+        description.zh: 为文件资源管理器禁用彩虹目录
+        type: class-toggle
+      - id: folder-bg-opacity-setting
+        title: Folder Background Opacity
+        title.zh: 文件夹背景不透明度
+        description: Set the background opacity of the folder
+        description.zh: 设置文件夹的背景不透明度
+        type: variable-number
+        default: 0.08
+        min: 0
+        max: 1
+      - id: folder-text-opacity-setting
+        title: Folder Text Opacity
+        title.zh: 文件夹文本不透明度
+        description: Set the text opacity of the folder
+        description.zh: 设置文件夹的文本不透明度
+        type: variable-number
+        default: 0.85
+        min: 0
+        max: 1
+      - id: folder-hover-opacity-setting
+        title: Folder Hover Opacity
+        title.zh: 文件夹悬停不透明度
+        description: Set the hover opacity of the folder
+        description.zh: 设置文件夹的悬停不透明度
+        type: variable-number
+        default: 0.12
+        min: 0
+        max: 1
+      - id: folder-sub-bg-opacity-setting
+        title: Folder Sub Background Opacity
+        title.zh: 子文件夹背景不透明度
+        description: Set the background opacity of the sub-folder
+        description.zh: 设置子文件夹的背景不透明度
+        type: variable-number
+        default: 0.04
+        min: 0
+        max: 1
+      - id: folder-sub-text-opacity-setting
+        title: Folder Sub Text Opacity
+        title.zh: 子文件夹文本不透明度
+        description: Set the text opacity of the sub-folder
+        description.zh: 设置子文件夹的文本不透明度
+        type: variable-number
+        default: 0.7
+        min: 0
+        max: 1
+      - id: plugin-components
+        title: Components Plugin
+        title.zh: Components 插件
+        type: heading
+        level: 2
+        collapsed: true
+      - id: dynamic-dataview-component
+        title: Dynamic Dataview
+        title.zh: 数据视图
+        type: heading
+        level: 3
+        collapsed: true
+      - id: composer--ComponentsSimpleTag
+        title: Simple Tag Style
+        title.zh: 简单标签样式
+        description: switch to simple tag style to select / multi-select / group-name...
+        description.zh: 改变数据视图中单选、多选项的样式
+        type: class-toggle
+      - id: composer--ComponentsFilledGallaryCover
+        title: Notion Style Gallary Cover
+        title.zh: Notion 风格的封面
+        description: remove Gallary dynamic data view's cover padding
+        description.zh: 移除动态数据视图中的封面内边距
+        type: class-toggle
+      - id: count-component
+        title: Count Component
+        title.zh: 统计数字组件
+        type: heading
+        level: 3
+        collapsed: true
+      - id: components--count-component-value-font-size
+        title: Value Font Size
+        title.zh: 数值字体大小
+        type: variable-number
+        default: 1.6
+        format: rem
+      - id: quote-component
+        title: Quote Component
+        title.zh: 摘录组件
+        type: heading
+        level: 3
+        collapsed: true
+      - id: components-quote-title-font-size
+        title: Title Font Size
+        title.zh: 标题字体大小
+        description: rem
+        type: variable-number
+        default: 1
+        format: rem
+      - id: components-quote-content-font-size
+        title: Content Font Size
+        title.zh: 内容字体大小
+        description: rem
+        type: variable-number
+        default: 0.875
+        format: rem
+      - id: card-component
+        title: Card Component
+        title.zh: 卡片组件
+        type: heading
+        level: 3
+        collapsed: true
+      - id: components--card-component-title-icon-size
+        title: Title Icon Size
+        title.zh: 标题图标大小
+        description: rem
+        type: variable-number
+        default: 1
+        format: rem
+      - id: components--card-component-title-font-size
+        title: Title Font Size
+        title.zh: 标题字体大小
+        description: rem
+        type: variable-number
+        default: 1
+        format: rem
+      - id: components--card-component-description-font-size
+        title: Content Font Size
+        title.zh: 描述字体大小
+        description: rem
+        type: variable-number
+        default: 0.8125
+        format: rem

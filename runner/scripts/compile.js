@@ -93,11 +93,17 @@ function generateStyleSettingsDefaults(settings, mode) {
   const declarations = [];
   for (const setting of settings) {
     if (!setting || !setting.type) continue;
+    const constraints = setting.constraints || {};
+    const defaults = setting.defaults || {};
+    const settingFormat = setting.format ?? constraints.format ?? "";
+
     if (setting.type === "variable-themed-color") {
       const defaultVal =
-        mode === "dark" ? setting["default-dark"] : setting["default-light"];
+        mode === "dark"
+          ? (setting["default-dark"] ?? defaults.dark)
+          : (setting["default-light"] ?? defaults.light);
       if (defaultVal && defaultVal !== "#" && defaultVal !== "") {
-        if (setting.format === "hsl-split") {
+        if (settingFormat === "hsl-split") {
           // hsl-split not useful as a raw hex default — skip
         } else {
           declarations.push(`  --${setting.id}: ${defaultVal};`);
@@ -110,7 +116,7 @@ function generateStyleSettingsDefaults(settings, mode) {
           setting.type === "variable-number" ||
           setting.type === "variable-number-slider"
         ) {
-          value = `${setting.default}${setting.format || ""}`;
+          value = `${setting.default}${settingFormat}`;
         } else {
           value = setting.default;
         }
@@ -1222,10 +1228,16 @@ function buildCSSStrings(themeData) {
   // Style Settings default variable declarations
   const baseSlug = themeName.split(".")[0];
   const themeJsonEntry = themesJsonData.themes?.[baseSlug];
-  const styleSettingsArr = themeJsonEntry?.style_settings?.settings;
+  const styleSettingsArr = Array.isArray(themeJsonEntry?.style_settings?.sections)
+    ? themeJsonEntry.style_settings.sections.flatMap((section) =>
+        Array.isArray(section?.settings) ? section.settings : [],
+      )
+    : Array.isArray(themeJsonEntry?.style_settings?.settings)
+      ? themeJsonEntry.style_settings.settings
+      : [];
   let ssDefaultsLight = "";
   let ssDefaultsDark = "";
-  if (Array.isArray(styleSettingsArr) && styleSettingsArr.length > 0) {
+  if (styleSettingsArr.length > 0) {
     ssDefaultsLight = generateStyleSettingsDefaults(styleSettingsArr, "light");
     ssDefaultsDark = generateStyleSettingsDefaults(styleSettingsArr, "dark");
   }

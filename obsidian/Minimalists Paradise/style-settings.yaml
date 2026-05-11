@@ -1,841 +1,822 @@
-- name: Minimalists Paradise
-  id: mp-theme
-  settings:
-    - id: layout-heading
-      title: layout
-      type: heading
-      level: 1
-      collapsed: true
-    - id: frosted-glass-toggle
-      title: frosted glass interface
-      description: apply a frosted glass effect to the main componenets of the interface. WARNING this feature is experimental, some aspects of the UI may not look as intended.
-      type: class-toggle
-      default: false
-    - id: frosted-glass-type
-      title: frosted glass type
-      description: define the intensity and style of the frosted glass effect.
-      type: class-select
-      condition:
-        - id: frosted-glass-toggle
-          value: true
-      default: frosted-glass
-      options:
-        - label: frosted glass
-          value: frosted-glass
-        - label: ice glass
-          value: ice-glass
-        - label: frozen glass
-          value: frozen-glass
-    - id: cards-gap
-      title: cards gap
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: cards-gap
-    - id: tab-size
-      title: tab size
-      type: variable-number-slider
-      default: 20
-      min: 20
-      max: 35
-      step: 1
-      format: px
-      variable: tab-size
-    - id: divider-width
-      title: divider width
-      type: variable-number-slider
-      default: 1
-      min: 0
-      max: 10
-      step: 1
-      format: px
-      variable: divider-width
-    - id: default-radius
-      title: default radius
-      type: variable-number-slider
-      description: this variable is used as the default radius for other radius variables, such as card-radius, input-radius and modal-radius. changing it change them all at once, but you can also change them individually.
-      default: 16
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: default radius
-    - id: card-radius
-      title: card radius
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: card-radius
-    - id: mobile-card-radius
-      title: mobile card radius
-      type: variable-number-slider
-      default: 32
-      min: 0
-      max: 100
-      step: 1
-      format: px
-      variable: mobile-card-radius
-    - id: button-radius
-      title: button radius
-      type: variable-number-slider
-      default: 6
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: button-radius
-    - id: input-radius
-      title: input radius
-      type: variable-number-slider
-      default: 8
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: input-radius
-    - id: modal-radius
-      title: modal radius
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: modal-radius
-    - id: tab-radius
-      title: tab radius
-      type: variable-number-slider
-      default: 6
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: tab-radius
-    - id: clickable-icon-radius
-      title: button/icon radius
-      type: variable-number-slider
-      default: 8
-      min: 0
-      max: 50
-      step: 1
-      format: px
-      variable: clickable-icon-radius
-    - id: color-accent-theme
-      title: theme color accent override
-      type: heading
-      level: 1
-      collapsed: true
-    - id: custom-color-accent-light-toggle
-      title: enable light theme color accent override?
-      type: class-toggle
-      default: false
-    - id: custom-color-accent-light
-      title: custom light theme color accent
-      type: variable-color
-      format: hex
-      default: '#a0a6a7'
-      condition:
-        - id: custom-color-accent-light-toggle
-          value: true
-    - id: custom-color-accent-dark-toggle
-      title: enable dark theme color accent override?
-      type: class-toggle
-      default: false
-    - id: custom-color-accent-dark
-      title: custom dark theme color accent
-      type: variable-color
-      format: hex
-      default: '#68686e'
-      condition:
-        - id: custom-color-accent-dark-toggle
-          value: true
-    - id: theme-colors
-      title: main colors
-      type: heading
-      level: 1
-      collapsed: true
-    - id: background-primary
-      title: primary background
-      type: variable-themed-color
-      format: hex
-      default-light: '#A5AAAE'
-      default-dark: '#000000'
-      variable: background-primary
-    - id: color-panel
-      title: cards background
-      type: variable-themed-color
-      format: hex
-      default-light: '#a5aab6'
-      default-dark: '#0c0c0c'
-      variable: color-panel
-    - id: card-border-color
-      title: card border color
-      type: variable-themed-color
-      format: hex
-      default-light: '#252525c3'
-      default-dark: '#4d4d4f'
-      variable: card-border-color
-    - id: interactive-elements-heading
-      title: interactive elements
-      type: heading
-      level: 2
-      collapsed: true
-    - id: text-selection
-      title: text selection color
-      type: variable-themed-color
-      format: hex
-      default-light: '#a5aab680'
-      default-dark: '#a5aab680'
-      variable: text-selection
-    - id: scrollbar-thumb-bg
-      title: scrollbar thumb color
-      type: variable-themed-color
-      format: hex
-      default-light: '#00000050'
-      default-dark: '#ffffff50'
-      variable: scrollbar-thumb-bg
-    - id: scrollbar-bg
-      title: scrollbar background color
-      type: variable-themed-color
-      format: hex
-      default-light: '#00000010'
-      default-dark: '#ffffff10'
-      variable: scrollbar-bg
-    - id: interactive-accent
-      title: interactive accent color
-      type: variable-themed-color
-      format: hex
-      default-light: '#a5aab680'
-      default-dark: '#a5aab680'
-      variable: interactive-accent
-    - id: interactive-accent-hover
-      title: interactive accent hover color
-      type: variable-themed-color
-      format: hex
-      default-light: '#a5aab640'
-      default-dark: '#a5aab640'
-      variable: interactive-accent-hover
-    - id: extended-colors-heading
-      title: extended colors
-      type: heading
-      level: 2
-      collapsed: true
-    - id: color-red
-      title: red
-      type: variable-themed-color
-      format: hex
-      default-light: '#e93147'
-      default-dark: '#fb464c'
-    - id: color-orange
-      title: orange
-      type: variable-themed-color
-      format: hex
-      default-light: '#ec7500'
-      default-dark: '#e9973f'
-    - id: color-yellow
-      title: yellow
-      type: variable-themed-color
-      format: hex
-      default-light: '#e0ac00'
-      default-dark: '#e0de71'
-    - id: color-green
-      title: green
-      type: variable-themed-color
-      format: hex
-      default-light: '#08b94e'
-      default-dark: '#44cf6e'
-    - id: color-cyan
-      title: cyan
-      type: variable-themed-color
-      format: hex
-      default-light: '#00bfbc'
-      default-dark: '#53dfdd'
-    - id: color-blue
-      title: blue
-      type: variable-themed-color
-      format: hex
-      default-light: '#086ddd'
-      default-dark: '#027aff'
-    - id: color-purple
-      title: purple
-      type: variable-themed-color
-      format: hex
-      default-light: '#7852ee'
-      default-dark: '#a882ff'
-    - id: color-pink
-      title: pink
-      type: variable-themed-color
-      format: hex
-      default-light: '#d53984'
-      default-dark: '#fa99cd'
-    - id: extended-color-schemes-heading
-      title: extended color schemes
-      type: heading
-      level: 1
-      collapsed: true
-    - id: extended-dark-color-schemes-toggle
-      title: enable extended dark color schemes?
-      description: enabling this will override the default dark color scheme with the one choosen below.
-      type: class-toggle
-      default: false
-    - id: extended-dark-color-schemes
-      title: extended dark color schemes
-      type: class-select
-      condition:
-        - id: extended-dark-color-schemes-toggle
-          value: true
-      default: onyx
-      options:
-        - label: atlantic
-          value: atlantic
-        - label: abyss
-          value: abyss
-        - label: moss
-          value: moss
-        - label: onyx
-          value: onyx
-    - id: extended-light-color-schemes-toggle
-      title: enable extended light color schemes?
-      description: enabling this will override the default light color scheme with the one choosen below.
-      type: class-toggle
-      default: false
-    - id: extended-light-color-schemes
-      title: extended light color schemes
-      type: class-select
-      condition:
-        - id: extended-light-color-schemes-toggle
-          value: true
-      default: leaf
-      options:
-        - label: leaf
-          value: leaf
-        - label: sky
-          value: sky
-        - label: fog
-          value: fog
-        - label: red desert
-          value: red-desert
-        - label: violet haze
-          value: violet-haze
-        - label: feather
-          value: feather
-    - id: colored-headers-title
-      title: colored headers
-      type: heading
-      level: 1
-      collapsed: true
-    - id: colored-headers
-      title: enable colored headers?
-      type: class-toggle
-      class: colored-headers
-      default: false
-    - id: colored-headers-override-toggle
-      title: override extended color scheme header colors?
-      description: enabling this will override the predefined colored headers attached to the extended color themes with the set selected below.
-      type: class-toggle
-      class: colored-headers-override-toggle
-      default: false
-      condition:
-        - id: colored-headers
-          value: true
-    - id: colored-headers-scheme
-      title: header color scheme
-      type: class-select
-      default: colored-headers-grey
-      options:
-        - label: grey headers
-          value: colored-headers-grey
-        - label: blue headers
-          value: colored-headers-blue
-        - label: purple headers
-          value: colored-headers-purple
-        - label: green headers
-          value: colored-headers-green
-        - label: orange headers
-          value: colored-headers-orange
-        - label: red headers
-          value: colored-headers-red
-        - label: pink headers
-          value: colored-headers-pink
-    - id: typography-heading
-      title: typography
-      type: heading
-      level: 1
-      collapsed: true
-    - id: colored-text
-      title: colored text
-      description: make all text use a color based on the selected accent color, looks specially good on the extended color schemes.
-      type: class-toggle
-      class: colored-text
-      default: false
-    - id: inline-title-color
-      title: inline title color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: inline-title-color
-    - id: inline-title-size
-      title: inline title size
-      type: variable-number-slider
-      default: 2
-      min: 1
-      max: 5
-      step: 0.1
-      format: em
-      variable: inline-title-size
-    - id: link-color
-      title: link color
-      type: variable-themed-color
-      format: hex
-      default-light: '#5f6369'
-      default-dark: '#9FA0A4'
-      variable: link-color
-    - id: link-external-color
-      title: external link color
-      type: variable-themed-color
-      format: hex
-      default-light: '#5f6369'
-      default-dark: '#9FA0A4'
-      variable: link-external-color
-    - id: link-unresolved-color
-      title: unresolved link color
-      type: variable-themed-color
-      format: hex
-      default-light: '#5f6369'
-      default-dark: '#9FA0A4'
-      variable: link-unresolved-color
-    - id: hr-color
-      title: horizontal rule color
-      type: variable-themed-color
-      format: hex
-      default-light: '#252525'
-      default-dark: '#595959'
-      variable: hr-color
-    - id: hr-thickness
-      title: horizontal rule thickness
-      type: variable-number-slider
-      default: 1
-      min: 1
-      max: 5
-      step: 1
-      format: px
-      variable: hr-thickness
-    - id: checkbox-radius
-      title: checkbox radius
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 20
-      step: 1
-      format: px
-      variable: checkbox-radius
-    - id: p-spacing
-      title: paragraph spacing
-      type: variable-number-slider
-      default: 4
-      min: 0
-      max: 20
-      step: 1
-      format: px
-      variable: p-spacing
-    - id: headings-heading
-      title: headings
-      type: heading
-      level: 2
-      collapsed: true
-    - id: h1-color
-      title: H1 color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: h1-color
-    - id: disable-h1-divider
-      title: disable H1 divider
-      description: remove the bottom border from H1 headers.
-      type: class-toggle
-      default: false
-    - id: h2-color
-      title: H2 color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: h2-color
-    - id: h3-color
-      title: H3 color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: h3-color
-    - id: h4-color
-      title: H4 color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: h4-color
-    - id: h5-color
-      title: H5 color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: h5-color
-    - id: h6-color
-      title: H6 color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: h6-color
-    - id: callout-radius
-      title: callout border radius
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 20
-      step: 1
-      format: px
-      variable: callout-radius
-    - id: blockquote-heading
-      title: blockquotes
-      type: heading
-      level: 2
-      collapsed: true
-    - id: blockquote-background-color
-      title: blockquote background color
-      type: variable-themed-color
-      format: hex
-      default-light: '#f9f9f9'
-      default-dark: '#0c0c0c'
-      variable: blockquote-background-color
-    - id: blockquote-border-color
-      title: blockquote border color
-      type: variable-themed-color
-      format: hex
-      default-light: '#252525c3'
-      default-dark: '#4d4d4f'
-      variable: blockquote-border-color
-    - id: blockquote-text
-      title: blockquote text color
-      type: variable-themed-color
-      format: hex
-      default-light: '#000000'
-      default-dark: '#ffffff'
-      variable: blockquote-text
-    - id: blockquote-radius
-      title: blockquote border radius
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 20
-      step: 1
-      format: px
-      variable: blockquote-radius
-    - id: citation-bg
-      title: citation background color
-      type: variable-themed-color
-      format: hex
-      default-light: '#68686e'
-      default-dark: '#68686e'
-      variable: citation-bg
-    - id: syntax-highlighting-heading
-      title: syntax highlighting
-      type: heading
-      level: 2
-      collapsed: true
-    - id: code-keyword
-      title: keywords (def, return, if...)
-      type: variable-themed-color
-      format: hex
-      default-dark: '#552B79'
-      default-light: '#552B79'
-      variable: code-keyword
-    - id: code-function
-      title: definitions (functions, etc)
-      type: variable-themed-color
-      format: hex
-      default-dark: '#69EED7'
-      default-light: '#69EED7'
-      variable: code-function
-    - id: code-punctuation
-      title: default variables
-      type: variable-themed-color
-      format: hex
-      default-dark: '#558FC7'
-      default-light: '#558FC7'
-      variable: code-punctuation
-    - id: code-important
-      title: darameters and arguments
-      type: variable-themed-color
-      format: hex
-      default-dark: '#4186B6'
-      default-light: '#4186B6'
-      variable: code-important
-    - id: code-string
-      title: strings
-      type: variable-themed-color
-      format: hex
-      default-dark: '#BE4AA0'
-      default-light: '#BE4AA0'
-      variable: code-string
-    - id: code-value
-      title: numbers
-      type: variable-themed-color
-      format: hex
-      default-dark: '#9795EE'
-      default-light: '#9795EE'
-      variable: code-value
-    - id: code-comment
-      title: comments
-      type: variable-themed-color
-      format: hex
-      default-dark: '#16486D'
-      default-light: '#16486D'
-      variable: code-comment
-    - id: code-tag
-      title: built-in functions (print, len...)
-      type: variable-themed-color
-      format: hex
-      default-dark: '#2D76E9'
-      default-light: '#2D76E9'
-      variable: code-tag
-    - id: code-operator
-      title: operators (+, =, -...)
-      type: variable-themed-color
-      format: hex
-      default-dark: '#6852B3'
-      default-light: '#6852B3'
-      variable: code-operator
-    - id: code-property
-      title: properties (obj.method())
-      type: variable-themed-color
-      format: hex
-      default-dark: '#4A6BDB'
-      default-light: '#4A6BDB'
-      variable: code-property
-    - id: code-normal
-      title: default text code color
-      type: variable-themed-color
-      format: hex
-      default-dark: '#eeeeee'
-      default-light: '#eeeeee'
-      variable: code-normal
-    - id: code-background
-      title: codeblock background color
-      type: variable-themed-color
-      format: hex
-      default-light: '#f2f2f2'
-      default-dark: '#0d0d0d'
-      variable: code-background
-    - id: code-radius
-      title: codeblock border radius
-      type: variable-number-slider
-      default: 16
-      min: 0
-      max: 20
-      step: 1
-      format: px
-      variable: code-radius
-    - id: snippets-section
-      title: integrated snippets
-      type: heading
-      level: 1
-      collapsed: true
-    - id: toggle-hover-properties
-      title: enable hover on properties
-      description: by enabling this your properties will be collapsed by default and will be shown by hovering over the "properties" label.
-      type: class-toggle
-      default: true
-    - id: spotlight
-      title: spotlight
-      description: dim all inactive markdown panes.
-      type: class-toggle
-      default: false
-    - id: labeled-nav
-      title: labeled navigation
-      description: show labels next to icons for navigation items.
-      type: class-toggle
-      default: false
-    - id: infobox-callouts-heading
-      title: infobox callouts
-      type: heading
-      level: 2
-      collapsed: true
-    - id: ic-infobox-enable
-      title: enable infobox callouts
-      description: Toggle to enable or disable the Infobox Callouts styles if you prefer using them as a separate snippet.
-      type: class-toggle
-      default: true
-    - id: ic-width
-      title: callout Width
-      type: variable-number
-      default: 300
-      format: px
-    - id: ic-outside-padding
-      title: outside padding
-      description: Distance between callout and surrounding content.
-      type: variable-number
-      default: 20
-      format: px
-    - id: ic-inside-padding
-      title: inside padding
-      description: Space inside the callout box.
-      type: variable-number
-      default: 24
-      format: px
-    - id: ic-round-corners
-      title: corner radius
-      type: variable-number
-      default: 8
-      format: px
-    - id: ic-border
-      title: border width
-      type: variable-number
-      default: 1
-      format: px
-    - id: ic-horizontal-rule-size
-      title: horizontal rule thickness
-      type: variable-number
-      default: 1
-      format: px
-    - id: ic-infobox-title-heading
-      title: infobox title
-      type: heading
-      level: 3
-      collapsed: true
-    - id: ic-title-alignment
-      title: alignment
-      type: variable-select
-      default: Center
-      options:
-        - Left
-        - Center
-        - Right
-    - id: ic-title-size
-      title: font size
-      type: variable-number
-      default: 1.2
-      format: rem
-    - id: ic-title-margin
-      title: margin
-      type: variable-number
-      default: 0
-      format: rem
-    - id: ic-title-extended-typography
-      title: extended typography
-      type: heading
-      level: 4
-      collapsed: true
-    - id: ic-title-typography-toggle
-      title: enable extended typography
-      type: class-toggle
-    - id: ic-title-font
-      title: font family
-      type: variable-text
-      default: Times New Roman
-    - id: ic-title-stylistic-sets
-      title: stylistic set
-      type: variable-select
-      default: '''"ss00"'''
-      options:
-        - label: Default
-          value: '''"ss00"'''
-        - label: Set 1
-          value: '''"ss01"'''
-        - label: Set 2
-          value: '''"ss02"'''
-        - label: Set 3
-          value: '''"ss03"'''
-        - label: Set 4
-          value: '''"ss04"'''
-        - label: Set 5
-          value: '''"ss05"'''
-        - label: Set 6
-          value: '''"ss06"'''
-        - label: Set 7
-          value: '''"ss07"'''
-        - label: Set 8
-          value: '''"ss08"'''
-        - label: Set 9
-          value: '''"ss09"'''
-        - label: Set 10
-          value: '''"ss10"'''
-    - id: ic-title-smallcaps
-      title: enable small caps
-      type: class-toggle
-    - id: ic-typography-disclaimer
-      title: disclaimer
-      description: some themes, snippets, or plugins may override these styles.
-      type: info-text
-      markdown: false
-    - id: tabbed-callout-heading
-      title: tabbed callout
-      type: heading
-      level: 2
-      collapsed: true
-    - id: tabbed-callout-enable
-      title: enable tabbed callout
-      description: Toggle to enable or disable the Tabbed Callout styles.
-      type: class-toggle
-      default: true
-    - id: hider-heading
-      title: hider
-      description: automatically hide certain UI elements and expose them on hover. huge thanks to the Border Theme for the inspiration and this feature.
-      type: heading
-      level: 2
-      collapsed: true
-    - id: tab-autohide
-      title: auto hide tab bar
-      description: Mac users can adjust the position of the traffic light using the 'Electron Window Tweaker' plugin
-      type: class-toggle
-      default: false
-    - id: status-bar-autohide
-      title: auto hide status bar
-      type: class-toggle
-      default: false
-    - id: Ribbon-autohide
-      title: auto hide left ribbon menu
-      type: class-toggle
-      default: false
-    - id: nav-header-autohide
-      title: auto hide header icons in sidepane
-      type: class-toggle
-      default: false
-    - id: tab-title-bar-autohide
-      title: auto hide tab title bar
-      type: class-toggle
-      default: false
-    - id: vault-profile-autohide
-      title: auto hide vault profile
-      type: class-toggle
-      default: false
-    - id: misc-heading
-      title: miscellaneous
-      type: heading
-      level: 1
-      collapsed: true
-    - id: toggle-tab-animations
-      title: enable tab animations
-      type: class-toggle
-      default: true
-    - id: empty-state-off
-      title: disable new tab styling
-      type: class-toggle
-    - id: anim-speed
-      title: animation speed
-      type: variable-number-slider
-      default: 1
-      min: 0.5
-      max: 5
-      step: 0.1
-      variable: anim-speed
+mode: replace
+sections:
+  - name: Minimalists Paradise
+    id: mp-theme
+    collapsed: false
+    settings:
+      - id: layout-heading
+        title: layout
+        type: heading
+        level: 1
+        collapsed: true
+      - id: frosted-glass-toggle
+        title: frosted glass interface
+        description: apply a frosted glass effect to the main componenets of the interface. WARNING this feature is experimental, some aspects of the UI may not look as intended.
+        type: class-toggle
+        default: false
+      - id: cards-gap
+        title: cards gap
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: cards-gap
+      - id: tab-size
+        title: tab size
+        type: variable-number-slider
+        default: 20
+        min: 20
+        max: 35
+        step: 1
+        format: px
+        variable: tab-size
+      - id: divider-width
+        title: divider width
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 10
+        step: 1
+        format: px
+        variable: divider-width
+      - id: default-radius
+        title: default radius
+        type: variable-number-slider
+        description: this variable is used as the default radius for other radius variables, such as card-radius, input-radius and modal-radius. changing it change them all at once, but you can also change them individually.
+        default: 16
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: default radius
+      - id: card-radius
+        title: card radius
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: card-radius
+      - id: mobile-card-radius
+        title: mobile card radius
+        type: variable-number-slider
+        default: 32
+        min: 0
+        max: 100
+        step: 1
+        format: px
+        variable: mobile-card-radius
+      - id: button-radius
+        title: button radius
+        type: variable-number-slider
+        default: 6
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: button-radius
+      - id: input-radius
+        title: input radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: input-radius
+      - id: modal-radius
+        title: modal radius
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: modal-radius
+      - id: tab-radius
+        title: tab radius
+        type: variable-number-slider
+        default: 6
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: tab-radius
+      - id: clickable-icon-radius
+        title: button/icon radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 50
+        step: 1
+        format: px
+        variable: clickable-icon-radius
+      - id: color-accent-theme
+        title: theme color accent override
+        type: heading
+        level: 1
+        collapsed: true
+      - id: custom-color-accent-light-toggle
+        title: enable light theme color accent override?
+        type: class-toggle
+        default: false
+      - id: custom-color-accent-light
+        title: custom light theme color accent
+        type: variable-color
+        format: hex
+        default: '#a0a6a7'
+        condition:
+          - id: custom-color-accent-light-toggle
+            value: true
+        alt-format: []
+      - id: custom-color-accent-dark-toggle
+        title: enable dark theme color accent override?
+        type: class-toggle
+        default: false
+      - id: custom-color-accent-dark
+        title: custom dark theme color accent
+        type: variable-color
+        format: hex
+        default: '#68686e'
+        condition:
+          - id: custom-color-accent-dark-toggle
+            value: true
+        alt-format: []
+      - id: theme-colors
+        title: main colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: background-primary
+        title: primary background
+        type: variable-themed-color
+        format: hex
+        default-light: '#A5AAAE'
+        default-dark: '#000000'
+        variable: background-primary
+        alt-format: []
+      - id: color-panel
+        title: cards background
+        type: variable-themed-color
+        format: hex
+        default-light: '#a5aab6'
+        default-dark: '#0c0c0c'
+        variable: color-panel
+        alt-format: []
+      - id: card-border-color
+        title: card border color
+        type: variable-themed-color
+        format: hex
+        default-light: '#252525c3'
+        default-dark: '#4d4d4f'
+        variable: card-border-color
+        alt-format: []
+      - id: interactive-elements-heading
+        title: interactive elements
+        type: heading
+        level: 2
+        collapsed: true
+      - id: text-selection
+        title: text selection color
+        type: variable-themed-color
+        format: hex
+        default-light: '#a5aab680'
+        default-dark: '#a5aab680'
+        variable: text-selection
+        alt-format: []
+      - id: scrollbar-thumb-bg
+        title: scrollbar thumb color
+        type: variable-themed-color
+        format: hex
+        default-light: '#00000050'
+        default-dark: '#ffffff50'
+        variable: scrollbar-thumb-bg
+        alt-format: []
+      - id: scrollbar-bg
+        title: scrollbar background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#00000010'
+        default-dark: '#ffffff10'
+        variable: scrollbar-bg
+        alt-format: []
+      - id: interactive-accent
+        title: interactive accent color
+        type: variable-themed-color
+        format: hex
+        default-light: '#a5aab680'
+        default-dark: '#a5aab680'
+        variable: interactive-accent
+        alt-format: []
+      - id: interactive-accent-hover
+        title: interactive accent hover color
+        type: variable-themed-color
+        format: hex
+        default-light: '#a5aab640'
+        default-dark: '#a5aab640'
+        variable: interactive-accent-hover
+        alt-format: []
+      - id: extended-colors-heading
+        title: extended colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: color-red
+        title: red
+        type: variable-themed-color
+        format: hex
+        default-light: '#e93147'
+        default-dark: '#fb464c'
+        alt-format: []
+      - id: color-orange
+        title: orange
+        type: variable-themed-color
+        format: hex
+        default-light: '#ec7500'
+        default-dark: '#e9973f'
+        alt-format: []
+      - id: color-yellow
+        title: yellow
+        type: variable-themed-color
+        format: hex
+        default-light: '#e0ac00'
+        default-dark: '#e0de71'
+        alt-format: []
+      - id: color-green
+        title: green
+        type: variable-themed-color
+        format: hex
+        default-light: '#08b94e'
+        default-dark: '#44cf6e'
+        alt-format: []
+      - id: color-cyan
+        title: cyan
+        type: variable-themed-color
+        format: hex
+        default-light: '#00bfbc'
+        default-dark: '#53dfdd'
+        alt-format: []
+      - id: color-blue
+        title: blue
+        type: variable-themed-color
+        format: hex
+        default-light: '#086ddd'
+        default-dark: '#027aff'
+        alt-format: []
+      - id: color-purple
+        title: purple
+        type: variable-themed-color
+        format: hex
+        default-light: '#7852ee'
+        default-dark: '#a882ff'
+        alt-format: []
+      - id: color-pink
+        title: pink
+        type: variable-themed-color
+        format: hex
+        default-light: '#d53984'
+        default-dark: '#fa99cd'
+        alt-format: []
+      - id: extended-color-schemes-heading
+        title: extended color schemes
+        type: heading
+        level: 1
+        collapsed: true
+      - id: extended-dark-color-schemes-toggle
+        title: enable extended dark color schemes?
+        description: enabling this will override the default dark color scheme with the one choosen below.
+        type: class-toggle
+        default: false
+      - id: extended-light-color-schemes-toggle
+        title: enable extended light color schemes?
+        description: enabling this will override the default light color scheme with the one choosen below.
+        type: class-toggle
+        default: false
+      - id: colored-headers-title
+        title: colored headers
+        type: heading
+        level: 1
+        collapsed: true
+      - id: colored-headers
+        title: enable colored headers?
+        type: class-toggle
+        class: colored-headers
+        default: false
+      - id: colored-headers-override-toggle
+        title: override extended color scheme header colors?
+        description: enabling this will override the predefined colored headers attached to the extended color themes with the set selected below.
+        type: class-toggle
+        class: colored-headers-override-toggle
+        default: false
+        condition:
+          - id: colored-headers
+            value: true
+      - id: typography-heading
+        title: typography
+        type: heading
+        level: 1
+        collapsed: true
+      - id: colored-text
+        title: colored text
+        description: make all text use a color based on the selected accent color, looks specially good on the extended color schemes.
+        type: class-toggle
+        class: colored-text
+        default: false
+      - id: inline-title-color
+        title: inline title color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: inline-title-color
+        alt-format: []
+      - id: inline-title-size
+        title: inline title size
+        type: variable-number-slider
+        default: 2
+        min: 1
+        max: 5
+        step: 0.1
+        format: em
+        variable: inline-title-size
+      - id: link-color
+        title: link color
+        type: variable-themed-color
+        format: hex
+        default-light: '#5f6369'
+        default-dark: '#9FA0A4'
+        variable: link-color
+        alt-format: []
+      - id: link-external-color
+        title: external link color
+        type: variable-themed-color
+        format: hex
+        default-light: '#5f6369'
+        default-dark: '#9FA0A4'
+        variable: link-external-color
+        alt-format: []
+      - id: link-unresolved-color
+        title: unresolved link color
+        type: variable-themed-color
+        format: hex
+        default-light: '#5f6369'
+        default-dark: '#9FA0A4'
+        variable: link-unresolved-color
+        alt-format: []
+      - id: hr-color
+        title: horizontal rule color
+        type: variable-themed-color
+        format: hex
+        default-light: '#252525'
+        default-dark: '#595959'
+        variable: hr-color
+        alt-format: []
+      - id: hr-thickness
+        title: horizontal rule thickness
+        type: variable-number-slider
+        default: 1
+        min: 1
+        max: 5
+        step: 1
+        format: px
+        variable: hr-thickness
+      - id: checkbox-radius
+        title: checkbox radius
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 20
+        step: 1
+        format: px
+        variable: checkbox-radius
+      - id: p-spacing
+        title: paragraph spacing
+        type: variable-number-slider
+        default: 4
+        min: 0
+        max: 20
+        step: 1
+        format: px
+        variable: p-spacing
+      - id: headings-heading
+        title: headings
+        type: heading
+        level: 2
+        collapsed: true
+      - id: h1-color
+        title: H1 color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: h1-color
+        alt-format: []
+      - id: disable-h1-divider
+        title: disable H1 divider
+        description: remove the bottom border from H1 headers.
+        type: class-toggle
+        default: false
+      - id: h2-color
+        title: H2 color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: h2-color
+        alt-format: []
+      - id: h3-color
+        title: H3 color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: h3-color
+        alt-format: []
+      - id: h4-color
+        title: H4 color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: h4-color
+        alt-format: []
+      - id: h5-color
+        title: H5 color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: h5-color
+        alt-format: []
+      - id: h6-color
+        title: H6 color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: h6-color
+        alt-format: []
+      - id: callout-radius
+        title: callout border radius
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 20
+        step: 1
+        format: px
+        variable: callout-radius
+      - id: blockquote-heading
+        title: blockquotes
+        type: heading
+        level: 2
+        collapsed: true
+      - id: blockquote-background-color
+        title: blockquote background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#f9f9f9'
+        default-dark: '#0c0c0c'
+        variable: blockquote-background-color
+        alt-format: []
+      - id: blockquote-border-color
+        title: blockquote border color
+        type: variable-themed-color
+        format: hex
+        default-light: '#252525c3'
+        default-dark: '#4d4d4f'
+        variable: blockquote-border-color
+        alt-format: []
+      - id: blockquote-text
+        title: blockquote text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#000000'
+        default-dark: '#ffffff'
+        variable: blockquote-text
+        alt-format: []
+      - id: blockquote-radius
+        title: blockquote border radius
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 20
+        step: 1
+        format: px
+        variable: blockquote-radius
+      - id: citation-bg
+        title: citation background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#68686e'
+        default-dark: '#68686e'
+        variable: citation-bg
+        alt-format: []
+      - id: syntax-highlighting-heading
+        title: syntax highlighting
+        type: heading
+        level: 2
+        collapsed: true
+      - id: code-keyword
+        title: keywords (def, return, if...)
+        type: variable-themed-color
+        format: hex
+        default-dark: '#552B79'
+        default-light: '#552B79'
+        variable: code-keyword
+        alt-format: []
+      - id: code-function
+        title: definitions (functions, etc)
+        type: variable-themed-color
+        format: hex
+        default-dark: '#69EED7'
+        default-light: '#69EED7'
+        variable: code-function
+        alt-format: []
+      - id: code-punctuation
+        title: default variables
+        type: variable-themed-color
+        format: hex
+        default-dark: '#558FC7'
+        default-light: '#558FC7'
+        variable: code-punctuation
+        alt-format: []
+      - id: code-important
+        title: darameters and arguments
+        type: variable-themed-color
+        format: hex
+        default-dark: '#4186B6'
+        default-light: '#4186B6'
+        variable: code-important
+        alt-format: []
+      - id: code-string
+        title: strings
+        type: variable-themed-color
+        format: hex
+        default-dark: '#BE4AA0'
+        default-light: '#BE4AA0'
+        variable: code-string
+        alt-format: []
+      - id: code-value
+        title: numbers
+        type: variable-themed-color
+        format: hex
+        default-dark: '#9795EE'
+        default-light: '#9795EE'
+        variable: code-value
+        alt-format: []
+      - id: code-comment
+        title: comments
+        type: variable-themed-color
+        format: hex
+        default-dark: '#16486D'
+        default-light: '#16486D'
+        variable: code-comment
+        alt-format: []
+      - id: code-tag
+        title: built-in functions (print, len...)
+        type: variable-themed-color
+        format: hex
+        default-dark: '#2D76E9'
+        default-light: '#2D76E9'
+        variable: code-tag
+        alt-format: []
+      - id: code-operator
+        title: operators (+, =, -...)
+        type: variable-themed-color
+        format: hex
+        default-dark: '#6852B3'
+        default-light: '#6852B3'
+        variable: code-operator
+        alt-format: []
+      - id: code-property
+        title: properties (obj.method())
+        type: variable-themed-color
+        format: hex
+        default-dark: '#4A6BDB'
+        default-light: '#4A6BDB'
+        variable: code-property
+        alt-format: []
+      - id: code-normal
+        title: default text code color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#eeeeee'
+        default-light: '#eeeeee'
+        variable: code-normal
+        alt-format: []
+      - id: code-background
+        title: codeblock background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#f2f2f2'
+        default-dark: '#0d0d0d'
+        variable: code-background
+        alt-format: []
+      - id: code-radius
+        title: codeblock border radius
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 20
+        step: 1
+        format: px
+        variable: code-radius
+      - id: snippets-section
+        title: integrated snippets
+        type: heading
+        level: 1
+        collapsed: true
+      - id: toggle-hover-properties
+        title: enable hover on properties
+        description: by enabling this your properties will be collapsed by default and will be shown by hovering over the "properties" label.
+        type: class-toggle
+        default: true
+      - id: spotlight
+        title: spotlight
+        description: dim all inactive markdown panes.
+        type: class-toggle
+        default: false
+      - id: labeled-nav
+        title: labeled navigation
+        description: show labels next to icons for navigation items.
+        type: class-toggle
+        default: false
+      - id: infobox-callouts-heading
+        title: infobox callouts
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ic-infobox-enable
+        title: enable infobox callouts
+        description: Toggle to enable or disable the Infobox Callouts styles if you prefer using them as a separate snippet.
+        type: class-toggle
+        default: true
+      - id: ic-width
+        title: callout Width
+        type: variable-number
+        default: 300
+        format: px
+      - id: ic-outside-padding
+        title: outside padding
+        description: Distance between callout and surrounding content.
+        type: variable-number
+        default: 20
+        format: px
+      - id: ic-inside-padding
+        title: inside padding
+        description: Space inside the callout box.
+        type: variable-number
+        default: 24
+        format: px
+      - id: ic-round-corners
+        title: corner radius
+        type: variable-number
+        default: 8
+        format: px
+      - id: ic-border
+        title: border width
+        type: variable-number
+        default: 1
+        format: px
+      - id: ic-horizontal-rule-size
+        title: horizontal rule thickness
+        type: variable-number
+        default: 1
+        format: px
+      - id: ic-infobox-title-heading
+        title: infobox title
+        type: heading
+        level: 3
+        collapsed: true
+      - id: ic-title-alignment
+        title: alignment
+        type: variable-select
+        default: Center
+        options:
+          - label: Left
+            value: Left
+          - label: Center
+            value: Center
+          - label: Right
+            value: Right
+      - id: ic-title-size
+        title: font size
+        type: variable-number
+        default: 1.2
+        format: rem
+      - id: ic-title-margin
+        title: margin
+        type: variable-number
+        default: 0
+        format: rem
+      - id: ic-title-extended-typography
+        title: extended typography
+        type: heading
+        level: 4
+        collapsed: true
+      - id: ic-title-typography-toggle
+        title: enable extended typography
+        type: class-toggle
+      - id: ic-title-font
+        title: font family
+        type: variable-text
+        default: Times New Roman
+      - id: ic-title-stylistic-sets
+        title: stylistic set
+        type: variable-select
+        default: '''"ss00"'''
+        options:
+          - label: Default
+            value: '''"ss00"'''
+          - label: Set 1
+            value: '''"ss01"'''
+          - label: Set 2
+            value: '''"ss02"'''
+          - label: Set 3
+            value: '''"ss03"'''
+          - label: Set 4
+            value: '''"ss04"'''
+          - label: Set 5
+            value: '''"ss05"'''
+          - label: Set 6
+            value: '''"ss06"'''
+          - label: Set 7
+            value: '''"ss07"'''
+          - label: Set 8
+            value: '''"ss08"'''
+          - label: Set 9
+            value: '''"ss09"'''
+          - label: Set 10
+            value: '''"ss10"'''
+      - id: ic-title-smallcaps
+        title: enable small caps
+        type: class-toggle
+      - id: ic-typography-disclaimer
+        title: disclaimer
+        description: some themes, snippets, or plugins may override these styles.
+        type: info-text
+        markdown: false
+      - id: tabbed-callout-heading
+        title: tabbed callout
+        type: heading
+        level: 2
+        collapsed: true
+      - id: tabbed-callout-enable
+        title: enable tabbed callout
+        description: Toggle to enable or disable the Tabbed Callout styles.
+        type: class-toggle
+        default: true
+      - id: hider-heading
+        title: hider
+        description: automatically hide certain UI elements and expose them on hover. huge thanks to the Border Theme for the inspiration and this feature.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: tab-autohide
+        title: auto hide tab bar
+        description: Mac users can adjust the position of the traffic light using the 'Electron Window Tweaker' plugin
+        type: class-toggle
+        default: false
+      - id: status-bar-autohide
+        title: auto hide status bar
+        type: class-toggle
+        default: false
+      - id: Ribbon-autohide
+        title: auto hide left ribbon menu
+        type: class-toggle
+        default: false
+      - id: nav-header-autohide
+        title: auto hide header icons in sidepane
+        type: class-toggle
+        default: false
+      - id: tab-title-bar-autohide
+        title: auto hide tab title bar
+        type: class-toggle
+        default: false
+      - id: vault-profile-autohide
+        title: auto hide vault profile
+        type: class-toggle
+        default: false
+      - id: misc-heading
+        title: miscellaneous
+        type: heading
+        level: 1
+        collapsed: true
+      - id: toggle-tab-animations
+        title: enable tab animations
+        type: class-toggle
+        default: true
+      - id: empty-state-off
+        title: disable new tab styling
+        type: class-toggle
+      - id: anim-speed
+        title: animation speed
+        type: variable-number-slider
+        default: 1
+        min: 0.5
+        max: 5
+        step: 0.1
+        variable: anim-speed

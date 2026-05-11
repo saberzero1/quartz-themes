@@ -1,127 +1,127 @@
-- name: RetroOS 98 Tweak Box
-  id: ROS98-Support
-  collapsed: false
-  level: 0
-  settings:
-    - id: scrollbar-width
-      title: Background brightness
-      description: Suggestion Increase brightness on Dark mode, decrease brightness on light mode.
-      type: variable-number-slider
-      min: 11
-      max: 18
-      step: 0.5
-      default: 18
-      format: px
-    - id: ROS09-darkScheme
-      description: Change color scheme for the dark theme. "+" means its from the Windows Plus pack
-      title: Dark Color Scheme
-      type: class-select
-      allowEmpty: false
-      default: ROS98
-      options:
-        - label: RetroOS 98 Dark
-          value: ROS98
-        - label: Ancient Pathways +
-          value: ROS98-Ancient
-        - label: Dangerous Creatures +
-          value: ROS98-DC
-        - label: Jungle +
-          value: ROS98-Jungle
-        - label: Mystery +
-          value: ROS98-mystery
-        - label: Travel +
-          value: ROS98-Travel
-        - label: Snowboarding +
-          value: ROS98-Snow
-        - label: Space +
-          value: ROS98-Space
-        - label: Steam
-          value: ROS98-steam
-        - label: Under Water +
-          value: ROS98-Water
-    - id: ROS09-lightScheme
-      description: Change color scheme for the light theme. "+" means its from the Windows Plus pack
-      title: Light Color Scheme
-      type: class-select
-      allowEmpty: false
-      default: ROS98
-      options:
-        - label: RetroOS 98 Light
-          value: ROS98
-        - label: Baseball
-          value: ROS98-baseball
-        - label: Brick
-          value: ROS98-brick
-        - label: Bugs +
-          value: ROS98-Bugs
-        - label: Desert
-          value: ROS98-desert
-        - label: Eggplant
-          value: ROS98-eggplant
-        - label: Foxtrot +
-          value: ROS98-Foxtrot
-        - label: Horses +
-          value: ROS98-Horses
-        - label: Horror Channel +
-          value: ROS98-Horror
-        - label: Lilac
-          value: ROS98-lilac
-        - label: Maple
-          value: ROS98-maple
-        - label: Marine
-          value: ROS98-marine
-        - label: Messy Room +
-          value: ROS98-Messy
-        - label: More Windows +
-          value: ROS98-MW
-        - label: Nature +
-          value: ROS98-nature
-        - label: Peanuts +
-          value: ROS98-Peanuts
-        - label: PhotoDisc +
-          value: ROS98-Photo
-        - label: Plum
-          value: ROS98-plum
-        - label: Pumpkin
-          value: ROS98-pumpkin
-        - label: Rainy Day
-          value: ROS98-rainyday
-        - label: RE-man +
-          value: ROS98-reman
-        - label: Rose
-          value: ROS98-rose
-        - label: Science +
-          value: ROS98-Science
-        - label: Slate
-          value: ROS98-slate
-        - label: Sports +
-          value: ROS98-sports
-        - label: Spruce
-          value: ROS98-spruce
-        - label: The 60's USA +
-          value: ROS98-USA
-        - label: The Golden Era +
-          value: ROS98-GoldenEra
-        - label: Tree House +
-          value: ROS98-Tree
-        - label: Tropical Interlude +
-          value: ROS98-Tropical
-        - label: Leonardo Da Vinci +
-          value: ROS98-Vinci
-        - label: Wheat
-          value: ROS98-wheat
-- name: RetroOS 98 Support
-  id: CG-Support
-  collapsed: false
-  level: 0
-  settings:
-    - id: ROS09-github
-      title: Have a suggestion or found a problem with the theme
-      description: Submit an issue on [Github](https://github.com/ThePharaohArt/Obsidian-RetroOS98/issues)
-      type: info-text
-      markdown: true
-    - id: ROS09-more-themes
-      title: My Other themes
-      description: Check out my other themes:[Cyber Glow](https://github.com/ThePharaohArt/Obsidian-CyberGlow)
-      type: info-text
-      markdown: true
+mode: replace
+sections:
+  - name: RetroOS 98 Tweak Box
+    id: ROS98-Support
+    collapsed: false
+    settings:
+      - id: scrollbar-width
+        title: Background brightness
+        description: Suggestion Increase brightness on Dark mode, decrease brightness on light mode.
+        type: variable-number-slider
+        min: 11
+        max: 18
+        step: 0.5
+        default: 18
+        format: px
+      - id: ROS09-darkScheme
+        description: Change color scheme for the dark theme. "+" means its from the Windows Plus pack
+        title: Dark Color Scheme
+        type: class-select
+        allowEmpty: false
+        default: ROS98
+        options:
+          - label: RetroOS 98 Dark
+            value: ROS98
+          - label: Ancient Pathways +
+            value: ROS98-Ancient
+          - label: Dangerous Creatures +
+            value: ROS98-DC
+          - label: Jungle +
+            value: ROS98-Jungle
+          - label: Mystery +
+            value: ROS98-mystery
+          - label: Travel +
+            value: ROS98-Travel
+          - label: Snowboarding +
+            value: ROS98-Snow
+          - label: Space +
+            value: ROS98-Space
+          - label: Steam
+            value: ROS98-steam
+          - label: Under Water +
+            value: ROS98-Water
+      - id: ROS09-lightScheme
+        description: Change color scheme for the light theme. "+" means its from the Windows Plus pack
+        title: Light Color Scheme
+        type: class-select
+        allowEmpty: false
+        default: ROS98
+        options:
+          - label: RetroOS 98 Light
+            value: ROS98
+          - label: Baseball
+            value: ROS98-baseball
+          - label: Brick
+            value: ROS98-brick
+          - label: Bugs +
+            value: ROS98-Bugs
+          - label: Desert
+            value: ROS98-desert
+          - label: Eggplant
+            value: ROS98-eggplant
+          - label: Foxtrot +
+            value: ROS98-Foxtrot
+          - label: Horses +
+            value: ROS98-Horses
+          - label: Horror Channel +
+            value: ROS98-Horror
+          - label: Lilac
+            value: ROS98-lilac
+          - label: Maple
+            value: ROS98-maple
+          - label: Marine
+            value: ROS98-marine
+          - label: Messy Room +
+            value: ROS98-Messy
+          - label: More Windows +
+            value: ROS98-MW
+          - label: Nature +
+            value: ROS98-nature
+          - label: Peanuts +
+            value: ROS98-Peanuts
+          - label: PhotoDisc +
+            value: ROS98-Photo
+          - label: Plum
+            value: ROS98-plum
+          - label: Pumpkin
+            value: ROS98-pumpkin
+          - label: Rainy Day
+            value: ROS98-rainyday
+          - label: RE-man +
+            value: ROS98-reman
+          - label: Rose
+            value: ROS98-rose
+          - label: Science +
+            value: ROS98-Science
+          - label: Slate
+            value: ROS98-slate
+          - label: Sports +
+            value: ROS98-sports
+          - label: Spruce
+            value: ROS98-spruce
+          - label: The 60's USA +
+            value: ROS98-USA
+          - label: The Golden Era +
+            value: ROS98-GoldenEra
+          - label: Tree House +
+            value: ROS98-Tree
+          - label: Tropical Interlude +
+            value: ROS98-Tropical
+          - label: Leonardo Da Vinci +
+            value: ROS98-Vinci
+          - label: Wheat
+            value: ROS98-wheat
+  - name: RetroOS 98 Support
+    id: CG-Support
+    collapsed: false
+    settings:
+      - id: ROS09-github
+        title: Have a suggestion or found a problem with the theme
+        description: Submit an issue on [Github](https://github.com/ThePharaohArt/Obsidian-RetroOS98/issues)
+        type: info-text
+        markdown: true
+      - id: ROS09-more-themes
+        title: My Other themes
+        description: Check out my other themes:[Cyber Glow](https://github.com/ThePharaohArt/Obsidian-CyberGlow)
+        type: info-text
+        markdown: true

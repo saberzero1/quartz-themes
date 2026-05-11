@@ -1,8 +1,11 @@
-- name: Matrix Rain Effect
-  id: matrix-rain-toggle
-  settings:
-    - title: Enable Matrix Rain
-      id: matrix-rain-on
-      type: class-toggle
-      default: false
-      class: matrix-rain-on
+mode: replace
+sections:
+  - name: Matrix Rain Effect
+    id: matrix-rain-toggle
+    collapsed: false
+    settings:
+      - title: Enable Matrix Rain
+        id: matrix-rain-on
+        type: class-toggle
+        default: false
+        class: matrix-rain-on

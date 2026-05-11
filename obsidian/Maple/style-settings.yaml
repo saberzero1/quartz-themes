@@ -1,2163 +1,1639 @@
-- id: maple-basic
-  name: Maple Basic
-  settings:
-    - id: setting-animation-time
-      type: variable-number-slider
-      title: Animation Duration (ms)
-      title.zh: 动画时长（毫秒）
-      default: 250
-      min: 0
-      max: 1000
-      step: 50
-      format: ms
-    - id: setting-item-line-height
-      type: variable-number-slider
-      title: List Item Line Height
-      title.zh: 列表行高
-      description: Adjust the line height for items in file explorer, outline panel, and setting modal sidebar.
-      description.zh: 调整文件管理器、大纲面板和设置面板侧边栏中行高。
-      default: 1.5
-      min: 1
-      max: 2
-      step: 0.1
-    - id: setting-divider-color
-      type: variable-themed-color
-      title: Panel Divider Color
-      title.zh: 面板分割线颜色
-      format: hsl
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-colors
-      title: Colors
-      title.zh: 颜色
-      type: heading
-      level: 1
-      collapsed: false
-    - id: color-dark-dim-disable
-      type: class-toggle
-      title: Disable Opacity Reduction in Dark Mode
-      title.zh: 深色模式下，颜色的不透明度不降低
-    - id: color-highlight-only
-      type: class-toggle
-      title: '[Experimental] Only change highlight color'
-      title.zh: 【实验性】只修改高亮颜色
-      description: Not fully test. Feel free to report bugs
-      description.zh: 没有经过完整测试，欢迎提交 bug
-    - id: color-scheme
-      type: class-select
-      title: Color Scheme
-      title.zh: 颜色方案
-      allow-empty: false
-      default: color-use-custom
-      options:
-        - label: Default
-          value: color-use-default
-        - label: Minimal
-          value: color-use-minimal
-        - label: Custom
-          value: color-use-custom
-    - id: title-light-mode
-      title: Light Mode
-      title.zh: 浅色模式
-      type: heading
-      level: 2
-      collapsed: true
-    - id: setting-accent-h-light
-      type: variable-number-slider
-      title: Base Color
-      title.zh: 基础色
-      default: 35
-      min: 0
-      max: 360
-      step: 5
-    - id: color-active-light
-      type: class-select
-      title: Highlight Color
-      title.zh: 高亮色
-      allow-empty: false
-      default: color-active-default-light
-      options:
-        - label: Theme Color
-          value: color-active-default-light
-        - label: Theme Color Alt
-          value: color-active-alt-light
-        - label: Custom
-          value: color-active-custom-light
-    - id: setting-color-active-custom-light
-      type: variable-color
-      title: Custom Highlight Color (Active)
-      title.zh: 自定义高亮色（激活状态）
-      default: '#'
-      format: hsl-split
-      opacity: false
-    - id: setting-color-inactive-custom-light
-      type: variable-color
-      title: Custom Highlight Color (Inactive)
-      title.zh: 自定义高亮色（非激活状态）
-      default: '#'
-      format: hsl-split
-      opacity: false
-    - id: color-modify-bg-light
-      type: class-toggle
-      title: Modify Background Colors
-      title.zh: 修改背景颜色
-    - id: setting-bg-primary-light-hsl
-      type: variable-color
-      title: Primary Background Color
-      title.zh: 主背景色
-      description: Background color for main area, e.g. editor, setting panel
-      description.zh: 主要区域的背景色，例如编辑器和设置面板
-      default: '#'
-      format: hsl-values
-      opacity: false
-    - id: setting-bg-primary-alt-light-hsl
-      type: variable-color
-      title: Block Background Color
-      title.zh: 块背景色
-      description: Background color for blocks in main area, e.g. codeblock, blockquote
-      description.zh: 主要区域内的块的背景色，例如代码块、引言块
-      default: '#'
-      format: hsl-values
-      opacity: false
-    - id: setting-bg-secondary-light-hsl
-      type: variable-color
-      title: Secondary Background Color
-      title.zh: 次背景色
-      description: Background color in secondary area, e.g. sidebar
-      description.zh: 次要区域的背景色，例如侧边栏
-      default: '#'
-      format: hsl-values
-      opacity: false
-    - id: setting-bg-frame-light
-      type: variable-color
-      title: Top Bar Background Color
-      title.zh: 顶栏背景色
-      description: Background color in the top area, e.g. titlebar, tab container
-      description.zh: 顶栏的背景色，例如标题栏、标签栏
-      default: '#'
-      format: hsl
-      opacity: false
-    - id: title-dark-mode
-      title: Dark Mode
-      title.zh: 暗色模式
-      type: heading
-      level: 2
-      collapsed: true
-    - id: setting-accent-h-dark
-      type: variable-number-slider
-      title: Base Color
-      title.zh: 基础色
-      default: 207
-      min: 0
-      max: 360
-      step: 5
-    - id: color-active-dark
-      type: class-select
-      title: Highlight Color
-      title.zh: 高亮色
-      allow-empty: false
-      default: color-active-default-dark
-      options:
-        - label: Theme Color
-          value: color-active-default-dark
-        - label: Theme Color Alt
-          value: color-active-alt-dark
-        - label: Custom
-          value: color-active-custom-dark
-    - id: setting-bg-delta-dark
-      type: variable-number-slider
-      title: Background Brightness
-      title.zh: 背景亮度
-      description: Increase the brightness of background color
-      description.zh: 增加背景色的亮度
-      default: 0
-      format: '%'
-      min: 0
-      max: 8
-      step: 0.1
-    - id: setting-color-active-custom-dark
-      type: variable-color
-      title: Custom Highlight Color (Active)
-      title.zh: 自定义高亮色（激活状态）
-      default: '#'
-      format: hsl-split
-      opacity: false
-    - id: setting-color-inactive-custom-dark
-      type: variable-color
-      title: Custom Highlight Color (Inactive)
-      title.zh: 自定义高亮色（非激活状态）
-      default: '#'
-      format: hsl-split
-      opacity: false
-    - id: color-modify-bg-dark
-      type: class-toggle
-      title: Modify Background Colors
-      title.zh: 修改背景颜色
-    - id: setting-bg-primary-dark-hsl
-      type: variable-color
-      title: Primary Background Color
-      title.zh: 主背景色
-      description: Background color for main area, e.g. editor, setting panel
-      description.zh: 主要区域的背景色，例如编辑器和设置面板
-      default: '#'
-      format: hsl-values
-      opacity: false
-    - id: setting-bg-primary-alt-dark-hsl
-      type: variable-color
-      title: Block Background Color
-      title.zh: 块背景色
-      description: Background color for blocks in main area, e.g. codeblock, blockquote
-      description.zh: 主要区域内的块的背景色，例如代码块、引言块
-      default: '#'
-      format: hsl-values
-      opacity: false
-    - id: setting-bg-secondary-dark-hsl
-      type: variable-color
-      title: Secondary Background Color
-      title.zh: 次背景色
-      description: Background color in secondary area, e.g. sidebar
-      description.zh: 次要区域的背景色，例如侧边栏
-      default: '#'
-      format: hsl-values
-      opacity: false
-    - id: setting-bg-frame-dark
-      type: variable-color
-      title: Top Bar Background Color
-      title.zh: 顶栏背景色
-      description: Background color in the top area, e.g. titlebar, tab container
-      description.zh: 顶栏的背景色，例如标题栏、标签栏
-      default: '#'
-      format: hsl
-      opacity: false
-    - id: title-layout
-      title: Layout
-      title.zh: 布局
-      type: heading
-      level: 1
-      collapsed: false
-    - id: app-layout-card
-      type: class-toggle
-      title: Enable Card Layout
-      title.zh: 启用卡片布局
-      description: Styles maybe broken when using stacked tabs
-      description.zh: 当使用堆叠标签页时，样式可能不符合预期
-      default: true
-    - id: app-layout-card-border
-      type: class-toggle
-      title: Add Border to Cards
-      title.zh: 为卡片添加边框
-    - id: setting-app-layout-spacing
-      type: variable-number-slider
-      title: Card Spacing
-      title.zh: 卡片间距
-      default: 6
-      max: 16
-      min: 2
-      step: 0.5
-      format: px
-    - id: app-layout-card-bg
-      type: class-select
-      title: Background Type
-      title.zh: 背景类型
-      description: '"gradient" is ineffective when the color scheme is "Minimal"'
-      description.zh: 当颜色方案为 "Minimal" 时，"gradient" 不会生效
-      allow-empty: false
-      default: app-layout-card-gradient
-      options:
-        - label: Plain
-          value: app-layout-card-plain
-        - label: Gradient
-          value: app-layout-card-gradient
-        - label: Custom
-          value: app-layout-card-custom
-    - id: setting-layout-image-light
-      type: variable-text
-      title: Light Theme Background Image
-      title.zh: 浅色主题背景图片
-      description: Any CSS "background-image" value, e.g. url("/your/image/url")
-      description.zh: 任何 CSS “background-image” 值，例如：url("图片链接地址")
-      default: ''
-    - id: setting-layout-opacity-light
-      type: variable-number-slider
-      title: Light Theme Background Opacity
-      title.zh: 浅色主题背景不透明度
-      default: 0.6
-      max: 0.9
-      min: 0.1
-      step: 0.05
-    - id: setting-layout-image-dark
-      type: variable-text
-      title: Dark Theme Background Image
-      title.zh: 深色主题背景图片
-      description: Any CSS "background-image" value, e.g. url("/your/image/url")
-      description.zh: 任何 CSS “background-image” 值，例如：url("图片链接地址")
-      default: ''
-    - id: setting-layout-opacity-dark
-      type: variable-number-slider
-      title: Dark Theme Background Opacity
-      title.zh: 深色主题背景不透明度
-      default: 0.6
-      max: 0.9
-      min: 0.1
-      step: 0.05
-- id: maple-workspace
-  name: Maple Workspace
-  settings:
-    - id: enable-blur
-      type: class-toggle
-      title: Enable Background Blur
-      title.zh: 启用背景模糊
-      description: Applies to menus, modals, popups, and graph control panels. Disable if scrolling becomes laggy. Not available on mobile devices.
-      description.zh: 在菜单、弹出框和图谱控制面板中生效；若滚动卡顿，请关闭此选项；手机端不支持
-      default: true
-    - id: title-file-explorer
-      title: File Explorer
-      title.zh: 文件管理器
-      type: heading
-      level: 1
-      collapsed: true
-    - id: explorer-title-wrap
-      type: class-toggle
-      title: Auto Wrap Long File Names
-      title.zh: 长文件名自动换行
-    - id: explorer-icon
-      type: class-toggle
-      title: Enable Prefix Icons
-      title.zh: 启用前置图标
-      description: Please turn off this option when using third-party icon plugins to avoid conflicts.
-      description.zh: 使用第三方图标插件时建议关闭以避免冲突。
-      default: true
-    - id: explorer-folder-bold
-      type: class-toggle
-      title: Bold Folder Titles
-      title.zh: 加粗文件夹标题
-    - id: setting-color-dirs
-      type: variable-themed-color
-      title: Directory Color
-      title.zh: 文件夹颜色
-      format: hsl
-      opacity: false
-      default-light: hsl(46, 81%, 45%)
-      default-dark: hsl(46, 81%, 45%)
-    - id: title-outline
-      title: Outline
-      title.zh: 大纲
-      type: heading
-      level: 1
-      collapsed: true
-    - id: outline-enable
-      type: class-toggle
-      title: Enable Logseq Bullet Thread Style of outline
-      title.zh: 启用 Logseq 样式的大纲
-      description: Reload Obsidian after enabling this feature. Reference from https://github.com/pengx17/logseq-dev-theme/blob/main/bullet_threading.css
-      description.zh: 启用此功能后请重启 Obsidian。参考自 https://github.com/pengx17/logseq-dev-theme/blob/main/bullet_threading.css
-    - id: setting-outline-width
-      type: variable-number-slider
-      title: Guide Line Width
-      title.zh: 引导线宽度
-      default: 2
-      min: 1
-      max: 4
-      step: 0.5
-      format: px
-    - id: setting-outline-line-color
-      type: variable-themed-color
-      title: Guide Line Color
-      title.zh: 引导线颜色
-      format: hsl
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-outline-dot-color
-      type: variable-themed-color
-      title: Guide Dot Color
-      title.zh: 引导点颜色
-      format: hsl
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-document-search-and-replace
-      title: Document Search and Replace
-      title.zh: 文档搜索和替换
-      type: heading
-      level: 1
-      collapsed: true
-    - id: search-internal-enable
-      type: class-toggle
-      title: Enable Floating Style
-      title.zh: 启用浮动风格
-      description: Similar to VSCode document search widget
-      description.zh: 类似于 VSCode 的文档搜索框
-      default: true
-    - id: search-remove-button
-      type: class-toggle
-      title: Remove Rarely Used Buttons
-      title.zh: 移除不常用的按钮
-      description: 'Removed buttons: Find All'
-      description.zh: 已移除的按钮：查找全部
-    - id: title-graph
-      title: Graph
-      title.zh: 关系图谱
-      type: heading
-      level: 1
-      collapsed: true
-    - id: setting-graph-node
-      type: variable-themed-color
-      title: Normal Node Color
-      title.zh: 普通节点颜色
-      format: hsl
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-graph-node-unresolved
-      type: variable-themed-color
-      title: Unresolved Node Color
-      title.zh: 未连接节点颜色
-      format: hsl
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-graph-node-focus
-      type: variable-themed-color
-      title: Focused Node Color
-      title.zh: 聚焦节点颜色
-      format: hsl
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-modal-and-setting-panel
-      title: Modal and Setting Panel
-      title.zh: 模态框和设置面板
-      type: heading
-      level: 1
-      collapsed: true
-    - id: modal-setting-header
-      type: class-toggle
-      title: Add Header To Setting Panel
-      title.zh: 为设置面板添加顶部标题
-      description: Works best with the "Setting Search" plugin; not valid on mobile
-      description.zh: 配合“设置搜索”插件使用效果更佳，移动端无效
-      default: true
-    - id: setting-modal-header-title
-      type: variable-text
-      title: Setting Panel Header Title
-      title.zh: 设置面板标题
-      default: Maple 1.4.14
-      quotes: true
-    - id: modal-setting-header-title-center
-      type: class-toggle
-      title: Center the Setting Panel Header Title
-      title.zh: 设置面板标题居中
-      default: true
-    - id: modal-setting-header-search
-      type: class-toggle
-      title: Move Some Search Bar to Modal Header
-      title.zh: 将部分搜索框移动到模态框顶部
-      default: true
-    - id: enable-group-title
-      type: class-toggle
-      title: Add Icons For Left Navigation Group Title
-      title.zh: 为左侧导航组标题添加图标
-      default: true
-    - id: modal-will-change
-      type: class-toggle
-      title: Enable Modal Open Animation Optimization for Low-Performance Devices
-      title.zh: 为低性能设备提供更流畅的打开动画
-      description: ❗ May cause font blurriness when APP scaling is not set to 100%
-      description.zh: ❗ 应用缩放比例不等于100%时可能会导致字体模糊
-      default: true
-    - id: title-control
-      title: Control
-      title.zh: 控件
-      type: heading
-      level: 2
-      collapsed: true
-    - id: modal-control-gradient
-      type: class-toggle
-      title: Enable Gradient Style on Controls
-      title.zh: 控件启用渐变样式
-      default: true
-    - id: modal-slider
-      type: class-toggle
-      title: Styled Slider
-      title.zh: 启用滑块样式
-      default: true
-    - id: modal-toggle
-      type: class-select
-      title: Styled Toggle Button
-      title.zh: 启用开关按钮样式
-      description: '"Thin" and "Floating" will fallback to "Default" on mobile'
-      description.zh: “Thin” 和 “Floating” 选项在移动端会回退到 “默认” 风格
-      allow-empty: false
-      default: modal-toggle-default
-      options:
-        - label: Default
-          value: modal-toggle-default
-        - label: Square
-          value: modal-toggle-square
-        - label: Thin
-          value: modal-toggle-thin
-        - label: Floating
-          value: modal-toggle-floating
-    - id: title-tab-and-navigation-bar
-      title: Tab and Navigation Bar
-      title.zh: 标签页和导航栏
-      type: heading
-      level: 1
-      collapsed: true
-    - id: labeled-nav
-      type: class-toggle
-      title: Enable Vertical Navigation Bar
-      title.zh: 启用竖向导航栏
-      description: Reference from https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/labeled-nav.scss
-      description.zh: 参考自 https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/labeled-nav.scss
-    - id: tab-float
-      type: class-toggle
-      title: Enable Floating Style Tab Bar
-      title.zh: 启用浮动风格的标签栏
-      default: true
-    - id: setting-tab-stack-header-width
-      type: variable-number-slider
-      title: Stacked Tab Header Width (px)
-      title.zh: 堆叠标签页的标签宽度（px）
-      default: 40
-      max: 60
-      min: 20
-      step: 1
-      format: px
-    - id: tab-slide-up
-      type: class-toggle
-      title: Enable Tab Slide Up Animation
-      title.zh: 启用标签页切换动画
-      description: ❗Turning on will prevent some panels updating instantly while switching tabs
-      description.zh: ❗开启后会导致部分面板无法立即更新
-    - id: tab-show-close
-      type: class-select
-      title: When To Show Close Button On Tabs
-      title.zh: 何时显示标签页的关闭按钮
-      allow-empty: false
-      default: tab-show-close-default
-      options:
-        - label: Always
-          value: tab-show-close-default
-        - label: Hover only
-          value: tab-show-close-all
-        - label: Hover only or active tab
-          value: tab-show-close-part
-    - id: tab-title-bar-text
-      type: class-select
-      title: Font Size of File Name On Tab Title Bar
-      title.zh: 标签页标题栏的文件名的字体大小
-      allow-empty: false
-      default: tab-title-bar-text-default
-      options:
-        - label: Default
-          value: tab-title-bar-text-default
-        - label: Small size
-          value: tab-title-bar-text-small
-        - label: Hover only
-          value: tab-title-bar-text-hidden
-    - id: title-status-bar
-      title: Status Bar
-      title.zh: 状态栏
-      type: heading
-      level: 1
-      collapsed: true
-    - id: status-bar-style-float
-      type: class-toggle
-      title: Enable Floating Style
-      title.zh: 启用浮动样式
-      default: true
-    - id: status-bar-style
-      type: class-select
-      title: Status Bar Animation
-      title.zh: 状态栏动画效果
-      description: 'Note: The "Auto scroll in" option is only effective when "Enable Floating Style" is on'
-      description.zh: 注意：“自动滚入”选项仅在"启用浮动风格"开启时生效
-      allow-empty: false
-      default: status-bar-default
-      options:
-        - label: Default
-          value: status-bar-default
-        - label: Auto hide
-          value: status-bar-hidden
-        - label: Auto scroll in
-          value: status-bar-scroll
-    - id: status-bar-style-center
-      type: class-toggle
-      title: Centered Status Bar
-      title.zh: 状态栏居中显示
-    - id: title-tooltip-and-notice
-      title: Tooltip and Notice
-      title.zh: 提示框和通知
-      type: heading
-      level: 1
-      collapsed: true
-    - id: message-tooltip-hide-arrow
-      type: class-toggle
-      title: Hide Tooltip Arrow
-      title.zh: 隐藏气泡提示框箭头
-    - id: message-tooltip-hide
-      type: class-toggle
-      title: Always Hide Tooltip
-      title.zh: 始终隐藏气泡提示框
-    - id: message-modify
-      type: class-toggle
-      title: Modify Tooltip and Notice Color
-      title.zh: 修改气泡提示框和通知的颜色
-      default: true
-    - id: setting-message-bg
-      type: variable-themed-color
-      title: Background Color
-      title.zh: 背景色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-message-fg
-      type: variable-themed-color
-      title: Foreground Color
-      title.zh: 文字色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-scrollbar
-      title: Scrollbar
-      title.zh: 滚动条
-      type: heading
-      level: 1
-      collapsed: true
-    - id: scrollbar-hide
-      type: class-toggle
-      title: Always Hide Scrollbar
-      title.zh: 始终隐藏滚动条
-    - id: scrollbar-enable
-      type: class-toggle
-      title: Enable Scrollbar Style
-      title.zh: 启用滚动条样式
-      description: Styled scrollbar, auto hide when mouse is out of the container
-      description.zh: 美化滚动条样式，鼠标移出容器自动隐藏
-      default: true
-    - id: scrollbar-hover
-      type: class-select
-      title: Scrollbar Hover Action
-      title.zh: 鼠标悬停时滚动条的变化
-      allow-empty: false
-      default: scrollbar-hover-accent
-      options:
-        - label: None
-          value: scrollbar-hover-default
-        - label: Accent
-          value: scrollbar-hover-accent
-        - label: Expand
-          value: scrollbar-hover-expand
-    - id: scrollbar-movein-animation-enable
-      type: class-toggle
-      title: Enable Scrollbar Move In/Out Animation
-      title.zh: 启用滚动条移入移出动画
-      description: ❗ This can cause severe lag when typing on some old computers or mobile devices
-      description.zh: ❗ 会导致在某些旧的电脑或者移动设备上输入时严重卡顿
-- id: maple-editor
-  name: Maple Editor
-  settings:
-    - id: title-background-pattern
-      title: Background Pattern
-      title.zh: 背景图案
-      type: heading
-      level: 1
-      collapsed: true
-    - id: editor-bg-pattern
-      type: class-select
-      title: Pattern Style
-      title.zh: 图案风格
-      allow-empty: false
-      default: editor-bg-plain
-      options:
-        - label: Plain
-          value: editor-bg-plain
-        - label: Dots
-          value: editor-bg-grid-dots
-        - label: Grid
-          value: editor-bg-grid-line
-    - id: setting-editor-bg-grid-dots
-      type: variable-themed-color
-      title: Dot Color for Editor Background
-      title.zh: 编辑器背景点颜色
-      format: rgb
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-editor-bg-grid-line
-      type: variable-themed-color
-      title: Grid Line Color for Editor Background
-      title.zh: 编辑器背景网格线颜色
-      format: rgb
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-editor-bg-grid-spacing
-      type: variable-number-slider
-      title: Grid Spacing for Editor Background
-      title.zh: 编辑器背景网格间距
-      format: px
-      default: 20
-      min: 10
-      max: 30
-      step: 1
-    - id: title-line-and-spacing
-      title: Line and Spacing
-      title.zh: 行和间距
-      type: heading
-      level: 1
-      collapsed: true
-    - id: setting-editor-p-spacing
-      type: variable-number-slider
-      title: Paragraph Spacing (px)
-      title.zh: 段落间距（px）
-      default: 8
-      format: px
-      min: 0
-      max: 20
-      step: 1
-    - id: setting-editor-letter-spacing
-      type: variable-number-slider
-      title: Letter Spacing (px)
-      title.zh: 文字间距（px）
-      default: 0
-      format: px
-      min: -1
-      max: 1
-      step: 0.1
-    - id: editor-custom-bottom-spacing
-      type: class-toggle
-      title: Custom Page Bottom Spacing
-      title.zh: 自定义页面底部留白
-    - id: setting-editor-bottom-spacing
-      type: variable-number-slider
-      title: Page Bottom Spacing (vh)
-      title.zh: 页面底部留白大小（vh）
-      default: 40
-      format: vh
-      min: 0
-      max: 80
-      step: 5
-    - id: setting-editor-p-indent
-      type: variable-number-slider
-      title: Paragraph Indent
-      title.zh: 段落缩进
-      description: Indent all paragraphs if "p-indent" exists in properties.cssclasses
-      description.zh: 当文档属性的 cssclasses 中存在 “p-indent” 类时，为所有段落添加缩进
-      default: 2
-      min: 0
-      max: 4
-      step: 0.2
-    - id: setting-line-height
-      type: variable-number-slider
-      title: Line Height
-      title.zh: 行高
-      description: Multiple of text size
-      description.zh: 文字大小的倍数
-      default: 1.8
-      min: 1.2
-      max: 2.4
-      step: 0.1
-    - id: setting-file-line-width
-      type: variable-text
-      title: Line Width (Editor Width)
-      title.zh: 行宽（编辑器宽度）
-      description: Any CSS "width" value, e.g. clamp(MinWidth, WidthPercent, MaxWidth)
-      description.zh: 任何 CSS “width” 值，例如：clamp(最小值, 宽度百分比, 最大值)
-      default: clamp(600px, 72%, 850px)
-    - id: line-indicator
-      type: class-select
-      title: Hover Line Marker
-      title.zh: 鼠标悬停行标记
-      description: Reference from https://github.com/Akifyss/obsidian-border
-      description.zh: 参考自 https://github.com/Akifyss/obsidian-border
-      allow-empty: false
-      default: line-indicator-disable
-      options:
-        - label: None
-          value: line-indicator-disable
-        - label: Left
-          value: line-indicator-enable
-        - label: Full Line
-          value: line-indicator-full
-    - id: line-active
-      type: class-select
-      title: Active Line Highlight
-      title.zh: 当前行高亮
-      allow-empty: false
-      default: line-active-enable
-      options:
-        - label: None
-          value: line-active-disable
-        - label: Left
-          value: line-active-left
-        - label: Full Line
-          value: line-active-enable
-    - id: setting-line-active-color
-      type: variable-themed-color
-      title: Active Line Color
-      title.zh: 高亮行颜色
-      format: hsl-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-text
-      title: Text
-      title.zh: 文本
-      type: heading
-      level: 1
-      collapsed: true
-    - id: setting-text-normal
-      type: variable-themed-color
-      title: Editor Text Color
-      title.zh: 编辑器文本颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-underline-offset
-      type: variable-number-slider
-      title: Underline Offset
-      title.zh: 下划线偏移
-      default: 2
-      format: px
-      min: 0
-      max: 8
-      step: 0.5
-    - id: title-highlight
-      title: Highlight
-      title.zh: 高亮
-      type: heading
-      level: 2
-      collapsed: true
-    - id: setting-text-highlight-bg
-      type: variable-text
-      title: Highlight Text Background Color
-      title.zh: 文本高亮背景色
-      description: Any CSS "background" value, e.g. url("/your/image/url")
-      description.zh: 任何 CSS “background” 值，例如：url("图片链接地址")
-      default: rgba(255, 208, 0, 0.4)
-    - id: setting-text-highlight-color
-      type: variable-themed-color
-      title: Highlight Text Color
-      title.zh: 文本高亮文字色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-text-highlight-radius
-      type: variable-number-slider
-      title: Highlight Background Radius
-      title.zh: 高亮背景圆角大小
-      description: Value in pixels (px)
-      description.zh: 单位：像素（px）
-      default: 4
-      min: 0
-      max: 8
-      step: 1
-      format: px
-    - id: text-highlight-all-round
-      type: class-toggle
-      title: Maintain Radius When Wrapping
-      title.zh: 换行时保持圆角
-      description: Except during editing
-      description.zh: 编辑时除外
-      default: true
-    - id: title-bold
-      title: Bold
-      title.zh: 粗体
-      type: heading
-      level: 2
-      collapsed: true
-    - id: setting-text-bold-color
-      type: variable-themed-color
-      title: Bold Text Color
-      title.zh: 粗体颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-text-bold-weight
-      type: variable-number-slider
-      title: Bold Font Weight
-      title.zh: 粗体字重
-      default: 600
-      min: 100
-      max: 800
-      step: 50
-    - id: setting-text-bold-style
-      type: variable-text
-      title: Bold Style
-      title.zh: 粗体样式
-      description: Any CSS "text-decoration" value
-      description.zh: 任何 CSS “text-decoration” 值
-      default: ''
-    - id: setting-text-bold-font
-      type: variable-text
-      title: Bold Font
-      title.zh: 粗体字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: title-italic
-      title: Italic
-      title.zh: 斜体
-      type: heading
-      level: 2
-      collapsed: true
-    - id: setting-text-italic-color
-      type: variable-themed-color
-      title: Italic Text Color
-      title.zh: 斜体颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-text-italic-style
-      type: variable-text
-      title: Italic Style
-      title.zh: 斜体样式
-      description: Any CSS "text-decoration" value
-      description.zh: 任何 CSS “text-decoration” 值
-      default: ''
-    - id: setting-text-italic-font
-      type: variable-text
-      title: Italic Font
-      title.zh: 斜体字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: title-font
-      title: Font
-      title.zh: 字体
-      type: heading
-      level: 1
-      collapsed: true
-    - id: font-maple-interface
-      type: class-toggle
-      title: Use "Maple Mono" as Interface Font
-      title.zh: 使用 “Maple Mono” 作为界面字体
-      description: https://github.com/subframe7536/maple-font
-      description.zh: https://github.com/subframe7536/maple-font
-    - id: font-maple-text
-      type: class-toggle
-      title: Use "Maple Mono" as Text Font
-      title.zh: 使用 “Maple Mono” 作为正文字体
-      description: https://github.com/subframe7536/maple-font
-      description.zh: https://github.com/subframe7536/maple-font
-    - id: font-maple
-      type: class-toggle
-      title: Use "Maple Mono" as Monospace Font
-      title.zh: 使用 “Maple Mono” 作为等宽字体
-      description: https://github.com/subframe7536/maple-font
-      description.zh: https://github.com/subframe7536/maple-font
-      default: true
-    - id: setting-code-ligature
-      type: variable-text
-      title: Monospace Font Features
-      title.zh: 等宽字体特性
-      description: If using "Maple Mono" as monospace font, recommend setting to 'calt','cv01','cv02' to bring back normal glyphs
-      description.zh: 如果您使用 “Maple Mono” 作为等宽字体，建议设置为 'calt','cv01','cv02' 以改为正常的字形
-      default: '''calt'''
-    - id: font-latex-text
-      type: class-toggle
-      title: Use Text Font in Non-formula Parts of LaTeX
-      title.zh: 在 LaTeX 内非公式部分使用正文字体
-      description: No effective on Latin letters and numbers
-      description.zh: 仅修改中文字体
-    - id: title-link
-      title: Link
-      title.zh: 链接
-      type: heading
-      level: 1
-      collapsed: true
-    - id: link-hover-expand
-      type: class-toggle
-      title: Use Underline Animation on Hover
-      title.zh: 鼠标悬停时启用下划线动画
-    - id: link-icon
-      type: class-toggle
-      title: Add Icon Before Link
-      title.zh: 在链接前添加图标
-      description: ❗The icon will be duplicated if the link text contains space or extra styles
-      description.zh: ❗如果链接文本包含空格或额外样式，图标将会重复出现
-      default: true
-    - id: link-heading
-      type: class-toggle
-      title: Compatible with Heading Style
-      title.zh: 兼容标题样式
-      description: Keep link color consistent with heading, but retain icon
-      description.zh: 链接颜色与标题颜色保持一致，但保留图标
-    - id: link-click-to-edit-in-live-preview
-      type: class-toggle
-      title: Click to Edit Link in Live Preview Mode
-      title.zh: 实时预览模式下点击链接进行编辑而非跳转
-      description: ❗Disables hover animation; external link prefix icon will be disabled
-      description.zh: ❗将禁用悬停动画；外部链接前缀图标将不可用
-    - id: title-link-color
-      title: Link Color
-      title.zh: 链接颜色
-      type: heading
-      level: 2
-      collapsed: true
-    - id: setting-link-internal-color
-      type: variable-themed-color
-      title: Internal Link Color
-      title.zh: 内部链接颜色
-      default-dark: '#'
-      default-light: '#'
-      format: rgb-values
-      opacity: false
-    - id: setting-link-internal-color-underline
-      type: variable-themed-color
-      title: Internal Link Underline Color
-      title.zh: 内部链接下划线颜色
-      format: rgb
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-link-external-color
-      type: variable-themed-color
-      title: External Link Color
-      title.zh: 外部链接颜色
-      default-dark: '#'
-      default-light: '#'
-      format: rgb-values
-      opacity: false
-    - id: setting-link-external-color-underline
-      type: variable-themed-color
-      title: External Link Underline Color
-      title.zh: 外部链接下划线颜色
-      format: rgb
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-heading
-      title: Heading
-      title.zh: 标题
-      type: heading
-      level: 1
-      collapsed: true
-    - id: heading-color-style
-      type: class-select
-      title: Heading Color Style
-      title.zh: 标题颜色样式
-      allow-empty: false
-      default: heading-color-colorful
-      options:
-        - label: Text Color
-          value: heading-color-base
-        - label: Accent Color
-          value: heading-color-accent
-        - label: Colorful
-          value: heading-color-colorful
-    - id: heading-indicator
-      type: class-select
-      title: Heading Level Marker
-      title.zh: 标题等级标记
-      allow-empty: false
-      default: heading-indicator-auto
-      options:
-        - label: Disable
-          value: heading-indicator-disable
-        - label: Auto hide
-          value: heading-indicator-auto
-        - label: Fixed
-          value: heading-indicator-fixed
-    - id: title-level-1-heading
-      title: Level 1 Heading
-      title.zh: 一级标题
-      type: heading
-      level: 2
-      collapsed: true
-    - id: heading-h1-style
-      type: class-select
-      title: H1 Style
-      title.zh: H1 样式
-      allow-empty: false
-      default: heading-h1-normal
-      options:
-        - label: Normal
-          value: heading-h1-normal
-        - label: Underline
-          value: heading-h1-underline
-        - label: Full Line
-          value: heading-h1-full-line
-        - label: Block
-          value: heading-h1-block
-    - id: heading-h1-full-line-direction
-      type: class-select
-      title: H1 Full Line Decoration Gradient Direction
-      title.zh: H1 整行下划线渐变方向
-      allow-empty: false
-      default: heading-h1-full-line-both
-      options:
-        - label: Both
-          value: heading-h1-full-line-both
-        - label: Left
-          value: heading-h1-full-line-left
-        - label: Right
-          value: heading-h1-full-line-right
-    - id: heading-h1-block-contrast
-      type: class-toggle
-      title: H1 Block Decoration Use Higher Contrast Color
-      title.zh: H1 块状装饰颜色提高对比度
-    - id: setting-h1-color
-      type: variable-themed-color
-      title: H1 Color
-      title.zh: H1 颜色
-      format: rgb-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: heading-h1-center
-      type: class-toggle
-      title: H1 Centered
-      title.zh: H1 居中
-      default: true
-    - id: heading-h1-italic
-      type: class-toggle
-      title: H1 Italic Style
-      title.zh: H1 斜体样式
-    - id: setting-h1-font
-      type: variable-text
-      title: H1 Font Family
-      title.zh: H1 字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-h1-weight
-      type: variable-text
-      title: H1 Font Weight
-      title.zh: H1 字重
-      description: Any CSS "font-weight" value
-      description.zh: 任何 CSS “font-weight” 值
-      default: '750'
-    - id: setting-h1-size
-      type: variable-number-slider
-      title: H1 Font Size
-      title.zh: H1 字号
-      description: Scale factor of normal text font size
-      description.zh: 普通文本字号大小的倍数
-      default: 1.6
-      min: 1
-      max: 2
-      step: 0.1
-    - id: heading-h1-caps
-      type: class-toggle
-      title: H1 Small Caps Text Variant
-      title.zh: H1 文本变体
-      description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
-      description.zh: 将小写字母转换成大写字母，但字号保持不变
-      default: false
-    - id: title-level-2-heading
-      title: Level 2 Heading
-      title.zh: 二级标题
-      type: heading
-      level: 2
-      collapsed: true
-    - id: heading-h2-style
-      type: class-select
-      title: H2 Style
-      title.zh: H2 样式
-      allow-empty: false
-      default: heading-h2-underline
-      options:
-        - label: Normal
-          value: heading-h2-normal
-        - label: Underline
-          value: heading-h2-underline
-        - label: Full Line
-          value: heading-h2-full-line
-        - label: Block
-          value: heading-h2-block
-    - id: heading-h2-full-line-direction
-      type: class-select
-      title: H2 Full Line Decoration Gradient Direction
-      title.zh: H2 整行下划线渐变方向
-      allow-empty: false
-      default: heading-h2-full-line-both
-      options:
-        - label: Both
-          value: heading-h2-full-line-both
-        - label: Left
-          value: heading-h2-full-line-left
-        - label: Right
-          value: heading-h2-full-line-right
-    - id: heading-h2-block-contrast
-      type: class-toggle
-      title: H2 Block Decoration Use Higher Contrast Color
-      title.zh: H2 块状装饰颜色提高对比度
-    - id: setting-h2-color
-      type: variable-themed-color
-      title: H2 Color
-      title.zh: H2 颜色
-      format: rgb-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: heading-h2-center
-      type: class-toggle
-      title: H2 Centered
-      title.zh: H2 居中
-      default: false
-    - id: heading-h2-italic
-      type: class-toggle
-      title: H2 Italic Style
-      title.zh: H2 斜体样式
-    - id: setting-h2-font
-      type: variable-text
-      title: H2 Font Family
-      title.zh: H2 字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-h2-weight
-      type: variable-text
-      title: H2 Font Weight
-      title.zh: H2 字重
-      description: Any CSS "font-weight" value
-      description.zh: 任何 CSS “font-weight” 值
-      default: '700'
-    - id: setting-h2-size
-      type: variable-number-slider
-      title: H2 Font Size
-      title.zh: H2 字号
-      description: Scale factor of normal text font size
-      description.zh: 普通文本字号大小的倍数
-      default: 1.5
-      min: 1
-      max: 2
-      step: 0.1
-    - id: heading-h2-caps
-      type: class-toggle
-      title: H2 Small Caps Text Variant
-      title.zh: H2 文本变体
-      description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
-      description.zh: 将小写字母转换成大写字母，但字号保持不变
-      default: false
-    - id: title-level-3-heading
-      title: Level 3 Heading
-      title.zh: 三级标题
-      type: heading
-      level: 2
-      collapsed: true
-    - id: heading-h3-style
-      type: class-select
-      title: H3 Style
-      title.zh: H3 样式
-      allow-empty: false
-      default: heading-h3-normal
-      options:
-        - label: Normal
-          value: heading-h3-normal
-        - label: Underline
-          value: heading-h3-underline
-        - label: Full Line
-          value: heading-h3-full-line
-        - label: Block
-          value: heading-h3-block
-    - id: heading-h3-full-line-direction
-      type: class-select
-      title: H3 Full Line Decoration Gradient Direction
-      title.zh: H3 整行下划线渐变方向
-      allow-empty: false
-      default: heading-h3-full-line-both
-      options:
-        - label: Both
-          value: heading-h3-full-line-both
-        - label: Left
-          value: heading-h3-full-line-left
-        - label: Right
-          value: heading-h3-full-line-right
-    - id: heading-h3-block-contrast
-      type: class-toggle
-      title: H3 Block Decoration Use Higher Contrast Color
-      title.zh: H3 块状装饰颜色提高对比度
-    - id: setting-h3-color
-      type: variable-themed-color
-      title: H3 Color
-      title.zh: H3 颜色
-      format: rgb-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: heading-h3-center
-      type: class-toggle
-      title: H3 Centered
-      title.zh: H3 居中
-      default: false
-    - id: heading-h3-italic
-      type: class-toggle
-      title: H3 Italic Style
-      title.zh: H3 斜体样式
-    - id: setting-h3-font
-      type: variable-text
-      title: H3 Font Family
-      title.zh: H3 字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-h3-weight
-      type: variable-text
-      title: H3 Font Weight
-      title.zh: H3 字重
-      description: Any CSS "font-weight" value
-      description.zh: 任何 CSS “font-weight” 值
-      default: '600'
-    - id: setting-h3-size
-      type: variable-number-slider
-      title: H3 Font Size
-      title.zh: H3 字号
-      description: Scale factor of normal text font size
-      description.zh: 普通文本字号大小的倍数
-      default: 1.4
-      min: 1
-      max: 2
-      step: 0.1
-    - id: heading-h3-caps
-      type: class-toggle
-      title: H3 Small Caps Text Variant
-      title.zh: H3 文本变体
-      description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
-      description.zh: 将小写字母转换成大写字母，但字号保持不变
-      default: false
-    - id: title-level-4-heading
-      title: Level 4 Heading
-      title.zh: 四级标题
-      type: heading
-      level: 2
-      collapsed: true
-    - id: heading-h4-style
-      type: class-select
-      title: H4 Style
-      title.zh: H4 样式
-      allow-empty: false
-      default: heading-h4-normal
-      options:
-        - label: Normal
-          value: heading-h4-normal
-        - label: Underline
-          value: heading-h4-underline
-        - label: Full Line
-          value: heading-h4-full-line
-        - label: Block
-          value: heading-h4-block
-    - id: heading-h4-full-line-direction
-      type: class-select
-      title: H4 Full Line Decoration Gradient Direction
-      title.zh: H4 整行下划线渐变方向
-      allow-empty: false
-      default: heading-h4-full-line-both
-      options:
-        - label: Both
-          value: heading-h4-full-line-both
-        - label: Left
-          value: heading-h4-full-line-left
-        - label: Right
-          value: heading-h4-full-line-right
-    - id: heading-h4-block-contrast
-      type: class-toggle
-      title: H4 Block Decoration Use Higher Contrast Color
-      title.zh: H4 块状装饰颜色提高对比度
-    - id: setting-h4-color
-      type: variable-themed-color
-      title: H4 Color
-      title.zh: H4 颜色
-      format: rgb-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: heading-h4-center
-      type: class-toggle
-      title: H4 Centered
-      title.zh: H4 居中
-      default: false
-    - id: heading-h4-italic
-      type: class-toggle
-      title: H4 Italic Style
-      title.zh: H4 斜体样式
-    - id: setting-h4-font
-      type: variable-text
-      title: H4 Font Family
-      title.zh: H4 字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-h4-weight
-      type: variable-text
-      title: H4 Font Weight
-      title.zh: H4 字重
-      description: Any CSS "font-weight" value
-      description.zh: 任何 CSS “font-weight” 值
-      default: '550'
-    - id: setting-h4-size
-      type: variable-number-slider
-      title: H4 Font Size
-      title.zh: H4 字号
-      description: Scale factor of normal text font size
-      description.zh: 普通文本字号大小的倍数
-      default: 1.3
-      min: 1
-      max: 2
-      step: 0.1
-    - id: heading-h4-caps
-      type: class-toggle
-      title: H4 Small Caps Text Variant
-      title.zh: H4 文本变体
-      description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
-      description.zh: 将小写字母转换成大写字母，但字号保持不变
-      default: false
-    - id: title-level-5-heading
-      title: Level 5 Heading
-      title.zh: 五级标题
-      type: heading
-      level: 2
-      collapsed: true
-    - id: heading-h5-style
-      type: class-select
-      title: H5 Style
-      title.zh: H5 样式
-      allow-empty: false
-      default: heading-h5-normal
-      options:
-        - label: Normal
-          value: heading-h5-normal
-        - label: Underline
-          value: heading-h5-underline
-        - label: Full Line
-          value: heading-h5-full-line
-        - label: Block
-          value: heading-h5-block
-    - id: heading-h5-full-line-direction
-      type: class-select
-      title: H5 Full Line Decoration Gradient Direction
-      title.zh: H5 整行下划线渐变方向
-      allow-empty: false
-      default: heading-h5-full-line-both
-      options:
-        - label: Both
-          value: heading-h5-full-line-both
-        - label: Left
-          value: heading-h5-full-line-left
-        - label: Right
-          value: heading-h5-full-line-right
-    - id: heading-h5-block-contrast
-      type: class-toggle
-      title: H5 Block Decoration Use Higher Contrast Color
-      title.zh: H5 块状装饰颜色提高对比度
-    - id: setting-h5-color
-      type: variable-themed-color
-      title: H5 Color
-      title.zh: H5 颜色
-      format: rgb-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: heading-h5-center
-      type: class-toggle
-      title: H5 Centered
-      title.zh: H5 居中
-      default: false
-    - id: heading-h5-italic
-      type: class-toggle
-      title: H5 Italic Style
-      title.zh: H5 斜体样式
-    - id: setting-h5-font
-      type: variable-text
-      title: H5 Font Family
-      title.zh: H5 字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-h5-weight
-      type: variable-text
-      title: H5 Font Weight
-      title.zh: H5 字重
-      description: Any CSS "font-weight" value
-      description.zh: 任何 CSS “font-weight” 值
-      default: '550'
-    - id: setting-h5-size
-      type: variable-number-slider
-      title: H5 Font Size
-      title.zh: H5 字号
-      description: Scale factor of normal text font size
-      description.zh: 普通文本字号大小的倍数
-      default: 1.2
-      min: 1
-      max: 2
-      step: 0.1
-    - id: heading-h5-caps
-      type: class-toggle
-      title: H5 Small Caps Text Variant
-      title.zh: H5 文本变体
-      description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
-      description.zh: 将小写字母转换成大写字母，但字号保持不变
-      default: false
-    - id: title-level-6-heading
-      title: Level 6 Heading
-      title.zh: 六级标题
-      type: heading
-      level: 2
-      collapsed: true
-    - id: heading-h6-style
-      type: class-select
-      title: H6 Style
-      title.zh: H6 样式
-      allow-empty: false
-      default: heading-h6-normal
-      options:
-        - label: Normal
-          value: heading-h6-normal
-        - label: Underline
-          value: heading-h6-underline
-        - label: Full Line
-          value: heading-h6-full-line
-        - label: Block
-          value: heading-h6-block
-    - id: heading-h6-full-line-direction
-      type: class-select
-      title: H6 Full Line Decoration Gradient Direction
-      title.zh: H6 整行下划线渐变方向
-      allow-empty: false
-      default: heading-h6-full-line-both
-      options:
-        - label: Both
-          value: heading-h6-full-line-both
-        - label: Left
-          value: heading-h6-full-line-left
-        - label: Right
-          value: heading-h6-full-line-right
-    - id: heading-h6-block-contrast
-      type: class-toggle
-      title: H6 Block Decoration Use Higher Contrast Color
-      title.zh: H6 块状装饰颜色提高对比度
-    - id: setting-h6-color
-      type: variable-themed-color
-      title: H6 Color
-      title.zh: H6 颜色
-      format: rgb-values
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: heading-h6-center
-      type: class-toggle
-      title: H6 Centered
-      title.zh: H6 居中
-      default: false
-    - id: heading-h6-italic
-      type: class-toggle
-      title: H6 Italic Style
-      title.zh: H6 斜体样式
-    - id: setting-h6-font
-      type: variable-text
-      title: H6 Font Family
-      title.zh: H6 字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-h6-weight
-      type: variable-text
-      title: H6 Font Weight
-      title.zh: H6 字重
-      description: Any CSS "font-weight" value
-      description.zh: 任何 CSS “font-weight” 值
-      default: '500'
-    - id: setting-h6-size
-      type: variable-number-slider
-      title: H6 Font Size
-      title.zh: H6 字号
-      description: Scale factor of normal text font size
-      description.zh: 普通文本字号大小的倍数
-      default: 1.1
-      min: 1
-      max: 2
-      step: 0.1
-    - id: heading-h6-caps
-      type: class-toggle
-      title: H6 Small Caps Text Variant
-      title.zh: H6 文本变体
-      description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
-      description.zh: 将小写字母转换成大写字母，但字号保持不变
-      default: true
-    - id: title-horizontal-rule
-      title: Horizontal Rule
-      title.zh: 分隔线
-      type: heading
-      level: 1
-      collapsed: true
-    - id: hr-enable
-      type: class-toggle
-      title: Enable Horizontal Rule Style
-      title.zh: 启用分隔线样式
-      default: true
-    - id: setting-hr-icon
-      type: variable-text
-      title: Set Icon in the Center of Horizontal Rule
-      title.zh: 分隔线中部图标
-      default: ⭐
-      quotes: true
-    - id: title-table
-      title: Table
-      title.zh: 表格
-      type: heading
-      level: 1
-      collapsed: true
-    - id: table-full
-      type: class-toggle
-      title: Full Width Table
-      title.zh: 全宽表格
-      default: true
-    - id: table-remove-line-before
-      type: class-toggle
-      title: Remove the Empty Line Before Table
-      title.zh: 移除表格前的空白行
-      description: ❗ Once enabled, the cursor will jump out of the table when moving down into it.
-      description.zh: ❗ 启用后会导致光标往下移动到表格内时直接跳出表格
-    - id: table-style
-      type: class-select
-      title: Table Style
-      title.zh: 表格样式
-      description: 'Ignore DataView table. Minimal: Academic style with only horizontal lines; Colorful: Accented header and line background colors'
-      description.zh: '忽略 DataView 表格。Minimal: 仅显示横线的学术风格；Colorful: 加深表头和行的背景色'
-      allow-empty: false
-      default: table-style-default
-      options:
-        - label: Default
-          value: table-style-default
-        - label: Minimal
-          value: table-style-minimal
-        - label: Colorful
-          value: table-style-colorful
-    - id: table-round
-      type: class-toggle
-      title: Add Round Corner For Table
-      title.zh: 表格添加圆角
-      default: true
-    - id: setting-table-header-text
-      type: variable-themed-color
-      title: Table Header Text Color
-      title.zh: 表头文字色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-table-header-bg
-      type: variable-themed-color
-      title: Table Header Background Color
-      title.zh: 表头背景色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-table-line-bg
-      type: variable-themed-color
-      title: Striped Background Color
-      title.zh: 斑马纹背景色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-embed-block
-      title: Embed Block
-      title.zh: 内嵌块
-      type: heading
-      level: 1
-      collapsed: true
-    - id: embed-border-hidden
-      type: class-toggle
-      title: Hide Embed Block's Border
-      title.zh: 隐藏内嵌块的边框
-    - id: embed-title-right-top
-      type: class-toggle
-      title: Move Embed File Title to Top Right
-      title.zh: 内嵌文件标题移至右上角
-      description: Visible on hover; disabled when alias is "#", e.g., ![[FileName|#]]
-      description.zh: 鼠标悬停时显示；别名为 “#” 时禁用，例如：![[文件名|#]]
-      default: true
-    - id: title-image
-      title: Image
-      title.zh: 图片
-      type: heading
-      level: 1
-      collapsed: true
-    - id: image-alt
-      type: class-toggle
-      title: Add Alt Text Below and Center the Image
-      title.zh: 在图片底部添加提示文本并居中图片
-      description: 'Example: ![[image.jpg|alt text]]'
-      description.zh: 示例：![[图片.jpg|提示文本]]
-      default: true
-    - id: image-zoom
-      type: class-toggle
-      title: Click to Zoom Image
-      title.zh: 鼠标按下时放大图片
-      description: Reference from https://github.com/aaaaalexis/obsidian-cupertino
-      description.zh: 参考自 https://github.com/aaaaalexis/obsidian-cupertino
-      default: true
-    - id: image-dark-hover
-      type: class-toggle
-      title: Decrease Brightness in Dark Mode
-      title.zh: 黑暗模式下降低图片亮度
-      description: Brightness increases on hover
-      description.zh: 鼠标悬停时亮度会增加
-      default: true
-    - id: title-blockquote
-      title: Blockquote
-      title.zh: 引言块
-      type: heading
-      level: 1
-      collapsed: true
-    - id: quote-italic
-      type: class-toggle
-      title: Use Italic Style in Blockquote
-      title.zh: 使用斜体
-    - id: quote-mark
-      type: class-toggle
-      title: Enable Quote Mark Style in Reading View
-      title.zh: 阅读视图下添加前置大引号
-      description: Replace front line border with a quotation mark
-      description.zh: 用引号替代前置边框
-    - id: quote-outline-style
-      type: class-select
-      title: Blockquote Style in Reading View
-      title.zh: 阅读视图中引言的样式
-      allow-empty: false
-      default: quote-shadow
-      options:
-        - label: Plain
-          value: quote-none
-        - label: Border
-          value: quote-border
-        - label: Shadow
-          value: quote-shadow
-    - id: title-list
-      title: List
-      title.zh: 列表
-      type: heading
-      level: 1
-      collapsed: true
-    - id: list-enable
-      type: class-toggle
-      title: Optimize List Style
-      title.zh: 优化列表样式
-      description: ❗No support for list or task items inside callouts
-      description.zh: ❗精力有限，暂不适配 Callout 中的列表或待办项
-      default: true
-    - id: list-bullet-thread-style
-      type: class-toggle
-      title: Logseq Bullet Thread Style List
-      title.zh: Logseq Bullet Thread 样式的列表
-      description: Only support bullet list in Live Preview mode. Reference from https://gist.github.com/KillyMXI/cbef8edff6dd55d9e6ea4df66567e9b1
-      description.zh: 仅支持实时预览模式中的无序列表。参考自 https://gist.github.com/KillyMXI/cbef8edff6dd55d9e6ea4df66567e9b1
-      default: true
-    - id: setting-list-marker
-      type: variable-themed-color
-      title: List Marker Color
-      title.zh: 列表标记颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-list-marker-alt
-      type: variable-themed-color
-      title: Alternate List Marker Color
-      title.zh: 列表标记颜色2
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-list-guide-color
-      type: variable-themed-color
-      title: List Guide Line Color
-      title.zh: 列表引导线颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-task-list-(checkbox)
-      title: Task List (Checkbox)
-      title.zh: 待办事项（勾选框）
-      type: heading
-      level: 2
-      collapsed: true
-    - id: list-checkbox-line
-      type: class-select
-      title: Completed Items Decoration Style
-      title.zh: 已完成事项的样式
-      allow-empty: false
-      default: list-checkbox-decoration-default
-      options:
-        - label: Strikethrough
-          value: list-checkbox-decoration-default
-        - label: Underline
-          value: list-checkbox-decoration-underline
-        - label: None
-          value: list-checkbox-decoration-none
-    - id: list-checkbox-gray
-      type: class-toggle
-      title: Gray Out Completed Items
-      title.zh: 已完成的事项使用灰色文字
-    - id: list-checkbox-alternative
-      type: class-toggle
-      title: Enhanced Checkbox Styles
-      title.zh: 更多的勾选框样式
-      description: Disable this if you are using your own implementation via a CSS snippet
-      description.zh: 如果您正在使用自己的 CSS 片段实现，请禁用此选项
-      default: true
-    - id: setting-list-checkbox-color
-      type: variable-themed-color
-      title: Checkbox Marker Color
-      title.zh: 勾选框标记颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-list-checkbox-color-hover
-      type: variable-themed-color
-      title: Checkbox Marker Hover Color
-      title.zh: 勾选框标记悬停颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-list-checkbox-border
-      type: variable-themed-color
-      title: Checkbox Marker Border Color
-      title.zh: 勾选框标记边框颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-code
-      title: Code
-      title.zh: 代码
-      type: heading
-      level: 1
-      collapsed: true
-    - id: setting-code-inline
-      type: variable-themed-color
-      title: Inline Code Color
-      title.zh: 行内代码文字色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-code-bg
-      type: variable-themed-color
-      title: Code Block Background Color
-      title.zh: 代码块背景色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: code-line-number
-      type: class-toggle
-      title: Enable Code Block Line Numbers in Live Preview Mode
-      title.zh: 在实时预览模式下启用代码块行号
-      description: Due to the limitation of Obsidian's render strategy, if the code block has too many lines, line numbering may be incorrect
-      description.zh: 由于 Obsidian 渲染方式的限制，如果代码块行数过多，行号可能会出现错误
-      default: true
-    - id: setting-code-language-color
-      type: variable-themed-color
-      title: Language Indicator Color
-      title.zh: 语言标识颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: code-language
-      type: class-toggle
-      title: Enable Code Block Language Indicator in Reading View
-      title.zh: 在阅读视图下启用代码块语言标识
-      default: true
-    - id: code-nowrap
-      type: class-toggle
-      title: Prevent Code Wrapping in Reading View
-      title.zh: 阅读视图下代码过长时不换行
-      description: Only effective in editor
-      description.zh: 仅在编辑器内生效
-      default: true
-    - id: code-preview-bg
-      type: class-toggle
-      title: Enable Code Block Background in Reading View
-      title.zh: 在阅读视图下启用代码块背景
-    - id: setting-code-bg-outer
-      type: variable-text
-      title: Custom Code Block Background in Reading View
-      title.zh: 自定义阅读视图下代码块背景
-      description: Any CSS "background" value, e.g. url("/your/image/url")
-      description.zh: 任何 CSS “background” 值，例如：url("图片链接地址")
-      default: ''
-    - id: code-mac-style-header
-      type: class-toggle
-      title: Add macOS Style Code Block Header in Reading View
-      title.zh: 在阅读视图下为代码块添加 macOS 风格标题栏
-      description: No code block border; No effective when exporting PDF
-      description.zh: 无代码块边框；导出 PDF 时不生效
-    - id: code-theme
-      type: class-toggle
-      title: Use Theme's Color Scheme
-      title.zh: 使用主题的代码高亮方案
-      default: true
-    - id: title-tag
-      title: Tag
-      title.zh: 标签
-      type: heading
-      level: 1
-      collapsed: true
-    - id: tag-click-to-edit
-      type: class-toggle
-      title: Click to Edit Tags in Live Preview Mode
-      title.zh: 在实时预览模式下点击标签进行编辑
-      description: Click "#" to jump
-      description.zh: 点击 “#” 跳转
-    - id: tag-style
-      type: class-select
-      title: Tag Style
-      title.zh: 标签样式
-      description: Tags like "#obsidian", "#todo", "#important", "#progress", and "#complete" will be colorized when using "Outline" or "Fill" styles
-      description.zh: 当选择 “Outline” 或 “Fill” 样式时，“#obsidian”、“#todo”、“#important”、“#progress”、“#complete” 标签会有额外颜色
-      allow-empty: false
-      default: tag-outline
-      options:
-        - label: Default
-          value: tag-default
-        - label: Plain
-          value: tag-plain
-        - label: Outline
-          value: tag-outline
-        - label: Fill
-          value: tag-fill
-    - id: setting-tag-bg
-      type: variable-themed-color
-      title: Tag Background Color
-      title.zh: 标签背景色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-tag-color
-      type: variable-themed-color
-      title: Tag Text Color
-      title.zh: 标签文字色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: setting-tag-border
-      type: variable-themed-color
-      title: Tag Border Color
-      title.zh: 标签边框颜色
-      format: hex
-      opacity: true
-      default-light: '#'
-      default-dark: '#'
-    - id: title-canvas
-      title: Canvas
-      title.zh: 白板
-      type: heading
-      level: 1
-      collapsed: true
-    - id: canvas-group-hide
-      type: class-toggle
-      title: Hide Left Canvas Control Buttons
-      title.zh: 隐藏左侧控制按钮
-      description: Shows on hover
-      description.zh: 鼠标移入时显示
-    - id: canvas-center
-      type: class-toggle
-      title: Center Text in Card When Focus is Lost
-      title.zh: 卡片失去焦点时居中文本
-    - id: title-pdf
-      title: PDF
-      title.zh: PDF
-      type: heading
-      level: 1
-      collapsed: true
-    - id: pdf-dark-hover
-      type: class-toggle
-      title: Decrease Brightness in Dark Mode
-      title.zh: 黑暗模式下降低图片亮度
-      description: Brightness increases on hover
-      description.zh: 鼠标悬停时亮度会增加
-      default: true
-    - id: pdf-dark-invert
-      type: class-toggle
-      title: Invert Colors in Dark Mode
-      title.zh: 黑暗模式下反转颜色
-    - id: title-pdf-export
-      title: PDF Export
-      title.zh: PDF 导出
-      type: heading
-      level: 2
-      collapsed: false
-    - id: pdf-export-transparent
-      type: class-toggle
-      title: Set Background to Transparent
-      title.zh: 导出时将页面背景色设置为透明
-    - id: pdf-export-page-break
-      type: class-toggle
-      title: Better Page Break Strategy
-      title.zh: 更好的分页策略
-      description: Always break page before H1 headings; avoid page breaks inside images, tables, and code blocks
-      description.zh: 在 H1 标题前强制分页；避免在图片、表格和代码块内分页
-    - id: pdf-export-standard
-      type: class-toggle
-      title: Standard Spacing Between Paragraphs and List
-      title.zh: 标准的段落和列表的间距
-    - id: pdf-export-default-hr
-      type: class-toggle
-      title: Use Default Style for Horizontal Rule
-      title.zh: 使用默认的水平线样式
-    - id: title-properties
-      title: Properties
-      title.zh: 文档属性
-      type: heading
-      level: 1
-      collapsed: true
-    - id: setting-properties-columns
-      type: variable-number-slider
-      title: Property Column Number
-      title.zh: 文档属性列数
-      default: 1
-      min: 1
-      max: 4
-      step: 1
-    - id: prop-outline
-      type: class-toggle
-      title: Add Outline for Property Panel
-      title.zh: 属性面板添加边框
-    - id: prop-hide-preview
-      type: class-toggle
-      title: Hide Property Panel in Reading View
-      title.zh: 阅读视图下隐藏属性面板
-- id: maple-plugin
-  name: Maple Plugin
-  settings:
-    - id: info-plugin-intro
-      type: info-text
-      description: |-
-        If you find any plugin not displaying properly, please open an issue at the [GitHub repository](https://github.com/subframe7536/obsidian-theme-maple).
-        > [!info]- Adapted plugins
-        > - Better Command Palette
-        > - Calendar
-        > - Obsidian Git
-        > - MySnippets
-        > - Quite Outline
-        > - Recent Files
-        > - Settings Search
-        > - Shiki Highlighter
-      description.zh: |-
-        如果您发现某个插件显示不正常，请前往 [GitHub 仓库](https://github.com/subframe7536/obsidian-theme-maple) 提交 issue。
-        > [!info]- 已适配的插件
-        > - Better Command Palette
-        > - Calendar
-        > - Obsidian Git
-        > - MySnippets
-        > - Quite Outline
-        > - Recent Files
-        > - Settings Search
-        > - Shiki Highlighter
-      markdown: true
-    - id: title-calendar
-      title: Calendar
-      title.zh: 日历
-      type: heading
-      level: 1
-      collapsed: true
-    - id: calendar-weekend
-      type: class-select
-      title: Highlighted Weekend Column
-      title.zh: 高亮周末列
-      allow-empty: false
-      default: calendar-end-disable
-      options:
-        - label: Disable
-          value: calendar-end-disable
-        - label: Column 1 and 2
-          value: calendar-end-1-2
-        - label: Column 2 and 3
-          value: calendar-end-2-3
-        - label: Column 3 and 4
-          value: calendar-end-3-4
-        - label: Column 4 and 5
-          value: calendar-end-4-5
-        - label: Column 5 and 6
-          value: calendar-end-5-6
-        - label: Column 6 and 7
-          value: calendar-end-6-7
-        - label: Column 7 and 1
-          value: calendar-end-7-1
-    - id: calendar-swap-year-month
-      type: class-toggle
-      title: Swap Year and Month Display
-      title.zh: 交换年份和月份显示
-    - id: setting-calendar-year-suffix
-      type: variable-text
-      title: Year Suffix Text
-      title.zh: 年份后缀文本
-      default: 年
-      quotes: true
-    - id: setting-calendar-max-width
-      type: variable-text
-      title: Calendar Maximum Width
-      title.zh: 日历最大宽度
-      description: Any CSS "max-width" value
-      description.zh: 任何 CSS “max-width” 值
-      default: 500px
-- id: maple-mobile
-  name: Maple Mobile
-  settings:
-    - id: mobile-floating-button
-      type: class-toggle
-      title: Enable Floating Mode Switch Button
-      title.zh: 启用浮动的模式切换按钮
-      default: true
-    - id: title-font-settings
-      title: Font Settings
-      title.zh: 字体设置
-      description: It is inconvenient to install fonts on mobile devices, so maybe you need this option
-      description.zh: 移动端不方便安装字体，所以有了这个选项
-      type: heading
-      level: 1
-      collapsed: true
-    - id: info-info-font-mobile
-      type: info-text
-      description: |-
-        > [!tip]
-        > 1. Reset options in **Appearance > Font** to make this work
-        > 2. Type "**maplemono**" if you want to use the theme's built-in monospace font Maple Mono
-        > 3. External font can load from CSS Snippets.
-      description.zh: |-
-        > [!tip]
-        > 1. 需要先重置 **外观 > 字体** 中的选项才能生效
-        > 2. 如果想使用主题内置的等宽字体 Maple Mono，请输入 **maplemono**
-        > 3. 外部字体可以通过 CSS 片段加载
-      markdown: true
-    - id: setting-mobile-font-interface
-      type: variable-text
-      title: Interface Font
-      title.zh: 页面字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-mobile-font-text
-      type: variable-text
-      title: Text Font
-      title.zh: 正文字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: ''
-    - id: setting-mobile-font-monospace
-      type: variable-text
-      title: Monospace Font
-      title.zh: 等宽字体
-      description: Any CSS "font-family" value
-      description.zh: 任何 CSS “font-family” 值
-      default: maplemono
+mode: replace
+sections:
+  - name: Maple Basic
+    id: maple-basic
+    collapsed: false
+    settings:
+      - id: setting-animation-time
+        type: variable-number-slider
+        title: Animation Duration (ms)
+        title.zh: 动画时长（毫秒）
+        default: 250
+        min: 0
+        max: 1000
+        step: 50
+        format: ms
+      - id: setting-item-line-height
+        type: variable-number-slider
+        title: List Item Line Height
+        title.zh: 列表行高
+        description: Adjust the line height for items in file explorer, outline panel, and setting modal sidebar.
+        description.zh: 调整文件管理器、大纲面板和设置面板侧边栏中行高。
+        default: 1.5
+        min: 1
+        max: 2
+        step: 0.1
+      - id: setting-divider-color
+        type: variable-themed-color
+        title: Panel Divider Color
+        title.zh: 面板分割线颜色
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-colors
+        title: Colors
+        title.zh: 颜色
+        type: heading
+        level: 1
+        collapsed: false
+      - id: color-dark-dim-disable
+        type: class-toggle
+        title: Disable Opacity Reduction in Dark Mode
+        title.zh: 深色模式下，颜色的不透明度不降低
+      - id: color-highlight-only
+        type: class-toggle
+        title: '[Experimental] Only change highlight color'
+        title.zh: 【实验性】只修改高亮颜色
+        description: Not fully test. Feel free to report bugs
+        description.zh: 没有经过完整测试，欢迎提交 bug
+      - id: title-light-mode
+        title: Light Mode
+        title.zh: 浅色模式
+        type: heading
+        level: 2
+        collapsed: true
+      - id: setting-accent-h-light
+        type: variable-number-slider
+        title: Base Color
+        title.zh: 基础色
+        default: 35
+        min: 0
+        max: 360
+        step: 5
+      - id: setting-color-active-custom-light
+        type: variable-color
+        title: Custom Highlight Color (Active)
+        title.zh: 自定义高亮色（激活状态）
+        default: '#'
+        format: hsl-split
+        opacity: false
+        alt-format: []
+      - id: setting-color-inactive-custom-light
+        type: variable-color
+        title: Custom Highlight Color (Inactive)
+        title.zh: 自定义高亮色（非激活状态）
+        default: '#'
+        format: hsl-split
+        opacity: false
+        alt-format: []
+      - id: color-modify-bg-light
+        type: class-toggle
+        title: Modify Background Colors
+        title.zh: 修改背景颜色
+      - id: setting-bg-primary-light-hsl
+        type: variable-color
+        title: Primary Background Color
+        title.zh: 主背景色
+        description: Background color for main area, e.g. editor, setting panel
+        description.zh: 主要区域的背景色，例如编辑器和设置面板
+        default: '#'
+        format: hsl-values
+        opacity: false
+        alt-format: []
+      - id: setting-bg-primary-alt-light-hsl
+        type: variable-color
+        title: Block Background Color
+        title.zh: 块背景色
+        description: Background color for blocks in main area, e.g. codeblock, blockquote
+        description.zh: 主要区域内的块的背景色，例如代码块、引言块
+        default: '#'
+        format: hsl-values
+        opacity: false
+        alt-format: []
+      - id: setting-bg-secondary-light-hsl
+        type: variable-color
+        title: Secondary Background Color
+        title.zh: 次背景色
+        description: Background color in secondary area, e.g. sidebar
+        description.zh: 次要区域的背景色，例如侧边栏
+        default: '#'
+        format: hsl-values
+        opacity: false
+        alt-format: []
+      - id: setting-bg-frame-light
+        type: variable-color
+        title: Top Bar Background Color
+        title.zh: 顶栏背景色
+        description: Background color in the top area, e.g. titlebar, tab container
+        description.zh: 顶栏的背景色，例如标题栏、标签栏
+        default: '#'
+        format: hsl
+        opacity: false
+        alt-format: []
+      - id: title-dark-mode
+        title: Dark Mode
+        title.zh: 暗色模式
+        type: heading
+        level: 2
+        collapsed: true
+      - id: setting-accent-h-dark
+        type: variable-number-slider
+        title: Base Color
+        title.zh: 基础色
+        default: 207
+        min: 0
+        max: 360
+        step: 5
+      - id: setting-bg-delta-dark
+        type: variable-number-slider
+        title: Background Brightness
+        title.zh: 背景亮度
+        description: Increase the brightness of background color
+        description.zh: 增加背景色的亮度
+        default: 0
+        format: '%'
+        min: 0
+        max: 8
+        step: 0.1
+      - id: setting-color-active-custom-dark
+        type: variable-color
+        title: Custom Highlight Color (Active)
+        title.zh: 自定义高亮色（激活状态）
+        default: '#'
+        format: hsl-split
+        opacity: false
+        alt-format: []
+      - id: setting-color-inactive-custom-dark
+        type: variable-color
+        title: Custom Highlight Color (Inactive)
+        title.zh: 自定义高亮色（非激活状态）
+        default: '#'
+        format: hsl-split
+        opacity: false
+        alt-format: []
+      - id: color-modify-bg-dark
+        type: class-toggle
+        title: Modify Background Colors
+        title.zh: 修改背景颜色
+      - id: setting-bg-primary-dark-hsl
+        type: variable-color
+        title: Primary Background Color
+        title.zh: 主背景色
+        description: Background color for main area, e.g. editor, setting panel
+        description.zh: 主要区域的背景色，例如编辑器和设置面板
+        default: '#'
+        format: hsl-values
+        opacity: false
+        alt-format: []
+      - id: setting-bg-primary-alt-dark-hsl
+        type: variable-color
+        title: Block Background Color
+        title.zh: 块背景色
+        description: Background color for blocks in main area, e.g. codeblock, blockquote
+        description.zh: 主要区域内的块的背景色，例如代码块、引言块
+        default: '#'
+        format: hsl-values
+        opacity: false
+        alt-format: []
+      - id: setting-bg-secondary-dark-hsl
+        type: variable-color
+        title: Secondary Background Color
+        title.zh: 次背景色
+        description: Background color in secondary area, e.g. sidebar
+        description.zh: 次要区域的背景色，例如侧边栏
+        default: '#'
+        format: hsl-values
+        opacity: false
+        alt-format: []
+      - id: setting-bg-frame-dark
+        type: variable-color
+        title: Top Bar Background Color
+        title.zh: 顶栏背景色
+        description: Background color in the top area, e.g. titlebar, tab container
+        description.zh: 顶栏的背景色，例如标题栏、标签栏
+        default: '#'
+        format: hsl
+        opacity: false
+        alt-format: []
+      - id: title-layout
+        title: Layout
+        title.zh: 布局
+        type: heading
+        level: 1
+        collapsed: false
+      - id: app-layout-card
+        type: class-toggle
+        title: Enable Card Layout
+        title.zh: 启用卡片布局
+        description: Styles maybe broken when using stacked tabs
+        description.zh: 当使用堆叠标签页时，样式可能不符合预期
+        default: true
+      - id: app-layout-card-border
+        type: class-toggle
+        title: Add Border to Cards
+        title.zh: 为卡片添加边框
+      - id: setting-app-layout-spacing
+        type: variable-number-slider
+        title: Card Spacing
+        title.zh: 卡片间距
+        default: 6
+        max: 16
+        min: 2
+        step: 0.5
+        format: px
+      - id: setting-layout-opacity-light
+        type: variable-number-slider
+        title: Light Theme Background Opacity
+        title.zh: 浅色主题背景不透明度
+        default: 0.6
+        max: 0.9
+        min: 0.1
+        step: 0.05
+      - id: setting-layout-opacity-dark
+        type: variable-number-slider
+        title: Dark Theme Background Opacity
+        title.zh: 深色主题背景不透明度
+        default: 0.6
+        max: 0.9
+        min: 0.1
+        step: 0.05
+  - name: Maple Workspace
+    id: maple-workspace
+    collapsed: false
+    settings:
+      - id: enable-blur
+        type: class-toggle
+        title: Enable Background Blur
+        title.zh: 启用背景模糊
+        description: Applies to menus, modals, popups, and graph control panels. Disable if scrolling becomes laggy. Not available on mobile devices.
+        description.zh: 在菜单、弹出框和图谱控制面板中生效；若滚动卡顿，请关闭此选项；手机端不支持
+        default: true
+      - id: title-file-explorer
+        title: File Explorer
+        title.zh: 文件管理器
+        type: heading
+        level: 1
+        collapsed: true
+      - id: explorer-title-wrap
+        type: class-toggle
+        title: Auto Wrap Long File Names
+        title.zh: 长文件名自动换行
+      - id: explorer-icon
+        type: class-toggle
+        title: Enable Prefix Icons
+        title.zh: 启用前置图标
+        description: Please turn off this option when using third-party icon plugins to avoid conflicts.
+        description.zh: 使用第三方图标插件时建议关闭以避免冲突。
+        default: true
+      - id: explorer-folder-bold
+        type: class-toggle
+        title: Bold Folder Titles
+        title.zh: 加粗文件夹标题
+      - id: setting-color-dirs
+        type: variable-themed-color
+        title: Directory Color
+        title.zh: 文件夹颜色
+        format: hsl
+        opacity: false
+        default-light: hsl(46, 81%, 45%)
+        default-dark: hsl(46, 81%, 45%)
+        alt-format: []
+      - id: title-outline
+        title: Outline
+        title.zh: 大纲
+        type: heading
+        level: 1
+        collapsed: true
+      - id: outline-enable
+        type: class-toggle
+        title: Enable Logseq Bullet Thread Style of outline
+        title.zh: 启用 Logseq 样式的大纲
+        description: Reload Obsidian after enabling this feature. Reference from https://github.com/pengx17/logseq-dev-theme/blob/main/bullet_threading.css
+        description.zh: 启用此功能后请重启 Obsidian。参考自 https://github.com/pengx17/logseq-dev-theme/blob/main/bullet_threading.css
+      - id: setting-outline-width
+        type: variable-number-slider
+        title: Guide Line Width
+        title.zh: 引导线宽度
+        default: 2
+        min: 1
+        max: 4
+        step: 0.5
+        format: px
+      - id: setting-outline-line-color
+        type: variable-themed-color
+        title: Guide Line Color
+        title.zh: 引导线颜色
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-outline-dot-color
+        type: variable-themed-color
+        title: Guide Dot Color
+        title.zh: 引导点颜色
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-document-search-and-replace
+        title: Document Search and Replace
+        title.zh: 文档搜索和替换
+        type: heading
+        level: 1
+        collapsed: true
+      - id: search-internal-enable
+        type: class-toggle
+        title: Enable Floating Style
+        title.zh: 启用浮动风格
+        description: Similar to VSCode document search widget
+        description.zh: 类似于 VSCode 的文档搜索框
+        default: true
+      - id: search-remove-button
+        type: class-toggle
+        title: Remove Rarely Used Buttons
+        title.zh: 移除不常用的按钮
+        description: 'Removed buttons: Find All'
+        description.zh: 已移除的按钮：查找全部
+      - id: title-graph
+        title: Graph
+        title.zh: 关系图谱
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-graph-node
+        type: variable-themed-color
+        title: Normal Node Color
+        title.zh: 普通节点颜色
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-graph-node-unresolved
+        type: variable-themed-color
+        title: Unresolved Node Color
+        title.zh: 未连接节点颜色
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-graph-node-focus
+        type: variable-themed-color
+        title: Focused Node Color
+        title.zh: 聚焦节点颜色
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-modal-and-setting-panel
+        title: Modal and Setting Panel
+        title.zh: 模态框和设置面板
+        type: heading
+        level: 1
+        collapsed: true
+      - id: modal-setting-header
+        type: class-toggle
+        title: Add Header To Setting Panel
+        title.zh: 为设置面板添加顶部标题
+        description: Works best with the "Setting Search" plugin; not valid on mobile
+        description.zh: 配合“设置搜索”插件使用效果更佳，移动端无效
+        default: true
+      - id: setting-modal-header-title
+        type: variable-text
+        title: Setting Panel Header Title
+        title.zh: 设置面板标题
+        default: Maple 1.4.14
+        quotes: true
+      - id: modal-setting-header-title-center
+        type: class-toggle
+        title: Center the Setting Panel Header Title
+        title.zh: 设置面板标题居中
+        default: true
+      - id: modal-setting-header-search
+        type: class-toggle
+        title: Move Some Search Bar to Modal Header
+        title.zh: 将部分搜索框移动到模态框顶部
+        default: true
+      - id: enable-group-title
+        type: class-toggle
+        title: Add Icons For Left Navigation Group Title
+        title.zh: 为左侧导航组标题添加图标
+        default: true
+      - id: modal-will-change
+        type: class-toggle
+        title: Enable Modal Open Animation Optimization for Low-Performance Devices
+        title.zh: 为低性能设备提供更流畅的打开动画
+        description: ❗ May cause font blurriness when APP scaling is not set to 100%
+        description.zh: ❗ 应用缩放比例不等于100%时可能会导致字体模糊
+        default: true
+      - id: title-control
+        title: Control
+        title.zh: 控件
+        type: heading
+        level: 2
+        collapsed: true
+      - id: modal-control-gradient
+        type: class-toggle
+        title: Enable Gradient Style on Controls
+        title.zh: 控件启用渐变样式
+        default: true
+      - id: modal-slider
+        type: class-toggle
+        title: Styled Slider
+        title.zh: 启用滑块样式
+        default: true
+      - id: title-tab-and-navigation-bar
+        title: Tab and Navigation Bar
+        title.zh: 标签页和导航栏
+        type: heading
+        level: 1
+        collapsed: true
+      - id: labeled-nav
+        type: class-toggle
+        title: Enable Vertical Navigation Bar
+        title.zh: 启用竖向导航栏
+        description: Reference from https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/labeled-nav.scss
+        description.zh: 参考自 https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/labeled-nav.scss
+      - id: tab-float
+        type: class-toggle
+        title: Enable Floating Style Tab Bar
+        title.zh: 启用浮动风格的标签栏
+        default: true
+      - id: setting-tab-stack-header-width
+        type: variable-number-slider
+        title: Stacked Tab Header Width (px)
+        title.zh: 堆叠标签页的标签宽度（px）
+        default: 40
+        max: 60
+        min: 20
+        step: 1
+        format: px
+      - id: tab-slide-up
+        type: class-toggle
+        title: Enable Tab Slide Up Animation
+        title.zh: 启用标签页切换动画
+        description: ❗Turning on will prevent some panels updating instantly while switching tabs
+        description.zh: ❗开启后会导致部分面板无法立即更新
+      - id: title-status-bar
+        title: Status Bar
+        title.zh: 状态栏
+        type: heading
+        level: 1
+        collapsed: true
+      - id: status-bar-style-float
+        type: class-toggle
+        title: Enable Floating Style
+        title.zh: 启用浮动样式
+        default: true
+      - id: status-bar-style-center
+        type: class-toggle
+        title: Centered Status Bar
+        title.zh: 状态栏居中显示
+      - id: title-tooltip-and-notice
+        title: Tooltip and Notice
+        title.zh: 提示框和通知
+        type: heading
+        level: 1
+        collapsed: true
+      - id: message-tooltip-hide-arrow
+        type: class-toggle
+        title: Hide Tooltip Arrow
+        title.zh: 隐藏气泡提示框箭头
+      - id: message-tooltip-hide
+        type: class-toggle
+        title: Always Hide Tooltip
+        title.zh: 始终隐藏气泡提示框
+      - id: message-modify
+        type: class-toggle
+        title: Modify Tooltip and Notice Color
+        title.zh: 修改气泡提示框和通知的颜色
+        default: true
+      - id: setting-message-bg
+        type: variable-themed-color
+        title: Background Color
+        title.zh: 背景色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-message-fg
+        type: variable-themed-color
+        title: Foreground Color
+        title.zh: 文字色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-scrollbar
+        title: Scrollbar
+        title.zh: 滚动条
+        type: heading
+        level: 1
+        collapsed: true
+      - id: scrollbar-hide
+        type: class-toggle
+        title: Always Hide Scrollbar
+        title.zh: 始终隐藏滚动条
+      - id: scrollbar-enable
+        type: class-toggle
+        title: Enable Scrollbar Style
+        title.zh: 启用滚动条样式
+        description: Styled scrollbar, auto hide when mouse is out of the container
+        description.zh: 美化滚动条样式，鼠标移出容器自动隐藏
+        default: true
+      - id: scrollbar-movein-animation-enable
+        type: class-toggle
+        title: Enable Scrollbar Move In/Out Animation
+        title.zh: 启用滚动条移入移出动画
+        description: ❗ This can cause severe lag when typing on some old computers or mobile devices
+        description.zh: ❗ 会导致在某些旧的电脑或者移动设备上输入时严重卡顿
+  - name: Maple Editor
+    id: maple-editor
+    collapsed: false
+    settings:
+      - id: title-background-pattern
+        title: Background Pattern
+        title.zh: 背景图案
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-editor-bg-grid-dots
+        type: variable-themed-color
+        title: Dot Color for Editor Background
+        title.zh: 编辑器背景点颜色
+        format: rgb
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-editor-bg-grid-line
+        type: variable-themed-color
+        title: Grid Line Color for Editor Background
+        title.zh: 编辑器背景网格线颜色
+        format: rgb
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-editor-bg-grid-spacing
+        type: variable-number-slider
+        title: Grid Spacing for Editor Background
+        title.zh: 编辑器背景网格间距
+        format: px
+        default: 20
+        min: 10
+        max: 30
+        step: 1
+      - id: title-line-and-spacing
+        title: Line and Spacing
+        title.zh: 行和间距
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-editor-p-spacing
+        type: variable-number-slider
+        title: Paragraph Spacing (px)
+        title.zh: 段落间距（px）
+        default: 8
+        format: px
+        min: 0
+        max: 20
+        step: 1
+      - id: setting-editor-letter-spacing
+        type: variable-number-slider
+        title: Letter Spacing (px)
+        title.zh: 文字间距（px）
+        default: 0
+        format: px
+        min: -1
+        max: 1
+        step: 0.1
+      - id: editor-custom-bottom-spacing
+        type: class-toggle
+        title: Custom Page Bottom Spacing
+        title.zh: 自定义页面底部留白
+      - id: setting-editor-bottom-spacing
+        type: variable-number-slider
+        title: Page Bottom Spacing (vh)
+        title.zh: 页面底部留白大小（vh）
+        default: 40
+        format: vh
+        min: 0
+        max: 80
+        step: 5
+      - id: setting-editor-p-indent
+        type: variable-number-slider
+        title: Paragraph Indent
+        title.zh: 段落缩进
+        description: Indent all paragraphs if "p-indent" exists in properties.cssclasses
+        description.zh: 当文档属性的 cssclasses 中存在 “p-indent” 类时，为所有段落添加缩进
+        default: 2
+        min: 0
+        max: 4
+        step: 0.2
+      - id: setting-line-height
+        type: variable-number-slider
+        title: Line Height
+        title.zh: 行高
+        description: Multiple of text size
+        description.zh: 文字大小的倍数
+        default: 1.8
+        min: 1.2
+        max: 2.4
+        step: 0.1
+      - id: setting-file-line-width
+        type: variable-text
+        title: Line Width (Editor Width)
+        title.zh: 行宽（编辑器宽度）
+        description: Any CSS "width" value, e.g. clamp(MinWidth, WidthPercent, MaxWidth)
+        description.zh: 任何 CSS “width” 值，例如：clamp(最小值, 宽度百分比, 最大值)
+        default: clamp(600px, 72%, 850px)
+      - id: setting-line-active-color
+        type: variable-themed-color
+        title: Active Line Color
+        title.zh: 高亮行颜色
+        format: hsl-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-text
+        title: Text
+        title.zh: 文本
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-text-normal
+        type: variable-themed-color
+        title: Editor Text Color
+        title.zh: 编辑器文本颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-underline-offset
+        type: variable-number-slider
+        title: Underline Offset
+        title.zh: 下划线偏移
+        default: 2
+        format: px
+        min: 0
+        max: 8
+        step: 0.5
+      - id: title-highlight
+        title: Highlight
+        title.zh: 高亮
+        type: heading
+        level: 2
+        collapsed: true
+      - id: setting-text-highlight-bg
+        type: variable-text
+        title: Highlight Text Background Color
+        title.zh: 文本高亮背景色
+        description: Any CSS "background" value, e.g. url("/your/image/url")
+        description.zh: 任何 CSS “background” 值，例如：url("图片链接地址")
+        default: rgba(255, 208, 0, 0.4)
+      - id: setting-text-highlight-color
+        type: variable-themed-color
+        title: Highlight Text Color
+        title.zh: 文本高亮文字色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-text-highlight-radius
+        type: variable-number-slider
+        title: Highlight Background Radius
+        title.zh: 高亮背景圆角大小
+        description: Value in pixels (px)
+        description.zh: 单位：像素（px）
+        default: 4
+        min: 0
+        max: 8
+        step: 1
+        format: px
+      - id: text-highlight-all-round
+        type: class-toggle
+        title: Maintain Radius When Wrapping
+        title.zh: 换行时保持圆角
+        description: Except during editing
+        description.zh: 编辑时除外
+        default: true
+      - id: title-bold
+        title: Bold
+        title.zh: 粗体
+        type: heading
+        level: 2
+        collapsed: true
+      - id: setting-text-bold-color
+        type: variable-themed-color
+        title: Bold Text Color
+        title.zh: 粗体颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-text-bold-weight
+        type: variable-number-slider
+        title: Bold Font Weight
+        title.zh: 粗体字重
+        default: 600
+        min: 100
+        max: 800
+        step: 50
+      - id: title-italic
+        title: Italic
+        title.zh: 斜体
+        type: heading
+        level: 2
+        collapsed: true
+      - id: setting-text-italic-color
+        type: variable-themed-color
+        title: Italic Text Color
+        title.zh: 斜体颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-font
+        title: Font
+        title.zh: 字体
+        type: heading
+        level: 1
+        collapsed: true
+      - id: font-maple-interface
+        type: class-toggle
+        title: Use "Maple Mono" as Interface Font
+        title.zh: 使用 “Maple Mono” 作为界面字体
+        description: https://github.com/subframe7536/maple-font
+        description.zh: https://github.com/subframe7536/maple-font
+      - id: font-maple-text
+        type: class-toggle
+        title: Use "Maple Mono" as Text Font
+        title.zh: 使用 “Maple Mono” 作为正文字体
+        description: https://github.com/subframe7536/maple-font
+        description.zh: https://github.com/subframe7536/maple-font
+      - id: font-maple
+        type: class-toggle
+        title: Use "Maple Mono" as Monospace Font
+        title.zh: 使用 “Maple Mono” 作为等宽字体
+        description: https://github.com/subframe7536/maple-font
+        description.zh: https://github.com/subframe7536/maple-font
+        default: true
+      - id: setting-code-ligature
+        type: variable-text
+        title: Monospace Font Features
+        title.zh: 等宽字体特性
+        description: If using "Maple Mono" as monospace font, recommend setting to 'calt','cv01','cv02' to bring back normal glyphs
+        description.zh: 如果您使用 “Maple Mono” 作为等宽字体，建议设置为 'calt','cv01','cv02' 以改为正常的字形
+        default: '''calt'''
+      - id: font-latex-text
+        type: class-toggle
+        title: Use Text Font in Non-formula Parts of LaTeX
+        title.zh: 在 LaTeX 内非公式部分使用正文字体
+        description: No effective on Latin letters and numbers
+        description.zh: 仅修改中文字体
+      - id: title-link
+        title: Link
+        title.zh: 链接
+        type: heading
+        level: 1
+        collapsed: true
+      - id: link-hover-expand
+        type: class-toggle
+        title: Use Underline Animation on Hover
+        title.zh: 鼠标悬停时启用下划线动画
+      - id: link-icon
+        type: class-toggle
+        title: Add Icon Before Link
+        title.zh: 在链接前添加图标
+        description: ❗The icon will be duplicated if the link text contains space or extra styles
+        description.zh: ❗如果链接文本包含空格或额外样式，图标将会重复出现
+        default: true
+      - id: link-heading
+        type: class-toggle
+        title: Compatible with Heading Style
+        title.zh: 兼容标题样式
+        description: Keep link color consistent with heading, but retain icon
+        description.zh: 链接颜色与标题颜色保持一致，但保留图标
+      - id: link-click-to-edit-in-live-preview
+        type: class-toggle
+        title: Click to Edit Link in Live Preview Mode
+        title.zh: 实时预览模式下点击链接进行编辑而非跳转
+        description: ❗Disables hover animation; external link prefix icon will be disabled
+        description.zh: ❗将禁用悬停动画；外部链接前缀图标将不可用
+      - id: title-link-color
+        title: Link Color
+        title.zh: 链接颜色
+        type: heading
+        level: 2
+        collapsed: true
+      - id: setting-link-internal-color
+        type: variable-themed-color
+        title: Internal Link Color
+        title.zh: 内部链接颜色
+        default-dark: '#'
+        default-light: '#'
+        format: rgb-values
+        opacity: false
+        alt-format: []
+      - id: setting-link-internal-color-underline
+        type: variable-themed-color
+        title: Internal Link Underline Color
+        title.zh: 内部链接下划线颜色
+        format: rgb
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-link-external-color
+        type: variable-themed-color
+        title: External Link Color
+        title.zh: 外部链接颜色
+        default-dark: '#'
+        default-light: '#'
+        format: rgb-values
+        opacity: false
+        alt-format: []
+      - id: setting-link-external-color-underline
+        type: variable-themed-color
+        title: External Link Underline Color
+        title.zh: 外部链接下划线颜色
+        format: rgb
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-heading
+        title: Heading
+        title.zh: 标题
+        type: heading
+        level: 1
+        collapsed: true
+      - id: title-level-1-heading
+        title: Level 1 Heading
+        title.zh: 一级标题
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-h1-block-contrast
+        type: class-toggle
+        title: H1 Block Decoration Use Higher Contrast Color
+        title.zh: H1 块状装饰颜色提高对比度
+      - id: setting-h1-color
+        type: variable-themed-color
+        title: H1 Color
+        title.zh: H1 颜色
+        format: rgb-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: heading-h1-center
+        type: class-toggle
+        title: H1 Centered
+        title.zh: H1 居中
+        default: true
+      - id: heading-h1-italic
+        type: class-toggle
+        title: H1 Italic Style
+        title.zh: H1 斜体样式
+      - id: setting-h1-weight
+        type: variable-text
+        title: H1 Font Weight
+        title.zh: H1 字重
+        description: Any CSS "font-weight" value
+        description.zh: 任何 CSS “font-weight” 值
+        default: '750'
+      - id: setting-h1-size
+        type: variable-number-slider
+        title: H1 Font Size
+        title.zh: H1 字号
+        description: Scale factor of normal text font size
+        description.zh: 普通文本字号大小的倍数
+        default: 1.6
+        min: 1
+        max: 2
+        step: 0.1
+      - id: heading-h1-caps
+        type: class-toggle
+        title: H1 Small Caps Text Variant
+        title.zh: H1 文本变体
+        description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
+        description.zh: 将小写字母转换成大写字母，但字号保持不变
+        default: false
+      - id: title-level-2-heading
+        title: Level 2 Heading
+        title.zh: 二级标题
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-h2-block-contrast
+        type: class-toggle
+        title: H2 Block Decoration Use Higher Contrast Color
+        title.zh: H2 块状装饰颜色提高对比度
+      - id: setting-h2-color
+        type: variable-themed-color
+        title: H2 Color
+        title.zh: H2 颜色
+        format: rgb-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: heading-h2-center
+        type: class-toggle
+        title: H2 Centered
+        title.zh: H2 居中
+        default: false
+      - id: heading-h2-italic
+        type: class-toggle
+        title: H2 Italic Style
+        title.zh: H2 斜体样式
+      - id: setting-h2-weight
+        type: variable-text
+        title: H2 Font Weight
+        title.zh: H2 字重
+        description: Any CSS "font-weight" value
+        description.zh: 任何 CSS “font-weight” 值
+        default: '700'
+      - id: setting-h2-size
+        type: variable-number-slider
+        title: H2 Font Size
+        title.zh: H2 字号
+        description: Scale factor of normal text font size
+        description.zh: 普通文本字号大小的倍数
+        default: 1.5
+        min: 1
+        max: 2
+        step: 0.1
+      - id: heading-h2-caps
+        type: class-toggle
+        title: H2 Small Caps Text Variant
+        title.zh: H2 文本变体
+        description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
+        description.zh: 将小写字母转换成大写字母，但字号保持不变
+        default: false
+      - id: title-level-3-heading
+        title: Level 3 Heading
+        title.zh: 三级标题
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-h3-block-contrast
+        type: class-toggle
+        title: H3 Block Decoration Use Higher Contrast Color
+        title.zh: H3 块状装饰颜色提高对比度
+      - id: setting-h3-color
+        type: variable-themed-color
+        title: H3 Color
+        title.zh: H3 颜色
+        format: rgb-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: heading-h3-center
+        type: class-toggle
+        title: H3 Centered
+        title.zh: H3 居中
+        default: false
+      - id: heading-h3-italic
+        type: class-toggle
+        title: H3 Italic Style
+        title.zh: H3 斜体样式
+      - id: setting-h3-weight
+        type: variable-text
+        title: H3 Font Weight
+        title.zh: H3 字重
+        description: Any CSS "font-weight" value
+        description.zh: 任何 CSS “font-weight” 值
+        default: '600'
+      - id: setting-h3-size
+        type: variable-number-slider
+        title: H3 Font Size
+        title.zh: H3 字号
+        description: Scale factor of normal text font size
+        description.zh: 普通文本字号大小的倍数
+        default: 1.4
+        min: 1
+        max: 2
+        step: 0.1
+      - id: heading-h3-caps
+        type: class-toggle
+        title: H3 Small Caps Text Variant
+        title.zh: H3 文本变体
+        description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
+        description.zh: 将小写字母转换成大写字母，但字号保持不变
+        default: false
+      - id: title-level-4-heading
+        title: Level 4 Heading
+        title.zh: 四级标题
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-h4-block-contrast
+        type: class-toggle
+        title: H4 Block Decoration Use Higher Contrast Color
+        title.zh: H4 块状装饰颜色提高对比度
+      - id: setting-h4-color
+        type: variable-themed-color
+        title: H4 Color
+        title.zh: H4 颜色
+        format: rgb-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: heading-h4-center
+        type: class-toggle
+        title: H4 Centered
+        title.zh: H4 居中
+        default: false
+      - id: heading-h4-italic
+        type: class-toggle
+        title: H4 Italic Style
+        title.zh: H4 斜体样式
+      - id: setting-h4-weight
+        type: variable-text
+        title: H4 Font Weight
+        title.zh: H4 字重
+        description: Any CSS "font-weight" value
+        description.zh: 任何 CSS “font-weight” 值
+        default: '550'
+      - id: setting-h4-size
+        type: variable-number-slider
+        title: H4 Font Size
+        title.zh: H4 字号
+        description: Scale factor of normal text font size
+        description.zh: 普通文本字号大小的倍数
+        default: 1.3
+        min: 1
+        max: 2
+        step: 0.1
+      - id: heading-h4-caps
+        type: class-toggle
+        title: H4 Small Caps Text Variant
+        title.zh: H4 文本变体
+        description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
+        description.zh: 将小写字母转换成大写字母，但字号保持不变
+        default: false
+      - id: title-level-5-heading
+        title: Level 5 Heading
+        title.zh: 五级标题
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-h5-block-contrast
+        type: class-toggle
+        title: H5 Block Decoration Use Higher Contrast Color
+        title.zh: H5 块状装饰颜色提高对比度
+      - id: setting-h5-color
+        type: variable-themed-color
+        title: H5 Color
+        title.zh: H5 颜色
+        format: rgb-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: heading-h5-center
+        type: class-toggle
+        title: H5 Centered
+        title.zh: H5 居中
+        default: false
+      - id: heading-h5-italic
+        type: class-toggle
+        title: H5 Italic Style
+        title.zh: H5 斜体样式
+      - id: setting-h5-weight
+        type: variable-text
+        title: H5 Font Weight
+        title.zh: H5 字重
+        description: Any CSS "font-weight" value
+        description.zh: 任何 CSS “font-weight” 值
+        default: '550'
+      - id: setting-h5-size
+        type: variable-number-slider
+        title: H5 Font Size
+        title.zh: H5 字号
+        description: Scale factor of normal text font size
+        description.zh: 普通文本字号大小的倍数
+        default: 1.2
+        min: 1
+        max: 2
+        step: 0.1
+      - id: heading-h5-caps
+        type: class-toggle
+        title: H5 Small Caps Text Variant
+        title.zh: H5 文本变体
+        description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
+        description.zh: 将小写字母转换成大写字母，但字号保持不变
+        default: false
+      - id: title-level-6-heading
+        title: Level 6 Heading
+        title.zh: 六级标题
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-h6-block-contrast
+        type: class-toggle
+        title: H6 Block Decoration Use Higher Contrast Color
+        title.zh: H6 块状装饰颜色提高对比度
+      - id: setting-h6-color
+        type: variable-themed-color
+        title: H6 Color
+        title.zh: H6 颜色
+        format: rgb-values
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: heading-h6-center
+        type: class-toggle
+        title: H6 Centered
+        title.zh: H6 居中
+        default: false
+      - id: heading-h6-italic
+        type: class-toggle
+        title: H6 Italic Style
+        title.zh: H6 斜体样式
+      - id: setting-h6-weight
+        type: variable-text
+        title: H6 Font Weight
+        title.zh: H6 字重
+        description: Any CSS "font-weight" value
+        description.zh: 任何 CSS “font-weight” 值
+        default: '500'
+      - id: setting-h6-size
+        type: variable-number-slider
+        title: H6 Font Size
+        title.zh: H6 字号
+        description: Scale factor of normal text font size
+        description.zh: 普通文本字号大小的倍数
+        default: 1.1
+        min: 1
+        max: 2
+        step: 0.1
+      - id: heading-h6-caps
+        type: class-toggle
+        title: H6 Small Caps Text Variant
+        title.zh: H6 文本变体
+        description: Uses the form of uppercase letters but are reduced to the size of lowercase letters
+        description.zh: 将小写字母转换成大写字母，但字号保持不变
+        default: true
+      - id: title-horizontal-rule
+        title: Horizontal Rule
+        title.zh: 分隔线
+        type: heading
+        level: 1
+        collapsed: true
+      - id: hr-enable
+        type: class-toggle
+        title: Enable Horizontal Rule Style
+        title.zh: 启用分隔线样式
+        default: true
+      - id: setting-hr-icon
+        type: variable-text
+        title: Set Icon in the Center of Horizontal Rule
+        title.zh: 分隔线中部图标
+        default: ⭐
+        quotes: true
+      - id: title-table
+        title: Table
+        title.zh: 表格
+        type: heading
+        level: 1
+        collapsed: true
+      - id: table-full
+        type: class-toggle
+        title: Full Width Table
+        title.zh: 全宽表格
+        default: true
+      - id: table-remove-line-before
+        type: class-toggle
+        title: Remove the Empty Line Before Table
+        title.zh: 移除表格前的空白行
+        description: ❗ Once enabled, the cursor will jump out of the table when moving down into it.
+        description.zh: ❗ 启用后会导致光标往下移动到表格内时直接跳出表格
+      - id: table-round
+        type: class-toggle
+        title: Add Round Corner For Table
+        title.zh: 表格添加圆角
+        default: true
+      - id: setting-table-header-text
+        type: variable-themed-color
+        title: Table Header Text Color
+        title.zh: 表头文字色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-table-header-bg
+        type: variable-themed-color
+        title: Table Header Background Color
+        title.zh: 表头背景色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-table-line-bg
+        type: variable-themed-color
+        title: Striped Background Color
+        title.zh: 斑马纹背景色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-embed-block
+        title: Embed Block
+        title.zh: 内嵌块
+        type: heading
+        level: 1
+        collapsed: true
+      - id: embed-border-hidden
+        type: class-toggle
+        title: Hide Embed Block's Border
+        title.zh: 隐藏内嵌块的边框
+      - id: embed-title-right-top
+        type: class-toggle
+        title: Move Embed File Title to Top Right
+        title.zh: 内嵌文件标题移至右上角
+        description: Visible on hover; disabled when alias is "#", e.g., ![[FileName|#]]
+        description.zh: 鼠标悬停时显示；别名为 “#” 时禁用，例如：![[文件名|#]]
+        default: true
+      - id: title-image
+        title: Image
+        title.zh: 图片
+        type: heading
+        level: 1
+        collapsed: true
+      - id: image-alt
+        type: class-toggle
+        title: Add Alt Text Below and Center the Image
+        title.zh: 在图片底部添加提示文本并居中图片
+        description: 'Example: ![[image.jpg|alt text]]'
+        description.zh: 示例：![[图片.jpg|提示文本]]
+        default: true
+      - id: image-zoom
+        type: class-toggle
+        title: Click to Zoom Image
+        title.zh: 鼠标按下时放大图片
+        description: Reference from https://github.com/aaaaalexis/obsidian-cupertino
+        description.zh: 参考自 https://github.com/aaaaalexis/obsidian-cupertino
+        default: true
+      - id: image-dark-hover
+        type: class-toggle
+        title: Decrease Brightness in Dark Mode
+        title.zh: 黑暗模式下降低图片亮度
+        description: Brightness increases on hover
+        description.zh: 鼠标悬停时亮度会增加
+        default: true
+      - id: title-blockquote
+        title: Blockquote
+        title.zh: 引言块
+        type: heading
+        level: 1
+        collapsed: true
+      - id: quote-italic
+        type: class-toggle
+        title: Use Italic Style in Blockquote
+        title.zh: 使用斜体
+      - id: quote-mark
+        type: class-toggle
+        title: Enable Quote Mark Style in Reading View
+        title.zh: 阅读视图下添加前置大引号
+        description: Replace front line border with a quotation mark
+        description.zh: 用引号替代前置边框
+      - id: title-list
+        title: List
+        title.zh: 列表
+        type: heading
+        level: 1
+        collapsed: true
+      - id: list-enable
+        type: class-toggle
+        title: Optimize List Style
+        title.zh: 优化列表样式
+        description: ❗No support for list or task items inside callouts
+        description.zh: ❗精力有限，暂不适配 Callout 中的列表或待办项
+        default: true
+      - id: list-bullet-thread-style
+        type: class-toggle
+        title: Logseq Bullet Thread Style List
+        title.zh: Logseq Bullet Thread 样式的列表
+        description: Only support bullet list in Live Preview mode. Reference from https://gist.github.com/KillyMXI/cbef8edff6dd55d9e6ea4df66567e9b1
+        description.zh: 仅支持实时预览模式中的无序列表。参考自 https://gist.github.com/KillyMXI/cbef8edff6dd55d9e6ea4df66567e9b1
+        default: true
+      - id: setting-list-marker
+        type: variable-themed-color
+        title: List Marker Color
+        title.zh: 列表标记颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-list-marker-alt
+        type: variable-themed-color
+        title: Alternate List Marker Color
+        title.zh: 列表标记颜色2
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-list-guide-color
+        type: variable-themed-color
+        title: List Guide Line Color
+        title.zh: 列表引导线颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-task-list-(checkbox)
+        title: Task List (Checkbox)
+        title.zh: 待办事项（勾选框）
+        type: heading
+        level: 2
+        collapsed: true
+      - id: list-checkbox-gray
+        type: class-toggle
+        title: Gray Out Completed Items
+        title.zh: 已完成的事项使用灰色文字
+      - id: list-checkbox-alternative
+        type: class-toggle
+        title: Enhanced Checkbox Styles
+        title.zh: 更多的勾选框样式
+        description: Disable this if you are using your own implementation via a CSS snippet
+        description.zh: 如果您正在使用自己的 CSS 片段实现，请禁用此选项
+        default: true
+      - id: setting-list-checkbox-color
+        type: variable-themed-color
+        title: Checkbox Marker Color
+        title.zh: 勾选框标记颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-list-checkbox-color-hover
+        type: variable-themed-color
+        title: Checkbox Marker Hover Color
+        title.zh: 勾选框标记悬停颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-list-checkbox-border
+        type: variable-themed-color
+        title: Checkbox Marker Border Color
+        title.zh: 勾选框标记边框颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-code
+        title: Code
+        title.zh: 代码
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-code-inline
+        type: variable-themed-color
+        title: Inline Code Color
+        title.zh: 行内代码文字色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-code-bg
+        type: variable-themed-color
+        title: Code Block Background Color
+        title.zh: 代码块背景色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: code-line-number
+        type: class-toggle
+        title: Enable Code Block Line Numbers in Live Preview Mode
+        title.zh: 在实时预览模式下启用代码块行号
+        description: Due to the limitation of Obsidian's render strategy, if the code block has too many lines, line numbering may be incorrect
+        description.zh: 由于 Obsidian 渲染方式的限制，如果代码块行数过多，行号可能会出现错误
+        default: true
+      - id: setting-code-language-color
+        type: variable-themed-color
+        title: Language Indicator Color
+        title.zh: 语言标识颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: code-language
+        type: class-toggle
+        title: Enable Code Block Language Indicator in Reading View
+        title.zh: 在阅读视图下启用代码块语言标识
+        default: true
+      - id: code-nowrap
+        type: class-toggle
+        title: Prevent Code Wrapping in Reading View
+        title.zh: 阅读视图下代码过长时不换行
+        description: Only effective in editor
+        description.zh: 仅在编辑器内生效
+        default: true
+      - id: code-preview-bg
+        type: class-toggle
+        title: Enable Code Block Background in Reading View
+        title.zh: 在阅读视图下启用代码块背景
+      - id: code-mac-style-header
+        type: class-toggle
+        title: Add macOS Style Code Block Header in Reading View
+        title.zh: 在阅读视图下为代码块添加 macOS 风格标题栏
+        description: No code block border; No effective when exporting PDF
+        description.zh: 无代码块边框；导出 PDF 时不生效
+      - id: code-theme
+        type: class-toggle
+        title: Use Theme's Color Scheme
+        title.zh: 使用主题的代码高亮方案
+        default: true
+      - id: title-tag
+        title: Tag
+        title.zh: 标签
+        type: heading
+        level: 1
+        collapsed: true
+      - id: tag-click-to-edit
+        type: class-toggle
+        title: Click to Edit Tags in Live Preview Mode
+        title.zh: 在实时预览模式下点击标签进行编辑
+        description: Click "#" to jump
+        description.zh: 点击 “#” 跳转
+      - id: setting-tag-bg
+        type: variable-themed-color
+        title: Tag Background Color
+        title.zh: 标签背景色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-tag-color
+        type: variable-themed-color
+        title: Tag Text Color
+        title.zh: 标签文字色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: setting-tag-border
+        type: variable-themed-color
+        title: Tag Border Color
+        title.zh: 标签边框颜色
+        format: hex
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+        alt-format: []
+      - id: title-canvas
+        title: Canvas
+        title.zh: 白板
+        type: heading
+        level: 1
+        collapsed: true
+      - id: canvas-group-hide
+        type: class-toggle
+        title: Hide Left Canvas Control Buttons
+        title.zh: 隐藏左侧控制按钮
+        description: Shows on hover
+        description.zh: 鼠标移入时显示
+      - id: canvas-center
+        type: class-toggle
+        title: Center Text in Card When Focus is Lost
+        title.zh: 卡片失去焦点时居中文本
+      - id: title-pdf
+        title: PDF
+        title.zh: PDF
+        type: heading
+        level: 1
+        collapsed: true
+      - id: pdf-dark-hover
+        type: class-toggle
+        title: Decrease Brightness in Dark Mode
+        title.zh: 黑暗模式下降低图片亮度
+        description: Brightness increases on hover
+        description.zh: 鼠标悬停时亮度会增加
+        default: true
+      - id: pdf-dark-invert
+        type: class-toggle
+        title: Invert Colors in Dark Mode
+        title.zh: 黑暗模式下反转颜色
+      - id: title-pdf-export
+        title: PDF Export
+        title.zh: PDF 导出
+        type: heading
+        level: 2
+        collapsed: false
+      - id: pdf-export-transparent
+        type: class-toggle
+        title: Set Background to Transparent
+        title.zh: 导出时将页面背景色设置为透明
+      - id: pdf-export-page-break
+        type: class-toggle
+        title: Better Page Break Strategy
+        title.zh: 更好的分页策略
+        description: Always break page before H1 headings; avoid page breaks inside images, tables, and code blocks
+        description.zh: 在 H1 标题前强制分页；避免在图片、表格和代码块内分页
+      - id: pdf-export-standard
+        type: class-toggle
+        title: Standard Spacing Between Paragraphs and List
+        title.zh: 标准的段落和列表的间距
+      - id: pdf-export-default-hr
+        type: class-toggle
+        title: Use Default Style for Horizontal Rule
+        title.zh: 使用默认的水平线样式
+      - id: title-properties
+        title: Properties
+        title.zh: 文档属性
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-properties-columns
+        type: variable-number-slider
+        title: Property Column Number
+        title.zh: 文档属性列数
+        default: 1
+        min: 1
+        max: 4
+        step: 1
+      - id: prop-outline
+        type: class-toggle
+        title: Add Outline for Property Panel
+        title.zh: 属性面板添加边框
+      - id: prop-hide-preview
+        type: class-toggle
+        title: Hide Property Panel in Reading View
+        title.zh: 阅读视图下隐藏属性面板
+  - name: Maple Plugin
+    id: maple-plugin
+    collapsed: false
+    settings:
+      - id: title-calendar
+        title: Calendar
+        title.zh: 日历
+        type: heading
+        level: 1
+        collapsed: true
+      - id: calendar-swap-year-month
+        type: class-toggle
+        title: Swap Year and Month Display
+        title.zh: 交换年份和月份显示
+      - id: setting-calendar-year-suffix
+        type: variable-text
+        title: Year Suffix Text
+        title.zh: 年份后缀文本
+        default: 年
+        quotes: true
+      - id: setting-calendar-max-width
+        type: variable-text
+        title: Calendar Maximum Width
+        title.zh: 日历最大宽度
+        description: Any CSS "max-width" value
+        description.zh: 任何 CSS “max-width” 值
+        default: 500px
+  - name: Maple Mobile
+    id: maple-mobile
+    collapsed: false
+    settings:
+      - id: mobile-floating-button
+        type: class-toggle
+        title: Enable Floating Mode Switch Button
+        title.zh: 启用浮动的模式切换按钮
+        default: true
+      - id: title-font-settings
+        title: Font Settings
+        title.zh: 字体设置
+        description: It is inconvenient to install fonts on mobile devices, so maybe you need this option
+        description.zh: 移动端不方便安装字体，所以有了这个选项
+        type: heading
+        level: 1
+        collapsed: true
+      - id: setting-mobile-font-monospace
+        type: variable-text
+        title: Monospace Font
+        title.zh: 等宽字体
+        description: Any CSS "font-family" value
+        description.zh: 任何 CSS “font-family” 值
+        default: maplemono

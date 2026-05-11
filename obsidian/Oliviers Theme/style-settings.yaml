@@ -1,1578 +1,1202 @@
-- name: Olivier’s Theme
-  id: Olivier-s-Theme
-  settings:
-    - id: OT-general-settings
-      title: GENERAL settings
-      title.fr: Réglages GÉNÉRAUX
-      title.en: GENERAL SETTINGS
-      type: heading
-      level: 2
-      collapsed: true
-      description: Main settings for the interface, general typography and kanban boards.
-      description.fr: Les réglages principaux pour l’interface, la typographie en général et les kanbans.
-    - id: OT-UI-settings
-      title: Interface
-      title.fr: Interface
-      type: heading
-      level: 3
-      collapsed: true
-      description: Basic interface tweaks.
-      description.fr: Réglages de base de l’interface.
-    - id: OT-UI-font-size
-      title: Base size for the interface texts [px]
-      title.fr: Taille de base pour les caractères de l’interface [px]
-      type: variable-number
-      default: 16
-      format: px
-    - id: OT-filesNavigator-spacing
-      title: Spacing for items in sidepanels and settings panel
-      title.fr: Espacement des listes dans les panneaux latéraux et le panneau des settings.
-      type: class-select
-      allowEmpty: false
-      default: filesNavigator-spacing-medium
-      options:
-        - label: Tight
-          label.fr: Serré
-          value: filesNavigator-spacing-compact
-        - label: Medium
-          label.fr: Moyen
-          value: filesNavigator-spacing-medium
-        - label: Wide
-          label.fr: Large
-          value: filesNavigator-spacing-loose
-        - label: Very wide
-          label.fr: Très large
-          value: filesNavigator-spacing-veryLoose
-    - id: OT-viewing-mode-icons
-      title: Viewing mode icon as a true status indicator
-      title.fr: L’icône du mode indique le status
-      description: 'ON: The indicator on the right of the pane title bar becomes a true mode indicator (Reading / Live Preview / Raw Source). Switch OFF if you prefer the default Obsidian behaviour.'
-      description.fr: 'ON: l’icône d’état du panneau courant, à droite de la barre de titre, indique le mode actuel (Lecture / Live Preview / Source). Mettre à OFF pour avoir le comportement par défaut d’Obsidian.'
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-tab-title-highlighted
-      title: Highlight current tab
-      title.fr: Tab courant mis en évidence
-      description: Highlight the name of the current note in the tab title.
-      description.fr: Met en évidence sur le tab le nom de la fiche courante.
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-suppress-title-bar-breadcrumb
-      title: Hide Title Bar breadcrumb
-      title.fr: Masquer le Fil d’Ariane dans la barre de titre
-      description: Optionally, hide the breadcrumb in the title bar.
-      description.fr: 'Option: Masquer le “breadcrumb” dans la barre de titre.'
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-status-bar-padding
-      title: Status Bar padding [px]
-      title.fr: Marges de la barre d’état [px]
-      description: Number of pixels between the status bar and the window border.
-      description.fr: Nombre de pixels entre la “Status Bar” et le bord de la fenêtre.
-      type: variable-number
-      default: 6
-      format: px
-    - id: OT-metadata-label-width
-      title: Width of the properties labels [em]
-      title.fr: Largeur des noms des champs des propriétés [em]
-      type: variable-number
-      default: 7
-      format: em
-    - id: OT-embed-hide-title
-      title: Hide embed titles
-      title.fr: Masquer le titre des transclusions
-      description: Hide the file name at the top of embedded notes and queries.
-      description.fr: Masque le nom du fichier en haut des notes et requêtes incluses.
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-canvas-dot-pattern-hidden
-      title: Hide canvas dot pattern
-      title.fr: Cacher les points en fond des canvas
-      description: Hide the dotted background pattern on canvases.
-      description.fr: Masquer le motif de points du fond des canvases.
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-typography-settings
-      title: Typography
-      title.fr: Typographie
-      type: heading
-      level: 3
-      collapsed: true
-      description: Typography settings for all modes.
-      description.fr: Réglage typographiques pour tous les modes.
-    - id: OT-headings-scaling
-      title: Headings and subheadings scaling
-      title.fr: Accroissement des titres et intertitres
-      description: Different ways of increasing the size of headings from H6 to H1. By default, a choice “generous but not too much”.
-      description.fr: Différentes façons de grader la taille des H1 à H6. Par défaut, un choix généreux, mais pas trop.
-      type: class-select
-      allowEmpty: false
-      default: headings-scaling-OpSpl
-      options:
-        - label: None
-          label.fr: Aucun
-          value: headings-scaling-none
-        - label: Bear style
-          label.fr: dans le style de Bear
-          value: headings-scaling-Bear
-        - label: Slowly
-          label.fr: Doucement
-          value: headings-scaling-slight
-        - label: Minor second
-          label.fr: Seconde mineure
-          value: headings-scaling-minor-second
-        - label: Major second
-          label.fr: Seconde majeure
-          value: headings-scaling-major-second
-        - label: Olivier’s
-          value: headings-scaling-OpSpl
-        - label: Minor third
-          label.fr: Tierce mineure
-          value: headings-scaling-minor-third
-        - label: Major third
-          label.fr: Tierce majeure
-          value: headings-scaling-major-third
-    - id: OT-vertical-rythm
-      title: Typographical vertical rythm
-      title.fr: Rythme typographique vertical
-      description: Vertical white space around headings and paragraphs.
-      description.fr: Blanc typographique au-dessus et au-dessous des titres, intertitres et paragraphes.
-      type: class-select
-      allowEmpty: false
-      default: vertical-rythm-normal
-      options:
-        - label: Tight
-          label.fr: Serré
-          value: vertical-rythm-tight
-        - label: Normal
-          value: vertical-rythm-normal
-        - label: Generous
-          label.fr: Aéré
-          value: vertical-rythm-generous
-        - label: Bear
-          value: vertical-rythm-Bear
-    - id: OT-lists-font-stepdown
-      title: 'Lists: Text size stepping down'
-      title.fr: 'Listes : taille de texte décroissante'
-      description: Use smaller text for deeper list levels.
-      description.fr: Utiliser un texte plus petit pour les niveaux de liste plus profonds.
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-lists-vert-spacing
-      title: 'Lists: vertical spacing, line spacing'
-      title.fr: 'Listes : espacement vertical, interligne'
-      description: 'Control vertical spacing inside lists: normal / tight.'
-      description.fr: 'Contrôler l’espacement vertical à l’intérieur des listes : normal / serré.'
-      type: class-select
-      allowEmpty: false
-      default: lists-vert-normal
-      options:
-        - label: Normal
-          label.fr: Normal
-          value: lists-vert-normal
-        - label: Tight
-          label.fr: Serré
-          value: lists-vert-tight
-    - id: OT-lists-horiz-indenting
-      title: 'Lists: Indenting'
-      title.fr: 'Listes : indentation'
-      description: 'Control horizontal indentation and bullet gap: normal / wide / generous.'
-      description.fr: 'Contrôler l’indentation horizontale et l’écart puce–texte : normale / large / généreuse.'
-      type: class-select
-      allowEmpty: false
-      default: lists-horiz-normal
-      options:
-        - label: Normal
-          label.fr: Normale
-          value: lists-horiz-normal
-        - label: Wide
-          label.fr: Large
-          value: lists-horiz-wide
-        - label: Generous
-          label.fr: Généreuse
-          value: lists-horiz-generous
-    - id: OT-separators-style
-      title: Text separators
-      title.fr: Séparateurs de texte
-      description: Choose the ornamental separator used for Markdown horizontal rules.
-      description.fr: Choisir le séparateur ornemental utilisé pour les règles horizontales Markdown.
-      type: class-select
-      allowEmpty: false
-      default: OT-sep-asterism
-      options:
-        - label: Asterism
-          label.fr: Astérisme
-          value: OT-sep-asterism
-        - label: Diamond
-          label.fr: Losange
-          value: OT-sep-diamond
-        - label: Fleuron
-          label.fr: Fleuron
-          value: OT-sep-fleuron
-    - id: OT-codeblock-linewrap-OFF
-      title: Suppress line wrapping within code blocks
-      title.fr: Supprimer les retours à la ligne dans les blocs de code
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-kanban-settings
-      title: Kanbans (plugin + Board View)
-      type: heading
-      level: 3
-      collapsed: true
-      description: Kanbans oriented settings.
-      description.fr: Réglages pour les kanbans
-    - id: OT-kanban-font
-      title: 'Kanban: General font'
-      title.fr: 'Kanban : Fonte'
-      description: It may be nice to choose a different font for the Kanban. Why not a font mimicking handwriting?
-      description.fr: Il peut être intéressant de choisir une fonte différente pour le Kanban, par exemple une écriture manuscrite.
-      type: variable-select
-      default: Uberhand Pro
-      options:
-        - label: Adelle
-          value: Adelle
-        - label: American Typewriter
-          value: American Typewriter
-        - label: Cambria
-          value: Cambria
-        - label: Candara
-          value: Candara
-        - label: Comic neue
-          value: Comic Neue Regular
-        - label: Comic sans
-          value: Comic Sans MS
-        - label: Georgia
-          value: Georgia
-        - label: IBM Plex Sans
-          value: IBM Plex Sans
-        - label: IBM Plex Serif
-          value: IBM Plex Serif
-        - label: Lato
-          value: Lato
-        - label: Lucida Sans
-          value: Lucida Sans Std
-        - label: Myriad
-          value: Myriad Pro
-        - label: Norms
-          value: TT Norms
-        - label: Norms Condensed
-          value: TT Norms Std Condensed
-        - label: Noto Sans
-          value: Noto Sans
-        - label: Officina Sans
-          value: ITC Officina Sans Std
-        - label: Officina Sans Serif
-          value: ITC Officina Serif Std
-        - label: Overpass
-          value: Overpass
-        - label: Palatino Sans
-          value: Palatino Sans Com
-        - label: Palatino Sans Informal
-          value: Palatino Sans Informal LT Pro
-        - label: PT Sans
-          value: PT Sans
-        - label: Stone Informal
-          value: ITC Stone Informal Std
-        - label: Stone Sans
-          value: ITC Stone Sans Std
-        - label: Roboto
-          value: Roboto
-        - label: Basic sans-serif
-          label.fr: Sans serif de base
-          value: sans-serif
-        - label: Tisa
-          value: Tisa Pro
-        - label: Tisa Sans
-          value: Tisa Sans Pro
-        - label: Trebuchet
-          value: Trebuchet MS
-        - label: Uberhand
-          value: Uberhand Pro
-        - label: Verdana
-          value: Verdana
-    - id: OT-kanban-font-size
-      title: 'Kanbans: Size of the cards text [px]'
-      title.fr: 'Kanbans : Taille des caractères dans les fiches [px]'
-      type: variable-number
-      default: 17
-      format: px
-    - id: OT-kanban-lane-width
-      title: 'Kanbans: width of the lanes [em]'
-      title.fr: 'Kanbans: largeur des colonnes [em]'
-      type: variable-number
-      default: 20
-      format: em
-    - id: OT-LIGHT-mode-settings
-      title: LIGHT MODE colors
-      title.fr: Couleurs en mode “LIGHT”
-      description: Colors for the “Light” base color scheme.
-      description.fr: Réglages pour le mode «normal».
-      type: heading
-      level: 2
-      collapsed: true
-    - id: OT-lightPalette
-      title: General palette
-      title.fr: Palette générale
-      description: If you want the original black and white theme, choose “Default for Obsidian”.
-      description.fr: « Par défaut » signifie les gris neutres et le noir d’Obsidian « nature ».
-      type: class-select
-      allowEmpty: false
-      default: lightPalette-Beige
-      options:
-        - label: Default for Obsidian
-          label.fr: Par défaut
-          value: lightPalette-OBSIDIAN
-        - label: Beige
-          value: lightPalette-Beige
-        - label: light Beige
-          label.fr: Beige claire
-          value: lightPalette-lightBeige
-        - label: Blue
-          label.fr: Bleu
-          value: lightPalette-blue
-        - label: metallic Blue
-          label.fr: Bleu métal
-          value: lightPalette-metallicBlue
-        - label: Green
-          label.fr: Vert
-          value: lightPalette-green
-        - label: pistachio Green
-          label.fr: Vert pistache
-          value: lightPalette-pistachio
-        - label: CRT 80s — Amber
-          label.fr: Cathodique — Ambre
-          value: lightPalette-crt80s-amber
-        - label: CRT 80s — Green
-          label.fr: Cathodique — Vert
-          value: lightPalette-crt80s-green
-        - label: Icy
-          label.fr: Glacé
-          value: lightPalette-icy
-        - label: Ideaverse
-          value: lightPalette-ideaverse
-        - label: Ivory
-          label.fr: Ivoire
-          value: lightPalette-ivory
-        - label: Orange
-          label.fr: Orange
-          value: lightPalette-Orange
-        - label: Paradiso
-          value: lightPalette-paradiso
-        - label: Parchment
-          label.fr: Parchemin
-          value: lightPalette-parchment
-        - label: Red
-          label.fr: Rouge
-          value: lightPalette-red
-        - label: Solarized
-          value: lightPalette-solarized
-        - label: Stone
-          label.fr: Pierre
-          value: lightPalette-stone
-        - label: Sunny memos
-          value: lightPalette-sunnyMemos
-        - label: Violet
-          value: lightPalette-violet
-        - label: Yellow
-          label.fr: Jaune
-          value: lightPalette-yellow
-    - id: OT-accentColor-lightMode
-      title: Accent color
-      title.fr: Couleur «Accent»
-      type: class-select
-      allowEmpty: false
-      default: accentColor-lightMode-shade
-      options:
-        - label: Coordinated
-          label.fr: Coordonnée
-          value: accentColor-lightMode-shade
-        - label: Alternative 1
-          value: accentColor-lightMode-alternative-1
-        - label: Alternative 2
-          value: accentColor-lightMode-alternative-2
-    - id: OT-TextColor-lightMode
-      title: Text color in Reading mode
-      title.fr: Couleur du texte des fiches en mode Lecture / Consultation
-      description: “Default” means the color associated with the above choosen general palette.
-      description.fr: « Par défaut » signifie la couleur associée à la palette générale choisie ci-dessus.
-      type: class-select
-      allowEmpty: false
-      default: textColor-lightMode-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: textColor-lightMode-default
-        - label: Amber
-          label.fr: Ambre
-          value: textColor-lightMode-amber
-        - label: Black
-          label.fr: Noir
-          value: textColor-lightMode-black
-        - label: Blue
-          label.fr: Bleu
-          value: textColor-lightMode-blue
-        - label: light Blue
-          label.fr: Bleu clair
-          value: textColor-lightMode-lightBlue
-        - label: dark Blue
-          label.fr: Bleu sombre
-          value: textColor-lightMode-darkBlue
-        - label: favorite Blue
-          label.fr: Bleu favorit
-          value: textColor-lightMode-favoriteBlue
-        - label: royal Blue
-          label.fr: Bleu royal
-          value: textColor-lightMode-royalBlue
-        - label: sky Blue
-          label.fr: Bleu ciel
-          value: textColor-lightMode-skyBlue
-        - label: Brown
-          label.fr: Brun
-          value: textColor-lightMode-brown
-        - label: Cyan
-          value: textColor-lightMode-cyan
-        - label: Emerald
-          label.fr: Émeraude
-          value: textColor-lightMode-emerald
-        - label: Fuchsia
-          value: textColor-lightMode-fuchsia
-        - label: Green
-          label.fr: Vert
-          value: textColor-lightMode-green
-        - label: terminal Green
-          label.fr: Vert terminal
-          value: textColor-lightMode-terminalGreen
-        - label: Indigo
-          value: textColor-lightMode-indigo
-        - label: Lime
-          value: textColor-lightMode-lime
-        - label: Orange
-          value: textColor-lightMode-orange
-        - label: Red
-          label.fr: Rouge
-          value: textColor-lightMode-red
-        - label: dark Red
-          label.fr: Rouge
-          value: textColor-lightMode-darkRed
-        - label: Rose
-          value: textColor-lightMode-pink
-        - label: light Rose
-          label.fr: Rose pâle
-          value: textColor-lightMode-rose
-        - label: Silver
-          label.fr: Argent
-          value: textColor-lightMode-silver
-        - label: Solarized base00
-          value: textColor-lightMode-solarized-base00
-        - label: Solarized base01
-          value: textColor-lightMode-solarized-base01
-        - label: Solarized base02
-          value: textColor-lightMode-solarized-base02
-        - label: Solarized base03
-          value: textColor-lightMode-solarized-base03
-        - label: Teal
-          label.fr: Bleu sarcelle
-          value: textColor-lightMode-teal
-        - label: dark Violet
-          label.fr: Violet sombre
-          value: textColor-lightMode-purple
-        - label: intense Violet
-          label.fr: Violet brillant
-          value: textColor-lightMode-violet
-        - label: White
-          label.fr: Blanc
-          value: textColor-lightMode-white
-        - label: Yellow
-          label.fr: Jaune
-          value: textColor-lightMode-yellow
-        - label: Zinc
-          value: textColor-lightMode-zinc
-    - id: OT-pageBackground-lightMode
-      title: Notes background in Reading mode
-      title.fr: Fond des fiches en mode «Lecture / Consultation»
-      description: Different kinds of paper are available. “None” keeps the plain background determined by the palette.
-      description.fr: Un fond uni ou un choix de fonds structurés.
-      type: class-select
-      allowEmpty: false
-      default: pb-lm-none
-      options:
-        - label: None
-          label.fr: Aucun
-          value: pb-lm-none
-        - label: Paper 1
-          label.fr: Papier 1
-          value: pb-lm-paper-1
-        - label: Paper 2
-          label.fr: Papier 2
-          value: pb-lm-paper-2
-        - label: Paper 3
-          label.fr: Papier 3
-          value: pb-lm-paper-3
-        - label: Paper 4
-          label.fr: Papier 4
-          value: pb-lm-paper-4
-        - label: Paper 5
-          label.fr: Papier 5
-          value: pb-lm-paper-5
-        - label: Paper 6
-          label.fr: Papier 6
-          value: pb-lm-paper-6
-        - label: Black paper 1
-          label.fr: Papier noir 1
-          value: pb-lm-blackPaper-1
-        - label: Black paper 2
-          label.fr: Papier noir 2
-          value: pb-lm-blackPaper-2
-        - label: Black paper 3
-          label.fr: Papier noir 3
-          value: pb-lm-blackPaper-3
-        - label: Brown paper
-          label.fr: Papier brun
-          value: pb-lm-brownPaper-1
-        - label: Horizontal texture
-          label.fr: Texture horizontale
-          value: pb-lm-horiz-texture
-        - label: Parchment
-          label.fr: Parchemin 1
-          value: pb-lm-parchment-1
-    - id: paperBackground-in-livePreview-LM
-      title: Paper background also in Live Preview mode (Light mode)
-      title.fr: Fond papier également en mode Live (mode Light)
-      description: Optionally the paper background can also be used in Live Preview.
-      description.fr: Optionnellement, le fond papier peut aussi être utilisé lorsqu’on édite les fiches.
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-inkColor-lightMode
-      title: Text color in Writing / Editing mode
-      title.fr: Couleur du texte en mode Écriture / Édition
-      description: “Default” means the same color as in reading mode.
-      description.fr: « Par défaut » signifie la même couleur qu’en mode «Lecture / Consultation».
-      type: class-select
-      allowEmpty: false
-      default: inkColor-lightMode-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: inkColor-lightMode-default
-        - label: Amber
-          label.fr: Ambre
-          value: inkColor-lightMode-amber
-        - label: Black
-          label.fr: Noir
-          value: inkColor-lightMode-black
-        - label: Blue
-          label.fr: Bleu
-          value: inkColor-lightMode-blue
-        - label: light Blue
-          label.fr: Bleu clair
-          value: inkColor-lightMode-lightBlue
-        - label: dark Blue
-          label.fr: Bleu sombre
-          value: inkColor-lightMode-darkBlue
-        - label: favorite Blue
-          label.fr: Bleu favorit
-          value: inkColor-lightMode-favoriteBlue
-        - label: royal Blue
-          label.fr: Bleu royal
-          value: inkColor-lightMode-royalBlue
-        - label: sky Blue
-          label.fr: Bleu ciel
-          value: inkColor-lightMode-skyBlue
-        - label: Brown
-          label.fr: Brun
-          value: inkColor-lightMode-brown
-        - label: Cyan
-          value: inkColor-lightMode-cyan
-        - label: Egg
-          label.fr: Œuf
-          value: inkColor-lightMode-egg
-        - label: Fuchsia
-          value: inkColor-lightMode-fuchsia
-        - label: Green
-          label.fr: Vert
-          value: inkColor-lightMode-green
-        - label: emerald Green
-          label.fr: Émeraude
-          value: inkColor-lightMode-emerald
-        - label: terminal Green
-          label.fr: Vert terminal
-          value: inkColor-lightMode-terminalGreen
-        - label: Indigo
-          value: inkColor-lightMode-indigo
-        - label: Lime
-          value: inkColor-lightMode-lime
-        - label: Orange
-          value: inkColor-lightMode-orange
-        - label: Red
-          label.fr: Rouge
-          value: inkColor-lightMode-red
-        - label: dark Red
-          label.fr: Rouge foncé
-          value: inkColor-lightMode-darkRed
-        - label: Rose
-          value: inkColor-lightMode-pink
-        - label: light Rose
-          label.fr: Rose pâle
-          value: inkColor-lightMode-rose
-        - label: Silver
-          label.fr: Argent
-          value: inkColor-lightMode-silver
-        - label: Solarized base00
-          value: inkColor-lightMode-solarized-base00
-        - label: Solarized base01
-          value: inkColor-lightMode-solarized-base01
-        - label: Solarized base02
-          value: inkColor-lightMode-solarized-base02
-        - label: Solarized base03
-          value: inkColor-lightMode-solarized-base03
-        - label: Teal
-          label.fr: Bleu sarcelle
-          value: inkColor-lightMode-teal
-        - label: dark Violet
-          label.fr: Violet sombre
-          value: inkColor-lightMode-purple
-        - label: intense Violet
-          label.fr: Violet brillant
-          value: inkColor-lightMode-violet
-        - label: White
-          label.fr: Blanc
-          value: inkColor-lightMode-white
-        - label: Yellow
-          label.fr: Jaune
-          value: inkColor-lightMode-yellow
-        - label: Zinc
-          value: inkColor-lightMode-zinc
-    - id: OT-editingBackgroundColor-lightMode
-      title: Notes background in Writing / Editing mode
-      title.fr: Couleur du fond de page en mode «Écriture / Édition»
-      description: “Default” means the background associated with the above chosen palette.
-      description.fr: Par défaut, le fond déterminé par la palette générale choisie ci-dessus.
-      type: class-select
-      allowEmpty: false
-      default: editingBackgroundColor-lightMode-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: editingBackgroundColor-lightMode-default
-        - label: Beige
-          value: editingBackgroundColor-lightMode-beige
-        - label: light Beige
-          label.fr: Beige clair
-          value: editingBackgroundColor-lightMode-lightBeige
-        - label: Black
-          label.fr: Noir
-          value: editingBackgroundColor-lightMode-black
-        - label: sky Blue
-          label.fr: Bleu ciel
-          value: editingBackgroundColor-lightMode-sky
-        - label: cobalt Blue
-          label.fr: Bleu cobalt
-          value: editingBackgroundColor-lightMode-cobaltBlue
-        - label: light Blue
-          label.fr: Bleu pâle
-          value: editingBackgroundColor-lightMode-AliceBlue
-        - label: Green
-          label.fr: Vert
-          value: editingBackgroundColor-lightMode-green
-        - label: light Green
-          label.fr: Vert pâle
-          value: editingBackgroundColor-lightMode-lightGreen
-        - label: light Grey
-          label.fr: Gris clair
-          value: editingBackgroundColor-lightMode-grey
-        - label: Ivory
-          label.fr: Ivoire
-          value: editingBackgroundColor-lightMode-ivory
-        - label: Red
-          label.fr: Rouge
-          value: editingBackgroundColor-lightMode-red
-        - label: light Red
-          label.fr: Rouge pâle
-          value: editingBackgroundColor-lightMode-lightRed
-        - label: Rose
-          value: editingBackgroundColor-lightMode-rose
-        - label: pale Rose
-          label.fr: Rose pâle
-          value: editingBackgroundColor-lightMode-lightRose
-        - label: White
-          label.fr: Blanc
-          value: editingBackgroundColor-lightMode-white
-        - label: snow White
-          label.fr: Blanc neige
-          value: editingBackgroundColor-lightMode-snowWhite
-        - label: WordPerfect
-          value: editingBackgroundColor-lightMode-WordPerfect
-        - label: Yellow
-          label.fr: Jaune
-          value: editingBackgroundColor-lightMode-yellow
-    - id: OT-colored-headings-lightMode
-      title: Colored H1 to H5 headings (Light mode)
-      title.fr: Titres colorés (H1 à H5, Light mode)
-      description: You may activate the coloring of the headings or keep them like normal text.
-      description.fr: Vous pouvez activer la colorisation des titres H1 à H6 ou bien les laisser dans la couleur du texte courant.
-      type: class-toggle
-      addCommand: true
-    - id: textSelection-takesAccentColor-lightMode
-      title: Text selection takes accent color (Light mode)
-      title.fr: La sélection prend la couleur d’accentuation (mode Light)
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-highlight-color-light
-      title: Highlighting color
-      title.fr: Couleur du « Stabilo »
-      description: “Default” chooses a color associated with the current general mood.
-      description.fr: « Par défaut » signifie une couleur associée à l’ambiance générale courante.
-      type: class-select
-      allowEmpty: false
-      default: highlight-color-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: highlight-color-default
-        - label: light Blue
-          label.fr: Bleu clair
-          value: highlight-color-lightBlue
-        - label: dark Blue
-          label.fr: Bleu foncé
-          value: highlight-color-strongBlue
-        - label: light Green
-          label.fr: Vert clair
-          value: highlight-color-lightGreen
-        - label: dark Green
-          label.fr: Vert foncé
-          value: highlight-color-strongGreen
-        - label: light Orange
-          label.fr: Orange clair
-          value: highlight-color-lightOrange
-        - label: dark Orange
-          label.fr: Orange foncé
-          value: highlight-color-strongOrange
-        - label: light Rose
-          label.fr: Rose clair
-          value: highlight-color-lightRose
-        - label: dark Rose
-          label.fr: Rose foncé
-          value: highlight-color-strongRose
-        - label: light Violet
-          label.fr: Violet clair
-          value: highlight-color-lightViolet
-        - label: dark Violet
-          label.fr: Violet foncé
-          value: highlight-color-strongViolet
-        - label: classic Yellow
-          label.fr: Jaune clair
-          value: highlight-color-lightYellow
-        - label: dark Yellow
-          label.fr: Jaune foncé
-          value: highlight-color-strongYellow
-    - id: OT-Light-pillsColor
-      title: Color of the pills inside the Properties panel
-      title.fr: Couleur des “pills” dans le panneau des propriétés
-      type: class-select
-      allowEmpty: false
-      default: OT-Light-pills-color-accent
-      options:
-        - label: Accent color
-          label.fr: Couleur d’accentuation
-          value: OT-Light-pills-color-accent
-        - label: Same as normal text
-          label.fr: Comme le texte normal
-          value: OT-Light-pills-color-text
-        - label: Same as links
-          label.fr: Comme le texte normal
-          value: OT-Light-pills-color-link
-        - label: Black
-          label.fr: Noir
-          value: OT-Light-pills-color-black
-        - label: Grey
-          label.fr: Gris
-          value: OT-Light-pills-color-grey
-        - label: White
-          label.fr: Blanc
-          value: OT-Light-pills-color-white
-        - label: Theme’s tone
-          label.fr: Athmosphère
-          value: OT-Light-pills-color-theme
-    - id: OT-DARK-mode-settings
-      title: DARK MODE colors
-      title.fr: Couleurs en mode “DARK”
-      type: heading
-      level: 2
-      collapsed: true
-      description: Colors for the “Dark” base color scheme.
-      description.fr: Réglages pour le mode «sombre».
-    - id: OT-darkPalette
-      title: General palette
-      title.fr: Palette générale
-      description: By default, we have a dark version of the “light mode” palette. It is however possible to choose a different palette for the “dark mode”.
-      description.fr: Par défaut, la version «sombre» de la palette choisie en “Light”. On peut cependant en choisir ici une différente pour le mode “Dark”.
-      type: class-select
-      allowEmpty: false
-      default: darkPalette-default
-      options:
-        - label: Default < light mode
-          label.fr: '= mode LIGHT'
-          value: darkPalette-default
-        - label: Beige
-          value: darkPalette-beige
-        - label: Black
-          label.fr: Noir
-          value: darkPalette-black
-        - label: Blue
-          label.fr: Bleu
-          value: darkPalette-blue
-        - label: metallic Blue
-          label.fr: Bleu métallique
-          value: darkPalette-metallicBlue
-        - label: Brown
-          label.fr: Brun
-          value: darkPalette-brown
-        - label: CRT 80s — Amber
-          label.fr: Vert cathodique
-          value: darkPalette-crt80s-amber
-        - label: CRT 80s — Green
-          label.fr: Vert cathodique
-          value: darkPalette-crt80s-green
-        - label: Green
-          label.fr: Vert
-          value: darkPalette-green
-        - label: olive Green
-          label.fr: Vert olive
-          value: darkPalette-oliveGreen
-        - label: Icy
-          label.fr: Glacé
-          value: darkPalette-icy
-        - label: Ideaverse
-          value: darkPalette-ideaverse
-        - label: Ivory
-          label.fr: Ivoire
-          value: darkPalette-ivory
-        - label: LYT
-          value: darkPalette-LYT
-        - label: Obsidian
-          value: darkPalette-OBSIDIAN
-        - label: Parchment
-          label.fr: Parchemin
-          value: darkPalette-parchment
-        - label: Red
-          label.fr: Rouge
-          value: darkPalette-red
-        - label: Solarized
-          value: darkPalette-solarized
-        - label: Stone
-          label.fr: Pierre
-          value: darkPalette-stone
-        - label: Sunny memos
-          label.fr: Pierre
-          value: darkPalette-sunnyMemos
-        - label: Violet
-          value: darkPalette-violet
-        - label: Yellow
-          label.fr: Jaune
-          value: darkPalette-yellow
-    - id: OT-accentColor-darkMode
-      title: Accent color
-      title.fr: Couleur «Accent»
-      type: class-select
-      allowEmpty: false
-      default: accentColor-darkMode-shade
-      options:
-        - label: Coordinated
-          label.fr: Coordonnée
-          value: accentColor-darkMode-shade
-        - label: Alternative 1
-          value: accentColor-darkMode-alternative-1
-        - label: Alternative 2
-          value: accentColor-darkMode-alternative-2
-    - id: OT-textColor-darkMode
-      title: Text color in Reading mode
-      title.fr: Couleur du texte des fiches en mode Lecture / Consultation
-      description: “Default” means the color associated with the above chosen general palette.
-      type: class-select
-      allowEmpty: false
-      default: textColor-darkMode-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: textColor-darkMode-default
-        - label: Amber
-          label.fr: Ambre
-          value: textColor-darkMode-amber
-        - label: Black
-          label.fr: Noir
-          value: textColor-darkMode-black
-        - label: Blue
-          label.fr: Bleu
-          value: textColor-darkMode-blue
-        - label: sky Blue
-          label.fr: Bleu ciel
-          value: textColor-darkMode-sky
-        - label: light Blue
-          label.fr: Bleu clair
-          value: textColor-darkMode-lightBlue
-        - label: night Blue
-          label.fr: Bleu nuit
-          value: textColor-darkMode-favoriteBlue
-        - label: royal Blue
-          label.fr: Bleu royal
-          value: textColor-darkMode-royalBlue
-        - label: Brown
-          label.fr: Brun
-          value: textColor-darkMode-brown
-        - label: Cyan
-          value: textColor-darkMode-cyan
-        - label: Egg
-          label.fr: Œuf
-          value: textColor-darkMode-egg
-        - label: Fuchsia
-          value: textColor-darkMode-fuchsia
-        - label: Green
-          label.fr: Vert
-          value: textColor-darkMode-green
-        - label: emerald Green
-          label.fr: Vert émeraude
-          value: textColor-darkMode-emerald
-        - label: terminal Green
-          label.fr: Vert terminal
-          value: textColor-darkMode-terminalGreen
-        - label: Indigo
-          value: textColor-darkMode-indigo
-        - label: Lime
-          value: textColor-darkMode-lime
-        - label: Orange
-          value: textColor-darkMode-orange
-        - label: Red
-          label.fr: Rouge
-          value: textColor-darkMode-red
-        - label: Rose
-          value: textColor-darkMode-pink
-        - label: light Rose
-          label.fr: Rose pâle
-          value: textColor-darkMode-rose
-        - label: Silver
-          label.fr: Argent
-          value: textColor-darkMode-silver
-        - label: Solarized base0
-          value: textColor-darkMode-solarized-base0
-        - label: Solarized base1
-          value: textColor-darkMode-solarized-base1
-        - label: Solarized base2
-          value: textColor-darkMode-solarized-base2
-        - label: Teal
-          label.fr: Bleu sarcelle
-          value: textColor-darkMode-teal
-        - label: intense Violet
-          label.fr: Violet brillant
-          value: textColor-darkMode-violet
-        - label: dark Violet
-          label.fr: Violet sombre
-          value: textColor-darkMode-purple
-        - label: White
-          label.fr: Blanc
-          value: textColor-darkMode-white
-        - label: Yellow
-          label.fr: Jaune
-          value: textColor-darkMode-yellow
-        - label: Zinc
-          value: textColor-darkMode-zinc
-    - id: OT-pageBackground-darkMode
-      title: Notes background in Reading mode
-      title.fr: Fond des fiches en mode «Lecture / Consultation»
-      description: Different kinds of paper are available. “None” keeps the plain background determined by the palette.
-      description.fr: Un fond uni ou un choix de fonds structurés.
-      type: class-select
-      allowEmpty: false
-      default: pb-dm-none
-      options:
-        - label: None
-          label.fr: Aucun
-          value: pb-dm-none
-        - label: Paper 1
-          label.fr: Papier 1
-          value: pb-dm-paper-1
-        - label: Paper 2
-          label.fr: Papier 2
-          value: pb-dm-paper-2
-        - label: Paper 3
-          label.fr: Papier 3
-          value: pb-dm-paper-3
-        - label: Paper 4
-          label.fr: Papier 4
-          value: pb-dm-paper-4
-        - label: Paper 5
-          label.fr: Papier 5
-          value: pb-dm-paper-5
-        - label: Paper 6
-          label.fr: Papier 6
-          value: pb-dm-paper-6
-        - label: Brown paper
-          label.fr: Papier brun
-          value: pb-dm-brownPaper-1
-        - label: Black paper 1
-          label.fr: Papier noir 1
-          value: pb-dm-blackPaper-1
-        - label: Black paper 2
-          label.fr: Papier noir 2
-          value: pb-dm-blackPaper-2
-        - label: Black paper 3
-          label.fr: Papier noir 3
-          value: pb-dm-blackPaper-3
-        - label: Horizontal texture
-          label.fr: Texture horizontale
-          value: pb-dm-horiz-texture
-        - label: Parchment
-          label.fr: Parchemin
-          value: pb-dm-parchment-1
-    - id: paperBackground-in-livePreview-DM
-      title: Paper background also in Live Preview (Dark mode)
-      title.fr: Fond papier également en mode “Live” (mode Dark)
-      description: Optionally the paper background can also be used in Live Preview.
-      description.fr: Optionnellement, le fond papier peut aussi être utilisé lorsqu’on édite les fiches.
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-inkColor-darkMode
-      title: Text color in Writing / Editing mode
-      title.fr: Couleur du texte en mode Écriture / Édition
-      description: “Default” means the same color as in reading mode.
-      description.fr: « Par défaut » signifie la même couleur qu’en mode Lecture / Consultation».
-      type: class-select
-      allowEmpty: false
-      default: inkColor-darkMode-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: inkColor-darkMode-default
-        - label: Amber
-          label.fr: Ambre
-          value: inkColor-darkMode-amber
-        - label: Black
-          label.fr: Noir
-          value: inkColor-darkMode-black
-        - label: Blue
-          label.fr: Bleu
-          value: textColor-darkMode-blue
-        - label: sky Blue
-          label.fr: Bleu ciel
-          value: inkColor-darkMode-sky
-        - label: light Blue
-          label.fr: Bleu clair
-          value: inkColor-darkMode-lightBlue
-        - label: night Blue
-          label.fr: Bleu nuit
-          value: inkColor-darkMode-favoriteBlue
-        - label: royal Blue
-          label.fr: Bleu royal
-          value: inkColor-darkMode-royalBlue
-        - label: Brown
-          label.fr: Brun
-          value: inkColor-darkMode-brown
-        - label: Cyan
-          label.fr: Cyan
-          value: inkColor-darkMode-cyan
-        - label: Egg
-          label.fr: Œuf
-          value: inkColor-darkMode-egg
-        - label: Fuchsia
-          label.fr: Fuchsia
-          value: inkColor-darkMode-fuchsia
-        - label: Green
-          label.fr: Vert
-          value: inkColor-darkMode-green
-        - label: emerald Green
-          label.fr: Émeraude
-          value: inkColor-darkMode-emerald
-        - label: terminal Green
-          label.fr: Vert terminal
-          value: inkColor-darkMode-terminalGreen
-        - label: Indigo
-          label.fr: Indigo
-          value: inkColor-darkMode-indigo
-        - label: Lime
-          value: inkColor-darkMode-lime
-        - label: Orange
-          value: inkColor-darkMode-orange
-        - label: Red
-          label.fr: Rouge
-          value: inkColor-darkMode-red
-        - label: Rose
-          value: inkColor-darkMode-pink
-        - label: pale Rose
-          label.fr: Rose pâle
-          value: inkColor-darkMode-rose
-        - label: Silver
-          label.fr: Argent
-          value: inkColor-darkMode-silver
-        - label: Solarized base0
-          value: inkColor-darkMode-solarized-base0
-        - label: Solarized base1
-          value: inkColor-darkMode-solarized-base1
-        - label: Solarized base2
-          value: inkColor-darkMode-solarized-base2
-        - label: Solarized base3
-          value: inkColor-darkMode-solarized-base3
-        - label: Teal
-          label.fr: Bleu sarcelle
-          value: inkColor-darkMode-teal
-        - label: intense  Violet
-          label.fr: Violet brillant
-          value: inkColor-darkMode-violet
-        - label: dark Violet
-          label.fr: Violet sombre
-          value: inkColor-darkMode-purple
-        - label: White
-          label.fr: Blanc
-          value: inkColor-darkMode-white
-        - label: Yellow
-          label.fr: Jaune
-          value: inkColor-darkMode-yellow
-        - label: Zinc
-          value: inkColor-darkMode-zinc
-    - id: OT-editingBackgroundColor-darkMode
-      title: Notes background in Writing / Editing mode
-      title.fr: Couleur du fond de page en mode Écriture/ Édition
-      description: “Default” means the background associated with the above chosen dark palette.
-      description.fr: Par défaut, le fond déterminé par la palette générale choisie ci-dessus.
-      type: class-select
-      allowEmpty: false
-      default: editingBackgroundColor-darkMode-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: editingBackgroundColor-darkMode-default
-        - label: Beige
-          value: editingBackgroundColor-darkMode-beige
-        - label: light Beige
-          label.fr: Beige clair
-          value: editingBackgroundColor-darkMode-lightBeige
-        - label: Black
-          label.fr: Noir
-          value: editingBackgroundColor-darkMode-black
-        - label: cobalt Blue
-          label.fr: Bleu cobalt
-          value: editingBackgroundColor-darkMode-cobaltBlue
-        - label: sky Blue
-          label.fr: Bleu ciel
-          value: editingBackgroundColor-darkMode-sky
-        - label: pale Blue
-          label.fr: Bleu pâle
-          value: editingBackgroundColor-darkMode-AliceBlue
-        - label: Green
-          label.fr: Vert
-          value: editingBackgroundColor-darkMode-green
-        - label: light Green
-          label.fr: Vert pâle
-          value: editingBackgroundColor-darkMode-lightGreen
-        - label: light Grey
-          label.fr: Gris clair
-          value: editingBackgroundColor-darkMode-grey
-        - label: Ivory
-          label.fr: Ivoire
-          value: editingBackgroundColor-darkMode-ivory
-        - label: Red
-          label.fr: Rouge
-          value: editingBackgroundColor-darkMode-red
-        - label: light Red
-          label.fr: Rouge pâle
-          value: editingBackgroundColor-darkMode-lightRed
-        - label: Rose
-          value: editingBackgroundColor-darkMode-rose
-        - label: pale Rose
-          label.fr: Rose pâle
-          value: editingBackgroundColor-darkMode-lightRose
-        - label: White
-          label.fr: Blanc
-          value: editingBackgroundColor-darkMode-white
-        - label: snow White
-          label.fr: Blanc neige
-          value: editingBackgroundColor-darkMode-snowWhite
-        - label: WordPerfect
-          value: editingBackgroundColor-darkMode-WordPerfect
-        - label: Yellow
-          label.fr: Jaune
-          value: editingBackgroundColor-darkMode-yellow
-    - id: OT-colored-headings-darkMode
-      title: Colored H1 to H5 headings (dark mode)
-      title.fr: Titres colorés (H1 à H5, Dark mode)
-      description: You may activate the coloring of the headings or keep them like normal text.
-      description.fr: Vous pouvez activer la colorisation des titres H1 à H6 ou bien les laisser dans la couleur du texte courant.
-      type: class-toggle
-      addCommand: true
-    - id: textSelection-takesAccentColor-darkMode
-      title: Text selection takes accent color (Dark mode)
-      title.fr: La sélection prend la couleur d’accentuation (mode Dark)
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-highlight-color-dark
-      title: Highlighting color
-      title.fr: Couleur du « Stabilo »
-      description: “Default” chooses a color associated with the above chosen dark palette.
-      description.fr: « Par défaut » signifie une couleur associée à l’ambiance générale courante.
-      type: class-select
-      allowEmpty: false
-      default: highlight-color-dark-default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: highlight-color-dark-default
-        - label: light Blue
-          label.fr: Bleu clair
-          value: highlight-color-dark-lightBlue
-        - label: dark Blue
-          label.fr: Bleu foncé
-          value: highlight-color-dark-strongBlue
-        - label: light Green
-          label.fr: Vert clair
-          value: highlight-color-dark-lightGreen
-        - label: dark Green
-          label.fr: Vert foncé
-          value: highlight-color-dark-strongGreen
-        - label: light Orange
-          label.fr: Orange clair
-          value: highlight-color-dark-lightOrange
-        - label: dark Orange
-          label.fr: Orange foncé
-          value: highlight-color-dark-strongOrange
-        - label: light Pink
-          label.fr: Rose clair
-          value: highlight-color-dark-lightRose
-        - label: dark Pink
-          label.fr: Rose foncé
-          value: highlight-color-dark-strongRose
-        - label: light Violet
-          label.fr: Violet clair
-          value: highlight-color-dark-lightViolet
-        - label: dark Violet
-          label.fr: Violet foncé
-          value: highlight-color-dark-strongViolet
-        - label: classic Yellow
-          label.fr: Jaune clair
-          value: highlight-color-dark-lightYellow
-        - label: dark Yellow
-          label.fr: Jaune foncé
-          value: highlight-color-dark-strongYellow
-    - id: OT-Dark-pillsColor
-      title: Color of the pills inside the Properties panel
-      title.fr: Couleur des “pills” dans le panneau des propriétés
-      type: class-select
-      allowEmpty: false
-      default: OT-Dark-pills-color-accent
-      options:
-        - label: Accent color
-          label.fr: Couleur d’accentuation
-          value: OT-Dark-pills-color-accent
-        - label: Same as normal text
-          label.fr: Comme le texte normal
-          value: OT-Dark-pills-color-text
-        - label: Same as links
-          label.fr: Comme le texte normal
-          value: OT-Dark-pills-color-link
-        - label: Black
-          label.fr: Noir
-          value: OT-Dark-pills-color-black
-        - label: Grey
-          label.fr: Gris
-          value: OT-Dark-pills-color-grey
-        - label: White
-          label.fr: Blanc
-          value: OT-Dark-pills-color-white
-        - label: Theme’s tone
-          label.fr: Athmosphère
-          value: OT-Dark-pills-color-theme
-    - id: OT-READING-mode-settings
-      title: READING mode
-      title.fr: Mode «LECTURE / CONSULTATION»
-      description: Adjustments for the comfort of reading. Table styles. Bases. Images.
-      type: heading
-      level: 2
-      collapsed: true
-    - id: OT-readingMode-text-size
-      title: Body text size [px]
-      title.fr: Taille des caractères [px]
-      type: variable-number
-      default: 17
-      format: px
-    - id: OT-readingMode-natural-line-height
-      title: Natural line height for the chosen font (Reading)
-      title.fr: Interligne naturel pour la fonte choisie (en lecture)
-      description: When ON, Reading mode uses more or less the line-height intended by the font designer and the following value is ignored.
-      description.fr: ON signifie que l’interligne sera plus ou moins celui prévu par le créateur de la fonte et la valeur ci-dessous est ignorée.
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-readingMode-line-height
-      title: Line height [em]
-      title.fr: Interligne [em]
-      type: variable-number
-      default: 1.5
-      format: em
-      disableIF:
-        - OT-readingMode-natural-line-height
-    - id: OT-readingMode-line-width
-      title: Line length [em]
-      title.fr: Longueur de la ligne [em]
-      type: variable-number
-      default: 44
-      format: em
-    - id: OT-readingMode-tableText-percent
-      title: "Size of the text in table cells (%\_of\_body\_text\_size). 100\_=\_same\_size"
-      title.fr: "Taille des caractères dans les tables, en pourcents du texte normal. 100\_=\_même\_taille"
-      description: It’s generally practical to have a smaller text size inside table cells.
-      type: variable-number
-      default: 90
-    - id: OT-tables-style
-      title: Tables style
-      title.fr: Style des tables
-      description: Three different styles for tables.
-      description.fr: Différents styles de tables. Par défaut, le modèle « Obsidian nature ».
-      type: class-select
-      allowEmpty: false
-      default: OT-tables-alternate-rows
-      options:
-        - label: Obsidian plain
-          label.fr: Obsidian nature
-          value: OT-tables-native
-        - label: Improved
-          label.fr: Améliorées
-          value: OT-tables-improved
-        - label: Alternate row backgrounds
-          label.fr: Avec fonds alternés
-          value: OT-tables-alternate-rows
-    - id: OT-bases-hide-header-on
-      title: 'Bases: hide header in Preview'
-      title.fr: 'Bases : cacher l’en-tête en mode Lecture'
-      description: 'Hide the Bases toolbar/header in note Preview. Use cssclasses: bases-header-on in a note to temporarily show it again.'
-      description.fr: 'Cache la barre d’outils/en-tête des Bases en mode Lecture. Utiliser cssclasses: bases-header-on dans une note pour la réafficher ponctuellement.'
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-images-rendering
-      title: Images style
-      title.fr: Style des images
-      type: class-select
-      allowEmpty: false
-      default: images-with-shadow
-      options:
-        - label: plain
-          label.fr: sans rien
-          value: plain-images
-        - label: with a frame
-          label.fr: avec un cadre
-          value: images-with-frame
-        - label: with a shadow
-          label.fr: avec une ombre
-          value: images-with-shadow
-        - label: with a frame and a shadow
-          label.fr: avec un cadre et une ombre
-          value: images-with-frame-and-shadow
-    - id: OT-img-max-height-preview
-      title: Images max height [in pixels]
-      title.fr: Hauteur maximale des images [en pixels]
-      type: variable-number
-      default: 550
-      format: px
-    - id: OT-EDIT-mode-settings
-      title: WRITING / EDITING mode
-      title.fr: Mode «ÉCRITURE / ÉDITION»
-      description: Adjustments for when you’re editing your notes.
-      type: heading
-      level: 2
-      collapsed: true
-    - id: OT-edit-font
-      title: Typeface
-      title.fr: Police d’écriture
-      description: Default” chooses the same font as for reading. Reading font is chosen in the Appearance panel of the Settings.
-      description.fr: Par défaut, la même qu’en mode LECTURE.
-      type: class-select
-      default: edit-font-Default
-      options:
-        - label: Default
-          label.fr: Par défaut
-          value: edit-font-Default
-        - label: American Typewriter
-          value: edit-font-AmericanTypewriter
-        - label: Avenir Next
-          value: edit-font-Avenir-Next
-        - label: Bear Sans
-          value: edit-font-Bear-Sans
-        - label: Candara
-          value: edit-font-Candara
-        - label: Cambria
-          value: edit-font-Cambria
-        - label: Cascadia Mono
-          value: edit-font-Cascadia-Mono
-        - label: Courier
-          value: edit-font-Courier
-        - label: DejaVu Sans
-          value: edit-font-DejaVu-Sans
-        - label: Depot Condensed
-          value: edit-font-Depot-Condensed
-        - label: Dico Mono
-          value: edit-font-Dico-Mono
-        - label: DM Sans
-          value: edit-font-DM-Sans
-        - label: Etica Mono
-          value: edit-font-Etica-Mono
-        - label: Georgia
-          value: edit-font-Georgia
-        - label: iA Writer Mono
-          value: edit-font-iA-Writer-Mono
-        - label: iA Writer Duo
-          value: edit-font-iA-Writer-Duo
-        - label: iA Writer Quattro
-          value: edit-font-iA-Writer-Quattro
-        - label: IBM Plex Sans
-          value: edit-font-IBM-Plex-Sans
-        - label: IBM Plex Mono
-          value: edit-font-IBM-Plex-Mono
-        - label: IBM Plex Serif
-          value: edit-font-IBM-Plex-Serif
-        - label: Inter
-          value: edit-font-Inter
-        - label: JetBrains Mono
-          value: edit-font-JetBrains-Mono
-        - label: Lato
-          value: edit-font-Lato
-        - label: Lucida Sans
-          value: edit-font-Lucida-Sans
-        - label: Lucida Typewriter
-          value: edit-font-Lucida-Typewriter
-        - label: Maison Neue
-          value: edit-font-Maison-Neue
-        - label: Maison Neue Mono
-          value: edit-font-Maison-Neue-Mono
-        - label: Menlo
-          value: edit-font-Menlo
-        - label: Muli
-          value: edit-font-Muli
-        - label: Myriad
-          value: edit-font-Myriad
-        - label: Nexus Typewriter
-          value: edit-font-Nexus-Typewriter
-        - label: Norms
-          value: edit-font-Norms
-        - label: Norms Condensed
-          value: edit-font-Norms-Condensed
-        - label: Noto Sans
-          value: edit-font-Noto-Sans
-        - label: Office Code
-          value: edit-font-Office-Code
-        - label: Officina Sans
-          value: edit-font-Officina-Sans
-        - label: Officina Sans Serif
-          value: edit-font-Officina-Sans-Serif
-        - label: Overpass
-          value: edit-font-Overpass
-        - label: Palatino Sans
-          value: edit-font-Palatino-Sans
-        - label: Palatino Sans Informal
-          value: edit-font-Palatino-Sans-Informal
-        - label: PT Sans
-          value: edit-font-PT-Sans
-        - label: Questa
-          value: edit-font-Questa
-        - label: Questa Sans
-          value: edit-font-Questa-Sans
-        - label: Questa Slab
-          value: edit-font-Questa-Slab
-        - label: Roboto
-          value: edit-font-Roboto
-        - label: Rockwell
-          value: edit-font-Rockwell
-        - label: Sans serif de base
-          value: edit-font-sans-serif
-        - label: Siseriff
-          value: edit-font-Siseriff
-        - label: Space Mono
-          value: edit-font-Space-Mono
-        - label: Stone Humanist
-          value: edit-font-Stone-Humanist
-        - label: Stone Informal
-          value: edit-font-Stone-Informal
-        - label: Stone Sans II
-          value: edit-font-Stone-Sans-II
-        - label: Stone Serif
-          value: edit-font-Stone-Serif
-        - label: Source Code
-          value: edit-font-Source-Code
-        - label: Source Sans 3
-          value: edit-font-Source-Sans-3
-        - label: Source Serif
-          value: edit-font-Source-Serif
-        - label: Tisa
-          value: edit-font-Tisa
-        - label: Tisa Sans
-          value: edit-font-Tisa-Sans
-        - label: Trebuchet
-          value: edit-font-Trebuchet
-        - label: Verdana
-          value: edit-font-Verdana
-    - id: OT-edit-text-size
-      title: Body text size [px]
-      title.fr: Taille des caractères [px]
-      type: variable-number
-      default: 17
-      format: px
-    - id: OT-edit-natural-line-height
-      title: Natural line height for the chosen font (Edit mode)
-      title.fr: Interligne naturel pour la fonte choisie (en écriture)
-      description: When ON, Editing mode uses more or less the line-height intended by the font designer and the following value is ignored.
-      description.fr: ON signifie qu’en écriture, l’interligne sera plus ou moins celui prévu par le créateur de la fonte et la valeur ci-dessous est ignorée.
-      type: class-toggle
-      default: false
-      addCommand: true
-    - id: OT-edit-line-height
-      title: Line height [em]
-      title.fr: Interligne [em]
-      type: variable-number
-      default: 1.5
-      format: em
-    - id: OT-edit-line-width
-      title: Line length [em]
-      title.fr: Longueur de la ligne [em]
-      description: By default, you get longer lines than plain Obsidian.
-      description.fr: Par défaut, une valeur un peu plus généreuse que le « défaut » d’Obsidian.
-      type: variable-number
-      default: 44
-      format: em
-    - id: OT-edit-table-text-percent
-      title: "Size of the text in table cells (%\_of\_body\_text\_size). 100\_=\_same\_size"
-      title.fr: "Taille des caractères dans les tables, en pourcents du texte normal. 100\_=\_même taille"
-      description: It’s generally practical to have a smaller text size inside table cells.
-      type: variable-number
-      default: 90
-    - id: OT-table-cell-edit-size-lock
-      title: While editing a table, the chosen text size sticks.
-      title.fr: En mode Live editing, la taille du texte des cellules ne change pas.
-      description: "OFF ⭢\_When editing a table cell in Live mode, the text size changes to body text size."
-      description.fr: "OFF ⭢\_En mode Live editing, le texte de la cellule courante prend la taille du texte normal."
-      type: class-toggle
-      default: true
-      addCommand: true
-    - id: OT-img-max-height-live
-      title: Images max height in Live Preview [in pixels]
-      title.fr: Hauteur maximale des images en “Live Preview” [en pixels]
-      type: variable-number
-      default: 150
-      format: px
-    - id: OlivierPS-support
-      title: Support OlivierPS
-      description: If you like the theme, here is a way to support development
-      type: heading
-      level: 2
-      collapsed: true
-    - id: OlivierPS-url-donate
-      title: Buy Me a Book
-      description: '[→ BuyMeACoffee.com](https://www.buymeacoffee.com/mp2ncr4vh9x)'
-      type: info-text
-      markdown: true
+mode: replace
+sections:
+  - name: Olivier’s Theme
+    id: Olivier-s-Theme
+    collapsed: false
+    settings:
+      - id: OT-general-settings
+        title: GENERAL settings
+        title.fr: Réglages GÉNÉRAUX
+        title.en: GENERAL SETTINGS
+        type: heading
+        level: 2
+        collapsed: true
+        description: Main settings for the interface, general typography and kanban boards.
+        description.fr: Les réglages principaux pour l’interface, la typographie en général et les kanbans.
+      - id: OT-UI-settings
+        title: Interface
+        title.fr: Interface
+        type: heading
+        level: 3
+        collapsed: true
+        description: Basic interface tweaks.
+        description.fr: Réglages de base de l’interface.
+      - id: OT-UI-font-size
+        title: Base size for the interface texts [px]
+        title.fr: Taille de base pour les caractères de l’interface [px]
+        type: variable-number
+        default: 16
+        format: px
+      - id: OT-filesNavigator-spacing
+        title: Spacing for items in sidepanels and settings panel
+        title.fr: Espacement des listes dans les panneaux latéraux et le panneau des settings.
+        type: class-select
+        allowEmpty: false
+        default: filesNavigator-spacing-medium
+        options:
+          - label: Tight
+            value: filesNavigator-spacing-compact
+          - label: Medium
+            value: filesNavigator-spacing-medium
+          - label: Wide
+            value: filesNavigator-spacing-loose
+          - label: Very wide
+            value: filesNavigator-spacing-veryLoose
+      - id: OT-viewing-mode-icons
+        title: Viewing mode icon as a true status indicator
+        title.fr: L’icône du mode indique le status
+        description: 'ON: The indicator on the right of the pane title bar becomes a true mode indicator (Reading / Live Preview / Raw Source). Switch OFF if you prefer the default Obsidian behaviour.'
+        description.fr: 'ON: l’icône d’état du panneau courant, à droite de la barre de titre, indique le mode actuel (Lecture / Live Preview / Source). Mettre à OFF pour avoir le comportement par défaut d’Obsidian.'
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-tab-title-highlighted
+        title: Highlight current tab
+        title.fr: Tab courant mis en évidence
+        description: Highlight the name of the current note in the tab title.
+        description.fr: Met en évidence sur le tab le nom de la fiche courante.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-suppress-title-bar-breadcrumb
+        title: Hide Title Bar breadcrumb
+        title.fr: Masquer le Fil d’Ariane dans la barre de titre
+        description: Optionally, hide the breadcrumb in the title bar.
+        description.fr: 'Option: Masquer le “breadcrumb” dans la barre de titre.'
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-status-bar-padding
+        title: Status Bar padding [px]
+        title.fr: Marges de la barre d’état [px]
+        description: Number of pixels between the status bar and the window border.
+        description.fr: Nombre de pixels entre la “Status Bar” et le bord de la fenêtre.
+        type: variable-number
+        default: 6
+        format: px
+      - id: OT-metadata-label-width
+        title: Width of the properties labels [em]
+        title.fr: Largeur des noms des champs des propriétés [em]
+        type: variable-number
+        default: 7
+        format: em
+      - id: OT-embed-hide-title
+        title: Hide embed titles
+        title.fr: Masquer le titre des transclusions
+        description: Hide the file name at the top of embedded notes and queries.
+        description.fr: Masque le nom du fichier en haut des notes et requêtes incluses.
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-canvas-dot-pattern-hidden
+        title: Hide canvas dot pattern
+        title.fr: Cacher les points en fond des canvas
+        description: Hide the dotted background pattern on canvases.
+        description.fr: Masquer le motif de points du fond des canvases.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-typography-settings
+        title: Typography
+        title.fr: Typographie
+        type: heading
+        level: 3
+        collapsed: true
+        description: Typography settings for all modes.
+        description.fr: Réglage typographiques pour tous les modes.
+      - id: OT-headings-scaling
+        title: Headings and subheadings scaling
+        title.fr: Accroissement des titres et intertitres
+        description: Different ways of increasing the size of headings from H6 to H1. By default, a choice “generous but not too much”.
+        description.fr: Différentes façons de grader la taille des H1 à H6. Par défaut, un choix généreux, mais pas trop.
+        type: class-select
+        allowEmpty: false
+        default: headings-scaling-OpSpl
+        options:
+          - label: None
+            value: headings-scaling-none
+          - label: Bear style
+            value: headings-scaling-Bear
+          - label: Slowly
+            value: headings-scaling-slight
+          - label: Minor second
+            value: headings-scaling-minor-second
+          - label: Major second
+            value: headings-scaling-major-second
+          - label: Olivier’s
+            value: headings-scaling-OpSpl
+          - label: Minor third
+            value: headings-scaling-minor-third
+          - label: Major third
+            value: headings-scaling-major-third
+      - id: OT-vertical-rythm
+        title: Typographical vertical rythm
+        title.fr: Rythme typographique vertical
+        description: Vertical white space around headings and paragraphs.
+        description.fr: Blanc typographique au-dessus et au-dessous des titres, intertitres et paragraphes.
+        type: class-select
+        allowEmpty: false
+        default: vertical-rythm-normal
+        options:
+          - label: Tight
+            value: vertical-rythm-tight
+          - label: Normal
+            value: vertical-rythm-normal
+          - label: Generous
+            value: vertical-rythm-generous
+          - label: Bear
+            value: vertical-rythm-Bear
+      - id: OT-lists-font-stepdown
+        title: 'Lists: Text size stepping down'
+        title.fr: 'Listes : taille de texte décroissante'
+        description: Use smaller text for deeper list levels.
+        description.fr: Utiliser un texte plus petit pour les niveaux de liste plus profonds.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-lists-vert-spacing
+        title: 'Lists: vertical spacing, line spacing'
+        title.fr: 'Listes : espacement vertical, interligne'
+        description: 'Control vertical spacing inside lists: normal / tight.'
+        description.fr: 'Contrôler l’espacement vertical à l’intérieur des listes : normal / serré.'
+        type: class-select
+        allowEmpty: false
+        default: lists-vert-normal
+        options:
+          - label: Normal
+            value: lists-vert-normal
+          - label: Tight
+            value: lists-vert-tight
+      - id: OT-lists-horiz-indenting
+        title: 'Lists: Indenting'
+        title.fr: 'Listes : indentation'
+        description: 'Control horizontal indentation and bullet gap: normal / wide / generous.'
+        description.fr: 'Contrôler l’indentation horizontale et l’écart puce–texte : normale / large / généreuse.'
+        type: class-select
+        allowEmpty: false
+        default: lists-horiz-normal
+        options:
+          - label: Normal
+            value: lists-horiz-normal
+          - label: Wide
+            value: lists-horiz-wide
+          - label: Generous
+            value: lists-horiz-generous
+      - id: OT-separators-style
+        title: Text separators
+        title.fr: Séparateurs de texte
+        description: Choose the ornamental separator used for Markdown horizontal rules.
+        description.fr: Choisir le séparateur ornemental utilisé pour les règles horizontales Markdown.
+        type: class-select
+        allowEmpty: false
+        default: OT-sep-asterism
+        options:
+          - label: Asterism
+            value: OT-sep-asterism
+          - label: Diamond
+            value: OT-sep-diamond
+          - label: Fleuron
+            value: OT-sep-fleuron
+      - id: OT-codeblock-linewrap-OFF
+        title: Suppress line wrapping within code blocks
+        title.fr: Supprimer les retours à la ligne dans les blocs de code
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-kanban-settings
+        title: Kanbans (plugin + Board View)
+        type: heading
+        level: 3
+        collapsed: true
+        description: Kanbans oriented settings.
+        description.fr: Réglages pour les kanbans
+      - id: OT-kanban-font
+        title: 'Kanban: General font'
+        title.fr: 'Kanban : Fonte'
+        description: It may be nice to choose a different font for the Kanban. Why not a font mimicking handwriting?
+        description.fr: Il peut être intéressant de choisir une fonte différente pour le Kanban, par exemple une écriture manuscrite.
+        type: variable-select
+        default: Uberhand Pro
+        options:
+          - label: Adelle
+            value: Adelle
+          - label: American Typewriter
+            value: American Typewriter
+          - label: Cambria
+            value: Cambria
+          - label: Candara
+            value: Candara
+          - label: Comic neue
+            value: Comic Neue Regular
+          - label: Comic sans
+            value: Comic Sans MS
+          - label: Georgia
+            value: Georgia
+          - label: IBM Plex Sans
+            value: IBM Plex Sans
+          - label: IBM Plex Serif
+            value: IBM Plex Serif
+          - label: Lato
+            value: Lato
+          - label: Lucida Sans
+            value: Lucida Sans Std
+          - label: Myriad
+            value: Myriad Pro
+          - label: Norms
+            value: TT Norms
+          - label: Norms Condensed
+            value: TT Norms Std Condensed
+          - label: Noto Sans
+            value: Noto Sans
+          - label: Officina Sans
+            value: ITC Officina Sans Std
+          - label: Officina Sans Serif
+            value: ITC Officina Serif Std
+          - label: Overpass
+            value: Overpass
+          - label: Palatino Sans
+            value: Palatino Sans Com
+          - label: Palatino Sans Informal
+            value: Palatino Sans Informal LT Pro
+          - label: PT Sans
+            value: PT Sans
+          - label: Stone Informal
+            value: ITC Stone Informal Std
+          - label: Stone Sans
+            value: ITC Stone Sans Std
+          - label: Roboto
+            value: Roboto
+          - label: Basic sans-serif
+            value: sans-serif
+          - label: Tisa
+            value: Tisa Pro
+          - label: Tisa Sans
+            value: Tisa Sans Pro
+          - label: Trebuchet
+            value: Trebuchet MS
+          - label: Uberhand
+            value: Uberhand Pro
+          - label: Verdana
+            value: Verdana
+      - id: OT-kanban-font-size
+        title: 'Kanbans: Size of the cards text [px]'
+        title.fr: 'Kanbans : Taille des caractères dans les fiches [px]'
+        type: variable-number
+        default: 17
+        format: px
+      - id: OT-kanban-lane-width
+        title: 'Kanbans: width of the lanes [em]'
+        title.fr: 'Kanbans: largeur des colonnes [em]'
+        type: variable-number
+        default: 20
+        format: em
+      - id: OT-LIGHT-mode-settings
+        title: LIGHT MODE colors
+        title.fr: Couleurs en mode “LIGHT”
+        description: Colors for the “Light” base color scheme.
+        description.fr: Réglages pour le mode «normal».
+        type: heading
+        level: 2
+        collapsed: true
+      - id: OT-lightPalette
+        title: General palette
+        title.fr: Palette générale
+        description: If you want the original black and white theme, choose “Default for Obsidian”.
+        description.fr: « Par défaut » signifie les gris neutres et le noir d’Obsidian « nature ».
+        type: class-select
+        allowEmpty: false
+        default: lightPalette-Beige
+        options:
+          - label: Default for Obsidian
+            value: lightPalette-OBSIDIAN
+          - label: Beige
+            value: lightPalette-Beige
+          - label: light Beige
+            value: lightPalette-lightBeige
+          - label: Blue
+            value: lightPalette-blue
+          - label: metallic Blue
+            value: lightPalette-metallicBlue
+          - label: Green
+            value: lightPalette-green
+          - label: pistachio Green
+            value: lightPalette-pistachio
+          - label: CRT 80s — Amber
+            value: lightPalette-crt80s-amber
+          - label: CRT 80s — Green
+            value: lightPalette-crt80s-green
+          - label: Icy
+            value: lightPalette-icy
+          - label: Ideaverse
+            value: lightPalette-ideaverse
+          - label: Ivory
+            value: lightPalette-ivory
+          - label: Orange
+            value: lightPalette-Orange
+          - label: Paradiso
+            value: lightPalette-paradiso
+          - label: Parchment
+            value: lightPalette-parchment
+          - label: Red
+            value: lightPalette-red
+          - label: Solarized
+            value: lightPalette-solarized
+          - label: Stone
+            value: lightPalette-stone
+          - label: Sunny memos
+            value: lightPalette-sunnyMemos
+          - label: Violet
+            value: lightPalette-violet
+          - label: Yellow
+            value: lightPalette-yellow
+      - id: OT-accentColor-lightMode
+        title: Accent color
+        title.fr: Couleur «Accent»
+        type: class-select
+        allowEmpty: false
+        default: accentColor-lightMode-shade
+        options:
+          - label: Coordinated
+            value: accentColor-lightMode-shade
+          - label: Alternative 1
+            value: accentColor-lightMode-alternative-1
+          - label: Alternative 2
+            value: accentColor-lightMode-alternative-2
+      - id: OT-TextColor-lightMode
+        title: Text color in Reading mode
+        title.fr: Couleur du texte des fiches en mode Lecture / Consultation
+        description: “Default” means the color associated with the above choosen general palette.
+        description.fr: « Par défaut » signifie la couleur associée à la palette générale choisie ci-dessus.
+        type: class-select
+        allowEmpty: false
+        default: textColor-lightMode-default
+        options:
+          - label: Default
+            value: textColor-lightMode-default
+          - label: Amber
+            value: textColor-lightMode-amber
+          - label: Black
+            value: textColor-lightMode-black
+          - label: Blue
+            value: textColor-lightMode-blue
+          - label: light Blue
+            value: textColor-lightMode-lightBlue
+          - label: dark Blue
+            value: textColor-lightMode-darkBlue
+          - label: favorite Blue
+            value: textColor-lightMode-favoriteBlue
+          - label: royal Blue
+            value: textColor-lightMode-royalBlue
+          - label: sky Blue
+            value: textColor-lightMode-skyBlue
+          - label: Brown
+            value: textColor-lightMode-brown
+          - label: Cyan
+            value: textColor-lightMode-cyan
+          - label: Emerald
+            value: textColor-lightMode-emerald
+          - label: Fuchsia
+            value: textColor-lightMode-fuchsia
+          - label: Green
+            value: textColor-lightMode-green
+          - label: terminal Green
+            value: textColor-lightMode-terminalGreen
+          - label: Indigo
+            value: textColor-lightMode-indigo
+          - label: Lime
+            value: textColor-lightMode-lime
+          - label: Orange
+            value: textColor-lightMode-orange
+          - label: Red
+            value: textColor-lightMode-red
+          - label: dark Red
+            value: textColor-lightMode-darkRed
+          - label: Rose
+            value: textColor-lightMode-pink
+          - label: light Rose
+            value: textColor-lightMode-rose
+          - label: Silver
+            value: textColor-lightMode-silver
+          - label: Solarized base00
+            value: textColor-lightMode-solarized-base00
+          - label: Solarized base01
+            value: textColor-lightMode-solarized-base01
+          - label: Solarized base02
+            value: textColor-lightMode-solarized-base02
+          - label: Solarized base03
+            value: textColor-lightMode-solarized-base03
+          - label: Teal
+            value: textColor-lightMode-teal
+          - label: dark Violet
+            value: textColor-lightMode-purple
+          - label: intense Violet
+            value: textColor-lightMode-violet
+          - label: White
+            value: textColor-lightMode-white
+          - label: Yellow
+            value: textColor-lightMode-yellow
+          - label: Zinc
+            value: textColor-lightMode-zinc
+      - id: OT-pageBackground-lightMode
+        title: Notes background in Reading mode
+        title.fr: Fond des fiches en mode «Lecture / Consultation»
+        description: Different kinds of paper are available. “None” keeps the plain background determined by the palette.
+        description.fr: Un fond uni ou un choix de fonds structurés.
+        type: class-select
+        allowEmpty: false
+        default: pb-lm-none
+        options:
+          - label: None
+            value: pb-lm-none
+          - label: Paper 1
+            value: pb-lm-paper-1
+          - label: Paper 2
+            value: pb-lm-paper-2
+          - label: Paper 3
+            value: pb-lm-paper-3
+          - label: Paper 4
+            value: pb-lm-paper-4
+          - label: Paper 5
+            value: pb-lm-paper-5
+          - label: Paper 6
+            value: pb-lm-paper-6
+          - label: Black paper 1
+            value: pb-lm-blackPaper-1
+          - label: Black paper 2
+            value: pb-lm-blackPaper-2
+          - label: Black paper 3
+            value: pb-lm-blackPaper-3
+          - label: Brown paper
+            value: pb-lm-brownPaper-1
+          - label: Horizontal texture
+            value: pb-lm-horiz-texture
+          - label: Parchment
+            value: pb-lm-parchment-1
+      - id: paperBackground-in-livePreview-LM
+        title: Paper background also in Live Preview mode (Light mode)
+        title.fr: Fond papier également en mode Live (mode Light)
+        description: Optionally the paper background can also be used in Live Preview.
+        description.fr: Optionnellement, le fond papier peut aussi être utilisé lorsqu’on édite les fiches.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-inkColor-lightMode
+        title: Text color in Writing / Editing mode
+        title.fr: Couleur du texte en mode Écriture / Édition
+        description: “Default” means the same color as in reading mode.
+        description.fr: « Par défaut » signifie la même couleur qu’en mode «Lecture / Consultation».
+        type: class-select
+        allowEmpty: false
+        default: inkColor-lightMode-default
+        options:
+          - label: Default
+            value: inkColor-lightMode-default
+          - label: Amber
+            value: inkColor-lightMode-amber
+          - label: Black
+            value: inkColor-lightMode-black
+          - label: Blue
+            value: inkColor-lightMode-blue
+          - label: light Blue
+            value: inkColor-lightMode-lightBlue
+          - label: dark Blue
+            value: inkColor-lightMode-darkBlue
+          - label: favorite Blue
+            value: inkColor-lightMode-favoriteBlue
+          - label: royal Blue
+            value: inkColor-lightMode-royalBlue
+          - label: sky Blue
+            value: inkColor-lightMode-skyBlue
+          - label: Brown
+            value: inkColor-lightMode-brown
+          - label: Cyan
+            value: inkColor-lightMode-cyan
+          - label: Egg
+            value: inkColor-lightMode-egg
+          - label: Fuchsia
+            value: inkColor-lightMode-fuchsia
+          - label: Green
+            value: inkColor-lightMode-green
+          - label: emerald Green
+            value: inkColor-lightMode-emerald
+          - label: terminal Green
+            value: inkColor-lightMode-terminalGreen
+          - label: Indigo
+            value: inkColor-lightMode-indigo
+          - label: Lime
+            value: inkColor-lightMode-lime
+          - label: Orange
+            value: inkColor-lightMode-orange
+          - label: Red
+            value: inkColor-lightMode-red
+          - label: dark Red
+            value: inkColor-lightMode-darkRed
+          - label: Rose
+            value: inkColor-lightMode-pink
+          - label: light Rose
+            value: inkColor-lightMode-rose
+          - label: Silver
+            value: inkColor-lightMode-silver
+          - label: Solarized base00
+            value: inkColor-lightMode-solarized-base00
+          - label: Solarized base01
+            value: inkColor-lightMode-solarized-base01
+          - label: Solarized base02
+            value: inkColor-lightMode-solarized-base02
+          - label: Solarized base03
+            value: inkColor-lightMode-solarized-base03
+          - label: Teal
+            value: inkColor-lightMode-teal
+          - label: dark Violet
+            value: inkColor-lightMode-purple
+          - label: intense Violet
+            value: inkColor-lightMode-violet
+          - label: White
+            value: inkColor-lightMode-white
+          - label: Yellow
+            value: inkColor-lightMode-yellow
+          - label: Zinc
+            value: inkColor-lightMode-zinc
+      - id: OT-editingBackgroundColor-lightMode
+        title: Notes background in Writing / Editing mode
+        title.fr: Couleur du fond de page en mode «Écriture / Édition»
+        description: “Default” means the background associated with the above chosen palette.
+        description.fr: Par défaut, le fond déterminé par la palette générale choisie ci-dessus.
+        type: class-select
+        allowEmpty: false
+        default: editingBackgroundColor-lightMode-default
+        options:
+          - label: Default
+            value: editingBackgroundColor-lightMode-default
+          - label: Beige
+            value: editingBackgroundColor-lightMode-beige
+          - label: light Beige
+            value: editingBackgroundColor-lightMode-lightBeige
+          - label: Black
+            value: editingBackgroundColor-lightMode-black
+          - label: sky Blue
+            value: editingBackgroundColor-lightMode-sky
+          - label: cobalt Blue
+            value: editingBackgroundColor-lightMode-cobaltBlue
+          - label: light Blue
+            value: editingBackgroundColor-lightMode-AliceBlue
+          - label: Green
+            value: editingBackgroundColor-lightMode-green
+          - label: light Green
+            value: editingBackgroundColor-lightMode-lightGreen
+          - label: light Grey
+            value: editingBackgroundColor-lightMode-grey
+          - label: Ivory
+            value: editingBackgroundColor-lightMode-ivory
+          - label: Red
+            value: editingBackgroundColor-lightMode-red
+          - label: light Red
+            value: editingBackgroundColor-lightMode-lightRed
+          - label: Rose
+            value: editingBackgroundColor-lightMode-rose
+          - label: pale Rose
+            value: editingBackgroundColor-lightMode-lightRose
+          - label: White
+            value: editingBackgroundColor-lightMode-white
+          - label: snow White
+            value: editingBackgroundColor-lightMode-snowWhite
+          - label: WordPerfect
+            value: editingBackgroundColor-lightMode-WordPerfect
+          - label: Yellow
+            value: editingBackgroundColor-lightMode-yellow
+      - id: OT-colored-headings-lightMode
+        title: Colored H1 to H5 headings (Light mode)
+        title.fr: Titres colorés (H1 à H5, Light mode)
+        description: You may activate the coloring of the headings or keep them like normal text.
+        description.fr: Vous pouvez activer la colorisation des titres H1 à H6 ou bien les laisser dans la couleur du texte courant.
+        type: class-toggle
+        addCommand: true
+      - id: textSelection-takesAccentColor-lightMode
+        title: Text selection takes accent color (Light mode)
+        title.fr: La sélection prend la couleur d’accentuation (mode Light)
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-highlight-color-light
+        title: Highlighting color
+        title.fr: Couleur du « Stabilo »
+        description: “Default” chooses a color associated with the current general mood.
+        description.fr: « Par défaut » signifie une couleur associée à l’ambiance générale courante.
+        type: class-select
+        allowEmpty: false
+        default: highlight-color-default
+        options:
+          - label: Default
+            value: highlight-color-default
+          - label: light Blue
+            value: highlight-color-lightBlue
+          - label: dark Blue
+            value: highlight-color-strongBlue
+          - label: light Green
+            value: highlight-color-lightGreen
+          - label: dark Green
+            value: highlight-color-strongGreen
+          - label: light Orange
+            value: highlight-color-lightOrange
+          - label: dark Orange
+            value: highlight-color-strongOrange
+          - label: light Rose
+            value: highlight-color-lightRose
+          - label: dark Rose
+            value: highlight-color-strongRose
+          - label: light Violet
+            value: highlight-color-lightViolet
+          - label: dark Violet
+            value: highlight-color-strongViolet
+          - label: classic Yellow
+            value: highlight-color-lightYellow
+          - label: dark Yellow
+            value: highlight-color-strongYellow
+      - id: OT-Light-pillsColor
+        title: Color of the pills inside the Properties panel
+        title.fr: Couleur des “pills” dans le panneau des propriétés
+        type: class-select
+        allowEmpty: false
+        default: OT-Light-pills-color-accent
+        options:
+          - label: Accent color
+            value: OT-Light-pills-color-accent
+          - label: Same as normal text
+            value: OT-Light-pills-color-text
+          - label: Same as links
+            value: OT-Light-pills-color-link
+          - label: Black
+            value: OT-Light-pills-color-black
+          - label: Grey
+            value: OT-Light-pills-color-grey
+          - label: White
+            value: OT-Light-pills-color-white
+          - label: Theme’s tone
+            value: OT-Light-pills-color-theme
+      - id: OT-DARK-mode-settings
+        title: DARK MODE colors
+        title.fr: Couleurs en mode “DARK”
+        type: heading
+        level: 2
+        collapsed: true
+        description: Colors for the “Dark” base color scheme.
+        description.fr: Réglages pour le mode «sombre».
+      - id: OT-darkPalette
+        title: General palette
+        title.fr: Palette générale
+        description: By default, we have a dark version of the “light mode” palette. It is however possible to choose a different palette for the “dark mode”.
+        description.fr: Par défaut, la version «sombre» de la palette choisie en “Light”. On peut cependant en choisir ici une différente pour le mode “Dark”.
+        type: class-select
+        allowEmpty: false
+        default: darkPalette-default
+        options:
+          - label: Default < light mode
+            value: darkPalette-default
+          - label: Beige
+            value: darkPalette-beige
+          - label: Black
+            value: darkPalette-black
+          - label: Blue
+            value: darkPalette-blue
+          - label: metallic Blue
+            value: darkPalette-metallicBlue
+          - label: Brown
+            value: darkPalette-brown
+          - label: CRT 80s — Amber
+            value: darkPalette-crt80s-amber
+          - label: CRT 80s — Green
+            value: darkPalette-crt80s-green
+          - label: Green
+            value: darkPalette-green
+          - label: olive Green
+            value: darkPalette-oliveGreen
+          - label: Icy
+            value: darkPalette-icy
+          - label: Ideaverse
+            value: darkPalette-ideaverse
+          - label: Ivory
+            value: darkPalette-ivory
+          - label: LYT
+            value: darkPalette-LYT
+          - label: Obsidian
+            value: darkPalette-OBSIDIAN
+          - label: Parchment
+            value: darkPalette-parchment
+          - label: Red
+            value: darkPalette-red
+          - label: Solarized
+            value: darkPalette-solarized
+          - label: Stone
+            value: darkPalette-stone
+          - label: Sunny memos
+            value: darkPalette-sunnyMemos
+          - label: Violet
+            value: darkPalette-violet
+          - label: Yellow
+            value: darkPalette-yellow
+      - id: OT-accentColor-darkMode
+        title: Accent color
+        title.fr: Couleur «Accent»
+        type: class-select
+        allowEmpty: false
+        default: accentColor-darkMode-shade
+        options:
+          - label: Coordinated
+            value: accentColor-darkMode-shade
+          - label: Alternative 1
+            value: accentColor-darkMode-alternative-1
+          - label: Alternative 2
+            value: accentColor-darkMode-alternative-2
+      - id: OT-textColor-darkMode
+        title: Text color in Reading mode
+        title.fr: Couleur du texte des fiches en mode Lecture / Consultation
+        description: “Default” means the color associated with the above chosen general palette.
+        type: class-select
+        allowEmpty: false
+        default: textColor-darkMode-default
+        options:
+          - label: Default
+            value: textColor-darkMode-default
+          - label: Amber
+            value: textColor-darkMode-amber
+          - label: Black
+            value: textColor-darkMode-black
+          - label: Blue
+            value: textColor-darkMode-blue
+          - label: sky Blue
+            value: textColor-darkMode-sky
+          - label: light Blue
+            value: textColor-darkMode-lightBlue
+          - label: night Blue
+            value: textColor-darkMode-favoriteBlue
+          - label: royal Blue
+            value: textColor-darkMode-royalBlue
+          - label: Brown
+            value: textColor-darkMode-brown
+          - label: Cyan
+            value: textColor-darkMode-cyan
+          - label: Egg
+            value: textColor-darkMode-egg
+          - label: Fuchsia
+            value: textColor-darkMode-fuchsia
+          - label: Green
+            value: textColor-darkMode-green
+          - label: emerald Green
+            value: textColor-darkMode-emerald
+          - label: terminal Green
+            value: textColor-darkMode-terminalGreen
+          - label: Indigo
+            value: textColor-darkMode-indigo
+          - label: Lime
+            value: textColor-darkMode-lime
+          - label: Orange
+            value: textColor-darkMode-orange
+          - label: Red
+            value: textColor-darkMode-red
+          - label: Rose
+            value: textColor-darkMode-pink
+          - label: light Rose
+            value: textColor-darkMode-rose
+          - label: Silver
+            value: textColor-darkMode-silver
+          - label: Solarized base0
+            value: textColor-darkMode-solarized-base0
+          - label: Solarized base1
+            value: textColor-darkMode-solarized-base1
+          - label: Solarized base2
+            value: textColor-darkMode-solarized-base2
+          - label: Teal
+            value: textColor-darkMode-teal
+          - label: intense Violet
+            value: textColor-darkMode-violet
+          - label: dark Violet
+            value: textColor-darkMode-purple
+          - label: White
+            value: textColor-darkMode-white
+          - label: Yellow
+            value: textColor-darkMode-yellow
+          - label: Zinc
+            value: textColor-darkMode-zinc
+      - id: OT-pageBackground-darkMode
+        title: Notes background in Reading mode
+        title.fr: Fond des fiches en mode «Lecture / Consultation»
+        description: Different kinds of paper are available. “None” keeps the plain background determined by the palette.
+        description.fr: Un fond uni ou un choix de fonds structurés.
+        type: class-select
+        allowEmpty: false
+        default: pb-dm-none
+        options:
+          - label: None
+            value: pb-dm-none
+          - label: Paper 1
+            value: pb-dm-paper-1
+          - label: Paper 2
+            value: pb-dm-paper-2
+          - label: Paper 3
+            value: pb-dm-paper-3
+          - label: Paper 4
+            value: pb-dm-paper-4
+          - label: Paper 5
+            value: pb-dm-paper-5
+          - label: Paper 6
+            value: pb-dm-paper-6
+          - label: Brown paper
+            value: pb-dm-brownPaper-1
+          - label: Black paper 1
+            value: pb-dm-blackPaper-1
+          - label: Black paper 2
+            value: pb-dm-blackPaper-2
+          - label: Black paper 3
+            value: pb-dm-blackPaper-3
+          - label: Horizontal texture
+            value: pb-dm-horiz-texture
+          - label: Parchment
+            value: pb-dm-parchment-1
+      - id: paperBackground-in-livePreview-DM
+        title: Paper background also in Live Preview (Dark mode)
+        title.fr: Fond papier également en mode “Live” (mode Dark)
+        description: Optionally the paper background can also be used in Live Preview.
+        description.fr: Optionnellement, le fond papier peut aussi être utilisé lorsqu’on édite les fiches.
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-inkColor-darkMode
+        title: Text color in Writing / Editing mode
+        title.fr: Couleur du texte en mode Écriture / Édition
+        description: “Default” means the same color as in reading mode.
+        description.fr: « Par défaut » signifie la même couleur qu’en mode Lecture / Consultation».
+        type: class-select
+        allowEmpty: false
+        default: inkColor-darkMode-default
+        options:
+          - label: Default
+            value: inkColor-darkMode-default
+          - label: Amber
+            value: inkColor-darkMode-amber
+          - label: Black
+            value: inkColor-darkMode-black
+          - label: Blue
+            value: textColor-darkMode-blue
+          - label: sky Blue
+            value: inkColor-darkMode-sky
+          - label: light Blue
+            value: inkColor-darkMode-lightBlue
+          - label: night Blue
+            value: inkColor-darkMode-favoriteBlue
+          - label: royal Blue
+            value: inkColor-darkMode-royalBlue
+          - label: Brown
+            value: inkColor-darkMode-brown
+          - label: Cyan
+            value: inkColor-darkMode-cyan
+          - label: Egg
+            value: inkColor-darkMode-egg
+          - label: Fuchsia
+            value: inkColor-darkMode-fuchsia
+          - label: Green
+            value: inkColor-darkMode-green
+          - label: emerald Green
+            value: inkColor-darkMode-emerald
+          - label: terminal Green
+            value: inkColor-darkMode-terminalGreen
+          - label: Indigo
+            value: inkColor-darkMode-indigo
+          - label: Lime
+            value: inkColor-darkMode-lime
+          - label: Orange
+            value: inkColor-darkMode-orange
+          - label: Red
+            value: inkColor-darkMode-red
+          - label: Rose
+            value: inkColor-darkMode-pink
+          - label: pale Rose
+            value: inkColor-darkMode-rose
+          - label: Silver
+            value: inkColor-darkMode-silver
+          - label: Solarized base0
+            value: inkColor-darkMode-solarized-base0
+          - label: Solarized base1
+            value: inkColor-darkMode-solarized-base1
+          - label: Solarized base2
+            value: inkColor-darkMode-solarized-base2
+          - label: Solarized base3
+            value: inkColor-darkMode-solarized-base3
+          - label: Teal
+            value: inkColor-darkMode-teal
+          - label: intense    Violet
+            value: inkColor-darkMode-violet
+          - label: dark Violet
+            value: inkColor-darkMode-purple
+          - label: White
+            value: inkColor-darkMode-white
+          - label: Yellow
+            value: inkColor-darkMode-yellow
+          - label: Zinc
+            value: inkColor-darkMode-zinc
+      - id: OT-editingBackgroundColor-darkMode
+        title: Notes background in Writing / Editing mode
+        title.fr: Couleur du fond de page en mode Écriture/ Édition
+        description: “Default” means the background associated with the above chosen dark palette.
+        description.fr: Par défaut, le fond déterminé par la palette générale choisie ci-dessus.
+        type: class-select
+        allowEmpty: false
+        default: editingBackgroundColor-darkMode-default
+        options:
+          - label: Default
+            value: editingBackgroundColor-darkMode-default
+          - label: Beige
+            value: editingBackgroundColor-darkMode-beige
+          - label: light Beige
+            value: editingBackgroundColor-darkMode-lightBeige
+          - label: Black
+            value: editingBackgroundColor-darkMode-black
+          - label: cobalt Blue
+            value: editingBackgroundColor-darkMode-cobaltBlue
+          - label: sky Blue
+            value: editingBackgroundColor-darkMode-sky
+          - label: pale Blue
+            value: editingBackgroundColor-darkMode-AliceBlue
+          - label: Green
+            value: editingBackgroundColor-darkMode-green
+          - label: light Green
+            value: editingBackgroundColor-darkMode-lightGreen
+          - label: light Grey
+            value: editingBackgroundColor-darkMode-grey
+          - label: Ivory
+            value: editingBackgroundColor-darkMode-ivory
+          - label: Red
+            value: editingBackgroundColor-darkMode-red
+          - label: light Red
+            value: editingBackgroundColor-darkMode-lightRed
+          - label: Rose
+            value: editingBackgroundColor-darkMode-rose
+          - label: pale Rose
+            value: editingBackgroundColor-darkMode-lightRose
+          - label: White
+            value: editingBackgroundColor-darkMode-white
+          - label: snow White
+            value: editingBackgroundColor-darkMode-snowWhite
+          - label: WordPerfect
+            value: editingBackgroundColor-darkMode-WordPerfect
+          - label: Yellow
+            value: editingBackgroundColor-darkMode-yellow
+      - id: OT-colored-headings-darkMode
+        title: Colored H1 to H5 headings (dark mode)
+        title.fr: Titres colorés (H1 à H5, Dark mode)
+        description: You may activate the coloring of the headings or keep them like normal text.
+        description.fr: Vous pouvez activer la colorisation des titres H1 à H6 ou bien les laisser dans la couleur du texte courant.
+        type: class-toggle
+        addCommand: true
+      - id: textSelection-takesAccentColor-darkMode
+        title: Text selection takes accent color (Dark mode)
+        title.fr: La sélection prend la couleur d’accentuation (mode Dark)
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-highlight-color-dark
+        title: Highlighting color
+        title.fr: Couleur du « Stabilo »
+        description: “Default” chooses a color associated with the above chosen dark palette.
+        description.fr: « Par défaut » signifie une couleur associée à l’ambiance générale courante.
+        type: class-select
+        allowEmpty: false
+        default: highlight-color-dark-default
+        options:
+          - label: Default
+            value: highlight-color-dark-default
+          - label: light Blue
+            value: highlight-color-dark-lightBlue
+          - label: dark Blue
+            value: highlight-color-dark-strongBlue
+          - label: light Green
+            value: highlight-color-dark-lightGreen
+          - label: dark Green
+            value: highlight-color-dark-strongGreen
+          - label: light Orange
+            value: highlight-color-dark-lightOrange
+          - label: dark Orange
+            value: highlight-color-dark-strongOrange
+          - label: light Pink
+            value: highlight-color-dark-lightRose
+          - label: dark Pink
+            value: highlight-color-dark-strongRose
+          - label: light Violet
+            value: highlight-color-dark-lightViolet
+          - label: dark Violet
+            value: highlight-color-dark-strongViolet
+          - label: classic Yellow
+            value: highlight-color-dark-lightYellow
+          - label: dark Yellow
+            value: highlight-color-dark-strongYellow
+      - id: OT-Dark-pillsColor
+        title: Color of the pills inside the Properties panel
+        title.fr: Couleur des “pills” dans le panneau des propriétés
+        type: class-select
+        allowEmpty: false
+        default: OT-Dark-pills-color-accent
+        options:
+          - label: Accent color
+            value: OT-Dark-pills-color-accent
+          - label: Same as normal text
+            value: OT-Dark-pills-color-text
+          - label: Same as links
+            value: OT-Dark-pills-color-link
+          - label: Black
+            value: OT-Dark-pills-color-black
+          - label: Grey
+            value: OT-Dark-pills-color-grey
+          - label: White
+            value: OT-Dark-pills-color-white
+          - label: Theme’s tone
+            value: OT-Dark-pills-color-theme
+      - id: OT-READING-mode-settings
+        title: READING mode
+        title.fr: Mode «LECTURE / CONSULTATION»
+        description: Adjustments for the comfort of reading. Table styles. Bases. Images.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: OT-readingMode-text-size
+        title: Body text size [px]
+        title.fr: Taille des caractères [px]
+        type: variable-number
+        default: 17
+        format: px
+      - id: OT-readingMode-natural-line-height
+        title: Natural line height for the chosen font (Reading)
+        title.fr: Interligne naturel pour la fonte choisie (en lecture)
+        description: When ON, Reading mode uses more or less the line-height intended by the font designer and the following value is ignored.
+        description.fr: ON signifie que l’interligne sera plus ou moins celui prévu par le créateur de la fonte et la valeur ci-dessous est ignorée.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-readingMode-line-height
+        title: Line height [em]
+        title.fr: Interligne [em]
+        type: variable-number
+        default: 1.5
+        format: em
+        disableIF:
+          - OT-readingMode-natural-line-height
+      - id: OT-readingMode-line-width
+        title: Line length [em]
+        title.fr: Longueur de la ligne [em]
+        type: variable-number
+        default: 44
+        format: em
+      - id: OT-readingMode-tableText-percent
+        title: "Size of the text in table cells (%\_of\_body\_text\_size). 100\_=\_same\_size"
+        title.fr: "Taille des caractères dans les tables, en pourcents du texte normal. 100\_=\_même\_taille"
+        description: It’s generally practical to have a smaller text size inside table cells.
+        type: variable-number
+        default: 90
+      - id: OT-tables-style
+        title: Tables style
+        title.fr: Style des tables
+        description: Three different styles for tables.
+        description.fr: Différents styles de tables. Par défaut, le modèle « Obsidian nature ».
+        type: class-select
+        allowEmpty: false
+        default: OT-tables-alternate-rows
+        options:
+          - label: Obsidian plain
+            value: OT-tables-native
+          - label: Improved
+            value: OT-tables-improved
+          - label: Alternate row backgrounds
+            value: OT-tables-alternate-rows
+      - id: OT-bases-hide-header-on
+        title: 'Bases: hide header in Preview'
+        title.fr: 'Bases : cacher l’en-tête en mode Lecture'
+        description: 'Hide the Bases toolbar/header in note Preview. Use cssclasses: bases-header-on in a note to temporarily show it again.'
+        description.fr: 'Cache la barre d’outils/en-tête des Bases en mode Lecture. Utiliser cssclasses: bases-header-on dans une note pour la réafficher ponctuellement.'
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-images-rendering
+        title: Images style
+        title.fr: Style des images
+        type: class-select
+        allowEmpty: false
+        default: images-with-shadow
+        options:
+          - label: plain
+            value: plain-images
+          - label: with a frame
+            value: images-with-frame
+          - label: with a shadow
+            value: images-with-shadow
+          - label: with a frame and a shadow
+            value: images-with-frame-and-shadow
+      - id: OT-img-max-height-preview
+        title: Images max height [in pixels]
+        title.fr: Hauteur maximale des images [en pixels]
+        type: variable-number
+        default: 550
+        format: px
+      - id: OT-EDIT-mode-settings
+        title: WRITING / EDITING mode
+        title.fr: Mode «ÉCRITURE / ÉDITION»
+        description: Adjustments for when you’re editing your notes.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: OT-edit-text-size
+        title: Body text size [px]
+        title.fr: Taille des caractères [px]
+        type: variable-number
+        default: 17
+        format: px
+      - id: OT-edit-natural-line-height
+        title: Natural line height for the chosen font (Edit mode)
+        title.fr: Interligne naturel pour la fonte choisie (en écriture)
+        description: When ON, Editing mode uses more or less the line-height intended by the font designer and the following value is ignored.
+        description.fr: ON signifie qu’en écriture, l’interligne sera plus ou moins celui prévu par le créateur de la fonte et la valeur ci-dessous est ignorée.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: OT-edit-line-height
+        title: Line height [em]
+        title.fr: Interligne [em]
+        type: variable-number
+        default: 1.5
+        format: em
+      - id: OT-edit-line-width
+        title: Line length [em]
+        title.fr: Longueur de la ligne [em]
+        description: By default, you get longer lines than plain Obsidian.
+        description.fr: Par défaut, une valeur un peu plus généreuse que le « défaut » d’Obsidian.
+        type: variable-number
+        default: 44
+        format: em
+      - id: OT-edit-table-text-percent
+        title: "Size of the text in table cells (%\_of\_body\_text\_size). 100\_=\_same\_size"
+        title.fr: "Taille des caractères dans les tables, en pourcents du texte normal. 100\_=\_même taille"
+        description: It’s generally practical to have a smaller text size inside table cells.
+        type: variable-number
+        default: 90
+      - id: OT-table-cell-edit-size-lock
+        title: While editing a table, the chosen text size sticks.
+        title.fr: En mode Live editing, la taille du texte des cellules ne change pas.
+        description: "OFF ⭢\_When editing a table cell in Live mode, the text size changes to body text size."
+        description.fr: "OFF ⭢\_En mode Live editing, le texte de la cellule courante prend la taille du texte normal."
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: OT-img-max-height-live
+        title: Images max height in Live Preview [in pixels]
+        title.fr: Hauteur maximale des images en “Live Preview” [en pixels]
+        type: variable-number
+        default: 150
+        format: px
+      - id: OlivierPS-support
+        title: Support OlivierPS
+        description: If you like the theme, here is a way to support development
+        type: heading
+        level: 2
+        collapsed: true
+      - id: OlivierPS-url-donate
+        title: Buy Me a Book
+        description: '[→ BuyMeACoffee.com](https://www.buymeacoffee.com/mp2ncr4vh9x)'
+        type: info-text
+        markdown: true

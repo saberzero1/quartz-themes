@@ -1,80 +1,83 @@
-- name: Golden Coffee - Style Settings
-  id: GCSS
-  settings:
-    - id: Heading1
-      title: Vault Name on the Top
-      type: heading
-      level: 1
-      collapsed: true
-    - id: hvn
-      title: Hide the Vault Name of your vault on the top of the app
-      type: class-toggle
-      default: true
-    - id: Heading12
-      title: Background
-      type: heading
-      level: 1
-      collapsed: true
-    - id: como
-      title: Pattern
-      description: Turn it off if you don't want the new background pattern
-      type: class-toggle
-      default: true
-    - id: Heading2
-      title: Headings
-      type: heading
-      level: 1
-      collapsed: true
-    - id: nmhn
-      title: Get the \#'s back instead of the Hn's
-      description: Turn it off for you to have your \#'s back
-      type: class-toggle
-      default: true
-    - id: dcH
-      title: Don't center the headings
-      description: Turn it off if you don't want to center your headings on preview view
-      type: class-toggle
-      default: true
-    - id: Heading3
-      title: Plugins
-      type: heading
-      level: 1
-      collapsed: true
-    - id: Heading31
-      title: Dataview
-      description: Change the CSS Settings applied to "Dataview"
-      type: heading
-      level: 2
-      collapsed: true
-    - id: dcfw
-      title: Capitalize First Word
-      description: Capitalize the first word from every table in "Dataview"
-      type: class-toggle
-      default: true
-    - id: Heading32
-      title: Kanban
-      description: Change the CSS Settings applied to "Kanban"
-      type: heading
-      level: 2
-      collapsed: true
-    - id: pkkg
-      title: Kanban Grid
-      description: Toggle the Grid Vision of Kanban
-      type: class-toggle
-      default: true
-    - id: Heading33
-      title: Admonition
-      description: Change the CSS Settings applied to "Admonition"
-      type: heading
-      level: 2
-      collapsed: true
-    - id: pacat
-      title: Centered Admonition Title
-      description: Toggle the center status of the title
-      type: class-toggle
-      default: true
-    - id: pacac
-      title: Centered Admonition Content
-      description: Toggle the center status of the content of the Admonition Content. (Excluding some stuff that don't center well, like unordered lists and ordered lists)
-      type: class-toggle
-      default: false
+mode: replace
+sections:
+  - name: Golden Coffee - Style Settings
+    id: GCSS
+    collapsed: false
+    settings:
+      - id: Heading1
+        title: Vault Name on the Top
+        type: heading
+        level: 1
+        collapsed: true
+      - id: hvn
+        title: Hide the Vault Name of your vault on the top of the app
+        type: class-toggle
+        default: true
+      - id: Heading12
+        title: Background
+        type: heading
+        level: 1
+        collapsed: true
+      - id: como
+        title: Pattern
+        description: Turn it off if you don't want the new background pattern
+        type: class-toggle
+        default: true
+      - id: Heading2
+        title: Headings
+        type: heading
+        level: 1
+        collapsed: true
+      - id: nmhn
+        title: Get the \#'s back instead of the Hn's
+        description: Turn it off for you to have your \#'s back
+        type: class-toggle
+        default: true
+      - id: dcH
+        title: Don't center the headings
+        description: Turn it off if you don't want to center your headings on preview view
+        type: class-toggle
+        default: true
+      - id: Heading3
+        title: Plugins
+        type: heading
+        level: 1
+        collapsed: true
+      - id: Heading31
+        title: Dataview
+        description: Change the CSS Settings applied to "Dataview"
+        type: heading
+        level: 2
+        collapsed: true
+      - id: dcfw
+        title: Capitalize First Word
+        description: Capitalize the first word from every table in "Dataview"
+        type: class-toggle
+        default: true
+      - id: Heading32
+        title: Kanban
+        description: Change the CSS Settings applied to "Kanban"
+        type: heading
+        level: 2
+        collapsed: true
+      - id: pkkg
+        title: Kanban Grid
+        description: Toggle the Grid Vision of Kanban
+        type: class-toggle
+        default: true
+      - id: Heading33
+        title: Admonition
+        description: Change the CSS Settings applied to "Admonition"
+        type: heading
+        level: 2
+        collapsed: true
+      - id: pacat
+        title: Centered Admonition Title
+        description: Toggle the center status of the title
+        type: class-toggle
+        default: true
+      - id: pacac
+        title: Centered Admonition Content
+        description: Toggle the center status of the content of the Admonition Content. (Excluding some stuff that don't center well, like unordered lists and ordered lists)
+        type: class-toggle
+        default: false

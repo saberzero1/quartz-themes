@@ -1,29 +1,11 @@
-- name: Core
-  id: vr-core
-  settings:
-    - id: vr-scheme-light
-      title: Colour Scheme (Light Mode)
-      description: The colours used in the Light Mode interface.
-      type: class-select
-      default: vr-colour-light-none
-      options:
-        - label: Default
-          value: vr-colour-light-none
-    - id: vr-scheme-dark
-      title: Colour Scheme (Dark Mode)
-      description: The colours used in the Dark Mode interface.
-      type: class-select
-      default: vr-colour-dark-none
-      options:
-        - label: Default
-          value: vr-colour-dark-none
-        - label: 👽 Zenburn 🥗
-          value: vr-zenburn
-- name: Editor
-  id: viridian-editor
-  settings:
-    - id: vr-fonts
-      title: Typefaces
-      type: heading
-      level: 1
-      collapsed: true
+mode: replace
+sections:
+  - name: Editor
+    id: viridian-editor
+    collapsed: false
+    settings:
+      - id: vr-fonts
+        title: Typefaces
+        type: heading
+        level: 1
+        collapsed: true
