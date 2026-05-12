@@ -103,6 +103,8 @@ export function resolveRuntimeEvidenceModes(modes) {
   const normalized = Array.isArray(modes)
     ? RUNTIME_EVIDENCE_MODES.filter((mode) => modes.includes(mode))
     : [];
+  // Compatibility fallback: preserve the verifier's historical single-mode
+  // behavior instead of silently skipping runtime evidence when metadata is absent.
   return normalized.length > 0 ? normalized : ["light"];
 }
 

@@ -1073,7 +1073,13 @@ function removeStaleRuntimeEvidenceSidecars(themeSlug, activeModes) {
   const removed = [];
   for (const mode of getStaleRuntimeEvidenceModes(themeSlug, activeModes)) {
     const sidecarPath = getRuntimeEvidenceSidecarPath(themeSlug, mode);
-    unlinkSync(sidecarPath);
+    try {
+      unlinkSync(sidecarPath);
+    } catch (error) {
+      throw new Error(
+        `Failed to remove stale runtime evidence sidecar ${sidecarPath}: ${error.message}`,
+      );
+    }
     removed.push(sidecarPath);
   }
   return removed;
@@ -1615,6 +1621,8 @@ async function main() {
 
   const args = process.argv.slice(2);
   const runLive = args.includes("--live");
+  // Live verification always includes the preflight stage so the report captures
+  // readiness/hygiene issues alongside the actual live extraction results.
   const runPreflight = args.includes("--preflight") || runLive;
   const isTestSet = args.includes("--test-set");
   const isAll = args.includes("--all");
@@ -1627,7 +1635,7 @@ async function main() {
     console.log("  node runner/scripts/verify-style-settings.mjs --all");
     console.log("  node runner/scripts/verify-style-settings.mjs --all --preflight");
     console.log(
-      "  node runner/scripts/verify-style-settings.mjs --test-set --live",
+      "  node runner/scripts/verify-style-settings.mjs --test-set --live  # includes preflight",
     );
     process.exit(0);
   }
