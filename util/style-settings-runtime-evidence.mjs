@@ -197,6 +197,38 @@ export function getVariableNumberProbeValues(setting) {
 }
 
 /**
+ * Derive the set of setting IDs that have at least one emitting (non-trivial) effect
+ * directly from the effect records stored in themes.json style_settings.effects.
+ *
+ * This is CSS-independent: it does not require the vault's theme.css to be present,
+ * making it safe to call during preflight, planning, and any other context where the
+ * full CSS-based selector-impact graph is unavailable.
+ *
+ * Only settings with at least one effect whose effectKind is not "non-emitting" are
+ * included. Settings whose every effect is "non-emitting" (headings, info-text, etc.)
+ * are excluded to avoid wasting observation budget on no-op settings.
+ *
+ * @param {Array<{
+ *   settingId: string;
+ *   effects?: Array<{ effectKind: string }>;
+ * }>} effectRecords - Effect records from themes.json style_settings.effects
+ * @returns {Set<string>} Set of setting IDs that have at least one emitting effect
+ */
+export function effectSettingIdsFromEffectRecords(effectRecords) {
+  const result = new Set();
+  for (const record of effectRecords || []) {
+    if (
+      record?.settingId &&
+      Array.isArray(record.effects) &&
+      record.effects.some((e) => e?.effectKind && e.effectKind !== "non-emitting")
+    ) {
+      result.add(record.settingId);
+    }
+  }
+  return result;
+}
+
+/**
  * Enumerate all single-setting runtime observation payloads for broad single-setting coverage.
  *
  * Scaling strategy (single-setting only — no pairwise or higher-order combinations):

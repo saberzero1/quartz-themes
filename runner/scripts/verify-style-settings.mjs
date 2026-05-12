@@ -18,6 +18,7 @@ import {
 import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
 import {
   RUNTIME_EVIDENCE_MODES,
+  effectSettingIdsFromEffectRecords,
   enumerateRuntimeObservationPayloads,
   resolveRuntimeEvidenceModes,
   validateRuntimeEvidenceSidecar,
@@ -47,6 +48,25 @@ const TEST_SET = [
   "adrenaline",
   "shimmering-focus",
   "hidden-grotto",
+];
+
+/**
+ * Representative extraction fixture files used for multi-surface runtime observation.
+ * These mirror the key content surfaces from the extraction pipeline so that
+ * computed-style diffs capture element-specific DOM surfaces (callouts, tables,
+ * code blocks, etc.) rather than being limited to whatever single note happens
+ * to be open.
+ *
+ * Kept small and deterministic: only the highest-value surfaces are included so
+ * that the per-observation cycle cost stays bounded.
+ */
+const RUNTIME_EVIDENCE_FIXTURE_FILES = [
+  "general.md",
+  "headings.md",
+  "callouts.md",
+  "tables.md",
+  "theme-code/syntax-samples.md",
+  "theme-embeds/frontmatter.md",
 ];
 
 const CLI_TIMEOUT = 180000;
@@ -281,6 +301,60 @@ async function captureRuntimeSnapshot(cli, selectors) {
       return { bodyClasses, cssVariables, selectorStyles };
     })();
   `);
+}
+
+/**
+ * Capture a runtime snapshot across multiple representative content surfaces
+ * (extraction fixture files) and merge the results.
+ *
+ * This mirrors the extraction pipeline's multi-file strategy: opening general.md,
+ * callouts.md, tables.md, etc. ensures that element-specific DOM surfaces
+ * (callout blocks, data tables, code blocks, headings) are present in the view
+ * when computed-style values are sampled.
+ *
+ * CSS custom-property and body-class values are invariant across files
+ * (they are set on :root/body) so only the first successful file's values are
+ * used for those; selectorStyles are merged across all files so every fixture's
+ * DOM contribution is included in the diff.
+ *
+ * Files that don't exist or fail to load are silently skipped so that the
+ * observation loop stays robust even when the vault is partially populated.
+ *
+ * @param {Object} cli - ObsidianCLI instance
+ * @param {string[]} selectors - CSS selectors to observe computed styles on
+ * @returns {Promise<{bodyClasses: string[], cssVariables: Record<string,string>, selectorStyles: Record<string, Record<string,string>>}>}
+ */
+async function captureMultiSurfaceRuntimeSnapshot(cli, selectors) {
+  let merged = null;
+
+  for (const file of RUNTIME_EVIDENCE_FIXTURE_FILES) {
+    try {
+      await cli.openFile(file);
+      await cli.waitForReady({ timeout: 5000, interval: 300, label: file });
+    } catch {
+      // File may not exist or may fail to load — skip it gracefully.
+      continue;
+    }
+
+    const snapshot = await captureRuntimeSnapshot(cli, selectors);
+    if (!snapshot) continue;
+
+    if (!merged) {
+      merged = snapshot;
+    } else {
+      // Merge selectorStyles: later files can surface elements not found earlier.
+      for (const [selector, styles] of Object.entries(snapshot.selectorStyles || {})) {
+        if (!(selector in merged.selectorStyles)) {
+          merged.selectorStyles[selector] = styles;
+        }
+      }
+      // CSS variables and body classes are root-level and stable across views;
+      // prefer the first captured values (already set in merged).
+    }
+  }
+
+  // Fall back to a plain snapshot if no fixture file loaded successfully.
+  return merged ?? (await captureRuntimeSnapshot(cli, selectors));
 }
 
 function diffRuntimeSnapshots(before, after) {
@@ -1115,11 +1189,13 @@ function buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings) {
         modeCss,
       });
 
-      const effectSettingIds = new Set(
-        Object.values(selectorImpacts).flatMap((record) =>
-          record.impacts.map((impact) => impact.settingId),
-        ),
-      );
+      // Derive the eligible setting IDs directly from effect records — this is
+      // CSS-independent and works even when the vault's theme.css is absent
+      // (e.g. during preflight or first-run planning). The CSS-based
+      // selectorImpacts graph is still built above for targeted DOM selector
+      // observation during live runs; it is just no longer the gating filter
+      // for whether a setting is included in the observation plan.
+      const effectSettingIds = effectSettingIdsFromEffectRecords(effectRecords);
       observationPayloads = enumerateRuntimeObservationPayloads(
         themeId,
         settings,
@@ -1413,7 +1489,7 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
             .map(([selector]) => selector)
             .slice(0, MAX_RUNTIME_SELECTORS);
 
-          const baselineSnapshot = await captureRuntimeSnapshot(
+          const baselineSnapshot = await captureMultiSurfaceRuntimeSnapshot(
             cli,
             selectorsForSetting,
           );
@@ -1424,7 +1500,7 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
             label: `${themeSlug} ${mode} runtime evidence ${observationPayload.settingId}`,
           });
 
-          const changedSnapshot = await captureRuntimeSnapshot(
+          const changedSnapshot = await captureMultiSurfaceRuntimeSnapshot(
             cli,
             selectorsForSetting,
           );

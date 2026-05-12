@@ -6,6 +6,7 @@ import {
   validateRuntimeEvidenceSidecar,
   getVariableNumberProbeValues,
   enumerateRuntimeObservationPayloads,
+  effectSettingIdsFromEffectRecords,
   RUNTIME_OBSERVATION_TEXT_VALUE,
   RUNTIME_OBSERVATION_TEST_NUMBER,
   MAX_CLASS_SELECT_OPTIONS_PER_SETTING,
@@ -392,5 +393,120 @@ describe("enumerateRuntimeObservationPayloads", () => {
     assert.equal(first[1].settingId, "select-b");
     assert.equal(first[2].settingId, "select-b");
     assert.equal(first[first.length - 1].settingId, "text-d");
+  });
+});
+
+describe("effectSettingIdsFromEffectRecords", () => {
+  test("returns IDs of settings with at least one emitting effect", () => {
+    const effectRecords = [
+      {
+        settingId: "toggle-a",
+        effects: [{ effectKind: "body-class-toggle" }],
+      },
+      {
+        settingId: "select-b",
+        effects: [{ effectKind: "body-class-select" }],
+      },
+      {
+        settingId: "heading-c",
+        effects: [{ effectKind: "non-emitting" }],
+      },
+    ];
+    const ids = effectSettingIdsFromEffectRecords(effectRecords);
+    assert.equal(ids.size, 2);
+    assert.ok(ids.has("toggle-a"));
+    assert.ok(ids.has("select-b"));
+    assert.ok(!ids.has("heading-c"));
+  });
+
+  test("excludes settings where ALL effects are non-emitting", () => {
+    const effectRecords = [
+      {
+        settingId: "info-text",
+        effects: [
+          { effectKind: "non-emitting" },
+          { effectKind: "non-emitting" },
+        ],
+      },
+    ];
+    const ids = effectSettingIdsFromEffectRecords(effectRecords);
+    assert.equal(ids.size, 0);
+  });
+
+  test("includes settings with mixed emitting and non-emitting effects", () => {
+    const effectRecords = [
+      {
+        settingId: "slider-x",
+        effects: [
+          { effectKind: "non-emitting" },
+          { effectKind: "themed-css-variable" },
+        ],
+      },
+    ];
+    const ids = effectSettingIdsFromEffectRecords(effectRecords);
+    assert.ok(ids.has("slider-x"));
+  });
+
+  test("returns empty set for empty or missing input", () => {
+    assert.equal(effectSettingIdsFromEffectRecords([]).size, 0);
+    assert.equal(effectSettingIdsFromEffectRecords(null).size, 0);
+    assert.equal(effectSettingIdsFromEffectRecords(undefined).size, 0);
+  });
+
+  test("skips records with missing settingId or effects", () => {
+    const effectRecords = [
+      { effects: [{ effectKind: "body-class-toggle" }] },
+      { settingId: "no-effects" },
+      { settingId: "empty-effects", effects: [] },
+      { settingId: "good", effects: [{ effectKind: "css-variable" }] },
+    ];
+    const ids = effectSettingIdsFromEffectRecords(effectRecords);
+    assert.equal(ids.size, 1);
+    assert.ok(ids.has("good"));
+  });
+
+  test("produces non-zero results for representative themes.json-shaped records", () => {
+    // Simulate what themes.json effects look like for a theme with class-toggles
+    // and variable settings: the IDs from effectRecords should map onto
+    // enumerateRuntimeObservationPayloads and yield non-zero payloads.
+    const effectRecords = [
+      {
+        settingId: "heading-section",
+        effects: [{ effectKind: "non-emitting" }],
+      },
+      {
+        settingId: "dark-toggle",
+        effects: [{ effectKind: "body-class-toggle", className: "theme-dark" }],
+      },
+      {
+        settingId: "accent-select",
+        effects: [{ effectKind: "body-class-select", classValues: ["accent-a", "accent-b"] }],
+      },
+      {
+        settingId: "font-size",
+        effects: [{ effectKind: "css-variable", variable: "--font-size" }],
+      },
+    ];
+
+    const ids = effectSettingIdsFromEffectRecords(effectRecords);
+
+    // Only the three emitting settings should be included
+    assert.equal(ids.size, 3);
+    assert.ok(!ids.has("heading-section"));
+    assert.ok(ids.has("dark-toggle"));
+    assert.ok(ids.has("accent-select"));
+    assert.ok(ids.has("font-size"));
+
+    // When fed into enumerateRuntimeObservationPayloads, we get real payloads
+    const settings = [
+      { id: "dark-toggle", type: "class-toggle" },
+      { id: "accent-select", type: "class-select", options: [{ value: "accent-a" }, { value: "accent-b" }] },
+      { id: "font-size", type: "variable-number", min: 12, max: 24, format: "px" },
+      { id: "heading-section", type: "heading" },
+    ];
+    const payloads = enumerateRuntimeObservationPayloads("my-theme", settings, ids);
+    assert.ok(payloads.length > 0, "expected non-zero payloads for emitting settings");
+    // heading-section should not appear in payloads (non-emitting + unsupported type)
+    assert.ok(payloads.every((p) => p.settingId !== "heading-section"));
   });
 });
