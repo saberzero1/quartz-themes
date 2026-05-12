@@ -7,6 +7,7 @@ import {
   writeFileSync,
   mkdirSync,
   readdirSync,
+  unlinkSync,
 } from "fs";
 import { resolve, join } from "path";
 import {
@@ -16,7 +17,10 @@ import {
 } from "../../util/postcss-style-settings.mjs";
 import { buildSelectorImpactGraph } from "../../util/style-settings-selector-impact.mjs";
 import {
+  RUNTIME_EVIDENCE_MODES,
   enumerateRuntimeObservationPayloads,
+  resolveRuntimeEvidenceModes,
+  validateRuntimeEvidenceSidecar,
 } from "../../util/style-settings-runtime-evidence.mjs";
 import yaml from "js-yaml";
 
@@ -1054,6 +1058,254 @@ function writeStyleSettingsData(data) {
   writeFileSync(STYLE_SETTINGS_FILE, JSON.stringify(data, null, 2));
 }
 
+function getRuntimeEvidenceSidecarPath(themeSlug, mode) {
+  return join(RESULTS_DIR, themeSlug, `${mode}-style-settings-runtime-evidence.json`);
+}
+
+function getStaleRuntimeEvidenceModes(themeSlug, activeModes) {
+  return RUNTIME_EVIDENCE_MODES.filter(
+    (mode) =>
+      !activeModes.includes(mode) && existsSync(getRuntimeEvidenceSidecarPath(themeSlug, mode)),
+  );
+}
+
+function removeStaleRuntimeEvidenceSidecars(themeSlug, activeModes) {
+  const removed = [];
+  for (const mode of getStaleRuntimeEvidenceModes(themeSlug, activeModes)) {
+    const sidecarPath = getRuntimeEvidenceSidecarPath(themeSlug, mode);
+    try {
+      unlinkSync(sidecarPath);
+    } catch (error) {
+      throw new Error(
+        `Failed to remove stale runtime evidence sidecar ${sidecarPath}: ${error instanceof Error ? error.stack || error.message : String(error)}`,
+      );
+    }
+    removed.push(sidecarPath);
+  }
+  return removed;
+}
+
+function buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings) {
+  const modes = resolveRuntimeEvidenceModes(themeEntry?.modes);
+  const effectRecords = Array.isArray(themeEntry?.style_settings?.effects)
+    ? themeEntry.style_settings.effects
+    : [];
+  const classSettings = collectClassSettingsForGraph(themeSlug, settings);
+  const { css, error } = readThemeCss(themeSlug);
+
+  if (effectRecords.length > 0 && error) {
+    return {
+      modes,
+      effectRecords,
+      classSettings,
+      observationPlans: [],
+      error,
+    };
+  }
+
+  const observationPlans = modes.map((mode) => {
+    let selectorImpacts = {};
+    let observationPayloads = [];
+
+    if (effectRecords.length > 0) {
+      const modeCss = mode === "dark" ? { dark: css || "" } : { light: css || "" };
+      selectorImpacts = buildSelectorImpactGraph({
+        effectRecords,
+        classSettings,
+        modeCss,
+      });
+
+      const effectSettingIds = new Set(
+        Object.values(selectorImpacts).flatMap((record) =>
+          record.impacts.map((impact) => impact.settingId),
+        ),
+      );
+      observationPayloads = enumerateRuntimeObservationPayloads(
+        themeId,
+        settings,
+        effectSettingIds,
+      );
+    }
+
+    return {
+      mode,
+      modeCss: mode === "dark" ? { dark: css || "" } : { light: css || "" },
+      selectorImpacts,
+      observationPayloads,
+      selectorImpactCount: Object.keys(selectorImpacts).length,
+    };
+  });
+
+  return {
+    modes,
+    effectRecords,
+    classSettings,
+    observationPlans,
+    error: null,
+  };
+}
+
+function verifyRuntimeEvidencePreflight(themeSlug, themeEntry, themeFileContent) {
+  const failures = [];
+  const styleSettingsIds = resolveStyleSettingsIds(themeEntry, themeFileContent);
+  const themeId = styleSettingsIds[0];
+  if (!themeId) {
+    return {
+      pass: true,
+      failures,
+      skipped: true,
+      reason: "styleSettingsId not found in generated theme file",
+    };
+  }
+
+  const settings = getThemeSettings(themeEntry);
+  if (settings.length === 0) {
+    return {
+      pass: true,
+      failures,
+      note: "No style settings configured",
+    };
+  }
+
+  const plan = buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings);
+  if (plan.error) {
+    return {
+      pass: false,
+      failures: [plan.error],
+    };
+  }
+
+  const staleModes = getStaleRuntimeEvidenceModes(themeSlug, plan.modes);
+  if (staleModes.length > 0) {
+    failures.push(
+      `Stale runtime evidence sidecars for unsupported mode(s): ${staleModes.join(", ")}`,
+    );
+  }
+
+  const perMode = {};
+  let plannedObservations = 0;
+  for (const { mode, selectorImpactCount, observationPayloads } of plan.observationPlans) {
+    const sidecarPath = getRuntimeEvidenceSidecarPath(themeSlug, mode);
+    const sidecarExists = existsSync(sidecarPath);
+    const sidecarValidation = sidecarExists
+      ? validateRuntimeEvidenceSidecar(
+          JSON.parse(readFileSync(sidecarPath, "utf-8")),
+          mode,
+        )
+      : null;
+
+    if (sidecarValidation && !sidecarValidation.valid) {
+      failures.push(
+        `Runtime evidence sidecar hygiene failed for ${mode}: ${sidecarValidation.errors.join("; ")}`,
+      );
+    }
+
+    plannedObservations += observationPayloads.length;
+    perMode[mode] = {
+      selectorImpactCount,
+      plannedObservations: observationPayloads.length,
+      sidecarExists,
+      ...(sidecarValidation
+        ? {
+            sidecarRecordCount: sidecarValidation.recordCount,
+            sidecarInvalidRecordCount: sidecarValidation.invalidRecordCount,
+          }
+        : {}),
+    };
+  }
+
+  return {
+    pass: failures.length === 0,
+    failures,
+    note: `Modes: ${plan.modes.join(", ")}; planned observations: ${plannedObservations}`,
+    runtimeEvidenceReadiness: {
+      themeId,
+      modes: plan.modes,
+      perMode,
+      staleModes,
+      plannedObservations,
+    },
+  };
+}
+
+async function runLiveModeSmokeChecks(
+  cli,
+  themeSlug,
+  themeId,
+  mode,
+  variableSettings,
+  classToggleSettings,
+  classSelectSettings,
+  expect,
+) {
+  for (const setting of variableSettings.slice(0, 3)) {
+    const rawValue = setting.type === "variable-text" ? "test-value" : 12;
+    const expectedValue =
+      setting.type === "variable-text"
+        ? rawValue
+        : `${rawValue}${setting.format || ""}`;
+    const payload = { [`${themeId}@@${setting.id}`]: expectedValue };
+    writeStyleSettingsData(payload);
+    await cli.reload();
+    await cli.waitForReady({ label: `${themeSlug} ${mode} variable ${setting.id}` });
+
+    const computed = await cli.eval(
+      `getComputedStyle(document.body).getPropertyValue('--${setting.id}')`,
+    );
+    const normalized = String(computed || "").trim();
+    expect(
+      normalized === String(expectedValue).trim(),
+      `Variable ${setting.id} (${mode}) expected ${expectedValue}, got ${normalized}`,
+    );
+  }
+
+  for (const setting of classToggleSettings.slice(0, 2)) {
+    writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: true });
+    await cli.reload();
+    await cli.waitForReady({
+      label: `${themeSlug} ${mode} class-toggle ${setting.id}`,
+    });
+    const hasClass = await cli.eval(
+      `document.body.classList.contains("${setting.id}")`,
+    );
+    expect(Boolean(hasClass), `Class-toggle ${setting.id} (${mode}) not enabled`);
+
+    writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: false });
+    await cli.reload();
+    await cli.waitForReady({
+      label: `${themeSlug} ${mode} class-toggle off ${setting.id}`,
+    });
+    const stillHasClass = await cli.eval(
+      `document.body.classList.contains("${setting.id}")`,
+    );
+    expect(!Boolean(stillHasClass), `Class-toggle ${setting.id} (${mode}) not disabled`);
+  }
+
+  if (classSelectSettings.length > 0) {
+    const setting = classSelectSettings[0];
+    const options = (setting.options || []).slice(0, 2);
+    for (const option of options) {
+      if (!option?.value) continue;
+      writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: option.value });
+      await cli.reload();
+      await cli.waitForReady({
+        label: `${themeSlug} ${mode} class-select ${setting.id}`,
+      });
+      const hasOption = await cli.eval(
+        `document.body.classList.contains("${option.value}")`,
+      );
+      expect(
+        Boolean(hasOption),
+        `Class-select ${setting.id} (${mode}) missing class ${option.value}`,
+      );
+    }
+  }
+
+  writeStyleSettingsData({});
+  await cli.reload();
+  await cli.waitForReady({ label: `${themeSlug} ${mode} smoke reset` });
+}
+
 async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
   const failures = [];
   const styleSettingsIds = resolveStyleSettingsIds(themeEntry, themeFileContent);
@@ -1080,17 +1332,16 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
     };
   }
 
-  const modes = Array.isArray(themeEntry?.modes) ? themeEntry.modes : [];
-  const mode = modes.includes("dark") ? "dark" : "light";
-
-  configureVaultAppearance(themeSlug, mode);
-  writeStyleSettingsData({});
-  await cli.reload();
-  await cli.waitForReady({ label: `${themeSlug} ${mode} baseline` });
-
   let tested = 0;
   let passed = 0;
-  let runtimeEvidence = null;
+  const runtimeEvidence = {
+    modesObserved: [],
+    perMode: {},
+    totalSettingsObserved: 0,
+    totalObservedImpactCount: 0,
+    totalChangedCssVariableCount: 0,
+    totalChangedComputedStyleCount: 0,
+  };
 
   const expect = (condition, message) => {
     tested += 1;
@@ -1114,47 +1365,45 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
       setting?.type === "class-select" && Array.isArray(setting.options),
   );
 
-  const effectRecords = Array.isArray(themeEntry?.style_settings?.effects)
-    ? themeEntry.style_settings.effects
-    : [];
-  if (effectRecords.length > 0) {
-    try {
-      const { css } = readThemeCss(themeSlug);
-      const classSettings = collectClassSettingsForGraph(themeSlug, settings);
-      const modeCss = mode === "dark" ? { dark: css || "" } : { light: css || "" };
-      const selectorImpacts = buildSelectorImpactGraph({
-        effectRecords,
-        classSettings,
-        modeCss,
-      });
-
-      // Collect the setting IDs that have known selector impacts so we can limit
-      // observations to settings that are meaningfully connected to the impact graph.
-      const effectSettingIds = new Set(
-        Object.values(selectorImpacts).flatMap((record) =>
-          record.impacts.map((impact) => impact.settingId),
-        ),
+  const plan = buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings);
+  if (plan.error) {
+    failures.push(`Runtime evidence observation failed: ${plan.error}`);
+  } else {
+    const removedSidecars = removeStaleRuntimeEvidenceSidecars(themeSlug, plan.modes);
+    if (removedSidecars.length > 0) {
+      console.log(
+        `  Removed stale runtime evidence sidecar(s): ${removedSidecars.join(", ")}`,
       );
+    }
 
-      // Enumerate all single-setting observation payloads for broad bounded coverage:
-      //   - class-toggle: one payload per eligible setting
-      //   - class-select: one payload per non-default non-"none" option
-      //   - variable-number / slider: representative probe values (min/mid/max)
-      //   - variable-text: one payload per eligible setting
-      // Each payload is independent (single-setting only; no combinations).
-      const observationPayloads = enumerateRuntimeObservationPayloads(
-        themeId,
-        settings,
-        effectSettingIds,
-      );
+    for (const { mode, modeCss, selectorImpacts, observationPayloads } of plan.observationPlans) {
+      configureVaultAppearance(themeSlug, mode);
+      writeStyleSettingsData({});
+      await cli.reload();
+      await cli.waitForReady({ label: `${themeSlug} ${mode} baseline` });
 
-      if (observationPayloads.length > 0) {
-        // sidecarRecords stores the nested-diff format written to the evidence file.
-        // evidenceRecords stores the flat format consumed by buildSelectorImpactGraph.
+      try {
         const sidecarRecords = [];
         const evidenceRecords = [];
 
-        for (const observationPayload of observationPayloads) {
+        if (observationPayloads.length > 0) {
+          console.log(
+            `  Runtime evidence ${mode}: ${observationPayloads.length} planned single-setting observations`,
+          );
+        }
+
+        for (let i = 0; i < observationPayloads.length; i += 1) {
+          const observationPayload = observationPayloads[i];
+          if (
+            i === 0 ||
+            i === observationPayloads.length - 1 ||
+            (i + 1) % 25 === 0
+          ) {
+            console.log(
+              `    ${mode} runtime evidence ${i + 1}/${observationPayloads.length}: ${observationPayload.settingId}`,
+            );
+          }
+
           const selectorsForSetting = Object.entries(selectorImpacts)
             .filter(([, record]) =>
               record.impacts.some(
@@ -1164,9 +1413,6 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
             .map(([selector]) => selector)
             .slice(0, MAX_RUNTIME_SELECTORS);
 
-          // Baseline is captured from the current clean/reset state.
-          // The first observation uses the initial baseline established before this
-          // block; each subsequent observation uses the reset state from the previous one.
           const baselineSnapshot = await captureRuntimeSnapshot(
             cli,
             selectorsForSetting,
@@ -1175,7 +1421,7 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
           writeStyleSettingsData(observationPayload.payload);
           await cli.reload();
           await cli.waitForReady({
-            label: `${themeSlug} runtime evidence ${observationPayload.settingId}`,
+            label: `${themeSlug} ${mode} runtime evidence ${observationPayload.settingId}`,
           });
 
           const changedSnapshot = await captureRuntimeSnapshot(
@@ -1186,7 +1432,6 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
           const runtimeDiff = diffRuntimeSnapshots(baselineSnapshot, changedSnapshot);
           const observedAt = new Date().toISOString();
 
-          // Sidecar record: nested diff, used for file storage and future normalization.
           sidecarRecords.push({
             observedAt,
             settingId: observationPayload.settingId,
@@ -1195,25 +1440,22 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
             diff: runtimeDiff,
           });
 
-          // Flat record: spread diff fields, used by buildSelectorImpactGraph.
           evidenceRecords.push({
             settingId: observationPayload.settingId,
             mode,
             ...runtimeDiff,
           });
 
-          // Reset to clean baseline state for the next observation.
           writeStyleSettingsData({});
           await cli.reload();
           await cli.waitForReady({
-            label: `${themeSlug} runtime evidence reset`,
+            label: `${themeSlug} ${mode} runtime evidence reset`,
           });
         }
 
-        // Build the final evidence graph annotated with all accumulated observations.
         const evidenceGraph = buildSelectorImpactGraph({
-          effectRecords,
-          classSettings,
+          effectRecords: plan.effectRecords,
+          classSettings: plan.classSettings,
           modeCss,
           runtimeEvidenceRecords: evidenceRecords,
         });
@@ -1225,109 +1467,73 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
               .length,
           0,
         );
+        const totalChangedCssVariableCount = evidenceRecords.reduce(
+          (sum, r) => sum + (r.changedCssVariables?.length || 0),
+          0,
+        );
+        const totalChangedComputedStyleCount = evidenceRecords.reduce(
+          (sum, r) => sum + (r.changedComputedStyles?.length || 0),
+          0,
+        );
 
-        runtimeEvidence = {
-          mode,
+        runtimeEvidence.modesObserved.push(mode);
+        runtimeEvidence.perMode[mode] = {
           settingsObserved: sidecarRecords.length,
           totalObservedImpactCount,
-          totalChangedCssVariableCount: evidenceRecords.reduce(
-            (sum, r) => sum + (r.changedCssVariables?.length || 0),
-            0,
-          ),
-          totalChangedComputedStyleCount: evidenceRecords.reduce(
-            (sum, r) => sum + (r.changedComputedStyles?.length || 0),
-            0,
-          ),
+          totalChangedCssVariableCount,
+          totalChangedComputedStyleCount,
         };
+        runtimeEvidence.totalSettingsObserved += sidecarRecords.length;
+        runtimeEvidence.totalObservedImpactCount += totalObservedImpactCount;
+        runtimeEvidence.totalChangedCssVariableCount += totalChangedCssVariableCount;
+        runtimeEvidence.totalChangedComputedStyleCount += totalChangedComputedStyleCount;
 
         const evidenceOutputDir = join(RESULTS_DIR, themeSlug);
         mkdirSync(evidenceOutputDir, { recursive: true });
         const observedAt = new Date().toISOString();
-        writeFileSync(
-          join(evidenceOutputDir, `${mode}-style-settings-runtime-evidence.json`),
-          JSON.stringify(
-            {
-              // formatVersion 2: multi-record sidecar with one record per single-setting
-              // observation. Older single-record sidecars remain readable via
-              // normalizeRuntimeEvidenceRecords (backward-compat shim).
-              formatVersion: 2,
-              observedAt,
-              mode,
-              settingsObserved: sidecarRecords.length,
-              totalObservedImpactCount,
-              selectorImpacts: evidenceGraph,
-              records: sidecarRecords,
-              note: "Runtime evidence: bounded single-setting coverage across all eligible settings. Static impacts remain the inferred source-of-truth; runtime evidence is additive confirmation only.",
-            },
-            null,
-            2,
-          ),
-        );
+        const sidecarPath = getRuntimeEvidenceSidecarPath(themeSlug, mode);
+        if (sidecarRecords.length === 0) {
+          if (existsSync(sidecarPath)) {
+            try {
+              unlinkSync(sidecarPath);
+            } catch (error) {
+              failures.push(
+                `Failed to remove empty runtime evidence sidecar for ${mode}: ${error instanceof Error ? error.stack || error.message : String(error)}`,
+              );
+            }
+          }
+        } else {
+          writeFileSync(
+            sidecarPath,
+            JSON.stringify(
+              {
+                formatVersion: 2,
+                observedAt,
+                mode,
+                settingsObserved: sidecarRecords.length,
+                totalObservedImpactCount,
+                selectorImpacts: evidenceGraph,
+                records: sidecarRecords,
+                note: "Runtime evidence: bounded single-setting coverage across all eligible settings. Static impacts remain the inferred source-of-truth; runtime evidence is additive confirmation only.",
+              },
+              null,
+              2,
+            ),
+          );
+        }
+      } catch (error) {
+        failures.push(`Runtime evidence observation failed for ${mode}: ${error.message}`);
       }
-    } catch (error) {
-      failures.push(`Runtime evidence observation failed: ${error.message}`);
-    }
-  }
 
-  for (const setting of variableSettings.slice(0, 3)) {
-    const rawValue = setting.type === "variable-text" ? "test-value" : 12;
-    const expectedValue =
-      setting.type === "variable-text"
-        ? rawValue
-        : `${rawValue}${setting.format || ""}`;
-    const payload = { [`${themeId}@@${setting.id}`]: expectedValue };
-    writeStyleSettingsData(payload);
-    await cli.reload();
-    await cli.waitForReady({ label: `${themeSlug} variable ${setting.id}` });
-
-    const computed = await cli.eval(
-      `getComputedStyle(document.body).getPropertyValue('--${setting.id}')`,
-    );
-    const normalized = String(computed || "").trim();
-    expect(
-      normalized === String(expectedValue).trim(),
-      `Variable ${setting.id} expected ${expectedValue}, got ${normalized}`,
-    );
-  }
-
-  for (const setting of classToggleSettings.slice(0, 2)) {
-    writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: true });
-    await cli.reload();
-    await cli.waitForReady({
-      label: `${themeSlug} class-toggle ${setting.id}`,
-    });
-    const hasClass = await cli.eval(
-      `document.body.classList.contains("${setting.id}")`,
-    );
-    expect(Boolean(hasClass), `Class-toggle ${setting.id} not enabled`);
-
-    writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: false });
-    await cli.reload();
-    await cli.waitForReady({
-      label: `${themeSlug} class-toggle off ${setting.id}`,
-    });
-    const stillHasClass = await cli.eval(
-      `document.body.classList.contains("${setting.id}")`,
-    );
-    expect(!Boolean(stillHasClass), `Class-toggle ${setting.id} not disabled`);
-  }
-
-  if (classSelectSettings.length > 0) {
-    const setting = classSelectSettings[0];
-    const options = (setting.options || []).slice(0, 2);
-    for (const option of options) {
-      if (!option?.value) continue;
-      writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: option.value });
-      await cli.reload();
-      await cli.waitForReady({
-        label: `${themeSlug} class-select ${setting.id}`,
-      });
-      const hasOption = await cli.eval(
-        `document.body.classList.contains("${option.value}")`,
-      );
-      expect(
-        Boolean(hasOption),
-        `Class-select ${setting.id} missing class ${option.value}`,
+      await runLiveModeSmokeChecks(
+        cli,
+        themeSlug,
+        themeId,
+        mode,
+        variableSettings,
+        classToggleSettings,
+        classSelectSettings,
+        expect,
       );
     }
   }
@@ -1337,7 +1543,7 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
     tested,
     passed,
     failures,
-    ...(runtimeEvidence ? { runtimeEvidence } : {}),
+    ...(runtimeEvidence.modesObserved.length > 0 ? { runtimeEvidence } : {}),
   };
 }
 
@@ -1421,6 +1627,9 @@ async function main() {
 
   const args = process.argv.slice(2);
   const runLive = args.includes("--live");
+  // Live verification always includes the preflight stage so the report captures
+  // readiness/hygiene issues alongside the actual live extraction results.
+  const runPreflight = args.includes("--preflight") || runLive;
   const isTestSet = args.includes("--test-set");
   const isAll = args.includes("--all");
   const themeArg = args.find((arg) => !arg.startsWith("--"));
@@ -1430,8 +1639,9 @@ async function main() {
     console.log('  node runner/scripts/verify-style-settings.mjs "theme-slug"');
     console.log("  node runner/scripts/verify-style-settings.mjs --test-set");
     console.log("  node runner/scripts/verify-style-settings.mjs --all");
+    console.log("  node runner/scripts/verify-style-settings.mjs --all --preflight");
     console.log(
-      "  node runner/scripts/verify-style-settings.mjs --test-set --live",
+      "  node runner/scripts/verify-style-settings.mjs --test-set --live  # includes preflight",
     );
     process.exit(0);
   }
@@ -1465,6 +1675,7 @@ async function main() {
 
   console.log(`Themes: ${themesToVerify.length}`);
   console.log(`Output: ${OUTPUT_DIR}`);
+  console.log(`Preflight: ${runPreflight ? "enabled" : "disabled"}`);
   console.log(`Live mode: ${runLive ? "enabled" : "disabled"}`);
 
   mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -1506,13 +1717,25 @@ async function main() {
     );
 
     let stage6 = null;
+    if (runPreflight) {
+      stage6 = verifyRuntimeEvidencePreflight(
+        themeSlug,
+        themeEntry,
+        themeFileContent,
+      );
+    }
+
+    let stage7 = null;
     if (runLive && cli) {
-      stage6 = await verifyLive(cli, themeSlug, themeEntry, themeFileContent);
+      stage7 = await verifyLive(cli, themeSlug, themeEntry, themeFileContent);
     }
 
     const stages = { stage1, stage2, stage3, stage4, stage5 };
-    if (runLive && stage6) {
+    if (runPreflight && stage6) {
       stages.stage6 = stage6;
+    }
+    if (runLive && stage7) {
+      stages.stage7 = stage7;
     }
 
     const report = {
@@ -1531,9 +1754,9 @@ async function main() {
     printStageSummary(report);
   }
 
-  const stagesList = runLive
-    ? ["stage1", "stage2", "stage3", "stage4", "stage5", "stage6"]
-    : ["stage1", "stage2", "stage3", "stage4", "stage5"];
+  const stagesList = ["stage1", "stage2", "stage3", "stage4", "stage5"];
+  if (runPreflight) stagesList.push("stage6");
+  if (runLive) stagesList.push("stage7");
   const summary = generateSummary(reports, stagesList);
 
   if (summary.worstThemes.length > 0) {
