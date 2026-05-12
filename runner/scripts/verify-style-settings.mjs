@@ -1077,7 +1077,7 @@ function removeStaleRuntimeEvidenceSidecars(themeSlug, activeModes) {
       unlinkSync(sidecarPath);
     } catch (error) {
       throw new Error(
-        `Failed to remove stale runtime evidence sidecar ${sidecarPath}: ${error.message}`,
+        `Failed to remove stale runtime evidence sidecar ${sidecarPath}: ${error instanceof Error ? error.stack || error.message : String(error)}`,
       );
     }
     removed.push(sidecarPath);
@@ -1494,7 +1494,13 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
         const sidecarPath = getRuntimeEvidenceSidecarPath(themeSlug, mode);
         if (sidecarRecords.length === 0) {
           if (existsSync(sidecarPath)) {
-            unlinkSync(sidecarPath);
+            try {
+              unlinkSync(sidecarPath);
+            } catch (error) {
+              failures.push(
+                `Failed to remove empty runtime evidence sidecar for ${mode}: ${error instanceof Error ? error.stack || error.message : String(error)}`,
+              );
+            }
           }
         } else {
           writeFileSync(
