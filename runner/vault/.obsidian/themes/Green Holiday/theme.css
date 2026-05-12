@@ -1,0 +1,163 @@
+/* ============================================================
+   Green Holiday — Obsidian Theme
+   A lime green tinted theme for focused writing.
+   ============================================================ */
+
+/* ── Dark Mode ─────────────────────────────────────────────── */
+.theme-dark {
+  --color-base-00: #0d2210;
+  --color-base-05: #112814;
+  --color-base-10: #163018;
+  --color-base-20: #1d3c1e;
+  --color-base-25: #234824;
+  --color-base-30: #2b562c;
+  --color-base-35: #346636;
+  --color-base-40: #3e7840;
+  --color-base-50: #548e56;
+  --color-base-60: #74aa76;
+  --color-base-70: #9cc89e;
+  --color-base-100: #e2f5e2;
+
+  --color-accent-h: 122;
+  --color-accent-s: 90%;
+  --color-accent-l: 58%;
+  --color-accent: #6bfa6e;
+  --color-accent-1: #8ffb91;
+  --color-accent-2: #4de050;
+
+  --interactive-accent: #6bfa6e;
+  --interactive-accent-hover: #8ffb91;
+
+  --background-modifier-border:        #3e7840;
+  --background-modifier-border-hover:  #548e56;
+  --divider-color:                     #3e7840;
+}
+
+/* ── Light Mode ─────────────────────────────────────────────── */
+.theme-light {
+  /* base スケール: エディタ→テキスト方向 */
+  --color-base-00: #6bfa6e;
+  --color-base-05: #5ef061;
+  --color-base-10: #4de350;
+  --color-base-20: #38cc3b;
+  --color-base-25: #28b02b;
+  --color-base-30: #1c9620;
+  --color-base-35: #137d17;
+  --color-base-40: #0c6510;
+  --color-base-50: #074e0a;
+  --color-base-60: #043a07;
+  --color-base-70: #022904;
+  --color-base-100: #011502;
+
+  /* サイドバーを明るく・脱彩色して独立させる */
+  --background-secondary: #e2fce2;
+  --background-secondary-alt: #d4f8d4;
+  --background-modifier-hover: rgba(0, 0, 0, 0.06);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.1);
+
+  --color-accent-h: 122;
+  --color-accent-s: 85%;
+  --color-accent-l: 20%;
+  --color-accent: #0d5c10;
+  --color-accent-1: #157519;
+  --color-accent-2: #08420a;
+
+  --interactive-accent: #0d5c10;
+  --interactive-accent-hover: #157519;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+body {
+  --font-text-size: 16px;
+  --line-height-normal: 1.7;
+}
+
+/* ── Code blocks (Dark mode) ────────────────────────────────── */
+.theme-dark {
+  --code-background: #0d2210;
+  --code-normal: #d4f0d4;
+  --code-comment: #4a7a4c;
+  --code-keyword: #6bfa6e;
+  --code-function: #79d6f7;
+  --code-string: #ffd27a;
+  --code-number: #ff9e7a;
+  --code-tag: #6bfa6e;
+  --code-property: #b8e68c;
+  --code-operator: #d4f0d4;
+  --code-punctuation: #7aaa7c;
+  --code-important: #ff9e7a;
+  --code-value: #ffd27a;
+}
+
+/* ── Code blocks (Light mode) ───────────────────────────────── */
+/* ライト背景が明るい緑なので、コードブロックは暗く浮かせる */
+.theme-light {
+  --code-background: #1a351a;
+  --code-normal: #d4f0d4;
+  --code-comment: #4a7a4c;
+  --code-keyword: #6bfa6e;
+  --code-function: #79d6f7;
+  --code-string: #ffd27a;
+  --code-number: #ff9e7a;
+  --code-tag: #6bfa6e;
+  --code-property: #b8e68c;
+  --code-operator: #d4f0d4;
+  --code-punctuation: #7aaa7c;
+  --code-important: #ff9e7a;
+  --code-value: #ffd27a;
+}
+
+/* ── Code block background (source / live preview mode) ─────── */
+/* --code-background はプレビュー用のため、ソースモードでも明示指定 */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  background-color: var(--code-background);
+}
+
+/* ── Active line highlight: コードブロック内のみ ────────────── */
+/* .cm-s-obsidian を加えて詳細度を上げ !important を不要にする  */
+.theme-dark .markdown-source-view.cm-s-obsidian.mod-cm6 .cm-active.cm-line.HyperMD-codeblock {
+  background-color: #1a3318;
+}
+.theme-light .markdown-source-view.cm-s-obsidian.mod-cm6 .cm-active.cm-line.HyperMD-codeblock {
+  background-color: #224422;
+}
+
+/* ── Cursor ─────────────────────────────────────────────────── */
+/* ライト通常行: ライム背景に映える濃い緑 */
+.theme-light .markdown-source-view.mod-cm6 .cm-content {
+  caret-color: #031f04;
+}
+/* ライトのコードブロック行: ダークモードと同じ明るいライムグリーン */
+.theme-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  caret-color: #6bfa6e;
+}
+.theme-dark .markdown-source-view.mod-cm6 .cm-content {
+  caret-color: #6bfa6e;
+}
+
+/* ── Code block: 角丸は先頭・末尾行のみ ─────────────────────── */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
+  border-radius: 6px 6px 0 0;
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end {
+  border-radius: 0 0 6px 6px;
+}
+
+/* ── Code block border: ダークモードのみ ────────────────────── */
+.theme-dark .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border-left:  1px solid #346636;
+  border-right: 1px solid #346636;
+}
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
+  border-top: 1px solid #346636;
+}
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock-end {
+  border-bottom: 1px solid #346636;
+}
+
+/* preview mode */
+:is(.markdown-preview-view, .markdown-rendered) pre {
+  border-radius: 6px;
+  padding: 1em 1.2em;
+}
+

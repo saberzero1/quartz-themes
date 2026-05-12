@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Things 3 Theme for Obsidian
-Version 2.6.20
-@paralloid, 2026-05-10
+Version 2.6.21
+@paralloid, 2026-05-11
 ───────────────────────────────────────*/
 
 /* @settings
@@ -185,6 +185,7 @@ body.is-translucent .workspace-tab-header-container {
     --text-on-accent: #1f1f1f;
     --titlebar-background-focused: #1a1a1a;
     --titlebar-background: #1a1a1a;
+    --text-faint: #807f7f;
 }
 
 /* MOBILE DARK MODE COLORS */
@@ -203,6 +204,7 @@ body.is-mobile.theme-dark {
     --mobile-sidebar-background: var(--background-secondary) !important;
     --div-color: rgba(60, 60, 60, 0.9);
     --background-modifier-border: rgba(0, 0, 0, 0.2);
+    --icon-color: #798390;
     --nav-item-background-active: #2c3138;
     --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) * 0.8), calc(var(--accent-l) * 0.85)) !important;
     --code-background: #13181d;
@@ -218,6 +220,7 @@ body.is-mobile.theme-dark {
     --tag-background-hover: #104531;
     --tag-border-color: none;
     --tag-border-color-hover: none;
+    --text-faint: var(--icon-color);
 }
 
 body.is-mobile.theme-dark .workspace-drawer.mod-right .workspace-leaf,
@@ -304,13 +307,10 @@ body.is-tablet.theme-dark.tablet-full-black {
     --text-on-accent: #ffffff !important;
 }
 
-body:not(.is-mobile) .metadata-add-button {
-    color: var(--text-faint);
-}
-
-.is-mobile .metadata-add-button {
+.metadata-add-button {
     color: var(--icon-color);
 }
+
 
 body.is-mobile.theme-light {
     --menu-background: #262b31;
@@ -1808,7 +1808,7 @@ body.is-phone {
     border-radius: var(--radius-s);
     margin-top: 0px;
     padding-top: 0px;
-    background-color: var(--background-primary-alt);
+    background-color: var(--properties-background);
 }
 
 body.is-phone iframe {

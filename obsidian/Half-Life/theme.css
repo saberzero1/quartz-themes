@@ -1,0 +1,87 @@
+.theme-dark {
+  /* --- Colors --- */
+  --color-base: #282828;
+  --color-light: #cccccc;
+  --color-dark: #222222;
+  --color-primary: #f8f8f0;
+  --color-secondary: #f85931;
+  --color-yellow: #f9d423;
+  --color-selection: #214283;
+  --color-keyword: #7d8991;
+  --color-comment: #555555;
+
+
+  /* --- Editor ---*/
+  /* Blockquote */
+  --blockquote-background-color: var(--color-base);
+  --blockquote-border-color: var(--color-secondary);
+
+  /* Code block */
+  --code-background: var(--color-base);
+  --code-normal: var(--color-primary);
+  --code-comment: var(--color-comment);
+  --code-function: var(--color-yellow);
+  --code-keyword: var(--color-keyword);
+  --code-operator: var(--color-keyword);
+  --code-property: var(--color-yellow);
+  --code-punctuation: var(--color-primary);
+  --code-string: var(--color-yellow);
+  --code-tag: var(--color-secondary);
+  --code-value: var(--color-yellow);
+
+  /* Horizontal rule */
+  --hr-color: var(--color-keyword);
+
+  /* Inline title */
+  --inline-title-color: var(--color-light);
+
+  /* Link */
+  --link-color: var(--color-yellow);
+  --link-color-hover: var(--color-secondary);
+  --link-unresolved-color: var(--color-yellow);
+  --link-unresolved-decoration-color: var(--color-yellow);
+  --link-external-color: var(--color-yellow);
+  --link-external-color-hover: var(--color-secondary);
+
+  /* Tag */
+  --tag-color: var(--color-yellow);
+  --tag-color-hover: var(--color-secondary);
+  --tag-background: var(--color-base);
+  --tag-background-hover: var(--color-base);
+
+  /* --- Semantic colors --- */
+  /* Surface colors */
+  --background-primary: var(--color-dark);
+  --background-primary-alt: var(--color-dark);
+  --background-secondary: var(--color-base);
+  --background-secondary-alt: var(--color-base);
+  --background-modifier-hover: var(--color-comment);
+
+  /* Interactive colors */
+  --interactive-accent: var(--color-secondary);
+  --interactive-accent-hover: var(--color-yellow);
+
+  /* Text colors */
+  --text-normal: var(--color-primary);
+  --text-muted: var(--color-light);
+  --text-faint: var(--color-keyword);
+
+  /* Text background colors */
+  --text-selection: var(--color-selection);
+  --text-highlight-bg: var(--color-secondary);
+
+  /* Caret color  */
+  --caret-color: var(--color-primary);
+
+
+  /* --- Window --- */
+  /* Divider */
+  --divider-color: var(--color-dark);
+  --divider-color-hover: var(--color-secondary);
+
+  /* Ribbon */
+  --ribbon-background: var(--color-dark);
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: var(--color-comment);
+}

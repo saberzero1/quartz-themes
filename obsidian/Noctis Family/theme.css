@@ -1,0 +1,977 @@
+/*
+ * Noctis Theme for Obsidian
+ * Ported from the Noctis VS Code theme by Liviu Schera
+ * https://github.com/liviuschera/noctis
+ *
+ * Obsidian port by Jordan Bayles (bayles.jordan@gmail.com)
+ * https://github.com/baylesj/obsidian-noctis-theme
+ *
+ * Supports all 11 Noctis variants via the Style Settings plugin.
+ */
+
+/* =========================================================
+   STYLE SETTINGS
+   ========================================================= */
+
+/* @settings
+
+name: Noctis Family
+id: noctis-theme
+settings:
+  - id: noctis-variant
+    title: Color Variant
+    description: "Choose from all 11 Noctis color variants. Dark: Noctis, Azureus, Sereno, Obscuro, Minimus, Bordo, Uva, Viola. Light: Lux, Hibernus, Lilac."
+    type: class-select
+    default: noctis
+    options:
+      - label: "Noctis (Dark)"
+        value: noctis
+      - label: "Noctis Azureus (Dark)"
+        value: noctis-azureus
+      - label: "Noctis Sereno (Dark)"
+        value: noctis-sereno
+      - label: "Noctis Obscuro (Dark)"
+        value: noctis-obscuro
+      - label: "Noctis Minimus (Dark)"
+        value: noctis-minimus
+      - label: "Noctis Bordo (Dark)"
+        value: noctis-bordo
+      - label: "Noctis Uva (Dark)"
+        value: noctis-uva
+      - label: "Noctis Viola (Dark)"
+        value: noctis-viola
+      - label: "Noctis Lux (Light)"
+        value: noctis-lux
+      - label: "Noctis Hibernus (Light)"
+        value: noctis-hibernus
+      - label: "Noctis Lilac (Light)"
+        value: noctis-lilac
+
+*/
+
+/* =========================================================
+   DEFAULT PALETTE — Noctis (dark teal)
+   These serve as the fallback when Style Settings is absent.
+   ========================================================= */
+
+body {
+  color-scheme: dark;
+  /* Color scale: 00 = darkest bg → 100 = normal text */
+  --noc-base-00: #052529;
+  --noc-base-05: #062c30;
+  --noc-base-10: #073339;
+  --noc-base-20: #093a40;
+  --noc-base-25: #0b424a;
+  --noc-base-30: #1a5a65;
+  --noc-base-35: #217080;
+  --noc-base-40: #2e8a97;
+  --noc-base-50: #5b858b;
+  --noc-base-60: #7aa8ac;
+  --noc-base-70: #8aacb0;
+  --noc-base-100: #b2cacd;
+
+  /* Accent */
+  --noc-accent:       #16a3b6;
+  --noc-accent-light: #49d6e9;
+  --noc-accent-hsl:   188, 77%, 40%;
+
+  /* Syntax */
+  --noc-keyword:  #df769b;
+  --noc-string:   #49e9a6;
+  --noc-number:   #7060eb;
+  --noc-function: #16a3b6;
+  --noc-variable: #e4b781;
+  --noc-tag:      #e66533;
+  --noc-type:     #d67e5c;
+  --noc-constant: #d5971a;
+  --noc-comment:  #5b858b;
+  --noc-operator: #49d6e9;
+
+  /* Status */
+  --noc-error:   #f44747;
+  --noc-warning: #d5971a;
+  --noc-success: #49e9a6;
+}
+
+/* =========================================================
+   LIGHT MODE FALLBACK — Noctis Lux
+   Applied when Obsidian is in light mode and no variant class
+   is set (i.e. Style Settings is not installed).
+   Must come BEFORE variant overrides so variants always win.
+   ========================================================= */
+
+body.theme-light {
+  color-scheme: light;
+  --noc-base-00:  #fef8ec;
+  --noc-base-05:  #fdf5e3;
+  --noc-base-10:  #f7f0dc;
+  --noc-base-20:  #f0e9d4;
+  --noc-base-25:  #e8e2cc;
+  --noc-base-30:  #d4cebe;
+  --noc-base-35:  #c8c2b2;
+  --noc-base-40:  #b0aaa0;
+  --noc-base-50:  #8ca6a6;
+  --noc-base-60:  #6b9090;
+  --noc-base-70:  #3a7880;
+  --noc-base-100: #005661;
+  --noc-accent:       #0095a8;
+  --noc-accent-light: #00bdd6;
+  --noc-accent-hsl:   186, 100%, 33%;
+  --noc-keyword:  #ff5792;
+  --noc-string:   #00b368;
+  --noc-number:   #5842ff;
+  --noc-function: #0095a8;
+  --noc-variable: #fa8900;
+  --noc-tag:      #e64100;
+  --noc-type:     #d67e5c;
+  --noc-constant: #d5971a;
+  --noc-comment:  #8ca6a6;
+  --noc-operator: #00bdd6;
+  --noc-success:  #00b368;
+  --noc-warning:  #fa8900;
+}
+
+/* =========================================================
+   DARK VARIANT OVERRIDES
+   ========================================================= */
+
+/* Noctis — explicit class rule needed so body.noctis (specificity 0,1,1)
+   beats body.theme-light (also 0,1,1) by source order.
+   Without this, the bare `body` block (0,0,1) always loses to theme-light. */
+body.noctis {
+  color-scheme: dark;
+  --noc-base-00:  #052529;
+  --noc-base-05:  #062c30;
+  --noc-base-10:  #073339;
+  --noc-base-20:  #093a40;
+  --noc-base-25:  #0b424a;
+  --noc-base-30:  #1a5a65;
+  --noc-base-35:  #217080;
+  --noc-base-40:  #2e8a97;
+  --noc-base-50:  #5b858b;
+  --noc-base-60:  #7aa8ac;
+  --noc-base-70:  #8aacb0;
+  --noc-base-100: #b2cacd;
+  --noc-accent:       #16a3b6;
+  --noc-accent-light: #49d6e9;
+  --noc-accent-hsl:   188, 77%, 40%;
+  --noc-keyword:  #df769b;
+  --noc-string:   #49e9a6;
+  --noc-number:   #7060eb;
+  --noc-function: #16a3b6;
+  --noc-variable: #e4b781;
+  --noc-tag:      #e66533;
+  --noc-type:     #d67e5c;
+  --noc-constant: #d5971a;
+  --noc-comment:  #5b858b;
+  --noc-operator: #49d6e9;
+  --noc-error:    #f44747;
+  --noc-warning:  #d5971a;
+  --noc-success:  #49e9a6;
+}
+
+/* Noctis Azureus — saturated dark azure */
+body.noctis-azureus {
+  color-scheme: dark;
+  --noc-base-00:  #07273b;
+  --noc-base-05:  #082f46;
+  --noc-base-10:  #093349;
+  --noc-base-20:  #0c3f59;
+  --noc-base-25:  #0f4866;
+  --noc-base-30:  #1d5e7e;
+  --noc-base-35:  #246e94;
+  --noc-base-40:  #2d7fa8;
+  --noc-base-50:  #5988a6;
+  --noc-base-60:  #7da4bc;
+  --noc-base-70:  #99b4c4;
+  --noc-base-100: #becfda;
+  --noc-accent:       #49d6e9;
+  --noc-accent-light: #85efff;
+  --noc-accent-hsl:   185, 80%, 60%;
+  --noc-comment: #5988a6;
+}
+
+/* Noctis Sereno — saturated dark bluish-cyan */
+body.noctis-sereno {
+  color-scheme: dark;
+  --noc-base-00:  #062e32;
+  --noc-base-05:  #073539;
+  --noc-base-10:  #083a3f;
+  --noc-base-20:  #0b4449;
+  --noc-base-25:  #0d4e54;
+  --noc-base-30:  #1a6470;
+  --noc-base-35:  #217480;
+  --noc-base-40:  #2d8a97;
+  --noc-base-50:  #5b858b;
+  --noc-base-60:  #7aa0a4;
+  --noc-base-70:  #8aacb0;
+  --noc-base-100: #b2cacd;
+  --noc-accent:       #49d6e9;
+  --noc-accent-light: #85efff;
+  --noc-accent-hsl:   185, 80%, 60%;
+}
+
+/* Noctis Obscuro — extremely dark */
+body.noctis-obscuro {
+  color-scheme: dark;
+  --noc-base-00:  #031417;
+  --noc-base-05:  #041a1d;
+  --noc-base-10:  #051f23;
+  --noc-base-20:  #072b30;
+  --noc-base-25:  #093337;
+  --noc-base-30:  #164a50;
+  --noc-base-35:  #1c5860;
+  --noc-base-40:  #276974;
+  --noc-base-50:  #5b858b;
+  --noc-base-60:  #7aa0a4;
+  --noc-base-70:  #8aacb0;
+  --noc-base-100: #b2cacd;
+  --noc-accent:       #49ace9;
+  --noc-accent-light: #80ccff;
+  --noc-accent-hsl:   207, 80%, 60%;
+}
+
+/* Noctis Minimus — lower saturation */
+body.noctis-minimus {
+  color-scheme: dark;
+  --noc-base-00:  #1b2932;
+  --noc-base-05:  #1f2f39;
+  --noc-base-10:  #22333e;
+  --noc-base-20:  #273d4a;
+  --noc-base-25:  #2c4554;
+  --noc-base-30:  #3d5e6e;
+  --noc-base-35:  #476e80;
+  --noc-base-40:  #557e90;
+  --noc-base-50:  #5e7887;
+  --noc-base-60:  #7a97a4;
+  --noc-base-70:  #8aa5b0;
+  --noc-base-100: #c5cdd3;
+  --noc-accent:       #3f848d;
+  --noc-accent-light: #5aa6b0;
+  --noc-accent-hsl:   186, 38%, 40%;
+  --noc-keyword:  #c88da2;
+  --noc-string:   #72c09f;
+  --noc-number:   #7068b1;
+  --noc-function: #3f848d;
+  --noc-variable: #d3b692;
+  --noc-tag:      #c37455;
+  --noc-comment:  #5e7887;
+}
+
+/* Noctis Bordo — dark warm rose */
+body.noctis-bordo {
+  color-scheme: dark;
+  --noc-base-00:  #322a2d;
+  --noc-base-05:  #3a3033;
+  --noc-base-10:  #403538;
+  --noc-base-20:  #4c3f43;
+  --noc-base-25:  #574850;
+  --noc-base-30:  #6e5d63;
+  --noc-base-35:  #7d6a70;
+  --noc-base-40:  #8c7880;
+  --noc-base-50:  #8b747c;
+  --noc-base-60:  #a08890;
+  --noc-base-70:  #aa9da0;
+  --noc-base-100: #cbbec2;
+  --noc-accent:       #49d6e9;
+  --noc-accent-light: #85efff;
+  --noc-accent-hsl:   185, 80%, 60%;
+  --noc-comment:  #8b747c;
+}
+
+/* Noctis Uva — dark cold blue */
+body.noctis-uva {
+  color-scheme: dark;
+  --noc-base-00:  #292640;
+  --noc-base-05:  #2e2b47;
+  --noc-base-10:  #332f50;
+  --noc-base-20:  #3d385e;
+  --noc-base-25:  #46406c;
+  --noc-base-30:  #5a5480;
+  --noc-base-35:  #676090;
+  --noc-base-40:  #756da0;
+  --noc-base-50:  #716c93;
+  --noc-base-60:  #918cae;
+  --noc-base-70:  #a09cb8;
+  --noc-base-100: #c5c2d6;
+  --noc-accent:       #49d6e9;
+  --noc-accent-light: #85efff;
+  --noc-accent-hsl:   185, 80%, 60%;
+  --noc-comment:  #716c93;
+}
+
+/* Noctis Viola — dark cold violet */
+body.noctis-viola {
+  color-scheme: dark;
+  --noc-base-00:  #30243d;
+  --noc-base-05:  #372a46;
+  --noc-base-10:  #3c2e4c;
+  --noc-base-20:  #473758;
+  --noc-base-25:  #524064;
+  --noc-base-30:  #675278;
+  --noc-base-35:  #745e87;
+  --noc-base-40:  #836b97;
+  --noc-base-50:  #7f659a;
+  --noc-base-60:  #9e87b4;
+  --noc-base-70:  #ab9ebc;
+  --noc-base-100: #ccbfd9;
+  --noc-accent:       #49d6e9;
+  --noc-accent-light: #85efff;
+  --noc-accent-hsl:   185, 80%, 60%;
+  --noc-comment:  #7f659a;
+}
+
+/* =========================================================
+   LIGHT VARIANT OVERRIDES
+   ========================================================= */
+
+/* Noctis Lux — warm light orange (the iconic light variant) */
+body.noctis-lux {
+  color-scheme: light;
+  --noc-base-00:  #fef8ec;
+  --noc-base-05:  #fdf5e3;
+  --noc-base-10:  #f7f0dc;
+  --noc-base-20:  #f0e9d4;
+  --noc-base-25:  #e8e2cc;
+  --noc-base-30:  #d4cebe;
+  --noc-base-35:  #c8c2b2;
+  --noc-base-40:  #b0aaa0;
+  --noc-base-50:  #8ca6a6;
+  --noc-base-60:  #6b9090;
+  --noc-base-70:  #3a7880;
+  --noc-base-100: #005661;
+  --noc-accent:       #0095a8;
+  --noc-accent-light: #00bdd6;
+  --noc-accent-hsl:   186, 100%, 33%;
+  --noc-keyword:  #ff5792;
+  --noc-string:   #00b368;
+  --noc-number:   #5842ff;
+  --noc-function: #0095a8;
+  --noc-variable: #fa8900;
+  --noc-tag:      #e64100;
+  --noc-type:     #d67e5c;
+  --noc-constant: #d5971a;
+  --noc-comment:  #8ca6a6;
+  --noc-operator: #00bdd6;
+  --noc-success:  #00b368;
+  --noc-warning:  #fa8900;
+}
+
+/* Noctis Hibernus — unsaturated light bluish-cyan */
+body.noctis-hibernus {
+  color-scheme: light;
+  --noc-base-00:  #f4f6f6;
+  --noc-base-05:  #eceeee;
+  --noc-base-10:  #e4e8e8;
+  --noc-base-20:  #d8dcdc;
+  --noc-base-25:  #cdd2d2;
+  --noc-base-30:  #b8bebe;
+  --noc-base-35:  #aab1b1;
+  --noc-base-40:  #9aa3a3;
+  --noc-base-50:  #8ca6a6;
+  --noc-base-60:  #6b9090;
+  --noc-base-70:  #3a7880;
+  --noc-base-100: #005661;
+  --noc-accent:       #0095a8;
+  --noc-accent-light: #00bdd6;
+  --noc-accent-hsl:   186, 100%, 33%;
+  --noc-keyword:  #ff5792;
+  --noc-string:   #00b368;
+  --noc-number:   #5842ff;
+  --noc-function: #0095a8;
+  --noc-variable: #fa8900;
+  --noc-tag:      #e64100;
+  --noc-comment:  #8ca6a6;
+  --noc-operator: #00bdd6;
+  --noc-success:  #00b368;
+  --noc-warning:  #fa8900;
+}
+
+/* Noctis Lilac — unsaturated light cold blue */
+body.noctis-lilac {
+  color-scheme: light;
+  --noc-base-00:  #f2f1f8;
+  --noc-base-05:  #eae9f2;
+  --noc-base-10:  #e2e1ec;
+  --noc-base-20:  #d4d2e4;
+  --noc-base-25:  #c8c5da;
+  --noc-base-30:  #b5b2cc;
+  --noc-base-35:  #a8a4c2;
+  --noc-base-40:  #9995b7;
+  --noc-base-50:  #7870a0;
+  --noc-base-60:  #5c5494;
+  --noc-base-70:  #3d3399;
+  --noc-base-100: #0c006b;
+  --noc-accent:       #0095a8;
+  --noc-accent-light: #00bdd6;
+  --noc-accent-hsl:   186, 100%, 33%;
+  --noc-keyword:  #ff5792;
+  --noc-string:   #00b368;
+  --noc-number:   #5842ff;
+  --noc-function: #0095a8;
+  --noc-variable: #fa8900;
+  --noc-tag:      #e64100;
+  --noc-comment:  #9995b7;
+  --noc-operator: #00bdd6;
+  --noc-success:  #00b368;
+  --noc-warning:  #fa8900;
+}
+
+/* =========================================================
+   MAP --noc-* TO OBSIDIAN'S DESIGN TOKEN SYSTEM
+   ========================================================= */
+
+body {
+  /* Color scale (used by Obsidian for backgrounds, borders, text) */
+  --color-base-00:  var(--noc-base-00);
+  --color-base-05:  var(--noc-base-05);
+  --color-base-10:  var(--noc-base-10);
+  --color-base-20:  var(--noc-base-20);
+  --color-base-25:  var(--noc-base-25);
+  --color-base-30:  var(--noc-base-30);
+  --color-base-35:  var(--noc-base-35);
+  --color-base-40:  var(--noc-base-40);
+  --color-base-50:  var(--noc-base-50);
+  --color-base-60:  var(--noc-base-60);
+  --color-base-70:  var(--noc-base-70);
+  --color-base-100: var(--noc-base-100);
+
+  /* Accent */
+  --color-accent:     var(--noc-accent);
+  --color-accent-1:   var(--noc-accent-light);
+  --color-accent-2:   var(--noc-accent-light);
+  --color-accent-hsl: var(--noc-accent-hsl);
+
+  /* Interactive & form elements */
+  --interactive-normal:       var(--noc-base-10);
+  --interactive-hover:        var(--noc-base-20);
+  --interactive-accent:       var(--noc-accent);
+  --interactive-accent-hsl:   var(--noc-accent-hsl);
+  --interactive-accent-hover: var(--noc-accent-light);
+  --interactive-success:      var(--noc-success);
+
+  --input-background:                        var(--noc-base-05);
+  --dropdown-background:                     var(--noc-base-05);
+  --background-modifier-form-field:          var(--noc-base-05);
+  --background-modifier-form-field-highlighted: var(--noc-base-10);
+
+  --checkbox-color:              var(--noc-accent);
+  --checkbox-color-hover:        var(--noc-accent-light);
+  --checkbox-border-color:       var(--noc-base-40);
+  --checkbox-border-color-hover: var(--noc-accent);
+  --toggle-thumb-color:          #ffffff;
+  --toggle-border-color:         var(--noc-base-40);
+
+  /* Backgrounds */
+  --background-primary:                var(--noc-base-00);
+  --background-primary-alt:            var(--noc-base-05);
+  --background-secondary:              var(--noc-base-10);
+  --background-secondary-alt:          var(--noc-base-20);
+  --background-modifier-hover:         rgba(128, 128, 128, 0.075);
+  --background-modifier-active-hover:  rgba(128, 128, 128, 0.12);
+  --background-modifier-border:        var(--noc-base-30);
+  --background-modifier-border-hover:  var(--noc-base-35);
+  --background-modifier-border-focus:  var(--noc-base-40);
+  --background-modifier-error-rgb:     244, 71, 71;
+  --background-modifier-error:         rgba(var(--background-modifier-error-rgb), 0.4);
+  --background-modifier-error-hover:   rgba(var(--background-modifier-error-rgb), 0.6);
+  --background-modifier-success-rgb:   73, 233, 166;
+  --background-modifier-success:       rgba(var(--background-modifier-success-rgb), 0.4);
+
+  /* Text */
+  --text-normal:         var(--noc-base-100);
+  --text-muted:          var(--noc-base-70);
+  --text-faint:          var(--noc-base-50);
+  --text-accent:         var(--noc-accent);
+  --text-accent-hover:   var(--noc-accent-light);
+  --text-on-accent:      #ffffff;
+  --text-selection:      hsla(var(--noc-accent-hsl), 0.25);
+  --text-highlight-bg:   hsla(var(--noc-accent-hsl), 0.25);
+  --text-error:          var(--noc-error);
+  --text-success:        var(--noc-success);
+  --text-warning:        var(--noc-warning);
+
+  /* Links */
+  --link-color:            var(--noc-accent);
+  --link-color-hover:      var(--noc-accent-light);
+  --link-unresolved-color: var(--noc-base-50);
+  --link-external-color:   var(--noc-function);
+
+  /* Code blocks */
+  --code-background:  var(--noc-base-05);
+  --code-normal:      var(--noc-base-100);
+  --code-comment:     var(--noc-comment);
+  --code-function:    var(--noc-function);
+  --code-important:   var(--noc-keyword);
+  --code-keyword:     var(--noc-keyword);
+  --code-operator:    var(--noc-operator);
+  --code-property:    var(--noc-variable);
+  --code-punctuation: var(--noc-base-60);
+  --code-string:      var(--noc-string);
+  --code-tag:         var(--noc-tag);
+  --code-value:       var(--noc-number);
+
+  /* Headings */
+  --h1-color: var(--noc-tag);
+  --h2-color: var(--noc-keyword);
+  --h3-color: var(--noc-variable);
+  --h4-color: var(--noc-string);
+  --h5-color: var(--noc-function);
+  --h6-color: var(--noc-comment);
+}
+
+/* =========================================================
+   HIGH-SPECIFICITY OVERRIDES
+   Obsidian's own body.theme-dark / body.theme-light rules set
+   --color-accent, --interactive-accent, etc. at (0,1,1) specificity,
+   beating our bare body {} block (0,0,1). We re-declare the key
+   accent/interactive variables here at (0,1,1) so our theme wins
+   regardless of which base color scheme is set in Appearance.
+   ========================================================= */
+
+body.theme-dark,
+body.theme-light {
+  --color-accent:             var(--noc-accent);
+  --color-accent-1:           var(--noc-accent-light);
+  --color-accent-2:           var(--noc-accent-light);
+  --color-accent-hsl:         var(--noc-accent-hsl);
+  --interactive-accent:       var(--noc-accent);
+  --interactive-accent-hsl:   var(--noc-accent-hsl);
+  --interactive-accent-hover: var(--noc-accent-light);
+  --interactive-normal:       var(--noc-base-10);
+  --interactive-hover:        var(--noc-base-20);
+  --background-primary:       var(--noc-base-00);
+  --background-primary-alt:   var(--noc-base-05);
+  --background-secondary:     var(--noc-base-10);
+  --background-secondary-alt: var(--noc-base-20);
+  --input-background:         var(--noc-base-05);
+  --dropdown-background:      var(--noc-base-05);
+  --background-modifier-form-field: var(--noc-base-05);
+  --text-normal:              var(--noc-base-100);
+  --text-muted:               var(--noc-base-70);
+  --text-faint:               var(--noc-base-50);
+  --text-accent:              var(--noc-accent);
+  --text-accent-hover:        var(--noc-accent-light);
+
+  /* Icon color — controls SVG icons including the dropdown chevron arrow.
+     Must live here at (0,1,1) so it beats Obsidian's own theme-dark/light
+     icon color declarations. */
+  --icon-color:         var(--noc-base-70);
+  --icon-color-hover:   var(--noc-base-100);
+  --icon-color-active:  var(--noc-accent);
+  --icon-color-focused: var(--noc-base-100);
+}
+
+/* Select/dropdown arrow — only fix the CROSS-MODE cases where Obsidian's
+   default arrow color (white for dark base, black for light base) is wrong
+   for the selected variant. Matching cases are already correct by default.
+   Using chained classes (0,3,1) guarantees we beat Obsidian's (0,2,0). */
+
+/* Light variants + Dark base → need a dark arrow */
+body.theme-dark.noctis-lux select,
+body.theme-dark.noctis-lux .dropdown,
+body.theme-dark.noctis-hibernus select,
+body.theme-dark.noctis-hibernus .dropdown,
+body.theme-dark.noctis-lilac select,
+body.theme-dark.noctis-lilac .dropdown {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23005661' opacity='0.9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E");
+}
+
+/* Dark variants + Light base → need a light arrow */
+body.theme-light.noctis select,
+body.theme-light.noctis .dropdown,
+body.theme-light.noctis-azureus select,
+body.theme-light.noctis-azureus .dropdown,
+body.theme-light.noctis-sereno select,
+body.theme-light.noctis-sereno .dropdown,
+body.theme-light.noctis-obscuro select,
+body.theme-light.noctis-obscuro .dropdown,
+body.theme-light.noctis-minimus select,
+body.theme-light.noctis-minimus .dropdown,
+body.theme-light.noctis-bordo select,
+body.theme-light.noctis-bordo .dropdown,
+body.theme-light.noctis-uva select,
+body.theme-light.noctis-uva .dropdown,
+body.theme-light.noctis-viola select,
+body.theme-light.noctis-viola .dropdown {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b2cacd' opacity='0.9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E");
+}
+
+/* =========================================================
+   SYNTAX HIGHLIGHTING (CodeMirror 6 / Live Preview)
+   ========================================================= */
+
+body .cm-s-obsidian .cm-comment,
+body .markdown-source-view.mod-cm6 .cm-comment { color: var(--noc-comment); }
+
+.cm-s-obsidian .cm-keyword,
+.token.keyword                             { color: var(--noc-keyword); }
+
+.cm-s-obsidian .cm-string,
+.token.string                              { color: var(--noc-string); }
+
+.cm-s-obsidian .cm-number,
+.token.number                              { color: var(--noc-number); }
+
+.cm-s-obsidian .cm-def,
+.cm-s-obsidian .cm-function,
+.token.function                            { color: var(--noc-function); }
+
+.cm-s-obsidian .cm-variable-2,
+.token.variable                            { color: var(--noc-variable); }
+
+.cm-s-obsidian .cm-tag,
+.token.tag                                 { color: var(--noc-tag); }
+
+.cm-s-obsidian .cm-type,
+.token.class-name                          { color: var(--noc-type); }
+
+.cm-s-obsidian .cm-builtin,
+.token.constant                            { color: var(--noc-constant); }
+
+.cm-s-obsidian .cm-operator,
+.token.operator                            { color: var(--noc-operator); }
+
+/* =========================================================
+   MARKDOWN RENDERING
+   ========================================================= */
+
+/* Headings */
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .cm-header-1 { color: var(--noc-tag); }
+
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .cm-header-2 { color: var(--noc-keyword); }
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .cm-header-3 { color: var(--noc-variable); }
+
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .cm-header-4 { color: var(--noc-string); }
+
+.markdown-rendered h5,
+.markdown-source-view.mod-cm6 .cm-header-5 { color: var(--noc-function); }
+
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .cm-header-6 { color: var(--noc-comment); }
+
+/* Emphasis */
+.markdown-rendered strong, .cm-strong { color: var(--noc-variable); font-weight: 700; }
+.markdown-rendered em, .cm-em         { color: var(--noc-string); font-style: italic; }
+
+/* Inline code */
+.markdown-rendered code,
+.cm-inline-code {
+  background-color: var(--noc-base-10);
+  color: var(--noc-string);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+/* Blockquotes */
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--noc-accent);
+  color: var(--text-muted);
+  background-color: var(--noc-base-05);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Horizontal rule */
+.markdown-rendered hr {
+  border-color: var(--noc-base-30);
+}
+
+/* Tables */
+.markdown-rendered th {
+  background-color: var(--noc-base-10);
+  color: var(--noc-variable);
+}
+.markdown-rendered td,
+.markdown-rendered th {
+  border-color: var(--noc-base-30);
+}
+.markdown-rendered tr:nth-child(even) td {
+  background-color: var(--noc-base-05);
+}
+
+/* Highlights / ==mark== */
+.markdown-rendered mark {
+  background-color: hsla(var(--noc-accent-hsl), 0.3);
+  color: var(--text-normal);
+}
+
+/* Tags */
+.tag {
+  background-color: hsla(var(--noc-accent-hsl), 0.15);
+  border: 1px solid hsla(var(--noc-accent-hsl), 0.4);
+  color: var(--noc-accent);
+  border-radius: 4px;
+}
+
+/* =========================================================
+   EDITOR UI
+   ========================================================= */
+
+/* Active line */
+body .cm-active-line {
+  background-color: var(--noc-base-05);
+}
+
+/* Text selection */
+body .cm-selectionBackground,
+body::selection {
+  background-color: hsla(var(--noc-accent-hsl), 0.25);
+}
+
+/* Cursor */
+body .cm-cursor {
+  border-left-color: var(--noc-accent);
+}
+
+/* Search highlight */
+.cm-searchMatch,
+.search-result-file-matched-text {
+  background-color: hsla(var(--noc-accent-hsl), 0.3);
+  color: var(--noc-base-100);
+  border-radius: 2px;
+}
+.cm-searchMatch.cm-searchMatch-selected {
+  background-color: hsla(var(--noc-accent-hsl), 0.55);
+}
+
+/* Fold gutter */
+.cm-foldGutter span:hover {
+  color: var(--noc-accent);
+}
+
+/* =========================================================
+   WORKSPACE / CHROME
+   ========================================================= */
+
+/* Sidebar */
+.workspace-ribbon {
+  background-color: var(--noc-base-05);
+  border-right: 1px solid var(--noc-base-20);
+}
+
+/* File explorer active item */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background-color: hsla(var(--noc-accent-hsl), 0.15);
+  color: var(--noc-accent);
+}
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--noc-accent-light);
+}
+
+/* Status bar */
+.status-bar {
+  background-color: var(--noc-base-05);
+  border-top: 1px solid var(--noc-base-20);
+  color: var(--text-faint);
+}
+
+/* Titlebar & tab bar — CSS variables (Obsidian 1.x) */
+body {
+  --titlebar-background:         var(--noc-base-05);
+  --titlebar-background-focused: var(--noc-base-05);
+  --titlebar-text-color:         var(--noc-base-50);
+  --titlebar-text-color-focused: var(--noc-base-70);
+
+  --tab-container-background:      var(--noc-base-05);
+  --tab-background-active:         var(--noc-base-00);
+  --tab-text-color:                var(--noc-base-50);
+  --tab-text-color-focused:        var(--noc-base-70);
+  --tab-text-color-active:         var(--noc-base-100);
+  --tab-text-color-active-focused: var(--noc-base-100);
+  --tab-outline-color:             transparent;
+  --tab-divider-color:             transparent;
+  --tab-curve:                     6px;
+
+  /* Pane dividers — match the border color so no raw line appears */
+  --divider-color:                 var(--noc-base-20);
+  --divider-color-hover:           var(--noc-base-35);
+}
+
+/* Direct selectors */
+.titlebar,
+.workspace-tab-header-container,
+.workspace-tab-header-container-inner {
+  background-color: var(--noc-base-05);
+  border-bottom: none;
+}
+
+/* The tab strip area to the right of all tabs */
+.workspace-tab-header-spacer {
+  background-color: var(--noc-base-05);
+}
+
+.workspace-tab-header {
+  color: var(--noc-base-50);
+  border: none;
+}
+.workspace-tab-header:hover {
+  color: var(--noc-base-70);
+  background-color: var(--noc-base-10);
+}
+.workspace-tab-header.is-active {
+  background-color: var(--noc-base-00);
+  color: var(--noc-base-100);
+  /* The ::before/::after pseudo-elements draw the inward curves;
+     their box-shadow must match the tab-container background */
+  --tab-curve-active-bg: var(--noc-base-05);
+}
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  box-shadow: 0 0 0 10px var(--noc-base-05),
+              0 4px 0 10px var(--noc-base-05);
+}
+
+/* New tab button */
+.workspace-tab-header-new-tab {
+  color: var(--noc-base-50);
+  border: none;
+}
+.workspace-tab-header-new-tab:hover {
+  color: var(--noc-accent);
+}
+
+/* Modal / dialog */
+.modal {
+  background-color: var(--noc-base-10);
+  border: 1px solid var(--noc-base-30);
+}
+.modal-title {
+  color: var(--noc-accent);
+}
+
+/* Prompt / switcher */
+.prompt {
+  background-color: var(--noc-base-10);
+  border: 1px solid var(--noc-base-30);
+}
+.prompt-input {
+  background-color: var(--noc-base-00);
+  color: var(--text-normal);
+}
+.suggestion-item.is-selected {
+  background-color: hsla(var(--noc-accent-hsl), 0.2);
+  color: var(--noc-accent);
+}
+
+/* Buttons */
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+button:not(.mod-cta):not(.clickable-icon) {
+  background-color: var(--noc-base-10);
+  color: var(--text-normal);
+  border: 1px solid var(--noc-base-30);
+}
+button:not(.mod-cta):not(.clickable-icon):hover {
+  background-color: var(--noc-base-20);
+  border-color: var(--noc-base-35);
+}
+
+/* Inputs, textareas, selects (dropdowns) */
+body input[type="text"],
+body input[type="search"],
+body input[type="email"],
+body input[type="password"],
+body input[type="number"],
+body textarea,
+body select {
+  background-color: var(--noc-base-05);
+  color: var(--text-normal);
+  border-color: var(--noc-base-30);
+}
+body input[type="text"]:focus,
+body input[type="search"]:focus,
+body textarea:focus,
+body select:focus {
+  border-color: var(--noc-accent);
+  box-shadow: 0 0 0 2px hsla(var(--noc-accent-hsl), 0.2);
+}
+
+/* Settings modal — search bar & dropdowns
+   Use body.theme-dark/light prefix (0,3,1) to beat Obsidian's
+   .theme-dark .setting-item .dropdown (0,3,0) selectors */
+body.theme-dark .search-input-container input,
+body.theme-light .search-input-container input,
+body.theme-dark .setting-item input,
+body.theme-light .setting-item input,
+body.theme-dark .setting-item textarea,
+body.theme-light .setting-item textarea,
+body.theme-dark .setting-item select,
+body.theme-light .setting-item select,
+body.theme-dark .setting-item .dropdown,
+body.theme-light .setting-item .dropdown {
+  background-color: var(--noc-base-05);
+  color: var(--text-normal);
+  border-color: var(--noc-base-30);
+}
+body.theme-dark .setting-item .dropdown:hover,
+body.theme-dark .setting-item select:hover,
+body.theme-light .setting-item .dropdown:hover,
+body.theme-light .setting-item select:hover {
+  border-color: var(--noc-base-40);
+}
+
+
+/* Search icon & clear button */
+.search-input-container .search-input-clear-button,
+.search-input-container .search-icon {
+  color: var(--text-faint);
+}
+
+/* =========================================================
+   SETTINGS MODAL
+   ========================================================= */
+
+.vertical-tab-nav-item.is-active {
+  background-color: hsla(var(--noc-accent-hsl), 0.15);
+  color: var(--noc-accent);
+}
+.vertical-tab-nav-item:hover {
+  background-color: var(--noc-base-10);
+}
+.setting-item {
+  border-top-color: var(--noc-base-20);
+}
+.setting-item-name {
+  color: var(--text-normal);
+}
+.setting-item-description {
+  color: var(--text-muted);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background-color: var(--noc-base-30);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--noc-base-40);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* =========================================================
+   GRAPH VIEW
+   ========================================================= */
+
+.graph-view.color-fill          { color: var(--noc-accent); }
+.graph-view.color-fill-tag      { color: var(--noc-keyword); }
+.graph-view.color-fill-attachment { color: var(--noc-variable); }
+.graph-view.color-fill-unresolved { color: var(--noc-base-50); }
+.graph-view.color-line          { color: var(--noc-base-30); }
+.graph-view.color-text          { color: var(--noc-base-70); }
+.graph-view.color-fill-highlight { color: var(--noc-accent-light); }
+.graph-view.color-line-highlight  { color: var(--noc-accent); }

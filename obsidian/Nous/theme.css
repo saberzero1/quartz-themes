@@ -1,0 +1,3423 @@
+/* ============================================================
+   NOUS — An Obsidian theme
+   Claude editorial aesthetic × LaTeX academic typography.
+
+   Palette is Claude's warm parchment / terracotta system.
+   Typography is a LaTeX-adjacent serif (Crimson Pro / EB Garamond)
+   paired with Inter for UI and JetBrains Mono for code.
+   ============================================================ */
+
+/* @settings
+
+name: Nous
+id: nous
+settings:
+  -
+    id: nous-serif-heading
+    title: Headline font
+    description: The serif used for headings and display text.
+    type: variable-text
+    default: '"Crimson Pro", "EB Garamond", "Source Serif 4", Georgia, serif'
+  -
+    id: nous-serif-body
+    title: Body font
+    description: The serif used for body text in the editor and reading view.
+    type: variable-text
+    default: '"Crimson Pro", "EB Garamond", "Source Serif 4", Georgia, serif'
+  -
+    id: nous-sans-ui
+    title: UI font
+    description: The sans-serif used for the Obsidian interface (tabs, sidebars, menus).
+    type: variable-text
+    default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
+  -
+    id: nous-mono
+    title: Monospace font
+    description: The monospace used for code, inline code, and front-matter values.
+    type: variable-text
+    default: '"JetBrains Mono", "Fira Code", "SF Mono", Menlo, Consolas, monospace'
+  -
+    id: nous-body-size
+    title: Body text size
+    description: Base font size for editor and reading view body text.
+    type: variable-number-slider
+    default: 17
+    format: px
+    min: 14
+    max: 22
+    step: 1
+  -
+    id: nous-body-line-height
+    title: Body line height
+    description: Line height for body text. LaTeX-like generosity lives around 1.60–1.75.
+    type: variable-number-slider
+    default: 1.65
+    min: 1.3
+    max: 2
+    step: 0.05
+  -
+    id: nous-reading-width
+    title: Reading width
+    description: Maximum width of the editor / reading column, in characters.
+    type: variable-number-slider
+    default: 80
+    format: ch
+    min: 50
+    max: 120
+    step: 1
+  -
+    id: nous-justify-body
+    title: Justify body paragraphs
+    description: LaTeX-style justified alignment with hyphenation for body text.
+    type: class-toggle
+    default: false
+  -
+    id: nous-number-headings
+    title: Number headings (§1.1.1)
+    description: Academic section numbering for H1 through H4 in reading view.
+    type: class-toggle
+    default: false
+  -
+    id: nous-drop-caps
+    title: Drop cap on first paragraph
+    description: LaTeX / editorial drop capital at the start of each note.
+    type: class-toggle
+    default: false
+  -
+    id: nous-disable-small-caps
+    title: Disable small-caps H5 / H6
+    description: Turn off the small-caps rendering for level-five and level-six headings.
+    type: class-toggle
+    default: false
+*/
+
+/* ------------------------------------------------------------
+   1. Fonts
+   ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* ------------------------------------------------------------
+   CJK size-adjustment for headings.
+   Chinese serifs (Songti SC / Noto Serif SC / etc.) fill almost
+   their entire em-box, while Latin serifs like Crimson Pro only
+   fill ~70% of it. At large heading sizes this makes Chinese
+   characters look ~30% bigger than adjacent English in mixed
+   titles. We register virtual "Adjusted" font-families that
+   wrap the real local fonts with `size-adjust: 85%`, and use
+   these only in the *heading* font-family stack. Body text keeps
+   the un-adjusted fonts so Chinese reading size stays natural.
+   ------------------------------------------------------------ */
+@font-face {
+  font-family: 'Songti SC Adjusted';
+  src: local('Songti SC'), local('STSong'), local('STSongti-SC-Regular');
+  size-adjust: 85%;
+}
+@font-face {
+  font-family: 'Songti SC Adjusted';
+  src: local('Songti SC Bold'), local('STSong-Bold'), local('STSongti-SC-Bold'), local('STSongti-SC-Black');
+  font-weight: 600 900;
+  size-adjust: 85%;
+}
+@font-face {
+  font-family: 'Source Han Serif Adjusted';
+  src: local('Source Han Serif SC'), local('Noto Serif SC'), local('Noto Serif CJK SC');
+  size-adjust: 85%;
+}
+@font-face {
+  font-family: 'Source Han Serif Adjusted';
+  src: local('Source Han Serif SC Bold'), local('Noto Serif SC Bold'), local('Noto Serif CJK SC Bold');
+  font-weight: 600 900;
+  size-adjust: 85%;
+}
+@font-face {
+  font-family: 'SimSun Adjusted';
+  src: local('SimSun'), local('宋体'), local('华文宋体');
+  size-adjust: 85%;
+}
+
+/* ------------------------------------------------------------
+   2. Light theme tokens  (Claude parchment world)
+   ------------------------------------------------------------ */
+.theme-light {
+  /* --- Claude palette --- */
+  --nous-parchment:     #f5f4ed;
+  --nous-ivory:         #faf9f5;
+  --nous-pure-white:    #ffffff;
+  --nous-warm-sand:     #e8e6dc;
+  --nous-terracotta:    #c96442;
+  --nous-coral:         #d97757;
+  --nous-near-black:    #141413;
+  --nous-dark-surface:  #30302e;
+  --nous-charcoal-warm: #4d4c48;
+  --nous-dark-warm:     #3d3d3a;
+  --nous-olive-gray:    #5e5d59;
+  --nous-stone-gray:    #87867f;
+  --nous-warm-silver:   #b0aea5;
+  --nous-border-cream:  #f0eee6;
+  --nous-border-warm:   #e8e6dc;
+  --nous-ring-warm:     #d1cfc5;
+  --nous-ring-deep:     #c2c0b6;
+  --nous-error-crimson: #b53333;
+  --nous-focus-blue:    #3898ec;
+
+  /* muted academic accents for callouts (warm-toned where possible) */
+  --nous-sage:    #6b8e5e;
+  --nous-ochre:   #b88c3e;
+  --nous-amber:   #c8883f;
+  --nous-plum:    #6e4a5a;
+  --nous-slate:   #546a7b;
+
+  /* --- Fonts --- */
+  --nous-font-serif-heading: "Crimson Pro", "EB Garamond", "Source Serif 4", "STIX Two Text", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", "Songti SC Adjusted", "Source Han Serif Adjusted", "SimSun Adjusted", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "Songti TC", "华文宋体", "宋体", SimSun, serif;
+  --nous-font-serif-body:    "Crimson Pro", "EB Garamond", "Source Serif 4", "STIX Two Text", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "Songti TC", "华文宋体", "宋体", SimSun, serif;
+  --nous-font-sans-ui:       "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", system-ui, sans-serif;
+  --nous-font-mono:          "JetBrains Mono", "Fira Code", "SF Mono", Monaco, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --nous-body-size: 17px;
+  --nous-body-line-height: 1.65;
+  --nous-reading-width: 80ch;
+
+  /* --- Obsidian foundation --- */
+  --background-primary:           var(--nous-parchment);
+  --background-primary-alt:       var(--nous-ivory);
+  --background-secondary:         #efede4;
+  --background-secondary-alt:     var(--nous-warm-sand);
+  --background-modifier-hover:         rgba(20, 20, 19, 0.04);
+  --background-modifier-active-hover:  rgba(20, 20, 19, 0.08);
+  --background-modifier-border:        var(--nous-border-warm);
+  --background-modifier-border-hover:  var(--nous-ring-warm);
+  --background-modifier-border-focus:  var(--nous-charcoal-warm);
+  --background-modifier-error:         rgba(181, 51, 51, 0.10);
+  --background-modifier-error-rgb:     181, 51, 51;
+  --background-modifier-error-hover:   rgba(181, 51, 51, 0.20);
+  --background-modifier-success:       rgba(107, 142, 94, 0.15);
+  --background-modifier-message:       rgba(20, 20, 19, 0.05);
+  --background-modifier-form-field:    var(--nous-ivory);
+  --background-modifier-box-shadow:    rgba(20, 20, 19, 0.05);
+  --background-modifier-cover:         rgba(20, 20, 19, 0.45);
+
+  --text-normal:     var(--nous-near-black);
+  --text-muted:      var(--nous-olive-gray);
+  --text-faint:      var(--nous-stone-gray);
+  --text-on-accent:  var(--nous-ivory);
+  --text-on-accent-inverted: var(--nous-near-black);
+  --text-accent:         var(--nous-terracotta);
+  --text-accent-hover:   var(--nous-coral);
+  --text-error:          var(--nous-error-crimson);
+  --text-warning:        var(--nous-amber);
+  --text-success:        var(--nous-sage);
+  --text-highlight-bg:       rgba(201, 100, 66, 0.18);
+  --text-highlight-bg-active: rgba(201, 100, 66, 0.28);
+  --text-selection:          rgba(201, 100, 66, 0.22);
+
+  --interactive-normal:         var(--nous-warm-sand);
+  --interactive-hover:           var(--nous-border-cream);
+  --interactive-accent:          var(--nous-terracotta);
+  --interactive-accent-hsl:      16 56% 53%;
+  --interactive-accent-hover:    var(--nous-coral);
+  --interactive-success:         var(--nous-sage);
+
+  --link-color:             var(--nous-terracotta);
+  --link-color-hover:       var(--nous-coral);
+  --link-external-color:    var(--nous-dark-warm);
+  --link-external-color-hover: var(--nous-terracotta);
+  --link-unresolved-color:  var(--nous-stone-gray);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-filter:  none;
+  --link-unresolved-decoration-style:   dotted;
+  --link-unresolved-decoration-opacity: 0.5;
+
+  /* headings */
+  --h1-color: var(--nous-near-black);
+  --h2-color: var(--nous-near-black);
+  --h3-color: var(--nous-near-black);
+  --h4-color: var(--nous-charcoal-warm);
+  --h5-color: var(--nous-charcoal-warm);
+  --h6-color: var(--nous-olive-gray);
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --h1-size: 2.6em;
+  --h2-size: 1.9em;
+  --h3-size: 1.6em;
+  --h4-size: 1.4em;
+  --h5-size: 1.28em;
+  --h6-size: 1.22em;
+  --h1-line-height: 1.1;
+  --h2-line-height: 1.15;
+  --h3-line-height: 1.2;
+  --h4-line-height: 1.25;
+  --h5-line-height: 1.3;
+  --h6-line-height: 1.4;
+  --heading-spacing: 1.4em;
+
+  /* code syntax (Prism-compatible) */
+  --code-background:  rgba(20, 20, 19, 0.05);
+  --code-normal:      var(--nous-near-black);
+  --code-comment:     var(--nous-stone-gray);
+  --code-keyword:     var(--nous-terracotta);
+  --code-function:    var(--nous-dark-warm);
+  --code-string:      var(--nous-sage);
+  --code-value:       var(--nous-charcoal-warm);
+  --code-property:    var(--nous-plum);
+  --code-operator:    var(--nous-olive-gray);
+  --code-tag:         var(--nous-terracotta);
+  --code-important:   var(--nous-error-crimson);
+  --code-punctuation: var(--nous-olive-gray);
+  --code-white:       var(--nous-near-black);
+  --code-size:        0.88em;
+
+  /* shadows — Claude's ring-first system */
+  --shadow-s:  0 0 0 1px var(--nous-border-cream);
+  --shadow-m:  0 0 0 1px var(--nous-ring-warm), 0 4px 24px rgba(20, 20, 19, 0.05);
+  --shadow-l:  0 0 0 1px var(--nous-ring-warm), 0 12px 32px rgba(20, 20, 19, 0.08);
+  --input-shadow:        inset 0 0 0 1px var(--nous-border-warm);
+  --input-shadow-hover:  inset 0 0 0 1px var(--nous-ring-warm);
+
+  /* radius */
+  --radius-s:  6px;
+  --radius-m:  8px;
+  --radius-l:  12px;
+  --radius-xl: 16px;
+
+  /* chrome */
+  --divider-color:                 var(--nous-border-cream);
+  --divider-color-hover:           var(--nous-ring-warm);
+  --tab-background-active:         var(--nous-ivory);
+  --tab-outline-color:             var(--nous-border-cream);
+  --tab-text-color:                var(--nous-olive-gray);
+  --tab-text-color-active:         var(--nous-near-black);
+  --tab-text-color-focused:        var(--nous-near-black);
+  --tab-text-color-focused-active: var(--nous-near-black);
+  --tab-text-color-focused-active-current: var(--nous-near-black);
+  --titlebar-background:          var(--nous-parchment);
+  --titlebar-background-focused:  var(--nous-parchment);
+  --titlebar-text-color:          var(--nous-near-black);
+  --titlebar-text-color-focused:  var(--nous-near-black);
+  --ribbon-background:             var(--nous-parchment);
+  --ribbon-background-collapsed:   var(--nous-parchment);
+  --status-bar-background:         var(--nous-parchment);
+  --status-bar-text-color:         var(--nous-olive-gray);
+  --status-bar-border-color:       var(--nous-border-cream);
+  --vault-name-font-size:          15px;
+  --vault-profile-color:           var(--nous-olive-gray);
+
+  /* scrollbar */
+  --scrollbar-active-thumb-bg: rgba(20, 20, 19, 0.35);
+  --scrollbar-bg:              transparent;
+  --scrollbar-thumb-bg:        rgba(20, 20, 19, 0.15);
+
+  /* callout anchors — theorem-box feel */
+  --callout-border-width:  0;
+  --callout-border-opacity: 0;
+  --callout-padding:       1.05em 1.35em;
+  --callout-radius:        10px;
+  --callout-blur-strength: 0;
+  --callout-title-padding: 0 0 0.4em 0;
+  --callout-content-padding: 0;
+
+  --callout-note:      107, 142, 94;
+  --callout-abstract:  150, 138, 118;
+  --callout-info:      160, 155, 110;
+  --callout-todo:      84, 106, 123;
+  --callout-tip:       107, 142, 94;
+  --callout-success:   107, 142, 94;
+  --callout-question:  184, 140, 62;
+  --callout-warning:   200, 136, 63;
+  --callout-failure:   181, 51, 51;
+  --callout-danger:    181, 51, 51;
+  --callout-bug:       181, 51, 51;
+  --callout-example:   201, 100, 66;
+  --callout-quote:     110, 74, 90;
+  --callout-important: 201, 100, 66;
+
+  /* graph view */
+  --graph-line:         var(--nous-border-warm);
+  --graph-node:         var(--nous-charcoal-warm);
+  --graph-node-unresolved: var(--nous-stone-gray);
+  --graph-node-focused: var(--nous-terracotta);
+  --graph-node-tag:     var(--nous-sage);
+  --graph-node-attachment: var(--nous-plum);
+
+  /* editor */
+  --collapse-icon-color: var(--nous-stone-gray);
+  --collapse-icon-color-collapsed: var(--nous-terracotta);
+  --checkbox-color:        var(--nous-terracotta);
+  --checkbox-color-hover:  var(--nous-coral);
+  --checkbox-border-color: var(--nous-ring-warm);
+  --checkbox-border-color-hover: var(--nous-charcoal-warm);
+  --checkbox-marker-color: var(--nous-ivory);
+  --checklist-done-color:      var(--nous-stone-gray);
+  --checklist-done-decoration: line-through;
+
+  /* table */
+  --table-background:               transparent;
+  --table-border-width:             1px;
+  --table-border-color:             var(--nous-border-warm);
+  --table-header-background:        transparent;
+  --table-header-background-hover:  transparent;
+  --table-header-color:             var(--nous-near-black);
+  --table-header-border-width:      2px;
+  --table-header-border-color:      var(--nous-near-black);
+  --table-text-color:               var(--nous-near-black);
+  --table-row-background-hover:     transparent;
+  --table-row-alt-background:       transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-column-alt-background:    transparent;
+  --table-last-border-width:        2px;
+  --table-last-border-color:        var(--nous-near-black);
+
+  /* indentation guides */
+  --indentation-guide-color:        var(--nous-border-warm);
+  --indentation-guide-color-active: var(--nous-ring-deep);
+  --indentation-guide-width:        1px;
+
+  /* blockquote */
+  --blockquote-background-color: transparent;
+  --blockquote-border-color:     var(--nous-ring-deep);
+  --blockquote-border-thickness: 2px;
+  --blockquote-color:            var(--nous-charcoal-warm);
+  --blockquote-font-style:       italic;
+
+  --accent-h: 16;
+  --accent-s: 56%;
+  --accent-l: 53%;
+
+  --caret-color: var(--nous-terracotta);
+
+  --prompt-width: 720px;
+  --dialog-width: 640px;
+
+  color-scheme: light;
+}
+
+/* ------------------------------------------------------------
+   3. Dark theme tokens  (Claude near-black world)
+   ------------------------------------------------------------ */
+.theme-dark {
+  --nous-parchment:     #141413;
+  --nous-ivory:         #1c1c1a;
+  --nous-pure-white:    #222220;
+  --nous-warm-sand:     #30302e;
+  --nous-terracotta:    #d97757;
+  --nous-coral:         #e8906d;
+  --nous-near-black:    #f5f4ed;
+  --nous-dark-surface:  #30302e;
+  --nous-charcoal-warm: #c5c2b6;
+  --nous-dark-warm:     #d5d2c6;
+  --nous-olive-gray:    #a8a69a;
+  --nous-stone-gray:    #87867f;
+  --nous-warm-silver:   #b0aea5;
+  --nous-border-cream:  #2a2a28;
+  --nous-border-warm:   #30302e;
+  --nous-ring-warm:     #3d3d3a;
+  --nous-ring-deep:     #4d4c48;
+  --nous-error-crimson: #e08585;
+  --nous-focus-blue:    #6bb4f5;
+
+  --nous-sage:    #8fa67d;
+  --nous-ochre:   #d4a85c;
+  --nous-amber:   #e0a06a;
+  --nous-plum:    #a68898;
+  --nous-slate:   #8aa0b0;
+
+  --nous-font-serif-heading: "Crimson Pro", "EB Garamond", "Source Serif 4", "STIX Two Text", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", "Songti SC Adjusted", "Source Han Serif Adjusted", "SimSun Adjusted", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "Songti TC", "华文宋体", "宋体", SimSun, serif;
+  --nous-font-serif-body:    "Crimson Pro", "EB Garamond", "Source Serif 4", "STIX Two Text", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif SC", "Songti TC", "华文宋体", "宋体", SimSun, serif;
+  --nous-font-sans-ui:       "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", system-ui, sans-serif;
+  --nous-font-mono:          "JetBrains Mono", "Fira Code", "SF Mono", Monaco, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --nous-body-size: 17px;
+  --nous-body-line-height: 1.65;
+  --nous-reading-width: 80ch;
+
+  --background-primary:           #141413;
+  --background-primary-alt:       #1a1a18;
+  --background-secondary:         #1c1c1a;
+  --background-secondary-alt:     #222220;
+  --background-modifier-hover:         rgba(245, 244, 237, 0.045);
+  --background-modifier-active-hover:  rgba(245, 244, 237, 0.09);
+  --background-modifier-border:        #2a2a28;
+  --background-modifier-border-hover:  #3d3d3a;
+  --background-modifier-border-focus:  #c5c2b6;
+  --background-modifier-error:         rgba(224, 133, 133, 0.14);
+  --background-modifier-error-hover:   rgba(224, 133, 133, 0.24);
+  --background-modifier-success:       rgba(143, 166, 125, 0.16);
+  --background-modifier-message:       rgba(245, 244, 237, 0.08);
+  --background-modifier-form-field:    #1a1a18;
+  --background-modifier-box-shadow:    rgba(0, 0, 0, 0.45);
+  --background-modifier-cover:         rgba(0, 0, 0, 0.65);
+
+  --text-normal:     #f5f4ed;
+  --text-muted:      #b0aea5;
+  --text-faint:      #87867f;
+  --text-on-accent:  #1a1a18;
+  --text-on-accent-inverted: #f5f4ed;
+  --text-accent:         var(--nous-terracotta);
+  --text-accent-hover:   var(--nous-coral);
+  --text-error:          var(--nous-error-crimson);
+  --text-highlight-bg:       rgba(217, 119, 87, 0.25);
+  --text-highlight-bg-active: rgba(217, 119, 87, 0.4);
+  --text-selection:          rgba(217, 119, 87, 0.28);
+
+  --interactive-normal:      #30302e;
+  --interactive-hover:        #3a3a37;
+  --interactive-accent:       var(--nous-terracotta);
+  --interactive-accent-hover: var(--nous-coral);
+  --interactive-success:      var(--nous-sage);
+
+  --link-color:             var(--nous-terracotta);
+  --link-color-hover:       var(--nous-coral);
+  --link-external-color:    #d5d2c6;
+  --link-external-color-hover: var(--nous-terracotta);
+  --link-unresolved-color:  #87867f;
+
+  --h1-color: #f5f4ed;
+  --h2-color: #f5f4ed;
+  --h3-color: #f5f4ed;
+  --h4-color: #e8e6dc;
+  --h5-color: #b0aea5;
+  --h6-color: #b0aea5;
+  /* Heading structural tokens — mirror .theme-light exactly so size /
+     weight / line-height match across dark and light modes. Only the
+     colors above differ. */
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --h1-size: 2.6em;
+  --h2-size: 1.9em;
+  --h3-size: 1.6em;
+  --h4-size: 1.4em;
+  --h5-size: 1.28em;
+  --h6-size: 1.22em;
+  --h1-line-height: 1.1;
+  --h2-line-height: 1.15;
+  --h3-line-height: 1.2;
+  --h4-line-height: 1.25;
+  --h5-line-height: 1.3;
+  --h6-line-height: 1.4;
+  --heading-spacing: 1.4em;
+
+  --code-background: rgba(245, 244, 237, 0.07);
+  --code-normal:      #e8e6dc;
+  --code-comment:     #87867f;
+  --code-keyword:     var(--nous-terracotta);
+  --code-function:    #d5d2c6;
+  --code-string:      var(--nous-sage);
+  --code-value:       #b0aea5;
+  --code-property:    var(--nous-plum);
+  --code-operator:    #a8a69a;
+  --code-tag:         var(--nous-terracotta);
+  --code-important:   var(--nous-error-crimson);
+  --code-punctuation: #a8a69a;
+
+  --shadow-s: 0 0 0 1px #2a2a28;
+  --shadow-m: 0 0 0 1px #3d3d3a, 0 4px 24px rgba(0, 0, 0, 0.35);
+  --shadow-l: 0 0 0 1px #3d3d3a, 0 16px 40px rgba(0, 0, 0, 0.5);
+  --input-shadow:       inset 0 0 0 1px #30302e;
+  --input-shadow-hover: inset 0 0 0 1px #3d3d3a;
+
+  --divider-color:  #2a2a28;
+  --tab-background-active: #1c1c1a;
+  --tab-outline-color:     #2a2a28;
+  --tab-text-color:        #a8a69a;
+  --tab-text-color-focused-active: #f5f4ed;
+  --titlebar-background:         #141413;
+  --titlebar-background-focused: #141413;
+  --titlebar-text-color:         #f5f4ed;
+  --ribbon-background:     #141413;
+  --status-bar-background: #141413;
+  --status-bar-text-color: #a8a69a;
+  --status-bar-border-color: #2a2a28;
+
+  --scrollbar-active-thumb-bg: rgba(245, 244, 237, 0.35);
+  --scrollbar-thumb-bg:        rgba(245, 244, 237, 0.12);
+
+  --callout-note:      143, 166, 125;
+  --callout-abstract:  180, 168, 148;
+  --callout-info:      190, 184, 140;
+  --callout-todo:      138, 160, 176;
+  --callout-tip:       143, 166, 125;
+  --callout-success:   143, 166, 125;
+  --callout-question:  212, 168, 92;
+  --callout-warning:   224, 160, 106;
+  --callout-failure:   224, 133, 133;
+  --callout-danger:    224, 133, 133;
+  --callout-bug:       224, 133, 133;
+  --callout-example:   217, 119, 87;
+  --callout-quote:     166, 136, 152;
+  --callout-important: 217, 119, 87;
+
+  --graph-line:         #2a2a28;
+  --graph-node:         #d5d2c6;
+  --graph-node-unresolved: #6b6b66;
+  --graph-node-focused: var(--nous-terracotta);
+  --graph-node-tag:     var(--nous-sage);
+  --graph-node-attachment: var(--nous-plum);
+
+  --checkbox-color:        var(--nous-terracotta);
+  --checkbox-color-hover:  var(--nous-coral);
+  --checkbox-border-color: #4d4c48;
+  --checkbox-border-color-hover: #c5c2b6;
+  --checkbox-marker-color: #1a1a18;
+  --checklist-done-color:  #87867f;
+
+  --table-background:               transparent;
+  --table-border-color:             #2a2a28;
+  --table-header-background:        transparent;
+  --table-header-background-hover:  transparent;
+  --table-header-color:             #f5f4ed;
+  --table-header-border-color:      #f5f4ed;
+  --table-text-color:               #e8e6dc;
+  --table-row-background-hover:     transparent;
+  --table-row-alt-background:       transparent;
+  --table-last-border-color:        #f5f4ed;
+
+  --indentation-guide-color:        #2a2a28;
+  --indentation-guide-color-active: #4d4c48;
+
+  --blockquote-border-color: #4d4c48;
+  --blockquote-color:        #b0aea5;
+
+  --caret-color: var(--nous-terracotta);
+
+  color-scheme: dark;
+}
+
+/* ------------------------------------------------------------
+   4. Base body & typography
+   ------------------------------------------------------------ */
+body {
+  --font-text-theme:        var(--nous-font-serif-body);
+  --font-interface-theme:   var(--nous-font-sans-ui);
+  --font-monospace-theme:   var(--nous-font-mono);
+
+  --font-text:       var(--nous-font-serif-body);
+  --font-interface:  var(--nous-font-sans-ui);
+  --font-monospace:  var(--nous-font-mono);
+
+  --font-text-size:  var(--nous-body-size);
+  --line-height-normal: var(--nous-body-line-height);
+  --line-height-tight:  1.25;
+
+  --file-line-width: var(--nous-reading-width);
+  --font-smoothing:  antialiased;
+
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   5. Workspace chrome
+   ============================================================ */
+
+/* Title bar */
+.titlebar {
+  background: var(--titlebar-background);
+  border-bottom: 1px solid transparent;
+}
+.titlebar-inner { color: var(--titlebar-text-color); font-family: var(--nous-font-sans-ui); font-weight: 500; letter-spacing: 0.01em; }
+
+/* Ribbon */
+.workspace-ribbon {
+  background: var(--ribbon-background);
+  border-right: 1px solid var(--divider-color);
+}
+.workspace-ribbon .side-dock-ribbon-action {
+  color: var(--nous-olive-gray);
+  border-radius: var(--radius-m);
+  transition: color 120ms ease, background-color 120ms ease;
+}
+.workspace-ribbon .side-dock-ribbon-action:hover {
+  background: var(--background-modifier-hover);
+  color: var(--nous-near-black);
+}
+.workspace-ribbon .side-dock-ribbon-action.is-active {
+  color: var(--nous-terracotta);
+  background: var(--background-modifier-hover);
+}
+
+/* Sidebars */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background: var(--background-secondary);
+  border-color: var(--divider-color);
+}
+.workspace-split .workspace-leaf-content { background: transparent; }
+
+/* Tab headers */
+.workspace-tab-header-container {
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--divider-color);
+  padding: 4px 6px 0;
+}
+.workspace-tab-header {
+  background: transparent;
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  margin: 0 2px;
+  padding: 0 2px;
+  transition: background-color 120ms ease;
+  font-family: var(--nous-font-sans-ui);
+}
+.workspace-tab-header:not(.is-active):hover {
+  background: var(--background-modifier-hover);
+}
+.workspace-tab-header.is-active {
+  background: var(--tab-background-active);
+  box-shadow: 0 -1px 0 var(--divider-color), 1px 0 0 var(--divider-color), -1px 0 0 var(--divider-color);
+}
+.workspace-tab-header-inner-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--tab-text-color);
+  letter-spacing: 0.005em;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--tab-text-color-focused-active);
+}
+.workspace-tab-header .workspace-tab-header-inner-icon { color: var(--nous-stone-gray); }
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon { color: var(--nous-terracotta); }
+.workspace-tab-header .workspace-tab-header-inner-close-button { color: var(--nous-stone-gray); }
+.workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+  background: var(--background-modifier-hover);
+  color: var(--nous-near-black);
+}
+
+/* View header */
+.view-header {
+  background: var(--background-primary);
+  border-bottom: 1px solid var(--divider-color);
+}
+.view-header-title {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+.view-header-icon { color: var(--nous-stone-gray); }
+
+/* Status bar */
+.status-bar {
+  background: var(--status-bar-background);
+  border-top: 1px solid var(--status-bar-border-color);
+  font-family: var(--nous-font-sans-ui);
+  font-size: 12px;
+  color: var(--status-bar-text-color);
+  letter-spacing: 0.01em;
+}
+.status-bar-item { color: var(--status-bar-text-color); }
+.status-bar-item:hover { color: var(--nous-near-black); }
+.theme-dark .status-bar-item:hover { color: var(--text-normal); }
+
+/* Vault switcher */
+.workspace-drawer-vault-switcher,
+.mod-root .workspace-tab-header-tab-list {
+  background: transparent;
+}
+
+/* ============================================================
+   6. File explorer & nav trees
+   ============================================================ */
+.nav-file-title,
+.nav-folder-title {
+  font-family: var(--nous-font-sans-ui);
+  font-size: 14px;
+  color: var(--nous-charcoal-warm);
+  border-radius: var(--radius-m);
+  transition: background-color 120ms ease, color 120ms ease;
+  padding: 4px 8px;
+  line-height: 1.35;
+}
+.theme-dark .nav-file-title,
+.theme-dark .nav-folder-title {
+  color: var(--text-muted);
+}
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background: var(--background-modifier-hover);
+  color: var(--nous-near-black);
+}
+.theme-dark .nav-file-title:hover,
+.theme-dark .nav-folder-title:hover { color: var(--text-normal); }
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.is-active > .nav-file-title,
+.is-active > .nav-folder-title {
+  background: var(--background-modifier-active-hover);
+  color: var(--nous-near-black);
+  font-weight: 500;
+}
+.theme-dark .nav-file-title.is-active,
+.theme-dark .is-active > .nav-file-title { color: var(--text-normal); }
+
+.nav-folder-title-content { font-weight: 500; }
+
+.nav-folder.mod-root > .nav-folder-title {
+  font-family: var(--nous-font-serif-heading);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--nous-near-black);
+  padding-top: 10px;
+  padding-bottom: 6px;
+  letter-spacing: -0.005em;
+}
+.theme-dark .nav-folder.mod-root > .nav-folder-title { color: var(--text-normal); }
+
+.nav-file-tag {
+  color: var(--nous-terracotta);
+  font-weight: 500;
+  font-size: 11px;
+  background: rgba(201, 100, 66, 0.08);
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+.theme-dark .nav-file-tag { background: rgba(217, 119, 87, 0.12); }
+
+.tree-item-icon { color: var(--nous-stone-gray); }
+.tree-item-self:hover .tree-item-icon { color: var(--nous-near-black); }
+
+/* Right-click / context-menu reveal state on file-tree items — Obsidian
+   tags the item with is-active-hover (sometimes has-active-menu) and, by
+   default, draws a prominent outline/box-shadow ring. We only want the
+   background fill, no border, no ring. */
+.nav-file-title.is-active-hover,
+.nav-folder-title.is-active-hover,
+.tree-item-self.is-active-hover,
+.nav-file-title.has-active-menu,
+.nav-folder-title.has-active-menu,
+.tree-item-self.has-active-menu,
+.workspace-tab-header.is-active-hover,
+.tab-header.is-active-hover {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  background-color: var(--background-modifier-hover) !important;
+  color: var(--text-normal) !important;
+}
+
+/* Search pane */
+.search-input-container input {
+  background: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  color: var(--text-normal);
+  font-family: var(--nous-font-sans-ui);
+  padding: 6px 28px;
+}
+.search-input-container input:focus {
+  border-color: var(--nous-charcoal-warm);
+  outline: none;
+  box-shadow: 0 0 0 1px var(--nous-charcoal-warm);
+}
+.search-result-file-title {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  color: var(--nous-near-black);
+}
+.theme-dark .search-result-file-title { color: var(--text-normal); }
+.search-result-file-matched-text {
+  color: var(--nous-near-black);
+  background: rgba(201, 100, 66, 0.20);
+  border-radius: 2px;
+  padding: 1px 2px;
+}
+.theme-dark .search-result-file-matched-text {
+  color: var(--text-normal);
+  background: rgba(217, 119, 87, 0.28);
+}
+
+/* ============================================================
+   7. Editor & reading view — the literary core
+   ============================================================ */
+
+/* Shared reading-column feel */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view,
+.markdown-rendered {
+  font-family: var(--nous-font-serif-body);
+  font-size: var(--nous-body-size);
+  line-height: var(--nous-body-line-height);
+  color: var(--text-normal);
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "onum" 1, "lnum" 0;
+}
+
+/* Source / live-preview margins */
+.markdown-source-view.mod-cm6 .cm-scroller { padding-top: 8px; }
+.markdown-source-view.mod-cm6 .cm-line { padding-left: 0; padding-right: 0; }
+
+/* Reading view container.
+   We set --file-line-width on body instead of hard-capping the sizer,
+   so users can still toggle "readable line length" in Obsidian settings. */
+.markdown-preview-view {
+  padding: 2.25rem 2rem 6rem;
+}
+
+/* ----- Headings ----- */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.HyperMD-header,
+.cm-header {
+  font-family: var(--nous-font-serif-heading);
+  letter-spacing: -0.005em;
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h1,
+.cm-header-1, .HyperMD-header-1 {
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  line-height: var(--h1-line-height);
+  color: var(--h1-color);
+  margin: 1.6em 0 0.55em;
+  letter-spacing: -0.015em;
+}
+.markdown-preview-view h2,
+.cm-header-2, .HyperMD-header-2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-line-height);
+  color: var(--h2-color);
+  margin: 1.45em 0 0.5em;
+  letter-spacing: -0.01em;
+}
+.markdown-preview-view h3,
+.cm-header-3, .HyperMD-header-3 {
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-line-height);
+  color: var(--h3-color);
+  margin: 1.35em 0 0.45em;
+}
+.markdown-preview-view h4,
+.cm-header-4, .HyperMD-header-4 {
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  line-height: var(--h4-line-height);
+  color: var(--h4-color);
+  margin: 1.25em 0 0.4em;
+  font-style: italic;
+}
+.markdown-preview-view h5,
+.markdown-rendered h5,
+.markdown-reading-view h5,
+div.el-h5,
+div.el-h5 > h5,
+.cm-header-5, .HyperMD-header-5 {
+  font-size: var(--h5-size) !important;
+  font-weight: var(--h5-weight);
+  line-height: var(--h5-line-height);
+  color: var(--h5-color);
+  margin: 1.1em 0 0.35em;
+}
+.markdown-preview-view h6,
+.markdown-rendered h6,
+.markdown-reading-view h6,
+div.el-h6,
+div.el-h6 > h6,
+.cm-header-6, .HyperMD-header-6 {
+  font-size: var(--h6-size) !important;
+  font-weight: var(--h6-weight);
+  line-height: var(--h6-line-height);
+  color: var(--h6-color);
+  margin: 1em 0 0.3em;
+}
+
+/* Small-caps on low-level headings (default on; opt-out via Style Settings) */
+body:not(.nous-disable-small-caps) .markdown-preview-view h5,
+body:not(.nous-disable-small-caps) .markdown-preview-view h6,
+body:not(.nous-disable-small-caps) .HyperMD-header-5,
+body:not(.nous-disable-small-caps) .HyperMD-header-6 {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+/* Paragraphs */
+.markdown-preview-view p,
+.cm-line {
+  margin-top: 0;
+}
+.markdown-preview-view p {
+  margin: 0 0 0.85em;
+  orphans: 3;
+  widows: 3;
+}
+
+/* Justified option — LaTeX body feel.
+   Only applied in reading view: CM6 live-preview splits paragraphs
+   into per-line elements, so per-line justify would stretch the last
+   line of each logical paragraph. Reading view sees true <p> blocks. */
+body.nous-justify-body .markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Numbered-headings option */
+body.nous-number-headings .markdown-preview-view .markdown-preview-sizer {
+  counter-reset: h1counter;
+}
+body.nous-number-headings .markdown-preview-view h1 {
+  counter-reset: h2counter;
+  counter-increment: h1counter;
+}
+body.nous-number-headings .markdown-preview-view h2 {
+  counter-reset: h3counter;
+  counter-increment: h2counter;
+}
+body.nous-number-headings .markdown-preview-view h3 {
+  counter-reset: h4counter;
+  counter-increment: h3counter;
+}
+body.nous-number-headings .markdown-preview-view h4 {
+  counter-increment: h4counter;
+}
+body.nous-number-headings .markdown-preview-view h1::before {
+  content: counter(h1counter) ".";
+  color: var(--nous-terracotta);
+  font-variant-numeric: lining-nums;
+  font-weight: 500;
+  margin-right: 0.7em;
+}
+body.nous-number-headings .markdown-preview-view h2::before {
+  content: counter(h1counter) "." counter(h2counter);
+  color: var(--nous-stone-gray);
+  font-variant-numeric: lining-nums;
+  margin-right: 0.6em;
+}
+body.nous-number-headings .markdown-preview-view h3::before {
+  content: counter(h1counter) "." counter(h2counter) "." counter(h3counter);
+  color: var(--nous-stone-gray);
+  font-variant-numeric: lining-nums;
+  margin-right: 0.6em;
+}
+body.nous-number-headings .markdown-preview-view h4::before {
+  content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) "." counter(h4counter);
+  color: var(--nous-stone-gray);
+  font-variant-numeric: lining-nums;
+  margin-right: 0.6em;
+}
+
+/* Drop caps option */
+body.nous-drop-caps .markdown-preview-view .markdown-preview-sizer > p:first-of-type::first-letter,
+body.nous-drop-caps .markdown-preview-view h1 + p::first-letter {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  font-size: 3.4em;
+  line-height: 0.9;
+  float: left;
+  padding: 0.15em 0.12em 0 0;
+  color: var(--nous-terracotta);
+  font-feature-settings: "onum" 0, "lnum" 1;
+}
+
+/* ----- Inline text ----- */
+.markdown-preview-view strong,
+.cm-strong { font-weight: 600; color: var(--text-normal); }
+.markdown-preview-view em,
+.cm-em { font-style: italic; }
+.markdown-preview-view del,
+.cm-strikethrough { color: var(--nous-stone-gray); }
+.markdown-preview-view mark,
+.cm-highlight {
+  background: var(--text-highlight-bg);
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+
+/* Selection */
+::selection { background: var(--text-selection); color: inherit; }
+
+/* Caret */
+.cm-content { caret-color: var(--caret-color); }
+
+/* ----- Links ----- */
+.markdown-preview-view a,
+.cm-link,
+.cm-url,
+a.external-link {
+  color: var(--link-color);
+  text-decoration-color: rgba(201, 100, 66, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+.markdown-preview-view a:hover,
+a.external-link:hover {
+  color: var(--link-color-hover);
+  text-decoration-color: var(--nous-coral);
+}
+
+/* Internal wiki links */
+.internal-link {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 100, 66, 0.30);
+  padding-bottom: 0.5px;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+.theme-dark .internal-link { border-bottom-color: rgba(217, 119, 87, 0.35); }
+.internal-link:hover {
+  color: var(--link-color-hover);
+  border-bottom-color: var(--nous-coral);
+  text-decoration: none;
+}
+.internal-link.is-unresolved,
+.cm-hmd-internal-link.cm-link-has-alias ~ .is-unresolved,
+a.is-unresolved {
+  color: var(--link-unresolved-color);
+  border-bottom-style: dotted;
+  border-bottom-color: var(--nous-stone-gray);
+}
+
+/* External link icon */
+.external-link {
+  background-image: none;
+  padding-right: 0;
+}
+
+/* ----- Lists ----- */
+.markdown-preview-view ul,
+.markdown-preview-view ol { padding-left: 1.75em; margin: 0.4em 0 0.85em; }
+.markdown-preview-view li { margin: 0.2em 0; }
+.markdown-preview-view ul > li::marker { color: var(--nous-terracotta); font-size: 0.9em; }
+.markdown-preview-view ol > li::marker {
+  color: var(--nous-stone-gray);
+  font-variant-numeric: lining-nums;
+  font-family: var(--nous-font-serif-body);
+}
+
+/* Task list checkboxes */
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view input[type="checkbox"] {
+  appearance: none;
+  width: 1.05em;
+  height: 1.05em;
+  border: 1.5px solid var(--checkbox-border-color);
+  border-radius: 4px;
+  background: var(--background-primary-alt);
+  cursor: pointer;
+  position: relative;
+  margin: 0 0.5em 0 -1.5em;
+  vertical-align: -0.18em;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+.markdown-preview-view input[type="checkbox"]:hover,
+.markdown-source-view input[type="checkbox"]:hover {
+  border-color: var(--checkbox-border-color-hover);
+}
+.markdown-preview-view input[type="checkbox"]:checked,
+.markdown-source-view input[type="checkbox"]:checked {
+  background: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+.markdown-preview-view input[type="checkbox"]:checked::after,
+.markdown-source-view input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 3px; top: 0;
+  width: 5px; height: 9px;
+  border: solid var(--checkbox-marker-color);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked + *,
+.markdown-preview-view li.is-checked > *:not(ul):not(ol) {
+  color: var(--checklist-done-color);
+  text-decoration: var(--checklist-done-decoration);
+}
+
+/* ----- Blockquotes — literary, LaTeX "quote" environment ----- */
+.markdown-preview-view blockquote,
+.markdown-source-view blockquote {
+  margin: 1em 0;
+  padding: 0.2em 1.2em;
+  border: none;
+  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  color: var(--blockquote-color);
+  font-style: var(--blockquote-font-style);
+  background: transparent;
+}
+.markdown-preview-view blockquote p { margin: 0.4em 0; }
+
+/* ----- Horizontal rule — classical ornament ----- */
+.markdown-preview-view hr {
+  border: none;
+  margin: 2em auto;
+  width: 35%;
+  text-align: center;
+  height: 1em;
+  overflow: visible;
+}
+.markdown-preview-view hr::before {
+  content: "✻  ✻  ✻";
+  color: var(--nous-stone-gray);
+  font-size: 0.9em;
+  letter-spacing: 0.4em;
+  display: inline-block;
+}
+
+/* ============================================================
+   8. Code — inline & blocks
+   ============================================================ */
+.markdown-preview-view code,
+.markdown-source-view code,
+code {
+  font-family: var(--nous-font-mono);
+  font-size: var(--code-size);
+  font-feature-settings: "liga" 1, "calt" 1;
+  letter-spacing: -0.01em;
+}
+
+/* Inline code — Plum text on the warm-tinted background, distinct from
+   body text and from the terracotta link color. Keeps inline `code()`
+   instantly recognizable without competing with links or CTAs. */
+.markdown-preview-view :not(pre) > code,
+.cm-inline-code {
+  background: var(--code-background);
+  color: var(--nous-plum);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.86em;
+  white-space: break-spaces;
+}
+
+/* Code blocks — reading mode */
+.markdown-preview-view pre {
+  background: var(--code-background);
+  border-radius: var(--radius-m);
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+  padding: 1em 1.15em;
+  margin: 1em 0;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+
+/* Code blocks — edit mode / live preview.
+   CodeMirror 6 renders every line of a fenced block as a separate .cm-line.
+   We build the block from background color alone — no side borders, no
+   box-shadow rails. Rounded corners are applied only to the opening and
+   closing fence lines so the block reads as a single smooth rectangle. */
+.cm-line.HyperMD-codeblock {
+  background: var(--code-background);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.cm-line.HyperMD-codeblock-begin {
+  border-top-left-radius: var(--radius-m);
+  border-top-right-radius: var(--radius-m);
+  padding-top: 4px;
+}
+.cm-line.HyperMD-codeblock-end {
+  border-bottom-left-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
+  padding-bottom: 4px;
+}
+
+/* Strip the side-borders/box-shadows Obsidian's live-preview wrapper
+   adds around embedded blocks (headings, code fences, math, embeds).
+   Callouts are intentionally excluded — they need to keep their own
+   color bar and tinted background. */
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-callout),
+.markdown-source-view.mod-cm6 .cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .cm-html-embed {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent;
+}
+.markdown-preview-view pre code {
+  background: transparent;
+  padding: 0;
+  font-size: var(--code-size);
+  color: var(--code-normal);
+  white-space: pre;
+}
+
+/* Code block flair (language tag & copy button) */
+.code-block-flair {
+  color: var(--nous-stone-gray);
+  background: transparent;
+  font-family: var(--nous-font-sans-ui);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.code-block-flair:hover {
+  background: var(--background-modifier-hover);
+  color: var(--nous-near-black);
+}
+.theme-dark .code-block-flair:hover { color: var(--text-normal); }
+
+/* Prism / HyperMD token colors — shared with syntax vars */
+.token.comment, .token.prolog, .token.cdata { color: var(--code-comment); font-style: italic; }
+.token.punctuation { color: var(--code-punctuation); }
+.token.property, .token.tag, .token.symbol, .token.deleted { color: var(--code-tag); }
+.token.boolean, .token.number { color: var(--code-value); }
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted { color: var(--code-string); }
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string { color: var(--code-operator); }
+.token.atrule, .token.attr-value, .token.keyword { color: var(--code-keyword); }
+.token.function, .token.class-name { color: var(--code-function); }
+.token.regex, .token.important, .token.variable { color: var(--code-important); }
+
+.cm-keyword { color: var(--code-keyword); }
+.cm-comment { color: var(--code-comment); font-style: italic; }
+.cm-string  { color: var(--code-string); }
+.cm-number  { color: var(--code-value); }
+.cm-property, .cm-variable-2 { color: var(--code-property); }
+.cm-def     { color: var(--code-function); }
+.cm-operator, .cm-meta { color: var(--code-operator); }
+.cm-tag     { color: var(--code-tag); }
+.cm-atom    { color: var(--code-value); }
+
+/* ============================================================
+   9. Callouts — rendered as LaTeX theorem/remark boxes
+   ============================================================ */
+.callout {
+  --nous-callout-rgb: var(--callout-color, var(--callout-note));
+  background: rgb(var(--nous-callout-rgb) / 0.07);
+  border-radius: var(--callout-radius);
+  box-shadow: inset 3px 0 0 0 rgb(var(--nous-callout-rgb) / 0.9);
+  padding: var(--callout-padding);
+  margin: 1.15em 0;
+  color: var(--text-normal);
+  font-family: var(--nous-font-serif-body);
+}
+.theme-dark .callout { background: rgb(var(--nous-callout-rgb) / 0.10); }
+
+.callout-title {
+  padding: 0 0 0.35em 0;
+  gap: 8px;
+  align-items: baseline;
+  color: rgb(var(--nous-callout-rgb));
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 600;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.04em;
+  font-size: 1.02em;
+}
+.callout-title-inner {
+  font-weight: inherit;
+  color: inherit;
+}
+.callout-icon { color: rgb(var(--nous-callout-rgb)); }
+
+.callout-content {
+  color: var(--text-normal);
+  font-size: 0.97em;
+  line-height: 1.55;
+}
+.callout-content > *:first-child { margin-top: 0; }
+.callout-content > *:last-child  { margin-bottom: 0; }
+
+/* Italic body inside "quote" callouts — LaTeX theorem tradition */
+.callout[data-callout="quote"] .callout-content,
+.callout[data-callout="cite"] .callout-content,
+.callout[data-callout="abstract"] .callout-content,
+.callout[data-callout="summary"] .callout-content {
+  font-style: italic;
+  color: var(--nous-charcoal-warm);
+}
+.theme-dark .callout[data-callout="quote"] .callout-content,
+.theme-dark .callout[data-callout="cite"] .callout-content,
+.theme-dark .callout[data-callout="abstract"] .callout-content,
+.theme-dark .callout[data-callout="summary"] .callout-content {
+  color: var(--nous-warm-silver);
+}
+
+/* Map Obsidian callout types to theorem-box labels */
+.callout[data-callout="note"] .callout-title-inner::after,
+.callout[data-callout="info"] .callout-title-inner::after,
+.callout[data-callout="tip"] .callout-title-inner::after,
+.callout[data-callout="success"] .callout-title-inner::after,
+.callout[data-callout="question"] .callout-title-inner::after,
+.callout[data-callout="warning"] .callout-title-inner::after,
+.callout[data-callout="failure"] .callout-title-inner::after,
+.callout[data-callout="danger"] .callout-title-inner::after,
+.callout[data-callout="example"] .callout-title-inner::after,
+.callout[data-callout="quote"] .callout-title-inner::after,
+.callout[data-callout="abstract"] .callout-title-inner::after,
+.callout[data-callout="todo"] .callout-title-inner::after { content: ""; }
+
+.callout[data-callout="note"]     { --callout-color: var(--callout-note); }
+.callout[data-callout="abstract"] { --callout-color: var(--callout-abstract); }
+.callout[data-callout="summary"]  { --callout-color: var(--callout-abstract); }
+.callout[data-callout="tldr"]     { --callout-color: var(--callout-abstract); }
+.callout[data-callout="info"]     { --callout-color: var(--callout-info); }
+.callout[data-callout="todo"]     { --callout-color: var(--callout-todo); }
+.callout[data-callout="tip"]      { --callout-color: var(--callout-tip); }
+.callout[data-callout="hint"]     { --callout-color: var(--callout-tip); }
+.callout[data-callout="success"]  { --callout-color: var(--callout-success); }
+.callout[data-callout="check"]    { --callout-color: var(--callout-success); }
+.callout[data-callout="done"]     { --callout-color: var(--callout-success); }
+.callout[data-callout="question"] { --callout-color: var(--callout-question); }
+.callout[data-callout="help"]     { --callout-color: var(--callout-question); }
+.callout[data-callout="faq"]      { --callout-color: var(--callout-question); }
+.callout[data-callout="warning"]  { --callout-color: var(--callout-warning); }
+.callout[data-callout="caution"]  { --callout-color: var(--callout-warning); }
+.callout[data-callout="attention"]{ --callout-color: var(--callout-warning); }
+.callout[data-callout="failure"]  { --callout-color: var(--callout-failure); }
+.callout[data-callout="fail"]     { --callout-color: var(--callout-failure); }
+.callout[data-callout="missing"]  { --callout-color: var(--callout-failure); }
+.callout[data-callout="danger"]   { --callout-color: var(--callout-danger); }
+.callout[data-callout="error"]    { --callout-color: var(--callout-danger); }
+.callout[data-callout="bug"]      { --callout-color: var(--callout-bug); }
+.callout[data-callout="example"]  { --callout-color: var(--callout-example); }
+.callout[data-callout="quote"]    { --callout-color: var(--callout-quote); }
+.callout[data-callout="cite"]     { --callout-color: var(--callout-quote); }
+.callout[data-callout="important"]{ --callout-color: var(--callout-important); }
+
+/* Custom academic callout types — use e.g. `> [!theorem]` */
+.callout[data-callout="theorem"],
+.callout[data-callout="lemma"],
+.callout[data-callout="proposition"],
+.callout[data-callout="corollary"] {
+  --callout-color: var(--callout-example);
+  background: rgb(var(--nous-callout-rgb) / 0.06);
+  box-shadow:
+    inset 3px 0 0 0 rgb(var(--nous-callout-rgb) / 0.9),
+    inset 0 0 0 1px rgb(var(--nous-callout-rgb) / 0.2);
+}
+.callout[data-callout="theorem"] .callout-content,
+.callout[data-callout="lemma"] .callout-content,
+.callout[data-callout="proposition"] .callout-content,
+.callout[data-callout="corollary"] .callout-content {
+  font-style: italic;
+}
+.callout[data-callout="proof"] {
+  --callout-color: var(--callout-quote);
+}
+.callout[data-callout="proof"] .callout-content::after {
+  content: " ∎";
+  color: var(--nous-charcoal-warm);
+  font-weight: 600;
+}
+.callout[data-callout="definition"] {
+  --callout-color: var(--callout-info);
+}
+.callout[data-callout="remark"] {
+  --callout-color: var(--callout-note);
+}
+
+/* Foldable callout chevron */
+.callout.is-collapsible .callout-title { cursor: pointer; }
+.callout-fold { color: rgb(var(--nous-callout-rgb)); opacity: 0.7; }
+
+/* ============================================================
+   10. Tables — LaTeX booktabs style
+   ============================================================ */
+.markdown-preview-view table,
+.markdown-source-view table {
+  border-collapse: collapse;
+  margin: 1.25em auto;
+  font-family: var(--nous-font-serif-body);
+  font-size: 0.92em;
+  line-height: 1.4;
+  background: transparent;
+}
+.markdown-preview-view thead,
+.markdown-source-view thead { background: transparent; }
+
+/* booktabs: top & bottom 2px rule around table, 1px rule below header */
+.markdown-preview-view table thead,
+.markdown-source-view table thead {
+  border-top: 2px solid var(--table-header-border-color);
+  border-bottom: 1px solid var(--table-header-border-color);
+}
+.markdown-preview-view table tbody,
+.markdown-source-view table tbody {
+  border-bottom: 2px solid var(--table-last-border-color);
+}
+
+.markdown-preview-view th,
+.markdown-source-view th,
+.markdown-preview-view td,
+.markdown-source-view td {
+  border: none;
+  padding: 0.55em 0.95em;
+  text-align: left;
+  vertical-align: baseline;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+.markdown-preview-view th,
+.markdown-rendered th,
+.markdown-reading-view th,
+.markdown-source-view th,
+div.el-table th,
+div.el-table thead th {
+  font-weight: 600 !important;
+  color: var(--table-header-color);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  font-size: 1.35em !important;
+}
+.markdown-preview-view td,
+.markdown-source-view td { color: var(--table-text-color); }
+
+/* Pure booktabs: no zebra, no row/column backgrounds, no hover fill —
+   only the three rules (top / head-sep / bottom) remain. */
+.markdown-preview-view tr:hover td,
+.markdown-preview-view thead:hover,
+.markdown-preview-view th:hover { background: transparent !important; }
+
+/* Numeric columns right-align convention — opt in by adding "num" class or auto-detect via :has */
+.markdown-preview-view td:has(> em:only-child),
+.markdown-preview-view td:only-of-type:last-child { /* placeholder */ }
+
+/* ============================================================
+   11. Math (KaTeX)
+   ============================================================ */
+.math {
+  font-feature-settings: "kern" 1;
+}
+mjx-container, .math, .math-block, .MathJax, .katex {
+  font-size: 1.02em;
+}
+.markdown-preview-view .math-block,
+.cm-math-block {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/* numbered equations — users can add \tag{} or enable via snippet */
+.katex-display > .katex { text-align: center; }
+
+/* Subtle warm caret-like separator for display math */
+.markdown-preview-view .math-block::before,
+.markdown-preview-view .math-block::after { content: none; }
+
+/* ============================================================
+   12. Footnotes — academic style
+   ============================================================ */
+.markdown-preview-view .footnote-ref a,
+.footnote-ref {
+  font-family: var(--nous-font-sans-ui);
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--nous-terracotta);
+  text-decoration: none;
+  font-feature-settings: "lnum" 1;
+}
+.markdown-preview-view .footnote-ref a:hover { text-decoration: underline; }
+.markdown-preview-view .footnotes {
+  margin-top: 3em;
+  padding-top: 1.25em;
+  border-top: 1px solid var(--divider-color);
+  font-size: 0.9em;
+  color: var(--text-muted);
+  font-family: var(--nous-font-serif-body);
+}
+.markdown-preview-view .footnotes ol { padding-left: 1.5em; }
+.markdown-preview-view .footnotes li { margin: 0.4em 0; }
+.markdown-preview-view .footnote-backref {
+  color: var(--nous-stone-gray);
+  text-decoration: none;
+  margin-left: 0.25em;
+}
+.markdown-preview-view .footnote-backref:hover { color: var(--nous-terracotta); }
+
+/* ============================================================
+   13. Images, embeds, figure captions
+   ============================================================ */
+.markdown-preview-view img,
+.markdown-source-view img {
+  max-width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-m);
+  margin: 1em auto;
+  display: block;
+}
+
+/* Caption: use markdown syntax `*Figure 1: ...*` after image to get italic centered caption */
+.markdown-preview-view img + em,
+.markdown-preview-view p > img + br + em,
+.markdown-preview-view figcaption {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--text-muted);
+  margin-top: 0.5em;
+  font-family: var(--nous-font-serif-body);
+}
+
+/* Embedded notes */
+.markdown-embed,
+.internal-embed {
+  border-radius: var(--radius-l);
+  background: var(--background-primary-alt);
+  box-shadow: var(--shadow-s);
+  padding: 1em 1.25em;
+  margin: 1em 0;
+}
+.markdown-embed-title {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  color: var(--text-normal);
+  font-size: 1.05em;
+  margin-bottom: 0.5em;
+}
+
+/* ============================================================
+   14. Frontmatter / Properties panel
+   Goal: feel like a quiet colophon at the top of a manuscript,
+   not a form. Muted key labels, serif values where reasonable,
+   Nous-shaped tag pills, no loud borders or inputs.
+   ============================================================ */
+
+.metadata-container {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--divider-color);
+  padding: 4px 0 14px;
+  margin: 0 0 1.4em;
+  font-family: var(--nous-font-sans-ui);
+}
+
+/* Obsidian may render the "Properties" heading — keep it subtle */
+.metadata-properties-heading {
+  font-family: var(--nous-font-sans-ui);
+  font-size: 11px;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  color: var(--nous-stone-gray);
+  padding: 2px 0 6px;
+  border: none;
+}
+.metadata-properties-title { display: none; }
+
+/* Each row */
+.metadata-property {
+  padding: 1px 0;
+  border-radius: var(--radius-s);
+  border: none;
+  transition: background-color 120ms ease;
+}
+.metadata-property:hover {
+  background: transparent;
+}
+
+/* Key (label on the left) */
+.metadata-property-key {
+  gap: 6px;
+  min-width: 9em;
+}
+.metadata-property-key,
+.metadata-property-key input,
+.metadata-property-key-input {
+  color: var(--nous-stone-gray);
+  font-family: var(--nous-font-sans-ui) !important;
+  font-weight: 500;
+  font-size: 12.5px;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.metadata-property-key:hover .metadata-property-key-input {
+  color: var(--nous-charcoal-warm);
+}
+.metadata-property-icon {
+  color: var(--nous-stone-gray);
+  opacity: 0.55;
+  transition: opacity 120ms ease, color 120ms ease;
+}
+.metadata-property:hover .metadata-property-icon {
+  opacity: 1;
+  color: var(--nous-terracotta);
+}
+
+/* Value (right side) */
+.metadata-property-value {
+  color: var(--text-normal);
+  font-family: var(--nous-font-sans-ui);
+  font-size: 14px;
+}
+.metadata-property-value input,
+.metadata-property-value textarea,
+.metadata-property-value .multi-select-input {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 2px 6px !important;
+  font-family: var(--nous-font-sans-ui) !important;
+  color: var(--text-normal) !important;
+  border-radius: var(--radius-s) !important;
+}
+.metadata-property-value input:focus,
+.metadata-property-value textarea:focus,
+.metadata-property-value .multi-select-input:focus {
+  background: var(--background-modifier-hover) !important;
+  box-shadow: none !important;
+}
+
+/* Date, time, number — lining tabular numerals */
+.metadata-property[data-property-type="date"] .metadata-property-value,
+.metadata-property[data-property-type="datetime"] .metadata-property-value,
+.metadata-property[data-property-type="number"] .metadata-property-value {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* Date / datetime / time — separate the calendar icon from the value.
+   Obsidian renders these with an inline SVG glued right against the
+   input. Give the value container flex layout with a gap, and add a
+   fallback margin for any direct-child svg or native-picker input. */
+.metadata-property[data-property-type="date"] .metadata-property-value,
+.metadata-property[data-property-type="datetime"] .metadata-property-value,
+.metadata-property[data-property-type="time"] .metadata-property-value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.metadata-property[data-property-type="date"] .metadata-property-value > svg,
+.metadata-property[data-property-type="datetime"] .metadata-property-value > svg,
+.metadata-property[data-property-type="time"] .metadata-property-value > svg {
+  flex-shrink: 0;
+  color: var(--nous-stone-gray);
+  margin-right: 2px;
+}
+
+/* Obsidian positions the calendar picker indicator on the LEFT side of
+   date/time inputs (not the browser default right). Add enough left
+   padding so the typed value clears the icon and sits to its right. */
+.metadata-property-value input[type="date"],
+.metadata-property-value input[type="datetime-local"],
+.metadata-property-value input[type="time"] {
+  min-width: 160px !important;
+  padding-left: 28px !important;
+}
+.metadata-property-value input[type="date"]::-webkit-calendar-picker-indicator,
+.metadata-property-value input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+.metadata-property-value input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 120ms ease;
+}
+.metadata-property-value input[type="date"]:hover::-webkit-calendar-picker-indicator,
+.metadata-property-value input[type="datetime-local"]:hover::-webkit-calendar-picker-indicator,
+.metadata-property-value input[type="time"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
+/* In dark mode, switch the input's color-scheme so Chromium renders
+   the native calendar indicator in a light variant against the dark
+   background. No filter stacking — that was fighting the color-scheme
+   flip and producing a black-on-black icon. */
+.theme-dark .metadata-property-value input[type="date"],
+.theme-dark .metadata-property-value input[type="datetime-local"],
+.theme-dark .metadata-property-value input[type="time"] {
+  color-scheme: dark !important;
+}
+.theme-dark .metadata-property-value input[type="date"]::-webkit-calendar-picker-indicator,
+.theme-dark .metadata-property-value input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+.theme-dark .metadata-property-value input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: none;
+  opacity: 0.85;
+}
+.theme-dark .metadata-property-value input[type="date"]:hover::-webkit-calendar-picker-indicator,
+.theme-dark .metadata-property-value input[type="datetime-local"]:hover::-webkit-calendar-picker-indicator,
+.theme-dark .metadata-property-value input[type="time"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
+
+/* Checkbox */
+.metadata-property[data-property-type="checkbox"] .metadata-property-value input[type="checkbox"] {
+  accent-color: var(--nous-terracotta);
+}
+
+/* Multi-value (tags, aliases) — Nous tag-pill look, no chip borders */
+.multi-select-container {
+  padding: 0;
+  gap: 4px;
+}
+.multi-select-pill,
+.metadata-property-value .multi-select-pill {
+  background: rgba(201, 100, 66, 0.08);
+  color: var(--nous-terracotta);
+  border-radius: 12px;
+  padding: 1px 9px !important;
+  font-size: 12px !important;
+  font-family: var(--nous-font-sans-ui) !important;
+  font-weight: 500 !important;
+  border: none !important;
+  box-shadow: none !important;
+  line-height: 1.5 !important;
+}
+.theme-dark .multi-select-pill,
+.theme-dark .metadata-property-value .multi-select-pill {
+  background: rgba(217, 119, 87, 0.14);
+}
+.multi-select-pill:hover,
+.metadata-property-value .multi-select-pill:hover {
+  background: rgba(201, 100, 66, 0.15);
+  color: var(--nous-coral);
+}
+.theme-dark .multi-select-pill:hover {
+  background: rgba(217, 119, 87, 0.22);
+}
+.multi-select-pill .multi-select-pill-remove-button {
+  color: var(--nous-terracotta);
+  opacity: 0.55;
+}
+.multi-select-pill .multi-select-pill-remove-button:hover {
+  opacity: 1;
+  background: transparent;
+}
+
+/* Link-type values ([[wiki link]] in a property) */
+.metadata-property-value .internal-link,
+.metadata-property-value a.tag {
+  border-radius: 10px;
+  padding: 1px 8px;
+  background: rgba(201, 100, 66, 0.08);
+  color: var(--nous-terracotta);
+  border: none;
+  font-size: 12px;
+  font-family: var(--nous-font-sans-ui);
+  font-weight: 500;
+  text-decoration: none;
+}
+.theme-dark .metadata-property-value .internal-link,
+.theme-dark .metadata-property-value a.tag {
+  background: rgba(217, 119, 87, 0.14);
+}
+
+/* "Add property" button — a quiet affordance */
+.metadata-add-button {
+  color: var(--nous-stone-gray);
+  font-family: var(--nous-font-sans-ui);
+  font-size: 12.5px;
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  margin-top: 4px;
+  border-radius: var(--radius-s);
+  box-shadow: none;
+}
+.metadata-add-button:hover {
+  color: var(--nous-terracotta);
+  background: var(--background-modifier-hover);
+  box-shadow: none;
+}
+.metadata-add-button svg { color: inherit; }
+
+/* ============================================================
+   15. Tags
+   ============================================================ */
+a.tag,
+.cm-hashtag,
+.tag {
+  background: rgba(201, 100, 66, 0.08);
+  color: var(--nous-terracotta);
+  border-radius: 12px;
+  padding: 1px 9px;
+  font-size: 0.8em;
+  font-family: var(--nous-font-sans-ui);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border: none;
+}
+.theme-dark a.tag,
+.theme-dark .cm-hashtag,
+.theme-dark .tag { background: rgba(217, 119, 87, 0.14); }
+a.tag:hover,
+.tag:hover { background: rgba(201, 100, 66, 0.15); color: var(--nous-coral); text-decoration: none; }
+.theme-dark a.tag:hover,
+.theme-dark .tag:hover { background: rgba(217, 119, 87, 0.22); }
+
+.cm-hashtag-begin, .cm-hashtag-end { padding: 0; border: none; }
+
+/* ============================================================
+   16. Buttons, inputs, form controls
+   ============================================================ */
+button, .clickable-icon {
+  font-family: var(--nous-font-sans-ui);
+  font-weight: 500;
+  transition: background-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+
+button:not(.clickable-icon) {
+  background: var(--interactive-normal);
+  color: var(--nous-charcoal-warm);
+  border: none;
+  border-radius: var(--radius-m);
+  padding: 6px 14px;
+  box-shadow: inset 0 0 0 1px var(--nous-ring-warm);
+}
+button:not(.clickable-icon):hover {
+  background: var(--interactive-hover);
+  box-shadow: inset 0 0 0 1px var(--nous-ring-deep);
+}
+.theme-dark button:not(.clickable-icon) {
+  color: var(--text-normal);
+  box-shadow: inset 0 0 0 1px var(--nous-ring-warm);
+}
+
+button.mod-cta,
+.mod-cta, .mod-cta:not(.clickable-icon) {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  box-shadow: inset 0 0 0 1px var(--interactive-accent);
+}
+button.mod-cta:hover,
+.mod-cta:hover {
+  background: var(--interactive-accent-hover);
+  box-shadow: inset 0 0 0 1px var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+
+button.mod-warning {
+  background: var(--nous-error-crimson);
+  color: var(--nous-ivory);
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+  background-color: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  border: none;
+  border-radius: var(--radius-l);
+  padding: 6px 12px;
+  font-family: var(--nous-font-sans-ui);
+  font-size: 14px;
+  box-shadow: var(--input-shadow);
+  transition: box-shadow 120ms ease;
+}
+
+/* Dropdown <select> — shorthand `background:` would wipe the native chevron,
+   so we explicitly repaint it as an inline SVG. Padding-right reserves space
+   for the arrow so it doesn't overlap the selected value. */
+.dropdown {
+  background-color: var(--background-modifier-form-field);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%234d4c48' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 13px 13px;
+  color: var(--text-normal);
+  border: none;
+  border-radius: var(--radius-m);
+  padding: 6px 28px 6px 12px;
+  font-family: var(--nous-font-sans-ui);
+  font-size: 14px;
+  box-shadow: var(--input-shadow);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: box-shadow 120ms ease, background-color 120ms ease;
+}
+.theme-dark .dropdown {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23e8e6dc' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+}
+.dropdown:hover { box-shadow: var(--input-shadow-hover); }
+
+/* Search-style inputs carry a leading magnifier icon and a trailing clear
+   button. Obsidian uses several container and input types across panes
+   (global search, installed-plugins filter, community modal, Style Settings,
+   etc.), and several of those are set by core CSS at higher specificity —
+   so we use !important to win against them. */
+input[type="search"],
+.search-input-container input,
+.installed-plugins-container input,
+.installed-plugins-filter input,
+.community-modal-search,
+input[placeholder^="Search" i],
+input[placeholder^="搜索"],
+/* High-specificity catch-alls for the plugin/theme browser search. These
+   beat Obsidian core's `.installed-plugins-filter input { padding: ... }`
+   and any placeholder-based fallback. */
+body .modal.mod-settings .installed-plugins-filter input,
+body .modal.mod-settings .installed-plugins-filter input[type="text"],
+body .modal.mod-settings .installed-plugins-filter input[type="search"],
+body .modal.mod-settings .community-modal-info input[type="text"],
+body .modal.mod-settings .community-modal-search,
+body .modal.mod-settings .community-modal-search input,
+body .vertical-tab-content input[type="text"][placeholder*="Search" i],
+body .vertical-tab-content input[type="text"][placeholder*="search" i],
+body .vertical-tab-content input[type="text"][placeholder*="搜索"],
+body .vertical-tab-content input[type="search"] {
+  padding-inline-start: 34px !important;
+  padding-inline-end: 34px !important;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+.dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--nous-focus-blue), var(--input-shadow);
+}
+
+.checkbox-container {
+  background: var(--nous-warm-sand);
+}
+.checkbox-container.is-enabled {
+  background: var(--interactive-accent);
+}
+.theme-dark .checkbox-container { background: var(--nous-ring-warm); }
+
+.clickable-icon {
+  color: var(--nous-olive-gray);
+  border-radius: var(--radius-m);
+}
+.clickable-icon:hover {
+  background: var(--background-modifier-hover);
+  color: var(--nous-near-black);
+}
+.theme-dark .clickable-icon:hover { color: var(--text-normal); }
+
+/* ============================================================
+   17. Modals, popups, command palette, settings
+   ============================================================ */
+.modal-bg { background: var(--background-modifier-cover); backdrop-filter: blur(4px); }
+.modal {
+  background: var(--background-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-l);
+  border: none;
+  padding: 28px 32px;
+  font-family: var(--nous-font-sans-ui);
+}
+.modal-title,
+.modal h2 {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  font-size: 1.7em;
+  color: var(--text-normal);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.8em;
+}
+.modal-close-button { color: var(--nous-stone-gray); }
+.modal-close-button:hover { color: var(--nous-near-black); background: var(--background-modifier-hover); }
+.theme-dark .modal-close-button:hover { color: var(--text-normal); }
+
+/* Command palette / quick switcher */
+.prompt {
+  background: var(--background-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-l);
+  padding: 0;
+  max-width: var(--prompt-width);
+  overflow: hidden;
+}
+.prompt-input-container {
+  border-bottom: 1px solid var(--divider-color);
+  padding: 14px 18px;
+}
+.prompt-input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-family: var(--nous-font-serif-body);
+  font-size: 18px;
+  color: var(--text-normal);
+  padding: 2px 0;
+}
+.prompt-input:focus { box-shadow: none; }
+.prompt-input::placeholder { color: var(--nous-stone-gray); font-style: italic; }
+
+.suggestion-container {
+  background: var(--background-primary);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  padding: 6px 8px;
+  box-shadow: none;
+}
+.suggestion-item {
+  border-radius: var(--radius-m);
+  padding: 8px 12px;
+  font-family: var(--nous-font-sans-ui);
+  color: var(--text-normal);
+  transition: background-color 100ms ease;
+}
+.suggestion-item.is-selected {
+  background: var(--background-modifier-hover);
+}
+.suggestion-item.is-selected .suggestion-content {
+  color: var(--nous-near-black);
+}
+.theme-dark .suggestion-item.is-selected .suggestion-content { color: var(--text-normal); }
+.suggestion-note {
+  color: var(--nous-stone-gray);
+  font-size: 12px;
+  margin-left: 8px;
+}
+.suggestion-hotkey {
+  background: var(--background-secondary-alt);
+  color: var(--nous-olive-gray);
+  font-family: var(--nous-font-mono);
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* Settings panel */
+.modal.mod-settings .vertical-tab-header {
+  background: var(--background-secondary);
+  border-right: 1px solid var(--divider-color);
+}
+.vertical-tab-header-group-title {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--nous-charcoal-warm);
+  letter-spacing: -0.005em;
+  padding: 16px 14px 8px;
+  line-height: 1.3;
+}
+.theme-dark .vertical-tab-header-group-title {
+  color: var(--text-normal);
+}
+.vertical-tab-nav-item {
+  font-family: var(--nous-font-sans-ui);
+  border-radius: var(--radius-m);
+  color: var(--nous-charcoal-warm);
+  margin: 1px 6px;
+}
+.theme-dark .vertical-tab-nav-item { color: var(--text-muted); }
+.vertical-tab-nav-item:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+.vertical-tab-nav-item.is-active {
+  background: var(--background-modifier-active-hover);
+  color: var(--nous-near-black);
+  font-weight: 500;
+}
+.theme-dark .vertical-tab-nav-item.is-active { color: var(--text-normal); }
+
+/* Borderless settings page: hierarchy is carried by whitespace + heading
+   weight (Apple-style), not by horizontal dividing lines. */
+
+/* Every setting-item gets horizontal padding for breathing room, but no
+   top border so rows aren't separated by lines. */
+.setting-item {
+  border-top: none;
+  padding: 14px 18px;
+}
+
+/* Strip every kind of horizontal divider Obsidian's core CSS draws between
+   section wrappers in the settings modal. */
+.modal.mod-settings .vertical-tab-content > div,
+.modal.mod-settings .vertical-tab-content-container > div > div {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Style Settings plugin: level-0 containers ship with padding-left: 34px
+   only. Override to symmetric horizontal padding on every container. */
+.style-settings-container {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+.style-settings-container .setting-item,
+.style-settings-heading {
+  border: none !important;
+}
+
+/* Section headings are the anchor now. Generous space above, serif type,
+   slightly larger so the eye naturally groups the setting-items that follow. */
+.setting-item-heading {
+  border: none !important;
+  padding-top: 2em;
+  padding-bottom: 0.4em;
+}
+.setting-item-heading:first-child,
+.vertical-tab-content > .setting-item-heading:first-of-type {
+  padding-top: 0.5em;
+}
+.setting-item-heading .setting-item-name {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: -0.012em;
+  color: var(--text-normal);
+  line-height: 1.25;
+}
+.setting-item-name {
+  font-family: var(--nous-font-sans-ui);
+  font-weight: 500;
+  color: var(--text-normal);
+}
+.setting-item-description {
+  font-family: var(--nous-font-serif-body);
+  color: var(--text-muted);
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   18. Menus (context menus, dropdowns)
+   ============================================================ */
+.menu {
+  background: var(--background-primary);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-m);
+  border: none;
+  padding: 4px;
+  font-family: var(--nous-font-sans-ui);
+}
+.menu-item {
+  border-radius: var(--radius-s);
+  color: var(--text-normal);
+  padding: 6px 10px;
+  transition: background-color 100ms ease;
+}
+.menu-item:hover,
+.menu-item.selected {
+  background: var(--background-modifier-hover);
+  color: var(--nous-near-black);
+}
+.theme-dark .menu-item:hover,
+.theme-dark .menu-item.selected { color: var(--text-normal); }
+.menu-item-icon { color: var(--nous-stone-gray); }
+.menu-item:hover .menu-item-icon { color: var(--nous-terracotta); }
+.menu-separator {
+  background: var(--divider-color);
+  margin: 4px 6px;
+  height: 1px;
+}
+
+/* Tooltips */
+.tooltip {
+  background: var(--nous-near-black);
+  color: var(--nous-warm-silver);
+  border-radius: var(--radius-s);
+  font-family: var(--nous-font-sans-ui);
+  font-size: 12px;
+  padding: 4px 8px;
+  box-shadow: var(--shadow-m);
+  border: none;
+}
+.theme-dark .tooltip {
+  background: var(--nous-warm-sand);
+  color: var(--nous-near-black);
+}
+
+/* ============================================================
+   19. Graph view
+   ============================================================ */
+.graph-view.color-fill { color: var(--graph-node); }
+.graph-view.color-circle { color: var(--graph-node); }
+.graph-view.color-line { color: var(--graph-line); }
+.graph-view.color-text { color: var(--text-normal); }
+.graph-view.color-fill-highlight { color: var(--graph-node-focused); }
+.graph-view.color-line-highlight { color: var(--graph-node-focused); }
+.graph-view.color-fill-tag { color: var(--graph-node-tag); }
+.graph-view.color-fill-attachment { color: var(--graph-node-attachment); }
+.graph-view.color-arrow { color: var(--nous-stone-gray); }
+.graph-controls {
+  background: var(--background-primary-alt);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-s);
+  padding: 10px 12px;
+  font-family: var(--nous-font-sans-ui);
+}
+
+/* ============================================================
+   19b. Mermaid diagrams — Nous warm palette adaptation
+   ------------------------------------------------------------
+   Obsidian renders ```mermaid blocks natively. Mermaid's default
+   palette is cool (lavender nodes, blue edges, black markers);
+   we override the SVG fills/strokes/text so flowcharts, sequence,
+   state machines, gantt, ER, and pie all sit in the parchment
+   world in light mode and in a calm warm-on-near-black world in
+   dark mode.
+
+   Strategy: since Mermaid's class naming varies across versions
+   (.er parent vs. .er+.entityBox siblings, .pieN vs. path.slice,
+   etc.), we use THREE lines of attack in parallel:
+     (a) known class selectors  (.entityBox, .pieCircle, .node rect)
+     (b) positional selectors   (g.legend:nth-of-type(N) > rect)
+     (c) attribute-value fallbacks — catch Mermaid's default fills
+         (#ECECFF, #9370DB, #000) by VALUE so we paint correctly
+         even when our class guesses miss.
+
+   Dark mode uses a dedicated calm palette (#d5d2c6 body text,
+   muted terracotta strokes) — not pure white — so the diagram
+   reads without glare. See .theme-dark .mermaid block at the
+   bottom of this section.
+   ============================================================ */
+
+.markdown-preview-view .mermaid,
+.markdown-source-view .mermaid,
+.mermaid {
+  background: transparent;
+  font-family: var(--nous-font-serif-body);
+  margin: 1.25em auto;
+  text-align: center;
+}
+
+/* ----- Nous warm slice palette -----
+   Seven-step warm rotation reused by pie slices, ER attribute rows,
+   and anywhere Mermaid hands us indexed "series" classes.
+
+   Two sets: the light-mode set lives in the parchment/terracotta
+   world (higher saturation, medium value — reads as ink on paper).
+   The dark-mode override lifts each hue up in value so the slice
+   pops off the near-black body — on #141413 you can't afford mid-
+   tone browns, they turn to mud. The dark rotation stays warm but
+   gains luminosity: coral, golden tan, apricot, antique gold. */
+.mermaid {
+  --nous-slice-1: #c96442;  /* terracotta */
+  --nous-slice-2: #a67b5b;  /* tan */
+  --nous-slice-3: #6b5844;  /* deep brown */
+  --nous-slice-4: #d97757;  /* light terracotta */
+  --nous-slice-5: #b38a4c;  /* ochre */
+  --nous-slice-6: #8b7b54;  /* warm olive */
+  --nous-slice-7: #8f4a31;  /* rust */
+}
+.theme-dark .mermaid {
+  --nous-slice-1: #e08b6d;  /* coral — luminous terracotta */
+  --nous-slice-2: #d4a373;  /* golden tan */
+  --nous-slice-3: #b89878;  /* taupe — taps up from the light deep-brown */
+  --nous-slice-4: #eabc94;  /* apricot */
+  --nous-slice-5: #cca05c;  /* antique gold */
+  --nous-slice-6: #a8967a;  /* warm khaki */
+  --nous-slice-7: #c17454;  /* burnt sienna — lifted from light rust */
+}
+
+/* --- Flowchart / state / class nodes --- */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path,
+.mermaid .state rect,
+.mermaid .classDiagram .node rect {
+  fill: var(--nous-ivory) !important;
+  stroke: var(--nous-terracotta) !important;
+  stroke-width: 1.4px !important;
+}
+/* Dark mode — step up one surface level so node cards read as cards,
+   not as dark holes punched into an already-dark page. */
+.theme-dark .mermaid .node rect,
+.theme-dark .mermaid .node circle,
+.theme-dark .mermaid .node ellipse,
+.theme-dark .mermaid .node polygon,
+.theme-dark .mermaid .node path,
+.theme-dark .mermaid .state rect,
+.theme-dark .mermaid .classDiagram .node rect {
+  fill: var(--nous-warm-sand) !important;
+}
+
+/* Node labels */
+.mermaid .node .label,
+.mermaid .node text,
+.mermaid .nodeLabel,
+.mermaid .label text,
+.mermaid text.actor {
+  fill: var(--text-normal) !important;
+  color: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+}
+.mermaid .node foreignObject,
+.mermaid .node foreignObject div,
+.mermaid .node foreignObject span {
+  color: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+}
+
+/* --- Edges / connections / arrows --- */
+.mermaid .edgePath .path,
+.mermaid .flowchart-link,
+.mermaid .relation,
+.mermaid line.messageLine0,
+.mermaid line.messageLine1,
+.mermaid .transition {
+  stroke: var(--nous-charcoal-warm) !important;
+  stroke-width: 1.4px !important;
+  fill: none !important;
+}
+.theme-dark .mermaid .edgePath .path,
+.theme-dark .mermaid .flowchart-link,
+.theme-dark .mermaid .relation,
+.theme-dark .mermaid line.messageLine0,
+.theme-dark .mermaid line.messageLine1,
+.theme-dark .mermaid .transition {
+  stroke: var(--nous-dark-warm) !important;
+}
+.mermaid .arrowheadPath,
+.mermaid marker path,
+.mermaid .marker,
+.mermaid defs marker path {
+  fill: var(--nous-charcoal-warm) !important;
+  stroke: var(--nous-charcoal-warm) !important;
+}
+.theme-dark .mermaid .arrowheadPath,
+.theme-dark .mermaid marker path,
+.theme-dark .mermaid .marker,
+.theme-dark .mermaid defs marker path {
+  fill: var(--nous-dark-warm) !important;
+  stroke: var(--nous-dark-warm) !important;
+}
+
+/* --- Edge labels (text floating on connection lines) ---
+   Default Mermaid draws a solid rect behind each edge label so the
+   text doesn't sit directly on the stroke. Nous drops the box — but
+   the text still has to stay readable where it crosses a line.
+   The trick: paint a halo in the page background color around every
+   glyph. For SVG <text> that's `paint-order: stroke` + a thin stroke
+   matching the page; for HTML labels rendered inside a foreignObject
+   it's a 4-way text-shadow. Result: no visible box, text floats clear
+   over the connector in both light and dark modes. */
+.mermaid .edgeLabel,
+.mermaid .edgeLabel rect,
+.mermaid .edgeLabel .labelBkg,
+.mermaid rect.labelBkg,
+.mermaid g.edgeLabel rect,
+.mermaid .label-container {
+  background: transparent !important;
+  background-color: transparent !important;
+  fill: transparent !important;
+  stroke: none !important;
+}
+/* Text — SVG path: paint-order:stroke lays the stroke DOWN first,
+   then the fill on top, so the stroke becomes a halo behind each
+   glyph rather than an outline over it. 2.5px keeps the halo wide
+   enough to clear a 1.4px connector without creating visible blobs
+   on serif terminals or on the dot of "i". stroke-linecap: round +
+   stroke-linejoin: round soften the corners so there are no sharp
+   black dots where stroke segments meet. */
+.mermaid .edgeLabel text,
+.mermaid g.edgeLabel text {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+  font-size: 1.05em !important;
+  font-weight: 500 !important;
+  paint-order: stroke fill;
+  stroke: var(--background-primary) !important;
+  stroke-width: 2.5px !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* Text — HTML path (Mermaid uses foreignObject for CJK / complex
+   labels). paint-order doesn't apply here, so we fake the halo with
+   an 8-direction text-shadow in the page background color. 1.5px
+   offsets avoid the chunky-double-image effect that 2px can produce
+   on small glyphs. */
+.mermaid .edgeLabel foreignObject,
+.mermaid .edgeLabel span,
+.mermaid .edgeLabel p,
+.mermaid g.edgeLabel foreignObject,
+.mermaid g.edgeLabel span,
+.mermaid g.edgeLabel p {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+  font-size: 1.05em !important;
+  font-weight: 500 !important;
+  padding: 0 2px !important;
+  text-shadow:
+    1.5px 0 0 var(--background-primary),
+    -1.5px 0 0 var(--background-primary),
+    0 1.5px 0 var(--background-primary),
+    0 -1.5px 0 var(--background-primary),
+    1.5px 1.5px 0 var(--background-primary),
+    -1.5px -1.5px 0 var(--background-primary),
+    1.5px -1.5px 0 var(--background-primary),
+    -1.5px 1.5px 0 var(--background-primary);
+}
+
+/* --- Clusters / subgraphs --- */
+.mermaid .cluster rect {
+  fill: var(--nous-warm-sand) !important;
+  stroke: var(--nous-ring-warm) !important;
+  stroke-dasharray: none !important;
+  rx: 6px !important;
+  ry: 6px !important;
+}
+.theme-dark .mermaid .cluster rect {
+  fill: var(--nous-ivory) !important;
+  stroke: var(--nous-ring-deep) !important;
+}
+.mermaid .cluster text,
+.mermaid .cluster .label,
+.mermaid .cluster .nodeLabel {
+  fill: var(--nous-charcoal-warm) !important;
+  color: var(--nous-charcoal-warm) !important;
+  font-family: var(--nous-font-serif-heading) !important;
+  font-weight: 500 !important;
+}
+.theme-dark .mermaid .cluster text,
+.theme-dark .mermaid .cluster .label,
+.theme-dark .mermaid .cluster .nodeLabel {
+  fill: var(--text-normal) !important;
+  color: var(--text-normal) !important;
+}
+
+/* --- Sequence diagrams --- */
+.mermaid .actor {
+  fill: var(--nous-ivory) !important;
+  stroke: var(--nous-terracotta) !important;
+}
+/* Dark-mode actor fill is overridden in the consolidated
+   .theme-dark .mermaid block near the bottom of this section — actors,
+   labelBox, and notes stay as light warm cream cards in dark mode so
+   Mermaid's forced fill:black tspan text stays readable. */
+.mermaid .actor-line,
+.mermaid line.actor-line {
+  stroke: var(--nous-ring-warm) !important;
+  stroke-dasharray: 3 3 !important;
+}
+.theme-dark .mermaid .actor-line,
+.theme-dark .mermaid line.actor-line {
+  stroke: var(--nous-ring-deep) !important;
+}
+.mermaid .messageText,
+.mermaid text.messageText,
+.mermaid .labelText,
+.mermaid .loopText,
+.mermaid .activation0,
+.mermaid .activation1,
+.mermaid .activation2 {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+}
+
+/* Light-mode halo on messageText — text sitting on top of message
+   connector strokes benefits from a page-bg halo so crossings read
+   cleanly. Dark mode has its own halo rule further down. */
+.mermaid .messageText,
+.mermaid text.messageText {
+  paint-order: stroke fill;
+  stroke: var(--background-primary) !important;
+  stroke-width: 2.5px !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mermaid .note {
+  fill: var(--nous-warm-sand) !important;
+  stroke: var(--nous-ring-warm) !important;
+}
+/* Dark-mode note fill is overridden in the consolidated .theme-dark
+   .mermaid block near the bottom of this section — see the light-card
+   rule alongside actors and labelBox. */
+.mermaid .noteText,
+.mermaid g.note text { fill: var(--text-normal) !important; }
+.mermaid .loopLine {
+  stroke: var(--nous-ring-deep) !important;
+  fill: none !important;
+}
+
+/* --- Gantt chart --- */
+.mermaid .task,
+.mermaid rect.task0,
+.mermaid rect.task1 {
+  stroke: var(--nous-terracotta) !important;
+  fill: var(--nous-terracotta) !important;
+  fill-opacity: 0.3 !important;
+}
+/* Dark mode — terracotta at 0.3 opacity on a near-black body reads as
+   dim salmon. Bump opacity so task bars register as filled warmth. */
+.theme-dark .mermaid .task,
+.theme-dark .mermaid rect.task0,
+.theme-dark .mermaid rect.task1 {
+  fill-opacity: 0.55 !important;
+}
+.mermaid .taskText,
+.mermaid .taskTextOutsideRight,
+.mermaid .taskTextOutsideLeft {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+}
+.mermaid .grid .tick line {
+  stroke: var(--nous-border-warm) !important;
+}
+.mermaid .grid path { stroke: var(--nous-border-warm) !important; }
+.theme-dark .mermaid .grid .tick line,
+.theme-dark .mermaid .grid path {
+  stroke: var(--nous-ring-warm) !important;
+}
+.mermaid .today {
+  stroke: var(--nous-terracotta) !important;
+  stroke-width: 2px !important;
+}
+
+/* --- Entity-relationship diagrams ---
+   Gotcha: Mermaid writes `class="er entityBox"` — two class names on
+   the SAME element, not a parent/child hierarchy. A descendant selector
+   `.mermaid .er .entityBox` (with spaces) matches nothing and the rules
+   get dropped silently, so the diagram falls back to Mermaid's cool
+   default palette. Target each class directly (no `.er` ancestor).
+   We also bump specificity with `.markdown-preview-view` so the Mermaid
+   inline `<style>` inside the SVG doesn't win the cascade. */
+.markdown-preview-view .mermaid .entityBox,
+.mermaid rect.entityBox {
+  fill: var(--nous-ivory) !important;
+  stroke: var(--nous-terracotta) !important;
+  stroke-width: 1.4px !important;
+}
+.markdown-preview-view .mermaid .attributeBoxOdd,
+.markdown-preview-view .mermaid .attributeBoxEven,
+.mermaid rect.attributeBoxOdd,
+.mermaid rect.attributeBoxEven {
+  fill: transparent !important;
+  stroke: var(--nous-border-warm) !important;
+  stroke-width: 0.5px !important;
+}
+.markdown-preview-view .mermaid .entityLabel,
+.mermaid text.entityLabel {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-heading) !important;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  font-weight: 600 !important;
+}
+.markdown-preview-view .mermaid .relationshipLine,
+.mermaid path.relationshipLine {
+  stroke: var(--nous-charcoal-warm) !important;
+  fill: none !important;
+}
+/* Dark-mode overrides for ER live in the consolidated .theme-dark
+   .mermaid block at the bottom of this section. Previously we had
+   dark-mode rules scoped by `.markdown-preview-view` here (specificity
+   0,4,0) which outranked the consolidated block (specificity 0,3,0)
+   and silently won the cascade — entity boxes kept rendering dark
+   `--nous-warm-sand` instead of the cream card. Removed. */
+/* Kill the opaque rect Mermaid draws behind relationship verbs. */
+.markdown-preview-view .mermaid .relationshipLabelBox,
+.mermaid rect.relationshipLabelBox {
+  fill: transparent !important;
+  stroke: none !important;
+  opacity: 1 !important;
+}
+.markdown-preview-view .mermaid .relationshipLabel,
+.mermaid text.relationshipLabel {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+  font-size: 1.05em !important;
+  font-weight: 500 !important;
+  paint-order: stroke fill;
+  stroke: var(--background-primary) !important;
+  stroke-width: 2.5px !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* ER cardinality markers (one / many / zero-or-one). Mermaid puts these
+   in <defs><marker id="ONLY_ONE_…">. Without explicit overrides they
+   default to black via Mermaid's built-in theme. Paint them warm. */
+.mermaid defs marker path,
+.mermaid defs marker polygon,
+.mermaid defs marker circle,
+.mermaid defs marker line,
+.mermaid defs marker ellipse {
+  fill: var(--nous-charcoal-warm) !important;
+  stroke: var(--nous-charcoal-warm) !important;
+}
+.theme-dark .mermaid defs marker path,
+.theme-dark .mermaid defs marker polygon,
+.theme-dark .mermaid defs marker circle,
+.theme-dark .mermaid defs marker line,
+.theme-dark .mermaid defs marker ellipse {
+  fill: var(--nous-dark-warm) !important;
+  stroke: var(--nous-dark-warm) !important;
+}
+
+/* --- Pie chart ---
+   Slice paths in Mermaid v10+ are all `<path class="pieCircle">` with
+   the color written as a `fill="…"` SVG attribute. CSS `!important`
+   beats a presentation attribute, so nth-of-type rotation is the
+   cleanest way to recolor without depending on a `.pieN` class that
+   may or may not be emitted. Bump specificity past Mermaid's inline
+   <style> by prefixing with `.markdown-preview-view`. */
+.markdown-preview-view .mermaid path.pieCircle,
+.mermaid svg path.pieCircle {
+  stroke: var(--background-primary) !important;
+  stroke-width: 2px !important;
+}
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n+1),
+.mermaid svg path.pieCircle:nth-of-type(7n+1) { fill: var(--nous-slice-1) !important; }
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n+2),
+.mermaid svg path.pieCircle:nth-of-type(7n+2) { fill: var(--nous-slice-2) !important; }
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n+3),
+.mermaid svg path.pieCircle:nth-of-type(7n+3) { fill: var(--nous-slice-3) !important; }
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n+4),
+.mermaid svg path.pieCircle:nth-of-type(7n+4) { fill: var(--nous-slice-4) !important; }
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n+5),
+.mermaid svg path.pieCircle:nth-of-type(7n+5) { fill: var(--nous-slice-5) !important; }
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n+6),
+.mermaid svg path.pieCircle:nth-of-type(7n+6) { fill: var(--nous-slice-6) !important; }
+.markdown-preview-view .mermaid path.pieCircle:nth-of-type(7n),
+.mermaid svg path.pieCircle:nth-of-type(7n)   { fill: var(--nous-slice-7) !important; }
+
+/* Outer circle — Mermaid draws a border ring around the pie. Keep
+   it transparent with a warm hairline so it doesn't fight the slices. */
+.mermaid circle.pieOuterCircle {
+  fill: transparent !important;
+  stroke: var(--nous-ring-warm) !important;
+  stroke-width: 1px !important;
+}
+
+/* Legend color chips — each swatch is <rect> inside <g class="legend">.
+   Mermaid doesn't put a class on the rect itself — color lives in an
+   inline `style="fill: rgb(...); stroke: rgb(...)"`. CSS `!important`
+   beats non-!important inline style, but we must override BOTH fill
+   and stroke (Mermaid sets both). Position is read from the parent
+   g.legend via nth-of-type — the wrapper's only <g> siblings are
+   legend items, so this counts cleanly. */
+.mermaid g.legend:nth-of-type(7n+1) > rect {
+  fill: var(--nous-slice-1) !important;
+  stroke: var(--nous-slice-1) !important;
+}
+.mermaid g.legend:nth-of-type(7n+2) > rect {
+  fill: var(--nous-slice-2) !important;
+  stroke: var(--nous-slice-2) !important;
+}
+.mermaid g.legend:nth-of-type(7n+3) > rect {
+  fill: var(--nous-slice-3) !important;
+  stroke: var(--nous-slice-3) !important;
+}
+.mermaid g.legend:nth-of-type(7n+4) > rect {
+  fill: var(--nous-slice-4) !important;
+  stroke: var(--nous-slice-4) !important;
+}
+.mermaid g.legend:nth-of-type(7n+5) > rect {
+  fill: var(--nous-slice-5) !important;
+  stroke: var(--nous-slice-5) !important;
+}
+.mermaid g.legend:nth-of-type(7n+6) > rect {
+  fill: var(--nous-slice-6) !important;
+  stroke: var(--nous-slice-6) !important;
+}
+.mermaid g.legend:nth-of-type(7n) > rect {
+  fill: var(--nous-slice-7) !important;
+  stroke: var(--nous-slice-7) !important;
+}
+
+.mermaid .pieTitleText,
+.mermaid text.pieTitleText {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-heading) !important;
+  font-weight: 500 !important;
+  /* Halo in page background color — if anything upstream paints this
+     text a color that clashes with the body, the halo preserves a
+     ring of background around every glyph. paint-order lays the
+     stroke under the fill so it's a halo, not an outline. Thin
+     stroke + round caps/joins avoids the black-dot artifacts that
+     wider strokes produce on serif terminals and "i" dots. */
+  paint-order: stroke fill;
+  stroke: var(--background-primary) !important;
+  stroke-width: 2.5px !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mermaid .legend text,
+.mermaid text.legend,
+.mermaid g.legend text {
+  fill: var(--text-normal) !important;
+  font-family: var(--nous-font-serif-body) !important;
+  font-size: 0.9em !important;
+  paint-order: stroke fill;
+  stroke: var(--background-primary) !important;
+  stroke-width: 2px !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* Percentage labels rendered inside slices — <text class="slice"> */
+.mermaid text.slice {
+  fill: var(--nous-ivory) !important;
+  font-family: var(--nous-font-serif-body) !important;
+  font-size: 0.85em !important;
+  font-weight: 500 !important;
+}
+
+/* ------------------------------------------------------------
+   Attribute-value fallbacks — safety net for when class guesses
+   miss. Mermaid's default theme paints with a known set of hex
+   colors; we catch those values directly inside .mermaid and
+   repaint them in Nous warm. Scoped to `.mermaid` so external
+   SVGs on the page aren't affected. */
+
+/* Default lavender node fill (#ECECFF) — appears on ER entities,
+   class-diagram nodes, state-diagram rectangles when the class
+   selector doesn't match. Paint parchment ivory. */
+.mermaid rect[fill="#ECECFF"],
+.mermaid rect[fill="#ececff"],
+.mermaid path[fill="#ECECFF"],
+.mermaid path[fill="#ececff"],
+.mermaid polygon[fill="#ECECFF"] {
+  fill: var(--nous-ivory) !important;
+}
+.theme-dark .mermaid rect[fill="#ECECFF"],
+.theme-dark .mermaid rect[fill="#ececff"],
+.theme-dark .mermaid path[fill="#ECECFF"],
+.theme-dark .mermaid path[fill="#ececff"],
+.theme-dark .mermaid polygon[fill="#ECECFF"] {
+  fill: var(--nous-warm-sand) !important;
+}
+
+/* Default purple stroke (#9370DB — medium purple). Paint terracotta. */
+.mermaid rect[stroke="#9370DB"],
+.mermaid rect[stroke="#9370db"],
+.mermaid path[stroke="#9370DB"],
+.mermaid path[stroke="#9370db"],
+.mermaid polygon[stroke="#9370DB"],
+.mermaid line[stroke="#9370DB"],
+.mermaid line[stroke="#9370db"] {
+  stroke: var(--nous-terracotta) !important;
+}
+
+/* Default black markers (ER cardinality triangles, flowchart arrowheads
+   in some versions). Paint warm charcoal. Use :not(text) so we don't
+   mute actual text glyphs. */
+.mermaid path[fill="#000"]:not(text),
+.mermaid path[fill="#000000"]:not(text),
+.mermaid path[fill="black"]:not(text),
+.mermaid polygon[fill="#000"]:not(text),
+.mermaid polygon[fill="#000000"]:not(text),
+.mermaid polygon[fill="black"]:not(text) {
+  fill: var(--nous-charcoal-warm) !important;
+}
+.theme-dark .mermaid path[fill="#000"]:not(text),
+.theme-dark .mermaid path[fill="#000000"]:not(text),
+.theme-dark .mermaid path[fill="black"]:not(text),
+.theme-dark .mermaid polygon[fill="#000"]:not(text),
+.theme-dark .mermaid polygon[fill="#000000"]:not(text),
+.theme-dark .mermaid polygon[fill="black"]:not(text) {
+  fill: #a09b91 !important;
+}
+
+/* ------------------------------------------------------------
+   Dark-mode theme — coherent "warm ink on near-black paper" look.
+   Lower-contrast than pure white, so diagrams don't glare. The
+   slice palette override (coral/apricot/gold/…) lives near the
+   top of this section; everything else is consolidated here so
+   the dark theme reads as ONE design choice rather than a pile
+   of overrides scattered through the flowchart/sequence/ER blocks.
+   */
+
+.theme-dark .mermaid {
+  --mm-text:        #d5d2c6;  /* warm off-white — for text OUTSIDE boxes
+                                  (edge labels, pie title, legend, messages
+                                  sitting on the dark body) */
+  --mm-text-dark:   #2d2a24;  /* warm near-black — for text INSIDE cream
+                                  cards (node labels, entity names, etc.) */
+  --mm-text-soft:   #a09b91;  /* one notch dimmer — captions, markers */
+  --mm-surface-low: #1c1c1a;  /* cluster backdrop (subtle lift over body) */
+  --mm-card-light:      #e8e2d2;  /* warm cream — the single card surface
+                                      used for EVERY node-ish box in dark
+                                      mode (flowchart / state / class / ER
+                                      / sequence actor / note / labelBox).
+                                      Keeping them all on the same cream
+                                      card removes every specificity war
+                                      with Mermaid's inline tspan/text
+                                      fill rules — black-ish text on
+                                      cream just works. */
+  --mm-card-light-alt:  #ddd7c7;  /* one step darker — ER attributeBoxEven
+                                      alternating row */
+  --mm-card-light-stroke: #a67b5b;  /* tan border */
+  --mm-edge:        #7a7770;  /* edge line — warm medium gray */
+  --mm-edge-strong: #9d9a92;  /* arrowheads — slightly brighter than edges */
+  --mm-hairline:    #4d4c48;  /* dashed/subtle lines (actor line, ticks) */
+  --mm-halo:        #141413;  /* page bg for text halo */
+}
+
+/* Every diagram "box" in dark mode renders as a WARM CREAM CARD.
+   Covers:
+     - flowchart nodes       (.node rect / circle / ellipse / polygon / path)
+     - state-diagram states  (.state rect, g.stateGroup rect)
+     - class-diagram boxes   (g.classGroup rect — fill path still caught via
+                              .node path for the d3-drawn rounded-corner path)
+     - ER entity boxes       (.entityBox)
+     - sequence actors       (.actor, .labelBox)
+     - sequence/state notes  (.note)
+   One card color, one stroke color, one decision. All the black-ish
+   text Mermaid forces on tspan/text inside these boxes then reads
+   correctly without us having to out-specificity the #svgid-scoped
+   inline <style> rules. */
+.theme-dark .mermaid .node rect,
+.theme-dark .mermaid .node circle,
+.theme-dark .mermaid .node ellipse,
+.theme-dark .mermaid .node polygon,
+.theme-dark .mermaid .node path,
+.theme-dark .mermaid .state rect,
+.theme-dark .mermaid g.stateGroup rect,
+.theme-dark .mermaid g.classGroup rect,
+.theme-dark .mermaid .actor,
+.theme-dark .mermaid rect.actor,
+.theme-dark .mermaid .labelBox,
+.theme-dark .mermaid rect.labelBox,
+.theme-dark .mermaid .note,
+.theme-dark .mermaid rect.note,
+.theme-dark .mermaid rect.entityBox,
+.theme-dark .mermaid .entityBox,
+.theme-dark .mermaid rect.attributeBoxOdd,
+.theme-dark .mermaid .attributeBoxOdd {
+  fill: var(--mm-card-light) !important;
+  stroke: var(--mm-card-light-stroke) !important;
+  stroke-width: 1.2px !important;
+}
+
+/* ER attribute even rows — one step darker so alternating is legible */
+.theme-dark .mermaid rect.attributeBoxEven,
+.theme-dark .mermaid .attributeBoxEven {
+  fill: var(--mm-card-light-alt) !important;
+  stroke: var(--mm-card-light-stroke) !important;
+  stroke-width: 0.8px !important;
+}
+
+/* Text INSIDE cream cards — override Mermaid's various defaults
+   (#333, #131300, #9370DB) to one consistent warm near-black that
+   reads cleanly on cream without harsh pure black. */
+.theme-dark .mermaid .node text,
+.theme-dark .mermaid .node tspan,
+.theme-dark .mermaid .node foreignObject,
+.theme-dark .mermaid .node foreignObject div,
+.theme-dark .mermaid .node foreignObject span,
+.theme-dark .mermaid .node foreignObject p,
+.theme-dark .mermaid .nodeLabel,
+.theme-dark .mermaid .nodeLabel p,
+.theme-dark .mermaid g.stateGroup text,
+.theme-dark .mermaid g.stateGroup .state-title,
+.theme-dark .mermaid g.classGroup text,
+.theme-dark .mermaid .classTitle,
+.theme-dark .mermaid .entityLabel,
+.theme-dark .mermaid text.entityLabel,
+.theme-dark .mermaid .er text {
+  fill: var(--mm-text-dark) !important;
+  color: var(--mm-text-dark) !important;
+}
+
+/* Cluster / subgraph — still a dark-on-dark backdrop one step above
+   body so nested boxes read as contained. The cluster LABEL text,
+   however, sits on the dark backdrop, so it uses the light --mm-text
+   (handled further down in the text group). */
+.theme-dark .mermaid .cluster rect {
+  fill: var(--mm-surface-low) !important;
+  stroke: var(--mm-hairline) !important;
+}
+
+/* Lines — flowchart edges, sequence messages, state transitions,
+   ER relationship lines. All on the warm medium gray. */
+.theme-dark .mermaid .edgePath .path,
+.theme-dark .mermaid .flowchart-link,
+.theme-dark .mermaid .relation,
+.theme-dark .mermaid line.messageLine0,
+.theme-dark .mermaid line.messageLine1,
+.theme-dark .mermaid .transition,
+.theme-dark .mermaid path.relationshipLine,
+.theme-dark .mermaid .relationshipLine {
+  stroke: var(--mm-edge) !important;
+  fill: none !important;
+}
+
+/* Arrowheads & ER cardinality markers */
+.theme-dark .mermaid .arrowheadPath,
+.theme-dark .mermaid marker path,
+.theme-dark .mermaid marker polygon,
+.theme-dark .mermaid marker circle,
+.theme-dark .mermaid defs marker path,
+.theme-dark .mermaid defs marker polygon,
+.theme-dark .mermaid defs marker circle {
+  fill: var(--mm-edge-strong) !important;
+  stroke: var(--mm-edge-strong) !important;
+}
+
+/* Actor dashed line, gantt ticks, hairlines */
+.theme-dark .mermaid .actor-line,
+.theme-dark .mermaid line.actor-line,
+.theme-dark .mermaid .grid .tick line,
+.theme-dark .mermaid .grid path,
+.theme-dark .mermaid .loopLine {
+  stroke: var(--mm-hairline) !important;
+}
+
+/* Text OUTSIDE boxes — sits directly on the dark page body, so it
+   uses the warm off-white. Covers edge labels, pie title & legend,
+   sequence messageText, gantt taskText, and cluster-label text
+   (cluster background is dark). Node/entity/state/class text is
+   handled separately above (on cream cards, uses --mm-text-dark). */
+.theme-dark .mermaid .messageText,
+.theme-dark .mermaid .taskText,
+.theme-dark .mermaid .taskTextOutsideRight,
+.theme-dark .mermaid .taskTextOutsideLeft,
+.theme-dark .mermaid .pieTitleText,
+.theme-dark .mermaid .legend text,
+.theme-dark .mermaid text.legend,
+.theme-dark .mermaid .cluster text,
+.theme-dark .mermaid .cluster .label,
+.theme-dark .mermaid .cluster .nodeLabel {
+  fill: var(--mm-text) !important;
+  color: var(--mm-text) !important;
+}
+
+/* Edge / relationship labels + sequence message text — keep the halo,
+   soften color. Sequence `.messageText` sits directly above / below
+   connector strokes; without a halo, any glyph that overlaps the
+   line becomes unreadable. Paint the same paint-order halo we use on
+   flowchart edge labels so text floats clear in both modes. */
+.theme-dark .mermaid .edgeLabel text,
+.theme-dark .mermaid g.edgeLabel text,
+.theme-dark .mermaid .relationshipLabel,
+.theme-dark .mermaid text.relationshipLabel,
+.theme-dark .mermaid .messageText,
+.theme-dark .mermaid text.messageText {
+  fill: var(--mm-text) !important;
+  paint-order: stroke fill;
+  stroke: var(--mm-halo) !important;
+  stroke-width: 2.5px !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Pie title + legend in dark mode — repeat with body.theme-dark
+   prefix to bump specificity one notch higher than anything a plugin
+   or snippet might introduce, and re-state the halo stroke color in
+   the dark-mode halo color (--mm-halo = #141413) so the ring blends
+   into the dark body. */
+body.theme-dark .mermaid .pieTitleText,
+body.theme-dark .mermaid text.pieTitleText,
+body.theme-dark .mermaid .legend text,
+body.theme-dark .mermaid text.legend,
+body.theme-dark .mermaid g.legend text {
+  fill: var(--mm-text) !important;
+  stroke: var(--mm-halo) !important;
+}
+.theme-dark .mermaid .edgeLabel foreignObject,
+.theme-dark .mermaid .edgeLabel span,
+.theme-dark .mermaid .edgeLabel p,
+.theme-dark .mermaid g.edgeLabel foreignObject,
+.theme-dark .mermaid g.edgeLabel span,
+.theme-dark .mermaid g.edgeLabel p {
+  color: var(--mm-text) !important;
+  text-shadow:
+    1.5px 0 0 var(--mm-halo),
+    -1.5px 0 0 var(--mm-halo),
+    0 1.5px 0 var(--mm-halo),
+    0 -1.5px 0 var(--mm-halo),
+    1.5px 1.5px 0 var(--mm-halo),
+    -1.5px -1.5px 0 var(--mm-halo),
+    1.5px -1.5px 0 var(--mm-halo),
+    -1.5px 1.5px 0 var(--mm-halo);
+}
+
+/* Percentage labels inside pie slices — stay dark so they read on
+   the luminous warm slice fills (coral / apricot / gold). */
+.theme-dark .mermaid text.slice {
+  fill: var(--mm-halo) !important;
+}
+
+/* Pie outer circle — warm hairline */
+.theme-dark .mermaid circle.pieOuterCircle {
+  stroke: var(--mm-hairline) !important;
+}
+
+/* ER attribute rows in dark mode are handled in the cream-card group
+   above — odd rows get --mm-card-light, even rows --mm-card-light-alt,
+   so the alternation reads as a striped attribute table on the entity
+   card rather than as transparent dark strips punched through it. */
+
+/* Kill relationship-label rect in dark too */
+.theme-dark .mermaid rect.relationshipLabelBox,
+.theme-dark .mermaid .relationshipLabelBox {
+  fill: transparent !important;
+  stroke: none !important;
+}
+
+/* ============================================================
+   19c. Dataview plugin — booktabs tables, quiet inline fields
+   ============================================================ */
+
+/* Block wrappers — keep the same vertical rhythm as other blocks */
+.block-language-dataview,
+.block-language-dataviewjs {
+  margin: 1.25em 0;
+  font-family: var(--nous-font-serif-body);
+}
+
+/* TABLE queries. The generic `.markdown-preview-view table` rule in
+   section 10 already gives us booktabs; we re-anchor the essentials
+   on the Dataview-specific selector so the style survives the inline
+   classes Dataview injects (and so Live Preview source view renders
+   the same way). */
+.block-language-dataview table.dataview,
+.block-language-dataview table.table-view-table {
+  border-collapse: collapse;
+  margin: 0.25em 0;
+  font-family: var(--nous-font-serif-body);
+  font-size: 0.92em;
+  line-height: 1.4;
+  background: transparent;
+}
+.block-language-dataview table.dataview thead,
+.block-language-dataview table.table-view-table thead {
+  border-top: 2px solid var(--table-header-border-color);
+  border-bottom: 1px solid var(--table-header-border-color);
+  background: transparent;
+}
+.block-language-dataview table.dataview tbody,
+.block-language-dataview table.table-view-table tbody {
+  border-bottom: 2px solid var(--table-last-border-color);
+}
+.block-language-dataview table.dataview th,
+.block-language-dataview table.table-view-table th {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--table-header-color);
+  padding: 0.55em 0.95em;
+  text-align: left;
+  cursor: pointer;
+}
+.block-language-dataview table.dataview td,
+.block-language-dataview table.table-view-table td {
+  border: none;
+  padding: 0.55em 0.95em;
+  color: var(--table-text-color);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  vertical-align: baseline;
+}
+/* Sort-arrow overlay on sortable headers — warm tint instead of the
+   default accent blue. */
+.block-language-dataview table.dataview th .table-view-sort-indicator,
+.block-language-dataview table.table-view-table th .table-view-sort-indicator {
+  color: var(--nous-terracotta);
+  opacity: 0.7;
+}
+
+/* LIST queries — a <ul>; keep the list density light. */
+.block-language-dataview > ul.dataview.list-view-ul {
+  padding-left: 1.25em;
+  margin: 0.5em 0;
+  font-family: var(--nous-font-serif-body);
+}
+.block-language-dataview > ul.dataview.list-view-ul > li {
+  margin: 0.2em 0;
+  line-height: 1.5;
+}
+.block-language-dataview > ul.dataview.list-view-ul > li::marker {
+  color: var(--nous-terracotta);
+}
+
+/* TASK queries — inherit the rest of the theme's task styling,
+   only fix the body font so it doesn't fall back to sans. */
+.block-language-dataview ul.contains-task-list,
+.block-language-dataview .dataview.task-list-item {
+  font-family: var(--nous-font-serif-body);
+}
+
+/* Inline fields (reading view) — "key:: value" rendered as a pair.
+   Default Dataview pill is a rounded blue chip; Nous replaces it with
+   a quiet small-caps label and a thin warm divider, so prose flows. */
+.markdown-rendered .dataview.inline-field {
+  font-family: var(--nous-font-serif-body);
+  font-size: 0.92em;
+  line-height: 1.45;
+  display: inline;
+}
+.markdown-rendered .dataview.inline-field-key {
+  background: transparent;
+  color: var(--text-faint);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  padding: 0 0.35em 0 0;
+  border: none;
+  border-radius: 0;
+}
+.markdown-rendered .dataview.inline-field-value {
+  background: transparent;
+  color: var(--text-normal);
+  padding: 0 0.35em;
+  border: none;
+  border-left: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  font-variant-numeric: oldstyle-nums;
+}
+.markdown-rendered .dataview.inline-field-standalone-value {
+  background: transparent;
+  color: var(--text-normal);
+  border: none;
+  padding: 0;
+  font-variant-numeric: oldstyle-nums;
+}
+
+/* Inline queries — `= this.file.name` resolved in a sentence.
+   Italic terracotta, so the reader sees it as a reference mark. */
+.markdown-rendered .dataview.inline-query,
+.markdown-rendered span.dataview.dataview-inline-query {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+/* Error surfaces — Dataview can't resolve the query (typo, missing
+   field, JS exception). Keep legible: left rule in warning hue, no
+   heavy background, mono font so selectors stay readable. */
+.block-language-dataview .dataview.dataview-error-box,
+.block-language-dataviewjs .dataview.dataview-error-box {
+  background: transparent;
+  color: var(--text-error, #b23c24);
+  border: none;
+  border-left: 3px solid var(--text-error, #b23c24);
+  padding: 0.5em 0.75em;
+  margin: 0.5em 0;
+  font-family: var(--nous-font-mono);
+  font-size: 0.85em;
+  white-space: pre-wrap;
+  border-radius: 0;
+}
+
+/* ============================================================
+   20. Scrollbars
+   ============================================================ */
+::-webkit-scrollbar { width: 10px; height: 10px; background: transparent; }
+::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  background-clip: padding-box;
+}
+
+/* ============================================================
+   21. Canvas
+   ============================================================ */
+.canvas-node {
+  background: var(--background-primary-alt);
+  border-radius: var(--radius-l);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: var(--shadow-s);
+  font-family: var(--nous-font-serif-body);
+}
+.canvas-node.is-focused {
+  box-shadow: 0 0 0 2px var(--nous-terracotta), var(--shadow-m);
+}
+.canvas-edge-label-wrapper {
+  background: var(--background-primary-alt);
+  border-radius: 10px;
+  border: 1px solid var(--background-modifier-border);
+  font-family: var(--nous-font-sans-ui);
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 2px 8px;
+}
+
+/* ============================================================
+   22. Inline title (filename as page title)
+   ============================================================ */
+.inline-title {
+  font-family: var(--nous-font-serif-heading);
+  font-weight: 600;
+  font-size: 3.8em;
+  line-height: 1.05;
+  color: var(--text-normal);
+  letter-spacing: -0.028em;
+  text-align: center;
+  text-wrap: balance;
+  margin-top: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+.view-header-title-container { font-family: var(--nous-font-serif-heading); }
+
+/* ============================================================
+   23. Edit-mode niceties (CM6)
+   ============================================================ */
+.cm-editor { font-family: var(--nous-font-serif-body); }
+.cm-gutters {
+  background: transparent;
+  border: none;
+  color: var(--nous-stone-gray);
+  font-family: var(--nous-font-mono);
+}
+.cm-lineNumbers .cm-gutterElement {
+  font-size: 12px;
+  padding-right: 12px;
+  opacity: 0.6;
+}
+.cm-activeLine, .cm-active.cm-line {
+  background: transparent;
+}
+.cm-cursor {
+  border-left-color: var(--caret-color);
+  border-left-width: 2px;
+}
+.cm-selectionBackground,
+.cm-content ::selection {
+  background: var(--text-selection) !important;
+}
+
+/* Markdown decoration styling in live preview */
+.cm-formatting {
+  color: var(--nous-stone-gray);
+  opacity: 0.6;
+}
+.cm-formatting-header-1,
+.cm-formatting-header-2,
+.cm-formatting-header-3,
+.cm-formatting-header-4,
+.cm-formatting-header-5,
+.cm-formatting-header-6 {
+  color: var(--nous-terracotta);
+  opacity: 0.55;
+  font-weight: 500;
+}
+
+.cm-quote { color: var(--blockquote-color); font-style: italic; }
+
+/* Folded indicators */
+.cm-foldPlaceholder {
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+/* ============================================================
+   24. Misc Obsidian chrome
+   ============================================================ */
+
+/* Ribbon vault name */
+.workspace-drawer-vault-name,
+.nav-files-container .nav-header {
+  font-family: var(--nous-font-serif-heading);
+  color: var(--text-normal);
+}
+
+/* Sync indicator / notices */
+.notice {
+  background: var(--background-primary);
+  color: var(--text-normal);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-m);
+  font-family: var(--nous-font-sans-ui);
+  padding: 12px 16px;
+  border: none;
+}
+.notice-error { box-shadow: 0 0 0 1px var(--nous-error-crimson), 0 4px 24px rgba(20, 20, 19, 0.12); }
+
+/* File drop zone */
+.file-embed {
+  background: var(--background-primary-alt);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-s);
+  padding: 12px;
+  font-family: var(--nous-font-sans-ui);
+}
+
+/* Outgoing/incoming link pane */
+.outgoing-link-pane .tree-item-self,
+.incoming-link-pane .tree-item-self {
+  border-radius: var(--radius-m);
+}
+.outgoing-link-item,
+.incoming-link-item {
+  font-family: var(--nous-font-sans-ui);
+  font-size: 13px;
+}
+
+/* Sidebar section headers */
+.nav-header .nav-buttons-container { padding: 6px; }
+.side-dock-collapsible-section-header,
+.workspace-drawer-header {
+  font-family: var(--nous-font-sans-ui);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--nous-olive-gray);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   25. Focus visible — always warm
+   ============================================================ */
+/* User preference: no focus outline anywhere — Obsidian's focus targets
+   (the editor container, reading view, workspace leaves, etc.) shouldn't
+   get bracketed with a ring just because the window regained focus. */
+:focus-visible,
+:focus {
+  outline: none;
+}
+
+/* Inside any modal dialog (settings, community browser, theme browser,
+   Style Settings, etc.), suppress every focus visual cue — no outline ring,
+   no added box-shadow, no thicker underline. Focus state renders identical
+   to rest state for every element type. */
+.modal :focus,
+.modal :focus-visible {
+  outline: none !important;
+}
+
+/* Pin focus box-shadow to rest values for elements whose focus state
+   normally adds a glow (text inputs, search, textarea, dropdowns). */
+.modal input:focus,
+.modal input:focus-visible,
+.modal textarea:focus,
+.modal textarea:focus-visible,
+.modal .dropdown:focus,
+.modal .dropdown:focus-visible {
+  box-shadow: var(--input-shadow) !important;
+}
+
+/* Toggle switch — kill the native checkbox focus ring visible through
+   the container when the hidden input is focused. */
+.modal .checkbox-container:focus,
+.modal .checkbox-container:focus-visible,
+.modal .checkbox-container input:focus,
+.modal .checkbox-container input:focus-visible {
+  box-shadow: none !important;
+}
+
+/* Buttons keep only their rest-state ring (no focus enhancement). */
+.modal button:focus,
+.modal button:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--nous-ring-warm) !important;
+}
+.modal button.mod-cta:focus,
+.modal button.mod-cta:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--interactive-accent) !important;
+}
+
+/* ============================================================
+   26. Responsive / mobile
+   ============================================================ */
+@media (max-width: 700px) {
+  .markdown-preview-view { padding: 1.25rem 1.25rem 4rem; }
+  .inline-title { font-size: 2em; }
+  .markdown-preview-view h1 { font-size: 2em; }
+  .markdown-preview-view h2 { font-size: 1.55em; }
+}
+
+/* ============================================================
+   27. Print
+   ============================================================ */
+@media print {
+  body { background: white; color: black; }
+  .markdown-preview-view { max-width: none; padding: 0; color: black; }
+  .callout {
+    background: white !important;
+    box-shadow: inset 3px 0 0 0 black !important;
+    break-inside: avoid;
+  }
+  a { color: black; text-decoration: underline; }
+  pre, code { background: #f5f5f5 !important; color: black !important; }
+}

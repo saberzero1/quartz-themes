@@ -1,0 +1,996 @@
+/* ============================================================
+   Milk Tea — Obsidian Theme
+   Claude desktop palette · matches Milk Tea VS Code theme
+   ============================================================ */
+
+/* @settings
+
+name: Milk Tea
+id: milk-tea-theme
+settings:
+  -
+    id: mt-accent
+    title: Accent color
+    description: Primary accent used for links, cursor, active states. Terracotta orange by default (Claude palette).
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#D97757'
+    default-dark: '#E8945A'
+  -
+    id: mt-radius
+    title: UI corner radius
+    description: Rounded-ness of buttons, inputs, callouts, cards.
+    type: variable-number-slider
+    default: 6
+    min: 0
+    max: 16
+    format: 'px'
+  -
+    id: mt-font-text
+    title: Body font
+    description: Font family for notes. Keep the quotes and commas.
+    type: variable-text
+    default: '"Söhne", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif'
+  -
+    id: mt-font-mono
+    title: Monospace font
+    description: Font family for code and inline code.
+    type: variable-text
+    default: '"Maple Mono NF CN", "JetBrains Mono", Consolas, monospace'
+  -
+    id: mt-font-size
+    title: Base font size
+    description: Editor font size in pixels.
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 22
+    format: 'px'
+  -
+    id: mt-line-height
+    title: Body line height
+    description: Line spacing for notes. 1.6-1.8 is comfortable for long reading.
+    type: variable-number-slider
+    default: 1.7
+    min: 1.3
+    max: 2.2
+    step: 0.05
+  -
+    id: mt-h1-weight
+    title: H1 weight
+    description: How bold H1 headings appear.
+    type: variable-number-slider
+    default: 800
+    min: 400
+    max: 900
+    step: 50
+  -
+    id: mt-bold-weight
+    title: Bold text weight
+    description: Weight applied to **bold** text.
+    type: variable-number-slider
+    default: 650
+    min: 500
+    max: 900
+    step: 50
+
+*/
+
+/* ---------- Shared (both modes) ---------- */
+body {
+  --font-text-theme: var(--mt-font-text, "Söhne", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif);
+  --font-interface-theme: var(--mt-font-text, "Söhne", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif);
+  --font-monospace-theme: var(--mt-font-mono, "Maple Mono NF CN", "JetBrains Mono", "Fira Code", Consolas, monospace);
+  --font-text-size: var(--mt-font-size, 16px);
+
+  --radius-s: calc(var(--mt-radius, 6px) * 0.66);
+  --radius-m: var(--mt-radius, 6px);
+  --radius-l: calc(var(--mt-radius, 6px) * 1.66);
+
+  --h1-weight: var(--mt-h1-weight, 800);
+  --h2-weight: 700;
+  --h3-weight: 650;
+  --bold-weight: var(--mt-bold-weight, 650);
+
+  --line-height-normal: var(--mt-line-height, 1.7);
+  --p-spacing: 1em;
+}
+
+/* Chinese punctuation & reading feel */
+.markdown-source-view,
+.markdown-preview-view {
+  letter-spacing: 0.01em;
+}
+
+/* Blockquote: left bar in accent */
+.markdown-preview-view blockquote,
+.markdown-source-view blockquote {
+  border-left: 3px solid var(--interactive-accent);
+  padding-left: 1em;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* Callout softer radius */
+.callout {
+  border-radius: 8px;
+}
+
+/* Inline code: warm tone */
+.markdown-preview-view code,
+.markdown-source-view code {
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+/* Headings: milk-tea brown ladder */
+.markdown-preview-view h1,
+.markdown-source-view .cm-header-1 { letter-spacing: -0.01em; }
+
+/* Active tab: underline + slightly brighter bg than strip */
+.workspace-tab-header.is-active {
+  background-color: var(--background-primary) !important;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* Scrollbar: thicker + warmer */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  background-clip: content-box;
+}
+
+/* Icons: thicker stroke + warm base + Claude-style hover */
+.svg-icon,
+.clickable-icon svg,
+.view-action svg,
+.side-dock-ribbon-action svg,
+.workspace-tab-header-inner-icon svg,
+.menu-item-icon svg {
+  stroke-width: 2px;
+  color: var(--text-muted);
+}
+
+.clickable-icon,
+.view-action,
+.side-dock-ribbon-action {
+  border-radius: 6px;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.clickable-icon:hover,
+.view-action:hover,
+.side-dock-ribbon-action:hover {
+  background-color: var(--background-modifier-hover) !important;
+  color: var(--interactive-accent) !important;
+}
+
+.clickable-icon:hover svg,
+.view-action:hover svg,
+.side-dock-ribbon-action:hover svg {
+  color: var(--interactive-accent) !important;
+}
+
+/* Active / pressed state: accent tint */
+.clickable-icon.is-active,
+.clickable-icon.is-active svg,
+.view-action.is-active,
+.view-action.is-active svg {
+  color: var(--interactive-accent) !important;
+  background-color: var(--background-modifier-active-hover);
+}
+
+/* Status bar: clearer separation from editor */
+.status-bar {
+  background-color: var(--background-secondary-alt);
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+}
+.status-bar-item {
+  color: var(--text-muted);
+}
+
+/* YAML frontmatter / properties: subtle left bar + background */
+.metadata-container,
+.frontmatter-container {
+  background-color: var(--background-primary-alt);
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1.2em;
+}
+.frontmatter {
+  background-color: var(--background-primary-alt);
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: 0 6px 6px 0;
+  padding: 0.6em 1em;
+}
+
+/* File tree: stronger highlight for the currently-open file */
+.nav-file-title.is-active,
+.tree-item-self.is-active {
+  background-color: var(--background-modifier-active-hover) !important;
+  color: var(--text-normal) !important;
+  font-weight: 600;
+  border-left: 2px solid var(--interactive-accent);
+  padding-left: calc(var(--nav-item-padding-left, 24px) - 2px);
+}
+
+/* Heading weight ladder: more distinct hierarchy */
+.markdown-preview-view h1,
+.markdown-source-view .cm-header-1,
+.HyperMD-header-1 {
+  font-weight: 800;
+  font-size: 1.9em;
+  letter-spacing: -0.015em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+.markdown-preview-view h2,
+.markdown-source-view .cm-header-2,
+.HyperMD-header-2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: -0.01em;
+  margin-top: 1.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.markdown-preview-view h3,
+.markdown-source-view .cm-header-3,
+.HyperMD-header-3 {
+  font-weight: 650;
+  font-size: 1.25em;
+}
+.markdown-preview-view h4,
+.markdown-source-view .cm-header-4,
+.HyperMD-header-4 {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.markdown-preview-view h5,
+.markdown-source-view .cm-header-5,
+.HyperMD-header-5 {
+  font-weight: 550;
+  font-size: 1em;
+}
+.markdown-preview-view h6,
+.markdown-source-view .cm-header-6,
+.HyperMD-header-6 {
+  font-weight: 500;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+
+/* ============================================================
+   LIGHT — Milk Tea Light
+   ============================================================ */
+.theme-light {
+  /* --- Backgrounds --- */
+  --background-primary: #FAF6F0;
+  --background-primary-alt: #F5EEE4;
+  --background-secondary: #EADFCD;
+  --background-secondary-alt: #E0D3BB;
+  --background-modifier-hover: #F5EEE4;
+  --background-modifier-active-hover: #E2D5C3;
+  --background-modifier-border: #E0D4C2;
+  --background-modifier-border-hover: #C9B89E;
+  --background-modifier-border-focus: #D97757;
+  --background-modifier-form-field: #FAF6F0;
+  --background-modifier-success: #6A8D5520;
+  --background-modifier-error: #C7564620;
+  --background-modifier-error-hover: #C7564640;
+
+  /* --- Text --- */
+  --text-normal: #3D3029;
+  --text-muted: #5C4D3C;
+  --text-faint: #8B7E6A;
+  --text-on-accent: #FFFFFF;
+  --text-accent: #D97757;
+  --text-accent-hover: #C0602A;
+  --text-selection: #E2D5C3;
+  --text-highlight-bg: #D9775540;
+  --text-error: #C75646;
+  --text-success: #6A8D55;
+
+  /* --- Interactive / accent --- */
+  --interactive-normal: #F0E8DC;
+  --interactive-hover: #E8DECE;
+  --interactive-accent: var(--mt-accent, #D97757);
+  --interactive-accent-hover: #C0602A;
+  --interactive-accent-hsl: 16, 63%, 59%;
+
+  /* --- Headings (deep → muted brown ladder) --- */
+  --h1-color: #3D3029;
+  --h2-color: #5B4633;
+  --h3-color: #6B5744;
+  --h4-color: #8B7355;
+  --h5-color: #A89880;
+  --h6-color: #B8A788;
+
+  /* --- Links / tags / lists --- */
+  --link-color: #D97757;
+  --link-color-hover: #C0602A;
+  --link-external-color: #D97757;
+  --link-external-color-hover: #C0602A;
+  --tag-color: #5B7FA5;
+  --tag-background: #E8DDD080;
+  --tag-background-hover: #E2D5C3;
+  --list-marker-color: #D97757;
+  --checkbox-color: #D97757;
+  --checkbox-color-hover: #C0602A;
+
+  /* --- Blockquote / code --- */
+  --blockquote-border-color: #D97757;
+  --blockquote-background-color: transparent;
+  --code-background: #F0E8DC;
+  --code-normal: #C0602A;
+  --code-comment: #A89880;
+  --code-function: #5B7FA5;
+  --code-important: #C0602A;
+  --code-keyword: #C0602A;
+  --code-operator: #5C4D3C;
+  --code-property: #8B6DA8;
+  --code-punctuation: #5C4D3C;
+  --code-string: #6A8D55;
+  --code-tag: #C0602A;
+  --code-value: #B8860B;
+
+  /* --- Table --- */
+  --table-border-color: #E0D4C2;
+  --table-header-background: #EADFCD;
+  --table-row-alt-background: #EDE2CF;
+  --table-row-background-hover: #E2D5C0;
+
+  /* --- Graph view --- */
+  --graph-line: #C9B89E;
+  --graph-node: #D97757;
+  --graph-node-tag: #5B7FA5;
+  --graph-node-attachment: #6A8D55;
+  --graph-node-unresolved: #A89880;
+  --graph-text: #3D3029;
+
+  /* --- Divider / scrollbar --- */
+  --divider-color: #E0D4C2;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #B8A584;
+  --scrollbar-active-thumb-bg: #8B7355;
+
+  /* --- Color palette (semantic callouts) --- */
+  --color-red: #C75646;
+  --color-orange: #D97757;
+  --color-yellow: #C0913A;
+  --color-green: #6A8D55;
+  --color-cyan: #5B9A8B;
+  --color-blue: #5B7FA5;
+  --color-purple: #9E7EA8;
+  --color-pink: #C28BA0;
+
+  /* --- Callout RGB (note/tip/info/warn/danger/quote) --- */
+  --callout-note: 217, 119, 87;
+  --callout-tip: 106, 141, 85;
+  --callout-info: 91, 127, 165;
+  --callout-warning: 192, 145, 58;
+  --callout-important: 217, 119, 87;
+  --callout-danger: 199, 86, 70;
+  --callout-error: 199, 86, 70;
+  --callout-quote: 158, 126, 168;
+  --callout-success: 106, 141, 85;
+  --callout-abstract: 91, 127, 165;
+  --callout-example: 158, 126, 168;
+  --callout-question: 192, 145, 58;
+  --callout-fail: 199, 86, 70;
+  --callout-todo: 91, 127, 165;
+  --callout-bug: 199, 86, 70;
+}
+
+
+/* ============================================================
+   DARK — Milk Tea Dark
+   ============================================================ */
+.theme-dark {
+  /* --- Backgrounds --- */
+  --background-primary: #2A2420;
+  --background-primary-alt: #302A22;
+  --background-secondary: #1F1A12;
+  --background-secondary-alt: #1A150E;
+  --background-modifier-hover: #302A22;
+  --background-modifier-active-hover: #4A3F35;
+  --background-modifier-border: #3D352E;
+  --background-modifier-border-hover: #5C4D3C;
+  --background-modifier-border-focus: #E8945A;
+  --background-modifier-form-field: #2A2420;
+  --background-modifier-success: #8DB87A25;
+  --background-modifier-error: #E0605025;
+  --background-modifier-error-hover: #E0605040;
+
+  /* --- Text --- */
+  --text-normal: #E8DDD0;
+  --text-muted: #C4B49D;
+  --text-faint: #7A6D5C;
+  --text-on-accent: #FFFFFF;
+  --text-accent: #E8945A;
+  --text-accent-hover: #F0A070;
+  --text-selection: #4A3F35;
+  --text-highlight-bg: #E8945A50;
+  --text-error: #E06050;
+  --text-success: #8DB87A;
+
+  /* --- Interactive / accent --- */
+  --interactive-normal: #302A22;
+  --interactive-hover: #3D352E;
+  --interactive-accent: var(--mt-accent, #E8945A);
+  --interactive-accent-hover: #F0A070;
+  --interactive-accent-hsl: 23, 74%, 63%;
+
+  /* --- Headings --- */
+  --h1-color: #E8DDD0;
+  --h2-color: #E0CFB8;
+  --h3-color: #D4C4AA;
+  --h4-color: #C4B49D;
+  --h5-color: #A89880;
+  --h6-color: #8B7E6A;
+
+  /* --- Links / tags / lists --- */
+  --link-color: #E8945A;
+  --link-color-hover: #F0A070;
+  --link-external-color: #E8945A;
+  --link-external-color-hover: #F0A070;
+  --tag-color: #82A0C4;
+  --tag-background: #3D352E;
+  --tag-background-hover: #4A3F35;
+  --list-marker-color: #E8945A;
+  --checkbox-color: #E8945A;
+  --checkbox-color-hover: #F0A070;
+
+  /* --- Blockquote / code --- */
+  --blockquote-border-color: #E8945A;
+  --blockquote-background-color: transparent;
+  --code-background: #302A22;
+  --code-normal: #E8945A;
+  --code-comment: #7A6D5C;
+  --code-function: #82A0C4;
+  --code-important: #E8945A;
+  --code-keyword: #E8945A;
+  --code-operator: #C4B49D;
+  --code-property: #B898C0;
+  --code-punctuation: #C4B49D;
+  --code-string: #8DB87A;
+  --code-tag: #E8945A;
+  --code-value: #D4A84B;
+
+  /* --- Table --- */
+  --table-border-color: #3D352E;
+  --table-header-background: #1F1A12;
+  --table-row-alt-background: #332C24;
+  --table-row-background-hover: #3D352E;
+
+  /* --- Graph view --- */
+  --graph-line: #5C4D3C;
+  --graph-node: #E8945A;
+  --graph-node-tag: #82A0C4;
+  --graph-node-attachment: #8DB87A;
+  --graph-node-unresolved: #7A6D5C;
+  --graph-text: #E8DDD0;
+
+  /* --- Divider / scrollbar --- */
+  --divider-color: #3D352E;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #6B5D4B;
+  --scrollbar-active-thumb-bg: #8B7E6A;
+
+  /* --- Color palette --- */
+  --color-red: #E06050;
+  --color-orange: #E8945A;
+  --color-yellow: #D4A84B;
+  --color-green: #8DB87A;
+  --color-cyan: #6FB5A3;
+  --color-blue: #82A0C4;
+  --color-purple: #B898C0;
+  --color-pink: #D4A0B5;
+
+  /* --- Callout RGB --- */
+  --callout-note: 232, 148, 90;
+  --callout-tip: 141, 184, 122;
+  --callout-info: 130, 160, 196;
+  --callout-warning: 212, 168, 75;
+  --callout-important: 232, 148, 90;
+  --callout-danger: 224, 96, 80;
+  --callout-error: 224, 96, 80;
+  --callout-quote: 184, 152, 192;
+  --callout-success: 141, 184, 122;
+  --callout-abstract: 130, 160, 196;
+  --callout-example: 184, 152, 192;
+  --callout-question: 212, 168, 75;
+  --callout-fail: 224, 96, 80;
+  --callout-todo: 130, 160, 196;
+  --callout-bug: 224, 96, 80;
+}
+
+
+/* ============================================================
+   Callout color enforcement — forces --callout-color per type
+   (Obsidian 1.4+ sometimes binds --callout-color in a higher-
+   specificity rule than --callout-note alone can reach.)
+   ============================================================ */
+
+.callout[data-callout="note"],
+.callout[data-callout="default"] {
+  --callout-color: var(--callout-note);
+}
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] {
+  --callout-color: var(--callout-tip);
+}
+.callout[data-callout="info"] {
+  --callout-color: var(--callout-info);
+}
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  --callout-color: var(--callout-warning);
+}
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  --callout-color: var(--callout-danger);
+}
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: var(--callout-quote);
+}
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  --callout-color: var(--callout-success);
+}
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  --callout-color: var(--callout-abstract);
+}
+.callout[data-callout="example"] {
+  --callout-color: var(--callout-example);
+}
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  --callout-color: var(--callout-question);
+}
+.callout[data-callout="fail"],
+.callout[data-callout="failure"],
+.callout[data-callout="missing"] {
+  --callout-color: var(--callout-fail);
+}
+.callout[data-callout="todo"] {
+  --callout-color: var(--callout-todo);
+}
+.callout[data-callout="bug"] {
+  --callout-color: var(--callout-bug);
+}
+.callout[data-callout="important"] {
+  --callout-color: var(--callout-important);
+}
+
+
+/* ============================================================
+   Core UI surfaces — modal, command palette, menus, tooltips
+   ============================================================ */
+
+/* Modal / command palette container */
+.modal,
+.prompt {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+.modal-bg,
+.prompt-bg {
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+}
+.modal-title,
+.modal h1,
+.modal h2 {
+  color: var(--text-normal);
+}
+.modal-close-button {
+  color: var(--text-muted);
+}
+.modal-close-button:hover {
+  color: var(--interactive-accent);
+}
+
+/* Command palette input */
+.prompt-input,
+.prompt-input-container input,
+.modal input[type="text"],
+.modal input[type="search"] {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  color: var(--text-normal);
+}
+.prompt-input:focus,
+.modal input[type="text"]:focus,
+.modal input[type="search"]:focus {
+  border-color: var(--interactive-accent);
+  outline: none;
+}
+
+/* Suggestion list (command palette, autocomplete, file switcher) */
+.suggestion-item,
+.prompt-results .suggestion-item {
+  border-radius: var(--radius-s);
+  padding: 6px 10px;
+  color: var(--text-normal);
+}
+.suggestion-item.is-selected,
+.prompt-results .suggestion-item.is-selected {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--interactive-accent);
+}
+.suggestion-item.mod-complex .suggestion-aux {
+  color: var(--text-faint);
+}
+.suggestion-hotkey,
+.prompt-instructions {
+  color: var(--text-faint);
+}
+.suggestion-highlight {
+  color: var(--interactive-accent);
+  font-weight: 600;
+}
+
+/* Right-click / context menu */
+.menu {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  padding: 4px;
+}
+.menu-item {
+  border-radius: var(--radius-s);
+  padding: 6px 10px;
+  color: var(--text-normal);
+}
+.menu-item:hover,
+.menu-item.is-active:not(.is-disabled) {
+  background-color: var(--background-modifier-hover);
+  color: var(--interactive-accent);
+}
+.menu-item.is-disabled {
+  color: var(--text-faint);
+  opacity: 0.5;
+}
+.menu-separator {
+  background-color: var(--background-modifier-border);
+  margin: 4px 0;
+}
+.menu-item-icon {
+  color: var(--text-muted);
+}
+
+/* Properties panel — inner controls (Obsidian 1.4+) */
+.metadata-property-key,
+.metadata-property-key-input {
+  color: var(--text-muted);
+  font-weight: 550;
+}
+.metadata-property-value,
+.metadata-input-longtext,
+.metadata-input-text {
+  color: var(--text-normal);
+  background-color: transparent;
+}
+.metadata-property-icon {
+  color: var(--interactive-accent);
+}
+.multi-select-pill,
+.metadata-property .multi-select-pill {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+  border-radius: 999px;
+  border: 1px solid var(--background-modifier-border);
+  padding: 2px 8px;
+}
+.multi-select-pill:hover {
+  background-color: var(--background-modifier-active-hover);
+  border-color: var(--interactive-accent);
+}
+.metadata-add-button {
+  color: var(--text-muted);
+}
+.metadata-add-button:hover {
+  color: var(--interactive-accent);
+  background-color: var(--background-modifier-hover);
+}
+
+/* Tooltip */
+.tooltip {
+  background-color: var(--text-normal);
+  color: var(--background-primary);
+  border-radius: var(--radius-s);
+  font-size: 0.85em;
+  padding: 4px 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.tooltip-arrow {
+  border-top-color: var(--text-normal);
+  border-bottom-color: var(--text-normal);
+}
+
+/* Settings page */
+.vertical-tab-header {
+  background-color: var(--background-secondary);
+}
+.vertical-tab-nav-item.is-active {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--interactive-accent);
+  border-left: 2px solid var(--interactive-accent);
+}
+.setting-item {
+  border-top: 1px solid var(--background-modifier-border);
+}
+.setting-item-name {
+  color: var(--text-normal);
+}
+.setting-item-description {
+  color: var(--text-muted);
+}
+
+/* Search panel */
+.search-input-container input {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+.search-result-file-title {
+  color: var(--text-normal);
+}
+.search-result-file-match-text {
+  color: var(--text-muted);
+}
+.search-result-file-matched-text {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Tab close button */
+.workspace-tab-header .workspace-tab-header-inner-close-button {
+  color: var(--text-faint);
+}
+.workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+  color: var(--text-error);
+  background-color: var(--background-modifier-error);
+}
+
+
+/* ============================================================
+   Accessibility — focus outlines + reduced motion
+   ============================================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+button:focus-visible,
+.clickable-icon:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.suggestion-item:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ============================================================
+   Mobile — ensure core UI doesn't break
+   ============================================================ */
+
+.is-mobile .workspace-tab-header.is-active {
+  background-color: var(--background-primary) !important;
+}
+.is-mobile .callout {
+  border-radius: 6px;
+}
+.is-mobile .markdown-preview-view h1,
+.is-mobile .markdown-source-view .cm-header-1 {
+  font-size: 1.6em;
+}
+.is-mobile .markdown-preview-view h2,
+.is-mobile .markdown-source-view .cm-header-2 {
+  font-size: 1.35em;
+}
+.is-mobile .nav-file-title.is-active {
+  border-left-width: 3px;
+}
+.is-mobile .status-bar {
+  background-color: var(--background-secondary-alt);
+}
+.is-mobile .modal,
+.is-mobile .prompt {
+  border-radius: var(--radius-m);
+}
+
+
+/* ============================================================
+   Plugin compatibility — Dataview, Kanban, Calendar, Tasks
+   ============================================================ */
+
+/* --- Dataview --- */
+.block-language-dataview table,
+.block-language-dataviewjs table {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.block-language-dataview th,
+.block-language-dataviewjs th {
+  background-color: var(--background-secondary);
+  color: var(--text-accent);
+  font-weight: 600;
+  border-bottom: 2px solid var(--background-modifier-border);
+  padding: 8px 12px;
+}
+.block-language-dataview td,
+.block-language-dataviewjs td {
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.block-language-dataview tr:nth-child(even) td,
+.block-language-dataviewjs tr:nth-child(even) td {
+  background-color: var(--table-row-alt-background);
+}
+.block-language-dataview tr:hover td,
+.block-language-dataviewjs tr:hover td {
+  background-color: var(--table-row-background-hover);
+}
+.dataview.task-list-item {
+  color: var(--text-normal);
+}
+.dataview .dataview-result-metric {
+  color: var(--interactive-accent);
+  font-weight: 600;
+}
+
+/* --- Kanban plugin --- */
+.kanban-plugin__board {
+  background-color: var(--background-secondary);
+}
+.kanban-plugin__lane {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+.kanban-plugin__lane-title {
+  color: var(--text-normal);
+  font-weight: 650;
+  border-bottom: 2px solid var(--interactive-accent);
+}
+.kanban-plugin__lane-title-count {
+  color: var(--text-muted);
+  background-color: var(--background-modifier-hover);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+}
+.kanban-plugin__item {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+.kanban-plugin__item:hover {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 2px 6px rgba(217, 119, 87, 0.15);
+}
+.kanban-plugin__item-input-wrapper input,
+.kanban-plugin__item-input-wrapper textarea {
+  background-color: transparent;
+  color: var(--text-normal);
+}
+
+/* --- Calendar plugin --- */
+.calendar-container {
+  background-color: var(--background-primary);
+}
+.calendar-container .day {
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+  transition: background-color 0.1s ease;
+}
+.calendar-container .day.active {
+  background-color: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+  font-weight: 600;
+}
+.calendar-container .day.today {
+  color: var(--interactive-accent);
+  font-weight: 700;
+  border: 1px solid var(--interactive-accent);
+}
+.calendar-container .day.has-note {
+  color: var(--text-accent);
+}
+.calendar-container .day:hover {
+  background-color: var(--background-modifier-hover);
+}
+.calendar-container .week-num {
+  color: var(--text-faint);
+}
+.calendar-container .weekday {
+  color: var(--text-muted);
+}
+
+/* --- Tasks plugin --- */
+.task-list-item input[type="checkbox"] {
+  accent-color: var(--interactive-accent);
+  border-color: var(--background-modifier-border);
+}
+.task-list-item input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+}
+.tasks-list-text .task-due,
+.tasks-list-text .task-scheduled,
+.tasks-list-text .task-start,
+.tasks-list-text .task-created {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin-left: 0.4em;
+}
+.tasks-list-text .task-priority-highest,
+.tasks-list-text .task-priority-high {
+  color: var(--color-red);
+  font-weight: 600;
+}
+.tasks-list-text .task-priority-medium {
+  color: var(--color-orange);
+}
+.tasks-list-text .task-priority-low,
+.tasks-list-text .task-priority-lowest {
+  color: var(--text-muted);
+}
+.tasks-list-text .task-done-date {
+  color: var(--color-green);
+}
+.tasks-backlink {
+  color: var(--text-faint);
+}
+.tasks-backlink:hover {
+  color: var(--interactive-accent);
+}

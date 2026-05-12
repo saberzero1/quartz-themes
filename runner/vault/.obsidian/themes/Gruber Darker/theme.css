@@ -1,0 +1,2082 @@
+/*
+ * Gruber Darker — Obsidian Theme
+ * Version 2.0.1
+ *
+ * Ported from the Emacs gruber-darker-theme
+ * Original Emacs theme: Copyright (C) 2009-2010, 2016 Jason R. Blevins
+ *                       Copyright (C) 2013 Alexey Kutepov a.k.a. rexim
+ *
+ * Original theme inspired by Gruber Dark for BBEdit by John Gruber
+ * (https://daringfireball.net/projects/gruber-darker/)
+ *
+ * Licensed under the MIT License:
+ * https://jblevins.org/projects/emacs-color-themes/gruber-darker-theme.el.html
+ *
+ * Obsidian port by: Aduneer
+ * Obsidian port repository: https://github.com/Aduneer/gruber-darker-obsidian
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ */
+
+/* ============================================================
+   STYLE SETTINGS CONFIGURATION
+   Install "Style Settings" plugin to access these options.
+   ============================================================ */
+
+/* @settings
+
+name: Gruber Darker
+id: gruber-darker
+settings:
+    -
+        id: gruber-palette
+        title: "Palette Overrides"
+        description: "Override individual palette colors."
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: gd-fg
+        title: "Foreground (fg)"
+        description: "Main body text"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#e4e4ef'
+    -
+        id: gd-fg-bright
+        title: "Foreground Bright (fg+1)"
+        description: "Bold text"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#f4f4ff'
+    -
+        id: gd-bg
+        title: "Background (bg)"
+        description: "Primary editor background"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#181818'
+    -
+        id: gd-bg-dark
+        title: "Background Dark (bg-1)"
+        description: "Deepest background, gutters, titlebar"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#101010'
+    -
+        id: gd-bg-light
+        title: "Background Light (bg+1)"
+        description: "Secondary background, hover, active line"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#282828'
+    -
+        id: gd-bg-2
+        title: "Background Mid (bg+2)"
+        description: "Borders, dividers"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#453d41'
+    -
+        id: gd-bg-sel
+        title: "Background Selection (bg+3)"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#484848'
+    -
+        id: gd-bg-match
+        title: "Background Match (bg+4)"
+        description: "Search match, tooltips"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#52494e'
+    -
+        id: gd-yellow
+        title: "Yellow (keyword accent)"
+        description: "Keywords, H1, active icons"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ffdd33'
+    -
+        id: gd-green
+        title: "Green (strings)"
+        description: "Strings, H4, success"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#73c936'
+    -
+        id: gd-niagara
+        title: "Niagara (links/functions)"
+        description: "Links, functions, H2"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#96a6c8'
+    -
+        id: gd-wisteria
+        title: "Wisteria (visited/H3)"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#9e95c7'
+    -
+        id: gd-brown
+        title: "Brown (comments)"
+        description: "Comments, H5, annotations"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#cc8c3c'
+    -
+        id: gd-quartz
+        title: "Quartz (muted/constants)"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#95a99f'
+    -
+        id: gd-niagara-dim
+        title: "Niagara Dim (faint UI)"
+        description: "Line numbers, faint text"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#5f627f'
+    -
+        id: gd-red
+        title: "Red (errors)"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#f43841'
+    -
+        id: gd-red-bright
+        title: "Red Bright (red+1)"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ff4f58'
+    -
+        id: editor-section
+        title: "Editor"
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: gd-font-size
+        title: "Base font size (px)"
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 24
+        step: 1
+        format: px
+    -
+        id: gd-line-height
+        title: "Line height"
+        type: variable-number-slider
+        default: 1.7
+        min: 1.2
+        max: 2.4
+        step: 0.05
+    -
+        id: gd-line-width
+        title: "Max note width (ch)"
+        description: "Maximum readable line width in characters"
+        type: variable-number-slider
+        default: 80
+        min: 40
+        max: 140
+        step: 2
+        format: ch
+    -
+        id: gd-readable-line-length
+        title: "Readable line length"
+        description: "Constrain note width to max-width"
+        type: class-toggle
+        default: true
+    -
+        id: gd-show-line-numbers
+        title: "Show line numbers"
+        type: class-toggle
+        default: false
+    -
+        id: gd-active-line
+        title: "Highlight active line"
+        type: class-toggle
+        default: true
+    -
+        id: gd-indent-guides
+        title: "Show indent guides"
+        type: class-toggle
+        default: true
+    -
+        id: gd-smooth-scroll
+        title: "Smooth scrolling"
+        type: class-toggle
+        default: false
+    -
+        id: headings-section
+        title: "Headings"
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: gd-h1-size
+        title: "H1 size (em)"
+        type: variable-number-slider
+        default: 1.8
+        min: 1.2
+        max: 3.0
+        step: 0.05
+        format: em
+    -
+        id: gd-h2-size
+        title: "H2 size (em)"
+        type: variable-number-slider
+        default: 1.5
+        min: 1.1
+        max: 2.5
+        step: 0.05
+        format: em
+    -
+        id: gd-h3-size
+        title: "H3 size (em)"
+        type: variable-number-slider
+        default: 1.3
+        min: 1.0
+        max: 2.0
+        step: 0.05
+        format: em
+    -
+        id: gd-h4-size
+        title: "H4 size (em)"
+        type: variable-number-slider
+        default: 1.15
+        min: 1.0
+        max: 1.8
+        step: 0.05
+        format: em
+    -
+        id: gd-heading-transform
+        title: "Heading text transform"
+        type: variable-select
+        default: none
+        options:
+            -
+                label: Normal
+                value: none
+            -
+                label: Uppercase
+                value: uppercase
+            -
+                label: Capitalize
+                value: capitalize
+            -
+                label: Lowercase
+                value: lowercase
+    -
+        id: code-section
+        title: "Code Blocks"
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: gd-code-font-size
+        title: "Code font size (em)"
+        type: variable-number-slider
+        default: 0.875
+        min: 0.65
+        max: 1.1
+        step: 0.025
+        format: em
+    -
+        id: gd-code-border
+        title: "Show border around code blocks"
+        type: class-toggle
+        default: true
+    -
+        id: gd-code-line-numbers
+        title: "Code block line numbers"
+        type: class-toggle
+        default: false
+    -
+        id: ui-section
+        title: "Interface"
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: gd-sidebar-width
+        title: "Sidebar width (px)"
+        type: variable-number-slider
+        default: 260
+        min: 160
+        max: 400
+        step: 10
+        format: px
+    -
+        id: gd-tab-style
+        title: "Tab style"
+        type: class-select
+        allowEmpty: false
+        default: gd-tabs-default
+        options:
+            -
+                label: "Default"
+                value: gd-tabs-default
+            -
+                label: "Underline active tab"
+                value: gd-tabs-underline
+            -
+                label: "Pill / rounded active tab"
+                value: gd-tabs-pill
+    -
+        id: gd-hide-ribbon
+        title: "Hide ribbon (left action icons)"
+        type: class-toggle
+        default: false
+    -
+        id: gd-compact-statusbar
+        title: "Compact status bar"
+        type: class-toggle
+        default: false
+    -
+        id: callouts-section
+        title: "Callouts"
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: gd-callout-radius
+        title: "Callout corner radius (px)"
+        type: variable-number-slider
+        default: 6
+        min: 0
+        max: 20
+        step: 1
+        format: px
+    -
+        id: gd-callout-blend
+        title: "Callout icon blend mode"
+        type: variable-select
+        default: lighten
+        options:
+            - normal
+            - lighten
+            - screen
+            - overlay
+    -
+        id: vim-section
+        title: "Vim & Cursor"
+        description: "Cursor appearance and Vim mode settings. Enable Obsidian's built-in Vim keybindings under Settings > Editor > Vim key bindings."
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: gd-cursor-color
+        title: "Cursor color (normal editing)"
+        description: "Color of the text caret outside of Vim mode"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ffdd33'
+    -
+        id: gd-vim-cursor-style
+        title: "Vim NORMAL mode cursor shape"
+        type: class-select
+        allowEmpty: false
+        default: gd-vim-cursor-block
+        options:
+            -
+                label: "Block (classic Vim)"
+                value: gd-vim-cursor-block
+            -
+                label: "Underline"
+                value: gd-vim-cursor-underline
+            -
+                label: "Bar / Beam (like INSERT)"
+                value: gd-vim-cursor-bar
+    -
+        id: gd-vim-cursor-blink
+        title: "Cursor blink / animation style"
+        type: class-select
+        allowEmpty: false
+        default: gd-cursor-blink-solid
+        options:
+            -
+                label: "Static — no animation"
+                value: gd-cursor-blink-solid
+            -
+                label: "Blink — classic on/off"
+                value: gd-cursor-blink-blink
+            -
+                label: "Fade — smooth fade in/out"
+                value: gd-cursor-blink-fade
+            -
+                label: "Pulse — gentle breathe"
+                value: gd-cursor-blink-pulse
+            -
+                label: "Expand — grows and shrinks"
+                value: gd-cursor-blink-expand
+    -
+        id: gd-vim-cursor-color-normal
+        title: "Vim NORMAL mode cursor color"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ffdd33'
+    -
+        id: gd-vim-cursor-color-insert
+        title: "Vim INSERT mode cursor color"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#73c936'
+    -
+        id: gd-vim-cursor-color-visual
+        title: "Vim VISUAL mode cursor color"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#9e95c7'
+    -
+        id: gd-vim-cursor-color-replace
+        title: "Vim REPLACE mode cursor color"
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#f43841'
+    -
+        id: gd-vim-statusbar
+        title: "Vim mode indicator in status bar"
+        description: "Colorize the status bar based on current Vim mode (requires Vim Mode Status Bar or similar plugin)"
+        type: class-toggle
+        default: true
+
+*/
+
+/* ============================================================
+   PALETTE CSS CUSTOM PROPERTIES
+   Style Settings overrides these via the @settings block above.
+   ============================================================ */
+body {
+  --gd-fg: #e4e4ef;
+  --gd-fg-bright: #f4f4ff;
+  --gd-bg: #181818;
+  --gd-bg-dark: #101010;
+  --gd-bg-light: #282828;
+  --gd-bg-2: #453d41;
+  --gd-bg-sel: #484848;
+  --gd-bg-match: #52494e;
+  --gd-yellow: #ffdd33;
+  --gd-green: #73c936;
+  --gd-niagara: #96a6c8;
+  --gd-wisteria: #9e95c7;
+  --gd-brown: #cc8c3c;
+  --gd-quartz: #95a99f;
+  --gd-niagara-dim: #5f627f;
+  --gd-red: #f43841;
+  --gd-red-bright: #ff4f58;
+
+  /* User-configurable via Style Settings */
+  --gd-font-size: 16px;
+  --gd-line-height: 1.7;
+  --gd-line-width: 80ch;
+  --gd-h1-size: 1.8em;
+  --gd-h2-size: 1.5em;
+  --gd-h3-size: 1.3em;
+  --gd-h4-size: 1.15em;
+  --gd-heading-transform: none;
+  --gd-code-font-size: 0.875em;
+  --gd-sidebar-width: 260px;
+  --gd-callout-radius: 6px;
+  --gd-callout-blend: lighten;
+
+  /* Cursors */
+  --gd-cursor-color: #ffdd33;
+  --gd-vim-cursor-color-normal: #ffdd33;
+  --gd-vim-cursor-color-insert: #73c936;
+  --gd-vim-cursor-color-visual: #9e95c7;
+  --gd-vim-cursor-color-replace: #f43841;
+}
+
+/* ============================================================
+   CURSOR BLINK KEYFRAMES
+   ============================================================
+   NOTE: CodeMirror 6 (used by Obsidian) manages cursor blinking
+   via its own internal timer that adds/removes a CSS class
+   (.cm-blink) on the .cm-cursorLayer. To override it fully we
+   must target BOTH the .cm-cursor element AND the layer, AND
+   override CM6's own caret-blink-rate mechanism.
+   ============================================================ */
+
+/* Block blink: hard on/off matching the classic terminal feel */
+@keyframes gd-blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 1; }
+  51%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Fade: smooth sine-like fade to near-invisible */
+@keyframes gd-fade {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.05; }
+}
+
+/* Pulse: breathe — stays visible, dips to 25% */
+@keyframes gd-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+
+/* Expand: cursor squishes vertically */
+@keyframes gd-expand {
+  0%, 100% { transform: scaleY(1);    opacity: 1; }
+  45%, 55% { transform: scaleY(0.15); opacity: 0.6; }
+}
+
+/* ============================================================
+   CURSOR BLINK STYLE CLASSES
+   Applied to <body> by Style Settings class-select.
+   We target .cm-cursorLayer (the container CM6 animates)
+   AND .cm-cursor / .cm-cursor-primary (the individual elements).
+   The !important on animation overrides CM6's inline styles.
+   ^ this is intentional for vim style cursors
+   ============================================================ */
+
+/* ── STATIC: kill ALL animation paths CM6 uses ─────────────── */
+/* 1. Override CM6's own blink timer by forcing caret-blink-rate to 0 */
+.gd-cursor-blink-solid .cm-editor {
+  caret-blink-rate: 0;                 /* CM6 internal var */
+}
+/* 2. Override the .cm-blink animation CM6 injects on .cm-cursorLayer */
+.gd-cursor-blink-solid .cm-cursorLayer {
+  animation: none !important;
+}
+/* 3. Hard-pin the cursor elements themselves */
+.gd-cursor-blink-solid .cm-cursor,
+.gd-cursor-blink-solid .cm-cursor-primary {
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ── BLINK: classic hard on/off ─────────────────────────────── */
+.gd-cursor-blink-blink .cm-cursorLayer {
+  animation: none !important;          /* kill CM6's own blink on the layer */
+}
+.gd-cursor-blink-blink .cm-cursor,
+.gd-cursor-blink-blink .cm-cursor-primary {
+  animation: gd-blink 1s steps(1, end) infinite !important;
+}
+
+/* ── FADE: smooth fade in/out ───────────────────────────────── */
+.gd-cursor-blink-fade .cm-cursorLayer {
+  animation: none !important;
+}
+.gd-cursor-blink-fade .cm-cursor,
+.gd-cursor-blink-fade .cm-cursor-primary {
+  animation: gd-fade 1.6s ease-in-out infinite !important;
+}
+
+/* ── PULSE: breathe ─────────────────────────────────────────── */
+.gd-cursor-blink-pulse .cm-cursorLayer {
+  animation: none !important;
+}
+.gd-cursor-blink-pulse .cm-cursor,
+.gd-cursor-blink-pulse .cm-cursor-primary {
+  animation: gd-pulse 2.2s ease-in-out infinite !important;
+}
+
+/* ── EXPAND: squish ─────────────────────────────────────────── */
+.gd-cursor-blink-expand .cm-cursorLayer {
+  animation: none !important;
+}
+.gd-cursor-blink-expand .cm-cursor,
+.gd-cursor-blink-expand .cm-cursor-primary {
+  animation: gd-expand 1.2s ease-in-out infinite !important;
+  transform-origin: bottom center;
+}
+
+/* ============================================================
+   VIM CURSOR SHAPE CLASSES (Vim NORMAL fat-cursor)
+   ============================================================ */
+
+/* BLOCK — classic Vim normal mode */
+.gd-vim-cursor-block .cm-fat-cursor .cm-cursor,
+.gd-vim-cursor-block .cm-fat-cursor .cm-cursor-primary {
+  background-color: var(--gd-vim-cursor-color-normal) !important;
+  border-left: none !important;
+  width: 1ch !important;
+  opacity: 0.8;
+}
+
+/* UNDERLINE */
+.gd-vim-cursor-underline .cm-fat-cursor .cm-cursor,
+.gd-vim-cursor-underline .cm-fat-cursor .cm-cursor-primary {
+  background-color: transparent !important;
+  border-left: none !important;
+  border-bottom: 2px solid var(--gd-vim-cursor-color-normal) !important;
+  width: 1ch !important;
+}
+
+/* BAR / BEAM */
+.gd-vim-cursor-bar .cm-fat-cursor .cm-cursor,
+.gd-vim-cursor-bar .cm-fat-cursor .cm-cursor-primary {
+  background-color: transparent !important;
+  border-left: 2px solid var(--gd-vim-cursor-color-normal) !important;
+  width: 0 !important;
+}
+
+/* INSERT mode — always a bar, green */
+.cm-vimMode:not(.cm-fat-cursor) .cm-cursor,
+.cm-vimMode:not(.cm-fat-cursor) .cm-cursor-primary {
+  border-left-color: var(--gd-vim-cursor-color-insert) !important;
+  border-left-width: 2px !important;
+}
+
+/* VISUAL mode — wisteria selection tint */
+.cm-vimMode .cm-selectionBackground {
+  background-color: rgba(158, 149, 199, 0.22) !important;
+}
+
+/* REPLACE mode — red underline */
+.cm-vim-replace .cm-cursor,
+.cm-vim-replace .cm-cursor-primary {
+  background-color: transparent !important;
+  border-left: none !important;
+  border-bottom: 2px solid var(--gd-vim-cursor-color-replace) !important;
+  width: 1ch !important;
+}
+
+/* ============================================================
+   VIM MODE STATUS BAR INDICATOR
+   Works with plugins that add a Vim mode label to the status bar.
+   ============================================================ */
+.gd-vim-statusbar .status-bar-item.plugin-cm-vim-mode-indicator,
+.gd-vim-statusbar .status-bar-item[class*="vim-mode"] {
+  font-weight: 700;
+  font-family: var(--font-monospace);
+  letter-spacing: 0.06em;
+  font-size: 0.72em;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-right: 2px;
+  transition: background-color 80ms ease, color 80ms ease;
+}
+
+.gd-vim-statusbar .status-bar-item[data-vim-mode="NORMAL"],
+.gd-vim-statusbar .status-bar-item.mod-active[class*="vim-mode-normal"] {
+  background-color: var(--gd-vim-cursor-color-normal);
+  color: var(--gd-bg-dark);
+}
+
+.gd-vim-statusbar .status-bar-item[data-vim-mode="INSERT"],
+.gd-vim-statusbar .status-bar-item.mod-active[class*="vim-mode-insert"] {
+  background-color: var(--gd-vim-cursor-color-insert);
+  color: var(--gd-bg-dark);
+}
+
+.gd-vim-statusbar .status-bar-item[data-vim-mode="VISUAL"],
+.gd-vim-statusbar .status-bar-item.mod-active[class*="vim-mode-visual"] {
+  background-color: var(--gd-vim-cursor-color-visual);
+  color: var(--gd-bg-dark);
+}
+
+.gd-vim-statusbar .status-bar-item[data-vim-mode="REPLACE"],
+.gd-vim-statusbar .status-bar-item.mod-active[class*="vim-mode-replace"] {
+  background-color: var(--gd-vim-cursor-color-replace);
+  color: var(--gd-bg-dark);
+}
+
+/* ============================================================
+   THEME-DARK — core Obsidian CSS variables
+   ============================================================ */
+.theme-dark {
+  /* --- Core backgrounds --- */
+  --background-primary: var(--gd-bg);
+  --background-primary-alt: var(--gd-bg-dark);
+  --background-secondary: var(--gd-bg-light);
+  --background-secondary-alt: var(--gd-bg-dark);
+  --background-modifier-hover: rgba(40, 40, 40, 0.9);
+  --background-modifier-active-hover: var(--gd-bg-light);
+  --background-modifier-border: var(--gd-bg-2);
+  --background-modifier-border-hover: var(--gd-bg-match);
+  --background-modifier-border-focus: var(--gd-niagara);
+  --background-modifier-error: #c73c3f;
+  --background-modifier-error-rgb: 199, 60, 63;
+  --background-modifier-error-hover: #d94549;
+  --background-modifier-success: var(--gd-green);
+  --background-modifier-message: var(--gd-bg-light);
+  --background-modifier-form-field: var(--gd-bg-light);
+  --background-modifier-form-field-highlighted: var(--gd-bg-sel);
+
+  /* --- Text --- */
+  --text-normal: var(--gd-fg);
+  --text-muted: var(--gd-quartz);
+  --text-faint: var(--gd-niagara-dim);
+  --text-on-accent: var(--gd-bg-dark);
+  --text-error: var(--gd-red-bright);
+  --text-warning: var(--gd-yellow);
+  --text-success: var(--gd-green);
+  --text-selection: var(--gd-bg-sel);
+  --text-accent: var(--gd-niagara);
+  --text-accent-hover: var(--gd-wisteria);
+  --text-highlight-bg: rgba(255, 221, 51, 0.22);
+  --text-highlight-bg-active: rgba(255, 221, 51, 0.38);
+
+  /* --- Interactive / accent --- */
+  --interactive-normal: var(--gd-bg-light);
+  --interactive-hover: var(--gd-bg-sel);
+  --interactive-accent: var(--gd-niagara);
+  --interactive-accent-hsl: 213, 34%, 69%;
+  --interactive-accent-hover: var(--gd-wisteria);
+  --interactive-success: var(--gd-green);
+
+  /* --- Scrollbar --- */
+  --scrollbar-bg: var(--gd-bg);
+  --scrollbar-thumb-bg: var(--gd-bg-2);
+  --scrollbar-active-thumb-bg: var(--gd-bg-match);
+
+  /* --- Icons --- */
+  --icon-color: var(--gd-quartz);
+  --icon-color-hover: var(--gd-fg);
+  --icon-color-active: var(--gd-yellow);
+  --icon-color-focused: var(--gd-niagara);
+  --icon-opacity: 0.75;
+  --icon-opacity-hover: 1;
+  --icon-size: 18px;
+  --icon-stroke: 1.75px;
+
+  /* --- Indentation guides --- */
+  --indentation-guide-color: rgba(69, 61, 65, 0.55);
+  --indentation-guide-color-active: var(--gd-bg-match);
+  --indentation-guide-width: 1px;
+
+  /* --- Collapse --- */
+  --collapse-icon-color: var(--gd-quartz);
+  --collapse-icon-color-collapsed: var(--gd-niagara-dim);
+
+  /* --- Dividers --- */
+  --divider-color: var(--gd-bg-light);
+  --divider-color-hover: var(--gd-bg-2);
+  --divider-width: 1px;
+
+  /* --- Tags --- */
+  --tag-color: var(--gd-niagara);
+  --tag-background: rgba(150, 166, 200, 0.1);
+  --tag-background-hover: rgba(150, 166, 200, 0.2);
+  --tag-border-color: rgba(150, 166, 200, 0.25);
+  --tag-border-color-hover: rgba(150, 166, 200, 0.5);
+  --tag-border-width: 1px;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.1em;
+  --tag-radius: 2em;
+  --tag-size: var(--font-smaller);
+  --tag-weight: normal;
+
+  /* --- Links --- */
+  --link-color: var(--gd-niagara);
+  --link-color-hover: var(--gd-wisteria);
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-unresolved-color: var(--gd-quartz);
+  --link-unresolved-opacity: 0.65;
+  --link-unresolved-decoration: underline dotted;
+  --link-external-color: var(--gd-niagara);
+  --link-external-color-hover: var(--gd-wisteria);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+
+  /* --- Headings --- */
+  --h1-color: var(--gd-yellow);
+  --h2-color: var(--gd-niagara);
+  --h3-color: var(--gd-wisteria);
+  --h4-color: var(--gd-green);
+  --h5-color: var(--gd-brown);
+  --h6-color: var(--gd-quartz);
+  --inline-title-color: var(--gd-yellow);
+  --inline-title-size: 2em;
+  --inline-title-weight: 700;
+  --inline-title-font: var(--font-text);
+  --inline-title-line-height: 1.3;
+
+  /* --- Bold & italic --- */
+  --bold-color: var(--gd-fg-bright);
+  --bold-weight: 700;
+  --italic-color: var(--gd-quartz);
+
+  /* --- Code --- */
+  --code-background: var(--gd-bg-light);
+  --code-normal: var(--gd-green);
+  --code-comment: var(--gd-brown);
+  --code-function: var(--gd-niagara);
+  --code-important: var(--gd-yellow);
+  --code-keyword: var(--gd-yellow);
+  --code-operator: var(--gd-fg);
+  --code-property: var(--gd-niagara);
+  --code-punctuation: var(--gd-fg);
+  --code-string: var(--gd-green);
+  --code-tag: var(--gd-red);
+  --code-value: var(--gd-quartz);
+
+  /* --- Blockquote --- */
+  --blockquote-color: var(--gd-quartz);
+  --blockquote-background: rgba(40, 40, 40, 0.5);
+  --blockquote-border-color: var(--gd-yellow);
+  --blockquote-border-thickness: 3px;
+
+  /* --- Tables --- */
+  --table-header-background: var(--gd-bg-light);
+  --table-header-background-hover: var(--gd-bg-sel);
+  --table-header-color: var(--gd-yellow);
+  --table-header-weight: 600;
+  --table-odd-row-background: var(--gd-bg);
+  --table-even-row-background: rgba(24, 24, 24, 0.5);
+  --table-row-background-hover: var(--gd-bg-light);
+  --table-border-color: var(--gd-bg-2);
+  --table-border-width: 1px;
+  --table-column-max-width: none;
+  --table-selection-background-color: rgba(150, 166, 200, 0.2);
+
+  /* --- Callouts --- */
+  --callout-default: rgb(150, 166, 200);
+  --callout-info: rgb(150, 166, 200);
+  --callout-todo: rgb(115, 201, 54);
+  --callout-warning: rgb(204, 140, 60);
+  --callout-error: rgb(244, 56, 65);
+  --callout-success: rgb(115, 201, 54);
+  --callout-question: rgb(158, 149, 199);
+  --callout-important: rgb(255, 221, 51);
+  --callout-tip: rgb(115, 201, 54);
+  --callout-caution: rgb(244, 56, 65);
+  --callout-failure: rgb(244, 56, 65);
+  --callout-danger: rgb(244, 56, 65);
+  --callout-bug: rgb(244, 56, 65);
+  --callout-example: rgb(158, 149, 199);
+  --callout-quote: rgb(149, 169, 159);
+  --callout-blend-mode: var(--gd-callout-blend);
+  --callout-padding: 1em 1.2em;
+  --callout-radius: var(--gd-callout-radius);
+  --callout-title-size: var(--font-small);
+  --callout-title-padding: 0.5em 1.2em;
+
+  /* --- Checkbox --- */
+  --checkbox-color: var(--gd-niagara);
+  --checkbox-color-hover: var(--gd-wisteria);
+  --checkbox-border-color: var(--gd-bg-match);
+  --checkbox-border-color-hover: var(--gd-niagara);
+  --checkbox-marker-color: var(--gd-bg-dark);
+  --checkbox-radius: 3px;
+  --checklist-done-color: var(--gd-niagara-dim);
+  --checklist-done-decoration: line-through;
+
+  /* --- Inputs --- */
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --input-border-color: var(--gd-bg-match);
+  --input-focus-border-color: var(--gd-niagara);
+  --input-radius: 4px;
+  --input-height: 30px;
+
+  /* --- Slider --- */
+  --slider-track-background: var(--gd-bg-2);
+  --slider-thumb-border-color: var(--gd-niagara);
+  --slider-thumb-bg: var(--gd-bg-dark);
+
+  /* --- Button --- */
+  --button-radius: 4px;
+
+  /* --- Prompt / Command palette --- */
+  --prompt-background: var(--gd-bg-dark);
+  --prompt-border-color: var(--gd-bg-match);
+  --prompt-border-width: 1px;
+  --prompt-shadow: 0 12px 48px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.5);
+  --prompt-width: min(700px, 82vw);
+  --prompt-max-height: 62vh;
+
+  /* --- Modal --- */
+  --modal-background: var(--gd-bg);
+  --modal-border-color: var(--gd-bg-2);
+  --modal-border-width: 1px;
+  --modal-radius: 8px;
+
+  /* --- Ribbon --- */
+  --ribbon-background: var(--gd-bg-dark);
+  --ribbon-background-collapsed: var(--gd-bg-dark);
+  --ribbon-border-color: var(--gd-bg-light);
+  --ribbon-width: 44px;
+
+  /* --- Titlebar --- */
+  --titlebar-background: var(--gd-bg-dark);
+  --titlebar-background-focused: var(--gd-bg);
+  --titlebar-border-color: var(--gd-bg-light);
+  --titlebar-border-width: 0px;
+  --titlebar-text-color: var(--gd-quartz);
+  --titlebar-text-color-focused: var(--gd-fg);
+  --titlebar-text-weight: normal;
+
+  /* --- Tabs --- */
+  --tab-background-active: var(--gd-bg);
+  --tab-text-color: var(--gd-niagara-dim);
+  --tab-text-color-active: var(--gd-fg);
+  --tab-text-color-focused: var(--gd-fg);
+  --tab-text-color-highlighted: var(--gd-yellow);
+  --tab-font-size: var(--font-ui-small);
+  --tab-font-weight: normal;
+  --tab-container-background: var(--gd-bg-dark);
+  --tab-divider-color: var(--gd-bg-light);
+  --tab-outline-color: var(--gd-bg-match);
+  --tab-curve: 6px;
+  --tab-radius-active: 6px;
+
+  /* --- Workspace --- */
+  --workspace-background-translucent: rgba(24, 24, 24, 0.9);
+  --resize-handle-color: var(--gd-bg-light);
+  --resize-handle-color-hover: var(--gd-niagara);
+
+  /* --- Nav / file explorer --- */
+  --nav-item-color: var(--gd-quartz);
+  --nav-item-color-hover: var(--gd-fg);
+  --nav-item-color-active: var(--gd-fg);
+  --nav-item-color-highlighted: var(--gd-yellow);
+  --nav-item-background-hover: rgba(40, 40, 40, 0.85);
+  --nav-item-background-active: rgba(40, 40, 40, 0.85);
+  --nav-item-weight-active: normal;
+  --nav-item-size: var(--font-ui-small);
+  --nav-indentation-guide-color: rgba(69, 61, 65, 0.45);
+  --nav-collapse-icon-color: var(--gd-niagara-dim);
+  --nav-file-tag: var(--gd-niagara-dim);
+
+  /* --- Search --- */
+  --search-clear-button-color: var(--gd-quartz);
+  --search-result-background: var(--gd-bg-light);
+  --search-match-highlight-bg: rgba(255, 221, 51, 0.28);
+  --search-match-highlight-color: var(--gd-fg);
+
+  /* --- Suggestions --- */
+  --suggestion-bg: var(--gd-bg-light);
+  --suggestion-border: var(--gd-bg-match);
+  --suggestion-active-bg: var(--gd-bg-sel);
+  --suggestion-highlight: var(--gd-yellow);
+  --suggestion-item-color: var(--gd-fg);
+  --suggestion-radius: 4px;
+
+  /* --- Status bar --- */
+  --status-bar-background: var(--gd-bg-dark);
+  --status-bar-border-width: 1px;
+  --status-bar-border-color: var(--gd-bg-light);
+  --status-bar-text-color: var(--gd-niagara-dim);
+  --status-bar-font-size: var(--font-ui-smaller);
+
+  /* --- Misc --- */
+  --flashing-background: rgba(255, 221, 51, 0.15);
+  --pdf-viewer-background: var(--gd-bg);
+  --graph-control-bg: var(--gd-bg-dark);
+  --folder-color: var(--gd-niagara);
+}
+
+/* ============================================================
+   LIGHT MODE — warm fallback
+   ============================================================ */
+.theme-light {
+  --background-primary: #f5f5f5;
+  --background-primary-alt: #ebebeb;
+  --background-secondary: #e2e0e0;
+  --background-secondary-alt: #d8d6d6;
+  --background-modifier-hover: rgba(0, 0, 0, 0.05);
+  --background-modifier-border: #c4c0c0;
+  --background-modifier-error: #c73c3f;
+  --background-modifier-success: #4a8a20;
+
+  --text-normal: #282828;
+  --text-muted: #52494e;
+  --text-faint: #95a99f;
+  --text-accent: #3a5f8a;
+  --text-accent-hover: #6e5ea0;
+  --text-error: #c73c3f;
+  --text-warning: #9b7200;
+  --text-success: #4a8a20;
+  --text-highlight-bg: rgba(255, 221, 51, 0.45);
+
+  --interactive-normal: #e0dedf;
+  --interactive-hover: #d5d3d4;
+  --interactive-accent: #3a5f8a;
+  --interactive-accent-hover: #6e5ea0;
+
+  --h1-color: #9b7200;
+  --h2-color: #3a5f8a;
+  --h3-color: #6e5ea0;
+  --h4-color: #4a8a20;
+  --h5-color: #7a5020;
+  --h6-color: #52494e;
+  --inline-title-color: #9b7200;
+
+  --bold-color: #181818;
+  --italic-color: #52494e;
+
+  --code-background: #e8e6e6;
+  --code-normal: #4a8a20;
+  --code-keyword: #9b7200;
+  --code-string: #4a8a20;
+  --code-function: #3a5f8a;
+  --code-comment: #8a7020;
+
+  --blockquote-color: #52494e;
+  --blockquote-background: rgba(220, 218, 218, 0.5);
+  --blockquote-border-color: #9b7200;
+
+  --link-color: #3a5f8a;
+  --link-color-hover: #6e5ea0;
+  --link-unresolved-color: #95a99f;
+  --link-external-color: #3a5f8a;
+  --link-external-color-hover: #6e5ea0;
+
+  --tag-color: #3a5f8a;
+  --tag-background: rgba(58, 95, 138, 0.1);
+  --tag-background-hover: rgba(58, 95, 138, 0.2);
+  --tag-border-color: rgba(58, 95, 138, 0.25);
+
+  --table-header-background: #e2e0e0;
+  --table-header-color: #9b7200;
+  --table-border-color: #c4c0c0;
+  --table-odd-row-background: #f5f5f5;
+  --table-even-row-background: #efeded;
+  --table-row-background-hover: #e2e0e0;
+
+  --input-border-color: #c4c0c0;
+  --input-focus-border-color: #3a5f8a;
+
+  --prompt-background: #ebebeb;
+  --prompt-border-color: #c4c0c0;
+
+  --tab-container-background: #d8d6d6;
+  --tab-background-active: #f5f5f5;
+  --tab-text-color: #52494e;
+  --tab-text-color-active: #282828;
+
+  --titlebar-background: #d8d6d6;
+  --titlebar-text-color: #52494e;
+  --titlebar-text-color-focused: #282828;
+
+  --ribbon-background: #e2e0e0;
+  --status-bar-background: #d8d6d6;
+  --status-bar-text-color: #95a99f;
+
+  --nav-item-color: #52494e;
+  --nav-item-color-hover: #282828;
+  --nav-item-color-active: #282828;
+  --nav-item-color-highlighted: #9b7200;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.05);
+  --nav-item-background-active: rgba(0, 0, 0, 0.07);
+
+  --gd-cursor-color: #9b7200;
+}
+
+/* ============================================================
+   GLOBAL BODY — typography, layout, fonts
+   ============================================================ */
+body {
+  --font-text-size: var(--gd-font-size);
+  --line-height-normal: var(--gd-line-height);
+  --max-width: var(--gd-line-width);
+
+  --font-monospace:
+    "JetBrains Mono", "Fira Code", "Cascadia Code", "Iosevka",
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+    Consolas, "DejaVu Sans Mono", monospace;
+
+  --code-size: var(--gd-code-font-size);
+  --code-white-space: pre-wrap;
+  --code-radius: 6px;
+  --code-padding: 1.1em 1.4em;
+  --code-line-height: 1.65;
+
+  --scrollbar-thumb-radius: 4px;
+
+  --h1-size: var(--gd-h1-size);
+  --h2-size: var(--gd-h2-size);
+  --h3-size: var(--gd-h3-size);
+  --h4-size: var(--gd-h4-size);
+  --h5-size: 1.05em;
+  --h6-size: 1em;
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --heading-spacing: 0.45em;
+
+  --sidebar-width: var(--gd-sidebar-width);
+
+  --anim-duration-fast: 140ms;
+  --anim-duration-moderate: 250ms;
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* ============================================================
+   CURSOR — normal editing (non-vim)
+   ============================================================
+   caret-color paints the browser native caret.
+   The CM6 fake cursor (.cm-cursor) is separate — it's used
+   in Vim mode and some other contexts. Both need the color.
+   The default state (no blink class on body) is static.
+   ============================================================ */
+.cm-content {
+  caret-color: var(--gd-cursor-color);
+}
+/* Default: static unless a blink class is applied */
+body:not(.gd-cursor-blink-blink):not(.gd-cursor-blink-fade):not(.gd-cursor-blink-pulse):not(.gd-cursor-blink-expand) .cm-cursorLayer {
+  animation: none !important;
+}
+body:not(.gd-cursor-blink-blink):not(.gd-cursor-blink-fade):not(.gd-cursor-blink-pulse):not(.gd-cursor-blink-expand) .cm-cursor,
+body:not(.gd-cursor-blink-blink):not(.gd-cursor-blink-fade):not(.gd-cursor-blink-pulse):not(.gd-cursor-blink-expand) .cm-cursor-primary {
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ============================================================
+   EDITOR — active line & selection
+   ============================================================ */
+.gd-active-line .cm-activeLine,
+.gd-active-line .cm-active {
+  background-color: rgba(40, 40, 40, 0.6) !important;
+}
+
+body:not(.gd-active-line) .cm-activeLine {
+  background-color: transparent !important;
+}
+
+.theme-dark .cm-selectionBackground,
+.theme-dark ::selection {
+  background-color: var(--gd-bg-sel) !important;
+}
+
+.theme-dark .cm-focused .cm-selectionBackground {
+  background-color: var(--gd-bg-sel) !important;
+}
+
+/* ============================================================
+   EDITOR — gutters & line numbers
+   ============================================================ */
+.theme-dark .cm-gutters {
+  background-color: var(--gd-bg-dark);
+  color: var(--gd-niagara-dim);
+  border-right: 1px solid var(--gd-bg-light);
+}
+
+.theme-dark .cm-activeLineGutter {
+  background-color: var(--gd-bg-light);
+  color: var(--gd-quartz);
+}
+
+.theme-dark .cm-gutter.cm-lineNumbers .cm-gutterElement {
+  font-size: 0.8em;
+  padding: 0 10px 0 5px;
+}
+
+.theme-dark .cm-foldGutter {
+  color: var(--gd-niagara-dim);
+}
+
+.theme-dark .cm-foldGutter:hover {
+  color: var(--gd-quartz);
+}
+
+/* Hide/show line numbers */
+body:not(.gd-show-line-numbers) .cm-lineNumbers {
+  display: none;
+}
+
+/* ============================================================
+   EDITOR — indentation guides
+   ============================================================ */
+body:not(.gd-indent-guides) .cm-indent-guides {
+  display: none;
+}
+
+/* ============================================================
+   EDITOR — syntax tokens
+   ============================================================ */
+.theme-dark .cm-keyword {
+  color: var(--gd-yellow);
+  font-weight: bold;
+}
+
+.theme-dark .cm-def {
+  color: var(--gd-niagara);
+}
+
+.theme-dark .cm-variable {
+  color: var(--gd-fg);
+}
+
+.theme-dark .cm-variable-2 {
+  color: var(--gd-fg-bright);
+}
+
+.theme-dark .cm-variable-3 {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .cm-property {
+  color: var(--gd-niagara);
+}
+
+.theme-dark .cm-operator {
+  color: var(--gd-fg);
+}
+
+.theme-dark .cm-comment {
+  color: var(--gd-brown);
+  font-style: italic;
+}
+
+.theme-dark .cm-string {
+  color: var(--gd-green);
+}
+
+.theme-dark .cm-string-2 {
+  color: var(--gd-green);
+}
+
+.theme-dark .cm-number {
+  color: var(--gd-wisteria);
+}
+
+.theme-dark .cm-atom {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .cm-builtin {
+  color: var(--gd-yellow);
+}
+
+.theme-dark .cm-tag {
+  color: var(--gd-red);
+}
+
+.theme-dark .cm-attribute {
+  color: var(--gd-niagara);
+}
+
+.theme-dark .cm-error {
+  color: var(--gd-red-bright);
+  text-decoration: underline wavy;
+}
+
+.theme-dark .cm-bracket {
+  color: var(--gd-fg);
+}
+
+.theme-dark .cm-type {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .cm-link {
+  color: var(--gd-niagara);
+  text-decoration: underline;
+}
+
+.theme-dark .cm-url {
+  color: var(--gd-niagara);
+}
+
+.theme-dark .cm-qualifier {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .cm-meta {
+  color: var(--gd-brown);
+}
+
+.theme-dark .cm-header {
+  color: var(--gd-yellow);
+  font-weight: bold;
+}
+
+.theme-dark .cm-hr {
+  color: var(--gd-bg-2);
+}
+
+.theme-dark .cm-strong {
+  color: var(--gd-fg-bright);
+  font-weight: 700;
+}
+
+.theme-dark .cm-em {
+  color: var(--gd-quartz);
+  font-style: italic;
+}
+
+/* Heading hash marks in editor — subtle, don't fight the heading color */
+.theme-dark .cm-formatting-header {
+  color: var(--gd-niagara-dim) !important;
+  font-weight: normal !important;
+}
+
+/* Heading lines — match heading colors in live preview */
+.theme-dark .cm-line.HyperMD-header-1 .cm-header-1 {
+  color: var(--gd-yellow) !important;
+}
+
+.theme-dark .cm-line.HyperMD-header-2 .cm-header-2 {
+  color: var(--gd-niagara) !important;
+}
+
+.theme-dark .cm-line.HyperMD-header-3 .cm-header-3 {
+  color: var(--gd-wisteria) !important;
+}
+
+.theme-dark .cm-line.HyperMD-header-4 .cm-header-4 {
+  color: var(--gd-green) !important;
+}
+
+.theme-dark .cm-line.HyperMD-header-5 .cm-header-5 {
+  color: var(--gd-brown) !important;
+}
+
+.theme-dark .cm-line.HyperMD-header-6 .cm-header-6 {
+  color: var(--gd-quartz) !important;
+}
+
+/* Quote marker */
+.theme-dark .cm-quote {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .cm-formatting-quote {
+  color: var(--gd-yellow) !important;
+  font-weight: bold;
+}
+
+/* List markers */
+.theme-dark .cm-formatting-list {
+  color: var(--gd-niagara-dim);
+}
+
+/* Internal link brackets */
+.theme-dark .cm-hmd-internal-link .cm-formatting-link {
+  color: var(--gd-niagara-dim);
+}
+
+/* ============================================================
+   EDITOR — search & brackets
+   ============================================================ */
+.theme-dark .cm-searchMatch {
+  background-color: var(--gd-bg-match);
+  outline: 1px solid var(--gd-quartz);
+  border-radius: 2px;
+}
+
+.theme-dark .cm-searchMatch.cm-searchMatch-selected {
+  background-color: #f5f5f5;
+  color: #000000;
+  outline-color: #ffffff;
+}
+
+.theme-dark .cm-matchingBracket {
+  background-color: var(--gd-bg-match);
+  color: var(--gd-yellow) !important;
+  outline: 1px solid var(--gd-quartz);
+}
+
+.theme-dark .cm-nonmatchingBracket {
+  background-color: rgba(199, 60, 63, 0.25);
+  color: var(--gd-red-bright) !important;
+}
+
+/* ============================================================
+   EDITOR — code blocks (live preview)
+   ============================================================ */
+.theme-dark .HyperMD-codeblock-begin,
+.theme-dark .HyperMD-codeblock,
+.theme-dark .HyperMD-codeblock-end {
+  background-color: var(--gd-bg-dark) !important;
+  color: var(--gd-fg);
+}
+
+.theme-dark .HyperMD-codeblock-begin {
+  border-radius: 6px 6px 0 0;
+  border-top: 1px solid var(--gd-bg-light);
+  border-left: 1px solid var(--gd-bg-light);
+  border-right: 1px solid var(--gd-bg-light);
+}
+
+.theme-dark .HyperMD-codeblock-end {
+  border-radius: 0 0 6px 6px;
+  border-bottom: 1px solid var(--gd-bg-light);
+  border-left: 1px solid var(--gd-bg-light);
+  border-right: 1px solid var(--gd-bg-light);
+}
+
+.theme-dark .HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  border-left: 1px solid var(--gd-bg-light);
+  border-right: 1px solid var(--gd-bg-light);
+}
+
+/* Inline code */
+.theme-dark code {
+  color: var(--gd-green);
+  background-color: var(--gd-bg-light);
+  border-radius: 4px;
+  padding: 0.1em 0.38em;
+  font-size: var(--gd-code-font-size);
+}
+
+/* Rendered code blocks (reading view) */
+.theme-dark pre,
+.theme-dark pre code {
+  background-color: var(--gd-bg-dark) !important;
+  color: var(--gd-fg);
+}
+
+.gd-code-border .theme-dark pre {
+  border: 1px solid var(--gd-bg-light) !important;
+  border-radius: 6px;
+}
+
+/* Code language label */
+.theme-dark .code-block-flair {
+  color: var(--gd-niagara-dim);
+  font-size: 0.78em;
+  font-family: var(--font-monospace);
+}
+
+
+/* ============================================================
+   READABLE LINE LENGTH
+   ============================================================ */
+.gd-readable-line-length .markdown-source-view.mod-cm6 .cm-sizer,
+.gd-readable-line-length .markdown-rendered .markdown-preview-sizer {
+  max-width: var(--gd-line-width) !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Ensure editor content fills the constrained sizer */
+.gd-readable-line-length .cm-content,
+.gd-readable-line-length .cm-line {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ============================================================
+   HEADINGS — reading view transform
+   ============================================================ */
+.markdown-reading-view h1,
+.markdown-preview-view h1 {
+  text-transform: var(--gd-heading-transform);
+}
+
+.markdown-reading-view h2,
+.markdown-preview-view h2 {
+  text-transform: var(--gd-heading-transform);
+}
+
+.markdown-reading-view h3,
+.markdown-preview-view h3 {
+  text-transform: var(--gd-heading-transform);
+}
+
+.markdown-reading-view h4,
+.markdown-preview-view h4 {
+  text-transform: var(--gd-heading-transform);
+}
+
+/* ============================================================
+   INLINE TITLE
+   ============================================================ */
+.theme-dark .inline-title {
+  color: var(--inline-title-color);
+  font-size: var(--inline-title-size);
+  font-weight: var(--inline-title-weight);
+  text-transform: var(--gd-heading-transform);
+  margin-bottom: 0.3em;
+}
+
+/* ============================================================
+   READING VIEW — block-level elements
+   ============================================================ */
+.theme-dark blockquote {
+  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  background-color: var(--blockquote-background);
+  padding: 0.7em 1em 0.7em 1.2em;
+  border-radius: 0 4px 4px 0;
+  color: var(--blockquote-color);
+  margin: 1em 0;
+}
+
+.theme-dark hr {
+  border: none;
+  border-top: 1px solid var(--gd-bg-2);
+  margin: 1.8em 0;
+}
+
+.theme-dark mark {
+  background-color: rgba(255, 221, 51, 0.22);
+  color: var(--gd-fg);
+  border-radius: 2px;
+  padding: 0.05em 0.2em;
+}
+
+.theme-dark s,
+.theme-dark del {
+  color: var(--gd-niagara-dim);
+  text-decoration-color: var(--gd-red);
+}
+
+.theme-dark img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+/* Lists */
+.theme-dark ul>li::marker,
+.theme-dark ol>li::marker {
+  color: var(--gd-niagara-dim);
+}
+
+/* Footnotes */
+.theme-dark .footnotes {
+  color: var(--gd-quartz);
+  font-size: 0.9em;
+  border-top: 1px solid var(--gd-bg-2);
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.theme-dark sup a {
+  color: var(--gd-niagara);
+}
+
+/* Embeds / transclusions */
+.theme-dark .markdown-embed {
+  border-left: 3px solid var(--gd-niagara);
+  background-color: rgba(16, 16, 16, 0.5);
+  border-radius: 0 4px 4px 0;
+  padding: 0.5em;
+}
+
+.theme-dark .markdown-embed-title {
+  color: var(--gd-niagara-dim);
+  font-size: 0.8em;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+.theme-dark table {
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.theme-dark th {
+  color: var(--table-header-color);
+  font-weight: var(--table-header-weight);
+  background-color: var(--table-header-background);
+  border-bottom: 2px solid var(--table-border-color);
+}
+
+.theme-dark td,
+.theme-dark th {
+  border: var(--table-border-width) solid var(--table-border-color);
+  padding: 0.55em 0.9em;
+}
+
+.theme-dark tr:hover td {
+  background-color: var(--table-row-background-hover);
+}
+
+/* ============================================================
+   CALLOUTS
+   ============================================================ */
+.theme-dark .callout {
+  border-radius: var(--gd-callout-radius);
+  border-left-width: 3px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.theme-dark .callout-title {
+  padding: 0.6em 1em;
+  font-weight: 600;
+  font-size: var(--font-small);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.theme-dark .callout-content {
+  padding: 0.7em 1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .callout-fold {
+  margin-left: auto;
+  opacity: 0.6;
+}
+
+/* ============================================================
+   FRONTMATTER / PROPERTIES
+   ============================================================ */
+.theme-dark .metadata-container {
+  background-color: rgba(16, 16, 16, 0.7);
+  border-bottom: 1px solid var(--gd-bg-light);
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 0.5em;
+}
+
+.theme-dark .metadata-property:hover {
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+.theme-dark .metadata-property-key {
+  color: var(--gd-niagara);
+  font-size: 0.88em;
+}
+
+.theme-dark .metadata-property-value {
+  color: var(--gd-quartz);
+}
+
+/* ============================================================
+   SIDEBAR / FILE EXPLORER
+   ============================================================ */
+.theme-dark .nav-folder-title {
+  color: var(--gd-niagara);
+  font-weight: 600;
+}
+
+.theme-dark .nav-folder-title:hover {
+  color: var(--gd-fg);
+}
+
+.theme-dark .nav-file-title {
+  color: var(--gd-quartz);
+  border-radius: 4px;
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+.theme-dark .nav-file-title:hover {
+  color: var(--gd-fg);
+  background-color: var(--nav-item-background-hover);
+}
+
+.theme-dark .nav-file-title.is-active {
+  color: var(--gd-fg);
+  background-color: var(--nav-item-background-active);
+  border-left: 2px solid var(--gd-niagara);
+}
+
+.theme-dark .nav-folder-collapse-indicator {
+  color: var(--gd-niagara-dim);
+}
+
+.theme-dark .tree-item-flair {
+  color: var(--gd-niagara-dim);
+  font-size: 0.78em;
+}
+
+/* ============================================================
+   TABS
+   ============================================================ */
+.theme-dark .workspace-tab-header {
+  border-radius: var(--tab-curve) var(--tab-curve) 0 0;
+  transition: background-color 100ms ease;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  background-color: var(--tab-background-active);
+  border-top: 2px solid var(--gd-niagara);
+}
+
+/* Underline variant */
+.gd-tabs-underline .workspace-tab-header.is-active {
+  border-top: none !important;
+  border-bottom: 2px solid var(--gd-niagara);
+  background-color: transparent !important;
+}
+
+/* Pill variant */
+.gd-tabs-pill .workspace-tab-header.is-active {
+  border-top: none !important;
+  border-radius: 20px !important;
+  background-color: var(--gd-bg-light) !important;
+  padding: 0 12px;
+}
+
+/* Tab close */
+.theme-dark .workspace-tab-header-inner-close-button {
+  color: var(--gd-niagara-dim);
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.theme-dark .workspace-tab-header:hover .workspace-tab-header-inner-close-button {
+  opacity: 1;
+}
+
+.theme-dark .workspace-tab-header-inner-close-button:hover {
+  color: var(--gd-red-bright);
+}
+
+/* ============================================================
+   RIBBON
+   ============================================================ */
+.gd-hide-ribbon .workspace-ribbon.mod-left {
+  display: none;
+}
+
+.theme-dark .workspace-ribbon {
+  background-color: var(--gd-bg-dark);
+  border-right: 1px solid var(--gd-bg-light);
+}
+
+.theme-dark .side-dock-ribbon-tab,
+.theme-dark .side-dock-ribbon-action {
+  color: var(--gd-niagara-dim);
+  transition: color 100ms ease;
+}
+
+.theme-dark .side-dock-ribbon-tab:hover,
+.theme-dark .side-dock-ribbon-action:hover {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .side-dock-ribbon-tab.is-active {
+  color: var(--gd-niagara);
+}
+
+/* ============================================================
+   STATUS BAR
+   ============================================================ */
+.theme-dark .status-bar {
+  border-top: 1px solid var(--gd-bg-light);
+  font-family: var(--font-monospace);
+}
+
+.gd-compact-statusbar .status-bar {
+  height: 18px;
+  font-size: 0.72em;
+}
+
+.theme-dark .status-bar-item {
+  color: var(--gd-niagara-dim);
+  transition: color 100ms ease;
+}
+
+.theme-dark .status-bar-item:hover {
+  color: var(--gd-quartz);
+}
+
+/* ============================================================
+   MODAL / COMMAND PALETTE
+   ============================================================ */
+.theme-dark .modal,
+.theme-dark .prompt {
+  box-shadow: var(--prompt-shadow);
+}
+
+.theme-dark .prompt-input {
+  background-color: var(--gd-bg-light);
+  color: var(--gd-fg);
+  border-bottom: 1px solid var(--gd-bg-2);
+  font-family: var(--font-monospace);
+}
+
+.theme-dark .prompt-input::placeholder {
+  color: var(--gd-niagara-dim);
+}
+
+.theme-dark .suggestion-item {
+  transition: background-color 80ms ease;
+  border-radius: 4px;
+}
+
+.theme-dark .suggestion-item.is-selected {
+  background-color: var(--gd-bg-sel);
+}
+
+.theme-dark .suggestion-highlight {
+  color: var(--gd-yellow);
+  font-weight: 600;
+}
+
+.theme-dark .suggestion-hotkey,
+.theme-dark .suggestion-sub-name {
+  color: var(--gd-niagara-dim);
+}
+
+/* Settings modal */
+.theme-dark .modal-sidebar-setting {
+  color: var(--gd-quartz);
+  border-radius: 4px;
+}
+
+.theme-dark .modal-sidebar-setting.is-active {
+  color: var(--gd-fg);
+  background-color: var(--gd-bg-sel);
+  border-left: 2px solid var(--gd-niagara);
+}
+
+/* ============================================================
+   BUTTONS & FORM CONTROLS
+   ============================================================ */
+.theme-dark button {
+  border-radius: var(--button-radius);
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+.theme-dark button.mod-cta {
+  background-color: var(--gd-niagara);
+  color: var(--gd-bg-dark);
+  font-weight: 600;
+}
+
+.theme-dark button.mod-cta:hover {
+  background-color: var(--gd-wisteria);
+}
+
+.theme-dark button.mod-warning {
+  background-color: transparent;
+  color: var(--gd-red-bright);
+  border: 1px solid var(--gd-red);
+}
+
+.theme-dark button.mod-warning:hover {
+  background-color: rgba(244, 56, 65, 0.15);
+}
+
+.theme-dark input[type="text"],
+.theme-dark input[type="search"],
+.theme-dark input[type="email"],
+.theme-dark input[type="password"],
+.theme-dark textarea {
+  background-color: var(--gd-bg-light);
+  color: var(--gd-fg);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-radius);
+  transition: border-color 120ms ease;
+}
+
+.theme-dark input:focus,
+.theme-dark textarea:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+.theme-dark input[type="range"] {
+  accent-color: var(--gd-niagara);
+}
+
+.theme-dark select {
+  background-color: var(--gd-bg-light);
+  color: var(--gd-fg);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-radius);
+}
+
+/* Toggles */
+.theme-dark .checkbox-container {
+  background-color: var(--gd-bg-match);
+}
+
+.theme-dark .checkbox-container.is-enabled {
+  background-color: var(--gd-niagara);
+}
+
+/* ============================================================
+   NOTICES / TOASTS
+   ============================================================ */
+.theme-dark .notice {
+  background-color: var(--gd-bg-light);
+  color: var(--gd-fg);
+  border: 1px solid var(--gd-bg-2);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================================
+   HOVER PREVIEW / POPOVER
+   ============================================================ */
+.theme-dark .popover.hover-popover {
+  background-color: var(--gd-bg);
+  border: 1px solid var(--gd-bg-2);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.65);
+}
+
+.theme-dark .popover.hover-popover .markdown-preview-view {
+  padding: 0.6em 1em;
+}
+
+/* ============================================================
+   GRAPH VIEW
+   ============================================================ */
+.theme-dark .graph-view.color-fill {
+  color: var(--gd-niagara);
+}
+
+.theme-dark .graph-view.color-fill-tag {
+  color: var(--gd-yellow);
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--gd-green);
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+  color: var(--gd-bg-match);
+}
+
+.theme-dark .graph-view.color-arrow {
+  color: var(--gd-bg-2);
+}
+
+.theme-dark .graph-view.color-circle {
+  color: var(--gd-bg-light);
+}
+
+.theme-dark .graph-view.color-line {
+  color: var(--gd-bg-light);
+}
+
+.theme-dark .graph-view.color-text {
+  color: var(--gd-quartz);
+}
+
+.theme-dark .graph-view.color-fill-focused {
+  color: var(--gd-yellow);
+}
+
+.theme-dark .graph-view.color-fill-highlight {
+  color: var(--gd-wisteria);
+}
+
+.theme-dark .graph-view.color-backdrop {
+  color: var(--gd-bg-dark);
+}
+
+.theme-dark .graph-controls {
+  background-color: var(--gd-bg-dark);
+  border: 1px solid var(--gd-bg-light);
+  border-radius: 6px;
+}
+
+/* ============================================================
+   MERMAID DIAGRAMS
+   ============================================================ */
+.theme-dark .mermaid .label {
+  color: var(--gd-fg);
+  fill: var(--gd-fg);
+}
+
+.theme-dark .mermaid .edgeLabel {
+  background-color: var(--gd-bg);
+  color: var(--gd-quartz);
+}
+
+.theme-dark .mermaid .node rect,
+.theme-dark .mermaid .node circle,
+.theme-dark .mermaid .node ellipse,
+.theme-dark .mermaid .node polygon {
+  fill: var(--gd-bg-light);
+  stroke: var(--gd-niagara);
+}
+
+/* ============================================================
+   CANVAS
+   ============================================================ */
+.theme-dark .canvas-background {
+  background-color: var(--gd-bg-dark);
+}
+
+.theme-dark .canvas-card-menu {
+  background-color: var(--gd-bg-light);
+  border: 1px solid var(--gd-bg-2);
+  border-radius: 6px;
+}
+
+.theme-dark .canvas-node .markdown-embed {
+  background-color: var(--gd-bg);
+  border: 1px solid var(--gd-bg-2);
+  border-radius: 6px;
+}
+
+.theme-dark .canvas-node.is-focused .markdown-embed {
+  border-color: var(--gd-niagara);
+}
+
+/* ============================================================
+   SMOOTH SCROLLING
+   ============================================================
+   Obsidian uses different scroll containers per view type:
+   - Live preview / source:  .cm-scroller
+   - Reading view:           .markdown-reading-view  (outer)
+                             .markdown-preview-view  (inner / legacy)
+   We must target all of them. scroll-behavior only affects
+   programmatic scrolls & anchor jumps — never touch/mouse drag.
+   ============================================================ */
+.gd-smooth-scroll .cm-scroller                     { scroll-behavior: smooth; }
+.gd-smooth-scroll .markdown-reading-view           { scroll-behavior: smooth; }
+.gd-smooth-scroll .markdown-preview-view           { scroll-behavior: smooth; }
+.gd-smooth-scroll .view-content                    { scroll-behavior: smooth; }
+.gd-smooth-scroll .workspace-leaf-content > *      { scroll-behavior: smooth; }
+
+/* ============================================================
+   PDF EMBED
+   ============================================================ */
+.theme-dark .pdf-embed {
+  border: 1px solid var(--gd-bg-2);
+  border-radius: 6px;
+}
+
+/* ============================================================
+   SCROLLBARS
+   ============================================================ */
+.theme-dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: var(--gd-bg-2);
+  border-radius: 4px;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--gd-bg-match);
+}
+
+.theme-dark ::-webkit-scrollbar-corner {
+  background: transparent;
+}

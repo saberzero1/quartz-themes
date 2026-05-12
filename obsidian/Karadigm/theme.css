@@ -1,0 +1,1403 @@
+/* ==================== ROOT VARIABLES ==================== */
+:root {
+--jl-bg0: #0e0e0e;
+--jl-bg1: #171717;
+--jl-fg0: #e7e7e7;
+--jl-white: #c8c8c8;
+--jl-black: #4c4c4c;
+}
+
+/* ==================== STYLE SETTINGS ==================== */
+/* @settings
+
+name: Karadigm
+id: karadigm
+settings:
+  -
+    id: karadigm-preset
+    title: Color variant
+    type: class-select
+    allowEmpty: true
+    default: ''
+    options:
+      -
+        label: Blue
+        value: karadigm-blue
+      -
+        label: Green
+        value: karadigm-green
+      -
+        label: Red
+        value: karadigm-red
+  -
+    id: karadigm-accent-custom
+    title: Custom color
+    description: "Active only if no variant is selected above."
+    type: variable-color
+    format: hex
+    default: '#888888'
+
+*/
+
+body {
+--karadigm-accent: var(--karadigm-accent-custom, #888888);
+--ka-hover: color-mix(in srgb, var(--karadigm-accent) 75%, black);
+--interactive-accent: var(--karadigm-accent);
+--interactive-accent-hover: var(--ka-hover);
+--link-color: var(--karadigm-accent);
+--link-color-hover: var(--ka-hover);
+--link-external-color: var(--karadigm-accent);
+--link-external-color-hover: var(--ka-hover);
+--tag-color: var(--karadigm-accent);
+--tag-background: color-mix(in srgb, var(--karadigm-accent) 12%, transparent);
+--tag-background-hover: color-mix(in srgb, var(--karadigm-accent) 22%, transparent);
+--color-accent: var(--karadigm-accent);
+--color-accent-1: var(--ka-hover);
+--color-accent-2: color-mix(in srgb, var(--karadigm-accent) 60%, black);
+--text-accent: var(--karadigm-accent);
+--text-accent-hover: var(--ka-hover);
+--icon-color: var(--karadigm-accent);
+--icon-color-hover: var(--ka-hover);
+--icon-color-active: var(--karadigm-accent);
+--icon-color-focused: var(--karadigm-accent);
+--nav-item-color: var(--karadigm-accent);
+--ribbon-icon-color: var(--karadigm-accent);
+}
+
+body.karadigm-blue  { --karadigm-accent: #5599dd; }
+body.karadigm-green { --karadigm-accent: #4d8a6b; }
+body.karadigm-red   { --karadigm-accent: #8a4d4d; }
+
+.theme-light .workspace-ribbon .clickable-icon,
+.theme-light .workspace-ribbon .side-dock-ribbon-tab,
+.theme-light .workspace-ribbon .side-dock-ribbon-action,
+.theme-light .view-header .clickable-icon,
+.theme-light .nav-action-button,
+.theme-light .workspace-tab-header-container .clickable-icon,
+.theme-light .tree-item-icon,
+.theme-light .nav-folder-title-content,
+.theme-light .workspace-leaf-header .clickable-icon,
+.theme-light .status-bar-item .clickable-icon {
+color: var(--karadigm-accent) !important;
+}
+.theme-light .workspace-ribbon .clickable-icon:hover,
+.theme-light .view-header .clickable-icon:hover,
+.theme-light .nav-action-button:hover {
+color: var(--ka-hover) !important;
+}
+
+.bases-view a,
+.bases-view a:link,
+.bases-view a:visited,
+.bases-view .bases-cell a,
+.bases-view .bases-cell-link,
+.bases-view [class*="link"],
+.bases-view [class*="Link"] {
+color: var(--karadigm-accent) !important;
+text-decoration-color: var(--karadigm-accent) !important;
+}
+.bases-view a:hover,
+.bases-view .bases-cell a:hover,
+.bases-view .bases-cell-link:hover {
+color: var(--ka-hover) !important;
+text-decoration-color: var(--ka-hover) !important;
+}
+
+.theme-light .workspace-tab-header.is-active {
+border-bottom-color: var(--karadigm-accent) !important;
+}
+.theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .workspace-tab-header-inner-icon {
+color: var(--karadigm-accent) !important;
+}
+
+input[type="checkbox"]:checked,
+li[data-task] > input:checked,
+li[data-task] > p > input:checked {
+color: var(--karadigm-accent) !important;
+}
+.theme-dark .metadata-property input[type="checkbox"],
+.theme-light .metadata-property input[type="checkbox"] {
+--checkbox-color: var(--karadigm-accent) !important;
+--checkbox-color-hover: var(--ka-hover) !important;
+--checkbox-border-color: var(--karadigm-accent) !important;
+--checkbox-border-color-hover: var(--ka-hover) !important;
+}
+.theme-light ul.contains-task-list input[type="checkbox"],
+.theme-light li[data-task] > input,
+.theme-light li[data-task] > p > input {
+color: var(--karadigm-accent) !important;
+}
+.theme-light .task-list-item-checkbox {
+color: var(--karadigm-accent) !important;
+}
+.theme-light input[type="checkbox"] {
+--checkbox-border-color: var(--karadigm-accent) !important;
+--checkbox-border-color-hover: var(--ka-hover) !important;
+}
+
+/* ==================== THEME COLORS ==================== */
+.theme-dark {
+--background-primary: var(--jl-bg0);
+--background-secondary: #090909;
+--text-normal: #c8c8c8;
+--background-primary-alt: var(--jl-bg0);
+--color-base-10: #121212;
+--color-base-20: #141414;
+--color-base-25: var(--jl-bg0);
+--background-modifier-form-field: var(--jl-bg0);
+--raised-background: var(--jl-bg1);
+--raised-shadow: none;
+--raised-blur: none;
+}
+
+.theme-light {
+--background-secondary-alt: #fcfcfc;
+--background-secondary: var(--background-secondary-alt);
+--text-normal: #4c4c4c;
+}
+
+.theme-light {
+--divider-color: transparent !important;
+--background-modifier-border: #c8c8c8 !important;
+}
+
+.theme-dark {
+--divider-color: transparent !important;
+--background-modifier-border: #4c4c4c !important;
+}
+
+/* ==================== WORKSPACE LAYOUT ==================== */
+.workspace-leaf-resize-handle,
+.workspace-divider,
+.workspace-tab-header-container {
+background-color: transparent !important;
+border: none !important;
+box-shadow: none !important;
+}
+
+.workspace-leaf-resize-handle {
+width: 0px !important;
+}
+
+.theme-dark .workspace-tab-header-container {
+background-color: var(--background-secondary) !important;
+}
+
+.theme-dark .workspace-tab-header-container {
+background-color: #090909 !important;
+}
+
+.theme-light .workspace-tab-header-container {
+background-color: var(--background-secondary-alt) !important;
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-inner-title,
+.workspace-split.mod-right-split .workspace-tab-header-inner-title,
+.workspace-tab-header.is-pinned .workspace-tab-header-inner-title {
+display: none !important;
+}
+
+/* ==================== SIDEBARS ==================== */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+position: relative !important;
+z-index: 10 !important;
+border: none !important;
+}
+
+.workspace-split.mod-right-split {
+background-color: var(--jl-bg0) !important;
+}
+
+/*.theme-light .workspace-split.mod-left-split {
+box-shadow: 0px 0 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.theme-dark .workspace-split.mod-left-split {
+box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.theme-light .workspace-split.mod-right-split {
+box-shadow: 0px 0 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.theme-dark .workspace-split.mod-right-split {
+box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4) !important;
+}*/
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+display: none !important;
+}
+
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-left::before {
+background: var(--background-secondary) !important;
+}
+
+.workspace-split.mod-right-split .workspace-leaf-content {
+padding: 0 16px !important;
+}
+
+.theme-dark.is-mobile .workspace-drawer-tab-options-list {
+background-color: var(--jl-bg1) !important;
+}
+
+/* ==================== BASES =================== */
+.bases-view {
+font-size: 1em;
+}
+
+
+
+.bases-view input[type="checkbox"] {
+appearance: none;
+-webkit-appearance: none;
+border-radius: 50%;
+border: 1.5px solid grey;
+background-color: transparent;
+vertical-align: middle;
+}
+
+.bases-view input[type="checkbox"]:checked {
+background-color: var(--interactive-accent);
+border-color: var(--interactive-accent);
+}
+
+/* ==================== TABS ==================== */
+.workspace-tab-header-container {
+padding: 0 4px !important;
+gap: 0 !important;
+min-height: 36px !important;
+}
+.workspace-tab-header {
+background: transparent !important;
+border-radius: 10px 10px 0px 0px !important;
+padding: 8px 12px !important;
+min-height: 36px !important;
+border-bottom: 2px solid transparent !important;
+transition: all 0.15s ease !important;
+font-size: 0.9em !important;
+}
+.mod-root .workspace-tab-header.is-active {
+background: var(--background-primary) !important;
+}
+.workspace-split.mod-left-split .workspace-tab-header.is-active,
+.workspace-split.mod-right-split .workspace-tab-header.is-active {
+background: transparent !important;
+}
+.theme-dark .workspace-tab-header.is-active {
+border-bottom-color: rgba(255, 255, 255, 0.6) !important;
+}
+.workspace.mod-active .theme-dark .workspace-tab-header.is-active {
+border-bottom-color: rgba(255, 255, 255, 0.6) !important;
+}
+.theme-light .workspace-tab-header:hover:not(.is-active) {
+background: rgba(128, 128, 128, 0.05) !important;
+display: flex !important;
+align-items: center !important;
+}
+.theme-dark .workspace-tab-header:hover:not(.is-active) {
+background: rgba(255, 255, 255, 0.05) !important;
+display: flex !important;
+align-items: center !important;
+}
+.workspace-tab-header-inner {
+opacity: 0.6 !important;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+opacity: 1 !important;
+}
+.workspace-tab-header-inner,
+.workspace-tab-header-inner-icon,
+.workspace-tab-header-inner-title {
+background: transparent !important;
+}
+/* ==================== TYPOGRAPHY ==================== */
+body,
+.theme-light,
+.theme-dark {
+--font-interface: "Inter", system-ui, sans-serif !important;
+--font-text: "Liberation Mono", monospace !important;
+--font-monospace: "Liberation Mono", monospace !important;
+}
+
+body {
+font-family: var(--font-interface) !important;
+}
+
+.markdown-source-view,
+.markdown-rendered {
+font-family: var(--font-text) !important;
+}
+
+code,
+pre,
+.cm-content,
+.cm-line,
+.cm-s-obsidian {
+font-family: var(--font-monospace) !important;
+}
+
+.markdown-rendered,
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-content {
+font-size: 1em !important;
+}
+
+/* ==================== HEADINGS ==================== */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3,
+.markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6,
+.markdown-source-view.mod-cm6 .cm-header,
+.markdown-source-view.mod-cm6 .cm-header-1,
+.markdown-source-view.mod-cm6 .cm-header-2,
+.markdown-source-view.mod-cm6 .cm-header-3,
+.markdown-source-view.mod-cm6 .cm-header-4,
+.markdown-source-view.mod-cm6 .cm-header-5,
+.markdown-source-view.mod-cm6 .cm-header-6,
+.HyperMD-header, .HyperMD-header-1, .HyperMD-header-2,
+.HyperMD-header-3, .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6 {
+font-size: 1em !important;
+font-weight: 900 !important;
+}
+
+.HyperMD-header-1,
+.markdown-rendered h1 {
+text-align: center !important;
+display: block !important;
+width: 100%;
+text-transform:uppercase;
+/*padding-top:1em;
+border-top: 1px solid var(--text-normal);*/
+}
+
+.cm-header-marker {
+display: none !important;
+}
+
+/* ==================== ACTIVE LINE ==================== */
+.markdown-source-view.mod-cm6 .cm-active.cm-line {
+position: relative;
+}
+
+.markdown-source-view.mod-cm6 .cm-active.cm-line::before {
+content: "";
+position: absolute;
+left: -12px;
+top: 15%;
+height: 70%;
+width: 1.5px;
+background-color: var(--interactive-accent);
+opacity: 0.8;
+}
+
+.markdown-source-view.mod-cm6 .cm-indent-helper {
+color: rgba(128, 128, 128, 0.2) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-active.cm-line .cm-indent-helper {
+color: var(--interactive-accent) !important;
+border-left: 2px solid currentColor !important;
+opacity: 1 !important;
+}
+
+/* ==================== HORIZONTAL RULES ==================== */
+hr,
+.markdown-source-view.mod-cm6.is-live-preview .cm-content hr {
+border: none !important;
+border-top: 1px solid currentColor !important;
+opacity: 0.3 !important;
+margin: 1em 0 !important;
+display: block !important;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .cm-line:not(.cm-active) .cm-hr {
+color: transparent !important;
+}
+
+/* ==================== LINKS ==================== */
+
+.theme-dark,
+.theme-light {
+--link-color: inherit;
+--link-color-hover: inherit;
+}
+
+.theme-dark .cm-hmd-internal-link,
+.theme-dark .cm-link,
+.theme-light .cm-hmd-internal-link,
+.theme-light .cm-link {
+color: inherit !important;
+text-decoration: underline !important;
+padding: 0 2px;
+transition: all 0.1s ease;
+}
+
+.theme-dark .cm-hmd-internal-link:hover,
+.theme-dark .cm-link:hover {
+background-color: var(--jl-white) !important;
+color: var(--jl-bg0) !important;
+text-decoration: none !important;
+border-radius: 3px;
+padding: 0px 3px 0px 3px;
+}
+
+.theme-light .cm-hmd-internal-link:hover,
+.theme-light .cm-link:hover {
+background-color: black !important;
+color: var(--jl-fg0) !important;
+text-decoration: none !important;
+border-radius: 3px;
+padding: 0px 3px 0px 3px;
+}
+
+/* ==================== TABLES ==================== */
+
+.markdown-preview-view .table-wrapper,
+.markdown-source-view.mod-cm6 .cm-content .table-wrapper {
+width: 100%;
+overflow: visible !important;
+}
+
+.markdown-preview-view {
+--file-line-width: 100%;
+}
+
+.markdown-rendered table,
+.markdown-preview-view table,
+.markdown-source-view.mod-cm6 table,
+.dataview table {
+border-collapse: separate !important;
+border-spacing: 0 !important;
+width: 100%;
+border-radius: 2px !important;
+margin: 0 !important;
+}
+
+.theme-dark .markdown-rendered table,
+.theme-dark .markdown-preview-view table,
+.theme-dark .markdown-source-view.mod-cm6 table,
+.theme-dark .dataview table {
+background-color: rgba(0, 0, 0, 0.03) !important;
+border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-light .markdown-rendered table,
+.theme-light .markdown-preview-view table,
+.theme-light .markdown-source-view.mod-cm6 table,
+.theme-light .dataview table {
+background-color: rgba(0, 0, 0, 0.02) !important;
+border: 1px solid rgba(128, 128, 128, 0.15) !important;
+}
+
+.markdown-rendered th,
+.markdown-rendered td,
+.markdown-preview-view th,
+.markdown-preview-view td,
+.markdown-source-view.mod-cm6 .cm-content th,
+.markdown-source-view.mod-cm6 .cm-content td,
+.markdown-source-view.mod-cm6 .cm-table-widget th,
+.markdown-source-view.mod-cm6 .cm-table-widget td,
+.dataview table th,
+.dataview table td {
+border: none !important;
+padding: 8px 16px !important;
+line-height: 1em !important;
+vertical-align: middle !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content td .cm-line,
+.markdown-source-view.mod-cm6 .cm-content th .cm-line {
+padding: 0 !important;
+margin: 0 !important;
+line-height: inherit !important;
+}
+
+.markdown-rendered thead,
+.markdown-preview-view thead,
+.markdown-source-view.mod-cm6 thead,
+.dataview thead {
+background-color: transparent !important;
+}
+
+.markdown-rendered thead tr,
+.markdown-preview-view thead tr,
+.markdown-source-view.mod-cm6 thead tr,
+.dataview thead tr {
+background-color: transparent !important;
+border-bottom: 1px solid rgba(128, 128, 128, 0.25) !important;
+}
+
+.markdown-rendered thead th,
+.markdown-preview-view thead th,
+.dataview table thead th {
+background-color: transparent !important;
+font-weight: 500;
+opacity: 0.6;
+}
+
+.markdown-rendered tbody tr,
+.markdown-preview-view tbody tr,
+.markdown-source-view.mod-cm6 tbody tr,
+.dataview tbody tr {
+border-bottom: 1px solid rgba(128, 128, 128, 0.12) !important;
+}
+
+.markdown-rendered tbody tr:last-child,
+.markdown-preview-view tbody tr:last-child,
+.markdown-source-view.mod-cm6 tbody tr:last-child,
+.dataview tbody tr:last-child {
+border-bottom: none !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even),
+.markdown-preview-view tbody tr:nth-child(even),
+.markdown-source-view.mod-cm6 tbody tr:nth-child(even),
+.dataview tbody tr:nth-child(even) {
+background-color: rgba(128, 128, 128, 0.03) !important;
+}
+
+.markdown-rendered tbody tr:hover,
+.markdown-preview-view tbody tr:hover,
+.markdown-source-view.mod-cm6 tbody tr:hover,
+.dataview tbody tr:hover {
+background-color: rgba(128, 128, 128, 0.06) !important;
+}
+
+/* ==================== HIGHLIGHTS ==================== */
+body .markdown-rendered mark,
+body .markdown-preview-view mark,
+body .markdown-rendered table mark,
+body .markdown-preview-view table mark,
+body .dataview table mark {
+background-color: var(--karadigm-accent) !important;
+color: inherit !important;
+}
+
+body .markdown-source-view.mod-cm6 .cm-highlight,
+body .markdown-source-view.mod-cm6 .cm-table .cm-highlight {
+background-color: var(--karadigm-accent) !important;
+color: inherit !important;
+}
+
+/* ==================== CHECKBOXES / TASKS ==================== */
+input[data-task="!"]:checked,
+li[data-task="!"] > input:checked,
+li[data-task="!"] > p > input:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  background: none !important;
+  border: none !important;
+}
+input[data-task="!"]:checked::before,
+li[data-task="!"] > input:checked::before,
+li[data-task="!"] > p > input:checked::before {
+  display: none !important;
+}
+input[data-task="!"]:checked::after,
+li[data-task="!"] > input:checked::after,
+li[data-task="!"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='12' y1='4' x2='12' y2='14'/%3E%3Ccircle cx='12' cy='19.5' r='1.5' fill='black' stroke='none'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="?"]:checked,
+li[data-task="?"] > input:checked,
+li[data-task="?"] > p > input:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  background: none !important;
+  border: none !important;
+}
+input[data-task="?"]:checked::before,
+li[data-task="?"] > input:checked::before,
+li[data-task="?"] > p > input:checked::before {
+  display: none !important;
+}
+input[data-task="?"]:checked::after,
+li[data-task="?"] > input:checked::after,
+li[data-task="?"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Ccircle cx='12' cy='19.5' r='1.5' fill='black' stroke='none'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="x"]:checked,
+li[data-task="x"] > input:checked,
+li[data-task="x"] > p > input:checked {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+input[data-task="!"]:checked,
+li[data-task="!"] > input:checked,
+li[data-task="!"] > p > input:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  background: none !important;
+  border: none !important;
+}
+input[data-task="!"]:checked::before,
+li[data-task="!"] > input:checked::before,
+li[data-task="!"] > p > input:checked::before {
+  display: none !important;
+}
+input[data-task="!"]:checked::after,
+li[data-task="!"] > input:checked::after,
+li[data-task="!"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' y1='8' x2='12' y2='13'/%3E%3Ccircle cx='12' cy='17' r='1' fill='black' stroke='none'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="?"]:checked,
+li[data-task="?"] > input:checked,
+li[data-task="?"] > p > input:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  background: none !important;
+  border: none !important;
+}
+input[data-task="?"]:checked::before,
+li[data-task="?"] > input:checked::before,
+li[data-task="?"] > p > input:checked::before {
+  display: none !important;
+}
+input[data-task="?"]:checked::after,
+li[data-task="?"] > input:checked::after,
+li[data-task="?"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Ccircle cx='12' cy='17' r='1' fill='black' stroke='none'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="/"]:checked,
+li[data-task="/"] > input:checked,
+li[data-task="/"] > p > input:checked {
+--checkbox-color: var(--color-base-50);
+--checkbox-color-hover: currentColor;
+border-width: 1px;
+background: linear-gradient(to right, currentColor 50%, transparent 50%);
+}
+
+input[data-task="/"]:checked::after,
+li[data-task="/"] > input:checked::after,
+li[data-task="/"] > p > input:checked::after {
+background-color: transparent;
+}
+
+input[data-task="-"]:checked,
+li[data-task="-"] > input:checked,
+li[data-task="-"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+background: none !important;
+border: none !important;
+}
+
+input[data-task="-"]:checked::after,
+li[data-task="-"] > input:checked::after,
+li[data-task="-"] > p > input:checked::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: var(--checkbox-size);
+height: var(--checkbox-size);
+display: block;
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M18 6L6 18M6 6l12 12'/%3E%3C/svg%3E");
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+-webkit-mask-size: contain;
+background-color: currentColor;
+}
+
+input[data-task="-"]:checked::before,
+li[data-task="-"] > input:checked::before,
+li[data-task="-"] > p > input:checked::before {
+display: none !important;
+}
+
+input[data-task="b"]:checked,
+li[data-task="b"] > input:checked,
+li[data-task="b"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="b"]:checked::after,
+li[data-task="b"] > input:checked::after,
+li[data-task="b"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="I"]:checked,
+li[data-task="I"] > input:checked,
+li[data-task="I"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="I"]:checked::after,
+li[data-task="I"] > input:checked::after,
+li[data-task="I"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18h6M10 21h4'/%3E%3Cpath d='M12 2a7 7 0 017 7c0 2.5-1.5 4.5-3 5.5V16a1 1 0 01-1 1H9a1 1 0 01-1-1v-1.5C6.5 13.5 5 11.5 5 9a7 7 0 017-7z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="p"]:checked,
+li[data-task="p"] > input:checked,
+li[data-task="p"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="p"]:checked::after,
+li[data-task="p"] > input:checked::after,
+li[data-task="p"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z'/%3E%3Cpath d='M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="c"]:checked,
+li[data-task="c"] > input:checked,
+li[data-task="c"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="c"]:checked::after,
+li[data-task="c"] > input:checked::after,
+li[data-task="c"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z'/%3E%3Cpath d='M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="i"]:checked,
+li[data-task="i"] > input:checked,
+li[data-task="i"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="i"]:checked::after,
+li[data-task="i"] > input:checked::after,
+li[data-task="i"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 26'%3E%3Ccircle cx='15' cy='3' r='2.5' fill='black'/%3E%3Cpath d='M13 9 C11 9 10 10 10.5 11 L8 22 C7.5 23.5 9 24.5 10 24.5 L16 24.5 C17.5 24.5 19 23 18.5 22 L18.5 22 C18 21.2 17 21 16 21 L14 21 L16.5 10 C17 8.5 15.5 9 13 9z'  fill='black'/%3E%3Cline x1='7' y1='9' x2='17' y2='9' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="l"]:checked,
+li[data-task="l"] > input:checked,
+li[data-task="l"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="l"]:checked::after,
+li[data-task="l"] > input:checked::after,
+li[data-task="l"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z'/%3E%3Ccircle cx='12' cy='9' r='2.5'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="*"]:checked,
+li[data-task="*"] > input:checked,
+li[data-task="*"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="*"]:checked::after,
+li[data-task="*"] > input:checked::after,
+li[data-task="*"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linejoin='round'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="n"]:checked,
+li[data-task="n"] > input:checked,
+li[data-task="n"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="n"]:checked::after,
+li[data-task="n"] > input:checked::after,
+li[data-task="n"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z'/%3E%3Cpath d='M14 2v6h6M16 13H8M16 17H8M10 9H8'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="S"]:checked,
+li[data-task="S"] > input:checked,
+li[data-task="S"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="S"]:checked::after,
+li[data-task="S"] > input:checked::after,
+li[data-task="S"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M12 1v22'/%3E%3Cpath d='M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="<"]:checked,
+li[data-task="<"] > input:checked,
+li[data-task="<"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="<"]:checked::after,
+li[data-task="<"] > input:checked::after,
+li[data-task="<"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task=">"]:checked::after,
+li[data-task=">"] > input:checked::after,
+li[data-task=">"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task='"']:checked,
+li[data-task='"'] > input:checked,
+li[data-task='"'] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task='"']:checked::after,
+li[data-task='"'] > input:checked::after,
+li[data-task='"'] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'%3E%3Cpath d='M3 9c0-3.5 2.2-6.5 6-8l1.2 2.2C8 4.5 6.5 6.5 6.5 9v.5H10v5.5H3V9z'/%3E%3Cpath d='M13 9c0-3.5 2.2-6.5 6-8l1.2 2.2C18 4.5 16.5 6.5 16.5 9v.5H20v5.5h-7V9z'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="u"]:checked,
+li[data-task="u"] > input:checked,
+li[data-task="u"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="u"]:checked::after,
+li[data-task="u"] > input:checked::after,
+li[data-task="u"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M23 6l-9.5 9.5-5-5L1 18'/%3E%3Cpath d='M17 6h6v6'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="d"]:checked,
+li[data-task="d"] > input:checked,
+li[data-task="d"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="d"]:checked::after,
+li[data-task="d"] > input:checked::after,
+li[data-task="d"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M23 18l-9.5-9.5-5 5L1 6'/%3E%3Cpath d='M17 18h6v-6'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="f"]:checked,
+li[data-task="f"] > input:checked,
+li[data-task="f"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="f"]:checked::after,
+li[data-task="f"] > input:checked::after,
+li[data-task="f"] > p > input:checked::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  background-color: currentColor;
+  left: 0;
+}
+
+input[data-task="k"]:checked,
+li[data-task="k"] > input:checked,
+li[data-task="k"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="k"]:checked::after,
+li[data-task="k"] > input:checked::after,
+li[data-task="k"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='7.5' cy='15.5' r='5.5'/%3E%3Cpath d='M21 2l-9.6 9.6M15.5 7.5l2 2M18 5l2 2'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="w"]:checked,
+li[data-task="w"] > input:checked,
+li[data-task="w"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: currentColor;
+border-width: 0;
+}
+
+input[data-task="w"]:checked::after,
+li[data-task="w"] > input:checked::after,
+li[data-task="w"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 17h18M3 17l2-8 4 4 3-7 3 7 4-4 2 8'/%3E%3Cline x1='5' y1='21' x2='19' y2='21'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+input[data-task="s"]:checked,
+li[data-task="s"] > input:checked,
+li[data-task="s"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: transparent;
+border-width: 0;
+}
+
+input[data-task="s"]:checked::after,
+li[data-task="s"] > input:checked::after,
+li[data-task="s"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Crect x='3.9' y='10.9' width='16.2' height='10.2' fill='black' stroke='none'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+li[data-task="x"] > input:checked,
+li[data-task="x"] > p > input:checked {
+--checkbox-color: transparent;
+--checkbox-color-hover: currentColor;
+border-width: 0;
+}
+
+input[data-task="x"]:checked::after,
+li[data-task="x"] > input:checked::after,
+li[data-task="x"] > p > input:checked::after {
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+-webkit-mask-size: contain;
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+background-color: currentColor;
+left: 0;
+}
+
+
+input[data-task="0"]:checked,
+li[data-task="0"] > input:checked,
+li[data-task="0"] > p > input:checked,
+input[data-task="1"]:checked,
+li[data-task="1"] > input:checked,
+li[data-task="1"] > p > input:checked,
+input[data-task="2"]:checked,
+li[data-task="2"] > input:checked,
+li[data-task="2"] > p > input:checked,
+input[data-task="3"]:checked,
+li[data-task="3"] > input:checked,
+li[data-task="3"] > p > input:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  background: none !important;
+  border: none !important;
+}
+input[data-task="0"]:checked::before,
+li[data-task="0"] > input:checked::before,
+li[data-task="0"] > p > input:checked::before,
+input[data-task="1"]:checked::before,
+li[data-task="1"] > input:checked::before,
+li[data-task="1"] > p > input:checked::before,
+input[data-task="2"]:checked::before,
+li[data-task="2"] > input:checked::before,
+li[data-task="2"] > p > input:checked::before,
+input[data-task="3"]:checked::before,
+li[data-task="3"] > input:checked::before,
+li[data-task="3"] > p > input:checked::before {
+  display: none !important;
+}
+
+input[data-task="0"]:checked::after,
+li[data-task="0"] > input:checked::after,
+li[data-task="0"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2' stroke-opacity='0.25'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+  opacity: 0.4;
+}
+
+input[data-task="1"]:checked::after,
+li[data-task="1"] > input:checked::after,
+li[data-task="1"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2' stroke-opacity='0.25'/%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='14.14 56.55' transform='rotate(-90 12 12)'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="2"]:checked::after,
+li[data-task="2"] > input:checked::after,
+li[data-task="2"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2' stroke-opacity='0.25'/%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='28.27 56.55' transform='rotate(-90 12 12)'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="3"]:checked::after,
+li[data-task="3"] > input:checked::after,
+li[data-task="3"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2' stroke-opacity='0.25'/%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='42.41 56.55' transform='rotate(-90 12 12)'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+input[data-task="4"]:checked,
+li[data-task="4"] > input:checked,
+li[data-task="4"] > p > input:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  background: none !important;
+  border: none !important;
+}
+input[data-task="4"]:checked::before,
+li[data-task="4"] > input:checked::before,
+li[data-task="4"] > p > input:checked::before {
+  display: none !important;
+}
+input[data-task="4"]:checked::after,
+li[data-task="4"] > input:checked::after,
+li[data-task="4"] > p > input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  display: block;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2' stroke-opacity='0.25'/%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='56.55 56.55' transform='rotate(-90 12 12)'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+/* ==================== CALLOUTS ==================== */
+.callout {
+border-left-width: 4px !important;
+border-left-style: solid !important;
+padding-left: 16px !important;
+padding-top: 4px;
+padding-bottom: 4px;
+border-radius: 0;
+color: inherit !important;
+}
+.callout .callout-title,
+.callout .callout-title-inner,
+.callout .callout-icon,
+.callout .callout-content {
+color: inherit !important;
+font-weight: 400 !important;
+}
+.callout .callout-icon {
+padding-right: 12px;
+}
+.callout .callout-content,
+.callout .callout-content p,
+.callout .callout-content li {
+line-height: 1.6em !important;
+}
+.callout .callout-title {
+line-height: 1.2em !important;
+}
+.callout[data-callout="note"] {
+--c: #3f7df4;
+border-left-color: var(--c) !important;
+background-color: rgba(141, 169, 212, 0.05) !important;
+color: rgba(141, 169, 212, 0.9) !important;
+}
+.callout[data-callout="summary"] {
+--c: #8e6dfd;
+--callout-color: 142, 109, 253;
+border-left-color: var(--c) !important;
+background-color: rgba(167, 149, 209, 0.05) !important;
+color: rgba(167, 149, 209, 0.9) !important;
+}
+.callout[data-callout="info"] {
+--c: #3f7df4;
+border-left-color: var(--c) !important;
+background-color: rgba(141, 169, 212, 0.05) !important;
+color: rgba(141, 169, 212, 0.9) !important;
+}
+.callout[data-callout="todo"] {
+--c: #3f7df4;
+border-left-color: var(--c) !important;
+background-color: rgba(141, 169, 212, 0.05) !important;
+color: rgba(141, 169, 212, 0.9) !important;
+}
+.callout[data-callout="important"],
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] {
+--c: #2ea66b;
+--callout-color: 46, 166, 107;
+border-left-color: var(--c) !important;
+background-color: rgba(138, 184, 157, 0.05) !important;
+color: rgba(138, 184, 157, 0.9) !important;
+}
+.callout[data-callout="success"],
+.callout[data-callout="done"],
+.callout[data-callout="check"] {
+--c: #2ea66b;
+border-left-color: var(--c) !important;
+background-color: rgba(138, 184, 157, 0.05) !important;
+color: rgba(138, 184, 157, 0.9) !important;
+}
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+--c: #e58a00;
+border-left-color: var(--c) !important;
+background-color: rgba(212, 163, 97, 0.05) !important;
+color: rgba(212, 163, 97, 0.9) !important;
+}
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+--c: #f39c12;
+border-left-color: var(--c) !important;
+background-color: rgba(217, 178, 108, 0.05) !important;
+color: rgba(217, 178, 108, 0.9) !important;
+}
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+--c: #e74c3c;
+border-left-color: var(--c) !important;
+background-color: rgba(199, 126, 119, 0.05) !important;
+color: rgba(199, 126, 119, 0.9) !important;
+}
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+--c: #e74c3c;
+border-left-color: var(--c) !important;
+background-color: rgba(199, 126, 119, 0.05) !important;
+color: rgba(199, 126, 119, 0.9) !important;
+}
+.callout[data-callout="bug"] {
+--c: #e74c3c;
+border-left-color: var(--c) !important;
+background-color: rgba(199, 126, 119, 0.05) !important;
+color: rgba(199, 126, 119, 0.9) !important;
+}
+.callout[data-callout="example"] {
+--c: #8e6dfd;
+border-left-color: var(--c) !important;
+background-color: rgba(167, 149, 209, 0.05) !important;
+color: rgba(167, 149, 209, 0.9) !important;
+}
+.callout[data-callout="quote"] {
+--c: #999999;
+border-left-color: var(--c) !important;
+background-color: rgba(163, 163, 163, 0.05) !important;
+color: rgba(163, 163, 163, 0.9) !important;
+}
+
+
+/* ==================== PLUGINS ==================== */
+
+.calendar-container,
+.react-calendar,
+.react-calendar__navigation,
+.react-calendar__month-view,
+.react-calendar__month-view__weekdays,
+.react-calendar__tile,
+.react-calendar__tile--now,
+.cal-date-heading-container {
+background-color: transparent !important;
+}
+
+.calendar-custom-buttons,
+.react-calendar__navigation button {
+background-color: transparent !important;
+}
+
+.react-calendar__navigation button,
+.calendar-custom-buttons button,
+.react-calendar__navigation button:disabled,
+button.react-calendar__tile,
+button.react-calendar__tile:disabled {
+background-color: transparent !important;
+}
+
+button.react-calendar__tile.filled-date,
+button.react-calendar__tile.filled-date:disabled,
+button.react-calendar__tile.filled-date:enabled:hover,
+button.react-calendar__tile.filled-date:enabled:focus {
+background-color: transparent !important;
+color: inherit !important;
+}

@@ -1,0 +1,570 @@
+/* ============================================
+   PAPYRUS NOX — An Obsidian Dark Theme
+   Dark paper texture, earthy tones, hinted serifs.
+   Author: Björn Kindler · kindler-webservices.de
+   License: MIT
+   ============================================ */
+
+/* Force dark mode — this is a dark-only theme */
+body {
+  color-scheme: dark;
+}
+
+/* ─── Dark Mode (Primary) ────────────────────── */
+.theme-dark {
+  --background-primary: #1e1e1e;
+  --background-primary-alt: #232323;
+  --background-secondary: #141414;
+  --background-secondary-alt: #181818;
+  --background-modifier-border: #383838;
+  --background-modifier-form-field: #1e1e1e;
+  --background-modifier-form-field-highlighted: #2c2c2c;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.35);
+  --background-modifier-success: #283328;
+  --background-modifier-error: #3a2525;
+  --background-modifier-error-rgb: 58, 37, 37;
+  --background-modifier-error-hover: #4a2d2d;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+
+  --text-normal: #d5d0c8;
+  --text-muted: #928b82;
+  --text-faint: #635d56;
+  --text-on-accent: #1b1b1b;
+  --text-error: #c47a6e;
+  --text-error-hover: #d48e82;
+  --text-highlight-bg: rgba(194, 165, 120, 0.15);
+  --text-highlight-bg-active: rgba(194, 165, 120, 0.28);
+  --text-selection: rgba(194, 165, 120, 0.18);
+  --text-accent: #b8976a;
+  --text-accent-hover: #c9a87b;
+
+  --interactive-normal: #2f2f2f;
+  --interactive-hover: #393939;
+  --interactive-accent: #b8976a;
+  --interactive-accent-rgb: 184, 151, 106;
+  --interactive-accent-hover: #c9a87b;
+  --interactive-success: #7a9e6d;
+
+  --scrollbar-bg: rgba(0, 0, 0, 0);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.08);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.15);
+  --highlight-mix-blend-mode: lighten;
+
+  /* Heading colors — earthy, vivid, each distinct */
+  --h1-color: #d4ad6a;
+  --h2-color: #78b8a4;
+  --h3-color: #b48ec0;
+  --h4-color: #7ab8c0;
+  --h5-color: #c4908e;
+  --h6-color: #9a9080;
+  --hr-subtle: #4a4a4a;
+}
+
+/* Light mode: not supported — Papyrus Nox is a dark-only theme.
+   Obsidian will ignore this theme when the user switches to light mode. */
+
+/* ─── Paper Texture Background ───────────────── */
+
+/*
+ * Realistic paper via layered SVG noise + CSS gradients:
+ * 1. feTurbulence + feDiffuseLighting  → lit 3D surface relief
+ * 2. feTurbulence (fine grain)         → paper fiber grain
+ * 3. feTurbulence (coarse)             → large fiber clumps
+ * 4. Perpendicular fiber lines         → directional paper weave
+ * 5. Aging stains (radial gradients)   → natural discoloration
+ * 6. Deep vignette                     → darkened edges
+ */
+.theme-dark body,
+.theme-dark .workspace-leaf-content,
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-reading-view {
+  background-color: #1e1e1e;
+  background-image:
+    /* 1 — Deep vignette: darkened edges, lighter center */
+    radial-gradient(
+      ellipse 60% 50% at 50% 48%,
+      transparent 35%,
+      rgba(0, 0, 0, 0.18) 65%,
+      rgba(0, 0, 0, 0.40) 100%
+    ),
+    /* 2 — Lit paper surface: feTurbulence + feDiffuseLighting
+           creates a 3D relief that mimics real paper topography
+           surfaceScale=2.5 for deeper relief, opacity 0.05 for visibility */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='5' seed='15' stitchTiles='stitch' result='noise'/%3E%3CfeDiffuseLighting in='noise' lighting-color='%23ffffff' surfaceScale='2.5' result='lit'%3E%3CfeDistantLight azimuth='225' elevation='55'/%3E%3C/feDiffuseLighting%3E%3CfeComposite operator='arithmetic' k1='0' k2='1' k3='0' k4='0' in='lit'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23p)' opacity='0.05'/%3E%3C/svg%3E"),
+    /* 3 — Fine paper grain: high-frequency fractal noise, boosted */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' seed='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)' opacity='0.07'/%3E%3C/svg%3E"),
+    /* 4 — Chaotic turbulence layer: type='turbulence' is more random
+           than fractalNoise — creates irregular, non-repeating blotches */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.08' numOctaves='4' seed='42' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23t)' opacity='0.045'/%3E%3C/svg%3E"),
+    /* 5 — Coarse fiber clumps: low-frequency noise, boosted */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012' numOctaves='3' seed='8' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23f)' opacity='0.06'/%3E%3C/svg%3E"),
+    /* 6 — Horizontal paper fibers (boosted) */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255,250,240,0.022) 2px,
+      rgba(255,250,240,0.022) 3px
+    ),
+    /* 7 — Vertical cross-fibers (boosted) */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 3px,
+      rgba(255,250,240,0.015) 3px,
+      rgba(255,250,240,0.015) 4px
+    ),
+    /* 8 — Diagonal fiber drift (boosted) */
+    repeating-linear-gradient(
+      37deg,
+      transparent,
+      transparent 10px,
+      rgba(255,250,240,0.012) 10px,
+      rgba(255,250,240,0.012) 14px
+    ),
+    /* 8 — Aging stains: subtle warm discoloration spots */
+    radial-gradient(ellipse 35% 40% at 25% 20%, rgba(139,90,43,0.025) 0%, transparent 70%),
+    radial-gradient(ellipse 25% 35% at 78% 75%, rgba(100,75,40,0.020) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 25% at 60% 15%, rgba(120,85,45,0.015) 0%, transparent 70%),
+    radial-gradient(ellipse 20% 30% at 15% 65%, rgba(110,80,40,0.018) 0%, transparent 70%);
+  background-size:
+    100% 100%,
+    300px 300px,
+    200px 200px,
+    250px 250px,
+    400px 400px,
+    5px 5px,
+    7px 7px,
+    14px 21px,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%;
+  background-repeat:
+    no-repeat,
+    repeat,
+    repeat,
+    repeat,
+    repeat,
+    repeat,
+    repeat,
+    repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+}
+
+/* No light mode paper texture — dark-only theme */
+
+/* ─── Typography: Narrow, screen-optimized ───── */
+body {
+  --font-text-theme: "DM Sans", "Inter Tight", "IBM Plex Sans Condensed",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-monospace-theme: "JetBrains Mono", "Fira Code", "SF Mono",
+    "Cascadia Code", Menlo, Consolas, monospace;
+  --font-text-size: 14px;
+  --line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+/* Narrow text: condense slightly */
+.markdown-source-view,
+.markdown-rendered,
+.cm-s-obsidian {
+  font-stretch: 95%;
+  letter-spacing: -0.015em;
+  word-spacing: -0.02em;
+}
+
+/* ─── Page Width: max 450px ──────────────────── */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-line,
+.markdown-reading-view .markdown-preview-section,
+.markdown-source-view .CodeMirror-lines,
+.markdown-preview-view .markdown-preview-sizer {
+  max-width: 550px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.markdown-source-view,
+.markdown-rendered {
+  padding: 24px 32px;
+}
+
+/* ─── Headings: Hinted Serifs + Underlines ───── */
+.markdown-rendered h1, .cm-header-1,
+.markdown-rendered h2, .cm-header-2,
+.markdown-rendered h3, .cm-header-3,
+.markdown-rendered h4, .cm-header-4,
+.markdown-rendered h5, .cm-header-5,
+.markdown-rendered h6, .cm-header-6 {
+  font-family: "Charter", "Iowan Old Style", "Palatino Linotype",
+    "Georgia", "Noto Serif", serif;
+  font-stretch: 95%;
+  letter-spacing: -0.01em;
+  /* Deep-print / letterpress effect */
+  text-shadow:
+    -1px -1px 3px rgba(0, 0, 0, 0.55),
+    1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* H1 */
+.markdown-rendered h1, .cm-header-1 {
+  font-weight: 700;
+  font-size: 1.85em;
+  color: var(--h1-color);
+  margin-top: 2em;
+  margin-bottom: 0.15em;
+  padding-bottom: 0.35em;
+  border-bottom: 2px dotted var(--h1-color);
+}
+
+/* H2 */
+.markdown-rendered h2, .cm-header-2 {
+  font-weight: 650;
+  font-size: 1.5em;
+  color: var(--h2-color);
+  margin-top: 1.6em;
+  margin-bottom: 0.12em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px dotted var(--h1-color);
+}
+
+/* H3 */
+.markdown-rendered h3, .cm-header-3 {
+  font-weight: 600;
+  font-size: 1.28em;
+  color: var(--h3-color);
+  margin-top: 1.4em;
+  margin-bottom: 0.1em;
+  padding-bottom: 0.25em;
+  border-bottom: 2px dotted var(--h1-color);
+}
+
+/* H4 */
+.markdown-rendered h4, .cm-header-4 {
+  font-weight: 600;
+  font-size: 1.15em;
+  color: var(--h4-color);
+  margin-top: 1.2em;
+  margin-bottom: 0.1em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px dotted var(--h1-color);
+}
+
+/* H5 */
+.markdown-rendered h5, .cm-header-5 {
+  font-weight: 600;
+  font-size: 1.02em;
+  color: var(--h5-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 1.1em;
+  margin-bottom: 0.1em;
+  padding-bottom: 0.18em;
+  border-bottom: 2px dotted var(--h1-color);
+}
+
+/* H6 */
+.markdown-rendered h6, .cm-header-6 {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: var(--h6-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  padding-bottom: 0.15em;
+  border-bottom: 2px dotted var(--h1-color);
+}
+
+/* ─── Links ──────────────────────────────────── */
+.markdown-rendered a, .cm-url, .cm-hmd-internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-accent);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.markdown-rendered a:hover {
+  color: var(--text-accent-hover);
+  border-bottom-style: solid;
+}
+
+/* ─── Blockquotes ────────────────────────────── */
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--h3-color);
+  padding: 0.4em 1em;
+  margin: 1em 0;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+}
+
+/* ─── Code ───────────────────────────────────── */
+.markdown-rendered code, .cm-inline-code {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.85em;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.12em 0.4em;
+  border-radius: 3px;
+  color: var(--h1-color);
+}
+.markdown-rendered pre {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 1em 1.1em;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.markdown-rendered pre code {
+  background: none;
+  padding: 0;
+  color: var(--text-normal);
+}
+
+/* ─── Lists ──────────────────────────────────── */
+.markdown-rendered ul, .markdown-rendered ol {
+  padding-left: 1.4em;
+}
+.markdown-rendered li {
+  margin-bottom: 0.25em;
+}
+
+/* List bullets in accent color */
+.markdown-rendered ul > li::marker {
+  color: var(--h2-color);
+}
+.markdown-rendered ol > li::marker {
+  color: var(--h4-color);
+  font-weight: 600;
+}
+
+/* ─── Checkboxes ─────────────────────────────── */
+.markdown-rendered .task-list-item-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-faint);
+  border-radius: 3px;
+  margin-right: 7px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.markdown-rendered .task-list-item-checkbox:checked {
+  background: var(--h2-color);
+  border-color: var(--h2-color);
+}
+
+/* ─── Tables ─────────────────────────────────── */
+.markdown-rendered table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.92em;
+}
+.markdown-rendered th {
+  background: rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+  font-family: "Charter", "Iowan Old Style", Georgia, serif;
+  color: var(--h4-color);
+  text-align: left;
+  padding: 0.5em 0.8em;
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+.markdown-rendered td {
+  padding: 0.45em 0.8em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.markdown-rendered tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ─── Tags ───────────────────────────────────── */
+.tag {
+  background: rgba(184, 151, 106, 0.25);
+  color: #d4ad6a;
+  padding: 1px 7px;
+  border-radius: 3px;
+  font-size: 0.82em;
+  font-weight: 600;
+  border: 1px solid rgba(184, 151, 106, 0.35);
+}
+
+/* ─── Horizontal Rule ────────────────────────── */
+.markdown-rendered hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--hr-subtle) 15%,
+    var(--hr-subtle) 85%,
+    transparent
+  );
+  margin: 2.5em 0;
+}
+
+/* ─── Bold & Italic ──────────────────────────── */
+.markdown-rendered strong, .cm-strong {
+  color: var(--h1-color);
+  font-weight: 650;
+}
+.markdown-rendered em, .cm-em {
+  color: var(--h3-color);
+  font-style: italic;
+}
+
+/* ─── Sidebar: dark, flat, no texture ─────────── */
+.theme-dark .mod-left-split,
+.theme-dark .mod-left-split .workspace-leaf-content,
+.theme-dark .mod-left-split .workspace-tabs,
+.theme-dark .mod-left-split .workspace-tab-container,
+.theme-dark .mod-left-split .nav-files-container {
+  background-color: #171717 !important;
+  background-image: none !important;
+}
+
+.theme-dark .mod-left-split .workspace-tab-header-container {
+  background-color: #171717 !important;
+  background-image: none !important;
+  border-bottom: 1px solid #262626;
+}
+
+.theme-dark .mod-left-split .workspace-tab-header.is-active {
+  background-color: #1e1e1e !important;
+}
+
+/* ─── Sidebar Items ──────────────────────────── */
+.nav-file-title, .nav-folder-title {
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 0.87em;
+  transition: background 0.12s ease;
+}
+.nav-file-title:hover, .nav-folder-title:hover {
+  background: var(--background-secondary);
+}
+.nav-file-title.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-weight: 500;
+}
+.nav-folder-title {
+  font-family: "Charter", "Iowan Old Style", Georgia, serif;
+  color: var(--h4-color);
+  font-weight: 600;
+}
+
+/* ─── Tabs ───────────────────────────────────── */
+.workspace-tab-header {
+  font-size: 0.83em;
+  padding: 5px 12px;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.12s ease;
+}
+.workspace-tab-header.is-active {
+  background: var(--background-primary);
+}
+
+/* ─── Scrollbar ──────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-bg); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-bg); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-active-thumb-bg); }
+
+/* ─── Images ─────────────────────────────────── */
+.markdown-rendered img {
+  border-radius: 4px;
+  max-width: 100%;
+  margin: 0.5em 0;
+  opacity: 0.92;
+  transition: opacity 0.2s ease;
+}
+.markdown-rendered img:hover {
+  opacity: 1;
+}
+
+/* ─── Callouts ───────────────────────────────── */
+.callout {
+  border-radius: 6px;
+  border-left-width: 3px;
+  padding: 0.7em 1em;
+  margin: 1em 0;
+  background: rgba(0, 0, 0, 0.08);
+}
+.callout-title {
+  font-family: "Charter", "Iowan Old Style", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.93em;
+  margin-bottom: 0.25em;
+}
+
+/* ─── Search ─────────────────────────────────── */
+.search-result-file-title {
+  font-weight: 600;
+  color: var(--text-normal);
+}
+.search-result-file-matched-text {
+  color: var(--h1-color);
+  background: var(--text-highlight-bg);
+}
+
+/* ─── Modals ─────────────────────────────────── */
+.modal-container .modal {
+  border-radius: 10px;
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 16px 48px var(--background-modifier-box-shadow);
+}
+.suggestion-item.is-selected {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 4px;
+}
+
+/* ─── Buttons ────────────────────────────────── */
+button.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  padding: 7px 16px;
+  transition: background 0.15s ease;
+}
+button.mod-cta:hover {
+  background: var(--interactive-accent-hover);
+}
+
+/* ─── Graph View ─────────────────────────────── */
+.graph-view.color-fill { color: var(--h1-color); }
+.graph-view.color-circle { color: var(--text-muted); }
+.graph-view.color-line { color: var(--background-modifier-border); }
+.graph-view.color-text { color: var(--text-normal); }
+.graph-view.color-fill-highlight { color: var(--h2-color); }
+
+/* ─── Transitions ────────────────────────────── */
+.workspace-leaf, .nav-file-title, .nav-folder-title, button, a {
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+/* ─── Focus (a11y) ───────────────────────────── */
+*:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ─── Print ──────────────────────────────────── */
+@media print {
+  .markdown-rendered { max-width: 100%; color: #000; }
+  .markdown-rendered a { color: #000; text-decoration: underline; }
+}

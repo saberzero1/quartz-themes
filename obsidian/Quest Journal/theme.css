@@ -1,0 +1,523 @@
+/* @settings
+name: Quest Journal Settings
+id: quest-journal-settings
+settings:
+    - 
+        id: info-text-quest-journal
+        type: info-text
+        title: "Quest Journal Theme"
+        description: "A fantasy RPG inspired theme for Obsidian."
+        markdown: true
+    -
+        title: Typography
+        id: qj-typography
+        type: heading
+        level: 1
+    -
+        title: Header Font
+        id: qj-header-font
+        type: variable-text
+        default: "'Cinzel', 'Crimson Text', serif"
+        description: "Font family for headers (H1-H6)."
+    -
+        title: Body Font
+        id: qj-body-font
+        type: variable-text
+        default: "'Crimson Text', 'Georgia', serif"
+        description: "Font family for main text."
+    -
+        title: Appearance
+        id: qj-appearance
+        type: heading
+        level: 1
+    -
+        title: Hide Paper Texture
+        id: qj-hide-texture
+        type: class-toggle
+        description: "Removes the subtle lined paper background texture."
+    -
+        title: Header Underlines
+        id: qj-header-underlines
+        type: class-select
+        default: qj-header-underline-none
+        options:
+            - 
+                label: Solid Line
+                value: qj-header-underline-solid
+            - 
+                label: Double Line
+                value: qj-header-underline-double
+            - 
+                label: Dotted Line
+                value: qj-header-underline-dotted
+            - 
+                label: None
+                value: qj-header-underline-none
+    -
+        title: Colors (Light Mode)
+        id: qj-colors-light
+        type: heading
+        level: 2
+    -
+        title: Parchment Background
+        id: background-primary-light
+        type: variable-themed-color
+        format: hex
+        default-light: '#f0e6d2'
+    -
+        title: Ink Color
+        id: text-normal-light
+        type: variable-themed-color
+        format: hex
+        default-light: '#2b221b'
+    -
+        title: Accent Color (Wax Red)
+        id: text-accent-light
+        type: variable-themed-color
+        format: hex
+        default-light: '#8a3a3a'
+    -
+        title: Colors (Dark Mode)
+        id: qj-colors-dark
+        type: heading
+        level: 2
+    -
+        title: Leather Background
+        id: background-primary-dark
+        type: variable-themed-color
+        format: hex
+        default-dark: '#1e1915'
+    -
+        title: Gold Text
+        id: text-normal-dark
+        type: variable-themed-color
+        format: hex
+        default-dark: '#dcd0b8'
+    -
+        title: Accent Color (Magic Blue)
+        id: text-accent-dark
+        type: variable-themed-color
+        format: hex
+        default-dark: '#7ca8cf'
+*/
+
+/* ==========================================================================
+   THEME: QUEST JOURNAL
+   STYLE: Parchment (Light) / Ancient Leather (Dark)
+   BASE: Tech001 Structure
+   ========================================================================== */
+
+/* Import a classic serif font for that old-world feel */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;700&display=swap');
+
+/* ==========================================================================
+   1. VARIABLES & PALETTE
+   ========================================================================== */
+
+body {
+    --nav-indentation-guide-color: var(--text-faint) !important;
+    --nav-indentation-guide-width: 1px !important;
+    
+    /* Typography - Default fallback if settings fail */
+    --font-interface: 'Crimson Text', 'Georgia', serif;
+    --font-text: 'Crimson Text', 'Georgia', serif;
+    --font-family-code: 'Consolas', 'Menlo', monospace;
+    --font-headers: 'Cinzel', 'Crimson Text', serif;
+
+    /* Shapes - Slightly softer edges */
+    --radius-s: 2px;
+    --radius-m: 4px;
+    --radius-l: 8px;
+    
+    --h1-size: 2.4em; 
+    --h2-size: 1.8em; 
+    --h3-size: 1.4em; 
+    --code-size: 0.9em;
+}
+
+/* Settings: Typography Overrides */
+body {
+    --font-headers: var(--qj-header-font, 'Cinzel', 'Crimson Text', serif);
+    --font-text: var(--qj-body-font, 'Crimson Text', 'Georgia', serif);
+}
+
+/* --- DARK THEME (ANCIENT LEATHER) --- */
+body.theme-dark {
+    /* Backgrounds: Dark brown leather tones */
+    --background-primary: #1e1915; 
+    --background-secondary: #251f1a;
+    --background-secondary-alt: #16120f;
+    --background-modifier-border: #3e3226;
+    --background-blockquote: #2a221d;
+
+    /* Text: Faded gold and old paper */
+    --text-normal: #dcd0b8;
+    --text-muted: #8c8175;
+    --text-faint: #5a5148;
+    --text-navbar: #8c8175;
+    --text-bold: #e8ded0;
+
+    /* Headers: Gold/Brass */
+    --h1-color: #cdb278;
+    --h2-color: #cdb278;
+    --h3-color: #bfa367;
+    --h4-color: #bfa367;
+    --h5-color: #bfa367;
+    --h6-color: #bfa367;
+
+    /* Accents: Muted Magic Blue/Purple */
+    --text-accent: #7ca8cf;        
+    --text-accent-hover: #9ec1e0;
+    --interactive-accent: #3b2e25; 
+    --caret-color: #cdb278;
+    
+    /* Code */
+    --code-background: #15110e;
+    --code-border-color: #3e3226;
+    --code-normal: #dcd0b8;
+    --code-comment: #5a5148;
+    --code-string: #c17e73; /* Muted Red */
+    --code-function: #cdb278; /* Gold */
+    --code-keyword: #7ca8cf; /* Blue */
+    --code-operator: #8c8175;
+    --code-property: #8fb58e; /* Muted Green */
+    --code-value: #d4a768;
+    
+    /* UI Specific */
+    --scrollbar-thumb: #3e3226;
+    --tab-hover: rgba(205, 178, 120, 0.05);
+    --sidebar-hover: rgba(205, 178, 120, 0.1);
+}
+
+/* Settings: Dark Mode Colors Override */
+body.theme-dark {
+    --background-primary: var(--background-primary-dark, #1e1915);
+    --text-normal: var(--text-normal-dark, #dcd0b8);
+    --text-accent: var(--text-accent-dark, #7ca8cf);
+}
+
+/* --- LIGHT THEME (QUEST PARCHMENT) --- */
+body.theme-light {
+    /* Backgrounds: Warm Paper */
+    --background-primary: #f0e6d2;       
+    --background-secondary: #e6dac1;     
+    --background-secondary-alt: #f7f1e3;
+    --background-modifier-border: #c9bca6;
+    --background-blockquote: #e8dcc5;    
+
+    /* Text: Dark Ink */
+    --text-normal: #2b221b;              
+    --text-muted: #6b5a4b;               
+    --text-faint: #a69686;
+    --text-navbar: #6b5a4b;
+    --text-bold: #1a1410;                
+
+    /* Headers: Sealing Wax Red / Deep Ink */
+    --h1-color: #8a3a3a;
+    --h2-color: #2b221b;
+    --h3-color: #4a3c31;
+    --h4-color: #4a3c31;
+    --h5-color: #4a3c31;
+    --h6-color: #4a3c31;
+
+    /* Accents: Ink Blue / Rustic Gold */
+    --text-accent: #8a3a3a; /* Rust Red links */
+    --text-accent-hover: #a84b4b;
+    --interactive-accent: #dcd0b8;       
+    --caret-color: #8a3a3a;
+    
+    /* Code */
+    --code-background: #e9e1d1;
+    --code-border-color: #c9bca6;
+    --code-normal: #2b221b;
+    --code-comment: #8c8175;
+    --code-string: #a04040;              
+    --code-function: #2b5c85;            
+    --code-keyword: #5c3a75;             
+    --code-operator: #6b5a4b;
+    --code-property: #3a6b3d;            
+    --code-value: #9c6b1f;               
+
+    /* UI Specific */
+    --scrollbar-thumb: #c9bca6;
+    --tab-hover: rgba(138, 58, 58, 0.05);
+    --sidebar-hover: rgba(138, 58, 58, 0.08);
+}
+
+/* Settings: Light Mode Colors Override */
+body.theme-light {
+    --background-primary: var(--background-primary-light, #f0e6d2);
+    --text-normal: var(--text-normal-light, #2b221b);
+    --text-accent: var(--text-accent-light, #8a3a3a);
+}
+
+/* ==========================================================================
+   2. GLOBAL LAYOUT & TYPOGRAPHY
+   ========================================================================== */
+
+.markdown-source-view, 
+.markdown-preview-view { 
+    font-family: var(--font-text);
+    line-height: 1.8; /* Slightly looser line height for journal feel */
+    font-size: 17px;
+    color: var(--text-normal); 
+    background-image: linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 100% 2em; /* Subtle lined paper effect */
+}
+
+/* Settings: Hide Texture */
+body.qj-hide-texture .markdown-source-view, 
+body.qj-hide-texture .markdown-preview-view {
+    background-image: none;
+}
+
+/* --- TEXT HIERARCHY --- */
+.cm-header, h1, h2, h3, h4, h5, h6 {
+    color: var(--h1-color) !important;
+    font-family: var(--font-headers) !important;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    padding-bottom: 0px;
+    margin-bottom: 0.7em !important;
+    margin-top: 1.5em !important;
+}
+
+/* Settings: Header Underline Styles */
+body.qj-header-underline-solid .cm-header, 
+body.qj-header-underline-solid h1, 
+body.qj-header-underline-solid h2, 
+body.qj-header-underline-solid h3 {
+    border-bottom-style: solid;
+	border-bottom-height: 0.05px;
+}
+
+body.qj-header-underline-double .cm-header, 
+body.qj-header-underline-double h1, 
+body.qj-header-underline-double h2, 
+body.qj-header-underline-double h3 {
+    border-bottom-style: double;
+    border-bottom-width: 3px;
+}
+
+body.qj-header-underline-dotted .cm-header, 
+body.qj-header-underline-dotted h1, 
+body.qj-header-underline-dotted h2, 
+body.qj-header-underline-dotted h3 {
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+}
+
+body.qj-header-underline-none .cm-header, 
+body.qj-header-underline-none h1, 
+body.qj-header-underline-none h2, 
+body.qj-header-underline-none h3 {
+    border-bottom: none;
+}
+
+h1 { text-align: center; border-bottom: 2px solid var(--text-accent); }
+
+.cm-line, p, li, ul, ol {
+    color: var(--text-normal) !important;
+}
+
+strong, b, .cm-strong {
+    color: var(--text-bold) !important; 
+    font-weight: 700;
+}
+
+/* Minimalist Scrollbars (Adapted to look rustic) */
+::-webkit-scrollbar { 
+    width: 12px; height: 12px; background: transparent; 
+}
+::-webkit-scrollbar-thumb { 
+    background: var(--scrollbar-thumb); 
+    border-radius: 2px; 
+    border: 2px solid var(--background-primary); 
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: var(--text-muted); 
+}
+
+/* ==========================================================================
+   3. CENTERED LAYOUT (Retained from Tech001)
+   ========================================================================== */
+
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-preview-view {
+    padding-top: 50px !important;
+}
+
+.markdown-source-view.mod-cm6:not(.is-readable-line-width) .cm-sizer,
+.markdown-preview-view:not(.is-readable-line-width) .markdown-preview-sizer {
+    max-width: 1800px !important; /* Slightly narrower for reading comfort */
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-inline: auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
+    /* Paper Texture Shadow */
+    box-shadow: 0 0 50px -10px rgba(0,0,0,0.1); 
+    background-color: var(--background-primary);
+}
+
+/* ==========================================================================
+   4. UI ELEMENTS
+   ========================================================================== */
+
+.titlebar { background-color: transparent !important; z-index: 0; }
+
+.titlebar-button-container {
+    background-color: var(--background-secondary) !important; 
+}
+
+/* Tabs like bookmarks */
+.workspace-tab-header-container {
+    background-color: var(--background-secondary) !important;
+    border-bottom: 2px solid var(--background-modifier-border);
+    padding-top: 5px;
+}
+
+.workspace-tab-header {
+    background-color: var(--background-secondary-alt) !important;
+    color: var(--text-muted);
+    border: 1px solid var(--background-modifier-border);
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    margin-right: 2px;
+    font-family: var(--font-headers);
+    font-size: 0.9em;
+}
+
+.workspace-tab-header.is-active {
+    background-color: var(--background-primary) !important; 
+    color: var(--text-accent); 
+    font-weight: bold;
+    border-top: 2px solid var(--text-accent);
+    padding-bottom: 2px;
+}
+
+/* Sidebar */
+.nav-folder-title, .nav-file-title {
+    font-family: var(--font-interface);
+    font-size: 1em;
+    color: var(--text-navbar);
+    border-radius: var(--radius-m);
+    padding: 6px 12px;
+}
+
+.nav-file-title.is-active {
+    color: var(--text-normal) !important;
+    background-color: var(--sidebar-hover);
+    border-left: 3px solid var(--text-accent);
+}
+
+/* ==========================================================================
+   5. EDITOR STYLES (Journal Specific)
+   ========================================================================== */
+
+/* Blockquotes - Scroll Style */
+blockquote {
+    border: 1px solid var(--background-modifier-border);
+    border-left: 4px solid var(--text-accent);
+    background-color: var(--background-blockquote);
+    border-radius: 2px;
+    padding: 16px 24px;
+    margin: 1.5em 0;
+    color: var(--text-normal);
+    font-style: italic;
+    font-family: var(--font-interface);
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Checkboxes - Ink Squares */
+input[type=checkbox] {
+    -webkit-appearance: none; appearance: none;
+    border-radius: 2px;
+    border: 1.5px solid var(--text-muted);
+    width: 16px; height: 16px;
+    position: relative; top: 3px;
+    cursor: pointer;
+    background-color: transparent;
+}
+input[type=checkbox]:checked {
+    background-color: transparent;
+    border-color: var(--text-accent);
+}
+input[type=checkbox]:checked:after {
+    content: 'x';
+    color: var(--text-accent);
+    position: absolute;
+    top: -4px; left: 2px;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+/* Horizontal Rules - Ornamental */
+hr {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, var(--text-muted), transparent);
+    margin: 3em 0;
+}
+
+/* ==========================================================================
+   6. CODE BLOCKS
+   ========================================================================== */
+
+.markdown-reading-view code,
+.markdown-source-view.is-live-preview .cm-inline-code:not(.cm-formatting) {
+    color: var(--text-normal) !important;
+    background-color: var(--background-secondary) !important;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 2px;
+    padding: 2px 6px;
+    font-family: var(--font-family-code);
+    font-size: 0.85em !important;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Code Blocks Container */
+.markdown-reading-view pre,
+.markdown-source-view.is-live-preview .HyperMD-codeblock {
+    background-color: var(--code-background);
+    border: 1px dashed var(--background-modifier-border);
+    border-radius: 2px;
+    font-family: var(--font-family-code);
+    line-height: 1.5 !important;
+}
+
+.markdown-source-view.is-live-preview .HyperMD-codeblock-begin,
+.markdown-source-view.is-live-preview .HyperMD-codeblock-end {
+    border: none;
+    background-color: var(--code-background);
+    color: var(--text-faint);
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   7. CUSTOM ICONS (Ink Dots)
+   ========================================================================== */
+
+.nav-folder-title-content,
+.nav-file-title-content {
+    display: flex !important;
+    align-items: center;
+    gap: 6px !important; 
+}
+
+/* Simple ink dot for files */
+body:not(.remove-file-icons) .nav-file-title .nav-file-title-content:not(.mk-tree-text)::before {
+    content: "•";
+    color: var(--text-muted);
+    font-size: 1.5em;
+    line-height: 0.5em;
+    flex-shrink: 0;
+}
+
+.nav-file-title.is-active .nav-file-title-content::before {
+    color: var(--text-accent);
+}

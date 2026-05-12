@@ -1,0 +1,509 @@
+/* @settings
+name: Kanagawa
+id: kanagawa
+settings:
+  -
+    id: kanagawa-dark-variant
+    title: Dark theme variant
+    type: class-select
+    allowEmpty: false
+    default: kanagawa-wave
+    options:
+      -
+        label: Wave
+        value: kanagawa-wave
+      -
+        label: Dragon
+        value: kanagawa-dragon
+  -
+    id: kanagawa-font-text
+    title: Text font
+    type: variable-text
+    variable: --font-text-theme
+    default: >-
+      -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji
+  -
+    id: kanagawa-font-mono
+    title: Monospace font
+    type: variable-text
+    variable: --font-monospace-theme
+    default: >-
+      'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular,
+      SF Mono, Menlo, Consolas, Liberation Mono, monospace
+*/
+
+/* ============================================
+   Kanagawa Color Palette
+   Based on https://github.com/rebelot/kanagawa.nvim
+   ============================================ */
+
+:root {
+	/* ── Wave (Dark) ── */
+	--sumiInk0: #16161d;
+	--sumiInk1: #181820;
+	--sumiInk2: #1a1a22;
+	--sumiInk3: #1f1f28;
+	--sumiInk4: #2a2a37;
+	--sumiInk5: #363646;
+	--sumiInk6: #54546d;
+
+	--waveBlue1: #223249;
+	--waveBlue2: #2d4f67;
+
+	--winterGreen: #2b3328;
+	--winterYellow: #49443c;
+	--winterRed: #43242b;
+	--winterBlue: #252535;
+
+	--autumnGreen: #76946a;
+	--autumnRed: #c34043;
+	--autumnYellow: #dca561;
+
+	--samuraiRed: #e82424;
+	--roninYellow: #ff9e3b;
+	--waveAqua1: #6a9589;
+	--dragonBlue: #658594;
+
+	--oldWhite: #c8c093;
+	--fujiWhite: #dcd7ba;
+	--fujiGray: #727169;
+	--springViolet1: #938aa9;
+
+	--oniViolet: #957fb8;
+	--oniViolet2: #b8b4d0;
+	--crystalBlue: #7e9cd8;
+	--springViolet2: #9cabca;
+	--springBlue: #7fb4ca;
+	--lightBlue: #a3d4d5;
+	--waveAqua2: #7aa89f;
+
+	--springGreen: #98bb6c;
+	--boatYellow1: #938056;
+	--boatYellow2: #c0a36e;
+	--carpYellow: #e6c384;
+
+	--sakuraPink: #d27e99;
+	--waveRed: #e46876;
+	--peachRed: #ff5d62;
+	--surimiOrange: #ffa066;
+	--katanaGray: #717c7c;
+
+	/* ── Dragon (Dark Alt) ── */
+	--dragonBlack0: #0d0c0c;
+	--dragonBlack1: #12120f;
+	--dragonBlack2: #1d1c19;
+	--dragonBlack3: #181616;
+	--dragonBlack4: #282727;
+	--dragonBlack5: #393836;
+	--dragonBlack6: #625e5a;
+	--dragonWhite: #c5c9c5;
+	--dragonGreen: #87a987;
+	--dragonGreen2: #8a9a7b;
+	--dragonPink: #a292a3;
+	--dragonOrange: #b6927b;
+	--dragonOrange2: #b98d7b;
+	--dragonGray: #a6a69c;
+	--dragonGray2: #9e9b93;
+	--dragonGray3: #7a8382;
+	--dragonBlue2: #8ba4b0;
+	--dragonViolet: #8992a7;
+	--dragonRed: #c4746e;
+	--dragonAqua: #8ea4a2;
+	--dragonAsh: #737c73;
+	--dragonTeal: #949fb5;
+	--dragonYellow: #c4b28a;
+
+	/* ── Lotus (Light) ── */
+	--lotusInk1: #545464;
+	--lotusInk2: #43436c;
+	--lotusGray: #dcd7ba;
+	--lotusGray2: #716e61;
+	--lotusGray3: #8a8980;
+	--lotusWhite0: #d5cea3;
+	--lotusWhite1: #dcd5ac;
+	--lotusWhite2: #e5ddb0;
+	--lotusWhite3: #f2ecbc;
+	--lotusWhite4: #e7dba0;
+	--lotusWhite5: #e4d794;
+	--lotusViolet1: #a09cac;
+	--lotusViolet2: #766b90;
+	--lotusViolet3: #c9cbd1;
+	--lotusViolet4: #624c83;
+	--lotusBlue1: #c7d7e0;
+	--lotusBlue2: #b5cbd2;
+	--lotusBlue3: #9fb5c9;
+	--lotusBlue4: #4d699b;
+	--lotusBlue5: #5d57a3;
+	--lotusGreen: #6f894e;
+	--lotusGreen2: #6e915f;
+	--lotusGreen3: #b7d0ae;
+	--lotusPink: #b35b79;
+	--lotusOrange: #cc6d00;
+	--lotusOrange2: #e98a00;
+	--lotusYellow: #77713f;
+	--lotusYellow2: #836f4a;
+	--lotusYellow3: #de9800;
+	--lotusYellow4: #f9d791;
+	--lotusRed: #c84053;
+	--lotusRed2: #d7474b;
+	--lotusRed3: #e82424;
+	--lotusRed4: #d9a594;
+	--lotusAqua: #597b75;
+	--lotusAqua2: #5e857a;
+	--lotusTeal1: #4e8ca2;
+	--lotusTeal2: #6693bf;
+	--lotusTeal3: #5a7785;
+	--lotusCyan: #d7e3d8;
+
+	--paper-like: #f2efe9;
+	--soft-white: #f8f8f8;
+}
+
+/* ============================================
+   Wave (Dark) Theme Mapping
+   ============================================ */
+
+.theme-dark {
+	--background-primary: var(--sumiInk3);
+	--background-primary-alt: var(--sumiInk3);
+	--background-secondary: var(--sumiInk1);
+	--background-secondary-alt: var(--sumiInk4);
+	--background-modifier-border: var(--dragonBlue);
+
+	--text-normal: var(--fujiWhite);
+	--text-muted: var(--oldWhite);
+	--text-faint: var(--sumiInk6);
+	--text-accent: var(--autumnGreen);
+	--text-accent-hover: var(--springGreen);
+	--text-on-accent: var(--sumiInk3);
+	--text-error: var(--samuraiRed);
+	--text-warning: var(--roninYellow);
+	--text-success: var(--autumnGreen);
+	--text-selection: rgba(45, 79, 103, 0.5);
+	--text-highlight-bg: var(--waveBlue2);
+
+	--interactive-normal: var(--sumiInk4);
+	--interactive-hover: var(--sumiInk5);
+	--interactive-accent: var(--dragonBlue);
+	--interactive-accent-hover: var(--waveBlue2);
+
+	--link-color: var(--springBlue);
+	--link-color-hover: var(--peachRed);
+	--link-external-color: var(--dragonBlue);
+	--link-external-color-hover: var(--peachRed);
+	--link-unresolved-color: var(--springViolet1);
+
+	--tag-color: var(--springViolet1);
+	--tag-background: var(--sumiInk4);
+
+	--inline-title-color: var(--fujiWhite);
+	--h1-color: var(--waveRed);
+	--h2-color: var(--surimiOrange);
+	--h3-color: var(--carpYellow);
+	--h4-color: var(--springGreen);
+	--h5-color: var(--waveAqua2);
+	--h6-color: var(--crystalBlue);
+
+	--bold-color: var(--fujiWhite);
+	--italic-color: var(--springViolet2);
+
+	--code-normal: var(--fujiGray);
+	--code-background: var(--sumiInk0);
+	--inline-code-color: var(--springGreen);
+
+	--checkbox-color: var(--dragonBlue);
+	--checkbox-border-color: var(--sumiInk6);
+
+	--graph-line: var(--sumiInk5);
+	--graph-node: var(--springGreen);
+	--graph-node-focused: var(--peachRed);
+	--graph-node-tag: var(--springViolet1);
+	--graph-node-attachment: var(--carpYellow);
+
+	--table-header-background: var(--sumiInk4);
+	--table-row-even-background: var(--sumiInk3);
+	--table-row-odd-background: var(--sumiInk1);
+
+	--scrollbar-bg: var(--sumiInk3);
+	--scrollbar-thumb-bg: var(--sumiInk5);
+	--scrollbar-active-thumb-bg: var(--sumiInk6);
+}
+
+/* ============================================
+   Dragon (Dark Alt) Theme Mapping
+   Style Settings plugin required
+   ============================================ */
+
+.theme-dark.kanagawa-dragon {
+	--background-primary: var(--dragonBlack3);
+	--background-primary-alt: var(--dragonBlack3);
+	--background-secondary: var(--dragonBlack1);
+	--background-secondary-alt: var(--dragonBlack4);
+	--background-modifier-border: var(--dragonBlack6);
+
+	--text-normal: var(--dragonWhite);
+	--text-muted: var(--dragonAsh);
+	--text-faint: var(--dragonBlack6);
+	--text-accent: var(--dragonGreen);
+	--text-accent-hover: var(--dragonGreen2);
+	--text-on-accent: var(--dragonBlack3);
+	--text-error: var(--dragonRed);
+	--text-warning: var(--dragonOrange);
+	--text-success: var(--dragonGreen);
+
+	--interactive-normal: var(--dragonBlack4);
+	--interactive-hover: var(--dragonBlack5);
+	--interactive-accent: var(--dragonBlue2);
+	--interactive-accent-hover: var(--dragonTeal);
+
+	--link-color: var(--dragonBlue2);
+	--link-color-hover: var(--dragonRed);
+	--link-external-color: var(--dragonTeal);
+	--link-external-color-hover: var(--dragonRed);
+	--link-unresolved-color: var(--dragonViolet);
+
+	--tag-color: var(--dragonPink);
+	--tag-background: var(--dragonBlack4);
+
+	--inline-title-color: var(--dragonWhite);
+	--bold-color: var(--dragonWhite);
+	--italic-color: var(--dragonViolet);
+
+	--code-normal: var(--dragonGray2);
+	--code-background: var(--dragonBlack0);
+	--inline-code-color: var(--dragonGreen);
+
+	--checkbox-color: var(--dragonBlue2);
+	--checkbox-border-color: var(--dragonBlack6);
+
+	--graph-line: var(--dragonBlack5);
+	--graph-node: var(--dragonGreen);
+	--graph-node-focused: var(--dragonRed);
+	--graph-node-tag: var(--dragonPink);
+	--graph-node-attachment: var(--dragonYellow);
+
+	--table-header-background: var(--dragonBlack4);
+	--table-row-even-background: var(--dragonBlack3);
+	--table-row-odd-background: var(--dragonBlack1);
+
+	--scrollbar-bg: var(--dragonBlack3);
+	--scrollbar-thumb-bg: var(--dragonBlack5);
+	--scrollbar-active-thumb-bg: var(--dragonBlack6);
+
+	--text-selection: rgba(40, 39, 39, 0.5);
+	--text-highlight-bg: var(--dragonBlack4);
+}
+
+/* ============================================
+   Lotus (Light) Theme Mapping
+   ============================================ */
+
+.theme-light {
+	--background-primary: var(--paper-like);
+	--background-primary-alt: var(--lotusWhite4);
+	--background-secondary: var(--soft-white);
+	--background-secondary-alt: var(--lotusWhite3);
+	--background-modifier-border: var(--lotusBlue3);
+
+	--text-normal: var(--lotusInk1);
+	--text-muted: var(--lotusGray3);
+	--text-faint: var(--lotusGray2);
+	--text-accent: var(--lotusGreen);
+	--text-accent-hover: var(--lotusGreen2);
+	--text-on-accent: var(--paper-like);
+	--text-error: var(--lotusRed3);
+	--text-warning: var(--lotusOrange2);
+	--text-success: var(--lotusGreen);
+	--text-selection: rgba(183, 208, 174, 0.5);
+	--text-highlight-bg: var(--lotusBlue2);
+
+	--interactive-normal: var(--lotusWhite2);
+	--interactive-hover: var(--lotusWhite1);
+	--interactive-accent: var(--lotusBlue3);
+	--interactive-accent-hover: var(--lotusBlue4);
+
+	--link-color: var(--lotusBlue5);
+	--link-color-hover: var(--lotusRed);
+	--link-external-color: var(--lotusTeal1);
+	--link-external-color-hover: var(--lotusRed);
+	--link-unresolved-color: var(--lotusViolet1);
+
+	--tag-color: var(--lotusAqua);
+	--tag-background: var(--lotusWhite2);
+
+	--inline-title-color: var(--lotusInk1);
+	--h1-color: var(--lotusRed);
+	--h2-color: var(--lotusOrange);
+	--h3-color: var(--lotusYellow);
+	--h4-color: var(--lotusGreen);
+	--h5-color: var(--lotusAqua);
+	--h6-color: var(--lotusBlue4);
+
+	--bold-color: var(--lotusInk1);
+	--italic-color: var(--lotusViolet2);
+
+	--code-normal: var(--lotusGray3);
+	--code-background: var(--lotusGray);
+	--inline-code-color: var(--lotusGreen);
+
+	--checkbox-color: var(--lotusBlue3);
+	--checkbox-border-color: var(--lotusGray2);
+
+	--graph-line: var(--lotusWhite0);
+	--graph-node: var(--lotusGreen);
+	--graph-node-focused: var(--lotusRed);
+	--graph-node-tag: var(--lotusAqua);
+	--graph-node-attachment: var(--lotusYellow3);
+
+	--table-header-background: var(--lotusWhite1);
+	--table-row-even-background: var(--paper-like);
+	--table-row-odd-background: var(--soft-white);
+
+	--scrollbar-bg: var(--paper-like);
+	--scrollbar-thumb-bg: var(--lotusWhite0);
+	--scrollbar-active-thumb-bg: var(--lotusGray2);
+}
+
+/* ============================================
+   Common Styles
+   ============================================ */
+
+body {
+	--font-text-theme:
+		-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+		sans-serif, Apple Color Emoji, Segoe UI Emoji;
+	--font-monospace-theme:
+		"Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+		SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+strong {
+	font-weight: 600;
+}
+
+/* ============================================
+   UI Component Styles
+   ============================================ */
+
+/* ── Links ── */
+
+.markdown-rendered a,
+.cm-underline {
+	text-decoration: none;
+}
+
+.markdown-rendered a:hover {
+	text-decoration: none;
+}
+
+/* ── Tags ── */
+
+a.tag,
+a.tag:hover {
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+a.tag:hover {
+	text-decoration: underline;
+}
+
+/* ── Mark / Selection ── */
+
+mark {
+	background-color: var(--text-highlight-bg);
+}
+
+::selection {
+	background-color: var(--text-selection);
+}
+
+/* ── Tables ── */
+
+table {
+	border: 1px solid var(--background-secondary);
+	border-collapse: collapse;
+}
+
+th {
+	font-weight: 600;
+	border: 0;
+	text-align: left;
+}
+
+td {
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid var(--background-secondary);
+}
+
+thead {
+	border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* ── Code ── */
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
+	text-shadow: none;
+	background-color: var(--code-background);
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code {
+	font-size: 0.9em;
+	background-color: var(--code-background);
+}
+
+.markdown-preview-section pre code {
+	padding: 4px;
+	line-height: 1.4em;
+	display: block;
+	color: var(--code-normal);
+}
+
+.markdown-preview-section code {
+	color: var(--inline-code-color);
+}
+
+/* ── Checkbox ── */
+
+input.task-list-item-checkbox {
+	border: 1px solid var(--checkbox-border-color);
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked {
+	background-color: var(--checkbox-color);
+	box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+/* ── Graph View ── */
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+	color: var(--graph-node);
+}
+
+.graph-view.color-text {
+	color: var(--link-external-color);
+}
+
+/* ── Resize Handles ── */
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+	width: 1px;
+	background-color: var(--background-secondary-alt);
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+	height: 1px;
+	background-color: var(--background-secondary-alt);
+}

@@ -1,0 +1,557 @@
+/*
+Theme: Infosecwarrior UI
+Author: InfoSecWarrior
+*/
+
+:root {
+  /* Core Backgrounds & Text */
+  --background-primary: #0c0c0d;
+  --background-secondary: #181a1b;
+  --text-normal: #e6edf3;        /* Standard Body Text */
+  --text-muted: #a1a1aa;
+  --accent-color: #3da9fc;       /* Blockquote border, active accents */
+  --border-color: #26292b;
+
+  /* Hierarchical Heading Colors */
+  --h1-color: #70C9FD;
+  --h2-color: #79FFBD;
+  --h3-color: #FD7AFB;
+  --h4-color: #F9DB7E;
+  --h5-color: #FF6E6B;
+  --h6-color: #E3FB72;
+
+  /* Markdown Emphasis Override Variables */
+  --bold-color: #ff8c00;         /* Primary Bold Color */
+  --italic-color: #D5A5A5;       /* Primary Italic Color */
+  
+  /* Heading-Specific Bold Overrides (Maintains Contrast) */
+  --bold-h1: #00AEFB;
+  --bold-h2: #00FF82;
+  --bold-h3: #FF00FB;
+  --bold-h4: #F7BD05;
+  --bold-h5: #F00A06;
+  --bold-h6: #D3FF00;
+
+  /* Nested List Marker Colors (Mapped to Headings) */
+  --list-1: var(--h1-color);
+  --list-2: var(--h2-color);
+  --list-3: var(--h3-color);
+  --list-4: var(--h4-color);
+  --list-5: var(--h5-color);
+
+  /* Specialized UI Component Colors */
+  --code-bg: #1b1d1f;              
+  --blockquote-border: #3da9fc;
+  --link-color: #ffa657;
+  --table-header-bg: #1e2d3d;
+  --table-row-odd: rgba(61, 169, 252, 0.05); 
+  --table-row-even: transparent;             
+  --hr-color: #3da9fc;             
+
+  /* Core GitHub Alert Colors (RGB format for Callouts & Checkboxes) */
+  --callout-blue: 61, 169, 252;   
+  --callout-green: 46, 160, 67;   
+  --callout-yellow: 210, 153, 34; 
+  --callout-red: 248, 81, 73;     
+  --callout-gray: 139, 148, 158;  
+}
+
+/* ===================================================
+   BASE STYLES & EDITOR ENGINE INITIALIZATION
+=================================================== */
+
+.markdown-source-view.mod-cm6.cm-scroller,
+.markdown-rendered {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.cm-editor {
+  background-color: var(--background-primary)!important;
+}
+
+.cm-selectionBackground,
+.cm-content ::selection {
+  background-color: rgba(61, 169, 252, 0.35)!important;
+}
+
+/* ===================================================
+   CUSTOM SCROLLBARS (SLEEK GITHUB AESTHETIC)
+=================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* Horizontal scrollbars for code blocks/tables */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 8px;
+  /* Adds a padded floating look */
+  border: 2px solid var(--background-primary); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted); 
+  border: 1px solid var(--background-primary);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ===================================================
+   NAVIGATION & FILE EXPLORER
+=================================================== */
+
+.nav-file-title,
+.nav-folder-title {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #57a7f2!important;
+  transition: background-color 0.2s ease, color 0.2s ease; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: rgba(87, 167, 242, 0.1);
+}
+
+/* ===================================================
+   MARKDOWN TYPOGRAPHY: BOLD & ITALIC EMPHASIS
+=================================================== */
+
+.markdown-source-view.mod-cm6.cm-strong,
+.markdown-rendered strong {
+  color: var(--bold-color);
+  font-weight: 700;
+}
+
+.markdown-source-view.mod-cm6.cm-em,
+.markdown-rendered em {
+  color: var(--italic-color);
+  font-style: italic;
+}
+
+.markdown-source-view.mod-cm6.cm-strong.cm-em,
+.markdown-rendered strong em,
+.markdown-rendered em strong {
+  color: #FF5722; 
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ===================================================
+   MARKDOWN TYPOGRAPHY: HIERARCHICAL HEADINGS
+=================================================== */
+
+.markdown-rendered h1, .cm-header-1 { color: var(--h1-color)!important; }
+.markdown-rendered h2, .cm-header-2 { color: var(--h2-color)!important; }
+.markdown-rendered h3, .cm-header-3 { color: var(--h3-color)!important; }
+.markdown-rendered h4, .cm-header-4 { color: var(--h4-color)!important; }
+.markdown-rendered h5, .cm-header-5 { color: var(--h5-color)!important; }
+.markdown-rendered h6, .cm-header-6 { color: var(--h6-color)!important; }
+
+.markdown-rendered h1, .cm-line.HyperMD-header-1 {
+  border-bottom: 2px solid rgba(112, 201, 253, 0.3);
+  padding-bottom: 8px;
+  font-weight: 800;
+}
+
+.markdown-rendered h2, .cm-line.HyperMD-header-2 {
+  border-bottom: 1px solid rgba(121, 255, 189, 0.2);
+  padding-bottom: 5px;
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3 {
+  margin-top: 1.4em;
+}
+
+.cm-header-1.cm-strong,.markdown-rendered h1 strong { color: var(--bold-h1)!important; font-weight: 900; }
+.cm-header-2.cm-strong,.markdown-rendered h2 strong { color: var(--bold-h2)!important; font-weight: 900; }
+.cm-header-3.cm-strong,.markdown-rendered h3 strong { color: var(--bold-h3)!important; font-weight: 900; }
+.cm-header-4.cm-strong,.markdown-rendered h4 strong { color: var(--bold-h4)!important; font-weight: 900; }
+.cm-header-5.cm-strong,.markdown-rendered h5 strong { color: var(--bold-h5)!important; font-weight: 900; }
+.cm-header-6.cm-strong,.markdown-rendered h6 strong { color: var(--bold-h6)!important; font-weight: 900; }
+
+/* ===================================================
+   MARKDOWN TYPOGRAPHY: NESTED LISTS & MARKERS
+=================================================== */
+
+/* 1. Reading Mode List Markers Sequence (3-Step Loop) */
+.markdown-rendered ul { list-style-type: disc !important; }           
+.markdown-rendered ul ul { list-style-type: circle !important; }      
+.markdown-rendered ul ul ul { list-style-type: square !important; }   
+.markdown-rendered ul ul ul ul { list-style-type: disc !important; }  
+.markdown-rendered ul ul ul ul ul { list-style-type: circle !important; } 
+.markdown-rendered ul ul ul ul ul ul { list-style-type: square !important; } 
+
+/* 🚨 FIX: Hide Obsidian's artificial gray dot in Reading Mode so it doesn't overlap our native shapes */
+.markdown-rendered .list-bullet::after {
+  visibility: hidden !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Apply Header-Mapped Colors to Reading Mode Bullets */
+.markdown-rendered ul > li::marker { color: var(--list-1) !important; }
+.markdown-rendered ul ul > li::marker { color: var(--list-2) !important; }
+.markdown-rendered ul ul ul > li::marker { color: var(--list-3) !important; }
+.markdown-rendered ul ul ul ul > li::marker { color: var(--list-4) !important; }
+.markdown-rendered ul ul ul ul ul > li::marker { color: var(--list-5) !important; }
+.markdown-rendered ul ul ul ul ul ul > li::marker { color: var(--list-1) !important; }
+
+/* 2. Source / Live Preview Mode List Markers */
+/* Reverted to native Obsidian styles to restore hyphens and default gray dots for editing. */
+
+/* 3. Ordered Lists (Numbered) */
+.markdown-rendered ol { list-style-type: decimal; }      
+.markdown-rendered ol ol { list-style-type: lower-alpha; } 
+.markdown-rendered ol ol ol { list-style-type: lower-roman; }
+
+.markdown-rendered ol > li::marker { color: var(--list-1); font-weight: bold; }
+.markdown-rendered ol ol > li::marker { color: var(--list-2); font-weight: bold; }
+.markdown-rendered ol ol ol > li::marker { color: var(--list-3); font-weight: bold; }
+
+.markdown-source-view.mod-cm6 .cm-list-1 .cm-formatting-list-ol { color: var(--list-1); font-weight: bold; }
+.markdown-source-view.mod-cm6 .cm-list-2 .cm-formatting-list-ol { color: var(--list-2); font-weight: bold; }
+.markdown-source-view.mod-cm6 .cm-list-3 .cm-formatting-list-ol { color: var(--list-3); font-weight: bold; }
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line.cm-strong,
+.markdown-rendered ul li strong,
+.markdown-rendered ol li strong {
+  color: var(--bold-color);
+}
+
+/* ===================================================
+   CUSTOM CHECKBOXES (GITHUB STYLED & COLOR CODED)
+=================================================== */
+
+.markdown-rendered input[type="checkbox"] {
+  border-radius: 4px; 
+  border: 1px solid var(--text-muted);
+}
+
+.markdown-rendered input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 .task-list-item[data-task="x"] {
+  --checkbox-color: rgb(var(--callout-green));
+  --checkbox-marker-color: #ffffff;
+}
+
+.markdown-rendered li[data-task="!"] > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .task-list-item[data-task="!"] {
+  --checkbox-color: rgb(var(--callout-red));
+}
+
+.markdown-rendered li[data-task="?"] > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .task-list-item[data-task="?"] {
+  --checkbox-color: rgb(var(--callout-yellow));
+}
+
+.markdown-rendered li[data-task=">"] > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .task-list-item[data-task=">"] {
+  --checkbox-color: rgb(var(--callout-blue));
+}
+
+.markdown-rendered li[data-task="-"] > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .task-list-item[data-task="-"] {
+  --checkbox-color: rgb(var(--callout-gray));
+}
+
+.markdown-rendered li[data-task="-"],
+.markdown-source-view.mod-cm6 .task-list-item[data-task="-"] {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+/* ===================================================
+   INDENTATION GUIDES (VERTICAL CONNECTING LINES)
+=================================================== */
+
+.markdown-rendered ul ul,
+.markdown-rendered ol ol,
+.markdown-rendered ul ol,
+.markdown-rendered ol ul {
+  padding-left: 24px;
+  margin-left: 4px;
+  border-left: 1.5px solid;
+  border-radius: 2px;
+}
+
+.markdown-rendered ul > li > ul,
+.markdown-rendered ol > li > ul,
+.markdown-rendered ul > li > ol,
+.markdown-rendered ol > li > ol {
+  border-left-color: color-mix(in srgb, var(--list-1) 35%, transparent);
+}
+.markdown-rendered * > li > * > li > ul,
+.markdown-rendered * > li > * > li > ol {
+  border-left-color: color-mix(in srgb, var(--list-2) 35%, transparent);
+}
+.markdown-rendered * > li > * > li > * > li > ul,
+.markdown-rendered * > li > * > li > * > li > ol {
+  border-left-color: color-mix(in srgb, var(--list-3) 35%, transparent);
+}
+.markdown-rendered * > li > * > li > * > li > * > li > ul,
+.markdown-rendered * > li > * > li > * > li > * > li > ol {
+  border-left-color: color-mix(in srgb, var(--list-4) 35%, transparent);
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-left: 1.5px solid var(--border-color);
+  margin-left: 2px;
+}
+.markdown-source-view.mod-cm6 .cm-line:hover .cm-indent::before {
+  border-left: 1.5px solid color-mix(in srgb, var(--accent-color) 60%, transparent);
+}
+
+/* ===================================================
+   MARKDOWN TYPOGRAPHY: HORIZONTAL RULES (THEMATIC BREAKS)
+=================================================== */
+
+.markdown-source-view.mod-cm6 hr,
+.markdown-preview-view hr {
+  position: relative;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--hr-color), transparent);
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+}
+
+.cm-line.hr { height: auto; }
+
+/* ===================================================
+   DATA TABLES (LP Native Table Fix included)
+=================================================== */
+
+.markdown-rendered table,
+.markdown-preview-view table,
+.markdown-source-view.mod-cm6 table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 8px; 
+  overflow: hidden; 
+  font-size: 0.95em;
+  display: block;
+  overflow-x: auto;
+}
+
+.markdown-rendered th,
+.markdown-preview-view th,
+.markdown-source-view.mod-cm6 th {
+  background-color: var(--table-header-bg);
+  color: var(--accent-color);
+  font-weight: 700;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+  border-right: 1px solid var(--border-color); 
+}
+
+.markdown-rendered td,
+.markdown-preview-view td,
+.markdown-source-view.mod-cm6 td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  color: var(--text-normal);
+}
+
+.markdown-rendered tr:last-child td,
+.markdown-preview-view tr:last-child td,
+.markdown-source-view.mod-cm6 tr:last-child td { 
+  border-bottom: none; 
+}
+
+.markdown-rendered tr:nth-child(odd),
+.markdown-preview-view tr:nth-child(odd),
+.markdown-source-view.mod-cm6 tr:nth-child(odd) { background-color: var(--table-row-odd); }
+
+.markdown-rendered tr:nth-child(even),
+.markdown-preview-view tr:nth-child(even),
+.markdown-source-view.mod-cm6 tr:nth-child(even) { background-color: var(--table-row-even); }
+
+.markdown-rendered tr:hover,
+.markdown-preview-view tr:hover,
+.markdown-source-view.mod-cm6 tr:hover { background-color: rgba(61, 169, 252, 0.15); }
+
+/* ===================================================
+   BLOCKQUOTES & INLINE CODE (FIXED FOR SOURCE MODE)
+=================================================== */
+
+/* 1. Reading Mode Blockquotes (Keeps padding and margins) */
+.markdown-rendered blockquote {
+  border-left: 4px solid var(--blockquote-border) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-muted) !important;
+  border-radius: 0 4px 4px 0;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+  display: block;
+}
+
+/* 2. Source / Live Preview Mode Blockquotes (Removes vertical padding/margin that breaks the editor) */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote {
+  border-left: 4px solid var(--blockquote-border) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-muted) !important;
+  padding-left: 15px; /* Only horizontal padding to keep text off the border */
+  padding-right: 15px;
+  font-style: italic;
+}
+
+/* Keep formatting for bold text inside blockquotes */
+.markdown-preview-view blockquote strong,
+.markdown-source-view.mod-cm6 .HyperMD-quote.cm-strong {
+  color: #50fa7b;
+}
+
+.markdown-rendered code,
+.cm-inline-code {
+  background-color: var(--code-bg)!important;
+  color: #c3e88d!important;
+  padding: 0.4em 0.4em!important; 
+  font-size: 95%;
+  border-radius: 6px; 
+}
+
+.markdown-rendered pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.markdown-rendered pre code {
+  background: transparent!important;
+  color: var(--text-normal)!important; 
+}
+
+/* ===================================================
+   IMAGES & EMBEDS
+=================================================== */
+.markdown-rendered img {
+  border-radius: 6px; 
+  max-width: 100%;
+}
+
+/* ===================================================
+   HYPERLINKS & TAGS 
+=================================================== */
+
+.markdown-rendered a,
+.cm-link,
+.cm-url {
+  color: var(--link-color)!important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.markdown-rendered a:hover {
+  text-decoration: underline;
+}
+
+a.tag {
+  background-color: rgba(61, 169, 252, 0.1);
+  color: var(--accent-color) !important;
+  border: 1px solid rgba(61, 169, 252, 0.3);
+  border-radius: 2em;
+  padding: 2px 8px;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+a.tag:hover {
+  background-color: rgba(61, 169, 252, 0.2);
+  color: #70C9FD !important;
+  text-decoration: none;
+}
+
+.cm-s-obsidian .cm-hashtag {
+  color: var(--accent-color) !important;
+}
+
+/* ===================================================
+   PROPERTIES / FRONTMATTER 
+=================================================== */
+
+.metadata-container {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.metadata-property-key {
+  color: var(--text-muted);
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.metadata-property-value {
+  color: var(--text-normal);
+}
+
+/* ===================================================
+   CALLOUTS (GITHUB DARK AESTHETIC)
+=================================================== */
+
+.callout {
+  border: 1px solid var(--border-color);
+  border-left: 4px solid rgb(var(--callout-color));
+  background-color: rgba(var(--callout-color), 0.08) !important;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  color: var(--text-normal);
+  transition: background-color 0.2s ease;
+}
+
+.callout-title {
+  color: rgb(var(--callout-color));
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.callout-icon { color: rgb(var(--callout-color)); transform: scale(0.95); }
+.callout-content { color: var(--text-normal); background-color: transparent; padding-top: 8px; }
+.callout-content > p:last-child { margin-bottom: 0; }
+
+.callout[data-callout="note"],
+.callout[data-callout="info"],
+.callout[data-callout="todo"] { --callout-color: var(--callout-blue); }
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] { --callout-color: var(--callout-green); }
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] { --callout-color: var(--callout-yellow); }
+
+.callout[data-callout="error"],
+.callout[data-callout="danger"],
+.callout[data-callout="bug"],
+.callout[data-callout="fail"] { --callout-color: var(--callout-red); }
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"],
+.callout[data-callout="summary"] { --callout-color: var(--callout-gray); }

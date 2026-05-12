@@ -1,0 +1,1072 @@
+/* ============================================================
+   Claude Theme for Obsidian
+   Inspired by Claude.ai dark interface
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+/* ============================================================
+   DARK THEME VARIABLES
+   ============================================================ */
+
+.theme-dark {
+  /* --- Backgrounds --- */
+  --background-primary:         #30302e;
+  --background-primary-alt:     #363634;
+  --background-secondary:       #262624;
+  --background-secondary-alt:   #2c2c2a;
+  --background-modifier-border:        #3e3e3c;
+  --background-modifier-border-hover:  #4e4e4c;
+  --background-modifier-border-focus:  #d4714e;
+  --background-modifier-error:         #5c2a20;
+  --background-modifier-error-rgb:     92, 42, 32;
+  --background-modifier-error-hover:   #6e3327;
+  --background-modifier-success:       #1e3a2f;
+  --background-modifier-message:       #30302e;
+  --background-modifier-hover:         rgba(212, 113, 78, 0.09);
+  --background-modifier-active-hover:  rgba(212, 113, 78, 0.15);
+  --background-modifier-form-field:            #282826;
+  --background-modifier-form-field-highlighted: #2e2e2c;
+
+  /* --- Text --- */
+  --text-normal:          #ececec;
+  --text-muted:           #8b8b8b;
+  --text-faint:           #555555;
+  --text-on-accent:       #ffffff;
+  --text-error:           #e07070;
+  --text-warning:         #e8a850;
+  --text-success:         #72b885;
+  --text-accent:          #d4714e;
+  --text-accent-hover:    #e07f5c;
+  --text-selection:       rgba(212, 113, 78, 0.28);
+  --text-highlight-bg:    rgba(212, 113, 78, 0.28);
+  --text-highlight-bg-active: rgba(212, 113, 78, 0.42);
+
+  /* --- Interactive --- */
+  --interactive-accent:        #d4714e;
+  --interactive-accent-rgb:    212, 113, 78;
+  --interactive-accent-hover:  #e07f5c;
+  --interactive-accent-active: #c06040;
+  --interactive-normal: #1e1e1e;
+  --interactive-hover:  #252525;
+  --interactive-active: #2e2e2e;
+
+  /* --- Scrollbar --- */
+  --scrollbar-active-thumb-bg: rgba(212, 113, 78, 0.4);
+  --scrollbar-bg:              rgba(255, 255, 255, 0.03);
+  --scrollbar-thumb-bg:        rgba(255, 255, 255, 0.08);
+
+  /* --- Headings --- */
+  --h1-color: #f2f0ec;
+  --h2-color: #edebe6;
+  --h3-color: #e8e5e0;
+  --h4-color: #e2dfda;
+  --h5-color: #d4714e;
+  --h6-color: #c06040;
+
+  /* --- Code --- */
+  --code-background:  #21211f;
+  --code-normal:      #e2e2e2;
+  --code-comment:     #6b7280;
+  --code-function:    #93c5fd;
+  --code-important:   #f87171;
+  --code-keyword:     #c084fc;
+  --code-operator:    #67e8f9;
+  --code-property:    #86efac;
+  --code-punctuation: #9ca3af;
+  --code-string:      #86efac;
+  --code-tag:         #f87171;
+  --code-value:       #fb923c;
+
+  /* --- Links --- */
+  --link-color:                    #d4714e;
+  --link-color-hover:              #e07f5c;
+  --link-external-color:           #86b4a6;
+  --link-external-color-hover:     #9acfbf;
+  --link-unresolved-color:         #8b8b8b;
+  --link-unresolved-opacity:       0.7;
+  --link-unresolved-decoration-color: #555555;
+
+  /* --- Blockquote --- */
+  --blockquote-border-color:      #d4714e;
+  --blockquote-color:             #b8b4ae;
+  --blockquote-background-color:  rgba(212, 113, 78, 0.07);
+
+  /* --- Bold / Italic --- */
+  --bold-color:   #f2f0ec;
+  --italic-color: #ececec;
+
+  /* --- Tables --- */
+  --table-border-color:             #2a2a2a;
+  --table-border-width:             1px;
+  --table-header-background:        #242422;
+  --table-header-background-hover:  #2a2a28;
+  --table-background:               transparent;
+  --table-alt-background:           #282826;
+
+  /* --- Tags --- */
+  --tag-color:            #d4714e;
+  --tag-background:       rgba(212, 113, 78, 0.13);
+  --tag-color-hover:      #e07f5c;
+  --tag-background-hover: rgba(212, 113, 78, 0.22);
+
+  /* --- Callouts --- */
+  --callout-default: 212, 113, 78;
+  --callout-info:    134, 180, 166;
+  --callout-todo:    155, 142, 196;
+  --callout-tip:     141, 187, 158;
+  --callout-warning: 232, 168, 80;
+  --callout-danger:  224, 112, 112;
+  --callout-success: 114, 184, 133;
+  --callout-question: 155, 142, 196;
+  --callout-bug:     224, 112, 112;
+
+  /* --- Canvas --- */
+  --canvas-color:       26, 26, 26;
+  --canvas-dot-pattern: #2a2a2a;
+
+  /* --- Shadows --- */
+  --shadow-s: 0 2px 8px rgba(0, 0, 0, 0.45);
+  --shadow-l: 0 4px 24px rgba(0, 0, 0, 0.55);
+
+  /* --- Fonts --- */
+  --font-text-theme:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-monospace-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace;
+  --font-text-size:    16px;
+  --line-height-normal: 1.7;
+  --line-height-tight:  1.4;
+  --line-width:         720px;
+}
+
+/* ============================================================
+   GLOBAL SHAPE — keep theme's square aesthetic
+   ============================================================ */
+
+body {
+  --radius-s:            3px;
+  --radius-m:            5px;
+  --radius-l:            8px;
+  --input-radius:        5px;
+  --tab-radius-active:   0px;
+  --checkbox-radius:     3px;
+  --toggle-radius:       100px;
+  --toggle-thumb-radius: 100px;
+  --slider-thumb-radius: 100px;
+
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+svg * {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.menu {
+  padding: var(--size-2-1);
+}
+
+.menu-item {
+  padding: var(--size-4-1) var(--size-4-2);
+  border-radius: var(--radius-m);
+}
+
+.menu-separator {
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+.cm-s-obsidian,
+.markdown-rendered {
+  font-family: var(--font-text-theme);
+  font-size: var(--font-text-size);
+  line-height: var(--line-height-normal);
+  color: var(--text-normal);
+}
+
+/* --- Headings --- */
+
+.markdown-rendered h1, .HyperMD-header-1, .cm-header-1 {
+  font-family: var(--font-text-theme);
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--h1-color);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.02em;
+}
+
+.markdown-rendered h2, .HyperMD-header-2, .cm-header-2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: var(--h2-color);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.2em;
+  margin-top: 1.4em;
+  margin-bottom: 0.7em;
+  letter-spacing: -0.01em;
+}
+
+.markdown-rendered h3, .HyperMD-header-3, .cm-header-3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--h3-color);
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-rendered h4, .HyperMD-header-4, .cm-header-4 {
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--h4-color);
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.markdown-rendered h5, .HyperMD-header-5, .cm-header-5 {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--h5-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.markdown-rendered h6, .HyperMD-header-6, .cm-header-6 {
+  font-weight: 600;
+  font-size: 0.85em;
+  color: var(--h6-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* --- Paragraph spacing --- */
+.markdown-rendered p {
+  margin: 0.6em 0 1em;
+}
+
+/* --- Bold & Italic --- */
+.markdown-rendered strong {
+  font-weight: 750;
+  color: var(--bold-color);
+}
+
+.markdown-rendered em {
+  color: var(--italic-color);
+}
+
+/* ============================================================
+   INLINE CODE
+   ============================================================ */
+
+.markdown-rendered :not(pre) > code,
+.cm-s-obsidian .cm-inline-code {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.865em;
+  font-weight: 400;
+  background-color: #252525;
+  color: #fe8181;
+  padding: 0.18em 0.45em;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 113, 78, 0.22);
+}
+
+/* ============================================================
+   CODE BLOCKS
+   ============================================================ */
+
+.markdown-rendered pre {
+  background-color: var(--code-background);
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radius-l);
+  padding: 1.1em 1.3em;
+  margin: 1.2em 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.markdown-rendered pre code {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875em;
+  background-color: transparent;
+  color: var(--code-normal);
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  line-height: 1.65;
+}
+
+/* Live-editor code fence blocks */
+.cm-s-obsidian .HyperMD-codeblock {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875em;
+  background-color: var(--code-background);
+  line-height: 1.65;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+.cm-s-obsidian .HyperMD-codeblock-begin {
+  padding-top: 0.8em;
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+  border-top:   1px solid #2a2a2a;
+  border-left:  1px solid #2a2a2a;
+  border-right: 1px solid #2a2a2a;
+}
+
+.cm-s-obsidian .HyperMD-codeblock-end {
+  padding-bottom: 0.8em;
+  border-radius: 0 0 var(--radius-l) var(--radius-l);
+  border-bottom: 1px solid #2a2a2a;
+  border-left:   1px solid #2a2a2a;
+  border-right:  1px solid #2a2a2a;
+}
+
+/* --- Syntax Highlighting --- */
+
+.cm-s-obsidian .cm-keyword   { color: #c084fc; font-weight: 500; }
+.cm-s-obsidian .cm-operator  { color: #67e8f9; }
+.cm-s-obsidian .cm-variable  { color: var(--code-normal); }
+.cm-s-obsidian .cm-variable-2 { color: #93c5fd; }
+.cm-s-obsidian .cm-variable-3, .cm-s-obsidian .cm-type { color: #86efac; }
+.cm-s-obsidian .cm-atom      { color: #fb923c; }
+.cm-s-obsidian .cm-number    { color: #fb923c; }
+.cm-s-obsidian .cm-def       { color: #93c5fd; }
+.cm-s-obsidian .cm-string    { color: #86efac; }
+.cm-s-obsidian .cm-string-2  { color: #86efac; }
+.cm-s-obsidian .cm-comment   { color: #6b7280; font-style: italic; }
+.cm-s-obsidian .cm-tag       { color: #f87171; }
+.cm-s-obsidian .cm-attribute { color: #fb923c; }
+.cm-s-obsidian .cm-qualifier { color: #86efac; }
+.cm-s-obsidian .cm-property  { color: #67e8f9; }
+.cm-s-obsidian .cm-builtin   { color: #c084fc; }
+.cm-s-obsidian .cm-link      { color: #67e8f9; }
+.cm-s-obsidian .cm-error     { color: #f87171; background-color: rgba(248, 113, 113, 0.12); }
+.cm-s-obsidian .cm-meta      { color: #f87171; }
+.cm-s-obsidian .cm-formatting-code { color: #6b7280; }
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--blockquote-border-color);
+  background-color: var(--blockquote-background-color);
+  color: var(--blockquote-color);
+  margin: 1em 0;
+  padding: 0.75em 1.2em;
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  font-style: italic;
+}
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+.markdown-rendered a,
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .cm-hmd-internal-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.markdown-rendered a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.markdown-rendered a.external-link {
+  color: var(--link-external-color);
+}
+
+.markdown-rendered a.external-link:hover {
+  color: var(--link-external-color-hover);
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+.markdown-rendered ul,
+.markdown-rendered ol {
+  padding-left: 1.6em;
+}
+
+.markdown-rendered li {
+  margin: 0.3em 0;
+}
+
+.markdown-rendered li > p {
+  margin: 0.3em 0;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+}
+
+.markdown-rendered th {
+  background-color: var(--table-header-background);
+  color: var(--text-normal);
+  font-weight: 600;
+  padding: 0.6em 1em;
+  border: 1px solid var(--table-border-color);
+  text-align: left;
+}
+
+.markdown-rendered td {
+  padding: 0.5em 1em;
+  border: 1px solid var(--table-border-color);
+  color: var(--text-normal);
+}
+
+.markdown-rendered tr:nth-child(even) td {
+  background-color: var(--table-alt-background);
+}
+
+.markdown-rendered tr:hover td {
+  background-color: rgba(212, 113, 78, 0.05);
+}
+
+/* ============================================================
+   HORIZONTAL RULE
+   ============================================================ */
+
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid rgba(236, 236, 236, 0.6);
+  margin: 2.2em 0;
+}
+
+/* ============================================================
+   MARK / HIGHLIGHT
+   ============================================================ */
+
+.markdown-rendered mark {
+  background-color: rgba(212, 113, 78, 0.28);
+  color: #f0ede8;
+  border-radius: 2px;
+  padding: 0.05em 0.25em;
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+.tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid rgba(212, 113, 78, 0.28);
+  border-radius: 4px;
+  padding: 0.1em 0.55em;
+  font-size: 0.83em;
+  font-family: var(--font-interface-theme);
+}
+
+.tag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+}
+
+/* ============================================================
+   CALLOUTS
+   ============================================================ */
+
+.callout {
+  border-radius: var(--radius-m);
+  padding: 0.9em 1.2em;
+  margin: 1.1em 0;
+}
+
+.callout-title {
+  font-family: var(--font-interface-theme);
+  font-weight: 600;
+  font-size: 0.88em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+
+.callout-content {
+  font-size: 0.97em;
+}
+
+/* ============================================================
+   WORKSPACE — sidebar, nav, status bar
+   ============================================================ */
+
+/* Main editor/viewer area only */
+.mod-root .workspace-leaf-content {
+  background-color: var(--background-primary);
+}
+
+/* Left sidebar — file explorer, search, tags, etc. */
+.workspace-left-split,
+.workspace-left-split .workspace-tabs,
+.workspace-left-split .workspace-leaf,
+.workspace-left-split .workspace-leaf-content,
+.workspace-left-split .workspace-tab-header-container-inner,
+.nav-files-container,
+.workspace-left-split .tree-item-self,
+.workspace-left-split .nav-header {
+  background-color: var(--background-secondary) !important;
+}
+
+.nav-folder-title,
+.nav-file-title {
+  color: var(--text-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-m);
+  font-size: 0.9em;
+  font-family: var(--font-interface-theme);
+}
+
+.nav-file-title.is-active,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+
+.nav-folder-title-content {
+  font-weight: 500;
+}
+
+/* Status bar */
+.status-bar {
+  background-color: #161614;
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-faint);
+  font-family: var(--font-interface-theme);
+  font-size: 11px;
+}
+
+/* Title bar */
+.titlebar,
+.titlebar-inner {
+  background-color: #161614;
+}
+
+/* Workspace ribbon */
+.workspace-ribbon {
+  background-color: #161614;
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+/* Tab header */
+.workspace-tab-header {
+  font-family: var(--font-interface-theme);
+  font-size: 13px;
+}
+
+/* ============================================================
+   MODAL / DIALOGS
+   ============================================================ */
+
+.modal {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-l);
+}
+
+.modal-title {
+  color: var(--text-normal);
+  font-weight: 600;
+  font-family: var(--font-interface-theme);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: #fff;
+  font-family: var(--font-interface-theme);
+  font-weight: 500;
+  border-radius: var(--radius-m);
+}
+
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+button {
+  font-family: var(--font-interface-theme);
+}
+
+/* ============================================================
+   INPUTS & SEARCH
+   ============================================================ */
+
+input[type="text"],
+input[type="search"],
+.search-input-container input {
+  background-color: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  color: var(--text-normal);
+  font-family: var(--font-interface-theme);
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+.search-input-container input:focus {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(212, 113, 78, 0.18);
+}
+
+.search-result-file-matched-text {
+  background-color: rgba(212, 113, 78, 0.3);
+  color: #f0ede8;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 113, 78, 0.38);
+}
+
+/* ============================================================
+   CURSOR & SELECTION
+   ============================================================ */
+
+.cm-s-obsidian .cm-cursor {
+  border-left-color: #d4714e;
+}
+
+.cm-s-obsidian .CodeMirror-selectedtext,
+.cm-s-obsidian .cm-selectionBackground {
+  background-color: rgba(212, 113, 78, 0.25) !important;
+}
+
+/* ============================================================
+   CHECKLIST / TASK LIST
+   ============================================================ */
+
+.markdown-rendered input[type="checkbox"] {
+  border-color: var(--text-muted);
+  border-radius: var(--checkbox-radius);
+}
+
+.markdown-rendered input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+.task-list-item.is-checked .task-list-item-checkbox ~ span {
+  color: var(--text-faint);
+  text-decoration: line-through;
+}
+
+/* ============================================================
+   GRAPH VIEW
+   ============================================================ */
+
+.graph-view.color-fill-attachment { color: #a09990; }
+.graph-view.color-fill           { color: #d4714e; }
+.graph-view.color-fill-tag       { color: #86b4a6; }
+.graph-view.color-fill-unresolved { color: #6b6460; }
+.graph-view.color-line           { color: #2a2a2a; }
+.graph-view.color-text           { color: var(--text-muted); }
+
+/* ============================================================
+   EDIT MODE — CM6 LIVE PREVIEW & SOURCE VIEW
+   Mirrors the reading-mode appearance as closely as possible.
+   ============================================================ */
+
+/* --- Editor container & typography --- */
+
+.cm-editor,
+.cm-editor .cm-scroller {
+  font-family: var(--font-text-theme);
+  font-size: var(--font-text-size);
+  line-height: var(--line-height-normal);
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.cm-editor .cm-content {
+  caret-color: #d4714e;
+  font-family: var(--font-text-theme);
+}
+
+/* --- Cursor --- */
+
+.cm-editor.cm-focused .cm-cursor {
+  border-left: 2px solid #d4714e;
+}
+
+/* --- Active line --- */
+
+.cm-editor .cm-activeLine {
+  background-color: rgba(212, 113, 78, 0.04) !important;
+}
+
+.cm-editor .cm-activeLineGutter {
+  background-color: rgba(212, 113, 78, 0.06);
+  color: #d4714e;
+}
+
+/* --- Selection --- */
+
+.cm-editor .cm-selectionBackground,
+.cm-editor.cm-focused .cm-selectionBackground {
+  background-color: rgba(212, 113, 78, 0.22) !important;
+}
+
+/* --- Gutter (line numbers) --- */
+
+.cm-editor .cm-gutters {
+  background-color: var(--background-primary);
+  border-right: 1px solid var(--background-modifier-border);
+  color: var(--text-faint);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.82em;
+}
+
+/* ============================================================
+   HEADINGS IN EDIT MODE
+   ============================================================ */
+
+/* Heading text — match reading mode sizes & colours */
+.HyperMD-header-1, .cm-line.HyperMD-header-1 {
+  font-size: 2em !important;
+  font-weight: 700 !important;
+  color: var(--h1-color) !important;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.15em;
+}
+
+.HyperMD-header-2, .cm-line.HyperMD-header-2 {
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
+  color: var(--h2-color) !important;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.1em;
+}
+
+.HyperMD-header-3, .cm-line.HyperMD-header-3 {
+  font-size: 1.2em !important;
+  font-weight: 600 !important;
+  color: var(--h3-color) !important;
+}
+
+.HyperMD-header-4, .cm-line.HyperMD-header-4 {
+  font-size: 1em !important;
+  font-weight: 600 !important;
+  color: var(--h4-color) !important;
+}
+
+.HyperMD-header-5, .cm-line.HyperMD-header-5 {
+  font-size: 0.9em !important;
+  font-weight: 600 !important;
+  color: var(--h5-color) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.HyperMD-header-6, .cm-line.HyperMD-header-6 {
+  font-size: 0.85em !important;
+  font-weight: 600 !important;
+  color: var(--h6-color) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Mute the # symbols so heading text pops */
+.cm-formatting-header {
+  color: #484848 !important;
+  font-weight: 400 !important;
+}
+
+/* ============================================================
+   BOLD / ITALIC / STRIKETHROUGH IN EDIT MODE
+   ============================================================ */
+
+.cm-strong {
+  color: var(--bold-color);
+  font-weight: 750;
+}
+
+.cm-em {
+  color: var(--italic-color);
+  font-style: italic;
+}
+
+.cm-strikethrough {
+  color: var(--text-faint);
+}
+
+/* Mute ** _ ~~ formatting chars while keeping formatted text visible */
+.cm-formatting-strong,
+.cm-formatting-em,
+.cm-formatting-strikethrough {
+  color: #484848 !important;
+  font-weight: 400;
+}
+
+/* ============================================================
+   INLINE CODE IN EDIT MODE
+   ============================================================ */
+
+.cm-inline-code {
+  font-family: var(--font-monospace-theme) !important;
+  font-size: 0.865em;
+  background-color: #252525 !important;
+  color: #fe8181 !important;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 113, 78, 0.22);
+}
+
+/* Mute the backtick formatting chars */
+.cm-formatting-code {
+  color: #484848 !important;
+  font-family: var(--font-monospace-theme) !important;
+  font-size: 0.865em;
+}
+
+/* ============================================================
+   CODE FENCES IN EDIT MODE
+   ============================================================ */
+
+/* The ``` fence line itself */
+.HyperMD-codeblock-begin .cm-formatting-code-block,
+.HyperMD-codeblock-end .cm-formatting-code-block {
+  color: #484848;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.82em;
+}
+
+/* Language label (```python etc.) */
+.HyperMD-codeblock-begin .cm-hmd-codeblock {
+  color: #8b8b8b;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.82em;
+}
+
+/* ============================================================
+   BLOCKQUOTES IN EDIT MODE
+   ============================================================ */
+
+.HyperMD-quote {
+  border-left: 3px solid #d4714e !important;
+  background-color: rgba(212, 113, 78, 0.07) !important;
+  padding-left: 1em !important;
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  margin-left: -1px;
+}
+
+.cm-quote {
+  color: #b8b4ae !important;
+  font-style: italic;
+}
+
+/* Mute the > marker */
+.cm-formatting-quote {
+  color: #5a4535 !important;
+}
+
+/* ============================================================
+   LINKS IN EDIT MODE
+   ============================================================ */
+
+/* [[Wikilinks]] */
+.cm-hmd-internal-link {
+  color: var(--link-color) !important;
+  text-decoration: none;
+}
+
+.cm-hmd-internal-link:hover {
+  color: var(--link-color-hover) !important;
+  text-decoration: underline dotted;
+}
+
+/* [text](url) — link label */
+.cm-link {
+  color: var(--link-color) !important;
+}
+
+/* The URL portion */
+.cm-url {
+  color: var(--link-external-color) !important;
+}
+
+/* Mute the bracket/paren punctuation */
+.cm-formatting-link,
+.cm-formatting-link-string {
+  color: #484848 !important;
+}
+
+/* ============================================================
+   HORIZONTAL RULE IN EDIT MODE
+   ============================================================ */
+
+.HyperMD-hr {
+  color: transparent !important;
+  border-top: 1px solid rgba(236, 236, 236, 0.6);
+  margin: 0.5em 0;
+}
+
+/* ============================================================
+   TAGS (HASHTAGS) IN EDIT MODE
+   ============================================================ */
+
+.cm-hashtag {
+  color: var(--tag-color);
+  background-color: var(--tag-background);
+  font-size: 0.85em;
+  font-family: var(--font-interface-theme);
+}
+
+.cm-hashtag-begin {
+  border-radius: 4px 0 0 4px;
+  padding-left: 0.4em;
+  border: 1px solid rgba(212, 113, 78, 0.28);
+  border-right: none;
+}
+
+.cm-hashtag-end {
+  border-radius: 0 4px 4px 0;
+  padding-right: 0.4em;
+  border: 1px solid rgba(212, 113, 78, 0.28);
+  border-left: none;
+}
+
+/* ============================================================
+   LISTS IN EDIT MODE
+   ============================================================ */
+
+/* Bullet/number markers — subtle orange tint */
+.cm-formatting-list-ul,
+.cm-formatting-list-ol {
+  color: #c06040 !important;
+  font-weight: 500;
+}
+
+/* ============================================================
+   TABLES IN EDIT MODE
+   ============================================================ */
+
+.HyperMD-table-row {
+  background-color: transparent;
+}
+
+.HyperMD-table-row-0 {
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.HyperMD-table-row-1 {
+  background-color: var(--table-alt-background);
+}
+
+/* Table separator line (| --- | --- |) */
+.HyperMD-table-row.HyperMD-table-row-sep {
+  color: #484848;
+}
+
+.cm-hmd-table-sep {
+  color: #484848 !important;
+}
+
+/* ============================================================
+   FRONTMATTER (YAML) IN EDIT MODE
+   ============================================================ */
+
+.cm-hmd-frontmatter,
+.HyperMD-frontmatter {
+  color: var(--text-muted);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875em;
+}
+
+.cm-hmd-frontmatter-key,
+.cm-atom.cm-hmd-frontmatter {
+  color: #86b4a6;
+}
+
+.cm-hmd-frontmatter-value {
+  color: #88a07a;
+}
+
+/* Frontmatter boundary (---) */
+.HyperMD-frontmatter-start,
+.HyperMD-frontmatter-end {
+  color: #484848;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ============================================================
+   EMBEDS IN EDIT MODE
+   ============================================================ */
+
+.internal-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--background-primary-alt);
+}
+
+/* ============================================================
+   FOLD INDICATOR IN EDIT MODE
+   ============================================================ */
+
+.cm-fold-indicator .collapse-indicator,
+.cm-foldPlaceholder {
+  color: var(--text-faint);
+}
+
+.cm-fold-indicator:hover .collapse-indicator {
+  color: var(--interactive-accent);
+}
+
+/* ============================================================
+   FIND/REPLACE HIGHLIGHT IN EDIT MODE
+   ============================================================ */
+
+.cm-searchMatch {
+  background-color: rgba(212, 113, 78, 0.22);
+  border-radius: 2px;
+}
+
+.cm-searchMatch.cm-searchMatch-selected {
+  background-color: rgba(212, 113, 78, 0.45);
+}

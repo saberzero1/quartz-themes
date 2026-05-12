@@ -9,9 +9,8 @@ import { build } from "esbuild";
 import yaml from "js-yaml";
 
 const require = createRequire(import.meta.url);
-const parserEntryPoint = require.resolve(
-  "obsidian-style-settings/src/StyleSettingsParser.ts",
-);
+const parserEntryPoint =
+  require.resolve("obsidian-style-settings/src/StyleSettingsParser.ts");
 const tempParserDir = join(tmpdir(), "style-settings-migration-test");
 const tempParserPath = join(tempParserDir, "StyleSettingsParser.bundle.mjs");
 
@@ -52,10 +51,10 @@ function collectRawIdsFromSidecar(filePath) {
 }
 
 function collectParsedIdsFromSidecar(filePath) {
-  const parsed = parseStyleSettingsStandaloneYamlText(readFileSync(filePath, "utf8"), {
-    sourceName: filePath,
-    defaultMode: "replace",
-  });
+  const parsed = parseStyleSettingsStandaloneYamlText(
+    readFileSync(filePath, "utf8"),
+    { sourceName: filePath, defaultMode: "replace" },
+  );
   const ids = new Set();
   for (const section of parsed.sections || []) {
     for (const setting of section.settings || []) {
@@ -116,11 +115,20 @@ describe("style settings migration safety", () => {
   });
 
   test("remaining known lossy themes retain representative IDs", () => {
-    const adrenalinePath = join(repoRoot, "obsidian/Adrenaline/style-settings.yaml");
-    const blueTopazPath = join(repoRoot, "obsidian/Blue Topaz/style-settings.yaml");
+    const adrenalinePath = join(
+      repoRoot,
+      "obsidian/Adrenaline/style-settings.yaml",
+    );
+    const blueTopazPath = join(
+      repoRoot,
+      "obsidian/Blue Topaz/style-settings.yaml",
+    );
     const oreoPath = join(repoRoot, "obsidian/Oreo/style-settings.yaml");
     const prismPath = join(repoRoot, "obsidian/Prism/style-settings.yaml");
-    const willemstadPath = join(repoRoot, "obsidian/Willemstad/style-settings.yaml");
+    const willemstadPath = join(
+      repoRoot,
+      "obsidian/Willemstad/style-settings.yaml",
+    );
 
     const adrenalineRawIds = collectRawIdsFromSidecar(adrenalinePath);
     const blueTopazRawIds = collectRawIdsFromSidecar(blueTopazPath);
@@ -140,11 +148,20 @@ describe("style settings migration safety", () => {
   });
 
   test("remaining known lossy themes now parse losslessly for setting IDs", () => {
-    const adrenalinePath = join(repoRoot, "obsidian/Adrenaline/style-settings.yaml");
-    const blueTopazPath = join(repoRoot, "obsidian/Blue Topaz/style-settings.yaml");
+    const adrenalinePath = join(
+      repoRoot,
+      "obsidian/Adrenaline/style-settings.yaml",
+    );
+    const blueTopazPath = join(
+      repoRoot,
+      "obsidian/Blue Topaz/style-settings.yaml",
+    );
     const oreoPath = join(repoRoot, "obsidian/Oreo/style-settings.yaml");
     const prismPath = join(repoRoot, "obsidian/Prism/style-settings.yaml");
-    const willemstadPath = join(repoRoot, "obsidian/Willemstad/style-settings.yaml");
+    const willemstadPath = join(
+      repoRoot,
+      "obsidian/Willemstad/style-settings.yaml",
+    );
 
     for (const filePath of [
       adrenalinePath,

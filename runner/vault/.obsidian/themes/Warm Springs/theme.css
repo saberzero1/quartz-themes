@@ -1,0 +1,408 @@
+/* Warm Springs Obsidian 
+   Palette inspired by the Sonoma wallpapers from the Warm Springs farm */
+
+:root {
+  --ws-light:       #ede8e0;
+  --ws-light-gray:  #d9d1c5;
+  --ws-gray:        #978c7f;
+  --ws-dark-gray:   #4a4238;
+  --ws-dark:        #3a2e28;
+  --ws-secondary:   #a47a6b;
+  --ws-tertiary:    #8b7f73;
+  --ws-rust:        #b86b65;
+  --ws-clay:        #c98880;
+  --ws-ochre:       #c99c52;
+  --ws-sage:        #849a78;
+  --ws-pine:        #56706b;
+  --ws-slate:       #a8bef0;
+  --ws-slate-light: #6e96d8;
+  --ws-mauve:       #9b848c;
+
+  --ws-bg:          #231f1c;
+  --ws-bg2:         #2e2923;
+  --ws-border:      #6b6158;
+  --ws-text:        #d8d3cc;
+  --ws-muted:       #c4bdb5;
+  --ws-accent-dark: #c59b8d;
+  --ws-accent-dark-hover: #db8e88;
+}
+
+/* LIGHT THEME */
+.theme-light {
+  /* Backgrounds */
+  --background-primary:            var(--ws-light);
+  --background-primary-alt:        var(--ws-light-gray);
+  --background-secondary:          var(--ws-light-gray);
+  --background-secondary-alt:      #cec8bb;
+  --background-modifier-border:    var(--ws-gray);
+  --background-modifier-hover:     rgba(58, 46, 40, 0.06);
+  --background-modifier-active-hover: rgba(58, 46, 40, 0.08);
+  --background-modifier-error:     rgba(184, 107, 101, 0.15);
+  --background-modifier-success:   rgba(134, 156, 122, 0.15);
+  --background-modifier-cover:     rgba(58, 46, 40, 0.6);
+
+  /* Text */
+  --text-normal:                   var(--ws-dark);
+  --text-muted:                    var(--ws-dark-gray);
+  --text-faint:                    var(--ws-gray);
+  --text-on-accent:                var(--ws-light);
+  --text-error:                    var(--ws-rust);
+  --text-success:                  var(--ws-sage);
+  --text-warning:                  var(--ws-ochre);
+  --text-selection:                rgba(168, 190, 240, 0.25);
+
+  /* Links */
+  --link-color:                    var(--ws-secondary);
+  --link-color-hover:              var(--ws-rust);
+  --link-external-color:           var(--ws-slate-light);
+  --link-external-color-hover:     #4d7cbf;
+  --link-unresolved-color:         var(--ws-gray);
+  --link-unresolved-opacity:       0.8;
+
+  /* Interactive */
+  --interactive-normal:            var(--ws-light-gray);
+  --interactive-hover:             #cec8bb;
+  --interactive-accent:            var(--ws-secondary);
+  --interactive-accent-hover:      var(--ws-rust);
+  --interactive-success:           var(--ws-sage);
+
+  /* Text accent */
+  --text-accent:                   var(--ws-secondary);
+  --text-accent-hover:             var(--ws-rust);
+
+  /* Headings */
+  --h1-color:                      var(--ws-dark);
+  --h2-color:                      var(--ws-dark-gray);
+  --h3-color:                      var(--ws-secondary);
+  --h4-color:                      var(--ws-slate-light);
+  --h5-color:                      var(--ws-gray);
+  --h6-color:                      var(--ws-gray);
+
+  /* Code */
+  --code-normal:                   var(--ws-dark);
+  --code-background:               var(--ws-light-gray);
+  --code-comment:                  var(--ws-gray);
+  --code-function:                 var(--ws-clay);
+  --code-important:                var(--ws-rust);
+  --code-keyword:                  var(--ws-rust);
+  --code-operator:                 var(--ws-gray);
+  --code-property:                 var(--ws-slate-light);
+  --code-punctuation:              var(--ws-gray);
+  --code-string:                   var(--ws-sage);
+  --code-tag:                      var(--ws-rust);
+  --code-value:                    var(--ws-ochre);
+
+  /* Blockquote */
+  --blockquote-border-color:       var(--ws-secondary);
+  --blockquote-color:              var(--ws-dark-gray);
+
+  /* Tags */
+  --tag-color:                     var(--ws-secondary);
+  --tag-background:                rgba(166, 124, 109, 0.12);
+  --tag-border-color:              rgba(166, 124, 109, 0.3);
+  --tag-color-hover:               var(--ws-rust);
+  --tag-background-hover:          rgba(184, 107, 101, 0.12);
+
+  /* Checkboxes */
+  --checkbox-color:                var(--ws-secondary);
+  --checkbox-color-hover:          var(--ws-rust);
+  --checkbox-border-color:         var(--ws-gray);
+
+  /* Tables */
+  --table-border-color:            var(--ws-light-gray);
+  --table-header-background:       var(--ws-light-gray);
+  --table-header-color:            var(--ws-dark);
+  --table-row-alt-background:      rgba(217, 209, 197, 0.4);
+
+  /* Graph */
+  --graph-node:                    var(--ws-secondary);
+  --graph-node-focused:            var(--ws-rust);
+  --graph-node-tag:                var(--ws-ochre);
+  --graph-node-attachment:         var(--ws-slate-light);
+  --graph-line:                    var(--ws-light-gray);
+  --graph-text:                    var(--ws-dark-gray);
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg:            rgba(154, 143, 130, 0.3);
+  --scrollbar-active-thumb-bg:     rgba(154, 143, 130, 0.5);
+
+  /* Callouts */
+  --callout-default:               var(--ws-secondary);
+  --callout-info:                  var(--ws-slate-light);
+  --callout-todo:                  var(--ws-slate-light);
+  --callout-tip:                   var(--ws-sage);
+  --callout-success:               var(--ws-sage);
+  --callout-question:              var(--ws-ochre);
+  --callout-warning:               var(--ws-ochre);
+  --callout-failure:               var(--ws-rust);
+  --callout-danger:                var(--ws-rust);
+  --callout-bug:                   var(--ws-rust);
+  --callout-example:               var(--ws-mauve);
+  --callout-quote:                 var(--ws-tertiary);
+
+  /* Indentation guides */
+  --indentation-guide-color:       rgba(154, 143, 130, 0.3);
+  --indentation-guide-color-active: var(--ws-pine);
+
+  /* Collapse icons */
+  --collapse-icon-color:           var(--ws-gray);
+  --collapse-icon-color-collapsed: var(--ws-pine);
+
+  /* Ribbon */
+  --ribbon-background:             var(--ws-light-gray);
+  --ribbon-background-collapsed:   var(--ws-light-gray);
+}
+
+/* DARK THEME */
+.theme-dark {
+  /* Backgrounds */
+  --background-primary:            var(--ws-bg);
+  --background-primary-alt:        #141210;
+  --background-secondary:          var(--ws-bg2);
+  --background-secondary-alt:      #332c27;
+  --background-modifier-border:    var(--ws-border);
+  --background-modifier-hover:     rgba(235, 231, 225, 0.05);
+  --background-modifier-active-hover: rgba(235, 231, 225, 0.08);
+  --background-modifier-error:     rgba(219, 142, 136, 0.15);
+  --background-modifier-success:   rgba(174, 189, 159, 0.15);
+  --background-modifier-cover:     rgba(10, 9, 8, 0.7);
+
+  /* Text */
+  --text-normal:                   var(--ws-text);
+  --text-muted:                    var(--ws-muted);
+  --text-faint:                    var(--ws-border);
+  --text-on-accent:                var(--ws-bg);
+  --text-error:                    #db8e88;
+  --text-success:                  #aebd9f;
+  --text-warning:                  #e0bc7e;
+  --text-selection:                rgba(168, 190, 240, 0.2);
+
+  /* Links */
+  --link-color:                    var(--ws-accent-dark);
+  --link-color-hover:              var(--ws-accent-dark-hover);
+  --link-external-color:           var(--ws-slate);
+  --link-external-color-hover:     #c0d4f7;
+  --link-unresolved-color:         var(--ws-border);
+  --link-unresolved-opacity:       0.8;
+
+  /* Interactive */
+  --interactive-normal:            var(--ws-bg2);
+  --interactive-hover:             #332c27;
+  --interactive-accent:            var(--ws-accent-dark);
+  --interactive-accent-hover:      var(--ws-accent-dark-hover);
+  --interactive-success:           #aebd9f;
+
+  /* Text accent */
+  --text-accent:                   var(--ws-accent-dark);
+  --text-accent-hover:             var(--ws-accent-dark-hover);
+
+  /* Headings */
+  --h1-color:                      var(--ws-text);
+  --h2-color:                      var(--ws-muted);
+  --h3-color:                      var(--ws-accent-dark);
+  --h4-color:                      #a89a8d;
+  --h5-color:                      var(--ws-border);
+  --h6-color:                      var(--ws-border);
+
+  /* Code */
+  --code-normal:                   var(--ws-text);
+  --code-background:               var(--ws-bg2);
+  --code-comment:                  var(--ws-border);
+  --code-function:                 #deaea0;
+  --code-important:                #db8e88;
+  --code-keyword:                  #db8e88;
+  --code-operator:                 var(--ws-border);
+  --code-property:                 var(--ws-slate);
+  --code-punctuation:              var(--ws-border);
+  --code-string:                   #aebd9f;
+  --code-tag:                      #db8e88;
+  --code-value:                    #e0bc7e;
+
+  /* Blockquote */
+  --blockquote-border-color:       var(--ws-accent-dark);
+  --blockquote-color:              var(--ws-muted);
+
+  /* Tags */
+  --tag-color:                     var(--ws-accent-dark);
+  --tag-background:                rgba(197, 155, 141, 0.12);
+  --tag-border-color:              rgba(197, 155, 141, 0.3);
+  --tag-color-hover:               var(--ws-accent-dark-hover);
+  --tag-background-hover:          rgba(219, 142, 136, 0.12);
+
+  /* Checkboxes */
+  --checkbox-color:                var(--ws-accent-dark);
+  --checkbox-color-hover:          var(--ws-accent-dark-hover);
+  --checkbox-border-color:         var(--ws-border);
+
+  /* Tables */
+  --table-border-color:            var(--ws-bg2);
+  --table-header-background:       var(--ws-bg2);
+  --table-header-color:            var(--ws-text);
+  --table-row-alt-background:      rgba(42, 37, 32, 0.6);
+
+  /* Graph */
+  --graph-node:                    var(--ws-accent-dark);
+  --graph-node-focused:            var(--ws-accent-dark-hover);
+  --graph-node-tag:                #e0bc7e;
+  --graph-node-attachment:         var(--ws-slate);
+  --graph-line:                    var(--ws-bg2);
+  --graph-text:                    var(--ws-muted);
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg:            rgba(107, 97, 88, 0.4);
+  --scrollbar-active-thumb-bg:     rgba(107, 97, 88, 0.6);
+
+  /* Callouts */
+  --callout-default:               var(--ws-accent-dark);
+  --callout-info:                  var(--ws-slate);
+  --callout-todo:                  var(--ws-slate);
+  --callout-tip:                   #aebd9f;
+  --callout-success:               #aebd9f;
+  --callout-question:              #e0bc7e;
+  --callout-warning:               #e0bc7e;
+  --callout-failure:               #db8e88;
+  --callout-danger:                #db8e88;
+  --callout-bug:                   #db8e88;
+  --callout-example:               #c9b1b9;
+  --callout-quote:                 #a89a8d;
+
+  /* Indentation guides */
+  --indentation-guide-color:       rgba(107, 97, 88, 0.3);
+  --indentation-guide-color-active: var(--ws-pine);
+
+  /* Collapse icons */
+  --collapse-icon-color:           var(--ws-border);
+  --collapse-icon-color-collapsed: var(--ws-pine);
+
+  /* Ribbon */
+  --ribbon-background:             var(--ws-bg2);
+  --ribbon-background-collapsed:   var(--ws-bg2);
+}
+
+/* SHARED STYLES — light + dark */
+
+/* Headings */
+.markdown-rendered h1, .markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.2em;
+}
+
+.markdown-rendered h2, .markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  font-weight: 500;
+}
+
+/* Inline code */
+.markdown-rendered code {
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  font-size: 0.9em;
+}
+
+/* Code blocks */
+.markdown-rendered pre {
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Blockquote */
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--blockquote-border-color);
+  border-radius: 0;
+  opacity: 0.9;
+}
+
+/* Links — internal */
+.markdown-rendered a.internal-link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+.markdown-rendered a.internal-link:hover {
+  border-bottom-color: var(--link-color-hover);
+}
+
+/* Tags */
+.tag {
+  border-radius: 3px;
+  font-size: 0.85em;
+  padding: 0.1em 0.5em;
+  text-decoration: none;
+}
+
+/* Checkboxes — done state */
+.markdown-rendered .task-list-item.is-checked .task-list-item-checkbox {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+.markdown-rendered .task-list-item.is-checked > p {
+  color: var(--text-faint);
+  text-decoration: line-through;
+}
+
+/* Tables */
+.markdown-rendered th {
+  font-weight: 500;
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* Horizontal rule */
+.markdown-rendered hr {
+  border-color: var(--background-modifier-border);
+  margin: 2em 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: var(--scrollbar-thumb-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* File explorer indentation */
+.nav-folder-title {
+  font-weight: 500;
+}
+
+/* Active file highlight */
+.nav-file-title.is-active {
+  color: var(--ws-pine);
+  font-weight: 500;
+}
+
+.nav-folder-title.is-active,
+.nav-folder-title:hover {
+  color: var(--ws-pine);
+}
+
+/* Graph view */
+.graph-view.color-fill { color: var(--graph-node); }
+.graph-view.color-fill-focused { color: var(--graph-node-focused); }
+.graph-view.color-fill-tag { color: var(--graph-node-tag); }
+.graph-view.color-fill-attachment { color: var(--graph-node-attachment); }
+.graph-view.color-line { color: var(--graph-line); }
+.graph-view.color-text { color: var(--graph-text); }
+
+/* Status bar */
+.status-bar {
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 0.8em;
+}
+
+/* Prompt / modal */
+.prompt {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+}
+.prompt-input {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.suggestion-item.is-selected {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-accent);
+}

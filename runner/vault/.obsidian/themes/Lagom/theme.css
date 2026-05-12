@@ -1554,6 +1554,15 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
 }
 
 
+.disable-root-file-lines .nav-file {
+  border-bottom: none !important;
+}
+
+.disable-root-file-lines .nav-folder:not(.mod-root) .nav-file {
+  border-bottom: var(--filename-line-thickness) var(--filename-separator-style) var(--background-modifier-border) !important;
+}
+
+
 /* ICON FILE */
 .nav-file-title {
   border-radius: 0px !important;
@@ -1792,6 +1801,29 @@ body {
   border-radius: var(--radius-s);
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
   border: 0.5px solid var(--background-modifier-border);
+}
+
+
+/* STYLE SETTINGS - Fix */
+.style-settings-container .setting-item,
+.style-settings-container .setting-item:first-of-type,
+.style-settings-container .setting-item:last-of-type,
+.style-settings-container .setting-item:not(.setting-item-heading):only-of-type {
+  clip-path: none !important;
+  border: none !important;
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.style-settings-container .setting-item-heading {
+  border-bottom: none !important;
+}
+
+.style-settings-container input[type="text"],
+.style-settings-container input[type="number"] {
+  background-color: var(--background-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
 }
 
 
@@ -2556,7 +2588,7 @@ settings:
 name: Explorer & Files
 id: files-folders
 settings:
-  - 
+  -
       id: icon-file-indicator
       title: Icon file
       type: variable-text
@@ -2609,6 +2641,11 @@ settings:
           - 
               label: Right
               value: right
+  - 
+      id: disable-root-file-lines
+      title: Hide separator on root files
+      type: class-toggle
+      default: true
   - 
       id: popup-explorer
       title: Pop-up style

@@ -1,0 +1,129 @@
+/*
+Rosé Pine for Obsidian
+MIT License
+Original: Copyright (c) 2026 Rosé Pine https://rosepinetheme.com
+Adaptation: Copyright (c) 2026 Oliver T. Edwards https://olivertedwards.com
+Based on the official Rosé Pine palette
+See LICENSE file for full terms.
+*/
+
+.theme-light {
+	/* Rosé Pine Dawn */
+	--hex-base: #faf4ed;
+	--hex-surface: #fffaf3;
+	--hex-overlay: #f2e9e1;
+	--hex-muted: #9893a5;
+	--hex-subtle: #797593;
+	--hex-text: #575279;
+	--hex-love: #b4637a;
+	--hex-gold: #ea9d34;
+	--hex-rose: #d7827e;
+	--hex-pine: #286983;
+	--hex-foam: #56949f;
+	--hex-iris: #907aa9;
+	--hex-highlight-low: #f4ede8;
+	--hex-highlight-med: #dfdad9;
+	--hex-highlight-high: #cecacd;
+
+	--rgb-love: 180, 99, 122;
+	--rgb-gold: 234, 157, 52;
+	--rgb-rose: 215, 130, 126;
+	--rgb-pine: 40, 105, 131;
+	--rgb-foam: 86, 148, 159;
+	--rgb-iris: 144, 122, 169;
+
+	--accent-h: 197;
+	--accent-s: 53%;
+	--accent-l: 34%;
+}
+
+.theme-dark {
+	/* Rosé Pine */
+	--hex-base: #191724;
+	--hex-surface: #1f1d2e;
+	--hex-overlay: #26233a;
+	--hex-muted: #6e6a86;
+	--hex-subtle: #908caa;
+	--hex-text: #e0def4;
+	--hex-love: #eb6f92;
+	--hex-gold: #f6c177;
+	--hex-rose: #ebbcba;
+	--hex-pine: #31748f;
+	--hex-foam: #9ccfd8;
+	--hex-iris: #c4a7e7;
+	--hex-highlight-low: #21202e;
+	--hex-highlight-med: #403d52;
+	--hex-highlight-high: #524f67;
+
+	--rgb-love: 235, 111, 146;
+	--rgb-gold: 246, 193, 119;
+	--rgb-rose: 235, 188, 186;
+	--rgb-pine: 49, 116, 143;
+	--rgb-foam: 156, 207, 216;
+	--rgb-iris: 196, 167, 231;
+
+	--accent-h: 197;
+	--accent-s: 49%;
+	--accent-l: 38%;
+}
+
+.theme-light,
+.theme-dark {
+	--color-red: var(--hex-love);
+	--color-orange: var(--hex-rose);
+	--color-yellow: var(--hex-gold);
+	--color-green: var(--hex-pine);
+	--color-cyan: var(--hex-foam);
+	--color-blue: var(--hex-pine);
+	--color-purple: var(--hex-iris);
+	--color-pink: var(--hex-rose);
+
+	--color-red-rgb: var(--rgb-love);
+  --color-orange-rgb: var(--rgb-rose);
+  --color-yellow-rgb: var(--rgb-gold);
+  --color-green-rgb: var(--rgb-pine);
+  --color-cyan-rgb: var(--rgb-foam);
+  --color-blue-rgb: var(--rgb-pine);
+  --color-purple-rgb: var(--rgb-iris);
+  --color-pink-rgb: var(--rgb-rose);
+
+	--color-base-00: var(--hex-surface);
+	--color-base-05: var(--hex-surface);
+	--color-base-10: var(--hex-base);
+	--color-base-20: var(--hex-base);
+	--color-base-25: var(--hex-overlay);
+
+	--color-base-30: var(--hex-highlight-low);
+	--color-base-35: var(--hex-highlight-med);
+	--color-base-40: var(--hex-highlight-high);
+
+	--color-base-50: var(--hex-muted);
+	--color-base-60: var(--hex-subtle);
+	--color-base-70: var(--hex-text);
+	--color-base-100: var(--hex-text);
+
+	/* UI */
+
+	/*--background-modifier-border: var(--hex-highlight-low);*/
+	/*--nav-item-background-hover: var(--hex-highlight-high);*/
+	/*--nav-item-background-active: var(--hex-highlight-high);*/
+	--background-modifier-hover: var(--hex-overlay);
+	/*--background-modifier-border-hover: var(--hex-highlight-high);*/
+	/*--background-modifier-border-focus: var(--hex-highlight-high);*/
+	/*--setting-items-background: var(--hex-base);*/
+
+	--h1-color: var(--hex-love);
+	--h2-color: var(--hex-gold);
+	--h3-color: var(--hex-rose);
+	--h4-color: var(--hex-iris);
+	/*--h5-color: var(--hex-pine);*/
+	/*--h6-color: var(--hex-foam);*/
+
+	/* Bases */
+
+	--bases-embed-border-color: var(--hex-highlight-med);
+
+	/* Tables */
+
+	--table-border-color: var(--hex-highlight-med);
+}

@@ -1,0 +1,618 @@
+/* Pitch Black Theme for Obsidian
+ * Replicates VSCode Pitch Black Theme color scheme
+ * https://github.com/ViktorQvarfordt/vscode-pitch-black-theme
+ */
+
+/* ===========================
+ * Color Palette Definitions
+ * =========================== */
+:root {
+    /* Core colors from VSCode Pitch Black */
+    --pitch-black: #000000;
+    --text-primary: #d4d4d4;
+    --text-secondary: #cccccc;
+    --text-active: #ffffff;
+    --text-muted: #9c9c9c;
+    --text-faint: #6e6e6e;
+
+    /* Accent and selection colors */
+    --accent-blue: #007acc;
+    --accent-blue-hover: #1a8ad4;
+    --accent-blue-active: #0062a3;
+
+    /* Find/search colors */
+    --find-match-bg: rgba(255, 170, 0, 0.33);
+    --find-match-border: #ffee00;
+
+    /* Border and separator colors */
+    --border-subtle: #222222;
+    --border-normal: #333333;
+
+    /* Scrollbar colors */
+    --scrollbar-default: rgba(255, 255, 255, 0.13);
+    --scrollbar-hover: rgba(255, 255, 255, 0.2);
+    --scrollbar-active: rgba(255, 255, 255, 0.27);
+
+    /* Code syntax highlighting (VSCode Dark+ inspired) */
+    --syntax-keyword: #569cd6;
+    --syntax-string: #ce9178;
+    --syntax-number: #b5cea8;
+    --syntax-function: #dcdcaa;
+    --syntax-variable: #9cdcfe;
+    --syntax-type: #4ec9b0;
+    --syntax-comment: #6a9955;
+    --syntax-operator: #d4d4d4;
+    --syntax-punctuation: #d4d4d4;
+    --syntax-constant: #4fc1ff;
+    --syntax-class: #4ec9b0;
+    --syntax-parameter: #9cdcfe;
+    --syntax-property: #9cdcfe;
+    --syntax-tag: #569cd6;
+    --syntax-attribute: #9cdcfe;
+    --syntax-regexp: #d16969;
+}
+
+/* ===========================
+ * Dark Theme Core Variables
+ * =========================== */
+.theme-dark {
+    /* Primary backgrounds - all pure black */
+    --background-primary: var(--pitch-black);
+    --background-primary-alt: var(--pitch-black);
+    --background-secondary: var(--pitch-black);
+    --background-secondary-alt: var(--pitch-black);
+    --background-modifier-border: var(--border-subtle);
+    --background-modifier-form-field: var(--pitch-black);
+    --background-modifier-form-field-highlighted: #111111;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+    --background-modifier-success: #197f2c;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #5c0000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+
+    /* Text colors */
+    --text-normal: var(--text-primary);
+    --text-muted: var(--text-muted);
+    --text-faint: var(--text-faint);
+    --text-on-accent: var(--text-active);
+    --text-on-accent-inverted: var(--pitch-black);
+    --text-error: #ff6b6b;
+    --text-error-hover: #ff8585;
+    --text-success: #4ade80;
+    --text-warning: #fbbf24;
+    --text-highlight-bg: var(--find-match-bg);
+    --text-highlight-bg-active: rgba(255, 238, 0, 0.4);
+    --text-selection: var(--accent-blue);
+    --text-accent: var(--accent-blue);
+    --text-accent-hover: var(--accent-blue-hover);
+
+    /* Interactive colors */
+    --interactive-normal: var(--text-muted);
+    --interactive-hover: var(--text-primary);
+    --interactive-accent: var(--accent-blue);
+    --interactive-accent-rgb: 0, 122, 204;
+    --interactive-accent-hover: var(--accent-blue-hover);
+    --interactive-success: #197f2c;
+
+    /* Scrollbar styling */
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: var(--scrollbar-default);
+    --scrollbar-active-thumb-bg: var(--scrollbar-active);
+
+    /* UI element colors */
+    --tab-background-active: var(--pitch-black);
+    --tab-text-color-focused: var(--text-active);
+    --tab-text-color-focused-active: var(--text-active);
+    --tab-text-color: var(--text-muted);
+    --tab-text-color-focused-highlight: var(--text-active);
+    --tab-text-color-focused-highlight-active: var(--accent-blue);
+    --tab-divider-color: var(--border-subtle);
+
+    /* Ribbon and navigation */
+    --ribbon-background: var(--pitch-black);
+    --ribbon-background-collapsed: var(--pitch-black);
+
+    /* Title bar */
+    --titlebar-background: var(--pitch-black);
+    --titlebar-background-focused: var(--pitch-black);
+    --titlebar-text-color: var(--text-primary);
+    --titlebar-text-color-focused: var(--text-active);
+
+    /* Status bar */
+    --status-bar-background: var(--pitch-black);
+    --status-bar-text-color: var(--text-muted);
+
+    /* Modal and popover */
+    --modal-background: #0a0a0a;
+    --modal-border-color: var(--border-subtle);
+    --prompt-border-color: var(--border-subtle);
+
+    /* Dividers and separators */
+    --divider-color: var(--border-subtle);
+    --divider-color-hover: var(--border-normal);
+
+    /* Link colors */
+    --link-color: var(--accent-blue);
+    --link-color-hover: var(--accent-blue-hover);
+    --link-external-color: var(--accent-blue);
+    --link-external-color-hover: var(--accent-blue-hover);
+    --link-unresolved-color: #8b5cf6;
+    --link-unresolved-opacity: 0.8;
+
+    /* Tags */
+    --tag-color: var(--accent-blue);
+    --tag-color-hover: var(--accent-blue-hover);
+    --tag-background: rgba(0, 122, 204, 0.15);
+    --tag-background-hover: rgba(0, 122, 204, 0.25);
+
+    /* Checkbox */
+    --checkbox-color: var(--accent-blue);
+    --checkbox-color-hover: var(--accent-blue-hover);
+    --checkbox-border-color: var(--text-muted);
+    --checkbox-border-color-hover: var(--text-primary);
+
+    /* Callouts */
+    --callout-default: var(--text-muted);
+    --callout-info: var(--accent-blue);
+    --callout-warning: #fbbf24;
+    --callout-error: #ef4444;
+    --callout-success: #22c55e;
+
+    /* Code blocks */
+    --code-background: #010101;
+    --code-normal: var(--text-primary);
+    --code-comment: var(--syntax-comment);
+    --code-function: var(--syntax-function);
+    --code-keyword: var(--syntax-keyword);
+    --code-important: var(--syntax-keyword);
+    --code-operator: var(--syntax-operator);
+    --code-property: var(--syntax-property);
+    --code-punctuation: var(--syntax-punctuation);
+    --code-string: var(--syntax-string);
+    --code-tag: var(--syntax-tag);
+    --code-value: var(--syntax-number);
+
+    /* Inline code and pre */
+    --inline-code-background: rgba(255, 255, 255, 0.08);
+    --inline-code-color: #d7ba7d;
+
+    /* Indentation guides */
+    --indentation-guide-color: var(--border-subtle);
+    --indentation-guide-active-color: var(--border-normal);
+
+    /* List markers */
+    --list-marker-color: var(--text-muted);
+
+    /* Blockquote */
+    --blockquote-border-color: var(--border-normal);
+
+    /* Table */
+    --table-header-background: #0d0d0d;
+    --table-header-background-hover: #151515;
+    --table-row-background-hover: #0a0a0a;
+    --table-border-color: var(--border-subtle);
+
+    /* Graph colors */
+    --graph-line: var(--border-normal);
+    --graph-node: var(--accent-blue);
+    --graph-node-unresolved: #8b5cf6;
+    --graph-node-focused: var(--text-active);
+    --graph-node-tag: #22c55e;
+    --graph-node-attachment: #fbbf24;
+
+    /* Vault launcher */
+    --vault-launcher-background: var(--pitch-black);
+
+    /* Nav items */
+    --nav-item-color: var(--text-muted);
+    --nav-item-color-hover: var(--text-primary);
+    --nav-item-color-active: var(--text-active);
+    --nav-item-background-hover: rgba(255, 255, 255, 0.05);
+    --nav-item-background-active: rgba(0, 122, 204, 0.2);
+
+    /* Collapse icons */
+    --nav-collapse-icon-color: var(--text-faint);
+    --nav-collapse-icon-color-collapsed: var(--text-muted);
+
+    /* File explorer */
+    --nav-file-tag: var(--text-faint);
+
+    /* Search */
+    --search-match-highlight-bg: var(--find-match-bg);
+    --search-match-highlight-color: var(--text-active);
+
+    /* Embed */
+    --embed-background: #0a0a0a;
+    --embed-border-left: var(--accent-blue);
+
+    /* Cursor color */
+    --cursor-color: var(--text-active);
+
+    /* Flashing background (for animations) */
+    --flashing-background: rgba(0, 122, 204, 0.3);
+
+    /* Icon colors */
+    --icon-color: var(--text-muted);
+    --icon-color-hover: var(--text-primary);
+    --icon-color-focused: var(--text-active);
+    --icon-color-active: var(--accent-blue);
+
+    /* Accent HSL for Obsidian's accent system */
+    --accent-h: 206;
+    --accent-s: 100%;
+    --accent-l: 40%;
+}
+
+/* ===========================
+ * Additional UI Refinements
+ * =========================== */
+
+/* Workspace backgrounds */
+.theme-dark .workspace-leaf,
+.theme-dark .workspace-split,
+.theme-dark .workspace-tabs,
+.theme-dark .workspace-tab-container,
+.theme-dark .workspace-leaf-content,
+.theme-dark .view-content {
+    background-color: var(--pitch-black);
+}
+
+/* Sidebar panes */
+.theme-dark .workspace-leaf.mod-left-split .workspace-leaf-content,
+.theme-dark .workspace-leaf.mod-right-split .workspace-leaf-content {
+    background-color: var(--pitch-black);
+}
+
+/* File explorer */
+.theme-dark .nav-folder,
+.theme-dark .nav-file {
+    background-color: transparent;
+}
+
+/* Tab headers */
+.theme-dark .workspace-tab-header-container {
+    background-color: var(--pitch-black);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.theme-dark .workspace-tab-header {
+    background-color: transparent;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+    background-color: var(--pitch-black);
+}
+
+/* Scrollbars */
+.theme-dark ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-default);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-hover);
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-active);
+}
+
+.theme-dark ::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/* Selection highlighting */
+.theme-dark ::selection {
+    background-color: var(--accent-blue);
+    color: var(--text-active);
+}
+
+/* Search and find highlights */
+.theme-dark .search-result-file-matched-text,
+.theme-dark .cm-highlight {
+    background-color: var(--find-match-bg);
+    border-bottom: 1px solid var(--find-match-border);
+}
+
+/* Modal and settings */
+.theme-dark .modal,
+.theme-dark .setting-item,
+.theme-dark .vertical-tab-container {
+    background-color: #0a0a0a;
+}
+
+.theme-dark .modal-container.mod-dim .modal-bg {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Dropdown menus */
+.theme-dark .menu {
+    background-color: #0a0a0a;
+    border: 1px solid var(--border-subtle);
+}
+
+.theme-dark .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Input fields */
+.theme-dark input[type="text"],
+.theme-dark input[type="search"],
+.theme-dark input[type="email"],
+.theme-dark input[type="password"],
+.theme-dark input[type="number"],
+.theme-dark textarea {
+    background-color: #0a0a0a;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+}
+
+.theme-dark input:focus,
+.theme-dark textarea:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.2);
+}
+
+/* Buttons */
+.theme-dark button {
+    background-color: transparent;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+}
+
+.theme-dark button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-normal);
+}
+
+.theme-dark button.mod-cta {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: var(--text-active);
+}
+
+.theme-dark button.mod-cta:hover {
+    background-color: var(--accent-blue-hover);
+    border-color: var(--accent-blue-hover);
+}
+
+/* Toggle switches */
+.theme-dark .checkbox-container {
+    background-color: var(--text-faint);
+}
+
+.theme-dark .checkbox-container.is-enabled {
+    background-color: var(--accent-blue);
+}
+
+/* Horizontal rules */
+.theme-dark hr {
+    border-color: var(--border-subtle);
+}
+
+/* Code blocks */
+.theme-dark pre,
+.theme-dark code {
+    background-color: var(--code-background);
+}
+
+.theme-dark .markdown-preview-view pre {
+    border: 1px solid var(--border-subtle);
+}
+
+/* Inline code */
+.theme-dark code:not(pre code) {
+    background-color: var(--inline-code-background);
+    color: var(--inline-code-color);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Frontmatter */
+.theme-dark .cm-hmd-frontmatter {
+    color: var(--text-muted);
+}
+
+/* Headings */
+.theme-dark h1, .theme-dark .cm-header-1 {
+    color: var(--text-active);
+}
+
+.theme-dark h2, .theme-dark .cm-header-2 {
+    color: var(--text-active);
+}
+
+.theme-dark h3, .theme-dark .cm-header-3,
+.theme-dark h4, .theme-dark .cm-header-4,
+.theme-dark h5, .theme-dark .cm-header-5,
+.theme-dark h6, .theme-dark .cm-header-6 {
+    color: var(--text-primary);
+}
+
+/* Bold and italic */
+.theme-dark strong, .theme-dark .cm-strong {
+    color: var(--text-active);
+}
+
+.theme-dark em, .theme-dark .cm-em {
+    color: var(--text-primary);
+}
+
+/* Callout blocks */
+.theme-dark .callout {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+}
+
+/* Tables */
+.theme-dark table {
+    border-collapse: collapse;
+}
+
+.theme-dark th {
+    background-color: var(--table-header-background);
+}
+
+.theme-dark th, .theme-dark td {
+    border: 1px solid var(--table-border-color);
+}
+
+.theme-dark tr:hover td {
+    background-color: var(--table-row-background-hover);
+}
+
+/* Tooltips */
+.theme-dark .tooltip {
+    background-color: #0a0a0a;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+}
+
+/* Status bar */
+.theme-dark .status-bar {
+    background-color: var(--pitch-black);
+    border-top: 1px solid var(--border-subtle);
+}
+
+/* Command palette and quick switcher */
+.theme-dark .prompt {
+    background-color: #0a0a0a;
+    border: 1px solid var(--border-subtle);
+}
+
+.theme-dark .suggestion-item {
+    background-color: transparent;
+}
+
+.theme-dark .suggestion-item.is-selected {
+    background-color: rgba(0, 122, 204, 0.2);
+}
+
+/* Slider */
+.theme-dark input[type="range"] {
+    background-color: var(--border-subtle);
+}
+
+.theme-dark input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--accent-blue);
+}
+
+/* Graph view */
+.theme-dark .graph-view.color-fill-focused {
+    color: var(--text-active);
+}
+
+/* Tags in editor */
+.theme-dark .cm-hashtag {
+    color: var(--accent-blue);
+}
+
+/* Links */
+.theme-dark a.external-link {
+    color: var(--accent-blue);
+}
+
+.theme-dark a.external-link:hover {
+    color: var(--accent-blue-hover);
+}
+
+/* Embeds */
+.theme-dark .markdown-embed {
+    background-color: var(--embed-background);
+    border-left: 3px solid var(--accent-blue);
+}
+
+/* Progress bars */
+.theme-dark progress {
+    background-color: var(--border-subtle);
+}
+
+.theme-dark progress::-webkit-progress-bar {
+    background-color: var(--border-subtle);
+}
+
+.theme-dark progress::-webkit-progress-value {
+    background-color: var(--accent-blue);
+}
+
+/* Tree item children (indentation) */
+.theme-dark .tree-item-children {
+    border-left: 1px solid var(--indentation-guide-color);
+}
+
+/* Drag ghost */
+.theme-dark .drag-ghost {
+    background-color: rgba(0, 122, 204, 0.3);
+}
+
+/* Notice/notifications */
+.theme-dark .notice {
+    background-color: #0a0a0a;
+    border: 1px solid var(--border-subtle);
+}
+
+/* Empty state */
+.theme-dark .empty-state {
+    color: var(--text-muted);
+}
+
+/* Canvas (if used) */
+.theme-dark .canvas-node {
+    background-color: var(--pitch-black);
+    border: 1px solid var(--border-subtle);
+}
+
+.theme-dark .canvas-node.is-focused {
+    border-color: var(--accent-blue);
+}
+
+/* Outline pane */
+.theme-dark .outline-heading {
+    color: var(--text-muted);
+}
+
+.theme-dark .outline-heading:hover {
+    color: var(--text-primary);
+}
+
+/* Backlinks pane */
+.theme-dark .backlink-pane {
+    background-color: var(--pitch-black);
+}
+
+/* Properties/metadata */
+.theme-dark .metadata-container {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Calendar plugin compatibility (if installed) */
+.theme-dark .calendar {
+    background-color: var(--pitch-black);
+}
+
+.theme-dark .calendar .day:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .calendar .day.active {
+    background-color: var(--accent-blue);
+}
+
+/* Dataview plugin compatibility (if installed) */
+.theme-dark .dataview {
+    background-color: transparent;
+}
+
+.theme-dark .dataview table {
+    background-color: transparent;
+}

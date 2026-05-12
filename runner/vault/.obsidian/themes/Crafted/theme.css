@@ -1,0 +1,888 @@
+/* ==========================================================================
+   Crafted Theme - Dark & Readable
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Root Variables - Radii
+   -------------------------------------------------------------------------- */
+body {
+	--radius-s: 6px;
+	--radius-m: 8px;
+	--radius-l: 12px;
+	--input-radius: 6px;
+	--tab-radius-active: 6px;
+	--checkbox-radius: 4px;
+	--toggle-radius: 16px;
+	--toggle-thumb-radius: 16px;
+	--slider-thumb-radius: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Dark Theme
+   -------------------------------------------------------------------------- */
+.theme-dark {
+	/* Background Colors */
+	--background-primary: #1a1a2e;
+	--background-primary-alt: #16213e;
+	--background-secondary: #0f3460;
+	--background-secondary-alt: #1a1a2e;
+	--background-modifier-border: #2d3561;
+	--background-modifier-form-field: rgba(255, 255, 255, 0.05);
+	--background-modifier-form-field-highlighted: rgba(255, 255, 255, 0.1);
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.4);
+	--background-modifier-success: #4caf50;
+	--background-modifier-error: #e53935;
+	--background-modifier-error-hover: #c62828;
+	--background-modifier-cover: rgba(0, 0, 0, 0.7);
+
+	/* Text Colors */
+	--text-normal: #eaeaea;
+	--text-muted: #a0a0b0;
+	--text-faint: #6e7681;
+	--text-accent: #7ee787;
+	--text-accent-hover: #a5f3b5;
+	--text-error: #ff7b72;
+	--text-error-hover: #ff9a90;
+	--text-highlight-bg: rgba(126, 231, 135, 0.3);
+	--text-selection: rgba(126, 231, 135, 0.25);
+
+	/* Interactive Colors */
+	--interactive-normal: #2d3561;
+	--interactive-hover: #3d4571;
+	--interactive-accent: #7ee787;
+	--interactive-accent-hover: #a5f3b5;
+
+	/* Border Colors */
+	--border-color: #2d3561;
+	--border-color-hover: #3d4571;
+
+	/* Accent Colors */
+	--accent-h: 130;
+	--accent-s: 65%;
+	--accent-l: 67%;
+}
+
+/* --------------------------------------------------------------------------
+   Light Theme
+   -------------------------------------------------------------------------- */
+.theme-light {
+	/* Background Colors */
+	--background-primary: #fafafa;
+	--background-primary-alt: #f0f0f5;
+	--background-secondary: #e8e8ef;
+	--background-secondary-alt: #dcdce5;
+	--background-modifier-border: #d1d5db;
+	--background-modifier-form-field: rgba(0, 0, 0, 0.02);
+	--background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.05);
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+	--background-modifier-success: #4caf50;
+	--background-modifier-error: #e53935;
+	--background-modifier-error-hover: #c62828;
+	--background-modifier-cover: rgba(0, 0, 0, 0.5);
+
+	/* Text Colors */
+	--text-normal: #2d3748;
+	--text-muted: #5a6578;
+	--text-faint: #8b95a5;
+	--text-accent: #2f855a;
+	--text-accent-hover: #276749;
+	--text-error: #c53030;
+	--text-error-hover: #9b2c2c;
+	--text-highlight-bg: rgba(72, 187, 120, 0.25);
+	--text-selection: rgba(72, 187, 120, 0.2);
+
+	/* Interactive Colors */
+	--interactive-normal: #e2e8f0;
+	--interactive-hover: #cbd5e0;
+	--interactive-accent: #48bb78;
+	--interactive-accent-hover: #38a169;
+
+	/* Border Colors */
+	--border-color: #d1d5db;
+	--border-color-hover: #9ca3af;
+
+	/* Accent Colors */
+	--accent-h: 145;
+	--accent-s: 55%;
+	--accent-l: 52%;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+body {
+	--font-interface-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+	--font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+	--font-monospace-theme: "JetBrains Mono", "Fira Code", "Cascadia Code", "SF Mono", Menlo, Monaco, "Courier New", monospace;
+	
+	--line-height-normal: 1.7;
+	--line-height-tight: 1.4;
+	--max-width: 750px;
+	--content-margin: 4rem auto;
+}
+
+/* --------------------------------------------------------------------------
+   Workspace & Layout
+   -------------------------------------------------------------------------- */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+	width: 3px;
+	background: var(--background-modifier-border);
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
+	background: var(--interactive-accent);
+}
+
+.workspace-ribbon {
+	background: var(--background-secondary-alt);
+	border-right: 1px solid var(--background-modifier-border);
+}
+
+.workspace-ribbon.mod-left {
+	border-right: 1px solid var(--background-modifier-border);
+}
+
+.workspace-ribbon.mod-right {
+	border-left: 1px solid var(--background-modifier-border);
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar & Navigation
+   -------------------------------------------------------------------------- */
+.nav-header {
+	padding: 8px 12px;
+}
+
+.nav-buttons-container {
+	gap: 4px;
+}
+
+.nav-action-button {
+	padding: 6px;
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+}
+
+.nav-action-button:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.nav-folder-title,
+.nav-file-title {
+	padding: 4px 8px 4px 24px;
+	border-radius: var(--radius-s);
+	margin: 1px 4px;
+	line-height: 1.5;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+	background: var(--background-modifier-hover);
+}
+
+.nav-folder-title.is-active,
+.nav-file-title.is-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.tree-item-icon {
+	color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Tabs
+   -------------------------------------------------------------------------- */
+.workspace-tab-header {
+	padding: 8px 16px;
+	border-radius: var(--radius-s) var(--radius-s) 0 0;
+	color: var(--text-muted);
+	font-weight: 500;
+	transition: all 0.15s ease;
+}
+
+.workspace-tab-header:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.workspace-tab-header.is-active {
+	background: var(--background-primary);
+	color: var(--text-normal);
+	border-top: 2px solid var(--interactive-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Editor
+   -------------------------------------------------------------------------- */
+.cm-s-obsidian {
+	font-family: var(--font-text);
+	line-height: var(--line-height-normal);
+}
+
+.cm-s-obsidian .CodeMirror-line {
+	padding: 2px 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+	padding: 2px 0;
+}
+
+.markdown-preview-view {
+	font-family: var(--font-text);
+	line-height: var(--line-height-normal);
+	color: var(--text-normal);
+}
+
+.markdown-preview-section {
+	max-width: var(--max-width);
+	margin: var(--content-margin);
+}
+
+/* Headings */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+	font-weight: 600;
+	margin-top: 2em;
+	margin-bottom: 0.75em;
+	color: var(--text-normal);
+}
+
+.markdown-preview-view h1 {
+	font-size: 2em;
+	border-bottom: 2px solid var(--background-modifier-border);
+	padding-bottom: 0.3em;
+}
+
+.markdown-preview-view h2 {
+	font-size: 1.5em;
+	border-bottom: 1px solid var(--background-modifier-border);
+	padding-bottom: 0.3em;
+}
+
+.markdown-preview-view h3 {
+	font-size: 1.25em;
+}
+
+.markdown-preview-view h4 {
+	font-size: 1.1em;
+}
+
+/* Links */
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.markdown-preview-view a {
+	color: var(--text-accent);
+	text-decoration: none;
+	transition: color 0.15s ease;
+}
+
+.cm-s-obsidian span.cm-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.markdown-preview-view a:hover {
+	color: var(--text-accent-hover);
+	text-decoration: underline;
+}
+
+.cm-s-obsidian span.cm-formatting-link {
+	color: var(--text-faint);
+}
+
+/* Bold & Italic */
+.cm-s-obsidian span.cm-strong,
+.markdown-preview-view strong {
+	font-weight: 700;
+	color: var(--text-normal);
+}
+
+.cm-s-obsidian span.cm-em,
+.markdown-preview-view em {
+	color: var(--text-muted);
+}
+
+/* Code */
+.cm-s-obsidian span.cm-inline-code,
+.markdown-preview-view code {
+	background: var(--background-modifier-form-field);
+	padding: 2px 6px;
+	border-radius: var(--radius-s);
+	font-family: var(--font-monospace);
+	font-size: 0.9em;
+}
+
+.cm-s-obsidian span.cm-hmd-codeblock,
+.cm-s-obsidian pre.HyperMD-codeblock {
+	font-family: var(--font-monospace);
+}
+
+.markdown-preview-view pre {
+	background: var(--background-primary-alt);
+	border-radius: var(--radius-m);
+	padding: 16px;
+	overflow-x: auto;
+}
+
+.markdown-preview-view pre code {
+	background: transparent;
+	padding: 0;
+	font-size: 0.85em;
+	line-height: 1.6;
+}
+
+/* Blockquotes */
+.markdown-preview-view blockquote {
+	border-left: 4px solid var(--interactive-accent);
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	background: var(--background-modifier-form-field);
+	border-radius: 0 var(--radius-s) var(--radius-s) 0;
+	font-style: italic;
+}
+
+/* Horizontal Rule */
+.markdown-preview-view hr {
+	border: none;
+	border-top: 2px solid var(--background-modifier-border);
+	margin: 2em 0;
+}
+
+/* Lists */
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+	padding-left: 2em;
+	margin: 0.5em 0;
+}
+
+.markdown-preview-view li {
+	margin: 0.3em 0;
+}
+
+/* Checkboxes */
+.task-list-item-checkbox {
+	border: 2px solid var(--text-muted);
+	border-radius: var(--checkbox-radius);
+	width: 18px;
+	height: 18px;
+	margin-right: 8px;
+	transition: all 0.15s ease;
+}
+
+.task-list-item-checkbox:checked {
+	background: var(--interactive-accent);
+	border-color: var(--interactive-accent);
+}
+
+/* Tags */
+.cm-s-obsidian span.cm-hashtag,
+.markdown-preview-view a.tag {
+	background: var(--background-modifier-form-field);
+	color: var(--text-accent);
+	padding: 2px 8px;
+	border-radius: var(--radius-s);
+	font-size: 0.85em;
+	text-decoration: none;
+	border: 1px solid var(--background-modifier-border);
+}
+
+.cm-s-obsidian span.cm-hashtag:hover,
+.markdown-preview-view a.tag:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-accent-hover);
+}
+
+/* Highlight */
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark {
+	background: var(--text-highlight-bg);
+	padding: 1px 3px;
+	border-radius: 2px;
+}
+
+/* Selection */
+::selection {
+	background: var(--text-selection);
+}
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+.markdown-preview-view table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0;
+	font-size: 0.95em;
+}
+
+.markdown-preview-view th {
+	background: var(--background-secondary-alt);
+	padding: 12px 16px;
+	text-align: left;
+	font-weight: 600;
+	border-bottom: 2px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view td {
+	padding: 10px 16px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view tr:hover {
+	background: var(--background-modifier-form-field);
+}
+
+/* --------------------------------------------------------------------------
+   Callouts
+   -------------------------------------------------------------------------- */
+.callout {
+	border-radius: var(--radius-m);
+	padding: 16px 20px;
+	margin: 1em 0;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-modifier-form-field);
+}
+
+.callout-title {
+	font-weight: 600;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.callout-icon {
+	color: var(--text-accent);
+}
+
+.callout[data-callout="info"] {
+	border-left: 4px solid #3b82f6;
+}
+
+.callout[data-callout="warning"] {
+	border-left: 4px solid #f59e0b;
+}
+
+.callout[data-callout="error"] {
+	border-left: 4px solid #ef4444;
+}
+
+.callout[data-callout="success"] {
+	border-left: 4px solid #10b981;
+}
+
+.callout[data-callout="tip"] {
+	border-left: 4px solid #8b5cf6;
+}
+
+/* --------------------------------------------------------------------------
+   Menus & Popovers
+   -------------------------------------------------------------------------- */
+.menu {
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	padding: 6px;
+	box-shadow: 0 10px 40px var(--background-modifier-box-shadow);
+}
+
+.menu-item {
+	padding: 8px 12px;
+	border-radius: var(--radius-s);
+	font-size: 0.95em;
+	transition: all 0.1s ease;
+}
+
+.menu-item:hover {
+	background: var(--background-modifier-hover);
+}
+
+.menu-item.is-selected {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.menu-separator {
+	margin: 6px 0;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.suggestion-container {
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	box-shadow: 0 10px 40px var(--background-modifier-box-shadow);
+}
+
+.suggestion-item {
+	padding: 8px 16px;
+}
+
+.suggestion-item.is-selected {
+	background: var(--background-modifier-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Modals
+   -------------------------------------------------------------------------- */
+.modal {
+	background: var(--background-primary);
+	border-radius: var(--radius-l);
+	border: 1px solid var(--background-modifier-border);
+	box-shadow: 0 25px 50px -12px var(--background-modifier-box-shadow);
+}
+
+.modal-header {
+	padding: 20px 24px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.modal-content {
+	padding: 24px;
+}
+
+.modal-footer {
+	padding: 16px 24px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.modal-close-button {
+	top: 16px;
+	right: 16px;
+	color: var(--text-muted);
+}
+
+.modal-close-button:hover {
+	color: var(--text-normal);
+}
+
+/* --------------------------------------------------------------------------
+   Inputs
+   -------------------------------------------------------------------------- */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+	background: var(--background-modifier-form-field);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--input-radius);
+	padding: 8px 12px;
+	font-size: 0.95em;
+	color: var(--text-normal);
+	transition: all 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	border-color: var(--interactive-accent);
+	outline: none;
+	box-shadow: 0 0 0 3px var(--background-modifier-form-field-highlighted);
+}
+
+.search-input-container input[type="search"] {
+	padding-left: 36px;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+button {
+	background: var(--interactive-normal);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	padding: 8px 16px;
+	font-size: 0.9em;
+	font-weight: 500;
+	color: var(--text-normal);
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+button:hover {
+	background: var(--interactive-hover);
+}
+
+button.mod-cta {
+	background: var(--interactive-accent);
+	border-color: var(--interactive-accent);
+	color: var(--background-primary);
+}
+
+button.mod-cta:hover {
+	background: var(--interactive-accent-hover);
+}
+
+button.mod-warning {
+	background: var(--background-modifier-error);
+	border-color: var(--background-modifier-error);
+	color: white;
+}
+
+/* --------------------------------------------------------------------------
+   Graph View
+   -------------------------------------------------------------------------- */
+.graph-view.color-fill {
+	color: var(--interactive-accent);
+}
+
+.graph-view.color-line {
+	color: var(--background-modifier-border);
+}
+
+.graph-view.color-text {
+	color: var(--text-normal);
+}
+
+.graph-view.color-fill-unresolved {
+	color: var(--text-faint);
+}
+
+.graph-view.color-fill-tag {
+	color: #f59e0b;
+}
+
+.graph-view.color-fill-attachment {
+	color: #8b5cf6;
+}
+
+/* --------------------------------------------------------------------------
+   Status Bar
+   -------------------------------------------------------------------------- */
+.status-bar {
+	background: var(--background-secondary-alt);
+	border-top: 1px solid var(--background-modifier-border);
+	padding: 4px 12px;
+	font-size: 0.85em;
+	color: var(--text-muted);
+}
+
+.status-bar-item {
+	padding: 0 8px;
+}
+
+.status-bar-item:hover {
+	color: var(--text-normal);
+}
+
+/* --------------------------------------------------------------------------
+   Title Bar
+   -------------------------------------------------------------------------- */
+.titlebar {
+	background: var(--background-secondary-alt);
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.titlebar-inner {
+	color: var(--text-muted);
+}
+
+.titlebar-text {
+	font-weight: 500;
+}
+
+.titlebar-button {
+	opacity: 0.7;
+	transition: opacity 0.15s ease;
+}
+
+.titlebar-button:hover {
+	opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Scrollbar
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--background-modifier-border);
+	border-radius: 5px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--text-muted);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Tooltip
+   -------------------------------------------------------------------------- */
+.tooltip {
+	background: var(--background-secondary-alt);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	padding: 6px 10px;
+	font-size: 0.85em;
+	color: var(--text-normal);
+	box-shadow: 0 4px 12px var(--background-modifier-box-shadow);
+}
+
+/* --------------------------------------------------------------------------
+   Settings
+   -------------------------------------------------------------------------- */
+.settings-container {
+	padding: 24px;
+}
+
+.setting-item {
+	padding: 16px 0;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.setting-item:last-child {
+	border-bottom: none;
+}
+
+.setting-item-name {
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.setting-item-description {
+	color: var(--text-muted);
+	font-size: 0.9em;
+	margin-top: 4px;
+}
+
+.dropdown {
+	background: var(--background-modifier-form-field);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	padding: 6px 28px 6px 12px;
+	font-size: 0.9em;
+	color: var(--text-normal);
+}
+
+.dropdown:hover {
+	background: var(--background-modifier-hover);
+}
+
+/* --------------------------------------------------------------------------
+   File Explorer
+   -------------------------------------------------------------------------- */
+.nav-file-tag {
+	background: var(--background-modifier-form-field);
+	color: var(--text-muted);
+	padding: 2px 6px;
+	border-radius: var(--radius-s);
+	font-size: 0.75em;
+	margin-left: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Embeds
+   -------------------------------------------------------------------------- */
+.markdown-embed {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	background: var(--background-modifier-form-field);
+	padding: 16px;
+}
+
+.markdown-embed-link {
+	right: 12px;
+	top: 12px;
+	color: var(--text-muted);
+}
+
+.markdown-embed-link:hover {
+	color: var(--text-accent);
+}
+
+/* --------------------------------------------------------------------------
+   PDF Viewer
+   -------------------------------------------------------------------------- */
+.pdf-viewer {
+	background: var(--background-secondary);
+}
+
+.pdf-page {
+	background: white;
+	box-shadow: 0 4px 12px var(--background-modifier-box-shadow);
+}
+
+/* --------------------------------------------------------------------------
+   Canvas
+   -------------------------------------------------------------------------- */
+.canvas-node {
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	box-shadow: 0 4px 12px var(--background-modifier-box-shadow);
+}
+
+.canvas-node.is-focused {
+	border-color: var(--interactive-accent);
+	box-shadow: 0 0 0 3px var(--background-modifier-form-field-highlighted);
+}
+
+/* --------------------------------------------------------------------------
+   Icons
+   -------------------------------------------------------------------------- */
+svg * {
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Adjustments
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+	.markdown-preview-section {
+		margin: 2rem 1rem;
+	}
+	
+	.workspace-drawer {
+		background: var(--background-primary);
+	}
+	
+	.mobile-toolbar {
+		background: var(--background-secondary-alt);
+		border-top: 1px solid var(--background-modifier-border);
+	}
+}
+
+/* --------------------------------------------------------------------------
+   Print Styles
+   -------------------------------------------------------------------------- */
+@media print {
+	.workspace-ribbon,
+	.workspace-split.mod-left-split,
+	.workspace-split.mod-right-split,
+	.status-bar {
+		display: none;
+	}
+	
+	.markdown-preview-view {
+		background: white;
+		color: black;
+	}
+}

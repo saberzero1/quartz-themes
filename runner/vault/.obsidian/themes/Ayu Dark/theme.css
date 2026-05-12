@@ -1,0 +1,122 @@
+:root {
+  /* Ayu Dark colors */
+  --ayu-bg_dim: #0B0E14;
+  --ayu-bg0: #0D1017;
+  --ayu-bg1: #131721;
+  --ayu-bg2: #1A1F29;
+  --ayu-bg3: #232834;
+  --ayu-bg4: #2A303D;
+  --ayu-bg5: #313845;
+  --ayu-bg_visual: #253340;
+  --ayu-fg: #BFBDB6;
+  --ayu-red: #F07178;
+  --ayu-orange: #FF8F40;
+  --ayu-yellow: #E6B450;
+  --ayu-green: #7FD962;
+  --ayu-aqua: #95E6CB;
+  --ayu-blue: #59C2FF;
+  --ayu-purple: #D2A6FF;
+  --ayu-grey0: #3D4751;
+  --ayu-grey1: #5C6773;
+  --ayu-grey2: #8A9199;
+  /* Utils */
+  --darken-ratio: 25%;
+}
+
+.theme-dark {
+  /* ---------------------------------------------------------------------- */
+  /* FOUNDATIONS */
+  /* ---------------------------------------------------------------------- */
+  /* Base colors */
+  --color-base-00: var(--ayu-bg_dim);
+  --color-base-05: var(--ayu-bg_dim);
+  --color-base-10: var(--ayu-bg0);
+  --color-base-20: var(--ayu-bg0);
+  --color-base-25: var(--ayu-bg1);
+  --color-base-30: var(--ayu-bg1);
+  --color-base-35: var(--ayu-bg2);
+  --color-base-40: var(--ayu-bg3);
+  --color-base-50: var(--ayu-grey0);
+  --color-base-60: var(--ayu-grey0);
+  --color-base-70: var(--ayu-grey1);
+  --color-base-100: var(--ayu-grey2);
+  /* Accent color: blue */
+  --accent-h: 201;
+  --accent-s: 100%;
+  --accent-l: 68%;
+  /* Extended colors */
+  --color-red: var(--ayu-red);
+  --color-orange: var(--ayu-orange);
+  --color-yellow: var(--ayu-yellow);
+  --color-green: var(--ayu-green);
+  --color-cyan: var(--ayu-aqua);
+  --color-blue: var(--ayu-blue);
+  --color-purple: var(--ayu-purple);
+  --color-pink: var(--ayu-purple);
+  /* Semantic colors */
+  --background-secondary: var(--ayu-bg_dim);
+  --background-secondary-alt: var(--ayu-bg_dim);
+  /* Typography */
+  --text-normal: var(--ayu-fg);
+  --text-muted: var(--ayu-grey2);
+  --text-on-accent: var(--ayu-bg_dim);
+  --text-selection: var(--ayu-bg_visual);
+  --text-highlight-bg: var(--ayu-bg_visual);
+  --italic-color: var(--ayu-yellow);
+  --bold-color: var(--ayu-orange);
+  --bold-modifier: 0;
+  /* Icons */
+  --icon-color-focused: var(--icon-color);
+  /* ---------------------------------------------------------------------- */
+  /* EDITOR */
+  /* ---------------------------------------------------------------------- */
+  /* Blockquote */
+  --blockquote-border-color: var(--ayu-aqua);
+  --blockquote-color: var(--ayu-aqua);
+  /* Link */
+  --link-color: var(--ayu-blue);
+  --link-external-color: var(--ayu-blue);
+  --link-color-hover: color-mix(in srgb, var(--link-color), var(--darken-ratio) black);
+  --link-external-color-hover: color-mix(in srgb, var(--link-external-color), var(--darken-ratio) black);
+  --link-unresolved-color: var(--ayu-grey1);
+  --link-unresolved-opacity: 1;
+  /* Checkbox */
+  --checkbox-color: var(--ayu-red);
+  --checkbox-color-hover: color-mix(in srgb, var(--checkbox-color), var(--darken-ratio) black);
+  /* Code */
+  --code-normal: var(--ayu-fg);
+  --code-comment: var(--ayu-grey1);
+  --code-function: var(--ayu-green);
+  --code-important: var(--ayu-red);
+  --code-keyword: var(--ayu-red);
+  --code-operator: var(--ayu-orange);
+  --code-property: var(--ayu-fg);
+  --code-punctuation: var(--ayu-grey1);
+  --code-string: var(--ayu-green);
+  --code-tag: var(--ayu-aqua);
+  --code-value: var(--ayu-purple);
+  /* Simplified table */
+  --table-column-first-border-width: 0px;
+  --table-column-last-border-width: 0px;
+  --table-row-last-border-width: 0px;
+  --table-header-border-width: 0px;
+  --table-header-background: var(--ayu-bg0);
+  --table-header-background-hover: var(--table-header-background);
+  /* List */
+  --list-marker-color: var(--ayu-purple);
+  /* ---------------------------------------------------------------------- */
+  /* Components */
+  /* ---------------------------------------------------------------------- */
+  /* Green text color accents */
+  --nav-item-color-active: var(--ayu-green);
+  --tab-text-color-focused-active-current: var(--ayu-green);
+}
+
+blockquote strong {
+  color: var(--blockquote-color);
+  font-weight: 500;
+}
+
+blockquote em {
+  color: var(--blockquote-color);
+}

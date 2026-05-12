@@ -1,0 +1,401 @@
+/* Sora — Obsidian Theme
+ * Ethereal cyan, cool silver, deep OLED blacks.
+ * https://github.com/Aejkatappaja/sora
+ */
+
+.theme-dark {
+  /* ── Backgrounds ── */
+  --background-primary:           #0e1018;
+  --background-primary-alt:       #14161e;
+  --background-secondary:         #0a0c12;
+  --background-secondary-alt:     #14161e;
+  --background-modifier-border:   #222838;
+  --background-modifier-form-field: #14161e;
+  --background-modifier-form-field-highlighted: #171a24;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success:  #68b080;
+  --background-modifier-error:    #c46c78;
+  --background-modifier-error-rgb: 196, 108, 120;
+  --background-modifier-error-hover: #d88898;
+  --background-modifier-cover:    rgba(10, 12, 18, 0.8);
+
+  /* ── Text ── */
+  --text-normal:                  #c8d0e0;
+  --text-muted:                   #8898b8;
+  --text-faint:                   #586478;
+  --text-on-accent:               #0e1018;
+  --text-on-accent-inverted:      #c8d0e0;
+  --text-error:                   #c46c78;
+  --text-error-hover:             #d88898;
+  --text-accent:                  #80c8e0;
+  --text-accent-hover:            #98d8f0;
+  --text-selection:               rgba(30, 36, 48, 0.99);
+  --text-highlight-bg:            rgba(212, 184, 120, 0.15);
+  --text-highlight-bg-active:     rgba(212, 184, 120, 0.25);
+
+  /* ── Interactive ── */
+  --interactive-normal:           #14161e;
+  --interactive-hover:            #171a24;
+  --interactive-accent:           #80c8e0;
+  --interactive-accent-hsl:       197, 56%, 69%;
+  --interactive-accent-hover:     #98d8f0;
+  --interactive-before:           #222838;
+
+  /* ── Scrollbar ── */
+  --scrollbar-bg:                 #0e1018;
+  --scrollbar-thumb-bg:           rgba(88, 100, 120, 0.3);
+  --scrollbar-active-thumb-bg:    rgba(88, 100, 120, 0.5);
+
+  /* ── Tabs ── */
+  --tab-text-color:               #8898b8;
+  --tab-text-color-focused:       #c8d0e0;
+  --tab-text-color-focused-active: #80c8e0;
+  --tab-text-color-focused-active-current: #c8d0e0;
+  --tab-background-active:        #0e1018;
+  --tab-outline-color:            #222838;
+  --tab-divider-color:            #222838;
+
+  /* ── Title bar ── */
+  --titlebar-background:          #0a0c12;
+  --titlebar-background-focused:  #0a0c12;
+  --titlebar-text-color:          #8898b8;
+  --titlebar-text-color-focused:  #c8d0e0;
+  --titlebar-text-weight:         600;
+
+  /* ── Nav / Sidebar ── */
+  --nav-item-color:               #9aa4b8;
+  --nav-item-color-hover:         #c8d0e0;
+  --nav-item-color-active:        #80c8e0;
+  --nav-item-background-hover:    #171a24;
+  --nav-item-background-active:   #1e2430;
+  --nav-heading-color:            #c8d0e0;
+  --nav-heading-color-collapsed:  #8898b8;
+  --nav-indentation-guide-color:  #222838;
+
+  /* ── Headings ── */
+  --h1-color:                     #80c8e0;
+  --h2-color:                     #b0a0d8;
+  --h3-color:                     #90c8a0;
+  --h4-color:                     #d0a888;
+  --h5-color:                     #d4b878;
+  --h6-color:                     #8898b8;
+
+  /* ── Tags ── */
+  --tag-color:                    #78b8b0;
+  --tag-color-hover:              #90d0c8;
+  --tag-background:               rgba(120, 184, 176, 0.1);
+  --tag-background-hover:         rgba(120, 184, 176, 0.2);
+  --tag-border-color:             rgba(120, 184, 176, 0.2);
+  --tag-border-color-hover:       rgba(120, 184, 176, 0.3);
+
+  /* ── Links ── */
+  --link-color:                   #80c8e0;
+  --link-color-hover:             #98d8f0;
+  --link-decoration:              none;
+  --link-decoration-hover:        underline;
+  --link-external-color:          #b0a0d8;
+  --link-external-color-hover:    #c4b4e8;
+  --link-unresolved-color:        #d0909c;
+  --link-unresolved-opacity:      0.8;
+
+  /* ── Code ── */
+  --code-normal:                  #c8d0e0;
+  --code-comment:                 #586478;
+  --code-function:                #80c8e0;
+  --code-keyword:                 #b0a0d8;
+  --code-string:                  #90c8a0;
+  --code-tag:                     #78b8b0;
+  --code-value:                   #d4b878;
+  --code-property:                #8898b8;
+  --code-important:               #d0909c;
+  --code-background:              #0a0c12;
+  --code-size:                    0.925em;
+
+  /* ── Inline code ── */
+  --inline-code-color:            #d0a888;
+  --inline-code-background:       rgba(20, 22, 30, 0.8);
+
+  /* ── Blockquote ── */
+  --blockquote-border-color:      #80c8e0;
+  --blockquote-border-thickness:  2px;
+  --blockquote-background-color:  rgba(128, 200, 224, 0.03);
+
+  /* ── Callouts ── */
+  --callout-default:              #80c8e0;
+  --callout-info:                 #5ca8c8;
+  --callout-todo:                 #80c8e0;
+  --callout-tip:                  #78b8b0;
+  --callout-success:              #68b080;
+  --callout-question:             #d4b878;
+  --callout-warning:              #c8a860;
+  --callout-fail:                 #c46c78;
+  --callout-error:                #c46c78;
+  --callout-bug:                  #d0909c;
+  --callout-example:              #b0a0d8;
+  --callout-quote:                #8898b8;
+
+  /* ── Checkbox ── */
+  --checkbox-color:               #80c8e0;
+  --checkbox-color-hover:         #98d8f0;
+  --checkbox-border-color:        #364050;
+  --checkbox-border-color-hover:  #80c8e0;
+
+  /* ── Toggle ── */
+  --toggle-thumb-color:           #c8d0e0;
+  --toggle-border-width:          1px;
+
+  /* ── Slider ── */
+  --slider-thumb-border-color:    #80c8e0;
+
+  /* ── Table ── */
+  --table-header-background:      #14161e;
+  --table-header-background-hover: #171a24;
+  --table-row-alt-background:     rgba(20, 22, 30, 0.5);
+  --table-border-color:           #222838;
+
+  /* ── Flashing (search highlight) ── */
+  --flashing-background:          rgba(212, 184, 120, 0.25);
+
+  /* ── Status bar ── */
+  --status-bar-background:        #0a0c12;
+  --status-bar-border-color:      #222838;
+  --status-bar-text-color:        #586478;
+
+  /* ── Vault ── */
+  --vault-name-color:             #80c8e0;
+  --vault-name-font-size:         14px;
+
+  /* ── Ribbon ── */
+  --ribbon-background:            #0a0c12;
+  --ribbon-background-collapsed:  #0a0c12;
+
+  /* ── Divider ── */
+  --divider-color:                #222838;
+  --divider-color-hover:          #364050;
+
+  /* ── Icon ── */
+  --icon-color:                   #8898b8;
+  --icon-color-hover:             #c8d0e0;
+  --icon-color-active:            #80c8e0;
+  --icon-color-focused:           #80c8e0;
+
+  /* ── Prompt (modals / command palette) ── */
+  --prompt-border-color:          #222838;
+
+  /* ── Bold / Italic ── */
+  --bold-color:                   #dce4f0;
+  --italic-color:                 #b0a0d8;
+
+  /* ── List markers ── */
+  --list-marker-color:            #586478;
+  --list-marker-color-hover:      #8898b8;
+  --list-marker-color-collapsed:  #80c8e0;
+
+  /* ── Indentation guides ── */
+  --indentation-guide-color:      #181c26;
+  --indentation-guide-color-active: #282e3c;
+
+  /* ── Color accents (settings) ── */
+  --color-accent:                 #80c8e0;
+  --color-accent-1:               #80c8e0;
+  --color-accent-2:               #b0a0d8;
+
+  /* ── Graph ── */
+  --graph-line:                   rgba(34, 40, 56, 0.6);
+  --graph-node:                   #80c8e0;
+  --graph-node-focused:           #98d8f0;
+  --graph-node-tag:               #78b8b0;
+  --graph-node-attachment:        #d4b878;
+  --graph-node-unresolved:        #586478;
+}
+
+/* ── Accent color override for community ── */
+.theme-dark {
+  --accent-h: 197;
+  --accent-s: 56%;
+  --accent-l: 69%;
+}
+
+/* ── Styled scrollbar ── */
+.theme-dark ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: rgba(88, 100, 120, 0.3);
+  border-radius: 3px;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(88, 100, 120, 0.5);
+}
+
+/* ── CodeMirror syntax highlighting (edit mode) ── */
+.theme-dark .cm-s-obsidian .cm-keyword,
+.theme-dark .cm-keyword {
+  color: #b0a0d8 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-def,
+.theme-dark .cm-s-obsidian .cm-callee,
+.theme-dark .cm-def,
+.theme-dark .cm-callee {
+  color: #80c8e0 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-string,
+.theme-dark .cm-s-obsidian .cm-string-2,
+.theme-dark .cm-string,
+.theme-dark .cm-string-2 {
+  color: #90c8a0 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-number,
+.theme-dark .cm-number {
+  color: #d4b878 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-variable,
+.theme-dark .cm-s-obsidian .cm-variable-2,
+.theme-dark .cm-s-obsidian .cm-variable-3,
+.theme-dark .cm-variable,
+.theme-dark .cm-variable-2,
+.theme-dark .cm-variable-3 {
+  color: #b4bcd0 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-type,
+.theme-dark .cm-type {
+  color: #d0a888 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-property,
+.theme-dark .cm-s-obsidian .cm-qualifier,
+.theme-dark .cm-property,
+.theme-dark .cm-qualifier {
+  color: #8898b8 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-operator,
+.theme-dark .cm-operator {
+  color: #8898b8 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-comment,
+.theme-dark .cm-comment {
+  color: #586478 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-atom,
+.theme-dark .cm-s-obsidian .cm-builtin,
+.theme-dark .cm-atom,
+.theme-dark .cm-builtin {
+  color: #d0909c !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-tag,
+.theme-dark .cm-tag {
+  color: #78b8b0 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-attribute,
+.theme-dark .cm-attribute {
+  color: #d0a888 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-meta,
+.theme-dark .cm-meta {
+  color: #78b8b0 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-punctuation,
+.theme-dark .cm-punctuation {
+  color: #9aa4b8 !important;
+}
+
+/* ── Prism.js syntax highlighting (reading mode) ── */
+.theme-dark pre[class*="language-"] {
+  background: #0a0c12 !important;
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"] {
+  color: #c8d0e0;
+}
+
+.theme-dark .token.keyword,
+.theme-dark .token.control,
+.theme-dark .token.directive {
+  color: #b0a0d8 !important;
+}
+
+.theme-dark .token.function,
+.theme-dark .token.function-name {
+  color: #80c8e0 !important;
+}
+
+.theme-dark .token.string,
+.theme-dark .token.char,
+.theme-dark .token.template-string {
+  color: #90c8a0 !important;
+}
+
+.theme-dark .token.number,
+.theme-dark .token.constant {
+  color: #d4b878 !important;
+}
+
+.theme-dark .token.variable {
+  color: #b4bcd0 !important;
+}
+
+.theme-dark .token.class-name,
+.theme-dark .token.type {
+  color: #d0a888 !important;
+}
+
+.theme-dark .token.property {
+  color: #8898b8 !important;
+}
+
+.theme-dark .token.operator,
+.theme-dark .token.arrow {
+  color: #8898b8 !important;
+}
+
+.theme-dark .token.comment,
+.theme-dark .token.prolog,
+.theme-dark .token.doctype,
+.theme-dark .token.cdata {
+  color: #586478 !important;
+}
+
+.theme-dark .token.boolean,
+.theme-dark .token.builtin,
+.theme-dark .token.important {
+  color: #d0909c !important;
+}
+
+.theme-dark .token.tag {
+  color: #78b8b0 !important;
+}
+
+.theme-dark .token.attr-name {
+  color: #d0a888 !important;
+}
+
+.theme-dark .token.attr-value {
+  color: #90c8a0 !important;
+}
+
+.theme-dark .token.regex {
+  color: #78b8b0 !important;
+}
+
+.theme-dark .token.punctuation {
+  color: #9aa4b8 !important;
+}

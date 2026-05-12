@@ -1,0 +1,258 @@
+/* ============================================================
+   Prose — typographic foundation
+   zojer.studio
+
+   IBM Plex as unified family. Body serif is an open question;
+   Plex Serif holds the seat until something better earns it.
+   ============================================================ */
+
+/* --- IBM Plex — local font faces --- */
+
+/* Plex Serif */
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 400; font-style: normal; src: url('fonts/serif/IBMPlexSerif-Regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 400; font-style: italic; src: url('fonts/serif/IBMPlexSerif-Italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 500; font-style: normal; src: url('fonts/serif/IBMPlexSerif-Medium.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 600; font-style: normal; src: url('fonts/serif/IBMPlexSerif-SemiBold.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Serif'; font-weight: 700; font-style: normal; src: url('fonts/serif/IBMPlexSerif-Bold.woff2') format('woff2'); font-display: swap; }
+
+/* Plex Sans */
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 400; font-style: normal; src: url('fonts/sans/IBMPlexSans-Regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 400; font-style: italic; src: url('fonts/sans/IBMPlexSans-Italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 500; font-style: normal; src: url('fonts/sans/IBMPlexSans-Medium.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 600; font-style: normal; src: url('fonts/sans/IBMPlexSans-SemiBold.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 700; font-style: normal; src: url('fonts/sans/IBMPlexSans-Bold.woff2') format('woff2'); font-display: swap; }
+
+/* Plex Mono */
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 400; font-style: normal; src: url('fonts/mono/IBMPlexMono-Regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 400; font-style: italic; src: url('fonts/mono/IBMPlexMono-Italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 500; font-style: normal; src: url('fonts/mono/IBMPlexMono-Medium.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 600; font-style: normal; src: url('fonts/mono/IBMPlexMono-SemiBold.woff2') format('woff2'); font-display: swap; }
+
+/* ============================================================
+   1. FOUNDATIONS — design tokens
+   ============================================================ */
+
+.theme-light,
+.theme-dark {
+  /* --- Font stacks --- */
+  --font-text-theme:      'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-interface-theme:  'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-monospace-theme:  'IBM Plex Mono', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+
+  /* --- Type scale (minor third 1.2, fluid) --- */
+  --step--2: clamp(0.6944rem, 0.6856rem + 0.0444vw, 0.72rem);
+  --step--1: clamp(0.8333rem, 0.8101rem + 0.1159vw, 0.9rem);
+  --step-0:  clamp(1rem,      0.9565rem + 0.2174vw, 1.125rem);
+  --step-1:  clamp(1.2rem,    1.1283rem + 0.3587vw, 1.4063rem);
+  --step-2:  clamp(1.44rem,   1.3295rem + 0.5527vw, 1.7578rem);
+  --step-3:  clamp(1.728rem,  1.5648rem + 0.816vw,  2.1973rem);
+  --step-4:  clamp(2.0736rem, 1.8395rem + 1.1707vw, 2.7466rem);
+
+  /* --- Spacing scale (fluid, tied to type) --- */
+  --space-3xs: clamp(0.25rem,   0.2283rem + 0.1087vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem,    0.4783rem + 0.1087vw, 0.5625rem);
+  --space-xs:  clamp(0.75rem,   0.7065rem + 0.2174vw, 0.875rem);
+  --space-s:   clamp(1rem,      0.9565rem + 0.2174vw, 1.125rem);
+  --space-m:   clamp(1.5rem,    1.4348rem + 0.3261vw, 1.6875rem);
+  --space-l:   clamp(2rem,      1.913rem  + 0.4348vw, 2.25rem);
+  --space-xl:  clamp(3rem,      2.8696rem + 0.6522vw, 3.375rem);
+
+  /* --- Leading --- */
+  --line-height-normal: 1.55;
+  --line-height-tight:  1.2;
+
+  /* --- Obsidian typography overrides --- */
+  --font-text-size: 17px;
+  --p-spacing:      0.75em;
+  --heading-spacing: 1.25em;
+
+  /* --- Heading scale --- */
+  --h1-size:   var(--step-4);
+  --h2-size:   var(--step-3);
+  --h3-size:   var(--step-2);
+  --h4-size:   var(--step-1);
+  --h5-size:   var(--step-0);
+  --h6-size:   var(--step--1);
+
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  --h1-line-height: var(--line-height-tight);
+  --h2-line-height: var(--line-height-tight);
+  --h3-line-height: 1.3;
+  --h4-line-height: 1.35;
+  --h5-line-height: var(--line-height-normal);
+  --h6-line-height: var(--line-height-normal);
+
+  --h1-font: var(--font-interface-theme);
+  --h2-font: var(--font-interface-theme);
+  --h3-font: var(--font-interface-theme);
+  --h4-font: var(--font-interface-theme);
+  --h5-font: var(--font-interface-theme);
+  --h6-font: var(--font-interface-theme);
+
+  /* --- Bold / italic --- */
+  --bold-weight: 600;
+}
+
+/* ============================================================
+   2. LIGHT THEME — colors
+   ============================================================ */
+
+.theme-light {
+  --background-primary:   #faf9f7;
+  --background-secondary: #f2f0ed;
+  --text-normal:          #1a1a1a;
+  --text-muted:           #6b6560;
+  --text-faint:           #9e9890;
+  --interactive-accent:   #FAA424;
+  --blockquote-border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* ============================================================
+   3. DARK THEME — colors
+   ============================================================ */
+
+.theme-dark {
+  --background-primary:   #1a1917;
+  --background-secondary: #222120;
+  --text-normal:          #ddd8d0;
+  --text-muted:           #9e9890;
+  --text-faint:           #6b6560;
+  --interactive-accent:   #D4912A;
+  --blockquote-border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode typographic compensation */
+.theme-dark {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.theme-dark .markdown-reading-view,
+.theme-dark .markdown-source-view {
+  letter-spacing: 0.005em;
+}
+
+/* ============================================================
+   4. PROSE CONTAINER — measure and rhythm
+   ============================================================ */
+
+/* Use Obsidian's native readable line width (~700px ≈ 65ch at body size) */
+.theme-light,
+.theme-dark {
+  --file-line-width: 700px;
+}
+
+/* ============================================================
+   5. HEADINGS
+   ============================================================ */
+
+/* Headings in reading view */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  text-wrap: balance;
+}
+
+/* Tighter spacing when headings follow headings */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 0.5em;
+}
+
+/* ============================================================
+   6. BODY ELEMENTS
+   ============================================================ */
+
+/* Blockquotes */
+.markdown-rendered blockquote,
+.markdown-source-view .HyperMD-quote {
+  border-left-width: 2px;
+  font-style: italic;
+}
+
+/* Lists — slightly tighter than body */
+.markdown-rendered li {
+  margin-block: 0.15em;
+}
+
+/* Code blocks */
+.markdown-rendered pre {
+  font-size: var(--step--1);
+  line-height: 1.6;
+  padding: var(--space-s);
+  margin-block: var(--space-m);
+  border-radius: 4px;
+}
+
+/* Inline code */
+.markdown-rendered code {
+  font-size: 0.9em;
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+/* Horizontal rule as breathing room */
+.markdown-rendered hr {
+  border: none;
+  margin-block: var(--space-xl);
+  opacity: 0.25;
+}
+
+.markdown-rendered hr::after {
+  content: "\2022\2003\2022\2003\2022";
+  display: block;
+  text-align: center;
+  font-size: var(--step--2);
+  color: var(--text-muted);
+  letter-spacing: 0.25em;
+}
+
+/* Links — understated */
+.markdown-rendered a {
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+/* Images — breathing room */
+.markdown-rendered img {
+  margin-block: var(--space-m);
+  border-radius: 2px;
+}
+
+/* ============================================================
+   7. INTERFACE REFINEMENTS
+   ============================================================ */
+
+/* Tab headers */
+.workspace-tab-header-inner-title {
+  font-family: var(--font-interface-theme);
+  font-weight: 500;
+}
+
+/* File explorer */
+.nav-file-title,
+.nav-folder-title {
+  font-family: var(--font-interface-theme);
+}
+
+/* Tags */
+.tag {
+  font-family: var(--font-interface-theme);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+/* Frontmatter */
+.frontmatter-container {
+  font-family: var(--font-monospace-theme);
+  font-size: var(--step--2);
+}

@@ -1,0 +1,2149 @@
+/* #region STYLE SETTINGS */
+
+/* @settings
+
+name: cybrcore
+id: cybrcore
+settings:
+
+  # ══ WALLPAPER ════════════════════════════════════════════════
+
+  - id: s-wp
+    title: Wallpaper
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: cybrcore-wallpaper
+    title: Wallpaper
+    type: class-select
+    default: cybr-wp-samurai
+    options:
+      - label: None
+        value: cybr-wp-none
+      - label: Samurai (default)
+        value: cybr-wp-samurai
+      - label: Chiyoda
+        value: cybr-wp-chiyoda
+      - label: Ikebukuro
+        value: cybr-wp-ikebukuro
+      - label: Minato
+        value: cybr-wp-minato
+      - label: Roppongi
+        value: cybr-wp-roppongi
+      - label: Shibuya
+        value: cybr-wp-shibuya
+      - label: Shinjuku
+        value: cybr-wp-shinjuku
+      - label: Taito
+        value: cybr-wp-taito
+      - label: Yoyogi
+        value: cybr-wp-yoyogi
+      - label: Harajuku
+        value: cybr-wp-harajuku
+      - label: Akihabara
+        value: cybr-wp-akihabara
+
+  - id: cybrcore-solid-bg
+    title: Solid Background
+    description: "Replaces wallpaper with a flat color"
+    type: class-toggle
+    default: false
+
+  - id: cybr-bg-sel
+    title: Background Color
+    type: class-select
+    default: cybr-bg-no
+    options:
+      - label: Black (default)
+        value: cybr-bg-no
+      - label: Red
+        value: cybr-bg-re
+      - label: Green
+        value: cybr-bg-gr
+      - label: Yellow
+        value: cybr-bg-ye
+      - label: Blue
+        value: cybr-bg-bl
+      - label: Violet
+        value: cybr-bg-vi
+      - label: Cyan
+        value: cybr-bg-cy
+      - label: White
+        value: cybr-bg-wh
+      - label: Grey
+        value: cybr-bg-me
+      - label: Orange
+        value: cybr-bg-or
+      - label: Pink
+        value: cybr-bg-pi
+      - label: Black
+        value: cybr-bg-no
+
+# ══ COLORS ═════════════════════════════════════════════════════
+
+  - id: s-colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: cybrcore-primary
+    title: Primary
+    description: "User text · headings · tags · active state bg"
+    type: class-select
+    default: cybr-p-re
+    options:
+      - label: Red (default)
+        value: cybr-p-re
+      - label: Green
+        value: cybr-p-gr
+      - label: Yellow
+        value: cybr-p-ye
+      - label: Blue
+        value: cybr-p-bl
+      - label: Violet
+        value: cybr-p-vi
+      - label: Cyan
+        value: cybr-p-cy
+      - label: Orange
+        value: cybr-p-or
+      - label: Pink
+        value: cybr-p-pi
+      - label: White
+        value: cybr-p-wh
+      - label: Grey
+        value: cybr-p-me
+      - label: Black
+        value: cybr-p-no
+
+  - id: cybrcore-secondary
+    title: Secondary
+    description: "Internal interactive · nav · buttons"
+    type: class-select
+    default: cybr-s-cy
+    options:
+      - label: Red
+        value: cybr-s-re
+      - label: Green
+        value: cybr-s-gr
+      - label: Yellow
+        value: cybr-s-ye
+      - label: Blue
+        value: cybr-s-bl
+      - label: Violet
+        value: cybr-s-vi
+      - label: Cyan (default)
+        value: cybr-s-cy
+      - label: Orange
+        value: cybr-s-or
+      - label: Pink
+        value: cybr-s-pi
+      - label: White
+        value: cybr-s-wh
+      - label: Grey
+        value: cybr-s-me
+      - label: Black
+        value: cybr-s-no
+
+  - id: cybrcore-tertiary
+    title: Tertiary
+    description: "External links · outgoing actions"
+    type: class-select
+    default: cybr-t-gr
+    options:
+      - label: Red
+        value: cybr-t-re
+      - label: Green (default)
+        value: cybr-t-gr
+      - label: Yellow
+        value: cybr-t-ye
+      - label: Blue
+        value: cybr-t-bl
+      - label: Violet
+        value: cybr-t-vi
+      - label: Cyan
+        value: cybr-t-cy
+      - label: Orange
+        value: cybr-t-or
+      - label: Pink
+        value: cybr-t-pi
+      - label: White
+        value: cybr-t-wh
+      - label: Grey
+        value: cybr-t-me
+      - label: Black
+        value: cybr-t-no
+
+  - id: cybr-caret-sel
+    title: Caret
+    type: class-select
+    default: cybr-caret-gr
+    options:
+      - label: Red
+        value: cybr-caret-re
+      - label: Green (default)
+        value: cybr-caret-gr
+      - label: Yellow
+        value: cybr-caret-ye
+      - label: Blue
+        value: cybr-caret-bl
+      - label: Violet
+        value: cybr-caret-vi
+      - label: Cyan
+        value: cybr-caret-cy
+      - label: Orange
+        value: cybr-caret-or
+      - label: Pink
+        value: cybr-caret-pi
+
+  - id: cybr-prop-sel
+    title: Properties
+    type: class-select
+    default: cybr-prop-p
+    options:
+      - label: Primary (default)
+        value: cybr-prop-p
+      - label: Secondary
+        value: cybr-prop-s
+      - label: Tertiary
+        value: cybr-prop-t
+      - label: Red
+        value: cybr-prop-re
+      - label: Green
+        value: cybr-prop-gr
+      - label: Yellow
+        value: cybr-prop-ye
+      - label: Blue
+        value: cybr-prop-bl
+      - label: Violet
+        value: cybr-prop-vi
+      - label: Cyan
+        value: cybr-prop-cy
+      - label: White
+        value: cybr-prop-wh
+      - label: Grey
+        value: cybr-prop-me
+      - label: Orange
+        value: cybr-prop-or
+      - label: Pink
+        value: cybr-prop-pi
+
+  - id: cybr-bq-sel
+    title: Blockquote
+    type: class-select
+    default: cybr-bq-cy
+    options:
+      - label: Primary
+        value: cybr-bq-p
+      - label: Secondary
+        value: cybr-bq-s
+      - label: Tertiary
+        value: cybr-bq-t
+      - label: Red
+        value: cybr-bq-re
+      - label: Green
+        value: cybr-bq-gr
+      - label: Yellow
+        value: cybr-bq-ye
+      - label: Blue
+        value: cybr-bq-bl
+      - label: Violet
+        value: cybr-bq-vi
+      - label: Cyan (default)
+        value: cybr-bq-cy
+      - label: White
+        value: cybr-bq-wh
+      - label: Grey
+        value: cybr-bq-me
+      - label: Orange
+        value: cybr-bq-or
+      - label: Pink
+        value: cybr-bq-pi
+
+  # ── Headings ───────────────────────────────────────────────
+
+  - id: s-headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: cybr-h1-sel
+    title: H1
+    type: class-select
+    default: cybr-h1-p
+    options:
+      - label: Primary (default)
+        value: cybr-h1-p
+      - label: Secondary
+        value: cybr-h1-s
+      - label: Tertiary
+        value: cybr-h1-t
+      - label: Red
+        value: cybr-h1-re
+      - label: Green
+        value: cybr-h1-gr
+      - label: Yellow
+        value: cybr-h1-ye
+      - label: Blue
+        value: cybr-h1-bl
+      - label: Violet
+        value: cybr-h1-vi
+      - label: Cyan
+        value: cybr-h1-cy
+      - label: White
+        value: cybr-h1-wh
+      - label: Grey
+        value: cybr-h1-me
+      - label: Orange
+        value: cybr-h1-or
+      - label: Pink
+        value: cybr-h1-pi
+
+  - id: cybr-h2-sel
+    title: H2
+    type: class-select
+    default: cybr-h2-s
+    options:
+      - label: Primary
+        value: cybr-h2-p
+      - label: Secondary (default)
+        value: cybr-h2-s
+      - label: Tertiary
+        value: cybr-h2-t
+      - label: Red
+        value: cybr-h2-re
+      - label: Green
+        value: cybr-h2-gr
+      - label: Yellow
+        value: cybr-h2-ye
+      - label: Blue
+        value: cybr-h2-bl
+      - label: Violet
+        value: cybr-h2-vi
+      - label: Cyan
+        value: cybr-h2-cy
+      - label: White
+        value: cybr-h2-wh
+      - label: Grey
+        value: cybr-h2-me
+      - label: Orange
+        value: cybr-h2-or
+      - label: Pink
+        value: cybr-h2-pi
+
+  - id: cybr-h3-sel
+    title: H3
+    type: class-select
+    default: cybr-h3-p
+    options:
+      - label: Primary (default)
+        value: cybr-h3-p
+      - label: Secondary
+        value: cybr-h3-s
+      - label: Tertiary
+        value: cybr-h3-t
+      - label: Red
+        value: cybr-h3-re
+      - label: Green
+        value: cybr-h3-gr
+      - label: Yellow
+        value: cybr-h3-ye
+      - label: Blue
+        value: cybr-h3-bl
+      - label: Violet
+        value: cybr-h3-vi
+      - label: Cyan
+        value: cybr-h3-cy
+      - label: White
+        value: cybr-h3-wh
+      - label: Grey
+        value: cybr-h3-me
+      - label: Orange
+        value: cybr-h3-or
+      - label: Pink
+        value: cybr-h3-pi
+
+  - id: cybr-h4-sel
+    title: H4
+    type: class-select
+    default: cybr-h4-s
+    options:
+      - label: Primary (default)
+        value: cybr-h4-p
+      - label: Secondary
+        value: cybr-h4-s
+      - label: Tertiary
+        value: cybr-h4-t
+      - label: Red
+        value: cybr-h4-re
+      - label: Green
+        value: cybr-h4-gr
+      - label: Yellow
+        value: cybr-h4-ye
+      - label: Blue
+        value: cybr-h4-bl
+      - label: Violet
+        value: cybr-h4-vi
+      - label: Cyan
+        value: cybr-h4-cy
+      - label: White
+        value: cybr-h4-wh
+      - label: Grey
+        value: cybr-h4-me
+      - label: Orange
+        value: cybr-h4-or
+      - label: Pink
+        value: cybr-h4-pi
+
+  - id: cybr-h5-sel
+    title: H5
+    type: class-select
+    default: cybr-h5-p
+    options:
+      - label: Primary (default)
+        value: cybr-h5-p
+      - label: Secondary
+        value: cybr-h5-s
+      - label: Tertiary
+        value: cybr-h5-t
+      - label: Red
+        value: cybr-h5-re
+      - label: Green
+        value: cybr-h5-gr
+      - label: Yellow
+        value: cybr-h5-ye
+      - label: Blue
+        value: cybr-h5-bl
+      - label: Violet
+        value: cybr-h5-vi
+      - label: Cyan
+        value: cybr-h5-cy
+      - label: White
+        value: cybr-h5-wh
+      - label: Grey
+        value: cybr-h5-me
+      - label: Orange
+        value: cybr-h5-or
+      - label: Pink
+        value: cybr-h5-pi
+
+  - id: cybr-h6-sel
+    title: H6
+    type: class-select
+    default: cybr-h6-t
+    options:
+      - label: Primary (default)
+        value: cybr-h6-p
+      - label: Secondary
+        value: cybr-h6-s
+      - label: Tertiary (default)
+        value: cybr-h6-t
+      - label: Red
+        value: cybr-h6-re
+      - label: Green
+        value: cybr-h6-gr
+      - label: Yellow
+        value: cybr-h6-ye
+      - label: Blue
+        value: cybr-h6-bl
+      - label: Violet
+        value: cybr-h6-vi
+      - label: Cyan
+        value: cybr-h6-cy
+      - label: White
+        value: cybr-h6-wh
+      - label: Grey
+        value: cybr-h6-me
+      - label: Orange
+        value: cybr-h6-or
+      - label: Pink
+        value: cybr-h6-pi
+
+  # ── Folders ────────────────────────────────────────────────
+
+  - id: s-nav-colors
+    title: Folders
+    description: "Top-level folders colored by position. Requires Colored Folders toggle in UI."
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: cybr-folder-1
+    title: Folder 1
+    type: class-select
+    default: cybr-fc1-gr
+    options:
+      - label: Primary
+        value: cybr-fc1-p
+      - label: Secondary
+        value: cybr-fc1-s
+      - label: Tertiary
+        value: cybr-fc1-t
+      - label: Red
+        value: cybr-fc1-re
+      - label: Green (default)
+        value: cybr-fc1-gr
+      - label: Yellow
+        value: cybr-fc1-ye
+      - label: Blue
+        value: cybr-fc1-bl
+      - label: Violet
+        value: cybr-fc1-vi
+      - label: Cyan
+        value: cybr-fc1-cy
+      - label: White
+        value: cybr-fc1-wh
+      - label: Grey
+        value: cybr-fc1-me
+      - label: Orange
+        value: cybr-fc1-or
+      - label: Pink
+        value: cybr-fc1-pi
+
+  - id: cybr-folder-2
+    title: Folder 2
+    type: class-select
+    default: cybr-fc2-cy
+    options:
+      - label: Primary
+        value: cybr-fc2-p
+      - label: Secondary
+        value: cybr-fc2-s
+      - label: Tertiary
+        value: cybr-fc2-t
+      - label: Red
+        value: cybr-fc2-re
+      - label: Green
+        value: cybr-fc2-gr
+      - label: Yellow
+        value: cybr-fc2-ye
+      - label: Blue
+        value: cybr-fc2-bl
+      - label: Violet
+        value: cybr-fc2-vi
+      - label: Cyan (default)
+        value: cybr-fc2-cy
+      - label: White
+        value: cybr-fc2-wh
+      - label: Grey
+        value: cybr-fc2-me
+      - label: Orange
+        value: cybr-fc2-or
+      - label: Pink
+        value: cybr-fc2-pi
+
+  - id: cybr-folder-3
+    title: Folder 3
+    type: class-select
+    default: cybr-fc3-bl
+    options:
+      - label: Primary
+        value: cybr-fc3-p
+      - label: Secondary
+        value: cybr-fc3-s
+      - label: Tertiary
+        value: cybr-fc3-t
+      - label: Red
+        value: cybr-fc3-re
+      - label: Green
+        value: cybr-fc3-gr
+      - label: Yellow
+        value: cybr-fc3-ye
+      - label: Blue (default)
+        value: cybr-fc3-bl
+      - label: Violet
+        value: cybr-fc3-vi
+      - label: Cyan
+        value: cybr-fc3-cy
+      - label: White
+        value: cybr-fc3-wh
+      - label: Grey
+        value: cybr-fc3-me
+      - label: Orange
+        value: cybr-fc3-or
+      - label: Pink
+        value: cybr-fc3-pi
+
+  - id: cybr-folder-4
+    title: Folder 4
+    type: class-select
+    default: cybr-fc4-me
+    options:
+      - label: Primary
+        value: cybr-fc4-p
+      - label: Secondary
+        value: cybr-fc4-s
+      - label: Tertiary
+        value: cybr-fc4-t
+      - label: Red
+        value: cybr-fc4-re
+      - label: Green
+        value: cybr-fc4-gr
+      - label: Yellow
+        value: cybr-fc4-ye
+      - label: Blue
+        value: cybr-fc4-bl
+      - label: Violet
+        value: cybr-fc4-vi
+      - label: Cyan
+        value: cybr-fc4-cy
+      - label: White
+        value: cybr-fc4-wh
+      - label: Grey (default)
+        value: cybr-fc4-me
+      - label: Orange
+        value: cybr-fc4-or
+      - label: Pink
+        value: cybr-fc4-pi
+
+  - id: cybr-folder-5
+    title: Folder 5
+    type: class-select
+    default: cybr-fc5-vi
+    options:
+      - label: Primary
+        value: cybr-fc5-p
+      - label: Secondary
+        value: cybr-fc5-s
+      - label: Tertiary
+        value: cybr-fc5-t
+      - label: Red
+        value: cybr-fc5-re
+      - label: Green
+        value: cybr-fc5-gr
+      - label: Yellow
+        value: cybr-fc5-ye
+      - label: Blue
+        value: cybr-fc5-bl
+      - label: Violet (default)
+        value: cybr-fc5-vi
+      - label: Cyan
+        value: cybr-fc5-cy
+      - label: White
+        value: cybr-fc5-wh
+      - label: Grey
+        value: cybr-fc5-me
+      - label: Orange
+        value: cybr-fc5-or
+      - label: Pink
+        value: cybr-fc5-pi
+
+  - id: cybr-folder-6
+    title: Folder 6
+    type: class-select
+    default: cybr-fc6-ye
+    options:
+      - label: Primary
+        value: cybr-fc6-p
+      - label: Secondary
+        value: cybr-fc6-s
+      - label: Tertiary
+        value: cybr-fc6-t
+      - label: Red
+        value: cybr-fc6-re
+      - label: Green
+        value: cybr-fc6-gr
+      - label: Yellow (default)
+        value: cybr-fc6-ye
+      - label: Blue
+        value: cybr-fc6-bl
+      - label: Violet
+        value: cybr-fc6-vi
+      - label: Cyan
+        value: cybr-fc6-cy
+      - label: White
+        value: cybr-fc6-wh
+      - label: Grey
+        value: cybr-fc6-me
+      - label: Orange
+        value: cybr-fc6-or
+      - label: Pink
+        value: cybr-fc6-pi
+
+  - id: cybr-folder-7
+    title: Folder 7
+    type: class-select
+    default: cybr-fc7-or
+    options:
+      - label: Primary
+        value: cybr-fc7-p
+      - label: Secondary
+        value: cybr-fc7-s
+      - label: Tertiary
+        value: cybr-fc7-t
+      - label: Red
+        value: cybr-fc7-re
+      - label: Green
+        value: cybr-fc7-gr
+      - label: Yellow
+        value: cybr-fc7-ye
+      - label: Blue
+        value: cybr-fc7-bl
+      - label: Violet
+        value: cybr-fc7-vi
+      - label: Cyan
+        value: cybr-fc7-cy
+      - label: White
+        value: cybr-fc7-wh
+      - label: Grey
+        value: cybr-fc7-me
+      - label: Orange (default)
+        value: cybr-fc7-or
+      - label: Pink
+        value: cybr-fc7-pi
+
+  - id: cybr-folder-8
+    title: Folder 8
+    type: class-select
+    default: cybr-fc8-pi
+    options:
+      - label: Primary
+        value: cybr-fc8-p
+      - label: Secondary
+        value: cybr-fc8-s
+      - label: Tertiary
+        value: cybr-fc8-t
+      - label: Red
+        value: cybr-fc8-re
+      - label: Green
+        value: cybr-fc8-gr
+      - label: Yellow
+        value: cybr-fc8-ye
+      - label: Blue
+        value: cybr-fc8-bl
+      - label: Violet
+        value: cybr-fc8-vi
+      - label: Cyan
+        value: cybr-fc8-cy
+      - label: White
+        value: cybr-fc8-wh
+      - label: Grey
+        value: cybr-fc8-me
+      - label: Orange
+        value: cybr-fc8-or
+      - label: Pink (default)
+        value: cybr-fc8-pi
+
+  # ══ UI ═══════════════════════════════════════════════════════
+
+  - id: s-ui
+    title: UI
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: cybrcore-underline-internal
+    title: Underline Internal
+    type: class-toggle
+    default: true
+
+  - id: cybrcore-underline-external
+    title: Underline External
+    type: class-toggle
+    default: true
+
+  - id: cybrcore-hide-right-top
+    title: Hide Right Top Bar
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-tabs
+    title: Hide Tab Headers
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-ribbon
+    title: Hide Ribbon
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-bottom-nav
+    title: Hide Vault Profile
+    description: Vault icon and switcher at the base of the left sidebar
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-sidebar-toggle
+    title: Hide Sidebar Toggle Buttons
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-nav-buttons
+    title: Hide File Explorer Buttons
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-system-icons
+    title: Hide System Icons
+    description: OS window controls
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-status-bar
+    title: Hide Status Bar
+    type: class-toggle
+    default: false
+
+  - id: cybr-status-sel
+    title: Status Bar Background Color
+    type: class-select
+    default: cybr-status-p
+    options:
+      - label: Primary (default)
+        value: cybr-status-p
+      - label: Red
+        value: cybr-status-re
+      - label: Green
+        value: cybr-status-gr
+      - label: Yellow
+        value: cybr-status-ye
+      - label: Blue
+        value: cybr-status-bl
+      - label: Violet
+        value: cybr-status-vi
+      - label: Cyan
+        value: cybr-status-cy
+      - label: Orange
+        value: cybr-status-or
+      - label: Pink
+        value: cybr-status-pi
+
+  - id: cybrcore-hide-scrollbars
+    title: Hide Scrollbars
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-tooltips
+    title: Hide Tooltips
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-instructions
+    title: Hide Prompt Instructions
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-search-suggestions
+    title: Hide Search Suggestions
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-search-count
+    title: Hide Search Match Count
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-hide-properties-reading
+    title: Hide Properties in Reading View
+    type: class-toggle
+    default: false
+
+  - id: cybrcore-maximize-media
+    title: Maximize Media
+    type: class-toggle
+    default: true
+
+  - id: cybrcore-image-grids
+    title: Image Grids
+    type: class-toggle
+    default: true
+
+  - id: cybrcore-cards-columns
+    title: Card Columns
+    descripton: "Add CSS class 'cards' to a note"
+    type: class-select
+    default: cybr-cards-3
+    options:
+      - label: 2
+        value: cybr-cards-2
+      - label: 3 (default)
+        value: cybr-cards-3
+      - label: 4
+        value: cybr-cards-4
+      - label: Auto
+        value: cybr-cards-auto
+
+  - id: s-focus
+    title: Focus Mode
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: cybrcore-focus-mode
+    title: Focus Mode
+    description: Collapses sidebars. Reveal on hover.
+    type: class-toggle
+    default: false
+    addCommand: true
+
+  - id: cybrcore-focus-reveal-hover
+    title: Reveal on Hover
+    type: class-toggle
+    default: true
+
+*/
+
+/* #endregion */
+
+
+/* #region PALETTE */
+/* xy1 = xy0 at 40% opacity · xy2 = xy0 at 20% opacity
+   All tints transparent-based so they layer over wallpapers. */
+
+:root {
+  --cybr-no0: #030408; --cybr-no1: #05070D; --cybr-no2: #0A0E1A;
+  --cybr-wh0: #898D99; --cybr-wh1: #393B42; --cybr-wh2: #1E2025;
+  --cybr-me0: #4D5A80;
+  --cybr-me1: color-mix(in srgb, #4D5A80 40%, transparent);
+  --cybr-me2: color-mix(in srgb, #4D5A80 20%, transparent);
+
+  --cybr-re0: #F24848;
+  --cybr-re1: color-mix(in srgb, var(--cybr-re0) 40%, transparent);
+  --cybr-re2: color-mix(in srgb, var(--cybr-re0) 20%, transparent);
+
+  --cybr-gr0: #30F291;
+  --cybr-gr1: color-mix(in srgb, var(--cybr-gr0) 40%, transparent);
+  --cybr-gr2: color-mix(in srgb, var(--cybr-gr0) 20%, transparent);
+
+  --cybr-ye0: #F2D230;
+  --cybr-ye1: color-mix(in srgb, var(--cybr-ye0) 40%, transparent);
+  --cybr-ye2: color-mix(in srgb, var(--cybr-ye0) 20%, transparent);
+
+  --cybr-bl0: #3061F2;
+  --cybr-bl1: color-mix(in srgb, var(--cybr-bl0) 40%, transparent);
+  --cybr-bl2: color-mix(in srgb, var(--cybr-bl0) 20%, transparent);
+
+  --cybr-vi0: #A130F2;
+  --cybr-vi1: color-mix(in srgb, var(--cybr-vi0) 40%, transparent);
+  --cybr-vi2: color-mix(in srgb, var(--cybr-vi0) 20%, transparent);
+
+  --cybr-cy0: #29BECC;
+  --cybr-cy1: color-mix(in srgb, var(--cybr-cy0) 40%, transparent);
+  --cybr-cy2: color-mix(in srgb, var(--cybr-cy0) 20%, transparent);
+
+  --cybr-or0: #F26118;
+  --cybr-or1: color-mix(in srgb, var(--cybr-or0) 40%, transparent);
+  --cybr-or2: color-mix(in srgb, var(--cybr-or0) 20%, transparent);
+
+  --cybr-pi0: #F230B2;
+  --cybr-pi1: color-mix(in srgb, var(--cybr-pi0) 40%, transparent);
+  --cybr-pi2: color-mix(in srgb, var(--cybr-pi0) 20%, transparent);
+
+  --cybr-hover-fg: var(--cybr-bl0);
+  --cybr-hover-bg: var(--cybr-bl2);
+}
+
+/* #endregion */
+
+
+/* #region TOKENS */
+
+/* Primary */
+:root,
+body.cybr-p-re { --cybr-p0: var(--cybr-re0); --cybr-p1: var(--cybr-re1); --cybr-p2: var(--cybr-re2); }
+body.cybr-p-gr { --cybr-p0: var(--cybr-gr0); --cybr-p1: var(--cybr-gr1); --cybr-p2: var(--cybr-gr2); }
+body.cybr-p-ye { --cybr-p0: var(--cybr-ye0); --cybr-p1: var(--cybr-ye1); --cybr-p2: var(--cybr-ye2); }
+body.cybr-p-bl { --cybr-p0: var(--cybr-bl0); --cybr-p1: var(--cybr-bl1); --cybr-p2: var(--cybr-bl2); }
+body.cybr-p-vi { --cybr-p0: var(--cybr-vi0); --cybr-p1: var(--cybr-vi1); --cybr-p2: var(--cybr-vi2); }
+body.cybr-p-cy { --cybr-p0: var(--cybr-cy0); --cybr-p1: var(--cybr-cy1); --cybr-p2: var(--cybr-cy2); }
+body.cybr-p-or { --cybr-p0: var(--cybr-or0); --cybr-p1: var(--cybr-or1); --cybr-p2: var(--cybr-or2); }
+body.cybr-p-pi { --cybr-p0: var(--cybr-pi0); --cybr-p1: var(--cybr-pi1); --cybr-p2: var(--cybr-pi2); }
+body.cybr-p-wh { --cybr-p0: var(--cybr-wh0); --cybr-p1: var(--cybr-wh1); --cybr-p2: var(--cybr-wh2); }
+body.cybr-p-me { --cybr-p0: var(--cybr-me0); --cybr-p1: var(--cybr-me1); --cybr-p2: var(--cybr-me2); }
+body.cybr-p-no { --cybr-p0: var(--cybr-no0); --cybr-p1: var(--cybr-no1); --cybr-p2: var(--cybr-no2); }
+
+/* Secondary */
+:root,
+body.cybr-s-cy { --cybr-s0: var(--cybr-cy0); --cybr-s1: var(--cybr-cy1); --cybr-s2: var(--cybr-cy2); }
+body.cybr-s-re { --cybr-s0: var(--cybr-re0); --cybr-s1: var(--cybr-re1); --cybr-s2: var(--cybr-re2); }
+body.cybr-s-gr { --cybr-s0: var(--cybr-gr0); --cybr-s1: var(--cybr-gr1); --cybr-s2: var(--cybr-gr2); }
+body.cybr-s-ye { --cybr-s0: var(--cybr-ye0); --cybr-s1: var(--cybr-ye1); --cybr-s2: var(--cybr-ye2); }
+body.cybr-s-bl { --cybr-s0: var(--cybr-bl0); --cybr-s1: var(--cybr-bl1); --cybr-s2: var(--cybr-bl2); }
+body.cybr-s-vi { --cybr-s0: var(--cybr-vi0); --cybr-s1: var(--cybr-vi1); --cybr-s2: var(--cybr-vi2); }
+body.cybr-s-or { --cybr-s0: var(--cybr-or0); --cybr-s1: var(--cybr-or1); --cybr-s2: var(--cybr-or2); }
+body.cybr-s-pi { --cybr-s0: var(--cybr-pi0); --cybr-s1: var(--cybr-pi1); --cybr-s2: var(--cybr-pi2); }
+body.cybr-s-wh { --cybr-s0: var(--cybr-wh0); --cybr-s1: var(--cybr-wh1); --cybr-s2: var(--cybr-wh2); }
+body.cybr-s-me { --cybr-s0: var(--cybr-me0); --cybr-s1: var(--cybr-me1); --cybr-s2: var(--cybr-me2); }
+body.cybr-s-no { --cybr-s0: var(--cybr-no0); --cybr-s1: var(--cybr-no1); --cybr-s2: var(--cybr-no2); }
+
+/* Tertiary */
+:root,
+body.cybr-t-gr { --cybr-t0: var(--cybr-gr0); --cybr-t1: var(--cybr-gr1); --cybr-t2: var(--cybr-gr2); }
+body.cybr-t-re { --cybr-t0: var(--cybr-re0); --cybr-t1: var(--cybr-re1); --cybr-t2: var(--cybr-re2); }
+body.cybr-t-ye { --cybr-t0: var(--cybr-ye0); --cybr-t1: var(--cybr-ye1); --cybr-t2: var(--cybr-ye2); }
+body.cybr-t-bl { --cybr-t0: var(--cybr-bl0); --cybr-t1: var(--cybr-bl1); --cybr-t2: var(--cybr-bl2); }
+body.cybr-t-vi { --cybr-t0: var(--cybr-vi0); --cybr-t1: var(--cybr-vi1); --cybr-t2: var(--cybr-vi2); }
+body.cybr-t-cy { --cybr-t0: var(--cybr-cy0); --cybr-t1: var(--cybr-cy1); --cybr-t2: var(--cybr-cy2); }
+body.cybr-t-or { --cybr-t0: var(--cybr-or0); --cybr-t1: var(--cybr-or1); --cybr-t2: var(--cybr-or2); }
+body.cybr-t-pi { --cybr-t0: var(--cybr-pi0); --cybr-t1: var(--cybr-pi1); --cybr-t2: var(--cybr-pi2); }
+body.cybr-t-wh { --cybr-t0: var(--cybr-wh0); --cybr-t1: var(--cybr-wh1); --cybr-t2: var(--cybr-wh2); }
+body.cybr-t-me { --cybr-t0: var(--cybr-me0); --cybr-t1: var(--cybr-me1); --cybr-t2: var(--cybr-me2); }
+body.cybr-t-no { --cybr-t0: var(--cybr-no0); --cybr-t1: var(--cybr-no1); --cybr-t2: var(--cybr-no2); }
+
+/* Headings */
+:root { --cybr-h1: var(--cybr-p0); --cybr-h2: var(--cybr-s0); --cybr-h3: var(--cybr-t0); --cybr-h4: var(--cybr-p0); --cybr-h5: var(--cybr-s0); --cybr-h6: var(--cybr-t0); }
+body.cybr-h1-p{--cybr-h1:var(--cybr-p0)} body.cybr-h1-re{--cybr-h1:var(--cybr-re0)} body.cybr-h1-gr{--cybr-h1:var(--cybr-gr0)} body.cybr-h1-ye{--cybr-h1:var(--cybr-ye0)} body.cybr-h1-bl{--cybr-h1:var(--cybr-bl0)} body.cybr-h1-vi{--cybr-h1:var(--cybr-vi0)} body.cybr-h1-cy{--cybr-h1:var(--cybr-cy0)} body.cybr-h1-or{--cybr-h1:var(--cybr-or0)} body.cybr-h1-pi{--cybr-h1:var(--cybr-pi0)} body.cybr-h1-s{--cybr-h1:var(--cybr-s0)} body.cybr-h1-t{--cybr-h1:var(--cybr-t0)} body.cybr-h1-wh{--cybr-h1:var(--cybr-wh0)} body.cybr-h1-me{--cybr-h1:var(--cybr-me0)}
+body.cybr-h2-p{--cybr-h2:var(--cybr-p0)} body.cybr-h2-re{--cybr-h2:var(--cybr-re0)} body.cybr-h2-gr{--cybr-h2:var(--cybr-gr0)} body.cybr-h2-ye{--cybr-h2:var(--cybr-ye0)} body.cybr-h2-bl{--cybr-h2:var(--cybr-bl0)} body.cybr-h2-vi{--cybr-h2:var(--cybr-vi0)} body.cybr-h2-cy{--cybr-h2:var(--cybr-cy0)} body.cybr-h2-or{--cybr-h2:var(--cybr-or0)} body.cybr-h2-pi{--cybr-h2:var(--cybr-pi0)} body.cybr-h2-s{--cybr-h2:var(--cybr-s0)} body.cybr-h2-t{--cybr-h2:var(--cybr-t0)} body.cybr-h2-wh{--cybr-h2:var(--cybr-wh0)} body.cybr-h2-me{--cybr-h2:var(--cybr-me0)}
+body.cybr-h3-p{--cybr-h3:var(--cybr-p0)} body.cybr-h3-re{--cybr-h3:var(--cybr-re0)} body.cybr-h3-gr{--cybr-h3:var(--cybr-gr0)} body.cybr-h3-ye{--cybr-h3:var(--cybr-ye0)} body.cybr-h3-bl{--cybr-h3:var(--cybr-bl0)} body.cybr-h3-vi{--cybr-h3:var(--cybr-vi0)} body.cybr-h3-cy{--cybr-h3:var(--cybr-cy0)} body.cybr-h3-or{--cybr-h3:var(--cybr-or0)} body.cybr-h3-pi{--cybr-h3:var(--cybr-pi0)} body.cybr-h3-s{--cybr-h3:var(--cybr-s0)} body.cybr-h3-t{--cybr-h3:var(--cybr-t0)} body.cybr-h3-wh{--cybr-h3:var(--cybr-wh0)} body.cybr-h3-me{--cybr-h3:var(--cybr-me0)}
+body.cybr-h4-p{--cybr-h4:var(--cybr-p0)} body.cybr-h4-re{--cybr-h4:var(--cybr-re0)} body.cybr-h4-gr{--cybr-h4:var(--cybr-gr0)} body.cybr-h4-ye{--cybr-h4:var(--cybr-ye0)} body.cybr-h4-bl{--cybr-h4:var(--cybr-bl0)} body.cybr-h4-vi{--cybr-h4:var(--cybr-vi0)} body.cybr-h4-cy{--cybr-h4:var(--cybr-cy0)} body.cybr-h4-or{--cybr-h4:var(--cybr-or0)} body.cybr-h4-pi{--cybr-h4:var(--cybr-pi0)} body.cybr-h4-s{--cybr-h4:var(--cybr-s0)} body.cybr-h4-t{--cybr-h4:var(--cybr-t0)} body.cybr-h4-wh{--cybr-h4:var(--cybr-wh0)} body.cybr-h4-me{--cybr-h4:var(--cybr-me0)}
+body.cybr-h5-p{--cybr-h5:var(--cybr-p0)} body.cybr-h5-re{--cybr-h5:var(--cybr-re0)} body.cybr-h5-gr{--cybr-h5:var(--cybr-gr0)} body.cybr-h5-ye{--cybr-h5:var(--cybr-ye0)} body.cybr-h5-bl{--cybr-h5:var(--cybr-bl0)} body.cybr-h5-vi{--cybr-h5:var(--cybr-vi0)} body.cybr-h5-cy{--cybr-h5:var(--cybr-cy0)} body.cybr-h5-or{--cybr-h5:var(--cybr-or0)} body.cybr-h5-pi{--cybr-h5:var(--cybr-pi0)} body.cybr-h5-s{--cybr-h5:var(--cybr-s0)} body.cybr-h5-t{--cybr-h5:var(--cybr-t0)} body.cybr-h5-wh{--cybr-h5:var(--cybr-wh0)} body.cybr-h5-me{--cybr-h5:var(--cybr-me0)}
+body.cybr-h6-p{--cybr-h6:var(--cybr-p0)} body.cybr-h6-re{--cybr-h6:var(--cybr-re0)} body.cybr-h6-gr{--cybr-h6:var(--cybr-gr0)} body.cybr-h6-ye{--cybr-h6:var(--cybr-ye0)} body.cybr-h6-bl{--cybr-h6:var(--cybr-bl0)} body.cybr-h6-vi{--cybr-h6:var(--cybr-vi0)} body.cybr-h6-cy{--cybr-h6:var(--cybr-cy0)} body.cybr-h6-or{--cybr-h6:var(--cybr-or0)} body.cybr-h6-pi{--cybr-h6:var(--cybr-pi0)} body.cybr-h6-s{--cybr-h6:var(--cybr-s0)} body.cybr-h6-t{--cybr-h6:var(--cybr-t0)} body.cybr-h6-wh{--cybr-h6:var(--cybr-wh0)} body.cybr-h6-me{--cybr-h6:var(--cybr-me0)}
+
+/* Blockquote */
+:root { --cybr-bq0: var(--cybr-cy0); --cybr-bq2: var(--cybr-cy2); }
+body.cybr-bq-p{--cybr-bq0:var(--cybr-p0);--cybr-bq2:var(--cybr-p2)} body.cybr-bq-s{--cybr-bq0:var(--cybr-s0);--cybr-bq2:var(--cybr-s2)} body.cybr-bq-re{--cybr-bq0:var(--cybr-re0);--cybr-bq2:var(--cybr-re2)} body.cybr-bq-gr{--cybr-bq0:var(--cybr-gr0);--cybr-bq2:var(--cybr-gr2)} body.cybr-bq-ye{--cybr-bq0:var(--cybr-ye0);--cybr-bq2:var(--cybr-ye2)} body.cybr-bq-bl{--cybr-bq0:var(--cybr-bl0);--cybr-bq2:var(--cybr-bl2)} body.cybr-bq-vi{--cybr-bq0:var(--cybr-vi0);--cybr-bq2:var(--cybr-vi2)} body.cybr-bq-cy{--cybr-bq0:var(--cybr-cy0);--cybr-bq2:var(--cybr-cy2)} body.cybr-bq-or{--cybr-bq0:var(--cybr-or0);--cybr-bq2:var(--cybr-or2)} body.cybr-bq-pi{--cybr-bq0:var(--cybr-pi0);--cybr-bq2:var(--cybr-pi2)} body.cybr-bq-t{--cybr-bq0:var(--cybr-t0);--cybr-bq2:var(--cybr-t2)} body.cybr-bq-wh{--cybr-bq0:var(--cybr-wh0);--cybr-bq2:var(--cybr-wh2)}
+
+/* Properties */
+:root { --cybr-prop0: var(--cybr-p0); --cybr-prop1: var(--cybr-p1); --cybr-prop2: var(--cybr-p2); }
+body.cybr-prop-p{--cybr-prop0:var(--cybr-p0);--cybr-prop1:var(--cybr-p1);--cybr-prop2:var(--cybr-p2)} body.cybr-prop-s{--cybr-prop0:var(--cybr-s0);--cybr-prop1:var(--cybr-s1);--cybr-prop2:var(--cybr-s2)} body.cybr-prop-re{--cybr-prop0:var(--cybr-re0);--cybr-prop1:var(--cybr-re1);--cybr-prop2:var(--cybr-re2)} body.cybr-prop-gr{--cybr-prop0:var(--cybr-gr0);--cybr-prop1:var(--cybr-gr1);--cybr-prop2:var(--cybr-gr2)} body.cybr-prop-ye{--cybr-prop0:var(--cybr-ye0);--cybr-prop1:var(--cybr-ye1);--cybr-prop2:var(--cybr-ye2)} body.cybr-prop-bl{--cybr-prop0:var(--cybr-bl0);--cybr-prop1:var(--cybr-bl1);--cybr-prop2:var(--cybr-bl2)} body.cybr-prop-vi{--cybr-prop0:var(--cybr-vi0);--cybr-prop1:var(--cybr-vi1);--cybr-prop2:var(--cybr-vi2)} body.cybr-prop-cy{--cybr-prop0:var(--cybr-cy0);--cybr-prop1:var(--cybr-cy1);--cybr-prop2:var(--cybr-cy2)} body.cybr-prop-or{--cybr-prop0:var(--cybr-or0);--cybr-prop1:var(--cybr-or1);--cybr-prop2:var(--cybr-or2)} body.cybr-prop-pi{--cybr-prop0:var(--cybr-pi0);--cybr-prop1:var(--cybr-pi1);--cybr-prop2:var(--cybr-pi2)} body.cybr-prop-t{--cybr-prop0:var(--cybr-t0);--cybr-prop1:var(--cybr-t1);--cybr-prop2:var(--cybr-t2)} body.cybr-prop-wh{--cybr-prop0:var(--cybr-wh0);--cybr-prop1:var(--cybr-wh1);--cybr-prop2:var(--cybr-wh2)}
+
+/* Misc */
+:root { --cybr-hr: var(--cybr-p0); --cybr-caret: var(--cybr-gr0); --cybr-todo: var(--cybr-me0); --cybr-status-bg: var(--cybr-p0); }
+body.cybr-hr-p{--cybr-hr:var(--cybr-p0)} body.cybr-hr-s{--cybr-hr:var(--cybr-s0)} body.cybr-hr-re{--cybr-hr:var(--cybr-re0)} body.cybr-hr-gr{--cybr-hr:var(--cybr-gr0)} body.cybr-hr-ye{--cybr-hr:var(--cybr-ye0)} body.cybr-hr-bl{--cybr-hr:var(--cybr-bl0)} body.cybr-hr-vi{--cybr-hr:var(--cybr-vi0)} body.cybr-hr-cy{--cybr-hr:var(--cybr-cy0)} body.cybr-hr-or{--cybr-hr:var(--cybr-or0)} body.cybr-hr-pi{--cybr-hr:var(--cybr-pi0)} body.cybr-hr-me{--cybr-hr:var(--cybr-me0)}
+body.cybr-caret-re{--cybr-caret:var(--cybr-re0)} body.cybr-caret-gr{--cybr-caret:var(--cybr-gr0)} body.cybr-caret-ye{--cybr-caret:var(--cybr-ye0)} body.cybr-caret-bl{--cybr-caret:var(--cybr-bl0)} body.cybr-caret-vi{--cybr-caret:var(--cybr-vi0)} body.cybr-caret-cy{--cybr-caret:var(--cybr-cy0)} body.cybr-caret-or{--cybr-caret:var(--cybr-or0)} body.cybr-caret-pi{--cybr-caret:var(--cybr-pi0)}
+body.cybr-todo-me{--cybr-todo:var(--cybr-me0)} body.cybr-todo-p{--cybr-todo:var(--cybr-p0)} body.cybr-todo-s{--cybr-todo:var(--cybr-s0)}
+body.cybr-status-p{--cybr-status-bg:var(--cybr-p0)} body.cybr-status-re{--cybr-status-bg:var(--cybr-re0)} body.cybr-status-gr{--cybr-status-bg:var(--cybr-gr0)} body.cybr-status-ye{--cybr-status-bg:var(--cybr-ye0)} body.cybr-status-bl{--cybr-status-bg:var(--cybr-bl0)} body.cybr-status-vi{--cybr-status-bg:var(--cybr-vi0)} body.cybr-status-cy{--cybr-status-bg:var(--cybr-cy0)} body.cybr-status-or{--cybr-status-bg:var(--cybr-or0)} body.cybr-status-pi{--cybr-status-bg:var(--cybr-pi0)}
+
+/* Geometry */
+:root {
+  --n-l:  15px; --n-m:  10px; --n-s: 5px; --n-xs: 3px;
+  --clip-l:  polygon(0% var(--n-l),  var(--n-l)  0%, 100% 0%, 100% calc(100% - var(--n-l)),  calc(100% - var(--n-l))  100%, 0% 100%);
+  --clip-m:  polygon(0% var(--n-m),  var(--n-m)  0%, 100% 0%, 100% calc(100% - var(--n-m)),  calc(100% - var(--n-m))  100%, 0% 100%);
+  --clip-s:  polygon(0% var(--n-s),  var(--n-s)  0%, 100% 0%, 100% calc(100% - var(--n-s)),  calc(100% - var(--n-s))  100%, 0% 100%);
+  --clip-xs: polygon(0% var(--n-xs), var(--n-xs) 0%, 100% 0%, 100% calc(100% - var(--n-xs)), calc(100% - var(--n-xs)) 100%, 0% 100%);
+  --clip-m-t:  polygon(0% var(--n-m),  var(--n-m)  0%, 100% 0%, 100% 100%, 0% 100%);
+  --clip-m-b:  polygon(0% 0%, 100% 0%, 100% calc(100% - var(--n-m)),  calc(100% - var(--n-m))  100%, 0% 100%);
+  --clip-xs-t: polygon(0% var(--n-xs), var(--n-xs) 0%, 100% 0%, 100% 100%, 0% 100%);
+  --clip-xs-b: polygon(0% 0%, 100% 0%, 100% calc(100% - var(--n-xs)), calc(100% - var(--n-xs)) 100%, 0% 100%);
+}
+
+/* Folders */
+body.cybr-fc1-re .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-re0); }
+body.cybr-fc1-or .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-or0); }
+body.cybr-fc1-ye .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc1-gr .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc1-cy .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc1-bl .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc1-vi .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc1-pi .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc1-me .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-me0); }
+body.cybr-fc1-p .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-p0); }
+body.cybr-fc1-s .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-s0); }
+body.cybr-fc1-t .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-t0); }
+body.cybr-fc1-wh .nav-files-container > div > .tree-item:nth-child(2) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc2-re .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-re0); }
+body.cybr-fc2-or .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-or0); }
+body.cybr-fc2-ye .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc2-gr .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc2-cy .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc2-bl .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc2-vi .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc2-pi .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc2-me .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-me0); }
+body.cybr-fc2-p .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-p0); }
+body.cybr-fc2-s .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-s0); }
+body.cybr-fc2-t .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-t0); }
+body.cybr-fc2-wh .nav-files-container > div > .tree-item:nth-child(3) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc3-re .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-re0); }
+body.cybr-fc3-or .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-or0); }
+body.cybr-fc3-ye .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc3-gr .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc3-cy .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc3-bl .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc3-vi .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc3-pi .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc3-me .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-me0); }
+body.cybr-fc3-p .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-p0); }
+body.cybr-fc3-s .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-s0); }
+body.cybr-fc3-t .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-t0); }
+body.cybr-fc3-wh .nav-files-container > div > .tree-item:nth-child(4) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc4-re .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-re0); }
+body.cybr-fc4-or .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-or0); }
+body.cybr-fc4-ye .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc4-gr .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc4-cy .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc4-bl .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc4-vi .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc4-pi .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc4-me .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-me0); }
+body.cybr-fc4-p .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-p0); }
+body.cybr-fc4-s .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-s0); }
+body.cybr-fc4-t .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-t0); }
+body.cybr-fc4-wh .nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc5-re .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-re0); }
+body.cybr-fc5-or .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-or0); }
+body.cybr-fc5-ye .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc5-gr .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc5-cy .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc5-bl .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc5-vi .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc5-pi .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc5-me .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-me0); }
+body.cybr-fc5-p .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-p0); }
+body.cybr-fc5-s .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-s0); }
+body.cybr-fc5-t .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-t0); }
+body.cybr-fc5-wh .nav-files-container > div > .tree-item:nth-child(6) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc6-re .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-re0); }
+body.cybr-fc6-or .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-or0); }
+body.cybr-fc6-ye .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc6-gr .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc6-cy .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc6-bl .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc6-vi .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc6-pi .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc6-me .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-me0); }
+body.cybr-fc6-p .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-p0); }
+body.cybr-fc6-s .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-s0); }
+body.cybr-fc6-t .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-t0); }
+body.cybr-fc6-wh .nav-files-container > div > .tree-item:nth-child(7) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc7-re .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-re0); }
+body.cybr-fc7-or .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-or0); }
+body.cybr-fc7-ye .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc7-gr .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc7-cy .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc7-bl .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc7-vi .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc7-pi .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc7-me .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-me0); }
+body.cybr-fc7-p .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-p0); }
+body.cybr-fc7-s .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-s0); }
+body.cybr-fc7-t .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-t0); }
+body.cybr-fc7-wh .nav-files-container > div > .tree-item:nth-child(8) { --folder-color: var(--cybr-wh0); }
+
+body.cybr-fc8-re .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-re0); }
+body.cybr-fc8-or .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-or0); }
+body.cybr-fc8-ye .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-ye0); }
+body.cybr-fc8-gr .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-gr0); }
+body.cybr-fc8-cy .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-cy0); }
+body.cybr-fc8-bl .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-bl0); }
+body.cybr-fc8-vi .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-vi0); }
+body.cybr-fc8-pi .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-pi0); }
+body.cybr-fc8-me .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-me0); }
+body.cybr-fc8-p .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-p0); }
+body.cybr-fc8-s .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-s0); }
+body.cybr-fc8-t .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-t0); }
+body.cybr-fc8-wh .nav-files-container > div > .tree-item:nth-child(9) { --folder-color: var(--cybr-wh0); }
+
+
+/* #endregion */
+
+
+/* #region OBSIDIAN MAP */
+
+.theme-dark {
+  --font-ui-smaller: 11px; --font-ui-small: 12px;
+  --font-ui-medium:  13px; --font-ui-large: 15px;
+  --line-height-normal:  1.3;
+  --p-spacing:           0.5em;
+  --bold-weight:         600;
+
+  --h1-size: 2.369em; --h1-weight: 300; --h1-color: var(--cybr-h1);
+  --h2-size: 1.777em; --h2-weight: 300; --h2-color: var(--cybr-h2);
+  --h3-size: 1.5em;   --h3-weight: 300; --h3-color: var(--cybr-h3);
+  --h4-size: 1.333em; --h4-weight: 300; --h4-color: var(--cybr-h4);
+  --h5-size: 1.2em;   --h5-weight: 300; --h5-color: var(--cybr-h5);
+  --h6-size: 1em;     --h6-weight: 400; --h6-color: var(--cybr-h6);
+  --inline-title-size: 2.369em; --inline-title-weight: 300; --inline-title-color: var(--cybr-p0);
+
+  --background-primary:           var(--cybr-no0);
+  --background-primary-alt:       var(--cybr-no0);
+  --background-secondary:         transparent;
+  --background-secondary-alt:     var(--cybr-no1);
+  --background-modifier-hover:    var(--cybr-s2);
+  --background-modifier-active-hover: var(--cybr-s1);
+  --background-modifier-border:   transparent;
+  --background-modifier-border-hover: transparent;
+  --background-modifier-border-focus: var(--cybr-p0);
+  --background-modifier-error:    var(--cybr-re2);
+  --background-modifier-success:  var(--cybr-gr2);
+  --file-header-background:       transparent;
+
+  --text-normal:          var(--cybr-p0);
+  --text-muted:           var(--cybr-t0);
+  --text-faint:           var(--cybr-t0);
+  --text-on-accent:       var(--cybr-no0);
+  --text-error:           var(--cybr-re0);
+  --text-warning:         var(--cybr-ye0);
+  --text-success:         var(--cybr-gr0);
+  --text-selection:       var(--cybr-p2);
+  --text-accent:          var(--cybr-s0);
+  --text-accent-hover:    var(--cybr-hover-fg);
+  --text-highlight-bg:    var(--cybr-ye2);
+  --bold-color:           inherit;
+  --italic-color:         inherit;
+
+  --interactive-normal:       transparent;
+  --interactive-hover:        var(--cybr-hover-bg);
+  --interactive-accent:       var(--cybr-s0);
+  --interactive-accent-hover: var(--cybr-hover-fg);
+  --cursor:                   pointer;
+  --caret-color:              var(--cybr-caret);
+  --checklist-done-color:     var(--cybr-gr0);
+  --checklist-done-decoration: line-through;
+  --indentation-guide-color:  var(--cybr-p2);
+  --indentation-guide-color-active: var(--cybr-p1);
+  --list-marker-color:        var(--cybr-t0) !important;
+
+  --link-color:               var(--cybr-s0);
+  --link-color-hover:         var(--cybr-hover-fg);
+  --link-external-color:      var(--cybr-t0);
+  --link-external-color-hover: var(--cybr-hover-fg);
+  --link-unresolved-color:    var(--cybr-p1);
+  --link-unresolved-opacity:  1;
+  --link-unresolved-decoration-color: var(--cybr-p2);
+
+  --tag-color: var(--cybr-no0); --tag-background: var(--cybr-p0);
+  --tag-background-hover: var(--cybr-hover-bg);
+  --tag-border-color: transparent; --tag-border-width: 0px;
+  --tag-padding-x: 0.5em; --tag-padding-y: 0.15em; --tag-radius: 0px;
+
+  --blockquote-border-color:  var(--cybr-bq0);
+  --blockquote-border-thickness: 2px;
+  --blockquote-background-color: var(--cybr-bq2);
+  --blockquote-color:            var(--cybr-bq0);
+  --blockquote-font-style:       normal;
+  --callout-radius: 0px;
+
+  --graph-node: var(--cybr-p0); --graph-line: var(--cybr-p1);
+  --graph-node-tag: var(--cybr-s0); --graph-node-attachment: var(--cybr-p1);
+  --graph-node-unresolved: var(--cybr-p1); --graph-node-focused: var(--cybr-t0);
+  --canvas-dot-pattern: var(--cybr-p1);
+
+  --color-red: var(--cybr-re0); --color-orange: var(--cybr-or0);
+  --color-yellow: var(--cybr-ye0); --color-green: var(--cybr-gr0);
+  --color-cyan: var(--cybr-cy0); --color-blue: var(--cybr-bl0);
+  --color-purple: var(--cybr-vi0); --color-pink: var(--cybr-pi0);
+  --color-accent: var(--cybr-p0);
+
+  --color-icon-color: var(--cybr-p0) !important;
+  --nav-collapse-icon-color: var(var(--cybr-p0) !important)
+
+  --tab-outline-width: 0px;
+  --tab-outline-color: transparent;
+  --tab-background-active: transparent;
+  --tab-curve: 0px;
+
+  --table-header-color: var(--cybr-no0);
+  --table-header-background: var(--cybr-p0);
+  --table-header-background-hover: var(--cybr-p0);
+  --table-header-border-color: var(--cybr-p0);
+  --table-border-color: var(--cybr-p0);
+  --table-row-alt-background: var(--cybr-p2);
+}
+
+/* #endregion */
+
+
+/* #region BASE & RESET */
+
+* { border-radius: 0 !important; }
+:focus { outline: none; }
+*, *::before, *::after { animation-duration: 0ms !important; transition-duration: 0ms !important; }
+
+.workspace-tab-header::before,
+.workspace-tab-header::after { display: none !important; box-shadow: none !important; }
+
+::selection { color: var(--cybr-p0) !important; background-color: var(--cybr-p1) !important; }
+.cm-s-obsidian .cm-selectionBackground,
+.cm-selectionBackground { background-color: var(--cybr-p2) !important; }
+
+strong, b { font-weight: var(--bold-weight); color: inherit; }
+em, i { color: inherit; }
+.markdown-preview-view s, .cm-strikethrough { color: var(--cybr-me0) !important; }
+
+/* #endregion */
+
+
+/* #region TYPOGRAPHY */
+
+.markdown-preview-view p, .markdown-source-view p { margin-bottom: var(--p-spacing); }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 1em; font-style: normal; }
+h1 { color: var(--cybr-h1); }
+h2 { color: var(--cybr-h2); }
+h3 { color: var(--cybr-h3); }
+h4 { color: var(--cybr-h4); }
+h5 { color: var(--cybr-h5); }
+h6 { color: var(--cybr-h6); }
+
+.nav-file-tag, .tree-item-flair, .setting-item-description,
+.workspace-leaf-header-display-title, .prompt-instructions,
+.search-result-file-matched-text { color: var(--cybr-wh0) !important; }
+
+body.cybrcore-underline-internal     .internal-link  { text-decoration: underline; }
+body:not(.cybrcore-underline-internal) .internal-link { text-decoration: none; }
+body.cybrcore-underline-external     .external-link  { text-decoration: underline; }
+body:not(.cybrcore-underline-external) .external-link { text-decoration: none; }
+
+.markdown-preview-view mark, .cm-s-obsidian .cm-highlight {
+  color: var(--cybr-ye0) !important;
+  background-color: var(--cybr-ye2) !important;
+}
+
+.footnotes, .footnote-ref a, .footnote-backref, .cm-footref { color: var(--cybr-s0) !important; }
+.footnote-ref a:hover, .footnote-backref:hover { color: var(--cybr-hover-fg) !important; }
+
+/* Horizontal rule */
+hr { border-top: 1px solid var(--cybr-hr); border-bottom: none; border-left: none; border-right: none; }
+
+.cm-line hr {
+  border: none;
+  text-align: center;
+
+  &::before {
+    font-family: var(--font-monospace-override);
+    content: "⡀⠀⠄⠈⠀⠤⠶⣀⣴⣿▟▚▅▔▀▃▀█▌▂ E O L ▂▌█▀▃▀▔▅▚▟⣿⣶⣄⣀⠶⠤⠈⠀⠄⡀";
+    letter-spacing: -0.01rem !important;
+    color: var(--cybr-p0);
+    opacity: 30%;
+  }
+}
+
+/* Comment */
+.cm-comment { color: var(--cybr-bl0) !important; }
+
+/* Table */
+.table-wrapper {
+  clip-path: var(--clip-m-t);
+}
+
+/* Frontmatter */
+.cm-cursor { border-left-color: var(--cybr-caret) !important; }
+.cm-formatting-header { color: var(--cybr-s0); }
+.cm-fold-indicator, .cm-hmd-frontmatter,
+.cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def { color: var(--cybr-s0); }
+
+/* #endregion */
+
+
+/* #region TAGS */
+
+.cm-hashtag {
+  color: var(--cybr-s0) !important;
+  background: transparent !important;
+  border: none !important;
+}
+.cm-hashtag:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+
+.cm-hashtag.cm-hashtag-begin,
+.cm-hashtag.cm-hashtag-end {
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* #endregion */
+
+
+/* #region CALLOUTS
+   All colors hardcoded. --cybr-cc-fg / --cybr-cc-bg set per type. */
+
+.callout {
+  clip-path: var(--clip-m);
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: var(--cybr-cc-bg, var(--cybr-p2)) !important;
+}
+
+.cm-callout .edit-block-button {
+  color: var(--cybr-no0) !important;
+}
+
+/* All text → cc-fg */
+.callout *,
+.callout-content *,
+.callout-content p,
+.callout-content li,
+.callout-content h1, .callout-content h2, .callout-content h3,
+.callout-content h4, .callout-content h5, .callout-content h6 { color: var(--cybr-cc-fg, var(--cybr-p0)) !important; }
+.callout-title-inner  { color: var(--cybr-cc-fg, var(--cybr-p0)) !important; text-transform: uppercase; letter-spacing: 0.05em; }
+.callout-icon .svg-icon { color: var(--cybr-cc-fg, var(--cybr-p0)) !important; }
+.callout ul > li::marker { color: var(--cybr-cc-fg, var(--cybr-p0)) !important; }
+
+/* Links → cc-fg, bold */
+.callout a, .callout a.internal-link, .callout a.external-link {
+  color: var(--cybr-cc-fg, var(--cybr-p0)) !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+.callout a:hover { opacity: 0.75 !important; }
+
+/* Tags → vivid xy0 fg, no0 bg */
+.callout a.tag,
+.callout a.tag:visited,
+.callout span.tag {
+  color: var(--cybr-cc-vivid, var(--cybr-p0)) !important;
+  background-color: var(--cybr-no0) !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  clip-path: var(--clip-xs);
+}
+.callout .cm-hashtag {
+  color: var(--cybr-cc-vivid, var(--cybr-p0)) !important;
+  background-color: var(--cybr-no0) !important;
+}
+
+.callout .task-list-item:hover { background-color: rgba(0, 0, 0, 0.15) !important; }
+.callout .task-list-item { color: var(--cybr-cc-fg, var(--cybr-p0)) !important; }
+
+/* Checkboxes */
+.callout input[type=checkbox] {
+  background-color: color-mix(in srgb, var(--cybr-cc-fg, var(--cybr-p0)) 20%, transparent) !important;
+  box-shadow: none !important; border: none !important; clip-path: var(--clip-s);
+}
+.callout input[type=checkbox]:hover {
+  background-color: color-mix(in srgb, var(--cybr-cc-fg, var(--cybr-p0)) 30%, transparent) !important;
+}
+.callout input[type=checkbox]:checked {
+  background-color: color-mix(in srgb, var(--cybr-cc-fg, var(--cybr-p0)) 40%, transparent) !important;
+  box-shadow: none !important; clip-path: var(--clip-s);
+}
+.callout input[type=checkbox]:checked::after { background-color: var(--cybr-no0) !important; }
+
+/* Obsidian basic */
+.callout[data-callout="note"],.callout[data-callout="info"],.callout[data-callout="todo"]
+  { --cybr-cc-fg: var(--cybr-bl0); --cybr-cc-bg: var(--cybr-bl2); --cybr-cc-vivid: var(--cybr-bl0); }
+
+.callout[data-callout="abstract"],.callout[data-callout="summary"],.callout[data-callout="tldr"],
+.callout[data-callout="tip"],.callout[data-callout="hint"],.callout[data-callout="important"],
+.callout[data-callout="example"]
+  { --cybr-cc-fg: var(--cybr-cy0); --cybr-cc-bg: var(--cybr-cy2); --cybr-cc-vivid: var(--cybr-cy0); }
+
+.callout[data-callout="success"],.callout[data-callout="check"],.callout[data-callout="done"]
+  { --cybr-cc-fg: var(--cybr-gr0); --cybr-cc-bg: var(--cybr-gr2); --cybr-cc-vivid: var(--cybr-gr0); }
+
+.callout[data-callout="question"],.callout[data-callout="help"],.callout[data-callout="faq"]
+  { --cybr-cc-fg: var(--cybr-ye0); --cybr-cc-bg: var(--cybr-ye2); --cybr-cc-vivid: var(--cybr-ye0); }
+
+.callout[data-callout="warning"],.callout[data-callout="caution"],.callout[data-callout="attention"]
+  { --cybr-cc-fg: var(--cybr-or0); --cybr-cc-bg: var(--cybr-or2); --cybr-cc-vivid: var(--cybr-or0); }
+
+.callout[data-callout="failure"],.callout[data-callout="fail"],.callout[data-callout="missing"],
+.callout[data-callout="danger"],.callout[data-callout="error"],.callout[data-callout="bug"]
+  { --cybr-cc-fg: var(--cybr-re0); --cybr-cc-bg: var(--cybr-re2); --cybr-cc-vivid: var(--cybr-re0); }
+
+.callout[data-callout="quote"]
+  { --cybr-cc-fg: var(--cybr-wh0); --cybr-cc-bg: var(--cybr-wh2); --cybr-cc-vivid: var(--cybr-wh0); }
+
+/* cybrcore extra */
+  /* translucent */
+  .callout[data-callout="personal"],.callout[data-callout="main"]
+    { --cybr-cc-fg: var(--cybr-p0); --cybr-cc-bg: var(--cybr-p2); --cybr-cc-vivid: var(--cybr-p0); }
+
+  .callout[data-callout="pills"],.callout[data-callout="sleep"],.callout[data-callout="Sleep"],
+  .callout[data-callout="Mood"],.callout[data-callout="stats"]
+    { --cybr-cc-fg: var(--cybr-s0); --cybr-cc-bg: var(--cybr-s2); --cybr-cc-vivid: var(--cybr-s0); }
+
+  .callout[data-callout="work"]
+    { --cybr-cc-fg: var(--cybr-t0); --cybr-cc-bg: var(--cybr-t2); --cybr-cc-vivid: var(--cybr-t0); }
+
+  /* full color */
+  .callout[data-callout="med"],.callout[data-callout="summary"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-re0); --cybr-cc-vivid: var(--cybr-re0); }
+
+  .callout[data-callout="side"],.callout[data-callout="cookie"],
+  .callout[data-callout="mood"],.callout[data-callout="song"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-vi0); --cybr-cc-vivid: var(--cybr-bl0); }
+
+  .callout[data-callout="status"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-me0); --cybr-cc-vivid: var(--cybr-me0); }
+  .callout[data-callout="grey"]
+    { --cybr-cc-fg: var(--cybr-wh0); --cybr-cc-bg: var(--cybr-me1); --cybr-cc-vivid: var(--cybr-me0); }
+
+  .callout[data-callout="unco"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-gr0); --cybr-cc-vivid: var(--cybr-gr0); }
+  .callout[data-callout="rare"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-bl0); --cybr-cc-vivid: var(--cybr-bl0); }
+  .callout[data-callout="epic"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-vi0); --cybr-cc-vivid: var(--cybr-vi0); }
+  .callout[data-callout="legen"]
+    { --cybr-cc-fg: var(--cybr-no0); --cybr-cc-bg: var(--cybr-or0); --cybr-cc-vivid: var(--cybr-or0); }
+
+/* #endregion */
+
+/* #region LISTS & TASKS */
+
+input[type=checkbox] { border: none; background-color: var(--cybr-me0); clip-path: var(--clip-s); box-shadow: none; cursor: pointer; }
+input[type=checkbox]:hover   { background-color: var(--cybr-me1); }
+input[type=checkbox]:checked { background-color: var(--cybr-gr0); clip-path: var(--clip-s); box-shadow: none; }
+input[type=checkbox]:checked::after { background-color: var(--cybr-no0) !important; }
+input[data-task="-"]:checked { background-color: var(--cybr-me2) !important; -webkit-mask-image: none !important; }
+
+.task-list-item:not(.is-checked),
+.cm-line:has(input[type=checkbox]:not(:checked)) { color: var(--cybr-todo) !important; }
+
+.task-list-item.is-checked .task-list-item-checkbox ~ * {
+  text-decoration: line-through;
+  color: var(--cybr-gr0) !important;
+}
+
+.cm-s-obsidian .cm-formatting-list { color: var(--list-marker-color) !important; }
+
+.cards .markdown-preview-view div > ul,
+.cards.markdown-preview-view div > ul { display: grid; gap: 1em; padding: 0; list-style: none; }
+body.cybr-cards-2    .cards .markdown-preview-view div > ul { grid-template-columns: repeat(2, 1fr); }
+body.cybr-cards-3    .cards .markdown-preview-view div > ul { grid-template-columns: repeat(3, 1fr); }
+body.cybr-cards-4    .cards .markdown-preview-view div > ul { grid-template-columns: repeat(4, 1fr); }
+body.cybr-cards-auto .cards .markdown-preview-view div > ul { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.cards .markdown-preview-view div > ul > li { background-color: var(--cybr-p2) !important; clip-path: var(--clip-m); color: var(--cybr-p0) !important; padding: 1em; list-style: none; }
+.cards .markdown-preview-view div > ul > li:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] .cm-inline-code,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] .cm-inline-code {
+  color: var(--checklist-done-color) !important;
+  background-color: var(--cybr-gr2) !important;
+}
+
+/* #endregion */
+
+
+/* #region PROPERTIES */
+
+.metadata-container { background-color: var(--cybr-prop2); clip-path: var(--clip-m); padding: 0.5em 0.75em; margin-block-end: 1em !important; border: none; }
+.metadata-properties-heading { text-transform: uppercase; font-size: 1.1em; color: var(--cybr-prop0); }
+.metadata-property:hover {
+  background-color: color-mix(in oklch, var(--cybr-no0), transparent 80%) !important;
+  clip-path: var(--clip-m);
+}
+.metadata-property-key-input, .metadata-property-key-input:hover { color: var(--cybr-prop0) !important; }
+.metadata-property-value { border: none !important; box-shadow: none; }
+.metadata-property:not([data-property-key="tags"]) .metadata-input,
+.metadata-property:not([data-property-key="tags"]) .metadata-property-value,
+.metadata-property-key:focus-within, .metadata-property-value:focus-within { background-color: transparent; }
+
+.metadata-property-icon,
+.metadata-property-icon .svg-icon { color: var(--cybr-p0) !important; }
+
+.metadata-property:not([data-property-key="tags"]) .multi-select-pill {
+  color: var(--cybr-prop0) !important;
+  background-color: transparent !important;
+
+  &:hover, .multi-select-pill-remove-button:hover { color: var(--cybr-hover-fg) !important; }
+}
+
+.metadata-property[data-property-key="tags"] .multi-select-pill {
+  background-color: var(--cybr-s0);
+  color: var(--cybr-no0);
+  clip-path: var(--clip-xs);
+  border: none !important;
+
+  .multi-select-pill-remove-button { color: var(--cybr-no0) !important; }
+}
+.metadata-property[data-property-key="tags"] .multi-select-pill:hover {
+  background-color: var(--cybr-hover-bg) !important;
+  color: var(--cybr-hover-fg) !important;
+
+  .multi-select-pill-remove-button { color: var(--cybr-hover-fg) !important; }
+}
+
+.metadata-link-inner { background-color: var(--cybr-s0); color: var(--cybr-no0) !important; clip-path: var(--clip-xs); border: none !important; padding: 0 5px; }
+.metadata-link-inner:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+
+.metadata-add-button { background-color: transparent; color: var(--cybr-s0); border: none !important; padding: 0.3em 0.5em; }
+.metadata-add-button:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+
+/* #endregion */
+
+
+/* #region CODEBLOCKS */
+
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting),
+.cm-formatting.cm-formatting-code,
+.markdown-preview-view code:not(pre code) {
+  color: var(--cybr-p0) !important;
+  background-color: var(--cybr-p2) !important;
+  border-radius: 0 !important;
+}
+
+.HyperMD-codeblock { background-color: var(--cybr-no2) !important; caret-color: var(--cybr-caret); }
+.HyperMD-codeblock-begin { clip-path: var(--clip-m-t); height: 36px; border-radius: 0 !important; }
+.HyperMD-codeblock-end   { clip-path: var(--clip-m-b); border-radius: 0 !important; }
+
+.markdown-preview-view pre { background-color: var(--cybr-p2) !important; clip-path: var(--clip-m); border: none !important; }
+.markdown-preview-view pre code { color: var(--cybr-p0) !important; }
+.code-block-flair { color: var(--cybr-no0) !important; background-color: var(--cybr-me0) !important; clip-path: var(--clip-s); border-radius: 0 !important; }
+
+.HyperMD-quote .cm-inline-code.cm-quote { color: var(--cybr-p0) !important; background-color: transparent !important;}
+
+/* #endregion */
+
+
+/* #region WORKSPACE & PANES */
+
+body { background-color: var(--cybr-no0); }
+
+.workspace, .workspace-split, .workspace-tabs .workspace-leaf,
+.workspace-ribbon, .workspace-tab-header-container { background-color: transparent !important; }
+
+.workspace-split.mod-root .view-content,
+.view-header, .is-focused .view-header { background-color: transparent !important; }
+
+body.cybrcore-maximize-media .image-embed img,
+body.cybrcore-maximize-media .video-embed video,
+body.cybrcore-maximize-media iframe { width: 100%; }
+body.cybrcore-image-grids .markdown-preview-view p > .image-embed { display: inline-block; vertical-align: top; }
+
+body.cybrcore-focus-mode .workspace-split.mod-left-split,
+body.cybrcore-focus-mode .workspace-split.mod-right-split,
+body.cybrcore-focus-mode .workspace-ribbon { width: 0 !important; overflow: hidden; opacity: 0; }
+body.cybrcore-focus-mode.cybrcore-focus-reveal-hover .workspace-split.mod-left-split:hover,
+body.cybrcore-focus-mode.cybrcore-focus-reveal-hover .workspace-split.mod-right-split:hover { width: var(--sidebar-width) !important; opacity: 1; }
+
+/* #endregion */
+
+
+/* #region TABS */
+
+.workspace-tab-header-container-inner { gap: 4px; }
+
+.workspace-tab-header-container .workspace-tab-header.is-active {
+  color: var(--cybr-no0) !important;
+  background-color: var(--cybr-p0) !important;
+  clip-path: var(--clip-m);
+  border: none !important;
+  box-shadow: none !important;
+}
+.workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-close-button { color: var(--cybr-no0) !important; }
+
+.workspace-tab-header:not(.is-active) { color: var(--cybr-s0) !important; }
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon,
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button { color: var(--cybr-s0) !important; }
+
+.workspace-tab-header.tappable:hover { color: var(--cybr-no0) !important; background-color: var(--cybr-s0) !important; clip-path: var(--clip-m); }
+.workspace-tab-header.tappable:hover .workspace-tab-header-inner-icon,
+.workspace-tab-header.tappable:hover .workspace-tab-header-inner-close-button { color: var(--cybr-no0) !important; }
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+  border: none !important;
+  border-left: 1px solid var(--cybr-p0) !important;
+  background-color: var(--cybr-no0) !important;
+  
+  
+  &:hover {
+    background-color: var(--cybr-ye0) !important;
+    border-left: 1px solid var(--cybr-ye0) !important;
+
+    .workspace-tab-header-inner-icon, .workspace-tab-header-inner-close-button, .workspace-tab-header-inner-title {
+      color: var(--cybr-no0) !important;
+    }
+  }
+  &.is-active {
+    background-color: var(--cybr-p0) !important;
+    clip-path: var(--clip-m) !important;
+
+    .workspace-tab-header-inner-icon, .workspace-tab-header-inner-close-button, .workspace-tab-header-inner-title {
+      color: var(--cybr-no0) !important;
+    }
+    &:hover {
+      background-color: var(--cybr-ye0) !important;
+      border-left: 1px solid var(--cybr-ye0) !important;
+
+      .workspace-tab-header-inner-icon, .workspace-tab-header-inner-close-button, .workspace-tab-header-inner-title {
+        color: var(--cybr-no0) !important;
+      }
+    }
+  }
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header .mod-active .is-active {
+  background-color: var(--cybr-vi0) !important;
+  clip-path: var(--clip-m) !important;
+}
+
+/*
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
+  backdrop-filter: blur(10px);
+  background-color: color-mix(in oklch, var(--cybr-p2), var(--cybr-no0) 80%) !important;
+}
+*/
+
+.workspace-tabs.mod-stacked .workspace-leaf-content {
+  background-color: oklch(from var(--cybr-no0) l c h / 1) !important;
+  box-shadow: 10px 0 0 var(--cybr-no0) inset;
+  border-left: 10px solid var(--cybr-no0) !important;
+  margin-right: -10px !important;
+}
+
+/* #endregion */
+
+
+/* #region SIDEBAR */
+
+.nav-file-title, .tree-item-self, .nav-folder-title, .tree-item-icon.collapse-icon.is-collapsed { color: var(--cybr-s0); }
+
+.nav-files-container .collapse-icon svg.svg-icon {
+  color: var(--folder-color, var(--cybr-s0)) !important;
+}
+
+.tree-item-self:hover, .nav-file-title:hover, .nav-folder-title:hover {
+  background-color: var(--cybr-s0) !important;
+  color: var(--cybr-no0) !important;
+  clip-path: var(--clip-m);
+
+  .collapse-icon svg.svg-icon {
+    color: var(--cybr-no0) !important;
+  }
+}
+
+.nav-file-title.is-active {
+  background-color: var(--cybr-p0) !important;
+  color: var(--cybr-no0) !important;
+  clip-path: var(--clip-m);
+
+  &:hover { background-color: var(--cybr-s0) !important; }
+}
+.nav-file-tag {
+  color: var(--cybr-p0) !important;
+  background-color: transparent;
+}
+.view-header-breadcrumb { color: var(--cybr-p0); }
+.view-header-title-parent .view-header-breadcrumb:hover { background-color: var(--cybr-hover-bg); color: var(--cybr-hover-fg); clip-path: var(--clip-m); cursor: pointer; }
+
+/* #endregion */
+
+
+/* #region OVERLAYS */
+
+.modal { clip-path: var(--clip-l); border: none !important; background-color: color-mix(in oklch, var(--cybr-no0), transparent 30%) !important; backdrop-filter: blur(15px); }
+.modal-bg { backdrop-filter: blur(10px); background-color: var(--cybr-p2); }
+.modal-close-button { color: var(--cybr-no0); background-color: var(--cybr-p0); clip-path: var(--clip-m); }
+.modal-close-button:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+
+.vertical-tab-header-group-title { color: var(--cybr-wh0); text-transform: uppercase; letter-spacing: 0.05em; }
+.vertical-tab-nav-item { color: var(--cybr-s0); }
+.vertical-tab-nav-item .vertical-tab-nav-item-icon { color: var(--cybr-s0); }
+.vertical-tab-nav-item:hover { background-color: var(--cybr-hover-bg); color: var(--cybr-hover-fg) !important; clip-path: var(--clip-m); }
+.vertical-tab-nav-item:hover .vertical-tab-nav-item-icon { color: var(--cybr-hover-fg); }
+.vertical-tab-nav-item.is-active { background-color: var(--cybr-p0) !important; color: var(--cybr-no0) !important; clip-path: var(--clip-m); }
+.vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon { color: var(--cybr-no0); }
+.vertical-tab-nav-item.is-active:hover { background-color: var(--cybr-s0) !important; color: var(--cybr-no0) !important; }
+.vertical-tab-nav-item.is-active:hover .vertical-tab-nav-item-icon { color: var(--cybr-no0); }
+
+.vertical-tab-content {
+  background-color: color-mix(in oklch, var(--cybr-no0), transparent 60%);
+
+  .setting-item,
+  .setting-group .setting-items,
+  .setting-group .setting-group-search { background-color: transparent; }
+}
+
+.menu { clip-path: var(--clip-m); background-color: var(--cybr-no1); color: var(--cybr-s0) !important; border: none !important; }
+.menu-item { color: var(--cybr-s0) !important; }
+.menu-item.selected { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; clip-path: var(--clip-m); }
+.menu-item-icon { color: var(--cybr-s0) !important; }
+.menu-item.selected .menu-item-icon { color: var(--cybr-hover-fg) !important; }
+.menu-separator { border-bottom-color: var(--cybr-no2) !important; }
+
+.dropdown {
+  color: var(--cybr-s0) !important;
+  background-color: var(--cybr-s2) !important;
+  clip-path: var(--clip-m);
+  border: none !important;
+  box-shadow: none !important;
+}
+.dropdown:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+.dropdown option { color: var(--cybr-s0) !important; background-color: var(--cybr-no2) !important; }
+
+.suggestion-container { background-color: var(--cybr-no1); clip-path: var(--clip-m); border: none !important; box-shadow: none; }
+.suggestion-item { color: var(--cybr-s0); }
+.suggestion-item.is-selected { color: var(--cybr-hover-fg); background-color: var(--cybr-hover-bg); clip-path: var(--clip-m); }
+.suggestion-highlight { color: var(--cybr-p0); }
+.suggestion-item.is-selected .suggestion-highlight { color: var(--cybr-hover-fg); }
+
+.prompt { clip-path: var(--clip-m); border: none !important; }
+.prompt-results { background-color: var(--cybr-no1) !important; clip-path: var(--clip-m); border: none !important; }
+.prompt-input-ctn { background-color: var(--cybr-no0); }
+
+.tooltip {
+  color: var(--cybr-no0) !important;
+  background-color: var(--cybr-t0);
+  backdrop-filter: blur(15px);
+  clip-path: var(--clip-m);
+}
+
+.popover {
+  background-color: color-mix(in oklch, var(--cybr-p1), var(--cybr-no0) 50%) !important;
+  backdrop-filter: blur(15px);
+  clip-path: var(--clip-l);
+}
+
+/* #endregion */
+
+
+/* #region CONTROLS */
+
+button, button.mod-cta { color: var(--cybr-s0) !important; background-color: transparent !important; clip-path: var(--clip-m); border: none !important; box-shadow: none !important; }
+button:hover, button.mod-cta:hover { color: var(--cybr-hover-fg) !important; background-color: var(--cybr-hover-bg) !important; }
+button:active, button.mod-cta:active { color: var(--cybr-no0) !important; background-color: var(--cybr-p0) !important; }
+
+.clickable-icon { color: var(--cybr-s0) !important; background-color: transparent !important; clip-path: var(--clip-m); border: none !important; width: 30px; height: 26px; opacity: 1; }
+.clickable-icon:hover { color: var(--cybr-hover-fg) !important; background-color: var(--cybr-hover-bg) !important; }
+.clickable-icon:active, .clickable-icon.has-active-menu { color: var(--cybr-no0) !important; background-color: var(--cybr-p0) !important; }
+
+input[type='text']:not(.metadata-property-key-input), input[type='search'],
+input[type='email'], input[type='password'], input[type='number']:not(.metadata-input-number) {
+  background-color: var(--cybr-no2); color: var(--cybr-s0) !important; clip-path: var(--clip-m); border: none !important;
+}
+input[type='text']:focus, input[type='search']:focus { color: var(--cybr-hover-fg) !important; }
+input::placeholder { color: var(--cybr-s1) !important; }
+
+input[type='range'] { background-color: var(--cybr-s2); }
+
+.slider::-webkit-slider-thumb { -webkit-appearance: none; background: var(--cybr-s0) !important; cursor: pointer; clip-path: var(--clip-s); border: none !important; border-radius: 0 !important; box-shadow: 0 0 0 3px var(--cybr-no0) !important; }
+.slider::-webkit-slider-thumb:hover { background: var(--cybr-hover-fg); }
+
+.checkbox-container { clip-path: var(--clip-s) !important; border-radius: 0 !important; border: none !important; background-color: var(--cybr-re2) !important; }
+.checkbox-container::after { background-color: var(--cybr-re0); clip-path: var(--clip-s) !important; border-radius: 0 !important; }
+.checkbox-container.is-enabled { background-color: var(--cybr-gr2) !important; }
+.checkbox-container.is-enabled::after { background-color: var(--cybr-gr0); }
+
+::-webkit-scrollbar { width: 0.3vw !important; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--cybr-p0) !important; }
+::-webkit-scrollbar-thumb:hover { background: var(--cybr-p0) !important; }
+
+/* #endregion */
+
+
+/* #region STATUS BAR */
+
+.status-bar { background-color: var(--cybr-status-bg) !important; color: var(--cybr-no0) !important; border: none !important; clip-path: var(--clip-m-t); }
+.status-bar-item { color: var(--cybr-no0) !important; }
+.status-bar-item:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+
+/* #endregion */
+
+
+/* #region UI VISIBILITY */
+
+body.cybrcore-hide-right-top  .mod-top-right-space .workspace-tab-header-container    { display: none !important; }
+body.cybrcore-hide-tabs       .workspace-tab-header-container    { display: none !important; }
+body.cybrcore-hide-status-bar .status-bar                        { display: none !important; }
+body.cybrcore-hide-ribbon     .workspace-ribbon                  { display: none !important; }
+body.cybrcore-hide-tooltips   .tooltip                           { display: none !important; }
+body.cybrcore-hide-nav-buttons .nav-buttons-container            { display: none !important; }
+body.cybrcore-hide-system-icons .frame-controls-container,
+body.cybrcore-hide-system-icons .titlebar-button-container,
+body.cybrcore-hide-system-icons .window-controls,
+body.cybrcore-hide-system-icons .titlebar-inner                  { display: none !important; }
+body.cybrcore-hide-scrollbars ::-webkit-scrollbar                { display: none !important; }
+body.cybrcore-hide-scrollbars                                    { scrollbar-width: none !important; }
+body.cybrcore-hide-instructions     .prompt-instructions         { display: none !important; }
+body.cybrcore-hide-search-suggestions .search-suggest-container  { display: none !important; }
+body.cybrcore-hide-search-count     .search-result-count         { display: none !important; }
+body.cybrcore-hide-properties-reading .markdown-preview-view .metadata-container { display: none !important; }
+body.cybrcore-hide-bottom-nav   .workspace-sidedock-vault-profile { display: none !important; }
+body.cybrcore-hide-sidebar-toggle .sidebar-toggle-button,
+body.cybrcore-hide-sidebar-toggle .workspace-ribbon-collapse-btn { display: none !important; }
+
+/* Always-on cleanup */
+.view-header-left, .view-actions                                   { display: none !important; }
+.workspace-tab-header-new-tab, .workspace-tab-header-tab-list      { display: none !important; }
+.workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container { display: none !important; }
+.nav-files-container.node-insert-event { margin-top: 6px !important; padding-left: 0 !important; }
+.titlebar-button                                                    { display: none !important; }
+.titlebar-button-container.mod-right { display: none !important; width: 0 !important; height: 0 !important; }
+.is-hidden-frameless:not(.is-fullscreen):not(.mod-macos)
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container::after                           { display: none !important; }
+
+/* #endregion */
+
+
+/* #region WALLPAPERS */
+
+body::before { content: ''; position: fixed; inset: 0; background-image: var(--cybr-wp-url, none); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1; pointer-events: none; z-index: -1; }
+
+:root { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/samurai-2560x1440.webp'); }
+body.cybr-wp-none      { --cybr-wp-url: none; }
+body.cybr-wp-samurai   { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/samurai-2560x1440.webp'); }
+body.cybr-wp-chiyoda   { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/chiyoda-2560x1440.webp'); }
+body.cybr-wp-ikebukuro { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/ikebukuro-2560x1440.webp'); }
+body.cybr-wp-minato    { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/minato-2560x1440.webp'); }
+body.cybr-wp-roppongi  { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/roppongi-2560x1440.webp'); }
+body.cybr-wp-shibuya   { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/shibuya-2560x1440.webp'); }
+body.cybr-wp-shinjuku  { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/shinjuku-2560x1440.webp'); }
+body.cybr-wp-taito     { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/taito-2560x1440.webp'); }
+body.cybr-wp-yoyogi    { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/yoyogi-2560x1440.webp'); }
+body.cybr-wp-harajuku  { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/harajuku-2560x1440.webp'); }
+body.cybr-wp-akihabara { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/akihabara-2560x1440.webp'); }
+
+body.cybrcore-solid-bg::before { display: none !important; }
+body.cybrcore-solid-bg { background-color: var(--cybr-bg-color, var(--cybr-no0)) !important; }
+body.cybrcore-solid-bg.cybr-bg-no { --cybr-bg-color: var(--cybr-no0); }
+body.cybrcore-solid-bg.cybr-bg-re { --cybr-bg-color: var(--cybr-re0); }
+body.cybrcore-solid-bg.cybr-bg-gr { --cybr-bg-color: var(--cybr-gr0); }
+body.cybrcore-solid-bg.cybr-bg-ye { --cybr-bg-color: var(--cybr-ye0); }
+body.cybrcore-solid-bg.cybr-bg-bl { --cybr-bg-color: var(--cybr-bl0); }
+body.cybrcore-solid-bg.cybr-bg-vi { --cybr-bg-color: var(--cybr-vi0); }
+body.cybrcore-solid-bg.cybr-bg-cy { --cybr-bg-color: var(--cybr-cy0); }
+body.cybrcore-solid-bg.cybr-bg-wh { --cybr-bg-color: var(--cybr-wh0); }
+body.cybrcore-solid-bg.cybr-bg-me { --cybr-bg-color: var(--cybr-me0); }
+body.cybrcore-solid-bg.cybr-bg-or { --cybr-bg-color: var(--cybr-or0); }
+body.cybrcore-solid-bg.cybr-bg-pi { --cybr-bg-color: var(--cybr-pi0); }
+
+/* #endregion */
+
+/* #region CUSTOM CHECKBOXES  */
+/* Requires Geist Mono Nerd Font: https://github.com/ryanoasis/nerd-fonts/releases
+   Glyph reference:               https://www.nerdfonts.com/cheat-sheet
+   ─────────────────────────────────────────────────────────────
+   [!] Important    [?] Question   [>] Rescheduled  [<] Scheduled
+   [-] Cancelled    [/] Progress   [*] Star          [n] Note
+   [l] Location     [i] Info       [I] Idea          [S] Amount
+   [p] Pro          [c] Con        [b] Bookmark      ["] Quote
+   [u] Up           [d] Down       [w] Win           [k] Key
+   [f] Fire
+   ─────────────────────────────────────────────────────────────
+   [0]–[9]  Speech bubbles (reading view & live preview) */
+
+/* Reset: transparent, no clip for icon-type tasks */
+input[data-task="!"]:checked, input[data-task="?"]:checked,
+input[data-task=">"]:checked, input[data-task="-"]:checked,
+input[data-task="/"]:checked, input[data-task="s"]:checked,
+input[data-task="S"]:checked, input[data-task="M"]:checked,
+input[data-task="y"]:checked, input[data-task="u"]:checked,
+input[data-task="d"]:checked, input[data-task="n"]:checked,
+input[data-task="c"]:checked, input[data-task="W"]:checked,
+input[data-task="P"]:checked, input[data-task="i"]:checked,
+input[data-task="b"]:checked, input[data-task='"']:checked,
+input[data-task="m"]:checked, input[data-task="k"]:checked,
+input[data-task="f"]:checked {
+  background-color: transparent !important;
+  clip-path: none !important;
+}
+
+/* Common ::after — Nerd Font glyph rendering */
+input[data-task="!"]:checked::after, input[data-task="?"]:checked::after,
+input[data-task=">"]:checked::after, input[data-task="-"]:checked::after,
+input[data-task="/"]:checked::after, input[data-task="s"]:checked::after,
+input[data-task="S"]:checked::after, input[data-task="M"]:checked::after,
+input[data-task="y"]:checked::after, input[data-task="u"]:checked::after,
+input[data-task="d"]:checked::after, input[data-task="n"]:checked::after,
+input[data-task="c"]:checked::after, input[data-task="W"]:checked::after,
+input[data-task="P"]:checked::after, input[data-task="i"]:checked::after,
+input[data-task="b"]:checked::after, input[data-task='"']:checked::after,
+input[data-task="m"]:checked::after, input[data-task="k"]:checked::after,
+input[data-task="f"]:checked::after {
+  -webkit-mask-image: none !important;
+  background-color: transparent !important;
+  font-family: 'GeistMono Nerd Font', 'GeistMono Nerd Font Mono', monospace;
+  font-size: calc(var(--checkbox-size, 15px) * 1.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--checkbox-size, 15px);
+  height: var(--checkbox-size, 15px);
+  line-height: 1;
+}
+
+/* Glyph + color assignments */
+input[data-task="f"]:checked::after { content: ""; color: var(--cybr-or0); }
+input[data-task="!"]:checked::after { content: ""; color: var(--cybr-ye0); }
+input[data-task="?"]:checked::after { content: "󱄶"; color: var(--cybr-or0); }
+input[data-task=">"]:checked::after { content: "󰒟"; color: var(--cybr-gr0); }
+input[data-task="-"]:checked::after { content: "󱎘"; color: var(--cybr-re0); }
+input[data-task="/"]:checked::after { content: "󱎕"; color: var(--cybr-ye0); }
+input[data-task="s"]:checked::after { content: ""; color: var(--cybr-pi0); }
+input[data-task="S"]:checked::after { content: "󰖨"; color: var(--cybr-ye0); }
+input[data-task="M"]:checked::after { content: ""; color: var(--cybr-ye0); }
+input[data-task="y"]:checked::after { content: ""; color: var(--cybr-gr0); }
+input[data-task="u"]:checked::after { content: "󰧆"; color: var(--cybr-gr0); }
+input[data-task="d"]:checked::after { content: "󰦺"; color: var(--cybr-re0); }
+input[data-task="n"]:checked::after { content: ""; color: var(--cybr-re0); }
+input[data-task="c"]:checked::after { content: "󰃭"; color: var(--cybr-wh0); }
+input[data-task="W"]:checked::after { content: "󰇧"; color: var(--cybr-wh0); }
+input[data-task="P"]:checked::after { content: "󰐃"; color: var(--cybr-wh0); }
+input[data-task="i"]:checked::after { content: "󰋼"; color: var(--cybr-wh0); }
+input[data-task="b"]:checked::after { content: ""; color: var(--cybr-wh0); }
+input[data-task='"']:checked::after { content: "󰝗"; color: var(--cybr-wh0); }
+input[data-task="m"]:checked::after { content: "󰑹"; color: var(--cybr-wh0); }
+input[data-task="k"]:checked::after { content: ""; color: var(--cybr-wh0); }
+
+/* #endregion */
+
+
+/* #region SPEECH BUBBLES */
+/* Angular notched bubbles, maps to the cybr palette.
+   Works in reading view. Live preview gets a minimal fallback.
+   Usage: - [0] Your text here /* 
+
+/* Reading view — shared shape & text */
+.task-list-item[data-task="0"], .task-list-item[data-task="1"],
+.task-list-item[data-task="2"], .task-list-item[data-task="3"],
+.task-list-item[data-task="4"], .task-list-item[data-task="5"],
+.task-list-item[data-task="6"], .task-list-item[data-task="7"],
+.task-list-item[data-task="8"], .task-list-item[data-task="9"] {
+  clip-path: var(--clip-s);
+  padding: 0.2em 0.75em;
+  max-width: max-content;
+  margin-block: 0.2em;
+  list-style: none;
+  color: var(--cybr-no0) !important;
+  --bold-color:   var(--cybr-no0);
+  --italic-color: var(--cybr-no0);
+  --link-color:   var(--cybr-no0);
+}
+
+/* Strip margins from inner <p> if Obsidian wraps content */
+.task-list-item[data-task="0"] > p, .task-list-item[data-task="1"] > p,
+.task-list-item[data-task="2"] > p, .task-list-item[data-task="3"] > p,
+.task-list-item[data-task="4"] > p, .task-list-item[data-task="5"] > p,
+.task-list-item[data-task="6"] > p, .task-list-item[data-task="7"] > p,
+.task-list-item[data-task="8"] > p, .task-list-item[data-task="9"] > p {
+  margin: 0;
+}
+
+/* Hide the actual checkbox */
+.task-list-item[data-task="0"] .task-list-item-checkbox,
+.task-list-item[data-task="1"] .task-list-item-checkbox,
+.task-list-item[data-task="2"] .task-list-item-checkbox,
+.task-list-item[data-task="3"] .task-list-item-checkbox,
+.task-list-item[data-task="4"] .task-list-item-checkbox,
+.task-list-item[data-task="5"] .task-list-item-checkbox,
+.task-list-item[data-task="6"] .task-list-item-checkbox,
+.task-list-item[data-task="7"] .task-list-item-checkbox,
+.task-list-item[data-task="8"] .task-list-item-checkbox,
+.task-list-item[data-task="9"] .task-list-item-checkbox { display: none; }
+
+/* Bubble colors — solid palette, no0 text */
+.task-list-item[data-task="0"] { background-color: var(--cybr-re0); }
+.task-list-item[data-task="1"] { background-color: var(--cybr-gr0); }
+.task-list-item[data-task="2"] { background-color: var(--cybr-ye0); }
+.task-list-item[data-task="3"] { background-color: var(--cybr-bl0); }
+.task-list-item[data-task="4"] { background-color: var(--cybr-vi0); }
+.task-list-item[data-task="5"] { background-color: var(--cybr-cy0); }
+.task-list-item[data-task="6"] { background-color: var(--cybr-wh0); }
+.task-list-item[data-task="7"] { background-color: var(--cybr-or0); }
+.task-list-item[data-task="8"] { background-color: var(--cybr-pi0); }
+.task-list-item[data-task="9"] { background-color: var(--cybr-me1); color: var(--cybr-wh0) !important; }
+
+/* Live preview — minimal: just a left border color hint, full styling in reading view */
+.HyperMD-task-line[data-task="0"] { border-left: 3px solid var(--cybr-re0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="1"] { border-left: 3px solid var(--cybr-gr0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="2"] { border-left: 3px solid var(--cybr-ye0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="3"] { border-left: 3px solid var(--cybr-bl0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="4"] { border-left: 3px solid var(--cybr-vi0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="5"] { border-left: 3px solid var(--cybr-cy0);  padding-left: 0.5em; }
+.HyperMD-task-line[data-task="6"] { border-left: 3px solid var(--cybr-wh0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="7"] { border-left: 3px solid var(--cybr-or0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="8"] { border-left: 3px solid var(--cybr-pi0); padding-left: 0.5em; }
+.HyperMD-task-line[data-task="9"] { border-left: 3px solid var(--cybr-me1); padding-left: 0.5em; }
+
+/* #endregion */
+
+/* #region FOLDER COLORS */
+/* Color assigned by position. --folder-color inherits into all children.
+   Folders beyond position 8 fall back to --cybr-s0.
+   Last child is always --cybr-me0 (grey), regardless of position.        */
+
+.nav-files-container > div > .tree-item:nth-child(2)  { --folder-color: var(--cybr-folder-1, var(--cybr-re0)); }
+.nav-files-container > div > .tree-item:nth-child(3)  { --folder-color: var(--cybr-folder-2, var(--cybr-or0)); }
+.nav-files-container > div > .tree-item:nth-child(4)  { --folder-color: var(--cybr-folder-3, var(--cybr-ye0)); }
+.nav-files-container > div > .tree-item:nth-child(5)  { --folder-color: var(--cybr-folder-4, var(--cybr-gr0)); }
+.nav-files-container > div > .tree-item:nth-child(6)  { --folder-color: var(--cybr-folder-5, var(--cybr-cy0)); }
+.nav-files-container > div > .tree-item:nth-child(7)  { --folder-color: var(--cybr-folder-6, var(--cybr-bl0)); }
+.nav-files-container > div > .tree-item:nth-child(8)  { --folder-color: var(--cybr-folder-7, var(--cybr-vi0)); }
+.nav-files-container > div > .tree-item:nth-child(9)  { --folder-color: var(--cybr-folder-8, var(--cybr-pi0)); }
+.nav-files-container > div > .tree-item:nth-child(5) { --folder-color: var(--cybr-folder-4, var(--cybr-me0)); }
+
+.nav-files-container .nav-folder-title {
+  color: var(--folder-color, var(--cybr-s0));
+}
+
+/* Mute subfolders and items */
+.tree-item-children .nav-file-title,
+.tree-item-children .nav-folder-title {
+  color: color-mix(in oklch, var(--folder-color, var(--cybr-s0)) 80%, var(--cybr-no0)) !important;
+
+  &:hover {
+    color: var(--cybr-no0) !important;
+  }
+}
+
+/* Indentation guides */
+.tree-item-children {
+  --nav-indentation-guide-color: color-mix(in oklch, var(--folder-color, var(--cybr-s0)) 60%, var(--cybr-no0)) !important;
+}
+
+/* #endregion */
+
+/* #region PLUGIN: CALENDAR */
+/* DESC */
+.container.svelte-pcimu8 {
+	--color-text-weeknum: var(--cybr-me0) !important;
+	--color-text-heading: var(--cybr-me0) !important;
+	--color-dot: var(--cybr-s0) !important;
+	--color-text-today: var(--cybr-t0) !important;
+	--color-text-day: var(--cybr-s0) !important;
+	--color-text-title: var(--cybr-p0) !important;
+	--color-arrow: var(--cybr-s0) !important;
+	--color-button: var(--cybr-p0) !important;
+	--text-muted: var(--cybr-s0) !important;
+	--interactive-accent:  var(--cybr-p0) !important;
+}
+
+.day.svelte-q3wqg9 {
+  color: var(--cybr-p0) !important;
+}
+
+.has-note.day.svelte-q3wqg9 {
+  color: var(--color-text-day) !important;
+}
+
+.day.adjacent-month.svelte-q3wqg9 {
+  --color-dot: var(--cybr-s1) !important;
+  color: var(--cybr-s1) !important;
+  opacity: 1 !important;
+}
+
+.day.svelte-q3wqg9:hover {
+  --color-dot: var(--cybr-hover-fg) !important;
+  color: var(--cybr-hover-fg) !important;
+  background-color: var(--cybr-hover-bg) !important;
+}
+
+.day.active.svelte-q3wqg9 {
+	--color-dot: var(--cybr-no0) !important;
+  color: var(--cybr-no0) !important;
+  background-color: var(--cybr-p0) !important;
+
+  &:hover {
+      background-color: var(--cybr-s0) !important;
+  }
+}
+
+  .container.svelte-pcimu8 {
+    .title {
+      font-size: 1.2em !important;
+      .month, .year {
+        font-weight: 400 !important;
+      }
+    }
+    .reset-button {
+        margin: auto auto !important;
+        height: 16px !important;
+        align-content: center !important;
+
+        &:hover {
+          color: var(--cybr-hover-fg) !important;
+        }
+    }
+    svg:hover {
+        color: var(--cybr-hover-fg) !important;
+      }
+    th {
+        color: var(--cybr-p0) !important;
+      }
+    }
+
+/* #endregion */

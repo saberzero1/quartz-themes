@@ -1,0 +1,773 @@
+/* =============================================================================
+   FOREST PHOSPHOR — Obsidian community theme
+   A modern CRT phosphor monitor theme for Obsidian.
+
+   Dark theme by design. Both .theme-dark and .theme-light resolve to the same
+   Forest Phosphor palette so the look stays consistent regardless of Obsidian's
+   appearance setting (system auto-toggle just no-ops).
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   1. THEME PALETTE — Forest Phosphor
+       The aesthetic — phosphor glow on dark glass — depends on saturated
+       highlights against a deep substrate and doesn't translate to a light
+       background. Rather than ship a watered-down paper variant, both
+       .theme-light and .theme-dark resolve to the same dark palette.
+   ----------------------------------------------------------------------------- */
+.theme-dark,
+.theme-light {
+  /* ---- Internal palette tokens (named shortcuts used by component rules) ---- */
+  --fp-bg-editor:       #0f180c;  /* editor.background */
+  --fp-bg-chrome:       #0e170b;  /* tabs / activitybar / titlebar */
+  --fp-bg-sidebar:      #101c0c;  /* sideBar.background */
+  --fp-bg-elevated:     #131c10;  /* code blocks, callout bg, line highlight */
+  --fp-bg-selected:     #1a2c16;  /* list.activeSelectionBackground */
+  --fp-bg-hover:        #131c10;
+
+  --fp-border-subtle:   #1e3119;
+  --fp-border-medium:   #2e4a29;
+
+  --fp-fg-primary:      #a2eba1;
+  --fp-fg-heading:      #7cbf78;
+  --fp-fg-muted:        #4e7249;
+  --fp-fg-dim:          #3d5e39;
+
+  --fp-phosphor:        #7af8ff;
+  --fp-phosphor-soft:   #7af8ffcc;
+  --fp-phosphor-dim:    #7af8ffaa;
+  --fp-coral:           #f8906e;
+  --fp-coral-soft:      #f8906ecc;
+  --fp-blue:            #77b0ff;
+  --fp-blue-link:       #328eee;
+  --fp-magenta:         #c07ac8;
+  --fp-magenta-soft:    #c07ac8cc;
+  --fp-yellow:          #d4d256;
+  --fp-yellow-soft:     #d4d256cc;
+  --fp-green-string:    #73e165;
+  --fp-green-comment:   #5c8656;
+
+  --fp-error:           #f8906e;
+  --fp-warning:         #d4a24a;
+  --fp-info:            #77b0ff;
+  --fp-success:         #5ae66a;
+
+  /* ---- Foundation: base color scale (used by Obsidian's derived vars) ---- */
+  --color-base-00: #0f180c;
+  --color-base-05: #0e170b;
+  --color-base-10: #101c0c;
+  --color-base-20: #131c10;
+  --color-base-25: #1a2c16;
+  --color-base-30: #1e3119;
+  --color-base-35: #2e4a29;
+  --color-base-40: #3d5e39;
+  --color-base-50: #4e7249;
+  --color-base-60: #5c8656;
+  --color-base-70: #7cbf78;
+  --color-base-100: #a2eba1;
+
+  --color-base-bg1: #0f180c;
+  --color-base-bg2: #0e170b;
+
+  /* ---- Foundation: accent palette ---- */
+  --color-red:     #f8906e;
+  --color-orange:  #d4a24a;
+  --color-yellow:  #d4d256;
+  --color-green:   #5ae66a;
+  --color-cyan:    #7af8ff;
+  --color-blue:    #77b0ff;
+  --color-purple:  #c07ac8;
+  --color-pink:    #c07ac8;
+
+  --color-red-rgb:    248, 144, 110;
+  --color-orange-rgb: 212, 162, 74;
+  --color-yellow-rgb: 212, 210, 86;
+  --color-green-rgb:  90, 230, 106;
+  --color-cyan-rgb:   122, 248, 255;
+  --color-blue-rgb:   119, 176, 255;
+  --color-purple-rgb: 192, 122, 200;
+
+  /* ---- Accent (primary brand color: phosphor cyan) ---- */
+  --color-accent: #7af8ff;
+  --color-accent-1: #a2eba1;
+  --color-accent-2: #7af8ff;
+  --color-accent-hsl: 184, 100%, 74%;
+  --interactive-accent: #7af8ff;
+  --interactive-accent-hover: #a2eba1;
+  --text-on-accent: #0f180c;
+  --text-on-accent-inverted: #0f180c;
+
+  /* ---- Backgrounds (Obsidian semantic layer) ---- */
+  --background-primary: var(--fp-bg-editor);
+  --background-primary-alt: var(--fp-bg-elevated);
+  --background-secondary: var(--fp-bg-sidebar);
+  --background-secondary-alt: var(--fp-bg-chrome);
+  --background-modifier-border: var(--fp-border-subtle);
+  --background-modifier-border-hover: var(--fp-border-medium);
+  --background-modifier-border-focus: var(--fp-phosphor);
+  --background-modifier-hover: var(--fp-bg-hover);
+  --background-modifier-active-hover: var(--fp-bg-selected);
+  --background-modifier-form-field: var(--fp-bg-sidebar);
+  --background-modifier-form-field-highlighted: var(--fp-bg-elevated);
+  --background-modifier-message: var(--fp-bg-elevated);
+  --background-modifier-success: rgba(90, 230, 106, 0.12);
+  --background-modifier-error: rgba(248, 144, 110, 0.12);
+  --background-modifier-error-hover: rgba(248, 144, 110, 0.2);
+  --background-modifier-error-rgb: 248, 144, 110;
+
+  /* ---- Text ---- */
+  --text-normal: var(--fp-fg-primary);
+  --text-muted: var(--fp-fg-heading);
+  --text-faint: var(--fp-fg-muted);
+  --text-accent: var(--fp-phosphor);
+  --text-accent-hover: #a2eba1;
+  --text-error: var(--fp-error);
+  --text-success: var(--fp-success);
+  --text-warning: var(--fp-warning);
+  --text-selection: rgba(74, 122, 204, 0.35);
+  --text-highlight-bg: rgba(212, 162, 74, 0.28);
+  --text-highlight-bg-rgb: 212, 162, 74;
+
+  /* ---- Interactive (buttons / inputs) ---- */
+  --interactive-normal: var(--fp-border-subtle);
+  --interactive-hover: var(--fp-border-medium);
+  --interactive-success: var(--fp-success);
+
+  /* ---- Headings ---- */
+  --h1-color: var(--fp-phosphor);
+  --h2-color: var(--fp-phosphor);
+  --h3-color: var(--fp-phosphor);
+  --h4-color: var(--fp-fg-heading);
+  --h5-color: var(--fp-fg-heading);
+  --h6-color: var(--fp-fg-muted);
+
+  /* ---- Links ---- */
+  --link-color: var(--fp-blue-link);
+  --link-color-hover: var(--fp-phosphor);
+  --link-external-color: var(--fp-blue-link);
+  --link-external-color-hover: var(--fp-phosphor);
+  --link-unresolved-color: var(--fp-coral);
+  --link-unresolved-opacity: 0.75;
+  --link-unresolved-filter: none;
+
+  /* ---- Tags ---- */
+  --tag-color: var(--fp-phosphor);
+  --tag-color-hover: #a2eba1;
+  --tag-background: rgba(122, 248, 255, 0.10);
+  --tag-background-hover: rgba(122, 248, 255, 0.18);
+  --tag-border-color: transparent;
+  --tag-border-color-hover: rgba(122, 248, 255, 0.4);
+
+  /* ---- Code (inline + block, Obsidian markdown vars) ---- */
+  --code-background: var(--fp-bg-elevated);
+  --code-normal: var(--fp-phosphor);
+  --code-comment: var(--fp-green-comment);
+  --code-keyword: var(--fp-coral);
+  --code-string: var(--fp-green-string);
+  --code-function: var(--fp-blue);
+  --code-property: var(--fp-yellow);
+  --code-tag: var(--fp-coral);
+  --code-value: var(--fp-phosphor);
+  --code-operator: var(--fp-phosphor);
+  --code-punctuation: var(--fp-phosphor-dim);
+  --code-important: var(--fp-coral);
+  --code-imports: var(--fp-magenta);
+
+  /* ---- Bold / italic markdown ---- */
+  --bold-color: var(--fp-coral);
+  --bold-weight: 700;
+  --italic-color: var(--fp-yellow);
+
+  /* ---- Lists / blockquote ---- */
+  --list-marker-color: var(--fp-phosphor);
+  --blockquote-border-color: var(--fp-phosphor);
+  --blockquote-color: var(--fp-fg-heading);
+  --blockquote-background-color: var(--fp-bg-elevated);
+
+  /* ---- Tables ---- */
+  --table-header-background: var(--fp-bg-elevated);
+  --table-header-color: var(--fp-phosphor);
+  --table-text-color: var(--fp-fg-primary);
+  --table-row-alt-background: rgba(19, 28, 16, 0.4);
+  --table-border-color: var(--fp-border-subtle);
+
+  /* ---- HR ---- */
+  --hr-color: var(--fp-border-subtle);
+
+  /* ---- Scrollbars ---- */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(46, 74, 41, 0.4);
+  --scrollbar-active-thumb-bg: rgba(61, 94, 57, 0.75);
+
+  /* ---- Cursor ---- */
+  --caret-color: #ffffff;
+
+  /* ---- Modals / popups ---- */
+  --modal-background: var(--fp-bg-chrome);
+  --modal-border-color: var(--fp-border-subtle);
+
+  /* ---- Status / nav ---- */
+  --titlebar-background: var(--fp-bg-chrome);
+  --titlebar-background-focused: var(--fp-bg-chrome);
+  --titlebar-text-color: var(--fp-fg-primary);
+  --titlebar-text-color-focused: var(--fp-fg-primary);
+  --status-bar-background: var(--fp-bg-chrome);
+  --status-bar-text-color: var(--fp-phosphor);
+  --status-bar-border-color: var(--fp-border-subtle);
+
+  --nav-item-color: var(--fp-fg-primary);
+  --nav-item-color-hover: var(--fp-fg-primary);
+  --nav-item-color-active: var(--fp-phosphor);
+  --nav-item-color-selected: var(--fp-phosphor);
+  --nav-item-background-hover: var(--fp-bg-hover);
+  --nav-item-background-active: var(--fp-bg-selected);
+  --nav-item-background-selected: var(--fp-bg-selected);
+
+  --tab-text-color: var(--fp-fg-muted);
+  --tab-text-color-focused: var(--fp-fg-primary);
+  --tab-text-color-focused-active: var(--fp-fg-primary);
+  --tab-background-active: var(--fp-bg-editor);
+  --tab-outline-color: var(--fp-border-subtle);
+
+  --ribbon-background: var(--fp-bg-chrome);
+  --ribbon-background-collapsed: var(--fp-bg-chrome);
+
+  /* ---- Graph view ---- */
+  --graph-line: var(--fp-border-subtle);
+  --graph-node: var(--fp-fg-heading);
+  --graph-node-unresolved: var(--fp-coral);
+  --graph-node-focused: var(--fp-phosphor);
+  --graph-node-tag: var(--fp-magenta);
+  --graph-node-attachment: var(--fp-yellow);
+  --graph-text: var(--fp-fg-primary);
+
+  /* ---- Search ---- */
+  --search-result-background: transparent;
+
+  /* ---- Embed ---- */
+  --embed-border-left: 2px solid var(--fp-phosphor);
+  --embed-padding: 0 1em;
+}
+
+/* =============================================================================
+   2. UI CHROME — titlebar, tabs, sidebar, ribbon, status bar
+       Direct selectors are required because Obsidian's defaults paint these
+       via element rules, not purely through CSS variables. Lifted from the
+       working snippet, with the `body.theme-dark` prefix dropped — theme.css
+       *replaces* the default theme rather than overlaying, so we don't need
+       the snippet's specificity boost.
+   ============================================================================= */
+
+.titlebar,
+.titlebar-inner {
+  background-color: var(--fp-bg-chrome);
+  color: var(--fp-fg-primary);
+  border-bottom: 1px solid var(--fp-border-subtle);
+}
+
+/* Tabs */
+.workspace-tab-header {
+  background-color: var(--fp-bg-chrome);
+  color: var(--fp-fg-muted);
+  border-right: 1px solid var(--fp-border-subtle);
+}
+.workspace-tab-header.is-active {
+  background-color: var(--fp-bg-editor);
+  color: var(--fp-fg-primary);
+  border-top: 2px solid var(--fp-phosphor);
+}
+.workspace-tab-header:hover:not(.is-active) {
+  background-color: var(--fp-bg-hover);
+  color: var(--fp-fg-primary);
+}
+
+/* Sidebar */
+.workspace-ribbon,
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background-color: var(--fp-bg-chrome);
+  border-color: var(--fp-border-subtle);
+}
+.nav-file-title,
+.nav-folder-title {
+  color: var(--fp-fg-primary);
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background-color: var(--fp-bg-selected);
+  color: var(--fp-phosphor);
+}
+.nav-file-title:hover:not(.is-active),
+.nav-folder-title:hover:not(.is-active) {
+  background-color: var(--fp-bg-hover);
+}
+
+/* Active tree item — Obsidian's default `.tree-item-self.is-active` is (0,2,0).
+   Our rule has the same specificity; source order ensures we win without
+   needing !important. */
+.tree-item-self.is-active {
+  background-color: var(--fp-bg-selected);
+  color: var(--fp-phosphor);
+}
+
+/* Ribbon icons */
+.side-dock-ribbon-action {
+  color: var(--fp-fg-heading);
+}
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active {
+  color: var(--fp-phosphor);
+}
+
+/* Status bar */
+.status-bar {
+  background-color: var(--fp-bg-chrome);
+  color: var(--fp-phosphor);
+  border-top: 1px solid var(--fp-border-subtle);
+}
+.status-bar-item {
+  color: var(--fp-fg-heading);
+}
+
+/* =============================================================================
+   3. EDITOR — live preview + source mode
+   ============================================================================= */
+
+.cm-editor {
+  background-color: var(--fp-bg-editor);
+  color: var(--fp-fg-primary);
+}
+.cm-activeLine {
+  background-color: rgba(19, 28, 16, 0.5);
+}
+.cm-gutters {
+  background-color: var(--fp-bg-editor);
+  color: var(--fp-fg-dim);
+  border-right: 1px solid var(--fp-border-subtle);
+}
+.cm-activeLineGutter {
+  color: var(--fp-fg-heading);
+  background-color: transparent;
+}
+.cm-cursor {
+  border-left-color: #ffffff;
+}
+
+/* Selection — scoped to .cm-content for the native pseudo so it doesn't bleed
+   into modal/sidebar selections. Specificity is sufficient without !important. */
+.cm-selectionBackground,
+.cm-content ::selection {
+  background-color: rgba(74, 122, 204, 0.35);
+}
+
+/* Comments in live preview — italic to match VSCode */
+.cm-comment,
+.cm-line .cm-comment {
+  color: var(--fp-green-comment);
+  font-style: italic;
+}
+
+/* Inline code — bordered chip */
+.cm-inline-code,
+code:not(pre code),
+.markdown-rendered code:not(pre code) {
+  color: var(--fp-phosphor);
+  background-color: var(--fp-bg-elevated);
+  border: 1px solid var(--fp-border-subtle);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 0.9em;
+}
+
+/* Headings — phosphor accents (deviates from VSCode markup.heading which is
+   primary fg + bold; phosphor reads better against Obsidian's darker frame) */
+.cm-header-1,
+.markdown-rendered h1 {
+  color: var(--fp-phosphor);
+  border-bottom: 1px solid var(--fp-border-subtle);
+  padding-bottom: 0.3em;
+}
+.cm-header-2,
+.markdown-rendered h2 {
+  color: var(--fp-phosphor);
+  border-bottom: 1px solid var(--fp-border-subtle);
+  padding-bottom: 0.2em;
+}
+.cm-header-3,
+.markdown-rendered h3 { color: var(--fp-phosphor); }
+.cm-header-4,
+.markdown-rendered h4 { color: var(--fp-fg-heading); }
+.cm-header-5,
+.markdown-rendered h5 { color: var(--fp-fg-heading); }
+.cm-header-6,
+.markdown-rendered h6 { color: var(--fp-fg-muted); }
+
+/* Bold / italic */
+.cm-strong,
+.markdown-rendered strong {
+  color: var(--fp-coral);
+  font-weight: 700;
+}
+.cm-em,
+.markdown-rendered em {
+  color: var(--fp-yellow);
+  font-style: italic;
+}
+
+/* Links */
+.cm-link,
+.cm-url,
+.markdown-rendered a,
+a.external-link {
+  color: var(--fp-blue-link);
+  text-decoration: underline;
+}
+.cm-link:hover,
+.markdown-rendered a:hover {
+  color: var(--fp-phosphor);
+}
+.internal-link {
+  color: var(--fp-blue);
+}
+.internal-link.is-unresolved {
+  color: var(--fp-coral);
+  opacity: 0.75;
+}
+
+/* Tags */
+.cm-hashtag,
+.tag {
+  color: var(--fp-phosphor);
+  background-color: rgba(122, 248, 255, 0.07);
+  border-radius: 4px;
+  padding: 0 0.3em;
+}
+
+/* List bullets — phosphor accent */
+.markdown-rendered ul li::marker,
+.markdown-rendered ol li::marker {
+  color: var(--fp-phosphor);
+}
+
+/* Disable code-ligatures (faithfulness to CRT vibe — chars render discrete) */
+code,
+.cm-editor,
+pre {
+  font-variant-ligatures: none;
+}
+
+/* =============================================================================
+   4. CODE BLOCKS — Prism token mapping
+       Matches VSCode TextMate tokenColors as closely as Prism's coarser
+       category model allows.
+   ============================================================================= */
+
+/* Specificity (0,2,1) beats Prism's `pre[class*="language-"]` (0,1,1); source
+   order beats Obsidian's defaults. No !important needed. */
+pre,
+pre[class*="language-"],
+.markdown-rendered pre {
+  background-color: var(--fp-bg-elevated);
+  border: 1px solid var(--fp-border-subtle);
+  border-radius: 6px;
+  padding: 1em;
+}
+.markdown-rendered pre code,
+pre[class*="language-"] code {
+  background-color: transparent;
+  color: var(--fp-fg-primary);
+  border: none;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* Strip Prism per-token backgrounds. Specificity (0,2,4) far exceeds
+   Prism's `.token` (0,1,0); source order wins without !important. */
+.markdown-rendered pre code span {
+  background-color: transparent;
+}
+
+/* Comments — italic */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--fp-green-comment);
+  font-style: italic;
+}
+
+/* Keywords, control flow, storage */
+.token.keyword,
+.token.storage,
+.token.important,
+.token.atrule,
+.token.rule {
+  color: var(--fp-coral);
+}
+
+/* Operators */
+.token.operator,
+.token.entity,
+.token.url {
+  color: var(--fp-phosphor-soft);
+}
+
+/* Strings */
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex {
+  color: var(--fp-green-string);
+}
+
+/* Template literal interpolation */
+.token.template-punctuation,
+.token.interpolation-punctuation {
+  color: var(--fp-coral);
+}
+.token.interpolation {
+  color: var(--fp-fg-primary);
+}
+
+/* Numbers, constants, booleans */
+.token.number,
+.token.boolean,
+.token.constant,
+.token.symbol {
+  color: var(--fp-phosphor);
+}
+
+/* Functions, builtins */
+.token.function,
+.token.builtin {
+  color: var(--fp-blue);
+}
+
+/* Method calls — italic blue */
+.token.method,
+.token.function-variable {
+  color: var(--fp-blue);
+  font-style: italic;
+}
+
+/* Types, classes, interfaces */
+.token.class-name,
+.token.interface,
+.token.namespace,
+.token.maybe-class-name {
+  color: var(--fp-magenta);
+}
+
+/* Properties, fields, attributes */
+.token.property,
+.token.tag,
+.token.attr-name,
+.token.property-access {
+  color: var(--fp-yellow);
+}
+
+/* Function parameters — italic dim yellow */
+.token.parameter {
+  color: var(--fp-yellow-soft);
+  font-style: italic;
+}
+
+/* Punctuation */
+.token.punctuation {
+  color: var(--fp-phosphor-dim);
+}
+
+/* Variables */
+.token.variable {
+  color: var(--fp-fg-primary);
+}
+
+/* CSS-specific tokens */
+.token.selector {
+  color: var(--fp-yellow);
+}
+.token.unit {
+  color: var(--fp-coral-soft);
+}
+.token.hexcode,
+.token.color {
+  color: var(--fp-phosphor);
+}
+.token.pseudo-class,
+.token.pseudo-element {
+  color: var(--fp-magenta);
+  font-style: italic;
+}
+
+/* Diff / git */
+.token.deleted {
+  color: var(--fp-warning);
+}
+.token.inserted {
+  color: var(--fp-success);
+}
+
+/* Decorators — italic magenta */
+.token.decorator,
+.token.annotation {
+  color: var(--fp-magenta);
+  font-style: italic;
+}
+
+/* Invalid / deprecated */
+.token.invalid {
+  color: var(--fp-error);
+  text-decoration: underline;
+}
+.token.deprecated {
+  color: #dd7975;
+  text-decoration: line-through;
+}
+
+/* =============================================================================
+   5. CALLOUTS — the glossy CRT-bloom look
+       Three layers stacked per callout:
+         1. background-color  → soft colored tint (the "fill")
+         2. border            → defined colored edge
+         3. inset box-shadow  → inner glow, suggests phosphor bloom
+       --callout-color (set per data-callout below) is an "R, G, B" triple
+       so we can compose rgba() at different alphas for each layer.
+   ============================================================================= */
+
+.callout {
+  background-color: rgba(var(--callout-color), 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(var(--callout-color), 0.35);
+  box-shadow: inset 0 0 24px rgba(var(--callout-color), 0.04);
+}
+
+.callout[data-callout="note"] {
+  --callout-color: 100, 200, 255;
+}
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+  --callout-color: 119, 176, 255;
+}
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+  --callout-color: 192, 122, 200;
+}
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  --callout-color: 90, 230, 106;
+}
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  --callout-color: 212, 210, 86;
+}
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  --callout-color: 212, 162, 74;
+}
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+  --callout-color: 248, 144, 110;
+}
+.callout[data-callout="example"] {
+  --callout-color: 192, 122, 200;
+}
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 124, 191, 120;
+}
+
+/* =============================================================================
+   6. BLOCKQUOTES, TABLES, HORIZONTAL RULES
+   ============================================================================= */
+
+blockquote,
+.markdown-rendered blockquote {
+  background-color: var(--fp-bg-elevated);
+  border-left: 3px solid var(--fp-phosphor);
+  color: var(--fp-fg-heading);
+  font-style: italic;
+  padding: 0.5em 1em;
+  margin: 0.8em 0;
+}
+
+.markdown-rendered table {
+  border-collapse: collapse;
+  border: 1px solid var(--fp-border-subtle);
+}
+.markdown-rendered thead {
+  background-color: var(--fp-bg-elevated);
+}
+.markdown-rendered th {
+  color: var(--fp-phosphor);
+  border: 1px solid var(--fp-border-subtle);
+  padding: 0.5em 0.8em;
+  font-weight: 600;
+}
+.markdown-rendered td {
+  color: var(--fp-fg-primary);
+  border: 1px solid var(--fp-border-subtle);
+  padding: 0.5em 0.8em;
+}
+.markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(19, 28, 16, 0.38);
+}
+
+hr,
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--fp-border-subtle);
+  margin: 1.5em 0;
+}
+
+/* =============================================================================
+   7. MISC — search highlights, suggestion modals, input fields
+   ============================================================================= */
+
+.search-result-file-matched-text,
+.suggestion-highlight {
+  color: var(--fp-phosphor);
+  background-color: rgba(212, 162, 74, 0.16);
+}
+.suggestion-item.is-selected {
+  background-color: var(--fp-bg-selected);
+  color: var(--fp-phosphor);
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  background-color: var(--fp-bg-sidebar);
+  color: var(--fp-fg-primary);
+  border: 1px solid var(--fp-border-medium);
+}
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border-color: var(--fp-phosphor);
+  outline: none;
+}
+
+/* =============================================================================
+   8. BUTTONS
+   ============================================================================= */
+
+.modal button.mod-warning,
+.modal-container button.mod-warning,
+button.mod-warning {
+  background-color: var(--fp-warning);
+  color: var(--fp-bg-editor);
+  border: 1px solid var(--fp-warning);
+  font-weight: 600;
+}
+.modal button.mod-warning:hover,
+.modal-container button.mod-warning:hover,
+button.mod-warning:hover {
+  background-color: #e0b05a;
+  border-color: #e0b05a;
+  color: var(--fp-bg-editor);
+}

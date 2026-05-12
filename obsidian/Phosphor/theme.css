@@ -1,0 +1,1210 @@
+/*
+ * ═══════════════════════════════════════════════════════════════
+ *   P H O S P H O R
+ *   An Obsidian theme for deep focus writing & reading
+ * ═══════════════════════════════════════════════════════════════
+ *
+ *   Named for the soft persistent glow of phosphorescent ink —
+ *   text that lingers in the mind after the page goes dark.
+ *
+ *   Typography principles:
+ *   • Body set at 18px with 1.72 line-height (optimal for extended reading)
+ *   • Measure constrained to ~68 characters (the proven readability sweet spot)
+ *   • Modular type scale based on a perfect fourth (1.333)
+ *   • Heading colors drawn from a warm-to-cool spectral arc
+ *   • Generous paragraph spacing to let ideas breathe
+ *
+ *   Installation: Settings → Appearance → Themes → Open theme folder
+ *                 Drop this file into the folder and select "Phosphor"
+ *
+ *   Or: Place in .obsidian/snippets/ and enable under CSS Snippets
+ * ═══════════════════════════════════════════════════════════════
+ */
+
+/* ─── Foundation Variables ─────────────────────────────────── */
+
+.theme-dark {
+  /* ── Surface Palette ── */
+  /* A subtle warm undertone prevents the harshness of pure-black dark modes */
+  --background-primary:          #111113;
+  --background-primary-alt:      #161619;
+  --background-secondary:        #1a1a1f;
+  --background-secondary-alt:    #1e1e24;
+  --background-modifier-border:  #2a2a33;
+  --background-modifier-form-field: #16161a;
+  --background-modifier-hover:   rgba(255, 255, 255, 0.04);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.06);
+  --background-modifier-success: #1a2e1a;
+  --background-modifier-error:   #2e1a1a;
+
+  /* ── Text Palette ── */
+  /* #e0ddd5 (warm off-white): reduces glare vs pure white,
+     proven to reduce eye strain in dark environments */
+  --text-normal:        #e0ddd5;
+  --text-muted:         #8a8690;
+  --text-faint:         #5c5862;
+  --text-on-accent:     #111113;
+  --text-error:         #e87272;
+  --text-selection:     rgba(195, 160, 105, 0.18);
+  --text-highlight-bg:  rgba(232, 190, 100, 0.22);
+  --text-accent:        #c8a96e;
+
+  /* ── Interactive Accent ── */
+  --interactive-accent:       #c8a96e;
+  --interactive-accent-hover: #d4b87a;
+  --interactive-normal:       #2a2a33;
+  --interactive-hover:        #333340;
+
+  /* ── Heading Spectral Arc ── */
+  /* Warm → Cool progression mirrors natural reading energy:
+     H1 commands attention (warm amber), descending through
+     the spectrum to H6's cool, quiet violet */
+  --h1-color: #e8b84a;   /* Amber gold — signal, authority */
+  --h2-color: #d4915a;   /* Burnt sienna — warmth, structure */
+  --h3-color: #c47a7a;   /* Dusty rose — approachable depth */
+  --h4-color: #9a8abf;   /* Soft lavender — reflective */
+  --h5-color: #7a9eb8;   /* Steel blue — precision, detail */
+  --h6-color: #7ab89a;   /* Sage green — quiet, grounding */
+
+  /* ── Typography Scale (Perfect Fourth — 1.333) ── */
+  --font-scale-base:  1.125rem;   /* 18px — optimal for extended screen reading */
+  --font-scale-small: 0.875rem;
+  --h1-size: 2.369rem;    /* 42.2px */
+  --h2-size: 1.777rem;    /* 31.9px */
+  --h3-size: 1.333rem;    /* 24px */
+  --h4-size: 1.125rem;    /* 18px — same as body, differentiated by weight + color */
+  --h5-size: 1rem;        /* 16px */
+  --h6-size: 0.875rem;    /* 14px */
+
+  /* ── Spacing ── */
+  --line-height-body:    1.72;
+  --line-height-heading: 1.25;
+  --paragraph-spacing:   1.1em;
+  --heading-spacing-top: 2em;
+  --heading-spacing-bottom: 0.6em;
+
+  /* ── Obsidian Overrides ── */
+  --font-text-theme:      'Phosphor Body', 'Source Serif 4', 'Georgia', serif;
+  --font-monospace-theme:  'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-interface-theme:  'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* ── Checkbox Overrides ── */
+  --checkbox-radius: 4px;
+  --checkbox-size: 18px;
+  --checkbox-icon: 18px;
+  --checkbox-color: var(--text-normal);
+  --checkbox-color-hover: #ece8df;
+  --checkbox-border-color: var(--text-muted);
+  --checkbox-border-color-hover: var(--text-normal);
+  --checkbox-marker-color: var(--background-primary);
+  --checklist-done-color: var(--text-faint);
+  --checklist-done-decoration: line-through;
+
+  /* ── Custom Checkbox Palette ── */
+  /* Drawn from the same spectral arc as headings,
+     so task icons feel native to the theme's warm glow */
+  --phosphor-amber:    #e8b84a;   /* Star, Key, Idea */
+  --phosphor-sienna:   #d4915a;   /* Important, Cons, Bookmark */
+  --phosphor-rose:     #c47a7a;   /* Location, Fire, Down */
+  --phosphor-lavender: #9a8abf;   /* Win */
+  --phosphor-steel:    #7a9eb8;   /* Info */
+  --phosphor-sage:     #7ab89a;   /* Pros, Up, Savings */
+  --phosphor-cyan:     #7ab8a8;   /* Quote */
+}
+
+/* ─── Light Mode ──────────────────────────────────────────── */
+/* "Ink that absorbs warmly into parchment" — the same spectral
+   arc and typographic soul as dark mode, but grounded in warm
+   ivory and aged-paper tones. Heading colors are deepened for
+   contrast; accents are richer so they hold their own against
+   light surfaces without losing the Phosphor warmth. */
+
+.theme-light {
+  /* ── Surface Palette ── */
+  /* Warm ivory instead of clinical white — like quality paper
+     with a hint of age and warmth */
+  --background-primary:          #f8f5ef;
+  --background-primary-alt:      #f2efe8;
+  --background-secondary:        #eceae3;
+  --background-secondary-alt:    #e6e3dc;
+  --background-modifier-border:  #d5d0c8;
+  --background-modifier-form-field: #f5f2ec;
+  --background-modifier-hover:   rgba(0, 0, 0, 0.03);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.05);
+  --background-modifier-success: #e3f0e3;
+  --background-modifier-error:   #f0e3e3;
+
+  /* ── Text Palette ── */
+  /* Warm charcoal instead of pure black — gentler on the eyes,
+     like ink on cotton rag paper */
+  --text-normal:        #2c2a26;
+  --text-muted:         #736f66;
+  --text-faint:         #a09a90;
+  --text-on-accent:     #f8f5ef;
+  --text-error:         #c44040;
+  --text-selection:     rgba(170, 130, 60, 0.16);
+  --text-highlight-bg:  rgba(200, 160, 50, 0.18);
+  --text-accent:        #9a7b3c;
+
+  /* ── Interactive Accent ── */
+  --interactive-accent:       #9a7b3c;
+  --interactive-accent-hover: #876a30;
+  --interactive-normal:       #e6e3dc;
+  --interactive-hover:        #dcd8d0;
+
+  /* ── Heading Spectral Arc ── */
+  /* Same warm → cool progression, deepened for legibility
+     against light backgrounds. Each hue is richer and more
+     saturated so it carries the same visual weight as its
+     dark-mode counterpart. */
+  --h1-color: #9a7214;   /* Deep amber gold */
+  --h2-color: #9c5828;   /* Deep burnt sienna */
+  --h3-color: #8e4242;   /* Deep dusty rose */
+  --h4-color: #64548e;   /* Deep lavender */
+  --h5-color: #456a86;   /* Deep steel blue */
+  --h6-color: #458068;   /* Deep sage green */
+
+  /* ── Typography Scale — shared with dark ── */
+  --font-scale-base:  1.125rem;
+  --font-scale-small: 0.875rem;
+  --h1-size: 2.369rem;
+  --h2-size: 1.777rem;
+  --h3-size: 1.333rem;
+  --h4-size: 1.125rem;
+  --h5-size: 1rem;
+  --h6-size: 0.875rem;
+
+  /* ── Spacing — shared with dark ── */
+  --line-height-body:    1.72;
+  --line-height-heading: 1.25;
+  --paragraph-spacing:   1.1em;
+  --heading-spacing-top: 2em;
+  --heading-spacing-bottom: 0.6em;
+
+  /* ── Fonts — shared with dark ── */
+  --font-text-theme:      'Phosphor Body', 'Source Serif 4', 'Georgia', serif;
+  --font-monospace-theme:  'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-interface-theme:  'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* ── Checkbox Overrides ── */
+  --checkbox-radius: 4px;
+  --checkbox-size: 18px;
+  --checkbox-icon: 18px;
+  --checkbox-color: var(--text-normal);
+  --checkbox-color-hover: #1e1c18;
+  --checkbox-border-color: var(--text-muted);
+  --checkbox-border-color-hover: var(--text-normal);
+  --checkbox-marker-color: var(--background-primary);
+  --checklist-done-color: var(--text-faint);
+  --checklist-done-decoration: line-through;
+
+  /* ── Custom Checkbox Palette (deepened for light) ── */
+  --phosphor-amber:    #9a7214;
+  --phosphor-sienna:   #9c5828;
+  --phosphor-rose:     #8e4242;
+  --phosphor-lavender: #64548e;
+  --phosphor-steel:    #456a86;
+  --phosphor-sage:     #458068;
+  --phosphor-cyan:     #458070;
+}
+
+
+/* ─── Font Imports ─────────────────────────────────────────── */
+/* Source Serif 4: designed specifically for on-screen readability,
+   with generous x-height and open counters for dark backgrounds.
+   Inter: clean UI font that doesn't compete with content.
+   JetBrains Mono: code font with true programming ligatures. */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+/* ─── Global Foundations ───────────────────────────────────── */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ─── Editor & Preview Typography ──────────────────────────── */
+
+.markdown-source-view,
+.markdown-preview-view,
+.markdown-rendered {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: var(--font-scale-base);
+  line-height: var(--line-height-body);
+  color: var(--text-normal);
+  font-weight: 400;
+  font-optical-sizing: auto;
+
+  /* Constrain the measure (line length) to ~68 characters.
+     This is the single most impactful readability improvement
+     you can make — lines beyond 75ch cause re-reading and fatigue */
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Paragraph rhythm */
+.markdown-source-view p,
+.markdown-preview-view p,
+.markdown-rendered p {
+  margin-top: 0;
+  margin-bottom: var(--paragraph-spacing);
+  orphans: 3;
+  widows: 3;
+}
+
+/* ─── Headings ─────────────────────────────────────────────── */
+/* Each level has its own color from the spectral arc,
+   plus carefully differentiated size, weight, and spacing
+   so the hierarchy is always instantly legible */
+
+.markdown-source-view h1, .markdown-preview-view h1, .markdown-rendered h1,
+.markdown-source-view h2, .markdown-preview-view h2, .markdown-rendered h2,
+.markdown-source-view h3, .markdown-preview-view h3, .markdown-rendered h3,
+.markdown-source-view h4, .markdown-preview-view h4, .markdown-rendered h4,
+.markdown-source-view h5, .markdown-preview-view h5, .markdown-rendered h5,
+.markdown-source-view h6, .markdown-preview-view h6, .markdown-rendered h6 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  line-height: var(--line-height-heading);
+  margin-top: var(--heading-spacing-top);
+  margin-bottom: var(--heading-spacing-bottom);
+  letter-spacing: -0.01em;
+}
+
+/* ── H1: The Title ── */
+.markdown-source-view h1, .markdown-preview-view h1, .markdown-rendered h1 {
+  font-size: var(--h1-size);
+  font-weight: 700;
+  color: var(--h1-color);
+  letter-spacing: -0.025em;
+  margin-top: 0;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba(232, 184, 74, 0.15);
+}
+
+/* ── H2: Major Sections ── */
+.markdown-source-view h2, .markdown-preview-view h2, .markdown-rendered h2 {
+  font-size: var(--h2-size);
+  font-weight: 600;
+  color: var(--h2-color);
+  letter-spacing: -0.02em;
+}
+
+/* ── H3: Subsections ── */
+.markdown-source-view h3, .markdown-preview-view h3, .markdown-rendered h3 {
+  font-size: var(--h3-size);
+  font-weight: 600;
+  color: var(--h3-color);
+}
+
+/* ── H4: Topics ── */
+.markdown-source-view h4, .markdown-preview-view h4, .markdown-rendered h4 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+  color: var(--h4-color);
+  text-transform: none;
+}
+
+/* ── H5: Subtopics ── */
+.markdown-source-view h5, .markdown-preview-view h5, .markdown-rendered h5 {
+  font-size: var(--h5-size);
+  font-weight: 500;
+  color: var(--h5-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── H6: Annotations ── */
+.markdown-source-view h6, .markdown-preview-view h6, .markdown-rendered h6 {
+  font-size: var(--h6-size);
+  font-weight: 500;
+  color: var(--h6-color);
+  font-style: italic;
+  text-transform: none;
+}
+
+
+/* ─── Emphasis & Strong ────────────────────────────────────── */
+
+strong, b,
+.markdown-source-view strong, .markdown-preview-view strong {
+  font-weight: 600;
+  color: #ece8df;
+}
+
+em, i,
+.markdown-source-view em, .markdown-preview-view em {
+  font-style: italic;
+  color: #d6d0c5;
+}
+
+
+/* ─── Links ────────────────────────────────────────────────── */
+
+a,
+.internal-link,
+.markdown-preview-view .internal-link,
+.markdown-rendered .internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 169, 110, 0.25);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover,
+.internal-link:hover {
+  color: var(--interactive-accent-hover);
+  border-bottom-color: rgba(200, 169, 110, 0.6);
+}
+
+.external-link {
+  color: var(--h5-color);
+  border-bottom-color: rgba(122, 158, 184, 0.25);
+}
+
+.external-link:hover {
+  border-bottom-color: rgba(122, 158, 184, 0.6);
+}
+
+
+/* ─── Blockquotes ──────────────────────────────────────────── */
+
+blockquote,
+.markdown-preview-view blockquote,
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--h3-color);
+  background: rgba(196, 122, 122, 0.04);
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+  color: #c8c4bc;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ─── Code ─────────────────────────────────────────────────── */
+
+code,
+.markdown-source-view code,
+.markdown-preview-view code,
+.markdown-rendered code {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.88em;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  color: #d4b87a;
+}
+
+/* Code blocks */
+pre,
+.markdown-source-view pre,
+.markdown-preview-view pre,
+.markdown-rendered pre {
+  background: #0d0d0f !important;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 1.2em 1.4em;
+  margin: 1.5em 0;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+
+pre code {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 0.875rem;
+  color: var(--text-normal);
+}
+
+
+/* ─── Lists ────────────────────────────────────────────────── */
+
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-rendered ul,
+.markdown-rendered ol {
+  padding-left: 1.6em;
+  margin: 0.5em 0 1em 0;
+}
+
+.markdown-preview-view li,
+.markdown-rendered li {
+  margin-bottom: 0.3em;
+  line-height: var(--line-height-body);
+}
+
+/* Completed checkboxes — text styling */
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
+  text-decoration: none;
+  color: var(--text-faint);
+}
+
+
+/* ─── Horizontal Rule ──────────────────────────────────────── */
+
+hr,
+.markdown-preview-view hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--background-modifier-border) 20%,
+    rgba(200, 169, 110, 0.25) 50%,
+    var(--background-modifier-border) 80%,
+    transparent 100%
+  );
+  margin: 3em 0;
+}
+
+
+/* ─── Tables ───────────────────────────────────────────────── */
+
+.markdown-preview-view table,
+.markdown-rendered table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.92em;
+}
+
+.markdown-preview-view th,
+.markdown-rendered th {
+  background: var(--background-secondary);
+  color: var(--h5-color);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.7em 1em;
+  border-bottom: 2px solid var(--background-modifier-border);
+  font-size: var(--font-scale-small);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.markdown-preview-view td,
+.markdown-rendered td {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.markdown-preview-view tr:hover td,
+.markdown-rendered tr:hover td {
+  background: var(--background-modifier-hover);
+}
+
+
+/* ─── Tags ─────────────────────────────────────────────────── */
+
+.tag,
+a.tag {
+  background: rgba(200, 169, 110, 0.1);
+  color: var(--text-accent) !important;
+  border: 1px solid rgba(200, 169, 110, 0.15);
+  border-radius: 3px;
+  padding: 0.1em 0.5em;
+  font-size: 0.85em;
+  font-family: var(--font-interface-theme);
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.tag:hover {
+  background: rgba(200, 169, 110, 0.18);
+}
+
+
+/* ─── Footnotes ────────────────────────────────────────────── */
+
+.footnote-ref a,
+.footnote-backref {
+  color: var(--text-accent);
+  font-size: 0.8em;
+  text-decoration: none;
+  vertical-align: super;
+}
+
+.footnotes {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+
+/* ─── Images ───────────────────────────────────────────────── */
+
+.markdown-preview-view img,
+.markdown-rendered img {
+  border-radius: 6px;
+  margin: 1em 0;
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ─── Callouts ─────────────────────────────────────────────── */
+
+.callout {
+  background: var(--background-secondary) !important;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  margin: 1.5em 0;
+}
+
+.callout-title {
+  font-family: var(--font-interface-theme);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+
+/* ─── Sidebar & UI Polish ──────────────────────────────────── */
+
+.nav-file-title,
+.nav-folder-title {
+  font-family: var(--font-interface-theme);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--text-normal);
+}
+
+.nav-file-title.is-active {
+  color: var(--text-accent);
+}
+
+/* Tab styling */
+.workspace-tab-header {
+  font-family: var(--font-interface-theme);
+  font-size: 0.82rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+
+/* ─── Selection ────────────────────────────────────────────── */
+
+::selection {
+  background: var(--text-selection);
+}
+
+.markdown-source-view .cm-selectionBackground {
+  background: var(--text-selection) !important;
+}
+
+
+/* ─── Search Highlights ────────────────────────────────────── */
+
+.search-result-file-matched-text {
+  background: var(--text-highlight-bg);
+  color: var(--text-normal);
+}
+
+
+/* ─── Graph View ───────────────────────────────────────────── */
+
+.graph-view.color-fill {
+  color: var(--text-accent);
+}
+
+.graph-view.color-line {
+  color: var(--background-modifier-border);
+}
+
+.graph-view.color-text {
+  color: var(--text-normal);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--h1-color);
+}
+
+
+/* ─── Cursor & Active Line ─────────────────────────────────── */
+
+.cm-cursor,
+.cm-dropCursor {
+  border-left-color: var(--text-accent) !important;
+  border-left-width: 2px !important;
+}
+
+.cm-activeLine {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.cm-activeLineGutter {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+
+/* ─── YAML Frontmatter ─────────────────────────────────────── */
+
+.frontmatter-container {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.82rem;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin-bottom: 2em;
+  color: var(--text-muted);
+}
+
+
+/* ─── Print Styles ─────────────────────────────────────────── */
+
+@media print {
+  body {
+    background: white !important;
+    color: #1a1a1a !important;
+  }
+
+  h1 { color: #8a6b1e !important; }
+  h2 { color: #8a5a2e !important; }
+  h3 { color: #8a4a4a !important; }
+  h4 { color: #5a4a7a !important; }
+  h5 { color: #4a6a7a !important; }
+  h6 { color: #4a7a6a !important; }
+
+  .markdown-preview-view {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+
+/* ─── Custom Checkbox Icons ────────────────────────────────── */
+/* Inspired by the Things / Minimal checkbox approach.
+   Each alternate task marker (e.g. - [!], - [?], - [/]) renders
+   a distinct SVG icon using CSS mask-image, colored from the
+   Phosphor spectral palette so they feel part of the theme.
+
+   Supported markers:
+     /  In-progress (half-filled)       ?  Question
+     !  Important                       *  Star
+     -  Cancelled                       "  Quote
+     >  Forwarded / deferred            <  Scheduled
+     l  Location                        b  Bookmark
+     i  Information                     S  Savings / amount
+     I  Idea (lightbulb)                f  Fire
+     k  Key                             w  Win / celebrate
+     u  Trend up                        d  Trend down
+     p  Pros (thumbs up)                c  Cons (thumbs down)
+     P  Open PR                         M  Merged PR
+     D  Draft PR
+*/
+
+/* ── Base reset: strip default check-mark from all icon checkboxes ── */
+input[data-task='!']:checked,
+input[data-task='*']:checked,
+input[data-task='-']:checked,
+input[data-task='<']:checked,
+input[data-task='>']:checked,
+input[data-task='I']:checked,
+input[data-task='b']:checked,
+input[data-task='c']:checked,
+input[data-task='d']:checked,
+input[data-task='f']:checked,
+input[data-task='k']:checked,
+input[data-task='l']:checked,
+input[data-task='p']:checked,
+input[data-task='u']:checked,
+input[data-task='w']:checked,
+input[data-task='P']:checked,
+input[data-task='M']:checked,
+input[data-task='D']:checked,
+li[data-task='!'] > input:checked,
+li[data-task='!'] > p > input:checked,
+li[data-task='*'] > input:checked,
+li[data-task='*'] > p > input:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked,
+li[data-task='<'] > input:checked,
+li[data-task='<'] > p > input:checked,
+li[data-task='>'] > input:checked,
+li[data-task='>'] > p > input:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked,
+li[data-task='b'] > input:checked,
+li[data-task='b'] > p > input:checked,
+li[data-task='c'] > input:checked,
+li[data-task='c'] > p > input:checked,
+li[data-task='d'] > input:checked,
+li[data-task='d'] > p > input:checked,
+li[data-task='f'] > input:checked,
+li[data-task='f'] > p > input:checked,
+li[data-task='k'] > input:checked,
+li[data-task='k'] > p > input:checked,
+li[data-task='l'] > input:checked,
+li[data-task='l'] > p > input:checked,
+li[data-task='p'] > input:checked,
+li[data-task='p'] > p > input:checked,
+li[data-task='u'] > input:checked,
+li[data-task='u'] > p > input:checked,
+li[data-task='w'] > input:checked,
+li[data-task='w'] > p > input:checked,
+li[data-task='P'] > input:checked,
+li[data-task='P'] > p > input:checked,
+li[data-task='M'] > input:checked,
+li[data-task='M'] > p > input:checked,
+li[data-task='D'] > input:checked,
+li[data-task='D'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentColor;
+  -webkit-mask-size: var(--checkbox-icon);
+  -webkit-mask-position: 50% 50%;
+}
+
+/* ── [>] Forwarded — paper-plane, rotated ── */
+input[data-task='>']:checked,
+li[data-task='>'] > input:checked,
+li[data-task='>'] > p > input:checked {
+  color: var(--text-faint);
+  transform: rotate(90deg);
+  -webkit-mask-position: 50% 100%;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+
+/* ── [<] Scheduled — calendar ── */
+input[data-task='<']:checked,
+li[data-task='<'] > input:checked,
+li[data-task='<'] > p > input:checked {
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [?] Question — filled background with ? glyph ── */
+input[data-task='?']:checked,
+li[data-task='?'] > input:checked,
+li[data-task='?'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-color: var(--phosphor-amber);
+  border-color: var(--phosphor-amber);
+  background-position: 50% 50%;
+  background-size: 200% 90%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ── [/] In-progress — half-filled checkbox ── */
+input[data-task='/']:checked,
+li[data-task='/'] > input:checked,
+li[data-task='/'] > p > input:checked {
+  background-image: none;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+input[data-task='/']:checked:after,
+li[data-task='/'] > input:checked:after,
+li[data-task='/'] > p > input:checked:after {
+  top: 0;
+  left: 0;
+  content: ' ';
+  display: block;
+  position: absolute;
+  background-color: var(--interactive-accent);
+  width: calc(50% - 0.5px);
+  height: 100%;
+  -webkit-mask-image: none;
+}
+
+/* ── [!] Important — warning triangle ── */
+input[data-task='!']:checked,
+li[data-task='!'] > input:checked,
+li[data-task='!'] > p > input:checked {
+  color: var(--phosphor-sienna);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── ["] Quote — speech marks ── */
+input[data-task='"']:checked,
+input[data-task='\u201C']:checked,
+li[data-task='"'] > input:checked,
+li[data-task='"'] > p > input:checked,
+li[data-task='\u201C'] > input:checked,
+li[data-task='\u201C'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-position: 50% 50%;
+  background-color: var(--phosphor-cyan);
+  border-color: var(--phosphor-cyan);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ── [-] Cancelled — minus / strike-through ── */
+input[data-task='-']:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked {
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+/* Cancelled tasks get strikethrough text */
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task='-'].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task='-']),
+body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
+  color: var(--text-faint);
+  text-decoration: line-through solid var(--text-faint) 1px;
+}
+
+/* ── [*] Star ── */
+input[data-task='*']:checked,
+li[data-task='*'] > input:checked,
+li[data-task='*'] > p > input:checked {
+  color: var(--phosphor-amber);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+/* ── [l] Location — map pin ── */
+input[data-task='l']:checked,
+li[data-task='l'] > input:checked,
+li[data-task='l'] > p > input:checked {
+  color: var(--phosphor-rose);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [i] Information — filled background with i glyph ── */
+input[data-task='i']:checked,
+li[data-task='i'] > input:checked,
+li[data-task='i'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-color: var(--phosphor-steel);
+  border-color: var(--phosphor-steel);
+  background-position: 50%;
+  background-size: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ── [S] Savings / amount — dollar sign ── */
+input[data-task='S']:checked,
+li[data-task='S'] > input:checked,
+li[data-task='S'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border-color: var(--phosphor-sage);
+  background-color: var(--phosphor-sage);
+  background-size: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ── [I] Idea — lightbulb ── */
+input[data-task='I']:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked {
+  color: var(--phosphor-amber);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+
+/* ── [f] Fire ── */
+input[data-task='f']:checked,
+li[data-task='f'] > input:checked,
+li[data-task='f'] > p > input:checked {
+  color: var(--phosphor-rose);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [k] Key ── */
+input[data-task='k']:checked,
+li[data-task='k'] > input:checked,
+li[data-task='k'] > p > input:checked {
+  color: var(--phosphor-amber);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [u] Trend up ── */
+input[data-task='u']:checked,
+li[data-task='u'] > input:checked,
+li[data-task='u'] > p > input:checked {
+  color: var(--phosphor-sage);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [d] Trend down ── */
+input[data-task='d']:checked,
+li[data-task='d'] > input:checked,
+li[data-task='d'] > p > input:checked {
+  color: var(--phosphor-rose);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [w] Win / celebrate ── */
+input[data-task='w']:checked,
+li[data-task='w'] > input:checked,
+li[data-task='w'] > p > input:checked {
+  color: var(--phosphor-lavender);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+/* ── [p] Pros — thumbs up ── */
+input[data-task='p']:checked,
+li[data-task='p'] > input:checked,
+li[data-task='p'] > p > input:checked {
+  color: var(--phosphor-sage);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+
+/* ── [c] Cons — thumbs down ── */
+input[data-task='c']:checked,
+li[data-task='c'] > input:checked,
+li[data-task='c'] > p > input:checked {
+  color: var(--phosphor-sienna);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+
+/* ── [b] Bookmark ── */
+input[data-task='b']:checked,
+li[data-task='b'] > input:checked,
+li[data-task='b'] > p > input:checked {
+  color: var(--phosphor-sienna);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+
+/* ── [P] Open Pull Request ── */
+input[data-task='P']:checked,
+li[data-task='P'] > input:checked,
+li[data-task='P'] > p > input:checked {
+  color: var(--phosphor-sage);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* ── [M] Merged Pull Request ── */
+input[data-task='M']:checked,
+li[data-task='M'] > input:checked,
+li[data-task='M'] > p > input:checked {
+  color: var(--phosphor-lavender);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* ── [D] Draft Pull Request ── */
+input[data-task='D']:checked,
+li[data-task='D'] > input:checked,
+li[data-task='D'] > p > input:checked {
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M3.25 1A2.25 2.25 0 0 1 4 5.372v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.251 2.251 0 0 1 3.25 1Zm9.5 14a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM2.5 3.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0ZM3.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm9.5 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM14 7.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm0-4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* ── Prevent icon-checkboxes from getting strikethrough text ── */
+body:not(.tasks) li[data-task='>'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='<'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='b'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='i'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='*'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='!'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='S'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='?'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='/'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='"'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='l'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='I'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='p'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='c'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='f'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='k'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='w'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='u'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='d'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='P'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
+  text-decoration: none;
+  color: var(--text-normal);
+}
+
+/* Source-view: keep icon-task lines at normal text color */
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='M'] {
+  text-decoration: none;
+  color: var(--text-faint);
+}
+
+
+/* ─── Light Mode: Hardcoded Color Overrides ───────────────── */
+/* The dark theme uses some hardcoded values outside of CSS
+   variables. These overrides ensure every element adapts
+   properly when light mode is active. */
+
+/* Strong/Bold — rich dark ink instead of bright off-white */
+.theme-light strong, .theme-light b,
+.theme-light .markdown-source-view strong,
+.theme-light .markdown-preview-view strong {
+  color: #1e1c18;
+}
+
+/* Emphasis — warm dark tone instead of light cream */
+.theme-light em, .theme-light i,
+.theme-light .markdown-source-view em,
+.theme-light .markdown-preview-view em {
+  color: #3d3a34;
+}
+
+/* Links — deeper amber border for visibility on ivory */
+.theme-light a,
+.theme-light .internal-link,
+.theme-light .markdown-preview-view .internal-link,
+.theme-light .markdown-rendered .internal-link {
+  border-bottom-color: rgba(154, 123, 60, 0.30);
+}
+
+.theme-light a:hover,
+.theme-light .internal-link:hover {
+  border-bottom-color: rgba(154, 123, 60, 0.65);
+}
+
+.theme-light .external-link {
+  border-bottom-color: rgba(69, 106, 134, 0.30);
+}
+
+.theme-light .external-link:hover {
+  border-bottom-color: rgba(69, 106, 134, 0.65);
+}
+
+/* Blockquotes — warm tinted background, dark text */
+.theme-light blockquote,
+.theme-light .markdown-preview-view blockquote,
+.theme-light .markdown-rendered blockquote {
+  background: rgba(142, 66, 66, 0.05);
+  border-left-color: var(--h3-color);
+  color: #4a4742;
+}
+
+/* Inline code — warm paper tint instead of dark glass */
+.theme-light code,
+.theme-light .markdown-source-view code,
+.theme-light .markdown-preview-view code,
+.theme-light .markdown-rendered code {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  color: #876a30;
+}
+
+/* Code blocks — light parchment instead of near-black */
+.theme-light pre,
+.theme-light .markdown-source-view pre,
+.theme-light .markdown-preview-view pre,
+.theme-light .markdown-rendered pre {
+  background: #f0ede6 !important;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.theme-light pre code {
+  color: var(--text-normal);
+}
+
+/* H1 border — adapted amber tint for light */
+.theme-light .markdown-source-view h1,
+.theme-light .markdown-preview-view h1,
+.theme-light .markdown-rendered h1 {
+  border-bottom: 1px solid rgba(154, 114, 20, 0.18);
+}
+
+/* Tables — dark-tinted borders and hover states */
+.theme-light .markdown-preview-view td,
+.theme-light .markdown-rendered td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.theme-light .markdown-preview-view tr:hover td,
+.theme-light .markdown-rendered tr:hover td {
+  background: var(--background-modifier-hover);
+}
+
+/* Tags — deeper accent tint for ivory backgrounds */
+.theme-light .tag,
+.theme-light a.tag {
+  background: rgba(154, 123, 60, 0.08);
+  border: 1px solid rgba(154, 123, 60, 0.15);
+}
+
+.theme-light .tag:hover {
+  background: rgba(154, 123, 60, 0.14);
+}
+
+/* Images — softer shadow for light context */
+.theme-light .markdown-preview-view img,
+.theme-light .markdown-rendered img {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* Horizontal rule — warm gradient for light */
+.theme-light hr,
+.theme-light .markdown-preview-view hr {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--background-modifier-border) 20%,
+    rgba(154, 123, 60, 0.30) 50%,
+    var(--background-modifier-border) 80%,
+    transparent 100%
+  );
+}
+
+/* Scrollbar — dark-on-light instead of light-on-dark */
+.theme-light ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* Active line — warm tint instead of white tint */
+.theme-light .cm-activeLine {
+  background: rgba(0, 0, 0, 0.02) !important;
+}
+
+.theme-light .cm-activeLineGutter {
+  background: rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Selection — warm amber on light */
+.theme-light .markdown-source-view .cm-selectionBackground {
+  background: var(--text-selection) !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+ *  End of Phosphor
+ *  May your words glow softly in the dark —
+ *  or absorb warmly into the page by day.
+ * ═══════════════════════════════════════════════════════════════ */

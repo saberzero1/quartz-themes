@@ -1,0 +1,152 @@
+/* Emerald Synth — Obsidian Theme
+ * A synthwave-inspired dark theme with deep purple backgrounds and cyan-green accents.
+ * https://github.com/malleroid/emerald-synth
+ */
+
+.theme-dark {
+  /* ── Foundation: Base Colors ── */
+  --color-base-00: #0a0118;   /* bg_shades.darkest */
+  --color-base-05: #0d0221;   /* core.bg */
+  --color-base-10: #150530;   /* bg_shades.medium — sidebar bg */
+  --color-base-20: #240d49;   /* bg_shades.sidebar — hover, active line */
+  --color-base-25: #2b1451;   /* bg_shades.raised — borders, dividers */
+  --color-base-30: #2b1451;   /* bg_shades.raised — inactive tab, button bg */
+  --color-base-35: #4a3565;   /* split_divider */
+  --color-base-40: #6a5585;   /* ansi.bright_black */
+  --color-base-50: #6a5585;   /* bright_black — placeholder text */
+  --color-base-60: #8369a5;   /* fg_shades.muted — secondary text */
+  --color-base-70: #a496b9;   /* dim_white */
+  --color-base-100: #f0e6ff;  /* core.fg */
+
+  /* ── Foundation: Accent (HSL) ── */
+  --accent-h: 168;
+  --accent-s: 100%;
+  --accent-l: 50%;
+
+  /* ── Semantic: Backgrounds ── */
+  --background-primary: #0d0221;
+  --background-primary-alt: #0a0118;
+  --background-secondary: #150530;
+  --background-secondary-alt: #0a0118;
+  --background-modifier-border: #4a3565;
+  --background-modifier-form-field: #15053080;
+  --background-modifier-form-field-highlighted: #240d49;
+  --background-modifier-success: #00ffcc40;
+  --background-modifier-error: #ff2a6d40;
+  --background-modifier-error-hover: #ff2a6d50;
+  --background-modifier-cover: #0a0118cc;
+
+  /* ── Semantic: Text ── */
+  --text-normal: #f0e6ff;
+  --text-muted: #8369a5;
+  --text-faint: #6a5585;
+  --text-accent: #00ffcc;
+  --text-accent-hover: #40ffdd;
+  --text-error: #ff2a6d;
+  --text-error-hover: #ff5c8a;
+  --text-highlight-bg: #00ffcc25;
+  --text-selection: #1a3d3580;
+  --text-on-accent: #0d0221;
+
+  /* ── Semantic: Interactive ── */
+  --interactive-normal: #240d49;
+  --interactive-hover: #2b1451;
+  --interactive-accent: #00ffcc;
+  --interactive-accent-hover: #00d4aa;
+  --interactive-accent-rgb: 0, 255, 204;
+  --interactive-success: #00ffcc;
+
+  /* ── Scrollbar ── */
+  --scrollbar-bg: #00ffcc08;
+  --scrollbar-thumb-bg: #00ffcc20;
+  --scrollbar-active-thumb-bg: #00ffcc40;
+
+  /* ── Nav / Sidebar ── */
+  --nav-item-color: #f0e6ff;
+  --nav-item-color-hover: #00ffcc;
+  --nav-item-color-active: #00ffcc;
+  --nav-item-background-hover: #2b1451;
+  --nav-item-background-active: #1a3d35;
+  --nav-item-weight-hover: inherit;
+  --nav-item-weight-active: inherit;
+
+  /* ── Tags ── */
+  --tag-color: #4dd0e1;
+  --tag-color-hover: #7ee0ec;
+  --tag-background: #4dd0e120;
+  --tag-background-hover: #4dd0e130;
+  --tag-border-color: #4dd0e140;
+  --tag-border-color-hover: #4dd0e160;
+
+  /* ── Headings ── */
+  --h1-color: #00ffcc;
+  --h2-color: #40ffdd;
+  --h3-color: #4dd0e1;
+  --h4-color: #8b9cf7;
+  --h5-color: #ff79c6;
+  --h6-color: #8369a5;
+
+  /* ── Inline ── */
+  --bold-color: #f0e6ff;
+  --italic-color: #ff79c6;
+  --code-normal: #00ffcc;
+  --code-background: #15053080;
+  --code-comment: #6a5585;
+
+  /* ── Syntax (code blocks) ── */
+  --code-function: #4dd0e1;
+  --code-keyword: #8b9cf7;
+  --code-string: #00ffcc;
+  --code-value: #ffe099;
+  --code-important: #ff2a6d;
+  --code-tag: #ff2a6d;
+  --code-property: #4dd0e1;
+  --code-operator: #f0e6ff;
+  --code-punctuation: #6a5585;
+
+  /* ── Graph ── */
+  --graph-line: #4a3565;
+  --graph-dot: #00ffcc;
+  --graph-node: #00ffcc;
+  --graph-node-focused: #40ffdd;
+  --graph-node-tag: #4dd0e1;
+  --graph-node-attachment: #ffcc66;
+  --graph-node-unresolved: #ff2a6d;
+
+  /* ── Checkbox ── */
+  --checkbox-color: #00ffcc;
+  --checkbox-color-hover: #40ffdd;
+  --checkbox-border-color: #4a3565;
+  --checkbox-border-color-hover: #00d4aa;
+
+  /* ── Indentation guide ── */
+  --indentation-guide-color: #150530;
+  --indentation-guide-color-active: #00d4aa;
+
+  /* ── Blockquote ── */
+  --blockquote-border-color: #00d4aa;
+
+  /* ── Table ── */
+  --table-header-background: #150530;
+  --table-row-even-background: #0d0221;
+  --table-row-odd-background: #0a0118;
+  --table-row-background-hover: #1a3d35;
+
+  /* ── Callout ── */
+  --callout-default: #4dd0e1;
+  --callout-bug: #ff2a6d;
+  --callout-error: #ff2a6d;
+  --callout-warning: #ffcc66;
+  --callout-success: #00ffcc;
+  --callout-info: #8b9cf7;
+  --callout-tip: #00ffcc;
+  --callout-question: #ffcc66;
+  --callout-quote: #8369a5;
+  --callout-todo: #00ffcc;
+  --callout-example: #ff79c6;
+}
+
+/* ── Both modes: accent foreground ── */
+body {
+  --text-on-accent: #0d0221;
+}

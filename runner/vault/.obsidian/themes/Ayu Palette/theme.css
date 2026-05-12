@@ -1,0 +1,432 @@
+/* @settings
+name: Ayu Palette
+id: ayu-palette
+settings:
+  -
+    id: ayu-light-ui-palette
+    title: Light UI palette
+    description: Select which Ayu variant is used while Obsidian is in light mode.
+    type: class-select
+    allowEmpty: false
+    default: ayu-light-ui-palette-light
+    options:
+      -
+        label: Light
+        value: ayu-light-ui-palette-light
+      -
+        label: Mirage
+        value: ayu-light-ui-palette-mirage
+      -
+        label: Dark
+        value: ayu-light-ui-palette-dark
+  -
+    id: ayu-dark-ui-palette
+    title: Dark UI palette
+    description: Select which Ayu variant is used while Obsidian is in dark mode.
+    type: class-select
+    allowEmpty: false
+    default: ayu-dark-ui-palette-mirage
+    options:
+      -
+        label: Mirage
+        value: ayu-dark-ui-palette-mirage
+      -
+        label: Dark
+        value: ayu-dark-ui-palette-dark
+      -
+        label: Light
+        value: ayu-dark-ui-palette-light
+*/
+
+@font-face {
+  font-family: "Sentient";
+  src: local("Sentient"), local("Sentient Variable");
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  src: local("Maple Mono NF"), local("Maple Mono");
+}
+
+body {
+  --font-text-theme: "Sentient", serif;
+  --font-interface-theme: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-monospace-theme: "Maple Mono NF", "Maple Mono", "Monaspace Neon", monospace;
+  --font-mermaid: var(--font-interface-theme);
+  font-synthesis: none;
+}
+
+.theme-dark.ayu-dark-ui-palette-dark,
+.theme-light.ayu-light-ui-palette-dark {
+  /*
+  Ayu Dark in RGBa
+  */
+  --syntax-tag: 57 186 230;
+  --syntax-func: 255 180 84;
+  --syntax-entity: 89 194 255;
+  --syntax-string: 170 217 76;
+  --syntax-regexp: 149 230 203;
+  --syntax-markup: 240 113 120;
+  --syntax-keyword: 255 143 64;
+  --syntax-special: 230 182 115;
+  --syntax-comment: 172 182 191 / 0.55;
+  --syntax-constant: 210 166 255;
+  --syntax-operator: 242 150 104;
+  --vcs-added: 127 217 98;
+  --vcs-modified: 115 184 255;
+  --vcs-removed: 242 109 120;
+  --editor-fg: 191 189 182;
+  --editor-bg: 13 16 23;
+  --editor-line: 19 23 33;
+  --editor-selection-active: 64 159 255 / 0.3;
+  --editor-selection-inactive: 64 159 255 / 0.13;
+  --editor-match-active: 108 89 128;
+  --editor-match-inactive: 108 89 128 / 0.4;
+  --editor-gutter-active: 108 115 128 / 0.9;
+  --editor-gutter-normal: 108 115 128 / 0.6;
+  --editor-guide-active: 108 115 128 / 0.5;
+  --editor-guide-normal: 108 115 128 / 0.2;
+  --ui-fg: 86 91 102;
+  --ui-bg: 11 14 20;
+  --ui-line: 17 21 28;
+  --ui-selection-active: 71 82 102 / 0.25;
+  --ui-selection-normal: 71 82 102 / 0.2;
+  --ui-panel-bg: 15 19 26;
+  --ui-panel-shadow: 0 0 0 / 0.5;
+  --common-accent: 230 180 80;
+  --common-error: 217 87 87;
+  /* App accent color from `common.accent` */
+  --accent-h: 40;
+  --accent-s: 75%;
+  --accent-l: 61%;
+}
+
+.theme-dark,
+.theme-dark.ayu-dark-ui-palette-mirage,
+.theme-light.ayu-light-ui-palette-mirage {
+  /*
+  Ayu Mirage in RGBa
+  */
+  --syntax-tag: 92 207 230;
+  --syntax-func: 255 208 115;
+  --syntax-entity: 115 208 255;
+  --syntax-string: 213 255 128;
+  --syntax-regexp: 149 230 203;
+  --syntax-markup: 242 135 121;
+  --syntax-keyword: 255 173 102;
+  --syntax-special: 255 223 179;
+  --syntax-comment: 184 207 230 / 0.5;
+  --syntax-constant: 223 191 255;
+  --syntax-operator: 242 158 116;
+  --vcs-added: 135 217 108;
+  --vcs-modified: 128 191 255;
+  --vcs-removed: 242 121 131;
+  --editor-fg: 204 202 194;
+  --editor-bg: 36 41 54;
+  --editor-line: 26 31 41;
+  --editor-selection-active: 64 159 255 / 0.25;
+  --editor-selection-inactive: 64 159 255 / 0.13;
+  --editor-match-active: 105 83 128;
+  --editor-match-inactive: 105 83 128 / 0.4;
+  --editor-gutter-active: 138 145 153 / 0.8;
+  --editor-gutter-normal: 138 145 153 / 0.4;
+  --editor-guide-active: 138 145 153 / 0.35;
+  --editor-guide-normal: 138 145 153 / 0.18;
+  --ui-fg: 112 122 140;
+  --ui-bg: 31 36 48;
+  --ui-line: 23 27 36;
+  --ui-selection-active: 99 117 153 / 0.15;
+  --ui-selection-normal: 105 117 140 / 0.12;
+  --ui-panel-bg: 28 33 43;
+  --ui-panel-shadow: 18 21 28 / 0.7;
+  --common-accent: 255 204 102;
+  --common-error: 255 102 102;
+  /* App accent color from `common.accent` */
+  --accent-h: 40;
+  --accent-s: 100%;
+  --accent-l: 70%;
+}
+
+.theme-light,
+.theme-light.ayu-light-ui-palette-light,
+.theme-dark.ayu-dark-ui-palette-light {
+  /*
+  Ayu Light in RGBa
+  */
+  --syntax-tag: 85 180 212;
+  --syntax-func: 242 174 73;
+  --syntax-entity: 57 158 230;
+  --syntax-string: 134 179 0;
+  --syntax-regexp: 76 191 153;
+  --syntax-markup: 240 113 113;
+  --syntax-keyword: 250 141 62;
+  --syntax-special: 230 186 126;
+  --syntax-comment: 120 123 128 / 0.6;
+  --syntax-constant: 163 122 204;
+  --syntax-operator: 237 147 102;
+  --vcs-added: 108 191 67;
+  --vcs-modified: 71 138 204;
+  --vcs-removed: 255 115 131;
+  --editor-fg: 92 97 102;
+  --editor-bg: 252 252 252;
+  --editor-line: 138 145 153 / 0.1;
+  --editor-selection-active: 3 91 214 / 0.15;
+  --editor-selection-inactive: 3 91 214 / 0.07;
+  --editor-match-active: 159 64 255 / 0.17;
+  --editor-match-inactive: 159 64 255 / 0.8;
+  --editor-gutter-active: 138 145 153 / 0.8;
+  --editor-gutter-normal: 138 145 153 / 0.4;
+  --editor-guide-active: 138 145 153 / 0.35;
+  --editor-guide-normal: 138 145 153 / 0.18;
+  --ui-fg: 138 145 153;
+  --ui-bg: 248 249 250;
+  --ui-line: 107 125 143 / 0.12;
+  --ui-selection-active: 86 114 143 / 0.12;
+  --ui-selection-normal: 107 125 143 / 0.12;
+  --ui-panel-bg: 243 244 245;
+  --ui-panel-shadow: 0 0 0 / 0.15;
+  --common-accent: 255 170 51;
+  --common-error: 230 80 80;
+  /* App accent color from `common.accent` */
+  --accent-h: 35;
+  --accent-s: 100%;
+  --accent-l: 60%;
+}
+
+.obsidian-app {
+  /*
+  Foundation
+  */
+  --text: rgb(var(--ui-fg));
+  --fill: rgb(var(--ui-bg));
+  --color-base-00: color-mix(in srgb, var(--fill), var(--text) 0%);
+  --color-base-05: color-mix(in srgb, var(--fill), var(--text) 5%);
+  --color-base-10: color-mix(in srgb, var(--fill), var(--text) 10%);
+  --color-base-20: color-mix(in srgb, var(--fill), var(--text) 20%);
+  --color-base-25: color-mix(in srgb, var(--fill), var(--text) 25%);
+  --color-base-30: color-mix(in srgb, var(--fill), var(--text) 30%);
+  --color-base-35: color-mix(in srgb, var(--fill), var(--text) 35%);
+  --color-base-40: color-mix(in srgb, var(--fill), var(--text) 40%);
+  --color-base-50: color-mix(in srgb, var(--fill), var(--text) 50%);
+  --color-base-60: color-mix(in srgb, var(--fill), var(--text) 60%);
+  --color-base-70: color-mix(in srgb, var(--fill), var(--text) 70%);
+  --color-base-100: color-mix(in srgb, var(--fill), var(--text) 100%);
+  --color-red-rgb: var(--syntax-markup);
+  --color-orange-rgb: var(--syntax-keyword);
+  --color-yellow-rgb: var(--syntax-func);
+  --color-green-rgb: var(--syntax-string);
+  --color-cyan-rgb: var(--syntax-regexp);
+  --color-blue-rgb: var(--syntax-entity);
+  --color-purple-rgb: var(--syntax-constant);
+  --color-pink-rgb: var(--syntax-operator);
+  --color-red: rgb(var(--color-red-rgb));
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-green: rgb(var(--color-green-rgb));
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-pink: rgb(var(--color-pink-rgb));
+  --background-primary: rgb(var(--editor-bg));
+  --background-primary-alt: rgb(var(--ui-panel-bg));
+  --background-secondary: rgb(var(--ui-bg));
+  --background-secondary-alt: rgb(var(--ui-panel-bg));
+  --background-modifier-hover: rgb(var(--ui-selection-normal));
+  --background-modifier-active-hover: rgb(var(--ui-selection-active));
+  --background-modifier-border: rgb(var(--ui-line));
+  --background-modifier-border-hover: rgb(var(--ui-selection-normal));
+  --background-modifier-border-focus: rgb(var(--ui-selection-active));
+  --background-modifier-error-rgb: var(--vcs-removed);
+  --background-modifier-error: rgb(var(--vcs-removed));
+  --background-modifier-error-hover: rgb(var(--vcs-removed) / 0.8);
+  --background-modifier-success-rgb: var(--vcs-added);
+  --background-modifier-success: rgb(var(--vcs-added));
+  &,
+  &.is-mobile.theme-dark {
+    --background-modifier-message: rgb(var(--vcs-modified));
+  }
+  --background-modifier-form-field: rgb(var(--ui-selection-normal));
+  --interactive-normal: rgb(var(--ui-selection-normal));
+  --interactive-hover: rgb(var(--ui-selection-active));
+  --interactive-accent: rgb(var(--common-accent));
+  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --interactive-accent-hover: rgb(var(--common-accent) / 0.8);
+  --text-normal: rgb(var(--editor-fg));
+  --text-muted: rgb(var(--syntax-comment));
+  --text-faint: rgb(var(--editor-gutter-normal));
+  --text-on-accent: rgb(var(--ui-bg));
+  --text-on-accent-inverted: rgb(var(--ui-fg));
+  --text-success: rgb(var(--vcs-added));
+  --text-warning: rgb(var(--common-accent));
+  --text-error: rgb(var(--common-error));
+  --text-accent: rgb(var(--common-accent));
+  --text-accent-hover: rgb(var(--common-accent) / 0.8);
+  --text-selection: rgb(var(--editor-selection-active));
+  --text-highlight-bg: rgb(var(--editor-match-active));
+  --caret-color: rgb(var(--vcs-modified));
+  --icon-color: rgb(var(--ui-fg));
+  --icon-color-hover: rgb(var(--ui-fg) / 0.8);
+  --icon-color-active: var(--color-accent);
+  --icon-color-focused: var(--color-accent-1);
+  --italic-color: var(--color-purple);
+  --bold-color: var(--color-green);
+  --bold-modifier: 100;
+  /*
+  Components
+  */
+  --checklist-done-decoration: none;
+  --indentation-guide-color: rgb(var(--editor-guide-normal));
+  --indentation-guide-color-active: rgb(var(--editor-guide-active));
+  /*
+  Editor
+  */
+  --callout-quote: var(--editor-fg);
+  --code-normal: rgb(var(--editor-fg));
+  --code-comment: rgb(var(--syntax-comment));
+  --code-function: rgb(var(--syntax-func));
+  --code-important: rgb(var(--syntax-special));
+  --code-keyword: rgb(var(--syntax-keyword));
+  --code-operator: rgb(var(--syntax-operator));
+  --code-property: rgb(var(--syntax-entity));
+  --code-punctuation: rgb(var(--editor-fg));
+  --code-string: rgb(var(--syntax-string));
+  --code-tag: rgb(var(--syntax-tag));
+  --code-value: rgb(var(--syntax-constant));
+  --h1-color: rgb(var(--syntax-keyword));
+  --h2-color: rgb(var(--syntax-func));
+  --h3-color: rgb(var(--syntax-special));
+  --h4-color: rgb(var(--syntax-operator));
+  --h5-color: rgb(var(--syntax-operator));
+  --h6-color: rgb(var(--syntax-operator));
+  --h1-line-height: normal;
+  --h2-line-height: normal;
+  --h3-line-height: normal;
+  --h4-line-height: normal;
+  --h5-line-height: normal;
+  --h6-line-height: normal;
+  --h1-size: 1.8em;
+  --h2-size: 1.6em;
+  --h3-size: 1.4em;
+  --h4-size: 1.2em;
+  --h5-size: 1em;
+  --h6-size: 0.8em;
+  --h2-style: italic;
+  --h5-style: italic;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 600;
+  --h6-weight: 700;
+  --inline-title-size: 2em;
+  --inline-title-weight: bold;
+  --inline-title-style: italic;
+  --inline-title-color: rgb(var(--syntax-entity));
+  --link-color: rgb(var(--vcs-modified));
+  --link-color-hover: rgb(var(--vcs-modified) / 0.8);
+  --link-unresolved-color: rgb(var(--vcs-modified));
+  --link-external-color: rgb(var(--vcs-modified));
+  --link-external-color-hover: rgb(var(--vcs-modified) / 0.8);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --list-indent: 2em;
+  --list-marker-color: rgb(var(--syntax-operator));
+  --list-marker-color-hover: rgb(var(--syntax-operator) / 0.8);
+  --list-marker-color-collapsed: rgb(var(--syntax-operator) / 0.4);
+  --tag-color: rgb(var(--syntax-tag));
+  --tag-color-hover: rgb(var(--syntax-tag) / 0.8);
+  --tag-background: rgb(var(--syntax-tag) / 0.2);
+  --tag-background-hover: rgb(var(--syntax-tag) / 0.4);
+  /*
+  Window
+  */
+  &.is-focused
+    .workspace-tab-header.mod-active
+    .workspace-tab-header-inner-icon {
+    color: var(--color-accent);
+  }
+  &:not(.is-focused) .workspace-tab-header .workspace-tab-header-inner-icon {
+    color: var(--text-faint);
+  }
+}
+
+h6,
+.cm-header-6 {
+  text-transform: uppercase;
+}
+
+img {
+  border-radius: var(--radius-s);
+}
+
+.cm-s-obsidian .cm-quote {
+  &.cm-em {
+    color: var(--italic-color);
+  }
+  &.cm-strong {
+    color: var(--bold-color);
+  }
+}
+
+em strong,
+strong em,
+.cm-s-obsidian .cm-em.cm-strong {
+  color: var(--color-cyan);
+}
+
+code {
+  font-feature-settings: "calt", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06",
+    "ss07", "ss08", "ss09", "liga";
+}
+
+.markdown-rendered code:not(pre > code),
+.cm-s-obsidian span.cm-inline-code {
+  color: rgb(var(--syntax-markup));
+}
+
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-highlight {
+  background-color: rgb(var(--vcs-added) / 0.2);
+  &:not(.cm-formatting):not(:has(+ .cm-highlight)) {
+    border-radius: 0.5ex;
+  }
+}
+
+del,
+.cm-strikethrough {
+  background-color: rgb(var(--vcs-removed) / 0.2);
+  text-decoration: line-through wavy rgb(var(--vcs-removed) / 0.8);
+  text-decoration-thickness: from-font;
+  &:not(.cm-formatting):not(:has(+ .cm-strikethrough)) {
+    border-radius: 0.5ex;
+  }
+}
+
+.cm-formatting-strikethrough,
+.cm-strikethrough:has(+ .cm-formatting-strikethrough) {
+  text-decoration: none;
+}
+
+.footnote-ref {
+  font: var(--font-smallest) var(--font-interface-theme);
+}
+
+.callout {
+  /* Overrides legacy syntax. */
+  background-color: rgb(var(--callout-color) / 0.1);
+}
+
+.notice,
+.tooltip {
+  color: var(--text-on-accent);
+  background-color: var(--background-modifier-message);
+
+  &.mod-success {
+    background-color: var(--background-modifier-success);
+  }
+  &.mod-error {
+    background-color: var(--background-modifier-error);
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "gruber-darker-obsidian",
+  "name": "Gruber Darker",
+  "version": "2.0.1",
+  "minAppVersion": "1.0.0",
+  "description": "An Obsidian port of the Gruber Darker theme by rexim. High-contrast colors for focused writing.",
+  "author": "Aduneer",
+  "authorUrl": "https://github.com/Aduneer/gruber-darker-obsidian"
+}

@@ -1,0 +1,487 @@
+/* @settings
+
+name: Panorama Settings
+id: panorama-settings
+settings:
+	-
+		id: panorama-light-color-scheme
+		title: ⚪ Light Color Scheme
+		title.de: ⚪ Helles Farbschema
+		description: Select your preferred light color scheme.
+		description.de: Wählen Sie Ihr bevorzugtes helles Farbschema aus.
+		type: class-select
+		allowEmpty: false
+		default: Cornflower
+		options:
+			-
+				label: 💙 Cornflower
+				value: panorama-cornflower
+				default: true
+			-
+				label: 💜 Lavender
+				value: panorama-lavender
+			-
+				label: 🧡 Marigold
+				value: panorama-marigold
+	- 
+        id: panorama-dark-color-scheme
+        title: ⚫ Dark Color Scheme
+		title.de: ⚫ Dunkles Farbschema
+        description: Select your preferred dark color scheme.
+		description.de: Wählen Sie Ihr bevorzugtes dunkles Farbschema aus.
+        type: class-select
+        allowEmpty: false
+        default: Mountains
+        options:
+            - 
+                label: 💙 Mountains
+                value: panorama-mountains
+				default: true
+            -
+                label: 🩵 Meadow
+                value: panorama-meadow
+			-
+				label: 💜 Space
+				value: panorama-space
+			-
+				label: 🤎 Hearth
+				value: panorama-hearth
+			-
+				label: 💚 Forest
+				value: panorama-forest
+			-
+				label: 🩶 Caves
+				value: panorama-caves
+	-
+		id: panorama-toggles-heading
+		title: Toggles
+		title.de: Umschalter
+		level: 1
+		type: heading
+		collapsed: true
+	-
+		id: panorama-accent-highlight
+		title: Accent Highlight
+		title.de: Akzent-Hervorhebung
+		description: Forces highlights to use the accent color.
+		description.de: Erzwingt die Verwendung der Akzentfarbe für Hervorhebungen.
+		type: class-toggle
+	-
+		id: panorama-bold-folder
+		title: Bold Folder Titles
+		title.de: Fette Ordner-Titel
+		type: class-toggle
+	-
+		id: panorama-centered-h1
+		title: Centered H1 Headings
+		title.de: Zentrierte H1-Überschriften
+		type: class-toggle
+	- 
+		id: panorama-centered-table
+		title: Centered Tables
+		title.de: Zentrierte Tabellen
+		type: class-toggle
+	-
+		id: panorama-latex-background
+		title: LaTeX Background
+		title.de: LaTeX-Hintergrund
+		description: Adds a background color to LaTeX blocks for better readability.
+		description.de: Fügt LaTeX-Blöcken eine Hintergrundfarbe hinzu, um die Lesbarkeit zu verbessern.
+		type: class-toggle
+	-
+		id: panorama-hide-comment
+		title: Hide Comment Marker
+		title.de: Verstecke Kommentar-Marker
+		description: Hides the %% for comments.
+		description.de: Versteckt die %% für Kommentare.
+		type: class-toggle
+	- 
+		id: panorama-dynamic-callouts
+		title: Adaptive Callouts
+		title.de: Adaptive Callouts
+		description: Dynamically changes callout colors based on set theme.
+		description.de: Ändert die Farbe von Callouts dynamisch, basierend auf des ausgewählten Farbschemas.
+		type: class-toggle
+*/
+/* --- TOGGLES --- */
+
+.panorama-accent-highlight {
+	--text-highlight-bg: hsl(var(--hsl-panorama-accent), 0.5);
+	.cm-s-obsidian .cm-highlight,
+	.markdown-rendered mark {
+		padding: 0 4px;
+		border-radius: var(--size-4-1);
+	}
+}
+
+.panorama-bold-folder .nav-folder-title {
+	font-weight: bold;
+}
+
+.panorama-centered-h1 {
+	.HyperMD-header.HyperMD-header-1 {
+		text-align: center;
+	}
+
+	.markdown-preview-view h1 {
+		text-align: center;
+	}
+}
+
+.panorama-centered-table {
+	table,
+	.table-wrapper {
+		margin-inline: auto;
+	}
+}
+
+.panorama-latex-background { 
+	mjx-container[display='true'] {
+		background-color: var(--color-base-10);
+		border: var(--size-2-1) solid var(--color-base-30);
+		border-radius: var(--size-4-1);
+	}	
+}
+
+.panorama-dynamic-callouts {
+	div.callout {
+		background-color: var(--color-base-10);
+		border: 2px solid var(--color-base-30);
+	}
+	div.callout-title, div.callout-icon > svg.svg-icon {
+		gap: var(--size-4-2);
+		color: var(--color-base-70);
+	}
+}
+
+.kanban-plugin {
+	background-color: var(--color-base-00);
+}
+
+.panorama-hide-comment {
+	.cm-line:not(.cm-active) .cm-comment.cm-comment-start,
+	.cm-line:not(.cm-active) .cm-comment.cm-comment-end {
+		display: none;
+	}
+}
+
+/* --- MINOR CHANGES --- */
+
+mjx-container[display='true'] {
+	padding: var(--size-4-3);
+}
+
+.metadata-content {
+	background-color: var(--color-base-10);
+	border-radius: var(--size-4-2);
+}
+
+.metadata-add-button {
+	padding: var(--size-4-2) var(--size-4-3);
+	width: 100%;
+	justify-content: center;
+	border-radius: 0 0 var(--size-4-2) var(--size-4-2);
+}
+
+.vertical-tab-header-group-title {
+	text-transform: uppercase;
+}
+
+.vertical-tab-nav-item-icon {
+	padding: 0 var(--size-4-1);
+}
+
+.vertical-tab-nav-item.is-active {
+	border: 1px solid var(--color-base-30);
+}
+
+/* --- MERMAID DIAGRAMS --- */
+.nodeLabel > p {
+	color: var(--panorama-accent);
+}
+
+.edgeLabel p {
+	color: var(--panorama-accent);
+}
+
+.mermaid svg .node rect {
+	fill: var(--color-base-10) !important;
+	stroke: var(--color-base-00) !important;
+}
+
+body {
+	--metadata-property-padding: var(--size-4-1) var(--size-4-2);
+
+	.view-actions {
+		background-color: var(--color-base-00);
+		box-shadow: none;
+	}
+
+	.mod-settings {
+		background-color: var(--color-base-20);
+	}
+
+	.nav-file-tag {
+		background-color: var(--color-base-30);
+		color: var(--color-base-70);
+		padding: var(--size-2-1) var(--size-4-2);
+		line-height: normal;
+		font-size: 10px;
+	}
+}
+
+/* --- THEMING --- */
+.theme-light,
+.is-mobile.theme-light {
+	thead {
+		background-color: hsl(var(--hsl-color-base-10));
+	}
+
+	/* Base Colors */
+	--hsl-color-base-00: 218, 61%, 85%;
+	--hsl-color-base-05: 217, 54%, 75%;
+	--hsl-color-base-10: 217, 54%, 75%;
+	--hsl-color-base-20: 217, 54%, 75%;
+	--hsl-color-base-25: 218, 53%, 65%;
+	--hsl-color-base-30: 218, 53%, 65%;
+	--hsl-color-base-35: 218, 52%, 55%;
+	--hsl-color-base-40: 218, 51%, 45%;
+	--hsl-color-base-50: 218, 51%, 45%;
+	--hsl-color-base-60: 218, 51%, 45%;
+	--hsl-color-base-70: 217, 53%, 35%;
+	--hsl-color-base-100: 217, 54%, 25%;
+	--hsl-panorama-accent: 217, 75%, 55%;
+
+	--color-base-00: hsl(var(--hsl-color-base-00));
+	--color-base-05: hsl(var(--hsl-color-base-05));
+	--color-base-10: hsl(var(--hsl-color-base-10));
+	--color-base-20: hsl(var(--hsl-color-base-20));
+	--color-base-25: hsl(var(--hsl-color-base-25));
+	--color-base-30: hsl(var(--hsl-color-base-30));
+	--color-base-35: hsl(var(--hsl-color-base-35));
+	--color-base-40: hsl(var(--hsl-color-base-40));
+	--color-base-50: hsl(var(--hsl-color-base-50));
+	--color-base-60: hsl(var(--hsl-color-base-60));
+	--color-base-70: hsl(var(--hsl-color-base-70));
+	--color-base-100: hsl(var(--hsl-color-base-100));
+
+	--text-accent: var(--panorama-accent);
+	--text-accent-hover: var(--color-base-50);
+	--interactive-normal: var(--color-base-25);
+	--interactive-hover: hsl(var(--hsl-color-base-25), 0.5);
+	--interactive-accent: var(--color-base-25);
+	--interactive-accent-hover: hsl(var(--hsl-color-base-25), 0.5);
+	--panorama-accent: hsl(var(--hsl-panorama-accent));
+	--panorama-accent-hover: hsl(var(--hsl-panorama-accent), 0.8);
+	--text-selection: hsl(var(--hsl-color-base-50), 0.3);
+
+	/* Text Elements */
+	--tag-color: var(--color-base-00);
+	--tag-color-hover: hsl(var(--hsl-color-base-00), 0.7);
+	--tag-background: var(--panorama-accent);
+	--tag-background-hover: hsl(var(--hsl-panorama-accent), 0.5);
+	--checklist-done-color: hsl(var(--hsl-color-base-50), 0.6);
+	--link-color: var(--color-base-50);
+	--link-external-color: var(--color-base-50);
+	--link-color-hover: hsl(var(--hsl-color-base-50), 0.7);
+	--link-external-color-hover: hsl(var(--hsl-color-base-50), 0.7);
+	--code-background: var(--color-base-10);
+	--callout-color: 255, 0, 0;
+
+	/* UI */
+	--background-modifier-border-hover: var(--color-base-40);
+	--background-modifier-active-hover: var(--color-base-20);
+	--nav-item-background-active: var(--color-base-30);
+	--nav-item-background-hover: hsl(var(--hsl-color-base-50), 0.2);
+	--background-modifier-hover: hsl(var(--hsl-color-base-50), 0.3);
+	--settings-background: var(--color-base-00);
+	--modal-sidebar-background: var(--color-base-00);
+	--modal-border-color: var(--color-base-20);
+	--titlebar-background: var(--color-base-20);
+	--titlebar-background-focused: var(--color-base-20);
+	--icon-color-active: var(--color-base-70);
+
+	&.panorama-lavender {
+		--hsl-color-base-00: 258, 68%, 90%;
+		--hsl-color-base-05: 257, 54%, 75%;
+		--hsl-color-base-10: 257, 54%, 75%;
+		--hsl-color-base-20: 257, 54%, 75%;
+		--hsl-color-base-25: 258, 53%, 65%;
+		--hsl-color-base-30: 258, 53%, 65%;
+		--hsl-color-base-35: 258, 53%, 65%;
+		--hsl-color-base-40: 258, 52%, 55%;
+		--hsl-color-base-50: 258, 51%, 45%;
+		--hsl-color-base-60: 258, 51%, 45%;
+		--hsl-color-base-70: 257, 53%, 35%;
+		--hsl-color-base-100: 257, 54%, 25%;
+		--hsl-panorama-accent: 254, 77%, 60%;
+	}
+	&.panorama-marigold {
+		--hsl-color-base-00: 28, 70%, 90%;
+		--hsl-color-base-05: 28, 54%, 75%;
+		--hsl-color-base-10: 28, 54%, 75%;
+		--hsl-color-base-20: 28, 54%, 75%;
+		--hsl-color-base-25: 27, 53%, 65%;
+		--hsl-color-base-30: 27, 53%, 65%;
+		--hsl-color-base-35: 27, 53%, 65%;
+		--hsl-color-base-40: 28, 52%, 55%;
+		--hsl-color-base-50: 27, 51%, 45%;
+		--hsl-color-base-60: 27, 51%, 45%;
+		--hsl-color-base-70: 27, 53%, 35%;
+		--hsl-color-base-100: 28, 54%, 25%;
+		--hsl-panorama-accent: 24, 77%, 60%;
+	}
+}
+
+/* --- DARK THEME --- */
+
+.theme-dark,
+.is-mobile.theme-dark {
+	tbody {
+		background-color: hsl(var(--hsl-color-base-10));
+	}
+
+	/* Base Colors */
+	--hsl-color-base-00: 226, 40%, 12%;
+	--hsl-color-base-05: 226, 36%, 16%;
+	--hsl-color-base-10: 226, 36%, 16%;
+	--hsl-color-base-20: 226, 36%, 16%;
+	--hsl-color-base-25: 229, 29%, 29%;
+	--hsl-color-base-30: 229, 29%, 29%;
+	--hsl-color-base-35: 229, 24%, 42%;
+	--hsl-color-base-40: 231, 21%, 55%;
+	--hsl-color-base-50: 231, 21%, 55%;
+	--hsl-color-base-60: 231, 21%, 55%;
+	--hsl-color-base-70: 233, 29%, 70%;
+	--hsl-color-base-100: 232, 48%, 85%;
+	--hsl-panorama-accent: 236, 64%, 70%;
+
+	--color-base-00: hsl(var(--hsl-color-base-00));
+	--color-base-05: hsl(var(--hsl-color-base-05));
+	--color-base-10: hsl(var(--hsl-color-base-10));
+	--color-base-20: hsl(var(--hsl-color-base-20));
+	--color-base-25: hsl(var(--hsl-color-base-25));
+	--color-base-30: hsl(var(--hsl-color-base-30));
+	--color-base-35: hsl(var(--hsl-color-base-35));
+	--color-base-40: hsl(var(--hsl-color-base-40));
+	--color-base-50: hsl(var(--hsl-color-base-50));
+	--color-base-60: hsl(var(--hsl-color-base-60));
+	--color-base-70: hsl(var(--hsl-color-base-70));
+	--color-base-100: hsl(var(--hsl-color-base-100));
+	--panorama-accent: hsl(var(--hsl-panorama-accent));
+
+	--text-accent: var(--panorama-accent);
+	--text-accent-hover: hsl(var(--hsl-panorama-accent), 0.7);
+	--interactive-normal: var(--color-base-25);
+	--interactive-hover: hsl(var(--hsl-color-base-25), 0.5);
+	--interactive-accent: var(--color-base-40);
+	--interactive-accent-hover: hsl(var(--hsl-color-base-40), 0.5);
+	--panorama-accent: hsl(var(--hsl-panorama-accent));
+	--panorama-accent-hover: hsl(var(--hsl-panorama-accent), 0.8);
+	--text-selection: hsl(var(--hsl-color-base-50), 0.3);
+
+	/* Text Elements */
+	--link-color: hsl(var(--hsl-panorama-accent), 0.8);
+	--link-external-color: hsl(var(--hsl-panorama-accent), 0.8);
+	--link-color-hover: hsl(var(--hsl-panorama-accent), 0.5);
+	--link-external-color-hover: hsl(var(--hsl-panorama-accent), 0.5);
+	--tag-color: var(--panorama-accent);
+	--tag-color-hover: hsl(var(--hsl-color-base-100), 0.7);
+	--tag-background: hsl(var(--hsl-panorama-accent), 0.2);
+	--tag-background-hover: hsl(var(--hsl-panorama-accent), 0.5);
+	--checklist-done-color: hsl(var(--hsl-color-base-50), 0.6);
+	--code-background: var(--color-base-10);
+
+	/* UI */
+	--background-modifier-border-hover: var(--color-base-30);
+	--background-modifier-active-hover: hsl(var(--hsl-color-base-30), 0.5);
+	--background-modifier-hover: hsl(var(--hsl-color-base-30), 0.5);
+	--modal-border-color: var(--color-base-30);
+	--modal-sidebar-background: var(--color-base-00);
+	--nav-item-background-active: var(--color-base-30);
+	--nav-item-background-hover: hsl(var(--hsl-color-base-50), 0.2);
+	--settings-background: var(--color-base-00);
+	--titlebar-background: var(--color-base-10);
+	--titlebar-background-focused: var(--color-base-10);
+	--icon-color-active: var(--color-base-70);
+
+	&.panorama-meadow {
+		--hsl-color-base-00: 157, 30%, 17%;
+		--hsl-color-base-05: 155, 25%, 23%;
+		--hsl-color-base-10: 155, 25%, 23%;
+		--hsl-color-base-20: 155, 25%, 23%;
+		--hsl-color-base-25: 154, 18%, 36%;
+		--hsl-color-base-30: 154, 18%, 36%;
+		--hsl-color-base-35: 150, 13%, 48%;
+		--hsl-color-base-40: 149, 15%, 61%;
+		--hsl-color-base-50: 149, 15%, 61%;
+		--hsl-color-base-60: 149, 15%, 61%;
+		--hsl-color-base-70: 145, 19%, 75%;
+		--hsl-color-base-100: 134, 31%, 89%;
+		--hsl-panorama-accent: 162, 83%, 75%;
+	}
+
+	&.panorama-space {
+		--hsl-color-base-00: 266, 40%, 12%;
+		--hsl-color-base-05: 266, 36%, 16%;
+		--hsl-color-base-10: 266, 36%, 16%;
+		--hsl-color-base-20: 266, 36%, 16%;
+		--hsl-color-base-25: 269, 29%, 29%;
+		--hsl-color-base-30: 269, 29%, 29%;
+		--hsl-color-base-35: 269, 24%, 42%;
+		--hsl-color-base-40: 272, 21%, 55%;
+		--hsl-color-base-50: 272, 21%, 55%;
+		--hsl-color-base-60: 272, 21%, 55%;
+		--hsl-color-base-70: 273, 29%, 70%;
+		--hsl-color-base-100: 272, 48%, 85%;
+		--hsl-panorama-accent: 282, 83%, 75%;
+	}
+
+	&.panorama-hearth {
+		--hsl-color-base-00: 29, 40%, 12%;
+		--hsl-color-base-05: 30, 39%, 17%;
+		--hsl-color-base-10: 30, 39%, 17%;
+		--hsl-color-base-20: 30, 39%, 17%;
+		--hsl-color-base-25: 30, 42%, 30%;
+		--hsl-color-base-30: 30, 42%, 30%;
+		--hsl-color-base-35: 28, 30%, 42%;
+		--hsl-color-base-40: 27, 26%, 56%;
+		--hsl-color-base-50: 27, 26%, 56%;
+		--hsl-color-base-60: 27, 26%, 56%;
+		--hsl-color-base-70: 27, 36%, 71%;
+		--hsl-color-base-100: 30, 58%, 86%;
+		--hsl-panorama-accent: 30, 83%, 75%;
+	}
+
+	&.panorama-forest {
+		--hsl-color-base-00: 143, 27%, 12%;
+		--hsl-color-base-05: 143, 19%, 18%;
+		--hsl-color-base-10: 143, 19%, 18%;
+		--hsl-color-base-20: 143, 19%, 18%;
+		--hsl-color-base-25: 143, 13%, 32%;
+		--hsl-color-base-30: 143, 13%, 32%;
+		--hsl-color-base-35: 144, 11%, 45%;
+		--hsl-color-base-40: 144, 13%, 59%;
+		--hsl-color-base-50: 144, 13%, 59%;
+		--hsl-color-base-60: 144, 13%, 59%;
+		--hsl-color-base-70: 144, 23%, 72%;
+		--hsl-color-base-100: 143, 50%, 86%;
+		--hsl-panorama-accent: 151, 48%, 61%;
+	}
+
+	&.panorama-caves {
+		--hsl-color-base-00: 24, 10%, 10%;
+		--hsl-color-base-05: 12, 6%, 15%;
+		--hsl-color-base-10: 12, 6%, 15%;
+		--hsl-color-base-20: 12, 6%, 15%;
+		--hsl-color-base-25: 30, 6%, 25%;
+		--hsl-color-base-30: 30, 6%, 25%;
+		--hsl-color-base-35: 33, 5%, 32%;
+		--hsl-color-base-40: 17, 9%, 45%;
+		--hsl-color-base-50: 17, 9%, 45%;
+		--hsl-color-base-60: 17, 9%, 45%;
+		--hsl-color-base-70: 16, 8%, 64%;
+		--hsl-color-base-100: 15, 9%, 83%;
+		--hsl-panorama-accent: 32, 39%, 55%;
+	}
+}

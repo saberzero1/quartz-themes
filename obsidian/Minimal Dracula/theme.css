@@ -1,7 +1,7 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.8.3
+@version          1.8.4
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
@@ -219,12 +219,12 @@ body.theme-dark {
 	}
 
 	/* Settings inputs and buttons styling */
-	button:not(.clickable-icon),
-	.setting-item-control select {
+	.setting-group button:not(.clickable-icon),
+	.setting-group .setting-item-control select {
 		background-color: var(--drx-color-highlight);
 	}
 
-	.setting-item-control select:hover {
+	.setting-group .setting-item-control select:hover {
 		background-color: var(--drx-color-accent);
 	}
 

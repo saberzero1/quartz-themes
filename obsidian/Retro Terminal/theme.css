@@ -1,0 +1,519 @@
+/* ============================================
+   RETRO TERMINAL — An Obsidian Theme
+   Dark: Amber terminal  |  Light: Original Macintosh
+   ============================================ */
+
+/* ── Font Stack: real terminal fonts ── */
+:root {
+  --font-monospace-theme: "Monaco", "Menlo", "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace;
+}
+
+.theme-dark,
+.theme-light {
+  --font-default: var(--font-monospace-theme);
+  --font-monospace-default: var(--font-monospace-theme);
+  --font-interface-override: var(--font-monospace-theme);
+  --font-text-override: var(--font-monospace-theme);
+  --font-monospace-override: var(--font-monospace-theme);
+  --font-text: var(--font-monospace-theme);
+  --font-interface: var(--font-monospace-theme);
+  --inline-title-font: var(--font-monospace-theme);
+  --font-editor: var(--font-monospace-theme);
+  --font-preview: var(--font-monospace-theme);
+  --font-text-size: 14px;
+
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --icon-stroke: 1.5px;
+}
+
+/* Force monospace on EVERYTHING — no exceptions */
+body, input, button, textarea, select,
+.markdown-source-view, .markdown-reading-view, .markdown-preview-view,
+.markdown-preview-view *, .markdown-reading-view *,
+.cm-editor, .cm-content, .cm-line,
+.nav-file-title, .nav-folder-title,
+.view-header-title, .view-header-breadcrumb, .workspace-tab-header,
+.status-bar, .tooltip, .menu, .modal,
+.setting-item, .setting-item-name, .setting-item-description,
+code, pre, .cm-inline-code, .cm-hmd-codeblock,
+code[class*="language-"], pre[class*="language-"],
+.markdown-rendered code, .markdown-rendered pre,
+span.cm-inline-code, .HyperMD-codeblock,
+.code-block-flair, .copy-code-button {
+  font-family: "Monaco", "Menlo", "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace !important;
+}
+
+/* Kill circles/backgrounds on clickable icons */
+.clickable-icon {
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+/* Mobile: clean white backgrounds, square corners */
+.view-actions,
+.view-header-nav-buttons,
+.view-header,
+.mobile-navbar,
+.mobile-navbar-actions,
+.workspace-tab-header-container {
+  border-radius: 0 !important;
+}
+
+/* Kill pill shapes on toggles */
+.checkbox-container {
+  border-radius: 0 !important;
+}
+.checkbox-container::after {
+  border-radius: 0 !important;
+}
+
+/* ============================================
+   DARK MODE — Amber Phosphor Terminal
+   ============================================ */
+.theme-dark {
+  --background-primary: #0a0800;
+  --background-primary-alt: #0f0d05;
+  --background-secondary: #12100a;
+  --background-secondary-alt: #0d0b05;
+  --background-modifier-border: #3a2a0a;
+  --background-modifier-form-field: #0d0b05;
+  --background-modifier-form-field-highlighted: #1a1508;
+  --background-modifier-box-shadow: rgba(255, 170, 0, 0.05);
+  --background-modifier-success: #2a2008;
+  --background-modifier-error: #3a1a1a;
+  --background-modifier-error-rgb: 58, 26, 26;
+  --background-modifier-error-hover: #4a2a2a;
+  --background-modifier-cover: rgba(0, 0, 0, 0.85);
+
+  /* Amber phosphor text */
+  --text-normal: #ffbb33;
+  --text-muted: #cc8800;
+  --text-faint: #886600;
+  --text-on-accent: #0a0800;
+  --text-on-accent-inverted: #ffbb33;
+  --text-error: #ff4444;
+  --text-error-hover: #ff6666;
+  --text-success: #ffbb33;
+  --text-selection: rgba(255, 187, 51, 0.15);
+  --text-highlight-bg: rgba(255, 187, 51, 0.12);
+  --text-highlight-bg-active: rgba(255, 187, 51, 0.2);
+  --text-accent: #ffcc44;
+  --text-accent-hover: #ffdd66;
+
+  /* Interactive */
+  --interactive-normal: #1a1508;
+  --interactive-hover: #2a2008;
+  --interactive-accent: #ffbb33;
+  --interactive-accent-hovered: #ffcc55;
+  --interactive-accent-rgb: 255, 187, 51;
+
+  /* Headings: bright amber / white-hot */
+  --h1-color: #ffffff;
+  --h2-color: #ffdd66;
+  --h3-color: #ffcc44;
+  --h4-color: #ffbb33;
+  --h5-color: #cc8800;
+  --h6-color: #996600;
+
+  /* Links: cyan stands out against amber */
+  --link-color: #44dddd;
+  --link-color-hover: #66ffff;
+  --link-external-color: #44dddd;
+  --link-external-color-hover: #66ffff;
+  --link-unresolved-color: #ff5555;
+  --link-unresolved-opacity: 0.8;
+  --link-decoration: underline;
+  --link-external-decoration: underline;
+
+  /* Tags */
+  --tag-color: #44dddd;
+  --tag-color-hover: #66ffff;
+  --tag-background: rgba(68, 221, 221, 0.08);
+  --tag-background-hover: rgba(68, 221, 221, 0.15);
+
+  /* Code */
+  --code-normal: #ffcc44;
+  --code-background: #1a1508;
+  --code-comment: #886600;
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 187, 51, 0.15);
+  --scrollbar-active-thumb-bg: rgba(255, 187, 51, 0.3);
+
+  /* Dividers */
+  --hr-color: #3a2a0a;
+
+  /* Nav / file explorer */
+  --nav-item-color: #cc8800;
+  --nav-item-color-hover: #ffbb33;
+  --nav-item-color-active: #ffbb33;
+  --nav-item-background-hover: rgba(255, 187, 51, 0.05);
+  --nav-item-background-active: rgba(255, 187, 51, 0.1);
+  --nav-indentation-guide-color: #3a2a0a;
+
+  /* Title bar / tabs */
+  --titlebar-background: #0a0800;
+  --titlebar-background-focused: #0d0b05;
+  --tab-text-color: #cc8800;
+  --tab-text-color-focused: #ffbb33;
+  --tab-text-color-focused-active: #ffbb33;
+  --tab-background-active: #0a0800;
+
+  /* Blockquote */
+  --blockquote-border-color: #cc8800;
+
+  /* Table */
+  --table-header-background: #1a1508;
+  --table-header-background-hover: #2a2008;
+  --table-row-background-hover: rgba(255, 187, 51, 0.03);
+
+  /* Checkbox */
+  --checkbox-color: #ffbb33;
+  --checkbox-color-hover: #ffcc55;
+  --checklist-done-color: #886600;
+}
+
+/* ============================================
+   LIGHT MODE — Original Macintosh (1984)
+   Pure white, pure black, sharp and clean
+   ============================================ */
+.theme-light {
+  /* Near-white background — original Mac with a whisper of warmth */
+  --background-primary: #ffffff;
+  --background-primary-alt: #ffffff;
+  --background-secondary: #ffffff;
+  --background-secondary-alt: #ffffff;
+  --background-modifier-border: #000000;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: #f0f0f0;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.15);
+  --background-modifier-success: #e8f5e8;
+  --background-modifier-error: #f5e8e8;
+  --background-modifier-error-rgb: 245, 232, 232;
+  --background-modifier-error-hover: #f0d0d0;
+  --background-modifier-cover: rgba(255, 255, 255, 0.9);
+
+  /* Pure black text */
+  --text-normal: #000000;
+  --text-muted: #222222;
+  --text-faint: #555555;
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #000000;
+  --text-error: #000000;
+  --text-error-hover: #333333;
+  --text-success: #000000;
+  --text-selection: rgba(0, 0, 0, 0.18);
+  --text-highlight-bg: rgba(0, 0, 0, 0.08);
+  --text-highlight-bg-active: rgba(0, 0, 0, 0.15);
+  --text-accent: #000000;
+  --text-accent-hover: #333333;
+
+  /* Interactive: black and white only */
+  --interactive-normal: #ffffff;
+  --interactive-hover: #f0f0f0;
+  --interactive-accent: #000000;
+  --interactive-accent-hovered: #333333;
+  --interactive-accent-rgb: 0, 0, 0;
+
+  /* Headings: all black, differentiated by size/weight only */
+  --h1-color: #000000;
+  --h2-color: #000000;
+  --h3-color: #000000;
+  --h4-color: #000000;
+  --h5-color: #222222;
+  --h6-color: #444444;
+
+  /* Links: black underlined (original Mac had no color) */
+  --link-color: #000000;
+  --link-color-hover: #444444;
+  --link-external-color: #000000;
+  --link-external-color-hover: #444444;
+  --link-unresolved-color: #888888;
+  --link-unresolved-opacity: 0.8;
+  --link-decoration: underline;
+  --link-external-decoration: underline;
+
+  /* Tags */
+  --tag-color: #000000;
+  --tag-color-hover: #333333;
+  --tag-background: rgba(0, 0, 0, 0.06);
+  --tag-background-hover: rgba(0, 0, 0, 0.1);
+
+  /* Code */
+  --code-normal: #000000;
+  --code-background: #f0f0f0;
+  --code-comment: #555555;
+
+  /* Scrollbar */
+  --scrollbar-bg: #ffffff;
+  --scrollbar-thumb-bg: #cccccc;
+  --scrollbar-active-thumb-bg: #999999;
+
+  /* Dividers */
+  --hr-color: #000000;
+
+  /* Nav */
+  --nav-item-color: #000000;
+  --nav-item-color-hover: #000000;
+  --nav-item-color-active: #000000;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.06);
+  --nav-item-background-active: rgba(0, 0, 0, 0.1);
+  --nav-indentation-guide-color: #cccccc;
+
+  /* Title bar / tabs */
+  --titlebar-background: #f0f0f0;
+  --titlebar-background-focused: #e8e8e8;
+  --tab-text-color: #444444;
+  --tab-text-color-focused: #000000;
+  --tab-text-color-focused-active: #000000;
+  --tab-background-active: #ffffff;
+
+  /* Blockquote */
+  --blockquote-border-color: #000000;
+
+  /* Table */
+  --table-header-background: #f0f0f0;
+  --table-header-background-hover: #e8e8e8;
+  --table-row-background-hover: rgba(0, 0, 0, 0.03);
+
+  /* Checkbox */
+  --checkbox-color: #000000;
+  --checkbox-color-hover: #333333;
+  --checklist-done-color: #999999;
+}
+
+/* ============================================
+   SHARED STYLES — Both Modes
+   ============================================ */
+
+/* ── Scanline / CRT effect for dark mode ── */
+.theme-dark .markdown-reading-view,
+.theme-dark .markdown-source-view {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.06) 2px,
+    rgba(0, 0, 0, 0.06) 4px
+  );
+  background-attachment: local;
+}
+
+/* ── Headings ── */
+h1, .cm-header-1, .markdown-rendered h1, .inline-title {
+  font-weight: 700 !important;
+  letter-spacing: 2px;
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+h2, .cm-header-2, .markdown-rendered h2 {
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+}
+
+h3, .cm-header-3, .markdown-rendered h3 {
+  font-weight: 600 !important;
+}
+
+/* ── Dark mode: prompt prefix on headings ── */
+.theme-dark h1::before, .theme-dark .markdown-rendered h1::before {
+  content: "> ";
+  opacity: 0.5;
+}
+
+/* ── Links: always underlined ── */
+a {
+  text-decoration: underline !important;
+}
+
+/* ── Blockquotes ── */
+blockquote, .markdown-rendered blockquote {
+  border-left-width: 3px;
+  font-style: normal;
+  background: transparent;
+}
+
+/* ── Code blocks ── */
+.theme-dark pre, .theme-dark code {
+  border: 1px solid #3a2a0a;
+}
+.theme-light pre, .theme-light code {
+  border: 1px solid #000000;
+}
+pre {
+  padding: 12px !important;
+}
+
+/* ── HR ── */
+hr, .markdown-rendered hr {
+  border: none;
+  border-top: 1px solid;
+  opacity: 0.4;
+}
+
+/* ── Cursor: block-style terminal ── */
+.cm-cursor, .cm-cursor-primary {
+  border-left-width: 0.6em !important;
+  opacity: 0.7;
+}
+.theme-dark .cm-cursor, .theme-dark .cm-cursor-primary {
+  border-color: #ffbb33 !important;
+}
+.theme-light .cm-cursor, .theme-light .cm-cursor-primary {
+  border-color: #000000 !important;
+}
+
+@keyframes terminal-blink {
+  0%, 49% { opacity: 0.8; }
+  50%, 100% { opacity: 0; }
+}
+.cm-cursor, .cm-cursor-primary {
+  animation: terminal-blink 1s step-end infinite;
+}
+
+/* ── Scrollbars ── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 187, 51, 0.2);
+  border: 1px solid #3a2a0a;
+}
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border: 1px solid #999999;
+}
+
+/* ── Light mode buttons (not icons) ── */
+.theme-light button:not(.clickable-icon) {
+  border: 1px solid #000000 !important;
+  border-radius: 0 !important;
+  background: #ffffff;
+  color: #000000 !important;
+}
+.theme-light button:not(.clickable-icon):active {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* ── Light mode inputs ── */
+.theme-light input[type="text"],
+.theme-light textarea,
+.theme-light .search-input {
+  border: 1px solid #000000 !important;
+  background: #ffffff;
+}
+
+/* ── Selection ── */
+.theme-dark ::selection {
+  background: rgba(255, 187, 51, 0.25);
+  color: #ffffff;
+}
+.theme-light ::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* ── Bold: slight glow in dark mode ── */
+.theme-dark strong, .theme-dark .cm-strong {
+  color: #ffdd66;
+  text-shadow: 0 0 2px rgba(255, 187, 51, 0.3);
+}
+
+/* ── Dark mode ambient phosphor glow ── */
+.theme-dark .markdown-reading-view p,
+.theme-dark .markdown-source-view .cm-line {
+  text-shadow: 0 0 2px rgba(255, 187, 51, 0.1);
+}
+
+/* ── Status bar ── */
+.theme-dark .status-bar {
+  background: #0a0800;
+  border-top: 1px solid #3a2a0a;
+  color: #cc8800;
+}
+.theme-light .status-bar {
+  background: #f0f0f0;
+  border-top: 1px solid #000000;
+  color: #000000;
+}
+
+/* ── Ribbon ── */
+.theme-dark .workspace-ribbon {
+  background: #0a0800;
+  border-right: 1px solid #3a2a0a;
+}
+.theme-light .workspace-ribbon {
+  background: #f0f0f0;
+  border-right: 1px solid #000000;
+}
+
+/* ── Checkbox: square ── */
+input[type="checkbox"] {
+  border-radius: 0 !important;
+}
+.theme-dark input[type="checkbox"] {
+  border-color: #ffbb33;
+}
+.theme-light input[type="checkbox"] {
+  border-color: #000000;
+}
+
+/* ── Tables ── */
+.theme-dark table {
+  border-color: #3a2a0a;
+}
+.theme-light table {
+  border-color: #000000;
+}
+th, td {
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+/* ── File explorer ── */
+.nav-file-title, .nav-folder-title {
+  font-family: var(--font-monospace-theme);
+  font-size: 13px;
+}
+
+/* Properties / frontmatter — nuclear option */
+.metadata-container,
+.metadata-container *,
+.metadata-container input,
+.metadata-container textarea,
+.metadata-container select,
+.metadata-container button,
+.metadata-container label,
+.metadata-container .metadata-property-key,
+.metadata-container .metadata-property-value,
+.metadata-container .multi-select-pill,
+.metadata-add-button,
+.metadata-add-button *,
+.sync-log-container,
+.sync-log-container *,
+.sync-log-text,
+.sync-log-text * {
+  font-family: "Monaco", "Menlo", "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace !important;
+  --font-interface: "Monaco", "Menlo", "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace;
+  --font-text: "Monaco", "Menlo", "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace;
+}
+
+/* no file tree prefixes — clean like light mode */
+
+/* ── Light mode: Chicago-inspired clean sidebar ── */
+.theme-light .side-dock-title,
+.theme-light .nav-folder-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}

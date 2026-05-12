@@ -1,0 +1,162 @@
+/* Standard Plus Theme
+ * A theme starting from Obsidian's defaults
+ * https://github.com/adamkdean/obsidian-theme
+ */
+
+/* Light mode overrides */
+.theme-light {
+  /* Uses user's chosen accent color */
+}
+
+/* Dark mode overrides */
+.theme-dark {
+  /* Uses user's chosen accent color */
+}
+
+/* Common styles (both themes) */
+body {
+  /* Typography */
+  /* --font-text: ; */
+  /* --font-interface: ; */
+  /* --font-monospace: ; */
+
+  /* Sizing */
+  /* --radius-s: ; */
+  /* --radius-m: ; */
+  /* --radius-l: ; */
+}
+
+/* Editor styles */
+.markdown-source-view,
+.markdown-preview-view {
+  /* Add editor customizations here */
+}
+
+/* Headings */
+.markdown-preview-view h1,
+.markdown-source-view h1 {
+  /* --h1-size: ; */
+  /* --h1-weight: ; */
+  /* --h1-color: ; */
+}
+
+/* Links */
+.markdown-preview-view a,
+.markdown-source-view a {
+  /* Customize link appearance */
+}
+
+/* Code blocks */
+.markdown-preview-view code,
+.markdown-source-view code {
+  /* Customize inline code */
+}
+
+.markdown-preview-view pre,
+.markdown-source-view pre {
+  /* Customize code blocks */
+}
+
+/* Tags */
+.tag {
+  /* Customize tag appearance */
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  /* Customize checkboxes */
+}
+
+/* Sidebar - Folder Icons */
+
+/* Define folder icon colors per theme */
+.theme-light {
+  --folder-icon-color: %23656565;
+  --folder-icon-color-expanded: %23656565;
+}
+
+.theme-dark {
+  --folder-icon-color: %23a0a0a0;
+  --folder-icon-color-expanded: %23a0a0a0;
+}
+
+/* Hide default collapse indicator */
+.nav-folder-collapse-indicator {
+  display: none;
+}
+
+/* Folder icon container setup */
+.nav-folder-title {
+  position: relative;
+}
+
+/* Add folder icon before folder title content */
+.nav-folder-title-content::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Light theme - closed folder */
+.theme-light .nav-folder.is-collapsed > .nav-folder-title .nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23656565'%3E%3Cpath d='M216,72H130.67L102.93,51.2a16.12,16.12,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V200a16,16,0,0,0,16,16H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72Zm0,128H40V64H93.33L123.2,86.4A8,8,0,0,0,128,88h88Z'/%3E%3C/svg%3E");
+}
+
+/* Dark theme - closed folder */
+.theme-dark .nav-folder.is-collapsed > .nav-folder-title .nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23a0a0a0'%3E%3Cpath d='M216,72H130.67L102.93,51.2a16.12,16.12,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V200a16,16,0,0,0,16,16H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72Zm0,128H40V64H93.33L123.2,86.4A8,8,0,0,0,128,88h88Z'/%3E%3C/svg%3E");
+}
+
+/* Light theme - open folder */
+.theme-light .nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23656565'%3E%3Cpath d='M245,110.64A16,16,0,0,0,232,104H216V88a16,16,0,0,0-16-16H130.67L102.94,51.2a16.14,16.14,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V208h0a8,8,0,0,0,8,8H211.1a8,8,0,0,0,7.59-5.47l28.49-85.47A16.05,16.05,0,0,0,245,110.64ZM93.34,64,123.2,86.4A8,8,0,0,0,128,88h72v16H69.77a16,16,0,0,0-15.18,10.94L40,158.7V64Zm112,136H43.1l26.67-80H232Z'/%3E%3C/svg%3E");
+}
+
+/* Dark theme - open folder */
+.theme-dark .nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23a0a0a0'%3E%3Cpath d='M245,110.64A16,16,0,0,0,232,104H216V88a16,16,0,0,0-16-16H130.67L102.94,51.2a16.14,16.14,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V208h0a8,8,0,0,0,8,8H211.1a8,8,0,0,0,7.59-5.47l28.49-85.47A16.05,16.05,0,0,0,245,110.64ZM93.34,64,123.2,86.4A8,8,0,0,0,128,88h72v16H69.77a16,16,0,0,0-15.18,10.94L40,158.7V64Zm112,136H43.1l26.67-80H232Z'/%3E%3C/svg%3E");
+}
+
+/* Hide folder indent lines */
+.nav-folder-children {
+  border-left: none !important;
+}
+
+/* Pointer cursor on hover for interactive elements */
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.nav-file-title-content:hover,
+.nav-folder-title-content:hover,
+.view-header-breadcrumb:hover,
+.clickable-icon:hover,
+.side-dock-ribbon-action:hover,
+.sidebar-toggle-button:hover,
+.nav-action-button:hover,
+.workspace-tab-header:hover,
+.mod-cta:hover,
+.menu-item:hover,
+.suggestion-item:hover,
+.setting-item-control button:hover,
+.modal-close-button:hover,
+.tree-item-self:hover,
+.search-result-file-title:hover,
+.search-result-file-match:hover,
+.tag:hover,
+.cm-hashtag:hover,
+.internal-link:hover,
+.external-link:hover {
+  cursor: pointer !important;
+}
+
+/* Tabs */
+.workspace-tab-header {
+  /* Customize tab appearance */
+}

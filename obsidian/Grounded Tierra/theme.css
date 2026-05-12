@@ -1,0 +1,403 @@
+/*===============================================================
+                         Onde for Obsidian
+                         -----------------
+         A warm, organic theme for writers and builders.
+
+  Light mode: Claude Code-inspired cream with forest green text
+  Dark mode: Warm walnut sanctuary with sage green headings
+  Accent: Onde coral (#FF7A59) throughout
+
+  Designed by Adelaida Diaz-Roa with Claude.
+  https://planwithonde.com
+===============================================================*/
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+  /* Onde coral palette */
+  --onde-coral: #FF7A59;
+  --onde-coral-light: #FF9A80;
+  --onde-coral-dim: #E6664A;
+  --onde-coral-muted: #FFB8A8;
+  --onde-coral-bg: #FFF0EC;
+
+  /* Forest green palette */
+  --forest-green: #2D5F2D;
+  --forest-green-light: #3D7A3D;
+  --forest-green-dim: #1E4A1E;
+  --forest-green-muted: #5A8A5A;
+  --forest-green-soft: #E8F0E8;
+
+  /* Claude-style neutrals (warm cream) */
+  --claude-bg: #FAF9F7;
+  --claude-bg-secondary: #F5F3EF;
+  --claude-bg-tertiary: #EDEAE4;
+  --claude-surface: #FFFFFF;
+  --claude-border: #E8E4DD;
+  --claude-border-light: #F0ECE6;
+  --claude-text: #2D5F2D;
+  --claude-text-secondary: #5A7A5A;
+  --claude-text-muted: #8A9A8A;
+  --claude-text-faint: #AABCAA;
+}
+
+/* =============================================================
+   LIGHT MODE — Warm cream + forest green + coral
+   Inspired by Claude Code's clean aesthetic.
+   The feeling: morning light in a Bogota apartment.
+   ============================================================= */
+
+.theme-light {
+  /* Backgrounds */
+  --background-primary: var(--claude-bg);
+  --background-primary-alt: var(--claude-bg-secondary);
+  --background-secondary: var(--claude-bg-secondary);
+  --background-secondary-alt: var(--claude-bg-tertiary);
+  --background-modifier-border: var(--claude-border);
+  --background-modifier-border-hover: var(--claude-border);
+  --background-modifier-border-focus: var(--onde-coral-muted);
+
+  /* Text — forest green instead of black */
+  --text-normal: var(--forest-green);
+  --text-muted: var(--claude-text-secondary);
+  --text-faint: var(--claude-text-muted);
+  --text-on-accent: #FFFFFF;
+
+  /* Accent — Onde coral */
+  --text-accent: var(--onde-coral);
+  --text-accent-hover: var(--onde-coral-dim);
+  --interactive-accent: var(--onde-coral);
+  --interactive-accent-hover: var(--onde-coral-dim);
+
+  /* Headers — forest green hierarchy */
+  --h1-color: var(--forest-green-dim);
+  --h2-color: var(--forest-green);
+  --h3-color: var(--forest-green-light);
+  --h4-color: var(--forest-green-muted);
+  --h5-color: var(--forest-green-muted);
+  --h6-color: var(--claude-text-secondary);
+
+  /* Links — coral */
+  --link-color: var(--onde-coral);
+  --link-color-hover: var(--onde-coral-dim);
+  --link-unresolved-color: var(--onde-coral-muted);
+  --link-external-color: var(--onde-coral);
+
+  /* Tags */
+  --tag-color: var(--onde-coral);
+  --tag-background: var(--onde-coral-bg);
+
+  /* Sidebar / nav */
+  --nav-item-color: var(--forest-green);
+  --nav-item-color-hover: var(--onde-coral);
+  --nav-item-color-active: var(--onde-coral-dim);
+  --nav-item-background-hover: var(--claude-bg-tertiary);
+  --nav-item-background-active: var(--onde-coral-bg);
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--claude-border);
+  --scrollbar-active-thumb-bg: var(--onde-coral-muted);
+
+  /* Code blocks */
+  --code-background: var(--claude-bg-secondary);
+  --code-normal: var(--forest-green);
+
+  /* Bold and italic */
+  --bold-color: var(--forest-green-dim);
+  --italic-color: var(--forest-green-light);
+
+  /* Checkbox */
+  --checkbox-color: var(--onde-coral);
+  --checkbox-color-hover: var(--onde-coral-dim);
+
+  /* Tabs */
+  --tab-text-color: var(--claude-text-secondary);
+  --tab-text-color-active: var(--forest-green);
+  --tab-text-color-focused-active: var(--onde-coral);
+}
+
+/* =============================================================
+   DARK MODE — Warm walnut sanctuary
+   The same room after sunset. Brown-blacks, sage greens,
+   ember coral. Not a terminal — a writer's desk at 1am.
+   ============================================================= */
+
+.theme-dark {
+  /* Backgrounds — warm brown-blacks, layered like walnut wood */
+  --background-primary: #1C1917;
+  --background-primary-alt: #211F1B;
+  --background-secondary: #161412;
+  --background-secondary-alt: #121010;
+  --background-modifier-border: #2E2A25;
+  --background-modifier-border-hover: #3A3530;
+  --background-modifier-border-focus: rgba(255, 122, 89, 0.4);
+
+  /* Text — warm parchment, not white (WCAG AAA 11:1+) */
+  --text-normal: #D4CBBF;
+  --text-muted: #9A8F82;
+  --text-faint: #6B6058;
+  --text-on-accent: #FFFFFF;
+
+  /* Accent — Onde coral, identical both modes */
+  --text-accent: var(--onde-coral);
+  --text-accent-hover: #FF9478;
+  --interactive-accent: var(--onde-coral);
+  --interactive-accent-hover: #FF9478;
+
+  /* Headings — sage greens (forest green adapted for dark) */
+  --h1-color: #A8C4A0;
+  --h2-color: #8FB087;
+  --h3-color: #7A9D73;
+  --h4-color: #6B8C64;
+  --h5-color: #6B8C64;
+  --h6-color: #9A8F82;
+
+  /* Links — coral */
+  --link-color: var(--onde-coral);
+  --link-color-hover: #FF9478;
+  --link-unresolved-color: #CC6248;
+  --link-external-color: var(--onde-coral);
+
+  /* Tags */
+  --tag-color: var(--onde-coral);
+  --tag-background: #2D1F1A;
+
+  /* Code */
+  --code-background: #231F1B;
+  --code-normal: #C4B8A8;
+
+  /* Nav */
+  --nav-item-color: #D4CBBF;
+  --nav-item-color-hover: var(--onde-coral);
+  --nav-item-color-active: #FF9478;
+  --nav-item-background-hover: #211F1B;
+  --nav-item-background-active: #2D1F1A;
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #2E2A25;
+  --scrollbar-active-thumb-bg: #3A3530;
+
+  /* Bold and italic */
+  --bold-color: #D4CBBF;
+  --italic-color: #C4B8A8;
+
+  /* Checkbox */
+  --checkbox-color: var(--onde-coral);
+  --checkbox-color-hover: #FF9478;
+
+  /* Tabs */
+  --tab-text-color: #9A8F82;
+  --tab-text-color-active: #D4CBBF;
+  --tab-text-color-focused-active: var(--onde-coral);
+}
+
+/* =============================================================
+   SHARED TYPOGRAPHY
+   Clean, breathable, writer-first.
+   ============================================================= */
+
+body {
+  --font-text-size: 16px;
+  --line-height-normal: 1.65;
+  --p-spacing: 0.8em;
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  letter-spacing: -0.01em;
+}
+
+.markdown-rendered h1 {
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.3em;
+}
+
+.theme-light .markdown-rendered h1 {
+  border-bottom: 2px solid var(--claude-border);
+}
+
+.theme-dark .markdown-rendered h1 {
+  border-bottom: 2px solid #2E2A25;
+}
+
+.markdown-rendered h2 {
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+/* =============================================================
+   BLOCKQUOTES
+   Light: soft coral wash. Dark: ember glow.
+   ============================================================= */
+
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--onde-coral);
+  padding: 0.8em 1.2em;
+  border-radius: 0 6px 6px 0;
+}
+
+.theme-light .markdown-rendered blockquote {
+  background-color: var(--onde-coral-bg);
+}
+
+.theme-dark .markdown-rendered blockquote {
+  background-color: #231A17;
+}
+
+/* =============================================================
+   CODE BLOCKS
+   Rounded, subtle.
+   ============================================================= */
+
+.markdown-rendered code {
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.markdown-rendered pre {
+  border-radius: 8px;
+}
+
+.theme-light .markdown-rendered pre {
+  border: 1px solid var(--claude-border);
+}
+
+.theme-dark .markdown-rendered pre {
+  border: 1px solid #2E2A25;
+}
+
+/* =============================================================
+   LINKS
+   Subtle coral underline, warm on hover.
+   ============================================================= */
+
+.markdown-rendered a.internal-link {
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.theme-light .markdown-rendered a.internal-link {
+  border-bottom: 1px solid var(--onde-coral-muted);
+}
+
+.theme-light .markdown-rendered a.internal-link:hover {
+  border-bottom-color: var(--onde-coral);
+}
+
+.theme-dark .markdown-rendered a.internal-link {
+  border-bottom: 1px solid rgba(255, 122, 89, 0.3);
+}
+
+.theme-dark .markdown-rendered a.internal-link:hover {
+  border-bottom-color: var(--onde-coral);
+}
+
+/* =============================================================
+   GRAPH VIEW
+   ============================================================= */
+
+.theme-light .graph-view.color-fill { color: var(--onde-coral); }
+.theme-light .graph-view.color-fill-focused { color: var(--onde-coral-dim); }
+.theme-light .graph-view.color-fill-attachment { color: var(--forest-green-muted); }
+.theme-light .graph-view.color-fill-tag { color: var(--forest-green-light); }
+.theme-light .graph-view.color-line { color: var(--claude-border); }
+.theme-light .graph-view.color-arrow { color: var(--claude-text-muted); }
+
+.theme-dark .graph-view.color-fill { color: var(--onde-coral); }
+.theme-dark .graph-view.color-fill-focused { color: #FF9478; }
+.theme-dark .graph-view.color-fill-attachment { color: #7A9D73; }
+.theme-dark .graph-view.color-fill-tag { color: #8FB087; }
+.theme-dark .graph-view.color-line { color: #2E2A25; }
+
+/* =============================================================
+   WORKSPACE CHROME
+   ============================================================= */
+
+/* Light */
+.theme-light .workspace-tab-header-container {
+  background-color: var(--claude-bg-secondary);
+  border-bottom: 1px solid var(--claude-border);
+}
+.theme-light .workspace-tab-header.is-active {
+  background-color: var(--claude-bg);
+}
+.theme-light .status-bar {
+  background-color: var(--claude-bg-secondary);
+  border-top: 1px solid var(--claude-border);
+  color: var(--claude-text-muted);
+}
+.theme-light .workspace-ribbon {
+  background-color: var(--claude-bg-secondary);
+}
+
+/* Dark */
+.theme-dark .workspace-tab-header-container {
+  background-color: #161412;
+  border-bottom: 1px solid #2E2A25;
+}
+.theme-dark .workspace-tab-header.is-active {
+  background-color: #1C1917;
+}
+.theme-dark .status-bar {
+  background-color: #161412;
+  border-top: 1px solid #2E2A25;
+  color: #6B6058;
+}
+.theme-dark .workspace-ribbon {
+  background-color: #161412;
+}
+
+/* =============================================================
+   INTERACTIVE ELEMENTS
+   ============================================================= */
+
+/* Tooltips */
+.theme-light .tooltip {
+  background-color: var(--forest-green);
+  color: white;
+  border-radius: 6px;
+}
+.theme-dark .tooltip {
+  background-color: #2A2521;
+  color: #D4CBBF;
+  border-radius: 6px;
+}
+
+/* Selection */
+.theme-light ::selection {
+  background-color: var(--onde-coral-muted);
+  color: var(--forest-green-dim);
+}
+.theme-dark ::selection {
+  background-color: rgba(255, 122, 89, 0.2);
+}
+
+/* Focus rings */
+.theme-light *:focus-visible {
+  box-shadow: 0 0 0 2px var(--onde-coral-muted);
+}
+.theme-dark *:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255, 122, 89, 0.4);
+}
+
+/* CTA Buttons */
+.mod-cta {
+  background-color: var(--onde-coral);
+  color: white;
+  border-radius: 6px;
+}
+.theme-light .mod-cta:hover {
+  background-color: var(--onde-coral-dim);
+}
+.theme-dark .mod-cta:hover {
+  background-color: #FF9478;
+}

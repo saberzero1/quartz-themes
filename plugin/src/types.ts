@@ -132,10 +132,7 @@ export interface RuntimeSelectorImpactEvidence {
   observed: boolean;
   observedModes: Array<"both" | "dark" | "light">;
   observedKinds: Array<"body-class" | "css-variable" | "computed-style">;
-  bodyClassChanges: {
-    added: string[];
-    removed: string[];
-  };
+  bodyClassChanges: { added: string[]; removed: string[] };
   cssVariableChanges: RuntimeCssVariableChange[];
   computedStyleChanges: RuntimeComputedStyleChange[];
 }

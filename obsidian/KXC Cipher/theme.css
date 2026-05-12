@@ -1,0 +1,342 @@
+/* ============================================================================
+   KXC Cipher Dark — Obsidian Theme
+   Korthcore Design System
+   https://github.com/Korthcore/KXC.Themes
+
+   Palette reference: .claude/rules/palette/colours.md
+   ============================================================================ */
+
+.theme-dark {
+
+    /* ── Palette Reference ──────────────────────────────────────────────────
+       Background    #111921    BgDeep       #0C1118
+       Surface       #182130    SurfaceHigh  #1E2A3A
+       Border        #253545    Subtle       #2F4255
+       Dim           #4A6070    Muted        #6B8A9E
+       Foreground    #DDE5EE
+       Purple        #9040D0    PurpleLight  #B06AE8
+       PurpleSoft    #C88CF0    PurpleDim    #6B28A8
+       Teal          #14D4B8    TealLight    #3EEEDD    TealDark  #0CAA96
+       Red           #FF5E7A    Orange       #FFAB5E
+       Blue          #82B4E8    Yellow       #FFCA85
+       ────────────────────────────────────────────────────────────────────── */
+
+
+    /* ── Base Colour Scale ──────────────────────────────────────────────── */
+
+    --color-base-00: #0C1118;           /* BgDeep — deepest background       */
+    --color-base-05: #0E1620;           /* between BgDeep and Background     */
+    --color-base-10: #111921;           /* Background — primary editor bg    */
+    --color-base-20: #182130;           /* Surface — panels, line highlight  */
+    --color-base-25: #1E2A3A;           /* SurfaceHigh — selected rows      */
+    --color-base-30: #253545;           /* Border — separators              */
+    --color-base-35: #2F4255;           /* Subtle — muted borders, guides   */
+    --color-base-40: #4A6070;           /* Dim — comments, inactive icons   */
+    --color-base-50: #6B8A9E;           /* Muted — secondary text           */
+    --color-base-60: #8BA4B4;           /* between Muted and Foreground     */
+    --color-base-70: #DDE5EE;           /* Foreground                       */
+    --color-base-100: #DDE5EE;          /* Foreground — primary text        */
+
+    --mono-rgb-0: 221, 229, 238;        /* Foreground as RGB                */
+    --mono-rgb-100: 12, 17, 24;         /* BgDeep as RGB                    */
+
+
+    /* ── Accent Colour (Teal) ───────────────────────────────────────────── */
+    /* #14D4B8 = hsl(168, 83%, 45%)                                         */
+
+    --accent-h: 168;
+    --accent-s: 83%;
+    --accent-l: 45%;
+
+
+    /* ── Extended Colours ───────────────────────────────────────────────── */
+
+    --color-red:      #FF5E7A;
+    --color-red-rgb:  255, 94, 122;
+    --color-orange:   #FFAB5E;
+    --color-orange-rgb: 255, 171, 94;
+    --color-yellow:   #FFCA85;
+    --color-yellow-rgb: 255, 202, 133;
+    --color-green:    #14D4B8;
+    --color-green-rgb: 20, 212, 184;
+    --color-cyan:     #14D4B8;
+    --color-cyan-rgb: 20, 212, 184;
+    --color-blue:     #82B4E8;
+    --color-blue-rgb: 130, 180, 232;
+    --color-purple:   #9040D0;
+    --color-purple-rgb: 144, 64, 208;
+    --color-pink:     #B06AE8;
+    --color-pink-rgb: 176, 106, 232;
+
+
+    /* ── Surface & Background ───────────────────────────────────────────── */
+
+    --background-primary:            #111921;
+    --background-primary-alt:        #182130;
+    --background-secondary:          #0C1118;
+    --background-secondary-alt:      #0E1620;
+    --background-modifier-hover:     #1E2A3A;
+    --background-modifier-active-hover: #253545;
+    --background-modifier-border:    #253545;
+    --background-modifier-border-hover: #2F4255;
+    --background-modifier-border-focus: #B06AE8;
+    --background-modifier-error:     #FF5E7A18;
+    --background-modifier-error-rgb: 255, 94, 122;
+    --background-modifier-error-hover: #FF5E7A28;
+    --background-modifier-success:   #14D4B818;
+    --background-modifier-success-rgb: 20, 212, 184;
+    --background-modifier-message:   #182130;
+    --background-modifier-form-field: #111921;
+
+
+    /* ── Interactive Elements ───────────────────────────────────────────── */
+
+    --interactive-normal:       #182130;
+    --interactive-hover:        #1E2A3A;
+    --interactive-accent:       #14D4B8;
+    --interactive-accent-hsl:   168, 83%, 45%;
+    --interactive-accent-hover: #0CAA96;
+
+
+    /* ── Text ───────────────────────────────────────────────────────────── */
+
+    --text-normal:              #DDE5EE;
+    --text-muted:               #6B8A9E;
+    --text-faint:               #4A6070;
+    --text-on-accent:           #111921;
+    --text-on-accent-inverted:  #DDE5EE;
+    --text-error:               #FF5E7A;
+    --text-warning:             #FFAB5E;
+    --text-success:             #14D4B8;
+    --text-accent:              #14D4B8;
+    --text-accent-hover:        #3EEEDD;
+    --text-selection:           #2F425580;
+    --text-highlight-bg:        #FFAB5E30;
+
+    --caret-color:              #14D4B8;
+
+
+    /* ── Bold & Italic ──────────────────────────────────────────────────── */
+
+    --bold-color:               #DDE5EE;
+    --italic-color:             #B06AE8;
+
+
+    /* ── Heading Colours ────────────────────────────────────────────────── */
+
+    --h1-color:                 #14D4B8;
+    --h2-color:                 #B06AE8;
+    --h3-color:                 #FFAB5E;
+    --h4-color:                 #82B4E8;
+    --h5-color:                 #FFCA85;
+    --h6-color:                 #6B8A9E;
+
+
+    /* ── Links ──────────────────────────────────────────────────────────── */
+
+    --link-color:                       #14D4B8;
+    --link-color-hover:                 #3EEEDD;
+    --link-decoration:                  none;
+    --link-decoration-hover:            underline;
+    --link-external-color:              #82B4E8;
+    --link-external-color-hover:        #B06AE8;
+    --link-unresolved-color:            #FFAB5E;
+    --link-unresolved-opacity:          0.8;
+    --link-unresolved-decoration-style: dashed;
+
+
+    /* ── Tags ───────────────────────────────────────────────────────────── */
+
+    --tag-color:                #B06AE8;
+    --tag-color-hover:          #C88CF0;
+    --tag-background:           #9040D018;
+    --tag-background-hover:     #9040D028;
+    --tag-border-color:         #9040D040;
+    --tag-border-color-hover:   #B06AE860;
+    --tag-padding-x:            6px;
+    --tag-padding-y:            2px;
+    --tag-radius:               4px;
+
+
+    /* ── Code & Syntax Highlighting ─────────────────────────────────────── */
+
+    --code-background:          #0C1118;
+    --code-normal:              #DDE5EE;
+    --code-comment:             #4A6070;
+    --code-function:            #FFAB5E;
+    --code-important:           #FF5E7A;
+    --code-keyword:             #B06AE8;
+    --code-operator:            #B06AE8;
+    --code-property:            #C88CF0;
+    --code-punctuation:         #6B8A9E;
+    --code-string:              #14D4B8;
+    --code-tag:                 #82B4E8;
+    --code-value:               #FFCA85;
+
+
+    /* ── Callouts ───────────────────────────────────────────────────────── */
+
+    --callout-default:          #6B8A9E;
+    --callout-info:             130, 180, 232;
+    --callout-todo:             144, 64, 208;
+    --callout-tip:              20, 212, 184;
+    --callout-success:          20, 212, 184;
+    --callout-question:         255, 202, 133;
+    --callout-warning:          255, 171, 94;
+    --callout-fail:             255, 94, 122;
+    --callout-error:            255, 94, 122;
+    --callout-bug:              255, 94, 122;
+    --callout-example:          176, 106, 232;
+    --callout-quote:            107, 138, 158;
+    --callout-summary:          20, 212, 184;
+    --callout-important:        144, 64, 208;
+    --callout-content-background: #11192100;
+    --callout-border-width:     2px;
+    --callout-radius:           6px;
+
+
+    /* ── Checkboxes ─────────────────────────────────────────────────────── */
+
+    --checkbox-color:           #14D4B8;
+    --checkbox-color-hover:     #3EEEDD;
+    --checkbox-marker-color:    #111921;
+    --checkbox-border-color:    #253545;
+    --checkbox-border-color-hover: #14D4B8;
+    --checklist-done-color:     #4A6070;
+    --checklist-done-decoration: line-through;
+
+
+    /* ── Scrollbar ──────────────────────────────────────────────────────── */
+
+    --scrollbar-bg:             #11192100;
+    --scrollbar-thumb-bg:       #B06AE833;
+    --scrollbar-active-thumb-bg: #B06AE855;
+
+
+    /* ── Tab & Navigation ───────────────────────────────────────────────── */
+
+    --tab-text-color:              #4A6070;
+    --tab-text-color-focused:      #DDE5EE;
+    --tab-text-color-focused-active: #14D4B8;
+    --tab-text-color-focused-active-current: #14D4B8;
+    --tab-background-active:       #182130;
+    --tab-outline-color:           #14D4B800;
+
+    --titlebar-background:         #0C1118;
+    --titlebar-background-focused: #0C1118;
+    --titlebar-text-color:         #6B8A9E;
+    --titlebar-text-color-focused: #DDE5EE;
+
+    --nav-item-color:              #6B8A9E;
+    --nav-item-color-hover:        #DDE5EE;
+    --nav-item-color-active:       #14D4B8;
+    --nav-item-color-selected:     #14D4B8;
+    --nav-item-background-hover:   #1E2A3A;
+    --nav-item-background-active:  #1E2A3A;
+    --nav-item-background-selected: #1E2A3A;
+
+    --nav-heading-color:           #6B8A9E;
+    --nav-collapse-icon-color:     #4A6070;
+    --nav-indentation-guide-color: #253545;
+
+
+    /* ── Status Bar ─────────────────────────────────────────────────────── */
+
+    --status-bar-background:       #0C1118;
+    --status-bar-border-color:     #253545;
+    --status-bar-text-color:       #6B8A9E;
+    --status-bar-scroll-text-color: #B06AE8;
+
+
+    /* ── Ribbon ─────────────────────────────────────────────────────────── */
+
+    --ribbon-background:           #0C1118;
+    --ribbon-background-collapsed: #0C1118;
+
+
+    /* ── Divider ────────────────────────────────────────────────────────── */
+
+    --divider-color:               #253545;
+    --divider-color-hover:         #14D4B8;
+
+
+    /* ── Prompt / Modal ─────────────────────────────────────────────────── */
+
+    --prompt-border-color:         #253545;
+
+    --modal-background:            #111921;
+    --modal-border-color:          #253545;
+
+    --dialog-background:           #111921;
+    --dialog-border-color:         #253545;
+
+
+    /* ── Toggle ─────────────────────────────────────────────────────────── */
+
+    --toggle-border-width:         2px;
+    --toggle-thumb-color:          #DDE5EE;
+
+
+    /* ── Graph View ─────────────────────────────────────────────────────── */
+
+    --graph-line:                  #25354580;
+    --graph-node:                  #6B8A9E;
+    --graph-node-focused:          #14D4B8;
+    --graph-node-tag:              #9040D0;
+    --graph-node-attachment:       #82B4E8;
+    --graph-node-unresolved:       #FFAB5E;
+
+
+    /* ── Table ──────────────────────────────────────────────────────────── */
+
+    --table-header-background:     #182130;
+    --table-header-background-hover: #1E2A3A;
+    --table-row-even-background:   #0C111808;
+    --table-row-odd-background:    #11192100;
+    --table-row-background-hover:  #1E2A3A40;
+    --table-border-color:          #253545;
+
+
+    /* ── Indentation Guides ─────────────────────────────────────────────── */
+
+    --indentation-guide-color:         #253545;
+    --indentation-guide-color-active:  #6B8A9E;
+
+
+    /* ── Embed ──────────────────────────────────────────────────────────── */
+
+    --embed-border-left:           2px solid #9040D0;
+    --embed-background:            #18213020;
+
+
+    /* ── Blockquote ─────────────────────────────────────────────────────── */
+
+    --blockquote-border-color:     #9040D060;
+    --blockquote-border-thickness: 3px;
+    --blockquote-font-style:       normal;
+    --blockquote-color:            #6B8A9E;
+
+
+    /* ── Horizontal Rule ────────────────────────────────────────────────── */
+
+    --hr-color:                    #253545;
+
+
+    /* ── Inline Title ───────────────────────────────────────────────────── */
+
+    --inline-title-color:          #14D4B8;
+
+
+    /* ── Vault Name ─────────────────────────────────────────────────────── */
+
+    --vault-name-color:            #B06AE8;
+    --vault-name-font-size:        var(--font-ui-small);
+
+
+    /* ── Icon ───────────────────────────────────────────────────────────── */
+
+    --icon-color:                  #6B8A9E;
+    --icon-color-hover:            #DDE5EE;
+    --icon-color-active:           #14D4B8;
+    --icon-color-focused:          #14D4B8;
+}

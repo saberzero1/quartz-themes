@@ -180,16 +180,16 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
     Glossary
   </summary>
 
-| Status                                               | Description                                                                                                                                                        |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="media/full.svg" alt="FULL"/>               | Fully supported                                                                                                                                                    |
-| <img src="media/partial.svg" alt="PARTIAL"/>         | Partially supported (see theme page for details)                                                                                                                   |
+| Status                                               | Description                                                                                                                                                                                                                |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="media/full.svg" alt="FULL"/>               | Fully supported                                                                                                                                                                                                            |
+| <img src="media/partial.svg" alt="PARTIAL"/>         | Partially supported (see theme page for details)                                                                                                                                                                           |
 | <img src="media/collection.svg" alt="COLLECTION"/>   | This theme contains information for the maintained [Style Settings fork](https://github.com/saberzero1/obsidian-style-settings) used by Quartz Themes extraction (`themes.json.style_settings` + standalone sidecar YAML). |
-| <img src="media/checking.svg" alt="CHECKING"/>       | Testing compatibility                                                                                                                                              |
-| <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                                                                                                                                         |
-| <img src="media/todo.svg" alt="TODO"/>               | Not started                                                                                                                                                        |
-| <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                                                                                                                                      |
-| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                                                                                                                                    |
+| <img src="media/checking.svg" alt="CHECKING"/>       | Testing compatibility                                                                                                                                                                                                      |
+| <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                                                                                                                                                                                                 |
+| <img src="media/todo.svg" alt="TODO"/>               | Not started                                                                                                                                                                                                                |
+| <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                                                                                                                                                                                              |
+| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                                                                                                                                                                                            |
 
 | Theme Modes                              | Description               |
 | ---------------------------------------- | ------------------------- |

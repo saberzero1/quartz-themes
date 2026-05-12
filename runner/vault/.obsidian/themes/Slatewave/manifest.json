@@ -1,0 +1,8 @@
+{
+  "name": "Slatewave",
+  "version": "0.0.4",
+  "minAppVersion": "1.9.0",
+  "author": "Kevin Langley Jr",
+  "authorUrl": "https://github.com/kevinlangleyjr",
+  "description": "Dark slate + teal theme for Obsidian, sharing its palette with the Slatewave VSCode theme and oh-my-posh prompt. Licensed under WTFPL v2."
+}

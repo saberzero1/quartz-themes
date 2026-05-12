@@ -1,0 +1,664 @@
+/*
+Theme: Pastel Yumekawa
+Description: パステル系でかわいくてゆめかわなObsidianテーマ。視認性を保ちながら、夢見がちで可愛らしい色合いでノートを書けます。
+Author: noi8282
+Version: 1.0.0
+*/
+
+/* ============================================
+   ベースカラー定義
+   ============================================ */
+.theme-light {
+  /* メイン背景色（淡いラベンダー/ピンク） */
+  --background-primary: #FFF0F8;
+  --background-primary-alt: #F5F0FF;
+  --background-secondary: #F5F0FF;
+  --background-secondary-alt: #FFFFFF;
+  --background-modifier-border: #FFE5F0;
+  --background-modifier-form-field: #FFFFFF;
+  --background-modifier-form-field-highlighted: #FFE5F0;
+  --background-modifier-box-shadow: rgba(255, 143, 214, 0.05);
+  --background-modifier-success: #E8F5F0;
+  --background-modifier-error: #FFE5F0;
+  --background-modifier-error-hover: #FFD6E8;
+  --background-modifier-cover: rgba(255, 240, 248, 0.8);
+
+  /* テキストカラー */
+  --text-normal: #8B5A9D;
+  --text-muted: #A08FA8;
+  --text-faint: #C88AE8;
+  --text-accent: #E91E96;
+  --text-accent-hover: #FF6B9D;
+  --text-on-accent: #FFFFFF;
+  
+  /* インタラクティブ要素 */
+  --interactive-normal: #FFE5F0;
+  --interactive-hover: #FFD6E8;
+  --interactive-accent: #FF8FD6;
+  --interactive-accent-hover: #FFB6E1;
+  --interactive-success: #00A896;
+  
+  /* スクロールバー */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 143, 214, 0.2);
+  --scrollbar-active-thumb-bg: rgba(255, 143, 214, 0.4);
+  
+  /* リンク */
+  --text-link: #C88AE8;
+  --text-link-hover: #A875C8;
+  
+  /* 選択範囲 */
+  --text-selection: #FFE5F0;
+  
+  /* カーソル */
+  --cursor-color: #FF8FD6;
+  
+  /* タグ */
+  --tag-background: #FFE5F0;
+  --tag-background-hover: #FFD6E8;
+  
+  /* ヘッダー */
+  --h1-color: #E91E96;
+  --h2-color: #E91E96;
+  --h3-color: #FF6B9D;
+  --h4-color: #FF6B9D;
+  --h5-color: #A855C7;
+  --h6-color: #A855C7;
+  
+  /* コードブロック */
+  --code-background: #F5F0FF;
+  --code-normal: #8B7CC8;
+  
+  /* ボーダー */
+  --border-color: #FFE5F0;
+  
+  /* タイトルバー */
+  --titlebar-background: #F5F0FF;
+  --titlebar-background-focused: #F5F0FF;
+  
+  /* インデントガイド */
+  --indentation-guide-color: #FFE5F0;
+  --indentation-guide-color-active: #FFD6E8;
+}
+
+/* ============================================
+   サイドバー・ナビゲーション
+   ============================================ */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background-color: var(--background-secondary);
+}
+
+.nav-header {
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-folder-title,
+.nav-file-title {
+  color: var(--text-normal);
+  border-radius: 6px;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background-color: var(--interactive-hover);
+}
+
+.nav-file-title.is-active {
+  background-color: var(--text-selection);
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* ============================================
+   エディタエリア
+   ============================================ */
+.workspace-leaf-content {
+  background-color: var(--background-primary);
+}
+
+.markdown-source-view.mod-cm6 .cm-editor {
+  background-color: var(--background-primary);
+}
+
+.markdown-preview-view {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  padding: 30px 40px;
+}
+
+/* ============================================
+   ヘッダー
+   ============================================ */
+.markdown-preview-view h1,
+.cm-header-1 {
+  color: var(--h1-color);
+  font-weight: 700;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+  color: var(--h2-color);
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+  color: var(--h3-color);
+  font-weight: 700;
+}
+
+.markdown-preview-view h4,
+.cm-header-4 {
+  color: var(--h4-color);
+  font-weight: 600;
+}
+
+.markdown-preview-view h5,
+.cm-header-5 {
+  color: var(--h5-color);
+  font-weight: 600;
+}
+
+.markdown-preview-view h6,
+.cm-header-6 {
+  color: var(--h6-color);
+  font-weight: 600;
+}
+
+/* ============================================
+   リンク
+   ============================================ */
+.markdown-preview-view a,
+.cm-link,
+.cm-hmd-internal-link {
+  color: var(--text-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.markdown-preview-view a:hover,
+.cm-link:hover,
+.cm-hmd-internal-link:hover {
+  color: var(--text-link-hover);
+  border-bottom-color: var(--text-link-hover);
+}
+
+/* ============================================
+   コードブロック
+   ============================================ */
+.markdown-preview-view code,
+.cm-inline-code {
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.markdown-preview-view pre,
+.cm-line.HyperMD-codeblock {
+  background-color: var(--code-background);
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.markdown-preview-view pre code {
+  background-color: transparent;
+  padding: 0;
+  color: var(--text-normal);
+}
+
+/* ============================================
+   リスト
+   ============================================ */
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view li::marker {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* ============================================
+   引用
+   ============================================ */
+/* 閲覧モード（プレビュー）の引用 */
+.markdown-preview-view blockquote {
+  border-left: 4px solid var(--interactive-accent);
+  background-color: var(--code-background);
+  padding: 10px 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+  color: var(--text-normal);
+}
+
+/* 閲覧モードの引用内の段落 */
+.markdown-preview-view blockquote p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 編集モード・ライブプレビューの引用 */
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  border-left: 4px solid var(--interactive-accent);
+  background-color: var(--code-background);
+  padding-left: 12px;
+  margin-left: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 引用のマーク（>）のスタイル */
+.cm-formatting-quote {
+  color: var(--interactive-accent);
+}
+
+/* 引用テキストのスタイル */
+.cm-quote {
+  color: var(--text-normal);
+}
+
+/* ネストした引用 */
+.markdown-preview-view blockquote blockquote {
+  border-left-color: var(--text-accent);
+  margin: 8px 0;
+}
+
+/* ============================================
+   コールアウト（Obsidian独自機能）
+   ============================================ */
+.callout {
+  background-color: var(--code-background);
+  border-left: 4px solid var(--interactive-accent);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.callout-title {
+  color: var(--text-accent);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-icon {
+  color: var(--interactive-accent);
+}
+
+.callout-content {
+  color: var(--text-normal);
+  margin-top: 8px;
+}
+
+.callout-content p {
+  margin: 0;
+}
+
+/* ============================================
+   チェックボックス・タスクリスト
+   ============================================ */
+.markdown-preview-view .task-list-item-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--interactive-accent);
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+  background-color: var(--background-modifier-form-field);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================
+   タグ
+   ============================================ */
+.tag {
+  background-color: var(--tag-background);
+  color: var(--text-accent);
+  border-radius: 12px;
+  padding: 2px 12px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background-color: var(--tag-background-hover);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   テーブル
+   ============================================ */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.markdown-preview-view th {
+  background-color: var(--interactive-hover);
+  color: var(--text-accent);
+  font-weight: 700;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.markdown-preview-view td {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.markdown-preview-view tr:nth-child(even) {
+  background-color: var(--background-secondary-alt);
+}
+
+.markdown-preview-view tr:hover {
+  background-color: var(--text-selection);
+}
+
+/* ============================================
+   区切り線
+   ============================================ */
+.markdown-preview-view hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, 
+    transparent, 
+    var(--interactive-accent) 20%, 
+    var(--interactive-accent) 80%, 
+    transparent);
+  margin: 24px 0;
+}
+
+/* ============================================
+   検索ハイライト
+   ============================================ */
+.search-result-file-match {
+  background-color: var(--text-selection);
+  border-radius: 4px;
+}
+
+.markdown-preview-view mark,
+.cm-search-result {
+  background-color: #FFF5E8;
+  color: var(--text-normal);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   ボタン
+   ============================================ */
+.mod-cta,
+button.mod-cta {
+  background-color: var(--interactive-hover);
+  color: var(--text-accent);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.mod-cta:hover,
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 143, 214, 0.3);
+}
+
+/* ============================================
+   入力フィールド
+   ============================================ */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background-color: var(--background-modifier-form-field);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-normal);
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(255, 143, 214, 0.2);
+  outline: none;
+}
+
+/* ============================================
+   モーダル・ダイアログ
+   ============================================ */
+.modal {
+  background-color: var(--background-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(233, 30, 150, 0.15);
+}
+
+.modal-title {
+  color: var(--text-accent);
+  font-weight: 700;
+}
+
+/* ============================================
+   スクロールバー
+   ============================================ */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 6px;
+  border: 3px solid var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* ============================================
+   選択範囲
+   ============================================ */
+::selection {
+  background-color: var(--text-selection);
+  color: var(--text-accent);
+}
+
+/* ============================================
+   強調表示
+   ============================================ */
+.markdown-preview-view strong,
+.cm-strong {
+  color: var(--text-accent);
+  font-weight: 700;
+}
+
+.markdown-preview-view em,
+.cm-em {
+  color: var(--h5-color);
+  font-style: italic;
+}
+
+/* ============================================
+   画像
+   ============================================ */
+.markdown-preview-view img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(233, 30, 150, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.markdown-preview-view img:hover {
+  transform: scale(1.02);
+}
+
+/* ============================================
+   グラフビュー
+   ============================================ */
+.graph-view.color-fill {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line {
+  color: var(--border-color);
+}
+
+.graph-view.color-text {
+  color: var(--text-normal);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--text-accent);
+}
+
+.graph-view.color-line-highlight {
+  color: var(--interactive-accent);
+}
+
+/* ============================================
+   タイトルバー
+   ============================================ */
+.titlebar {
+  background-color: var(--titlebar-background);
+}
+
+/* ============================================
+   ステータスバー
+   ============================================ */
+.status-bar {
+  background-color: #d3edf5;
+  color: #6180a1;
+  border-top: 1px solid var(--border-color);
+}
+
+/* ============================================
+   設定画面
+   ============================================ */
+.vertical-tab-header {
+  background-color: var(--background-secondary);
+}
+
+.vertical-tab-nav-item {
+  color: var(--text-normal);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.vertical-tab-nav-item:hover {
+  background-color: var(--interactive-hover);
+}
+
+.vertical-tab-nav-item.is-active {
+  background-color: var(--text-selection);
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* ============================================
+   プロンプト・サジェスト
+   ============================================ */
+.suggestion-container {
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.suggestion-item {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--text-selection);
+  color: var(--text-accent);
+}
+
+/* ============================================
+   カスタム装飾
+   ============================================ */
+/* エディタの余白を可愛く */
+.markdown-preview-view {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+}
+
+/* カーソル行のハイライト */
+.cm-active.cm-line {
+  background-color: rgba(255, 143, 214, 0.05);
+}
+
+/* コードブロックのシンタックスハイライト */
+.cm-keyword { color: #E91E96; font-weight: bold; }
+.cm-string { color: #00A896; }
+.cm-number { color: #B85FC7; }
+.cm-variable { color: #8B7CC8; }
+.cm-comment { color: #A08FA8; font-style: italic; }
+.cm-tag { color: #E91E96; }
+.cm-attribute { color: #E91E96; }
+.cm-property { color: #FF6B9D; }
+.cm-function { color: #FF6B9D; font-weight: bold; }
+.cm-class-name { color: #A855C7; }
+
+/* マークダウンのインラインコードを可愛く */
+.cm-inline-code {
+  font-weight: 500;
+}
+
+/* ファイルエクスプローラーのアイコン色 */
+.nav-folder-collapse-indicator {
+  color: var(--interactive-accent);
+}
+
+/* リボンアイコン */
+.side-dock-ribbon {
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--border-color);
+}
+
+.side-dock-ribbon-action {
+  color: var(--interactive-accent);
+  transition: all 0.2s ease;
+}
+
+.side-dock-ribbon-action:hover {
+  color: var(--text-accent);
+  background-color: var(--interactive-hover);
+}
+

@@ -1,0 +1,634 @@
+/* ============================================================
+   VSCode Dark Modern for Obsidian
+   ============================================================ */
+
+.theme-dark {
+  /* ── Backgrounds ── */
+  --background-primary:               #1e1e1e;
+  --background-primary-alt:           #1e1e1e;
+  --background-secondary:             #181818;
+  --background-secondary-alt:         #1e1e1e;
+
+  /* ── Camadas de cor base ── */
+  --color-base-00:                    #1e1e1e;
+  --color-base-05:                    #1e1e1e;
+  --color-base-10:                    #181818;
+  --color-base-20:                    #252526;
+  --color-base-25:                    #2d2d2d;
+  --color-base-30:                    #333333;
+  --color-base-35:                    #3c3c3c;
+  --color-base-40:                    #474747;
+  --color-base-50:                    #636363;
+  --color-base-60:                    #808080;
+  --color-base-70:                    #ababab;
+  --color-base-100:                   #d4d4d4;
+
+  /* ── Text ── */
+  --text-normal:                      #d4d4d4;
+  --text-muted:                       #858585;
+  --text-faint:                       #555555;
+  --text-on-accent:                   #ffffff;
+  --text-error:                       #f48771;
+  --text-warning:                     #cca700;
+  --text-success:                     #89d185;
+
+  /* ── Links ── */
+  --link-color:                       #569cd6;
+  --link-color-hover:                 #a07cc5;
+  --link-external-color:              #569cd6;
+  --link-external-color-hover:        #a07cc5;
+  --link-unresolved-color:            #858585;
+
+  /* ── Headings (cores do syntax highlight do TRAE) ── */
+  --h1-color:                         #ce9178;
+  --h2-color:                         #6a9955;
+  --h3-color:                         #dcdcaa;
+  --h4-color:                         #9cdcfe;
+  --h5-color:                         #a07cc5;
+  --h6-color:                         #4ec9b0;
+  --h1-size:                          1.5em;
+  --h2-size:                          1.3em;
+  --h3-size:                          1.15em;
+  --h4-size:                          1.05em;
+  --h5-size:                          1.0em;
+  --h6-size:                          0.95em;
+  --h1-weight:                        400;
+  --h2-weight:                        400;
+  --h3-weight:                        500;
+  --h4-weight:                        500;
+  --h5-weight:                        500;
+  --h6-weight:                        500;
+
+  /* ── Accent ── */
+  --color-accent:                     #569cd6;
+  --interactive-accent:               #569cd6;
+  --interactive-accent-hover:         #4080b8;
+  --interactive-accent-rgb:           86, 156, 214;
+  --interactive-normal:               #2d2d2d;
+  --interactive-hover:                #2a2d2e;
+
+  /* ── Borders ── */
+  --background-modifier-hover:        #2a2d2e;
+  --background-modifier-active-hover: #37373d;
+  --background-modifier-border:       #2d2d2d;
+  --background-modifier-border-hover: #3c3c3c;
+  --background-modifier-border-focus: #3a6a9e;
+
+  /* ── Scrollbar ── */
+  --scrollbar-bg:                     transparent;
+  --scrollbar-thumb-bg:               #424242;
+  --scrollbar-active-thumb-bg:        #686868;
+
+  /* ── Code (cores VSCode Dark Modern) ── */
+  --code-background:                  #1e1e1e;
+  --code-normal:                      #d4d4d4;
+  --code-comment:                     #6a9955;
+  --code-function:                    #dcdcaa;
+  --code-important:                   #a07cc5;
+  --code-keyword:                     #569cd6;
+  --code-operator:                    #d4d4d4;
+  --code-property:                    #9cdcfe;
+  --code-punctuation:                 #d4d4d4;
+  --code-string:                      #ce9178;
+  --code-tag:                         #4ec9b0;
+  --code-value:                       #b5cea8;
+  --code-size:                        13px;
+
+  /* ── Tags ── */
+  --tag-color:                        #569cd6;
+  --tag-background:                   rgba(122,158,194,0.12);
+  --tag-border-color:                 transparent;
+  --tag-border-width:                 0;
+  --tag-padding-x:                    7px;
+  --tag-padding-y:                    2px;
+  --tag-radius:                       4px;
+
+  /* ── Tables ── */
+  --table-border-color:               #2d2d2d;
+  --table-header-background:          #252526;
+  --table-header-background-hover:    #2d2d2d;
+
+  /* ── Inline title ── */
+  --inline-title-color:               #d4d4d4;
+  --inline-title-size:                1.5em;
+  --inline-title-weight:              500;
+
+  /* ── Bold / Italic ── */
+  --bold-color:                       #569cd6;
+  --italic-color:                     #ce9178;
+
+  /* ── Blockquote ── */
+  --blockquote-border-color:          #3c3c3c;
+  --blockquote-border-thickness:      2px;
+  --blockquote-color:                 #858585;
+
+  /* ── Checkbox ── */
+  --checkbox-color:                   #3a6a9e;
+  --checkbox-border-color:            #555555;
+  --checkbox-border-color-hover:      #3a6a9e;
+
+  /* ── File explorer ── */
+  --nav-item-color:                   #cccccc;
+  --nav-item-color-hover:             #ffffff;
+  --nav-item-color-active:            #ffffff;
+  --nav-item-background-hover:        #2a2d2e;
+  --nav-item-background-active:       #37373d;
+  --nav-folder-color:                 #cccccc;
+  --nav-item-weight-hover:            inherit;
+  --nav-item-weight-active:           inherit;
+
+  /* ── Tabs (estilo padrão Obsidian dark) ── */
+  --tab-background-active:            var(--background-primary);
+  --tab-text-color:                   var(--text-muted);
+  --tab-text-color-active:            var(--text-normal);
+  --tab-text-color-focused:           var(--text-normal);
+  --tab-text-color-focused-active:    var(--text-normal);
+  --tab-container-background:         var(--background-secondary);
+  --tab-outline-color:                var(--background-modifier-border);
+  --tab-curve:                        6px;
+  --tab-radius:                       6px;
+  --tab-divider-color:                transparent;
+  --tab-font-size:                    12px;
+
+  /* ── Title bar ── */
+  --titlebar-background:              var(--background-secondary);
+  --titlebar-background-focused:      var(--background-secondary);
+  --titlebar-text-color:              var(--text-muted);
+  --titlebar-text-color-focused:      var(--text-normal);
+
+  /* ── Status bar ── */
+  --status-bar-background:            #181818;
+  --status-bar-text-color:            #858585;
+  --status-bar-border-color:          #2d2d2d;
+
+  /* ── Prompt / Modal ── */
+  --prompt-background:                #252526;
+  --prompt-border-color:              #3c3c3c;
+
+  /* ── Ribbon ── */
+  --ribbon-background:                #181818;
+  --ribbon-background-collapsed:      #181818;
+
+  /* ── Indentation guides ── */
+  --indentation-guide-color:          rgba(255,255,255,0.04);
+  --indentation-guide-color-active:   rgba(255,255,255,0.1);
+
+  /* ── Dividers ── */
+  --divider-color:                    #2d2d2d;
+  --divider-color-hover:              #3c3c3c;
+}
+
+/* ── Font ── */
+body {
+  --font-text-size:                   13px;
+  --font-monospace: Menlo, 'SF Mono', Monaco, monospace;
+}
+
+.markdown-source-view,
+.cm-editor {
+  font-family: var(--font-monospace) !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+.markdown-reading-view {
+  font-family: Menlo, 'SF Mono', Monaco, monospace !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+pre, code, .cm-line {
+  font-family: var(--font-monospace) !important;
+}
+
+/* ── Inline code ── */
+code:not(pre code) {
+  color: #ce9178 !important;
+  background-color: #2d2d2d !important;
+  padding: 1px 4px !important;
+  border-radius: 3px !important;
+}
+
+/* ── Cursor ── */
+.cm-cursor {
+  border-left-color: #aeafad !important;
+  border-left-width: 2px !important;
+}
+
+/* ── Selection ── */
+.cm-selectionBackground { background-color: #264f78 !important; }
+::selection { background-color: #264f78; }
+
+/* ── Active line ── */
+.cm-active-line {
+  background-color: rgba(255,255,255,0.03) !important;
+}
+
+/* ── File explorer: item ativo ── */
+.nav-file-title.is-active {
+  background-color: #37373d !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #424242; border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: #686868; }
+
+/* ── HR ── */
+hr { border-color: #2d2d2d !important; }
+
+/* ── Table ── */
+th {
+  background-color: #252526 !important;
+  border-color: #2d2d2d !important;
+  font-weight: 500 !important;
+}
+td { border-color: #2d2d2d !important; }
+
+/* ── Highlight ── */
+mark {
+  background-color: #264f78 !important;
+  color: #d4d4d4 !important;
+}
+
+/* ── Dataview blocks ── */
+.block-language-dataview,
+.block-language-dataviewjs {
+  border: 1px solid #2d2d2d !important;
+  border-radius: 0 !important;
+  padding: 8px !important;
+}
+
+/* ── Properties panel ── */
+.metadata-container {
+  background-color: #252526 !important;
+  border-bottom: 1px solid #2d2d2d !important;
+}
+
+/* ── Breadcrumb ── */
+.view-header-breadcrumb {
+  color: #858585 !important;
+  font-size: 12px !important;
+}
+
+/* ── Headings: leve engrossamento ── */
+h1, .HyperMD-header-1, .cm-header-1 {
+  -webkit-text-stroke: 0.55px currentColor;
+}
+h2, .HyperMD-header-2, .cm-header-2 {
+  -webkit-text-stroke: 0.55px currentColor;
+}
+
+/* ── Heading markers ── */
+.cm-formatting-header {
+  color: #569cd6 !important;
+}
+
+/* ── Search ── */
+.search-result-file-matched-text {
+  background-color: #613315 !important;
+}
+
+/* ── Empty state ── */
+.empty-state-title { color: #858585 !important; }
+
+/* ============================================================
+   Callouts / Admonitions
+   ============================================================ */
+
+.callout {
+  background-color: #252526 !important;
+  border-width: 0 0 0 3px !important;
+  border-radius: 0 !important;
+  padding: 8px 12px !important;
+}
+
+.callout-title {
+  font-weight: 500 !important;
+  font-size: 13px !important;
+}
+
+/* Note */
+.callout[data-callout="note"] {
+  border-left-color: #569cd6 !important;
+}
+.callout[data-callout="note"] .callout-title {
+  color: #569cd6 !important;
+}
+
+/* Tip */
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] {
+  border-left-color: #4ec9b0 !important;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title {
+  color: #4ec9b0 !important;
+}
+
+/* Warning */
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  border-left-color: #cca700 !important;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  color: #cca700 !important;
+}
+
+/* Error / Danger */
+.callout[data-callout="error"],
+.callout[data-callout="danger"],
+.callout[data-callout="bug"] {
+  border-left-color: #f48771 !important;
+}
+.callout[data-callout="error"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  color: #f48771 !important;
+}
+
+/* Info */
+.callout[data-callout="info"] {
+  border-left-color: #9cdcfe !important;
+}
+.callout[data-callout="info"] .callout-title {
+  color: #9cdcfe !important;
+}
+
+/* Success */
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  border-left-color: #6a9955 !important;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  color: #6a9955 !important;
+}
+
+/* Question */
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  border-left-color: #c586c0 !important;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="help"] .callout-title,
+.callout[data-callout="faq"] .callout-title {
+  color: #c586c0 !important;
+}
+
+/* Quote */
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  border-left-color: #858585 !important;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  color: #858585 !important;
+}
+
+/* Example */
+.callout[data-callout="example"] {
+  border-left-color: #dcdcaa !important;
+}
+.callout[data-callout="example"] .callout-title {
+  color: #dcdcaa !important;
+}
+
+/* Abstract / Summary */
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  border-left-color: #ce9178 !important;
+}
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"] .callout-title {
+  color: #ce9178 !important;
+}
+
+/* Callout content text */
+.callout .callout-content {
+  color: #b0b0b0 !important;
+}
+
+/* ============================================================
+   Checkboxes — tarefas completas vs. pendentes
+   ============================================================ */
+
+/* Checkbox pendente */
+input[type="checkbox"] {
+  border: 1.5px solid #555555 !important;
+  background-color: transparent !important;
+  border-radius: 2px !important;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #569cd6 !important;
+}
+
+/* Checkbox completa */
+input[type="checkbox"]:checked {
+  background-color: #3a6a9e !important;
+  border-color: #3a6a9e !important;
+}
+
+/* Texto de tarefa completa: riscado + opaco */
+.task-list-item[data-task="x"] .task-list-item-checkbox ~ *,
+li.is-checked {
+  text-decoration: line-through !important;
+  color: #555555 !important;
+}
+
+/* Tarefa completa no dataview */
+.dataview .task-list-item input[type="checkbox"]:checked ~ * {
+  text-decoration: line-through !important;
+  color: #555555 !important;
+}
+
+/* ============================================================
+   Graph View
+   ============================================================ */
+
+.graph-view.color-fill {
+  color: #569cd6 !important;
+}
+
+.graph-view.color-fill-highlight {
+  color: #9cdcfe !important;
+}
+
+.graph-view.color-fill-tag {
+  color: #ce9178 !important;
+}
+
+.graph-view.color-fill-attachment {
+  color: #6a9955 !important;
+}
+
+.graph-view.color-fill-unresolved {
+  color: #555555 !important;
+}
+
+.graph-view.color-arrow {
+  color: #3c3c3c !important;
+}
+
+.graph-view.color-line {
+  color: #2d2d2d !important;
+}
+
+.graph-view.color-line-highlight {
+  color: #569cd6 !important;
+}
+
+.graph-view.color-text {
+  color: #b0b0b0 !important;
+}
+
+body .graph-view canvas {
+  background-color: #1e1e1e !important;
+}
+
+/* ============================================================
+   Canvas
+   ============================================================ */
+
+.canvas {
+  --canvas-background: #1a1a1a;
+}
+
+.canvas-node {
+  background-color: #252526 !important;
+  border: 1px solid #3c3c3c !important;
+  border-radius: 4px !important;
+}
+
+.canvas-node:hover {
+  border-color: #555555 !important;
+}
+
+.canvas-node.is-focused {
+  border-color: #569cd6 !important;
+  box-shadow: 0 0 0 1px #569cd6 !important;
+}
+
+.canvas-node-label {
+  color: #d4d4d4 !important;
+}
+
+.canvas-edge {
+  stroke: #3c3c3c !important;
+}
+
+.canvas-edge.is-focused {
+  stroke: #569cd6 !important;
+}
+
+.canvas-color-1 { --canvas-color: #569cd6; }
+.canvas-color-2 { --canvas-color: #6a9955; }
+.canvas-color-3 { --canvas-color: #ce9178; }
+.canvas-color-4 { --canvas-color: #c586c0; }
+.canvas-color-5 { --canvas-color: #dcdcaa; }
+.canvas-color-6 { --canvas-color: #4ec9b0; }
+
+/* ============================================================
+   Calendar Plugin — azul claro #9cdcfe
+   ============================================================ */
+
+/* Dia de hoje — salmon */
+#calendar-container .today {
+  color: #ce9178 !important;
+  font-weight: 600 !important;
+}
+
+#calendar-container .today .dot {
+  background-color: #ce9178 !important;
+}
+
+/* Título do mês — azul claro, ano — salmon */
+#calendar-container h3,
+#calendar-container .title {
+  color: #9cdcfe !important;
+}
+
+#calendar-container .year {
+  color: #ce9178 !important;
+}
+
+/* Dia selecionado — verde */
+#calendar-container .active {
+  background-color: rgba(106,153,85,0.15) !important;
+  color: #6a9955 !important;
+}
+
+/* Hover nos dias */
+#calendar-container td:hover {
+  background-color: rgba(156,220,254,0.08) !important;
+}
+
+/* Dots (indicadores de notas) — verde */
+#calendar-container .dot {
+  background-color: #6a9955 !important;
+}
+
+/* Dias da semana (header) — verde */
+#calendar-container th {
+  color: #6a9955 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Botão TODAY — roxo */
+#calendar-container .reset-button,
+#calendar-container button {
+  color: #a07cc5 !important;
+}
+
+/* Dias fora do mês */
+#calendar-container .adjacent-month {
+  color: #3c3c3c !important;
+}
+
+/* Setas de navegação */
+#calendar-container .arrow {
+  color: #858585 !important;
+}
+#calendar-container .arrow:hover {
+  color: #9cdcfe !important;
+}
+
+/* ============================================================
+   Toques de #9cdcfe em elementos secundários
+   ============================================================ */
+
+/* Breadcrumb — caminho ativo */
+.view-header-breadcrumb-separator {
+  color: #555555 !important;
+}
+
+/* File count nos resultados de busca */
+.search-result-file-title {
+  color: #9cdcfe !important;
+}
+
+/* Backlink count */
+.search-result-container .tree-item-self .tree-item-inner {
+  color: #9cdcfe !important;
+}
+
+/* Properties: nome do campo */
+.metadata-property-key {
+  color: #9cdcfe !important;
+}
+
+/* Outline: heading ativo */
+.outline .tree-item-self.is-active {
+  color: #9cdcfe !important;
+}

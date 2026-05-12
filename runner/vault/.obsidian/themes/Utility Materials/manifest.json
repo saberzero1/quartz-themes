@@ -1,0 +1,10 @@
+{
+  "name": "Utility Materials",
+  "author": "Alex Haynes",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Utility Materials themed Obsidian theme with dark greys and restrained orange accents.",
+  "authorUrl": "https://utility.materials.nyc",
+  "isDesktopOnly": false,
+  "modes": ["dark", "light"]
+}

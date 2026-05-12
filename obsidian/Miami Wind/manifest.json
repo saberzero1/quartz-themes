@@ -1,0 +1,11 @@
+{
+	"name": "Miami Wind",
+	"version": "1.2.0",
+	"minAppVersion": "0.16.0",
+	"description": "An Obsidian theme based on Miami Wind color scheme which is a blend of colors from Tailwind CSS and Greyscale colors from Catppuccin Mocha with inspiration from the theme Miami Nights for Monkeytype. Color Swatches built using Coolors",
+	"author": "hanakin",
+	"authorUrl": "https://github.com/hanakin",
+	"repo": "https://github.com/hanakin/miami-wind-obsidian-theme",
+	"modes": ["dark"],
+	"screenshot": "screenshot.png"
+}

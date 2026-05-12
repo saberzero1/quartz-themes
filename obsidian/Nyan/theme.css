@@ -1,0 +1,1281 @@
+/* @settings
+
+name: Nyan Theme
+id: nyan-theme
+settings:
+  - id: nyan-fun-heading
+    title: Fun Effects
+    type: heading
+    level: 1
+    collapsed: false
+  - id: nyan-rainbow-hr
+    title: Rainbow horizontal rules
+    description: Adds a rainbow gradient to horizontal rules (---)
+    type: class-toggle
+    default: true
+  - id: nyan-rainbow-headings
+    title: Rainbow headings
+    description: Each heading level gets a different pastel color
+    type: class-toggle
+    default: true
+  - id: nyan-rainbow-scrollbar
+    title: Rainbow scrollbar
+    description: Adds a rainbow gradient to the scrollbar thumb
+    type: class-toggle
+    default: false
+  - id: nyan-rainbow-active-tab
+    title: Rainbow active tab indicator
+    description: Adds a rainbow gradient border to the active tab
+    type: class-toggle
+    default: true
+  - id: nyan-pop-checkboxes
+    title: Pop-tart checkboxes
+    description: Checked boxes get a rainbow background
+    type: class-toggle
+    default: true
+  - id: nyan-animations-heading
+    title: Animations
+    type: heading
+    level: 1
+    collapsed: false
+  - id: nyan-cat-statusbar
+    title: Nyan Cat in status bar
+    description: Shows a pixel-art Nyan Cat with rainbow trail in the status bar
+    type: class-toggle
+    default: true
+  - id: nyan-starfield
+    title: Animated starfield background
+    description: Subtle twinkling stars on the editor background (dark mode only)
+    type: class-toggle
+    default: false
+  - id: nyan-rainbow-loading
+    title: Rainbow loading bar
+    description: Shows a rainbow progress bar at the top of active panes
+    type: class-toggle
+    default: true
+  - id: nyan-sparkle-links
+    title: Sparkle on hover
+    description: Links and tags sparkle when you hover over them
+    type: class-toggle
+    default: false
+  - id: nyan-colors-heading
+    title: Color Customization
+    type: heading
+    level: 1
+    collapsed: true
+  - id: nyan-accent-color
+    title: Accent color
+    description: Primary accent color used for links, buttons, and interactive elements
+    type: variable-themed-color
+    format: hex
+    default-light: "#e87da4"
+    default-dark: "#f5a0bc"
+  - id: nyan-bg-primary
+    title: Primary background
+    description: Main editor background color
+    type: variable-themed-color
+    format: hex
+    default-light: "#fdf6f0"
+    default-dark: "#1a1a2e"
+  - id: nyan-bg-secondary
+    title: Secondary background
+    description: Sidebar and secondary panel background
+    type: variable-themed-color
+    format: hex
+    default-light: "#f8ede3"
+    default-dark: "#16162a"
+  - id: nyan-typography-heading
+    title: Typography
+    type: heading
+    level: 1
+    collapsed: true
+  - id: nyan-font-text
+    title: Editor font
+    type: variable-text
+    default: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    quotes: false
+  - id: nyan-font-size
+    title: Base font size
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 24
+    step: 1
+    format: px
+
+*/
+
+/* ============================================================
+   NYAN THEME - A playful but usable Obsidian theme
+   ============================================================ */
+
+/* -- Nyan palette -- */
+:root {
+  --nyan-pink: #e87da4;
+  --nyan-pink-light: #f5a0bc;
+  --nyan-lavender: #b4a7d6;
+  --nyan-lavender-light: #c9bfe8;
+  --nyan-sky: #87ceeb;
+  --nyan-sky-light: #a8dcf0;
+  --nyan-mint: #98d4a8;
+  --nyan-peach: #f0b088;
+  --nyan-yellow: #f0d070;
+  --nyan-coral: #f08080;
+
+  --nyan-rainbow: linear-gradient(
+    90deg,
+    #f08080,
+    #f0b088,
+    #f0d070,
+    #98d4a8,
+    #87ceeb,
+    #b4a7d6,
+    #e87da4
+  );
+
+  /* Style Settings overridable vars */
+  --nyan-accent-color: var(--nyan-pink);
+  --nyan-bg-primary: #fdf6f0;
+  --nyan-bg-secondary: #f8ede3;
+  --nyan-font-text: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --nyan-font-size: 16px;
+}
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+.theme-light {
+  --nyan-accent-color: #e87da4;
+  --nyan-bg-primary: #fdf6f0;
+  --nyan-bg-secondary: #f8ede3;
+
+  /* Obsidian foundation colors */
+  --color-base-00: var(--nyan-bg-primary);
+  --color-base-05: #f6ece2;
+  --color-base-10: #f0e3d6;
+  --color-base-20: #e8d8c8;
+  --color-base-25: #e0cebc;
+  --color-base-30: #d6c2ae;
+  --color-base-35: #c8b49e;
+  --color-base-40: #b8a28c;
+  --color-base-50: #9a8878;
+  --color-base-60: #7c6e62;
+  --color-base-70: #5e544c;
+  --color-base-100: #2c2420;
+
+  /* Backgrounds */
+  --background-primary: var(--nyan-bg-primary);
+  --background-primary-alt: #f8ede3;
+  --background-secondary: var(--nyan-bg-secondary);
+  --background-secondary-alt: #f0e3d6;
+  --background-modifier-border: #e8d8c8;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-hover: rgba(232, 125, 164, 0.08);
+  --background-modifier-active-hover: rgba(232, 125, 164, 0.12);
+  --background-modifier-success: #e8f5e9;
+  --background-modifier-error: #fce4ec;
+
+  /* Accent */
+  --accent-h: 340;
+  --accent-s: 72%;
+  --accent-l: 55%;
+  --interactive-accent: var(--nyan-accent-color);
+  --interactive-accent-hover: #d46a92;
+
+  /* Text */
+  --text-normal: #3c3028;
+  --text-muted: #7c6e62;
+  --text-faint: #9a8878;
+  --text-on-accent: #ffffff;
+  --text-accent: var(--nyan-accent-color);
+  --text-accent-hover: #d46a92;
+  --text-selection: rgba(232, 125, 164, 0.18);
+  --text-highlight-bg: rgba(240, 208, 112, 0.35);
+
+  /* Tags */
+  --tag-background: rgba(180, 167, 214, 0.15);
+  --tag-color: #8b7bb8;
+  --tag-background-hover: rgba(180, 167, 214, 0.25);
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+.theme-dark {
+  --nyan-accent-color: #f5a0bc;
+  --nyan-bg-primary: #1a1a2e;
+  --nyan-bg-secondary: #16162a;
+
+  /* Obsidian foundation colors */
+  --color-base-00: var(--nyan-bg-primary);
+  --color-base-05: #1e1e34;
+  --color-base-10: #22223a;
+  --color-base-20: #2a2a44;
+  --color-base-25: #30304c;
+  --color-base-30: #383856;
+  --color-base-35: #424260;
+  --color-base-40: #50506e;
+  --color-base-50: #6a6a88;
+  --color-base-60: #8888a4;
+  --color-base-70: #a8a8c0;
+  --color-base-100: #e8e8f0;
+
+  /* Backgrounds */
+  --background-primary: var(--nyan-bg-primary);
+  --background-primary-alt: #1e1e34;
+  --background-secondary: var(--nyan-bg-secondary);
+  --background-secondary-alt: #141426;
+  --background-modifier-border: #2a2a44;
+  --background-modifier-form-field: #22223a;
+  --background-modifier-hover: rgba(245, 160, 188, 0.08);
+  --background-modifier-active-hover: rgba(245, 160, 188, 0.12);
+  --background-modifier-success: #1a2e1a;
+  --background-modifier-error: #2e1a1e;
+
+  /* Accent */
+  --accent-h: 340;
+  --accent-s: 80%;
+  --accent-l: 75%;
+  --interactive-accent: var(--nyan-accent-color);
+  --interactive-accent-hover: #f0b8cc;
+
+  /* Text */
+  --text-normal: #d8d0e8;
+  --text-muted: #a8a8c0;
+  --text-faint: #6a6a88;
+  --text-on-accent: #1a1a2e;
+  --text-accent: var(--nyan-accent-color);
+  --text-accent-hover: #f0b8cc;
+  --text-selection: rgba(245, 160, 188, 0.2);
+  --text-highlight-bg: rgba(240, 208, 112, 0.25);
+
+  /* Tags */
+  --tag-background: rgba(180, 167, 214, 0.18);
+  --tag-color: #c9bfe8;
+  --tag-background-hover: rgba(180, 167, 214, 0.28);
+}
+
+/* ============================================================
+   TYPOGRAPHY — Pixel font for UI, readable font for content
+   ============================================================ */
+
+/* Import pixel fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Press+Start+2P&display=swap');
+
+body {
+  /* Silkscreen for UI — readable pixel font */
+  --font-interface-theme: 'Silkscreen', monospace;
+  /* Keep editor text readable — monospace with pixel vibes */
+  --font-text-theme: var(--nyan-font-text);
+  --font-text-size: var(--nyan-font-size);
+  --font-monospace-theme: 'Press Start 2P', 'JetBrains Mono', monospace;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.35;
+  --bold-weight: 700;
+}
+
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+body {
+  --h1-size: 1.8em;
+  --h2-size: 1.5em;
+  --h3-size: 1.25em;
+  --h4-size: 1.1em;
+  --h5-size: 1.0em;
+  --h6-size: 0.9em;
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --heading-spacing: 0.05em;
+}
+
+/* Rainbow headings - each level a different pastel (always on by default) */
+.cm-header-1,
+.markdown-preview-section h1,
+.HyperMD-header-1 .cm-header {
+  color: var(--nyan-pink) !important;
+}
+
+.cm-header-2,
+.markdown-preview-section h2,
+.HyperMD-header-2 .cm-header {
+  color: var(--nyan-peach) !important;
+}
+
+.cm-header-3,
+.markdown-preview-section h3,
+.HyperMD-header-3 .cm-header {
+  color: var(--nyan-yellow) !important;
+}
+
+.cm-header-4,
+.markdown-preview-section h4,
+.HyperMD-header-4 .cm-header {
+  color: var(--nyan-mint) !important;
+}
+
+.cm-header-5,
+.markdown-preview-section h5,
+.HyperMD-header-5 .cm-header {
+  color: var(--nyan-sky) !important;
+}
+
+.cm-header-6,
+.markdown-preview-section h6,
+.HyperMD-header-6 .cm-header {
+  color: var(--nyan-lavender) !important;
+}
+
+/* ============================================================
+   RAINBOW HORIZONTAL RULES (always on by default)
+   ============================================================ */
+.markdown-preview-section hr,
+.cm-line hr {
+  border: none;
+  height: 3px;
+  background: var(--nyan-rainbow);
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+.markdown-source-view .cm-line.hr::after {
+  background: var(--nyan-rainbow);
+  height: 3px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* ============================================================
+   RAINBOW ACTIVE TAB INDICATOR
+   ============================================================ */
+.workspace-tab-header.is-active {
+  border-bottom: 2px solid transparent;
+  border-image: var(--nyan-rainbow);
+  border-image-slice: 1;
+}
+
+/* ============================================================
+   POP-TART CHECKBOXES
+   ============================================================ */
+input[type="checkbox"]:checked {
+  background: var(--nyan-rainbow) !important;
+  border-color: transparent !important;
+}
+
+.task-list-item-checkbox:checked {
+  background: var(--nyan-rainbow) !important;
+  border-color: transparent !important;
+}
+
+/* Unchecked checkbox styling */
+input[type="checkbox"] {
+  border-color: var(--nyan-lavender);
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   RAINBOW SCROLLBAR
+   ============================================================ */
+.nyan-rainbow-scrollbar ::-webkit-scrollbar-thumb {
+  background: var(--nyan-rainbow) !important;
+  border-radius: 10px;
+}
+
+.nyan-rainbow-scrollbar ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nyan-rainbow-scrollbar ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+body {
+  --link-color: var(--nyan-pink);
+  --link-color-hover: var(--nyan-lavender);
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: var(--nyan-sky);
+  --link-external-color-hover: var(--nyan-sky-light);
+  --link-unresolved-color: var(--nyan-peach);
+  --link-unresolved-opacity: 0.8;
+}
+
+/* ============================================================
+   CODE BLOCKS
+   ============================================================ */
+.theme-light {
+  --code-background: #f0e8dc;
+  --code-normal: #5e544c;
+  --code-comment: #9a8878;
+  --code-keyword: var(--nyan-pink);
+  --code-function: var(--nyan-lavender);
+  --code-string: var(--nyan-mint);
+  --code-value: var(--nyan-peach);
+  --code-operator: var(--nyan-sky);
+  --code-tag: var(--nyan-coral);
+}
+
+.theme-dark {
+  --code-background: #14142a;
+  --code-normal: #d8d0e8;
+  --code-comment: #6a6a88;
+  --code-keyword: var(--nyan-pink-light);
+  --code-function: var(--nyan-lavender-light);
+  --code-string: var(--nyan-mint);
+  --code-value: var(--nyan-peach);
+  --code-operator: var(--nyan-sky-light);
+  --code-tag: var(--nyan-coral);
+}
+
+code {
+  border-radius: 0;
+  padding: 2px 5px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+.theme-light {
+  --blockquote-border-color: var(--nyan-lavender);
+}
+
+.theme-dark {
+  --blockquote-border-color: var(--nyan-lavender-light);
+}
+
+blockquote, .markdown-preview-section blockquote {
+  border-left-width: 3px;
+  background: rgba(180, 167, 214, 0.06);
+  border-radius: 0;
+  padding: 8px 16px;
+}
+
+/* ============================================================
+   CALLOUTS
+   ============================================================ */
+.callout {
+  border-radius: 0;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+body {
+  --table-border-width: 2px;
+}
+
+.theme-light {
+  --table-border-color: #e0cebc;
+  --table-header-background: rgba(232, 125, 164, 0.08);
+}
+
+.theme-dark {
+  --table-border-color: #2a2a44;
+  --table-header-background: rgba(245, 160, 188, 0.08);
+}
+
+th {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+}
+
+table {
+  border-radius: 0 !important;
+}
+
+td, th {
+  border-radius: 0 !important;
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+body {
+  --list-marker-color: var(--nyan-lavender);
+}
+
+.theme-dark {
+  --list-marker-color: var(--nyan-lavender-light);
+}
+
+/* ============================================================
+   PIXEL/RETRO UI OVERHAUL
+   Sharp corners, chunky borders, 8-bit vibes
+   ============================================================ */
+
+/* -- Global border-radius kill -- */
+body {
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --radius-xl: 0px;
+  --input-radius: 0px;
+  --tab-radius-active: 0px;
+  --button-radius: 0px;
+  --toggle-radius: 0px;
+  --border-width: 2px;
+}
+
+/* -- Buttons: chunky pixel style with proper spacing -- */
+button, .mod-cta, .mod-warning {
+  border-radius: 0 !important;
+  border: 3px solid var(--interactive-accent) !important;
+  font-family: 'Silkscreen', monospace !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  padding: 6px 16px !important;
+  margin: 4px 6px !important;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.05s ease;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+
+button:hover, .mod-cta:hover {
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.25);
+  transform: translate(2px, 2px);
+}
+
+button:active, .mod-cta:active {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.25);
+  transform: translate(4px, 4px);
+}
+
+/* Settings buttons need less aggressive margin */
+.setting-item-control button {
+  margin: 2px 4px !important;
+}
+
+/* Destructive / warning buttons — high contrast */
+.mod-warning,
+button.mod-destructive,
+.menu-item.is-warning,
+.modal button.mod-warning {
+  background: var(--nyan-coral) !important;
+  color: #1a1a2e !important;
+  border-color: #cc5555 !important;
+  font-weight: 700;
+}
+
+.mod-warning:hover,
+button.mod-destructive:hover {
+  background: #f08080 !important;
+  color: #1a1a2e !important;
+}
+
+/* -- Input fields -- */
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+textarea,
+.metadata-input-longtext textarea {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border) !important;
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.06);
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border-color: var(--interactive-accent) !important;
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.06), 0 0 0 1px var(--interactive-accent);
+}
+
+/* -- Checkboxes: pixel squares -- */
+input[type="checkbox"] {
+  border-radius: 0 !important;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* -- Toggles/switches: just square off the shape, keep default layout -- */
+.checkbox-container {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-size: inherit !important;
+}
+
+.checkbox-container .checkbox-container-thumb {
+  border-radius: 0 !important;
+}
+
+/* -- Dropdowns/selects -- */
+select, .dropdown {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border) !important;
+  box-shadow: 3px 3px 0 0 var(--background-modifier-border);
+}
+
+/* -- Modals -- */
+.modal {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border);
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-button {
+  border-radius: 0;
+}
+
+/* -- Command palette / prompt -- */
+.prompt {
+  border-radius: 0 !important;
+  border: 2px solid var(--interactive-accent);
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.prompt-input {
+  border-radius: 0 !important;
+}
+
+.suggestion-item {
+  border-radius: 0 !important;
+}
+
+/* -- Tabs: retro pixel tabs -- */
+.workspace-tab-header {
+  border-radius: 0 !important;
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.85em;
+  border: 2px solid var(--background-modifier-border);
+  border-bottom: none;
+  margin-right: 2px;
+}
+
+.workspace-tab-header.is-active {
+  border-bottom: 2px solid var(--background-primary);
+  margin-bottom: -2px;
+}
+
+.workspace-tab-header-container {
+  border-radius: 0;
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* ============================================================
+   FILE EXPLORER — Retro file manager style
+   ============================================================ */
+
+/* File tree container */
+.nav-files-container {
+  padding: 4px;
+}
+
+/* -- Folders: pixel folder look -- */
+.nav-folder-title {
+  border-radius: 0 !important;
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.95em;
+  padding: 7px 10px;
+  margin: 2px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-left: 3px solid var(--nyan-yellow);
+  border-bottom: 1px dashed var(--background-modifier-border);
+}
+
+.nav-folder-title:hover {
+  border-radius: 0 !important;
+  background: rgba(240, 208, 112, 0.1);
+  border-left: 3px solid var(--nyan-yellow);
+}
+
+/* Folder collapse icon */
+.nav-folder-collapse-indicator {
+  color: var(--nyan-yellow);
+}
+
+/* Pixel folder icon using inline SVG */
+.nav-folder-title .nav-folder-title-content::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='2' width='14' height='10' fill='%23f0d070'/%3E%3Crect x='0' y='0' width='6' height='3' fill='%23f0d070'/%3E%3Crect x='0' y='2' width='14' height='2' fill='%23d4b84c'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+/* -- Files: pixel document look -- */
+.nav-file-title {
+  border-radius: 0 !important;
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.9em;
+  padding: 6px 10px 6px 14px;
+  margin: 2px 0;
+  border-left: 3px solid transparent;
+  transition: all 0.05s ease;
+}
+
+.nav-file-title:hover {
+  border-radius: 0 !important;
+  background: var(--background-modifier-hover);
+  border-left: 3px solid var(--nyan-sky);
+}
+
+.nav-file-title.is-active {
+  border-left: 3px solid var(--interactive-accent);
+  background: var(--background-modifier-active-hover);
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+
+/* Pixel file icon */
+.nav-file-title .nav-file-title-content::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='8' height='12' fill='%23d8d0e8'/%3E%3Crect x='6' y='0' width='4' height='4' fill='%23b4a7d6'/%3E%3Crect x='8' y='2' width='2' height='10' fill='%23d8d0e8'/%3E%3Crect x='2' y='4' width='4' height='1' fill='%23a8a8c0'/%3E%3Crect x='2' y='6' width='5' height='1' fill='%23a8a8c0'/%3E%3Crect x='2' y='8' width='3' height='1' fill='%23a8a8c0'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+/* -- File type icons -- */
+
+/* Markdown files: pink document */
+.nav-file-title[data-path$=".md"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='8' height='12' fill='%23f5a0bc'/%3E%3Crect x='6' y='0' width='4' height='4' fill='%23e87da4'/%3E%3Crect x='8' y='2' width='2' height='10' fill='%23f5a0bc'/%3E%3Crect x='2' y='4' width='4' height='1' fill='%23d46a92'/%3E%3Crect x='2' y='6' width='5' height='1' fill='%23d46a92'/%3E%3Crect x='2' y='8' width='3' height='1' fill='%23d46a92'/%3E%3C/svg%3E");
+}
+
+/* Images: pixel picture frame (green) */
+.nav-file-title[data-path$=".png"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".jpg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".jpeg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".gif"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".svg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".webp"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".bmp"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='12' height='12' fill='%2398d4a8'/%3E%3Crect x='1' y='1' width='10' height='10' fill='%23e8f5e9'/%3E%3Crect x='3' y='3' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='2' y='7' width='3' height='2' fill='%2398d4a8'/%3E%3Crect x='5' y='5' width='4' height='4' fill='%2376c08a'/%3E%3Crect x='7' y='6' width='2' height='3' fill='%2398d4a8'/%3E%3C/svg%3E");
+}
+
+/* PDF: red document */
+.nav-file-title[data-path$=".pdf"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='8' height='12' fill='%23f08080'/%3E%3Crect x='6' y='0' width='4' height='4' fill='%23cc5555'/%3E%3Crect x='8' y='2' width='2' height='10' fill='%23f08080'/%3E%3Crect x='2' y='5' width='5' height='3' fill='%23ffffff' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* Audio: blue note */
+.nav-file-title[data-path$=".mp3"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".wav"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".ogg"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".flac"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".m4a"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='10' height='12' fill='%2387ceeb'/%3E%3Crect x='6' y='2' width='2' height='6' fill='%23ffffff' opacity='0.5'/%3E%3Crect x='4' y='6' width='4' height='4' fill='%23ffffff' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+/* Video: purple film */
+.nav-file-title[data-path$=".mp4"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".webm"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".mkv"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".mov"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='12' height='12' fill='%23b4a7d6'/%3E%3Crect x='0' y='0' width='2' height='2' fill='%23222'/%3E%3Crect x='0' y='4' width='2' height='2' fill='%23222'/%3E%3Crect x='0' y='8' width='2' height='2' fill='%23222'/%3E%3Crect x='10' y='0' width='2' height='2' fill='%23222'/%3E%3Crect x='10' y='4' width='2' height='2' fill='%23222'/%3E%3Crect x='10' y='8' width='2' height='2' fill='%23222'/%3E%3Crect x='4' y='3' width='4' height='6' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* JSON/config: yellow gear */
+.nav-file-title[data-path$=".json"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".yaml"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".yml"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".toml"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='8' height='12' fill='%23f0d070'/%3E%3Crect x='6' y='0' width='4' height='4' fill='%23d4b84c'/%3E%3Crect x='8' y='2' width='2' height='10' fill='%23f0d070'/%3E%3Crect x='2' y='4' width='2' height='1' fill='%23aa8830'/%3E%3Crect x='4' y='5' width='3' height='1' fill='%23aa8830'/%3E%3Crect x='2' y='7' width='4' height='1' fill='%23aa8830'/%3E%3Crect x='3' y='9' width='3' height='1' fill='%23aa8830'/%3E%3C/svg%3E");
+}
+
+/* Canvas: sky blue */
+.nav-file-title[data-path$=".canvas"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='12' height='12' fill='%2387ceeb'/%3E%3Crect x='1' y='1' width='4' height='3' fill='%23fff' opacity='0.4'/%3E%3Crect x='7' y='2' width='4' height='3' fill='%23fff' opacity='0.4'/%3E%3Crect x='3' y='6' width='5' height='3' fill='%23fff' opacity='0.4'/%3E%3Crect x='5' y='4' width='1' height='2' fill='%23fff' opacity='0.3'/%3E%3Crect x='4' y='5' width='1' height='1' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* -- Indentation guides: pixel dashed lines -- */
+.nav-folder-children {
+  border-left: 2px dashed var(--background-modifier-border);
+  margin-left: 8px;
+  padding-left: 4px;
+}
+
+/* -- Vault title -- */
+.nav-header {
+  font-family: 'Silkscreen', monospace;
+  padding: 8px;
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* -- File tree section titles (e.g., "Files") -- */
+.tree-item-self {
+  font-family: 'Silkscreen', monospace;
+  border-radius: 0 !important;
+}
+
+/* -- Tags: pixel badges -- */
+.tag, a.tag {
+  border-radius: 0 !important;
+  border: 2px solid var(--tag-color);
+  padding: 2px 8px;
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* -- Tooltips -- */
+.tooltip {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border);
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* -- Menus -- */
+.menu {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border);
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.12);
+}
+
+.menu-item {
+  border-radius: 0 !important;
+}
+
+/* -- Notices/toasts -- */
+.notice {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border);
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* -- Settings -- */
+.setting-item {
+  border-color: var(--background-modifier-border);
+}
+
+.setting-item-control button {
+  box-shadow: 2px 2px 0 0 var(--background-modifier-border);
+}
+
+/* -- Search -- */
+.search-result-file-title {
+  border-radius: 0;
+}
+
+.search-result-file-matches {
+  border-radius: 0;
+}
+
+/* -- Scrollbar: pixel chunky -- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  border: 2px solid var(--background-primary);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 0;
+}
+
+/* -- Code blocks -- */
+pre, .markdown-preview-section pre {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border);
+}
+
+.markdown-source-view .cm-line.HyperMD-codeblock {
+  border-radius: 0;
+}
+
+/* -- Properties/metadata -- */
+.metadata-container {
+  border-radius: 0;
+}
+
+.metadata-property {
+  border-radius: 0 !important;
+}
+
+/* -- Popovers -- */
+.popover {
+  border-radius: 0 !important;
+  border: 2px solid var(--background-modifier-border);
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.12);
+}
+
+/* -- Graph view nodes -- */
+.graph-view.color-fill {
+  border-radius: 0;
+}
+
+/* -- View headers: retro title bar feel -- */
+.view-header {
+  border-bottom: 2px solid var(--background-modifier-border);
+  min-height: 40px;
+  padding: 4px 8px;
+}
+
+/* Header buttons: smaller borders so they fit, keep accent color */
+.view-header button,
+.view-action {
+  border: 2px solid var(--interactive-accent) !important;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 4px 6px !important;
+  margin: 2px 3px !important;
+}
+
+.view-header-title {
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.9em;
+}
+
+/* -- Sidebar section headers -- */
+.side-dock-title {
+  font-family: 'Silkscreen', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* -- Workspace dividers -- */
+.workspace-leaf-resize-handle {
+  border-radius: 0;
+}
+
+/* ============================================================
+   RIBBON (left sidebar icons)
+   ============================================================ */
+.side-dock-ribbon-action:hover {
+  color: var(--nyan-pink);
+}
+
+.theme-dark .side-dock-ribbon-action:hover {
+  color: var(--nyan-pink-light);
+}
+
+/* ============================================================
+   STATUS BAR
+   ============================================================ */
+.status-bar {
+  font-size: 11px;
+  font-family: 'Silkscreen', monospace;
+  border-radius: 0 !important;
+  border-top: 2px solid var(--background-modifier-border);
+}
+
+/* ============================================================
+   RETRO PIXEL ACCENTS
+   ============================================================ */
+
+/* Pixel-styled headings in preview */
+.markdown-preview-section h1,
+.markdown-preview-section h2,
+.markdown-preview-section h3,
+.markdown-preview-section h4,
+.markdown-preview-section h5,
+.markdown-preview-section h6 {
+  font-family: 'Silkscreen', monospace;
+  letter-spacing: 0.02em;
+}
+
+/* Command palette input */
+.prompt-input {
+  font-family: 'Silkscreen', monospace !important;
+  font-size: 0.9em;
+}
+
+/* Pixel highlight for search results */
+.search-result-file-matched-text {
+  background: rgba(240, 208, 112, 0.4);
+  border-bottom: 2px solid var(--nyan-yellow);
+  border-radius: 0;
+}
+
+/* Modal titles */
+.modal-title {
+  font-family: 'Silkscreen', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   SMOOTH TRANSITIONS
+   ============================================================ */
+a,
+.nav-file-title,
+.nav-folder-title,
+.side-dock-ribbon-action,
+input[type="checkbox"],
+.workspace-tab-header {
+  transition: all 0.15s ease;
+}
+
+/* ============================================================
+   SELECTION COLOR
+   ============================================================ */
+::selection {
+  background: rgba(232, 125, 164, 0.2);
+}
+
+.theme-dark ::selection {
+  background: rgba(245, 160, 188, 0.25);
+}
+
+/* ============================================================
+   KEYFRAME ANIMATIONS
+   ============================================================ */
+
+/* Rainbow slide animation for trails and loading bars */
+@keyframes nyan-rainbow-slide {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Floating animation for the nyan cat */
+@keyframes nyan-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-2px); }
+}
+
+/* Star twinkle */
+@keyframes nyan-twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+@keyframes nyan-twinkle-2 {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes nyan-twinkle-3 {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.6; }
+}
+
+/* Sparkle burst */
+@keyframes nyan-sparkle {
+  0% { text-shadow: 0 0 0 transparent; }
+  25% { text-shadow: -2px -2px 4px var(--nyan-pink), 2px 2px 4px var(--nyan-sky); }
+  50% { text-shadow: 2px -2px 4px var(--nyan-yellow), -2px 2px 4px var(--nyan-lavender); }
+  75% { text-shadow: -2px 2px 4px var(--nyan-mint), 2px -2px 4px var(--nyan-peach); }
+  100% { text-shadow: 0 0 0 transparent; }
+}
+
+/* ============================================================
+   NYAN CAT IN STATUS BAR
+   Inline SVG pixel-art Nyan Cat — no external files needed
+   ============================================================ */
+.status-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.status-bar::before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  width: 34px;
+  height: 24px;
+  margin-right: 6px;
+  /* Nyan Cat pixel art as inline SVG data URI */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 24' shape-rendering='crispEdges'%3E%3C!-- Rainbow trail --%3E%3Crect x='0' y='4' width='2' height='2' fill='%23f08080'/%3E%3Crect x='0' y='6' width='2' height='2' fill='%23f0b088'/%3E%3Crect x='0' y='8' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='0' y='10' width='2' height='2' fill='%2398d4a8'/%3E%3Crect x='0' y='12' width='2' height='2' fill='%2387ceeb'/%3E%3Crect x='0' y='14' width='2' height='2' fill='%23b4a7d6'/%3E%3Crect x='2' y='3' width='2' height='2' fill='%23f08080'/%3E%3Crect x='2' y='5' width='2' height='2' fill='%23f0b088'/%3E%3Crect x='2' y='7' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='2' y='9' width='2' height='2' fill='%2398d4a8'/%3E%3Crect x='2' y='11' width='2' height='2' fill='%2387ceeb'/%3E%3Crect x='2' y='13' width='2' height='2' fill='%23b4a7d6'/%3E%3Crect x='4' y='4' width='2' height='2' fill='%23f08080'/%3E%3Crect x='4' y='6' width='2' height='2' fill='%23f0b088'/%3E%3Crect x='4' y='8' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='4' y='10' width='2' height='2' fill='%2398d4a8'/%3E%3Crect x='4' y='12' width='2' height='2' fill='%2387ceeb'/%3E%3Crect x='4' y='14' width='2' height='2' fill='%23b4a7d6'/%3E%3Crect x='6' y='3' width='2' height='2' fill='%23f08080'/%3E%3Crect x='6' y='5' width='2' height='2' fill='%23f0b088'/%3E%3Crect x='6' y='7' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='6' y='9' width='2' height='2' fill='%2398d4a8'/%3E%3Crect x='6' y='11' width='2' height='2' fill='%2387ceeb'/%3E%3Crect x='6' y='13' width='2' height='2' fill='%23b4a7d6'/%3E%3C!-- Pop-tart body --%3E%3Crect x='10' y='2' width='16' height='16' rx='1' fill='%23f0b088'/%3E%3C!-- Pop-tart frosting --%3E%3Crect x='12' y='4' width='12' height='12' rx='1' fill='%23e87da4'/%3E%3C!-- Sprinkles --%3E%3Crect x='14' y='6' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='20' y='6' width='2' height='2' fill='%2387ceeb'/%3E%3Crect x='16' y='10' width='2' height='2' fill='%23f08080'/%3E%3Crect x='20' y='12' width='2' height='2' fill='%23f0d070'/%3E%3Crect x='14' y='12' width='2' height='2' fill='%2398d4a8'/%3E%3C!-- Cat head (gray) --%3E%3Crect x='22' y='4' width='10' height='10' rx='1' fill='%23888888'/%3E%3C!-- Cat ears --%3E%3Crect x='22' y='2' width='4' height='4' fill='%23888888'/%3E%3Crect x='28' y='2' width='4' height='4' fill='%23888888'/%3E%3Crect x='23' y='3' width='2' height='2' fill='%23f5a0bc'/%3E%3Crect x='29' y='3' width='2' height='2' fill='%23f5a0bc'/%3E%3C!-- Cat eyes --%3E%3Crect x='24' y='7' width='2' height='2' fill='%23222222'/%3E%3Crect x='29' y='7' width='2' height='2' fill='%23222222'/%3E%3C!-- Cat mouth --%3E%3Crect x='26' y='10' width='2' height='1' fill='%23222222'/%3E%3Crect x='25' y='11' width='1' height='1' fill='%23222222'/%3E%3Crect x='28' y='11' width='1' height='1' fill='%23222222'/%3E%3C!-- Cat cheeks --%3E%3Crect x='23' y='10' width='2' height='2' fill='%23f5a0bc'/%3E%3Crect x='29' y='10' width='2' height='2' fill='%23f5a0bc'/%3E%3C!-- Feet --%3E%3Crect x='12' y='18' width='4' height='2' fill='%23888888'/%3E%3Crect x='20' y='18' width='4' height='2' fill='%23888888'/%3E%3C!-- Tail --%3E%3Crect x='8' y='4' width='2' height='2' fill='%23888888'/%3E%3Crect x='8' y='2' width='2' height='2' fill='%23888888'/%3E%3Crect x='10' y='0' width='2' height='2' fill='%23888888'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: pixelated;
+  animation: nyan-float 0.8s ease-in-out infinite;
+}
+
+/* Animated rainbow trail behind the cat */
+.status-bar::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 12px;
+  background:
+    /* Wavy rainbow using repeating stripes */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 4px,
+      rgba(0,0,0,0.04) 4px,
+      rgba(0,0,0,0.04) 8px
+    ),
+    linear-gradient(
+      180deg,
+      #f08080 0%,
+      #f08080 16.66%,
+      #f0b088 16.66%,
+      #f0b088 33.33%,
+      #f0d070 33.33%,
+      #f0d070 50%,
+      #98d4a8 50%,
+      #98d4a8 66.66%,
+      #87ceeb 66.66%,
+      #87ceeb 83.33%,
+      #b4a7d6 83.33%,
+      #b4a7d6 100%
+    );
+  background-size: 8px 100%, 100% 100%;
+  border-radius: 1px;
+  opacity: 0.75;
+  z-index: 0;
+  /* Fade out at the left edge */
+  mask-image: linear-gradient(90deg, transparent 0%, black 30%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 30%);
+  /* Subtle shimmer animation */
+  animation: nyan-trail-shimmer 0.4s steps(2) infinite;
+}
+
+@keyframes nyan-trail-shimmer {
+  0% { background-position: 0px 0, 0 0; }
+  100% { background-position: 8px 0, 0 0; }
+}
+
+/* Position cat after the trail */
+.status-bar {
+  padding-left: 88px;
+  overflow: visible;
+}
+
+.status-bar::before {
+  position: absolute;
+  left: 80px;
+  z-index: 1;
+}
+
+/* ============================================================
+   ANIMATED STARFIELD (dark mode only)
+   Pure CSS stars using radial gradients and animations
+   ============================================================ */
+.theme-dark .workspace-leaf-content[data-type="markdown"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    /* Layer 1: small stars */
+    radial-gradient(1px 1px at 10% 15%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 25% 35%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 40% 8%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 55% 45%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 70% 22%, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 85% 55%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 15% 65%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 35% 78%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 60% 70%, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 80% 85%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 92% 40%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 5% 90%, rgba(255, 255, 255, 0.6), transparent),
+    /* Layer 2: slightly larger stars */
+    radial-gradient(1.5px 1.5px at 18% 28%, rgba(245, 160, 188, 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 48% 58%, rgba(135, 206, 235, 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 78% 12%, rgba(240, 208, 112, 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 65% 88%, rgba(180, 167, 214, 0.4), transparent);
+  animation: nyan-twinkle 3s ease-in-out infinite;
+}
+
+/* Second star layer with offset animation for more natural look */
+.theme-dark .workspace-leaf-content[data-type="markdown"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(1px 1px at 8% 42%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 22% 88%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 38% 18%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 52% 92%, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 72% 52%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 88% 72%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 42% 38%, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 95% 5%, rgba(255, 255, 255, 0.6), transparent);
+  animation: nyan-twinkle-2 4s ease-in-out infinite 1s;
+}
+
+.theme-dark .workspace-leaf-content[data-type="markdown"] {
+  position: relative;
+}
+
+/* ============================================================
+   RAINBOW LOADING BAR
+   A thin animated rainbow line at the top of active panes
+   ============================================================ */
+.workspace-leaf.mod-active .view-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #f08080, #f0b088, #f0d070, #98d4a8, #87ceeb, #b4a7d6, #e87da4,
+    #f08080, #f0b088, #f0d070, #98d4a8, #87ceeb, #b4a7d6, #e87da4
+  );
+  background-size: 200% 100%;
+  animation: nyan-rainbow-slide 3s linear infinite;
+  opacity: 0.7;
+}
+
+.workspace-leaf.mod-active .view-header {
+  position: relative;
+}
+
+/* ============================================================
+   SPARKLE ON HOVER (links & tags)
+   ============================================================ */
+a:hover,
+.cm-hmd-internal-link:hover,
+.tag:hover {
+  animation: nyan-sparkle 0.6s ease-in-out;
+}
+
+/* ============================================================
+   ANIMATED RAINBOW DIVIDER FOR FRONTMATTER
+   ============================================================ */
+.metadata-container {
+  border-bottom: 2px solid transparent;
+  border-image: var(--nyan-rainbow);
+  border-image-slice: 1;
+}

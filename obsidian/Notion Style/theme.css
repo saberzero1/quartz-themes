@@ -1,0 +1,2283 @@
+/* =============================================================
+   Notion Style Theme for Obsidian
+   Version: 1.0.0
+   Description: Full Notion visual overhaul — typography, code,
+                callouts, tables, and interactive elements.
+   ============================================================= */
+
+
+/* ─────────────────────────────────────────────────────────────
+   1. DESIGN TOKENS  (CSS Custom Properties)
+   All color / spacing / font values live here.
+   ───────────────────────────────────────────────────────────── */
+
+.theme-light,
+body.theme-light {
+  /* ── Background layers ── */
+  --notion-bg-primary:       #ffffff;
+  --notion-bg-secondary:     #F9F8F7;   /* ← lighter (was #f7f6f3) */
+  --notion-bg-tertiary:      #f0efed;
+  --notion-bg-sidebar:       #F9F8F7;   /* ← lighter (was #f7f6f3) */
+  --notion-bg-hover:         rgba(55, 53, 47, 0.06);
+  --notion-bg-active:        rgba(55, 53, 47, 0.12);
+
+  /* ── Text ── */
+  --notion-text-primary:     #37352f;
+  --notion-text-secondary:   #787774;
+  --notion-text-tertiary:    #9b9a97;
+  --notion-text-placeholder: rgba(55, 53, 47, 0.40);
+  --notion-text-link:        #2382e2;
+
+  /* ── Borders / Dividers ── */
+  --notion-border:           rgba(55, 53, 47, 0.16);
+  --notion-border-strong:    rgba(55, 53, 47, 0.30);
+  --blockquote-border-thickness: 0px;
+
+  /* ── Code ── */
+  --notion-code-bg:          #ededeb;
+  --notion-code-border:      #ededeb;
+  --notion-code-text:        #eb5757;
+  --notion-codeblock-bg:     #f9f8f7;
+  --notion-codeblock-text:   #37352f;
+  --notion-codeblock-border: #f9f8f7;
+
+  /* ── Callout palette ── */
+  --notion-callout-info-bg:      #e7f3ff;
+  --notion-callout-info-border:  #2382e2;
+  --notion-callout-info-text:    #2c4a70;
+
+  --notion-callout-tip-bg:       #eefaf1;
+  --notion-callout-tip-border:   #0f9d58;
+  --notion-callout-tip-text:     #1a5c34;
+
+  --notion-callout-warn-bg:      #fff8e6;
+  --notion-callout-warn-border:  #f2a93b;
+  --notion-callout-warn-text:    #7a4d0f;
+
+  --notion-callout-error-bg:     #fff0f0;
+  --notion-callout-error-border: #e03e3e;
+  --notion-callout-error-text:   #7a1a1a;
+
+  --notion-callout-quote-bg:     #f7f6f3;
+  --notion-callout-quote-border: #9b9a97;
+  --notion-callout-quote-text:   #37352f;
+
+  /* ── Table ── */
+  --notion-table-header-bg:  #f7f6f3;
+  --notion-table-row-hover:  rgba(55, 53, 47, 0.04);
+  --notion-table-border:     rgba(55, 53, 47, 0.16);
+
+  /* ── Tags / Pills ── */
+  --notion-tag-bg:           rgba(227, 226, 224, 0.5);
+  --notion-tag-text:         #37352f;
+
+  /* ── Scrollbar ── */
+  --notion-scrollbar-bg:     transparent;
+  --notion-scrollbar-thumb:  rgba(55, 53, 47, 0.18);
+
+  /* ── Syntax highlighting (Obsidian native variables)
+     These are read by BOTH the CM6 editor and the Prism reading view,
+     so setting them once gives consistent colors everywhere.
+     Palette: Notion Style Light (via Typora notion-style-light theme). ── */
+  --code-background:   #f9f8f7;
+  --code-normal:       #37352f;   /* body text — same as notion text */
+  --code-comment:      #8d8d8d;   /* gray */
+  --code-function:     #d63253;   /* red-pink  — functions / defs */
+  --code-important:    #990055;   /* deep pink — class names / regex */
+  --code-keyword:      #006fd0;   /* blue      — keywords */
+  --code-operator:     #9a6e3b;   /* gold-brown — operators */
+  --code-property:     #990055;   /* deep pink — properties / attributes */
+  --code-punctuation:  #37352f;   /* same as normal */
+  --code-string:       #579c26;   /* green     — strings */
+  --code-tag:          #990055;   /* deep pink — HTML/XML tags */
+  --code-value:        #990055;   /* deep pink — numbers / atoms */
+}
+
+.theme-dark,
+body.theme-dark {
+  /* ── Background layers ── */
+  --notion-bg-primary:       #191919;
+  --notion-bg-secondary:     #1f1f1f;
+  --notion-bg-tertiary:      #282828;
+  --notion-bg-sidebar:       #191919;   /* ← latest Notion dark: sidebar = content bg (unified) */
+  --notion-bg-hover:         rgba(255, 255, 255, 0.055);
+  --notion-bg-active:        rgba(255, 255, 255, 0.10);
+
+  /* ── Text ── */
+  --notion-text-primary:     rgba(255, 255, 255, 0.81);
+  --notion-text-secondary:   rgba(255, 255, 255, 0.50);
+  --notion-text-tertiary:    rgba(255, 255, 255, 0.35);
+  --notion-text-placeholder: rgba(255, 255, 255, 0.28);
+  --notion-text-link:        #529cca;
+
+  /* ── Borders / Dividers ── */
+  --notion-border:           rgba(255, 255, 255, 0.13);
+  --notion-border-strong:    rgba(255, 255, 255, 0.22);
+  --blockquote-border-thickness: 0px;
+
+  /* ── Code ── */
+  --notion-code-bg:          rgba(255, 255, 255, 0.06);
+  --notion-code-border:      rgba(255, 255, 255, 0.06); /* border = bg */
+  --notion-code-text:        #ff7b72;
+  --notion-codeblock-bg:     #202020;
+  --notion-codeblock-text:   rgba(255, 255, 255, 0.81);
+  --notion-codeblock-border: #202020;
+
+  /* ── Callout palette ── */
+  --notion-callout-info-bg:      rgba(83, 145, 210, 0.12);
+  --notion-callout-info-border:  #529cca;
+  --notion-callout-info-text:    #9cc4e4;
+
+  --notion-callout-tip-bg:       rgba(15, 157, 88, 0.10);
+  --notion-callout-tip-border:   #4ca16a;
+  --notion-callout-tip-text:     #81d8a4;
+
+  --notion-callout-warn-bg:      rgba(242, 169, 59, 0.10);
+  --notion-callout-warn-border:  #d4a050;
+  --notion-callout-warn-text:    #f0c070;
+
+  --notion-callout-error-bg:     rgba(224, 62, 62, 0.10);
+  --notion-callout-error-border: #d05050;
+  --notion-callout-error-text:   #f07070;
+
+  --notion-callout-quote-bg:     rgba(255, 255, 255, 0.04);
+  --notion-callout-quote-border: rgba(255, 255, 255, 0.25);
+  --notion-callout-quote-text:   rgba(255, 255, 255, 0.81);
+
+  /* ── Table ── */
+  --notion-table-header-bg:  rgba(255, 255, 255, 0.10);
+  --notion-table-row-hover:  rgba(255, 255, 255, 0.03);
+  --notion-table-border:     rgba(255, 255, 255, 0.10);
+
+  /* ── Tags / Pills ── */
+  --notion-tag-bg:           rgba(255, 255, 255, 0.08);
+  --notion-tag-text:         rgba(255, 255, 255, 0.65);
+
+  /* ── Scrollbar ── */
+  --notion-scrollbar-bg:     transparent;
+  --notion-scrollbar-thumb:  rgba(255, 255, 255, 0.15);
+
+  /* ── Syntax highlighting (Obsidian native variables)
+     Palette: Notion Style Dark (via Typora notion-style-dark theme). ── */
+  --code-background:   #202020;
+  --code-normal:       #dcdcdc;   /* off-white body */
+  --code-comment:      #998066;   /* muted brown */
+  --code-function:     #ecec93;   /* yellow      — functions / defs */
+  --code-important:    #e06c75;   /* soft red    — class names / regex */
+  --code-keyword:      #67a2cc;   /* blue        — keywords */
+  --code-operator:     #f5b73d;   /* amber       — operators */
+  --code-property:     #dcdcdc;   /* same as normal — properties */
+  --code-punctuation:  #dcdcdc;   /* same as normal */
+  --code-string:       #bde051;   /* green       — strings */
+  --code-tag:          #e06c75;   /* soft red    — HTML/XML tags */
+  --code-value:        #e06c75;   /* soft red    — numbers / atoms */
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   2. TYPOGRAPHY TOKENS → map to Obsidian's CSS variables
+   ───────────────────────────────────────────────────────────── */
+
+.theme-light, .theme-dark {
+  /* Font stack — mirrors Notion exactly */
+  --font-text-theme:   -apple-system, BlinkMacSystemFont, "Segoe UI",
+                       "Microsoft YaHei", "Noto Sans SC", "Microsoft JhengHei",
+                       "Noto Sans TC", "Meiryo", "Yu Gothic", "Noto Sans JP",
+                       "Malgun Gothic", "Noto Sans KR",
+                       "Apple Color Emoji", sans-serif,
+                       "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace-theme: "SFMono-Regular", Menlo, Consolas, "PT Mono",
+                           "Liberation Mono", Courier, monospace;
+
+  /* Base scale */
+  --font-text-size:         16px;
+  --line-height-normal:     1.4;
+  --line-height-tight:      1.25;
+
+  /* Heading scale — H4/H5/H6 match H3 size (same as Typora notion theme) */
+  --h1-size: 1.875em;  /* 30px */
+  --h2-size: 1.5em;    /* 24px */
+  --h3-size: 1.25em;   /* 20px */
+  --h4-size: 1.25em;   /* 20px — same as H3 */
+  --h5-size: 1.25em;   /* 20px — same as H3 */
+  --h6-size: 1.25em;   /* 20px — same as H3 */
+
+  /* Spacing */
+  --notion-content-width:   1080px;  /* +20% (was 900px) */
+  --notion-page-padding:    96px;
+  --notion-page-padding-sm: 24px;
+
+  /* Obsidian native line-width — tells the editor the readable width */
+  --file-line-width:        1080px;  /* +20% (was 900px) */
+
+  /* Radius */
+  --notion-radius-sm:  3px;
+  --notion-radius-md:  6px;
+  --notion-radius-lg:  8px;
+
+  /* Transition */
+  --notion-transition: background 120ms ease-in, color 120ms ease-in;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   3. GLOBAL BASE
+   ───────────────────────────────────────────────────────────── */
+
+body {
+  font-family:   var(--font-text-theme) !important;
+  font-size:     var(--font-text-size)  !important;
+  line-height:   var(--line-height-normal) !important;
+  color:         var(--notion-text-primary) !important;
+  background:    var(--notion-bg-primary) !important;
+  -webkit-font-smoothing:  subpixel-antialiased !important;
+  -moz-osx-font-smoothing: auto                !important;
+}
+
+/* ─── Workspace chrome ─── */
+.workspace,
+.workspace-leaf,
+.workspace-split {
+  background: var(--notion-bg-primary) !important;
+}
+
+.workspace-leaf-content {
+  background: var(--notion-bg-primary) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   4. SIDEBAR / NAVIGATION  (Notion-style file tree)
+   ───────────────────────────────────────────────────────────── */
+
+.nav-folder,
+.nav-file,
+.nav-files-container,
+.workspace-ribbon,
+.workspace-tabs,
+.nav-header,
+.nav-action-button,
+.nav-buttons-container,
+.workspace-leaf-resize-handle,
+.mod-left-split,
+.mod-right-split {
+  background: var(--notion-bg-sidebar) !important;
+}
+
+
+/* ── File tree container ── */
+.nav-files-container {
+  padding: 4px 8px 4px 16px !important;
+}
+
+/* ── Hide Obsidian's native indentation guide lines ── */
+.nav-indentation-guide {
+  display: none !important;
+}
+.nav-files-container {
+  --nav-indentation-guide-width: 0px !important;
+}
+
+/* ── Common row styles ── */
+.nav-file-title,
+.nav-folder-title {
+  display:        flex !important;
+  align-items:    center !important;
+  min-height:     30px !important;
+  color:          var(--notion-text-primary) !important;
+  font-size:      14px !important;
+  font-weight:    400 !important;
+  line-height:    1.3 !important;
+  border-radius:  4px !important;
+  transition:     background 80ms ease, color 80ms ease !important;
+  padding:        4px 6px 4px 8px !important;
+  margin:         1px 0 !important;
+  cursor:         pointer !important;
+  user-select:    none !important;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background: var(--notion-bg-hover) !important;
+  color:      var(--notion-text-primary) !important;
+}
+
+.nav-file-title.is-active {
+  background:  var(--notion-bg-active) !important;
+  font-weight: 500 !important;
+}
+
+.nav-folder-title.is-active {
+  background: var(--notion-bg-hover) !important;
+}
+
+/* ── Folder title content ── */
+.nav-folder-title-content {
+  font-weight: 500 !important;
+  font-size:   14px !important;
+  color:       var(--notion-text-primary) !important;
+}
+
+/* File title content */
+.nav-file-title-content {
+  font-size:   14px !important;
+  font-weight: 400 !important;
+  color:       var(--notion-text-primary) !important;
+  white-space: nowrap !important;
+  overflow:    hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* ── Collapse chevron ── */
+.nav-folder-collapse-indicator {
+  display:         flex !important;
+  align-items:     center !important;
+  justify-content: center !important;
+  width:           20px !important;
+  height:          20px !important;
+  flex-shrink:     0 !important;
+  color:           var(--notion-text-tertiary) !important;
+  margin-right:    2px !important;
+  border-radius:   3px !important;
+}
+
+.nav-folder-collapse-indicator svg {
+  width:  14px !important;
+  height: 14px !important;
+  stroke: currentColor !important;
+}
+
+/* ── Page emoji icon for files ── */
+.nav-file-title::before {
+  content:      "📄";
+  font-size:    13px !important;
+  margin-right: 6px !important;
+  flex-shrink:  0 !important;
+  opacity:      0.6 !important;
+  line-height:  1 !important;
+}
+
+.nav-file-title.is-active::before {
+  opacity: 1 !important;
+}
+
+/* ── Section headings (Bookmarks, Files, etc.) ── */
+.nav-header {
+  padding:     8px 8px 4px !important;
+}
+
+.nav-header .nav-action-button {
+  background:  transparent !important;
+  color:       var(--notion-text-tertiary) !important;
+  border:      none !important;
+  border-radius: 4px !important;
+  padding:     4px !important;
+  transition:  background 80ms ease !important;
+}
+
+.nav-header .nav-action-button:hover {
+  background: var(--notion-bg-hover) !important;
+  color:      var(--notion-text-secondary) !important;
+}
+
+/* ── Workspace header / vault title ── */
+.workspace-drawer.mod-left .workspace-tabs,
+.workspace-drawer.mod-right .workspace-tabs {
+  background: var(--notion-bg-sidebar) !important;
+}
+
+/* ── Empty folder label ── */
+.nav-folder-children:empty::after {
+  content:   "No pages inside";
+  display:   block !important;
+  padding:   4px 8px !important;
+  font-size: 12px !important;
+  color:     var(--notion-text-placeholder) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   5. TAB BAR
+   ───────────────────────────────────────────────────────────── */
+
+.workspace-tab-header-container {
+  background:    var(--notion-bg-secondary) !important;
+  border-bottom: 1px solid var(--notion-border) !important;
+}
+
+.workspace-tab-header {
+  background:    transparent !important;
+  color:         var(--notion-text-secondary) !important;
+  border-radius: var(--notion-radius-sm) var(--notion-radius-sm) 0 0 !important;
+  font-size:     14px !important;
+  transition:    var(--notion-transition) !important;
+}
+
+.workspace-tab-header:hover {
+  background: var(--notion-bg-hover) !important;
+  color:      var(--notion-text-primary) !important;
+}
+
+.workspace-tab-header.is-active {
+  background: var(--notion-bg-primary) !important;
+  color:      var(--notion-text-primary) !important;
+  font-weight: 500 !important;
+}
+
+.workspace-tab-header-inner-title {
+  font-size: 14px !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   6. EDITOR / READING PANE — Page Canvas
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-source-view,
+.markdown-reading-view,
+.markdown-preview-view {
+  background: var(--notion-bg-primary) !important;
+  color:      var(--notion-text-primary) !important;
+}
+
+/* Center content and match Notion's page width */
+.markdown-preview-view .markdown-preview-section {
+  max-width: var(--notion-content-width) !important;
+  padding:   40px var(--notion-page-padding) 80px !important;
+  margin:    0 auto !important;
+}
+
+/* Live-preview editor: constrain width and center the content block */
+.cm-editor .cm-content {
+  max-width: var(--notion-content-width) !important;
+  padding:   0px var(--notion-page-padding) 80px !important;
+  margin:    0 auto !important;
+  box-sizing: border-box !important;
+}
+
+/* !! Reset: CM editors embedded inside table cells must NOT inherit
+   the page-level 40px/80px padding — that's what makes focused cells
+   expand to ~130px tall with the text appearing vertically centered. */
+.cm-embed-block .cm-editor .cm-content,
+.cm-table-widget .cm-editor .cm-content,
+td .cm-editor .cm-content {
+  max-width:  none !important;
+  padding:    0    !important;
+  margin:     0    !important;
+}
+
+/* Scrollable container alignment */
+.view-content {
+  background: var(--notion-bg-primary) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   7. HEADINGS  (H1 → H6 Notion gradient)
+   ───────────────────────────────────────────────────────────── */
+
+/* Reading view */
+.markdown-preview-view h1,
+.markdown-reading-view h1 {
+  font-size:      var(--h1-size)            !important;
+  font-weight:    700                       !important;
+  line-height:    1.2                       !important;
+  color:          var(--notion-text-primary) !important;
+  margin-top:     3rem                      !important;
+  margin-bottom:  1.5rem                    !important;
+  letter-spacing: -0.02em                   !important;
+}
+
+.markdown-preview-view h2,
+.markdown-reading-view h2 {
+  font-size:      var(--h2-size)            !important;
+  font-weight:    700                       !important;
+  line-height:    1.3                       !important;
+  color:          var(--notion-text-primary) !important;
+  margin-top:     1.5rem                    !important;
+  margin-bottom:  1.5rem                    !important;
+  letter-spacing: -0.01em                   !important;
+}
+
+.markdown-preview-view h3,
+.markdown-reading-view h3 {
+  font-size:     var(--h3-size)            !important;
+  font-weight:   700                       !important;
+  line-height:   1.3                       !important;
+  color:         var(--notion-text-primary) !important;
+  margin-top:    1.5rem                    !important;
+  margin-bottom: 1rem                      !important;
+}
+
+.markdown-preview-view h4,
+.markdown-reading-view h4,
+.markdown-preview-view h5,
+.markdown-reading-view h5,
+.markdown-preview-view h6,
+.markdown-reading-view h6 {
+  font-size:     var(--h4-size)            !important;  /* all same as H3 */
+  font-weight:   700                       !important;
+  line-height:   1.3                       !important;
+  color:         var(--notion-text-primary) !important;
+  margin-top:    1rem                      !important;
+  margin-bottom: 0                         !important;
+}
+
+/* Live-preview editor headings — kept in sync with reading-view h1~h6 */
+.cm-header-1 { font-size: var(--h1-size) !important; font-weight: 700 !important; line-height: 1.2 !important; letter-spacing: -0.02em !important; color: var(--notion-text-primary) !important; }
+.cm-header-2 { font-size: var(--h2-size) !important; font-weight: 700 !important; line-height: 1.3 !important; letter-spacing: -0.01em !important; color: var(--notion-text-primary) !important; }
+.cm-header-3 { font-size: var(--h3-size) !important; font-weight: 700 !important; line-height: 1.3 !important;                             color: var(--notion-text-primary) !important; }
+.cm-header-4 { font-size: var(--h4-size) !important; font-weight: 700 !important; line-height: 1.3 !important;                             color: var(--notion-text-primary) !important; }
+.cm-header-5 { font-size: var(--h5-size) !important; font-weight: 700 !important; line-height: 1.3 !important;                             color: var(--notion-text-primary) !important; }
+.cm-header-6 { font-size: var(--h6-size) !important; font-weight: 700 !important; line-height: 1.3 !important;                             color: var(--notion-text-primary) !important; }
+
+/* Live-preview heading line spacing — mirrors reading-mode margin-top / margin-bottom.
+   padding-bottom provides the gap below a heading before content.
+   When two headings are consecutive, the second heading's padding-top is suppressed
+   so only the first heading's padding-bottom provides the single gap. */
+.cm-line:has(.cm-header-1) { padding-top: 3rem   !important; padding-bottom: 1.5rem !important; }
+.cm-line:has(.cm-header-2) { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+.cm-line:has(.cm-header-3) { padding-top: 1.5rem !important; padding-bottom: 1rem   !important; }
+.cm-line:has(.cm-header-4),
+.cm-line:has(.cm-header-5),
+.cm-line:has(.cm-header-6) { padding-top: 1rem   !important; padding-bottom: 0       !important; }
+
+/* Consecutive headings (directly adjacent, no blank line between):
+   clear the second heading's padding-top — the first heading's padding-bottom alone
+   provides the gap. Uses a plain A+B adjacent-sibling selector (no nested :has). */
+.cm-line:has(:is(.cm-header-1,.cm-header-2,.cm-header-3,.cm-header-4,.cm-header-5,.cm-header-6)) + .cm-line:has(:is(.cm-header-1,.cm-header-2,.cm-header-3,.cm-header-4,.cm-header-5,.cm-header-6)) {
+  padding-top: 0 !important;
+}
+
+/* Exception: no extra padding inside embed blocks or table cells */
+.cm-embed-block .cm-line:has(.cm-header-1),
+.cm-embed-block .cm-line:has(.cm-header-2),
+.cm-embed-block .cm-line:has(.cm-header-3),
+.cm-embed-block .cm-line:has(.cm-header-4),
+.cm-embed-block .cm-line:has(.cm-header-5),
+.cm-embed-block .cm-line:has(.cm-header-6) { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+
+/* ─────────────────────────────────────────────────────────────
+   8. BODY TEXT & PARAGRAPHS
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view p,
+.markdown-reading-view p {
+  line-height:   1.5               !important;
+  color:         var(--notion-text-primary) !important;
+  margin-top:    0.9em             !important;
+  margin-bottom: 0.9em             !important;
+}
+
+/* Strong / Bold */
+.markdown-preview-view strong,
+.markdown-reading-view strong,
+.cm-strong {
+  color:       var(--notion-text-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Italic / Emphasis */
+.markdown-preview-view em,
+.markdown-reading-view em,
+.cm-em {
+  color: var(--notion-text-primary) !important;
+}
+
+/* Strikethrough */
+.markdown-preview-view s,
+.markdown-reading-view s,
+.cm-strikethrough {
+  color:           var(--notion-text-tertiary) !important;
+  text-decoration: line-through !important;
+}
+
+/* Links */
+.markdown-preview-view a,
+.markdown-reading-view a {
+  color:           var(--notion-text-link) !important;
+  text-decoration: none !important;
+  border-bottom:   1px solid transparent !important;
+  transition:      border-color 100ms ease !important;
+}
+
+.markdown-preview-view a:hover,
+.markdown-reading-view a:hover {
+  border-bottom-color: var(--notion-text-link) !important;
+}
+
+/* Internal / wiki links */
+.internal-link {
+  color:           var(--notion-text-link) !important;
+  text-decoration: none !important;
+}
+
+.internal-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Horizontal rule */
+.markdown-preview-view hr,
+.markdown-reading-view hr {
+  border: none !important;
+  border-top: 1px solid var(--notion-border) !important;
+  margin: 24px 0 !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   9. INLINE CODE
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view code:not(pre code),
+.markdown-reading-view  code:not(pre code),
+.markdown-source-view   code:not(pre code) {
+  background:    var(--notion-code-bg)     !important;
+  color:         var(--notion-code-text)   !important;
+  border:        1px solid var(--notion-code-border) !important;
+  border-radius: var(--notion-radius-sm)   !important;
+  font-family:   var(--font-monospace-theme) !important;
+  font-size:     0.875em                   !important;
+  padding:       0.15em 0.4em              !important;
+  white-space:   nowrap                    !important;
+}
+
+/* Editor inline code */
+.cm-inline-code .cm-hmd-codeblock,
+span.cm-inline-code {
+  background:    var(--notion-code-bg)                 !important;
+  color:         var(--notion-code-text)               !important;
+  border:        1px solid var(--notion-code-border)   !important;
+  border-radius: var(--notion-radius-sm)               !important;
+  font-family:   var(--font-monospace-theme)           !important;
+  font-size:     0.875em                               !important;
+  padding:       0.1em 0.35em                          !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   10. CODE BLOCKS (fenced)
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view pre,
+.markdown-reading-view pre {
+  background:    var(--notion-codeblock-bg)     !important;
+  border:        none                            !important;
+  border-radius: var(--notion-radius-md)         !important;
+  padding:       38px 20px 16px                  !important; /* top: room for lang label */
+  margin:        12px 0                          !important;
+  overflow-x:    auto                            !important;
+  tab-size:      2                               !important;
+  position:      relative                        !important;
+}
+
+.markdown-preview-view pre code,
+.markdown-reading-view pre code {
+  background:    transparent             !important;
+  color:         var(--notion-codeblock-text) !important;
+  border:        none                    !important;
+  border-radius: 0                       !important;
+  font-family:   var(--font-monospace-theme) !important;
+  font-size:     0.875em                 !important;
+  line-height:   1.7                     !important;
+  padding:       0                       !important;
+  white-space:   pre                     !important;
+}
+
+/* ── Language label (top-left) ──────────────────────────────
+   Prism adds the language class to BOTH <pre> and <code>,
+   so pre.language-java::before works directly.               */
+:is(.markdown-preview-view, .markdown-reading-view, .cm-embed-block)
+  pre[class*="language-"]::before {
+  position:       absolute      !important;
+  top:            10px          !important;
+  left:           16px          !important;
+  font-size:      0.68em        !important;
+  font-family:    var(--font-text-theme) !important;
+  font-weight:    600           !important;
+  color:          var(--notion-text-tertiary) !important;
+  text-transform: uppercase     !important;
+  letter-spacing: 0.08em        !important;
+  user-select:    none          !important;
+  pointer-events: none          !important;
+  line-height:    1             !important;
+}
+
+/* ── Per-language display names ── */
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-bash::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-sh::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-shell::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-zsh::before    { content: "Shell"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-c::before      { content: "C"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-cpp::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-c\+\+::before  { content: "C++"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-csharp::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-cs::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-c\#::before     { content: "C#"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-css::before    { content: "CSS"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-dart::before   { content: "Dart"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-diff::before   { content: "Diff"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-docker::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-dockerfile::before { content: "Dockerfile"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-go::before     { content: "Go"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-graphql::before { content: "GraphQL"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-html::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-markup::before { content: "HTML"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-http::before   { content: "HTTP"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-java::before   { content: "Java"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-javascript::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-js::before     { content: "JavaScript"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-json::before   { content: "JSON"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-jsx::before    { content: "JSX"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-kotlin::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-kt::before     { content: "Kotlin"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-latex::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-tex::before    { content: "LaTeX"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-lua::before    { content: "Lua"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-makefile::before { content: "Makefile"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-markdown::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-md::before     { content: "Markdown"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-nginx::before  { content: "Nginx"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-php::before    { content: "PHP"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-plaintext::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-text::before   { content: "Plain Text"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-powershell::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-ps::before     { content: "PowerShell"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-python::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-py::before     { content: "Python"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-r::before      { content: "R"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-ruby::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-rb::before     { content: "Ruby"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-rust::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-rs::before     { content: "Rust"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-scala::before  { content: "Scala"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-scss::before   { content: "SCSS"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-sql::before    { content: "SQL"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-swift::before  { content: "Swift"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-toml::before   { content: "TOML"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-typescript::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-ts::before     { content: "TypeScript"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-tsx::before    { content: "TSX"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-vim::before    { content: "Vim Script"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-xml::before    { content: "XML"; }
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-yaml::before,
+:is(.markdown-preview-view,.markdown-reading-view,.cm-embed-block) pre.language-yml::before    { content: "YAML"; }
+
+/* ── Copy button (Obsidian built-in) ──
+   Obsidian injects .copy-code-button inside <pre>.
+   We reposition it to the top-right and keep it always visible
+   (fades in — matches Notion's UX pattern).                    */
+.markdown-preview-view .copy-code-button,
+.markdown-reading-view  .copy-code-button,
+pre .copy-code-button {
+  position:       absolute      !important;
+  top:            5px           !important;
+  right:          8px           !important;
+  bottom:         auto          !important;
+  left:           auto          !important;
+  padding:        3px 8px       !important;
+  border:         none          !important;
+  border-radius:  var(--notion-radius-sm) !important;
+  background:     transparent   !important;
+  color:          var(--notion-text-tertiary) !important;
+  font-size:      0.68em        !important;
+  font-family:    var(--font-text-theme) !important;
+  font-weight:    600           !important;
+  text-transform: uppercase     !important;
+  letter-spacing: 0.06em        !important;
+  cursor:         pointer       !important;
+  opacity:        0             !important;
+  transition:     opacity 150ms ease, background 120ms, color 120ms !important;
+  white-space:    nowrap        !important;
+}
+
+/* Show on pre hover */
+.markdown-preview-view pre:hover .copy-code-button,
+.markdown-reading-view  pre:hover .copy-code-button,
+pre:hover .copy-code-button {
+  opacity: 1 !important;
+}
+
+.markdown-preview-view .copy-code-button:hover,
+.markdown-reading-view  .copy-code-button:hover,
+pre .copy-code-button:hover {
+  background: var(--notion-bg-hover)      !important;
+  color:      var(--notion-text-secondary) !important;
+}
+
+/* "Copied!" feedback state */
+.markdown-preview-view .copy-code-button.mod-copied,
+.markdown-reading-view  .copy-code-button.mod-copied,
+pre .copy-code-button.mod-copied {
+  color:   var(--notion-callout-tip-border) !important;
+  opacity: 1 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   10b. SYNTAX HIGHLIGHTING
+   Single source of truth: use var(--code-*) everywhere so that
+   Prism (reading view), CM6 (editor), and embed widgets always
+   show the same colors. --code-* values are set in section 1.
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Prism tokens (reading view) ──
+   Rule ORDER matters when specificity is equal.
+   More specific / later-declared rules win.
+   General rules first → language-specific overrides last.
+
+   IMPORTANT: every rule must reset background + font-size to
+   prevent Prism/Obsidian default CSS from adding grey boxes or
+   shrinking individual tokens (the XML bug).                   */
+
+/* 0. Token reset — clears background/border/padding that Obsidian's
+      own Prism CSS adds to specific token types (e.g. .token.tag gets
+      a grey box in XML). Scoped inside pre so the selector is more
+      specific than Obsidian's ".token.tag { background }" rule.      */
+.markdown-preview-view pre .token,
+.markdown-reading-view  pre .token {
+  background:  transparent !important;
+  border:      none        !important;
+  padding:     0           !important;
+  font-size:   inherit     !important;
+  line-height: inherit     !important;
+}
+
+/* 1. comments, prolog, doctype, CDATA */
+:is(.markdown-preview-view, .markdown-reading-view) .token.comment,
+:is(.markdown-preview-view, .markdown-reading-view) .token.prolog,
+:is(.markdown-preview-view, .markdown-reading-view) .token.doctype,
+:is(.markdown-preview-view, .markdown-reading-view) .token.cdata {
+  color:      var(--code-comment) !important;
+  font-style: italic              !important;
+}
+
+/* 2. generic punctuation — lowest priority, overridden below */
+:is(.markdown-preview-view, .markdown-reading-view) .token.punctuation {
+  color: var(--code-punctuation) !important;
+}
+
+/* 3. numbers, booleans */
+:is(.markdown-preview-view, .markdown-reading-view) .token.boolean,
+:is(.markdown-preview-view, .markdown-reading-view) .token.number,
+:is(.markdown-preview-view, .markdown-reading-view) .token.constant,
+:is(.markdown-preview-view, .markdown-reading-view) .token.symbol {
+  color: var(--code-value) !important;
+}
+
+/* 4. strings, built-ins — includes C# interpolation-string ($"...") */
+:is(.markdown-preview-view, .markdown-reading-view) .token.string,
+:is(.markdown-preview-view, .markdown-reading-view) .token.char,
+:is(.markdown-preview-view, .markdown-reading-view) .token.builtin,
+:is(.markdown-preview-view, .markdown-reading-view) .token.selector,
+:is(.markdown-preview-view, .markdown-reading-view) .token.interpolation-string,
+:is(.markdown-preview-view, .markdown-reading-view) .language-css .token.string,
+:is(.markdown-preview-view, .markdown-reading-view) .style .token.string {
+  color: var(--code-string) !important;
+}
+
+/* 5. keywords — includes C# multi-class keywords (keyword.keyword-using etc.) */
+:is(.markdown-preview-view, .markdown-reading-view) .token.keyword,
+:is(.markdown-preview-view, .markdown-reading-view) .token.atrule {
+  color:       var(--code-keyword) !important;
+  font-weight: 500                 !important;
+}
+
+/* 6. operators, entities, URLs */
+:is(.markdown-preview-view, .markdown-reading-view) .token.operator,
+:is(.markdown-preview-view, .markdown-reading-view) .token.entity,
+:is(.markdown-preview-view, .markdown-reading-view) .token.url {
+  color: var(--code-operator) !important;
+}
+
+/* 7. functions */
+:is(.markdown-preview-view, .markdown-reading-view) .token.function {
+  color: var(--code-function) !important;
+}
+
+/* 8. class names, regex, variables — includes C# type-list (inheritance: Base, IFoo) */
+:is(.markdown-preview-view, .markdown-reading-view) .token.class-name,
+:is(.markdown-preview-view, .markdown-reading-view) .token.type-list,
+:is(.markdown-preview-view, .markdown-reading-view) .token.regex,
+:is(.markdown-preview-view, .markdown-reading-view) .token.important,
+:is(.markdown-preview-view, .markdown-reading-view) .token.variable {
+  color: var(--code-important) !important;
+}
+
+/* 9. XML/HTML tags (property included for CSS) */
+:is(.markdown-preview-view, .markdown-reading-view) .token.property,
+:is(.markdown-preview-view, .markdown-reading-view) .token.tag {
+  color: var(--code-tag) !important;
+}
+
+/* 10. XML/HTML attribute values */
+:is(.markdown-preview-view, .markdown-reading-view) .token.attr-value {
+  color: var(--code-string) !important;
+}
+
+/* 11. XML/HTML attribute names */
+:is(.markdown-preview-view, .markdown-reading-view) .token.attr-name {
+  color: var(--code-function) !important;
+}
+
+/* 12. Punctuation INSIDE attr-value */
+:is(.markdown-preview-view, .markdown-reading-view) .token.attr-value .token.punctuation,
+:is(.markdown-preview-view, .markdown-reading-view) .token.attr-value .token.punctuation.attr-equals {
+  color: var(--code-punctuation) !important;
+}
+
+/* 13. XML namespace prefixes */
+:is(.markdown-preview-view, .markdown-reading-view) .token.namespace {
+  color:   var(--code-tag) !important;
+  opacity: 0.8             !important;
+}
+
+/* 14. C# preprocessor directives (#if, #define, #pragma …) */
+:is(.markdown-preview-view, .markdown-reading-view) .token.preprocessor,
+:is(.markdown-preview-view, .markdown-reading-view) .token.directive,
+:is(.markdown-preview-view, .markdown-reading-view) .token.directive-hash {
+  color: var(--code-keyword) !important;
+}
+
+/* ── CM6 tokens (editor / live-preview) ──
+   Scoped broadly so they fire whether the cursor is inside or
+   outside the code block (widget vs. HyperMD line rendering). */
+.cm-comment { color: var(--code-comment)     !important; font-style: italic !important; }
+.cm-keyword,
+.cm-modifier { color: var(--code-keyword)    !important; font-weight: 500   !important; }
+.cm-string,
+.cm-string2  { color: var(--code-string)     !important; }
+.cm-number,
+.cm-atom,
+.cm-bool     { color: var(--code-value)      !important; }
+.cm-className,
+.cm-typeName { color: var(--code-important)  !important; }
+.cm-function,
+.cm-definition.cm-variableName,
+.cm-variableName.cm-function { color: var(--code-function)  !important; }
+.cm-propertyName             { color: var(--code-property)  !important; }
+.cm-variableName,
+.cm-local                    { color: var(--code-normal)    !important; }
+.cm-operator                 { color: var(--code-operator)  !important; }
+.cm-meta,
+.cm-annotation               { color: var(--code-tag)       !important; }
+.cm-tagName,
+.cm-namespace                { color: var(--code-tag)       !important; }
+.cm-attributeName            { color: var(--code-function)  !important; } /* match Prism .token.attr-name */
+.cm-punctuation              { color: var(--code-punctuation) !important; }
+
+/* ── CM6 code block line container ── */
+.cm-content .HyperMD-codeblock {
+  background:  var(--code-background)       !important;
+  color:       var(--code-normal)           !important;
+  font-family: var(--font-monospace-theme)  !important;
+  font-size:   0.875em                      !important;
+}
+
+.HyperMD-codeblock-begin,
+.HyperMD-codeblock-end {
+  background:    var(--code-background) !important;
+  border-radius: var(--notion-radius-md) !important;
+}
+
+/* ── Hide bracket-pair indent guides inside code blocks ── */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-indent::before {
+  border-right: none !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   11. LISTS  (unordered + ordered + task lists)
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Unordered lists ── */
+.markdown-preview-view ul,
+.markdown-reading-view ul {
+  list-style:   none    !important;
+  padding-left: 24px    !important;
+  margin:       4px 0   !important;
+}
+
+.markdown-preview-view ul > li,
+.markdown-reading-view ul > li {
+  position:    relative !important;
+  line-height: 1.5      !important;
+  margin:      2px 0    !important;
+  padding-left: 4px     !important;
+}
+
+/* Hide Obsidian's native .list-bullet span to avoid double-bullet ghost */
+.markdown-preview-view ul > li > .list-bullet,
+.markdown-reading-view ul > li > .list-bullet {
+  display: none !important;
+}
+
+/* Notion's filled-circle bullet — level 1 */
+.markdown-preview-view ul > li::before,
+.markdown-reading-view ul > li::before {
+  content:     "•"       !important;
+  position:    absolute  !important;
+  left:        -16px     !important;
+  top:         0         !important;
+  color:       var(--notion-text-primary) !important;
+  font-size:   1em       !important;
+  line-height: 1.6       !important;
+}
+
+/* Level 2 — hollow circle */
+.markdown-preview-view ul ul > li::before,
+.markdown-reading-view ul ul > li::before {
+  content: "◦" !important;
+  color:   var(--notion-text-secondary) !important;
+}
+
+/* Level 3 — square */
+.markdown-preview-view ul ul ul > li::before,
+.markdown-reading-view ul ul ul > li::before {
+  content:   "▪" !important;
+  font-size: 0.7em !important;
+  top:       0.15em !important;
+}
+
+/* ── Ordered lists ── */
+.markdown-preview-view ol,
+.markdown-reading-view ol {
+  padding-left: 24px  !important;
+  margin:       4px 0 !important;
+}
+
+.markdown-preview-view ol > li,
+.markdown-reading-view ol > li {
+  line-height:  1.5    !important;
+  margin:       2px 0  !important;
+  padding-left: 4px    !important;
+  list-style:   decimal !important;
+  color:        var(--notion-text-primary) !important;
+}
+
+/* Level 2 ordered — lower-alpha (a. b. c.) */
+.markdown-preview-view ol ol > li,
+.markdown-reading-view ol ol > li {
+  list-style: lower-alpha !important;
+}
+
+/* Level 3 ordered — lower-roman (i. ii. iii.) */
+.markdown-preview-view ol ol ol > li,
+.markdown-reading-view ol ol ol > li {
+  list-style: lower-roman !important;
+}
+
+/* ── Nested indent ── */
+.markdown-preview-view li ul,
+.markdown-preview-view li ol,
+.markdown-reading-view li ul,
+.markdown-reading-view li ol {
+  margin-top:    2px !important;
+  margin-bottom: 0   !important;
+}
+
+/* ── Editor (live-preview) list rules ── */
+
+/* Unordered — hide native marker, use ::before bullets */
+.cm-content ul {
+  list-style:   none    !important;
+  padding-left: 24px    !important;
+  margin:       4px 0   !important;
+}
+.cm-content ul > li {
+  position:     relative !important;
+  line-height:  1.5      !important;
+  margin:       2px 0    !important;
+  padding-left: 4px      !important;
+}
+.cm-content ul > li > .list-bullet            { display: none !important; }
+.cm-content ul > li::before                   { content: "•";  position: absolute; left: -16px; top: 0; color: var(--notion-text-primary); font-size: 1em; line-height: 1.5; }
+.cm-content ul ul > li::before                { content: "◦";  color: var(--notion-text-secondary) !important; }
+.cm-content ul ul ul > li::before             { content: "▪";  font-size: 0.7em !important; top: 0.15em !important; }
+
+/* Ordered — level 1 decimal, level 2 lower-alpha, level 3 lower-roman */
+.cm-content ol {
+  padding-left: 24px  !important;
+  margin:       4px 0 !important;
+}
+.cm-content ol > li {
+  line-height:  1.5     !important;
+  margin:       2px 0   !important;
+  padding-left: 4px     !important;
+  list-style:   decimal !important;
+  color:        var(--notion-text-primary) !important;
+}
+.cm-content ol ol > li    { list-style: lower-alpha !important; }
+.cm-content ol ol ol > li { list-style: lower-roman !important; }
+
+/* Nested spacing */
+.cm-content li ul,
+.cm-content li ol { margin-top: 2px !important; margin-bottom: 0 !important; }
+
+/* ── Task list — editor (extends the same rules as reading view) ── */
+.markdown-source-view .task-list-item {
+  list-style:   none !important;
+  padding-left: 4px  !important;
+}
+.markdown-source-view .task-list-item::before { display: none !important; }
+
+/* Checkbox appearance — editor */
+.markdown-source-view input[type="checkbox"] {
+  appearance:         none         !important;
+  -webkit-appearance: none         !important;
+  width:              16px         !important;
+  height:             16px         !important;
+  border:             1.5px solid var(--notion-border-strong) !important;
+  border-radius:      3px          !important;
+  margin-right:       6px          !important;
+  vertical-align:     -3px         !important;
+  cursor:             pointer      !important;
+  background:         transparent  !important;
+  transition:         background 120ms, border-color 120ms !important;
+  flex-shrink:        0            !important;
+}
+.markdown-source-view input[type="checkbox"]:checked {
+  background:       #35aaff !important;
+  border-color:     #35aaff !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='9' viewBox='0 0 12 9'%3E%3Cpath fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' d='M1 4.5L4.5 8L11 1'/%3E%3C/svg%3E") !important;
+  background-repeat:   no-repeat !important;
+  background-position: center    !important;
+}
+/* Strikethrough text on checked task items */
+.markdown-source-view .task-list-item-checkbox:checked + * {
+  opacity:         0.6           !important;
+  text-decoration: line-through  !important;
+  color:           var(--notion-text-tertiary) !important;
+}
+
+/* ── Blockquote in editor (HyperMD) ── */
+.cm-line.HyperMD-quote-1,
+.cm-line.HyperMD-quote-2,
+.cm-line.HyperMD-quote-3 {
+  border-left: 3px solid var(--notion-text-tertiary) !important;
+  margin:      2px 0 !important;
+  color:       var(--notion-text-primary) !important;
+  font-style:  normal !important;
+}
+/* The `>` marker: keep it the same color as body text */
+.cm-line.HyperMD-quote-1 .cm-quote,
+.cm-line.HyperMD-quote-2 .cm-quote,
+.cm-line.HyperMD-quote-3 .cm-quote {
+  color: var(--notion-text-primary) !important;
+}
+
+/* ── Horizontal rule in editor (HyperMD) ── */
+.cm-line.HyperMD-hr {
+  border:     none !important;
+  border-top: 1px solid var(--notion-border) !important;
+  margin:     24px 0 !important;
+  height:     1px    !important;
+  overflow:   hidden !important;
+  color:      transparent !important;
+}
+.cm-line.HyperMD-hr .cm-hr {
+  opacity: 0 !important;
+}
+
+/* ── Editor base line-height (ensures consistent body text) ── */
+.cm-editor .cm-content {
+  line-height: 1.5 !important;
+}
+
+
+/* ── Task / Checkbox lists ── */
+
+/* 取消通用 ul 的 24px 缩进对 task list 的影响 */
+.markdown-preview-view ul.contains-task-list,
+.markdown-reading-view ul.contains-task-list {
+  padding-left: 0 !important;
+}
+
+.markdown-preview-view .task-list-item,
+.markdown-reading-view .task-list-item {
+  list-style: none   !important;
+  padding-left: 4px  !important;
+  position:  static  !important;
+}
+
+/* 高特异性选择器确保覆盖 Obsidian 自身的 align-items: flex-start */
+.markdown-preview-view ul.contains-task-list > li.task-list-item,
+.markdown-reading-view ul.contains-task-list > li.task-list-item {
+  display:      flex   !important;
+  align-items:  center !important;
+}
+
+.markdown-preview-view .task-list-item::before,
+.markdown-reading-view .task-list-item::before {
+  display: none !important;
+}
+
+/* 消除 li 内部 p 标签的 margin，防止撑开导致错位 */
+.markdown-preview-view .task-list-item > p,
+.markdown-reading-view .task-list-item > p {
+  margin: 0 !important;
+}
+
+.markdown-preview-view .task-list-item-checkbox,
+.markdown-reading-view .task-list-item-checkbox {
+  appearance:       none         !important;
+  -webkit-appearance: none       !important;
+  width:            16px         !important;
+  height:           16px         !important;
+  border:           1.5px solid var(--notion-border-strong) !important;
+  border-radius:    3px          !important;
+  margin:           0 6px 0 0   !important;
+  cursor:           pointer      !important;
+  background:       transparent  !important;
+  transition:       background 120ms, border-color 120ms !important;
+  flex-shrink:      0            !important;
+  align-self:       flex-start   !important;
+  position:         relative     !important;
+  top:              0.3em       !important;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked,
+.markdown-reading-view .task-list-item-checkbox:checked {
+  background:    #35aaff        !important;
+  border-color:  #35aaff        !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='9' viewBox='0 0 12 9'%3E%3Cpath fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' d='M1 4.5L4.5 8L11 1'/%3E%3C/svg%3E") !important;
+  background-repeat:   no-repeat !important;
+  background-position: center   !important;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked + *,
+.markdown-reading-view .task-list-item-checkbox:checked + * {
+  opacity:         0.6 !important;
+  text-decoration: line-through !important;
+  color:           var(--notion-text-tertiary) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   12. BLOCKQUOTE
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view blockquote,
+.markdown-reading-view blockquote {
+  border-left:   3px solid var(--notion-text-tertiary) !important;
+  background:    transparent !important;
+  margin:        8px 0 !important;
+  padding:       4px 16px !important;
+  color:         var(--notion-text-primary) !important;
+  font-style:    normal !important;
+  border-radius: 0 !important;
+}
+
+.markdown-preview-view blockquote p,
+.markdown-reading-view blockquote p {
+  color: var(--notion-text-primary) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   13. CALLOUTS / ADMONITIONS
+   Supports Obsidian's native callout syntax:
+   > [!info], [!tip], [!warning], [!danger], [!error],
+   > [!note], [!abstract], [!success], [!question], [!bug],
+   > [!example], [!quote], [!failure]
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view .callout,
+.markdown-reading-view .callout {
+  border:        1px solid transparent !important;
+  border-left:   3px solid !important;
+  border-radius: var(--notion-radius-md) !important;
+  padding:       12px 16px !important;
+  margin:        8px 0 !important;
+  font-size:     0.9375em !important;
+}
+
+.callout-title {
+  display:      flex !important;
+  align-items:  center !important;
+  gap:          8px !important;
+  font-weight:  600 !important;
+  font-size:    0.9375em !important;
+  margin-bottom: 6px !important;
+}
+
+.callout-content {
+  font-size:   0.9375em !important;
+  line-height: 1.6 !important;
+}
+
+/* ── Info / Note ── */
+.callout[data-callout="info"],
+.callout[data-callout="note"] {
+  background:        var(--notion-callout-info-bg) !important;
+  border-left-color: var(--notion-callout-info-border) !important;
+  color:             var(--notion-callout-info-text) !important;
+}
+.callout[data-callout="info"] .callout-title-inner,
+.callout[data-callout="note"] .callout-title-inner {
+  color: var(--notion-callout-info-border) !important;
+}
+
+/* ── Tip / Success / Abstract ── */
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="abstract"],
+.callout[data-callout="check"],
+.callout[data-callout="done"],
+.callout[data-callout="important"] {
+  background:        var(--notion-callout-tip-bg) !important;
+  border-left-color: var(--notion-callout-tip-border) !important;
+  color:             var(--notion-callout-tip-text) !important;
+}
+.callout[data-callout="tip"] .callout-title-inner,
+.callout[data-callout="success"] .callout-title-inner,
+.callout[data-callout="important"] .callout-title-inner {
+  color: var(--notion-callout-tip-border) !important;
+}
+
+/* ── Warning / Caution / Attention ── */
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"],
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  background:        var(--notion-callout-warn-bg) !important;
+  border-left-color: var(--notion-callout-warn-border) !important;
+  color:             var(--notion-callout-warn-text) !important;
+}
+.callout[data-callout="warning"] .callout-title-inner {
+  color: var(--notion-callout-warn-border) !important;
+}
+
+/* ── Error / Danger / Bug / Failure ── */
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"],
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+  background:        var(--notion-callout-error-bg) !important;
+  border-left-color: var(--notion-callout-error-border) !important;
+  color:             var(--notion-callout-error-text) !important;
+}
+.callout[data-callout="danger"] .callout-title-inner,
+.callout[data-callout="error"] .callout-title-inner {
+  color: var(--notion-callout-error-border) !important;
+}
+
+/* ── Quote / Example ── */
+.callout[data-callout="quote"],
+.callout[data-callout="cite"],
+.callout[data-callout="example"] {
+  background:        var(--notion-callout-quote-bg) !important;
+  border-left-color: var(--notion-callout-quote-border) !important;
+  color:             var(--notion-callout-quote-text) !important;
+}
+
+/* Callout icon */
+.callout-icon {
+  width:  18px !important;
+  height: 18px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Foldable callout arrow */
+.callout.is-collapsible .callout-title {
+  cursor: pointer !important;
+}
+
+.callout.is-collapsible .callout-fold {
+  margin-left: auto !important;
+  transition:  transform 150ms ease !important;
+}
+
+.callout.is-collapsed .callout-fold {
+  transform: rotate(-90deg) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   14. TABLES
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view table,
+.markdown-reading-view table {
+  width:           100% !important;
+  border-collapse: collapse !important;
+  border-spacing:  0 !important;
+  font-size:       0.9375em !important;
+  margin:          16px 0 !important;
+  border:          none !important; /* outer border carried by cells below */
+}
+
+.markdown-preview-view th,
+.markdown-reading-view th {
+  background:    var(--notion-table-header-bg) !important;
+  color:         var(--notion-text-primary) !important;
+  font-weight:   700 !important;
+  font-size:     0.9375em !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  padding:       8px 12px !important;
+  border-top:    1px solid var(--notion-table-border) !important; /* outer top */
+  border-bottom: 1px solid var(--notion-table-border) !important;
+  border-right:  1px solid var(--notion-table-border) !important;
+  /* text-align intentionally omitted — lets Markdown column alignment apply */
+}
+
+/* First cell in every row carries the outer left border */
+.markdown-preview-view th:first-child,
+.markdown-preview-view td:first-child,
+.markdown-reading-view th:first-child,
+.markdown-reading-view td:first-child {
+  border-left: 1px solid var(--notion-table-border) !important;
+}
+
+.markdown-preview-view td,
+.markdown-reading-view td {
+  padding:        8px 12px !important;
+  border-bottom:  1px solid var(--notion-table-border) !important;
+  border-right:   1px solid var(--notion-table-border) !important;
+  color:          var(--notion-text-primary) !important;
+  vertical-align: top !important;
+  line-height:    1.5 !important;
+  /* text-align intentionally omitted — lets Markdown column alignment (:-:, --:) apply */
+}
+
+.markdown-preview-view tr:hover td,
+.markdown-reading-view tr:hover td {
+  background: var(--notion-table-row-hover) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   14b. TABLES — EDITOR / LIVE-PREVIEW
+   Strategy: padding lives on <td>/<th> directly (not on inner
+   wrappers). Inner editable elements get padding:0 so they fill
+   the fixed-size cell without stacking space.
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Widget container ── */
+.cm-embed-block.cm-table-widget,
+.cm-table-widget {
+  width:    100% !important;
+  overflow: visible !important;
+}
+
+/* ── The <table> element ── */
+.cm-embed-block.cm-table-widget table,
+.cm-table-widget table,
+.markdown-source-view.mod-cm6 .cm-embed-block table {
+  width:           100% !important;
+  border-collapse: collapse !important;
+  border-spacing:  0 !important;
+  font-size:       0.9375em !important;
+  margin:          0 0 16px !important; /* top:0 — the mandatory blank line above already provides spacing */
+  border:          none !important; /* outer border carried by cells below */
+}
+
+/* ── Header cells ── */
+.cm-embed-block.cm-table-widget th,
+.cm-table-widget th {
+  background:     var(--notion-table-header-bg) !important;
+  color:          var(--notion-text-primary) !important;
+  font-weight:    700 !important;
+  font-size:      0.9375em !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  padding:        8px 12px !important;
+  border-top:     1px solid var(--notion-table-border) !important;
+  border-bottom:  1px solid var(--notion-table-border) !important;
+  border-right:   1px solid var(--notion-table-border) !important;
+  /* text-align omitted — lets Markdown alignment propagate */
+  vertical-align: top !important;
+  box-sizing:     border-box !important;
+}
+
+/* First cell in every row carries the outer left border */
+.cm-embed-block.cm-table-widget th:first-child,
+.cm-embed-block.cm-table-widget td:first-child,
+.cm-table-widget th:first-child,
+.cm-table-widget td:first-child {
+  border-left: 1px solid var(--notion-table-border) !important;
+}
+
+/* ── Data cells ── */
+.cm-embed-block.cm-table-widget td,
+.cm-table-widget td {
+  padding:        8px 12px !important;
+  border-bottom:  1px solid var(--notion-table-border) !important;
+  border-right:   1px solid var(--notion-table-border) !important;
+  color:          var(--notion-text-primary) !important;
+  vertical-align: top !important;
+  /* text-align omitted — lets Markdown alignment propagate */
+  box-sizing:     border-box !important;
+  line-height:    1.5 !important;
+}
+
+/* ── Any direct child wrapper Obsidian inserts ──
+   (div, span, p — strip extra spacing so the td padding wins) */
+.cm-embed-block.cm-table-widget td > *,
+.cm-embed-block.cm-table-widget th > *,
+.cm-table-widget td > *,
+.cm-table-widget th > * {
+  padding:    0 !important;
+  margin:     0 !important;
+  text-align: inherit !important; /* inherit from parent td so column alignment works */
+}
+
+/* ── Obsidian table-editor classes (internal table editor) ── */
+.table-editor-table td,
+.table-editor-table th {
+  padding:        8px 12px !important;
+  vertical-align: top !important;
+  box-sizing:     border-box !important;
+  /* text-align omitted — Markdown alignment propagates via inline style */
+}
+
+.table-editor-cell,
+.table-editor-cell-content {
+  padding:    0 !important;
+  margin:     0 !important;
+  text-align: inherit !important;
+}
+
+/* ── Textarea / input inside any table cell ──
+   Must NOT add its own padding on top of the td's. */
+.cm-embed-block.cm-table-widget td textarea,
+.cm-embed-block.cm-table-widget td input,
+.cm-table-widget td textarea,
+.cm-table-widget td input,
+.table-editor-table td textarea,
+.table-editor-table td input {
+  padding:     0 !important;
+  margin:      0 !important;
+  border:      none !important;
+  outline:     none !important;
+  box-shadow:  none !important;
+  background:  transparent !important;
+  resize:      none !important;
+  text-align:  inherit !important; /* inherit column alignment from td */
+  vertical-align: top !important;
+  font-family: var(--font-text-theme) !important;
+  font-size:   inherit !important;
+  line-height: 1.5 !important;
+  color:       var(--notion-text-primary) !important;
+  width:       100% !important;
+  min-height:  0 !important;
+  height:      auto !important;
+  box-sizing:  border-box !important;
+  overflow:    hidden !important;
+}
+
+/* ── CM editor injected inside a focused table cell ──
+   Reset height/padding so the mini editor fits the content,
+   not the page-level dimensions.                           */
+.cm-embed-block td .cm-editor,
+.cm-table-widget td .cm-editor {
+  min-height: unset !important;
+  height:     auto  !important;
+}
+
+.cm-embed-block td .cm-editor .cm-scroller,
+.cm-table-widget td .cm-editor .cm-scroller {
+  padding:    0     !important;
+  min-height: 0     !important;
+  overflow:   visible !important;
+}
+
+.cm-embed-block td .cm-editor .cm-line,
+.cm-table-widget td .cm-editor .cm-line {
+  padding: 0 !important;
+}
+
+/* ── Focused cell highlight (inset so size never changes) ── */
+.cm-embed-block.cm-table-widget td:focus-within,
+.cm-table-widget td:focus-within {
+  outline:    none !important;
+  box-shadow: inset 0 0 0 1px rgba(35, 130, 226, 0.35) !important;
+}
+
+/* ── Row hover ── */
+.cm-embed-block.cm-table-widget tr:hover td,
+.cm-table-widget tr:hover td {
+  background: var(--notion-table-row-hover) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   14c. CODE INSIDE TABLE CELLS (editor widget)
+   The table widget renders <code> as plain HTML elements, not
+   as .cm-inline-code spans, so they need their own rule.
+   ───────────────────────────────────────────────────────────── */
+
+.cm-embed-block code:not(pre code),
+.cm-table-widget code:not(pre code) {
+  background:    var(--notion-code-bg)     !important;
+  color:         var(--notion-code-text)   !important;
+  border:        1px solid var(--notion-code-border) !important;
+  border-radius: var(--notion-radius-sm)   !important;
+  font-family:   var(--font-monospace-theme) !important;
+  font-size:     0.875em                   !important;
+  padding:       0.15em 0.4em              !important;
+  white-space:   nowrap                    !important;
+}
+
+.cm-embed-block pre,
+.cm-table-widget pre {
+  background:    var(--notion-codeblock-bg)     !important;
+  border:        none                            !important;
+  border-radius: var(--notion-radius-md)         !important;
+  padding:       38px 20px 16px                  !important; /* top: room for lang label, matches reading view */
+  margin:        12px 0                          !important;
+  overflow-x:    auto                            !important;
+  position:      relative                        !important;
+}
+
+.cm-embed-block pre code,
+.cm-table-widget pre code {
+  background:  transparent !important;
+  color:       var(--notion-codeblock-text) !important;
+  border:      none !important;
+  padding:     0 !important;
+  font-family: var(--font-monospace-theme) !important;
+  font-size:   0.875em !important;
+  line-height: 1.7 !important;
+  white-space: pre !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   15. IMAGES & MEDIA
+   ───────────────────────────────────────────────────────────── */
+
+.markdown-preview-view img,
+.markdown-reading-view img {
+  border-radius:  var(--notion-radius-md) !important;
+  max-width:      100% !important;
+  height:         auto !important;
+  display:        block !important;
+  margin:         8px 0 !important;
+}
+
+/* Image captions */
+.markdown-preview-view img + em,
+.markdown-reading-view img + em {
+  display:    block !important;
+  text-align: center !important;
+  font-size:  0.8125em !important;
+  color:      var(--notion-text-tertiary) !important;
+  margin-top: 4px !important;
+  font-style: normal !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   16. TAGS
+   ───────────────────────────────────────────────────────────── */
+
+.tag {
+  background:    var(--notion-tag-bg)   !important;
+  color:         var(--notion-tag-text) !important;
+  border:        none !important;
+  border-radius: var(--notion-radius-sm) !important;
+  font-size:     0.8125em !important;
+  padding:       2px 8px !important;
+  text-decoration: none !important;
+  transition:    background 100ms ease !important;
+}
+
+.tag:hover {
+  background: var(--notion-bg-active) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   17. SEARCH
+   ───────────────────────────────────────────────────────────── */
+
+.search-result-file-title {
+  color:       var(--notion-text-primary) !important;
+  font-weight: 500 !important;
+}
+
+.search-result-file-match {
+  color:     var(--notion-text-secondary) !important;
+  font-size: 0.875em !important;
+}
+
+.search-result-file-match-text mark {
+  background: rgba(255, 212, 0, 0.25) !important;
+  color:      var(--notion-text-primary) !important;
+  border-radius: 2px !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   18. MODAL / COMMAND PALETTE
+   ───────────────────────────────────────────────────────────── */
+
+.modal:not(.mod-settings),
+.prompt {
+  background:    var(--notion-bg-primary) !important;
+  border:        1px solid var(--notion-border) !important;
+  border-radius: var(--notion-radius-lg) !important;
+  box-shadow:    rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,
+                 rgba(15, 15, 15, 0.1)  0px 3px 6px,
+                 rgba(15, 15, 15, 0.2)  0px 9px 24px !important;
+}
+
+.prompt-input {
+  background:    transparent !important;
+  border:        none !important;
+  border-bottom: 1px solid var(--notion-border) !important;
+  border-radius: 0 !important;
+  color:         var(--notion-text-primary) !important;
+  font-size:     16px !important;
+  padding:       12px 16px !important;
+}
+
+.suggestion-item {
+  border-radius: var(--notion-radius-sm) !important;
+  padding:       6px 12px !important;
+  font-size:     14px !important;
+  color:         var(--notion-text-primary) !important;
+  transition:    var(--notion-transition) !important;
+}
+
+.suggestion-item.is-selected,
+.suggestion-item:hover {
+  background: var(--notion-bg-hover) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   19. BUTTONS
+   ───────────────────────────────────────────────────────────── */
+
+.workspace button.mod-cta,
+.modal:not(.mod-settings) button.mod-cta {
+  background:    var(--interactive-accent)  !important;
+  color:         var(--text-on-accent)      !important;
+  border:        none !important;
+  border-radius: var(--notion-radius-sm)    !important;
+  font-weight:   500 !important;
+  padding:       6px 14px !important;
+  cursor:        pointer !important;
+  transition:    opacity 100ms !important;
+}
+
+.workspace button.mod-cta:hover,
+.modal:not(.mod-settings) button.mod-cta:hover {
+  opacity: 0.85 !important;
+}
+
+.workspace button:not(.mod-cta):not(.clickable-icon),
+.modal:not(.mod-settings) button:not(.mod-cta):not(.clickable-icon) {
+  border:        1px solid var(--notion-border) !important;
+  border-radius: var(--notion-radius-sm) !important;
+  background:    transparent !important;
+  color:         var(--notion-text-primary) !important;
+  padding:       5px 12px !important;
+  cursor:        pointer !important;
+  transition:    var(--notion-transition) !important;
+}
+
+.workspace button:not(.mod-cta):not(.clickable-icon):hover,
+.modal:not(.mod-settings) button:not(.mod-cta):not(.clickable-icon):hover {
+  background: var(--notion-bg-hover) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   20. TOOLBAR / RIBBON
+   ───────────────────────────────────────────────────────────── */
+
+.workspace-ribbon {
+  background: var(--notion-bg-sidebar) !important;
+  border-right: 1px solid var(--notion-border) !important;
+}
+
+.side-dock-ribbon-action {
+  color:         var(--notion-text-secondary) !important;
+  border-radius: var(--notion-radius-sm) !important;
+  transition:    var(--notion-transition) !important;
+}
+
+.side-dock-ribbon-action:hover {
+  background: var(--notion-bg-hover) !important;
+  color:      var(--notion-text-primary) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   21. STATUS BAR
+   ───────────────────────────────────────────────────────────── */
+
+.status-bar {
+  background:  var(--notion-bg-secondary) !important;
+  border-top:  1px solid var(--notion-border) !important;
+  color:       var(--notion-text-tertiary) !important;
+  font-size:   12px !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   22. SCROLLBARS
+   ───────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width:  6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--notion-scrollbar-bg) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background:    var(--notion-scrollbar-thumb) !important;
+  border-radius: 999px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--notion-border-strong) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   23. SELECTION HIGHLIGHT
+   ───────────────────────────────────────────────────────────── */
+
+::selection {
+  background: rgba(35, 130, 226, 0.18) !important;
+  color:      inherit !important;
+}
+
+.theme-dark ::selection {
+  background: rgba(82, 156, 202, 0.25) !important;
+}
+
+/* Editor text selection */
+.cm-editor .cm-selectionBackground {
+  background: rgba(35, 130, 226, 0.15) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   24. FRONT-MATTER / PROPERTIES PANEL
+   ───────────────────────────────────────────────────────────── */
+
+.metadata-container {
+  background:    var(--notion-bg-secondary) !important;
+  border:        1px solid var(--notion-border) !important;
+  border-radius: var(--notion-radius-md) !important;
+  padding:       12px 16px !important;
+  margin-bottom: 24px !important;
+  font-size:     0.875em !important;
+  box-sizing:    border-box !important;
+  width:         100% !important;
+}
+
+/* In editing mode the metadata container sits outside .cm-content,
+   so constrain it to match the body text column width exactly.
+   width: calc(100% - padding*2) handles panels narrower than max-width;
+   max-width caps it at the same column width as the body text. */
+.markdown-source-view .metadata-container {
+  width:         calc(100% - var(--notion-page-padding) * 2) !important;
+  max-width:     calc(var(--notion-content-width) - var(--notion-page-padding) * 2) !important;
+  margin-left:   auto !important;
+  margin-right:  auto !important;
+  margin-bottom: 12px !important;
+}
+
+.metadata-property-key {
+  color:       var(--notion-text-secondary) !important;
+  font-weight: 500 !important;
+  font-size:   0.8125em !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  border:      none !important;
+  /* Increase key column width ~10% over Obsidian's default (~10em) */
+  flex:        0 0 11em !important;
+  min-width:   11em     !important;
+}
+
+.metadata-property-key input.metadata-property-key-input,
+.metadata-property-key input.metadata-property-key-input:hover,
+.metadata-property-key input.metadata-property-key-input:focus,
+.metadata-property-key input.metadata-property-key-input:focus-within,
+.workspace .metadata-property-key input[type="text"] {
+  border:     none !important;
+  outline:    none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding:    0 !important;
+}
+
+.metadata-property-key,
+.metadata-property-key:hover,
+.metadata-property-key:focus,
+.metadata-property-key:focus-within {
+  border:     none !important;
+  outline:    none !important;
+  box-shadow: none !important;
+}
+
+.metadata-property-value {
+  color: var(--notion-text-primary) !important;
+}
+
+/* Tag pills inside metadata properties */
+.multi-select-pill,
+.metadata-property-value .multi-select-pill,
+.metadata-content .multi-select-pill {
+  border:     none !important;
+  outline:    none !important;
+  box-shadow: none !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   25. PAGE TITLE (inline editor title)
+   ───────────────────────────────────────────────────────────── */
+
+/* Common title style — both modes */
+.inline-title {
+  font-size:      2.5em  !important;
+  font-weight:    700    !important;
+  line-height:    1.2    !important;
+  color:          var(--notion-text-primary) !important;
+  letter-spacing: -0.02em !important;
+  padding-bottom: 8px    !important;
+  border-bottom:  1px solid var(--notion-border) !important;
+  margin-bottom:  24px   !important;
+  font-family:    var(--font-text-theme) !important;
+  display:        block  !important;
+  box-sizing:     border-box !important;
+}
+
+/* Editing mode: title sits outside .cm-content, needs its own
+   padding + width to align with the body text column */
+.markdown-source-view .inline-title {
+  padding-top:   40px  !important;
+  padding-left:  var(--notion-page-padding) !important;
+  padding-right: var(--notion-page-padding) !important;
+  max-width:     var(--notion-content-width) !important;
+  margin-left:   auto !important;
+  margin-right:  auto !important;
+  width:         100% !important;
+  /* border-bottom would span the full 1080px element width (including
+     padding), so replace it with a pseudo-element that starts/ends at
+     the padding edges, matching the body text column exactly.        */
+  border-bottom: none !important;
+  position:      relative !important;
+}
+
+.markdown-source-view .inline-title::after {
+  content:    "" !important;
+  display:    block !important;
+  position:   absolute !important;
+  bottom:     0 !important;
+  left:       var(--notion-page-padding) !important;
+  right:      var(--notion-page-padding) !important;
+  height:     1px !important;
+  background: var(--notion-border) !important;
+}
+
+.view-header-title {
+  font-size:   14px !important;
+  font-weight: 500 !important;
+  color:       var(--notion-text-primary) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   26. GRAPH VIEW
+   ───────────────────────────────────────────────────────────── */
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--notion-text-link) !important;
+}
+
+
+
+/* ─────────────────────────────────────────────────────────────
+   28. INPUT FIELDS
+   ───────────────────────────────────────────────────────────── */
+
+.workspace input[type="text"],
+.workspace input[type="search"],
+.workspace input[type="email"],
+.workspace input[type="password"],
+.workspace textarea,
+.workspace select,
+.modal:not(.mod-settings) input[type="text"],
+.modal:not(.mod-settings) input[type="search"],
+.modal:not(.mod-settings) textarea {
+  background:    var(--notion-bg-secondary) !important;
+  border:        1px solid var(--notion-border) !important;
+  border-radius: var(--notion-radius-sm) !important;
+  color:         var(--notion-text-primary) !important;
+  font-family:   var(--font-text-theme) !important;
+  font-size:     14px !important;
+  padding:       6px 10px !important;
+  transition:    border-color 120ms !important;
+}
+
+.workspace input[type="text"]:focus,
+.workspace input[type="search"]:focus,
+.workspace textarea:focus,
+.modal:not(.mod-settings) input[type="text"]:focus,
+.modal:not(.mod-settings) input[type="search"]:focus,
+.modal:not(.mod-settings) textarea:focus {
+  border-color: var(--notion-text-link) !important;
+  outline:      none !important;
+  box-shadow:   0 0 0 2px rgba(35, 130, 226, 0.15) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   29. DIVIDERS
+   ───────────────────────────────────────────────────────────── */
+
+.workspace-split.mod-vertical > .workspace-split-child:not(:last-child),
+.workspace-split.mod-horizontal > .workspace-split-child:not(:last-child) {
+  border-right:  1px solid var(--notion-border) !important;
+  border-bottom: 1px solid var(--notion-border) !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   30. MOBILE RESPONSIVE
+   ───────────────────────────────────────────────────────────── */
+
+@media screen and (max-width: 768px) {
+  .markdown-preview-view .markdown-preview-section {
+    padding: 24px var(--notion-page-padding-sm) 60px !important;
+  }
+
+  .cm-editor .cm-content {
+    padding: 24px var(--notion-page-padding-sm) 60px !important;
+  }
+
+  .markdown-preview-view h1,
+  .markdown-reading-view h1,
+  .cm-header-1 {
+    font-size: 1.5em !important; /* 24px on mobile */
+  }
+
+  .markdown-preview-view h2,
+  .markdown-reading-view h2,
+  .cm-header-2 {
+    font-size: 1.25em !important;
+  }
+
+  .markdown-preview-view h3,
+  .markdown-reading-view h3,
+  .cm-header-3 {
+    font-size: 1.125em !important;
+  }
+
+  .inline-title {
+    font-size: 1.875em !important;
+  }
+
+  /* Edit-mode title + metadata: match reading-mode layout on mobile */
+  .markdown-source-view .inline-title {
+    padding-top:   24px !important;
+    padding-left:  var(--notion-page-padding-sm) !important;
+    padding-right: var(--notion-page-padding-sm) !important;
+    max-width:     100% !important;
+  }
+
+  .markdown-source-view .inline-title::after {
+    left:  var(--notion-page-padding-sm) !important;
+    right: var(--notion-page-padding-sm) !important;
+  }
+
+  .markdown-source-view .metadata-container {
+    width:        auto !important;
+    max-width:    100% !important;
+    margin-left:  var(--notion-page-padding-sm) !important;
+    margin-right: var(--notion-page-padding-sm) !important;
+  }
+
+  /* Stack nav full width */
+  .nav-file-title,
+  .nav-folder-title {
+    font-size:  15px !important;
+    min-height: 34px !important;
+    padding:    5px 10px 5px 10px !important;
+  }
+
+  table {
+    display:    block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .markdown-preview-view .markdown-preview-section {
+    padding: 16px 16px 48px !important;
+  }
+
+  .cm-editor .cm-content {
+    padding: 16px 16px 48px !important;
+  }
+
+  .markdown-source-view .inline-title {
+    padding-top:   16px !important;
+    padding-left:  16px !important;
+    padding-right: 16px !important;
+  }
+
+  .markdown-source-view .inline-title::after {
+    left:  16px !important;
+    right: 16px !important;
+  }
+
+  .markdown-source-view .metadata-container {
+    margin-left:  16px !important;
+    margin-right: 16px !important;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   31. MERMAID DIAGRAMS
+   ───────────────────────────────────────────────────────────── */
+
+/* In reading mode, global line-height / font-size / font-family rules
+   bleed into Mermaid's foreignObject HTML content.
+   Mermaid pre-calculates fixed node dimensions — if the rendered text
+   is taller/wider than expected the content gets clipped.
+   Fix: reset all potentially conflicting properties inside .mermaid. */
+
+.markdown-preview-view .mermaid,
+.markdown-reading-view .mermaid {
+  font-family: "trebuchet ms", verdana, arial, sans-serif !important;
+  font-size:   14px   !important;
+  line-height: normal !important;
+}
+
+/* foreignObject clips via SVG attribute overflow="hidden";
+   override with CSS to prevent text cut-off */
+.markdown-preview-view .mermaid foreignObject,
+.markdown-reading-view .mermaid foreignObject {
+  overflow: visible !important;
+}
+
+/* Reset global theme rules that bleed into node label divs */
+.markdown-preview-view .mermaid foreignObject div,
+.markdown-preview-view .mermaid foreignObject p,
+.markdown-preview-view .mermaid foreignObject span,
+.markdown-reading-view .mermaid foreignObject div,
+.markdown-reading-view .mermaid foreignObject p,
+.markdown-reading-view .mermaid foreignObject span {
+  font-family: "trebuchet ms", verdana, arial, sans-serif !important;
+  font-size:   14px   !important;
+  line-height: normal !important;
+  white-space: nowrap !important;
+}
+
+/* Vertically center label text within foreignObject */
+.markdown-preview-view .mermaid foreignObject > div,
+.markdown-reading-view .mermaid foreignObject > div {
+  display:         flex          !important;
+  align-items:     center        !important;
+  justify-content: center        !important;
+  height:          100%          !important;
+}
+
+.mermaid svg {
+  overflow: visible !important;
+  max-width: 100%   !important;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   32. MISCELLANEOUS POLISH
+   ───────────────────────────────────────────────────────────── */
+
+/* Remove heavy box shadows on panes */
+.workspace-leaf {
+  box-shadow: none !important;
+}
+
+/* Focus outline — only for genuinely interactive controls */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+[role="link"]:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline:        2px solid var(--notion-text-link) !important;
+  outline-offset: 2px !important;
+}
+
+/* Headings and inline title: never show focus ring */
+h1:focus, h1:focus-visible,
+h2:focus, h2:focus-visible,
+h3:focus, h3:focus-visible,
+h4:focus, h4:focus-visible,
+h5:focus, h5:focus-visible,
+h6:focus, h6:focus-visible,
+.inline-title:focus,
+.inline-title:focus-visible,
+.metadata-container:focus,
+.metadata-container:focus-visible {
+  outline:    none !important;
+  box-shadow: none !important;
+}
+
+/* Strip CodeMirror's own focus ring entirely */
+.cm-editor.cm-focused {
+  outline: none !important;
+}
+
+.cm-editor:focus,
+.cm-editor:focus-visible,
+.cm-content:focus,
+.cm-content:focus-visible,
+.cm-scroller:focus,
+.cm-scroller:focus-visible {
+  outline:    none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure code font in source mode */
+.cm-editor {
+  font-family: var(--font-text-theme) !important;
+}
+
+/* Cursor color */
+.cm-editor .cm-cursor {
+  border-left-color: var(--notion-text-primary) !important;
+}
+
+/* Word count / status indicators */
+.status-bar-item {
+  color: var(--notion-text-tertiary) !important;
+}
+
+/* Folder collapse indicator SVG color */
+.nav-folder-collapse-indicator svg {
+  stroke: var(--notion-text-tertiary) !important;
+}
+
+/* Workspace split resize handle */
+.workspace-leaf-resize-handle {
+  background: transparent !important;
+}
+
+.workspace-leaf-resize-handle:hover {
+  background: var(--notion-border) !important;
+}
+
+/* ── End of Notion Style Theme ── */

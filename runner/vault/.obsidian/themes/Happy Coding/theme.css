@@ -1,0 +1,617 @@
+/*-------------------------------------------------------
+
+        HAPPY CODING THEME
+
+--------------------------------------------------------*/
+
+
+/********* TABLE OF CONTENTS *********/
+/*
+/*
+/* 1. Definition of colors
+/*     1.1. Background colors for dark theme
+/*     1.2. Background colors for light theme
+/*     1.3. Text colors for dark theme
+/*     1.4. Text colors for light theme
+/*     1.5. Color palette
+/*     1.6. Faded color palette
+/* 2. General UI variables
+/* 3. Dark theme implementation
+/*     3.1. Background colors for dark theme
+/*     3.2. Text colors for dark theme
+/*     3.3. Note Title
+/*     3.4. Headers
+/*     3.5. Text formatting
+/*         3.5.1 Bold and italic
+/*     3.6. Links
+/*     3.7. Tags color
+/*     3.8. Title Bar
+/*     3.9. Checkboxes and task lists
+/*     3.10. Tables
+/*     3.11. Selected text with the mouse
+/*     3.12. Code blocks and inline code
+/*     3.13. Icons and navigation
+/*     3.14. Graph view colors
+/*     3.15. Calendar colors
+/*     3.16. Tabs
+/* 4. Light theme implementation
+/*     4.1 Background colors for dark theme 
+/*     4.2 Text colors for light theme 
+/*     4.3 Note Title 
+/*     4.4 Headers 
+/*     4.5 Text formatting
+/*         4.5.1 Bold and italic 
+/*     4.6 Links 
+/*     4.7 Tags color 
+/*     4.8 Title Bar 
+/*     4.9 Checkboxes and task lists 
+/*     4.10 Tables 
+/*     4.11 Selected text with the mouse 
+/*     4.12 Code blocks and inline code 
+/*     4.13 Icons and navigation 
+/*     4.14 Graph view colors 
+/*     4.15 Calendar colors 
+/*     4.16 Tabs 
+/* 5. Elements 
+/*     5.1 Tables headers and cells 
+/*     5.2 Images 
+/*     5.3 Checkboxes 
+/*     5.4 Code blocks and inline code 
+/* 6. Classes 
+/*     6.1. Tables rows colors 
+/*     6.2. Searching highlights 
+/*     6.3. Tag links 
+/*     6.4. URL Link behaviour 
+/*     6.5. Calendar 
+/*     6.6. Title of embedded notes 
+/*     6.7. Active line highlight in the editor 
+/*     6.8. Navigation file tags  
+/*     6.9. Highlighted text color format 
+/***** *****/
+
+
+/* 1. Definition of colors */
+:root
+{
+    /* 1.1. Background colors for dark theme */
+    --bg-dark0: #181818;
+    --bg-dark1: #1F1F1F;
+    --bg-dark2: #000000;
+
+    /* 1.2. Background colors for light theme */
+    --bg-light0: #ffffff;
+    --bg-light1: #c7c8d6;
+    --bg-light2: #a9a9b3;
+
+    /* 1.3. Text colors for dark theme */
+    --light0:   #d8dee9;
+    --light1:   #e5e9f0;
+    --light2:   #eceff4;
+    --light3:   #ffffff;
+
+    /* 1.4. Text colors for light theme */
+    --dark0:    #2e3440; 
+    --dark1:    #3b4252; 
+    --dark2:    #434c5e;
+    --dark3:    #4c566a;
+
+    /* 1.5. Color palette */
+    --coral:         #f94144;
+    --tangelo:       #f3722c;
+    --beer:          #f8961e;
+    --maize:         #f9c74f;
+    --pistachio:     #90be6d;
+    --zomp:          #43aa8b;
+    --ucla:          #577590;
+    --cadmium:       #903498;
+
+    /* 1.6. Faded color palette */
+    --faded0-coral:   #f9414446;
+    --faded1-coral:   #f941441e;
+    --faded0-tangelo: #f3722c80;
+
+    --red_x:    #FF0000; /* #bf616a */
+}
+
+/* 2. General UI variables */
+body
+{
+
+    --link-decoration:                none;
+    --link-decoration-hover:          none;
+    --link-external-decoration:       none;
+    --link-external-decoration-hover: none;
+
+    --tag-decoration:                 none;
+    --tag-decoration-hover:           underline;
+    --tag-padding-x:                  .5em;
+    --tag-padding-y:                  .2em;
+    --tag-radius:                     .5em;
+
+    --tab-font-weight:                600;
+    --bold-weight:                    900;
+
+    --checkbox-radius:                0px;
+
+	--font-text-theme:                Courier New;    
+
+    --embed-border-left: 6px double var(--interactive-accent);
+}
+
+/* 3. Dark theme implementation */
+.theme-dark
+{
+    /* 3.1 Background colors for dark theme */
+    --background-primary:            var(--bg-dark1);
+    --background-primary-alt:        var(--bg-dark1);
+    --background-secondary:          var(--bg-dark0);
+    --background-secondary-alt:      var(--bg-dark2);
+    --background-modifier-border:    var(--bg-dark0);
+
+    --cursor-line-background:        var(--faded1-coral);
+
+    /* 3.2 Text colors for dark theme */
+    --text-normal:                   var(--light2);
+    --text-faint:                    var(--light0);
+    --text-muted:                    var(--light1);
+
+
+    --link-url:                      var(--tangelo);
+
+
+    /* 3.3. Note Title */
+    --inline-title-color:            var(--coral);
+
+    /* 3.4 Headers */
+    --h1-color:                     var(--tangelo);
+    --h2-color:                     var(--beer);
+    --h3-color:                     var(--maize);
+    --h4-color:                     var(--pistachio);
+    --h5-color:                     var(--zomp);
+    --h6-color:                     var(--ucla);
+
+    /* 3.5 Text formatting */
+
+
+    /* 3.5.1 Bold and italic */
+    --bold-color:                    var(--beer);
+    --italic-color:                  var(--beer);
+
+    /* 3.6 Links */
+    --text-accent:                   var(--tangelo);
+    --text-accent-hover:             var(--faded0-tangelo);
+
+    /* 3.7 Tags color */
+    --tag-color:                     var(--bg-dark0);
+    --tag-background:                var(--pistachio);
+    --tag-background-hover:          var(--dark1);
+
+    /* 3.8 Title Bar */
+    --titlebar-text-color-focused:   var(--coral);
+
+    /* 3.9 Checkboxes and task lists */
+    --checkbox-color:                var(--beer);
+    --checkbox-color-hover:          var(--beer);
+    --checkbox-border-color:         var(--beer);
+    --checkbox-border-color-hover:   var(--beer);
+    --checklist-done-color:          var(--light2_x);/*rgba(var(--light2_x), 0.5);*/
+
+    /* 3.10 Tables */
+    --table-header-background:       hsl(220, 16%, 16%);
+    --table-header-background-hover: var(--dark3);
+    --table-row-even-background:     hsl(220, 16%, 20%);
+    --table-row-odd-background:      hsl(220, 16%, 24%);
+    --table-row-background-hover:    var(--dark3);
+
+    /* 3.11 Selected text with the mouse */
+    --text-selection:                var(--faded0-coral);
+
+    /* 3.12 Code blocks and inline code */
+    --code-normal:                   var(--light3);
+    --code-background:               var(--bg-dark0);
+
+
+    /* 3.13 Icons and navigation */
+    --icon-color-hover:              var(--beer);
+    --icon-color-focused:            var(--tangelo);
+
+    --nav-item-color-hover:          var(--tangelo);
+    --nav-item-color-active:         var(--coral);
+    --nav-file-tag:                  var(--beer);
+
+    /* 3.14 Graph view colors */
+    --graph-text:                    var(--light2);     /* Text color for node labels in the graph */
+    --graph-line:                    var(--light2);     /* Color of the lines connecting nodes (links) */
+    --graph-node:                    var(--light2);     /* Default color of nodes */
+    --graph-node-unresolved:         var(--dark3);      /* Color of nodes that are unresolved (e.g., links to non-existent notes) */
+    --graph-node-focused:            var(--tangelo);    /* Color of the currently focused node */
+    --graph-node-tag:                var(--pistachio);  /* Color of nodes representing tags */
+    --graph-node-attachment:         var(--beer);       /* Color of nodes representing attachments */
+
+    /* 3.15 Calendar colors */
+    --calendar-hover:                var(--tangelo);
+    --calendar-background-hover:     var(--bg-dark1);
+    --calendar-week:                 var(--beer);
+    --calendar-today:                var(--beer);
+
+
+    /* 3.16 Tabs */
+    --tab-text-color-focused-active:         var(--bg-dark0);
+    --tab-text-color-focused-active-current: var(--coral);
+}
+
+
+/* 4. Light theme implementation */
+.theme-light
+{
+    /* 4.1 Background colors for dark theme */
+    --background-primary:            var(--bg-light0);
+    --background-primary-alt:        var(--bg-light0);
+    --background-secondary:          var(--bg-light1);
+    --background-secondary-alt:      var(--bg-light2);
+    --background-modifier-border:    var(--bg-light1);
+
+    --cursor-line-background:        var(--faded1-coral);
+
+    /* 4.2 Text colors for light theme */
+    --text-normal:                   var(--dark2);
+    --text-faint:                    var(--dark0);
+    --text-muted:                    var(--dark1);
+
+
+    --link-url:                      var(--tangelo);
+
+    /* 4.3 Note Title */
+    --inline-title-color:            var(--coral);
+
+    /* 4.4 Headers */
+    --h1-color: var(--tangelo);
+    --h2-color: var(--beer);
+    --h3-color: var(--maize);
+    --h4-color: var(--pistachio);
+    --h5-color: var(--zomp);
+    --h6-color: var(--ucla);
+
+    /* 4.5 Text formatting */
+
+    /* 4.5.1 Bold and italic */
+    --bold-color:                    var(--beer);
+    --italic-color:                  var(--beer);
+
+    /* 4.6 Links */
+    --text-accent:                   var(--tangelo);
+    --text-accent-hover:             var(--faded0-tangelo);
+
+    /* 4.7 Tags color */
+    --tag-color:                     var(--bg-dark0);
+    --tag-background:                var(--pistachio);
+    --tag-background-hover:          var(--dark1);
+
+    /* 4.8 Title Bar */
+    --titlebar-text-color-focused:   var(--coral);
+
+    /* 4.9 Checkboxes and task lists */
+    --checkbox-color:                var(--beer);
+    --checkbox-color-hover:          var(--beer);
+    --checkbox-border-color:         var(--beer);
+    --checkbox-border-color-hover:   var(--beer);
+    --checklist-done-color:          var(--light2_x);/*rgba(var(--light2_x), 0.5);*/
+
+    /* 4.10 Tables */
+    --table-header-background:       hsl(218, 9%, 57%);
+    --table-header-background-hover: var(--dark3);
+    --table-row-even-background:     hsl(223, 13%, 78%);
+    --table-row-odd-background:      hsl(219, 8%, 58%);
+    --table-row-background-hover:    var(--dark3);
+
+    /* 4.11 Selected text with the mouse */
+    --text-selection:                var(--faded0-coral);
+    --flashing-background:           blue; /*rgba(var(--red_x), 0.0); */
+
+    /* 4.12 Code blocks and inline code */
+    --code-normal:                   var(--dark3);
+    --code-background:               var(--bg-light1);
+
+    /* 4.13 Icons and navigation */
+    --icon-color-hover:              var(--beer);
+    --icon-color-focused:            var(--tangelo);
+
+    --nav-item-color-hover:          var(--tangelo);
+    --nav-item-color-active:         var(--coral);
+    --nav-file-tag:                  var(--beer);
+
+    /* 4.14 Graph view colors */
+    --graph-text:               var(--dark2);     /* Text color for node labels in the graph */
+    --graph-line:               var(--dark2);     /* Color of the lines connecting nodes (links) */
+    --graph-node:               var(--dark2);     /* Default color of nodes */
+    --graph-node-unresolved:    var(--dark2);      /* Color of nodes that are unresolved (e.g., links to non-existent notes) */
+    --graph-node-focused:       var(--tangelo);    /* Color of the currently focused node */
+    --graph-node-tag:           var(--pistachio);  /* Color of nodes representing tags */
+    --graph-node-attachment:    var(--beer);       /* Color of nodes representing attachments */
+
+    /* 4.15 Calendar colors */
+    --calendar-hover:                var(--tangelo);
+    --calendar-background-hover:     var(--dark0);
+    --calendar-week:                 var(--beer);
+    --calendar-today:                var(--beer);
+
+    /* 4.16 Tabs */
+    --tab-text-color-focused-active:         var(--dark0);
+    --tab-text-color-focused-active-current: var(--coral);
+}
+
+/* 5. Elements */
+
+/* 5.1 Tables headers and cells */
+table
+{
+    border: 1px solid var(--background-secondary) !important;
+    border-collapse: collapse;
+}
+
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border) !important;
+}
+  
+th
+{
+    font-weight: 600 !important;
+    border: 1px solid var(--background-secondary) !important;
+}
+
+td
+{
+    border-left: 1px solid var(--background-secondary) !important;
+    border-right: 1px solid var(--background-secondary) !important;
+    border-bottom: 1px solid var(--background-secondary) !important;
+}
+
+
+/* 5.2 Images */
+img
+{
+    display: block ;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+/* 5.3 Checkboxes */
+input[type=checkbox]
+{
+     border: 1px solid var(--checkbox-color);
+}
+
+input[type=checkbox]:checked
+{
+    background-color: var(--checkbox-color);
+    /* box-shadow: inset 0 0 0 2px var(--background-primary); */
+}
+
+input[type=checkbox]:checked:after
+{
+    /* display: none; */
+}
+
+
+/* 5.4 Code blocks and inline code */
+code[class*="language-"],
+pre[class*="language-"]
+{
+    line-height: var(--line-height-tight) !important;
+}
+
+
+/* 6. Classes */
+
+/* 6.1. Tables rows colors */
+.markdown-rendered tbody tr:nth-child(even)
+{
+    background-color: var(--table-row-even-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(odd)
+{
+    background-color: var(--table-row-odd-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even):hover,
+.markdown-rendered tbody tr:nth-child(odd):hover
+{
+    background-color: var(--table-row-background-hover) !important;
+}
+
+
+/*
+Test 1: Set a blue color to see if something changes. Nothing
+Test 2: Commented to see what happens.
+Test 3: Keep it commented and move to the next class.
+*/
+/*
+.markdown-rendered mark
+{
+    
+    background-color: var(--text-highlight-bg);
+    color: var(--text-highlight-fg);
+    
+}
+*/
+
+/*
+Test 1: Set a blue color to see if something changes. Nothing
+Test 2: Commented to see what happens.
+Test 3: Keep it commented and move to the next class.
+*/
+/*
+.markdown-rendered mark a
+{
+    
+    color: var(--red_x) !important;
+    font-weight: 600;
+
+}
+*/
+
+
+/* 6.2. Searching highlights */
+/* Hightlighted text when searching */
+.search-result-file-matched-text
+{
+    color: var(--text-highlight-fg) !important;
+}
+
+
+/* 6.3. Tag links */
+/* Color of the hashtag link when the mouse is over it */
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    color: var(--text-accent);
+    text-decoration: underline;
+    
+}
+
+
+/* 6.4. URL Link behaviour */
+/* Color of the link when the mouse is NOT over it and the line is selecter */
+.cm-url
+{
+    color: var(--link-url) !important;
+}
+
+/* Color of the link when the mouse is over it and the line is selecter */
+.cm-url:hover
+{
+    color: var(--text-accent-hover) !important;
+}
+
+
+
+/* Keep inline code the same between viewer and editor. */
+/*
+.cm-inline-code
+{
+    border-radius: var(--radius-s);
+    font-size: var(--code-size);
+    padding: 0.1em 0.25em;
+}
+*/
+
+/*
+.cm-formatting-code + .cm-inline-code
+{
+    border-radius: 0;
+    padding: 0.1em 0;
+}
+*/
+
+/*
+.cm-formatting-code
+{
+    border-radius: var(--radius-s) 0 0 var(--radius-s);
+    padding: 0.1em 0 0.1em 0.25em;
+}
+*/
+
+
+/*
+.cm-inline-code + .cm-formatting-code
+{
+    border-radius: 0 var(--radius-s) var(--radius-s) 0;
+    padding: 0.1em 0.25em 0.1em 0;
+}
+
+.cm-line .cm-strong
+{
+    color: var(--bold-color) !important;
+}
+
+*/
+
+
+/* 6.5. Calendar */
+.calendar .week-num
+{
+    color: var(--calendar-week) !important;
+}
+
+.calendar .today
+{
+    color: var(--calendar-today) !important;
+}
+
+.calendar .week-num:hover,
+.calendar .day:hover
+{
+    color: var(--calendar-hover) !important;
+    background-color: var(--calendar-background-hover) !important;
+}
+
+
+/* 6.6. Title of embedded notes */
+/* KEEP: Shows how the notes inside other notes are shown. */
+.markdown-embed-title
+{
+    color:       var(--beer);
+    font-weight: 600 !important;
+    
+}
+
+/* 6.7. Active line highlight in the editor */
+/* KEEP: Active line highlight in the editor  */
+.cm-active
+{
+    background-color: var(--cursor-line-background) !important;
+}
+
+
+/* 6.8. Navigation file tags  */
+/* KEEP: Responsible for the file extensions */
+.nav-file-tag
+{
+    color: var(--beer) !important;
+}
+
+
+/*
+Commented to test the theme without it.
+Google is not clear about the Class.
+Test 1: Commented and nothing happens.
+Test 2: set a blue color to see if something changes. None.
+Test 3: Keep it commented and move to the next class.
+*/
+/*
+.is-flashing
+{
+    background-color: var(--flashing-background) !important;
+}
+*/
+
+
+/*
+Commented to test the theme without it.
+Google is not clear about the Class.
+Test 1: Commented and nothing happens.
+Test 2: set a blue color to see if something changes. None.
+Test 3: Keep it commented and move to the next class.
+*/
+/*
+.suggestion-highlight
+{
+    color: var(--tangelo);
+}
+*/
+
+    
+
+
+/* 6.9. Highlighted text color format */
+.cm-highlight, mark
+{
+    --text-highlight-bg:  var(--beer) !important;
+    --text-highlight-fg:  var(--background-primary) !important;
+
+    /* Bold and italic */
+    --bold-color:         black !important; /*var(--background-primary) !important;*/
+    --italic-color:       black !important; /*var(--background-primary) !important; */
+    --text-normal:        black !important; /*var(--background-primary) !important; */
+}

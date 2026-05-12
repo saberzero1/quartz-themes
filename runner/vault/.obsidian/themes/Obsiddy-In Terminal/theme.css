@@ -1,0 +1,854 @@
+/* ============================================================
+   Terminal — an Obsidian theme
+   Retrofuturistic. Amber on dark. CRT warmth.
+   by Leon Jacobs
+   ============================================================ */
+
+/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+
+/* ============================================================
+   SHARED — applies to both modes
+   ============================================================ */
+
+body {
+  --font-text-theme: 'IBM Plex Mono', 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --font-interface-theme: 'IBM Plex Mono', 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --font-monospace-theme: 'IBM Plex Mono', 'SF Mono', 'Fira Code', 'Consolas', monospace;
+
+  --font-ui-small: 11px;
+  --font-ui-medium: 13px;
+  --font-ui-large: 18px;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 500;
+  --font-bold: 600;
+  --bold-modifier: 600;
+
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.35;
+
+  --radius-s: 2px;
+  --radius-m: 3px;
+  --radius-l: 4px;
+  --radius-xl: 6px;
+  --input-radius: 3px;
+  --tab-radius-active: 3px;
+  --toggle-radius: 3px;
+  --checkbox-radius: 2px;
+  --slider-thumb-radius: 3px;
+
+  --border-width: 1px;
+
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+
+  /* heading scale */
+  --h1-size: 1.5em;
+  --h2-size: 1.3em;
+  --h3-size: 1.15em;
+  --h4-size: 1.05em;
+  --h5-size: 1em;
+  --h6-size: 0.9em;
+
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+
+  --heading-spacing: 0.06em;
+
+  /* lists */
+  --list-indent: 2em;
+  --list-spacing: 0.15em;
+
+  /* scrollbar */
+  --scrollbar-thumb-bg: rgba(128, 118, 108, 0.3);
+}
+
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+
+.theme-dark {
+  /* ---- color scale ---- */
+  --color-base-00: #0a0a0c;
+  --color-base-05: #0e0e11;
+  --color-base-10: #111114;
+  --color-base-20: #18181c;
+  --color-base-25: #1a1a1f;
+  --color-base-30: #222228;
+  --color-base-35: #2a2520;
+  --color-base-40: #3d3835;
+  --color-base-50: #4d4843;
+  --color-base-60: #6b6560;
+  --color-base-70: #8a837c;
+  --color-base-100: #e8e0d4;
+
+  /* ---- accent (amber) ---- */
+  --accent-h: 36;
+  --accent-s: 90%;
+  --accent-l: 55%;
+
+  /* ---- backgrounds ---- */
+  --background-primary: #0a0a0c;
+  --background-primary-alt: #0e0e11;
+  --background-secondary: #111114;
+  --background-secondary-alt: #18181c;
+  --background-modifier-hover: #1a1a1f;
+  --background-modifier-active-hover: #222228;
+  --background-modifier-border: #2a2520;
+  --background-modifier-border-hover: #3d3835;
+  --background-modifier-border-focus: #f5a623;
+  --background-modifier-error: rgba(255, 59, 48, 0.12);
+  --background-modifier-success: rgba(57, 255, 20, 0.08);
+  --background-modifier-message: rgba(245, 166, 35, 0.06);
+  --background-modifier-form-field: #111114;
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+
+  /* ---- text ---- */
+  --text-normal: #e8e0d4;
+  --text-muted: #6b6560;
+  --text-faint: #3d3835;
+  --text-on-accent: #0a0a0c;
+  --text-on-accent-inverted: #f5a623;
+  --text-error: #ff3b30;
+  --text-success: #39ff14;
+  --text-warning: #f5a623;
+  --text-accent: #f5a623;
+  --text-accent-hover: #ffc56c;
+  --text-selection: rgba(245, 166, 35, 0.12);
+  --text-highlight-bg: rgba(245, 166, 35, 0.18);
+
+  /* ---- interactive ---- */
+  --interactive-normal: #111114;
+  --interactive-hover: #1a1a1f;
+  --interactive-accent: #f5a623;
+  --interactive-accent-hover: #ffc56c;
+
+  /* ---- headings ---- */
+  --h1-color: #f5a623;
+  --h2-color: #e8e0d4;
+  --h3-color: #c4841d;
+  --h4-color: #8a837c;
+  --h5-color: #6b6560;
+  --h6-color: #6b6560;
+
+  /* ---- tags ---- */
+  --tag-background: rgba(245, 166, 35, 0.08);
+  --tag-background-hover: rgba(245, 166, 35, 0.14);
+  --tag-color: #c4841d;
+  --tag-color-hover: #f5a623;
+  --tag-border-color: rgba(245, 166, 35, 0.15);
+  --tag-border-color-hover: rgba(245, 166, 35, 0.3);
+
+  /* ---- nav / file explorer ---- */
+  --nav-item-color: #6b6560;
+  --nav-item-color-hover: #e8e0d4;
+  --nav-item-color-active: #f5a623;
+  --nav-item-color-selected: #f5a623;
+  --nav-item-background-hover: #1a1a1f;
+  --nav-item-background-active: rgba(245, 166, 35, 0.06);
+  --nav-item-background-selected: rgba(245, 166, 35, 0.06);
+  --nav-heading-color: #f5a623;
+  --nav-indentation-guide-color: #1e1a17;
+  --nav-collapse-icon-color: #3d3835;
+  --nav-collapse-icon-color-collapsed: #c4841d;
+
+  /* ---- tabs ---- */
+  --tab-text-color: #6b6560;
+  --tab-text-color-active: #f5a623;
+  --tab-text-color-focused: #f5a623;
+  --tab-text-color-focused-active: #f5a623;
+
+  /* ---- icons ---- */
+  --icon-color: #6b6560;
+  --icon-color-hover: #f5a623;
+  --icon-color-active: #f5a623;
+  --icon-color-focused: #f5a623;
+
+  /* ---- checkbox ---- */
+  --checkbox-color: #f5a623;
+  --checkbox-color-hover: #ffc56c;
+  --checkbox-border-color: #3d3835;
+  --checkbox-border-color-hover: #c4841d;
+  --checkbox-marker-color: #0a0a0c;
+
+  /* ---- toggles ---- */
+  --toggle-thumb-color: #e8e0d4;
+
+  /* ---- pills ---- */
+  --pill-background: rgba(245, 166, 35, 0.08);
+  --pill-background-hover: rgba(245, 166, 35, 0.14);
+  --pill-color: #c4841d;
+  --pill-border-color: rgba(245, 166, 35, 0.15);
+
+  /* ---- tables ---- */
+  --table-border-color: #1e1a17;
+  --table-header-background: #111114;
+  --table-header-background-hover: #1a1a1f;
+  --table-row-background-hover: rgba(245, 166, 35, 0.03);
+  --table-row-alt-background: rgba(17, 17, 20, 0.5);
+  --table-header-color: #c4841d;
+
+  /* ---- properties (frontmatter) ---- */
+  --metadata-background: #0e0e11;
+  --metadata-property-background: #111114;
+  --metadata-property-background-hover: #1a1a1f;
+  --metadata-label-color: #6b6560;
+  --metadata-divider-color: #1e1a17;
+
+  /* ---- code ---- */
+  --code-background: #0e0e11;
+  --code-normal: #e8e0d4;
+  --code-comment: #4d4843;
+  --code-keyword: #f5a623;
+  --code-function: #ffc56c;
+  --code-string: #39ff14;
+  --code-operator: #c4841d;
+  --code-tag: #f5a623;
+  --code-value: #39ff14;
+  --code-property: #e8e0d4;
+  --code-important: #ff3b30;
+
+  /* ---- graph ---- */
+  --graph-line: #2a2520;
+  --graph-node: #f5a623;
+  --graph-node-focused: #ffc56c;
+  --graph-node-tag: #c4841d;
+  --graph-node-attachment: #6b6560;
+  --graph-node-unresolved: #3d3835;
+
+  /* ---- divider ---- */
+  --hr-color: #2a2520;
+
+  /* ---- custom properties for effects ---- */
+  --terminal-glow: rgba(245, 166, 35, 0.15);
+  --terminal-glow-subtle: rgba(245, 166, 35, 0.06);
+  --terminal-scanline: rgba(0, 0, 0, 0.03);
+  --terminal-vignette: rgba(0, 0, 0, 0.4);
+}
+
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+
+.theme-light {
+  /* ---- color scale ---- */
+  --color-base-00: #f4f1ec;
+  --color-base-05: #efebe5;
+  --color-base-10: #e8e4de;
+  --color-base-20: #ddd8d1;
+  --color-base-25: #d6d0c8;
+  --color-base-30: #ccc6bd;
+  --color-base-35: #b5ada5;
+  --color-base-40: #97908a;
+  --color-base-50: #7a736c;
+  --color-base-60: #5c554e;
+  --color-base-70: #3d3632;
+  --color-base-100: #1a1714;
+
+  /* ---- accent (amber dark) ---- */
+  --accent-h: 36;
+  --accent-s: 75%;
+  --accent-l: 42%;
+
+  /* ---- backgrounds ---- */
+  --background-primary: #f4f1ec;
+  --background-primary-alt: #efebe5;
+  --background-secondary: #ffffff;
+  --background-secondary-alt: #e8e4de;
+  --background-modifier-hover: #ebe7e1;
+  --background-modifier-active-hover: #e3ded8;
+  --background-modifier-border: #d6d0c8;
+  --background-modifier-border-hover: #b5ada5;
+  --background-modifier-border-focus: #c4841d;
+  --background-modifier-error: rgba(212, 42, 32, 0.1);
+  --background-modifier-success: rgba(26, 138, 14, 0.08);
+  --background-modifier-message: rgba(196, 132, 29, 0.05);
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-cover: rgba(244, 241, 236, 0.8);
+
+  /* ---- text ---- */
+  --text-normal: #1a1714;
+  --text-muted: #7a736c;
+  --text-faint: #b5ada5;
+  --text-on-accent: #1a1714;
+  --text-on-accent-inverted: #c4841d;
+  --text-error: #d42a20;
+  --text-success: #1a8a0e;
+  --text-warning: #c4841d;
+  --text-accent: #c4841d;
+  --text-accent-hover: #a06b15;
+  --text-selection: rgba(196, 132, 29, 0.15);
+  --text-highlight-bg: rgba(196, 132, 29, 0.18);
+
+  /* ---- interactive ---- */
+  --interactive-normal: #ffffff;
+  --interactive-hover: #ebe7e1;
+  --interactive-accent: #c4841d;
+  --interactive-accent-hover: #a06b15;
+
+  /* ---- headings ---- */
+  --h1-color: #c4841d;
+  --h2-color: #1a1714;
+  --h3-color: #a06b15;
+  --h4-color: #5c554e;
+  --h5-color: #7a736c;
+  --h6-color: #7a736c;
+
+  /* ---- tags ---- */
+  --tag-background: rgba(196, 132, 29, 0.08);
+  --tag-background-hover: rgba(196, 132, 29, 0.14);
+  --tag-color: #a06b15;
+  --tag-color-hover: #c4841d;
+  --tag-border-color: rgba(196, 132, 29, 0.2);
+  --tag-border-color-hover: rgba(196, 132, 29, 0.35);
+
+  /* ---- nav / file explorer ---- */
+  --nav-item-color: #7a736c;
+  --nav-item-color-hover: #1a1714;
+  --nav-item-color-active: #c4841d;
+  --nav-item-color-selected: #c4841d;
+  --nav-item-background-hover: #ebe7e1;
+  --nav-item-background-active: rgba(196, 132, 29, 0.06);
+  --nav-item-background-selected: rgba(196, 132, 29, 0.08);
+  --nav-heading-color: #c4841d;
+  --nav-indentation-guide-color: #e3ded8;
+  --nav-collapse-icon-color: #b5ada5;
+  --nav-collapse-icon-color-collapsed: #a06b15;
+
+  /* ---- tabs ---- */
+  --tab-text-color: #7a736c;
+  --tab-text-color-active: #c4841d;
+  --tab-text-color-focused: #c4841d;
+  --tab-text-color-focused-active: #c4841d;
+
+  /* ---- icons ---- */
+  --icon-color: #7a736c;
+  --icon-color-hover: #c4841d;
+  --icon-color-active: #c4841d;
+  --icon-color-focused: #c4841d;
+
+  /* ---- checkbox ---- */
+  --checkbox-color: #c4841d;
+  --checkbox-color-hover: #a06b15;
+  --checkbox-border-color: #b5ada5;
+  --checkbox-border-color-hover: #a06b15;
+  --checkbox-marker-color: #f4f1ec;
+
+  /* ---- toggles ---- */
+  --toggle-thumb-color: #f4f1ec;
+
+  /* ---- pills ---- */
+  --pill-background: rgba(196, 132, 29, 0.08);
+  --pill-background-hover: rgba(196, 132, 29, 0.14);
+  --pill-color: #a06b15;
+  --pill-border-color: rgba(196, 132, 29, 0.2);
+
+  /* ---- tables ---- */
+  --table-border-color: #e3ded8;
+  --table-header-background: #efebe5;
+  --table-header-background-hover: #ebe7e1;
+  --table-row-background-hover: rgba(196, 132, 29, 0.04);
+  --table-row-alt-background: rgba(244, 241, 236, 0.5);
+  --table-header-color: #a06b15;
+
+  /* ---- properties (frontmatter) ---- */
+  --metadata-background: #efebe5;
+  --metadata-property-background: #f4f1ec;
+  --metadata-property-background-hover: #ebe7e1;
+  --metadata-label-color: #7a736c;
+  --metadata-divider-color: #e3ded8;
+
+  /* ---- code ---- */
+  --code-background: #efebe5;
+  --code-normal: #1a1714;
+  --code-comment: #97908a;
+  --code-keyword: #c4841d;
+  --code-function: #a06b15;
+  --code-string: #1a8a0e;
+  --code-operator: #8a6518;
+  --code-tag: #c4841d;
+  --code-value: #1a8a0e;
+  --code-property: #1a1714;
+  --code-important: #d42a20;
+
+  /* ---- graph ---- */
+  --graph-line: #d6d0c8;
+  --graph-node: #c4841d;
+  --graph-node-focused: #a06b15;
+  --graph-node-tag: #a06b15;
+  --graph-node-attachment: #7a736c;
+  --graph-node-unresolved: #b5ada5;
+
+  /* ---- divider ---- */
+  --hr-color: #d6d0c8;
+
+  /* ---- custom properties for effects ---- */
+  --terminal-glow: rgba(196, 132, 29, 0.12);
+  --terminal-glow-subtle: rgba(196, 132, 29, 0.05);
+  --terminal-scanline: rgba(0, 0, 0, 0.015);
+  --terminal-vignette: rgba(0, 0, 0, 0.06);
+}
+
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+/* monospace everywhere */
+body {
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* heading letter-spacing */
+.HyperMD-header,
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  letter-spacing: 0.04em;
+}
+
+/* h1 gets the amber treatment in both modes */
+.HyperMD-header-1,
+.markdown-rendered h1 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.4em;
+}
+
+/* subtle uppercase for h6 — label style */
+.HyperMD-header-6,
+.markdown-rendered h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: var(--h6-size);
+}
+
+
+/* ============================================================
+   CRT EFFECTS
+   ============================================================ */
+
+/* scanlines */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    var(--terminal-scanline) 2px,
+    var(--terminal-scanline) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* vignette */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 60%,
+    var(--terminal-vignette) 100%
+  );
+  pointer-events: none;
+  z-index: 9998;
+}
+
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--interactive-accent);
+}
+
+
+/* ============================================================
+   WORKSPACE — tabs, sidebars, status bar
+   ============================================================ */
+
+/* tab header — clean, no clutter */
+.workspace-tab-header-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.workspace-tab-header.is-active {
+  border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* status bar */
+.status-bar {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+/* sidebar section headers */
+.nav-header .nav-buttons-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+
+/* ============================================================
+   EDITOR — cursor, selection, active line
+   ============================================================ */
+
+/* active line — subtle amber wash */
+.cm-active.cm-line {
+  background-color: var(--terminal-glow-subtle);
+}
+
+/* cursor — amber */
+.cm-cursor,
+.cm-cursor-primary {
+  border-left-color: var(--interactive-accent) !important;
+  border-left-width: 2px !important;
+}
+
+/* selection */
+::selection {
+  background: var(--text-selection);
+}
+
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+/* Primary CTA buttons — dark text on amber */
+.mod-cta,
+button.mod-cta,
+.mod-cta:hover {
+  color: #1a1714;
+}
+
+/* Warning buttons */
+.mod-warning,
+button.mod-warning,
+.mod-warning:hover {
+  color: #fff;
+}
+
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+a,
+.cm-hmd-internal-link,
+.internal-link,
+.external-link {
+  color: var(--text-accent);
+  transition: color 0.15s ease;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover,
+.internal-link:hover,
+.external-link:hover {
+  color: var(--text-accent-hover);
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+.tag,
+a.tag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 2px;
+  padding: 1px 6px;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  transition: all 0.15s ease;
+}
+
+.tag:hover,
+a.tag:hover {
+  background: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+  text-decoration: none;
+}
+
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+
+blockquote,
+.markdown-rendered blockquote {
+  border-left: 2px solid var(--interactive-accent);
+  border-radius: 0;
+  padding: 0.4em 1em;
+  background: var(--terminal-glow-subtle);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+
+/* ============================================================
+   CODE BLOCKS
+   ============================================================ */
+
+code {
+  font-size: 0.9em;
+  border-radius: var(--radius-s);
+  padding: 2px 5px;
+}
+
+pre > code {
+  padding: 0;
+}
+
+.markdown-rendered pre,
+.cm-s-obsidian .HyperMD-codeblock {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+
+/* ============================================================
+   HORIZONTAL RULES
+   ============================================================ */
+
+hr,
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--hr-color);
+  margin: 2em 0;
+}
+
+
+/* ============================================================
+   CHECKBOX — task lists
+   ============================================================ */
+
+input[type='checkbox']:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* completed tasks — dim */
+.task-list-item[data-task='x'] .task-list-item-checkbox ~ *,
+li.task-list-item.is-checked {
+  color: var(--text-muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-faint);
+}
+
+
+/* ============================================================
+   CALLOUTS
+   ============================================================ */
+
+.callout {
+  border-radius: var(--radius-m);
+  border-left: 2px solid;
+  background: var(--terminal-glow-subtle);
+}
+
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+.markdown-rendered table {
+  border-collapse: collapse;
+}
+
+.markdown-rendered th {
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85em;
+}
+
+
+/* ============================================================
+   PROPERTIES (frontmatter panel)
+   ============================================================ */
+
+.metadata-container {
+  border-bottom: 1px solid var(--metadata-divider-color);
+  margin-bottom: 1em;
+}
+
+.metadata-property .metadata-property-key {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8em;
+}
+
+
+/* ============================================================
+   SEARCH
+   ============================================================ */
+
+.search-result-file-title {
+  color: var(--interactive-accent);
+  font-weight: var(--font-medium);
+}
+
+.search-result-file-matched-text {
+  color: var(--text-normal);
+  background: var(--text-highlight-bg);
+}
+
+
+/* ============================================================
+   GRAPH VIEW
+   ============================================================ */
+
+.graph-view.color-fill {
+  color: var(--graph-node);
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+}
+
+
+/* ============================================================
+   MODALS & PROMPTS
+   ============================================================ */
+
+.modal {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4), 0 0 80px var(--terminal-glow);
+}
+
+.prompt {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 60px var(--terminal-glow);
+}
+
+.suggestion-item.is-selected {
+  background: var(--terminal-glow-subtle);
+  border-left: 2px solid var(--interactive-accent);
+}
+
+
+/* ============================================================
+   TOOLTIPS
+   ============================================================ */
+
+.tooltip {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-s);
+}
+
+
+/* ============================================================
+   FILE EXPLORER — note cards feel
+   ============================================================ */
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background: var(--nav-item-background-hover);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background: var(--nav-item-background-active);
+  color: var(--interactive-accent);
+  border-left: 2px solid var(--interactive-accent);
+}
+
+
+/* ============================================================
+   EMBEDS
+   ============================================================ */
+
+.markdown-embed {
+  border-left: 2px solid var(--interactive-accent);
+  border-radius: var(--radius-m);
+  background: var(--terminal-glow-subtle);
+  padding: 0.5em 1em;
+}
+
+.markdown-embed-title {
+  color: var(--interactive-accent);
+  font-weight: var(--font-medium);
+}
+
+
+/* ============================================================
+   ANIMATION — subtle amber pulse on focused inputs
+   ============================================================ */
+
+input[type='text']:focus,
+input[type='search']:focus,
+textarea:focus,
+.cm-focused {
+  box-shadow: 0 0 0 1px var(--interactive-accent),
+              0 0 12px var(--terminal-glow);
+}
+
+
+/* ============================================================
+   MOBILE ADJUSTMENTS
+   ============================================================ */
+
+.is-mobile {
+  --h1-size: 1.35em;
+  --h2-size: 1.2em;
+  --font-ui-small: 12px;
+}
+
+/* disable CRT effects on mobile for performance */
+.is-mobile body::after,
+.is-mobile body::before {
+  display: none;
+}
+
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+
+@media print {
+  body::before,
+  body::after {
+    display: none;
+  }
+}

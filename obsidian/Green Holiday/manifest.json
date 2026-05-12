@@ -1,0 +1,9 @@
+{
+	"name": "Green Holiday",
+	"id": "green-holiday",
+	"description": "A lime green tinted theme for focused writing. Vivid green backgrounds with dark code blocks for high readability.",
+	"version": "0.1.0",
+	"minAppVersion": "1.4.0",
+	"author": "Masaaki Sumimoto",
+	"authorUrl": ""
+}

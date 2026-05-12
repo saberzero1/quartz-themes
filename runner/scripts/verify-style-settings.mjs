@@ -223,9 +223,13 @@ function collectClassSettingsForGraph(themeSlug, settings) {
     if (!setting?.type) continue;
     if (setting.type === "class-toggle" && setting.id) {
       classIds.push(setting.id);
-    } else if (setting.type === "class-select" && Array.isArray(setting.options)) {
+    } else if (
+      setting.type === "class-select" &&
+      Array.isArray(setting.options)
+    ) {
       for (const option of setting.options) {
-        if (option?.value && option.value !== "none") classIds.push(option.value);
+        if (option?.value && option.value !== "none")
+          classIds.push(option.value);
       }
     }
   }
@@ -343,7 +347,9 @@ async function captureMultiSurfaceRuntimeSnapshot(cli, selectors) {
       merged = snapshot;
     } else {
       // Merge selectorStyles: later files can surface elements not found earlier.
-      for (const [selector, styles] of Object.entries(snapshot.selectorStyles || {})) {
+      for (const [selector, styles] of Object.entries(
+        snapshot.selectorStyles || {},
+      )) {
         if (!(selector in merged.selectorStyles)) {
           merged.selectorStyles[selector] = styles;
         }
@@ -369,7 +375,10 @@ function diffRuntimeSnapshots(before, after) {
 
   const beforeVars = before?.cssVariables || {};
   const afterVars = after?.cssVariables || {};
-  const variableNames = new Set([...Object.keys(beforeVars), ...Object.keys(afterVars)]);
+  const variableNames = new Set([
+    ...Object.keys(beforeVars),
+    ...Object.keys(afterVars),
+  ]);
   const changedCssVariables = [...variableNames]
     .sort((a, b) => a.localeCompare(b))
     .flatMap((name) => {
@@ -1133,13 +1142,18 @@ function writeStyleSettingsData(data) {
 }
 
 function getRuntimeEvidenceSidecarPath(themeSlug, mode) {
-  return join(RESULTS_DIR, themeSlug, `${mode}-style-settings-runtime-evidence.json`);
+  return join(
+    RESULTS_DIR,
+    themeSlug,
+    `${mode}-style-settings-runtime-evidence.json`,
+  );
 }
 
 function getStaleRuntimeEvidenceModes(themeSlug, activeModes) {
   return RUNTIME_EVIDENCE_MODES.filter(
     (mode) =>
-      !activeModes.includes(mode) && existsSync(getRuntimeEvidenceSidecarPath(themeSlug, mode)),
+      !activeModes.includes(mode) &&
+      existsSync(getRuntimeEvidenceSidecarPath(themeSlug, mode)),
   );
 }
 
@@ -1168,13 +1182,7 @@ function buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings) {
   const { css, error } = readThemeCss(themeSlug);
 
   if (effectRecords.length > 0 && error) {
-    return {
-      modes,
-      effectRecords,
-      classSettings,
-      observationPlans: [],
-      error,
-    };
+    return { modes, effectRecords, classSettings, observationPlans: [], error };
   }
 
   const observationPlans = modes.map((mode) => {
@@ -1182,7 +1190,8 @@ function buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings) {
     let observationPayloads = [];
 
     if (effectRecords.length > 0) {
-      const modeCss = mode === "dark" ? { dark: css || "" } : { light: css || "" };
+      const modeCss =
+        mode === "dark" ? { dark: css || "" } : { light: css || "" };
       selectorImpacts = buildSelectorImpactGraph({
         effectRecords,
         classSettings,
@@ -1212,18 +1221,19 @@ function buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings) {
     };
   });
 
-  return {
-    modes,
-    effectRecords,
-    classSettings,
-    observationPlans,
-    error: null,
-  };
+  return { modes, effectRecords, classSettings, observationPlans, error: null };
 }
 
-function verifyRuntimeEvidencePreflight(themeSlug, themeEntry, themeFileContent) {
+function verifyRuntimeEvidencePreflight(
+  themeSlug,
+  themeEntry,
+  themeFileContent,
+) {
   const failures = [];
-  const styleSettingsIds = resolveStyleSettingsIds(themeEntry, themeFileContent);
+  const styleSettingsIds = resolveStyleSettingsIds(
+    themeEntry,
+    themeFileContent,
+  );
   const themeId = styleSettingsIds[0];
   if (!themeId) {
     return {
@@ -1236,19 +1246,17 @@ function verifyRuntimeEvidencePreflight(themeSlug, themeEntry, themeFileContent)
 
   const settings = getThemeSettings(themeEntry);
   if (settings.length === 0) {
-    return {
-      pass: true,
-      failures,
-      note: "No style settings configured",
-    };
+    return { pass: true, failures, note: "No style settings configured" };
   }
 
-  const plan = buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings);
+  const plan = buildRuntimeEvidencePlan(
+    themeSlug,
+    themeEntry,
+    themeId,
+    settings,
+  );
   if (plan.error) {
-    return {
-      pass: false,
-      failures: [plan.error],
-    };
+    return { pass: false, failures: [plan.error] };
   }
 
   const staleModes = getStaleRuntimeEvidenceModes(themeSlug, plan.modes);
@@ -1260,7 +1268,11 @@ function verifyRuntimeEvidencePreflight(themeSlug, themeEntry, themeFileContent)
 
   const perMode = {};
   let plannedObservations = 0;
-  for (const { mode, selectorImpactCount, observationPayloads } of plan.observationPlans) {
+  for (const {
+    mode,
+    selectorImpactCount,
+    observationPayloads,
+  } of plan.observationPlans) {
     const sidecarPath = getRuntimeEvidenceSidecarPath(themeSlug, mode);
     const sidecarExists = existsSync(sidecarPath);
     const sidecarValidation = sidecarExists
@@ -1323,7 +1335,9 @@ async function runLiveModeSmokeChecks(
     const payload = { [`${themeId}@@${setting.id}`]: expectedValue };
     writeStyleSettingsData(payload);
     await cli.reload();
-    await cli.waitForReady({ label: `${themeSlug} ${mode} variable ${setting.id}` });
+    await cli.waitForReady({
+      label: `${themeSlug} ${mode} variable ${setting.id}`,
+    });
 
     const computed = await cli.eval(
       `getComputedStyle(document.body).getPropertyValue('--${setting.id}')`,
@@ -1344,7 +1358,10 @@ async function runLiveModeSmokeChecks(
     const hasClass = await cli.eval(
       `document.body.classList.contains("${setting.id}")`,
     );
-    expect(Boolean(hasClass), `Class-toggle ${setting.id} (${mode}) not enabled`);
+    expect(
+      Boolean(hasClass),
+      `Class-toggle ${setting.id} (${mode}) not enabled`,
+    );
 
     writeStyleSettingsData({ [`${themeId}@@${setting.id}`]: false });
     await cli.reload();
@@ -1354,7 +1371,10 @@ async function runLiveModeSmokeChecks(
     const stillHasClass = await cli.eval(
       `document.body.classList.contains("${setting.id}")`,
     );
-    expect(!Boolean(stillHasClass), `Class-toggle ${setting.id} (${mode}) not disabled`);
+    expect(
+      !Boolean(stillHasClass),
+      `Class-toggle ${setting.id} (${mode}) not disabled`,
+    );
   }
 
   if (classSelectSettings.length > 0) {
@@ -1384,7 +1404,10 @@ async function runLiveModeSmokeChecks(
 
 async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
   const failures = [];
-  const styleSettingsIds = resolveStyleSettingsIds(themeEntry, themeFileContent);
+  const styleSettingsIds = resolveStyleSettingsIds(
+    themeEntry,
+    themeFileContent,
+  );
   const themeId = styleSettingsIds[0];
   if (!themeId) {
     return {
@@ -1441,18 +1464,31 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
       setting?.type === "class-select" && Array.isArray(setting.options),
   );
 
-  const plan = buildRuntimeEvidencePlan(themeSlug, themeEntry, themeId, settings);
+  const plan = buildRuntimeEvidencePlan(
+    themeSlug,
+    themeEntry,
+    themeId,
+    settings,
+  );
   if (plan.error) {
     failures.push(`Runtime evidence observation failed: ${plan.error}`);
   } else {
-    const removedSidecars = removeStaleRuntimeEvidenceSidecars(themeSlug, plan.modes);
+    const removedSidecars = removeStaleRuntimeEvidenceSidecars(
+      themeSlug,
+      plan.modes,
+    );
     if (removedSidecars.length > 0) {
       console.log(
         `  Removed stale runtime evidence sidecar(s): ${removedSidecars.join(", ")}`,
       );
     }
 
-    for (const { mode, modeCss, selectorImpacts, observationPayloads } of plan.observationPlans) {
+    for (const {
+      mode,
+      modeCss,
+      selectorImpacts,
+      observationPayloads,
+    } of plan.observationPlans) {
       configureVaultAppearance(themeSlug, mode);
       writeStyleSettingsData({});
       await cli.reload();
@@ -1505,7 +1541,10 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
             selectorsForSetting,
           );
 
-          const runtimeDiff = diffRuntimeSnapshots(baselineSnapshot, changedSnapshot);
+          const runtimeDiff = diffRuntimeSnapshots(
+            baselineSnapshot,
+            changedSnapshot,
+          );
           const observedAt = new Date().toISOString();
 
           sidecarRecords.push({
@@ -1561,8 +1600,10 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
         };
         runtimeEvidence.totalSettingsObserved += sidecarRecords.length;
         runtimeEvidence.totalObservedImpactCount += totalObservedImpactCount;
-        runtimeEvidence.totalChangedCssVariableCount += totalChangedCssVariableCount;
-        runtimeEvidence.totalChangedComputedStyleCount += totalChangedComputedStyleCount;
+        runtimeEvidence.totalChangedCssVariableCount +=
+          totalChangedCssVariableCount;
+        runtimeEvidence.totalChangedComputedStyleCount +=
+          totalChangedComputedStyleCount;
 
         const evidenceOutputDir = join(RESULTS_DIR, themeSlug);
         mkdirSync(evidenceOutputDir, { recursive: true });
@@ -1598,7 +1639,9 @@ async function verifyLive(cli, themeSlug, themeEntry, themeFileContent) {
           );
         }
       } catch (error) {
-        failures.push(`Runtime evidence observation failed for ${mode}: ${error.message}`);
+        failures.push(
+          `Runtime evidence observation failed for ${mode}: ${error.message}`,
+        );
       }
 
       await runLiveModeSmokeChecks(
@@ -1715,7 +1758,9 @@ async function main() {
     console.log('  node runner/scripts/verify-style-settings.mjs "theme-slug"');
     console.log("  node runner/scripts/verify-style-settings.mjs --test-set");
     console.log("  node runner/scripts/verify-style-settings.mjs --all");
-    console.log("  node runner/scripts/verify-style-settings.mjs --all --preflight");
+    console.log(
+      "  node runner/scripts/verify-style-settings.mjs --all --preflight",
+    );
     console.log(
       "  node runner/scripts/verify-style-settings.mjs --test-set --live  # includes preflight",
     );

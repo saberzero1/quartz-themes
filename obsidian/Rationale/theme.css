@@ -1,0 +1,5156 @@
+/*
+ * Rationale Theme for Obsidian
+ * A themeable, minimalist theme with multiple color schemes
+ *
+ * Color Schemes:
+ *   - Academic (DEFAULT): Pure monochrome black/white/grey palette
+ *   - Anthropic: Warm cream backgrounds, terracotta accents (inspired by claude.ai)
+ *   - Nordic: Cool blue-grays, frost accents (inspired by Nord)
+ *   - Old Money: Warm creams, slate navy, walnut browns, bronze accents
+ *
+ * Base theme uses Academic colors so plugins reading default CSS variables
+ * (like Obsidian Terminal) will use the monochrome palette.
+ *
+ * Aesthetic: Minimalist, professional, accessible
+ */
+
+/* @settings
+name: Rationale Theme
+id: rationale-theme
+settings:
+  -
+    id: color-scheme-heading
+    title: Color Scheme
+    type: heading
+    level: 1
+    collapsed: false
+  -
+    id: color-scheme
+    title: Color Scheme
+    description: Choose a preset color palette
+    type: class-select
+    allowEmpty: false
+    default: scheme-academic
+    options:
+      -
+        label: Academic (Monochrome)
+        value: scheme-academic
+      -
+        label: Anthropic (Warm)
+        value: scheme-anthropic
+      -
+        label: Nordic (Cool)
+        value: scheme-nordic
+      -
+        label: Old Money (Luxe)
+        value: scheme-oldmoney
+  -
+    id: colors-heading
+    title: Custom Colors
+    description: Override the color scheme with custom colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: custom-accent
+    title: Custom Accent Color
+    description: Override accent color (leave empty to use scheme default)
+    type: variable-color
+    format: hex
+    default: ''
+  -
+    id: typography-heading
+    title: Typography
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-body
+    title: Body Font
+    description: Serif font for body text
+    type: variable-text
+    default: "'Source Serif 4', 'Georgia', serif"
+  -
+    id: font-headings
+    title: Heading Font
+    description: Sans-serif font for headings
+    type: variable-text
+    default: "'Space Grotesk', 'Inter', sans-serif"
+  -
+    id: font-mono
+    title: Monospace Font
+    description: Font for code blocks
+    type: variable-text
+    default: "'JetBrains Mono', 'Fira Code', monospace"
+  -
+    id: layout-heading
+    title: Layout
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: radius-size
+    title: Border Radius
+    description: Roundness of UI elements
+    type: variable-number-slider
+    default: 6
+    min: 0
+    max: 16
+    step: 1
+    format: px
+  -
+    id: line-width
+    title: Line Width
+    description: Maximum width of text lines (0 = unlimited)
+    type: variable-number-slider
+    default: 700
+    min: 400
+    max: 1000
+    step: 50
+    format: px
+  -
+    id: tabs-heading
+    title: Tabs
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: active-tab-highlight
+    title: Highlight Active Tab
+    description: Make the active tab slightly darker to stand out
+    type: class-toggle
+    default: true
+  -
+    id: active-tab-color
+    title: Active Tab Color
+    description: Background color for the active tab (when highlight is enabled)
+    type: variable-color
+    format: hex
+    default: '#f0efe7'
+  -
+    id: active-tab-color-dark
+    title: Active Tab Color (Dark Mode)
+    description: Background color for the active tab in dark mode
+    type: variable-color
+    format: hex
+    default: '#1e1e1f'
+  -
+    id: hide-top-tab-bar
+    title: Hide Top Tab Bar (Vertical Tabs)
+    description: Hide the top bar above the main editor when using vertical tabs (removes + button area)
+    type: class-toggle
+    default: false
+  -
+    id: font-tabs
+    title: Tab Font
+    description: Font family for tab labels (vertical tabs)
+    type: variable-text
+    default: "'Space Grotesk', 'Inter', sans-serif"
+  -
+    id: text-heading
+    title: Text
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: justified-text
+    title: Justified Text
+    description: Justify paragraph text in both reading and editing modes
+    type: class-toggle
+    default: false
+  -
+    id: floating-toolbar
+    title: Floating Status Bar
+    description: Float the status bar in the center bottom of the screen
+    type: class-toggle
+    default: false
+  -
+    id: file-explorer-heading
+    title: File Explorer
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: file-explorer-icons
+    title: Show File Explorer Icons
+    description: Display icons next to folders and markdown files in the file explorer
+    type: class-toggle
+    default: false
+  -
+    id: bold-folder-names
+    title: Bold Folder Names
+    description: Make folder names bold in the file explorer
+    type: class-toggle
+    default: false
+  -
+    id: breadcrumb-path
+    title: Highlight Breadcrumb Path
+    description: Highlight ancestor folders of the active file in the sidebar
+    type: class-select
+    allowEmpty: false
+    default: breadcrumb-off
+    options:
+      -
+        label: Off
+        value: breadcrumb-off
+      -
+        label: Bold
+        value: breadcrumb-bold
+      -
+        label: Shaded Background
+        value: breadcrumb-shaded
+*/
+/* Google Fonts - Serif for body, Sans for headings */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* ============================================
+   BASE VARIABLES (non-color, shared)
+   ============================================ */
+
+body {
+  /* Typography - uses Style Settings variables with fallbacks */
+  /* Body text: Serif (like TiemposText on anthropic.com) */
+  --font-text-theme: var(--font-body, 'Source Serif 4', 'Georgia', serif);
+  --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-monospace-theme: var(--font-mono, 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace);
+
+  /* Headings: Modern sans-serif (like AnthropicSans on anthropic.com) */
+  --font-heading: var(--font-headings, 'Space Grotesk', 'Inter', sans-serif);
+
+  /* Tabs: Font for tab labels (defaults to heading font) */
+  --font-tab: var(--font-tabs, 'Space Grotesk', 'Inter', sans-serif);
+
+  /* Font smoothing (Anthropic style) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Border radius - uses Style Settings slider */
+  --radius-s: calc(var(--radius-size, 6px) * 0.66);
+  --radius-m: var(--radius-size, 6px);
+  --radius-l: calc(var(--radius-size, 6px) * 1.33);
+
+  /* Line width from Style Settings */
+  --file-line-width: var(--line-width, 700px);
+
+  /* Spacing scale */
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-9: 36px;
+  --size-4-12: 48px;
+  --size-4-16: 64px;
+
+  /* Line heights */
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.6;
+
+  /* Transitions (Anthropic uses 200-500ms) */
+  --transition-duration: 200ms;
+
+  /* Cursor */
+  --cursor: pointer;
+
+  /* Scrollbar width */
+  --scrollbar-width: 8px;
+}
+/* ============================================
+   LIGHT MODE
+   ============================================ */
+
+.theme-light {
+  /* Accent color - Academic default: medium grey */
+  --theme-accent: var(--accent-color, #555555);
+  --accent-h: 0;
+  --accent-s: 0%;
+  --accent-l: 33%;
+
+  /*
+   * Academic (base): Pure white/grey monochrome
+   * - Content: #FFFFFF
+   * - Sidebar: #F5F5F5
+   */
+  --background-primary: #FFFFFF;
+  --sidebar-bg: #F5F5F5;
+  --background-primary-alt: #F5F5F5;
+  --background-secondary: #EBEBEB;
+  --background-secondary-alt: #E0E0E0;
+  --background-modifier-border: #D0D0D0;
+  --background-modifier-border-hover: #BFBFBF;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #FAFAFA;
+  --background-modifier-form-field-highlighted: #F0F0F0;
+
+  /* Overlays and modals */
+  --background-modifier-cover: rgba(0, 0, 0, 0.5);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(0, 0, 0, 0.04);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.08);
+  --background-modifier-success: rgba(100, 100, 100, 0.15);
+  --background-modifier-error: rgba(100, 100, 100, 0.2);
+  --background-modifier-error-hover: rgba(100, 100, 100, 0.3);
+
+  /* Text colors - Black/grey scale */
+  --text-normal: #1a1a1a;
+  --text-muted: #666666;
+  --text-faint: #999999;
+  --text-on-accent: #FFFFFF;
+  --text-on-accent-inverted: #1a1a1a;
+  --text-error: #555555;
+  --text-success: #444444;
+  --text-warning: #666666;
+  --text-highlight-bg: rgba(0, 0, 0, 0.1);
+  --text-highlight-bg-active: rgba(0, 0, 0, 0.15);
+  --text-selection: rgba(0, 0, 0, 0.12);
+  --text-accent: #444444;
+  --text-accent-hover: #222222;
+
+  /* Interactive text */
+  --interactive-normal: #F0F0F0;
+  --interactive-hover: #E5E5E5;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #b0b0b0;
+
+  /* Links - Dark grey */
+  --link-color: #444444;
+  --link-color-hover: #222222;
+  --link-external-color: #555555;
+  --link-external-color-hover: #333333;
+  --link-unresolved-color: #888888;
+  --link-unresolved-opacity: 0.7;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+
+  /* Tags */
+  --tag-color: #555555;
+  --tag-color-hover: #333333;
+  --tag-background: rgba(0, 0, 0, 0.06);
+  --tag-background-hover: rgba(0, 0, 0, 0.1);
+  --tag-padding-x: 8px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
+
+  /* Code */
+  --code-normal: #1a1a1a;
+  --code-background: #F5F5F5;
+  --code-comment: #777777;
+
+  /* Headings */
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-muted);
+
+  /* Bold and italic */
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-normal);
+  --bold-weight: 600;
+
+  /* Lists */
+  --list-marker-color: var(--text-faint);
+  --list-marker-color-hover: var(--theme-accent);
+  --list-marker-color-collapsed: var(--theme-accent);
+
+  /* Checkbox */
+  --checkbox-color: var(--theme-accent);
+  --checkbox-color-hover: color-mix(in srgb, var(--theme-accent) 85%, #000);
+  --checkbox-border-color: #c0bfb8;
+  --checkbox-border-color-hover: #d97757;
+  --checklist-done-color: #9c9a92;
+  --checklist-done-decoration: line-through;
+
+  /* Blockquote */
+  --blockquote-border-color: #d97757;
+  --blockquote-border-thickness: 3px;
+  --blockquote-background-color: rgba(217, 119, 87, 0.05);
+
+  /* Horizontal rule */
+  --hr-color: #e0dfd8;
+
+  /* Table */
+  --table-header-background: #f0efe8;
+  --table-header-background-hover: #e8e7e0;
+  --table-row-even-background: #f7f6ef;
+  --table-row-odd-background: #fcfcf4;
+  --table-row-background-hover: rgba(217, 119, 87, 0.08);
+  --table-border-color: #e0dfd8;
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(156, 154, 146, 0.4);
+  --scrollbar-active-thumb-bg: rgba(156, 154, 146, 0.6);
+
+  /* Tab */
+  --tab-text-color: #6b6a65;
+  --tab-text-color-active: #131314;
+  --tab-text-color-focused: #131314;
+  --tab-text-color-focused-active: #131314;
+  --tab-background-active: #fcfcf4;
+
+  /* Nav / File explorer */
+  --nav-item-color: #6b6a65;
+  --nav-item-color-hover: #131314;
+  --nav-item-color-active: #131314;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.04);
+  --nav-item-background-active: #E8E6DF;
+
+  /* Buttons */
+  --button-color: #131314;
+  --button-background: #f0efe8;
+
+  /* Warning/destructive buttons - Terracotta */
+  --button-warning-bg: #d97757;
+  --button-warning-text: #ffffff;
+  --button-warning-bg-hover: #c86a4a;
+
+  /* Graph */
+  --graph-line: #c0bfb8;
+  --graph-node: #d97757;
+  --graph-node-focused: #c86a4a;
+  --graph-node-tag: #9c9a92;
+  --graph-node-attachment: #6b6a65;
+  --graph-node-unresolved: #c0bfb8;
+
+  /* Canvas */
+  --canvas-background: #f0efe8;
+
+  /* Callouts - monochrome */
+  --callout-default: rgba(0, 0, 0, 0.05);
+  --callout-info: rgba(0, 0, 0, 0.05);
+  --callout-warning: rgba(0, 0, 0, 0.08);
+  --callout-error: rgba(0, 0, 0, 0.08);
+  --callout-success: rgba(0, 0, 0, 0.05);
+  --callout-question: rgba(0, 0, 0, 0.05);
+  --callout-tip: rgba(0, 0, 0, 0.05);
+
+  /* Indentation guides */
+  --indentation-guide-color: #D0D0D0;
+  --indentation-guide-color-active: #888888;
+
+  /* Embedded content */
+  --embed-border-left: 3px solid #555555;
+  --embed-background: rgba(0, 0, 0, 0.02);
+
+  /* Search */
+  --search-match-color: #1a1a1a;
+  --search-match-color-current: #1a1a1a;
+  --search-match-background: rgba(0, 0, 0, 0.15);
+  --search-match-background-current: rgba(0, 0, 0, 0.25);
+
+  /* Vim cursor */
+  --vim-cursor: #555555;
+
+  /* Dividers */
+  --divider-color: #D0D0D0;
+  --divider-color-hover: #BFBFBF;
+
+  /* Icon */
+  --icon-color: #666666;
+  --icon-color-hover: #1a1a1a;
+  --icon-color-active: #333333;
+  --icon-color-focused: #333333;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #F5F5F5;
+  --titlebar-background-focused: #F5F5F5;
+  --titlebar-text-color: #666666;
+  --titlebar-text-color-focused: #1a1a1a;
+
+  /* Status bar */
+  --status-bar-background: #F5F5F5;
+  --status-bar-text-color: #666666;
+
+  /* Ribbon */
+  --ribbon-background: #EBEBEB;
+  --ribbon-background-collapsed: #EBEBEB;
+
+  /* Sidebar */
+  --sidebar-background: #F5F5F5;
+}
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+.theme-dark {
+  /* Accent color - Academic default: light grey */
+  --theme-accent: var(--accent-color, #AAAAAA);
+  --accent-h: 0;
+  --accent-s: 0%;
+  --accent-l: 67%;
+
+  /*
+   * Academic (base): Near-black monochrome
+   * - Content: #1a1a1a
+   * - Sidebar: #141414
+   */
+  --background-primary: #1a1a1a;
+  --sidebar-bg: #141414;
+  --background-primary-alt: #242424;
+  --background-secondary: #1a1a1a;
+  --background-secondary-alt: #2a2a2a;
+  --background-modifier-border: #3a3a3a;
+  --background-modifier-border-hover: #4a4a4a;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #242424;
+  --background-modifier-form-field-highlighted: #2a2a2a;
+
+  /* Overlays and modals */
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(255, 255, 255, 0.05);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.08);
+  --background-modifier-success: rgba(200, 200, 200, 0.1);
+  --background-modifier-error: rgba(200, 200, 200, 0.15);
+  --background-modifier-error-hover: rgba(200, 200, 200, 0.2);
+
+  /* Text colors - White/grey scale */
+  --text-normal: #E0E0E0;
+  --text-muted: #999999;
+  --text-faint: #666666;
+  --text-on-accent: #1a1a1a;
+  --text-on-accent-inverted: #E0E0E0;
+  --text-error: #AAAAAA;
+  --text-success: #BBBBBB;
+  --text-warning: #999999;
+  --text-highlight-bg: rgba(255, 255, 255, 0.1);
+  --text-highlight-bg-active: rgba(255, 255, 255, 0.15);
+  --text-selection: rgba(255, 255, 255, 0.12);
+  --text-accent: #BBBBBB;
+  --text-accent-hover: #DDDDDD;
+
+  /* Interactive text */
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #3a3a3a;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #888888;
+
+  /* Links - Light grey */
+  --link-color: #BBBBBB;
+  --link-color-hover: #DDDDDD;
+  --link-external-color: #AAAAAA;
+  --link-external-color-hover: #CCCCCC;
+  --link-unresolved-color: #777777;
+  --link-unresolved-opacity: 0.7;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+
+  /* Tags */
+  --tag-color: #AAAAAA;
+  --tag-color-hover: #CCCCCC;
+  --tag-background: rgba(255, 255, 255, 0.08);
+  --tag-background-hover: rgba(255, 255, 255, 0.12);
+  --tag-padding-x: 8px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
+
+  /* Code */
+  --code-normal: #E0E0E0;
+  --code-background: #242424;
+  --code-comment: #888888;
+
+  /* Headings */
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-muted);
+
+  /* Bold and italic */
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-normal);
+  --bold-weight: 600;
+
+  /* Lists */
+  --list-marker-color: var(--text-faint);
+  --list-marker-color-hover: var(--theme-accent);
+  --list-marker-color-collapsed: var(--theme-accent);
+
+  /* Checkbox */
+  --checkbox-color: var(--theme-accent);
+  --checkbox-color-hover: color-mix(in srgb, var(--theme-accent) 115%, #fff);
+  --checkbox-border-color: var(--background-modifier-border);
+  --checkbox-border-color-hover: var(--theme-accent);
+  --checklist-done-color: var(--text-faint);
+  --checklist-done-decoration: line-through;
+
+  /* Blockquote */
+  --blockquote-border-color: var(--theme-accent);
+  --blockquote-border-thickness: 3px;
+  --blockquote-background-color: color-mix(in srgb, var(--theme-accent) 8%, transparent);
+
+  /* Horizontal rule */
+  --hr-color: var(--background-modifier-border);
+
+  /* Table */
+  --table-header-background: var(--background-secondary);
+  --table-header-background-hover: var(--background-secondary-alt);
+  --table-row-even-background: var(--background-primary-alt);
+  --table-row-odd-background: var(--background-primary);
+  --table-row-background-hover: color-mix(in srgb, var(--theme-accent) 10%, transparent);
+  --table-border-color: #3a3a3a;
+
+  /* Scrollbar - monochrome */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.25);
+
+  /* Tab */
+  --tab-text-color: #888888;
+  --tab-text-color-active: #E0E0E0;
+  --tab-text-color-focused: #E0E0E0;
+  --tab-text-color-focused-active: #E0E0E0;
+  --tab-background-active: #1a1a1a;
+
+  /* Nav / File explorer */
+  --nav-item-color: #888888;
+  --nav-item-color-hover: #E0E0E0;
+  --nav-item-color-active: #E0E0E0;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.05);
+  --nav-item-background-active: rgba(255, 255, 255, 0.08);
+
+  /* Buttons */
+  --button-color: #E0E0E0;
+  --button-background: #2a2a2a;
+
+  /* Warning/destructive buttons - Terracotta */
+  --button-warning-bg: #d97757;
+  --button-warning-text: #ffffff;
+  --button-warning-bg-hover: #e88a6a;
+
+  /* Graph */
+  --graph-line: #4a4a4a;
+  --graph-node: #AAAAAA;
+  --graph-node-focused: #CCCCCC;
+  --graph-node-tag: #888888;
+  --graph-node-attachment: #777777;
+  --graph-node-unresolved: #555555;
+
+  /* Canvas */
+  --canvas-background: #242424;
+
+  /* Callouts - monochrome */
+  --callout-default: rgba(255, 255, 255, 0.05);
+  --callout-info: rgba(255, 255, 255, 0.05);
+  --callout-warning: rgba(255, 255, 255, 0.08);
+  --callout-error: rgba(255, 255, 255, 0.08);
+  --callout-success: rgba(255, 255, 255, 0.05);
+  --callout-question: rgba(255, 255, 255, 0.05);
+  --callout-tip: rgba(255, 255, 255, 0.05);
+
+  /* Indentation guides */
+  --indentation-guide-color: #3a3a3a;
+  --indentation-guide-color-active: #777777;
+
+  /* Embedded content */
+  --embed-border-left: 3px solid #AAAAAA;
+  --embed-background: rgba(255, 255, 255, 0.02);
+
+  /* Search */
+  --search-match-color: #E0E0E0;
+  --search-match-color-current: #E0E0E0;
+  --search-match-background: rgba(255, 255, 255, 0.15);
+  --search-match-background-current: rgba(255, 255, 255, 0.25);
+
+  /* Vim cursor */
+  --vim-cursor: #AAAAAA;
+
+  /* Dividers */
+  --divider-color: #3a3a3a;
+  --divider-color-hover: #4a4a4a;
+
+  /* Icon */
+  --icon-color: #888888;
+  --icon-color-hover: #E0E0E0;
+  --icon-color-active: #AAAAAA;
+  --icon-color-focused: #AAAAAA;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #1a1a1a;
+  --titlebar-background-focused: #141414;
+  --titlebar-text-color: #888888;
+  --titlebar-text-color-focused: #E0E0E0;
+
+  /* Status bar */
+  --status-bar-background: #1a1a1a;
+  --status-bar-text-color: #888888;
+
+  /* Ribbon */
+  --ribbon-background: #242424;
+  --ribbon-background-collapsed: #242424;
+
+  /* Sidebar */
+  --sidebar-background: #1a1a1a;
+}
+/* ============================================
+   ANTHROPIC COLOR SCHEME - Light Mode
+   Warm cream backgrounds, terracotta accents
+   Inspired by claude.ai design
+   ============================================ */
+
+body.scheme-anthropic.theme-light {
+  /* Accent - Terracotta */
+  --theme-accent: var(--custom-accent, #d97757);
+  --accent-h: 15;
+  --accent-s: 63%;
+  --accent-l: 60%;
+
+  /* Warm cream backgrounds - subtle warmth, not too yellow */
+  --background-primary: #FAFAF8;
+  --sidebar-bg: #F2F1ED;
+  --background-primary-alt: #F5F4F0;
+  --background-secondary: #E3E1DB;
+  --background-secondary-alt: #E8E6E0;
+  --background-modifier-border: #E3E2DD;
+  --background-modifier-border-hover: #D8D7D2;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: #F5F4F0;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(19, 19, 20, 0.5);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(0, 0, 0, 0.04);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.08);
+  --background-modifier-success: rgba(217, 119, 87, 0.15);
+  --background-modifier-error: rgba(217, 87, 87, 0.15);
+  --background-modifier-error-hover: rgba(217, 87, 87, 0.25);
+
+  /* Text colors */
+  --text-normal: #131314;
+  --text-muted: #6b6a65;
+  --text-faint: #9c9a92;
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #131314;
+  --text-error: #d95757;
+  --text-success: #57a773;
+  --text-warning: #d97757;
+  --text-highlight-bg: rgba(217, 119, 87, 0.2);
+  --text-highlight-bg-active: rgba(217, 119, 87, 0.3);
+  --text-selection: rgba(217, 119, 87, 0.15);
+  --text-accent: #d97757;
+  --text-accent-hover: #c86a4a;
+
+  /* Interactive */
+  --interactive-normal: #E8E6E0;
+  --interactive-hover: #E0DED8;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #e8a08a;
+
+  /* Links */
+  --link-color: #d97757;
+  --link-color-hover: #c86a4a;
+  --link-external-color: #d97757;
+  --link-external-color-hover: #c86a4a;
+  --link-unresolved-color: #9c9a92;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: #6b6a65;
+  --tag-color-hover: #131314;
+  --tag-background: rgba(217, 119, 87, 0.1);
+  --tag-background-hover: rgba(217, 119, 87, 0.2);
+
+  /* Code */
+  --code-normal: #131314;
+  --code-background: #F5F4F0;
+  --code-comment: #9c9a92;
+
+  /* Blockquote */
+  --blockquote-border-color: #d97757;
+  --blockquote-background-color: rgba(217, 119, 87, 0.05);
+
+  /* Horizontal rule */
+  --hr-color: #e0dfd8;
+
+  /* Table */
+  --table-header-background: #F2F1ED;
+  --table-header-background-hover: #EBEAE5;
+  --table-row-even-background: #F5F4F0;
+  --table-row-odd-background: #FAFAF8;
+  --table-row-background-hover: rgba(217, 119, 87, 0.08);
+  --table-border-color: #e0dfd8;
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: rgba(156, 154, 146, 0.4);
+  --scrollbar-active-thumb-bg: rgba(156, 154, 146, 0.6);
+
+  /* Tab */
+  --tab-text-color: #6b6a65;
+  --tab-text-color-active: #131314;
+  --tab-text-color-focused: #131314;
+  --tab-text-color-focused-active: #131314;
+  --tab-background-active: #D5D2CB;
+
+  /* Nav */
+  --nav-item-color: #6b6a65;
+  --nav-item-color-hover: #131314;
+  --nav-item-color-active: #131314;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.04);
+  --nav-item-background-active: #EBEAE5;
+
+  /* Graph */
+  --graph-line: #c0bfb8;
+  --graph-node: #d97757;
+  --graph-node-focused: #c86a4a;
+
+  /* Canvas */
+  --canvas-background: #F5F4F0;
+
+  /* Callouts */
+  --callout-default: rgba(217, 119, 87, 0.1);
+  --callout-info: rgba(87, 167, 217, 0.12);
+  --callout-warning: rgba(217, 167, 87, 0.15);
+  --callout-error: rgba(217, 87, 87, 0.15);
+  --callout-success: rgba(87, 167, 115, 0.15);
+  --callout-question: rgba(167, 87, 217, 0.12);
+  --callout-tip: rgba(87, 217, 167, 0.12);
+
+  /* Indentation guides */
+  --indentation-guide-color: #e0dfd8;
+  --indentation-guide-color-active: #d97757;
+
+  /* Icon */
+  --icon-color: #6b6a65;
+  --icon-color-hover: #131314;
+  --icon-color-active: #d97757;
+  --icon-color-focused: #d97757;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #F2F1ED;
+  --titlebar-background-focused: #F2F1ED;
+  --titlebar-text-color: #6b6a65;
+  --titlebar-text-color-focused: #131314;
+
+  /* Status bar */
+  --status-bar-background: #F2F1ED;
+  --status-bar-text-color: #6b6a65;
+
+  /* Ribbon */
+  --ribbon-background: #EBEAE5;
+  --ribbon-background-collapsed: #EBEAE5;
+
+  /* Sidebar */
+  --sidebar-background: #F2F1ED;
+
+  /* Warning/destructive buttons - Terracotta */
+  --button-warning-bg: #d97757;
+  --button-warning-text: #ffffff;
+  --button-warning-bg-hover: #c86a4a;
+}
+/* ============================================
+   ANTHROPIC COLOR SCHEME - Dark Mode
+   Warm dark backgrounds, terracotta accents
+   Inspired by claude.ai design
+   ============================================ */
+
+body.scheme-anthropic.theme-dark {
+  /* Accent - Terracotta */
+  --theme-accent: var(--custom-accent, #d97757);
+  --accent-h: 15;
+  --accent-s: 63%;
+  --accent-l: 60%;
+
+  /* Warm dark backgrounds */
+  --background-primary: #1a1a1b;
+  --sidebar-bg: #141415;
+  --background-primary-alt: #1e1e1f;
+  --background-secondary: #242425;
+  --background-secondary-alt: #2a2a2b;
+  --background-modifier-border: #3a3a3b;
+  --background-modifier-border-hover: #4a4a4b;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #242425;
+  --background-modifier-form-field-highlighted: #2a2a2b;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(255, 255, 255, 0.06);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.1);
+  --background-modifier-success: rgba(217, 119, 87, 0.2);
+  --background-modifier-error: rgba(217, 87, 87, 0.2);
+  --background-modifier-error-hover: rgba(217, 87, 87, 0.3);
+
+  /* Text colors */
+  --text-normal: #e8e8e8;
+  --text-muted: #a0a0a0;
+  --text-faint: #707070;
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1a1a1b;
+  --text-error: #e87070;
+  --text-success: #70c090;
+  --text-warning: #e8a070;
+  --text-highlight-bg: rgba(217, 119, 87, 0.25);
+  --text-highlight-bg-active: rgba(217, 119, 87, 0.35);
+  --text-selection: rgba(217, 119, 87, 0.2);
+  --text-accent: #d97757;
+  --text-accent-hover: #e8886a;
+
+  /* Interactive */
+  --interactive-normal: #2a2a2b;
+  --interactive-hover: #3a3a3b;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #b8604a;
+
+  /* Links */
+  --link-color: #d97757;
+  --link-color-hover: #e8886a;
+  --link-external-color: #d97757;
+  --link-external-color-hover: #e8886a;
+  --link-unresolved-color: #707070;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: #a0a0a0;
+  --tag-color-hover: #e8e8e8;
+  --tag-background: rgba(217, 119, 87, 0.15);
+  --tag-background-hover: rgba(217, 119, 87, 0.25);
+
+  /* Code */
+  --code-normal: #e8e8e8;
+  --code-background: #242425;
+  --code-comment: #707070;
+
+  /* Blockquote */
+  --blockquote-border-color: #d97757;
+  --blockquote-background-color: rgba(217, 119, 87, 0.1);
+
+  /* Horizontal rule */
+  --hr-color: #3a3a3b;
+
+  /* Table */
+  --table-header-background: #242425;
+  --table-header-background-hover: #2a2a2b;
+  --table-row-even-background: #1e1e1f;
+  --table-row-odd-background: #1a1a1b;
+  --table-row-background-hover: rgba(217, 119, 87, 0.1);
+  --table-border-color: #3a3a3b;
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: rgba(160, 160, 160, 0.3);
+  --scrollbar-active-thumb-bg: rgba(160, 160, 160, 0.5);
+
+  /* Tab */
+  --tab-text-color: #a0a0a0;
+  --tab-text-color-active: #e8e8e8;
+  --tab-text-color-focused: #e8e8e8;
+  --tab-text-color-focused-active: #e8e8e8;
+  --tab-background-active: #2a2a2b;
+
+  /* Nav */
+  --nav-item-color: #a0a0a0;
+  --nav-item-color-hover: #e8e8e8;
+  --nav-item-color-active: #e8e8e8;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.06);
+  --nav-item-background-active: rgba(255, 255, 255, 0.08);
+
+  /* Graph */
+  --graph-line: #4a4a4b;
+  --graph-node: #d97757;
+  --graph-node-focused: #e8886a;
+
+  /* Canvas */
+  --canvas-background: #1e1e1f;
+
+  /* Callouts */
+  --callout-default: rgba(217, 119, 87, 0.12);
+  --callout-info: rgba(87, 167, 217, 0.15);
+  --callout-warning: rgba(217, 167, 87, 0.15);
+  --callout-error: rgba(217, 87, 87, 0.15);
+  --callout-success: rgba(87, 167, 115, 0.15);
+  --callout-question: rgba(167, 87, 217, 0.15);
+  --callout-tip: rgba(87, 217, 167, 0.12);
+
+  /* Indentation guides */
+  --indentation-guide-color: #3a3a3b;
+  --indentation-guide-color-active: #d97757;
+
+  /* Icon */
+  --icon-color: #a0a0a0;
+  --icon-color-hover: #e8e8e8;
+  --icon-color-active: #d97757;
+  --icon-color-focused: #d97757;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #141415;
+  --titlebar-background-focused: #141415;
+  --titlebar-text-color: #a0a0a0;
+  --titlebar-text-color-focused: #e8e8e8;
+
+  /* Status bar */
+  --status-bar-background: #141415;
+  --status-bar-text-color: #a0a0a0;
+
+  /* Ribbon */
+  --ribbon-background: #1e1e1f;
+  --ribbon-background-collapsed: #1e1e1f;
+
+  /* Sidebar */
+  --sidebar-background: #141415;
+
+  /* Warning/destructive buttons - Terracotta */
+  --button-warning-bg: #d97757;
+  --button-warning-text: #ffffff;
+  --button-warning-bg-hover: #c86a4a;
+}
+/* ============================================
+   NORDIC COLOR SCHEME - Light Mode
+   Inspired by Nord theme (nordtheme.com)
+   ============================================ */
+
+body.scheme-nordic.theme-light {
+  /* Accent - Frost blue */
+  --theme-accent: var(--custom-accent, #5E81AC);
+  --accent-h: 213;
+  --accent-s: 32%;
+  --accent-l: 52%;
+
+  /* Snow Storm backgrounds */
+  --background-primary: #ECEFF4;
+  --sidebar-bg: #E5E9F0;
+  --ribbon-background: #D8DEE9;
+  --ribbon-background-collapsed: #D8DEE9;
+  --background-primary-alt: #E5E9F0;
+  --background-secondary: #D8DEE9;
+  --background-secondary-alt: #D0D6E0;
+  --background-modifier-border: #C8CED9;
+  --background-modifier-border-hover: #B8C0CC;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #F0F4F8;
+  --background-modifier-form-field-highlighted: #E8ECF2;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(46, 52, 64, 0.6);
+  --background-modifier-box-shadow: rgba(46, 52, 64, 0.1);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(46, 52, 64, 0.06);
+  --background-modifier-active-hover: rgba(46, 52, 64, 0.1);
+  --background-modifier-success: rgba(163, 190, 140, 0.2);
+  --background-modifier-error: rgba(191, 97, 106, 0.15);
+  --background-modifier-error-hover: rgba(191, 97, 106, 0.25);
+
+  /* Text - Polar Night */
+  --text-normal: #2E3440;
+  --text-muted: #4C566A;
+  --text-faint: #6C7A8E;
+  --text-on-accent: #ECEFF4;
+  --text-on-accent-inverted: #2E3440;
+  --text-error: #BF616A;
+  --text-success: #A3BE8C;
+  --text-warning: #D08770;
+  --text-highlight-bg: rgba(94, 129, 172, 0.25);
+  --text-highlight-bg-active: rgba(94, 129, 172, 0.35);
+  --text-selection: rgba(94, 129, 172, 0.2);
+  --text-accent: #5E81AC;
+  --text-accent-hover: #81A1C1;
+
+  /* Interactive */
+  --interactive-normal: #E5E9F0;
+  --interactive-hover: #D8DEE9;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #81A1C1;
+
+  /* Links */
+  --link-color: #5E81AC;
+  --link-color-hover: #81A1C1;
+  --link-external-color: #5E81AC;
+  --link-external-color-hover: #81A1C1;
+  --link-unresolved-color: #8FBCBB;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: #5E81AC;
+  --tag-color-hover: #81A1C1;
+  --tag-background: rgba(94, 129, 172, 0.12);
+  --tag-background-hover: rgba(94, 129, 172, 0.2);
+
+  /* Code */
+  --code-normal: #2E3440;
+  --code-background: #FFFFFF;
+  --code-comment: #4C566A;
+
+  /* Blockquote */
+  --blockquote-border-color: #81A1C1;
+  --blockquote-background-color: rgba(129, 161, 193, 0.08);
+
+  /* Horizontal rule */
+  --hr-color: #C8CED9;
+
+  /* Table */
+  --table-header-background: #D8DEE9;
+  --table-header-background-hover: #CDD4E0;
+  --table-row-even-background: #E5E9F0;
+  --table-row-odd-background: #ECEFF4;
+  --table-row-background-hover: rgba(94, 129, 172, 0.1);
+  --table-border-color: #C8CED9;
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: rgba(76, 86, 106, 0.3);
+  --scrollbar-active-thumb-bg: rgba(76, 86, 106, 0.5);
+
+  /* Tab */
+  --tab-text-color: #4C566A;
+  --tab-text-color-active: #2E3440;
+  --tab-text-color-focused: #2E3440;
+  --tab-text-color-focused-active: #2E3440;
+  --tab-background-active: #D8DEE9;
+
+  /* Nav */
+  --nav-item-color: #4C566A;
+  --nav-item-color-hover: #2E3440;
+  --nav-item-color-active: #2E3440;
+  --nav-item-background-hover: rgba(46, 52, 64, 0.06);
+  --nav-item-background-active: rgba(46, 52, 64, 0.1);
+
+  /* Graph */
+  --graph-line: #B8C0CC;
+  --graph-node: #5E81AC;
+  --graph-node-focused: #81A1C1;
+
+  /* Canvas */
+  --canvas-background: #E5E9F0;
+
+  /* Callouts */
+  --callout-default: rgba(94, 129, 172, 0.12);
+  --callout-info: rgba(136, 192, 208, 0.15);
+  --callout-warning: rgba(208, 135, 112, 0.15);
+  --callout-error: rgba(191, 97, 106, 0.15);
+  --callout-success: rgba(163, 190, 140, 0.15);
+  --callout-question: rgba(180, 142, 173, 0.15);
+  --callout-tip: rgba(143, 188, 187, 0.15);
+
+  /* Indentation guides */
+  --indentation-guide-color: #C8CED9;
+  --indentation-guide-color-active: #5E81AC;
+
+  /* Icon */
+  --icon-color: #4C566A;
+  --icon-color-hover: #2E3440;
+  --icon-color-active: #5E81AC;
+  --icon-color-focused: #5E81AC;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #E5E9F0;
+  --titlebar-background-focused: #E5E9F0;
+  --titlebar-text-color: #4C566A;
+  --titlebar-text-color-focused: #2E3440;
+
+  /* Status bar */
+  --status-bar-background: #E5E9F0;
+  --status-bar-text-color: #4C566A;
+
+  /* Sidebar */
+  --sidebar-background: #E5E9F0;
+
+  /* Warning/destructive buttons - Aurora Red */
+  --button-warning-bg: #BF616A;
+  --button-warning-text: #ECEFF4;
+  --button-warning-bg-hover: #a9545c;
+}
+/* ============================================
+   NORDIC COLOR SCHEME - Dark Mode
+   ============================================ */
+
+body.scheme-nordic.theme-dark {
+  /* Accent - Frost blue (brighter for dark mode) */
+  --theme-accent: var(--custom-accent, #88C0D0);
+  --accent-h: 193;
+  --accent-s: 43%;
+  --accent-l: 67%;
+
+  /* Polar Night backgrounds */
+  --background-primary: #2E3440;
+  --sidebar-bg: #242933;
+  --background-primary-alt: #3B4252;
+  --background-secondary: #2E3440;
+  --background-secondary-alt: #3B4252;
+  --background-modifier-border: #434C5E;
+  --background-modifier-border-hover: #4C566A;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #3B4252;
+  --background-modifier-form-field-highlighted: #434C5E;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.4);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(216, 222, 233, 0.06);
+  --background-modifier-active-hover: rgba(216, 222, 233, 0.1);
+  --background-modifier-success: rgba(163, 190, 140, 0.15);
+  --background-modifier-error: rgba(191, 97, 106, 0.15);
+  --background-modifier-error-hover: rgba(191, 97, 106, 0.25);
+
+  /* Text - Snow Storm */
+  --text-normal: #ECEFF4;
+  --text-muted: #D8DEE9;
+  --text-faint: #A5B0C0;
+  --text-on-accent: #2E3440;
+  --text-on-accent-inverted: #ECEFF4;
+  --text-error: #BF616A;
+  --text-success: #A3BE8C;
+  --text-warning: #EBCB8B;
+  --text-highlight-bg: rgba(136, 192, 208, 0.3);
+  --text-highlight-bg-active: rgba(136, 192, 208, 0.4);
+  --text-selection: rgba(136, 192, 208, 0.25);
+  --text-accent: #88C0D0;
+  --text-accent-hover: #8FBCBB;
+
+  /* Interactive */
+  --interactive-normal: #3B4252;
+  --interactive-hover: #434C5E;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #8FBCBB;
+
+  /* Links */
+  --link-color: #88C0D0;
+  --link-color-hover: #8FBCBB;
+  --link-external-color: #88C0D0;
+  --link-external-color-hover: #8FBCBB;
+  --link-unresolved-color: #81A1C1;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: #88C0D0;
+  --tag-color-hover: #8FBCBB;
+  --tag-background: rgba(136, 192, 208, 0.15);
+  --tag-background-hover: rgba(136, 192, 208, 0.25);
+
+  /* Code */
+  --code-normal: #ECEFF4;
+  --code-background: #3B4252;
+  --code-comment: #616E88;
+
+  /* Blockquote */
+  --blockquote-border-color: #88C0D0;
+  --blockquote-background-color: rgba(136, 192, 208, 0.1);
+
+  /* Horizontal rule */
+  --hr-color: #434C5E;
+
+  /* Table */
+  --table-header-background: #3B4252;
+  --table-header-background-hover: #434C5E;
+  --table-row-even-background: #3B4252;
+  --table-row-odd-background: #2E3440;
+  --table-row-background-hover: rgba(136, 192, 208, 0.1);
+  --table-border-color: #434C5E;
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: rgba(216, 222, 233, 0.2);
+  --scrollbar-active-thumb-bg: rgba(216, 222, 233, 0.35);
+
+  /* Tab */
+  --tab-text-color: #A5B0C0;
+  --tab-text-color-active: #ECEFF4;
+  --tab-text-color-focused: #ECEFF4;
+  --tab-text-color-focused-active: #ECEFF4;
+  --tab-background-active: #3B4252;
+
+  /* Nav */
+  --nav-item-color: #A5B0C0;
+  --nav-item-color-hover: #ECEFF4;
+  --nav-item-color-active: #ECEFF4;
+  --nav-item-background-hover: rgba(216, 222, 233, 0.06);
+  --nav-item-background-active: rgba(216, 222, 233, 0.1);
+
+  /* Graph */
+  --graph-line: #434C5E;
+  --graph-node: #88C0D0;
+  --graph-node-focused: #8FBCBB;
+
+  /* Canvas */
+  --canvas-background: #3B4252;
+
+  /* Callouts */
+  --callout-default: rgba(136, 192, 208, 0.12);
+  --callout-info: rgba(129, 161, 193, 0.15);
+  --callout-warning: rgba(235, 203, 139, 0.15);
+  --callout-error: rgba(191, 97, 106, 0.15);
+  --callout-success: rgba(163, 190, 140, 0.15);
+  --callout-question: rgba(180, 142, 173, 0.15);
+  --callout-tip: rgba(143, 188, 187, 0.15);
+
+  /* Indentation guides */
+  --indentation-guide-color: #434C5E;
+  --indentation-guide-color-active: #88C0D0;
+
+  /* Icon */
+  --icon-color: #A5B0C0;
+  --icon-color-hover: #ECEFF4;
+  --icon-color-active: #88C0D0;
+  --icon-color-focused: #88C0D0;
+
+  /* Title bar */
+  --titlebar-background: #2E3440;
+  --titlebar-background-focused: #242933;
+  --titlebar-text-color: #A5B0C0;
+  --titlebar-text-color-focused: #ECEFF4;
+
+  /* Status bar */
+  --status-bar-background: #2E3440;
+  --status-bar-text-color: #A5B0C0;
+
+  /* Ribbon */
+  --ribbon-background: #3B4252;
+  --ribbon-background-collapsed: #3B4252;
+
+  /* Sidebar */
+  --sidebar-background: #2E3440;
+
+  /* Warning/destructive buttons - Aurora Red */
+  --button-warning-bg: #BF616A;
+  --button-warning-text: #ECEFF4;
+  --button-warning-bg-hover: #d06a73;
+}
+/* ============================================
+   ACADEMIC COLOR SCHEME - Light Mode
+   Monochrome black/white/grey palette
+   ============================================ */
+
+body.scheme-academic.theme-light {
+  /* Accent - Medium grey */
+  --theme-accent: var(--custom-accent, #555555);
+  --accent-h: 0;
+  --accent-s: 0%;
+  --accent-l: 33%;
+
+  /* White/off-white backgrounds */
+  --background-primary: #FFFFFF;
+  --sidebar-bg: #F5F5F5;
+  --ribbon-background: #EBEBEB;
+  --ribbon-background-collapsed: #EBEBEB;
+  --background-primary-alt: #F5F5F5;
+  --background-secondary: #EBEBEB;
+  --background-secondary-alt: #E0E0E0;
+  --background-modifier-border: #D0D0D0;
+  --background-modifier-border-hover: #BFBFBF;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #FAFAFA;
+  --background-modifier-form-field-highlighted: #F0F0F0;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(0, 0, 0, 0.5);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(0, 0, 0, 0.04);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.08);
+  --background-modifier-success: rgba(100, 100, 100, 0.15);
+  --background-modifier-error: rgba(100, 100, 100, 0.2);
+  --background-modifier-error-hover: rgba(100, 100, 100, 0.3);
+
+  /* Text - Black/grey scale */
+  --text-normal: #1a1a1a;
+  --text-muted: #666666;
+  --text-faint: #999999;
+  --text-on-accent: #FFFFFF;
+  --text-on-accent-inverted: #1a1a1a;
+  --text-error: #555555;
+  --text-success: #444444;
+  --text-warning: #666666;
+  --text-highlight-bg: rgba(0, 0, 0, 0.1);
+  --text-highlight-bg-active: rgba(0, 0, 0, 0.15);
+  --text-selection: rgba(0, 0, 0, 0.12);
+  --text-accent: #444444;
+  --text-accent-hover: #222222;
+
+  /* Interactive */
+  --interactive-normal: #F0F0F0;
+  --interactive-hover: #E5E5E5;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #b0b0b0;
+
+  /* Links - Dark grey */
+  --link-color: #444444;
+  --link-color-hover: #222222;
+  --link-external-color: #555555;
+  --link-external-color-hover: #333333;
+  --link-unresolved-color: #888888;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: #555555;
+  --tag-color-hover: #333333;
+  --tag-background: rgba(0, 0, 0, 0.06);
+  --tag-background-hover: rgba(0, 0, 0, 0.1);
+
+  /* Code */
+  --code-normal: #1a1a1a;
+  --code-background: #F5F5F5;
+  --code-comment: #777777;
+
+  /* Blockquote */
+  --blockquote-border-color: #AAAAAA;
+  --blockquote-background-color: rgba(0, 0, 0, 0.03);
+
+  /* Horizontal rule */
+  --hr-color: #D0D0D0;
+
+  /* Table */
+  --table-header-background: #EBEBEB;
+  --table-header-background-hover: #E0E0E0;
+  --table-row-even-background: #F5F5F5;
+  --table-row-odd-background: #FFFFFF;
+  --table-row-background-hover: rgba(0, 0, 0, 0.04);
+  --table-border-color: #D0D0D0;
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.35);
+
+  /* Tab */
+  --tab-text-color: #666666;
+  --tab-text-color-active: #1a1a1a;
+  --tab-text-color-focused: #1a1a1a;
+  --tab-text-color-focused-active: #1a1a1a;
+  --tab-background-active: #E0E0E0;
+
+  /* Nav */
+  --nav-item-color: #666666;
+  --nav-item-color-hover: #1a1a1a;
+  --nav-item-color-active: #1a1a1a;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.04);
+  --nav-item-background-active: rgba(0, 0, 0, 0.08);
+
+  /* Graph */
+  --graph-line: #CCCCCC;
+  --graph-node: #555555;
+  --graph-node-focused: #333333;
+
+  /* Canvas */
+  --canvas-background: #F5F5F5;
+
+  /* Callouts */
+  --callout-default: rgba(0, 0, 0, 0.05);
+  --callout-info: rgba(0, 0, 0, 0.05);
+  --callout-warning: rgba(0, 0, 0, 0.08);
+  --callout-error: rgba(0, 0, 0, 0.08);
+  --callout-success: rgba(0, 0, 0, 0.05);
+  --callout-question: rgba(0, 0, 0, 0.05);
+  --callout-tip: rgba(0, 0, 0, 0.05);
+
+  /* Indentation guides */
+  --indentation-guide-color: #D0D0D0;
+  --indentation-guide-color-active: #888888;
+
+  /* Icon */
+  --icon-color: #666666;
+  --icon-color-hover: #1a1a1a;
+  --icon-color-active: #333333;
+  --icon-color-focused: #333333;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #F5F5F5;
+  --titlebar-background-focused: #F5F5F5;
+  --titlebar-text-color: #666666;
+  --titlebar-text-color-focused: #1a1a1a;
+
+  /* Status bar */
+  --status-bar-background: #F5F5F5;
+  --status-bar-text-color: #666666;
+
+  /* Sidebar */
+  --sidebar-background: #F5F5F5;
+
+  /* Warning/destructive buttons - Dark grey */
+  --button-warning-bg: #444444;
+  --button-warning-text: #ffffff;
+  --button-warning-bg-hover: #333333;
+}
+/* ============================================
+   ACADEMIC COLOR SCHEME - Dark Mode
+   ============================================ */
+
+body.scheme-academic.theme-dark {
+  /* Accent - Light grey */
+  --theme-accent: var(--custom-accent, #AAAAAA);
+  --accent-h: 0;
+  --accent-s: 0%;
+  --accent-l: 67%;
+
+  /* Near-black backgrounds */
+  --background-primary: #1a1a1a;
+  --sidebar-bg: #141414;
+  --background-primary-alt: #242424;
+  --background-secondary: #1a1a1a;
+  --background-secondary-alt: #2a2a2a;
+  --background-modifier-border: #3a3a3a;
+  --background-modifier-border-hover: #4a4a4a;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #242424;
+  --background-modifier-form-field-highlighted: #2a2a2a;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(255, 255, 255, 0.05);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.08);
+  --background-modifier-success: rgba(200, 200, 200, 0.1);
+  --background-modifier-error: rgba(200, 200, 200, 0.15);
+  --background-modifier-error-hover: rgba(200, 200, 200, 0.2);
+
+  /* Text - White/grey scale */
+  --text-normal: #E0E0E0;
+  --text-muted: #999999;
+  --text-faint: #666666;
+  --text-on-accent: #1a1a1a;
+  --text-on-accent-inverted: #E0E0E0;
+  --text-error: #AAAAAA;
+  --text-success: #BBBBBB;
+  --text-warning: #999999;
+  --text-highlight-bg: rgba(255, 255, 255, 0.1);
+  --text-highlight-bg-active: rgba(255, 255, 255, 0.15);
+  --text-selection: rgba(255, 255, 255, 0.12);
+  --text-accent: #BBBBBB;
+  --text-accent-hover: #DDDDDD;
+
+  /* Interactive */
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #3a3a3a;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #888888;
+
+  /* Links - Light grey */
+  --link-color: #BBBBBB;
+  --link-color-hover: #DDDDDD;
+  --link-external-color: #AAAAAA;
+  --link-external-color-hover: #CCCCCC;
+  --link-unresolved-color: #777777;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags */
+  --tag-color: #AAAAAA;
+  --tag-color-hover: #CCCCCC;
+  --tag-background: rgba(255, 255, 255, 0.08);
+  --tag-background-hover: rgba(255, 255, 255, 0.12);
+
+  /* Code */
+  --code-normal: #E0E0E0;
+  --code-background: #242424;
+  --code-comment: #888888;
+
+  /* Blockquote */
+  --blockquote-border-color: #666666;
+  --blockquote-background-color: rgba(255, 255, 255, 0.03);
+
+  /* Horizontal rule */
+  --hr-color: #3a3a3a;
+
+  /* Table */
+  --table-header-background: #2a2a2a;
+  --table-header-background-hover: #3a3a3a;
+  --table-row-even-background: #242424;
+  --table-row-odd-background: #1a1a1a;
+  --table-row-background-hover: rgba(255, 255, 255, 0.05);
+  --table-border-color: #3a3a3a;
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.15);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.25);
+
+  /* Tab */
+  --tab-text-color: #888888;
+  --tab-text-color-active: #E0E0E0;
+  --tab-text-color-focused: #E0E0E0;
+  --tab-text-color-focused-active: #E0E0E0;
+  --tab-background-active: #2a2a2a;
+
+  /* Nav */
+  --nav-item-color: #888888;
+  --nav-item-color-hover: #E0E0E0;
+  --nav-item-color-active: #E0E0E0;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.05);
+  --nav-item-background-active: rgba(255, 255, 255, 0.08);
+
+  /* Graph */
+  --graph-line: #4a4a4a;
+  --graph-node: #AAAAAA;
+  --graph-node-focused: #CCCCCC;
+
+  /* Canvas */
+  --canvas-background: #242424;
+
+  /* Callouts */
+  --callout-default: rgba(255, 255, 255, 0.05);
+  --callout-info: rgba(255, 255, 255, 0.05);
+  --callout-warning: rgba(255, 255, 255, 0.08);
+  --callout-error: rgba(255, 255, 255, 0.08);
+  --callout-success: rgba(255, 255, 255, 0.05);
+  --callout-question: rgba(255, 255, 255, 0.05);
+  --callout-tip: rgba(255, 255, 255, 0.05);
+
+  /* Indentation guides */
+  --indentation-guide-color: #3a3a3a;
+  --indentation-guide-color-active: #777777;
+
+  /* Icon */
+  --icon-color: #888888;
+  --icon-color-hover: #E0E0E0;
+  --icon-color-active: #AAAAAA;
+  --icon-color-focused: #AAAAAA;
+
+  /* Title bar */
+  --titlebar-background: #1a1a1a;
+  --titlebar-background-focused: #141414;
+  --titlebar-text-color: #888888;
+  --titlebar-text-color-focused: #E0E0E0;
+
+  /* Status bar */
+  --status-bar-background: #1a1a1a;
+  --status-bar-text-color: #888888;
+
+  /* Ribbon */
+  --ribbon-background: #242424;
+  --ribbon-background-collapsed: #242424;
+
+  /* Sidebar */
+  --sidebar-background: #1a1a1a;
+
+  /* Warning/destructive buttons - Light grey */
+  --button-warning-bg: #AAAAAA;
+  --button-warning-text: #1a1a1a;
+  --button-warning-bg-hover: #BBBBBB;
+}
+
+/* ============================================
+   OLD MONEY COLOR SCHEME - Light Mode
+   Refined luxury: warm creams, slate navy,
+   walnut browns, and bronze accents
+   ============================================ */
+
+body.scheme-oldmoney.theme-light {
+  /* Accent - Bronze (warm, refined) */
+  --theme-accent: var(--custom-accent, #8B7355);
+  --accent-h: 30;
+  --accent-s: 24%;
+  --accent-l: 44%;
+
+  /* Warm cream backgrounds - COMPLETE SET */
+  --background-primary: #FAF8F5;
+  --sidebar-bg: #EDE8E1;
+  --background-primary-alt: #F3F0EB;
+  --background-secondary: #E8E3DB;
+  --background-secondary-alt: #DED8CF;
+  --background-modifier-border: #D4CEC4;
+  --background-modifier-border-hover: #C5BEB3;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #FFFFFF;
+  --background-modifier-form-field-highlighted: #F5F2ED;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(61, 57, 53, 0.6);
+  --background-modifier-box-shadow: rgba(61, 57, 53, 0.1);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(61, 57, 53, 0.06);
+  --background-modifier-active-hover: rgba(61, 57, 53, 0.1);
+  --background-modifier-success: rgba(122, 142, 112, 0.2);
+  --background-modifier-error: rgba(156, 87, 87, 0.15);
+  --background-modifier-error-hover: rgba(156, 87, 87, 0.25);
+
+  /* Text - Warm charcoal tones */
+  --text-normal: #3D3935;
+  --text-muted: #6B6560;
+  --text-faint: #8A857E;
+  --text-on-accent: #FAF8F5;
+  --text-on-accent-inverted: #3D3935;
+  --text-error: #9C5757;
+  --text-success: #7A8E70;
+  --text-warning: #A67C52;
+  --text-highlight-bg: rgba(139, 115, 85, 0.2);
+  --text-highlight-bg-active: rgba(139, 115, 85, 0.3);
+  --text-selection: rgba(139, 115, 85, 0.15);
+  --text-accent: #8B7355;
+  --text-accent-hover: #b09a7d;
+
+  /* Interactive */
+  --interactive-normal: #EDE8E1;
+  --interactive-hover: #E3DDD4;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #b09a7d;
+
+  /* Links - Brass/bronze */
+  --link-color: #9A7B5B;
+  --link-color-hover: #7A6548;
+  --link-external-color: #9A7B5B;
+  --link-external-color-hover: #7A6548;
+  --link-unresolved-color: #9A7B5B;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags - Bronze/caramel accent */
+  --tag-color: #7A6548;
+  --tag-color-hover: #9A7B5B;
+  --tag-background: rgba(154, 123, 91, 0.12);
+  --tag-background-hover: rgba(154, 123, 91, 0.2);
+
+  /* Code */
+  --code-normal: #3D3935;
+  --code-background: #F3F0EB;
+  --code-comment: #6B6560;
+
+  /* Blockquote - Bronze accent */
+  --blockquote-border-color: #9A7B5B;
+  --blockquote-background-color: rgba(154, 123, 91, 0.08);
+
+  /* Horizontal rule */
+  --hr-color: #D4CEC4;
+
+  /* Table */
+  --table-header-background: #E8E3DB;
+  --table-header-background-hover: #DED8CF;
+  --table-row-even-background: #F3F0EB;
+  --table-row-odd-background: #FAF8F5;
+  --table-row-background-hover: rgba(79, 93, 117, 0.08);
+  --table-border-color: #D4CEC4;
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(107, 101, 96, 0.3);
+  --scrollbar-active-thumb-bg: rgba(107, 101, 96, 0.5);
+
+  /* Tab */
+  --tab-text-color: #6B6560;
+  --tab-text-color-active: #3D3935;
+  --tab-text-color-focused: #3D3935;
+  --tab-text-color-focused-active: #3D3935;
+  --tab-background-active: #E3DDD4;
+
+  /* Nav */
+  --nav-item-color: #6B6560;
+  --nav-item-color-hover: #3D3935;
+  --nav-item-color-active: #3D3935;
+  --nav-item-background-hover: rgba(61, 57, 53, 0.06);
+  --nav-item-background-active: #E3DDD4;
+
+  /* Graph */
+  --graph-line: #C5BEB3;
+  --graph-node: #4F5D75;
+  --graph-node-focused: #9A7B5B;
+
+  /* Canvas */
+  --canvas-background: #F3F0EB;
+
+  /* Callouts */
+  --callout-default: rgba(79, 93, 117, 0.1);
+  --callout-info: rgba(79, 93, 117, 0.12);
+  --callout-warning: rgba(166, 124, 82, 0.15);
+  --callout-error: rgba(156, 87, 87, 0.15);
+  --callout-success: rgba(122, 142, 112, 0.15);
+  --callout-question: rgba(154, 123, 91, 0.15);
+  --callout-tip: rgba(122, 142, 112, 0.12);
+
+  /* Indentation guides */
+  --indentation-guide-color: #D4CEC4;
+  --indentation-guide-color-active: #4F5D75;
+
+  /* Embedded content */
+  --embed-border-left: 3px solid #4F5D75;
+  --embed-background: rgba(79, 93, 117, 0.04);
+
+  /* Search */
+  --search-match-color: #3D3935;
+  --search-match-color-current: #3D3935;
+  --search-match-background: rgba(154, 123, 91, 0.25);
+  --search-match-background-current: rgba(154, 123, 91, 0.4);
+
+  /* Dividers */
+  --divider-color: #D4CEC4;
+  --divider-color-hover: #C5BEB3;
+
+  /* Icon */
+  --icon-color: #6B6560;
+  --icon-color-hover: #3D3935;
+  --icon-color-active: #4F5D75;
+  --icon-color-focused: #4F5D75;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #EDE8E1;
+  --titlebar-background-focused: #EDE8E1;
+  --titlebar-text-color: #6B6560;
+  --titlebar-text-color-focused: #3D3935;
+
+  /* Status bar */
+  --status-bar-background: #EDE8E1;
+  --status-bar-text-color: #6B6560;
+
+  /* Ribbon */
+  --ribbon-background: #E8E3DB;
+  --ribbon-background-collapsed: #E8E3DB;
+
+  /* Sidebar */
+  --sidebar-background: #EDE8E1;
+
+  /* Warning/destructive buttons */
+  --button-warning-bg: #9C5757;
+  --button-warning-text: #FAF8F5;
+  --button-warning-bg-hover: #8a4c4c;
+}
+/* ============================================
+   OLD MONEY COLOR SCHEME - Dark Mode
+   Refined luxury: deep charcoal, rich walnut,
+   bronze metallics, and marble undertones
+   ============================================ */
+
+body.scheme-oldmoney.theme-dark {
+  /* Accent - Bronze/brass (warm metallic) */
+  --theme-accent: var(--custom-accent, #B8956E);
+  --accent-h: 32;
+  --accent-s: 38%;
+  --accent-l: 58%;
+
+  /* Deep warm charcoal backgrounds - COMPLETE SET */
+  --background-primary: #1E1C1A;
+  --sidebar-bg: #252321;
+  --background-primary-alt: #232120;
+  --background-secondary: #2A2826;
+  --background-secondary-alt: #31302D;
+  --background-modifier-border: #3D3A36;
+  --background-modifier-border-hover: #4A4641;
+  --background-modifier-border-focus: var(--theme-accent);
+
+  /* Form backgrounds */
+  --background-modifier-form-field: #2A2826;
+  --background-modifier-form-field-highlighted: #31302D;
+
+  /* Overlays */
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Interactive states */
+  --background-modifier-hover: rgba(232, 228, 222, 0.06);
+  --background-modifier-active-hover: rgba(232, 228, 222, 0.1);
+  --background-modifier-success: rgba(142, 162, 132, 0.2);
+  --background-modifier-error: rgba(176, 97, 97, 0.2);
+  --background-modifier-error-hover: rgba(176, 97, 97, 0.3);
+
+  /* Text - Warm cream tones */
+  --text-normal: #E8E4DE;
+  --text-muted: #A09A92;
+  --text-faint: #7A756E;
+  --text-on-accent: #1E1C1A;
+  --text-on-accent-inverted: #E8E4DE;
+  --text-error: #C78080;
+  --text-success: #8EA284;
+  --text-warning: #C9A06A;
+  --text-highlight-bg: rgba(184, 149, 110, 0.25);
+  --text-highlight-bg-active: rgba(184, 149, 110, 0.35);
+  --text-selection: rgba(184, 149, 110, 0.2);
+  --text-accent: #B8956E;
+  --text-accent-hover: #CBAB88;
+
+  /* Interactive */
+  --interactive-normal: #31302D;
+  --interactive-hover: #3D3A36;
+  --interactive-accent: var(--theme-accent);
+  --interactive-accent-hover: #9a7a58;
+
+  /* Links - Bronze tones */
+  --link-color: #B8956E;
+  --link-color-hover: #CBAB88;
+  --link-external-color: #B8956E;
+  --link-external-color-hover: #CBAB88;
+  --link-unresolved-color: #8B9AAD;
+  --link-unresolved-opacity: 0.7;
+
+  /* Tags - Muted slate */
+  --tag-color: #8B9AAD;
+  --tag-color-hover: #A3B0C0;
+  --tag-background: rgba(139, 154, 173, 0.15);
+  --tag-background-hover: rgba(139, 154, 173, 0.25);
+
+  /* Code */
+  --code-normal: #E8E4DE;
+  --code-background: #252321;
+  --code-comment: #7A756E;
+
+  /* Blockquote - Bronze accent */
+  --blockquote-border-color: #B8956E;
+  --blockquote-background-color: rgba(184, 149, 110, 0.1);
+
+  /* Horizontal rule */
+  --hr-color: #3D3A36;
+
+  /* Table */
+  --table-header-background: #2A2826;
+  --table-header-background-hover: #31302D;
+  --table-row-even-background: #232120;
+  --table-row-odd-background: #1E1C1A;
+  --table-row-background-hover: rgba(184, 149, 110, 0.1);
+  --table-border-color: #3D3A36;
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(160, 154, 146, 0.3);
+  --scrollbar-active-thumb-bg: rgba(160, 154, 146, 0.5);
+
+  /* Tab */
+  --tab-text-color: #A09A92;
+  --tab-text-color-active: #E8E4DE;
+  --tab-text-color-focused: #E8E4DE;
+  --tab-text-color-focused-active: #E8E4DE;
+  --tab-background-active: #2A2826;
+
+  /* Nav */
+  --nav-item-color: #A09A92;
+  --nav-item-color-hover: #E8E4DE;
+  --nav-item-color-active: #E8E4DE;
+  --nav-item-background-hover: rgba(232, 228, 222, 0.06);
+  --nav-item-background-active: rgba(184, 149, 110, 0.15);
+
+  /* Graph */
+  --graph-line: #4A4641;
+  --graph-node: #B8956E;
+  --graph-node-focused: #CBAB88;
+
+  /* Canvas */
+  --canvas-background: #252321;
+
+  /* Callouts */
+  --callout-default: rgba(184, 149, 110, 0.12);
+  --callout-info: rgba(139, 154, 173, 0.15);
+  --callout-warning: rgba(201, 160, 106, 0.15);
+  --callout-error: rgba(199, 128, 128, 0.15);
+  --callout-success: rgba(142, 162, 132, 0.15);
+  --callout-question: rgba(184, 149, 110, 0.15);
+  --callout-tip: rgba(142, 162, 132, 0.12);
+
+  /* Indentation guides */
+  --indentation-guide-color: #3D3A36;
+  --indentation-guide-color-active: #B8956E;
+
+  /* Embedded content */
+  --embed-border-left: 3px solid #B8956E;
+  --embed-background: rgba(184, 149, 110, 0.06);
+
+  /* Search */
+  --search-match-color: #E8E4DE;
+  --search-match-color-current: #E8E4DE;
+  --search-match-background: rgba(184, 149, 110, 0.3);
+  --search-match-background-current: rgba(184, 149, 110, 0.45);
+
+  /* Dividers */
+  --divider-color: #3D3A36;
+  --divider-color-hover: #4A4641;
+
+  /* Icon */
+  --icon-color: #A09A92;
+  --icon-color-hover: #E8E4DE;
+  --icon-color-active: #B8956E;
+  --icon-color-focused: #B8956E;
+
+  /* Title bar (desktop) */
+  --titlebar-background: #252321;
+  --titlebar-background-focused: #252321;
+  --titlebar-text-color: #A09A92;
+  --titlebar-text-color-focused: #E8E4DE;
+
+  /* Status bar */
+  --status-bar-background: #252321;
+  --status-bar-text-color: #A09A92;
+
+  /* Ribbon */
+  --ribbon-background: #2A2826;
+  --ribbon-background-collapsed: #2A2826;
+
+  /* Sidebar */
+  --sidebar-background: #252321;
+
+  /* Warning/destructive buttons */
+  --button-warning-bg: #B06161;
+  --button-warning-text: #E8E4DE;
+  --button-warning-bg-hover: #9a5454;
+}
+/* ============================================
+   COMPONENT REFINEMENTS
+   ============================================ */
+
+/* Smooth transitions on interactive elements */
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self,
+.workspace-tab-header,
+button,
+.clickable-icon,
+a {
+  transition:
+    color var(--transition-duration) ease,
+    background-color var(--transition-duration) ease,
+    border-color var(--transition-duration) ease,
+    opacity var(--transition-duration) ease;
+}
+
+/* Subtle card-like shadow for modals (Anthropic style) */
+.modal {
+  box-shadow: 0px 4px 20px var(--background-modifier-box-shadow);
+}
+
+/* Clean focus states */
+*:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+/* Heading typography - Modern sans-serif like AnthropicSans */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.inline-title,
+.HyperMD-header {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.markdown-rendered h1,
+.inline-title {
+  font-weight: 600;
+}
+
+/* Inline title (note filename as title) */
+.inline-title,
+.view-header-title,
+.workspace-leaf-content[data-type="markdown"] .inline-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 600;
+}
+
+.markdown-rendered h2 {
+  font-weight: 500;
+}
+
+/* Live Preview heading support */
+.cm-header {
+  font-family: var(--font-heading);
+}
+
+.cm-header-1 {
+  font-weight: 600;
+}
+
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: 500;
+}
+
+/* Blockquote styling */
+.markdown-rendered blockquote {
+  padding: var(--size-4-3) var(--size-4-4);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+/* Code block styling - rounded corners, theme-aware colors */
+.markdown-rendered pre {
+  background-color: var(--code-background) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+  margin: 16px 0 !important;
+}
+
+/* Code inside pre */
+.markdown-rendered pre code {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--code-normal) !important;
+}
+
+/* Code block in editing/live preview mode */
+.cm-s-obsidian .HyperMD-codeblock-bg,
+.cm-s-obsidian .HyperMD-codeblock-begin-bg,
+.cm-s-obsidian .HyperMD-codeblock-end-bg {
+  background-color: var(--code-background) !important;
+}
+
+.cm-s-obsidian .HyperMD-codeblock {
+  background-color: var(--code-background) !important;
+}
+
+/* Add border to code block container in live preview */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
+  border-top: 1px solid var(--background-modifier-border) !important;
+  border-left: 1px solid var(--background-modifier-border) !important;
+  border-right: 1px solid var(--background-modifier-border) !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  padding-top: 12px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border-left: 1px solid var(--background-modifier-border) !important;
+  border-right: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--code-background) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+  border-left: 1px solid var(--background-modifier-border) !important;
+  border-right: 1px solid var(--background-modifier-border) !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  padding-bottom: 12px !important;
+}
+
+/* Inline code */
+.markdown-rendered code {
+  background-color: #f3f4f6;
+  border-radius: var(--radius-s);
+  padding: 2px 6px;
+  font-size: 0.9em;
+  color: var(--code-normal);
+}
+
+/* Dark mode inline code */
+.theme-dark .markdown-rendered code {
+  background-color: #2d2d2f;
+}
+
+/* Syntax highlighting - Claude docs style */
+.theme-light {
+  --code-keyword: #c0392b;
+  --code-string: #27ae60;
+  --code-number: #2980b9;
+  --code-function: #8e44ad;
+  --code-property: #1a1a1a;
+  --code-punctuation: #555;
+}
+
+.theme-dark {
+  --code-keyword: #e06c75;
+  --code-string: #98c379;
+  --code-number: #61afef;
+  --code-function: #c678dd;
+  --code-property: #e5e5e5;
+  --code-punctuation: #abb2bf;
+}
+
+/* Apply syntax colors */
+.cm-s-obsidian .cm-keyword,
+.token.keyword {
+  color: var(--code-keyword) !important;
+}
+
+.cm-s-obsidian .cm-string,
+.token.string {
+  color: var(--code-string) !important;
+}
+
+.cm-s-obsidian .cm-number,
+.token.number {
+  color: var(--code-number) !important;
+}
+
+.cm-s-obsidian .cm-def,
+.cm-s-obsidian .cm-callee,
+.token.function {
+  color: var(--code-function) !important;
+}
+
+.cm-s-obsidian .cm-property,
+.token.property {
+  color: var(--code-property) !important;
+}
+
+.cm-s-obsidian .cm-punctuation,
+.token.punctuation {
+  color: var(--code-punctuation) !important;
+}
+
+.cm-s-obsidian .cm-comment,
+.token.comment {
+  color: var(--code-comment) !important;
+}
+
+/* Tag pills */
+.tag {
+  border-radius: var(--tag-radius);
+  font-size: 0.85em;
+}
+
+/* Checkbox styling */
+.task-list-item-checkbox {
+  border-radius: var(--radius-s);
+}
+
+/* Table refinements */
+.markdown-rendered table {
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.markdown-rendered th {
+  font-weight: 600;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: var(--radius-l);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* Link styling - Claude docs style */
+.markdown-rendered a,
+.cm-link,
+.cm-hmd-internal-link,
+.internal-link,
+.external-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: text-decoration-thickness 0.15s ease;
+}
+
+/* Thicker underline on hover */
+.markdown-rendered a:hover,
+.cm-link:hover,
+.cm-hmd-internal-link:hover,
+.internal-link:hover,
+.external-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* Graph view nodes */
+.graph-view.color-fill-tag {
+  opacity: 0.9;
+}
+
+/* Callout styling */
+.callout {
+  border-radius: var(--radius-m);
+  border-left-width: 3px;
+}
+
+/* Clean button styling */
+button.mod-cta {
+  font-weight: 500;
+  border-radius: var(--radius-m);
+  color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+}
+
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+
+/* Warning/destructive button styling (Delete, etc.) */
+button.mod-warning {
+  font-weight: 500;
+  border-radius: var(--radius-m);
+  background-color: var(--button-warning-bg);
+  color: var(--button-warning-text);
+  border: 1px solid var(--button-warning-bg);
+}
+
+button.mod-warning:hover {
+  background-color: var(--button-warning-bg-hover);
+  border-color: var(--button-warning-bg-hover);
+}
+
+/* Status bar subtle */
+.status-bar {
+  font-size: 0.8em;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+/* File explorer refinements */
+.nav-file-title,
+.nav-folder-title {
+  border-radius: var(--radius-s);
+  padding: var(--size-2-2) var(--size-4-2);
+}
+
+/* Tab header styling */
+.workspace-tab-header {
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+
+/* Properties/frontmatter styling */
+.metadata-container {
+  border-radius: var(--radius-m);
+  background: transparent;
+}
+
+/* Selection highlight */
+::selection {
+  background: var(--text-selection);
+}
+
+/* Embedded note styling */
+.markdown-embed {
+  border-radius: var(--radius-m);
+  margin: var(--size-4-2) 0;
+}
+
+/* Remove embed margin inside canvas nodes to prevent black bar gaps */
+.canvas-node .markdown-embed {
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Search results */
+.search-result-file-match {
+  border-radius: var(--radius-s);
+}
+
+/* Suggestion container */
+.suggestion-container {
+  border-radius: var(--radius-m);
+  box-shadow: 0px 4px 20px var(--background-modifier-box-shadow);
+}
+
+.suggestion-item {
+  border-radius: var(--radius-s);
+}
+
+/* Settings modal */
+.modal.mod-settings {
+  border-radius: var(--radius-l);
+}
+
+/* Popover */
+.popover {
+  border-radius: var(--radius-m);
+  box-shadow: 0px 4px 20px var(--background-modifier-box-shadow);
+}
+
+/* Notification / Notice styling */
+.notice-container .notice {
+  background-color: var(--background-primary-alt);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+.notice-container .notice.mod-warning {
+  background-color: var(--background-modifier-error);
+  border-color: var(--text-error);
+}
+
+/* Canvas edge styling - ensure edges are visible */
+.canvas-edges :not(.is-themed) path.canvas-display-path {
+  stroke: var(--text-faint);
+}
+
+.canvas-edge.is-focused path.canvas-display-path {
+  stroke: var(--interactive-accent);
+}
+
+/* ============================================
+   SIDEBAR / FILE EXPLORER (Claude Docs Style)
+   Clean, minimal, text-only navigation
+   ============================================ */
+
+/*
+ * Claude docs colors:
+ * - Content area: white/bright (#ffffff or #fefefe)
+ * - Sidebar: warm beige/sand (#f5f4ef or similar)
+ */
+
+/* Sidebar background - warm sand/beige (darker than content) */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.mod-left-split .workspace-tabs,
+.mod-right-split .workspace-tabs,
+.mod-left-split .workspace-tab-container,
+.mod-right-split .workspace-tab-container,
+.mod-left-split .workspace-leaf,
+.mod-right-split .workspace-leaf,
+.mod-left-split .workspace-leaf-content,
+.mod-right-split .workspace-leaf-content,
+.mod-left-split .nav-files-container,
+.mod-right-split .nav-files-container {
+  background-color: var(--sidebar-bg) !important;
+}
+
+/* File explorer container */
+.nav-folder.mod-root {
+  padding: 12px 8px;
+}
+
+/* Hide Obsidian's native file icons for clean look, but keep collapse indicators */
+/* Note: Custom icons via file-icons.css use ::before pseudo-elements */
+.nav-file-icon {
+  display: none !important;
+}
+
+/* Style the collapse indicator (chevron) */
+.nav-folder-collapse-indicator {
+  color: var(--text-faint);
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.nav-folder-collapse-indicator:hover {
+  color: var(--text-muted);
+}
+
+/* Tree item collapse icons */
+.tree-item-icon.collapse-icon {
+  color: var(--text-faint);
+}
+
+/* Folder titles (section headers) */
+.nav-folder-title {
+  font-weight: 400;
+  font-size: 0.85em;
+  color: var(--text-normal);
+  padding: 8px 12px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  border-radius: 0;
+  background: transparent;
+}
+
+/* Bold folder names when enabled via Style Settings */
+body.bold-folder-names .nav-folder-title {
+  font-weight: 600;
+}
+
+.nav-folder-title:first-child,
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:first-child > .nav-folder-title {
+  margin-top: 0;
+}
+
+/* File titles - regular weight, generous spacing */
+.nav-file-title {
+  font-weight: 400;
+  font-size: 0.85em;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  margin: 2px 0;
+  border-radius: var(--radius-s);
+  background: transparent;
+}
+
+/* Folder title content - no extra padding since icons are hidden */
+.nav-folder-title-content,
+.nav-file-title-content {
+  padding-left: 0;
+}
+
+/* Hover states - very subtle */
+.nav-file-title:hover {
+  background-color: transparent;
+  color: var(--text-normal);
+}
+
+.nav-folder-title:hover {
+  background-color: transparent;
+}
+
+/* Active/selected state - Anthropic scheme */
+body.scheme-anthropic.theme-light .nav-file-title.is-active {
+  background-color: #E8E6DF;
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+body.scheme-anthropic.theme-dark .nav-file-title.is-active {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+/* Active/selected state - Nordic scheme */
+body.scheme-nordic.theme-light .nav-file-title.is-active {
+  background-color: #D8DEE9;
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+body.scheme-nordic.theme-dark .nav-file-title.is-active {
+  background-color: rgba(216, 222, 233, 0.1);
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+/* Active/selected state - Academic scheme (neutral grey) */
+body.scheme-academic.theme-light .nav-file-title.is-active {
+  background-color: #E0E0E0;
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+body.scheme-academic.theme-dark .nav-file-title.is-active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+/* Active/selected state - Old Money scheme */
+body.scheme-oldmoney.theme-light .nav-file-title.is-active {
+  background-color: #E3DDD4;
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+body.scheme-oldmoney.theme-dark .nav-file-title.is-active {
+  background-color: rgba(184, 149, 110, 0.15);
+  color: var(--text-normal);
+  font-weight: 400;
+  border-radius: var(--radius-s);
+}
+
+/* Nested folders - simple indentation, no lines */
+.nav-folder-children {
+  padding-left: 12px;
+  margin-left: 0;
+  border-left: none;
+  overflow: hidden;
+}
+
+.nav-folder.mod-root > .nav-folder-children {
+  padding-left: 0;
+}
+
+/* Tree items (outline, tags, etc.) */
+.tree-item-self {
+  padding: 6px 12px;
+  border-radius: var(--radius-s);
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.tree-item-self:hover {
+  background-color: transparent;
+  color: var(--text-normal);
+}
+
+.theme-light .tree-item-self.is-selected {
+  background-color: #E8E6DF;
+  color: var(--text-normal);
+}
+
+.theme-dark .tree-item-self.is-selected {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-normal);
+}
+
+/* Tree item children - simple indent */
+.tree-item-children {
+  padding-left: 12px;
+  border-left: none;
+  margin-left: 0;
+}
+
+/* Search in sidebar */
+.search-result-file-title {
+  font-weight: 500;
+  font-size: 0.85em;
+  padding: 6px 12px;
+}
+
+.search-result-file-match {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  padding: 4px 12px;
+}
+
+/* Tag pane */
+.tag-pane-tag {
+  font-size: 0.85em;
+  padding: 6px 12px;
+  border-radius: var(--radius-s);
+  color: var(--text-muted);
+}
+
+.tag-pane-tag:hover {
+  color: var(--text-normal);
+  background: transparent;
+}
+
+/* Outline pane */
+.outline-heading {
+  font-size: 0.85em;
+  padding: 6px 12px;
+  color: var(--text-muted);
+}
+
+.outline-heading:hover {
+  color: var(--text-normal);
+}
+
+/* Backlinks */
+.backlink-pane .tree-item-self {
+  font-size: 0.85em;
+}
+
+/* Vault name at top - subtle separator */
+.nav-folder.mod-root > .nav-folder-title {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--text-normal);
+  padding: 8px 12px 12px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Ribbon (left icon bar) - uses ribbon background variable */
+.workspace-ribbon {
+  background-color: var(--ribbon-background) !important;
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right {
+  background-color: var(--ribbon-background) !important;
+}
+
+.workspace-ribbon-collapse-btn {
+  color: var(--text-faint);
+}
+
+.side-dock-ribbon-action {
+  color: var(--text-muted);
+  padding: 10px;
+}
+
+.side-dock-ribbon-action:hover {
+  color: var(--text-normal);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Tab headers in sidebar - uses sidebar background */
+.mod-left-split .workspace-tab-header-container,
+.mod-right-split .workspace-tab-header-container {
+  background-color: var(--sidebar-bg) !important;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding: 0 8px;
+}
+
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.workspace-tab-header {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  border-bottom: 2px solid transparent;
+  background-color: var(--background-secondary-alt);
+}
+
+.workspace-tab-header:hover {
+  color: var(--text-normal);
+}
+
+.workspace-tab-header.is-active {
+  color: var(--text-normal);
+  border-bottom-color: var(--theme-accent, #d97757);
+}
+
+/* Nav header (buttons above file list) */
+.nav-header {
+  padding: 8px;
+}
+
+.nav-action-button {
+  color: var(--text-muted);
+  padding: 6px;
+}
+
+.nav-action-button:hover {
+  color: var(--text-normal);
+  background: transparent;
+}
+
+/* Status bar - uses sidebar background */
+.status-bar {
+  background-color: var(--sidebar-bg);
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 0.75em;
+  color: var(--text-faint);
+}
+
+/* Empty state text */
+.nav-folder-children:empty::after {
+  display: none;
+}
+
+/* Ensure sidebar items use sidebar background, not primary */
+.mod-left-split .nav-folder,
+.mod-left-split .nav-file,
+.mod-left-split .tree-item,
+.mod-left-split .search-result,
+.mod-right-split .nav-folder,
+.mod-right-split .nav-file,
+.mod-right-split .tree-item,
+.mod-right-split .search-result {
+  background-color: transparent;
+}
+
+/* Selected item in sidebar - Anthropic scheme */
+body.scheme-anthropic.theme-light .mod-left-split .nav-file-title.is-active,
+body.scheme-anthropic.theme-light .mod-right-split .nav-file-title.is-active {
+  background-color: #E8E6DF;
+}
+
+body.scheme-anthropic.theme-dark .mod-left-split .nav-file-title.is-active,
+body.scheme-anthropic.theme-dark .mod-right-split .nav-file-title.is-active {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Selected item in sidebar - Nordic scheme */
+body.scheme-nordic.theme-light .mod-left-split .nav-file-title.is-active,
+body.scheme-nordic.theme-light .mod-right-split .nav-file-title.is-active {
+  background-color: #D8DEE9;
+}
+
+body.scheme-nordic.theme-dark .mod-left-split .nav-file-title.is-active,
+body.scheme-nordic.theme-dark .mod-right-split .nav-file-title.is-active {
+  background-color: rgba(216, 222, 233, 0.1);
+}
+
+/* Selected item in sidebar - Academic scheme */
+body.scheme-academic.theme-light .mod-left-split .nav-file-title.is-active,
+body.scheme-academic.theme-light .mod-right-split .nav-file-title.is-active {
+  background-color: #E0E0E0;
+}
+
+body.scheme-academic.theme-dark .mod-left-split .nav-file-title.is-active,
+body.scheme-academic.theme-dark .mod-right-split .nav-file-title.is-active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Selected item in sidebar - Old Money scheme */
+body.scheme-oldmoney.theme-light .mod-left-split .nav-file-title.is-active,
+body.scheme-oldmoney.theme-light .mod-right-split .nav-file-title.is-active {
+  background-color: #E3DDD4;
+}
+
+body.scheme-oldmoney.theme-dark .mod-left-split .nav-file-title.is-active,
+body.scheme-oldmoney.theme-dark .mod-right-split .nav-file-title.is-active {
+  background-color: rgba(184, 149, 110, 0.15);
+}
+
+/* ============================================
+   BREADCRUMB PATH - Highlight ancestor folders
+   of the active file in the sidebar
+   ============================================ */
+
+/* --- Breadcrumb: Bold mode --- */
+/* All ancestor folders get bold text */
+body.breadcrumb-bold .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title {
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+/* --- Breadcrumb: Shaded Background mode --- */
+/* Semi-transparent bg on each ancestor .nav-folder — nested folders compound,
+   so deeper ancestors get progressively darker automatically */
+body.breadcrumb-shaded .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title {
+  background-color: var(--breadcrumb-shade, rgba(0, 0, 0, 0.04));
+  border-radius: var(--radius-s);
+  color: var(--text-normal);
+}
+
+/* Immediate parent gets a stronger tint */
+body.breadcrumb-shaded .nav-folder:has(> .nav-folder-children > .nav-file > .nav-file-title.is-active) > .nav-folder-title {
+  background-color: var(--breadcrumb-shade-strong, rgba(0, 0, 0, 0.08));
+  font-weight: 500;
+}
+
+/* Dark mode shading */
+.theme-dark body.breadcrumb-shaded .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title,
+body.breadcrumb-shaded.theme-dark .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title {
+  --breadcrumb-shade: rgba(255, 255, 255, 0.04);
+  --breadcrumb-shade-strong: rgba(255, 255, 255, 0.08);
+}
+
+/* ============================================
+   DRAG AND DROP - Folder highlight when dragging
+   ============================================ */
+
+/* Base drag-over state for folders */
+.nav-folder-title.is-being-dragged-over,
+.nav-folder.is-being-dragged-over > .nav-folder-title,
+.tree-item-self.is-being-dragged-over,
+.nav-file-title.is-being-dragged-over {
+  background-color: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+  border-radius: var(--radius-s);
+}
+
+/* Anthropic scheme - warm terracotta highlight */
+body.scheme-anthropic.theme-light .nav-folder-title.is-being-dragged-over,
+body.scheme-anthropic.theme-light .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-anthropic.theme-light .tree-item-self.is-being-dragged-over {
+  background-color: #d97757 !important;
+  color: #ffffff !important;
+}
+
+body.scheme-anthropic.theme-dark .nav-folder-title.is-being-dragged-over,
+body.scheme-anthropic.theme-dark .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-anthropic.theme-dark .tree-item-self.is-being-dragged-over {
+  background-color: #d97757 !important;
+  color: #ffffff !important;
+}
+
+/* Nordic scheme - frost blue highlight */
+body.scheme-nordic.theme-light .nav-folder-title.is-being-dragged-over,
+body.scheme-nordic.theme-light .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-nordic.theme-light .tree-item-self.is-being-dragged-over {
+  background-color: #5E81AC !important;
+  color: #ffffff !important;
+}
+
+body.scheme-nordic.theme-dark .nav-folder-title.is-being-dragged-over,
+body.scheme-nordic.theme-dark .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-nordic.theme-dark .tree-item-self.is-being-dragged-over {
+  background-color: #81A1C1 !important;
+  color: #2E3440 !important;
+}
+
+/* Academic scheme - neutral grey highlight */
+body.scheme-academic.theme-light .nav-folder-title.is-being-dragged-over,
+body.scheme-academic.theme-light .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-academic.theme-light .tree-item-self.is-being-dragged-over {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+body.scheme-academic.theme-dark .nav-folder-title.is-being-dragged-over,
+body.scheme-academic.theme-dark .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-academic.theme-dark .tree-item-self.is-being-dragged-over {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Old Money scheme - slate navy (light) / bronze (dark) highlight */
+body.scheme-oldmoney.theme-light .nav-folder-title.is-being-dragged-over,
+body.scheme-oldmoney.theme-light .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-oldmoney.theme-light .tree-item-self.is-being-dragged-over {
+  background-color: #4F5D75 !important;
+  color: #FAF8F5 !important;
+}
+
+body.scheme-oldmoney.theme-dark .nav-folder-title.is-being-dragged-over,
+body.scheme-oldmoney.theme-dark .nav-folder.is-being-dragged-over > .nav-folder-title,
+body.scheme-oldmoney.theme-dark .tree-item-self.is-being-dragged-over {
+  background-color: #B8956E !important;
+  color: #1E1C1A !important;
+}
+
+/* ============================================
+   CUSTOM CHECKBOXES (Using SVG masks - Outline Style)
+
+   Uses -webkit-mask with outline SVG icons for a
+   lighter, more elegant appearance.
+   ============================================ */
+
+/* Base checkbox styling - empty outline box */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--checkbox-border-color, var(--text-faint));
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 8px;
+  position: relative;
+  flex-shrink: 0;
+  transition: var(--animation, 0.15s ease);
+}
+
+input[type="checkbox"]:hover {
+  border-color: var(--theme-accent, #d97757);
+}
+
+/* Completed task: - [x] - outline box with checkmark */
+input[type="checkbox"]:checked,
+input[data-task="x"]:checked,
+li[data-task="x"] > input[type="checkbox"],
+li[data-task="x"] > p > input[type="checkbox"] {
+  background-color: transparent;
+  border-color: var(--theme-accent, #d97757);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8l3 3l6-6'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 80% 80%;
+  background-color: var(--theme-accent, #d97757);
+}
+
+li[data-task="x"] {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* In progress: - [/] - half circle outline */
+input[data-task="/"],
+li[data-task="/"] > input[type="checkbox"],
+li[data-task="/"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.5' d='M8 14.5a6.5 6.5 0 1 0 0-13a6.5 6.5 0 0 0 0 13z'/%3E%3Cpath fill='currentColor' d='M8 1.5a6.5 6.5 0 0 0 0 13V1.5z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="/"]::after,
+li[data-task="/"] > input[type="checkbox"]::after,
+li[data-task="/"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Cancelled: - [-] - circle with dash */
+input[data-task="-"],
+li[data-task="-"] > input[type="checkbox"],
+li[data-task="-"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.5' fill='none' stroke='currentColor' stroke-width='1.5'/%3E%3Cpath stroke='currentColor' stroke-width='1.5' stroke-linecap='round' d='M5 8h6'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="-"]::after,
+li[data-task="-"] > input[type="checkbox"]::after,
+li[data-task="-"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+li[data-task="-"] {
+  text-decoration: line-through;
+  color: var(--text-faint);
+  opacity: 0.7;
+}
+
+/* Deferred/Forwarded: - [>] - arrow outline */
+input[data-task=">"],
+li[data-task=">"] > input[type="checkbox"],
+li[data-task=">"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M3 8h10m-4-4l4 4l-4 4'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task=">"]::after,
+li[data-task=">"] > input[type="checkbox"]::after,
+li[data-task=">"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Scheduled: - [<] - calendar outline */
+input[data-task="<"],
+li[data-task="<"] > input[type="checkbox"],
+li[data-task="<"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' d='M2.5 5.5v8a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-8m-11 0v-2a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v2m-11 0h11M5 1.5v2m6-2v2'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="<"]::after,
+li[data-task="<"] > input[type="checkbox"]::after,
+li[data-task="<"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Question: - [?] - circle with question mark */
+input[data-task="?"],
+li[data-task="?"] > input[type="checkbox"],
+li[data-task="?"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.5' fill='none' stroke='currentColor' stroke-width='1.5'/%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' d='M6 6a2 2 0 1 1 2.5 1.94A1.3 1.3 0 0 0 8 9'/%3E%3Ccircle cx='8' cy='11.5' r='0.75' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="?"]::after,
+li[data-task="?"] > input[type="checkbox"]::after,
+li[data-task="?"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Important: - [!] - circle with exclamation */
+input[data-task="!"],
+li[data-task="!"] > input[type="checkbox"],
+li[data-task="!"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.5' fill='none' stroke='currentColor' stroke-width='1.5'/%3E%3Cpath stroke='currentColor' stroke-width='1.5' stroke-linecap='round' d='M8 4.5v4'/%3E%3Ccircle cx='8' cy='11' r='0.75' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="!"]::after,
+li[data-task="!"] > input[type="checkbox"]::after,
+li[data-task="!"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Star/Favorite: - [*] - star outline */
+input[data-task="*"],
+li[data-task="*"] > input[type="checkbox"],
+li[data-task="*"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' stroke-linejoin='round' d='M8 1.5l1.9 3.8l4.2.6l-3 3l.7 4.2L8 11.2l-3.8 1.9l.7-4.2l-3-3l4.2-.6z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="*"]::after,
+li[data-task="*"] > input[type="checkbox"]::after,
+li[data-task="*"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Quote: - ["] - quotation marks */
+input[data-task="\""],
+li[data-task="\""] > input[type="checkbox"],
+li[data-task="\""] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' d='M4 10V7.5A2.5 2.5 0 0 1 6.5 5h.5v1.5a2 2 0 0 0-2 2V10zm6 0V7.5A2.5 2.5 0 0 1 12.5 5h.5v1.5a2 2 0 0 0-2 2V10z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="\""]::after,
+li[data-task="\""] > input[type="checkbox"]::after,
+li[data-task="\""] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Location: - [l] - pin outline */
+input[data-task="l"],
+li[data-task="l"] > input[type="checkbox"],
+li[data-task="l"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' d='M8 14.5C8 14.5 13 10 13 6a5 5 0 1 0-10 0c0 4 5 8.5 5 8.5z'/%3E%3Ccircle cx='8' cy='6' r='2' fill='none' stroke='currentColor' stroke-width='1.3'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="l"]::after,
+li[data-task="l"] > input[type="checkbox"]::after,
+li[data-task="l"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Bookmark: - [b] - bookmark outline */
+input[data-task="b"],
+li[data-task="b"] > input[type="checkbox"],
+li[data-task="b"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' stroke-linejoin='round' d='M3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v12.5l-5-3l-5 3z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="b"]::after,
+li[data-task="b"] > input[type="checkbox"]::after,
+li[data-task="b"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Info: - [i] - circle with i */
+input[data-task="i"],
+li[data-task="i"] > input[type="checkbox"],
+li[data-task="i"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.5' fill='none' stroke='currentColor' stroke-width='1.5'/%3E%3Cpath stroke='currentColor' stroke-width='1.5' stroke-linecap='round' d='M8 7v4'/%3E%3Ccircle cx='8' cy='5' r='0.75' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="i"]::after,
+li[data-task="i"] > input[type="checkbox"]::after,
+li[data-task="i"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Savings/Money: - [S] - dollar sign */
+input[data-task="S"],
+li[data-task="S"] > input[type="checkbox"],
+li[data-task="S"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' d='M8 1.5v13M11.5 4.5c0-1.5-1.5-2-3.5-2s-3.5.5-3.5 2s1.5 2 3.5 2.5s3.5 1 3.5 2.5s-1.5 2-3.5 2s-3.5-.5-3.5-2'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="S"]::after,
+li[data-task="S"] > input[type="checkbox"]::after,
+li[data-task="S"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Idea/Lightbulb: - [I] - lightbulb outline */
+input[data-task="I"],
+li[data-task="I"] > input[type="checkbox"],
+li[data-task="I"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' d='M6 14h4M6 12h4M6 12c0-1.5-2.5-2.5-2.5-5.5a4.5 4.5 0 1 1 9 0c0 3-2.5 4-2.5 5.5'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="I"]::after,
+li[data-task="I"] > input[type="checkbox"]::after,
+li[data-task="I"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Pro (thumbs up): - [p] - outline */
+input[data-task="p"],
+li[data-task="p"] > input[type="checkbox"],
+li[data-task="p"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.2' stroke-linejoin='round' d='M1.5 9v4.5a1 1 0 0 0 1 1H4V8.5H2.5a1 1 0 0 0-1 .5zm2.5-.5v5.5h2.5c1 0 2-.5 2.5-1l2-1.5a1 1 0 0 0 .5-1V9a1 1 0 0 0-1-1h-3l.5-3a1 1 0 0 0-1-1h-.5L4 8.5z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="p"]::after,
+li[data-task="p"] > input[type="checkbox"]::after,
+li[data-task="p"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Con (thumbs down): - [c] - outline */
+input[data-task="c"],
+li[data-task="c"] > input[type="checkbox"],
+li[data-task="c"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.2' stroke-linejoin='round' d='M1.5 7V2.5a1 1 0 0 1 1-1H4v6H2.5a1 1 0 0 1-1-.5zm2.5.5V2h2.5c1 0 2 .5 2.5 1l2 1.5a1 1 0 0 1 .5 1V7a1 1 0 0 1-1 1h-3l.5 3a1 1 0 0 1-1 1h-.5L4 7.5z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="c"]::after,
+li[data-task="c"] > input[type="checkbox"]::after,
+li[data-task="c"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Fire/Urgent: - [f] - flame outline */
+input[data-task="f"],
+li[data-task="f"] > input[type="checkbox"],
+li[data-task="f"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.2' stroke-linejoin='round' d='M8 14.5c-3 0-5-2-5-4.5c0-2 1-3.5 2-4.5c0 1.5 1 2 2 1.5C6.5 5 6 3 7.5 1.5c0 2.5 1.5 3.5 3 4c1.5.5 2.5 2 2.5 4c0 2.5-2 5-5 5zm0 0c-1.5 0-2.5-1-2.5-2.5S7 9.5 8 9c1 .5 2.5 1.5 2.5 3S9.5 14.5 8 14.5z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="f"]::after,
+li[data-task="f"] > input[type="checkbox"]::after,
+li[data-task="f"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Key: - [k] - key outline */
+input[data-task="k"],
+li[data-task="k"] > input[type="checkbox"],
+li[data-task="k"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='4.5' cy='8' r='2.5' fill='none' stroke='currentColor' stroke-width='1.3'/%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' d='M7 8h7m-2-2v2m-3 0v2'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="k"]::after,
+li[data-task="k"] > input[type="checkbox"]::after,
+li[data-task="k"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Win/Trophy: - [w] - trophy outline */
+input[data-task="w"],
+li[data-task="w"] > input[type="checkbox"],
+li[data-task="w"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.2' d='M4 2h8v4a4 4 0 1 1-8 0zm0 2H2.5a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2H4m8-4h1.5a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2H12M8 10v2m-2 2h4'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="w"]::after,
+li[data-task="w"] > input[type="checkbox"]::after,
+li[data-task="w"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Up: - [u] - trend up */
+input[data-task="u"],
+li[data-task="u"] > input[type="checkbox"],
+li[data-task="u"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M2 12l4-4l3 3l5-5m0 0v3m0-3h-3'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="u"]::after,
+li[data-task="u"] > input[type="checkbox"]::after,
+li[data-task="u"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Down: - [d] - trend down */
+input[data-task="d"],
+li[data-task="d"] > input[type="checkbox"],
+li[data-task="d"] > p > input[type="checkbox"] {
+  border: none !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M2 4l4 4l3-3l5 5m0 0v-3m0 3h-3'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: 100% 100%;
+  background-color: var(--text-muted) !important;
+}
+input[data-task="d"]::after,
+li[data-task="d"] > input[type="checkbox"]::after,
+li[data-task="d"] > p > input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+/* ============================================
+   CALLOUT STYLING - Anthropic style
+   ============================================ */
+
+.callout {
+  background-color: transparent;
+  border: 1px solid var(--background-modifier-border);
+  border-left: 4px solid;
+  border-radius: var(--radius-m);
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.callout-title {
+  font-weight: 600;
+  font-size: 0.9em;
+  gap: 8px;
+}
+
+.callout-content {
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+
+/* Note callout */
+.callout[data-callout="note"] {
+  border-left-color: #3b82f6;
+}
+.callout[data-callout="note"] .callout-icon {
+  color: #3b82f6;
+}
+
+/* Info callout */
+.callout[data-callout="info"] {
+  border-left-color: #06b6d4;
+}
+.callout[data-callout="info"] .callout-icon {
+  color: #06b6d4;
+}
+
+/* Tip callout */
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] {
+  border-left-color: #10b981;
+}
+.callout[data-callout="tip"] .callout-icon,
+.callout[data-callout="hint"] .callout-icon {
+  color: #10b981;
+}
+
+/* Warning callout */
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  border-left-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.05);
+}
+.callout[data-callout="warning"] .callout-icon,
+.callout[data-callout="caution"] .callout-icon,
+.callout[data-callout="attention"] .callout-icon {
+  color: #f59e0b;
+}
+
+/* Danger/Error callout */
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  border-left-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.05);
+}
+.callout[data-callout="danger"] .callout-icon,
+.callout[data-callout="error"] .callout-icon {
+  color: #ef4444;
+}
+
+/* Success callout */
+.callout[data-callout="success"],
+.callout[data-callout="done"] {
+  border-left-color: #22c55e;
+}
+.callout[data-callout="success"] .callout-icon,
+.callout[data-callout="done"] .callout-icon {
+  color: #22c55e;
+}
+
+/* Question callout */
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  border-left-color: #8b5cf6;
+}
+.callout[data-callout="question"] .callout-icon,
+.callout[data-callout="help"] .callout-icon,
+.callout[data-callout="faq"] .callout-icon {
+  color: #8b5cf6;
+}
+
+/* Quote callout - elegant styling */
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  border-left-color: var(--theme-accent, #d97757);
+  border-left-width: 3px;
+  background-color: transparent;
+  padding: 16px 20px;
+}
+
+.callout[data-callout="quote"] .callout-icon,
+.callout[data-callout="cite"] .callout-icon {
+  color: var(--theme-accent, #d97757);
+  opacity: 0.7;
+}
+
+/* Quote title (the actual quote text) - normal weight, no italic */
+.callout[data-callout="quote"] .callout-title-inner,
+.callout[data-callout="cite"] .callout-title-inner {
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: var(--text-normal) !important;
+}
+
+/* Quote attribution (in callout-content) - normal style */
+.callout[data-callout="quote"] .callout-content,
+.callout[data-callout="cite"] .callout-content,
+.callout[data-callout="quote"] .callout-content p,
+.callout[data-callout="cite"] .callout-content p {
+  font-style: normal;
+  font-size: 0.9em;
+  color: var(--text-muted) !important;
+  margin-top: 8px;
+}
+
+/* Example callout */
+.callout[data-callout="example"] {
+  border-left-color: #a855f7;
+}
+.callout[data-callout="example"] .callout-icon {
+  color: #a855f7;
+}
+
+/* Abstract/Summary callout */
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  border-left-color: #14b8a6;
+}
+.callout[data-callout="abstract"] .callout-icon,
+.callout[data-callout="summary"] .callout-icon,
+.callout[data-callout="tldr"] .callout-icon {
+  color: #14b8a6;
+}
+
+/* ============================================
+   TABLE ENHANCEMENTS
+   ============================================ */
+
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 16px 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.markdown-rendered th {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row striping */
+.markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.theme-dark .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Row hover */
+.markdown-rendered tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.theme-dark .markdown-rendered tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* ============================================
+   IMAGE GRIDS
+   Use: Place images consecutively without blank lines
+   ============================================ */
+
+/* Images in a row become a grid */
+.markdown-rendered p > .image-embed + .image-embed,
+.markdown-rendered p > img + img {
+  margin-left: 8px;
+}
+
+.markdown-rendered p:has(> .image-embed + .image-embed),
+.markdown-rendered p:has(> img + img) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.markdown-rendered p:has(> .image-embed + .image-embed) .image-embed,
+.markdown-rendered p:has(> img + img) img {
+  flex: 1 1 auto;
+  max-width: calc(50% - 4px);
+  margin: 0;
+}
+
+/* Three or more images */
+.markdown-rendered p:has(> .image-embed + .image-embed + .image-embed) .image-embed,
+.markdown-rendered p:has(> img + img + img) img {
+  max-width: calc(33.33% - 6px);
+}
+
+/* Image styling */
+.markdown-rendered img {
+  border-radius: var(--radius-m);
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ============================================
+   IMAGE ZOOM ON HOVER
+   ============================================ */
+
+.markdown-rendered img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.markdown-rendered img:hover {
+  transform: scale(1.02);
+}
+
+/* Click to zoom (works with image modal) */
+.markdown-rendered img:active {
+  transform: scale(1);
+}
+
+/* ============================================
+   FOCUS MODE
+   Toggle with body class: .focus-mode
+   ============================================ */
+
+body.focus-mode .workspace-ribbon,
+body.focus-mode .status-bar,
+body.focus-mode .workspace-tab-header-container,
+body.focus-mode .view-header {
+  display: none !important;
+}
+
+body.focus-mode .workspace-split.mod-left-split,
+body.focus-mode .workspace-split.mod-right-split {
+  width: 0 !important;
+  min-width: 0 !important;
+}
+
+body.focus-mode .workspace-leaf-content {
+  padding-top: 20px;
+}
+
+/* ============================================
+   CARD LAYOUTS
+   Use: Add cssclass: cards to frontmatter
+   ============================================ */
+
+.cards .dataview.table-view-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  border: none;
+}
+
+.cards .dataview.table-view-table thead {
+  display: none;
+}
+
+.cards .dataview.table-view-table tbody {
+  display: contents;
+}
+
+.cards .dataview.table-view-table tr {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 16px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.cards .dataview.table-view-table tr:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cards .dataview.table-view-table td {
+  border: none;
+  padding: 4px 0;
+}
+
+.cards .dataview.table-view-table td:first-child {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+/* List cards */
+.cards ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.cards ul li {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 12px 16px;
+}
+
+/* ============================================
+   OLED TRUE BLACK MODE
+   Add cssclass: oled or use Style Settings
+   ============================================ */
+
+body.oled.theme-dark,
+.theme-dark.oled {
+  --background-primary: #000000;
+  --background-primary-alt: #0a0a0a;
+  --background-secondary: #000000;
+  --sidebar-bg: #000000;
+}
+
+body.oled.theme-dark .workspace-leaf-content,
+body.oled.theme-dark .view-content,
+body.oled.theme-dark .markdown-preview-view {
+  background-color: #000000 !important;
+}
+
+/* ============================================
+   TAG STYLING - Pill shaped
+   ============================================ */
+
+.tag {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.tag:hover {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+  text-decoration: none;
+}
+
+/* Tag colors by prefix */
+.tag[href*="status"] {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #3b82f6;
+}
+
+.tag[href*="priority"] {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.tag[href*="project"] {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+/* Database/Properties multi-select tags (e.g., in table views) */
+.multi-select-pill {
+  background-color: var(--tag-background) !important;
+  border: 1px solid var(--tag-color) !important;
+  color: var(--tag-color) !important;
+}
+
+.multi-select-pill:hover {
+  background-color: var(--tag-background-hover) !important;
+  border-color: var(--tag-color-hover) !important;
+  color: var(--tag-color-hover) !important;
+}
+
+/* ============================================
+   EMBED STYLING
+   ============================================ */
+
+.markdown-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-left: 3px solid var(--theme-accent, #d97757);
+  border-radius: var(--radius-m);
+  padding: 12px 16px;
+  margin: 16px 0;
+  background-color: var(--background-primary);
+}
+
+.markdown-embed-title {
+  font-weight: 600;
+  font-size: 0.85em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-embed-content {
+  font-size: 0.95em;
+}
+
+.markdown-embed .markdown-embed-link {
+  color: var(--text-faint);
+  font-size: 0.75em;
+  right: 8px;
+  top: 8px;
+}
+
+/* Internal embed hover */
+.markdown-embed:hover {
+  border-color: var(--background-modifier-border-hover);
+}
+
+/* File embed */
+.file-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 12px 16px;
+  margin: 8px 0;
+  background-color: var(--background-secondary);
+}
+
+.file-embed-title {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ============================================
+   TAB STYLING - Consistent width and color
+   ============================================ */
+
+/* Tab styling - consistent width and distinct background */
+.workspace-tab-header[data-type="markdown"],
+.workspace-tab-header[data-type="canvas"] {
+  width: 28px !important;
+  min-width: 28px !important;
+  max-width: 28px !important;
+  padding: 3px !important;
+  background-color: var(--background-secondary-alt) !important;
+  font-family: var(--font-tab) !important;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Active tab - optional highlight (controlled by Style Settings toggle) */
+/* Anthropic scheme */
+body.scheme-anthropic.theme-light.active-tab-highlight .workspace-tab-header.is-active {
+  background-color: var(--active-tab-color, #f0efe7) !important;
+}
+
+body.scheme-anthropic.theme-dark.active-tab-highlight .workspace-tab-header.is-active {
+  background-color: var(--active-tab-color-dark, #1e1e1f) !important;
+}
+
+/* Nordic scheme defaults */
+body.scheme-nordic.theme-light.active-tab-highlight .workspace-tab-header.is-active {
+  background-color: var(--active-tab-color, #D8DEE9) !important;
+}
+
+body.scheme-nordic.theme-dark.active-tab-highlight .workspace-tab-header.is-active {
+  background-color: var(--active-tab-color-dark, #3B4252) !important;
+}
+
+/* Academic scheme defaults */
+body.scheme-academic.theme-light.active-tab-highlight .workspace-tab-header.is-active {
+  background-color: var(--active-tab-color, #E0E0E0) !important;
+}
+
+body.scheme-academic.theme-dark.active-tab-highlight .workspace-tab-header.is-active {
+  background-color: var(--active-tab-color-dark, #2a2a2a) !important;
+}
+
+/* ============================================
+   TEXT ALIGNMENT
+   ============================================ */
+
+/* Lists - left aligned (not justified) */
+.markdown-rendered ul,
+.markdown-rendered ol,
+.markdown-rendered li,
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-preview-view li,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-list-line {
+  text-align: left !important;
+}
+
+
+/* ============================================
+   TAB STYLING (copied from Monocode/Shimmering Focus)
+   ============================================ */
+
+/* Variable for stacked tab width */
+body {
+  --tab-stacked-header-width: 28px;
+}
+
+/* Sidebar tab containers - collapse when not hovered */
+:is(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-top) .workspace-tab-header-container:not(:hover) {
+  height: 12px;
+  transition: height 0.15s ease;
+}
+
+:is(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-top) .workspace-tab-header-container:hover {
+  height: auto;
+}
+
+
+/* Right/Left split tab header styling */
+:is(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
+  background-color: var(--sidebar-bg) !important;
+}
+
+:is(.mod-right-split, .mod-left-split) .workspace-tab-header {
+  background-color: var(--sidebar-bg) !important;
+  font-family: var(--font-tab) !important;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Main workspace tab container - use Obsidian defaults */
+
+/* ============================================
+   HIDE TOP TAB BAR (VERTICAL TABS)
+   When using vertical/stacked tabs, hides the horizontal
+   bar above the tabs that contains the + new tab button
+   ============================================ */
+
+/* Hide the new tab button */
+body.hide-top-tab-bar .mod-root .workspace-tab-header-new-tab {
+  display: none !important;
+}
+
+/* Hide the before container that holds the + button */
+body.hide-top-tab-bar .mod-root .workspace-tab-container-before {
+  display: none !important;
+}
+
+/* Collapse the spacer height without removing it from layout */
+body.hide-top-tab-bar .mod-root .workspace-tab-header-spacer {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Collapse the entire horizontal header container above vertical tabs */
+body.hide-top-tab-bar .mod-root .workspace-tab-header-container {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+
+body.hide-top-tab-bar .mod-root .workspace-tab-header-container-inner {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ============================================
+   JUSTIFIED TEXT
+   Justify paragraph text in reading and editing modes
+   ============================================ */
+
+/* Reading mode */
+body.justified-text .markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Source view and live preview */
+body.justified-text .markdown-source-view.mod-cm6 .cm-line {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ============================================
+   FLOATING STATUS BAR
+   Float the status bar in the center bottom of the screen
+   ============================================ */
+
+body.floating-toolbar .status-bar {
+  position: fixed !important;
+  bottom: 15px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 1000;
+  background-color: var(--background-secondary);
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 4px 0px 4px 12px !important;
+  width: max-content;
+  min-width: max-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================================
+   FOOTLINKS / CONTENT POSITIONING
+   Prevent content from stretching to fill viewport
+   (places footlinks right after note content)
+   Adapted from Pale theme approach
+   ============================================ */
+
+/* Key fix: Make workspace leaf only as tall as content */
+.mod-root .workspace-leaf {
+  height: auto !important;
+  max-height: none;
+}
+
+/* Prevent sizer from expanding beyond content */
+.markdown-preview-sizer {
+  min-height: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Remove flex-grow that pushes footer to bottom */
+.markdown-reading-view {
+  flex-grow: 0 !important;
+}
+
+.cm-sizer {
+  min-height: 0 !important;
+}
+
+/* Richfoot plugin links - underline text only, not arrows */
+a[data-is-backlink="true"],
+a[data-is-outlink="true"],
+.embed-container a.cm-hmd-internal-link,
+.embed-container a.internal-link,
+a.cm-hmd-internal-link.cm-underline[data-is-backlink="true"],
+a.cm-hmd-internal-link.cm-underline[data-is-outlink="true"] {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 2px !important;
+}
+
+a[data-is-backlink="true"]:hover,
+a[data-is-outlink="true"]:hover,
+.embed-container a.cm-hmd-internal-link:hover,
+.embed-container a.internal-link:hover,
+a.cm-hmd-internal-link.cm-underline[data-is-backlink="true"]:hover,
+a.cm-hmd-internal-link.cm-underline[data-is-outlink="true"]:hover {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+}
+
+/* Arrows - inline-block breaks text-decoration inheritance */
+a[data-is-backlink="true"]::before,
+a[data-is-outlink="true"]::after,
+.rich-foot--links ul li a::before,
+.rich-foot--links ul li a::after,
+.rich-foot--backlinks ul li a::before,
+.rich-foot--outlinks ul li a::after {
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+/* Richfoot link text - crisp, full color (not muted) */
+.rich-foot--links ul li a,
+.rich-foot--backlinks ul li a,
+.rich-foot--outlinks ul li a {
+  color: var(--text-normal) !important;
+  opacity: 1 !important;
+  font-weight: 400;
+}
+
+/* Richfoot section headers - Anthropic scheme */
+body.scheme-anthropic .rich-foot--backlinks::before,
+body.scheme-anthropic .rich-foot--outlinks::before,
+body.scheme-anthropic .rich-foot--links::before {
+  color: #D67758 !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Richfoot section headers - Nordic scheme */
+body.scheme-nordic .rich-foot--backlinks::before,
+body.scheme-nordic .rich-foot--outlinks::before,
+body.scheme-nordic .rich-foot--links::before {
+  color: #5E81AC !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Richfoot section headers - Academic scheme */
+body.scheme-academic .rich-foot--backlinks::before,
+body.scheme-academic .rich-foot--outlinks::before,
+body.scheme-academic .rich-foot--links::before {
+  color: #555555 !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Richfoot section headers - Old Money scheme (brass) */
+body.scheme-oldmoney .rich-foot--backlinks::before,
+body.scheme-oldmoney .rich-foot--outlinks::before,
+body.scheme-oldmoney .rich-foot--links::before {
+  color: #9A7B5B !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* ============================================
+   FILE EXPLORER ICONS
+   Optional icons for folders and files using Lucide-style SVGs
+   Toggle via Style Settings: "Show File Explorer Icons"
+
+   All icons are monochrome - same stroke color, different shapes
+   ============================================ */
+
+/* Base styles for all icons */
+body.file-explorer-icons .nav-folder-title-content::before,
+body.file-explorer-icons .nav-file-title::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: -2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   LIGHT MODE ICONS
+   ============================================ */
+
+/* Folder icon (Lucide folder) */
+body.file-explorer-icons.theme-light .nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'/%3E%3C/svg%3E");
+}
+
+/* Markdown files - file-text icon */
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".md"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' x2='8' y1='13' y2='13'/%3E%3Cline x1='16' x2='8' y1='17' y2='17'/%3E%3Cline x1='10' x2='8' y1='9' y2='9'/%3E%3C/svg%3E");
+}
+
+/* Images - image icon */
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".png"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".jpg"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".jpeg"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".gif"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".svg"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".webp"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2' ry='2'/%3E%3Ccircle cx='9' cy='9' r='2'/%3E%3Cpath d='m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21'/%3E%3C/svg%3E");
+}
+
+/* PDF and generic documents - simple file icon */
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".pdf"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".doc"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".docx"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".ppt"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".pptx"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
+}
+
+/* Spreadsheets - table icon */
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".xls"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".xlsx"]::before,
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".csv"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18'/%3E%3C/svg%3E");
+}
+
+/* Canvas - grid icon */
+body.file-explorer-icons.theme-light .nav-file-title[data-path$=".canvas"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='7' x='3' y='3' rx='1'/%3E%3Crect width='7' height='7' x='14' y='3' rx='1'/%3E%3Crect width='7' height='7' x='14' y='14' rx='1'/%3E%3Crect width='7' height='7' x='3' y='14' rx='1'/%3E%3C/svg%3E");
+}
+
+/* ============================================
+   DARK MODE ICONS
+   ============================================ */
+
+/* Folder icon */
+body.file-explorer-icons.theme-dark .nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'/%3E%3C/svg%3E");
+}
+
+/* Markdown files - file-text icon */
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".md"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' x2='8' y1='13' y2='13'/%3E%3Cline x1='16' x2='8' y1='17' y2='17'/%3E%3Cline x1='10' x2='8' y1='9' y2='9'/%3E%3C/svg%3E");
+}
+
+/* Images - image icon */
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".png"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".jpg"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".jpeg"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".gif"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".svg"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".webp"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2' ry='2'/%3E%3Ccircle cx='9' cy='9' r='2'/%3E%3Cpath d='m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21'/%3E%3C/svg%3E");
+}
+
+/* PDF and generic documents - simple file icon */
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".pdf"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".doc"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".docx"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".ppt"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".pptx"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
+}
+
+/* Spreadsheets - table icon */
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".xls"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".xlsx"]::before,
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".csv"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18'/%3E%3C/svg%3E");
+}
+
+/* Canvas - grid icon */
+body.file-explorer-icons.theme-dark .nav-file-title[data-path$=".canvas"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='7' x='3' y='3' rx='1'/%3E%3Crect width='7' height='7' x='14' y='3' rx='1'/%3E%3Crect width='7' height='7' x='14' y='14' rx='1'/%3E%3Crect width='7' height='7' x='3' y='14' rx='1'/%3E%3C/svg%3E");
+}
+
+/* ============================================
+   INTERACTION STATES
+   ============================================ */
+
+/* Hover state - increase opacity */
+body.file-explorer-icons .nav-folder-title:hover .nav-folder-title-content::before,
+body.file-explorer-icons .nav-file-title:hover::before {
+  opacity: 0.85;
+}
+
+/* Active file - full opacity */
+body.file-explorer-icons .nav-file-title.is-active::before {
+  opacity: 1;
+}
+/* ============================================
+   FULL CALENDAR PLUGIN COMPATIBILITY
+   Styles for the obsidian-full-calendar plugin
+   ============================================ */
+
+/* Today cell - use subtle accent tint instead of grey */
+.fc .fc-day-today {
+  background-color: var(--background-primary) !important;
+}
+
+/* Today cell highlight - subtle accent border instead of background */
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: color-mix(in srgb, var(--interactive-accent) 8%, var(--background-primary)) !important;
+}
+
+/* Scheme-specific today backgrounds */
+body.scheme-anthropic.theme-light .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(217, 119, 87, 0.08) !important;
+}
+
+body.scheme-anthropic.theme-dark .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(217, 119, 87, 0.12) !important;
+}
+
+body.scheme-nordic.theme-light .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(94, 129, 172, 0.08) !important;
+}
+
+body.scheme-nordic.theme-dark .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(136, 192, 208, 0.12) !important;
+}
+
+body.scheme-academic.theme-light .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+body.scheme-academic.theme-dark .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+body.scheme-oldmoney.theme-light .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(184, 149, 110, 0.08) !important;
+}
+
+body.scheme-oldmoney.theme-dark .fc .fc-daygrid-day.fc-day-today {
+  background-color: rgba(184, 149, 110, 0.12) !important;
+}
+
+/* Calendar grid borders - use theme border color */
+.fc .fc-scrollgrid,
+.fc .fc-scrollgrid-section > td,
+.fc .fc-scrollgrid-section > th,
+.fc td,
+.fc th {
+  border-color: var(--background-modifier-border) !important;
+}
+
+/* Day numbers - use theme text color */
+.fc .fc-daygrid-day-number {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.fc .fc-day-today .fc-daygrid-day-number {
+  color: var(--text-normal);
+  font-weight: 600;
+}
+
+/* Header toolbar */
+.fc .fc-toolbar-title {
+  color: var(--text-normal);
+  font-family: var(--font-headings, var(--font-interface));
+}
+
+.fc .fc-button {
+  background-color: var(--interactive-normal) !important;
+  border-color: var(--background-modifier-border) !important;
+  color: var(--text-normal) !important;
+}
+
+.fc .fc-button:hover {
+  background-color: var(--interactive-hover) !important;
+}
+
+.fc .fc-button-active {
+  background-color: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+}
+
+/* Week/day headers */
+.fc .fc-col-header-cell-cushion {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+/* Event styling - let plugin colors through but ensure readability */
+.fc .fc-event {
+  border-radius: var(--radius-s);
+}
+
+/* Past days - slightly muted */
+.fc .fc-day-past .fc-daygrid-day-number {
+  color: var(--text-faint);
+}
+
+/* Calendar container background */
+.fc {
+  background-color: var(--background-primary);
+}
+
+.fc .fc-view-harness {
+  background-color: var(--background-primary);
+}
+/* ============================================
+   TASK GENIUS PLUGIN COMPATIBILITY
+   Additional fixes for Task Genius status selector
+   ============================================ */
+
+/* Ensure status selector containers are transparent */
+.details-status-selector {
+  background-color: transparent;
+}
+
+.details-status-selector .status-option {
+  background-color: transparent;
+}
+
+/* Current/selected status option - subtle highlight */
+.details-status-selector .status-option.current {
+  background-color: rgba(128, 128, 128, 0.15);
+  border-radius: 4px;
+}
+
+/* More options button */
+.details-status-selector .more-status,
+.details-status-selector .clickable-icon {
+  background-color: transparent;
+}
+/* ============================================
+   SCHEME-SPECIFIC TAB OVERRIDES (high specificity)
+   Must come last to override all other tab rules
+   ============================================ */
+
+/* Anthropic Light - all active tabs */
+body.scheme-anthropic.theme-light .workspace-tab-header.is-active,
+body.scheme-anthropic.theme-light .workspace-tab-header.mod-active,
+body.scheme-anthropic.theme-light .mod-root .workspace-tab-header.is-active,
+body.scheme-anthropic.theme-light .mod-root .workspace-tab-header.mod-active {
+  background-color: #D5D2CB !important;
+}
+
+/* Anthropic Light - non-active tabs */
+body.scheme-anthropic.theme-light .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #f0efe8 !important;
+}
+
+/* Anthropic Dark - all active tabs */
+body.scheme-anthropic.theme-dark .workspace-tab-header.is-active,
+body.scheme-anthropic.theme-dark .workspace-tab-header.mod-active,
+body.scheme-anthropic.theme-dark .mod-root .workspace-tab-header.is-active,
+body.scheme-anthropic.theme-dark .mod-root .workspace-tab-header.mod-active {
+  background-color: #2a2a2b !important;
+}
+
+/* Anthropic Dark - non-active tabs */
+body.scheme-anthropic.theme-dark .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #1a1a1b !important;
+}
+
+/* Nordic Light - all active tabs */
+body.scheme-nordic.theme-light .workspace-tab-header.is-active,
+body.scheme-nordic.theme-light .workspace-tab-header.mod-active,
+body.scheme-nordic.theme-light .mod-root .workspace-tab-header.is-active,
+body.scheme-nordic.theme-light .mod-root .workspace-tab-header.mod-active {
+  background-color: #D8DEE9 !important;
+}
+
+/* Nordic Light - non-active tabs */
+body.scheme-nordic.theme-light .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #E5E9F0 !important;
+}
+
+/* Nordic Dark - all active tabs */
+body.scheme-nordic.theme-dark .workspace-tab-header.is-active,
+body.scheme-nordic.theme-dark .workspace-tab-header.mod-active,
+body.scheme-nordic.theme-dark .mod-root .workspace-tab-header.is-active,
+body.scheme-nordic.theme-dark .mod-root .workspace-tab-header.mod-active {
+  background-color: #3B4252 !important;
+}
+
+/* Nordic Dark - non-active tabs */
+body.scheme-nordic.theme-dark .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #2E3440 !important;
+}
+
+/* Academic Light - all active tabs */
+body.scheme-academic.theme-light .workspace-tab-header.is-active,
+body.scheme-academic.theme-light .workspace-tab-header.mod-active,
+body.scheme-academic.theme-light .mod-root .workspace-tab-header.is-active,
+body.scheme-academic.theme-light .mod-root .workspace-tab-header.mod-active {
+  background-color: #E0E0E0 !important;
+}
+
+/* Academic Light - non-active tabs */
+body.scheme-academic.theme-light .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #F0F0F0 !important;
+}
+
+/* Academic Dark - all active tabs */
+body.scheme-academic.theme-dark .workspace-tab-header.is-active,
+body.scheme-academic.theme-dark .workspace-tab-header.mod-active,
+body.scheme-academic.theme-dark .mod-root .workspace-tab-header.is-active,
+body.scheme-academic.theme-dark .mod-root .workspace-tab-header.mod-active {
+  background-color: #2a2a2a !important;
+}
+
+/* Academic Dark - non-active tabs */
+body.scheme-academic.theme-dark .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #1a1a1a !important;
+}
+
+/* Old Money Light - all active tabs */
+body.scheme-oldmoney.theme-light .workspace-tab-header.is-active,
+body.scheme-oldmoney.theme-light .workspace-tab-header.mod-active,
+body.scheme-oldmoney.theme-light .mod-root .workspace-tab-header.is-active,
+body.scheme-oldmoney.theme-light .mod-root .workspace-tab-header.mod-active {
+  background-color: #E3DDD4 !important;
+}
+
+/* Old Money Light - non-active tabs */
+body.scheme-oldmoney.theme-light .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #EDE8E1 !important;
+}
+
+/* Old Money Dark - all active tabs */
+body.scheme-oldmoney.theme-dark .workspace-tab-header.is-active,
+body.scheme-oldmoney.theme-dark .workspace-tab-header.mod-active,
+body.scheme-oldmoney.theme-dark .mod-root .workspace-tab-header.is-active,
+body.scheme-oldmoney.theme-dark .mod-root .workspace-tab-header.mod-active {
+  background-color: #2A2826 !important;
+}
+
+/* Old Money Dark - non-active tabs */
+body.scheme-oldmoney.theme-dark .workspace-tab-header:not(.is-active):not(.mod-active) {
+  background-color: #1E1C1A !important;
+}
+
+/* ============================================
+   VIEW HEADER BACKGROUND FIXES
+   ============================================ */
+
+/* Nordic Dark - view header should match background */
+body.scheme-nordic.theme-dark .view-header {
+  background-color: #2E3440 !important;
+}
+
+body.scheme-nordic.theme-dark .workspace-leaf-content {
+  background-color: #2E3440 !important;
+}
+
+/* Academic Dark - view header should match background */
+body.scheme-academic.theme-dark .view-header {
+  background-color: #1a1a1a !important;
+}
+
+body.scheme-academic.theme-dark .workspace-leaf-content {
+  background-color: #1a1a1a !important;
+}
+
+/* Top bar uniform background */
+.sidebar-toggle-button,
+.mod-top-left-space {
+  background-color: var(--titlebar-background);
+}
+
+/* Tab list should be transparent so chevron blends with surroundings */
+.workspace-tab-header-tab-list {
+  background-color: transparent;
+}
+
+/* Sidebar panel icons (folder, bookmark, search, forward) - subtle background */
+/* Target only the left sidebar icons, NOT main workspace controls */
+.mod-left-split .workspace-tab-header-container .workspace-tab-header-inner {
+  background-color: var(--background-secondary-alt) !important;
+  border-radius: var(--radius-s);
+}
+
+/* Remove background from workspace dropdown/chevron controls */
+/* Use unset to completely reset the background */
+.workspace-tab-header-tab-list > .clickable-icon,
+.workspace-tab-header-tab-list .clickable-icon,
+div.workspace-tab-header-tab-list > span.clickable-icon,
+.workspace-tab-header-tab-list span.clickable-icon {
+  background: unset !important;
+  background-color: unset !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-normal);
+}
+
+/* Override any Obsidian default interactive background */
+.workspace-tab-header-tab-list .clickable-icon,
+.workspace-tab-header-tab-list .clickable-icon:hover {
+  background: unset !important;
+  background-color: unset !important;
+  box-shadow: none !important;
+}
+
+/* Scheme-specific overrides for Nordic and Academic (higher specificity) */
+body.scheme-nordic.theme-dark .workspace-tab-header-tab-list .clickable-icon,
+body.scheme-nordic.theme-dark .workspace-tab-header-tab-list .clickable-icon:hover,
+body.scheme-academic.theme-dark .workspace-tab-header-tab-list .clickable-icon,
+body.scheme-academic.theme-dark .workspace-tab-header-tab-list .clickable-icon:hover,
+body.theme-dark .workspace-tab-header-tab-list .clickable-icon,
+body.theme-dark .workspace-tab-header-tab-list .clickable-icon:hover,
+.theme-dark .workspace-tab-header-tab-list > .clickable-icon,
+.theme-dark div.workspace-tab-header-tab-list > span.clickable-icon {
+  background: unset !important;
+  background-color: unset !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Maximum specificity override - repeat class for higher specificity */
+body.theme-dark.theme-dark .workspace-tab-header-tab-list.workspace-tab-header-tab-list .clickable-icon.clickable-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Nuclear option - target all clickable-icons in tab list with max specificity */
+body.theme-dark div.workspace-tab-header-tab-list span.clickable-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Ultimate reset for tab-list clickable icons - covers all possibilities */
+.workspace-tab-header-tab-list .clickable-icon,
+.workspace-tab-header-tab-list .clickable-icon *,
+.workspace-tab-header-tab-list .clickable-icon::before,
+.workspace-tab-header-tab-list .clickable-icon::after,
+.workspace-tab-header-tab-list .clickable-icon svg {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Force for all dark themes regardless of scheme */
+.theme-dark .workspace-tab-header-tab-list .clickable-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  --background-modifier-hover: transparent !important;
+  --interactive-normal: transparent !important;
+}
+
+/* Target the has-active-menu state that adds background */
+.workspace-tab-header-tab-list .clickable-icon.has-active-menu,
+.workspace-tab-header-tab-list .has-active-menu,
+.clickable-icon.has-active-menu {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.theme-dark .clickable-icon.has-active-menu,
+body.theme-dark .workspace-tab-header-tab-list .clickable-icon.has-active-menu {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ============================================
+   MOBILE & TABLET STYLING
+   Responsive adjustments for touch devices
+   ============================================ */
+
+/* --------------------------------------------
+   Mobile Base Variables
+   -------------------------------------------- */
+
+body.is-mobile {
+  /* Touch-friendly sizes */
+  --touch-size-xs: 32px;
+  --touch-size-s: 36px;
+  --touch-size-m: 44px;  /* Apple's minimum recommended touch target */
+  --touch-size-l: 48px;
+
+  /* Increased spacing for touch */
+  --mobile-padding: 12px;
+  --mobile-padding-large: 16px;
+
+  /* Larger text for readability */
+  --mobile-font-size: 16px;
+  --mobile-font-size-small: 14px;
+
+  /* Increased border radius for softer look on mobile */
+  --mobile-radius: 8px;
+
+  /* Safe area insets (for notched devices) */
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-left: env(safe-area-inset-left, 0px);
+  --safe-area-right: env(safe-area-inset-right, 0px);
+}
+
+/* Phone-specific variables */
+body.is-phone {
+  --mobile-font-size: 16px;
+  --nav-item-size: var(--touch-size-m);
+}
+
+/* Tablet-specific variables */
+body.is-tablet {
+  --mobile-font-size: 15px;
+  --nav-item-size: var(--touch-size-s);
+}
+
+/* --------------------------------------------
+   Workspace Container (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .workspace {
+  padding-top: var(--safe-area-top);
+}
+
+body.is-mobile .workspace-tab-container {
+  padding-top: var(--safe-area-top);
+}
+
+/* --------------------------------------------
+   Workspace Drawer (Mobile Sidebar)
+   -------------------------------------------- */
+
+body.is-mobile .workspace-drawer {
+  background-color: var(--sidebar-bg);
+}
+
+body.is-mobile .workspace-drawer-inner {
+  padding-bottom: var(--safe-area-bottom);
+  background-color: var(--sidebar-bg);
+}
+
+/* Drawer header (vault name area) */
+body.is-mobile .workspace-drawer-header {
+  padding: var(--mobile-padding) var(--mobile-padding-large);
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+body.is-mobile .workspace-drawer-header-icon {
+  color: var(--icon-color);
+}
+
+body.is-mobile .workspace-drawer-header-name {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.1em;
+  color: var(--text-normal);
+}
+
+body.is-mobile .workspace-drawer-header-info {
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+/* Drawer vault switcher */
+body.is-mobile .workspace-drawer-vault-switcher {
+  padding: 8px;
+  border-radius: var(--mobile-radius);
+}
+
+body.is-mobile .workspace-drawer-vault-switcher:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+/* Drawer tab options (Files, Search, Bookmarks tabs) */
+body.is-mobile .workspace-drawer-active-tab-header {
+  padding: 8px var(--mobile-padding);
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+body.is-mobile .workspace-drawer-tab-option-item {
+  padding: 10px 14px;
+  border-radius: var(--mobile-radius);
+  min-height: var(--touch-size-s);
+  display: flex;
+  align-items: center;
+}
+
+body.is-mobile .workspace-drawer-tab-option-item.is-active {
+  background-color: var(--background-modifier-hover);
+}
+
+/* Drawer content area */
+body.is-mobile .workspace-drawer-active-tab-content {
+  padding-bottom: var(--safe-area-bottom);
+}
+
+/* Drawer tab select styling */
+body.is-mobile .workspace-drawer-tab-select .workspace-tab-header-inner {
+  background-color: transparent;
+}
+
+body.is-mobile .workspace-drawer-tab-options-list {
+  background-color: var(--background-secondary);
+  border-radius: var(--mobile-radius);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Drawer backdrop */
+body.is-mobile .workspace-drawer-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------
+   File Explorer (Mobile)
+   -------------------------------------------- */
+
+/* Larger tap targets for file/folder items */
+body.is-mobile .nav-file-title,
+body.is-mobile .nav-folder-title {
+  min-height: var(--touch-size-m);
+  padding: 10px var(--mobile-padding);
+  display: flex;
+  align-items: center;
+}
+
+body.is-mobile .nav-file-title-content,
+body.is-mobile .nav-folder-title-content {
+  font-size: var(--mobile-font-size);
+}
+
+/* Allow text to wrap on narrow screens */
+body.is-phone .nav-file-title-content,
+body.is-phone .nav-folder-title-content {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Nav buttons container */
+body.is-mobile .workspace-drawer .nav-buttons-container {
+  padding: var(--mobile-padding);
+  gap: 8px;
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+body.is-mobile .nav-action-button {
+  min-width: var(--touch-size-s);
+  min-height: var(--touch-size-s);
+  padding: 8px;
+  border-radius: var(--mobile-radius);
+}
+
+body.is-mobile .nav-action-button:active {
+  background-color: var(--background-modifier-active-hover);
+}
+
+/* Collapse indicator - larger touch target */
+body.is-mobile .nav-folder-collapse-indicator {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+/* --------------------------------------------
+   Mobile Navbar (Bottom Bar)
+   -------------------------------------------- */
+
+body.is-mobile .mobile-navbar {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--background-modifier-border);
+  padding-bottom: var(--safe-area-bottom);
+}
+
+body.is-mobile .mobile-navbar-actions {
+  padding: 8px var(--mobile-padding);
+  gap: 4px;
+}
+
+body.is-mobile .mobile-navbar-action {
+  min-width: var(--touch-size-m);
+  min-height: var(--touch-size-m);
+  border-radius: var(--mobile-radius);
+  color: var(--icon-color);
+}
+
+body.is-mobile .mobile-navbar-action:active {
+  background-color: var(--background-modifier-active-hover);
+}
+
+body.is-mobile .mobile-navbar-action.is-active {
+  color: var(--theme-accent);
+}
+
+/* --------------------------------------------
+   Mobile Toolbar (Editor Actions)
+   -------------------------------------------- */
+
+body.is-mobile .mobile-toolbar {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--background-modifier-border);
+  padding: 6px var(--mobile-padding);
+}
+
+body.is-mobile .mobile-toolbar-options-container {
+  padding: 4px;
+  gap: 2px;
+}
+
+body.is-mobile .mobile-toolbar-option {
+  min-width: var(--touch-size-s);
+  min-height: var(--touch-size-s);
+  padding: 8px;
+  border-radius: var(--mobile-radius);
+  color: var(--icon-color);
+}
+
+body.is-mobile .mobile-toolbar-option:active {
+  background-color: var(--background-modifier-active-hover);
+}
+
+body.is-mobile .mobile-toolbar-option.is-active {
+  color: var(--theme-accent);
+  background-color: var(--background-modifier-hover);
+}
+
+/* Mobile toolbar options list (expanded toolbar) */
+body.is-mobile .mobile-toolbar-options-list {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--mobile-radius);
+  box-shadow: 0 -4px 16px var(--background-modifier-box-shadow);
+}
+
+/* --------------------------------------------
+   View Header (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .view-header {
+  padding: 8px var(--mobile-padding);
+  min-height: var(--touch-size-m);
+  background-color: var(--background-secondary);
+}
+
+body.is-mobile .view-header-title {
+  font-size: var(--mobile-font-size);
+}
+
+body.is-mobile .view-header-nav-buttons {
+  gap: 4px;
+}
+
+body.is-mobile .view-action {
+  min-width: var(--touch-size-s);
+  min-height: var(--touch-size-s);
+  padding: 8px;
+  border-radius: var(--mobile-radius);
+}
+
+body.is-mobile .view-action:active {
+  background-color: var(--background-modifier-active-hover);
+}
+
+/* --------------------------------------------
+   Pull-Down Action (Mobile Refresh)
+   -------------------------------------------- */
+
+body.is-mobile .pull-down-action {
+  background-color: var(--background-secondary);
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------
+   Modals & Prompts (Mobile)
+   -------------------------------------------- */
+
+/* Full-width modals on phone */
+body.is-phone .modal {
+  width: 95%;
+  max-width: none;
+  margin: var(--mobile-padding);
+}
+
+body.is-phone .prompt {
+  width: 92%;
+  max-height: 85vh;
+  margin-top: var(--safe-area-top);
+}
+
+/* Larger suggestion items for touch */
+body.is-mobile .suggestion-item {
+  min-height: var(--touch-size-m);
+  padding: 10px var(--mobile-padding);
+}
+
+body.is-mobile .suggestion-item:active {
+  background-color: var(--background-modifier-active-hover);
+}
+
+/* Prompt input */
+body.is-mobile .prompt-input {
+  font-size: var(--mobile-font-size);
+  padding: 12px var(--mobile-padding);
+}
+
+/* --------------------------------------------
+   Settings (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .vertical-tab-header {
+  padding: var(--mobile-padding);
+}
+
+body.is-mobile .vertical-tab-nav-item {
+  min-height: var(--touch-size-m);
+  padding: 12px var(--mobile-padding);
+  border-radius: var(--mobile-radius);
+}
+
+body.is-mobile .setting-item {
+  padding: var(--mobile-padding) 0;
+}
+
+body.is-mobile .setting-item-control {
+  gap: 8px;
+}
+
+/* Larger toggles and buttons */
+body.is-mobile .checkbox-container {
+  min-width: 44px;
+  min-height: 24px;
+}
+
+body.is-mobile button {
+  min-height: var(--touch-size-s);
+  padding: 8px 16px;
+}
+
+body.is-mobile .dropdown {
+  min-height: var(--touch-size-s);
+  padding: 8px 12px;
+}
+
+/* --------------------------------------------
+   Tree Items (Mobile) - Outline, Tags, etc.
+   -------------------------------------------- */
+
+body.is-mobile .tree-item-self {
+  min-height: var(--touch-size-m);
+  padding: 10px var(--mobile-padding);
+}
+
+body.is-mobile .tree-item-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Outline pane */
+body.is-mobile .outline-heading {
+  min-height: var(--touch-size-m);
+  padding: 10px var(--mobile-padding);
+}
+
+/* Tag pane */
+body.is-mobile .tag-pane-tag {
+  min-height: var(--touch-size-s);
+  padding: 8px var(--mobile-padding);
+}
+
+/* --------------------------------------------
+   Search Results (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .search-result-file-title {
+  min-height: var(--touch-size-s);
+  padding: 10px var(--mobile-padding);
+}
+
+body.is-mobile .search-result-file-match {
+  padding: 8px var(--mobile-padding);
+}
+
+body.is-mobile .search-result-collapse-indicator {
+  width: 24px;
+  height: 24px;
+}
+
+/* Search input */
+body.is-mobile .search-input-container input {
+  font-size: var(--mobile-font-size);
+  padding: 10px var(--mobile-padding);
+  min-height: var(--touch-size-m);
+}
+
+/* --------------------------------------------
+   Editor Content (Mobile)
+   -------------------------------------------- */
+
+/* Comfortable reading on mobile */
+body.is-mobile .markdown-preview-view,
+body.is-mobile .markdown-source-view {
+  font-size: var(--mobile-font-size);
+  padding: var(--mobile-padding-large);
+}
+
+/* Larger line height for touch scrolling */
+body.is-mobile .markdown-preview-view {
+  line-height: 1.7;
+}
+
+/* Ensure links have enough space between them */
+body.is-mobile .markdown-preview-view a {
+  padding: 2px 0;
+}
+
+/* Inline title */
+body.is-mobile .inline-title {
+  font-size: 1.5em;
+  padding-bottom: var(--mobile-padding);
+}
+
+/* --------------------------------------------
+   Callouts (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .callout {
+  padding: var(--mobile-padding);
+}
+
+body.is-mobile .callout-title {
+  padding: 8px 0;
+}
+
+/* --------------------------------------------
+   Tables (Mobile)
+   -------------------------------------------- */
+
+/* Horizontal scroll for wide tables */
+body.is-phone .markdown-preview-view table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+body.is-mobile .markdown-preview-view th,
+body.is-mobile .markdown-preview-view td {
+  padding: 10px 12px;
+  min-width: 80px;
+}
+
+/* --------------------------------------------
+   Code Blocks (Mobile)
+   -------------------------------------------- */
+
+/* Horizontal scroll for code */
+body.is-mobile .markdown-preview-view pre {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+body.is-mobile .markdown-preview-view pre code {
+  font-size: var(--mobile-font-size-small);
+}
+
+/* --------------------------------------------
+   Images (Mobile)
+   -------------------------------------------- */
+
+/* Full width images on phone */
+body.is-phone .markdown-preview-view img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Disable zoom on hover for mobile (interferes with touch) */
+body.is-mobile .markdown-rendered img:hover {
+  transform: none;
+}
+
+/* --------------------------------------------
+   Checkboxes (Mobile) - Larger Touch Targets
+   -------------------------------------------- */
+
+body.is-mobile input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+body.is-mobile .task-list-item {
+  min-height: var(--touch-size-s);
+  padding: 4px 0;
+}
+
+/* --------------------------------------------
+   Embeds (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .markdown-embed {
+  padding: var(--mobile-padding);
+}
+
+body.is-mobile .file-embed {
+  padding: var(--mobile-padding);
+}
+
+/* --------------------------------------------
+   Graph View (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .graph-controls {
+  padding: var(--mobile-padding);
+}
+
+body.is-mobile .graph-control-section {
+  padding: 8px 0;
+}
+
+/* --------------------------------------------
+   Menu (Mobile)
+   -------------------------------------------- */
+
+body.is-mobile .menu {
+  border-radius: var(--mobile-radius);
+}
+
+body.is-mobile .menu-item {
+  min-height: var(--touch-size-m);
+  padding: 10px var(--mobile-padding);
+}
+
+body.is-mobile .menu-item:active {
+  background-color: var(--background-modifier-active-hover);
+}
+
+body.is-mobile .menu-separator {
+  margin: 4px 0;
+}
+
+/* --------------------------------------------
+   Scrollbars (Mobile) - Hide by default
+   -------------------------------------------- */
+
+body.is-mobile ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body.is-mobile ::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Show scrollbar when actively scrolling */
+body.is-mobile *:hover::-webkit-scrollbar-thumb,
+body.is-mobile *:active::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+}
+
+/* --------------------------------------------
+   Scheme-Specific Mobile Overrides
+   -------------------------------------------- */
+
+/* Anthropic scheme mobile */
+body.scheme-anthropic.is-mobile.theme-light .workspace-drawer {
+  background-color: #F3F1EA;
+}
+
+body.scheme-anthropic.is-mobile.theme-dark .workspace-drawer {
+  background-color: #131314;
+}
+
+/* Nordic scheme mobile */
+body.scheme-nordic.is-mobile.theme-light .workspace-drawer {
+  background-color: #E5E9F0;
+}
+
+body.scheme-nordic.is-mobile.theme-dark .workspace-drawer {
+  background-color: #242933;
+}
+
+/* Academic scheme mobile */
+body.scheme-academic.is-mobile.theme-light .workspace-drawer {
+  background-color: #F5F5F5;
+}
+
+body.scheme-academic.is-mobile.theme-dark .workspace-drawer {
+  background-color: #141414;
+}
+

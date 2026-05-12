@@ -1,0 +1,418 @@
+/* =====================================================
+   OBSIDIAN CUSTOM THEME - TRUE BLACK AESTHETIC
+   Minimal, high-contrast, beautiful syntax highlighting
+   ===================================================== */
+
+/* 1. CORE THEME VARIABLES */
+body,
+.theme-dark,
+.theme-dark body {
+  /* True Black Backgrounds (Forced to override default) */
+  --background-primary: #000000 !important;
+  --background-primary-alt: #000000 !important;
+  --background-secondary: #000000 !important;
+  /* Pitch black sidebar too */
+  --background-secondary-alt: #080808 !important;
+  --background-modifier-border: #1f1f22 !important;
+  --background-modifier-form-field: #111111 !important;
+  --background-modifier-form-field-highlighted: #18181b !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.9) !important;
+  --background-modifier-success: #16a34a !important;
+  --background-modifier-error: #dc2626 !important;
+  --background-modifier-error-rgb: 220, 38, 38 !important;
+  --background-modifier-error-hover: #dd570e !important;
+  --background-modifier-cover: rgba(0, 0, 0, 0.9) !important;
+  --background-modifier-hover: rgba(6, 182, 212, 0.1) !important;
+  /* Cyan hover */
+  --background-modifier-active-hover: rgba(6, 182, 212, 0.15) !important;
+
+  /* Text colors - High contrast for readability */
+  --text-normal: #ffffff !important;
+  --text-muted: #9ca3af !important;
+  --text-faint: #4b5563 !important;
+  --text-error: #ef4444 !important;
+  --text-error-hover: #f87171 !important;
+  --text-success: #10b981 !important;
+  --text-success-hover: #34d399 !important;
+  --text-warning: #f472b6 !important;
+  /* Starlight Pink */
+  --text-warning-hover: #fbcfe8 !important;
+  --text-accent: #a855f7 !important;
+  /* Luminous Purple */
+  --text-accent-hover: #c084fc !important;
+  --text-on-accent: #ffffff !important;
+
+  /* Interactive Elements */
+  --interactive-normal: #111115 !important;
+  --interactive-hover: #1e1e24 !important;
+  --interactive-accent: #8b5cf6 !important;
+  /* Amethyst */
+  --interactive-accent-hover: #a855f7 !important;
+
+  /* Beautiful Space Heading Colors */
+  --h1-color: #67e8f9 !important; /* Soft Cyan */
+  --inline-title-color: #a78bfa !important; /* Soft Lavender */
+  --h2-color: #38bdf8 !important; /* Luminous Sky Blue */
+  --h3-color: #f472b6 !important; /* Starlight Pink */
+  --h4-color: #2dd4bf !important; /* Nebula Teal */
+  --h5-color: #a78bfa !important; /* Dusty Violet */
+  --h6-color: #fca5a5 !important; /* Soft Sunrise Rose */
+
+  /* Link Colors */
+  --link-color: #2dd4bf !important;
+  /* Nebula Teal */
+  --link-color-hover: #5eead4 !important;
+  --link-external-color: #818cf8 !important;
+  /* Indigo/Periwinkle */
+  --link-external-color-hover: #a5b4fc !important;
+  --link-unresolved-color: #e11d48 !important;
+  /* Deep Rose */
+
+  /* Code & Syntax Highlighting - Synthwave Space */
+  --code-background: #0f111a !important;
+  /* Deep cosmic navy-black */
+  --code-normal: #e2e8f0 !important;
+  --code-comment: #64748b !important;
+  --code-keyword: #c084fc !important;
+  /* Soft Purple */
+  --code-string: #f472b6 !important;
+  /* Pink */
+  --code-function: #38bdf8 !important;
+  /* Sky Blue */
+  --code-value: #2dd4bf !important;
+  /* Teal */
+  --code-tag: #818cf8 !important;
+  /* Indigo */
+  --code-property: #a78bfa !important;
+  /* Dusty Violet */
+
+  /* UI & Sizing improvements */
+  --file-line-width: 100% !important;
+  /* Force full width */
+  --line-height-normal: 1.6 !important;
+}
+
+/* 2. ENFORCE THEMED TRANSPARENCY FOR GALAXY BACKGROUND */
+.app-container,
+.workspace,
+.workspace-split,
+.workspace-leaf,
+.view-header {
+  /* Let the galaxy from the body shine through the UI layers */
+  background-color: transparent !important;
+}
+
+.workspace-leaf-content,
+.view-content {
+  /* Semi-transparent dark overlay to keep text hyper-readable */
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+
+/* 3. FORCE FULL WIDTH (OVERRIDE 'READABLE LINE LENGTH' GAPS) */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-sizer,
+.markdown-source-view.mod-cm6 .cm-contentContainer,
+.markdown-preview-view .markdown-preview-sizer,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+/* 3. CODE BLOCK AND INLINE CODE REFINEMENTS */
+/* Inline Code */
+:not(pre)>code,
+.cm-s-obsidian span.cm-inline-code {
+  color: #0bed74 !important;
+  /* Luminous sky blue text */
+  background-color: rgba(56, 189, 248, 0.15) !important;
+  /* Very soft matching tinted background */
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  /* Delicate glowing edge */
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+}
+
+/* Code Blocks (Reading View & Variables) */
+.theme-dark {
+  --blockquote-border-color: var(--text-accent) !important;
+  --blockquote-border-thickness: 4px !important;
+  --blockquote-background-color: rgba(139, 92, 246, 0.1) !important;
+  /* Subtle amethyst */
+}
+
+/* Apply beautiful borders only to the full containers to prevent fragmentation in Live Preview */
+.markdown-preview-view pre {
+  background-color: var(--code-background) !important;
+  border-radius: 8px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view pre code {
+  color: var(--code-normal) !important;
+}
+
+/* In live preview, ensure lines don't get individual borders breaking them apart */
+.cm-s-obsidian .HyperMD-codeblock {
+  background-color: var(--code-background) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+/* 4. HEADING SIZES, WEIGHTS, AND GLOWS */
+.inline-title {
+  color: var(--inline-title-color) !important;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+}
+
+.markdown-rendered h1,
+.cm-header-1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-top: 1.5em;
+  border-bottom: 2px solid var(--background-modifier-border);
+  padding-bottom: 0.3em;
+  color: var(--h1-color) !important;
+  text-shadow: 0 0 12px rgba(103, 232, 249, 0.3);
+  /* Soft Cyan Glow */
+}
+
+.markdown-rendered h2,
+.cm-header-2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 1.3em;
+  color: var(--h2-color) !important;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+  /* Sky Blue Glow */
+}
+
+.markdown-rendered h3,
+.cm-header-3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1.1em;
+  color: var(--h3-color) !important;
+  text-shadow: 0 0 8px rgba(244, 114, 182, 0.4);
+  /* Pink Glow */
+}
+
+.markdown-rendered h4,
+.cm-header-4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--h4-color) !important;
+}
+
+/* 5. BULLETS & CHECKBOXES */
+.markdown-rendered ul>li::marker,
+.cm-formatting-list {
+  color: var(--text-accent) !important;
+}
+
+input[type="checkbox"] {
+  border: 2px solid var(--text-muted);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--text-accent);
+  border-color: var(--text-accent);
+}
+
+/* 6. QUOTE BLOCKS (Reading View) */
+.markdown-rendered blockquote {
+  border-left: 4px solid var(--text-accent) !important;
+  background: var(--blockquote-background-color) !important;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 0 8px 8px 0;
+  color: #e2e8f0 !important;
+  font-style: italic;
+}
+
+
+/* 7. FORCE WHITE TEXT EVERYWHERE ELSE */
+p,
+li,
+.cm-line {
+  color: #ffffff !important;
+  font-weight: 400;
+}
+
+/* 8. IMAGE RESET (Disable Hover Highlight/Focus) */
+img,
+.markdown-rendered img,
+.markdown-source-view.mod-cm6 img,
+.workspace-leaf-content[data-type="markdown"] img {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: opacity 0s !important;
+  box-shadow: none !important;
+}
+
+/* 9. GLOBAL GALAXY STARS OVERRIDE */
+html,
+body,
+body.theme-dark {
+  background-color: #030305 !important;
+  /* Deepest cosmic void instead of flat black */
+  background-image:
+    /* Intense White Stars */
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.5) 1px, transparent 1.5px),
+    radial-gradient(circle at 90% 10%, rgba(255, 255, 255, 0.4) 1.5px, transparent 2px),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.3) 0.5px, transparent 1px),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.6) 1px, transparent 1.5px),
+    /* Colored Distant Stars (Pink & Blue) */
+    radial-gradient(circle at 40% 70%, rgba(244, 114, 182, 0.4) 1px, transparent 1.5px),
+    radial-gradient(circle at 70% 85%, rgba(56, 189, 248, 0.5) 2px, transparent 2.5px),
+    radial-gradient(circle at 80% 40%, rgba(168, 85, 247, 0.4) 1px, transparent 1.5px),
+    /* Rich Nebula Glows (Purple & Teal/Blue) */
+    radial-gradient(circle at 15% 35%, rgba(168, 85, 247, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(45, 212, 191, 0.07) 0%, transparent 50%),
+    radial-gradient(circle at 50% 10%, rgba(56, 189, 248, 0.05) 0%, transparent 40%) !important;
+  background-size:
+    250px 250px,
+    300px 300px,
+    150px 150px,
+    350px 350px,
+    400px 400px,
+    200px 200px,
+    180px 180px,
+    100vw 100vh,
+    100vw 100vh,
+    100vw 100vh !important;
+  background-attachment: fixed !important;
+}
+
+
+/* Fix sidebar visibility - Allowing plugin overrides */
+.nav-file-title,
+.nav-folder-title {
+  color: #e4e4e7;
+  /* Removed !important to allow plugin colors */
+}
+
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: var(--background-modifier-hover);
+  color: #ffffff;
+  /* Removed !important */
+}
+
+
+/* 11. GRAPH VIEW AESTHETICS */
+.theme-dark {
+  --graph-node: #a855f7 !important;
+  /* Luminous Purple */
+  --graph-node-unresolved: #f472b6 !important;
+  /* Starlight Pink */
+  --graph-node-tag: #38bdf8 !important;
+  /* Sky Blue */
+  --graph-node-attachment: #2dd4bf !important;
+  /* Nebula Teal */
+  --graph-line: rgba(167, 139, 250, 0.2) !important;
+  /* Faint purple lines */
+  --graph-text: #ffffff !important;
+  --graph-node-focused: #ffffff !important;
+  --graph-line-focused: rgba(192, 132, 252, 0.6) !important;
+  --graph-node-hover: #ffffff !important;
+}
+
+
+/* 10. HIGHLIGHTER (Classic Fluorescent Yellow) */
+mark,
+.markdown-rendered mark,
+.cm-highlight {
+  background-color: #ffff00 !important;
+  /* Traditional highlighter yellow */
+  color: #000000 !important;
+  /* Black text for perfect contrast on yellow */
+  padding: 0 4px;
+  border-radius: 2px;
+  font-weight: 600;
+  /* Make it pop slightly more */
+}
+
+/* 12. SHOOTING STARS ANIMATION */
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-150vw) translateY(150vw) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-150vw) translateY(150vw) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+body.theme-dark .app-container::before,
+body.theme-dark .app-container::after,
+body.theme-dark .workspace::before,
+body.theme-dark .workspace::after {
+  content: "";
+  position: fixed;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50% 0 0 50%;
+  animation: shooting-star 15s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* Soft Cyan Star */
+body.theme-dark .app-container::before {
+  top: 10vh;
+  left: 80vw;
+  animation-delay: 0s;
+  box-shadow: -2px 0 10px var(--h1-color);
+}
+
+/* Starlight Pink Star */
+body.theme-dark .app-container::after {
+  top: 5vh;
+  left: 40vw;
+  animation-delay: 3s;
+  animation-duration: 12s;
+  box-shadow: -2px 0 10px var(--text-warning);
+}
+
+/* Soft Lavender Star */
+body.theme-dark .workspace::before {
+  top: 30vh;
+  left: 95vw;
+  animation-delay: 8s;
+  animation-duration: 18s;
+  box-shadow: -2px 0 10px var(--inline-title-color);
+}
+
+/* Nebula Teal Star */
+body.theme-dark .workspace::after {
+  top: -10vh;
+  left: 60vw;
+  animation-delay: 12s;
+  animation-duration: 14s;
+  box-shadow: -2px 0 10px var(--h4-color);
+}

@@ -1228,7 +1228,9 @@ function buildCSSStrings(themeData) {
   // Style Settings default variable declarations
   const baseSlug = themeName.split(".")[0];
   const themeJsonEntry = themesJsonData.themes?.[baseSlug];
-  const styleSettingsArr = Array.isArray(themeJsonEntry?.style_settings?.sections)
+  const styleSettingsArr = Array.isArray(
+    themeJsonEntry?.style_settings?.sections,
+  )
     ? themeJsonEntry.style_settings.sections.flatMap((section) =>
         Array.isArray(section?.settings) ? section.settings : [],
       )

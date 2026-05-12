@@ -1,0 +1,192 @@
+/*
+ * Makinda Themes — Obsidian
+ * Generated from source/palette.json. Do not edit by hand.
+ *
+ * Auto-switches with Obsidian's appearance setting.
+ */
+
+.theme-light {
+    --background-primary: #ffffff;
+    --background-primary-alt: #f9f9fa;
+    --background-secondary: #f9f9fa;
+    --background-secondary-alt: #f9f9fa;
+    --background-modifier-border: #e7e8ea;
+    --background-modifier-border-hover: #d1d5db;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: #f9f9fa;
+    --background-modifier-active-hover: #f3f3f5;
+    --background-modifier-success: #22c55e;
+    --background-modifier-error: #ef4444;
+    --background-modifier-error-hover: #f44747;
+    --background-modifier-error-rgb: 239, 68, 68;
+    --background-modifier-cover: rgba(0, 0, 0, 0.5);
+    --interactive-normal: #26282c;
+    --interactive-hover: #1e2022;
+    --interactive-accent: #f05106;
+    --interactive-accent-hover: #c73b07;
+    --interactive-accent-rgb: 240, 81, 6;
+    --text-normal: #1e2022;
+    --text-muted: #474b54;
+    --text-faint: #6b7280;
+    --text-on-accent: #ffffff;
+    --text-error: #ef4444;
+    --text-error-hover: #f44747;
+    --text-highlight-bg: #ffecd466;
+    --text-highlight-bg-active: #c73b07;
+    --text-selection: #f3f3f5;
+    --text-accent: #f05106;
+    --text-accent-hover: #c73b07;
+
+    --h1-color: #f05106;
+    --h2-color: #f05106;
+    --h3-color: #f05106;
+    --h4-color: #f05106;
+    --h5-color: #f05106;
+    --h6-color: #f05106;
+
+    --link-color: #0891b2;
+    --link-color-hover: #f05106;
+    --link-external-color: #0891b2;
+    --link-external-color-hover: #f05106;
+    --link-unresolved-color: #f59e0b;
+
+    --code-normal: #0d7377;
+    --code-background: #f9f9fa;
+    --code-keyword: #c73b07;
+    --code-function: #f05106;
+    --code-string: #0d7377;
+    --code-tag: #f05106;
+    --code-property: #ff8d37;
+    --code-comment: #6b7280;
+    --code-value: #8947db;
+    --code-operator: #6b7280;
+    --code-punctuation: #474b54;
+    --code-important: #ef4444;
+
+    --tag-color: #f05106;
+    --tag-background: #f9f9fa;
+    --tag-background-hover: #f3f3f5;
+
+    --blockquote-border-color: #f05106;
+    --blockquote-color: #6b7280;
+
+    --hr-color: #e7e8ea;
+    --table-header-background: #f9f9fa;
+    --table-row-alt-background: #f9f9fa;
+    --table-row-hover-background: #f3f3f5;
+
+    --titlebar-background: #ffffff;
+    --titlebar-background-focused: #ffffff;
+    --titlebar-text-color: #1e2022;
+    --titlebar-text-color-focused: #1e2022;
+
+    --ribbon-background: #ffffff;
+    --tab-background-active: #ffffff;
+    --tab-text-color-focused-active-current: #1e2022;
+
+    --vault-name-color: #f05106;
+    --status-bar-background: #ffffff;
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: #d1d5db;
+    --scrollbar-active-thumb-bg: #f05106;
+}
+
+.theme-dark {
+    --background-primary: #0e0e0f;
+    --background-primary-alt: #161618;
+    --background-secondary: #0e0e0f;
+    --background-secondary-alt: #161618;
+    --background-modifier-border: #1e2022;
+    --background-modifier-border-hover: #36393f;
+    --background-modifier-form-field: #1e2022;
+    --background-modifier-hover: #161618;
+    --background-modifier-active-hover: #1e2022;
+    --background-modifier-success: #22c55e;
+    --background-modifier-error: #ef4444;
+    --background-modifier-error-hover: #f87171;
+    --background-modifier-error-rgb: 239, 68, 68;
+    --background-modifier-cover: rgba(0, 0, 0, 0.5);
+    --interactive-normal: #cfd2d6;
+    --interactive-hover: #e7e8ea;
+    --interactive-accent: #ff6b0d;
+    --interactive-accent-hover: #ff8d37;
+    --interactive-accent-rgb: 240, 81, 6;
+    --text-normal: #e7e8ea;
+    --text-muted: #969ba6;
+    --text-faint: #6b7280;
+    --text-on-accent: #ffffff;
+    --text-error: #ef4444;
+    --text-error-hover: #f87171;
+    --text-highlight-bg: #9e2f0e66;
+    --text-highlight-bg-active: #ff8d37;
+    --text-selection: #1e2022;
+    --text-accent: #ff6b0d;
+    --text-accent-hover: #ff8d37;
+
+    --h1-color: #ff8d37;
+    --h2-color: #ff8d37;
+    --h3-color: #ff8d37;
+    --h4-color: #ff8d37;
+    --h5-color: #ff8d37;
+    --h6-color: #ff8d37;
+
+    --link-color: #22d3ee;
+    --link-color-hover: #ff6b0d;
+    --link-external-color: #22d3ee;
+    --link-external-color-hover: #ff6b0d;
+    --link-unresolved-color: #f59e0b;
+
+    --code-normal: #2dd4bf;
+    --code-background: #161618;
+    --code-keyword: #ff6b0d;
+    --code-function: #ff8d37;
+    --code-string: #2dd4bf;
+    --code-tag: #ff8d37;
+    --code-property: #ffb770;
+    --code-comment: #7d8593;
+    --code-value: #b88ef2;
+    --code-operator: #969ba6;
+    --code-punctuation: #969ba6;
+    --code-important: #ef4444;
+
+    --tag-color: #ff6b0d;
+    --tag-background: #161618;
+    --tag-background-hover: #1e2022;
+
+    --blockquote-border-color: #ff6b0d;
+    --blockquote-color: #7d8593;
+
+    --hr-color: #1e2022;
+    --table-header-background: #161618;
+    --table-row-alt-background: #161618;
+    --table-row-hover-background: #1e2022;
+
+    --titlebar-background: #0e0e0f;
+    --titlebar-background-focused: #0e0e0f;
+    --titlebar-text-color: #e7e8ea;
+    --titlebar-text-color-focused: #e7e8ea;
+
+    --ribbon-background: #0e0e0f;
+    --tab-background-active: #0e0e0f;
+    --tab-text-color-focused-active-current: #e7e8ea;
+
+    --vault-name-color: #ff6b0d;
+    --status-bar-background: #0e0e0f;
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: #36393f;
+    --scrollbar-active-thumb-bg: #ff6b0d;
+}
+
+/* Subtle code highlighting that works in both themes */
+.cm-s-obsidian span.cm-keyword { color: var(--code-keyword); }
+.cm-s-obsidian span.cm-string { color: var(--code-string); }
+.cm-s-obsidian span.cm-number { color: var(--code-value); }
+.cm-s-obsidian span.cm-comment { color: var(--code-comment); font-style: italic; }
+.cm-s-obsidian span.cm-tag { color: var(--code-tag); }
+.cm-s-obsidian span.cm-attribute { color: var(--code-property); }
+.cm-s-obsidian span.cm-operator { color: var(--code-operator); }
+.cm-s-obsidian span.cm-property { color: var(--code-property); }
+.cm-s-obsidian span.cm-meta { color: var(--code-keyword); }
+.cm-s-obsidian span.cm-def { color: var(--code-function); }
+.cm-s-obsidian span.cm-variable { color: var(--text-normal); }
+.cm-s-obsidian span.cm-builtin { color: var(--code-value); }

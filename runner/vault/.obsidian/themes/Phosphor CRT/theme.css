@@ -1,0 +1,623 @@
+/* ============================================================
+   MONITOR ///
+   A vintage monochrome theme inspired by 1980s monitors.
+   ============================================================ */
+
+
+/* ============================================================
+   SHARED TOKENS — typography, spacing, shapes
+   ============================================================ */
+
+.theme-dark,
+.theme-light {
+    --font-text-theme: "Monaco", "Menlo", "Print Char 21", "PrintChar21", "IBM Plex Mono", "Courier New", monospace;
+    --font-interface-theme: var(--font-text-theme);
+    --font-monospace-theme: var(--font-text-theme);
+
+    /* Flat, terminal-era surfaces */
+    --radius-s: 0;
+    --radius-m: 0;
+    --radius-l: 0;
+    --input-radius: 0;
+    --tab-radius: 0;
+    --tab-radius-active: 0;
+    --modal-radius: 0;
+    --checkbox-radius: 0;
+}
+
+body {
+    letter-spacing: 0.02em;
+}
+
+
+/* ============================================================
+   DARK MODE — green phosphor on deep black
+   ============================================================ */
+
+.theme-dark {
+    /* Palette */
+    --phosphor:       #33ff66;
+    --phosphor-dim:   #4fcc77;
+    --phosphor-faint: #1a5530;
+    --phosphor-bright: #7cff9a;
+    --phosphor-bg:    #0a0f06;
+    --phosphor-bg-soft: #0f1608;
+    --phosphor-warn:  #ffcc33;
+
+    /* Obsidian variable overrides */
+    --background-primary:          var(--phosphor-bg);
+    --background-primary-alt:      var(--phosphor-bg);
+    --background-secondary:        var(--phosphor-bg);
+    --background-secondary-alt:    var(--phosphor-bg-soft);
+    --background-modifier-border:        var(--phosphor-faint);
+    --background-modifier-border-hover:  var(--phosphor-dim);
+    --background-modifier-border-focus:  var(--phosphor);
+    --background-modifier-hover:         var(--phosphor-faint);
+    --background-modifier-active-hover:  var(--phosphor-faint);
+    --background-modifier-form-field:    var(--phosphor-bg-soft);
+
+    --text-normal:        var(--phosphor);
+    --text-muted:         var(--phosphor-dim);
+    --text-faint:         var(--phosphor-faint);
+    --text-accent:        var(--phosphor-bright);
+    --text-accent-hover:  #ffffff;
+    --text-on-accent:     var(--phosphor-bg);
+    --text-selection:     var(--phosphor-bg);
+    --text-highlight-bg:  var(--phosphor-faint);
+    --text-error:         var(--phosphor-warn);
+
+    --h1-color: var(--phosphor-bright);
+    --h2-color: var(--phosphor-bright);
+    --h3-color: var(--phosphor-bright);
+    --h4-color: var(--phosphor-bright);
+    --h5-color: var(--phosphor-bright);
+    --h6-color: var(--phosphor-bright);
+
+    --link-color:           var(--phosphor-bright);
+    --link-color-hover:     #ffffff;
+    --link-external-color:  var(--phosphor-bright);
+
+    --interactive-normal:         var(--phosphor-bg-soft);
+    --interactive-hover:          var(--phosphor-faint);
+    --interactive-accent:         var(--phosphor-faint);
+    --interactive-accent-hover:   var(--phosphor);
+
+    --modal-background: var(--phosphor-bg);
+    --divider-color:    var(--phosphor-faint);
+
+    --nav-item-color:           var(--phosphor);
+    --nav-item-color-hover:     var(--phosphor-bright);
+    --nav-item-color-active:    var(--phosphor-bg);
+    --nav-item-background-hover:   var(--phosphor-faint);
+    --nav-item-background-active:  var(--phosphor);
+
+    --tab-text-color:          var(--phosphor-dim);
+    --tab-text-color-focused:  var(--phosphor-bright);
+    --tab-background-active:   var(--phosphor-bg-soft);
+    --tab-outline-color:       var(--phosphor-faint);
+
+    /* Glow values used by selectors below */
+    --glow-main:   0 0 1px var(--phosphor), 0 0 3px rgba(51, 255, 102, 0.35), 0 0 8px rgba(51, 255, 102, 0.15);
+    --glow-chrome: 0 0 1px var(--phosphor), 0 0 4px rgba(51, 255, 102, 0.25);
+    --glow-heading: 0 0 2px var(--phosphor-bright), 0 0 6px rgba(124, 255, 154, 0.5), 0 0 14px rgba(124, 255, 154, 0.2);
+    --glow-button: 0 0 1px var(--phosphor), 0 0 4px rgba(51, 255, 102, 0.3);
+}
+
+
+/* ============================================================
+   LIGHT MODE — "paper terminal"
+   Dark forest green ink on warm cream, like a dot-matrix
+   printout on continuous-feed paper.
+   ============================================================ */
+
+.theme-light {
+    /* Palette */
+    --phosphor:       #1a5c2a;   /* ink */
+    --phosphor-dim:   #3d7a4a;
+    --phosphor-faint: #b8cab0;
+    --phosphor-bright: #0d3d18;  /* darker, for headings */
+    --phosphor-bg:    #f4ecd8;   /* warm cream paper */
+    --phosphor-bg-soft: #ebe3ce;
+    --phosphor-warn:  #a85a00;   /* amber ink */
+
+    --background-primary:          var(--phosphor-bg);
+    --background-primary-alt:      var(--phosphor-bg);
+    --background-secondary:        var(--phosphor-bg);
+    --background-secondary-alt:    var(--phosphor-bg-soft);
+    --background-modifier-border:        var(--phosphor-faint);
+    --background-modifier-border-hover:  var(--phosphor-dim);
+    --background-modifier-border-focus:  var(--phosphor);
+    --background-modifier-hover:         var(--phosphor-faint);
+    --background-modifier-active-hover:  var(--phosphor-faint);
+    --background-modifier-form-field:    var(--phosphor-bg-soft);
+
+    --text-normal:        var(--phosphor);
+    --text-muted:         var(--phosphor-dim);
+    --text-faint:         #8a9c82;
+    --text-accent:        var(--phosphor-bright);
+    --text-accent-hover:  #000000;
+    --text-on-accent:     var(--phosphor-bg);
+    --text-selection:     var(--phosphor-bg);
+    --text-highlight-bg:  var(--phosphor-faint);
+    --text-error:         var(--phosphor-warn);
+
+    --h1-color: var(--phosphor-bright);
+    --h2-color: var(--phosphor-bright);
+    --h3-color: var(--phosphor-bright);
+    --h4-color: var(--phosphor-bright);
+    --h5-color: var(--phosphor-bright);
+    --h6-color: var(--phosphor-bright);
+
+    --link-color:           var(--phosphor-bright);
+    --link-color-hover:     #000000;
+    --link-external-color:  var(--phosphor-bright);
+
+    --interactive-normal:         var(--phosphor-bg-soft);
+    --interactive-hover:          var(--phosphor-faint);
+    --interactive-accent:         var(--phosphor-faint);
+    --interactive-accent-hover:   var(--phosphor);
+
+    --modal-background: var(--phosphor-bg);
+    --divider-color:    var(--phosphor-faint);
+
+    --nav-item-color:           var(--phosphor);
+    --nav-item-color-hover:     var(--phosphor-bright);
+    --nav-item-color-active:    var(--phosphor-bg);
+    --nav-item-background-hover:   var(--phosphor-faint);
+    --nav-item-background-active:  var(--phosphor);
+
+    --tab-text-color:          var(--phosphor-dim);
+    --tab-text-color-focused:  var(--phosphor-bright);
+    --tab-background-active:   var(--phosphor-bg-soft);
+    --tab-outline-color:       var(--phosphor-faint);
+
+    /* No glow in light mode — paper doesn't glow. Keep subtle depth. */
+    --glow-main:   none;
+    --glow-chrome: none;
+    --glow-heading: none;
+    --glow-button: none;
+}
+
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+body {
+    --font-text: var(--font-text-theme);
+    --font-interface: var(--font-interface-theme);
+    --font-monospace: var(--font-monospace-theme);
+}
+
+
+/* ============================================================
+   PHOSPHOR GLOW (dark mode only — rules no-op in light via vars)
+   ============================================================ */
+
+.markdown-source-view,
+.markdown-preview-view,
+.cm-editor,
+.cm-line {
+    text-shadow: var(--glow-main);
+}
+
+.nav-file-title,
+.nav-folder-title,
+.workspace-tab-header-inner-title,
+.view-header-title,
+.status-bar,
+.workspace-drawer-vault-switcher {
+    text-shadow: var(--glow-chrome);
+}
+
+
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.HyperMD-header,
+.cm-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-shadow: var(--glow-heading);
+}
+
+/* The "]" BASIC prompt prefix on H1 — a nod to the Applesoft prompt */
+.markdown-preview-view h1::before,
+.markdown-rendered h1::before {
+    content: "] ";
+    color: var(--phosphor-warn);
+}
+
+
+/* ============================================================
+   SELECTED FILE — the fix that earned this theme
+   Targets both the container and the inner text span so the
+   inversion actually takes effect.
+   ============================================================ */
+
+.tree-item-self.is-active,
+.tree-item-self.is-selected,
+.nav-file-title.is-active,
+.nav-file-title.has-focus {
+    background-color: var(--nav-item-background-active);
+    color: var(--nav-item-color-active);
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.tree-item-self.is-active .tree-item-inner,
+.tree-item-self.is-selected .tree-item-inner,
+.nav-file-title.is-active .nav-file-title-content,
+.nav-file-title.has-focus .nav-file-title-content {
+    color: var(--nav-item-color-active);
+    text-shadow: none;
+}
+
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+a:hover,
+.internal-link:hover,
+.external-link:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+
+/* ============================================================
+   CODE
+   ============================================================ */
+
+.markdown-preview-view code,
+.markdown-preview-view pre,
+.cm-inline-code,
+code {
+    background-color: var(--background-secondary-alt);
+    color: var(--text-accent);
+    border: 1px solid var(--background-modifier-border);
+    padding: 0 4px;
+}
+
+.markdown-preview-view pre {
+    padding: 12px;
+}
+
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+
+.markdown-preview-view blockquote,
+.cm-quote {
+    border-left: 2px solid var(--phosphor);
+    color: var(--text-muted);
+    background-color: transparent;
+    padding-left: 12px;
+    font-style: normal;
+}
+
+
+/* ============================================================
+   BOLD / ITALIC / LISTS
+   ============================================================ */
+
+.cm-strong,
+strong {
+    color: var(--text-accent);
+}
+
+.cm-em,
+em {
+    color: var(--phosphor-warn);
+    font-style: normal;
+}
+
+.markdown-preview-view ul > li::marker,
+.markdown-preview-view ol > li::marker {
+    color: var(--phosphor-warn);
+}
+
+
+/* ============================================================
+   CHECKBOXES (in notes)
+   ============================================================ */
+
+.markdown-preview-view input[type="checkbox"],
+.cm-editor input[type="checkbox"] {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--phosphor);
+    background-color: var(--background-primary);
+    border-radius: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.markdown-preview-view input[type="checkbox"]:checked::after,
+.cm-editor input[type="checkbox"]:checked::after {
+    content: "X";
+    color: var(--text-accent);
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ============================================================
+   CURSOR — chunky, blinking at the Apple II's ~1.06s rate
+   ============================================================ */
+
+.cm-cursor,
+.cm-cursor-primary {
+    border: none;
+    background-color: var(--phosphor);
+    width: 8px;
+    animation: monitor-iii-blink 1.06s step-end infinite;
+}
+
+@keyframes monitor-iii-blink {
+    50% { opacity: 0; }
+}
+
+
+/* ============================================================
+   SELECTION
+   ============================================================ */
+
+/* ============================================================
+   SELECTION — explicit high-contrast, no glow
+   
+   Three different selection mechanisms to handle:
+   1. ::selection — native browser selection (reading mode, chrome)
+   2. .cm-selectionBackground — CodeMirror's selection (editor/live preview)
+   3. The text-shadow glow must be suppressed in both cases so it
+      doesn't bleed through and obscure the selected text.
+   ============================================================ */
+
+/* Native selection (reading mode, sidebar, tabs, etc.) */
+::selection {
+    background-color: var(--phosphor);
+    color: var(--phosphor-bg);
+    text-shadow: none;
+}
+
+/* CodeMirror selection (the editor you type in) */
+.cm-editor .cm-selectionBackground,
+.cm-editor.cm-focused .cm-selectionBackground,
+.cm-line ::selection,
+.cm-content ::selection {
+    background-color: var(--phosphor) !important;
+    color: var(--phosphor-bg) !important;
+}
+
+/* Kill the glow on the selected text itself so it doesn't wash out */
+.cm-editor .cm-line::selection,
+.cm-editor .cm-line ::selection {
+    text-shadow: none !important;
+    color: var(--phosphor-bg) !important;
+}
+
+/* Light mode variants */
+.theme-light ::selection {
+    background-color: var(--phosphor);
+    color: var(--phosphor-bg);
+    text-shadow: none;
+}
+
+.theme-light .cm-editor .cm-selectionBackground,
+.theme-light .cm-editor.cm-focused .cm-selectionBackground {
+    background-color: var(--phosphor) !important;
+}
+
+/* Inline title (editable filename at top of note) */
+.inline-title {
+    color: var(--text-accent);
+    text-shadow: var(--glow-heading);
+}
+
+.inline-title::selection,
+.inline-title ::selection {
+    background-color: var(--phosphor) !important;
+    color: var(--phosphor-bg) !important;
+    text-shadow: none !important;
+}
+
+
+/* ============================================================
+   SCROLLBARS
+   ============================================================ */
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--background-primary); }
+::-webkit-scrollbar-thumb { background: var(--background-modifier-border); }
+::-webkit-scrollbar-thumb:hover { background: var(--phosphor-dim); }
+
+
+/* ============================================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ============================================================ */
+
+button,
+.setting-item button,
+.dropdown {
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    border: 1px solid var(--phosphor);
+    font-family: var(--font-monospace);
+    box-shadow: none;
+    text-shadow: var(--glow-button);
+}
+
+button:hover,
+.setting-item button:hover,
+.dropdown:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-accent);
+    border-color: var(--text-accent);
+}
+
+button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-accent);
+}
+
+button.mod-cta:hover {
+    background-color: var(--phosphor);
+    color: var(--text-on-accent);
+    text-shadow: none;
+}
+
+button.mod-warning {
+    background-color: var(--background-secondary-alt);
+    color: var(--phosphor-warn);
+    border-color: var(--phosphor-warn);
+}
+
+
+/* ============================================================
+   SETTINGS MODAL
+   ============================================================ */
+
+.modal {
+    border: 1px solid var(--phosphor);
+    box-shadow: 0 0 20px rgba(51, 255, 102, 0.2);
+}
+
+.theme-light .modal {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.modal-bg {
+    backdrop-filter: blur(2px);
+}
+
+.setting-item {
+    border-top: 1px solid var(--divider-color);
+    padding: 14px 0;
+    background-color: transparent;
+}
+
+.setting-item-heading {
+    border: none;
+    color: var(--text-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.vertical-tab-header-group-title {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.85em;
+}
+
+.vertical-tab-nav-item:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-accent);
+}
+
+.vertical-tab-nav-item.is-active {
+    background-color: var(--phosphor);
+    color: var(--text-on-accent);
+    text-shadow: none;
+}
+
+
+/* ============================================================
+   TOGGLES
+   ============================================================ */
+
+.checkbox-container {
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-modifier-border);
+}
+
+.checkbox-container.is-enabled {
+    background-color: var(--phosphor-faint);
+    border-color: var(--phosphor);
+}
+
+.checkbox-container::after {
+    background-color: var(--phosphor-dim);
+    box-shadow: none;
+}
+
+.checkbox-container.is-enabled::after {
+    background-color: var(--phosphor);
+}
+
+.theme-dark .checkbox-container.is-enabled::after {
+    box-shadow: 0 0 6px var(--phosphor);
+}
+
+
+/* ============================================================
+   TEXT INPUTS
+   ============================================================ */
+
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background-color: var(--background-modifier-form-field);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    font-family: var(--font-monospace);
+    padding: 4px 8px;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    border-color: var(--phosphor);
+    outline: none;
+}
+
+.theme-dark input[type="text"]:focus,
+.theme-dark input[type="search"]:focus,
+.theme-dark textarea:focus {
+    box-shadow: 0 0 6px rgba(51, 255, 102, 0.4);
+}
+
+
+/* ============================================================
+   NOTICES / MENUS / SUGGESTIONS
+   ============================================================ */
+
+.notice {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border: 1px solid var(--phosphor);
+    font-family: var(--font-monospace);
+}
+
+.suggestion-container,
+.menu {
+    border: 1px solid var(--phosphor);
+}
+
+.suggestion-item.is-selected,
+.menu-item:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-accent);
+}

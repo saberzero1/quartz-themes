@@ -103,9 +103,16 @@ describe("normalizeRuntimeEvidenceRecords", () => {
           selectors: [".bar"],
           diff: {
             changedBodyClasses: { added: ["option-1"], removed: [] },
-            changedCssVariables: [{ name: "--accent", before: "red", after: "blue" }],
+            changedCssVariables: [
+              { name: "--accent", before: "red", after: "blue" },
+            ],
             changedComputedStyles: [
-              { selector: ".bar", property: "color", before: "red", after: "blue" },
+              {
+                selector: ".bar",
+                property: "color",
+                before: "red",
+                after: "blue",
+              },
             ],
           },
         },
@@ -116,7 +123,10 @@ describe("normalizeRuntimeEvidenceRecords", () => {
 
     assert.equal(records.length, 2);
     assert.equal(records[0].settingId, "toggle-a");
-    assert.deepEqual(records[0].changedBodyClasses, { added: ["toggle-a"], removed: [] });
+    assert.deepEqual(records[0].changedBodyClasses, {
+      added: ["toggle-a"],
+      removed: [],
+    });
     assert.equal(records[0].changedCssVariables.length, 0);
 
     assert.equal(records[1].settingId, "select-b");
@@ -156,7 +166,10 @@ describe("normalizeRuntimeEvidenceRecords", () => {
 
 describe("resolveRuntimeEvidenceModes", () => {
   test("preserves both-mode themes in deterministic dark/light order", () => {
-    assert.deepEqual(resolveRuntimeEvidenceModes(["light", "dark"]), ["dark", "light"]);
+    assert.deepEqual(resolveRuntimeEvidenceModes(["light", "dark"]), [
+      "dark",
+      "light",
+    ]);
   });
 
   test("falls back to light mode when theme metadata is missing", () => {
@@ -206,9 +219,7 @@ describe("validateRuntimeEvidenceSidecar", () => {
               changedComputedStyles: [],
             },
           },
-          {
-            settingId: "missing-diff",
-          },
+          { settingId: "missing-diff" },
         ],
       },
       "light",
@@ -217,15 +228,27 @@ describe("validateRuntimeEvidenceSidecar", () => {
     assert.equal(result.valid, false);
     assert.equal(result.recordCount, 1);
     assert.equal(result.invalidRecordCount, 1);
-    assert.ok(result.errors.some((entry) => entry.includes("sidecar.mode expected light")));
-    assert.ok(result.errors.some((entry) => entry.includes("failed normalization")));
+    assert.ok(
+      result.errors.some((entry) =>
+        entry.includes("sidecar.mode expected light"),
+      ),
+    );
+    assert.ok(
+      result.errors.some((entry) => entry.includes("failed normalization")),
+    );
   });
 });
 
 describe("getVariableNumberProbeValues", () => {
   test("returns [min, mid, max] when min and max are defined", () => {
-    assert.deepEqual(getVariableNumberProbeValues({ min: 0, max: 100 }), [0, 50, 100]);
-    assert.deepEqual(getVariableNumberProbeValues({ min: 10, max: 30 }), [10, 20, 30]);
+    assert.deepEqual(
+      getVariableNumberProbeValues({ min: 0, max: 100 }),
+      [0, 50, 100],
+    );
+    assert.deepEqual(
+      getVariableNumberProbeValues({ min: 10, max: 30 }),
+      [10, 20, 30],
+    );
   });
 
   test("deduplicates when min, mid, and max collapse", () => {
@@ -278,7 +301,11 @@ describe("enumerateRuntimeObservationPayloads", () => {
   test("emits one payload for a class-toggle setting", () => {
     const settings = [{ id: "fancy", type: "class-toggle" }];
     const effectSettingIds = new Set(["fancy"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.equal(payloads.length, 1);
     assert.equal(payloads[0].settingId, "fancy");
     assert.deepEqual(payloads[0].payload, { "my-theme@@fancy": true });
@@ -297,36 +324,65 @@ describe("enumerateRuntimeObservationPayloads", () => {
       },
     ];
     const effectSettingIds = new Set(["mode"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.equal(payloads.length, 2);
     assert.deepEqual(payloads[0].payload, { "my-theme@@mode": "option-a" });
     assert.deepEqual(payloads[1].payload, { "my-theme@@mode": "option-b" });
   });
 
   test("caps class-select options at MAX_CLASS_SELECT_OPTIONS_PER_SETTING", () => {
-    const options = Array.from({ length: 20 }, (_, i) => ({ value: `opt-${i}` }));
+    const options = Array.from({ length: 20 }, (_, i) => ({
+      value: `opt-${i}`,
+    }));
     const settings = [{ id: "big-select", type: "class-select", options }];
     const effectSettingIds = new Set(["big-select"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.ok(payloads.length <= MAX_CLASS_SELECT_OPTIONS_PER_SETTING);
   });
 
   test("emits multiple probe payloads for variable-number (with min/max)", () => {
-    const settings = [{ id: "font-size", type: "variable-number", min: 12, max: 24, format: "px" }];
+    const settings = [
+      {
+        id: "font-size",
+        type: "variable-number",
+        min: 12,
+        max: 24,
+        format: "px",
+      },
+    ];
     const effectSettingIds = new Set(["font-size"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.ok(payloads.length >= 2);
     assert.ok(payloads.every((p) => p.settingId === "font-size"));
     // First payload should be min value with format suffix
     assert.equal(payloads[0].payload["my-theme@@font-size"], "12px");
     // Last payload should be max value
-    assert.equal(payloads[payloads.length - 1].payload["my-theme@@font-size"], "24px");
+    assert.equal(
+      payloads[payloads.length - 1].payload["my-theme@@font-size"],
+      "24px",
+    );
   });
 
   test("emits multiple probe payloads for variable-number-slider (no range)", () => {
     const settings = [{ id: "opacity", type: "variable-number-slider" }];
     const effectSettingIds = new Set(["opacity"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.ok(payloads.length >= 2);
     assert.ok(payloads.every((p) => p.settingId === "opacity"));
   });
@@ -334,7 +390,11 @@ describe("enumerateRuntimeObservationPayloads", () => {
   test("emits one payload for variable-text with the fixed probe token", () => {
     const settings = [{ id: "custom-font", type: "variable-text" }];
     const effectSettingIds = new Set(["custom-font"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.equal(payloads.length, 1);
     assert.equal(
       payloads[0].payload["my-theme@@custom-font"],
@@ -348,7 +408,11 @@ describe("enumerateRuntimeObservationPayloads", () => {
       { id: "unknown", type: "class-toggle" },
     ];
     const effectSettingIds = new Set(["known"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.equal(payloads.length, 1);
     assert.equal(payloads[0].settingId, "known");
   });
@@ -361,7 +425,11 @@ describe("enumerateRuntimeObservationPayloads", () => {
       { id: "no-type" },
     ];
     const effectSettingIds = new Set(["color-a", "heading"]);
-    const payloads = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const payloads = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
     assert.equal(payloads.length, 0);
   });
 
@@ -379,14 +447,31 @@ describe("enumerateRuntimeObservationPayloads", () => {
   test("produces deterministic ordering across multiple setting types", () => {
     const settings = [
       { id: "toggle-a", type: "class-toggle" },
-      { id: "select-b", type: "class-select", options: [{ value: "opt-1" }, { value: "opt-2" }] },
+      {
+        id: "select-b",
+        type: "class-select",
+        options: [{ value: "opt-1" }, { value: "opt-2" }],
+      },
       { id: "slider-c", type: "variable-number-slider", min: 0, max: 10 },
       { id: "text-d", type: "variable-text" },
     ];
-    const effectSettingIds = new Set(["toggle-a", "select-b", "slider-c", "text-d"]);
+    const effectSettingIds = new Set([
+      "toggle-a",
+      "select-b",
+      "slider-c",
+      "text-d",
+    ]);
 
-    const first = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
-    const second = enumerateRuntimeObservationPayloads(themeId, settings, effectSettingIds);
+    const first = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
+    const second = enumerateRuntimeObservationPayloads(
+      themeId,
+      settings,
+      effectSettingIds,
+    );
 
     assert.deepEqual(first, second);
     assert.equal(first[0].settingId, "toggle-a");
@@ -399,18 +484,9 @@ describe("enumerateRuntimeObservationPayloads", () => {
 describe("effectSettingIdsFromEffectRecords", () => {
   test("returns IDs of settings with at least one emitting effect", () => {
     const effectRecords = [
-      {
-        settingId: "toggle-a",
-        effects: [{ effectKind: "body-class-toggle" }],
-      },
-      {
-        settingId: "select-b",
-        effects: [{ effectKind: "body-class-select" }],
-      },
-      {
-        settingId: "heading-c",
-        effects: [{ effectKind: "non-emitting" }],
-      },
+      { settingId: "toggle-a", effects: [{ effectKind: "body-class-toggle" }] },
+      { settingId: "select-b", effects: [{ effectKind: "body-class-select" }] },
+      { settingId: "heading-c", effects: [{ effectKind: "non-emitting" }] },
     ];
     const ids = effectSettingIdsFromEffectRecords(effectRecords);
     assert.equal(ids.size, 2);
@@ -480,7 +556,12 @@ describe("effectSettingIdsFromEffectRecords", () => {
       },
       {
         settingId: "accent-select",
-        effects: [{ effectKind: "body-class-select", classValues: ["accent-a", "accent-b"] }],
+        effects: [
+          {
+            effectKind: "body-class-select",
+            classValues: ["accent-a", "accent-b"],
+          },
+        ],
       },
       {
         settingId: "font-size",
@@ -500,12 +581,29 @@ describe("effectSettingIdsFromEffectRecords", () => {
     // When fed into enumerateRuntimeObservationPayloads, we get real payloads
     const settings = [
       { id: "dark-toggle", type: "class-toggle" },
-      { id: "accent-select", type: "class-select", options: [{ value: "accent-a" }, { value: "accent-b" }] },
-      { id: "font-size", type: "variable-number", min: 12, max: 24, format: "px" },
+      {
+        id: "accent-select",
+        type: "class-select",
+        options: [{ value: "accent-a" }, { value: "accent-b" }],
+      },
+      {
+        id: "font-size",
+        type: "variable-number",
+        min: 12,
+        max: 24,
+        format: "px",
+      },
       { id: "heading-section", type: "heading" },
     ];
-    const payloads = enumerateRuntimeObservationPayloads("my-theme", settings, ids);
-    assert.ok(payloads.length > 0, "expected non-zero payloads for emitting settings");
+    const payloads = enumerateRuntimeObservationPayloads(
+      "my-theme",
+      settings,
+      ids,
+    );
+    assert.ok(
+      payloads.length > 0,
+      "expected non-zero payloads for emitting settings",
+    );
     // heading-section should not appear in payloads (non-emitting + unsupported type)
     assert.ok(payloads.every((p) => p.settingId !== "heading-section"));
   });
