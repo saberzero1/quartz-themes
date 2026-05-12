@@ -2,6 +2,8 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import {
   normalizeRuntimeEvidenceRecords,
+  resolveRuntimeEvidenceModes,
+  validateRuntimeEvidenceSidecar,
   getVariableNumberProbeValues,
   enumerateRuntimeObservationPayloads,
   RUNTIME_OBSERVATION_TEXT_VALUE,
@@ -148,6 +150,74 @@ describe("normalizeRuntimeEvidenceRecords", () => {
     assert.equal(records[0].settingId, "slider-x");
     assert.equal(records[1].changedCssVariables[0].after, "13");
     assert.equal(records[3].settingId, "toggle-y");
+  });
+});
+
+describe("resolveRuntimeEvidenceModes", () => {
+  test("preserves both-mode themes in deterministic dark/light order", () => {
+    assert.deepEqual(resolveRuntimeEvidenceModes(["light", "dark"]), ["dark", "light"]);
+  });
+
+  test("falls back to light mode when theme metadata is missing", () => {
+    assert.deepEqual(resolveRuntimeEvidenceModes(null), ["light"]);
+    assert.deepEqual(resolveRuntimeEvidenceModes(["both"]), ["light"]);
+  });
+});
+
+describe("validateRuntimeEvidenceSidecar", () => {
+  test("accepts a mode-consistent multi-record sidecar", () => {
+    const result = validateRuntimeEvidenceSidecar(
+      {
+        formatVersion: 2,
+        mode: "dark",
+        records: [
+          {
+            settingId: "toggle-a",
+            mode: "dark",
+            diff: {
+              changedBodyClasses: { added: ["toggle-a"], removed: [] },
+              changedCssVariables: [],
+              changedComputedStyles: [],
+            },
+          },
+        ],
+      },
+      "dark",
+    );
+
+    assert.equal(result.valid, true);
+    assert.equal(result.recordCount, 1);
+    assert.equal(result.invalidRecordCount, 0);
+    assert.deepEqual(result.errors, []);
+  });
+
+  test("flags mismatched mode metadata and invalid records", () => {
+    const result = validateRuntimeEvidenceSidecar(
+      {
+        mode: "dark",
+        records: [
+          {
+            settingId: "toggle-a",
+            mode: "light",
+            diff: {
+              changedBodyClasses: { added: ["toggle-a"], removed: [] },
+              changedCssVariables: [],
+              changedComputedStyles: [],
+            },
+          },
+          {
+            settingId: "missing-diff",
+          },
+        ],
+      },
+      "light",
+    );
+
+    assert.equal(result.valid, false);
+    assert.equal(result.recordCount, 1);
+    assert.equal(result.invalidRecordCount, 1);
+    assert.ok(result.errors.some((entry) => entry.includes("sidecar.mode expected light")));
+    assert.ok(result.errors.some((entry) => entry.includes("failed normalization")));
   });
 });
 

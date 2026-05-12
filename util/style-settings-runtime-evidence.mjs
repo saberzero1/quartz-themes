@@ -23,6 +23,12 @@ export const MAX_CLASS_SELECT_OPTIONS_PER_SETTING = 8;
  */
 export const MAX_VARIABLE_PROBES_PER_SETTING = 3;
 
+/**
+ * Supported runtime evidence sidecar modes. Order matters for deterministic
+ * per-theme live verification and report output.
+ */
+export const RUNTIME_EVIDENCE_MODES = ["dark", "light"];
+
 function normalizeClassDiff(diff) {
   const added = Array.isArray(diff?.added) ? diff.added : [];
   const removed = Array.isArray(diff?.removed) ? diff.removed : [];
@@ -80,6 +86,77 @@ export function normalizeRuntimeEvidenceRecords(sidecar) {
       : [sidecar];
 
   return candidateRecords.map((record) => normalizeRecord(record)).filter(Boolean);
+}
+
+/**
+ * Resolve the supported runtime evidence modes for a theme.
+ *
+ * Theme metadata normally declares one or both of "dark" / "light". When the
+ * metadata is missing or malformed, fall back to light-mode verification to
+ * preserve the verifier's historical behavior instead of skipping runtime
+ * coverage entirely.
+ *
+ * @param {unknown} modes
+ * @returns {Array<"dark" | "light">}
+ */
+export function resolveRuntimeEvidenceModes(modes) {
+  const normalized = Array.isArray(modes)
+    ? RUNTIME_EVIDENCE_MODES.filter((mode) => modes.includes(mode))
+    : [];
+  return normalized.length > 0 ? normalized : ["light"];
+}
+
+/**
+ * Validate runtime evidence sidecar hygiene for readiness/preflight checks.
+ *
+ * @param {unknown} sidecar
+ * @param {"dark" | "light"} expectedMode
+ * @returns {{ valid: boolean; recordCount: number; invalidRecordCount: number; errors: string[] }}
+ */
+export function validateRuntimeEvidenceSidecar(sidecar, expectedMode) {
+  const errors = [];
+  if (!sidecar || typeof sidecar !== "object") {
+    return {
+      valid: false,
+      recordCount: 0,
+      invalidRecordCount: 0,
+      errors: ["sidecar is missing or invalid JSON"],
+    };
+  }
+
+  const normalizedRecords = normalizeRuntimeEvidenceRecords(sidecar);
+  const rawRecords = Array.isArray(sidecar.records)
+    ? sidecar.records
+    : Array.isArray(sidecar)
+      ? sidecar
+      : sidecar?.settingId
+        ? [sidecar]
+        : [];
+  const invalidRecordCount = Math.max(0, rawRecords.length - normalizedRecords.length);
+
+  if (sidecar.mode && sidecar.mode !== expectedMode) {
+    errors.push(`sidecar.mode expected ${expectedMode}, got ${sidecar.mode}`);
+  }
+
+  for (const record of rawRecords) {
+    if (record?.mode && record.mode !== expectedMode) {
+      errors.push(
+        `record mode expected ${expectedMode}, got ${record.mode} for ${record.settingId || "unknown-setting"}`,
+      );
+      break;
+    }
+  }
+
+  if (invalidRecordCount > 0) {
+    errors.push(`${invalidRecordCount} runtime evidence record(s) failed normalization`);
+  }
+
+  return {
+    valid: errors.length === 0,
+    recordCount: normalizedRecords.length,
+    invalidRecordCount,
+    errors,
+  };
 }
 
 /**
