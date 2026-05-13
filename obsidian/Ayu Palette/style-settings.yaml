@@ -1,0 +1,32 @@
+mode: replace
+sections:
+  - name: Ayu Palette
+    id: ayu-palette
+    collapsed: false
+    settings:
+      - id: ayu-light-ui-palette
+        title: Light UI palette
+        description: Select which Ayu variant is used while Obsidian is in light mode.
+        type: class-select
+        allowEmpty: false
+        default: ayu-light-ui-palette-light
+        options:
+          - label: Light
+            value: ayu-light-ui-palette-light
+          - label: Mirage
+            value: ayu-light-ui-palette-mirage
+          - label: Dark
+            value: ayu-light-ui-palette-dark
+      - id: ayu-dark-ui-palette
+        title: Dark UI palette
+        description: Select which Ayu variant is used while Obsidian is in dark mode.
+        type: class-select
+        allowEmpty: false
+        default: ayu-dark-ui-palette-mirage
+        options:
+          - label: Mirage
+            value: ayu-dark-ui-palette-mirage
+          - label: Dark
+            value: ayu-dark-ui-palette-dark
+          - label: Light
+            value: ayu-dark-ui-palette-light

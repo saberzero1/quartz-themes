@@ -1,0 +1,158 @@
+mode: replace
+sections:
+  - name: Rationale Theme
+    id: rationale-theme
+    collapsed: false
+    settings:
+      - id: color-scheme-heading
+        title: Color Scheme
+        type: heading
+        level: 1
+        collapsed: false
+      - id: color-scheme
+        title: Color Scheme
+        description: Choose a preset color palette
+        type: class-select
+        allowEmpty: false
+        default: scheme-academic
+        options:
+          - label: Academic (Monochrome)
+            value: scheme-academic
+          - label: Anthropic (Warm)
+            value: scheme-anthropic
+          - label: Nordic (Cool)
+            value: scheme-nordic
+          - label: Old Money (Luxe)
+            value: scheme-oldmoney
+      - id: colors-heading
+        title: Custom Colors
+        description: Override the color scheme with custom colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: custom-accent
+        title: Custom Accent Color
+        description: Override accent color (leave empty to use scheme default)
+        type: variable-color
+        format: hex
+        alt-format: []
+      - id: typography-heading
+        title: Typography
+        type: heading
+        level: 1
+        collapsed: true
+      - id: font-body
+        title: Body Font
+        description: Serif font for body text
+        type: variable-text
+        default: '''Source Serif 4'', ''Georgia'', serif'
+      - id: font-headings
+        title: Heading Font
+        description: Sans-serif font for headings
+        type: variable-text
+        default: '''Space Grotesk'', ''Inter'', sans-serif'
+      - id: font-mono
+        title: Monospace Font
+        description: Font for code blocks
+        type: variable-text
+        default: '''JetBrains Mono'', ''Fira Code'', monospace'
+      - id: layout-heading
+        title: Layout
+        type: heading
+        level: 1
+        collapsed: true
+      - id: radius-size
+        title: Border Radius
+        description: Roundness of UI elements
+        type: variable-number-slider
+        default: 6
+        min: 0
+        max: 16
+        step: 1
+        format: px
+      - id: line-width
+        title: Line Width
+        description: Maximum width of text lines (0 = unlimited)
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 1000
+        step: 50
+        format: px
+      - id: tabs-heading
+        title: Tabs
+        type: heading
+        level: 1
+        collapsed: true
+      - id: active-tab-highlight
+        title: Highlight Active Tab
+        description: Make the active tab slightly darker to stand out
+        type: class-toggle
+        default: true
+      - id: active-tab-color
+        title: Active Tab Color
+        description: Background color for the active tab (when highlight is enabled)
+        type: variable-color
+        format: hex
+        default: '#f0efe7'
+        alt-format: []
+      - id: active-tab-color-dark
+        title: Active Tab Color (Dark Mode)
+        description: Background color for the active tab in dark mode
+        type: variable-color
+        format: hex
+        default: '#1e1e1f'
+        alt-format: []
+      - id: hide-top-tab-bar
+        title: Hide Top Tab Bar (Vertical Tabs)
+        description: Hide the top bar above the main editor when using vertical tabs (removes + button area)
+        type: class-toggle
+        default: false
+      - id: font-tabs
+        title: Tab Font
+        description: Font family for tab labels (vertical tabs)
+        type: variable-text
+        default: '''Space Grotesk'', ''Inter'', sans-serif'
+      - id: text-heading
+        title: Text
+        type: heading
+        level: 1
+        collapsed: true
+      - id: justified-text
+        title: Justified Text
+        description: Justify paragraph text in both reading and editing modes
+        type: class-toggle
+        default: false
+      - id: floating-toolbar
+        title: Floating Status Bar
+        description: Float the status bar in the center bottom of the screen
+        type: class-toggle
+        default: false
+      - id: file-explorer-heading
+        title: File Explorer
+        type: heading
+        level: 1
+        collapsed: true
+      - id: file-explorer-icons
+        title: Show File Explorer Icons
+        description: Display icons next to folders and markdown files in the file explorer
+        type: class-toggle
+        default: false
+      - id: bold-folder-names
+        title: Bold Folder Names
+        description: Make folder names bold in the file explorer
+        type: class-toggle
+        default: false
+      - id: breadcrumb-path
+        title: Highlight Breadcrumb Path
+        description: Highlight ancestor folders of the active file in the sidebar
+        type: class-select
+        allowEmpty: false
+        default: breadcrumb-off
+        options:
+          - label: 'Off'
+            value: breadcrumb-off
+          - label: Bold
+            value: breadcrumb-bold
+          - label: Shaded Background
+            value: breadcrumb-shaded

@@ -1,0 +1,41 @@
+mode: replace
+sections:
+  - name: Quest Journal Settings
+    id: quest-journal-settings
+    collapsed: false
+    settings:
+      - id: info-text-quest-journal
+        type: info-text
+        title: Quest Journal Theme
+        description: A fantasy RPG inspired theme for Obsidian.
+        markdown: true
+      - title: Typography
+        id: qj-typography
+        type: heading
+        level: 1
+      - title: Header Font
+        id: qj-header-font
+        type: variable-text
+        default: '''Cinzel'', ''Crimson Text'', serif'
+        description: Font family for headers (H1-H6).
+      - title: Body Font
+        id: qj-body-font
+        type: variable-text
+        default: '''Crimson Text'', ''Georgia'', serif'
+        description: Font family for main text.
+      - title: Appearance
+        id: qj-appearance
+        type: heading
+        level: 1
+      - title: Hide Paper Texture
+        id: qj-hide-texture
+        type: class-toggle
+        description: Removes the subtle lined paper background texture.
+      - title: Colors (Light Mode)
+        id: qj-colors-light
+        type: heading
+        level: 2
+      - title: Colors (Dark Mode)
+        id: qj-colors-dark
+        type: heading
+        level: 2

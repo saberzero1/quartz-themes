@@ -1,0 +1,27 @@
+mode: replace
+sections:
+  - name: Delightful
+    id: delightful-theme
+    collapsed: false
+    settings:
+      - id: delightful-colors
+        title: Colors
+        type: heading
+        level: 1
+      - id: delightful-style
+        title: Style
+        type: heading
+        level: 1
+      - id: delightful-typography
+        title: Typography
+        type: heading
+        level: 1
+      - id: delightful-features
+        title: Features
+        type: heading
+        level: 1
+      - id: delightful-animations
+        title: Animations
+        description: Enable entrance animations and hover transitions throughout the UI.
+        type: class-toggle
+        default: true

@@ -398,7 +398,7 @@ sections:
         type: variable-text
         title: Setting Panel Header Title
         title.zh: 设置面板标题
-        default: Maple 1.4.14
+        default: Maple 1.4.15
         quotes: true
       - id: modal-setting-header-title-center
         type: class-toggle

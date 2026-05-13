@@ -95,7 +95,7 @@ cli-clear-baseline:
   rm -rf ./runner/results/_baseline
 
 style-settings:
-  bun ./scripts/populate-style-settings.mjs --extract
+  bun ./scripts/populate-style-settings.mjs --extract --recover-legacy-missing-ids
 
 [group('database')]
 ingest:

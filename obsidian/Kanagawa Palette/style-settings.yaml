@@ -1,0 +1,26 @@
+mode: replace
+sections:
+  - name: Kanagawa
+    id: kanagawa
+    collapsed: false
+    settings:
+      - id: kanagawa-dark-variant
+        title: Dark theme variant
+        type: class-select
+        allowEmpty: false
+        default: kanagawa-wave
+        options:
+          - label: Wave
+            value: kanagawa-wave
+          - label: Dragon
+            value: kanagawa-dragon
+      - id: kanagawa-font-text
+        title: Text font
+        type: variable-text
+        variable: '--font-text-theme'
+        default: '-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji'
+      - id: kanagawa-font-mono
+        title: Monospace font
+        type: variable-text
+        variable: '--font-monospace-theme'
+        default: '''Hack Nerd Font'', ''Source Code Pro'', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace'

@@ -1,0 +1,48 @@
+mode: replace
+sections:
+  - name: Panorama Settings
+    id: panorama-settings
+    collapsed: false
+    settings:
+      - id: panorama-toggles-heading
+        title: Toggles
+        title.de: Umschalter
+        level: 1
+        type: heading
+        collapsed: true
+      - id: panorama-accent-highlight
+        title: Accent Highlight
+        title.de: Akzent-Hervorhebung
+        description: Forces highlights to use the accent color.
+        description.de: Erzwingt die Verwendung der Akzentfarbe für Hervorhebungen.
+        type: class-toggle
+      - id: panorama-bold-folder
+        title: Bold Folder Titles
+        title.de: Fette Ordner-Titel
+        type: class-toggle
+      - id: panorama-centered-h1
+        title: Centered H1 Headings
+        title.de: Zentrierte H1-Überschriften
+        type: class-toggle
+      - id: panorama-centered-table
+        title: Centered Tables
+        title.de: Zentrierte Tabellen
+        type: class-toggle
+      - id: panorama-latex-background
+        title: LaTeX Background
+        title.de: LaTeX-Hintergrund
+        description: Adds a background color to LaTeX blocks for better readability.
+        description.de: Fügt LaTeX-Blöcken eine Hintergrundfarbe hinzu, um die Lesbarkeit zu verbessern.
+        type: class-toggle
+      - id: panorama-hide-comment
+        title: Hide Comment Marker
+        title.de: Verstecke Kommentar-Marker
+        description: Hides the %% for comments.
+        description.de: Versteckt die %% für Kommentare.
+        type: class-toggle
+      - id: panorama-dynamic-callouts
+        title: Adaptive Callouts
+        title.de: Adaptive Callouts
+        description: Dynamically changes callout colors based on set theme.
+        description.de: Ändert die Farbe von Callouts dynamisch, basierend auf des ausgewählten Farbschemas.
+        type: class-toggle

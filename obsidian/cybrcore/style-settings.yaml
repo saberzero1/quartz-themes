@@ -1,0 +1,126 @@
+mode: replace
+sections:
+  - name: cybrcore
+    id: cybrcore
+    collapsed: false
+    settings:
+      - id: s-wp
+        title: Wallpaper
+        type: heading
+        level: 1
+        collapsed: true
+      - id: cybrcore-solid-bg
+        title: Solid Background
+        description: Replaces wallpaper with a flat color
+        type: class-toggle
+        default: false
+      - id: s-colors
+        title: Colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: s-headings
+        title: Headings
+        type: heading
+        level: 2
+        collapsed: true
+      - id: s-nav-colors
+        title: Folders
+        description: Top-level folders colored by position. Requires Colored Folders toggle in UI.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: s-ui
+        title: UI
+        type: heading
+        level: 1
+        collapsed: true
+      - id: cybrcore-underline-internal
+        title: Underline Internal
+        type: class-toggle
+        default: true
+      - id: cybrcore-underline-external
+        title: Underline External
+        type: class-toggle
+        default: true
+      - id: cybrcore-hide-right-top
+        title: Hide Right Top Bar
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-tabs
+        title: Hide Tab Headers
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-ribbon
+        title: Hide Ribbon
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-bottom-nav
+        title: Hide Vault Profile
+        description: Vault icon and switcher at the base of the left sidebar
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-sidebar-toggle
+        title: Hide Sidebar Toggle Buttons
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-nav-buttons
+        title: Hide File Explorer Buttons
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-system-icons
+        title: Hide System Icons
+        description: OS window controls
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-status-bar
+        title: Hide Status Bar
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-scrollbars
+        title: Hide Scrollbars
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-tooltips
+        title: Hide Tooltips
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-instructions
+        title: Hide Prompt Instructions
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-search-suggestions
+        title: Hide Search Suggestions
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-search-count
+        title: Hide Search Match Count
+        type: class-toggle
+        default: false
+      - id: cybrcore-hide-properties-reading
+        title: Hide Properties in Reading View
+        type: class-toggle
+        default: false
+      - id: cybrcore-maximize-media
+        title: Maximize Media
+        type: class-toggle
+        default: true
+      - id: cybrcore-image-grids
+        title: Image Grids
+        type: class-toggle
+        default: true
+      - id: s-focus
+        title: Focus Mode
+        type: heading
+        level: 2
+        collapsed: true
+      - id: cybrcore-focus-mode
+        title: Focus Mode
+        description: Collapses sidebars. Reveal on hover.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: cybrcore-focus-reveal-hover
+        title: Reveal on Hover
+        type: class-toggle
+        default: true

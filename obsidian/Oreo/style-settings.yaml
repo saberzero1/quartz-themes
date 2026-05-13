@@ -531,6 +531,84 @@ sections:
         type: heading
         level: 2
         collapsed: true
+      - id: alternative-checkboxes
+        title: Alternative Checkboxes ✅
+        title.zh: 其他复选框样式 ✅
+        type: heading
+        level: 2
+        collapsed: true
+      - id: enable-alternative-checkboxes
+        title: Enable Alternative Checkboxes
+        title.zh: 启用其他复选框样式
+        description: Disable this if you are using your own implementation via a CSS Snippet.
+        description.zh: 如果您正在使用自己的 CSS 片段实现这一功能，请禁用此功能。
+        default: true
+        type: class-toggle
+      - id: expreiental-feature
+        title: Experimental Features 🧪
+        title.zh: 实验性功能 🧪
+        type: heading
+        level: 2
+        collapsed: true
+      - id: oreo-tab-style
+        title: Tab Style
+        title.zh: Tab样式
+        type: class-select
+        allowEmpty: false
+        default: oreo-default-tab
+        options:
+          - label: Default
+            value: oreo-default-tab
+          - label: Depth
+            value: oreo-depth-tab-toggle
+          - label: Minimalistic
+            value: oreo-mini-tab-toggle
+          - label: Safari-style (Animated)
+            value: oreo-alternate-tab-toggle
+          - label: Safari-style (Vanilla)
+            value: oreo-safari-tab-toggle
+      - id: Credits
+        title: Support Others 🎇
+        title.zh: 支持他人 🎇
+        description: This theme cannot have been made without the help of these people, please support them if you can!
+        description.zh: 这个主题的制作离不开这些人的帮助，如果你有能力，请支持他们！
+        type: heading
+        level: 2
+        collapsed: true
+      - id: anuppuccin-url-donate
+        title: anubisnekhet for different tabs
+        title.zh: anubisnekhet 不一样的tab界面
+        description: 'Support link: [buy him a coffee](https://www.buymeacoffee.com/anubisnekhet)'
+        description.zh: '支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/anubisnekhet)'
+        type: info-text
+        markdown: true
+      - id: kepano-url-donate
+        title: kepano for different check boxes
+        title.zh: kepano 不同的复选框样式
+        description: 'Support link: [buy him a coffee](https://www.buymeacoffee.com/kepano)'
+        description.zh: '支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/kepano)'
+        type: info-text
+        markdown: true
+      - id: Korcz-url-donate
+        title: Korcz for switching between checkboxes
+        title.zh: Korcz 切换复选框样式
+        description: 'Support link: This kind man did not leave a support link, so here is his [Github homepage](https://github.com/damiankorcz)'
+        description.zh: '支持链接: 这位好心人并未留下赞助链接，请自行前往他的[Github主页](https://github.com/damiankorcz)'
+        type: info-text
+        markdown: true
+      - id: author-info
+        title: Author Information ℹ
+        title.zh: 作者信息 ℹ
+        type: heading
+        level: 2
+        collapsed: false
+      - id: author
+        title: Author
+        title.zh: 作者
+        type: info-text
+        description: 'Oreo Theme created with ❤︎ by carols12352. Support at: [buy me a coffee](https://www.buymeacoffee.com/ouyang12352)'
+        description.zh: 'Oreo 主题由 carols12352 创建。支持请访问: [给我买杯咖啡](https://www.buymeacoffee.com/ouyang12352)'
+        markdown: true
       - id: code-background-dark
         title: Dark Mode Code Background
         title.zh: 暗模式下代码背景颜色
@@ -675,81 +753,3 @@ sections:
         type: variable-color
         format: hex
         default: '#b31d28'
-      - id: alternative-checkboxes
-        title: Alternative Checkboxes ✅
-        title.zh: 其他复选框样式 ✅
-        type: heading
-        level: 2
-        collapsed: true
-      - id: enable-alternative-checkboxes
-        title: Enable Alternative Checkboxes
-        title.zh: 启用其他复选框样式
-        description: Disable this if you are using your own implementation via a CSS Snippet.
-        description.zh: 如果您正在使用自己的 CSS 片段实现这一功能，请禁用此功能。
-        default: true
-        type: class-toggle
-      - id: expreiental-feature
-        title: Experimental Features 🧪
-        title.zh: 实验性功能 🧪
-        type: heading
-        level: 2
-        collapsed: true
-      - id: oreo-tab-style
-        title: Tab Style
-        title.zh: Tab样式
-        type: class-select
-        allowEmpty: false
-        default: oreo-default-tab
-        options:
-          - label: Default
-            value: oreo-default-tab
-          - label: Depth
-            value: oreo-depth-tab-toggle
-          - label: Minimalistic
-            value: oreo-mini-tab-toggle
-          - label: Safari-style (Animated)
-            value: oreo-alternate-tab-toggle
-          - label: Safari-style (Vanilla)
-            value: oreo-safari-tab-toggle
-      - id: Credits
-        title: Support Others 🎇
-        title.zh: 支持他人 🎇
-        description: This theme cannot have been made without the help of these people, please support them if you can!
-        description.zh: 这个主题的制作离不开这些人的帮助，如果你有能力，请支持他们！
-        type: heading
-        level: 2
-        collapsed: true
-      - id: anuppuccin-url-donate
-        title: anubisnekhet for different tabs
-        title.zh: anubisnekhet 不一样的tab界面
-        description: 'Support link: [buy him a coffee](https://www.buymeacoffee.com/anubisnekhet)'
-        description.zh: '支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/anubisnekhet)'
-        type: info-text
-        markdown: true
-      - id: kepano-url-donate
-        title: kepano for different check boxes
-        title.zh: kepano 不同的复选框样式
-        description: 'Support link: [buy him a coffee](https://www.buymeacoffee.com/kepano)'
-        description.zh: '支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/kepano)'
-        type: info-text
-        markdown: true
-      - id: Korcz-url-donate
-        title: Korcz for switching between checkboxes
-        title.zh: Korcz 切换复选框样式
-        description: 'Support link: This kind man did not leave a support link, so here is his [Github homepage](https://github.com/damiankorcz)'
-        description.zh: '支持链接: 这位好心人并未留下赞助链接，请自行前往他的[Github主页](https://github.com/damiankorcz)'
-        type: info-text
-        markdown: true
-      - id: author-info
-        title: Author Information ℹ
-        title.zh: 作者信息 ℹ
-        type: heading
-        level: 2
-        collapsed: false
-      - id: author
-        title: Author
-        title.zh: 作者
-        type: info-text
-        description: 'Oreo Theme created with ❤︎ by carols12352. Support at: [buy me a coffee](https://www.buymeacoffee.com/ouyang12352)'
-        description.zh: 'Oreo 主题由 carols12352 创建。支持请访问: [给我买杯咖啡](https://www.buymeacoffee.com/ouyang12352)'
-        markdown: true

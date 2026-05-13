@@ -1,0 +1,24 @@
+mode: replace
+sections:
+  - name: Karadigm
+    id: karadigm
+    collapsed: false
+    settings:
+      - id: karadigm-preset
+        title: Color variant
+        type: class-select
+        allowEmpty: true
+        options:
+          - label: Blue
+            value: karadigm-blue
+          - label: Green
+            value: karadigm-green
+          - label: Red
+            value: karadigm-red
+      - id: karadigm-accent-custom
+        title: Custom color
+        description: Active only if no variant is selected above.
+        type: variable-color
+        format: hex
+        default: '#888888'
+        alt-format: []

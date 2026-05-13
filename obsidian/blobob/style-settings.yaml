@@ -1,0 +1,340 @@
+mode: replace
+sections:
+  - name: blobob theme
+    id: blobob-theme
+    collapsed: false
+    settings:
+      - id: heading-lf
+        title: Look & Feel
+        type: heading
+        level: 1
+        collapsed: false
+      - id: icons-buttons
+        title: Icons & Buttons
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ui-elements
+        title: UI Elements
+        type: heading
+        level: 2
+        collapsed: true
+      - id: focus-mode
+        title: Focus mode
+        description: Removes UI elements. You should assign a hotkey to use it.
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: hide-breadcrumbs
+        title: Hide Breadcrumbs
+        type: class-toggle
+        default: true
+      - id: table-hor-lines-only
+        title: Hide Vertical Lines in Tables
+        type: class-toggle
+        default: true
+        addCommand: false
+      - id: heading-editor
+        title: Editor & Text Appearance
+        type: heading
+        level: 1
+        collapsed: true
+      - id: lined
+        title: Lined Notebook
+        description: Adds lines to the editor
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: active-line
+        title: Active Line Behaviour
+        type: heading
+        level: 2
+        collapsed: true
+      - id: highlight-active-line
+        title: Highlight active line
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: highlight-active-line-with-face
+        title: Highlight active line with face
+        type: class-toggle
+        default: false
+        addCommand: false
+      - id: huge-text-active-line
+        title: Big active line text
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: center-active-line
+        title: Center active line
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: dim-inactive
+        title: Darken inactive lines
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: float-inactive
+        title: Make inactive lines float
+        type: class-toggle
+        default: false
+        addCommand: true
+      - id: pre-act-line
+        title: Active Line Prefix
+        type: heading
+        level: 3
+        collapsed: true
+      - id: text-before-active-line
+        title: Enable active line prefix
+        description: Text shown before the active line
+        type: class-toggle
+        default: false
+      - id: before-active-line
+        title: Active line prefix text
+        description: Customize the text shown before the active line (e.g. ">>" or "→")
+        type: variable-text
+        default: '>>'
+        quotes: true
+      - id: before-active-line-margin
+        title: Active line prefix margin
+        description: Negative value pulls the prefix outside the editor edge
+        type: variable-number
+        default: -20
+        format: px
+      - id: before-active-line-color
+        title: Active line prefix color
+        description: Color of the prefix text shown before the active line
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#7c3aed'
+        alt-format: []
+      - id: heading-text-colors-section
+        title: Text Emphasis Colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: heading-colors-section
+        title: Heading Colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: per-heading-colors-toggle
+        title: Enable Per-Heading Colors
+        description: Allow individual color selection for each heading level (H1-H6)
+        type: class-toggle
+        default: false
+        addCommand: false
+      - id: heading-checkboxes
+        title: Lists & Checkboxes
+        type: heading
+        level: 2
+        collapsed: true
+      - id: custom-bullets-enabled
+        title: Enable custom bullets
+        type: class-toggle
+        default: true
+      - id: custom-bullet-level-1
+        title: 1st level bullet
+        type: variable-text
+        default: +
+        quotes: true
+      - id: custom-bullet-level-2
+        title: 2nd level bullet
+        type: variable-text
+        default: '-'
+        quotes: true
+      - id: custom-bullet-level-3
+        title: 3rd level bullet
+        type: variable-text
+        default: '='
+        quotes: true
+      - id: disable-checkboxes
+        title: Disable checkboxes
+        description: Disable this if you don't want to use blobob theme's checkboxes.
+        type: class-toggle
+        default: false
+      - id: hide-strikethrough
+        title: Hide Strikethrough in checked list
+        type: class-toggle
+        default: true
+        addCommand: false
+      - id: heading-tabs
+        title: Tabs & Navigation
+        type: heading
+        level: 1
+        collapsed: true
+      - id: hide-tab-list
+        title: Hide tab list
+        type: class-toggle
+        default: true
+      - id: hide-tab-close-btn
+        title: Hide tab close button
+        type: class-toggle
+        default: false
+        addCommand: false
+      - id: pin-icon-only
+        title: Show only icon on pinned tabs
+        type: class-toggle
+        default: true
+        addCommand: false
+      - id: hide-sidebar-toggle-left
+        title: Hide Left Sidebar Toggle Button
+        type: class-toggle
+        default: false
+      - id: hide-sidebar-toggle-right
+        title: Hide Right Sidebar Toggle Button
+        type: class-toggle
+        default: false
+      - id: heading-file-explorer
+        title: File Explorer
+        type: heading
+        level: 1
+        collapsed: true
+      - id: bouncy-folders
+        title: Bouncy Folders
+        description: Adds a bounce animation to folders. Works with any folder style.
+        type: class-toggle
+        default: true
+      - id: nav-folder-radius
+        title: Folder Border Radius
+        description: Border radius of folders
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 24
+        step: 1
+        format: px
+      - id: bold-folders
+        title: Bold folder title
+        description: Make folder names bold in the file explorer
+        type: class-toggle
+        default: false
+      - id: center-folder-title
+        title: Center folder title
+        type: class-toggle
+        default: false
+        addCommand: false
+      - id: hide-folder-arrow
+        title: Hide folder Collapse Arrow
+        description: Hides the chevron/arrow icon on folder titles (but shows iconic icons ;D)
+        type: class-toggle
+        default: false
+      - id: nav-file-radius
+        title: File Border Radius
+        description: Border radius of files
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 24
+        step: 1
+        format: px
+      - id: nav-hide-text
+        title: Hide Action Buttons in File Explorer with Text
+        description: Text shown when buttons are hidden in file explorer. USE "" between your text
+        type: variable-text
+        default: My Vault
+        quote: true
+      - id: nav-indentation-guide-width
+        title: File explorer indentation guides thickness
+        type: variable-number-slider
+        format: px
+        default: 0
+        min: 0
+        max: 3
+        step: 1
+      - id: heading-properties
+        title: Properties Panel
+        type: heading
+        level: 1
+        collapsed: true
+      - id: dim-properties
+        title: Dim Properties unless hovered
+        type: class-toggle
+        default: true
+        addCommand: false
+      - id: hide-properties-arrow
+        title: Hide arrow in properties heading
+        type: class-toggle
+        default: true
+        addCommand: false
+      - id: center-properties-heading
+        title: Center properties heading
+        type: class-toggle
+        default: false
+        addCommand: false
+      - id: heading-command-palette
+        title: Command Palette
+        type: heading
+        level: 1
+        collapsed: true
+      - id: hide-prompt-instructions
+        title: Hide Instructions in Command Palette
+        type: class-toggle
+        default: false
+        addCommand: false
+      - id: heading-animations
+        title: Animations
+        type: heading
+        level: 1
+        collapsed: true
+      - id: disable-settings-animation
+        title: Disable settings item animation
+        description: Disables the hover lift animation on settings items
+        type: class-toggle
+        default: true
+      - id: disable-ui-animations
+        title: Disable button, dropdown & input animations
+        description: Disables transition animations on buttons, dropdowns, and input boxes
+        type: class-toggle
+        default: false
+      - id: disable-icon-animations
+        title: Disable clickable icon animations
+        description: Disables scale/transform animations on clickable icons
+        type: class-toggle
+        default: false
+      - id: animation-speed-raw
+        title: Animation speed
+        description: Drag left for slower, right for faster animations. Default is the middle.
+        type: variable-number-slider
+        default: 550
+        min: 50
+        max: 800
+        step: 10
+        format: ms
+      - id: plugin-styling
+        title: Other Plugin Styling
+        type: heading
+        level: 1
+        collapsed: true
+      - id: kanban-styling
+        title: Enable Kanban styling
+        description: null
+        type: class-toggle
+        default: true
+      - id: kanban-full
+        title: Kanban - take up full width
+        description: Makes kanban boards take up full width
+        type: class-toggle
+        default: true
+      - id: kanban-prepend-hover-expand
+        title: Kanban - Prepend Hover
+        description: Shows "+ Add a Card" button ON HOVER
+        type: class-toggle
+        default: false
+      - id: kanban-hover-biggen
+        title: Kanban - cards increase size on hover
+        description: Increases font size ON HOVER
+        type: class-toggle
+        default: false
+      - id: kanban-redden-metadata
+        title: Kanban - redden metadata date
+        description: Colors the date red
+        type: class-toggle
+        default: false
+      - id: image-captions-styling
+        title: Enable Image Captions styling
+        description: null
+        type: class-toggle
+        default: true

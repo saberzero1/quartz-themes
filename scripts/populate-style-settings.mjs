@@ -220,7 +220,7 @@ function buildThemeStyleSettingsFromParsedResult(parsedResult) {
     version: normalized.version,
     source: "saberzero1/obsidian-style-settings",
     sections: toSerializable(sanitizedSections),
-    effects: toSerializable(buildSchemaEffects(normalized)),
+    // effects: toSerializable(buildSchemaEffects(normalized)),
     diagnostics: toSerializable(
       sanitizeNormalizedDiagnostics(normalized.diagnostics),
     ),

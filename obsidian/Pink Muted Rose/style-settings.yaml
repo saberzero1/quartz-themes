@@ -1,0 +1,139 @@
+mode: replace
+sections:
+  - name: Pink Muted Rose
+    id: pink-muted-rose
+    collapsed: false
+    settings:
+      - id: pmr-heading-section
+        title: Headings
+        type: heading
+        level: 1
+      - id: pmr-h1-color
+        title: H1 color
+        type: variable-color
+        format: hex
+        default: '#FFFFFF'
+        alt-format: []
+      - id: pmr-h2-color
+        title: H2 color
+        type: variable-color
+        format: hex
+        default: '#D4A0B8'
+        alt-format: []
+      - id: pmr-h3-color
+        title: H3 color
+        type: variable-color
+        format: hex
+        default: '#C2FFDF'
+        alt-format: []
+      - id: pmr-h4-color
+        title: H4 color
+        type: variable-color
+        format: hex
+        default: '#FFF176'
+        alt-format: []
+      - id: pmr-h5-color
+        title: H5 color
+        type: variable-color
+        format: hex
+        default: '#C2FFDF'
+        alt-format: []
+      - id: pmr-h6-color
+        title: H6 color
+        type: variable-color
+        format: hex
+        default: '#FFF6FACC'
+        alt-format: []
+      - id: pmr-typography-section
+        title: Typography
+        type: heading
+        level: 1
+      - id: pmr-font-text
+        title: Body font
+        type: variable-text
+        default: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+      - id: pmr-font-mono
+        title: Monospace font
+        type: variable-text
+        default: '"SF Mono", "Fira Code", "JetBrains Mono", Menlo, monospace'
+      - id: pmr-line-height
+        title: Line height
+        type: variable-number-slider
+        default: 1.6
+        min: 1.2
+        max: 2.2
+        step: 0.1
+      - id: pmr-font-size
+        title: Body font size (px)
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 24
+        step: 1
+        format: px
+      - id: pmr-layout-section
+        title: Layout
+        type: heading
+        level: 1
+      - id: pmr-sidebar-width
+        title: Sidebar width (px)
+        type: variable-number-slider
+        default: 280
+        min: 180
+        max: 400
+        step: 10
+        format: px
+      - id: pmr-content-width
+        title: Max content width (px, 0 = full width)
+        type: variable-number-slider
+        default: 700
+        min: 0
+        max: 1200
+        step: 50
+        format: px
+      - id: pmr-accent-section
+        title: Accent colors
+        type: heading
+        level: 1
+      - id: pmr-accent-color
+        title: Primary accent (links, buttons)
+        type: variable-color
+        format: hex
+        default: '#FFB8D1'
+        alt-format: []
+      - id: pmr-accent-secondary
+        title: Secondary accent (external links, checkboxes)
+        type: variable-color
+        format: hex
+        default: '#C2FFDF'
+        alt-format: []
+      - id: pmr-accent-highlight
+        title: Highlight accent (tags, search matches)
+        type: variable-color
+        format: hex
+        default: '#FFF176'
+        alt-format: []
+      - id: pmr-features-section
+        title: Features
+        type: heading
+        level: 1
+      - id: pmr-rainbow-folders
+        title: Rainbow folder icons
+        type: variable-select
+        default: 'on'
+        options:
+          - label: 'On'
+            value: 'on'
+          - label: 'Off'
+            value: 'off'
+      - id: pmr-tag-style
+        title: Tag style
+        type: variable-select
+        default: pill
+        options:
+          - label: Pill (rounded)
+            value: pill
+          - label: Square
+            value: square
+          - label: Minimal (no background)
+            value: minimal

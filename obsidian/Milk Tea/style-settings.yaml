@@ -1,0 +1,49 @@
+mode: replace
+sections:
+  - name: Milk Tea
+    id: milk-tea-theme
+    collapsed: false
+    settings:
+      - id: mt-accent
+        title: Accent color
+        description: Primary accent used for links, cursor, active states. Terracotta orange by default (Claude palette).
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#D97757'
+        default-dark: '#E8945A'
+        alt-format: []
+      - id: mt-font-text
+        title: Body font
+        description: Font family for notes. Keep the quotes and commas.
+        type: variable-text
+        default: '"Söhne", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif'
+      - id: mt-font-mono
+        title: Monospace font
+        description: Font family for code and inline code.
+        type: variable-text
+        default: '"Maple Mono NF CN", "JetBrains Mono", Consolas, monospace'
+      - id: mt-line-height
+        title: Body line height
+        description: Line spacing for notes. 1.6-1.8 is comfortable for long reading.
+        type: variable-number-slider
+        default: 1.7
+        min: 1.3
+        max: 2.2
+        step: 0.05
+      - id: mt-h1-weight
+        title: H1 weight
+        description: How bold H1 headings appear.
+        type: variable-number-slider
+        default: 800
+        min: 400
+        max: 900
+        step: 50
+      - id: mt-bold-weight
+        title: Bold text weight
+        description: Weight applied to **bold** text.
+        type: variable-number-slider
+        default: 650
+        min: 500
+        max: 900
+        step: 50

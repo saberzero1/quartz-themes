@@ -1,0 +1,398 @@
+mode: replace
+sections:
+  - name: Gruber Darker
+    id: gruber-darker
+    collapsed: false
+    settings:
+      - id: gruber-palette
+        title: Palette Overrides
+        description: Override individual palette colors.
+        type: heading
+        level: 1
+        collapsed: true
+      - id: gd-fg
+        title: Foreground (fg)
+        description: Main body text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#e4e4ef'
+        alt-format: []
+      - id: gd-fg-bright
+        title: Foreground Bright (fg+1)
+        description: Bold text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#f4f4ff'
+        alt-format: []
+      - id: gd-bg
+        title: Background (bg)
+        description: Primary editor background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#181818'
+        alt-format: []
+      - id: gd-bg-dark
+        title: Background Dark (bg-1)
+        description: Deepest background, gutters, titlebar
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#101010'
+        alt-format: []
+      - id: gd-bg-light
+        title: Background Light (bg+1)
+        description: Secondary background, hover, active line
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#282828'
+        alt-format: []
+      - id: gd-bg-2
+        title: Background Mid (bg+2)
+        description: Borders, dividers
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#453d41'
+        alt-format: []
+      - id: gd-bg-sel
+        title: Background Selection (bg+3)
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#484848'
+        alt-format: []
+      - id: gd-bg-match
+        title: Background Match (bg+4)
+        description: Search match, tooltips
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#52494e'
+        alt-format: []
+      - id: gd-yellow
+        title: Yellow (keyword accent)
+        description: Keywords, H1, active icons
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ffdd33'
+        alt-format: []
+      - id: gd-green
+        title: Green (strings)
+        description: Strings, H4, success
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#73c936'
+        alt-format: []
+      - id: gd-niagara
+        title: Niagara (links/functions)
+        description: Links, functions, H2
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#96a6c8'
+        alt-format: []
+      - id: gd-wisteria
+        title: Wisteria (visited/H3)
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#9e95c7'
+        alt-format: []
+      - id: gd-brown
+        title: Brown (comments)
+        description: Comments, H5, annotations
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#cc8c3c'
+        alt-format: []
+      - id: gd-quartz
+        title: Quartz (muted/constants)
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#95a99f'
+        alt-format: []
+      - id: gd-niagara-dim
+        title: Niagara Dim (faint UI)
+        description: Line numbers, faint text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#5f627f'
+        alt-format: []
+      - id: gd-red
+        title: Red (errors)
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#f43841'
+        alt-format: []
+      - id: gd-red-bright
+        title: Red Bright (red+1)
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ff4f58'
+        alt-format: []
+      - id: editor-section
+        title: Editor
+        type: heading
+        level: 1
+        collapsed: false
+      - id: gd-font-size
+        title: Base font size (px)
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 24
+        step: 1
+        format: px
+      - id: gd-line-height
+        title: Line height
+        type: variable-number-slider
+        default: 1.7
+        min: 1.2
+        max: 2.4
+        step: 0.05
+      - id: gd-line-width
+        title: Max note width (ch)
+        description: Maximum readable line width in characters
+        type: variable-number-slider
+        default: 80
+        min: 40
+        max: 140
+        step: 2
+        format: ch
+      - id: gd-readable-line-length
+        title: Readable line length
+        description: Constrain note width to max-width
+        type: class-toggle
+        default: true
+      - id: gd-show-line-numbers
+        title: Show line numbers
+        type: class-toggle
+        default: false
+      - id: gd-active-line
+        title: Highlight active line
+        type: class-toggle
+        default: true
+      - id: gd-indent-guides
+        title: Show indent guides
+        type: class-toggle
+        default: true
+      - id: gd-smooth-scroll
+        title: Smooth scrolling
+        type: class-toggle
+        default: false
+      - id: headings-section
+        title: Headings
+        type: heading
+        level: 1
+        collapsed: true
+      - id: gd-h1-size
+        title: H1 size (em)
+        type: variable-number-slider
+        default: 1.8
+        min: 1.2
+        max: 3
+        step: 0.05
+        format: em
+      - id: gd-h2-size
+        title: H2 size (em)
+        type: variable-number-slider
+        default: 1.5
+        min: 1.1
+        max: 2.5
+        step: 0.05
+        format: em
+      - id: gd-h3-size
+        title: H3 size (em)
+        type: variable-number-slider
+        default: 1.3
+        min: 1
+        max: 2
+        step: 0.05
+        format: em
+      - id: gd-h4-size
+        title: H4 size (em)
+        type: variable-number-slider
+        default: 1.15
+        min: 1
+        max: 1.8
+        step: 0.05
+        format: em
+      - id: gd-heading-transform
+        title: Heading text transform
+        type: variable-select
+        default: none
+        options:
+          - label: Normal
+            value: none
+          - label: Uppercase
+            value: uppercase
+          - label: Capitalize
+            value: capitalize
+          - label: Lowercase
+            value: lowercase
+      - id: code-section
+        title: Code Blocks
+        type: heading
+        level: 1
+        collapsed: true
+      - id: gd-code-font-size
+        title: Code font size (em)
+        type: variable-number-slider
+        default: 0.875
+        min: 0.65
+        max: 1.1
+        step: 0.025
+        format: em
+      - id: gd-code-border
+        title: Show border around code blocks
+        type: class-toggle
+        default: true
+      - id: gd-code-line-numbers
+        title: Code block line numbers
+        type: class-toggle
+        default: false
+      - id: ui-section
+        title: Interface
+        type: heading
+        level: 1
+        collapsed: true
+      - id: gd-sidebar-width
+        title: Sidebar width (px)
+        type: variable-number-slider
+        default: 260
+        min: 160
+        max: 400
+        step: 10
+        format: px
+      - id: gd-tab-style
+        title: Tab style
+        type: class-select
+        allowEmpty: false
+        default: gd-tabs-default
+        options:
+          - label: Default
+            value: gd-tabs-default
+          - label: Underline active tab
+            value: gd-tabs-underline
+          - label: Pill / rounded active tab
+            value: gd-tabs-pill
+      - id: gd-hide-ribbon
+        title: Hide ribbon (left action icons)
+        type: class-toggle
+        default: false
+      - id: gd-compact-statusbar
+        title: Compact status bar
+        type: class-toggle
+        default: false
+      - id: callouts-section
+        title: Callouts
+        type: heading
+        level: 1
+        collapsed: true
+      - id: gd-callout-radius
+        title: Callout corner radius (px)
+        type: variable-number-slider
+        default: 6
+        min: 0
+        max: 20
+        step: 1
+        format: px
+      - id: gd-callout-blend
+        title: Callout icon blend mode
+        type: variable-select
+        default: lighten
+        options:
+          - label: normal
+            value: normal
+          - label: lighten
+            value: lighten
+          - label: screen
+            value: screen
+          - label: overlay
+            value: overlay
+      - id: vim-section
+        title: Vim & Cursor
+        description: Cursor appearance and Vim mode settings. Enable Obsidian's built-in Vim keybindings under Settings > Editor > Vim key bindings.
+        type: heading
+        level: 1
+        collapsed: false
+      - id: gd-cursor-color
+        title: Cursor color (normal editing)
+        description: Color of the text caret outside of Vim mode
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ffdd33'
+        alt-format: []
+      - id: gd-vim-cursor-style
+        title: Vim NORMAL mode cursor shape
+        type: class-select
+        allowEmpty: false
+        default: gd-vim-cursor-block
+        options:
+          - label: Block (classic Vim)
+            value: gd-vim-cursor-block
+          - label: Underline
+            value: gd-vim-cursor-underline
+          - label: Bar / Beam (like INSERT)
+            value: gd-vim-cursor-bar
+      - id: gd-vim-cursor-blink
+        title: Cursor blink / animation style
+        type: class-select
+        allowEmpty: false
+        default: gd-cursor-blink-solid
+        options:
+          - label: Static — no animation
+            value: gd-cursor-blink-solid
+          - label: Blink — classic on/off
+            value: gd-cursor-blink-blink
+          - label: Fade — smooth fade in/out
+            value: gd-cursor-blink-fade
+          - label: Pulse — gentle breathe
+            value: gd-cursor-blink-pulse
+          - label: Expand — grows and shrinks
+            value: gd-cursor-blink-expand
+      - id: gd-vim-cursor-color-normal
+        title: Vim NORMAL mode cursor color
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ffdd33'
+        alt-format: []
+      - id: gd-vim-cursor-color-insert
+        title: Vim INSERT mode cursor color
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#73c936'
+        alt-format: []
+      - id: gd-vim-cursor-color-visual
+        title: Vim VISUAL mode cursor color
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#9e95c7'
+        alt-format: []
+      - id: gd-vim-cursor-color-replace
+        title: Vim REPLACE mode cursor color
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#f43841'
+        alt-format: []
+      - id: gd-vim-statusbar
+        title: Vim mode indicator in status bar
+        description: Colorize the status bar based on current Vim mode (requires Vim Mode Status Bar or similar plugin)
+        type: class-toggle
+        default: true

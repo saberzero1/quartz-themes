@@ -5,11 +5,11 @@ sections:
     collapsed: false
     settings:
       - id: mobile-full-black
-        title: Use fully black background on Phones
+        title: Black background on Phones
         type: class-toggle
         default: true
       - id: tablet-full-black
-        title: Use fully black background on Tablets
+        title: Black background on Tablets
         type: class-toggle
         default: true
       - id: dataview-no-wrap
@@ -22,5 +22,9 @@ sections:
         default: true
       - id: button-close-left
         title: Tab close button on the left
+        type: class-toggle
+        default: true
+      - id: strong-stroke
+        title: Thicker icon strokes
         type: class-toggle
         default: true

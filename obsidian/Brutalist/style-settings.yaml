@@ -129,7 +129,7 @@ sections:
       - id: ui-font-color-dark
         title: UI Font Colour (Dark Mode)
         type: variable-select
-        default: '#b3b3b3'
+        default: '#c8bc9f'
         options:
           - label: '#a0a0a0 (Dark Grey)'
             value: '#a0a0a0'
@@ -148,7 +148,7 @@ sections:
       - id: body-font-color-dark
         title: Body Font Color (Dark Mode)
         type: variable-select
-        default: '#a0a0a0'
+        default: '#b0a589'
         options:
           - label: '#a0a0a0 (Dark Grey - Default)'
             value: '#a0a0a0'

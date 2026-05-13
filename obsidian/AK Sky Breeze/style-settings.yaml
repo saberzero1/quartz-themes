@@ -1,0 +1,10 @@
+mode: replace
+sections:
+  - name: AK Sky Breeze
+    id: alokin-kal-settings
+    collapsed: false
+    settings:
+      - id: title-1
+        title: Neutrals
+        type: heading
+        level: 3

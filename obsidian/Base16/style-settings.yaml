@@ -1,0 +1,518 @@
+mode: replace
+sections:
+  - name: Base16
+    id: base16-theme
+    collapsed: false
+    settings:
+      - id: base16-scheme
+        title: Color Scheme
+        type: class-select
+        allowEmpty: false
+        default: base16-default
+        options:
+          - label: '0x96f'
+            value: base16-0x96f
+          - label: '3024'
+            value: base16-3024
+          - label: Apathy
+            value: base16-apathy
+          - label: Apprentice
+            value: base16-apprentice
+          - label: Ascendancy
+            value: base16-ascendancy
+          - label: Ashes
+            value: base16-ashes
+          - label: Atelier Cave
+            value: base16-atelier-cave
+          - label: Atelier Dune
+            value: base16-atelier-dune
+          - label: Atelier Estuary
+            value: base16-atelier-estuary
+          - label: Atelier Forest
+            value: base16-atelier-forest
+          - label: Atelier Heath
+            value: base16-atelier-heath
+          - label: Atelier Lakeside
+            value: base16-atelier-lakeside
+          - label: Atelier Plateau
+            value: base16-atelier-plateau
+          - label: Atelier Savanna
+            value: base16-atelier-savanna
+          - label: Atelier Seaside
+            value: base16-atelier-seaside
+          - label: Atelier Sulphurpool
+            value: base16-atelier-sulphurpool
+          - label: Atlas
+            value: base16-atlas
+          - label: Ayu
+            value: base16-ayu
+          - label: Ayu Mirage
+            value: base16-ayu-mirage
+          - label: Aztec
+            value: base16-aztec
+          - label: Bespin
+            value: base16-bespin
+          - label: Black Metal (Bathory)
+            value: base16-black-metal-bathory
+          - label: Black Metal (Burzum)
+            value: base16-black-metal-burzum
+          - label: Black Metal (Dark Funeral)
+            value: base16-black-metal-dark-funeral
+          - label: Black Metal (Gorgoroth)
+            value: base16-black-metal-gorgoroth
+          - label: Black Metal (Immortal)
+            value: base16-black-metal-immortal
+          - label: Black Metal (Khold)
+            value: base16-black-metal-khold
+          - label: Black Metal (Marduk)
+            value: base16-black-metal-marduk
+          - label: Black Metal (Mayhem)
+            value: base16-black-metal-mayhem
+          - label: Black Metal (Nile)
+            value: base16-black-metal-nile
+          - label: Black Metal (Venom)
+            value: base16-black-metal-venom
+          - label: Black Metal
+            value: base16-black-metal
+          - label: Blue Forest
+            value: base16-blueforest
+          - label: Blueish
+            value: base16-blueish
+          - label: Brewer
+            value: base16-brewer
+          - label: Bright
+            value: base16-bright
+          - label: Brogrammer
+            value: base16-brogrammer
+          - label: Brush Trees
+            value: base16-brushtrees
+          - label: caroline
+            value: base16-caroline
+          - label: Catppuccin Frappe
+            value: base16-catppuccin-frappe
+          - label: Catppuccin Latte
+            value: base16-catppuccin-latte
+          - label: Catppuccin Macchiato
+            value: base16-catppuccin-macchiato
+          - label: Catppuccin Mocha
+            value: base16-catppuccin-mocha
+          - label: Chalk
+            value: base16-chalk
+          - label: Charcoal
+            value: base16-charcoal
+          - label: Chicago Day
+            value: base16-chicago-day
+          - label: Chicago Night
+            value: base16-chicago-night
+          - label: Chinoiserie Midnight
+            value: base16-chinoiserie-midnight
+          - label: Chinoiserie Morandi
+            value: base16-chinoiserie-morandi
+          - label: Chinoiserie Night
+            value: base16-chinoiserie-night
+          - label: Chinoiserie
+            value: base16-chinoiserie
+          - label: Circus
+            value: base16-circus
+          - label: Classic
+            value: base16-classic
+          - label: Codeschool
+            value: base16-codeschool
+          - label: Colors
+            value: base16-colors
+          - label: Cupcake
+            value: base16-cupcake
+          - label: Cupertino
+            value: base16-cupertino
+          - label: Da One Black
+            value: base16-da-one-black
+          - label: Da One Gray
+            value: base16-da-one-gray
+          - label: Da One Ocean
+            value: base16-da-one-ocean
+          - label: Da One Paper
+            value: base16-da-one-paper
+          - label: Da One Sea
+            value: base16-da-one-sea
+          - label: Da One White
+            value: base16-da-one-white
+          - label: DanQing
+            value: base16-danqing
+          - label: Darcula
+            value: base16-darcula
+          - label: darkmoss
+            value: base16-darkmoss
+          - label: Darktooth
+            value: base16-darktooth
+          - label: Dark Violet
+            value: base16-darkviolet
+          - label: Decaf
+            value: base16-decaf
+          - label: Deep Oceanic Next
+            value: base16-deep-oceanic-next
+          - label: Default
+            value: base16-default
+          - label: Digital Rain
+            value: base16-digital-rain
+          - label: dirtysea
+            value: base16-dirtysea
+          - label: Dracula
+            value: base16-dracula
+          - label: Edge
+            value: base16-edge
+          - label: Eighties
+            value: base16-eighties
+          - label: Eldritch
+            value: base16-eldritch
+          - label: Embers
+            value: base16-embers
+          - label: emil
+            value: base16-emil
+          - label: Equilibrium
+            value: base16-equilibrium
+          - label: Equilibrium Gray
+            value: base16-equilibrium-gray
+          - label: eris
+            value: base16-eris
+          - label: Espresso
+            value: base16-espresso
+          - label: Eva Dim
+            value: base16-eva-dim
+          - label: Eva
+            value: base16-eva
+          - label: Evenok
+            value: base16-evenok
+          - label: Everforest Dark Hard
+            value: base16-everforest-dark-hard
+          - label: Everforest Dark Medium
+            value: base16-everforest-dark-medium
+          - label: Everforest Dark Soft
+            value: base16-everforest-dark-soft
+          - label: Everforest Light (Hard)
+            value: base16-everforest-light-hard
+          - label: Everforest Light (Medium)
+            value: base16-everforest-light-medium
+          - label: Everforest Light (Soft)
+            value: base16-everforest-light-soft
+          - label: Everforest
+            value: base16-everforest
+          - label: Flat
+            value: base16-flat
+          - label: Flexoki
+            value: base16-flexoki
+          - label: Framer
+            value: base16-framer
+          - label: Fruit Soda
+            value: base16-fruit-soda
+          - label: Gigavolt
+            value: base16-gigavolt
+          - label: Github
+            value: base16-github
+          - label: Google
+            value: base16-google
+          - label: Gotham
+            value: base16-gotham
+          - label: Grayscale
+            value: base16-grayscale
+          - label: Green Screen
+            value: base16-greenscreen
+          - label: Gruber
+            value: base16-gruber
+          - label: Gruvbox dark, hard
+            value: base16-gruvbox-dark-hard
+          - label: Gruvbox dark, medium
+            value: base16-gruvbox-dark-medium
+          - label: Gruvbox dark, pale
+            value: base16-gruvbox-dark-pale
+          - label: Gruvbox dark, soft
+            value: base16-gruvbox-dark-soft
+          - label: Gruvbox dark
+            value: base16-gruvbox
+          - label: Gruvbox light, hard
+            value: base16-gruvbox-light-hard
+          - label: Gruvbox light, medium
+            value: base16-gruvbox-light-medium
+          - label: Gruvbox light, soft
+            value: base16-gruvbox-light-soft
+          - label: Gruvbox Material Dark, Hard
+            value: base16-gruvbox-material-dark-hard
+          - label: Gruvbox Material Dark, Medium
+            value: base16-gruvbox-material-dark-medium
+          - label: Gruvbox Material Dark, Soft
+            value: base16-gruvbox-material-dark-soft
+          - label: Gruvbox Material Light, Hard
+            value: base16-gruvbox-material-light-hard
+          - label: Gruvbox Material Light, Medium
+            value: base16-gruvbox-material-light-medium
+          - label: Gruvbox Material Light, Soft
+            value: base16-gruvbox-material-light-soft
+          - label: Hardcore
+            value: base16-hardcore
+          - label: Hardhacker
+            value: base16-hardhacker
+          - label: Harmonic16
+            value: base16-harmonic16
+          - label: Heetch
+            value: base16-heetch
+          - label: Helios
+            value: base16-helios
+          - label: Hopscotch
+            value: base16-hopscotch
+          - label: Horizon
+            value: base16-horizon
+          - label: Horizon Terminal
+            value: base16-horizon-terminal
+          - label: Humanoid dark
+            value: base16-humanoid
+          - label: iA
+            value: base16-ia
+          - label: Icy
+            value: base16-icy
+          - label: IR Black
+            value: base16-irblack
+          - label: Isotope
+            value: base16-isotope
+          - label: Jabuti
+            value: base16-jabuti
+          - label: Kanagawa Dragon
+            value: base16-kanagawa-dragon
+          - label: Kanagawa
+            value: base16-kanagawa
+          - label: Katy
+            value: base16-katy
+          - label: Kimber
+            value: base16-kimber
+          - label: Kissa Latte
+            value: base16-kissa-latte
+          - label: Kissa Macchiato
+            value: base16-kissa-macchiato
+          - label: lime
+            value: base16-lime
+          - label: Linux VT
+            value: base16-linux-vt
+          - label: Macintosh
+            value: base16-macintosh
+          - label: Marrakesh
+            value: base16-marrakesh
+          - label: Materia
+            value: base16-materia
+          - label: Material Darker
+            value: base16-material-darker
+          - label: Material Lighter
+            value: base16-material-lighter
+          - label: Material Palenight
+            value: base16-material-palenight
+          - label: Material Vivid
+            value: base16-material-vivid
+          - label: Material
+            value: base16-material
+          - label: Measured
+            value: base16-measured
+          - label: Mellow Purple
+            value: base16-mellow-purple
+          - label: Mexico
+            value: base16-mexico
+          - label: Mocha
+            value: base16-mocha
+          - label: Monokai
+            value: base16-monokai
+          - label: Moonlight
+            value: base16-moonlight
+          - label: Mountain
+            value: base16-mountain
+          - label: Nebula
+            value: base16-nebula
+          - label: Nord
+            value: base16-nord
+          - label: Nova
+            value: base16-nova
+          - label: Ocean
+            value: base16-ocean
+          - label: OceanicNext
+            value: base16-oceanicnext
+          - label: One
+            value: base16-one
+          - label: OneDark
+            value: base16-onedark
+          - label: Outrun
+            value: base16-outrun
+          - label: Oxocarbon
+            value: base16-oxocarbon
+          - label: pandora
+            value: base16-pandora
+          - label: PaperColor
+            value: base16-papercolor
+          - label: Paraiso
+            value: base16-paraiso
+          - label: Pasque
+            value: base16-pasque
+          - label: Penumbra Dark Contrast Plus Plus
+            value: base16-penumbra-dark-contrast-plus-plus
+          - label: Penumbra Dark Contrast Plus
+            value: base16-penumbra-dark-contrast-plus
+          - label: Penumbra
+            value: base16-penumbra
+          - label: Penumbra Light Contrast Plus Plus
+            value: base16-penumbra-light-contrast-plus-plus
+          - label: Penumbra Light Contrast Plus
+            value: base16-penumbra-light-contrast-plus
+          - label: PhD
+            value: base16-phd
+          - label: Pico
+            value: base16-pico
+          - label: pinky
+            value: base16-pinky
+          - label: Pop
+            value: base16-pop
+          - label: Porple
+            value: base16-porple
+          - label: Precious Dark Eleven
+            value: base16-precious-dark-eleven
+          - label: Precious Dark Fifteen
+            value: base16-precious-dark-fifteen
+          - label: Precious Light Warm
+            value: base16-precious-light-warm
+          - label: Precious Light White
+            value: base16-precious-light-white
+          - label: Primer Dark Dimmed
+            value: base16-primer-dark-dimmed
+          - label: Primer
+            value: base16-primer
+          - label: Purpledream
+            value: base16-purpledream
+          - label: Qualia
+            value: base16-qualia
+          - label: Railscasts
+            value: base16-railscasts
+          - label: Rebecca
+            value: base16-rebecca
+          - label: Rosé Pine Dawn
+            value: base16-rose-pine-dawn
+          - label: Rosé Pine Moon
+            value: base16-rose-pine-moon
+          - label: Rosé Pine
+            value: base16-rose-pine
+          - label: SAGA
+            value: base16-saga
+          - label: Sagelight
+            value: base16-sagelight
+          - label: Sakura
+            value: base16-sakura
+          - label: Sandcastle
+            value: base16-sandcastle
+          - label: selenized-black
+            value: base16-selenized-black
+          - label: selenized-dark
+            value: base16-selenized
+          - label: selenized-white
+            value: base16-selenized-white
+          - label: Seti UI
+            value: base16-seti
+          - label: Shades of Purple
+            value: base16-shades-of-purple
+          - label: ShadeSmear
+            value: base16-shadesmear
+          - label: Shapeshifter
+            value: base16-shapeshifter
+          - label: Silk
+            value: base16-silk
+          - label: Snazzy
+            value: base16-snazzy
+          - label: Soft Server
+            value: base16-soft-server
+          - label: Solar Flare
+            value: base16-solarflare
+          - label: Solarized
+            value: base16-solarized
+          - label: Spaceduck
+            value: base16-spaceduck
+          - label: Spacemacs
+            value: base16-spacemacs
+          - label: Sparky
+            value: base16-sparky
+          - label: standardized-dark
+            value: base16-standardized
+          - label: Stella
+            value: base16-stella
+          - label: Still Alive
+            value: base16-still-alive
+          - label: summercamp
+            value: base16-summercamp
+          - label: Summerfruit
+            value: base16-summerfruit
+          - label: Swamp
+            value: base16-swamp
+          - label: Synth Midnight Terminal
+            value: base16-synth-midnight
+          - label: Tango
+            value: base16-tango
+          - label: tarot
+            value: base16-tarot
+          - label: tender
+            value: base16-tender
+          - label: Terracotta
+            value: base16-terracotta
+          - label: Tokyo City
+            value: base16-tokyo-city
+          - label: Tokyo City Terminal
+            value: base16-tokyo-city-terminal
+          - label: Tokyo Night
+            value: base16-tokyo-night
+          - label: Tokyo Night Moon
+            value: base16-tokyo-night-moon
+          - label: Tokyo Night Storm
+            value: base16-tokyo-night-storm
+          - label: Tokyo Night Terminal
+            value: base16-tokyo-night-terminal
+          - label: Tokyo Night Terminal Storm
+            value: base16-tokyo-night-terminal-storm
+          - label: Tokyodark Terminal
+            value: base16-tokyodark-terminal
+          - label: Tokyodark
+            value: base16-tokyodark
+          - label: Tomorrow Night Eighties
+            value: base16-tomorrow-night-eighties
+          - label: Tomorrow Night
+            value: base16-tomorrow-night
+          - label: Tomorrow
+            value: base16-tomorrow
+          - label: London Tube
+            value: base16-tube
+          - label: Twilight
+            value: base16-twilight
+          - label: Unikitty
+            value: base16-unikitty
+          - label: Unikitty Reversible
+            value: base16-unikitty-reversible
+          - label: UwUnicorn
+            value: base16-uwunicorn
+          - label: Valua
+            value: base16-valua
+          - label: Vesper
+            value: base16-vesper
+          - label: vice
+            value: base16-vice
+          - label: vulcan
+            value: base16-vulcan
+          - label: Windows 10
+            value: base16-windows-10
+          - label: Windows 95
+            value: base16-windows-95
+          - label: Windows High Contrast
+            value: base16-windows-highcontrast
+          - label: Windows NT
+            value: base16-windows-nt
+          - label: Woodland
+            value: base16-woodland
+          - label: XCode Dusk
+            value: base16-xcode-dusk
+          - label: Yesterday Bright
+            value: base16-yesterday-bright
+          - label: Yesterday Night
+            value: base16-yesterday-night
+          - label: Yesterday
+            value: base16-yesterday
+          - label: Zenbones
+            value: base16-zenbones
+          - label: Zenburn
+            value: base16-zenburn

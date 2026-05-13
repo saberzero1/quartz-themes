@@ -1,0 +1,108 @@
+mode: replace
+sections:
+  - name: Nyan Theme
+    id: nyan-theme
+    collapsed: false
+    settings:
+      - id: nyan-fun-heading
+        title: Fun Effects
+        type: heading
+        level: 1
+        collapsed: false
+      - id: nyan-rainbow-hr
+        title: Rainbow horizontal rules
+        description: Adds a rainbow gradient to horizontal rules (---)
+        type: class-toggle
+        default: true
+      - id: nyan-rainbow-headings
+        title: Rainbow headings
+        description: Each heading level gets a different pastel color
+        type: class-toggle
+        default: true
+      - id: nyan-rainbow-scrollbar
+        title: Rainbow scrollbar
+        description: Adds a rainbow gradient to the scrollbar thumb
+        type: class-toggle
+        default: false
+      - id: nyan-rainbow-active-tab
+        title: Rainbow active tab indicator
+        description: Adds a rainbow gradient border to the active tab
+        type: class-toggle
+        default: true
+      - id: nyan-pop-checkboxes
+        title: Pop-tart checkboxes
+        description: Checked boxes get a rainbow background
+        type: class-toggle
+        default: true
+      - id: nyan-animations-heading
+        title: Animations
+        type: heading
+        level: 1
+        collapsed: false
+      - id: nyan-cat-statusbar
+        title: Nyan Cat in status bar
+        description: Shows a pixel-art Nyan Cat with rainbow trail in the status bar
+        type: class-toggle
+        default: true
+      - id: nyan-starfield
+        title: Animated starfield background
+        description: Subtle twinkling stars on the editor background (dark mode only)
+        type: class-toggle
+        default: false
+      - id: nyan-rainbow-loading
+        title: Rainbow loading bar
+        description: Shows a rainbow progress bar at the top of active panes
+        type: class-toggle
+        default: true
+      - id: nyan-sparkle-links
+        title: Sparkle on hover
+        description: Links and tags sparkle when you hover over them
+        type: class-toggle
+        default: false
+      - id: nyan-colors-heading
+        title: Color Customization
+        type: heading
+        level: 1
+        collapsed: true
+      - id: nyan-accent-color
+        title: Accent color
+        description: Primary accent color used for links, buttons, and interactive elements
+        type: variable-themed-color
+        format: hex
+        default-light: '#e87da4'
+        default-dark: '#f5a0bc'
+        alt-format: []
+      - id: nyan-bg-primary
+        title: Primary background
+        description: Main editor background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#fdf6f0'
+        default-dark: '#1a1a2e'
+        alt-format: []
+      - id: nyan-bg-secondary
+        title: Secondary background
+        description: Sidebar and secondary panel background
+        type: variable-themed-color
+        format: hex
+        default-light: '#f8ede3'
+        default-dark: '#16162a'
+        alt-format: []
+      - id: nyan-typography-heading
+        title: Typography
+        type: heading
+        level: 1
+        collapsed: true
+      - id: nyan-font-text
+        title: Editor font
+        type: variable-text
+        default: '''Inter'', -apple-system, BlinkMacSystemFont, ''Segoe UI'', sans-serif'
+        quotes: false
+      - id: nyan-font-size
+        title: Base font size
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 24
+        step: 1
+        format: px

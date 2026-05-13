@@ -1,0 +1,45 @@
+mode: replace
+sections:
+  - name: Soft Paper
+    id: soft-paper-settings
+    collapsed: false
+    settings:
+      - id: sp-hide-scrollbars
+        title: Hide scrollbars
+        type: class-toggle
+        default: true
+      - id: sp-compact-bases
+        title: Make bases compact
+        description: Tighter vertical spacing in Bases plugin tables
+        type: class-toggle
+        default: false
+      - id: sp-compact-explorer
+        title: Make file explorer compact
+        description: Tighter vertical spacing in the file explorer
+        type: class-toggle
+        default: false
+      - id: sp-hide-add-property
+        title: Hide "Add property" button
+        description: Remove the "Add property" button below properties
+        type: class-toggle
+        default: false
+      - id: sp-status-bar-blue
+        title: Make status bar blue
+        description: Toggle the lower-right file details bar between blue and beige
+        type: class-toggle
+        default: false
+      - id: sp-settings-transparent
+        title: Make settings see-through
+        description: Settings window at 90% opacity so you can see changes live
+        type: class-toggle
+        default: false
+      - id: sp-deprecated
+        title: Deprecated
+        type: heading
+        level: 2
+        collapsed: true
+      - id: sp-fix-base-icons
+        title: Fix invisible Bases view icons
+        description: Forces clickable icons to be visible (legacy fix, may not be needed)
+        type: class-toggle
+        default: false

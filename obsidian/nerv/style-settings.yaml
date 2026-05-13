@@ -1,0 +1,42 @@
+mode: replace
+sections:
+  - name: NERV Terminal System
+    id: obsidian-nerv
+    collapsed: false
+    settings:
+      - id: nerv-red
+        title: Accent Red (Central Dogma)
+        type: variable-color
+        format: hex
+        default: '#9b0a06'
+        alt-format: []
+      - id: nerv-text
+        title: Text Primary
+        type: variable-color
+        format: hex
+        default: '#bfa898'
+        alt-format: []
+      - id: nerv-emergency
+        title: Emergency Red (Alerts)
+        type: variable-color
+        format: hex
+        default: '#c52f0e'
+        alt-format: []
+      - id: nerv-green
+        title: Green (Success/Safe)
+        type: variable-color
+        format: hex
+        default: '#33b26a'
+        alt-format: []
+      - id: nerv-blue
+        title: Pattern Blue
+        type: variable-color
+        format: hex
+        default: '#6dabe4'
+        alt-format: []
+      - id: nerv-yellow
+        title: Yellow (Sync/Warning)
+        type: variable-color
+        format: hex
+        default: '#d8c818'
+        alt-format: []

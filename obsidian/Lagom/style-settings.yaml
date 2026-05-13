@@ -245,6 +245,10 @@ sections:
         type: heading
         level: 2
         collapsed: true
+      - id: enable-inline-title-separator
+        title: Inline title separator
+        type: class-toggle
+        default: true
       - id: magazine-style
         title: Magazine style
         description: An elegant inline title inspired by The New Yorker covers
@@ -381,6 +385,11 @@ sections:
         title: Hide  embed title
         type: class-toggle
         default: true
+      - id: embed-font-size
+        title: Font size
+        type: variable-number
+        default: 16
+        format: px
       - id: images-section
         title: Images
         type: heading
@@ -477,11 +486,15 @@ sections:
     id: files-folders
     collapsed: false
     settings:
-      - id: icon-file
+      - id: icon-file-indicator
         title: Icon file
         type: variable-text
-        default: ·
+        default: •
         quotes: true
+      - id: enable-icon-file
+        title: Enable icon file
+        type: class-toggle
+        default: true
       - id: icon-file-size
         title: Icon file
         type: variable-number
@@ -505,6 +518,10 @@ sections:
             value: left
           - label: Right
             value: right
+      - id: disable-root-file-lines
+        title: Hide separator on root files
+        type: class-toggle
+        default: true
       - id: popup-explorer
         title: Pop-up style
         type: class-toggle
@@ -534,6 +551,11 @@ sections:
         type: variable-number
         default: 1.8
         format: px
+      - id: icon-file
+        title: Icon file
+        type: variable-text
+        default: ·
+        quotes: true
   - name: Tabs
     id: tabs
     collapsed: false

@@ -1,0 +1,290 @@
+mode: replace
+sections:
+  - name: Arcadia Color Schemes
+    id: arcadia-color-schemes
+    collapsed: false
+    settings:
+      - id: arcadia-dark-scheme
+        title: Dark Theme Flavor
+        description: Select your preferred dark mode color scheme
+        type: class-select
+        allowEmpty: false
+        default: ctp-granite
+        options:
+          - label: Granite (Cool Neutral)
+            value: ctp-granite
+          - label: Stone (Cool Slate)
+            value: ctp-stone
+          - label: Olive (Warm Earthy)
+            value: ctp-olive
+          - label: Flint (Cool Professional)
+            value: ctp-flint
+          - label: Navy (Deep Ocean)
+            value: ctp-navy
+          - label: Ember (Warm Cozy)
+            value: ctp-ember
+          - label: Twilight (Mystical Purple)
+            value: ctp-twilight
+          - label: Forest (Natural Green)
+            value: ctp-forest
+          - label: Crimson (Elegant Wine)
+            value: ctp-crimson
+          - label: Slate (Cool Modern)
+            value: ctp-slate
+          - label: Amber (Golden Warmth)
+            value: ctp-amber
+          - label: Parchment (Aged Document)
+            value: ctp-parchment
+          - label: Heritage (Leather & Gold)
+            value: ctp-heritage
+          - label: Sepia (Vintage Photograph)
+            value: ctp-sepia
+          - label: Registry (Parish Records)
+            value: ctp-registry
+          - label: Rootwood (Earth & Forest)
+            value: ctp-rootwood
+      - id: arcadia-light-scheme
+        title: Light Theme Flavor
+        description: Select your preferred light mode color scheme
+        type: class-select
+        allowEmpty: false
+        default: ctp-marble
+        options:
+          - label: Marble (Clean White)
+            value: ctp-marble
+          - label: Sage (Soft Green)
+            value: ctp-sage
+          - label: Pearl (Cool Ivory)
+            value: ctp-pearl
+          - label: Cloud (Soft Blue)
+            value: ctp-cloud
+          - label: Dawn (Warm Peach)
+            value: ctp-dawn
+          - label: Lavender (Purple Tint)
+            value: ctp-lavender
+          - label: Mint (Fresh Green)
+            value: ctp-mint
+          - label: Rose (Soft Pink)
+            value: ctp-rose
+          - label: Silver (Cool Gray)
+            value: ctp-silver
+          - label: Cream (Golden White)
+            value: ctp-cream
+          - label: NY Times (Classic Newspaper)
+            value: ctp-nytimes
+          - label: Wikipedia (Encyclopedia)
+            value: ctp-wikipedia
+          - label: Crownwell (Classic Publishing)
+            value: ctp-crownwell
+          - label: Parchment (Aged Document)
+            value: ctp-parchment
+          - label: Heritage (Leather & Gold)
+            value: ctp-heritage
+          - label: Sepia (Vintage Photograph)
+            value: ctp-sepia
+          - label: Registry (Parish Records)
+            value: ctp-registry
+          - label: Rootwood (Earth & Forest)
+            value: ctp-rootwood
+  - name: Arcadia Theme Settings
+    id: arcadia-settings
+    collapsed: false
+    settings:
+      - id: border-radius
+        title: Border Radius
+        type: variable-number
+        default: 6
+        min: 2
+        max: 12
+        step: 1
+  - name: Arcadia Editor
+    id: arcadia-editor
+    collapsed: false
+    settings:
+      - id: focus-mode
+        title: Focus Mode
+        description: Dim inactive paragraphs for distraction-free writing
+        type: class-toggle
+        default: false
+      - id: show-line-numbers
+        title: Show Line Numbers
+        description: Display line numbers in editor
+        type: class-toggle
+        default: false
+  - name: Arcadia Lists & Checkboxes
+    id: arcadia-lists
+    collapsed: false
+    settings:
+      - id: show-indentation-guides
+        title: Indentation Guides
+        description: Show vertical lines for nested lists
+        type: class-toggle
+        default: false
+  - name: Arcadia Tables
+    id: arcadia-tables
+    collapsed: false
+    settings:
+      - id: sticky-table-headers
+        title: Sticky Table Headers
+        description: Keep headers visible when scrolling
+        type: class-toggle
+        default: false
+  - name: Arcadia Accessibility
+    id: arcadia-accessibility
+    collapsed: false
+    settings:
+      - id: high-contrast-mode
+        title: High Contrast Mode
+        description: Increase contrast for better readability
+        type: class-toggle
+        default: false
+      - id: reduce-motion
+        title: Reduce Motion
+        description: Minimize animations and transitions
+        type: class-toggle
+        default: false
+      - id: dyslexia-friendly
+        title: Dyslexia-Friendly Mode
+        description: Use OpenDyslexic font with improved spacing
+        type: class-toggle
+        default: false
+  - name: Arcadia Advanced Features
+    id: arcadia-advanced
+    collapsed: false
+    settings:
+      - id: rainbow-folders
+        title: Rainbow Folders
+        description: Color-code folders automatically by position
+        type: class-toggle
+        default: false
+      - id: cards
+        title: Cards View (Dataview)
+        description: Transform Dataview tables into card layouts
+        type: class-toggle
+        default: false
+      - id: cards-cover
+        title: Cards Cover Images
+        description: Make images fill the card space (requires Cards View)
+        type: class-toggle
+        default: false
+      - id: img-grid
+        title: Image Grid
+        description: Turn consecutive images into column layouts
+        type: class-toggle
+        default: false
+      - id: code-line-numbers
+        title: Code Line Numbers
+        description: Show line numbers in code blocks
+        type: class-toggle
+        default: false
+      - id: syntax-dracula
+        title: Dracula Syntax Theme
+        description: Dark purple syntax highlighting for code blocks
+        type: class-toggle
+        default: false
+      - id: syntax-nord
+        title: Nord Syntax Theme
+        description: Arctic blue syntax highlighting for code blocks
+        type: class-toggle
+        default: false
+      - id: syntax-github
+        title: GitHub Syntax Theme
+        description: GitHub-style syntax highlighting for code blocks
+        type: class-toggle
+        default: false
+      - id: graph-animated
+        title: Animated Graph Connections
+        description: Add subtle pulsing animation to graph view connections
+        type: class-toggle
+        default: false
+      - id: stacked-tabs
+        title: Stacked Tabs (Andy Mode)
+        description: Enable Andy Matuschak-style sliding panes
+        type: class-toggle
+        default: false
+      - id: embed-borders
+        title: Bordered Embeds
+        description: Add accent borders to embedded notes
+        type: class-toggle
+        default: false
+      - id: media-polished
+        title: Polished Media Borders
+        description: Add subtle borders and padding to images
+        type: class-toggle
+        default: false
+      - id: media-large-controls
+        title: Large Media Controls
+        description: Bigger audio/video controls for accessibility
+        type: class-toggle
+        default: false
+      - id: media-waveform
+        title: Audio Waveform Style
+        description: Show decorative waveform visualization on audio embeds
+        type: class-toggle
+        default: false
+      - id: media-no-shadow
+        title: No Media Shadows
+        description: Remove shadows from images and videos
+        type: class-toggle
+        default: false
+      - id: media-rounded-lg
+        title: Extra Rounded Media
+        description: Use larger border radius on media elements
+        type: class-toggle
+        default: false
+  - name: Arcadia Paper & Notes
+    id: arcadia-paper
+    collapsed: false
+    settings:
+      - id: paper-styles-heading
+        title: Paper Styles
+        description: Add notebook backgrounds via cssclasses (e.g., paper-lined)
+        type: heading
+        level: 3
+        collapsed: true
+      - id: paper-lined
+        title: Lined Paper
+        description: College ruled lines with red margin
+        type: class-toggle
+        default: false
+      - id: paper-grid
+        title: Grid Paper
+        description: Square grid pattern
+        type: class-toggle
+        default: false
+      - id: paper-dot
+        title: Dot Grid Paper
+        description: Dot grid for bullet journaling
+        type: class-toggle
+        default: false
+      - id: paper-cornell
+        title: Cornell Notes Layout
+        description: Cornell note-taking format with sections
+        type: class-toggle
+        default: false
+      - id: sticky-notes-heading
+        title: Sticky Notes Options
+        description: Customize sticky note callout appearance
+        type: heading
+        level: 3
+        collapsed: true
+      - id: sticky-pin
+        title: Pushpin Style
+        description: Use pushpin instead of tape on sticky notes
+        type: class-toggle
+        default: false
+      - id: sticky-fold
+        title: Folded Corner
+        description: Add folded corner effect to sticky notes
+        type: class-toggle
+        default: false
+      - id: sticky-flat
+        title: Flat Sticky Notes
+        description: Remove rotation from sticky notes
+        type: class-toggle
+        default: false
+      - id: sticky-handwriting
+        title: Handwriting Font
+        description: Use handwriting-style font in sticky notes
+        type: class-toggle
+        default: false

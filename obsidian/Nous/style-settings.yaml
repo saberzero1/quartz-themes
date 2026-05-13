@@ -1,0 +1,72 @@
+mode: replace
+sections:
+  - name: Nous
+    id: nous
+    collapsed: false
+    settings:
+      - id: nous-serif-heading
+        title: Headline font
+        description: The serif used for headings and display text.
+        type: variable-text
+        default: '"Crimson Pro", "EB Garamond", "Source Serif 4", Georgia, serif'
+      - id: nous-serif-body
+        title: Body font
+        description: The serif used for body text in the editor and reading view.
+        type: variable-text
+        default: '"Crimson Pro", "EB Garamond", "Source Serif 4", Georgia, serif'
+      - id: nous-sans-ui
+        title: UI font
+        description: The sans-serif used for the Obsidian interface (tabs, sidebars, menus).
+        type: variable-text
+        default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
+      - id: nous-mono
+        title: Monospace font
+        description: The monospace used for code, inline code, and front-matter values.
+        type: variable-text
+        default: '"JetBrains Mono", "Fira Code", "SF Mono", Menlo, Consolas, monospace'
+      - id: nous-body-size
+        title: Body text size
+        description: Base font size for editor and reading view body text.
+        type: variable-number-slider
+        default: 17
+        format: px
+        min: 14
+        max: 22
+        step: 1
+      - id: nous-body-line-height
+        title: Body line height
+        description: Line height for body text. LaTeX-like generosity lives around 1.60–1.75.
+        type: variable-number-slider
+        default: 1.65
+        min: 1.3
+        max: 2
+        step: 0.05
+      - id: nous-reading-width
+        title: Reading width
+        description: Maximum width of the editor / reading column, in characters.
+        type: variable-number-slider
+        default: 80
+        format: ch
+        min: 50
+        max: 120
+        step: 1
+      - id: nous-justify-body
+        title: Justify body paragraphs
+        description: LaTeX-style justified alignment with hyphenation for body text.
+        type: class-toggle
+        default: false
+      - id: nous-number-headings
+        title: Number headings (§1.1.1)
+        description: Academic section numbering for H1 through H4 in reading view.
+        type: class-toggle
+        default: false
+      - id: nous-drop-caps
+        title: Drop cap on first paragraph
+        description: LaTeX / editorial drop capital at the start of each note.
+        type: class-toggle
+        default: false
+      - id: nous-disable-small-caps
+        title: Disable small-caps H5 / H6
+        description: Turn off the small-caps rendering for level-five and level-six headings.
+        type: class-toggle
+        default: false

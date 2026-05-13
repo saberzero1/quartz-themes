@@ -1,0 +1,22 @@
+mode: replace
+sections:
+  - name: Jolly Holly theme
+    id: jollyholly-theme
+    collapsed: false
+    settings:
+      - id: theme-variant
+        title: Theme variant
+        type: class-select
+        allowEmpty: false
+        default: Holly
+        options:
+          - label: Holly
+            value: Holly
+          - label: Berries
+            value: Berries
+          - label: Snowflake
+            value: Snowflake
+          - label: Cinnamon
+            value: Cinnamon
+          - label: Winter-Night
+            value: Winter-Night

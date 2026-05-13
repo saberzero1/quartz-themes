@@ -5,115 +5,341 @@ sections:
     collapsed: false
     settings:
       - id: theme-info
-        title: an intentional writing space
+        title: An Intentional Writing Space
         description: |
-          see an issue? want to suggest a feature? visit us on github: <https://github.com/7368697661/ultra-lobster> this theme was made with 💖 by kneecaps. 
+          see an issue? want to suggest a feature? visit us on github: <https://github.com/7368697061/ultra-lobster> this theme was made with 💖 by kneecaps. 
         markdown: true
         type: info-text
         level: 0
       - id: ulu-subtheme
-        title: 0️⃣ .𖥔 ݁ ˖ subthemes & colors ⊹ ࣪ ˖
+        title: 0️⃣ .𖥔 ݁ ˖ Themes & Colors ⊹ ࣪ ˖
         type: heading
         level: 1
         collapsed: true
-      - id: ulu-interface
-        title: 🖥️ .𖥔 ݁ ˖ interface & components ⊹ ࣪ ˖
+      - id: ulu-custom-palette
+        title: 🎨 .𖥔 ݁ ˖ Custom Palette ⊹ ࣪ ˖
+        description: Active when the 🎨 custom dark or light subtheme is selected. All other subthemes ignore these settings.
         type: heading
         level: 1
         collapsed: true
-      - id: ulu-interface-fancy
-        title: ✨ .𖥔 ݁ ˖ fancy stuff ⊹ ࣪ ˖
+      - id: ulu-custom-dark-heading
+        title: ✦ Dark
+        type: heading
+        level: 2
+        collapsed: false
+      - id: ulu-custom-d-bg-1
+        title: Background primary
+        description: Main workspace background
+        type: variable-color
+        default: '#1a1b26'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-bg-2
+        title: Background secondary
+        description: Sidebar and secondary panels
+        type: variable-color
+        default: '#16161e'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-text
+        title: Text color
+        type: variable-color
+        default: '#c0caf5'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-text-muted
+        title: Text — muted
+        description: Secondary text, captions, labels
+        type: variable-color
+        default: '#565f89'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-text-faint
+        title: Text — faint
+        description: Very subdued text, placeholders, disabled
+        type: variable-color
+        default: '#3b4261'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-red
+        title: Red
+        type: variable-color
+        default: '#f7768e'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-orange
+        title: Orange
+        type: variable-color
+        default: '#ff9e64'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-yellow
+        title: Yellow
+        type: variable-color
+        default: '#e0af68'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-green
+        title: Green
+        type: variable-color
+        default: '#9ece6a'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-cyan
+        title: Cyan
+        type: variable-color
+        default: '#7dcfff'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-blue
+        title: Blue
+        type: variable-color
+        default: '#7aa2f7'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-purple
+        title: Purple
+        type: variable-color
+        default: '#bb9af7'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-d-pink
+        title: Pink
+        type: variable-color
+        default: '#f7768e'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-light-heading
+        title: ✦ Light
         type: heading
         level: 2
         collapsed: true
+      - id: ulu-custom-l-bg-1
+        title: Background primary
+        description: Main workspace background
+        type: variable-color
+        default: '#fafafa'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-bg-2
+        title: Background secondary
+        description: Sidebar and secondary panels
+        type: variable-color
+        default: '#f0f0f0'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-text
+        title: Text color
+        type: variable-color
+        default: '#383a42'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-text-muted
+        title: Text — muted
+        description: Secondary text, captions, labels
+        type: variable-color
+        default: '#696c77'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-text-faint
+        title: Text — faint
+        description: Very subdued text, placeholders, disabled
+        type: variable-color
+        default: '#9a9b9c'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-red
+        title: Red
+        type: variable-color
+        default: '#e45649'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-orange
+        title: Orange
+        type: variable-color
+        default: '#c18401'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-yellow
+        title: Yellow
+        type: variable-color
+        default: '#986801'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-green
+        title: Green
+        type: variable-color
+        default: '#50a14f'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-cyan
+        title: Cyan
+        type: variable-color
+        default: '#0184bc'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-blue
+        title: Blue
+        type: variable-color
+        default: '#4078f2'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-purple
+        title: Purple
+        type: variable-color
+        default: '#a626a4'
+        format: hex
+        alt-format: []
+      - id: ulu-custom-l-pink
+        title: Pink
+        type: variable-color
+        default: '#ca1243'
+        format: hex
+        alt-format: []
+      - id: ulu-interface
+        title: 🖥️ .𖥔 ݁ ˖ Interface ⊹ ࣪ ˖
+        type: heading
+        level: 1
+        collapsed: true
+      - id: ulu-interface-layout
+        title: 🪟 Layout
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-float-header
+        title: Floating View Header
+        description: the back/breadcrumb/action bar row floats over the note card instead of sitting above it, giving the note more vertical space
+        type: class-toggle
+        default: false
+      - id: ulu-float-header-peek
+        title: Floating Header — Hover to Reveal
+        description: when floating header is enabled, hides the bar until you hover over the note card (requires floating view header to be on)
+        type: class-toggle
+        default: false
+      - id: ulu-peek-statusbar
+        title: Status Bar — Hover to Reveal
+        description: hides the status bar until you hover near the bottom of the window
+        type: class-toggle
+        default: false
+      - id: ulu-settings-horizontal
+        title: Horizontal Settings Nav
+        description: replaces the left sidebar with a horizontal scrolling nav strip across the top of the settings pane
+        type: class-toggle
+        default: false
+      - id: ulu-tab-flat
+        title: Flat Active Tab Style
+        description: reverts the active tab to the flat inset highlight style instead of the sculpted neumorphic shadow
+        type: class-toggle
+        default: false
+      - id: ulu-no-tab-pills
+        title: Hide Tab Control Pill Borders
+        description: removes borders and background from the new-tab, tab-list, and sidebar toggle buttons at the edge of the tab bar
+        type: class-toggle
+        default: false
+      - id: ulu-no-motion
+        title: Reduce Motion
+        description: disables all animations and transitions — for accessibility or preference. the OS-level prefers-reduced-motion setting is also respected automatically without this toggle
+        type: class-toggle
+        default: false
+      - id: ulu-interface-fancy
+        title: ✨ Decorative
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-we1
+        title: New-Tab Empty State (Gradient + Lobster)
+        description: applies the "working edits" style empty state when no tabs are open
+        type: class-toggle
+      - id: ulu-grad
+        title: Halo Gradient
+        description: enable a wip background animation inspired by soft grainy gradients and angel numbers
+        type: class-toggle
       - id: ulu-enable-custom-bg
-        title: enable custom workspace background
+        title: Enable Custom Workspace Background
         description: ⚠️ currently only supported when using the 'abaddon glass' dark subtheme.
         type: class-toggle
       - id: ulu-custom-bg-url
-        title: custom background image url
+        title: Custom Background Image URL
         description: 'paste a direct image link wrapped in url(""). example: url("https://i.imgur.com/image.png")'
         type: variable-text
         default: url("https://512pixels.net/downloads/macos-wallpapers/11-0-color-day.jpg")
-      - id: ulu-grad
-        title: halo gradient
-        description: enable a wip background animation inspired by soft grainy gradients and angel numbers
-        type: class-toggle
-      - id: ulu-we1
-        title: new-tab empty state (gradient + lobster)
-        description: applies the “working edits” style empty state when no tabs are open
-        type: class-toggle
       - id: ulu-interface-blur
-        title: 🌫️ .𖥔 ݁ ˖ blur settings ⊹ ࣪ ˖
+        title: 🌫️ Blur
         type: heading
         level: 2
         collapsed: true
-      - id: ulu-no-blur-callouts
-        title: disable callout blur
-        type: class-toggle
-      - id: ulu-no-blur-mobile
-        title: disable mobile nav blur
-        type: class-toggle
       - id: ulu-blur-modal
-        title: blur bg of settings pane
+        title: Blur Settings Pane Background
         type: class-toggle
       - id: ulu-blur-prompt
-        title: blur prompt (cmd/search) bg
+        title: Blur Command Palette Background
         type: class-toggle
       - id: ulu-blur-tooltip
-        title: blur tooltip bg
-        type: class-toggle
-      - id: ulu-status-pills-blur
-        title: blurred status-pills bg
-        description: blurs bg of statusbar pill option
+        title: Blur Tooltip Background
         type: class-toggle
       - id: ulu-blur-menu
-        title: blur popup menu
+        title: Blur Popup Menu
+        type: class-toggle
+      - id: ulu-status-pills-blur
+        title: Blur Status Bar Pills
+        description: blurs the background of the statusbar pill option
+        type: class-toggle
+      - id: ulu-no-blur-callouts
+        title: Disable Callout Blur
+        type: class-toggle
+      - id: ulu-no-blur-mobile
+        title: Disable Mobile Nav Blur
+        type: class-toggle
+      - id: ulu-no-blur-canvas
+        title: Disable Canvas Blur
+        description: removes the backdrop-filter blur effect from canvas nodes
         type: class-toggle
       - id: ulu-interface-other
-        title: 🎛️ .𖥔 ݁ ˖ everything else ⊹ ࣪ ˖
+        title: 🧩 Components
         type: heading
         level: 2
         collapsed: true
-      - id: ulu-minimal-properties
-        title: minimal properties card
-        description: removes the glass slab styling from the properties card
+      - id: ulu-status-pills
+        title: Island Pill Status Bar
+        description: separates statusbar items into pills
+        type: class-toggle
+      - id: ulu-prop-card
+        title: Properties Card
+        description: wraps the frontmatter properties block in a glass slab with inset value wells (off by default for a minimal layout)
+        type: class-toggle
+        default: false
+      - id: ulu-neon-tags
+        title: Neon Glass Property Tags
+        description: restores the glowing accent-coloured pill style for multi-select property tags
         type: class-toggle
         default: false
       - id: ulu-inline-property-tags
-        title: match inline tags
+        title: Inline Property Tags
         description: makes property tags look like standard inline wireframe tags
         type: class-toggle
         default: false
-      - id: ulu-prop-card
-        title: properties card
+      - id: ulu-active-line-pop
+        title: Active Line Popup Animation
+        description: adds a popup scale animation when switching lines (works with any active line highlight style)
         type: class-toggle
-      - id: ulu-active-line
-        title: highlight active line
+        default: false
+      - id: ulu-glass-chev
+        title: Glass Chevrons
+        description: replaces the default dot indicators with glass bubble chevrons
         type: class-toggle
-      - id: ulu-status-pills
-        title: island pill statusbar
-        description: seperates statusbar items into pills
-        type: class-toggle
-      - id: ulu-accent-bold-italic
-        title: make bold/italic different colors
-        type: class-toggle
-      - id: ulu-serif-italic
-        title: make italic serif
-        type: class-toggle
-      - id: ulu-duo-tag
-        title: make tags split
-        type: class-toggle
-      - id: ulu-justify
-        title: justify paragraph text
-        type: class-toggle
+        default: false
+      - id: ulu-plugins
+        title: 🔌 .𖥔 ݁ ˖ Plugins ⊹ ࣪ ˖
+        type: heading
+        level: 1
+        collapsed: true
       - id: ulu-typography
-        title: 📑 .𖥔 ݁ ˖ typography ⊹ ࣪ ˖
+        title: 📑 .𖥔 ݁ ˖ Typography ⊹ ࣪ ˖
         type: heading
         level: 1
         collapsed: true
       - id: ulu-font-general
-        title: editor font
+        title: Editor Font
         type: variable-select
         allowempty: false
         default: satoshi
@@ -142,6 +368,8 @@ sections:
             value: nightingale
           - label: instrument ✦ serif
             value: instrument
+          - label: newsreader ✦ serif
+            value: Newsreader
           - label: monaspace ‪‪❤︎‬ mono
             value: monaspace
           - label: iawriter ‪‪❤︎‬ mono
@@ -149,7 +377,7 @@ sections:
           - label: martian mono ‪‪❤︎‬ mono
             value: martian mono
       - id: ulu-font-title
-        title: title type
+        title: Title Typeface
         type: variable-select
         allowempty: false
         default: monaspace
@@ -178,6 +406,8 @@ sections:
             value: nightingale
           - label: instrument ✦ serif
             value: instrument
+          - label: newsreader ✦ serif
+            value: Newsreader
           - label: monaspace ‪‪❤︎‬ mono
             value: monaspace
           - label: iawriter ‪‪❤︎‬ mono
@@ -185,35 +415,140 @@ sections:
           - label: martian mono ‪‪❤︎‬ mono
             value: martian mono
       - id: responsive-text
-        title: text adjuster
+        title: Text Scale
         description: 🚨 must be a whole / decimal number such as 1 or 1.1. further scale can be changed via slider in appearance
         type: variable-number
         default: 1
         format: em
-      - id: ulu-list-distinct
-        title: top level lists
-        description: enable list header demarking 🚨 does not work in reading mode
-        type: class-toggle
-      - id: ulu-faintselect
-        title: accent text selection
-        type: class-toggle
       - id: ulu-accent-title
-        title: accent titles
+        title: Accent Titles
+        type: class-toggle
+      - id: ulu-accent-bold-italic
+        title: Accent Bold & Italic
+        description: applies distinct accent colors to bold and italic text
+        type: class-toggle
+      - id: ulu-serif-italic
+        title: Serif Italic
+        description: renders italic text in a serif typeface
+        type: class-toggle
+      - id: ulu-duo-tag
+        title: Split Tags
+        type: class-toggle
+      - id: ulu-no-hyphenate
+        title: Disable Auto-Hyphenation
+        description: turns off automatic hyphenation on paragraphs (on by default)
+        type: class-toggle
+        default: false
+      - id: ulu-print-link-urls
+        title: Print / PDF — Show Link URLs
+        description: when printing or exporting to PDF, append the URL after external links
+        type: class-toggle
+      - id: ulu-shimmer-title
+        title: Shimmer Inline Title
+        description: animates the note title with a flowing accent-colour shimmer gradient
+        type: class-toggle
+        default: false
+      - id: ulu-text-rendering-heading
+        title: Text Rendering
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-tabular-nums
+        title: Tabular Numbers
+        description: all digits use tabular (monospace) figures across the whole note — good for data-heavy vaults
+        type: class-toggle
+        default: false
+      - id: ulu-stylistic-alts
+        title: Stylistic Alternates
+        description: 'enables font-feature-settings: "ss01" for fonts that ship optical variants (Inter, Recursive, Fraunces)'
+        type: class-toggle
+        default: false
+      - id: ulu-disable-ligatures
+        title: Disable Ligatures
+        description: turns off common and contextual ligatures for maximum readability on dense code-heavy notes
+        type: class-toggle
+        default: false
+      - id: ulu-measure-heading
+        title: Measure & Line Width
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-custom-measure
+        title: Custom Line Width
+        description: apply opinionated line widths — 80ch editor, 68ch reading. override below.
+        type: class-toggle
+        default: false
+      - id: ulu-edit-line-width
+        title: Editor Line Width
+        type: variable-number-slider
+        default: 80
+        min: 40
+        max: 120
+        step: 2
+        format: ch
+      - id: ulu-reading-line-width
+        title: Reading Line Width
+        type: variable-number-slider
+        default: 68
+        min: 40
+        max: 120
+        step: 2
+        format: ch
+      - id: ulu-custom-body-weight
+        title: Custom Body Weight
+        description: enable body font weight control (uses the slider below)
+        type: class-toggle
+        default: false
+      - id: ulu-body-weight
+        title: Body Font Weight
+        type: variable-number-slider
+        default: 400
+        min: 300
+        max: 600
+        step: 50
+      - id: ulu-links-heading
+        title: Link Styles
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-flourishes-heading
+        title: Flourishes
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-superscript-footnotes
+        title: OpenType Superscript Footnotes
+        description: 'uses font-feature-settings: "sups" for native superscript numerals on footnote links'
+        type: class-toggle
+        default: false
+      - id: ulu-rough-highlight
+        title: Rough Marker Highlight
+        description: gives ==highlighted== text an organic hand-drawn marker edge via SVG displacement
         type: class-toggle
       - id: ulu-headings
-        title: ⌨️ .𖥔 ݁ ˖ heading settings ⊹ ࣪ ˖
+        title: ⌨️ Headings
         type: heading
         level: 2
         collapsed: true
       - id: ulu-colorfo-headings
-        title: rainbow headers
+        title: Rainbow Headers
         type: class-toggle
+      - id: ulu-no-balance-headings
+        title: Disable Balanced Heading Wrap
+        description: turns off text-wrap balance on headings (escape hatch for browsers where it misbehaves)
+        type: class-toggle
+        default: false
+      - id: ulu-fold-hover
+        title: Fold Indicator — Hover to Reveal
+        description: hide the teardrop/circle fold indicator until you hover over a heading (default is always visible)
+        type: class-toggle
+        default: false
       - id: ulu-no-h2-line
-        title: disable h2 underline
+        title: Disable H2 Underline
         description: removes the gradient underline from h2 headings
         type: class-toggle
       - id: ulu-h1-line-color
-        title: header 1 underline color
+        title: H1 Underline Color
         type: variable-select
         allowempty: false
         default: var(--ulu-header-line-accent, var(--background-modifier-border))
@@ -243,7 +578,7 @@ sections:
           - label: pink
             value: var(--color-pink)
       - id: ulu-h2-line-color
-        title: header 2 underline color
+        title: H2 Underline Color
         type: variable-select
         allowempty: false
         default: var(--ulu-header-line-accent, var(--background-modifier-border))
@@ -273,7 +608,7 @@ sections:
           - label: pink
             value: var(--color-pink)
       - id: ulu-h3-line-color
-        title: header 3 underline color
+        title: H3 Underline Color
         type: variable-select
         allowempty: false
         default: var(--ulu-header-line-accent, var(--background-modifier-border))
@@ -303,7 +638,7 @@ sections:
           - label: pink
             value: var(--color-pink)
       - id: ulu-h4-line-color
-        title: header 4 underline color
+        title: H4 Underline Color
         type: variable-select
         allowempty: false
         default: var(--ulu-header-line-accent, var(--background-modifier-border))
@@ -333,7 +668,7 @@ sections:
           - label: pink
             value: var(--color-pink)
       - id: ulu-h5-line-color
-        title: header 5 underline color
+        title: H5 Underline Color
         type: variable-select
         allowempty: false
         default: var(--ulu-header-line-accent, var(--background-modifier-border))
@@ -363,7 +698,7 @@ sections:
           - label: pink
             value: var(--color-pink)
       - id: ulu-h6-line-color
-        title: header 6 underline color
+        title: H6 Underline Color
         type: variable-select
         allowempty: false
         default: var(--ulu-header-line-accent, var(--background-modifier-border))
@@ -393,76 +728,168 @@ sections:
           - label: pink
             value: var(--color-pink)
       - id: ulu-h1-weight
-        title: header 1 weight
+        title: H1 Weight
         description: nightingale looks best at weight >500
         type: variable-number
         default: 900
       - id: ulu-h2-weight
-        title: header 2 weight
+        title: H2 Weight
         type: variable-number
         default: 800
       - id: ulu-h3-weight
-        title: header 3 weight
+        title: H3 Weight
         type: variable-number
         default: 700
       - id: ulu-h4-weight
-        title: header 4 weight
+        title: H4 Weight
         type: variable-number
         default: 700
       - id: ulu-h5-weight
-        title: header 5 weight
+        title: H5 Weight
         type: variable-number
         default: 600
       - id: ulu-h6-weight
-        title: header 6 weight
+        title: H6 Weight
         type: variable-number
         default: 600
       - id: ulu-header-line-h1
-        title: header 1 underline
+        title: H1 Underline
         type: class-toggle
       - id: ulu-header-line-h2
-        title: header 2 underline
+        title: H2 Underline
         type: class-toggle
       - id: ulu-header-line-h3
-        title: header 3 underline
+        title: H3 Underline
         type: class-toggle
       - id: ulu-header-line-h4
-        title: header 4 underline
+        title: H4 Underline
         type: class-toggle
       - id: ulu-header-line-h5
-        title: header 5 underline
+        title: H5 Underline
         type: class-toggle
       - id: ulu-header-line-h6
-        title: header 6 underline
+        title: H6 Underline
         type: class-toggle
       - id: ulu-canvas
-        title: 🖼️ .𖥔 ݁ ˖ canvas settings ⊹ ࣪ ˖
+        title: 🖼️ .𖥔 ݁ ˖ Canvas ⊹ ࣪ ˖
         type: heading
         level: 1
         collapsed: true
-      - id: ulu-no-blur-canvas
-        title: disable canvas blur
-        description: removes the backdrop-filter blur effect from canvas nodes
-        type: class-toggle
       - id: ulu-canvas-center
-        title: center canvas text
+        title: Center Canvas Text
         description: center align text in canvas cards
         type: class-toggle
       - id: ulu-canvas-border0
-        title: disable border, red
+        title: Disable Border — Red
         type: class-toggle
       - id: ulu-canvas-border1
-        title: disable border, orange
+        title: Disable Border — Orange
         type: class-toggle
       - id: ulu-canvas-border2
-        title: disable border, yellow
+        title: Disable Border — Yellow
         type: class-toggle
       - id: ulu-canvas-border3
-        title: disable border, green
+        title: Disable Border — Green
         type: class-toggle
       - id: ulu-canvas-border4
-        title: disable border, blue
+        title: Disable Border — Blue
         type: class-toggle
       - id: ulu-canvas-border5
-        title: disable border, purple
+        title: Disable Border — Purple
+        type: class-toggle
+      - id: ulu-col-heading
+        title: ⬡ .𖥔 ݁ ˖ Multi-column ⊹ ࣪ ˖
+        description: Use [!col] with nested >> callouts as columns. Use [!col-strip] as a column to remove chrome from its contents.
+        type: heading
+        level: 1
+      - id: ulu-col-gap
+        title: Column gap
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 48
+        step: 4
+        format: px
+      - id: ulu-ref-heading
+        title: 📖 .𖥔 ݁ ˖ Usage Reference ⊹ ࣪ ˖
+        description: quick reference for spans, per-note classes, callouts, and task icons
+        type: heading
+        level: 1
+        collapsed: true
+      - id: ulu-ref-spans
+        title: Inline Spans & Marks
+        description: |
+          Use `<span>` or `<mark>` directly in note body (works in reading view):
+
+          `<span class="drop-cap">full paragraph text here</span>`
+          → large drop cap on the first letter; remaining text flows normally
+
+          `<span class="smcp">text</span>`
+          → small caps (requires a font with OpenType `smcp` glyphs)
+
+          `==highlighted text==` uses the global highlight color set in Style Settings.
+          For per-mark color overrides use `<mark class="ulu-X">text</mark>`:
+          `ulu-r` red &nbsp; `ulu-g` green &nbsp; `ulu-b` blue &nbsp; `ulu-p` purple &nbsp; `ulu-o` orange &nbsp; `ulu-y` yellow
+        markdown: true
+        type: info-text
+        level: 2
+      - id: ulu-ref-note-classes
+        title: Per-note CSS Classes
+        description: |
+          Add to a note's frontmatter to apply only to that note:
+          ```
+          ---
+          cssclasses: [ulu-justify, ulu-accent-title]
+          ---
+          ```
+          `ulu-justify` — justified paragraph text with auto-hyphenation
+
+          `ulu-accent-title` — accent-coloured inline note title
+
+          `ulu-minimal-properties` — strips slab/border/shadow from the properties block
+        markdown: true
+        type: info-text
+        level: 2
+      - id: ulu-ref-callouts
+        title: Callouts
+        description: |
+          **Multi-column layout** — use `[!col]` with `>>` nested callouts as columns:
+          ```
+          > [!col]
+          >> First column content here.
+          >
+          >> Second column content here.
+          ```
+          Use `[!col-strip]` as a column type to remove all chrome from its contents.
+        markdown: true
+        type: info-text
+        level: 2
+      - id: ulu-ref-tasks
+        title: Task List Icons
+        description: |
+          Custom task types replace the standard checkbox with a coloured icon:
+
+          `- [!]` red alert &nbsp; `- [?]` orange question &nbsp; `- [i]` blue info
+          `- [*]` purple star &nbsp; `- [+]` green add &nbsp; `- [-]` grey cancelled
+          `- [b]` orange bookmark &nbsp; `- ["]` grey quote &nbsp; `- [l]` red pin
+        markdown: true
+        type: info-text
+        level: 2
+      - id: ulu-minimal-properties
+        title: minimal properties card
+        description: removes the glass slab styling from the properties card
+        type: class-toggle
+        default: false
+      - id: ulu-active-line
+        title: highlight active line
+        type: class-toggle
+      - id: ulu-justify
+        title: justify paragraph text
+        type: class-toggle
+      - id: ulu-list-distinct
+        title: top level lists
+        description: enable list header demarking 🚨 does not work in reading mode
+        type: class-toggle
+      - id: ulu-faintselect
+        title: accent text selection
         type: class-toggle

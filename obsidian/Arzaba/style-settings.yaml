@@ -4,6 +4,12 @@ sections:
     id: arzaba-theme-settings
     collapsed: false
     settings:
+      - id: arzaba-font-override
+        title: 📏 Use recommended Font Sizes
+        description: Forces recommended font sizes. Enabling this will override user font size !
+        type: class-toggle
+        default: false
+        value: arzaba-font-override
       - id: arzaba-sub-theme
         title: 🖼️ Select a Design
         type: class-select
@@ -24,9 +30,3 @@ sections:
             value: arzaba-retro
           - label: 🏺 Past
             value: arzaba-past
-      - id: arzaba-font-override
-        title: 📏 Use recommended Font Sizes
-        description: Forces recommended font sizes. Enabling this will override user font size !
-        type: class-toggle
-        default: false
-        value: arzaba-font-override
