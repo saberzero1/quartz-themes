@@ -1352,6 +1352,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: #3eb4bf !important;
   --h1-color: hsl(205, 75%, 60%) !important;
   --h2-color: #34daa5 !important;
   --h3-color: hsl(180, 75%, 55%) !important;
@@ -1360,7 +1361,6 @@ body.theme-dark {
   --h6-color: hsl(313, 65%, 65%) !important;
   --default-font:
     "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif !important;
-  --blockquote-color: #3eb4bf !important;
   --bold-color: white !important;
   --search-match-color: #ffff00 !important;
   --search-match-color-other: #ffff00 !important;

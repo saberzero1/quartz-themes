@@ -622,5 +622,6 @@
     "ctp-tag-pill": {
       "general": ".ctp-tag-pill {\n--tag-size: var(--font-smaller);\n--tag-decoration: none;\n--tag-decoration-hover: none;\n--tag-background: hsla(var(--interactive-accent-hsl), 0.1);\n--tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);\n--tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);\n--tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);\n--tag-border-width: 0px;\n--tag-padding-x: 0.65em;\n--tag-padding-y: 0.25em;\n--tag-radius: 2em;\n--tag-weight: inherit;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

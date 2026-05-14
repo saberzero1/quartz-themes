@@ -1357,8 +1357,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #d2d8e1 !important;
   --interactive-accent-rgb: 123, 108, 217 !important;
-  --text-error-hover: #ef4d44 !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5) !important;
+  --text-error-hover: #ef4d44 !important;
   --code-block: #6ab8e5 !important;
   --inline-code: #6ab8e5 !important;
   --pre-code: #434d5b !important;

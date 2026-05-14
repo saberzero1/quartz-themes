@@ -980,28 +980,30 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: var(--shadow-xs) !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    var(--shadow-edges) !important;
-  --shadow-edges: 0 0 transparent !important;
-  --background-modifier-form-field-highlighted: var(--EBgnd) !important;
   --background-modifier-accent: var(--AccentA2) !important;
+  --background-modifier-form-field-highlighted: var(--EBgnd) !important;
   --background-table-rows: var(--Bgnd) !important;
-  --dropdown-background-normal: var(--Bgnd) !important;
   --frame-divider-color: var(--Axt) !important;
   --quote-opening-modifier: var(--Axt2) !important;
   --text-blockquote: var(--txi) !important;
   --text-bold: var(--txt) !important;
   --text-code: var(--txi) !important;
+  --text-formatting: #635e6a !important;
   --text-italic: var(--txt) !important;
+  --raised-shadow: var(--shadow-xs) !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    var(--shadow-edges) !important;
+  --shadow-edges: 0 0 transparent !important;
+  --bold-color: #24262a !important;
+  --italic-color: #fca287 !important;
+  --dropdown-background-normal: var(--Bgnd) !important;
   --AccentA1: #a32d7f !important;
   --AccentA2: #d560b1 !important;
   --Axt: #a32d7f36 !important;
   --Axt2: #d5acdc94 !important;
   --Bgcl: #a32d7f52 !important;
   --Bgnd: hsla(300, 30%, 92%, 1) !important;
-  --bold-color: #24262a !important;
   --chbx-a: 241, 99, 125 !important;
   --chbx-b: 243, 150, 122 !important;
   --chbx-B: 216, 188, 216 !important;
@@ -1019,9 +1021,7 @@ body.theme-light {
   --chbx-R: 200, 216, 155 !important;
   --color-scheme: light !important;
   --EBgnd: hsla(89, 58%, 95%, 1) !important;
-  --italic-color: #fca287 !important;
   --its: "its" !important;
-  --text-formatting: #635e6a !important;
   --txi: #412438cd !important;
   --txt: #30222b !important;
 }
@@ -1992,6 +1992,16 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-accent: var(--AccentA2) !important;
+  --background-modifier-form-field-highlighted: var(--EBgnd) !important;
+  --background-table-rows: var(--Bgnd) !important;
+  --frame-divider-color: var(--Axt) !important;
+  --quote-opening-modifier: var(--Axt2) !important;
+  --text-blockquote: var(--txi) !important;
+  --text-bold: var(--txt) !important;
+  --text-code: var(--txi) !important;
+  --text-formatting: #9c4296 !important;
+  --text-italic: var(--txt) !important;
   --h1-color: #d8bcd8 !important;
   --h2-color: #c4a5c4 !important;
   --h3-color: #ac81ac !important;
@@ -1999,23 +2009,15 @@ body.theme-dark {
   --h5-color: #835783 !important;
   --h6-color: #805380 !important;
   --inline-title-color: var(--h1-color) !important;
-  --background-modifier-form-field-highlighted: var(--EBgnd) !important;
-  --background-modifier-accent: var(--AccentA2) !important;
-  --background-table-rows: var(--Bgnd) !important;
+  --bold-color: #9c4296 !important;
+  --italic-color: #f3967a !important;
   --dropdown-background-normal: var(--Bgnd) !important;
-  --frame-divider-color: var(--Axt) !important;
-  --quote-opening-modifier: var(--Axt2) !important;
-  --text-blockquote: var(--txi) !important;
-  --text-bold: var(--txt) !important;
-  --text-code: var(--txi) !important;
-  --text-italic: var(--txt) !important;
   --AccentA1: #a32d7f !important;
   --AccentA2: #d560b1 !important;
   --Axt: #a32d7f36 !important;
   --Axt2: #50125a94 !important;
   --Bgcl: #a32d7f52 !important;
   --Bgnd: #2c1c27 !important;
-  --bold-color: #9c4296 !important;
   --chbx-a: 241, 99, 125 !important;
   --chbx-b: 243, 150, 122 !important;
   --chbx-B: 216, 188, 216 !important;
@@ -2033,9 +2035,7 @@ body.theme-dark {
   --chbx-R: 200, 216, 155 !important;
   --color-scheme: dark !important;
   --EBgnd: #211f23 !important;
-  --italic-color: #f3967a !important;
   --its: "its" !important;
-  --text-formatting: #9c4296 !important;
   --txi: #e499e4a2 !important;
   --txt: #d8bcd8 !important;
 }

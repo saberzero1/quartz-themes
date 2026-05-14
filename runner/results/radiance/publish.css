@@ -1526,11 +1526,12 @@ body.theme-light {
   --accent-color: var(--text-accent) !important;
   --background-modifier-active: #e8eaed !important;
   --color-accent-rgb: var(--text-accent-rgb) !important;
-  --color-accent-hover: var(--text-accent-hover) !important;
   --input-focus-border-color: var(--text-accent) !important;
+  --color-accent-hover: var(--text-accent-hover) !important;
   --sidebar-background: var(--background-primary) !important;
   --input-border-color: var(--background-modifier-border) !important;
   --input-text-color: var(--text-normal) !important;
+  --input-background: #ffffff !important;
   --font-family-sans:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
@@ -1544,7 +1545,6 @@ body.theme-light {
   --sidebar-border-color: var(--background-modifier-border) !important;
   --font-family-monospace:
     "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-  --input-background: #ffffff !important;
   --text-accent-rgb: 208, 66, 85 !important;
 }
 
@@ -2530,11 +2530,12 @@ body.theme-dark {
   --accent-color: var(--text-accent) !important;
   --background-modifier-active: #303030 !important;
   --color-accent-rgb: var(--text-accent-rgb) !important;
-  --color-accent-hover: var(--text-accent-hover) !important;
   --input-focus-border-color: var(--text-accent) !important;
+  --color-accent-hover: var(--text-accent-hover) !important;
   --sidebar-background: var(--background-primary) !important;
   --input-border-color: var(--background-modifier-border) !important;
   --input-text-color: var(--text-normal) !important;
+  --input-background: #2d2d2d !important;
   --font-family-sans:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
@@ -2548,7 +2549,6 @@ body.theme-dark {
   --sidebar-border-color: var(--background-modifier-border) !important;
   --font-family-monospace:
     "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-  --input-background: #2d2d2d !important;
   --text-accent-rgb: 208, 66, 85 !important;
 }
 

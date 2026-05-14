@@ -2407,12 +2407,12 @@ body.theme-dark {
   --purple_x: 180, 142, 173 !important;
   --red_x: 191, 97, 106 !important;
   --yellow_x: 235, 203, 139 !important;
+  --cursor-line-background: rgba(var(--frost0_x), 0.2) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --calendar-background-hover: var(--dark3) !important;
   --calendar-hover: var(--red) !important;
   --calendar-today: var(--yellow) !important;
   --calendar-week: var(--yellow) !important;
-  --cursor-line-background: rgba(var(--frost0_x), 0.2) !important;
   --dark0: rgb(46, 52, 64) !important;
   --dark1: rgb(59, 66, 82) !important;
   --dark2: rgb(67, 76, 94) !important;

@@ -999,6 +999,11 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: hsl(223, 14%, 90%) !important;
+  --he-title-bar-active-bg: #eaa4a4 !important;
+  --he-title-bar-active-pinned-bg: #a7b3a1 !important;
+  --he-title-bar-inactive-bg: #eaa4a4 !important;
+  --he-title-bar-inactive-pinned-bg: #a7b3a1 !important;
+  --blockquote-style: var(--blockquote-font-style) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1012,17 +1017,12 @@ body.theme-light {
   --h6-color: hsl(45, 45%, 20%) !important;
   --inline-title-color: var(--h1-color) !important;
   --default-font: "Inter" !important;
-  --blockquote-style: var(--blockquote-font-style) !important;
   --h1-font: Courgette !important;
   --h2-font: Courgette !important;
   --h3-font: "Karla", "Inter" !important;
   --h4-font: "Karla", "Inter" !important;
   --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--h1-color) !important;
-  --he-title-bar-active-bg: #eaa4a4 !important;
-  --he-title-bar-active-pinned-bg: #a7b3a1 !important;
-  --he-title-bar-inactive-bg: #eaa4a4 !important;
-  --he-title-bar-inactive-pinned-bg: #a7b3a1 !important;
   --h1-border-width: 1px !important;
   --h2-border-width: 1px !important;
   --h3-border-width: 0px !important;
@@ -2039,6 +2039,11 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: hsl(223, 7%, 30%) !important;
+  --he-title-bar-active-bg: #3d373a !important;
+  --he-title-bar-active-pinned-bg: #735050 !important;
+  --he-title-bar-inactive-bg: #3d373a !important;
+  --he-title-bar-inactive-pinned-bg: #735050 !important;
+  --blockquote-style: var(--blockquote-font-style) !important;
   --h1-color: hsl(217, 22%, 90%) !important;
   --h2-color: hsl(217, 22%, 80%) !important;
   --h3-color: hsl(217, 22%, 70%) !important;
@@ -2047,17 +2052,12 @@ body.theme-dark {
   --h6-color: hsl(45, 45%, 65%) !important;
   --inline-title-color: var(--h1-color) !important;
   --default-font: "Inter" !important;
-  --blockquote-style: var(--blockquote-font-style) !important;
   --h1-font: Courgette !important;
   --h2-font: Courgette !important;
   --h3-font: "Karla", "Inter" !important;
   --h4-font: "Karla", "Inter" !important;
   --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--h1-color) !important;
-  --he-title-bar-active-bg: #3d373a !important;
-  --he-title-bar-active-pinned-bg: #735050 !important;
-  --he-title-bar-inactive-bg: #3d373a !important;
-  --he-title-bar-inactive-pinned-bg: #735050 !important;
   --h1-border-width: 1px !important;
   --h2-border-width: 1px !important;
   --h3-border-width: 0px !important;

@@ -995,6 +995,8 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: #ffffff !important;
+  --background-modifier-form-field-highlighted: #f8f9fa !important;
+  --line-height: 1.6 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1007,17 +1009,15 @@ body.theme-light {
   --h5-color: #9932cc !important;
   --h6-color: #696969 !important;
   --inline-title-color: var(--h1-color) !important;
-  --background-modifier-form-field-highlighted: #f8f9fa !important;
   --border-color: #dadce0 !important;
   --italic-color: #8b4513 !important;
   --interactive-success: #137333 !important;
-  --line-height: 1.6 !important;
   --tag-text: #1565c0 !important;
   --callout-note: 245, 245, 245;
   --background-primary-rgb: 255, 255, 255 !important;
+  --border-color-hover: #bdc1c6 !important;
   --table-row-even: #fafafa !important;
   --table-row-odd: #ffffff !important;
-  --border-color-hover: #bdc1c6 !important;
   --highlight-blue: #bbdefb !important;
   --highlight-pink: #f8bbd9 !important;
   --highlight-yellow: #fff59d !important;
@@ -2052,6 +2052,13 @@ body.theme-dark {
     10,
     var(--background-opacity, 0.8)
   ) !important;
+  --background-modifier-form-field-highlighted: rgba(
+    0,
+    0,
+    0,
+    var(--background-opacity, 0.8)
+  ) !important;
+  --line-height: 1.6 !important;
   --h1-color: #cd919e !important;
   --h2-color: #daa520 !important;
   --h3-color: #8fbc8f !important;
@@ -2059,22 +2066,15 @@ body.theme-dark {
   --h5-color: #9370db !important;
   --h6-color: #cd853f !important;
   --inline-title-color: var(--h1-color) !important;
-  --background-modifier-form-field-highlighted: rgba(
-    0,
-    0,
-    0,
-    var(--background-opacity, 0.8)
-  ) !important;
   --border-color: #404040 !important;
   --italic-color: #8be3eb !important;
   --interactive-success: #90ff9f !important;
-  --line-height: 1.6 !important;
   --tag-text: #90caf9 !important;
   --callout-note: 31, 31, 31;
   --background-primary-rgb: 10, 10, 10 !important;
+  --border-color-hover: #505050 !important;
   --table-row-even: #151515 !important;
   --table-row-odd: #0a0a0a !important;
-  --border-color-hover: #505050 !important;
   --highlight-blue: #1a1a4a !important;
   --highlight-pink: #4a1a4a !important;
   --highlight-yellow: #4a4a1a !important;

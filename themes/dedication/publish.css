@@ -1360,6 +1360,7 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: #961327 !important;
+  --line-height: 1.6 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1388,7 +1389,6 @@ body.theme-light {
   --text-title-h6: var(--h6-color) !important;
   --vim-cursor: #961327 !important;
   --accent: rgb(8, 145, 178) !important;
-  --line-height: 1.6 !important;
   --list-bullet-size-alt: calc(var(--list-bullet-size)/2) !important;
   --workspace-divider-color: var(--text-accent) !important;
   --empty-state-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath fill='black' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3E%3C/svg%3E") !important;
@@ -2399,6 +2399,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: #f8c537 !important;
+  --line-height: 1.6 !important;
   --h1-color: inherit !important;
   --h2-color: inherit !important;
   --h3-color: inherit !important;
@@ -2423,7 +2424,6 @@ body.theme-dark {
   --text-title-h6: var(--h6-color) !important;
   --vim-cursor: #f8c537 !important;
   --accent: rgb(8, 145, 178) !important;
-  --line-height: 1.6 !important;
   --list-bullet-size-alt: calc(var(--list-bullet-size)/2) !important;
   --workspace-divider-color: var(--text-accent) !important;
   --empty-state-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath fill='black' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3E%3C/svg%3E") !important;

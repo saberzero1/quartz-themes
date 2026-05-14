@@ -1399,6 +1399,21 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  ) !important;
+  --table-drag-padding: var(--table-drag-space) !important;
+  --cards-aspect-ratio: auto !important;
+  --cards-background: transparent !important;
+  --cards-border-width: 1px !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
+  --table-drag-space: 16px !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1415,6 +1430,7 @@ body.theme-light {
     calc(var(--accent-s) - 30%),
     calc(var(--accent-l) - 35%)
   ) !important;
+  --callout-title-size: 1.1em;
   --background-search: hsl(
     calc(var(--accent-h)),
     calc(var(--accent-s) - 20%),
@@ -1430,18 +1446,6 @@ body.theme-light {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 180px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
   --background-tertiary: hsl(
     calc(var(--accent-h) - 20),
     calc(var(--accent-s) - 30%),
@@ -1453,7 +1457,6 @@ body.theme-light {
     calc(var(--accent-l) + 20%)
   ) !important;
   --callout-margin: 0px;
-  --callout-title-size: 1.1em;
   --callout-gap: 1em;
   --callout-min-width: 200px;
   --callout-nowrap-min-width: 250px;
@@ -1468,10 +1471,7 @@ body.theme-light {
     calc(var(--accent-s) - 40%),
     calc(var(--accent-l) - 35%)
   ) !important;
-  --cards-border-width: 1px !important;
   --callout-title-background: transparent;
-  --table-drag-padding: var(--table-drag-space) !important;
-  --table-drag-space: 16px !important;
   --A01: hsl(
     calc(var(--accent-h)),
     calc(var(--accent-s) - 40%),
@@ -2550,6 +2550,21 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  ) !important;
+  --table-drag-padding: var(--table-drag-space) !important;
+  --cards-aspect-ratio: auto !important;
+  --cards-background: transparent !important;
+  --cards-border-width: 1px !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
+  --table-drag-space: 16px !important;
   --h5-color: inherit !important;
   --h6-color: inherit !important;
   --vault-name-color: var(--text-normal) !important;
@@ -2563,6 +2578,7 @@ body.theme-dark {
     calc(var(--accent-s) - 30%),
     calc(var(--accent-l) + 10%)
   ) !important;
+  --callout-title-size: 1.1em;
   --background-search: hsl(
     calc(var(--accent-h) - 30),
     calc(var(--accent-s) - 60%),
@@ -2578,18 +2594,6 @@ body.theme-dark {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 180px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
   --background-tertiary: hsl(
     calc(var(--accent-h) - 20),
     calc(var(--accent-s) - 70%),
@@ -2601,7 +2605,6 @@ body.theme-dark {
     calc(var(--accent-l) - 35%)
   ) !important;
   --callout-margin: 0px;
-  --callout-title-size: 1.1em;
   --callout-gap: 1em;
   --callout-min-width: 200px;
   --callout-nowrap-min-width: 250px;
@@ -2616,10 +2619,7 @@ body.theme-dark {
     calc(var(--accent-s) - 20%),
     calc(var(--accent-l) + 20%)
   ) !important;
-  --cards-border-width: 1px !important;
   --callout-title-background: transparent;
-  --table-drag-padding: var(--table-drag-space) !important;
-  --table-drag-space: 16px !important;
   --A01: hsl(
     calc(var(--accent-h)),
     calc(var(--accent-s) - 65%),

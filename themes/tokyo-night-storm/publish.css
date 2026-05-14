@@ -1445,6 +1445,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--bg_dark) !important;
   --h1-color: var(--red) !important;
   --h2-color: var(--yellow) !important;
   --h3-color: var(--green) !important;
@@ -1454,7 +1455,6 @@ body.theme-dark {
   --inline-title-color: var(--magenta) !important;
   --default-font: "JetBrains Mono Nerd Font", monospace !important;
   --text-error-hover: var(--red) !important;
-  --background-modifier-form-field-highlighted: var(--bg_dark) !important;
   --table-header-background-hover: var(--bg_dark2) !important;
   --bold-color: hsl(
     var(--accent-h),
@@ -1466,6 +1466,7 @@ body.theme-dark {
     var(--accent-s),
     var(--accent-l)
   ) !important;
+  --interactive-success: var(--green) !important;
   --green: rgb(var(--green_x)) !important;
   --orange: rgb(var(--orange_x)) !important;
   --purple: rgb(var(--purple_x)) !important;
@@ -1476,7 +1477,6 @@ body.theme-dark {
   --purple_x: 157, 124, 21 !important;
   --red_x: 255, 117, 127 !important;
   --yellow_x: 224, 175, 104 !important;
-  --interactive-success: var(--green) !important;
   --blue: rgb(var(--blue_x)) !important;
   --comment: rgb(var(--comment_x)) !important;
   --cyan: rgb(var(--cyan_x)) !important;

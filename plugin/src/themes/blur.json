@@ -130,5 +130,6 @@
     "brown-glow-general": {
       "general": "body.brown-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark), .cm-em, .cm-highlight, .cm-link, body.brown-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6), body.brown-glow-general .tabs-nav-item, body.brown-glow-general .tabs-nav-item:hover, body.brown-glow-general .markdown-preview-view.homepage .callout-title {\ncolor: white !important;\ntext-shadow: 0 0 2px #8b4513, 0 0 6px #a0522d, 0 0 10px #cd853f;\n}\n\nbody.brown-glow-general .inline-title {\ncolor: white !important;\ntext-shadow: 0 0 2px #8b4513, 0 0 6px #a0522d, 0 0 10px #cd853f;\n}\n\nbody.brown-glow-general .embed {\nborder-color: rgba(139, 69, 19, 0.4);\nbox-shadow: 0 0 20px rgba(139, 69, 19, 0.25);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

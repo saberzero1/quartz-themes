@@ -35,5 +35,6 @@
   },
   "light": {},
   "extras": "/* Falling snow */\nbody:before,\nbody:after,\nhtml:before,\nhtml:after {\n  content: \"\";\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-image: url(\"https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png\");\n  opacity: 0.5;\n  animation: MOVE-BG 500s linear infinite;\n  z-index: 100;\n  pointer-events: none;\n}\nbody:after {\n  top: -3000%;\n}\nbody:before {\n  top: -2500%;\n  filter: blur(1px);\n  background-size: 75%;\n}\nhtml:after {\n  filter: blur(2px);\n  top: -2000%;\n  background-size: 50%;\n}\n\nhtml:before {\n  filter: blur(3px);\n  top: -1500%;\n  background-size: 25%;\n}\n\n@keyframes MOVE-BG {\n  from {\n    transform: translateY(0);\n  }\n  to {\n    transform: translateY(100%);\n  }\n}\n/* end falling snow */\n",
-  "classSettings": null
+  "classSettings": null,
+  "selectorImpacts": {}
 }

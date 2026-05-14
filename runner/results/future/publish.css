@@ -1367,6 +1367,7 @@ body.theme-light {
   --inline-title-color: var(--text-normal) !important;
   --bold-color: var(--color-blue) !important;
   --italic-color: var(--color-green) !important;
+  --folder-icon: "📁" !important;
   --callout-title-color: var(--text-normal);
   --workspace-background: linear-gradient(
     0deg,
@@ -1381,7 +1382,6 @@ body.theme-light {
   --h5-bg: var(--color-purple-rgb) !important;
   --h6-bg: var(--color-pink-rgb) !important;
   --folder-description: "Collection" !important;
-  --folder-icon: "📁" !important;
   --gradient-1-dark: rgb(55, 41, 15) !important;
   --gradient-1-light: rgb(255, 248, 153) !important;
   --gradient-2-dark: rgb(149, 116, 59) !important;

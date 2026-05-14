@@ -199,5 +199,49 @@
     "retroma-with-calendar-plugin": {
       "general": ".retroma-with-calendar-plugin {\n#calendar-container {\n    margin: 8px;\n    border-radius: var(--window-border-radius);\n    --color-dot: oklch(from var(--base-accent) 60% c h);\n    --color-text-today: oklch(from var(--base-accent) 90% c h) !important;\n    --color-text-heading: oklch(from var(--background-primary) 100% c h);\n  };\n#calendar-container table {\n    background-color: var(--background-paper);\n    border-radius: var(--window-border-radius);\n    border: 2px solid oklch(from var(--text-normal) l c h / 25%);\n    box-shadow: -3px 3px 0px var(--background-tertiary);\n  };\n#calendar-container .year {\n    color: oklch(from var(--base-accent) 65% c h);\n  };\n#calendar-container .title,\n#calendar-container .week-num {\n    font-weight: var(--font-bold);\n  };\n#calendar-container thead {\n    background-color: oklch(from var(--background-secondary) 50% c h / 75%);\n  };\n#calendar-container th,\n#calendar-container td {\n    border: 1px solid oklch(from var(--text-normal) l c h / 25%) !important;\n    padding: 0px;\n  };\n#calendar-container th {\n    padding-top: var(--size-2-1);\n  };\n#calendar-container td:first-child {\n    background-color: oklch(from var(--background-secondary) l c h);\n  };\n#calendar-container .day,\n#calendar-container .week-num {\n    border: var(--border-width) solid transparent;\n    border-radius: unset;\n  };\n#calendar-container .day:hover,\n  #calendar-container .week-num:hover,\n#calendar-container .active {\n    color: var(--text-normal);\n    background-color: transparent;\n    border-color: oklch(from var(--base-accent) 50% c h);\n    font-weight: var(--font-bold);\n  };\n#calendar-container .today {\n    background-color: oklch(from var(--base-accent) 50% c h / 25%);\n    font-weight: var(--font-bold);\n    color: var(--text-normal);\n    border-radius: unset;\n  };\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--text-normal": [
+      "--text-color",
+      "--icon-color-focus",
+      "--ec-uiSelFg",
+      "--ec-frm-edActTabFg",
+      "--ec-frm-trmTtbFg",
+      "--ec-frm-inlBtnFg"
+    ],
+    "--text-muted": ["--icon-color-focus"],
+    "--folder-accent": [
+      "--folder-color-1",
+      "--folder-color-2",
+      "--folder-color-3",
+      "--folder-color-4",
+      "--folder-color-5",
+      "--folder-color-6",
+      "--folder-color-7",
+      "--folder-color-8",
+      "--folder-color-9",
+      "--folder-color-10",
+      "--folder-color-11",
+      "--folder-color-12",
+      "--folder-color-13",
+      "--folder-color-14",
+      "--folder-color-15"
+    ],
+    "--folder-color-15": ["--folder-color"],
+    "--folder-color-2": ["--folder-color"],
+    "--folder-color-3": ["--folder-color"],
+    "--folder-color-4": ["--folder-color"],
+    "--folder-color-5": ["--folder-color"],
+    "--folder-color-6": ["--folder-color"],
+    "--folder-color-7": ["--folder-color"],
+    "--folder-color-8": ["--folder-color"],
+    "--folder-color-9": ["--folder-color"],
+    "--folder-color-10": ["--folder-color"],
+    "--folder-color-11": ["--folder-color"],
+    "--folder-color-12": ["--folder-color"],
+    "--folder-color-13": ["--folder-color"],
+    "--folder-color-14": ["--folder-color"],
+    "--text-selection": ["--ec-codeSelBg", "--ec-uiSelBg"]
   }
 }

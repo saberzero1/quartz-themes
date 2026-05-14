@@ -1013,6 +1013,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--dark-yellow) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1030,7 +1031,6 @@ body.theme-light {
   --green: #00dfa2 !important;
   --purple: #9e8af3 !important;
   --yellow: #f6fa70 !important;
-  --text-highlight-bg-active: var(--dark-yellow) !important;
   --pink: #ff4684 !important;
   --nav-item-children-margin-left: 0px !important;
   --nav-item-children-padding-left: 15px !important;
@@ -1038,12 +1038,12 @@ body.theme-light {
   --white: #f9f9f9 !important;
   --input-disabled-border-color: transparent !important;
   --input-unfocused-border-color: transparent !important;
+  --input-focus-border-color: Highlight !important;
   --tab-font-weight: 300 !important;
   --dark-green: #32cd32 !important;
-  --input-focus-border-color: Highlight !important;
   --input-focus-outline: 1px solid Canvas !important;
-  --dark-yellow: #ffd700 !important;
   --coral: #ff725b !important;
+  --dark-yellow: #ffd700 !important;
 }
 
 body.theme-dark {
@@ -2017,6 +2017,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--dark-yellow) !important;
   --h1-color: var(--green) !important;
   --h2-color: var(--purple) !important;
   --h3-color: var(--coral) !important;
@@ -2029,7 +2030,6 @@ body.theme-dark {
   --green: #00dfa2 !important;
   --purple: #9e8af3 !important;
   --yellow: #f6fa70 !important;
-  --text-highlight-bg-active: var(--dark-yellow) !important;
   --pink: #ff4684 !important;
   --nav-item-children-margin-left: 0px !important;
   --nav-item-children-padding-left: 15px !important;
@@ -2037,12 +2037,12 @@ body.theme-dark {
   --white: #f9f9f9 !important;
   --input-disabled-border-color: transparent !important;
   --input-unfocused-border-color: transparent !important;
+  --input-focus-border-color: Highlight !important;
   --tab-font-weight: 300 !important;
   --dark-green: #32cd32 !important;
-  --input-focus-border-color: Highlight !important;
   --input-focus-outline: 1px solid Canvas !important;
-  --dark-yellow: #ffd700 !important;
   --coral: #ff725b !important;
+  --dark-yellow: #ffd700 !important;
 }
 
 body {

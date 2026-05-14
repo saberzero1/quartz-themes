@@ -1494,6 +1494,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--orange) !important;
+  --text-highlight-bg-active: var(--green) !important;
   --code-block: var(--frost1) !important;
   --inline-code: var(--frost1) !important;
   --interactive-before: var(--dark3) !important;
@@ -1516,11 +1517,11 @@ body.theme-dark {
   --purple: #f899e7 !important;
   --red: #d63f4e !important;
   --yellow: #ebcb8b !important;
-  --text-highlight-bg-active: var(--green) !important;
   --input-disabled-border-color: transparent !important;
   --input-hover-border-color: red !important;
   --input-unfocused-border-color: transparent !important;
   --text-tag: var(--frost0) !important;
+  --input-focus-border-color: Highlight !important;
   --dark0: #390000 !important;
   --dark1: #290202 !important;
   --dark2: #3d0404 !important;
@@ -1536,7 +1537,6 @@ body.theme-dark {
   --dark-orange: #83572f !important;
   --Editor-table-border-radius: 5px !important;
   --Editor-table-border-width: 2px !important;
-  --input-focus-border-color: Highlight !important;
   --input-focus-outline: 1px solid Canvas !important;
   --sideRed: #910b0bcc !important;
   --table-header: hsl(220, 16%, 16%) !important;

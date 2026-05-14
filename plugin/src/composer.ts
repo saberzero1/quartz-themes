@@ -74,6 +74,7 @@ export interface ComposedTheme {
   /** The Style Settings YAML root id(s) from the base theme, if available. */
   styleSettingsId?: string | string[];
   classSettings?: Record<string, ClassSettingCSS>;
+  brokenVarLinks?: Record<string, string[]>;
 }
 
 export function composeCSS(options: ThemeOptions): ComposedTheme {
@@ -155,6 +156,7 @@ export function composeCSS(options: ThemeOptions): ComposedTheme {
     effectiveMode,
     styleSettingsId: baseTheme.meta.styleSettingsId,
     classSettings: baseTheme.classSettings,
+    brokenVarLinks: baseTheme.brokenVarLinks,
   };
 }
 

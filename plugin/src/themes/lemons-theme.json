@@ -55,5 +55,6 @@
     "lt-set-full-width-editor": {
       "general": "body.lt-set-full-width-editor {\n--file-line-width: 10000px;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

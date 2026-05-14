@@ -112,5 +112,10 @@
     "disable-corner-smoothing": {
       "general": "body.disable-corner-smoothing {\n--corner-smoothing: unset !important;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--safe-area-adjust": ["--safe-area-inset-top"],
+    "--line-height-normal": ["--ec-codeLineHt", "--ec-uiLineHt"]
   }
 }

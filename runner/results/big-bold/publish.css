@@ -2537,6 +2537,8 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --shadow-color: var(--background-secondary) !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -2550,8 +2552,8 @@ body.theme-light {
   --h5-font: var(--heading-font-2) !important;
   --h6-font: var(--heading-font-2) !important;
   --inline-title-font: var(--h1-font) !important;
+  --table-header-font: var(--h1-font) !important;
   --button-background: var(--color-accent-2) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --embed-border-left: none !important;
   --vault-name-font-size: var(--h3-size) !important;
   --vault-name-font-weight: var(--h2-weight) !important;
@@ -2580,7 +2582,6 @@ body.theme-light {
   --icon-background: var(--background-secondary-alt) !important;
   --icon-shadow: var(--shadow-ui) inset, var(--shadow-ui) !important;
   --panel-child: var(--background-primary-alt) !important;
-  --table-header-font: var(--h1-font) !important;
   --tile-img-radius: var(--tile-radius) !important;
   --custom-code-height: 1em !important;
   --custom-line-height: 2em !important;
@@ -2612,7 +2613,6 @@ body.theme-light {
   --normal-folder-3-open: "🔖" !important;
   --page-transparency: 100% !important;
   --radius-x: 28px !important;
-  --shadow-color: var(--background-secondary) !important;
   --shadow-ui:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
   --tile-field-padding: 5px !important;
@@ -3593,6 +3593,8 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --shadow-color: rgba(0, 0, 0, 0.2) !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --inline-title-color: var(--text-normal) !important;
   --h1-font: var(--heading-font-2) !important;
   --h2-font: var(--heading-font-2) !important;
@@ -3601,8 +3603,8 @@ body.theme-dark {
   --h5-font: var(--heading-font-2) !important;
   --h6-font: var(--heading-font-2) !important;
   --inline-title-font: var(--h1-font) !important;
+  --table-header-font: var(--h1-font) !important;
   --button-background: var(--color-accent-2) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --embed-border-left: none !important;
   --vault-name-font-size: var(--h3-size) !important;
   --vault-name-font-weight: var(--h2-weight) !important;
@@ -3631,7 +3633,6 @@ body.theme-dark {
   --icon-background: var(--background-secondary-alt) !important;
   --icon-shadow: var(--shadow-ui) inset, var(--shadow-ui) !important;
   --panel-child: var(--background-primary-alt) !important;
-  --table-header-font: var(--h1-font) !important;
   --tile-img-radius: var(--tile-radius) !important;
   --custom-code-height: 1em !important;
   --custom-line-height: 2em !important;
@@ -3663,7 +3664,6 @@ body.theme-dark {
   --normal-folder-3-open: "🔖" !important;
   --page-transparency: 100% !important;
   --radius-x: 28px !important;
-  --shadow-color: rgba(0, 0, 0, 0.2) !important;
   --shadow-ui:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
   --tile-field-padding: 5px !important;

@@ -1557,15 +1557,15 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: rgba(0, 0, 0, 0.04) !important;
   --interactive-accent-rgb: 72, 54, 153 !important;
+  --background-modifier-form-field-highlighted: var(
+    --background-primary
+  ) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: #990000 !important;
-  --background-modifier-form-field-highlighted: var(
-    --background-primary
-  ) !important;
   --code-block: var(--text-muted) !important;
   --inline-code: var(--text-muted) !important;
   --text-title-h1: #5c6369 !important;
@@ -2625,10 +2625,10 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: rgba(0, 0, 0, 0.04) !important;
   --interactive-accent-rgb: 72, 54, 153 !important;
-  --text-error-hover: #990000 !important;
   --background-modifier-form-field-highlighted: var(
     --background-primary
   ) !important;
+  --text-error-hover: #990000 !important;
   --code-block: var(--text-muted) !important;
   --inline-code: var(--text-muted) !important;
   --text-title-h1: #5c6369 !important;

@@ -2016,8 +2016,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #000 !important;
   --interactive-accent-rgb: 76, 120, 204 !important;
-  --text-error-hover: #c9626a !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
+  --text-error-hover: #c9626a !important;
   --text-title-h1: hsl(246 87% 69%) !important;
   --text-title-h2: hsl(245 75% 70%) !important;
   --text-title-h3: hsl(240 35% 73%) !important;

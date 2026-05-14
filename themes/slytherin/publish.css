@@ -1002,34 +1002,39 @@ body.theme-dark {
     var(--accent-s),
     calc(var(--accent-d) - 10%)
   ) !important;
+  --font-adaptive-normal: var(--font-normal) !important;
+  --font-adaptive-small: var(--font-small) !important;
+  --font-adaptive-smaller: var(--font-smaller) !important;
+  --font-adaptive-smallest: var(--font-smallest) !important;
+  --icon-hex: FFF !important;
   --quote-opening-modifier: hsl(
     var(--base-h),
     var(--base-s),
     calc(var(--base-d) + 10%)
   ) !important;
-  --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
-  --accent-d: 60% !important;
-  --base-d: 15% !important;
   --base-h: 0 !important;
   --base-l: 97% !important;
   --base-s: 0% !important;
-  --text:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, "Helvetica Neue", sans-serif !important;
-  --border-width-alt: 1px !important;
-  --icon-hex: FFF !important;
   --icon-muted: 0.4 !important;
   --line-height: 1.5 !important;
   --line-width: 40rem !important;
   --max-width: 90% !important;
+  --nested-padding: 3.5% !important;
   --normal-weight: 400 !important;
+  --shadow-color: rgba(0, 0, 0, 0.3) !important;
+  --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
+  --accent-d: 60% !important;
+  --base-d: 15% !important;
+  --text:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif !important;
+  --border-width-alt: 1px !important;
   --background-translucent: hsla(
     var(--base-h),
     var(--base-s),
     var(--base-d),
     0.85
   ) !important;
-  --shadow-color: rgba(0, 0, 0, 0.3) !important;
   --background-tertiary: #101517 !important;
   --font-ui:
     system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -1041,7 +1046,6 @@ body.theme-dark {
     var(--base-d),
     0
   ) !important;
-  --nested-padding: 3.5% !important;
   --h1: 1.5em !important;
   --h2: 1.5em !important;
   --text-editor:
@@ -1052,10 +1056,6 @@ body.theme-dark {
   --h4: 1.125em !important;
   --h5: 1.125em !important;
   --h6: 1.125em !important;
-  --font-adaptive-normal: var(--font-normal) !important;
-  --font-adaptive-small: var(--font-small) !important;
-  --font-adaptive-smaller: var(--font-smaller) !important;
-  --font-adaptive-smallest: var(--font-smallest) !important;
   --font-settings: 14px !important;
   --font-settings-small: 12px !important;
   --background-button: (#909090) !important;

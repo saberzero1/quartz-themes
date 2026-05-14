@@ -36,5 +36,9 @@
   },
   "light": {},
   "extras": null,
-  "classSettings": null
+  "classSettings": null,
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h3456-color": ["--h3-color", "--h4-color", "--h5-color", "--h6-color"]
+  }
 }

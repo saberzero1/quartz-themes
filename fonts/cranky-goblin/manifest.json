@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-05-13T17:37:10.742Z",
+  "sourceTheme": "cranky goblin",
+  "fonts": [
+    {
+      "family": "Lower Pixel",
+      "style": "normal",
+      "weight": "400",
+      "file": "lower-pixel.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "PixelWarden",
+      "style": "normal",
+      "weight": "400",
+      "file": "pixelwarden.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -565,7 +565,7 @@ body.theme-light {
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --checklist-done-color: var(--text-faint) !important;
+  --checklist-done-color: var(--text-normal) !important;
   --clickable-icon-radius: 6px !important;
   --code-background: var(--background-secondary) !important;
   --code-border-color: var(--background-modifier-border) !important;
@@ -923,7 +923,7 @@ body.theme-light {
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: var(--font-text-size) !important;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
+  --tag-background: var(--background-primary-alt) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(
@@ -1372,7 +1372,7 @@ body.theme-light {
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
-  --tag-padding-x: 0.65em !important;
+  --tag-padding-x: var(--size-2-3) !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: var(--radius-m) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
@@ -1404,6 +1404,8 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --font-editor-theme:
+    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1418,28 +1420,13 @@ body.theme-light {
   --inline-title-color: var(--base-05) !important;
   --table-header-background-hover: var(--background-secondary) !important;
   --bold-color: var(--base-10) !important;
-  --font-editor-theme:
-    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   --color-white: rgb(222, 222, 222) !important;
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 150px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
   --color-black-rgb: 15, 20, 26 !important;
   --color-white-rgb: 222, 222, 222 !important;
   --color-black: rgb(15, 20, 26) !important;
   --color-teal: rgb(44, 174, 186) !important;
   --color-teal-rgb: 44, 174, 186 !important;
   --tab-min-width: 92px !important;
-  --cards-border-width: 1px !important;
   --color-muted: rgb(138, 147, 158) !important;
   --tab-active-shadow: inset 0 0 0 1px var(--background-modifier-border) !important;
   --base-05: hsl(var(--base-hue), var(--base-sat, 14%), 8%) !important;
@@ -1594,7 +1581,7 @@ body.theme-dark {
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --checklist-done-color: var(--text-faint) !important;
+  --checklist-done-color: var(--text-normal) !important;
   --clickable-icon-radius: 6px !important;
   --code-background: var(--background-secondary) !important;
   --code-border-color: var(--background-modifier-border) !important;
@@ -1950,7 +1937,7 @@ body.theme-dark {
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
   --table-selection-border-color: var(--interactive-accent) !important;
   --table-text-size: var(--font-text-size) !important;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1) !important;
+  --tag-background: var(--background-primary-alt) !important;
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(
@@ -2393,7 +2380,7 @@ body.theme-dark {
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
-  --tag-padding-x: 0.65em !important;
+  --tag-padding-x: var(--size-2-3) !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: var(--radius-m) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
@@ -2425,6 +2412,8 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --font-editor-theme:
+    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   --h1-color: hsl(var(--accent-h), 52%, 72%) !important;
   --h2-color: hsl(var(--accent-h), 52%, 68%) !important;
   --h3-color: hsl(var(--accent-h), 52%, 64%) !important;
@@ -2434,28 +2423,13 @@ body.theme-dark {
   --inline-title-color: var(--base-05) !important;
   --table-header-background-hover: var(--background-secondary) !important;
   --bold-color: var(--base-10) !important;
-  --font-editor-theme:
-    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   --color-white: rgb(230 230 230) !important;
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 150px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
   --color-black-rgb: 14, 19, 25 !important;
   --color-white-rgb: 230, 230, 230 !important;
   --color-black: rgb(14 19 25) !important;
   --color-teal: rgb(62 180 191) !important;
   --color-teal-rgb: 62, 180, 191 !important;
   --tab-min-width: 92px !important;
-  --cards-border-width: 1px !important;
   --color-muted: rgb(139 148 158) !important;
   --base-05: hsl(var(--base-hue), var(--base-sat, 2%), 93%) !important;
   --base-10: hsl(var(--base-hue), var(--base-sat, 3%), 82%) !important;
@@ -4975,7 +4949,7 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(148, 152, 168);
-  text-decoration: line-through 1px rgb(148, 152, 168);
+  text-decoration: none;
   text-decoration-color: rgb(148, 152, 168);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
@@ -8002,7 +7976,7 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(83, 85, 95);
-  text-decoration: line-through 1px rgb(83, 85, 95);
+  text-decoration: none;
   text-decoration-color: rgb(83, 85, 95);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {

@@ -263,5 +263,17 @@
     "disable-shadows": {
       "general": "body.disable-shadows {\n--shadow-1: none !important;\n--shadow-2: none !important;\n--shadow-3: none !important;\n--shadow-4: none !important;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--custom-accent": [
+      "--blockquote-border-color",
+      "--checkbox-color",
+      "--link-color",
+      "--link-color-hover",
+      "--text-accent",
+      "--interactive-accent",
+      "--interactive-accent-hover"
+    ]
   }
 }

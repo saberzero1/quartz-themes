@@ -75,5 +75,6 @@
     "reduce-motion": {
       "general": "body.reduce-motion {\n--anim-speed-modifier: 0 !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

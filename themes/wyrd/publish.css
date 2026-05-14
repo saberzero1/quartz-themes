@@ -1430,6 +1430,10 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: rgba(
+    var(--wyrd-yellow-light-rgb),
+    0.8
+  ) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1452,10 +1456,6 @@ body.theme-light {
   --inline-title-font: var(--h1-font) !important;
   --bold-color: hsl(12, 65%, 62%) !important;
   --italic-color: hsl(346, 64%, 57%) !important;
-  --text-highlight-bg-active: rgba(
-    var(--wyrd-yellow-light-rgb),
-    0.8
-  ) !important;
   --link-unresolved-color-hover: var(--wyrd-orange) !important;
   --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
   --wyrd-strike-color: var(--color-base-30) !important;
@@ -2490,6 +2490,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: rgba(
+    var(--wyrd-yellow-light-rgb),
+    0.8
+  ) !important;
   --h1-color: var(--wyrd-purple) !important;
   --h2-color: var(--wyrd-pink) !important;
   --h3-color: var(--wyrd-indigo) !important;
@@ -2507,10 +2511,6 @@ body.theme-dark {
   --inline-title-font: var(--h1-font) !important;
   --bold-color: hsl(12, 65%, 62%) !important;
   --italic-color: hsl(346, 64%, 57%) !important;
-  --text-highlight-bg-active: rgba(
-    var(--wyrd-yellow-light-rgb),
-    0.8
-  ) !important;
   --link-unresolved-color-hover: var(--wyrd-orange) !important;
   --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
   --wyrd-strike-color: var(--color-base-30) !important;

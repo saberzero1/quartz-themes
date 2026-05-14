@@ -988,6 +988,12 @@ body.theme-dark {
   --accent-4: rgb(var(--accent-4-rgb)) !important;
   --accent-5: rgb(var(--accent-5-rgb)) !important;
   --accent-6: rgb(var(--accent-6-rgb)) !important;
+  --chart-color-1: rgb(245, 112, 76) !important;
+  --chart-color-2: rgb(245, 161, 76) !important;
+  --chart-color-3: #b7ad3a !important;
+  --chart-color-4: #8ac536 !important;
+  --chart-color-5: #3cad7f !important;
+  --chart-color-6: rgb(98, 183, 222) !important;
   --default-font: "JetBrains Mono", monospace !important;
   --list-padding: 1.5em !important;
   --attachments: rgb(var(--attachments-rgb)) !important;
@@ -1034,12 +1040,6 @@ body.theme-dark {
   --size-8: 2em !important;
   --size-96: 24em !important;
   --tags: rgb(var(--tags-rgb)) !important;
-  --chart-color-1: rgb(245, 112, 76) !important;
-  --chart-color-2: rgb(245, 161, 76) !important;
-  --chart-color-3: #b7ad3a !important;
-  --chart-color-4: #8ac536 !important;
-  --chart-color-5: #3cad7f !important;
-  --chart-color-6: rgb(98, 183, 222) !important;
   --accent-1-rgb: 245, 112, 76 !important;
   --accent-2-rgb: 245, 161, 76 !important;
   --accent-3-rgb: 237, 228, 130 !important;

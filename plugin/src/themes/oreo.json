@@ -83,5 +83,10 @@
     "oreo-safari-tab-toggle": {
       "general": ".oreo-safari-tab-toggle {\n--header-height: 40px;\n--tab-stacked-header-width: 40px;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h1-style": ["--inline-title-style"],
+    "--h1-variant": ["--inline-title-variant"]
   }
 }

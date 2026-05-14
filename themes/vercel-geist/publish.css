@@ -1505,13 +1505,13 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: var(--accent-blue) !important;
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: #ff3333 !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2) !important;
   --code-block: var(--text-1) !important;
   --inline-code: var(--vercel-blue-600) !important;
   --pre-code: var(--background-2) !important;
@@ -1539,6 +1539,8 @@ body.theme-light {
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 14px !important;
   --pre-code-bg: var(--vercel-gray-200) !important;
+  --accent-blue: var(--vercel-blue-500) !important;
+  --interactive-accent-active: var(--vercel-blue-600) !important;
   --highlight-high: var(--vercel-blue-300) !important;
   --highlight-low: var(--vercel-gray-200) !important;
   --highlight-med: var(--vercel-gray-300) !important;
@@ -1546,8 +1548,6 @@ body.theme-light {
   --font-family-monospace:
     "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo,
     Courier, monospace !important;
-  --interactive-accent-active: var(--vercel-blue-600) !important;
-  --accent-blue: var(--vercel-blue-500) !important;
   --border-1: var(--vercel-gray-200) !important;
   --border-2: var(--vercel-gray-300) !important;
   --border-3: var(--vercel-blue-600) !important;
@@ -2558,8 +2558,8 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: var(--accent-blue) !important;
-  --text-error-hover: #ff3333 !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2) !important;
+  --text-error-hover: #ff3333 !important;
   --code-block: var(--text-1) !important;
   --inline-code: var(--vercel-blue-600) !important;
   --pre-code: var(--background-2) !important;
@@ -2586,6 +2586,8 @@ body.theme-dark {
   --font-size-side-dock: 14px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 14px !important;
+  --accent-blue: var(--vercel-blue-500) !important;
+  --interactive-accent-active: var(--vercel-blue-600) !important;
   --highlight-high: var(--vercel-gray-600) !important;
   --highlight-low: var(--vercel-gray-800) !important;
   --highlight-med: var(--vercel-gray-700) !important;
@@ -2593,8 +2595,6 @@ body.theme-dark {
   --font-family-monospace:
     "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo,
     Courier, monospace !important;
-  --interactive-accent-active: var(--vercel-blue-600) !important;
-  --accent-blue: var(--vercel-blue-500) !important;
   --border-1: var(--vercel-gray-700) !important;
   --border-2: var(--vercel-gray-600) !important;
   --border-3: var(--vercel-blue-600) !important;

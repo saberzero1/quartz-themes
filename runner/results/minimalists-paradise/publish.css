@@ -1409,6 +1409,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --mobile-sidebar-background: var(--background-primary) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     inset 0 8px 64px rgba(255, 255, 255, 0.125), var(--shadow-base) !important;
@@ -1432,7 +1433,6 @@ body.theme-light {
   --anim-speed: 1 !important;
   --graph-bg: var(--color-panel) !important;
   --blockquote-radius: var(--default-radius) !important;
-  --mobile-sidebar-background: var(--background-primary) !important;
   --callout-border-radius: var(--blockquote-radius);
   --card-radius: var(--default-radius) !important;
   --citation-bg: var(--color-accent) !important;
@@ -2469,6 +2469,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --mobile-sidebar-background: var(--background-primary) !important;
   --inline-title-color: var(--color-accent) !important;
   --text-color: #ffffff !important;
   --nn-theme-mobile-toolbar-button-icon-color: var(--icon-color) !important;
@@ -2488,7 +2489,6 @@ body.theme-dark {
   --anim-speed: 1 !important;
   --graph-bg: var(--color-panel) !important;
   --blockquote-radius: var(--default-radius) !important;
-  --mobile-sidebar-background: var(--background-primary) !important;
   --callout-border-radius: var(--blockquote-radius);
   --card-radius: var(--default-radius) !important;
   --citation-bg: var(--color-accent) !important;

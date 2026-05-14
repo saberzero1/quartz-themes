@@ -85,5 +85,10 @@
     "cc-no-folder-icons": {
       "general": "body:not(.cc-no-file-icons).cc-no-folder-icons .nav-file-title-content::before {\nmargin-right: 4px;\nmargin-left: -1px;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h1-color": ["--inline-title-color"],
+    "--text-selection": ["--ec-codeSelBg", "--ec-uiSelBg"]
   }
 }

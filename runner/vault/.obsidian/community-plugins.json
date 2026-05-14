@@ -2,8 +2,8 @@
   "obsidian-view-mode-by-frontmatter",
   "dataview",
   "plugin-reloader",
-  "obsidian-style-settings",
   "snippet-commands-obsidian",
   "settings-search",
-  "shiki-highlighter"
+  "shiki-highlighter",
+  "obsidian-style-settings"
 ]

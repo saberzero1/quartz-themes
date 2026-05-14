@@ -166,5 +166,16 @@
     "encore-disable-logo-on-hr": {
       "general": "body.encore-disable-logo-on-hr .markdown-rendered hr {\nheight: 1px;\nbackground-image: linear-gradient(to right, transparent, var(--hr-color) 30%, var(--hr-color) 70%, transparent);\nborder: none;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--encore-custom-bold": ["--bold-color"],
+    "--encore-custom-h1": ["--h1-color"],
+    "--encore-custom-h2": ["--h2-color"],
+    "--encore-custom-h3": ["--h3-color"],
+    "--encore-custom-h4": ["--h4-color"],
+    "--encore-custom-h5": ["--h5-color"],
+    "--encore-custom-h6": ["--h6-color"],
+    "--encore-custom-italic": ["--italic-color"]
   }
 }

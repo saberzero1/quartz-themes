@@ -1373,8 +1373,8 @@ body.theme-light {
   --code-definition: var(--rose) !important;
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
-  --foam: #56949f !important;
   --gold: #ea9d34 !important;
+  --foam: #56949f !important;
   --highlight-high: #cecacd !important;
   --highlight-low: #f4ede8 !important;
   --highlight-med: #dfdad9 !important;
@@ -2363,6 +2363,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --bg1: #31353f !important;
+  --bg2: #393f4a !important;
+  --bg3: #3b3f4c !important;
   --h1-color: var(--color-purple) !important;
   --h2-color: var(--color-blue) !important;
   --h3-color: var(--color-green) !important;
@@ -2382,9 +2385,6 @@ body.theme-dark {
   --bg-blue: #73b8f1 !important;
   --bg-yellow: #ebd09c !important;
   --bg0: #282c34 !important;
-  --bg1: #31353f !important;
-  --bg2: #393f4a !important;
-  --bg3: #3b3f4c !important;
   --selection-background-color: var(--bg3) !important;
   --grey: #5c6370 !important;
   --accent-color-hover: var(--bg-blue) !important;

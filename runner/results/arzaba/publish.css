@@ -1065,6 +1065,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: #4c4049 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1077,7 +1078,6 @@ body.theme-light {
   --h5-color: #c64539 !important;
   --h6-color: #a68a2d !important;
   --inline-title-color: #354247 !important;
-  --blockquote-color: #4c4049 !important;
   --table-header-background-hover: #f0e6ef !important;
   --h1-font: "Open Sans Regular Obsidian", sans-serif !important;
   --h2-font: "Open Sans Regular Obsidian", sans-serif !important;
@@ -2051,6 +2051,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: #e4d8e3 !important;
   --h1-color: #6f9fd6 !important;
   --h2-color: #78c988 !important;
   --h3-color: #a497f0 !important;
@@ -2058,7 +2059,6 @@ body.theme-dark {
   --h5-color: #e07a6e !important;
   --h6-color: #d9c47a !important;
   --inline-title-color: #d3dfe6 !important;
-  --blockquote-color: #e4d8e3 !important;
   --table-header-background-hover: #1b0f17 !important;
   --h1-font: "Open Sans Light Obsidian", sans-serif !important;
   --h2-font: "Open Sans Light Obsidian", sans-serif !important;

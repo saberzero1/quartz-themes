@@ -142,5 +142,6 @@
     "intensity-dawn": {
       "general": "&.intensity-dawn {\n--lum-bg: 80%;\n}\n\n.intensity-dawn {\n--lum: 22%;\n--background-secondary: var(--color-base-00) !important;\n--titlebar-background-focused: var(--color-base-05) !important;\n--background-modifier-form-field: var(--color-base-05) !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

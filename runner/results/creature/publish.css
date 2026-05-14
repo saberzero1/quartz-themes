@@ -1619,22 +1619,23 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--dark3) !important;
   --default-font:
     system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu, cantarell,
     Open Sans, Helvetica Neue, sans-serif !important;
   --text-error-hover: var(--error-hover) !important;
-  --background-modifier-form-field-highlighted: var(--dark3) !important;
   --code-block: var(--text-normal) !important;
   --inline-code: var(--text-normal) !important;
   --pre-code: var(--dark2) !important;
+  --interactive-success: var(--success) !important;
   --green: #2edb6e !important;
   --red: red-base !important;
   --background-modifier-success-hover: var(--success-hover) !important;
-  --interactive-success: var(--success) !important;
   --blue: #009fff !important;
   --primary: #2edb6e !important;
   --white: rgb(255, 255, 255) !important;
   --error: red-base !important;
+  --border: #323232 !important;
   --dark0: #1e1e1e !important;
   --dark1: #232323 !important;
   --dark2: #282828 !important;
@@ -1644,7 +1645,6 @@ body.theme-dark {
   --light1: rgba(255, 255, 255, 0.38) !important;
   --light2: rgba(255, 255, 255, 0.6) !important;
   --light3: rgba(255, 255, 255, 0.87) !important;
-  --border: #323232 !important;
   --error-hover: #ff6b64 !important;
   --info: #009fff !important;
   --info-hover: #1aa9ff !important;

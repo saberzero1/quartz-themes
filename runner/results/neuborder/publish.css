@@ -1355,6 +1355,7 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 32, 171, 233 !important;
+  --image-radius: 6px !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1371,6 +1372,10 @@ body.theme-light {
     4px 4px 8px rgba(0, 0, 0, 0.18), -4px -4px 8px rgba(255, 255, 255, 0.5),
     inset 3px 3px 3px rgba(0, 0, 0, 0),
     inset -3px -3px 3px rgba(255, 255, 255, 0) !important;
+  --shadow-hover:
+    4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0),
+    inset 3px 3px 3px rgba(0, 0, 0, 0.2),
+    inset -3px -3px 3px rgba(255, 255, 255, 0.7) !important;
   --color-base-80: #464646 !important;
   --color-base-90: #333333 !important;
   --color-accent-3: hsla(
@@ -1403,7 +1408,7 @@ body.theme-light {
   --color-primary: hsl(var(--color), calc(var(--l) - 10%)) !important;
   --color: 0, 0% !important;
   --text-matched: #7dff8f !important;
-  --image-radius: 6px !important;
+  --blockquote-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --card-shadow:
     0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2) !important;
@@ -1427,7 +1432,6 @@ body.theme-light {
     inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
     0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35),
     0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3) !important;
-  --blockquote-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --button-radius-circle: 36px !important;
   --button-radius-large: 12px !important;
   --button-radius-medium: 6px !important;
@@ -1445,10 +1449,6 @@ body.theme-light {
     4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0),
     inset 3px 3px 3px rgba(0, 0, 0, 0.5),
     inset -3px -3px 3px rgba(255, 255, 255, 0.2) !important;
-  --shadow-hover:
-    4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0),
-    inset 3px 3px 3px rgba(0, 0, 0, 0.2),
-    inset -3px -3px 3px rgba(255, 255, 255, 0.7) !important;
   --shadow-scrollbar:
     inset 4px 4px 8px rgba(0, 0, 0, 0.15),
     inset -4px -4px 8px rgba(255, 255, 255, 0.7) !important;

@@ -1002,6 +1002,7 @@ body.theme-light {
   --inline-title-color: var(--text-normal) !important;
   --bold-color: var(--color-accent) !important;
   --italic-color: var(--color-accent) !important;
+  --bases-table-text-size: var(--font-smaller) !important;
   --color-base-80: hsl(0, 0%, 17%) !important;
   --color-base-90: hsl(0, 0%, 14%) !important;
   --blue-h: 207 !important;
@@ -1012,7 +1013,6 @@ body.theme-light {
   --red-h: 0 !important;
   --yellow-h: 47 !important;
   --bases-cards-text-size: var(--font-smaller) !important;
-  --bases-table-text-size: var(--font-smaller) !important;
   --components-background: var(--color-base-20) !important;
   --components-background-hover: var(--color-base-25) !important;
   --metadata-margin-bottom: var(--filename-margin-bottom) !important;
@@ -2034,6 +2034,7 @@ body.theme-dark {
   --inline-title-color: var(--text-normal) !important;
   --bold-color: var(--color-accent) !important;
   --italic-color: var(--color-accent) !important;
+  --bases-table-text-size: var(--font-smaller) !important;
   --color-base-80: hsl(0, 0%, 93%) !important;
   --color-base-90: hsl(0, 0%, 96%) !important;
   --blue-h: 207 !important;
@@ -2044,7 +2045,6 @@ body.theme-dark {
   --red-h: 0 !important;
   --yellow-h: 47 !important;
   --bases-cards-text-size: var(--font-smaller) !important;
-  --bases-table-text-size: var(--font-smaller) !important;
   --components-background: var(--color-base-20) !important;
   --components-background-hover: var(--color-base-25) !important;
   --metadata-margin-bottom: var(--filename-margin-bottom) !important;

@@ -54,5 +54,15 @@
   },
   "light": {},
   "extras": null,
-  "classSettings": null
+  "classSettings": null,
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--base-l": [
+      "--background-primary",
+      "--background-primary-alt",
+      "--background-translucent"
+    ],
+    "--font-monospace": ["--ec-codeFontFml"],
+    "--font-normal": ["--ec-codeFontWg", "--ec-uiFontWg"]
+  }
 }

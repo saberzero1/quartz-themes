@@ -1002,9 +1002,7 @@
     "--chart-color-6": ".theme-dark",
     "--chart-color-7": ".theme-dark",
     "--chart-color-8": ".theme-dark",
-    "--kanban-border": "body.theme-dark",
-    "--leaflet-buttons": ".theme-dark",
-    "--leaflet-borders": ".theme-dark"
+    "--kanban-border": "body.theme-dark"
   },
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
@@ -1517,8 +1515,7 @@
     "--chart-color-5": ".theme-dark",
     "--chart-color-6": ".theme-dark",
     "--chart-color-7": ".theme-dark",
-    "--chart-color-8": ".theme-dark",
-    "--leaflet-buttons": ".theme-dark"
+    "--chart-color-8": ".theme-dark"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
   "div.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -2105,8 +2102,7 @@
     "--chart-color-5": ".theme-dark",
     "--chart-color-6": ".theme-dark",
     "--chart-color-7": ".theme-dark",
-    "--chart-color-8": ".theme-dark",
-    "--leaflet-buttons": ".theme-dark"
+    "--chart-color-8": ".theme-dark"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
   "svg.lucide-x.svg-icon": { "--focus-ring-color": ":root *" },

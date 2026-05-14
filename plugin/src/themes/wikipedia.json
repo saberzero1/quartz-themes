@@ -117,5 +117,6 @@
     "float-center": {
       "general": ".float-center .markdown-rendered img, .float-center .markdown-rendered img ~ img {\nfloat: none;\nclear: none;\ndisplay: block;\nwidth: revert;\nmargin: 1em auto;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

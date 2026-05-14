@@ -1345,6 +1345,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --h1-color: var(--h1-color-theme) !important;
   --h2-color: var(--h2-color-theme) !important;
   --h3-color: var(--h3-color-theme) !important;
@@ -1355,7 +1356,6 @@ body.theme-dark {
   --vault-name-color: var(--text-normal) !important;
   --bold-color: #d400ff !important;
   --italic-color: #ffd900 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;

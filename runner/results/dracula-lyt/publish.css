@@ -1451,6 +1451,12 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 72, 54, 153 !important;
+  --background-modifier-form-field-highlighted: var(--color-blacker) !important;
+  --font-code:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --line-height: 1.58em !important;
+  --line-width: 42em !important;
+  --text-highlight-bg-active: rgba(54, 57, 72, 0.4) !important;
   --mermaid-font:
     "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", Helvetica, Arial, sans-serif !important;
@@ -1462,13 +1468,9 @@ body.theme-dark {
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --text-error-hover: var(--color-magenta-900) !important;
-  --background-modifier-form-field-highlighted: var(--color-blacker) !important;
   --interactive-success: var(--color-green-920) !important;
-  --text-highlight-bg-active: rgba(54, 57, 72, 0.4) !important;
   --color-highlight-text: hsl(225, 12%, 20%) !important;
   --color-white: hsl(220, 23%, 95%) !important;
-  --line-height: 1.58em !important;
-  --line-width: 42em !important;
   --header-line-height: 1.264em !important;
   --shadow-m:
     0px 3px 3.1px -20px rgba(0, 0, 0, 0.2),
@@ -1477,6 +1479,9 @@ body.theme-dark {
     "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", Helvetica, Arial, sans-serif !important;
   --color-black: hsl(230, 9%, 13%) !important;
+  --color-slate-300: hsl(220, 23%, 90%) !important;
+  --color-slate-700: hsl(223, 18%, 68%) !important;
+  --color-slate-900: hsl(225, 14%, 40%) !important;
   --color-green-300: hsl(151, 100%, 81%) !important;
   --color-green-500: hsl(124, 54%, 75%) !important;
   --color-green-700: hsl(151, 72%, 65%) !important;
@@ -1485,6 +1490,7 @@ body.theme-dark {
   --color-purple-500: hsl(255, 100%, 86%) !important;
   --color-purple-700: hsl(260, 100%, 79%) !important;
   --color-purple-900: hsl(263, 46%, 61%) !important;
+  --shadow-sm: 0px 3px 12px -2px rgba(14, 11, 11, 0.5) !important;
   --font-editor:
     "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", Helvetica, Arial, sans-serif !important;
@@ -1673,10 +1679,7 @@ body.theme-dark {
     #9977d6,
     #916ec9
   ) !important;
-  --color-slate-300: hsl(220, 23%, 90%) !important;
   --color-slate-500: hsl(224, 37%, 80%) !important;
-  --color-slate-700: hsl(223, 18%, 68%) !important;
-  --color-slate-900: hsl(225, 14%, 40%) !important;
   --color-slate-gradient-1: linear-gradient(
     180deg,
     #eff1f5,
@@ -1744,8 +1747,6 @@ body.theme-dark {
   --duration-none: 0 !important;
   --duration-slow-1: 500ms !important;
   --duration-slow-2: 640ms !important;
-  --font-code:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   --font-extra-bold: 900 !important;
   --font-extra-light: 200 !important;
   --font-monospace-1:
@@ -1801,7 +1802,6 @@ body.theme-dark {
   --scale-8-7: 54px !important;
   --scale-8-8: 64px !important;
   --scale-8-9: 72px !important;
-  --shadow-sm: 0px 3px 12px -2px rgba(14, 11, 11, 0.5) !important;
   --shadow-xsm: rgba(0, 0, 0, 0.15) !important;
   --sheer-dark: rgba(0, 0, 0, 0.95) !important;
   --sheer-light: rgba(0, 0, 0, 0.35) !important;

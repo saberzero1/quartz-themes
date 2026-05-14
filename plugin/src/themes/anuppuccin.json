@@ -661,5 +661,23 @@
     "anp-hide-borders": {
       "general": "body.anp-card-layout.anp-hide-borders {\n--tab-outline-color: transparent;\n}\n\nbody.anp-card-layout.anp-hide-borders .menu {\nborder: 0px !important;\n}\n\n.anp-hide-borders {\n--tab-outline-color: transparent;\n--divider-color: transparent;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h1-font": ["--inline-title-font"],
+    "--anp-kanban-card-radius": ["--input-radius"],
+    "--list-marker-color": ["--list-bullet-border"],
+    "--tag-radius": ["--pill-radius"],
+    "--anp-colorful-frame-color-hsl": [
+      "--tab-container-background",
+      "--titlebar-background"
+    ],
+    "--anp-translucency-opacity": ["--workspace-background-translucent"],
+    "--anp-editor-font-source": ["--font-text"],
+    "--anp-editor-font-lp": ["--font-text"],
+    "--anp-border-padding": ["--anp-border-bottom-padding"],
+    "--anp-card-layout-padding": ["--capacities-sidebar-bottom"],
+    "--cards-min-width": ["--cards-columns"],
+    "--cards-max-width": ["--cards-columns"]
   }
 }

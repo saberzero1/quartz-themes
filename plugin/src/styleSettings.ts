@@ -201,11 +201,13 @@ export function processStyleSettings(
   settings: Record<string, string | number | boolean>,
   themeId: string | string[],
   classSettingsMap?: Record<string, ClassSettingCSS>,
+  brokenVarLinks?: Record<string, string[]>,
 ): ProcessedStyleSettings {
   const themeIds = Array.isArray(themeId) ? themeId : [themeId];
   const lightVars: string[] = [];
   const darkVars: string[] = [];
   const classCSS: string[] = [];
+  const overriddenVarNames = new Set<string>();
 
   for (const [key, value] of Object.entries(settings)) {
     const matchedId = themeIds.find((id) => key.startsWith(`${id}@@`));
@@ -232,13 +234,33 @@ export function processStyleSettings(
     if (settingId.endsWith("@@dark")) {
       const varName = settingId.slice(0, -6);
       darkVars.push(`  --${varName}: ${value};`);
+      overriddenVarNames.add(`--${varName}`);
     } else if (settingId.endsWith("@@light")) {
       const varName = settingId.slice(0, -7);
       lightVars.push(`  --${varName}: ${value};`);
+      overriddenVarNames.add(`--${varName}`);
     } else {
       lightVars.push(`  --${settingId}: ${value};`);
       darkVars.push(`  --${settingId}: ${value};`);
+      overriddenVarNames.add(`--${settingId}`);
     }
+  }
+
+  if (brokenVarLinks) {
+    const bridgeLight: string[] = [];
+    const bridgeDark: string[] = [];
+    for (const targetVar of overriddenVarNames) {
+      const dependents = brokenVarLinks[targetVar];
+      if (!dependents) continue;
+      for (const dep of dependents) {
+        if (overriddenVarNames.has(dep)) continue;
+        const bridge = `  ${dep}: var(${targetVar});`;
+        bridgeLight.push(bridge);
+        bridgeDark.push(bridge);
+      }
+    }
+    lightVars.push(...bridgeLight);
+    darkVars.push(...bridgeDark);
   }
 
   const cssParts: string[] = [];

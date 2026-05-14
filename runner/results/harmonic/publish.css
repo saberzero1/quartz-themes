@@ -1166,11 +1166,6 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 220, 220, 220 !important;
-  --raised-shadow: var(--shadow-xs) !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    var(--shadow-edges) !important;
-  --shadow-edges: 0 0 transparent !important;
   --background-modifier-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1181,17 +1176,22 @@ body.theme-light {
     var(--base-s),
     calc(var(--base-l) - 15%)
   ) !important;
-  --accent-d: 36% !important;
-  --base-d: 2% !important;
   --base-h: 0 !important;
   --base-l: 99% !important;
   --base-s: 0% !important;
-  --text:
-    mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
   --line-height: 1.8em !important;
   --line-width: 44rem !important;
   --max-width: 88% !important;
+  --raised-shadow: var(--shadow-xs) !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    var(--shadow-edges) !important;
+  --shadow-edges: 0 0 transparent !important;
+  --accent-d: 36% !important;
+  --base-d: 2% !important;
+  --text:
+    mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
   --background-translucent: hsla(
     var(--base-h),
     var(--base-s),
@@ -2285,17 +2285,17 @@ body.theme-dark {
     var(--base-s),
     calc(var(--base-d) + 15%)
   ) !important;
-  --accent-d: 36% !important;
-  --base-d: 2% !important;
   --base-h: 0 !important;
   --base-l: 99% !important;
   --base-s: 0% !important;
-  --text:
-    mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
   --line-height: 1.8em !important;
   --line-width: 44rem !important;
   --max-width: 88% !important;
+  --accent-d: 36% !important;
+  --base-d: 2% !important;
+  --text:
+    mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
   --background-translucent: hsla(
     var(--base-h),
     var(--base-s),

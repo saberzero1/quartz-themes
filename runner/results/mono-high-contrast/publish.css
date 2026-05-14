@@ -1416,6 +1416,7 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: var(--black) !important;
   --interactive-accent-rgb: 0, 0, 0 !important;
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.1) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1429,7 +1430,6 @@ body.theme-light {
   --h6-color: var(--black) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--black) !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.1) !important;
   --panel-border-color: var(--primary) !important;
   --gray-1: #666666 !important;
   --gray-2: #aaaaaa !important;
@@ -2420,6 +2420,12 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: var(--black) !important;
   --interactive-accent-rgb: 255, 255, 255 !important;
+  --background-modifier-form-field-highlighted: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ) !important;
   --h1-color: var(--black) !important;
   --h2-color: var(--black) !important;
   --h3-color: var(--black) !important;
@@ -2428,12 +2434,6 @@ body.theme-dark {
   --h6-color: var(--black) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--black) !important;
-  --background-modifier-form-field-highlighted: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ) !important;
   --panel-border-color: var(--primary) !important;
   --gray-1: #999999 !important;
   --gray-2: #555555 !important;

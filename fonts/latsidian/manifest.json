@@ -1,0 +1,226 @@
+{
+  "extractedAt": "2026-05-13T19:42:32.589Z",
+  "sourceTheme": "Latsidian",
+  "fonts": [
+    {
+      "family": "Latin Modern",
+      "style": "normal",
+      "weight": "normal",
+      "file": "latin-modern.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Latin Modern",
+      "style": "italic",
+      "weight": "normal",
+      "file": "latin-modern-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Latin Modern",
+      "style": "normal",
+      "weight": "bold",
+      "file": "latin-modern-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Latin Modern",
+      "style": "italic",
+      "weight": "bold",
+      "file": "latin-modern-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "FandolSong",
+      "style": "normal",
+      "weight": "normal",
+      "file": "fandolsong.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "FandolSong",
+      "style": "normal",
+      "weight": "bold",
+      "file": "fandolsong-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "FandolFang",
+      "style": "normal",
+      "weight": "normal",
+      "file": "fandolfang.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libertinus",
+      "style": "normal",
+      "weight": "normal",
+      "file": "libertinus.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libertinus",
+      "style": "italic",
+      "weight": "normal",
+      "file": "libertinus-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libertinus",
+      "style": "normal",
+      "weight": "bold",
+      "file": "libertinus-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libertinus",
+      "style": "italic",
+      "weight": "bold",
+      "file": "libertinus-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libertinus",
+      "style": "normal",
+      "weight": "600",
+      "file": "libertinus-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libertinus",
+      "style": "italic",
+      "weight": "600",
+      "file": "libertinus-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Times New Roman",
+      "style": "normal",
+      "weight": "normal",
+      "file": "times-new-roman.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Times New Roman",
+      "style": "italic",
+      "weight": "normal",
+      "file": "times-new-roman-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Times New Roman",
+      "style": "normal",
+      "weight": "bold",
+      "file": "times-new-roman-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Times New Roman",
+      "style": "italic",
+      "weight": "bold",
+      "file": "times-new-roman-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "SimSun",
+      "style": "normal",
+      "weight": "normal",
+      "file": "simsun.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "CMUNTT",
+      "style": "normal",
+      "weight": "normal",
+      "file": "cmuntt.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "CMUNTT",
+      "style": "italic",
+      "weight": "normal",
+      "file": "cmuntt-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "CMUNTT",
+      "style": "normal",
+      "weight": "bold",
+      "file": "cmuntt-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "CMUNTT",
+      "style": "italic",
+      "weight": "bold",
+      "file": "cmuntt-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+/* Fjord — Obsidian theme */
+/* https://github.com/fjord-themes/fjord-obsidian */
+
+.theme-dark {
+  /* ── Color scale ─────────────────────────────────────────── */
+  --color-base-00:  #1B2C32;
+  --color-base-05:  #1F3239;
+  --color-base-10:  #22373F;
+  --color-base-20:  #233941;
+  --color-base-25:  #2A3F47;
+  --color-base-30:  #2D4852;
+  --color-base-40:  #51606B;
+  --color-base-50:  #6C7A86;
+  --color-base-60:  #A0ACB4;
+  --color-base-100: #E8F0F3;
+
+  /* ── Named colors ────────────────────────────────────────── */
+  --color-red:    #F37C7C;
+  --color-orange: #E8B77A;
+  --color-yellow: #FFD285;
+  --color-green:  #9DD99A;
+  --color-cyan:   #B8E7E9;
+  --color-blue:   #5DA6EA;
+  --color-purple: #B9A0F8;
+  --color-pink:   #E48A8A;
+
+  /* ── Accent ──────────────────────────────────────────────── */
+  --color-accent:           #9DD99A;
+  --color-accent-1:         #A3D5A0;
+  --color-accent-2:         #B9E3B5;
+  --interactive-accent:     #9DD99A;
+  --interactive-accent-hsl: 116, 47%, 73%;
+  --interactive-accent-hover: #6FA96C;
+
+  /* ── RGB helpers (for rgba() usage below) ────────────────── */
+  --rgb-background: 27, 44, 50;
+  --rgb-red:    243, 124, 124;
+  --rgb-green:  157, 217, 154;
+  --rgb-yellow: 255, 210, 133;
+  --rgb-blue:   93, 166, 234;
+  --rgb-cyan:   184, 231, 233;
+
+  /* ── Backgrounds ─────────────────────────────────────────── */
+  --background-primary:              #1B2C32;
+  --background-primary-alt:          #22373F;
+  --background-secondary:            #1F3239;
+  --background-secondary-alt:        #233941;
+  --background-modifier-border:      #233941;
+  --background-modifier-border-hover: #2D4852;
+  --background-modifier-border-focus: #9DD99A;
+  --background-modifier-error:       rgba(var(--rgb-red), 0.15);
+  --background-modifier-error-rgb:   var(--rgb-red);
+  --background-modifier-error-hover: rgba(var(--rgb-red), 0.25);
+  --background-modifier-success:     rgba(var(--rgb-green), 0.15);
+  --background-modifier-success-rgb: var(--rgb-green);
+  --background-modifier-cover:       rgba(var(--rgb-background), 0.8);
+  --background-modifier-form-field:  rgba(var(--rgb-background), 0.5);
+
+  /* ── Text ────────────────────────────────────────────────── */
+  --text-normal:           #E8F0F3;
+  --text-muted:            #6C7A86;
+  --text-faint:            #51606B;
+  --text-on-accent:        #1B2C32;
+  --text-accent:           #9DD99A;
+  --text-accent-hover:     #A3D5A0;
+  --text-error:            #F37C7C;
+  --text-error-hover:      #FF9B9B;
+  --text-success:          #9DD99A;
+  --text-warning:          #FFD285;
+  --text-selection:        rgba(var(--rgb-cyan), 0.2);
+  --text-highlight-bg:     rgba(var(--rgb-yellow), 0.2);
+  --text-highlight-bg-active: rgba(var(--rgb-yellow), 0.35);
+
+  /* ── Interactive ─────────────────────────────────────────── */
+  --interactive-normal:    #22373F;
+  --interactive-hover:     #2D4852;
+  --interactive-success:   #9DD99A;
+
+  /* ── Scrollbars ──────────────────────────────────────────── */
+  --scrollbar-bg:               transparent;
+  --scrollbar-thumb-bg:         rgba(var(--rgb-blue), 0.2);
+  --scrollbar-active-thumb-bg:  rgba(var(--rgb-blue), 0.4);
+
+  /* ── Dividers ────────────────────────────────────────────── */
+  --divider-color:       #233941;
+  --divider-color-hover: #2D4852;
+
+  /* ── Links ───────────────────────────────────────────────── */
+  --link-color:                    #B8E7E9;
+  --link-color-hover:              #A1E9DE;
+  --link-external-color:           #B8E7E9;
+  --link-external-color-hover:     #A1E9DE;
+  --link-unresolved-color:         #6C7A86;
+  --link-unresolved-opacity:       0.7;
+  --link-unresolved-decoration-color: rgba(var(--rgb-blue), 0.3);
+
+  /* ── Tags ────────────────────────────────────────────────── */
+  --tag-color:            #B8E7E9;
+  --tag-background:       rgba(var(--rgb-cyan), 0.12);
+  --tag-background-hover: rgba(var(--rgb-cyan), 0.22);
+
+  /* ── Code ────────────────────────────────────────────────── */
+  --code-background:  #1F3239;
+  --code-normal:      #E8F0F3;
+  --code-comment:     #6C7A86;
+  --code-function:    #5DA6EA;
+  --code-important:   #F37C7C;
+  --code-keyword:     #B9A0F8;
+  --code-operator:    #B8E7E9;
+  --code-property:    #9DD99A;
+  --code-punctuation: #6C7A86;
+  --code-string:      #FFD285;
+  --code-tag:         #F37C7C;
+  --code-value:       #FFD285;
+
+  /* ── Headings ────────────────────────────────────────────── */
+  --h1-color: #E8F0F3;
+  --h2-color: #E8F0F3;
+  --h3-color: #E8F0F3;
+  --h4-color: #B8E7E9;
+  --h5-color: #9DD99A;
+  --h6-color: #6C7A86;
+
+  /* ── Callouts ────────────────────────────────────────────── */
+  --callout-default:   #9DD99A;
+  --callout-info:      #5DA6EA;
+  --callout-todo:      #9DD99A;
+  --callout-warning:   #FFD285;
+  --callout-error:     #F37C7C;
+  --callout-danger:    #F37C7C;
+  --callout-success:   #9DD99A;
+  --callout-question:  #B9A0F8;
+  --callout-tip:       #9DD99A;
+  --callout-important: #B9A0F8;
+  --callout-quote:     #6C7A86;
+
+  /* ── Graph ───────────────────────────────────────────────── */
+  --graph-line:             #233941;
+  --graph-node:             #9DD99A;
+  --graph-node-unresolved:  #51606B;
+  --graph-node-focused:     #9DD99A;
+  --graph-node-tag:         #B8E7E9;
+  --graph-node-attachment:  #FFD285;
+
+  /* ── Canvas ──────────────────────────────────────────────── */
+  --canvas-color-1: var(--rgb-red);
+  --canvas-color-2: var(--rgb-yellow);
+  --canvas-color-3: var(--rgb-green);
+  --canvas-color-4: var(--rgb-blue);
+  --canvas-color-5: 185, 160, 248;
+  --canvas-color-6: var(--rgb-cyan);
+}
+
+/* Fjord is a dark-first theme — light mode inherits Obsidian defaults */
+.theme-light {
+  --color-accent:         #6FA96C;
+  --interactive-accent:   #6FA96C;
+}

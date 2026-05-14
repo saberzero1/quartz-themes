@@ -1433,6 +1433,8 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 72, 54, 153 !important;
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --mermaid-font:
     "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -1446,9 +1448,7 @@ body.theme-dark {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
   --text-error-hover: #990000 !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --interactive-success: #197300 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --text-muted-rgb: 153, 153, 153 !important;
   --color-2: hsl(231, 49%, 39%) !important;
   --color-3: hsl(109, 9%, 39%) !important;

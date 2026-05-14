@@ -2539,26 +2539,6 @@
   ".file-embed": { "--focus-ring-color": ":root *" },
   ".view-header-breadcrumb": { "--focus-ring-color": ":root *" },
   ".view-header-breadcrumb-separator": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"-\"]": {
-    "--focus-ring-color": ":root *",
-    "--bold-color": "li[data-task=\"-\"]",
-    "--code-normal": "li[data-task=\"-\"]",
-    "--italic-color": "li[data-task=\"-\"]",
-    "--list-marker-color": ".markdown-rendered ul > li",
-    "--text-normal": "li[data-task=\"-\"]"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "--focus-ring-color": ":root *",
-    "--list-marker-color": ".markdown-rendered ul > li"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "--focus-ring-color": ":root *",
-    "--list-marker-color": ".markdown-rendered ul > li"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "--focus-ring-color": ":root *",
-    "--list-marker-color": ".markdown-rendered ul > li"
-  },
   "li.task-list-item[data-task=\"l\"]": {
     "--focus-ring-color": ":root *",
     "--list-marker-color": ".markdown-rendered ul > li"

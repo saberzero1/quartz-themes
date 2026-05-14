@@ -1,4 +1,4 @@
-/* Version 2.0.6 */
+/* Version 2.0.12 */
 /* Default Palette */
 body {
   --grotto-accent-h: 16;
@@ -1869,7 +1869,6 @@ body {
   border: var(--grotto-global-border-width) solid var(--grotto-filenav-tag-color);
   border-radius: var(--grotto-filenav-border-radius);
 }
-.nav-file-title.is-active .nav-file-tag,
 body:not(.is-grabbing) .nav-file-title.is-active .nav-file-tag,
 .nav-file-title:hover .nav-file-tag,
 .nav-file-title.mobile-tap .nav-file-tag,
@@ -1943,6 +1942,8 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
 .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner.mobile-tap {
   background-color: transparent;
   color: var(--grotto-accent);
+  border: var(--grotto-global-border-width) solid transparent;
+  border-radius: var(--grotto-drawer-border-radius);
 }
 .workspace-drawer-tab-options .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .workspace-drawer-tab-options .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
@@ -2409,6 +2410,7 @@ body:not(.is-phone) .vertical-tab-nav-item:only-child:hover {
 .is-phone .modal.mod-settings .vertical-tab-header,
 .is-phone .modal.mod-settings .vertical-tab-content {
   --scrollbar-width: 0px;
+  background-color: var(--background-primary);
 }
 .is-phone .modal.mod-settings .vertical-tab-header-group-items,
 .vertical-tab-header-group-items {
@@ -2428,10 +2430,6 @@ body:not(.is-phone) .vertical-tab-nav-item:only-child:hover {
 }
 .is-phone .modal.mod-sidebar-layout {
   border-width: var(--grotto-global-border-width) 0px 0px 0px;
-}
-.is-phone .modal.mod-settings .vertical-tab-header,
-.is-phone .modal.mod-settings .vertical-tab-content {
-  background-color: var(--background-primary);
 }
 .setting-group .setting-items {
   background-color: var(--grotto-settings-background-color);
@@ -2500,6 +2498,8 @@ body {
   background-color: var(--grotto-filenav-button-background-color);
   border: var(--grotto-global-border-width) solid var(--grotto-filenav-border-color);
   border-radius: var(--grotto-drawer-border-radius);
+  box-shadow: none;
+  padding-right: 0px;
 }
 .is-phone .workspace-drawer-tab-options-list .workspace-tab-header-inner-title,
 .is-phone .workspace-drawer-tab-options-list .workspace-tab-header-inner-icon {
@@ -2507,16 +2507,6 @@ body {
 }
 .is-phone .workspace-drawer-tab-options .workspace-tab-header-inner-chevron {
   color: var(--grotto-drawer-color);
-}
-.workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner,
-.workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner:hover,
-.workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner.mobile-tap {
-  border: var(--grotto-global-border-width) solid transparent;
-  border-radius: var(--grotto-drawer-border-radius);
-}
-.is-phone .workspace-drawer-tab-options-list {
-  box-shadow: none;
-  padding-right: 0px;
 }
 .workspace-drawer .search-input-container input {
   border: var(--grotto-global-border-width) solid var(--grotto-drawer-border-color);
@@ -2571,13 +2561,10 @@ body {
 }
 .mobile-tab .mobile-tab-pin,
 .mobile-tab .close-button {
-  border-radius: var(--grotto-tab-switcher-border-radius);
-}
-.mobile-tab .mobile-tab-pin,
-.mobile-tab .close-button {
   color: var(--grotto-text-color-on-accent);
   background-color: var(--grotto-accent);
   border: var(--grotto-global-border-width) solid var(--grotto-tab-switcher-border-color);
+  border-radius: var(--grotto-tab-switcher-border-radius);
 }
 .mobile-tab .mobile-tab-pin:hover,
 .mobile-tab .close-button:hover,
@@ -2758,14 +2745,14 @@ body {
 }
 .is-floating-nav .mobile-toolbar-option {
   margin: 0px;
-  padding: 6px 6px;
+  padding: 6px;
   background-color: transparent;
   border: 0px solid transparent;
   border-radius: var(--grotto-mobile-toolbar-border-radius);
 }
 .mobile-toolbar-option {
   margin: 0px;
-  padding: 6px 6px;
+  padding: 6px;
   background-color: transparent;
   border: 0px solid transparent;
   border-radius: var(--grotto-mobile-toolbar-border-radius);
@@ -2938,14 +2925,12 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
   color: var(--grotto-text-color-on-accent);
   background-color: var(--grotto-accent);
   border-radius: var(--grotto-global-border-radius) var(--grotto-global-border-radius) 0rem 0rem;
+  border-width: var(--grotto-global-border-width)
 }
 .grotto-deadline-categories {
   border: var(--grotto-global-border-width) solid var(--text-normal);
   border-top: 1px;
   border-radius: 0rem 0rem var(--grotto-global-border-radius) var(--grotto-global-border-radius);
-}
-.grotto-category-section h3 {
-  border-width: var(--grotto-global-border-width)
 }
 .grotto-deadline-card.grotto-deadline-warning {
   border-radius: calc(var(--grotto-global-border-radius) * 0.6);

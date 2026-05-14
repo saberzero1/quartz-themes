@@ -66,5 +66,6 @@
     "pure-amoled-background": {
       "dark": ".pure-amoled-background .theme-dark {\nbackground-color: #000000 !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

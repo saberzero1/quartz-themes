@@ -149,5 +149,6 @@
     "folder-titles-none": {
       "general": ".folder-titles-none .nav-folder .nav-folder-title {\ncolor: var(--nav-item-color-active);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

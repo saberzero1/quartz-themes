@@ -1,0 +1,98 @@
+mode: replace
+sections:
+  - name: Monokai Syntax
+    id: monokai-syntax
+    collapsed: false
+    settings:
+      - id: monokai-syntax-info
+        title: Monokai Syntax
+        description: Monokai Syntax 主题设置。
+        type: heading
+        level: 1
+  - name: Monokai Syntax 调色板
+    id: monokai-syntax-palette
+    collapsed: false
+    settings:
+      - id: monokai-syntax-filter
+        title: 调色板滤镜
+        type: class-select
+        allowEmpty: false
+        default: monokai-syntax-filter-classic
+        options:
+          - label: Classic
+            value: monokai-syntax-filter-classic
+          - label: Machine
+            value: monokai-syntax-filter-machine
+          - label: Octagon
+            value: monokai-syntax-filter-octagon
+          - label: Ristretto
+            value: monokai-syntax-filter-ristretto
+          - label: Spectrum
+            value: monokai-syntax-filter-spectrum
+  - name: Monokai Syntax 密度
+    id: monokai-syntax-density
+    collapsed: false
+    settings:
+      - id: monokai-syntax-compact
+        title: 紧凑模式
+        type: class-toggle
+        default: false
+  - name: Monokai Syntax 图标
+    id: monokai-syntax-icons
+    collapsed: false
+    settings:
+      - id: monokai-syntax-monochrome-icons
+        title: 单色图标
+        type: class-toggle
+        default: false
+  - name: Monokai Syntax 排版
+    id: monokai-syntax-typography
+    collapsed: false
+    settings:
+      - id: monokai-readable-line-width
+        title: 可读行宽
+        type: variable-number-slider
+        default: 48
+        min: 40
+        max: 75
+        step: 1
+        format: rem
+  - name: Monokai Syntax 强调色
+    id: monokai-syntax-accents
+    collapsed: false
+    settings:
+      - id: monokai-accent-color
+        title: 强调色
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#f92672'
+        alt-format: []
+      - id: monokai-link-color
+        title: 链接色
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#66d9ef'
+        alt-format: []
+      - id: monokai-success-color
+        title: 成功色
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#a6e22e'
+        alt-format: []
+      - id: monokai-warning-color
+        title: 高亮色
+        type: variable-color
+        opacity: true
+        format: rgb
+        default: rgb(230 219 116 / 28%)
+        alt-format: []
+      - id: monokai-code-background
+        title: 代码背景
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#1e1f1c'
+        alt-format: []

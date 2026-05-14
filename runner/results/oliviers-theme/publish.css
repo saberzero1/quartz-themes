@@ -1429,6 +1429,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-style: var(--blockquote-font-style) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1437,7 +1438,6 @@ body.theme-light {
   --inline-title-color: var(--color-base-50) !important;
   --light-blue: hsl(211, 50%, 77%) !important;
   --table-header-background-hover: var(--table-header-background) !important;
-  --blockquote-style: var(--blockquote-font-style) !important;
   --inline-title-font: var(--font-monospace) !important;
   --blue: hsl(246, 74%, 43%) !important;
   --nn-theme-file-tag-bg: var(--OT-pill-background) !important;
@@ -1458,6 +1458,7 @@ body.theme-light {
   --neutral-100: hsl(0, 0%, 100%) !important;
   --color-bg-primary: hsl(48, 100%, 97%) !important;
   --color-bg-secondary: hsl(51, 33%, 92%) !important;
+  --color-selection: rgba(187, 220, 206, 0.3) !important;
   --color-highlight: hsl(46, 83%, 80%) !important;
   --board-view-column-width: var(--OT-kanban-lane-width) !important;
   --dynamic-outline-active-heading-background: var(--color-accent-2) !important;
@@ -1720,7 +1721,6 @@ body.theme-light {
   --color-pu-hover: hsl(251, 40%, 64%) !important;
   --color-re: hsl(3, 62%, 42%) !important;
   --color-re-hover: hsl(5, 61%, 54%) !important;
-  --color-selection: rgba(187, 220, 206, 0.3) !important;
   --color-tx-faint: hsl(49, 7%, 70%) !important;
   --color-tx-muted: hsl(50, 3%, 42%) !important;
   --color-tx-normal: hsl(0, 3%, 6%) !important;
@@ -2962,10 +2962,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-style: var(--blockquote-font-style) !important;
   --inline-title-color: var(--color-base-50) !important;
   --light-blue: hsl(211, 50%, 77%) !important;
   --table-header-background-hover: var(--table-header-background) !important;
-  --blockquote-style: var(--blockquote-font-style) !important;
   --inline-title-font: var(--font-monospace) !important;
   --blue: hsl(246, 74%, 43%) !important;
   --nn-theme-file-tag-bg: var(--OT-pill-background) !important;
@@ -2986,6 +2986,7 @@ body.theme-dark {
   --neutral-100: hsl(0, 0%, 100%) !important;
   --color-bg-primary: hsl(48, 100%, 97%) !important;
   --color-bg-secondary: hsl(51, 33%, 92%) !important;
+  --color-selection: rgba(187, 220, 206, 0.3) !important;
   --color-highlight: hsl(46, 83%, 80%) !important;
   --board-view-column-width: var(--OT-kanban-lane-width) !important;
   --dynamic-outline-active-heading-background: var(--color-accent-2) !important;
@@ -3240,7 +3241,6 @@ body.theme-dark {
   --color-pu-hover: hsl(251, 40%, 64%) !important;
   --color-re: hsl(3, 62%, 42%) !important;
   --color-re-hover: hsl(5, 61%, 54%) !important;
-  --color-selection: rgba(187, 220, 206, 0.3) !important;
   --color-tx-faint: hsl(49, 7%, 70%) !important;
   --color-tx-muted: hsl(50, 3%, 42%) !important;
   --color-tx-normal: hsl(0, 3%, 6%) !important;

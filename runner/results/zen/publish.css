@@ -992,6 +992,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --shadow-color: rgba(0, 0, 0, 0.06) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1007,7 +1008,6 @@ body.theme-light {
   --text-color: rgb(8, 8, 8) !important;
   --italic-color: var(--text-accent) !important;
   --base-d: 0% !important;
-  --shadow-color: rgba(0, 0, 0, 0.06) !important;
   --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(255, 255, 255, 0) !important;
   --radius-xxl: 20px !important;
@@ -2041,6 +2041,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --shadow-color: rgba(245, 245, 245, 0.08) !important;
   --h1-color: rgb(231, 77, 71) !important;
   --h2-color: rgb(215, 148, 64) !important;
   --h3-color: rgb(7, 170, 246) !important;
@@ -2051,7 +2052,6 @@ body.theme-dark {
   --text-color: rgb(240, 240, 240) !important;
   --italic-color: var(--text-accent) !important;
   --base-d: 0% !important;
-  --shadow-color: rgba(245, 245, 245, 0.08) !important;
   --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(28, 28, 28, 0) !important;
   --radius-xxl: 20px !important;

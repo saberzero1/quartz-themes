@@ -1377,10 +1377,10 @@ body.theme-light {
   --code-builtin: var(--peach) !important;
   --code-definition: var(--lavender) !important;
   --link-unresolved-color-hover: var(--red) !important;
+  --base: #eff1f5 !important;
   --peach: #fe640b !important;
   --lavender: #7287fd !important;
   --teal: #179299 !important;
-  --base: #eff1f5 !important;
   --mauve: #8839ef !important;
   --surface1: #bcc0cc !important;
   --surface2: #acb0be !important;
@@ -2398,10 +2398,10 @@ body.theme-dark {
   --code-builtin: var(--peach) !important;
   --code-definition: var(--lavender) !important;
   --link-unresolved-color-hover: var(--red) !important;
+  --base: #303446 !important;
   --peach: #ef9f76 !important;
   --lavender: #babbf1 !important;
   --teal: #81c8be !important;
-  --base: #303446 !important;
   --mauve: #ca9ee6 !important;
   --surface1: #51576d !important;
   --surface2: #626880 !important;

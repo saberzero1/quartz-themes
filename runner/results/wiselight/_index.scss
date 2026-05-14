@@ -15,8 +15,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -50,10 +49,7 @@
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -119,15 +115,13 @@ html {
   font-family: "Karla";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/wiselight/karla.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/wiselight/karla.woff2") format("woff2");
 }
 @font-face {
   font-family: "Karla";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/wiselight/karla-1.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/wiselight/karla-1.woff2") format("woff2");
 }
 
 body {
@@ -716,24 +710,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -746,18 +725,7 @@ body {
     color: rgb(46, 51, 56);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(46, 51, 56);
     border-top-left-radius: 4px;
@@ -792,15 +760,7 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -1175,79 +1135,24 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(46, 51, 56);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(46, 51, 56);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(46, 51, 56);
   }
 
@@ -1261,14 +1166,8 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(
-      62deg,
-      rgb(251, 171, 126) 0%,
-      rgb(247, 206, 104) 100%
-    );
-    background: rgba(0, 0, 0, 0)
-      linear-gradient(62deg, rgb(251, 171, 126) 0%, rgb(247, 206, 104) 100%)
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background-image: linear-gradient(62deg, rgb(251, 171, 126) 0%, rgb(247, 206, 104) 100%);
+    background: rgba(0, 0, 0, 0) linear-gradient(62deg, rgb(251, 171, 126) 0%, rgb(247, 206, 104) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     padding: 50px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1301,8 +1200,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1336,8 +1234,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1371,8 +1268,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1406,8 +1302,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 3px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1441,8 +1336,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1476,8 +1370,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1711,8 +1604,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H2 ";
     display: inline;
     color: rgb(165, 42, 42);
@@ -1737,8 +1629,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "H3 ";
     display: inline;
     color: rgb(0, 0, 0);
@@ -1931,8 +1822,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1943,8 +1833,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -1957,8 +1846,7 @@ body {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1992,8 +1880,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2004,8 +1891,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2018,8 +1904,7 @@ body {
     --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
@@ -2053,8 +1938,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2065,8 +1949,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2079,8 +1962,7 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -2114,8 +1996,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2126,8 +2007,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2140,8 +2020,7 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -2175,8 +2054,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2187,8 +2065,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2201,8 +2078,7 @@ body {
     --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
@@ -2236,8 +2112,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2248,8 +2123,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2262,8 +2136,7 @@ body {
     --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 185, 78, 0.25);
@@ -2297,8 +2170,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2309,8 +2181,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2323,8 +2194,7 @@ body {
     --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
@@ -2358,8 +2228,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2370,8 +2239,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2384,8 +2252,7 @@ body {
     --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
@@ -2419,8 +2286,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2431,8 +2297,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2445,8 +2310,7 @@ body {
     --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2480,8 +2344,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2492,8 +2355,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2506,8 +2368,7 @@ body {
     --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2541,8 +2402,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2553,8 +2413,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2567,8 +2426,7 @@ body {
     --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2602,8 +2460,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2614,8 +2471,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2628,8 +2484,7 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(120, 82, 238, 0.25);
@@ -2663,8 +2518,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2675,8 +2529,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -2689,8 +2542,7 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
@@ -2724,8 +2576,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2736,8 +2587,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(46, 51, 56);
     padding: 0px;
     padding-block-end: 0px;
@@ -4106,8 +3956,7 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px 0px 0px 8px;
     margin: 0px;
     border-color: rgb(46, 51, 56);
@@ -4278,8 +4127,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4296,10 +4144,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4315,8 +4160,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4327,11 +4171,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4354,8 +4194,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4372,10 +4211,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4391,8 +4227,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4403,11 +4238,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4430,8 +4261,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4448,10 +4278,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4467,8 +4294,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4479,11 +4305,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4506,8 +4328,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4524,10 +4345,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4543,8 +4361,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4555,11 +4372,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4582,8 +4395,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4600,10 +4412,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4619,8 +4428,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4631,11 +4439,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4658,8 +4462,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4676,10 +4479,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4695,8 +4495,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4707,11 +4506,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4734,8 +4529,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4752,10 +4546,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4771,8 +4562,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4783,11 +4573,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4810,8 +4596,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4828,10 +4613,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4847,8 +4629,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4859,11 +4640,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4886,8 +4663,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4904,10 +4680,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4923,8 +4696,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -4935,11 +4707,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -4962,8 +4730,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -4980,10 +4747,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4999,8 +4763,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5011,11 +4774,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5038,8 +4797,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5056,10 +4814,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5075,8 +4830,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5087,11 +4841,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5114,8 +4864,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5132,10 +4881,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5151,8 +4897,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5163,11 +4908,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5190,8 +4931,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5208,10 +4948,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5227,8 +4964,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5239,11 +4975,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5266,8 +4998,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5284,10 +5015,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5303,8 +5031,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5315,11 +5042,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5342,8 +5065,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5360,10 +5082,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5379,8 +5098,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5391,11 +5109,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5418,8 +5132,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5436,10 +5149,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5455,8 +5165,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5467,11 +5176,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5494,8 +5199,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5512,10 +5216,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5531,8 +5232,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5543,11 +5243,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5570,8 +5266,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5588,10 +5283,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5607,8 +5299,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5619,11 +5310,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5646,8 +5333,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5664,10 +5350,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5683,8 +5366,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5695,11 +5377,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5722,8 +5400,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5740,10 +5417,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5759,8 +5433,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5771,11 +5444,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5798,8 +5467,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5816,10 +5484,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5835,8 +5500,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5847,11 +5511,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5874,8 +5534,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5892,10 +5551,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5911,8 +5567,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5923,11 +5578,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -5950,8 +5601,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -5968,10 +5618,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5987,8 +5634,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -5999,11 +5645,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6026,8 +5668,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6044,10 +5685,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6063,8 +5701,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6075,11 +5712,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6102,8 +5735,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6120,10 +5752,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6139,8 +5768,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6151,11 +5779,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6178,8 +5802,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6196,10 +5819,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6215,8 +5835,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6227,11 +5846,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6254,8 +5869,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6272,10 +5886,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6291,8 +5902,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6303,11 +5913,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6330,8 +5936,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6348,10 +5953,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6367,8 +5969,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6379,11 +5980,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6406,8 +6003,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6424,10 +6020,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6443,8 +6036,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6455,11 +6047,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6482,8 +6070,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6500,10 +6087,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6519,8 +6103,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6531,11 +6114,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6558,8 +6137,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6576,10 +6154,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6595,8 +6170,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6607,11 +6181,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6634,8 +6204,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6652,10 +6221,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6671,8 +6237,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6683,11 +6248,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6710,8 +6271,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6728,10 +6288,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6747,8 +6304,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6759,11 +6315,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6786,8 +6338,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6804,10 +6355,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6823,8 +6371,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6835,11 +6382,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6862,8 +6405,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6880,10 +6422,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6899,8 +6438,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6911,11 +6449,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -6938,8 +6472,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -6956,10 +6489,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6975,8 +6505,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -6987,11 +6516,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7014,8 +6539,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7032,10 +6556,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7051,8 +6572,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7063,11 +6583,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7090,8 +6606,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7108,10 +6623,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7127,8 +6639,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7139,11 +6650,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7166,8 +6673,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7184,10 +6690,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7203,8 +6706,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7215,11 +6717,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7242,8 +6740,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7260,10 +6757,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7279,8 +6773,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7291,11 +6784,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7318,8 +6807,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7336,10 +6824,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7355,8 +6840,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7367,11 +6851,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7394,8 +6874,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7412,10 +6891,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7431,8 +6907,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7443,11 +6918,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7470,8 +6941,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7488,10 +6958,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7507,8 +6974,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7519,11 +6985,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7546,8 +7008,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7564,10 +7025,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7583,8 +7041,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7595,11 +7052,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7622,8 +7075,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7640,10 +7092,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7659,8 +7108,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7671,11 +7119,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7698,8 +7142,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7716,10 +7159,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7735,8 +7175,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7747,11 +7186,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7774,8 +7209,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7792,10 +7226,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7811,8 +7242,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7823,11 +7253,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7850,8 +7276,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7868,10 +7293,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7887,8 +7309,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7899,11 +7320,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -7926,8 +7343,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -7944,10 +7360,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7963,8 +7376,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -7975,11 +7387,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8002,8 +7410,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8020,10 +7427,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8039,8 +7443,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8051,11 +7454,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8078,8 +7477,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8096,10 +7494,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8115,8 +7510,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8127,11 +7521,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8154,8 +7544,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8172,10 +7561,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8191,8 +7577,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8203,11 +7588,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8230,8 +7611,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8248,10 +7628,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8267,8 +7644,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8279,11 +7655,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8306,8 +7678,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8324,10 +7695,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8343,8 +7711,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8355,11 +7722,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8382,8 +7745,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8400,10 +7762,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8419,8 +7778,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8431,11 +7789,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8458,8 +7812,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8476,10 +7829,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8495,8 +7845,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8507,11 +7856,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8534,8 +7879,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8552,10 +7896,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8571,8 +7912,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8583,11 +7923,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8610,8 +7946,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8628,10 +7963,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8647,8 +7979,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8659,11 +7990,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8686,8 +8013,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8704,10 +8030,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8723,8 +8046,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8735,11 +8057,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8762,8 +8080,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8780,10 +8097,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8799,8 +8113,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8811,11 +8124,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8838,8 +8147,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8856,10 +8164,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8875,8 +8180,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8887,11 +8191,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8914,8 +8214,7 @@ body {
     color: rgb(136, 136, 136);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -8932,10 +8231,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8951,8 +8247,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -8963,11 +8258,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -8990,8 +8281,7 @@ body {
     color: rgb(136, 136, 136);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -9008,10 +8298,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -9027,8 +8314,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -9039,11 +8325,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9066,8 +8348,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -9084,10 +8365,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -9103,8 +8381,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -9115,11 +8392,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9142,8 +8415,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -9160,10 +8432,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -9179,8 +8448,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -9191,11 +8459,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9218,8 +8482,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -9236,10 +8499,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -9255,8 +8515,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -9267,11 +8526,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9294,8 +8549,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
-    --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
     --caret-color: #222222;
     --checkbox-border-color: #ababab;
@@ -9312,10 +8566,7 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
-    --font-interface:
-      ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-      "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -9331,8 +8582,7 @@ body {
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
-    --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
-      linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
+    --raised-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --search-clear-button-color: #5c5c5c;
     --search-icon-color: #5c5c5c;
     --search-result-background: #ffffff;
@@ -9343,11 +8593,7 @@ body {
     --tab-background-active: #ffffff;
     --tab-outline-color: #e0e0e0;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
     --tab-text-color-focused: #5c5c5c;
@@ -9368,10 +8614,7 @@ body {
 
   html {
     --darkthemeviewarea: #55423d;
-    --default-font:
-      "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    --default-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
     --font-monospace: "Source Code Pro", monospace;
     --mermaid-font: var(--default-font);
     --reveal-font: var(--default-font);
@@ -10127,10 +9370,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

@@ -2911,6 +2911,84 @@
   "--scroll-fade-offset-right": {
     ".mobile-toolbar-options-container": ["--toolbar-option-width"]
   },
+  "--shiki-code-background": { "body": ["--code-background"] },
+  "--shiki-code-normal": { "body": ["--text-muted"] },
+  "--shiki-code-comment": { "body": ["--text-faint"] },
+  "--shiki-code-function": { "body": ["--color-green"] },
+  "--shiki-code-important": { "body": ["--color-orange"] },
+  "--shiki-code-keyword": { "body": ["--color-pink"] },
+  "--shiki-code-property": { "body": ["--color-cyan"] },
+  "--shiki-code-punctuation": { "body": ["--text-muted"] },
+  "--shiki-code-string": { "body": ["--color-yellow"] },
+  "--shiki-code-value": { "body": ["--color-purple"] },
+  "--shiki-code-block-border-radius": { "body": ["--code-radius"] },
+  "--shiki-code-block-spacing": { "body": ["--p-spacing"] },
+  "--shiki-highlight-red": { "body": ["--color-red-rgb"] },
+  "--shiki-highlight-green": { "body": ["--color-green-rgb"] },
+  "--shiki-highlight-neutral": { "body": ["--shiki-code-normal"] },
+  "--shiki-highlight-red-background": { "body": ["--color-red-rgb"] },
+  "--shiki-highlight-green-background": { "body": ["--color-green-rgb"] },
+  "--shiki-highlight-neutral-background": { "body": ["--mono-rgb-100"] },
+  "--shiki-terminal-dots-color": { "body": ["--text-faint"] },
+  "--shiki-tooltip-background": { "body": ["--background-modifier-message"] },
+  "--shiki-gutter-border-color": { "body": ["--background-modifier-border"] },
+  "--shiki-gutter-border-width": { "body": ["--border-width"] },
+  "--shiki-gutter-text-color": { "body": ["--text-faint"] },
+  "--shiki-gutter-text-color-highlight": { "body": ["--shiki-code-normal"] },
+  "--shiki-active-tab-border-color": { "body": ["--shiki-highlight-neutral"] },
+  "--ecLineBrdCol": {
+    ".expressive-code .ec-line .gutter ~ .code": ["--ec-gtrBrdCol"],
+    ".expressive-code .ec-line.mark .code": ["--ec-tm-markBrdCol"],
+    ".expressive-code .ec-line.ins .code": ["--ec-tm-insBrdCol"],
+    ".expressive-code .ec-line.del .code": ["--ec-tm-delBrdCol"]
+  },
+  "--ecGtrBrdWd": {
+    ".expressive-code .ec-line .code": ["--ec-gtrBrdWd"],
+    ".expressive-code .ec-line.mark .code": ["--ec-tm-lineMarkerAccentWd"]
+  },
+  "--border-color": {
+    ".expressive-code .ec-section summary": ["--ec-cs-closedBrdCol"],
+    ".expressive-code .ec-section[open]": ["--ec-cs-openBrdCol"]
+  },
+  "--tmLineBgCol": {
+    ".expressive-code .ec-line.mark": ["--ec-tm-markBg"],
+    ".expressive-code .ec-line.ins": ["--ec-tm-insBg"],
+    ".expressive-code .ec-line.del": ["--ec-tm-delBg"]
+  },
+  "--tmLabel": {
+    ".expressive-code .ec-line.ins": ["--ec-tm-insDiffIndContent"],
+    ".expressive-code .ec-line.del": ["--ec-tm-delDiffIndContent"]
+  },
+  "--tmInlineBgCol": {
+    ".expressive-code .ec-line mark": ["--ec-tm-markBg"],
+    ".expressive-code .ec-line ins": ["--ec-tm-insBg"],
+    ".expressive-code .ec-line del": ["--ec-tm-delBg"]
+  },
+  "--tmInlineBrdCol": {
+    ".expressive-code .ec-line mark": ["--ec-tm-markBrdCol"],
+    ".expressive-code .ec-line ins": ["--ec-tm-insBrdCol"],
+    ".expressive-code .ec-line del": ["--ec-tm-delBrdCol"]
+  },
+  "--tmBrdL": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdWd"] },
+  "--tmBrdR": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdWd"] },
+  "--tmRadL": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdRad"] },
+  "--tmRadR": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdRad"] },
+  "--header-border-radius": {
+    ".expressive-code .frame": ["--ec-brdRad", "--ec-brdWd"]
+  },
+  "--tab-border-radius": {
+    ".expressive-code .frame": ["--ec-frm-edTabBrdRad", "--ec-brdWd"]
+  },
+  "--button-spacing": {
+    ".expressive-code .frame.has-title:not(.is-terminal)": [
+      "--ec-uiPadBlk",
+      "--ec-frm-edActTabIndHt"
+    ],
+    ".expressive-code .frame.is-terminal": ["--ec-brdWd", "--ec-uiPadBlk"]
+  },
+  "--tooltip-bg": {
+    ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
+  },
   "--status-bar-padding": { ".theme-dark": ["--size-4-1"] },
   "--status-bar-gap": { ".theme-dark": ["--size-4-1"] },
   "--sidebar-tab-icon-size": { ".theme-dark": ["--icon-l"] },
@@ -3716,84 +3794,6 @@
     ".theme-light.nord": ["--headers"],
     ".theme-dark.its": ["--headers"],
     ".slrvb-g": ["--dark-accent"]
-  },
-  "--shiki-code-background": { "body": ["--code-background"] },
-  "--shiki-code-normal": { "body": ["--text-muted"] },
-  "--shiki-code-comment": { "body": ["--text-faint"] },
-  "--shiki-code-function": { "body": ["--color-green"] },
-  "--shiki-code-important": { "body": ["--color-orange"] },
-  "--shiki-code-keyword": { "body": ["--color-pink"] },
-  "--shiki-code-property": { "body": ["--color-cyan"] },
-  "--shiki-code-punctuation": { "body": ["--text-muted"] },
-  "--shiki-code-string": { "body": ["--color-yellow"] },
-  "--shiki-code-value": { "body": ["--color-purple"] },
-  "--shiki-code-block-border-radius": { "body": ["--code-radius"] },
-  "--shiki-code-block-spacing": { "body": ["--p-spacing"] },
-  "--shiki-highlight-red": { "body": ["--color-red-rgb"] },
-  "--shiki-highlight-green": { "body": ["--color-green-rgb"] },
-  "--shiki-highlight-neutral": { "body": ["--shiki-code-normal"] },
-  "--shiki-highlight-red-background": { "body": ["--color-red-rgb"] },
-  "--shiki-highlight-green-background": { "body": ["--color-green-rgb"] },
-  "--shiki-highlight-neutral-background": { "body": ["--mono-rgb-100"] },
-  "--shiki-terminal-dots-color": { "body": ["--text-faint"] },
-  "--shiki-tooltip-background": { "body": ["--background-modifier-message"] },
-  "--shiki-gutter-border-color": { "body": ["--background-modifier-border"] },
-  "--shiki-gutter-border-width": { "body": ["--border-width"] },
-  "--shiki-gutter-text-color": { "body": ["--text-faint"] },
-  "--shiki-gutter-text-color-highlight": { "body": ["--shiki-code-normal"] },
-  "--shiki-active-tab-border-color": { "body": ["--shiki-highlight-neutral"] },
-  "--ecLineBrdCol": {
-    ".expressive-code .ec-line .gutter ~ .code": ["--ec-gtrBrdCol"],
-    ".expressive-code .ec-line.mark .code": ["--ec-tm-markBrdCol"],
-    ".expressive-code .ec-line.ins .code": ["--ec-tm-insBrdCol"],
-    ".expressive-code .ec-line.del .code": ["--ec-tm-delBrdCol"]
-  },
-  "--ecGtrBrdWd": {
-    ".expressive-code .ec-line .code": ["--ec-gtrBrdWd"],
-    ".expressive-code .ec-line.mark .code": ["--ec-tm-lineMarkerAccentWd"]
-  },
-  "--border-color": {
-    ".expressive-code .ec-section summary": ["--ec-cs-closedBrdCol"],
-    ".expressive-code .ec-section[open]": ["--ec-cs-openBrdCol"]
-  },
-  "--tmLineBgCol": {
-    ".expressive-code .ec-line.mark": ["--ec-tm-markBg"],
-    ".expressive-code .ec-line.ins": ["--ec-tm-insBg"],
-    ".expressive-code .ec-line.del": ["--ec-tm-delBg"]
-  },
-  "--tmLabel": {
-    ".expressive-code .ec-line.ins": ["--ec-tm-insDiffIndContent"],
-    ".expressive-code .ec-line.del": ["--ec-tm-delDiffIndContent"]
-  },
-  "--tmInlineBgCol": {
-    ".expressive-code .ec-line mark": ["--ec-tm-markBg"],
-    ".expressive-code .ec-line ins": ["--ec-tm-insBg"],
-    ".expressive-code .ec-line del": ["--ec-tm-delBg"]
-  },
-  "--tmInlineBrdCol": {
-    ".expressive-code .ec-line mark": ["--ec-tm-markBrdCol"],
-    ".expressive-code .ec-line ins": ["--ec-tm-insBrdCol"],
-    ".expressive-code .ec-line del": ["--ec-tm-delBrdCol"]
-  },
-  "--tmBrdL": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdWd"] },
-  "--tmBrdR": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdWd"] },
-  "--tmRadL": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdRad"] },
-  "--tmRadR": { ".expressive-code .ec-line mark": ["--ec-tm-inlMarkerBrdRad"] },
-  "--header-border-radius": {
-    ".expressive-code .frame": ["--ec-brdRad", "--ec-brdWd"]
-  },
-  "--tab-border-radius": {
-    ".expressive-code .frame": ["--ec-frm-edTabBrdRad", "--ec-brdWd"]
-  },
-  "--button-spacing": {
-    ".expressive-code .frame.has-title:not(.is-terminal)": [
-      "--ec-uiPadBlk",
-      "--ec-frm-edActTabIndHt"
-    ],
-    ".expressive-code .frame.is-terminal": ["--ec-brdWd", "--ec-uiPadBlk"]
-  },
-  "--tooltip-bg": {
-    ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
   },
   "--tooltip-color": { "body": ["--text-dl"] },
   "--list-color-1": {

@@ -1401,9 +1401,9 @@ body.theme-light {
   --shadow-edges: 0 0 transparent !important;
   --bold-color: #b08c75 !important;
   --italic-color: #b08c75 !important;
+  --bases-table-text-size: var(--font-smaller) !important;
   --bases-cards-group-padding: var(--size-4-3) !important;
   --bases-cards-text-size: var(--font-smaller) !important;
-  --bases-table-text-size: var(--font-smaller) !important;
 }
 
 body.theme-dark {
@@ -2371,9 +2371,9 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --bold-color: #b08c75 !important;
   --italic-color: #b08c75 !important;
+  --bases-table-text-size: var(--font-smaller) !important;
   --bases-cards-group-padding: var(--size-4-3) !important;
   --bases-cards-text-size: var(--font-smaller) !important;
-  --bases-table-text-size: var(--font-smaller) !important;
 }
 
 body {

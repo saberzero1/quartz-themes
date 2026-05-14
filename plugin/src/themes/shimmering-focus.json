@@ -207,5 +207,10 @@
     "show-various-complements-icon": {
       "general": ".show-various-complements-icon .various-complements__suggestion-item {\npadding-left:25px!important;\n}\n\n.show-various-complements-icon .various-complements__suggestion-item:before {\nmargin-top:0;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--longform-font-text-theme": ["--font-text"],
+    "--code-size": ["--ec-codeFontSize"]
   }
 }

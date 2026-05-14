@@ -1345,6 +1345,13 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --cards-border-width: 1px !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1364,14 +1371,7 @@ body.theme-light {
   --inline-title-font: var(--h1-font) !important;
   --vault-name-font-size: var(--font-ui-large) !important;
   --vault-name-font-weight: var(--font-bold) !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 180px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
   --background-tertiary: hsl(1, 100%, 100%) !important;
-  --cards-border-width: 1px !important;
   --floating-box-shadow:
     0 2px 1px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
     0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
@@ -2353,6 +2353,13 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --cards-border-width: 1px !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
   --table-header-background-hover: var(--color-accent-2) !important;
   --vault-name-color: var(--text-muted) !important;
   --h1-font: "Lato" !important;
@@ -2360,14 +2367,7 @@ body.theme-dark {
   --inline-title-font: var(--h1-font) !important;
   --vault-name-font-size: var(--font-ui-large) !important;
   --vault-name-font-weight: var(--font-bold) !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 180px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
   --background-tertiary: hsl(calc(var(--accent-h)), 100%, 80%, 0.08) !important;
-  --cards-border-width: 1px !important;
   --floating-box-shadow:
     0 2px 1px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
     0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),

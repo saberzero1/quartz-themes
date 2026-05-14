@@ -986,13 +986,13 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #000 !important;
   --interactive-accent-rgb: 76, 120, 204 !important;
-  --text-error-hover: #c9626a !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
+  --text-error-hover: #c9626a !important;
   --panel-border-color: #18191e !important;
   --cyan: #00b0ff !important;
+  --folder-color: var(--theme-accent-color) !important;
   --font-weight-title: 600 !important;
   --line-height-headers: 1 !important;
-  --folder-color: var(--theme-accent-color) !important;
   --content-search-result: rgba(0, 127, 212, 0.4) !important;
   --content-text-bold: #4ec9b0 !important;
   --content-text-italic: #dcdcaa !important;

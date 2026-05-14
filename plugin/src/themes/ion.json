@@ -36,5 +36,7 @@
   },
   "light": {},
   "extras": null,
-  "classSettings": null
+  "classSettings": null,
+  "selectorImpacts": {},
+  "brokenVarLinks": { "--code-base-l": ["--ion-l-p"] }
 }

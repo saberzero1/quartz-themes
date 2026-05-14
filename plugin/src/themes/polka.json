@@ -112,5 +112,6 @@
     "ss-polka-dots": {
       "general": ".ss-polka-dots {\n--polka-dots: none;\n--ribbon-border: var(--divider-width) solid var(--accent-soft-light);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

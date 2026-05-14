@@ -2346,6 +2346,11 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 191, 142, 241 !important;
+  --background-modifier-form-field-highlighted: var(
+    --noctis-bg-hover
+  ) !important;
+  --blockquote-color: var(--text-muted) !important;
+  --text-highlight-bg-active: rgba(153, 142, 241, 0.5) !important;
   --h1-color: var(--noctis-accent) !important;
   --h2-color: var(--noctis-green) !important;
   --h3-color: var(--noctis-yellow) !important;
@@ -2354,13 +2359,8 @@ body.theme-dark {
   --h6-color: var(--noctis-cyan) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--noctis-red-bright) !important;
-  --background-modifier-form-field-highlighted: var(
-    --noctis-bg-hover
-  ) !important;
   --interactive-before: var(--noctis-fg-muted) !important;
-  --blockquote-color: var(--text-muted) !important;
   --interactive-success: var(--noctis-green) !important;
-  --text-highlight-bg-active: rgba(153, 142, 241, 0.5) !important;
   --blockquote-border: #8767a8 !important;
   --table-header-border: var(--noctis-border) !important;
   --noctis-accent: #bf8ef1 !important;

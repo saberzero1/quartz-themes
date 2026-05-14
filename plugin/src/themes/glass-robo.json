@@ -229,5 +229,6 @@
     "tokyo-night": {
       "dark": "body.tokyo-night {\n--code-background: var(--color-tokyo-night-background);\n--code-normal: var(--color-tokyo-night-foreground);\n--code-comment: var(--color-tokyo-night-faint);\n--code-function: var(--color-tokyo-night-yellow);\n--code-important: var(--color-tokyo-night-orange);\n--code-keyword: var(--color-tokyo-night-purple);\n--code-operator: var(--color-tokyo-night-red);\n--code-property: var(--color-tokyo-night-cyan);\n--code-punctuation: var(--text-muted);\n--code-string: var(--color-tokyo-night-green);\n--code-tag: var(--color-tokyo-night-red);\n--code-value: var(--color-tokyo-night-purple);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

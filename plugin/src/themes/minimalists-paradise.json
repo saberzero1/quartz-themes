@@ -174,5 +174,19 @@
     "tabbed-callout-enable": {
       "general": ".tabbed-callout-enable .markdown-rendered blockquote::before {\ndisplay: none;\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"] {\n--callout-color: var(--interactive-normal);\nposition: relative !important;\nz-index: 10 !important;\nbackground-color: var(--interactive-normal) !important;\noutline: 1px solid var(--divider-color);\nborder-radius: var(--card-radius);\nborder-style: solid;\nborder-color: var(--callout-color);\nborder-width: var(--callout-border-width);\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content {\npadding: 0.25rem;\ndisplay: flex;\nflex-wrap: wrap;\ngap: 0 1rem;\njustify-content: space-evenly;\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-title {\ndisplay: none;\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content p {\nmargin: 0;\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content label>input {\ndisplay: none;\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content label {\nwidth: 100%;\ndisplay: inline-block;\npadding: 0.15rem 0.75ch;\nborder-radius: calc(var(--card-radius) / 2);\nposition: relative;\nwhite-space: nowrap;\ncolor: var(--text-normal);\nbackground-color: var(--color-panel);\ntext-align: center;\nfont-weight: bold;\nfont-size: 1.15rem;\ncursor: pointer;\nborder: 1px solid var(--divider-color);\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content label:has(input:checked) {\ncolor: white;\nbackground-color: var(--color-accent);\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content p:not(:has(label input:checked))+blockquote {\ndisplay: none;\n}\n\n.tabbed-callout-enable [data-callout=\"tabbed\"]>.callout-content>blockquote {\norder: 999;\nflex-basis: 100%;\nwidth: 100%;\nalign-self: stretch;\nbackground-color: transparent;\npadding-left: 0;\nborder: 0;\ntext-align: center;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--custom-color-accent-dark": ["--text-normal", "--color-accent"],
+    "--custom-color-accent-light": ["--text-normal", "--color-accent"],
+    "--background-primary": [
+      "--system-status-background",
+      "--settings-background",
+      "--settings-home-background",
+      "--keyboard-background",
+      "--modal-sidebar-background"
+    ],
+    "--text-selection": ["--ec-codeSelBg", "--ec-uiSelBg"],
+    "--scrollbar-thumb-bg": ["--ec-sbThumbCol"]
   }
 }

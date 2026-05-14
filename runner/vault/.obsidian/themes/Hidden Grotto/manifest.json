@@ -1,9 +1,6 @@
 {
 	"author": "HotAndCold",
 	"name": "Hidden Grotto",
-	"version": "2.0.9",
-	"minAppVersion": "1.0.0",
-	"repo": "HotAndCold245/Hidden-Grotto-Theme",
-	"screenshot": "grotto-screenshot.png",
-	"modes": ["dark", "light"]
+	"version": "2.0.13",
+	"minAppVersion": "1.7.0"
 }

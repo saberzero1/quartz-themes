@@ -1373,8 +1373,8 @@ body.theme-light {
   --code-definition: var(--rose) !important;
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
-  --foam: #56949f !important;
   --gold: #ea9d34 !important;
+  --foam: #56949f !important;
   --highlight-high: #cecacd !important;
   --highlight-low: #f4ede8 !important;
   --highlight-med: #dfdad9 !important;
@@ -2383,8 +2383,8 @@ body.theme-dark {
   --code-definition: var(--rose) !important;
   --surface: #2a273f !important;
   --base: #232136 !important;
-  --foam: #9ccfd8 !important;
   --gold: #f6c177 !important;
+  --foam: #9ccfd8 !important;
   --highlight-high: #56526e !important;
   --highlight-low: #2a283e !important;
   --highlight-med: #44415a !important;

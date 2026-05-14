@@ -36,5 +36,6 @@
   },
   "light": {},
   "extras": null,
-  "classSettings": null
+  "classSettings": null,
+  "selectorImpacts": {}
 }

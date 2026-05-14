@@ -109,5 +109,6 @@
     "font-family-roboto-mono": {
       "general": ".font-family-roboto-mono {\n--default-font: \"Roboto Mono\", \"SF Mono\", \"Cascadia Code\", monospace;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

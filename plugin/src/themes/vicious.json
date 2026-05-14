@@ -67,5 +67,6 @@
     "scrollbar-hide": {
       "general": ".scrollbar-hide *::-webkit-scrollbar {\ndisplay: none;\n}\n\n.scrollbar-hide * {\n-ms-overflow-style: none;\nscrollbar-width: none;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

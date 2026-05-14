@@ -132,5 +132,36 @@
     "composer--ComponentsFilledGallaryCover": {
       "general": ".composer--ComponentsFilledGallaryCover .components--DynamicDataView-PageCard {\npadding: 0px;\noverflow: hidden;\nborder: 0px;\n}\n\n.composer--ComponentsFilledGallaryCover .components--DynamicDataView-PageCardCover {\nborder-radius: initial;\n}\n\n.composer--ComponentsFilledGallaryCover .components--DynamicDataView-PageCard .components--DynamicDataView-PageTitle {\npadding-top: 4px;\npadding-bottom: 4px;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--background-secondary-alt": [
+      "--titlebar-background-focused"
+    ],
+    "--background-primary": [
+      "--system-status-background",
+      "--mobile-sidebar-background",
+      "--settings-background",
+      "--settings-home-background",
+      "--keyboard-background",
+      "--modal-sidebar-background"
+    ],
+    "--background-secondary": [
+      "--mobile-sidebar-background",
+      "--settings-background",
+      "--settings-home-background"
+    ],
+    "--light-primary-hue": [
+      "--primary-hue"
+    ],
+    "--dark-primary-hue": [
+      "--primary-hue"
+    ],
+    "--light-secondary-hue": [
+      "--secondary-hue"
+    ],
+    "--dark-secondary-hue": [
+      "--secondary-hue"
+    ]
   }
 }

@@ -1369,8 +1369,8 @@ body.theme-dark {
   --input-disabled-border-color: transparent !important;
   --input-hover-border-color: black !important;
   --input-unfocused-border-color: transparent !important;
-  --color-light-blue: #849dff !important;
   --input-focus-border-color: Highlight !important;
+  --color-light-blue: #849dff !important;
   --input-focus-outline: 1px solid Canvas !important;
   --color-main-dark: #040812 !important;
   --color-outline: #282828 !important;

@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-05-14T10:13:05.365Z",
+  "sourceTheme": "Monokai Syntax",
+  "fonts": [
+    {
+      "family": "monokai-pro-icons",
+      "style": "normal",
+      "weight": "400",
+      "file": "monokai-pro-icons.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

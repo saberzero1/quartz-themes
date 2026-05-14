@@ -1534,17 +1534,19 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--ctp-accent) !important;
+  --background-modifier-form-field-highlighted: rgb(
+    var(--ctp-crust),
+    22%
+  ) !important;
+  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: rgb(var(--ctp-red), 80%) !important;
-  --background-modifier-form-field-highlighted: rgb(
-    var(--ctp-crust),
-    22%
-  ) !important;
   --vault-name-color: var(--text-normal) !important;
+  --interactive-success: rgb(var(--ctp-green)) !important;
   --ctp-accent: var(--ctp-lavender) !important;
   --ctp-base: 239, 241, 245 !important;
   --ctp-blue: 30, 102, 245 !important;
@@ -1572,8 +1574,6 @@ body.theme-light {
   --ctp-teal: 23, 146, 153 !important;
   --ctp-text: 76, 79, 105 !important;
   --ctp-yellow: 223, 142, 29 !important;
-  --interactive-success: rgb(var(--ctp-green)) !important;
-  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%) !important;
   --text-muted-rgb: var(--ctp-subtext0) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
@@ -2581,12 +2581,14 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--ctp-accent) !important;
-  --text-error-hover: rgb(var(--ctp-red), 80%) !important;
   --background-modifier-form-field-highlighted: rgb(
     var(--ctp-crust),
     22%
   ) !important;
+  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%) !important;
+  --text-error-hover: rgb(var(--ctp-red), 80%) !important;
   --vault-name-color: var(--text-normal) !important;
+  --interactive-success: rgb(var(--ctp-green)) !important;
   --ctp-accent: var(--ctp-lavender) !important;
   --ctp-base: 36, 39, 58 !important;
   --ctp-blue: 138, 173, 244 !important;
@@ -2614,8 +2616,6 @@ body.theme-dark {
   --ctp-teal: 139, 213, 202 !important;
   --ctp-text: 202, 211, 245 !important;
   --ctp-yellow: 238, 212, 159 !important;
-  --interactive-success: rgb(var(--ctp-green)) !important;
-  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%) !important;
   --text-muted-rgb: var(--ctp-subtext0) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;

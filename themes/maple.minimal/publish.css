@@ -1094,6 +1094,7 @@ body.theme-light {
   --code-variable: var(--color-yellow) !important;
   --code-class: var(--color-orange) !important;
   --folder-color: var(--setting-color-dirs, hsl(46, 81%, 45%)) !important;
+  --bg-surface: var(--background-secondary) !important;
   --animation: var(--animation-dur) var(--anim-motion-smooth) !important;
   --accent-active: hsl(
     var(--theme-accent-active-h),
@@ -1136,7 +1137,6 @@ body.theme-light {
   ) !important;
   --base-accent-h: var(--setting-accent-h-light, 35) !important;
   --bg-editor: var(--background-primary) !important;
-  --bg-surface: var(--background-secondary) !important;
   --block-outline-width: var(--size-2-1) !important;
   --blockquote-radius: var(--size-2-3) !important;
   --embed-radius: var(--radius-m) !important;
@@ -2311,6 +2311,7 @@ body.theme-dark {
   --code-variable: var(--color-yellow) !important;
   --code-class: var(--color-orange) !important;
   --folder-color: var(--setting-color-dirs, hsl(46, 81%, 45%)) !important;
+  --bg-surface: var(--background-secondary) !important;
   --animation: var(--animation-dur) var(--anim-motion-smooth) !important;
   --accent-active: hsl(
     var(--theme-accent-active-h),
@@ -2354,7 +2355,6 @@ body.theme-dark {
   --base-accent-h: var(--setting-accent-h-dark, 207) !important;
   --bg-delta-dark: var(--setting-bg-delta-dark, 0%) !important;
   --bg-editor: var(--background-primary) !important;
-  --bg-surface: var(--background-secondary) !important;
   --block-outline-width: var(--size-2-1) !important;
   --blockquote-radius: var(--size-2-3) !important;
   --embed-radius: var(--radius-m) !important;

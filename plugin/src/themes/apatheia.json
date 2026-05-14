@@ -61,5 +61,10 @@
     "Hover": {
       "general": ".Hover * {\ntransition: background-color 0.1s ease-in;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--font-monospace": ["--ec-codeFontFml"],
+    "--font-interface": ["--ec-uiFontFml"]
   }
 }

@@ -70,5 +70,9 @@
     "embed-smooth-scroll": {
       "general": "body.embed-smooth-scroll .internal-embed {\nscroll-behavior: smooth;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--line-height-normal": ["--ec-codeLineHt", "--ec-uiLineHt"]
   }
 }

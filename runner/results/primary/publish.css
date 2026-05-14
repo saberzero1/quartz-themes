@@ -1034,6 +1034,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --active-line-bg: var(--color-base-00) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1048,9 +1049,10 @@ body.theme-light {
   --inline-title-color: var(--color-l-gray-140) !important;
   --table-header-background-hover: var(--table-header-background) !important;
   --vault-name-color: var(--color-l-gray-100) !important;
-  --color-gray: hsla(34, 9.9%, 68.2%, 1) !important;
   --bold-color: var(--color-l-red-30) !important;
   --italic-color: var(--color-l-blue-30) !important;
+  --color-gray: hsla(34, 9.9%, 68.2%, 1) !important;
+  --prompt-results-background: var(--background-primary) !important;
   --link-external-decoration-color: color-mix(
     in srgb,
     var(--link-external-color) var(--link-decoration-opacity),
@@ -1060,6 +1062,7 @@ body.theme-light {
   --color-gray-rgb: 182, 175, 166 !important;
   --inline-code-color: var(--color-l-red-10) !important;
   --embed-background: var(--embed-bg-color-mix) !important;
+  --button-shadow: var(--input-shadow) !important;
   --h1-bg-color: transparent !important;
   --h2-bg-color: transparent !important;
   --h3-bg-color: transparent !important;
@@ -1082,7 +1085,6 @@ body.theme-light {
   --callout-title-color: var(--text-normal);
   --bold-italic-color: var(--color-l-gray-140) !important;
   --strikethrough-color: var(--color-l-gray-80) !important;
-  --active-line-bg: var(--color-base-00) !important;
   --background-modifier-warning: var(--color-l-orange-30) !important;
   --background-modifier-warning-hover: var(--color-l-orange-20) !important;
   --link-unresolved-decoration-color-hover: color-mix(
@@ -1091,6 +1093,7 @@ body.theme-light {
     transparent
   ) !important;
   --kanban-lane-border: 1px solid var(--color-l-gray-40) !important;
+  --slider-thumb-bg: var(--color-l-gray-10) !important;
   --h1-text-align: left !important;
   --h2-text-align: left !important;
   --h3-text-align: left !important;
@@ -1145,7 +1148,16 @@ body.theme-light {
     --background-modifier-error-hover
   ) !important;
   --file-header-border-color: var(--background-modifier-border) !important;
-  --button-shadow: var(--input-shadow) !important;
+  --progress-color-1: var(--color-l-red-20) !important;
+  --progress-color-2: var(--color-l-orange-20) !important;
+  --progress-color-3: var(--color-l-yellow-20) !important;
+  --progress-color-4: var(--color-l-green-30) !important;
+  --progress-color-5: linear-gradient(
+    45deg,
+    var(--progress-gradient-1),
+    var(--progress-gradient-2),
+    var(--progress-gradient-3)
+  ) !important;
   --button-shadow-hover: var(--input-shadow-hover) !important;
   --font-ui-smallest: 11px !important;
   --prompt-input-background: var(--background-primary) !important;
@@ -1776,16 +1788,6 @@ body.theme-light {
     calc(var(--size-4-1) + var(--button-inset-shadow-size)) var(--size-4-1) !important;
   --pmr-cal-td-radius: calc(var(--radius-s) + 1px) !important;
   --progress-background: var(--color-l-gray-40) !important;
-  --progress-color-1: var(--color-l-red-20) !important;
-  --progress-color-2: var(--color-l-orange-20) !important;
-  --progress-color-3: var(--color-l-yellow-20) !important;
-  --progress-color-4: var(--color-l-green-30) !important;
-  --progress-color-5: linear-gradient(
-    45deg,
-    var(--progress-gradient-1),
-    var(--progress-gradient-2),
-    var(--progress-gradient-3)
-  ) !important;
   --progress-gradient-1: var(--color-l-red-10) !important;
   --progress-gradient-2: var(--color-l-yellow-10) !important;
   --progress-gradient-3: var(--color-l-blue-10) !important;
@@ -1795,7 +1797,6 @@ body.theme-light {
     var(--background-primary) 60%,
     var(--background-secondary)
   ) !important;
-  --prompt-results-background: var(--background-primary) !important;
   --prompt-separator-border: 1px solid var(--color-l-gray-40) !important;
   --prompt-suggestion-color: var(--color-l-gray-90) !important;
   --prompt-suggestion-color-selected: var(--color-l-gray-130) !important;
@@ -1839,7 +1840,6 @@ body.theme-light {
   --settings-nav-item-text-color-hover: var(--color-l-gray-130) !important;
   --sidebar-nav-icon: var(--icon-s) !important;
   --sidebar-tab-icon: var(--icon-s) !important;
-  --slider-thumb-bg: var(--color-l-gray-10) !important;
   --status-bar-floating-bg: var(--color-l-gray-30) !important;
   --status-bar-floating-offset: var(--size-2-2) !important;
   --status-bar-item-clickable-color-active: var(--color-l-gray-70) !important;
@@ -3235,6 +3235,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --active-line-bg: var(--color-base-20) !important;
   --h1-color: var(--color-d-gray-10) !important;
   --h2-color: var(--color-d-gray-10) !important;
   --h3-color: var(--color-d-gray-10) !important;
@@ -3244,9 +3245,10 @@ body.theme-dark {
   --inline-title-color: var(--color-d-gray-10) !important;
   --table-header-background-hover: var(--table-header-background) !important;
   --vault-name-color: var(--color-d-gray-40) !important;
-  --color-gray: rgb(166, 150, 141) !important;
   --bold-color: var(--color-d-red-30) !important;
   --italic-color: var(--color-d-blue-20) !important;
+  --color-gray: rgb(166, 150, 141) !important;
+  --prompt-results-background: var(--background-primary) !important;
   --link-external-decoration-color: color-mix(
     in srgb,
     var(--link-external-color) var(--link-decoration-opacity),
@@ -3256,6 +3258,7 @@ body.theme-dark {
   --color-gray-rgb: 166, 150, 142 !important;
   --inline-code-color: var(--color-d-red-20) !important;
   --embed-background: var(--embed-bg-color-mix) !important;
+  --button-shadow: var(--input-shadow) !important;
   --h1-bg-color: transparent !important;
   --h2-bg-color: transparent !important;
   --h3-bg-color: transparent !important;
@@ -3278,7 +3281,6 @@ body.theme-dark {
   --callout-title-color: var(--text-normal);
   --bold-italic-color: var(--color-d-gray-10) !important;
   --strikethrough-color: var(--color-d-gray-50) !important;
-  --active-line-bg: var(--color-base-20) !important;
   --background-modifier-warning: var(--color-d-orange-40) !important;
   --background-modifier-warning-hover: var(--color-d-orange-30) !important;
   --link-unresolved-decoration-color-hover: color-mix(
@@ -3288,6 +3290,7 @@ body.theme-dark {
   ) !important;
   --kanban-lane-border: 1px solid
     color-mix(in srgb, var(--color-d-gray-90) 40%, var(--color-d-gray-100)) !important;
+  --slider-thumb-bg: var(--color-d-gray-20) !important;
   --h1-text-align: left !important;
   --h2-text-align: left !important;
   --h3-text-align: left !important;
@@ -3344,7 +3347,16 @@ body.theme-dark {
     --background-modifier-error-hover
   ) !important;
   --file-header-border-color: var(--background-modifier-border) !important;
-  --button-shadow: var(--input-shadow) !important;
+  --progress-color-1: var(--color-d-red-30) !important;
+  --progress-color-2: var(--color-d-orange-30) !important;
+  --progress-color-3: var(--color-d-yellow-30) !important;
+  --progress-color-4: var(--color-d-green-40) !important;
+  --progress-color-5: linear-gradient(
+    45deg,
+    var(--progress-gradient-1),
+    var(--progress-gradient-2),
+    var(--progress-gradient-3)
+  ) !important;
   --button-shadow-hover: var(--input-shadow-hover) !important;
   --font-ui-smallest: 11px !important;
   --prompt-input-background: var(--background-primary) !important;
@@ -3975,16 +3987,6 @@ body.theme-dark {
     calc(var(--size-4-1) + var(--button-inset-shadow-size)) var(--size-4-1) !important;
   --pmr-cal-td-radius: calc(var(--radius-s) + 1px) !important;
   --progress-background: var(--color-d-gray-120) !important;
-  --progress-color-1: var(--color-d-red-30) !important;
-  --progress-color-2: var(--color-d-orange-30) !important;
-  --progress-color-3: var(--color-d-yellow-30) !important;
-  --progress-color-4: var(--color-d-green-40) !important;
-  --progress-color-5: linear-gradient(
-    45deg,
-    var(--progress-gradient-1),
-    var(--progress-gradient-2),
-    var(--progress-gradient-3)
-  ) !important;
   --progress-gradient-1: var(--color-d-red-30) !important;
   --progress-gradient-2: var(--color-d-yellow-20) !important;
   --progress-gradient-3: var(--color-d-blue-20) !important;
@@ -3994,7 +3996,6 @@ body.theme-dark {
     var(--editor-bg-color) 60%,
     var(--background-secondary)
   ) !important;
-  --prompt-results-background: var(--background-primary) !important;
   --prompt-separator-border: 1px solid var(--color-d-gray-90) !important;
   --prompt-suggestion-color: var(--color-d-gray-40) !important;
   --prompt-suggestion-color-selected: var(--color-d-gray-20) !important;
@@ -4035,7 +4036,6 @@ body.theme-dark {
   --settings-nav-item-text-color-hover: var(--color-d-gray-20) !important;
   --sidebar-nav-icon: var(--icon-s) !important;
   --sidebar-tab-icon: var(--icon-s) !important;
-  --slider-thumb-bg: var(--color-d-gray-20) !important;
   --status-bar-floating-bg: var(--color-d-gray-110) !important;
   --status-bar-floating-offset: var(--size-2-2) !important;
   --status-bar-item-clickable-color-active: var(--color-d-gray-60) !important;

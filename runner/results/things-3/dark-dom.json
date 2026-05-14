@@ -30,9 +30,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -43,9 +43,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -72,9 +72,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -103,9 +103,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -116,9 +116,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -145,9 +145,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -176,9 +176,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -189,152 +189,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "classes": ["code"],
-            "attrs": {},
-            "styles": {
-              "color": "rgb(192, 192, 192)",
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(192, 192, 192) rgb(192, 192, 192) rgb(192, 192, 192) rgba(0, 0, 0, 0.2)",
-              "fill": "rgb(0, 0, 0)",
-              "stroke": "none"
-            },
-            "childCount": 6,
-            "children": [
-              {
-                "tag": "span",
-                "classes": [],
-                "attrs": {},
-                "styles": {
-                  "color": "rgb(250, 153, 205)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(250, 153, 205)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "span",
-                "classes": [],
-                "attrs": {},
-                "styles": {
-                  "color": "rgb(192, 192, 192)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(192, 192, 192)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "span",
-                "classes": [],
-                "attrs": {},
-                "styles": {
-                  "color": "rgb(250, 153, 205)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(250, 153, 205)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "span",
-                "classes": [],
-                "attrs": {},
-                "styles": {
-                  "color": "rgb(192, 192, 192)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(192, 192, 192)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "span",
-                "classes": [],
-                "attrs": {},
-                "styles": {
-                  "color": "rgb(253, 211, 27)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(253, 211, 27)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "span",
-                "classes": [],
-                "attrs": {},
-                "styles": {
-                  "color": "rgb(192, 192, 192)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(192, 192, 192)",
-                  "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
-                },
-                "childCount": 0,
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "div",
-        "classes": ["ec-line"],
-        "attrs": {},
-        "styles": {
-          "color": "rgb(192, 192, 192)",
-          "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(192, 192, 192)",
-          "fill": "rgb(0, 0, 0)",
-          "stroke": "none"
-        },
-        "childCount": 2,
-        "children": [
-          {
-            "tag": "div",
-            "classes": ["gutter"],
-            "attrs": {},
-            "styles": {
-              "color": "rgb(102, 102, 102)",
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
-              "fill": "rgb(0, 0, 0)",
-              "stroke": "none"
-            },
-            "childCount": 1,
-            "children": [
-              {
-                "tag": "div",
-                "classes": ["ln"],
-                "attrs": { "aria-hidden": "true" },
-                "styles": {
-                  "color": "rgb(102, 102, 102)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -462,9 +319,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -475,9 +332,152 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "classes": ["code"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(192, 192, 192)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(192, 192, 192) rgb(192, 192, 192) rgb(192, 192, 192) rgba(0, 0, 0, 0.2)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 6,
+            "children": [
+              {
+                "tag": "span",
+                "classes": [],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(250, 153, 205)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(250, 153, 205)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "span",
+                "classes": [],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(192, 192, 192)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(192, 192, 192)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "span",
+                "classes": [],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(250, 153, 205)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(250, 153, 205)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "span",
+                "classes": [],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(192, 192, 192)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(192, 192, 192)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "span",
+                "classes": [],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(253, 211, 27)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(253, 211, 27)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "span",
+                "classes": [],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(192, 192, 192)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(192, 192, 192)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "classes": ["ec-line"],
+        "attrs": {},
+        "styles": {
+          "color": "rgb(192, 192, 192)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(192, 192, 192)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 2,
+        "children": [
+          {
+            "tag": "div",
+            "classes": ["gutter"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(128, 127, 127)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(128, 127, 127)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 1,
+            "children": [
+              {
+                "tag": "div",
+                "classes": ["ln"],
+                "attrs": { "aria-hidden": "true" },
+                "styles": {
+                  "color": "rgb(128, 127, 127)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -661,9 +661,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -674,9 +674,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -832,9 +832,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -845,9 +845,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -905,9 +905,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -918,9 +918,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1090,9 +1090,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -1103,9 +1103,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1248,9 +1248,9 @@
             "classes": ["gutter"],
             "attrs": {},
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(128, 127, 127)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(128, 127, 127)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -1261,9 +1261,9 @@
                 "classes": ["ln"],
                 "attrs": { "aria-hidden": "true" },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1460,11 +1460,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(102, 102, 102)",
+                          "color": "rgb(128, 127, 127)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(102, 102, 102)",
+                          "borderColor": "rgb(128, 127, 127)",
                           "fill": "none",
-                          "stroke": "rgb(102, 102, 102)"
+                          "stroke": "rgb(128, 127, 127)"
                         },
                         "childCount": 1,
                         "children": [
@@ -1473,11 +1473,11 @@
                             "classes": [],
                             "attrs": { "d": "M3 8L12 17L21 8" },
                             "styles": {
-                              "color": "rgb(102, 102, 102)",
+                              "color": "rgb(128, 127, 127)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(102, 102, 102)",
+                              "borderColor": "rgb(128, 127, 127)",
                               "fill": "none",
-                              "stroke": "rgb(102, 102, 102)"
+                              "stroke": "rgb(128, 127, 127)"
                             },
                             "childCount": 0,
                             "children": []
@@ -1992,11 +1992,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(102, 102, 102)",
+                          "color": "rgb(128, 127, 127)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(102, 102, 102)",
+                          "borderColor": "rgb(128, 127, 127)",
                           "fill": "none",
-                          "stroke": "rgb(102, 102, 102)"
+                          "stroke": "rgb(128, 127, 127)"
                         },
                         "childCount": 1,
                         "children": [
@@ -2005,11 +2005,11 @@
                             "classes": [],
                             "attrs": { "d": "M3 8L12 17L21 8" },
                             "styles": {
-                              "color": "rgb(102, 102, 102)",
+                              "color": "rgb(128, 127, 127)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(102, 102, 102)",
+                              "borderColor": "rgb(128, 127, 127)",
                               "fill": "none",
-                              "stroke": "rgb(102, 102, 102)"
+                              "stroke": "rgb(128, 127, 127)"
                             },
                             "childCount": 0,
                             "children": []
@@ -2289,11 +2289,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(102, 102, 102)",
+                          "color": "rgb(128, 127, 127)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(102, 102, 102)",
+                          "borderColor": "rgb(128, 127, 127)",
                           "fill": "none",
-                          "stroke": "rgb(102, 102, 102)"
+                          "stroke": "rgb(128, 127, 127)"
                         },
                         "childCount": 1,
                         "children": [
@@ -2302,11 +2302,11 @@
                             "classes": [],
                             "attrs": { "d": "M3 8L12 17L21 8" },
                             "styles": {
-                              "color": "rgb(102, 102, 102)",
+                              "color": "rgb(128, 127, 127)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(102, 102, 102)",
+                              "borderColor": "rgb(128, 127, 127)",
                               "fill": "none",
-                              "stroke": "rgb(102, 102, 102)"
+                              "stroke": "rgb(128, 127, 127)"
                             },
                             "childCount": 0,
                             "children": []
@@ -3091,11 +3091,11 @@
                   "stroke-linejoin": "round"
                 },
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(128, 127, 127)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(128, 127, 127)",
                   "fill": "none",
-                  "stroke": "rgb(102, 102, 102)"
+                  "stroke": "rgb(128, 127, 127)"
                 },
                 "childCount": 1,
                 "children": [
@@ -3104,11 +3104,11 @@
                     "classes": [],
                     "attrs": { "d": "M3 8L12 17L21 8" },
                     "styles": {
-                      "color": "rgb(102, 102, 102)",
+                      "color": "rgb(128, 127, 127)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(102, 102, 102)",
+                      "borderColor": "rgb(128, 127, 127)",
                       "fill": "none",
-                      "stroke": "rgb(102, 102, 102)"
+                      "stroke": "rgb(128, 127, 127)"
                     },
                     "childCount": 0,
                     "children": []
@@ -3375,9 +3375,9 @@
             "classes": ["metadata-add-button", "text-icon-button"],
             "attrs": { "tabindex": "0" },
             "styles": {
-              "color": "rgb(102, 102, 102)",
+              "color": "rgb(131, 138, 149)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(102, 102, 102)",
+              "borderColor": "rgb(131, 138, 149)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -3388,9 +3388,9 @@
                 "classes": ["text-button-icon"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(131, 138, 149)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(131, 138, 149)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -3411,11 +3411,11 @@
                       "stroke-linejoin": "round"
                     },
                     "styles": {
-                      "color": "rgb(102, 102, 102)",
+                      "color": "rgb(131, 138, 149)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(102, 102, 102)",
+                      "borderColor": "rgb(131, 138, 149)",
                       "fill": "none",
-                      "stroke": "rgb(102, 102, 102)"
+                      "stroke": "rgb(131, 138, 149)"
                     },
                     "childCount": 2,
                     "children": [
@@ -3424,11 +3424,11 @@
                         "classes": [],
                         "attrs": { "d": "M5 12h14" },
                         "styles": {
-                          "color": "rgb(102, 102, 102)",
+                          "color": "rgb(131, 138, 149)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(102, 102, 102)",
+                          "borderColor": "rgb(131, 138, 149)",
                           "fill": "none",
-                          "stroke": "rgb(102, 102, 102)"
+                          "stroke": "rgb(131, 138, 149)"
                         },
                         "childCount": 0,
                         "children": []
@@ -3438,11 +3438,11 @@
                         "classes": [],
                         "attrs": { "d": "M12 5v14" },
                         "styles": {
-                          "color": "rgb(102, 102, 102)",
+                          "color": "rgb(131, 138, 149)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(102, 102, 102)",
+                          "borderColor": "rgb(131, 138, 149)",
                           "fill": "none",
-                          "stroke": "rgb(102, 102, 102)"
+                          "stroke": "rgb(131, 138, 149)"
                         },
                         "childCount": 0,
                         "children": []
@@ -3456,9 +3456,9 @@
                 "classes": ["text-button-label"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(102, 102, 102)",
+                  "color": "rgb(131, 138, 149)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(102, 102, 102)",
+                  "borderColor": "rgb(131, 138, 149)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },

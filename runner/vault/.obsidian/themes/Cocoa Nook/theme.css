@@ -32,12 +32,31 @@
     --graph-line: #a8a8a8;
     --hr-color: #bba590;
     --search-result-background: #ebe5db;
+    --callout-default: 139, 81, 46;
+    --metadata-border-color: #d3cabe;
+	--metadata-property-background-hover: #dfd5c8;
+	--metadata-label-background-active: #dbd0c2;
+	--metadata-input-background-active: #dbd0c2;
+    --tag-color: #7D6043;
+	--tag-color-hover: #ffffff;
+	--tag-background: transparent;
+	--tag-background-hover: #a0856d;
+    --tag-border-color: #7D6043;
+    --tag-border-color-hover: transparent;
+    --link-color: #7f58f3;
+    --link-color-hover: #5a28f0;
+    --link-unresolved-color: #8A5CF5;
+    --link-external-color: #9c7ef6;
+    --link-external-color-hover: #7f58f3;
+    --canvas-background: #ebe5db;
+    --canvas-dot-pattern: #C8C3BB;
 }
 
 .theme-dark {
     --background-primary: #242424;
     --background-primary-alt: #262626;
     --text-highlight-bg: color-mix(in srgb, var(--color-green) 50%, black);
+    --callout-default: 139, 81, 46;
 }
 
 .cm-content span.cm-inline-code,
@@ -53,6 +72,9 @@
 
 body {
 	--blockquote-border-thickness: 5px;
+    --tag-border-width: 1px;
+    --tag-padding-x: 5px;
+    --tag-padding-y: 1px;
 }
 
 h1,
@@ -88,22 +110,6 @@ h2::after,
 .markdown-source-view .cm-hmd-barelink {
     color: var(--color-orange);
     text-decoration: underline;
-    text-decoration-color: color-mix(in srgb, var(--color-orange) 90%, transparent);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-}
-
-.theme-light .markdown-source-view span.cm-strikethrough,
-.theme-light .markdown-preview-view del {
-    text-decoration-color: color-mix(in srgb, var(--icon-color) 70%, transparent);
-    text-decoration-thickness: 2px;
-}
-
-.markdown-source-view U,
-.markdown-preview-view U {
-    text-decoration-color: color-mix(in srgb, var(--interactive-accent-hover) 70%, transparent);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
 }
 
 .markdown-source-view kbd,
@@ -140,14 +146,6 @@ h2::after,
 	display: none;
 }
 
-.theme-light {
-    --callout-default: 139, 81, 46;
-}
-
-.theme-dark {
-    --callout-default: 139, 81, 46;
-}
-
 .callout[data-callout="ai"] {
 	--callout-color: 150, 150, 150;
 	--callout-icon: lucide-bot;
@@ -155,13 +153,6 @@ h2::after,
 
 .callout {
 	border-radius: 10px;
-}
-
-.theme-light {
-	--metadata-border-color: #d3cabe;
-	--metadata-property-background-hover: #dfd5c8;
-	--metadata-label-background-active: #dbd0c2;
-	--metadata-input-background-active: #dbd0c2;
 }
 
 .markdown-preview-view .metadata-container,
@@ -200,29 +191,6 @@ h2::after,
     overflow: auto;
 }
 
-.theme-light {
-    --tag-color: #7D6043;
-	--tag-color-hover: #ffffff;
-	--tag-background: transparent;
-	--tag-background-hover: #a0856d;
-    --tag-border-color: #7D6043;
-    --tag-border-color-hover: transparent;
-}
-
-body {
-    --tag-border-width: 1px;
-    --tag-padding-x: 5px;
-    --tag-padding-y: 1px;
-}
-
-.theme-light {
-    --link-color: #7f58f3;
-    --link-color-hover: #5a28f0;
-    --link-unresolved-color: #8A5CF5;
-    --link-external-color: #9c7ef6;
-    --link-external-color-hover: #7f58f3;
-}
-
 .theme-light .internal-link:not(.token),
 .theme-light :not(.cm-link):not(.cm-url)>.cm-underline {
     background-color: #F4B885;
@@ -256,14 +224,12 @@ body {
     background: none;
     color: #8B512E;
     text-decoration: underline;
-    text-underline-offset: 2px;
 }
 
 .theme-light .bases-view .internal-link {
     background: none;
     color: #5d4732;
     text-decoration: underline;
-    text-underline-offset: 2px;
 }
 
 .theme-light .block-language-dataview .internal-link:hover,
@@ -274,7 +240,6 @@ body {
     background: none;
     color: #a55f1d;
     text-decoration: underline;
-    text-underline-offset: 2px;
 }
 
 .internal-link[href*=".avif"]::before,
@@ -462,11 +427,6 @@ content: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' fill='none' xmlns='h
 .theme-dark .markdown-source-view span.cm-formatting-task {
     color: var(--color-green);
     font-weight: 700;
-}
-
-.theme-light {
-    --canvas-background: #ebe5db;
-    --canvas-dot-pattern: #C8C3BB;
 }
 
 .canvas {

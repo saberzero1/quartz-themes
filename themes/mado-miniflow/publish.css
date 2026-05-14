@@ -1382,17 +1382,18 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--color-muted) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --blockquote-color: var(--color-muted) !important;
   --italic-color: var(--color-italic) !important;
   --inline-code-color: var(--color-red) !important;
   --window-radius: 23px !important;
   --window-shadow: 0 0 9px var(--color-base-shadow-hover) !important;
   --border: 1px solid var(--tab-outline-color) !important;
+  --color-italic: hsla(215, 43%, 63%, 1) !important;
   --background-fifth: var(--color-base-20-0) !important;
   --background-fourth: var(--color-base-00-0) !important;
   --color-base-00-0: hsla(
@@ -1439,7 +1440,6 @@ body.theme-light {
   --color-base-shadow: hsla(212, 17%, 80%, 0.2) !important;
   --color-base-shadow-hover: hsla(212, 17%, 80%, 0.3) !important;
   --color-highlight: var(--text-normal) !important;
-  --color-italic: hsla(215, 43%, 63%, 1) !important;
   --color-muted: var(--color-base-70) !important;
   --panel-radius: 8px !important;
   --sidebar-size-left: 270px !important;
@@ -2449,6 +2449,7 @@ body.theme-dark {
   --window-radius: 23px !important;
   --window-shadow: 0 0 9px var(--color-base-shadow-hover) !important;
   --border: 1px solid var(--tab-outline-color) !important;
+  --color-italic: hsla(215, 33%, 60%, 1) !important;
   --background-fifth: var(--color-base-20-0) !important;
   --background-fourth: var(--color-base-00-0) !important;
   --color-base-00-0: hsla(
@@ -2495,7 +2496,6 @@ body.theme-dark {
   --color-base-shadow: hsla(207, 10%, 10%, 0.1) !important;
   --color-base-shadow-hover: hsla(212, 17%, 0%, 0.3) !important;
   --color-highlight: hsla(45, 63%, 63%, 1) !important;
-  --color-italic: hsla(215, 33%, 60%, 1) !important;
   --color-muted: hsl(218, 17%, 62%) !important;
   --panel-radius: 8px !important;
   --sidebar-size-left: 270px !important;

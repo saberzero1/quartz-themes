@@ -923,7 +923,32 @@ function buildModeCSS(
   sidecars = {},
   diffData = null,
 ) {
-  const { varGraph, provenance } = sidecars;
+  const { varGraph, provenance, declaredVarUses, styleSettingsTargetVars } =
+    sidecars;
+
+  function declaredValueReferencesTarget(declaredValue) {
+    if (!styleSettingsTargetVars || styleSettingsTargetVars.size === 0)
+      return false;
+    if (!declaredValue || !declaredValue.includes("var(")) return false;
+    const varRefRe = /var\(\s*(--[a-zA-Z0-9_-]+)/g;
+    let match;
+    while ((match = varRefRe.exec(declaredValue)) !== null) {
+      const refName = match[1];
+      if (styleSettingsTargetVars.has(refName)) return true;
+      if (varGraph) {
+        const deps = varGraph[refName];
+        if (deps) {
+          for (const refs of Object.values(deps)) {
+            for (const ref of refs) {
+              if (styleSettingsTargetVars.has(ref)) return true;
+            }
+          }
+        }
+      }
+    }
+    return false;
+  }
+
   const aspectSelectors = new Map();
   const baseVars = {};
 
@@ -1074,6 +1099,17 @@ function buildModeCSS(
       if (prop === "font-family" && normalized.includes("??")) {
         normalized = sanitizeFontValue(normalized);
         if (!normalized) continue;
+      }
+      if (
+        declaredVarUses &&
+        !prop.startsWith("--") &&
+        !normalized.includes("var(")
+      ) {
+        const obsidianSel = mapping.obsidianSelector;
+        const declared = declaredVarUses[obsidianSel]?.[prop];
+        if (declared && declaredValueReferencesTarget(declared)) {
+          normalized = declared;
+        }
       }
       let selectorMap = aspectSelectors.get(aspect);
       if (!selectorMap) {
@@ -1643,6 +1679,31 @@ async function main() {
       )
       .filter(Boolean);
 
+    const styleSettingsTargetVars = new Set();
+    for (const s of allStyleSettings) {
+      if (!s?.type || !s?.id) continue;
+      if (s.type.startsWith("variable-") || s.type === "color-gradient") {
+        styleSettingsTargetVars.add(`--${s.id}`);
+        if (
+          s.format &&
+          (s.format.endsWith("-split") || s.format === "hsl-split-decimal")
+        ) {
+          const suffixes = s.format.startsWith("hsl")
+            ? ["-h", "-s", "-l"]
+            : ["-r", "-g", "-b"];
+          if (s.opacity) suffixes.push("-a");
+          for (const suffix of suffixes) {
+            styleSettingsTargetVars.add(`--${s.id}${suffix}`);
+          }
+        }
+        if (Array.isArray(s["alt-format"])) {
+          for (const alt of s["alt-format"]) {
+            if (alt?.id) styleSettingsTargetVars.add(`--${alt.id}`);
+          }
+        }
+      }
+    }
+
     let effectiveConfig = config;
     let effectiveAspectMap = aspectMap;
     if (autoConfigModule) {
@@ -1680,6 +1741,10 @@ async function main() {
       runtimeEvidence: await readJsonIfExists(
         path.join(themeDir, "dark-style-settings-runtime-evidence.json"),
       ),
+      declaredVarUses: await readJsonIfExists(
+        path.join(themeDir, "dark-declared-var-uses.json"),
+      ),
+      styleSettingsTargetVars,
     };
     const lightSidecars = {
       varGraph: await readJsonIfExists(
@@ -1694,6 +1759,10 @@ async function main() {
       runtimeEvidence: await readJsonIfExists(
         path.join(themeDir, "light-style-settings-runtime-evidence.json"),
       ),
+      declaredVarUses: await readJsonIfExists(
+        path.join(themeDir, "light-declared-var-uses.json"),
+      ),
+      styleSettingsTargetVars,
     };
 
     const darkAspectCSS = hasDark
@@ -1815,6 +1884,39 @@ async function main() {
       runtimeEvidenceRecords,
     });
 
+    const brokenVarLinks = {};
+    if (styleSettingsTargetVars.size > 0) {
+      const emittedCss =
+        flattenAspectCssToString(darkAspectCSS) +
+        "\n" +
+        flattenAspectCssToString(lightAspectCSS);
+      for (const [modeName, modeSidecars] of [
+        ["dark", darkSidecars],
+        ["light", lightSidecars],
+      ]) {
+        const vg = modeSidecars.varGraph;
+        if (!vg) continue;
+        for (const [varName, selectorRefs] of Object.entries(vg)) {
+          for (const refs of Object.values(selectorRefs)) {
+            for (const ref of refs) {
+              if (!styleSettingsTargetVars.has(ref)) continue;
+              const chainPattern = `${varName}:`;
+              const varRefPattern = `var(${ref}`;
+              const hasLiveChain =
+                emittedCss.includes(chainPattern) &&
+                emittedCss.includes(varRefPattern);
+              if (!hasLiveChain) {
+                if (!brokenVarLinks[ref]) brokenVarLinks[ref] = [];
+                if (!brokenVarLinks[ref].includes(varName)) {
+                  brokenVarLinks[ref].push(varName);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     // Extract and write diagnostics, then remove from aspectCSS
     for (const [mode, aspectCSS] of [
       ["dark", darkAspectCSS],
@@ -1842,6 +1944,7 @@ async function main() {
       extras,
       classSettings,
       selectorImpacts,
+      ...(Object.keys(brokenVarLinks).length > 0 ? { brokenVarLinks } : {}),
     });
 
     await fs.writeFile(outputPath, moduleContent, "utf8");

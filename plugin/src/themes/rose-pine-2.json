@@ -95,5 +95,6 @@
     "rp-accent-foam": {
       "general": ".rp-accent-foam {\n--rp-accent: var(--rp-foam)\n;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

@@ -1365,13 +1365,13 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: #5c73f2 !important;
   --interactive-accent-rgb: 123, 108, 217 !important;
+  --background-modifier-form-field-highlighted: #fff !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: #990000 !important;
-  --background-modifier-form-field-highlighted: #fff !important;
 }
 
 body.theme-dark {
@@ -2354,8 +2354,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #000 !important;
   --interactive-accent-rgb: 72, 54, 153 !important;
-  --text-error-hover: #990000 !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
+  --text-error-hover: #990000 !important;
 }
 
 body {

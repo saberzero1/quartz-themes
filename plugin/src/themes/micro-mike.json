@@ -55,5 +55,46 @@
     "boldFolders": {
       "general": ".boldFolders .nav-folder-title .tree-item-inner.nav-folder-title-content {\nfont-weight: 700;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--colorIntensity": [
+      "--icon-color",
+      "--icon-color-hover",
+      "--icon-color-active",
+      "--icon-color-focused",
+      "--levelLayer",
+      "--levelHover",
+      "--separatorColor",
+      "--bottom_a",
+      "--bottom_b",
+      "--level1",
+      "--level1_a",
+      "--level1_b",
+      "--level2",
+      "--level2_a",
+      "--level2_b",
+      "--level3",
+      "--level3_a",
+      "--lineColor",
+      "--buttonLayer",
+      "--buttonLayerHover"
+    ],
+    "--linkBrightnessAdditive": ["--link-color", "--link-color-hover"],
+    "--ribbon-width": ["--frame-left-space"],
+    "--text-normal": [
+      "--text-color",
+      "--icon-color-focus",
+      "--ec-uiSelFg",
+      "--ec-frm-edActTabFg",
+      "--ec-frm-trmTtbFg",
+      "--ec-frm-inlBtnFg"
+    ],
+    "--colorIntensityBevel": [
+      "--bevelBright1",
+      "--bevelBright2",
+      "--bevelDark1",
+      "--bevelDark2"
+    ]
   }
 }

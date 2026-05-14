@@ -1349,10 +1349,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --text-error-hover: #db6088 !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
-  --interactive-success: #8edf5f !important;
   --text-highlight-bg-active: rgb(135, 255, 95) !important;
+  --text-error-hover: #db6088 !important;
+  --interactive-success: #8edf5f !important;
   --text-muted-rgb: 153, 153, 153 !important;
   --table-text-color: #e1d6f8 !important;
   --scrollbar-active-th: rgba(255, 255, 255, 0.2) !important;

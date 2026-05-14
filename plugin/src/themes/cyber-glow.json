@@ -173,5 +173,11 @@
     "CG-FileTreeShade2": {
       "general": ".CG-FileTreeShade2 .tree-item-inner:hover {\nbackground-color: var(--hover-bg2);\nbox-shadow: inset 0em 0em 1em var(--hover-color);\nborder-radius: var(--radius-s);\ntransition:  animation 0.1s, color 0.1s;\nborder-radius: 5px;\ncolor: var(--custom-hovercolor);\n}\n\n.CG-FileTreeShade2 .tree-item-inner {\nbackground: var(--background-settings-alt);\npadding: 10px 10px 10px 5px;\nmargin-bottom: 5px;\nclip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 12px, 100% 100%, 12px 100%, 0% calc(100% - 12px));\nz-index: 0;\nwidth: 100%;\n}\n\n.CG-FileTreeShade2 .tree-item-self.nav-file-title.tappable.is-clickable {\npadding: 0px;\nmargin:0px;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--CG-workspace-background-image-custom-option": [
+      "--CGworkspace-background-image"
+    ]
   }
 }

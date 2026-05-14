@@ -1356,8 +1356,8 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 68, 74, 115 !important;
-  --default-font: "Inter", sans-serif !important;
   --background-modifier-form-field-highlighted: #1e2030 !important;
+  --default-font: "Inter", sans-serif !important;
   --background-code: #222436 !important;
   --background-code-preview: #222436 !important;
   --background-preview: #222436 !important;

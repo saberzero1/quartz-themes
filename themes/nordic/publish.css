@@ -1064,11 +1064,11 @@ body.theme-light {
     var(--accent-l)
   ) !important;
   --inline-title-font: var(--header-font) !important;
+  --table-header-font: var(--header-font) !important;
   --frost0: #8fbcbb !important;
   --frost2: #81a1c1 !important;
   --header-font: "Norwester" !important;
   --header-color: var(--accent-color) !important;
-  --table-header-font: var(--header-font) !important;
   --dark0: #2e3440 !important;
   --dark1: #3b4252 !important;
   --dark2: #434c5e !important;

@@ -1401,6 +1401,20 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--accent-rgb) !important;
+  --background-modifier-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 10%)
+  ) !important;
+  --icon-hex: 000 !important;
+  --quote-opening-modifier: var(--shade-70-opaque) !important;
+  --icon-muted: 0.4 !important;
+  --line-height: 1.5 !important;
+  --line-width: 600px !important;
+  --max-width: 100% !important;
+  --nested-padding: 3.5% !important;
+  --normal-weight: 400 !important;
+  --text-highlight-bg-active: rgba(0, 0, 0, 0.1) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1408,21 +1422,8 @@ body.theme-light {
   --shadow-edges: 0 0 transparent !important;
   --opacity-translucency: 1 !important;
   --text-error-hover: rgb(var(--red-rgb)) !important;
-  --background-modifier-accent: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 10%)
-  ) !important;
-  --quote-opening-modifier: var(--shade-70-opaque) !important;
-  --text-highlight-bg-active: rgba(0, 0, 0, 0.1) !important;
   --accent-d: 52% !important;
   --header-width: 42px !important;
-  --icon-hex: 000 !important;
-  --icon-muted: 0.4 !important;
-  --line-height: 1.5 !important;
-  --line-width: 600px !important;
-  --max-width: 100% !important;
-  --normal-weight: 400 !important;
   --background-translucent: rgba(245, 245, 245, 0.75) !important;
   --background-tertiary: var(--shade-3-opaque) !important;
   --accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l) !important;
@@ -1501,7 +1502,6 @@ body.theme-light {
   --medium: 500px !important;
   --medium-weight: 500 !important;
   --micro: 70px !important;
-  --nested-padding: 3.5% !important;
   --orange-rgb: 255, 149, 0 !important;
   --pink-rgb: 255, 0, 255 !important;
   --preview-bullet-size-adjust: 100% !important;
@@ -2538,23 +2538,24 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--accent-rgb) !important;
-  --opacity-translucency: 1 !important;
-  --text-error-hover: rgb(var(--red-rgb)) !important;
   --background-modifier-accent: hsl(
     var(--accent-h),
     var(--accent-s),
     calc(var(--accent-d) - 10%)
   ) !important;
-  --quote-opening-modifier: var(--shade-70-opaque) !important;
-  --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
-  --accent-d: 52% !important;
-  --header-width: 42px !important;
   --icon-hex: FFF !important;
+  --quote-opening-modifier: var(--shade-70-opaque) !important;
   --icon-muted: 0.4 !important;
   --line-height: 1.5 !important;
   --line-width: 600px !important;
   --max-width: 100% !important;
+  --nested-padding: 3.5% !important;
   --normal-weight: 400 !important;
+  --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
+  --opacity-translucency: 1 !important;
+  --text-error-hover: rgb(var(--red-rgb)) !important;
+  --accent-d: 52% !important;
+  --header-width: 42px !important;
   --background-translucent: rgba(40, 40, 40, 0.6) !important;
   --background-tertiary: var(--shade-3-opaque) !important;
   --accent-hsl: var(--accent-h), var(--accent-s), var(--accent-d) !important;
@@ -2634,7 +2635,6 @@ body.theme-dark {
   --medium: 500px !important;
   --medium-weight: 500 !important;
   --micro: 70px !important;
-  --nested-padding: 3.5% !important;
   --orange-rgb: 255, 159, 10 !important;
   --pink-rgb: 255, 0, 255 !important;
   --preview-bullet-size-adjust: 100% !important;

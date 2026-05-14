@@ -180,5 +180,26 @@
     "left-roll": {
       "general": "body.left-roll .nav-files-container {\ndisplay: flex;\noverflow-x: auto;\nwhite-space: nowrap;\n}\n\nbody.left-roll .nav-files-container > * {\nmin-width: var(--left-roll-min-width);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--folder-alpha": [
+      "--folder-theme-color1",
+      "--folder-theme-color2",
+      "--folder-theme-color3",
+      "--folder-theme-color4",
+      "--folder-theme-color5",
+      "--folder-theme-color6",
+      "--folder-theme-color7",
+      "--folder-theme-color8",
+      "--folder-theme-color9",
+      "--folder-theme-color10",
+      "--folder-theme-color11",
+      "--folder-theme-color12",
+      "--folder-theme-color13",
+      "--folder-theme-color14",
+      "--folder-theme-color15",
+      "--folder-theme-color16"
+    ]
   }
 }

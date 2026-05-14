@@ -76,5 +76,6 @@
     "deemphasize-embedded-backlinks": {
       "general": ".deemphasize-embedded-backlinks .embedded-backlinks {\nfilter: grayscale(1);\nopacity: 0.3;\ntransition:\n    filter 0.3s ease,\n    opacity 0.3s ease;\n}\n\n.deemphasize-embedded-backlinks .embedded-backlinks:hover, .deemphasize-embedded-backlinks .embedded-backlinks:focus-within {\nfilter: grayscale(0);\nopacity: 1;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

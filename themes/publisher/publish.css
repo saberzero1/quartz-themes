@@ -989,10 +989,10 @@ body.theme-light {
   --table-header-font: "Lato Light" !important;
   --table-background-color: var(--black-80) !important;
   --nav-item-weight: 425 !important;
+  --nav-heading-color-colapsed-hover: var(--white-100) !important;
   --orange-100: hsla(11, 100%, 95%, 1) !important;
   --orange-50: hsla(11, 100%, 50%, 1) !important;
   --metadata-property-radius-hover-focus: var(--radius-m) !important;
-  --nav-heading-color-colapsed-hover: var(--white-100) !important;
   --scrollbar-bg-color: var(--black-60) !important;
   --black-10: hsla(0, 0%, 90%, 1) !important;
   --black-100: hsla(0, 0%, 0%, 1) !important;
@@ -2008,11 +2008,11 @@ body.theme-dark {
   --table-header-font: "Lato Light" !important;
   --table-background-color: var(--black-60) !important;
   --nav-item-weight: 425 !important;
+  --nav-heading-color-colapsed-hover: var(--white-100) !important;
   --orange-100: hsla(11, 100%, 95%, 1) !important;
   --orange-50: hsla(11, 100%, 50%, 1) !important;
   --metadata-background-color: var(--black-80) !important;
   --metadata-property-radius-hover-focus: var(--radius-m) !important;
-  --nav-heading-color-colapsed-hover: var(--white-100) !important;
   --scrollbar-bg-color: var(--black-60) !important;
   --black-10: hsla(0, 0%, 90%, 1) !important;
   --black-100: hsla(0, 0%, 0%, 1) !important;

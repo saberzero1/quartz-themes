@@ -1407,6 +1407,8 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: #2f3136 !important;
+  --blockquote-color: rgb(93, 188, 210) !important;
   --h1-color: #c7c400 !important;
   --h2-color: #b9adff !important;
   --h3-color: #52c1da !important;
@@ -1414,11 +1416,9 @@ body.theme-dark {
   --h5-color: #de87ca !important;
   --h6-color: #b4b4b4 !important;
   --inline-title-color: rgb(93, 188, 210) !important;
-  --background-modifier-form-field-highlighted: #2f3136 !important;
   --interactive-before: #5e6565 !important;
   --pre-code: rgb(64, 68, 77) !important;
   --text-mark: transparent !important;
-  --blockquote-color: rgb(93, 188, 210) !important;
   --bold-color: rgb(158, 138, 255) !important;
   --italic-color: rgb(186, 192, 79) !important;
   --window-border: 1px solid var(--window-border-color) !important;

@@ -1377,10 +1377,11 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: hsla(217, 8%, 34%, 1) !important;
+  --background-modifier-accent: hsla(0, 0%, 100%, 0.06) !important;
+  --background-modifier-form-field-highlighted: hsla(0, 0%, 0%, 0.2) !important;
   --default-font:
     Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif !important;
   --opacity-translucency: 1 !important;
-  --background-modifier-form-field-highlighted: hsla(0, 0%, 0%, 0.2) !important;
   --text-a: hsla(322, 65%, 70%, 1) !important;
   --text-a-hover: hsla(327, 100%, 77%, 1) !important;
   --text-link: hsla(197, 100%, 48%, 1) !important;
@@ -1391,7 +1392,6 @@ body.theme-dark {
   --text-title-h5: var(--text-header) !important;
   --text-title-h6: hsla(192, 13%, 53%, 1) !important;
   --text-mark: hsla(37, 82%, 74%, 1) !important;
-  --background-modifier-accent: hsla(0, 0%, 100%, 0.06) !important;
   --background-modifier-active: hsla(217, 8%, 34%, 0.24) !important;
   --blockquote-border: hsla(286, 22%, 66%, 1) !important;
   --blockquote-bg: hsla(240, 11%, 2%, 0.07) !important;
@@ -1400,11 +1400,11 @@ body.theme-dark {
   --graph-arrow: hsla(314, 57%, 63%, 1) !important;
   --graph-circle-outline: transparent !important;
   --background-tertiary: #1e1f22 !important;
+  --background-modifier-selected: hsla(217, 8%, 34%, 0.32) !important;
   --background-code-preview: hsla(204, 6%, 17%, 1) !important;
   --text-tag: hsla(27, 100%, 63%, 0.73) !important;
   --text-strong: var(--discord-yellow-alt) !important;
   --background-code-border: hsla(0, 0%, 16%, 1) !important;
-  --background-modifier-selected: hsla(217, 8%, 34%, 0.32) !important;
   --discord-blue: hsla(227, 58%, 65%, 1) !important;
   --discord-blue-hover: hsla(227, 44%, 59%, 1) !important;
   --discord-dark: hsla(216, 7%, 14%, 1) !important;

@@ -1518,6 +1518,7 @@ body.theme-dark {
   --input-hover-border-color: red !important;
   --input-unfocused-border-color: transparent !important;
   --text-tag: #50fa7b !important;
+  --input-focus-border-color: Highlight !important;
   --dark0: #390000 !important;
   --dark1: #290202 !important;
   --dark2: #3d0404 !important;
@@ -1537,7 +1538,6 @@ body.theme-dark {
   --dracula-number: #bd93f9 !important;
   --dracula-string: #f1fa8c !important;
   --dracula-variable: #f8f8f2 !important;
-  --input-focus-border-color: Highlight !important;
   --input-focus-outline: 1px solid Canvas !important;
   --sideRed: #910b0bcc !important;
   --dark-linear-gradient: linear-gradient(

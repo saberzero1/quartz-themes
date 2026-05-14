@@ -1483,6 +1483,7 @@ body.theme-light {
   --shadow-edges: 0 0 transparent !important;
   --font-title: "Playfair Display" !important;
   --heading-weight: 600 !important;
+  --line-height-body: 1.45 !important;
   --title-gradient-bottom: color-mix(
     in hsl,
     var(--link-color),
@@ -1490,7 +1491,6 @@ body.theme-light {
   ) !important;
   --title-gradient-top: var(--link-color) !important;
   --font-links: "Alegreya SC", "Spectral", serif !important;
-  --line-height-body: 1.45 !important;
   --line-height-headings: 1.2 !important;
 }
 
@@ -2473,10 +2473,10 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --font-title: "Playfair Display" !important;
   --heading-weight: 600 !important;
+  --line-height-body: 1.45 !important;
   --title-gradient-bottom: var(--link-color) !important;
   --title-gradient-top: var(--text-normal) !important;
   --font-links: "Alegreya SC", "Spectral", serif !important;
-  --line-height-body: 1.45 !important;
   --line-height-headings: 1.2 !important;
 }
 

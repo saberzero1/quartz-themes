@@ -2399,8 +2399,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --bold-color: var(--text-extreme) !important;
   --mobile-sidebar-background: var(--background-secondary) !important;
+  --bold-color: var(--text-extreme) !important;
+  --corner-smoothing: system-ui !important;
   --side-padding: 20px !important;
   --selected-item: #191919 !important;
   --glass-edge: var(--liquid-shadow-dark) !important;
@@ -2411,7 +2412,6 @@ body.theme-dark {
     transparent
   ) !important;
   --active-tab-background: rgba(100, 100, 100, 0.3) !important;
-  --corner-smoothing: system-ui !important;
   --div-color: rgba(170, 170, 170, 0.2) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.8) !important;

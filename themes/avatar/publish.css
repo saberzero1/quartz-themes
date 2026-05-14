@@ -1448,6 +1448,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: #4a5568 !important;
+  --blockquote-color: #e1dcf2 !important;
+  --text-highlight-bg-active: rgba(251, 191, 36, 0.6) !important;
   --h1-color: #ef44c0 !important;
   --h2-color: #a78bfa !important;
   --h3-color: #fbbf24 !important;
@@ -1455,11 +1458,8 @@ body.theme-dark {
   --h5-color: #7dd3c0 !important;
   --h6-color: #6366f1 !important;
   --inline-title-color: var(--h1-color) !important;
-  --background-modifier-form-field-highlighted: #4a5568 !important;
-  --blockquote-color: #e1dcf2 !important;
   --table-row-even-background: rgba(125, 211, 192, 0.03) !important;
   --interactive-success: #059669 !important;
-  --text-highlight-bg-active: rgba(251, 191, 36, 0.6) !important;
   --text-highlight-color: var(--avatar-pink) !important;
   --avatar-aqua: #7dd3c0 !important;
   --avatar-aqua-light: #5eead4 !important;

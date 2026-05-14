@@ -1437,6 +1437,10 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-code: var(--pink-60) !important;
+  --font-editor-theme: ?? !important;
+  --shadow-color: 0deg 5% 59% !important;
+  --text-highlight-bg-active: var(--highlight) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1450,15 +1454,12 @@ body.theme-light {
   --h5-font: var(--font-text) !important;
   --h6-font: var(--font-text) !important;
   --inline-title-font: var(--h1-font) !important;
-  --text-code: var(--pink-60) !important;
   --green: var(--green-50) !important;
   --orange: var(--orange-40) !important;
   --red: var(--red-60) !important;
   --text-primary: rgb(var(--gray-100)) !important;
   --text-secondary: rgb(var(--gray-70)) !important;
   --yellow: var(--yellow-30) !important;
-  --text-highlight-bg-active: var(--highlight) !important;
-  --font-editor-theme: ?? !important;
   --blue: var(--blue-60) !important;
   --pink: var(--pink-50) !important;
   --embed-border-left: var(--embed-border-width) solid var(--embed-border-color) !important;
@@ -1467,7 +1468,6 @@ body.theme-light {
   --vault-name-font-weight: var(--font-medium) !important;
   --cyan: var(--cyan-50) !important;
   --blockquote-size: 0.9rem !important;
-  --shadow-color: 0deg 5% 59% !important;
   --white: 253, 254, 254 !important;
   --background: rgb(var(--gray-10)) !important;
   --indentation-guide: rgb(var(--mono-rgb-100) 0.15) !important;
@@ -1529,6 +1529,7 @@ body.theme-light {
   --yellow-50: hsl(42.7deg, 100%, 36.1%) !important;
   --background-active: rgba(var(--gray-50), 0.32) !important;
   --background-hover: rgba(var(--gray-50), 0.12) !important;
+  --pistachio: var(--pistachio-50) !important;
   --embed-border-color: var(--interactive-accent) !important;
   --callout-title-background: transparent;
   --focus: var(--cyan-60) !important;
@@ -1585,7 +1586,6 @@ body.theme-light {
   --layer-selected-2: rgb(var(--gray-20)) !important;
   --layer-selected-hover-1: rgba(var(--gray-30), 0.5) !important;
   --layer-selected-hover-2: rgba(var(--gray-30), 0.5) !important;
-  --pistachio: var(--pistachio-50) !important;
   --table-hover-highlight-color: rgb(var(--color-accent-rgb) 0.15) !important;
   --text-placeholder: rgb(var(--gray-40)) !important;
   --viridian: var(--viridian-50) !important;
@@ -2680,6 +2680,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-code: var(--pink-50) !important;
+  --font-editor-theme: ?? !important;
+  --shadow-color: 0deg 0% 1% !important;
+  --text-highlight-bg-active: var(--highlight) !important;
   --vault-name-color: var(--text-normal) !important;
   --h1-font: var(--font-text) !important;
   --h2-font: var(--font-text) !important;
@@ -2688,15 +2692,12 @@ body.theme-dark {
   --h5-font: var(--font-text) !important;
   --h6-font: var(--font-text) !important;
   --inline-title-font: var(--h1-font) !important;
-  --text-code: var(--pink-50) !important;
   --green: var(--green-50) !important;
   --orange: var(--orange-40) !important;
   --red: var(--red-60) !important;
   --text-primary: rgb(var(--gray-10)) !important;
   --text-secondary: rgb(var(--gray-30)) !important;
   --yellow: var(--yellow-30) !important;
-  --text-highlight-bg-active: var(--highlight) !important;
-  --font-editor-theme: ?? !important;
   --blue: var(--blue-60) !important;
   --pink: var(--pink-50) !important;
   --embed-border-left: var(--embed-border-width) solid var(--embed-border-color) !important;
@@ -2705,7 +2706,6 @@ body.theme-dark {
   --vault-name-font-weight: var(--font-medium) !important;
   --cyan: var(--cyan-50) !important;
   --blockquote-size: 0.9rem !important;
-  --shadow-color: 0deg 0% 1% !important;
   --white: 253, 254, 254 !important;
   --background: rgb(var(--gray-100)) !important;
   --indentation-guide: rgb(var(--mono-rgb-100) 0.15) !important;
@@ -2767,6 +2767,7 @@ body.theme-dark {
   --yellow-50: hsl(42.7deg, 100%, 36.1%) !important;
   --background-active: rgba(var(--gray-50), 0.4) !important;
   --background-hover: rgba(var(--gray-50), 0.16) !important;
+  --pistachio: var(--pistachio-50) !important;
   --embed-border-color: var(--interactive-accent) !important;
   --callout-title-background: transparent;
   --focus: var(--cyan-60) !important;
@@ -2823,7 +2824,6 @@ body.theme-dark {
   --layer-selected-2: rgb(var(--gray-70)) !important;
   --layer-selected-hover-1: rgba(var(--gray-70), 0.5) !important;
   --layer-selected-hover-2: rgba(var(--gray-60), 0.5) !important;
-  --pistachio: var(--pistachio-50) !important;
   --table-hover-highlight-color: rgb(var(--color-accent-rgb) 0.15) !important;
   --text-placeholder: rgb(var(--gray-60)) !important;
   --viridian: var(--viridian-50) !important;

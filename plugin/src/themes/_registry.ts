@@ -8,6 +8,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   "80s-neon": { name: "80s-neon", modes: ["dark"], variations: [], fonts: [] },
+  aaaa: { name: "aaaa", modes: ["dark", "light"], variations: [], fonts: [] },
   abate: {
     name: "abate",
     modes: ["light"],
@@ -57,6 +58,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   agora: { name: "agora", modes: ["dark"], variations: [], fonts: [] },
+  "ak-sky-breeze": {
+    name: "ak-sky-breeze",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
   "al-dente": {
     name: "al-dente",
     modes: ["light"],
@@ -68,6 +75,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["icons/its"],
+  },
+  "amber-cathode": {
+    name: "amber-cathode",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
   },
   amethyst: {
     name: "amethyst",
@@ -99,7 +112,14 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["roboto"],
   },
+  apathy: { name: "apathy", modes: ["dark"], variations: [], fonts: [] },
   apex: { name: "apex", modes: ["dark", "light"], variations: [], fonts: [] },
+  arcadia: {
+    name: "arcadia",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   arcane: {
     name: "arcane",
     modes: ["dark"],
@@ -153,6 +173,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["jetbrains-mono", "kalam"],
   },
   ayu: { name: "ayu", modes: ["dark", "light"], variations: [], fonts: [] },
+  "ayu-dark": { name: "ayu-dark", modes: ["dark"], variations: [], fonts: [] },
   "ayu-light-mirage": {
     name: "ayu-light-mirage",
     modes: ["dark", "light"],
@@ -165,7 +186,19 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
   },
+  "ayu-palette": {
+    name: "ayu-palette",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   azure: { name: "azure", modes: ["dark", "light"], variations: [], fonts: [] },
+  base16: {
+    name: "base16",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "base16-default-dark": {
     name: "base16-default-dark",
     modes: ["dark", "light"],
@@ -207,6 +240,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   black: { name: "black", modes: ["dark"], variations: [], fonts: [] },
   blackbird: { name: "blackbird", modes: ["dark"], variations: [], fonts: [] },
+  blobob: {
+    name: "blobob",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "blood-rush": {
     name: "blood-rush",
     modes: ["dark", "light"],
@@ -245,6 +284,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cascadia-mono"],
+  },
+  "brutal-gum": {
+    name: "brutal-gum",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   brutalism: {
     name: "brutalism",
@@ -285,6 +330,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "calm-nights": {
+    name: "calm-nights",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   camena: {
     name: "camena",
     modes: ["dark", "light"],
@@ -296,6 +347,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["ibm-plex-mono", "ibm-plex-sans"],
+  },
+  cardinal: {
+    name: "cardinal",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   cardstock: {
     name: "cardstock",
@@ -333,6 +390,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["nunito-sans", "vollkorn"],
   },
+  catthode: { name: "catthode", modes: ["dark"], variations: [], fonts: [] },
   "celestial-night": {
     name: "celestial-night",
     modes: ["dark"],
@@ -370,9 +428,28 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "citrus-neo": {
+    name: "citrus-neo",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "clair-de-lune": {
     name: "clair-de-lune",
     modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  claude: { name: "claude", modes: ["dark"], variations: [], fonts: [] },
+  "claude-warm": {
+    name: "claude-warm",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "cloud-dancer": {
+    name: "cloud-dancer",
+    modes: ["light", "dark"],
     variations: [],
     fonts: [],
   },
@@ -388,6 +465,13 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["palatino"],
   },
+  "cocoa-nook": {
+    name: "cocoa-nook",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  codeazur: { name: "codeazur", modes: ["dark"], variations: [], fonts: [] },
   coffee: {
     name: "coffee",
     modes: ["dark", "light"],
@@ -431,6 +515,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["inconsolata"],
   },
+  "cosmic-events": {
+    name: "cosmic-events",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   cosmical: {
     name: "cosmical",
     modes: ["dark", "light"],
@@ -438,6 +528,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   covert: { name: "covert", modes: ["dark"], variations: [], fonts: [] },
+  crafted: {
+    name: "crafted",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "cranky-goblin": {
+    name: "cranky-goblin",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   creature: {
     name: "creature",
     modes: ["dark"],
@@ -450,6 +552,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["merriweather-sans"],
   },
+  crestfall: { name: "crestfall", modes: ["dark"], variations: [], fonts: [] },
   cupertino: {
     name: "cupertino",
     modes: ["dark", "light"],
@@ -474,6 +577,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono"],
   },
+  cybrcore: { name: "cybrcore", modes: ["dark"], variations: [], fonts: [] },
   "dark-castle": {
     name: "dark-castle",
     modes: ["dark"],
@@ -550,6 +654,13 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["flow-circular"],
   },
   dekurai: { name: "dekurai", modes: ["dark"], variations: [], fonts: [] },
+  delightful: {
+    name: "delightful",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  densy: { name: "densy", modes: ["light"], variations: [], fonts: [] },
   desserts: {
     name: "desserts",
     modes: ["dark", "light"],
@@ -568,6 +679,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  dolch: { name: "dolch", modes: ["dark"], variations: [], fonts: [] },
   "dracula-for-obsidian": {
     name: "dracula-for-obsidian",
     modes: ["dark"],
@@ -642,6 +754,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["monaco"],
   },
+  elysian: {
+    name: "elysian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   emerald: {
     name: "emerald",
     modes: ["dark", "light"],
@@ -651,6 +769,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   "emerald-echo": {
     name: "emerald-echo",
     modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "emerald-synth": {
+    name: "emerald-synth",
+    modes: ["dark"],
     variations: [],
     fonts: [],
   },
@@ -709,6 +833,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["hack"],
   },
+  exotic: { name: "exotic", modes: ["dark"], variations: [], fonts: [] },
   faded: { name: "faded", modes: ["dark"], variations: [], fonts: [] },
   "fancy-a-story": {
     name: "fancy-a-story",
@@ -736,6 +861,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["jetbrains-mono"],
   },
   firefly: { name: "firefly", modes: ["dark"], variations: [], fonts: [] },
+  fjord: { name: "fjord", modes: ["dark", "light"], variations: [], fonts: [] },
   flatcap: { name: "flatcap", modes: ["dark"], variations: [], fonts: [] },
   flexcyon: {
     name: "flexcyon",
@@ -766,6 +892,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark"],
     variations: [],
     fonts: ["jetbrains-mono"],
+  },
+  "forest-phosphor": {
+    name: "forest-phosphor",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  freecolors: {
+    name: "freecolors",
+    modes: ["light", "dark"],
+    variations: [],
+    fonts: [],
   },
   friendly: {
     name: "friendly",
@@ -834,6 +972,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["figtree", "jetbrains-mono"],
   },
+  glassmind: {
+    name: "glassmind",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "golden-coffee": {
     name: "golden-coffee",
     modes: ["dark"],
@@ -846,9 +990,27 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["lucida-handwriting", "monaco"],
   },
+  "green-holiday": {
+    name: "green-holiday",
+    modes: ["light", "dark"],
+    variations: [],
+    fonts: [],
+  },
   "green-nightmare": {
     name: "green-nightmare",
     modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "grounded-tierra": {
+    name: "grounded-tierra",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "gruber-darker": {
+    name: "gruber-darker",
+    modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },
@@ -866,11 +1028,35 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["open-sans"],
   },
   halcyon: { name: "halcyon", modes: ["dark"], variations: [], fonts: [] },
+  "half-life": {
+    name: "half-life",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  hanabi: {
+    name: "hanabi",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "handwriting-kalam": {
     name: "handwriting-kalam",
     modes: ["light"],
     variations: [],
     fonts: ["courier-prime", "kalam"],
+  },
+  "happy-coding": {
+    name: "happy-coding",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "harbor-dark": {
+    name: "harbor-dark",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
   },
   harmonic: {
     name: "harmonic",
@@ -1056,6 +1242,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "infosecwarrior-ui": {
+    name: "infosecwarrior-ui",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   ink: { name: "ink", modes: ["light"], variations: [], fonts: [] },
   ion: { name: "ion", modes: ["dark"], variations: [], fonts: [] },
   iridium: {
@@ -1154,6 +1346,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["icons/its"],
   },
+  "jolly-holly": {
+    name: "jolly-holly",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   jotter: {
     name: "jotter",
     modes: ["dark", "light"],
@@ -1232,11 +1430,23 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["hack"],
   },
+  "kanagawa-palette": {
+    name: "kanagawa-palette",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "kanagawa-paper": {
     name: "kanagawa-paper",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["hack"],
+  },
+  karadigm: {
+    name: "karadigm",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "kiwi-mono": {
     name: "kiwi-mono",
@@ -1250,6 +1460,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["atkinson-hyperlegible", "jetbrains-mono"],
   },
+  "kxc-cipher": {
+    name: "kxc-cipher",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   lagom: {
     name: "lagom",
     modes: ["dark", "light"],
@@ -1261,6 +1477,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["computer-modern-bright"],
+  },
+  latsidian: {
+    name: "latsidian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "lavender-mist": {
     name: "lavender-mist",
@@ -1292,6 +1514,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["courgette", "karla", "open-sans"],
   },
+  litos: { name: "litos", modes: ["dark", "light"], variations: [], fonts: [] },
   "lizardmen-zettelkasten": {
     name: "lizardmen-zettelkasten",
     modes: ["dark"],
@@ -1328,6 +1551,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["jetbrains-mono"],
+  },
+  makinda: {
+    name: "makinda",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   mammoth: { name: "mammoth", modes: ["dark"], variations: [], fonts: [] },
   maple: {
@@ -1385,6 +1614,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "miami-wind": {
+    name: "miami-wind",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "micro-mike": {
     name: "micro-mike",
     modes: ["dark"],
@@ -1397,6 +1632,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark"],
     variations: [],
     fonts: ["finlandica"],
+  },
+  "milk-tea": {
+    name: "milk-tea",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   minimal: {
     name: "minimal",
@@ -1495,9 +1736,21 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "monokai-filtersun-spectrum": {
+    name: "monokai-filtersun-spectrum",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "monokai-ristretto": {
     name: "monokai-ristretto",
     modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "monokai-syntax": {
+    name: "monokai-syntax",
+    modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },
@@ -1555,6 +1808,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "neon-dracula": {
+    name: "neon-dracula",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "neon-synthwave": {
     name: "neon-synthwave",
     modes: ["dark"],
@@ -1567,6 +1826,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  nerv: { name: "nerv", modes: ["dark", "light"], variations: [], fonts: [] },
   neuborder: { name: "neuborder", modes: ["light"], variations: [], fonts: [] },
   neumorphism: {
     name: "neumorphism",
@@ -1614,6 +1874,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   nobb: { name: "nobb", modes: ["dark"], variations: [], fonts: [] },
   noctilux: { name: "noctilux", modes: ["dark"], variations: [], fonts: [] },
   noctis: { name: "noctis", modes: ["dark"], variations: [], fonts: [] },
+  "noctis-family": {
+    name: "noctis-family",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "noctis-viola": {
     name: "noctis-viola",
     modes: ["dark", "light"],
@@ -1657,16 +1923,37 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["lyons-serif", "ia-writer-duospace"],
   },
+  "notion-style": {
+    name: "notion-style",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   notswift: {
     name: "notswift",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["roboto", "sf-mono", "sf-pro-display"],
   },
+  "nott-dagr": {
+    name: "nott-dagr",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  nous: { name: "nous", modes: ["dark", "light"], variations: [], fonts: [] },
   novadust: { name: "novadust", modes: ["dark"], variations: [], fonts: [] },
+  novel: { name: "novel", modes: ["dark", "light"], variations: [], fonts: [] },
+  nyan: { name: "nyan", modes: ["dark", "light"], variations: [], fonts: [] },
   "obsdn-dark-rmx": {
     name: "obsdn-dark-rmx",
     modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "obsiddy-in-terminal": {
+    name: "obsiddy-in-terminal",
+    modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },
@@ -1760,7 +2047,6 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
-  oledblack: { name: "oledblack", modes: ["dark"], variations: [], fonts: [] },
   "oledblack.Black": {
     name: "oledblack.Black",
     modes: ["dark"],
@@ -1774,6 +2060,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["ibm-plex-mono"],
   },
   omega: { name: "omega", modes: ["dark"], variations: [], fonts: [] },
+  "one-oracle-developer": {
+    name: "one-oracle-developer",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   onenice: {
     name: "onenice",
     modes: ["dark", "light"],
@@ -1907,6 +2199,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono"],
   },
+  ouroboros: {
+    name: "ouroboros",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   overcast: { name: "overcast", modes: ["dark"], variations: [], fonts: [] },
   oxygen: {
     name: "oxygen",
@@ -1927,7 +2225,31 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["ia-writer-quattro-s", "monaco"],
   },
+  panorama: {
+    name: "panorama",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "papyrus-nox": {
+    name: "papyrus-nox",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   parfait: { name: "parfait", modes: ["light"], variations: [], fonts: [] },
+  "pastel-yumekawa": {
+    name: "pastel-yumekawa",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
+  pensea: {
+    name: "pensea",
+    modes: ["light", "dark"],
+    variations: [],
+    fonts: [],
+  },
   penumbra: {
     name: "penumbra",
     modes: ["dark", "light"],
@@ -1941,11 +2263,35 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono", "sf-pro-display"],
   },
+  phosphor: {
+    name: "phosphor",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "phosphor-crt": {
+    name: "phosphor-crt",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "phosphor-mono": {
+    name: "phosphor-mono",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "pine-forest-berry": {
     name: "pine-forest-berry",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["inconsolata"],
+  },
+  "pink-muted-rose": {
+    name: "pink-muted-rose",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "pink-topaz": {
     name: "pink-topaz",
@@ -1954,6 +2300,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["lucida-handwriting", "monaco"],
   },
   pisum: { name: "pisum", modes: ["dark"], variations: [], fonts: ["monaco"] },
+  "pitch-black": {
+    name: "pitch-black",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   planetary: {
     name: "planetary",
     modes: ["dark", "light"],
@@ -2028,6 +2380,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  prose: { name: "prose", modes: ["dark", "light"], variations: [], fonts: [] },
   protocolblue: {
     name: "protocolblue",
     modes: ["dark"],
@@ -2066,6 +2419,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["ia-writer-mono", "noto-sans-jp"],
   },
+  "quest-journal": {
+    name: "quest-journal",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   quietus: {
     name: "quietus",
     modes: ["dark", "light"],
@@ -2084,12 +2443,25 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono"],
   },
+  "rain-washed-sky": {
+    name: "rain-washed-sky",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  rationale: {
+    name: "rationale",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   ravenloft: {
     name: "ravenloft",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["literata", "open-sans", "ruslan-display", "vollkorn"],
   },
+  rbr: { name: "rbr", modes: ["dark"], variations: [], fonts: [] },
   "red-graphite": {
     name: "red-graphite",
     modes: ["dark", "light"],
@@ -2125,6 +2497,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["jetbrains-mono", "noto-sans"],
+  },
+  "retro-terminal": {
+    name: "retro-terminal",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "retro-windows": {
     name: "retro-windows",
@@ -2260,6 +2638,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "rose-pine-minimal": {
+    name: "rose-pine-minimal",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "rose-pine-moon": {
     name: "rose-pine-moon",
     modes: ["dark"],
@@ -2279,11 +2663,23 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["fira-sans", "fira-code"],
   },
   ruby: { name: "ruby", modes: ["dark", "light"], variations: [], fonts: [] },
+  "sacred-geometry-systems": {
+    name: "sacred-geometry-systems",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "sad-machine-druid": {
     name: "sad-machine-druid",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["hack"],
+  },
+  "saint-red-paper": {
+    name: "saint-red-paper",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   sakurajima: {
     name: "sakurajima",
@@ -2523,8 +2919,15 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["roboto"],
   },
+  slatewave: { name: "slatewave", modes: ["dark"], variations: [], fonts: [] },
   slytherin: { name: "slytherin", modes: ["dark"], variations: [], fonts: [] },
   sodalite: { name: "sodalite", modes: ["dark"], variations: [], fonts: [] },
+  "soft-paper": {
+    name: "soft-paper",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   solarized: {
     name: "solarized",
     modes: ["dark", "light"],
@@ -2555,6 +2958,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  sora: { name: "sora", modes: ["dark"], variations: [], fonts: [] },
   space: {
     name: "space",
     modes: ["dark"],
@@ -2614,6 +3018,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cascadia-code", "source-sans-pro"],
+  },
+  "standard-plus": {
+    name: "standard-plus",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   strict: { name: "strict", modes: ["dark"], variations: [], fonts: [] },
   subtlegold: {
@@ -3004,6 +3414,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   ursa: { name: "ursa", modes: ["dark", "light"], variations: [], fonts: [] },
+  "utility-materials": {
+    name: "utility-materials",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "vanilla-amoled": {
     name: "vanilla-amoled",
     modes: ["dark"],
@@ -3124,6 +3540,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "vaporwave-void": {
+    name: "vaporwave-void",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   vauxhall: {
     name: "vauxhall",
     modes: ["dark", "light"],
@@ -3239,6 +3661,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "vesper-sandstorm": {
+    name: "vesper-sandstorm",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   vibrant: { name: "vibrant", modes: ["dark"], variations: [], fonts: [] },
   vicious: {
     name: "vicious",
@@ -3271,13 +3699,37 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  vision: {
+    name: "vision",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   vortex: {
     name: "vortex",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["rubik"],
   },
+  "vscode-dark-modern": {
+    name: "vscode-dark-modern",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   w95: { name: "w95", modes: ["light"], variations: [], fonts: [] },
+  "warm-burnout": {
+    name: "warm-burnout",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "warm-springs": {
+    name: "warm-springs",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   warmth: { name: "warmth", modes: ["dark"], variations: [], fonts: [] },
   wasp: { name: "wasp", modes: ["dark", "light"], variations: [], fonts: [] },
   wikipedia: {
@@ -3311,6 +3763,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["karla", "open-sans"],
   },
   wombat: { name: "wombat", modes: ["dark"], variations: [], fonts: [] },
+  word_2019: {
+    name: "word_2019",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "wy-console": {
     name: "wy-console",
     modes: ["dark", "light"],

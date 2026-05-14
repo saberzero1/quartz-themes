@@ -1372,12 +1372,12 @@ body.theme-dark {
   --yellow: #fcc200 !important;
   --blue: #63c8da !important;
   --pink: #eb95db !important;
+  --cursor-line-background: rgba(var(--teal0), 0.2) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --calendar-background-hover: var(--dark0) !important;
   --calendar-hover: var(--teal0) !important;
   --calendar-today: var(--frost0) !important;
   --calendar-week: var(--frost0) !important;
-  --cursor-line-background: rgba(var(--teal0), 0.2) !important;
   --dark0: #0f1116 !important;
   --dark1: #1f2026 !important;
   --dark2: #393939 !important;

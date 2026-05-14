@@ -85,5 +85,7 @@
     "blur-enabled": {
       "general": ".blur-enabled {\n--blur-effect: blur(calc(var(--blur-size) * var(--blur-size) * 1px));\n--background-blurred: var(--background-semitransp);\n--background-blurred-alt: var(--background-semitransp-alt);\n}"
     }
-  }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": { "--blur-size": ["--blur-effect"] }
 }

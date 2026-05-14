@@ -918,5 +918,10 @@
     "OT-edit-natural-line-height": {
       "general": "body.OT-edit-natural-line-height {\n--OT-effective-edit-line-height: normal;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--OT-readingMode-line-height": ["--OT-bear-step"],
+    "--OT-UI-font-size": ["--dynamic-outline-font-size", "--tn-font-size-md"]
   }
 }

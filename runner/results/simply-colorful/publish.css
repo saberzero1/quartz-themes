@@ -1427,6 +1427,9 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--text-muted) !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1439,11 +1442,8 @@ body.theme-light {
   --h5-color: var(--color-orange) !important;
   --h6-color: var(--color-yellow) !important;
   --inline-title-color: var(--text-normal) !important;
-  --blockquote-color: var(--text-muted) !important;
   --bold-color: var(--color-cyan) !important;
   --italic-color: var(--color-green) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 500 !important;
   --tab-font-weight: 700 !important;
@@ -2510,6 +2510,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--text-muted) !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --h1-color: var(--color-blue) !important;
   --h2-color: var(--color-purple) !important;
   --h3-color: var(--color-pink) !important;
@@ -2517,11 +2520,8 @@ body.theme-dark {
   --h5-color: var(--color-orange) !important;
   --h6-color: var(--color-yellow) !important;
   --inline-title-color: var(--text-normal) !important;
-  --blockquote-color: var(--text-muted) !important;
   --bold-color: var(--color-cyan) !important;
   --italic-color: var(--color-green) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 500 !important;
   --tab-font-weight: 700 !important;

@@ -1062,9 +1062,9 @@ body.theme-light {
   --inline-title-color: var(--heading-color) !important;
   --table-header-background-hover: var(--color-base-20) !important;
   --font-serif: "Crimson Pro" !important;
-  --color-yellow-lightest: hsla(41, 88%, 81%, 0.753) !important;
   --bold-color: var(--color-blue) !important;
   --italic-color: var(--color-purple) !important;
+  --color-yellow-lightest: hsla(41, 88%, 81%, 0.753) !important;
   --embed-border-left: 0 !important;
   --embed-background: var(--alpha-background) !important;
   --code-block-background-color: var(--alpha-background) !important;

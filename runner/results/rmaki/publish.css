@@ -986,6 +986,7 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --heading-color: hsl(246, 28%, 48%) !important;
   --purple: hsl(246, 28%, 48%) !important;
+  --editor-background: hsl(240, 7%, 7%) !important;
   --accent: hsl(164, 68%, 72%) !important;
   --text: hsl(212, 61%, 91%) !important;
   --white: hsl(212, 61%, 91%) !important;
@@ -996,7 +997,6 @@ body.theme-dark {
   --tab-background: hsl(240, 7%, 7%) !important;
   --sidebar-background: hsl(240, 7%, 12%) !important;
   --current-line-bg: hsl(240, 7%, 12%) !important;
-  --editor-background: hsl(240, 7%, 7%) !important;
   --editor-icons: hsl(211, 19%, 60%) !important;
   --editor-title: hsl(212, 61%, 91%) !important;
   --explorer-active: hsl(240, 7%, 12%) !important;

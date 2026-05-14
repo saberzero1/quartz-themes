@@ -1352,85 +1352,6 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 220, 220, 220 !important;
-  --raised-shadow: var(--shadow-xs) !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    var(--shadow-edges) !important;
-  --shadow-edges: 0 0 transparent !important;
-  --background-modifier-form-field-highlighted: var(--bg1) !important;
-  --blockquote-color: var(--text-muted) !important;
-  --blockquote-style: normal !important;
-  --title-color: var(--tx1) !important;
-  --background-modifier-accent: var(--ax3) !important;
-  --background-table-rows: var(--bg2) !important;
-  --frame-divider-color: var(--ui1) !important;
-  --quote-opening-modifier: var(--ui2) !important;
-  --text-blockquote: var(--tx2) !important;
-  --text-bold: var(--tx1) !important;
-  --text-code: var(--tx4) !important;
-  --text-italic: var(--tx1) !important;
-  --text-formatting: var(--tx3) !important;
-  --text-highlight-bg-active: rgba(0, 0, 0, 0.1) !important;
-  --pdf-dark-opacity: 1 !important;
-  --base-h: 0 !important;
-  --base-l: 96% !important;
-  --base-s: 0% !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
-  --icon-hex: var(--mono0) !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 88% !important;
-  --normal-weight: 400 !important;
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-background-hover: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 180px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
-  --shadow-color: rgba(0, 0, 0, 0.1) !important;
-  --table-width: auto !important;
-  --nested-padding: 1.1em !important;
-  --folding-offset: 32px !important;
-  --max-col-width: 18em !important;
-  --active-line-bg: rgba(0, 0, 0, 0.035) !important;
-  --font-code: calc(var(--font-adaptive-normal) * 0.9) !important;
-  --bg1: white !important;
-  --bg2: hsl(var(--base-h), var(--base-s), var(--base-l)) !important;
-  --bg3: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) - 50%),
-    0.12
-  ) !important;
-  --font-adaptive-normal: var(
-    --font-text-size,
-    var(--editor-font-size)
-  ) !important;
-  --font-adaptive-small: calc(var(--font-ui-small) * 1.07) !important;
-  --font-adaptive-smaller: var(--font-ui-small) !important;
-  --font-adaptive-smallest: var(--font-ui-smaller) !important;
-  --btn-shadow-color: rgba(0, 0, 0, 0.05) !important;
-  --image-muted: 0.7 !important;
-  --image-radius: 4px !important;
-  --list-edit-offset: 0.5em !important;
-  --metadata-label-width-multiplier: 9 !important;
-  --mobile-left-sidebar-width: 280pt !important;
-  --mobile-right-sidebar-width: 240pt !important;
-  --mono0: white !important;
-  --mono100: black !important;
-  --top-left-padding-y: 0px !important;
-  --line-number-color: var(--text-faint) !important;
-  --cards-border-width: 1px !important;
   --adaptive-list-edit-offset: var(--list-edit-offset) !important;
   --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --ax2: hsl(
@@ -1443,8 +1364,24 @@ body.theme-light {
     var(--accent-s),
     calc(var(--accent-l) + 6%)
   ) !important;
+  --background-modifier-accent: var(--ax3) !important;
+  --background-modifier-form-field-highlighted: var(--bg1) !important;
+  --background-table-rows: var(--bg2) !important;
+  --bg1: white !important;
+  --bg2: hsl(var(--base-h), var(--base-s), var(--base-l)) !important;
+  --bg3: hsla(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 50%),
+    0.12
+  ) !important;
+  --blockquote-color: var(--text-muted) !important;
   --calendar-dot-active: var(--text-faint) !important;
   --calendar-dot-today: var(--text-accent) !important;
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  ) !important;
   --chart-color-1: var(--color-blue) !important;
   --chart-color-2: var(--color-red) !important;
   --chart-color-3: var(--color-yellow) !important;
@@ -1475,6 +1412,14 @@ body.theme-light {
     calc(50% - var(--max-width)/2)
   ) !important;
   --embed-decoration-color: var(--background-modifier-border-hover) !important;
+  --font-adaptive-normal: var(
+    --font-text-size,
+    var(--editor-font-size)
+  ) !important;
+  --font-adaptive-small: calc(var(--font-ui-small) * 1.07) !important;
+  --font-adaptive-smaller: var(--font-ui-small) !important;
+  --font-adaptive-smallest: var(--font-ui-smaller) !important;
+  --font-code: calc(var(--font-adaptive-normal) * 0.9) !important;
   --frame-background: hsl(
     var(--frame-background-h),
     var(--frame-background-s),
@@ -1483,6 +1428,7 @@ body.theme-light {
   --frame-background-h: var(--accent-h) !important;
   --frame-background-l: calc(var(--accent-l) + 30%) !important;
   --frame-background-s: var(--accent-s) !important;
+  --frame-divider-color: var(--ui1) !important;
   --frame-icon-color: var(--frame-muted-color) !important;
   --frame-muted-color: hsl(
     var(--frame-background-h),
@@ -1502,16 +1448,25 @@ body.theme-light {
   --h5l: var(--ui1) !important;
   --h6l: var(--ui1) !important;
   --hl1: hsla(var(--accent-h), 50%, calc(var(--base-l) - 20%), 30%) !important;
+  --icon-hex: var(--mono0) !important;
   --img-line-width: var(--content-line-width) !important;
   --img-margin-start: var(--content-margin-start) !important;
-  --leaflet-buttons: var(--bg1) !important;
+  --line-number-color: var(--text-faint) !important;
   --line-number-color-active: var(--text-muted) !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
   --minimal-tab-text-color: var(--tx2) !important;
   --minimal-tab-text-color-active: var(--tx1) !important;
   --mobile-sidebar-background: var(--bg1) !important;
   --progress-complete: var(--text-accent) !important;
   --progress-outline: var(--background-modifier-border) !important;
+  --quote-opening-modifier: var(--ui2) !important;
   --table-drag-padding: var(--table-drag-space) !important;
+  --text-blockquote: var(--tx2) !important;
+  --text-bold: var(--tx1) !important;
+  --text-code: var(--tx4) !important;
+  --text-formatting: var(--tx3) !important;
+  --text-italic: var(--tx1) !important;
+  --title-color: var(--tx1) !important;
   --title-color-inactive: var(--tx2) !important;
   --tx1: hsl(
     var(--base-h),
@@ -1544,6 +1499,22 @@ body.theme-light {
     var(--base-s),
     calc(var(--base-l) - 20%)
   ) !important;
+  --active-line-bg: rgba(0, 0, 0, 0.035) !important;
+  --base-h: 0 !important;
+  --base-l: 96% !important;
+  --base-s: 0% !important;
+  --blockquote-style: normal !important;
+  --btn-shadow-color: rgba(0, 0, 0, 0.05) !important;
+  --cards-aspect-ratio: auto !important;
+  --cards-background: transparent !important;
+  --cards-background-hover: transparent !important;
+  --cards-border-width: 1px !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
   --chart-max-width: none !important;
   --chart-width: auto !important;
   --checkbox-left: 0px !important;
@@ -1552,28 +1523,55 @@ body.theme-light {
   --content-margin: auto !important;
   --embed-decoration-style: solid !important;
   --focus-animation-duration: 0.1s !important;
+  --folding-offset: 32px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --hider-ribbon-display: none !important;
   --hl2: rgba(255, 225, 0, 0.5) !important;
+  --icon-muted: 0.5 !important;
   --iframe-max-width: none !important;
   --iframe-width: auto !important;
   --image-grid-background: transparent !important;
   --image-grid-fit: cover !important;
   --image-mix: normal !important;
+  --image-muted: 0.7 !important;
+  --image-radius: 4px !important;
   --img-grid-gap: 0.5rem !important;
   --img-max-width: 100% !important;
   --img-width: auto !important;
-  --leaflet-borders: rgba(0, 0, 0, 0.1) !important;
-  --map-header-padding: 2px !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --list-edit-offset: 0.5em !important;
   --map-max-width: none !important;
   --map-width: auto !important;
+  --max-col-width: 18em !important;
+  --max-width: 88% !important;
+  --metadata-label-width-multiplier: 9 !important;
+  --mobile-left-sidebar-width: 280pt !important;
+  --mobile-right-sidebar-width: 240pt !important;
+  --mono0: white !important;
+  --mono100: black !important;
+  --nested-padding: 1.1em !important;
+  --normal-weight: 400 !important;
+  --pdf-dark-opacity: 1 !important;
   --ribbon-animation-duration: 0.1s !important;
+  --shadow-color: rgba(0, 0, 0, 0.1) !important;
   --sp1: white !important;
   --table-cell-padding: 4px 10px !important;
   --table-drag-space: 16px !important;
   --table-edge-cell-padding-first: 0 !important;
   --table-edge-cell-padding-last: 0 !important;
   --table-max-width: none !important;
+  --table-width: auto !important;
   --table-wrapper-width: fit-content !important;
+  --text-highlight-bg-active: rgba(0, 0, 0, 0.1) !important;
+  --top-left-padding-y: 0px !important;
+  --raised-shadow: var(--shadow-xs) !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    var(--shadow-edges) !important;
+  --shadow-edges: 0 0 transparent !important;
+  --map-header-padding: 2px !important;
 }
 
 body.theme-dark {
@@ -2551,80 +2549,6 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 66, 66, 66 !important;
-  --background-modifier-form-field-highlighted: var(--bg1) !important;
-  --blockquote-color: var(--text-muted) !important;
-  --blockquote-style: normal !important;
-  --title-color: var(--tx1) !important;
-  --background-modifier-accent: var(--ax3) !important;
-  --background-table-rows: var(--bg2) !important;
-  --frame-divider-color: var(--ui1) !important;
-  --quote-opening-modifier: var(--ui2) !important;
-  --text-blockquote: var(--tx2) !important;
-  --text-bold: var(--tx1) !important;
-  --text-code: var(--tx4) !important;
-  --text-italic: var(--tx1) !important;
-  --text-formatting: var(--tx3) !important;
-  --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
-  --pdf-dark-opacity: 1 !important;
-  --base-h: 0 !important;
-  --base-l: 15% !important;
-  --base-s: 0% !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
-  --icon-hex: var(--mono0) !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 88% !important;
-  --normal-weight: 400 !important;
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-background-hover: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 180px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 1.2em !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
-  --shadow-color: rgba(0, 0, 0, 0.3) !important;
-  --table-width: auto !important;
-  --nested-padding: 1.1em !important;
-  --folding-offset: 32px !important;
-  --max-col-width: 18em !important;
-  --active-line-bg: rgba(255, 255, 255, 0.04) !important;
-  --font-code: calc(var(--font-adaptive-normal) * 0.9) !important;
-  --bg1: hsl(var(--base-h), var(--base-s), var(--base-l)) !important;
-  --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%)) !important;
-  --bg3: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 40%),
-    0.12
-  ) !important;
-  --font-adaptive-normal: var(
-    --font-text-size,
-    var(--editor-font-size)
-  ) !important;
-  --font-adaptive-small: calc(var(--font-ui-small) * 1.07) !important;
-  --font-adaptive-smaller: var(--font-ui-small) !important;
-  --font-adaptive-smallest: var(--font-ui-smaller) !important;
-  --btn-shadow-color: rgba(0, 0, 0, 0.2) !important;
-  --image-muted: 0.7 !important;
-  --image-radius: 4px !important;
-  --list-edit-offset: 0.5em !important;
-  --metadata-label-width-multiplier: 9 !important;
-  --mobile-left-sidebar-width: 280pt !important;
-  --mobile-right-sidebar-width: 240pt !important;
-  --mono0: black !important;
-  --mono100: white !important;
-  --top-left-padding-y: 0px !important;
-  --line-number-color: var(--text-faint) !important;
-  --cards-border-width: 1px !important;
   --adaptive-list-edit-offset: var(--list-edit-offset) !important;
   --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --ax2: hsl(
@@ -2637,8 +2561,24 @@ body.theme-dark {
     var(--accent-s),
     calc(var(--accent-l) - 5%)
   ) !important;
+  --background-modifier-accent: var(--ax3) !important;
+  --background-modifier-form-field-highlighted: var(--bg1) !important;
+  --background-table-rows: var(--bg2) !important;
+  --bg1: hsl(var(--base-h), var(--base-s), var(--base-l)) !important;
+  --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%)) !important;
+  --bg3: hsla(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 40%),
+    0.12
+  ) !important;
+  --blockquote-color: var(--text-muted) !important;
   --calendar-dot-active: var(--text-faint) !important;
   --calendar-dot-today: var(--text-accent) !important;
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  ) !important;
   --chart-color-1: var(--color-blue) !important;
   --chart-color-2: var(--color-red) !important;
   --chart-color-3: var(--color-yellow) !important;
@@ -2669,6 +2609,14 @@ body.theme-dark {
     calc(50% - var(--max-width)/2)
   ) !important;
   --embed-decoration-color: var(--background-modifier-border-hover) !important;
+  --font-adaptive-normal: var(
+    --font-text-size,
+    var(--editor-font-size)
+  ) !important;
+  --font-adaptive-small: calc(var(--font-ui-small) * 1.07) !important;
+  --font-adaptive-smaller: var(--font-ui-small) !important;
+  --font-adaptive-smallest: var(--font-ui-smaller) !important;
+  --font-code: calc(var(--font-adaptive-normal) * 0.9) !important;
   --frame-background: hsl(
     var(--frame-background-h),
     var(--frame-background-s),
@@ -2677,6 +2625,7 @@ body.theme-dark {
   --frame-background-h: var(--accent-h) !important;
   --frame-background-l: calc(var(--accent-l) - 25%) !important;
   --frame-background-s: var(--accent-s) !important;
+  --frame-divider-color: var(--ui1) !important;
   --frame-icon-color: var(--frame-muted-color) !important;
   --frame-muted-color: hsl(
     var(--frame-background-h),
@@ -2696,16 +2645,25 @@ body.theme-dark {
   --h5l: var(--ui1) !important;
   --h6l: var(--ui1) !important;
   --hl1: hsla(var(--accent-h), 50%, 40%, 30%) !important;
+  --icon-hex: var(--mono0) !important;
   --img-line-width: var(--content-line-width) !important;
   --img-margin-start: var(--content-margin-start) !important;
-  --leaflet-buttons: var(--bg2) !important;
+  --line-number-color: var(--text-faint) !important;
   --line-number-color-active: var(--text-muted) !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
   --minimal-tab-text-color: var(--tx2) !important;
   --minimal-tab-text-color-active: var(--tx1) !important;
   --mobile-sidebar-background: var(--bg1) !important;
   --progress-complete: var(--text-accent) !important;
   --progress-outline: var(--background-modifier-border) !important;
+  --quote-opening-modifier: var(--ui2) !important;
   --table-drag-padding: var(--table-drag-space) !important;
+  --text-blockquote: var(--tx2) !important;
+  --text-bold: var(--tx1) !important;
+  --text-code: var(--tx4) !important;
+  --text-formatting: var(--tx3) !important;
+  --text-italic: var(--tx1) !important;
+  --title-color: var(--tx1) !important;
   --title-color-inactive: var(--tx2) !important;
   --tx1: hsl(
     var(--base-h),
@@ -2738,6 +2696,22 @@ body.theme-dark {
     var(--base-s),
     calc(var(--base-l) + 20%)
   ) !important;
+  --active-line-bg: rgba(255, 255, 255, 0.04) !important;
+  --base-h: 0 !important;
+  --base-l: 15% !important;
+  --base-s: 0% !important;
+  --blockquote-style: normal !important;
+  --btn-shadow-color: rgba(0, 0, 0, 0.2) !important;
+  --cards-aspect-ratio: auto !important;
+  --cards-background: transparent !important;
+  --cards-background-hover: transparent !important;
+  --cards-border-width: 1px !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
   --chart-max-width: none !important;
   --chart-width: auto !important;
   --checkbox-left: 0px !important;
@@ -2746,29 +2720,51 @@ body.theme-dark {
   --content-margin: auto !important;
   --embed-decoration-style: solid !important;
   --focus-animation-duration: 0.1s !important;
+  --folding-offset: 32px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --hider-ribbon-display: none !important;
   --hl2: rgba(255, 177, 80, 0.3) !important;
+  --icon-muted: 0.5 !important;
   --iframe-max-width: none !important;
   --iframe-width: auto !important;
   --image-grid-background: transparent !important;
   --image-grid-fit: cover !important;
   --image-mix: normal !important;
+  --image-muted: 0.7 !important;
+  --image-radius: 4px !important;
   --img-grid-gap: 0.5rem !important;
   --img-max-width: 100% !important;
   --img-width: auto !important;
   --kanban-border: 0px !important;
-  --leaflet-borders: rgba(255, 255, 255, 0.1) !important;
-  --map-header-padding: 2px !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --list-edit-offset: 0.5em !important;
   --map-max-width: none !important;
   --map-width: auto !important;
+  --max-col-width: 18em !important;
+  --max-width: 88% !important;
+  --metadata-label-width-multiplier: 9 !important;
+  --mobile-left-sidebar-width: 280pt !important;
+  --mobile-right-sidebar-width: 240pt !important;
+  --mono0: black !important;
+  --mono100: white !important;
+  --nested-padding: 1.1em !important;
+  --normal-weight: 400 !important;
+  --pdf-dark-opacity: 1 !important;
   --ribbon-animation-duration: 0.1s !important;
+  --shadow-color: rgba(0, 0, 0, 0.3) !important;
   --sp1: white !important;
   --table-cell-padding: 4px 10px !important;
   --table-drag-space: 16px !important;
   --table-edge-cell-padding-first: 0 !important;
   --table-edge-cell-padding-last: 0 !important;
   --table-max-width: none !important;
+  --table-width: auto !important;
   --table-wrapper-width: fit-content !important;
+  --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
+  --top-left-padding-y: 0px !important;
+  --map-header-padding: 2px !important;
 }
 
 body {

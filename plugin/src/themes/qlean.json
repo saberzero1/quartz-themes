@@ -209,5 +209,15 @@
     "zen-mode": {
       "general": "body.zen-mode .status-bar {\ntransition: opacity 0.2s;\nopacity: 0.1;\n}\n\nbody.zen-mode .status-bar:hover {\nopacity: 1;\n}\n\nbody.zen-mode .side-dock-ribbon.is-collapsed {\nborder-right: none;\ntransition: opacity 0.3s;\nopacity: 0;\n}\n\nbody.zen-mode .side-dock-ribbon.is-collapsed:hover {\nopacity: 1;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--accent-color-light-hue-default": ["--color-h"],
+    "--accent-color-dark-hue-default": ["--color-h"],
+    "--accent-color-light-saturation-default": ["--color-s"],
+    "--accent-color-dark-saturation-default": ["--color-s"],
+    "--accent-color-light-lightness-default": ["--color-l"],
+    "--accent-color-dark-lightness-default": ["--color-l"],
+    "--font-monospace": ["--ec-codeFontFml"]
   }
 }

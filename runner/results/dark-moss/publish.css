@@ -1416,10 +1416,10 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #000 !important;
   --interactive-accent-rgb: 76, 120, 204 !important;
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --default-font:
     "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif !important;
   --text-error-hover: #c9626a !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --text-title-h1: #289aff !important;
   --text-title-h2: #00f56a !important;
   --text-title-h3: #0af7ff !important;

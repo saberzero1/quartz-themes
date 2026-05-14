@@ -1457,13 +1457,27 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  ) !important;
+  --line-width-wide: 50rem !important;
+  --cards-aspect-ratio: auto !important;
+  --cards-background: transparent !important;
+  --cards-background-hover: transparent !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 160px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 4px !important;
+  --line-width: 700px !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --embed-background-color: var(--background-secondary-alt) !important;
-  --line-width: 700px !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
@@ -1473,10 +1487,6 @@ body.theme-light {
   --block-width-wide: min(100cqw, var(--line-width-wide)) !important;
   --blockquote-size: var(--font-text-size) !important;
   --callout-size: var(--font-text-size);
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
   --embed-background: var(--background-primary-alt) !important;
   --media-radius: var(--radius-s) !important;
   --nn-theme-file-border-radius: var(--radius-m) !important;
@@ -1505,15 +1515,6 @@ body.theme-light {
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
   --banner-mobile-offset: 0px !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-background-hover: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 160px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 4px !important;
   --density-modifier: 1 !important;
   --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
@@ -1521,7 +1522,6 @@ body.theme-light {
   --hover-sidedock-width: 320px !important;
   --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
-  --line-width-wide: 50rem !important;
   --nn-theme-list-bg: transparent !important;
   --nn-theme-list-header-bg: transparent !important;
   --nn-theme-mobile-nav-bg: transparent !important;
@@ -2548,6 +2548,20 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  ) !important;
+  --line-width-wide: 50rem !important;
+  --cards-aspect-ratio: auto !important;
+  --cards-background: transparent !important;
+  --cards-background-hover: transparent !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 160px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 4px !important;
   --line-width: 700px !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
@@ -2558,10 +2572,6 @@ body.theme-dark {
   --block-width-wide: min(100cqw, var(--line-width-wide)) !important;
   --blockquote-size: var(--font-text-size) !important;
   --callout-size: var(--font-text-size);
-  --cards-columns: repeat(
-    auto-fit,
-    minmax(var(--cards-min-width), var(--cards-max-width))
-  ) !important;
   --embed-background: var(--background-primary-alt) !important;
   --media-radius: var(--radius-s) !important;
   --nn-theme-file-border-radius: var(--radius-m) !important;
@@ -2590,15 +2600,6 @@ body.theme-dark {
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
   --banner-mobile-offset: 0px !important;
-  --cards-aspect-ratio: auto !important;
-  --cards-background: transparent !important;
-  --cards-background-hover: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 160px !important;
-  --cards-mobile-width: 120px !important;
-  --cards-padding: 4px !important;
   --density-modifier: 1 !important;
   --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
@@ -2606,7 +2607,6 @@ body.theme-dark {
   --hover-sidedock-width: 320px !important;
   --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
-  --line-width-wide: 50rem !important;
   --nn-theme-list-bg: transparent !important;
   --nn-theme-list-header-bg: transparent !important;
   --nn-theme-mobile-nav-bg: transparent !important;

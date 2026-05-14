@@ -1352,8 +1352,8 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: #da5e45 !important;
   --background-modifier-form-field-highlighted: #2a2925 !important;
+  --inline-title-color: #da5e45 !important;
   --background-modifier-success-hover: #61cd70 !important;
   --blockquote-border: #2fc0c5 !important;
   --syntax-comment: #706d5c !important;
@@ -1361,6 +1361,8 @@ body.theme-dark {
   --syntax-keyword: #ff7b63 !important;
   --syntax-string: #61cd70 !important;
   --embed-background: inherit !important;
+  --modal-border: #222222 !important;
+  --prompt-border: #222222 !important;
   --background-primary-rgb: 24, 24, 24 !important;
   --sidebar-background: #141414 !important;
   --text-heading: #d6d3c6 !important;
@@ -1369,7 +1371,6 @@ body.theme-dark {
   --background-secondary-rgb: 32, 32, 32 !important;
   --embed-border: #222222 !important;
   --interactive-muted: #222222 !important;
-  --modal-border: #222222 !important;
   --nav-file-title-color-active: #e8e7e2 !important;
   --nav-item-color-selected-active: #e8e7e2 !important;
   --nav-item-icon-color: #2c7a48 !important;
@@ -1378,7 +1379,6 @@ body.theme-dark {
   --outline-item-color-active: #c2c0b4 !important;
   --pane-border-color: #222222 !important;
   --pane-border-width: 1px !important;
-  --prompt-border: #222222 !important;
   --ribbon-background-hover: #1c1818 !important;
   --syntax-diff-changed: #e3b77d !important;
   --syntax-function: #81dfdf !important;

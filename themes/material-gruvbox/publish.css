@@ -1384,6 +1384,7 @@ body.theme-light {
   --table-row-odd-background: rgba(var(--light1-x), 0.7) !important;
   --bold-color: var(--faded-yellow) !important;
   --italic-color: var(--faded-yellow) !important;
+  --cursor-line-background: rgba(var(--light1-x), 0.5) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --gray: rgb(146, 131, 116) !important;
   --light-text: rgb(212, 190, 152) !important;
@@ -1391,7 +1392,6 @@ body.theme-light {
   --calendar-hover: var(--neutral-red) !important;
   --calendar-today: var(--neutral-red) !important;
   --calendar-week: var(--neutral-red) !important;
-  --cursor-line-background: rgba(var(--light1-x), 0.5) !important;
   --dark0: rgb(40, 40, 40) !important;
   --dark1: rgb(60, 56, 54) !important;
   --dark2: rgb(80, 73, 69) !important;
@@ -2453,12 +2453,12 @@ body.theme-dark {
   --table-row-odd-background: rgba(var(--dark2-x), 0.4) !important;
   --bold-color: var(--neutral-yellow) !important;
   --italic-color: var(--neutral-yellow) !important;
+  --cursor-line-background: rgba(var(--dark1-x), 0.5) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --gray: rgb(146, 131, 116) !important;
   --light-text: rgb(212, 190, 152) !important;
   --calendar-background-hover: var(--dark1) !important;
   --calendar-hover: var(--neutral-red) !important;
-  --cursor-line-background: rgba(var(--dark1-x), 0.5) !important;
   --dark0: rgb(40, 40, 40) !important;
   --dark1: rgb(60, 56, 54) !important;
   --dark2: rgb(80, 73, 69) !important;

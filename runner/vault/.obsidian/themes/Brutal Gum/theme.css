@@ -1,0 +1,1609 @@
+/* 
+  Gumroad Theme for Obsidian - V2
+  Inspired by Gumroad's brutalist design
+*/
+
+/* Style Settings 备选 */
+
+/* 1. 图片是否自带边缘/阴影 */
+/* 2. 是否覆盖主题色（Accent color） */
+/* 3. 多彩标题 */
+/* 4. 双栏属性？ */
+
+/* 5. 全长的分隔线 */
+
+/* 插件适配 */
+
+/* Hometab */
+.suggester-additional-info,
+.home-tab-suggestion-container {
+  border-top-color: var(--gumroad-black);
+}
+
+/* NTB */
+
+.callout[data-callout="note-toolbar"] {
+  border: none !important;
+}
+
+body .callout[data-callout="note-toolbar"][data-callout-metadata*="glass"]:not([data-callout-metadata*="card"]), body.is-mobile .callout[data-callout="note-toolbar"][data-callout-metadata*="mgls"]:not([data-callout-metadata*="card"]) {
+    & ul {
+        & a, & span.external-link {
+            border: var(--border-width) solid var(--background-modifier-border);
+            border-radius: 4px;
+            box-shadow: none;
+            transition: var(--ntb-anim-duration-moderate);
+        }
+    }
+}
+
+.note-toolbar-setting-item-controls {
+    & .setting-item {
+      border-left: none;
+      border-right: none;
+     }
+}
+
+.note-toolbar-setting-button,
+
+.note-toolbar-setting-view-cta.note-toolbar-setting-help-view-section .setting-item {
+  border: none;
+}
+
+.modal:not(.mod-settings) .setting-item:not(.setting-item-heading):first-child {
+  border: none;
+}
+
+/* BRAT */ 
+.modal:not(.mod-settings) .setting-item:not(.setting-item-heading) {
+  border-width: 0px;
+}
+
+
+/* NN */
+
+/* 移动端 */
+
+/* 2026-03-30 移动端适配 */
+.is-mobile {
+  --touch-radius-xs: 4px;
+  --interactive-normal: var(--background-secondary) !important;
+  --nav-item-radius: 0px !important;
+
+  /* 导航栏按钮 圆角 */
+  --touch-radius-xl: 4px !important;
+  --touch-radius-l: 4px !important;
+  --touch-radius-s: 4px !important;
+  --touch-radius-xxs: 4px !important;
+  /* 不能直接改，有复用—— */
+  /* --touch-size-m: 4px !important; */
+
+  --input-radius: 4px !important;
+
+  /* 底部的输入框（切换文件/命令面板） */
+  .prompt-input-container {
+    border-radius: 4px;
+  }
+
+  --view-header-action-radius: 2px !important;
+
+  /* 顶部工具栏 */
+  /* 这个本身就是悬浮的了……所以最好，就，不改？ */
+  .is-mobile.is-floating-nav.is-phone .view-header {
+    background-color: var(--background-primary);
+
+    /* 顶部灵动岛啥的，不能改 */
+    /* margin-top: 0px; */
+  }
+
+  /* 文件列表——标签页 */
+  .workspace-drawer-tab-select .workspace-tab-header-inner {
+    margin: 8px 0;
+  }
+
+  /* 选中项 */
+  .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner {
+    border: 1px solid var(--gumroad-black);
+  }
+
+  .workspace-leaf-content {
+    border-right: none !important;
+
+  }
+
+  .workspace-leaf .workspace-leaf-content {
+    border-top: 1px solid var(--gumroad-black) !important;
+  }
+
+  /* 侧边标题栏 */
+  .view-header, .nav-header  {
+    border-bottom: none !important;
+  }
+
+  /* NN 工具栏 */
+  .nn-pane-bottom-toolbar {
+    padding: 8px 0 !important;
+  }
+  /* NN 搜索 */
+  .nn-search-input {
+    border-radius: 4px !important;
+  }
+
+  /* 同步区域 */
+  .workspace-leaf-content[data-type="sync"] {
+    .view-content {
+      padding-bottom: 0px !important;
+    }
+  }
+
+}
+
+/* 260407_会导致看不到背景色啊，不中 */
+.is-phone .mod-raised {
+  /* background: none; */
+}
+
+/* 渐变遮罩 */
+.is-mobile.is-floating-nav .workspace-drawer .workspace-leaf-content:after {
+  background: none;
+}
+
+.is-mobile.is-floating-nav .mod-raised {
+  backdrop-filter: none;
+  border-radius: 4px;
+}
+
+.mobile-navbar-action .clickable-icon, .mobile-navbar-action button {
+  border-radius: 0px;
+}
+
+
+
+/* 文字工具栏 */
+.mobile-toolbar-options-container {
+  background-color: transparent !important;
+
+  /* 内部 */
+  .mobile-toolbar-options-list-container.mod-raised {
+    background-color: transparent !important;
+    border-radius: 4px;
+  }
+}
+
+/* 上方导航栏 */
+.is-phone:not(.is-floating-nav) .view-header {
+  border-bottom: 1px solid var(--gumroad-black) !important;
+}
+
+/* 下方导航栏 */
+.mobile-navbar {
+  --navbar-radius: 4px;
+}
+
+/* 输入框 */
+.is-phone .prompt-input[type=text] {
+  border-radius: 4px;
+}
+
+/* 属性栏属性栏属性栏 */
+.is-mobile .metadata-content {
+  transform: none;
+  width: 100%;
+}
+
+
+/* 全局 */
+
+body {
+  /* Gumroad Palette */
+  --gumroad-pink: #ff90e8;
+  --gumroad-yellow: #f1f333;
+  --gumroad-yellow: #f7cc2a;
+  --gumroad-black: #000000;
+  --gumroad-white: #ffffff;
+  --gumroad-gray: #f4f4f0;
+  --gumroad-cyan: #23a094;
+  --gumroad-blue: #96b4f1;
+  --gumroad-green: #6ee05e;
+
+  --gumroad-red: #d24129;
+
+  --gumroad-purple: #c397eb;
+  --gumroad-orange: #f57757;
+
+
+  --transition-duration: .14s;
+
+  --gumroad-accent: var(--color-accent);
+
+  --gumroad-border-radius-s: 4px;
+  --gumroad-border-radius-m: 8px;
+  --gumroad-border-radius-l: 16px;
+  --gumroad-border-radius: var(--gumroad-border-radius-s);
+
+  --bg1: var(--gumroad-white);
+  --bg2: var(--gumroad-gray);
+  --bg3: var(--gumroad-white);
+
+  --tx1: var(--gumroad-black);
+  --tx2: var(--gumroad-black);
+  --tx3: #999;
+
+  --hl1: var(--gumroad-accent);
+
+  /* Borders */
+  --border-width: 1px;
+  /* --interactive-accent: var(--gumroad-black); */
+  --interactive-accent-hover: var(--gumroad-accent);
+
+  --tab-outline-color: var(--gumroad-black);
+
+  /* Layout */
+  --tab-radius: 0px;
+  --window-gap: 10px;
+  /* Gap between panes for that card look */
+
+
+  --header-height: 50px;
+  --callout-title-weight: 400;
+
+  /* 2026-03-27 很多 border top 会用这个颜色 */
+  --background-modifier-border: var(--gumroad-black);
+  --background-modifier-border-focus: var(--gumroad-accent);
+
+  --dropdown-background-hover: transparent;
+  --input-shadow-hover: none;
+
+  --background-primary-alt: var(--background-primary);
+
+  /* 设置 */
+  --setting-items-border-color: var(--gumroad-black);
+  --setting-items-border-width: 1px;
+  --setting-items-radius: 8px;
+
+  /* --setting-items-padding: 0px; */
+
+  --toggle-radius: var(--gumroad-border-radius-s);
+  --toggle-thumb-radius: var(--gumroad-border-radius-s);
+
+  --radius-s: 0px;
+
+  --tag-radius: 0px;
+  --tag-border-width: 1px;
+
+  --nav-item-weight-active: 700;
+  
+  /* Prompt */
+  --prompt-border-color: var(--gumroad-black);
+
+  --checkbox-color: var(--gumroad-black);
+  --checkbox-border-color: var(--gumroad-black);
+  --checkbox-border-color-hover: var(--gumroad-black);
+
+  /* --text-on-accent: var(--color-accent); */
+  --checkbox-marker-color: var(--gumroad-black) !important;
+
+  --code-background: var(--background-secondary);
+
+  --pill-radius: var(--gumroad-border-radius-s);
+
+  /* 悬浮选中项的边框 */
+  /* 也会影响标签页间隔 */
+  /* 甚至影响选项框（Toggle）的背景色……范围太大了，还是先不动吧！ */
+  /* --background-modifier-border-hover: var(--gumroad-black); */
+
+  /* 分隔线 */
+  --hr-color: var(--gumroad-black);
+}
+
+.theme-light {
+  /* Override essentials */
+  --background-primary: var(--bg1);
+  --background-secondary: var(--bg2);
+  --background-secondary-alt: var(--bg2);
+  /* Make sidebars distinct gray */
+
+  --text-normal: var(--tx1);
+  --text-muted: var(--tx3);
+  --text-faint: #999;
+
+  /* Borders & Dividers */
+  --divider-color: var(--gumroad-black);
+  --prompt-border: 2px solid var(--gumroad-black);
+  --modal-border: 2px solid var(--gumroad-black);
+
+  /* Inputs */
+  --input-radius: 0px;
+  --input-radius: var(--gumroad-border-radius);
+  --input-border-width: 1px;
+}
+
+.ultra-black .theme-dark {
+  --bg1: #030303;
+  --bg2: #191919;
+
+  /* 还是要区分一些 */
+  --bg2: #121212;
+  --gumroad-black: #dadada;
+  --gumroad-white: #000000;
+  --gumroad-gray: #070707;
+
+  /* 参考： */
+  /* 
+    --background-primary: var(--color-base-00);
+    --background-primary-alt: var(--color-base-10);
+    --background-secondary: var(--color-base-20);
+    --background-modifier-hover: 
+   */
+  /* --color-base-00: #000000;
+  --color-base-20: #050505; */
+  
+}
+
+.theme-dark {
+  /* Primary */
+  
+  --bg1: #242423; /* 有点淡 */
+  --bg1: #1e1e1e; /* OB 默认主题的黑色，RGB=303030 */
+
+  /* Discord 的黑色，但是有点太黑了，那边对应的 secondary 是 #000 */
+  /* --bg1: #070709; */
+  /* Secondary */
+  --bg2: #0e1113;
+
+  /* 还是要区分一些 */
+  --gumroad-black: #dadada;
+  --gumroad-black: #eeeeee;
+
+  --gumroad-white: #121212;
+  --gumroad-gray: #070709;
+
+  --background-primary: var(--bg1);
+  --background-secondary: var(--bg2);
+  --background-secondary-alt: var(--bg2);
+
+  --tx3: #999;
+  /* --text-faint: #666; */
+
+  /* Borders & Dividers */
+  --divider-color: var(--gumroad-black);
+  --prompt-border: 2px solid var(--gumroad-white);
+  --modal-border: 2px solid var(--gumroad-white);
+
+}
+
+
+/* 多彩标题 */
+/* 优先 */
+h1, .markdown-source-view.mod-cm6 .cm-header-1 {
+    color: var(--color-accent, var(--gumroad-pink));
+}
+
+body {
+  --h1-color: var(--color-accent, var(--gumroad-pink));
+  --h2-color: var(--gumroad-cyan);
+  --h5-color: var(--gumroad-yellow);
+  --h3-color: var(--gumroad-orange);
+  --h4-color: var(--gumroad-purple);
+}
+
+/* 悬浮 */
+@media (hover: hover) {
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover {
+        box-shadow: none;
+    }
+}
+
+
+
+/* Navbar 标题栏 */
+.view-header,
+.nav-header {
+  border-bottom: 1px solid var(--gumroad-black) !important;
+  box-shadow: none;
+
+  /* height: var(--header-height); */
+  /* height: 40px; */
+}
+
+/* === Tab 标签 === */
+
+/* 中间的标签页 */
+
+/* 间隔 */
+.workspace .mod-root .workspace-tab-header-inner::after {
+  inset-inline-end: 0px;
+  /* background-color: var(--tab-divider-color); */
+  height: 20px;
+}
+
+.workspace .mod-root .workspace-tab-header {
+  /* padding: 0px; */
+}
+
+.workspace-split.mod-root .workspace-tab-header:not(.is-active) {
+    &:hover {
+      /* border: 1px solid var(--gumroad-black); */
+      .workspace-tab-header-inner {
+        outline: 1px solid var(--gumroad-black);
+
+      }
+      /* box-shadow: 2px 2px 0 var(--gumroad-black);
+      transform: translate(-1px, -1px); */
+    }
+}
+
+/* 当前激活的标签页 */
+.workspace-split.mod-root .workspace-tab-header-container .workspace-tab-header.is-active {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  border: 2px solid var(--gumroad-black);
+  box-shadow: 3px 3px 0 var(--gumroad-black);
+  /* margin: 6px !important; */
+
+  &:active {
+    box-shadow: 0px 0px 0 var(--gumroad-black);
+    transform: translate(2px, 2px);
+  }
+}
+
+
+/* 垂直的激活项 */
+.vertical-tab-header-group {
+  border-bottom: 1px solid var(--gumroad-black);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.vertical-tab-nav-item.tappable.is-active {
+  border: 2px solid var(--gumroad-black);
+  box-shadow: 3px 3px 0 var(--gumroad-black);
+
+  /* Hover 是悬浮，active 是按下 */
+  &:active {
+    box-shadow: 0px 0px 0 var(--gumroad-black);
+    transform: translate(2px, 2px);
+  }
+
+}
+
+
+/* 社区 */
+.community-item.tappable {
+
+    &:hover {
+      border-color: var(--gumroad-accent);
+      border-width: 1px;
+      /* outline: 2px solid var(--gumroad-accent); */
+    }
+
+}
+
+.community-item.tappable.is-selected {
+    border: 2px solid var(--gumroad-black) !important;
+    box-shadow: 3px 3px 0 var(--gumroad-black);
+
+    /* Hover 是悬浮，active 是按下 */
+    &:active {
+      box-shadow: 0px 0px 0 var(--gumroad-black);
+      transform: translate(2px, 2px);
+    }
+}
+
+.workspace-split.mod-root .workspace-tab-header-container .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header-container .workspace-tab-header.is-active::after {
+    box-shadow: none;
+}
+
+.workspace-split.mod-root .workspace-tab-header-container .workspace-tab-header {
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+/* 边缘显示 */
+
+.mod-left-split .workspace-tab-header-container-inner, .mod-right-split .workspace-tab-header-container-inner {
+  margin: 6px;
+}
+
+.mod-left-split .workspace-tab-header, .mod-right-split .workspace-tab-header {
+  margin: 1px !important;
+
+}
+
+
+/* 
+   === MAIN LAYOUT === 
+   Make the workspace feel like a canvas with floating cards 
+*/
+
+/* The workspace background */
+.workspace {
+  background-color: var(--gumroad-gray);
+}
+
+
+/* The Editor "Page" - Card Style */
+.workspace-leaf .workspace-leaf-content {
+  /* 都交给右边来显示 */
+  border-left: 1px solid var(--gumroad-black);
+  border-right: 1px solid var(--gumroad-black);
+  border-top: none;
+  border-bottom: 1px solid var(--gumroad-black);
+  box-shadow: none;
+  /* Removed heavy shadow */
+  margin: 0px;
+  /* Reset margin */
+  overflow: hidden;
+  /* Keep content inside border */
+}
+
+
+.workspace-split.mod-vertical.mod-root .workspace-tabs:last-child .workspace-leaf-content {
+  /* border-right: none; */
+}
+
+/* Inactive leaves - flatter */
+.workspace-leaf:not(.mod-active) .workspace-leaf-content {
+  /* border: none; */
+  /* margin: 0; */
+}
+
+/* Sidebar Specific - No border/margin */
+.mod-left-split .workspace-leaf-content,
+.mod-right-split .workspace-leaf-content {
+  border: none;
+  /* border-right: 1px solid var(--gumroad-black); */
+  border-bottom: 1px solid var(--gumroad-black);
+  /* margin: 0 !important; */
+}
+
+.mod-top-right-space .workspace-leaf-content {
+  /* border-left: 1px solid var(--gumroad-black); */
+  /* margin: 0 !important; */
+}
+
+
+/* 
+   === SCROLLBARS === 
+   Hidden by default, shown when active/hovered
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  /* background-color: black; */
+  /* display: none; */
+  /* Hidden by default */
+}
+
+.workspace-leaf.mod-active ::-webkit-scrollbar,
+.workspace-leaf-content:hover ::-webkit-scrollbar {
+  display: block;
+  /* Shown when active or hovered */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gumroad-black);
+  border: 2px solid var(--gumroad-white);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gumroad-accent);
+}
+
+/* Sidebar Styling */
+
+/* 左侧边栏 */
+.workspace-ribbon {
+  background-color: var(--gumroad-gray);
+  /* Changed from yellow to gray */
+  border-right: 1px solid var(--gumroad-black);
+  border-bottom: 1px solid var(--gumroad-black);
+}
+
+.workspace-ribbon-collapse-btn,
+.side-dock-ribbon-action {
+  color: var(--gumroad-gray-60) !important;
+}
+
+.workspace-ribbon-collapse-btn:hover,
+.side-dock-ribbon-action:hover {
+  background-color: var(--gumroad-accent);
+  color: var(--gumroad-black);
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+  border-right: none;
+  /* 渐变出现 */
+  /* border-right-color: transparent;
+  transition: border-right-color 0.3s ease; */
+}
+
+
+.workspace-split.mod-left-split {
+  background-color: var(--gumroad-gray);
+  border-right: none;
+  /* Removed to fix stray line artifact */
+}
+
+.workspace-split.mod-right-split {
+  background-color: var(--gumroad-gray);
+  border-left: none;
+}
+
+/* Fix stray lines from resize handles */
+.workspace-leaf-resize-handle {
+  /* background-color: transparent !important; */
+  border: none !important;
+  width: 100%;
+  /* width: 0px !important; */
+  /* Minimize width to prevent gaps */
+}
+
+/* File Explorer Items */
+.nav-file-title,
+.nav-folder-title {
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: var(--gumroad-accent);
+  border: 1px solid var(--gumroad-black);
+  color: var(--gumroad-black);
+}
+
+.nav-file-title.is-active {
+  background-color: var(--gumroad-white);
+  border: 2px solid var(--gumroad-black);
+  box-shadow: 3px 3px 0 var(--gumroad-black);
+  font-weight: 800;
+  transform: translate(-1px, -1px);
+}
+
+/* 
+   === CONTENT STYLING ===
+*/
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--gumroad-black);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.edit-block-button {
+  opacity: 0.2;
+}
+
+/* Callouts - The "Brutalist" Look */
+.callout,
+.markdown-source-view.mod-cm6 .callout {
+  --p-spacing: 0.5rem;
+  --callout-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-4);
+
+  background-color: var(--gumroad-white);
+  border: 2px solid var(--gumroad-black) !important;
+  border-radius: 6px;
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  transition-timing-function: ease-out;
+
+  padding: 0;
+  margin: var(--size-4-1);
+  box-shadow: 0 0 0 var(--gumroad-black);
+
+  margin-bottom: var(--size-4-4);
+}
+
+/* 右上角编辑按钮 */
+.cm-embed-block  .edit-block-button {
+  right: 15px !important;
+  top: 10px !important;
+}
+.cm-callout:hover .edit-block-button {
+  right: 5px;
+  transition: right 0.2s ease-out;
+}
+
+.callout:hover,
+.markdown-source-view.mod-cm6 .callout:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 0.25em 0.25em 0 var(--gumroad-black);
+  /* Pure black shadow */
+}
+
+.callout-title {
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--gumroad-black);
+  background-color: var(--gumroad-cyan);
+
+  --callout-default: var(--gumroad-black);
+  color: white;
+
+  .callout-icon .svg-icon {
+    color: white;
+  }
+
+  display: flex;
+  
+  /* Changed from inline-block */
+  /* width: fit-content; */
+
+  /* Keep label size */
+  align-items: center;
+
+  padding: 12px 12px;
+  /* transform: rotate(-1deg); Removed for cleaner look */
+  white-space: nowrap;
+  /* Prevent wrapping */
+  word-break: keep-all;
+
+}
+
+.callout-content {
+  padding: var(--callout-padding);
+}
+
+/* Callout variants */
+
+.callout[data-callout="note"],
+.callout[data-callout="gpt"],
+.callout[data-callout="quote"],
+.callout[data-callout="code"] {
+    .callout-title {
+    /* Keep default white bg, yellow title */
+    background-color: var(--gumroad-blue);
+    color: black;
+    .callout-icon .svg-icon {
+      color: black;
+    }
+  }
+}
+
+.callout[data-callout="bug"],
+.callout[data-callout="question"],
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+    .callout-title {
+    /* Keep default white bg, yellow title */
+    background-color: var(--gumroad-yellow);
+    color: black;
+    .callout-icon .svg-icon {
+      color: black;
+    }
+  }
+}
+
+.callout[data-callout="success"] .callout-title ,
+.callout[data-callout="tip"]  .callout-title {
+  /* Keep default white bg, yellow title */
+  background-color: var(--gumroad-green);
+  color: black;
+  .callout-icon .svg-icon {
+    color: black;
+  }
+}
+
+
+.callout[data-callout="failure"] .callout-title {
+  /* Keep default white bg, yellow title */
+  background-color: var(--gumroad-purple);
+  color: black;
+  .callout-icon .svg-icon {
+    color: black;
+  }
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="important"],
+.callout[data-callout="warning"] {
+  .callout-title {
+    background-color: var(--gumroad-red);
+    color: white;
+    .callout-icon .svg-icon {
+      color: white;
+    }
+  }
+}
+
+/* Quote */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  width: 3px;
+  border-width: 4px;
+}
+
+
+/* Inline Code */
+code {
+  background-color: var(--gumroad-yellow);
+  border: 1px solid var(--gumroad-black);
+  color: var(--gumroad-black);
+  padding: 2px 6px;
+  font-family: var(--font-monospace);
+  font-weight: bold;
+}
+
+/* Pre / Code Blocks */
+.markdown-rendered pre {
+  /* 这个似乎有时候会导致代码块背景变白——暗色的时候，然后就看不清一些文字了 */
+  /* background-color: var(--gumroad-black); */
+
+  /* 但是这样一来，这个也不能保留……不然在 Datacore 里可能因为黑色背景+黑色文字然后没掉 */
+  /* color: var(--gumroad-white); */
+
+  border: 2px solid var(--gumroad-black);
+  box-shadow: 6px 6px 0 var(--gumroad-accent);
+  padding: 15px;
+}
+
+/* Links */
+a,
+.cm-hmd-internal-link {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  padding: 0;
+  /* color: var(--gumroad-black); */
+  font-weight: 600;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover {
+  background: none;
+  color: var(--gumroad-accent);
+  box-shadow: none;
+  border: none;
+  transform: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* Blockquotes */
+/* 渲染的引用 */
+.markdown-rendered blockquote {
+  border-left: none;
+  border-left: 3px solid var(--gumroad-black);
+  /* remove standard strip */
+  outline: 1px solid var(--gumroad-black);
+  background-color: var(--gumroad-gray);
+  /* margin: 1em 0; */
+  padding: var(--size-4-1) var(--size-4-2);
+  position: relative;
+
+  /* 起始位置 */
+  /* padding-inline-start: var(--size-4-8); */
+  padding-inline-start: 2em;
+}
+
+blockquote::before {
+  /* 哎呀这个会随着字体变化呢！ */
+  content: "“";
+  font-size: 4em;
+  position: absolute;
+  top: -20px;
+  left: var(--size-4-1);
+  color: var(--gumroad-accent);
+  z-index: 0;
+}
+
+/* Images */
+img {
+  border: 2px solid var(--gumroad-black);
+  box-shadow: 5px 5px 0 var(--gumroad-accent);
+  max-width: 90%;
+
+  margin: 0.25em 0 0.5em;
+
+  transition: transform 0.1s, box-shadow 0.1s;
+  transition-timing-function: ease-out;
+
+  /* 反向回收 */
+  &:hover {
+    box-shadow: 0px 0px 0 var(--gumroad-accent);
+    transform: translate(2px, 2px);
+
+    /* 加在这里的话，只会在 hover 上去的时候生效，移开不生效 */
+    /* 所以要加在基础部分 */
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+
+    /* transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 var(--gumroad-accent); */
+    /* transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: .5rem .5rem 0rem var(--gumroad-accent);
+    transform: translate(-0.25rem, -0.25rem); */
+  }
+}
+
+/* Bases 里的 */
+.formula-editor img {
+  border: none;
+  box-shadow: none;
+}
+
+/* 下载附件里的 */
+.attachments-gallery img,
+
+/* Codeblock Customizer */
+img.codeblock-customizer-icon,
+
+img.cm-widgetBuffer,
+
+/* Callout 里的 */
+.callout img {
+  box-shadow: none;
+  transform: none;
+  /* border-width: 1px; */
+  /* max-width: 100% !important; */
+}
+
+.attachments-gallery .download-attachment-item img, .attachments-gallery .download-attachment-item video {
+  margin-top: var(--border-width);
+  margin-bottom: var(--border-width);
+  
+}
+
+
+/* UI Controls */
+button:not(.clickable-icon) {
+  border: 1px solid var(--gumroad-black);
+  border-radius: 4px;
+  background-color: var(--gumroad-white);
+  color: var(--gumroad-black);
+  /* font-weight: 600; */
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  transition-timing-function: ease-out;
+
+  box-shadow: none;
+
+  &:hover {
+    /* background-color: var(--gumroad-black); */
+    transform: translate(-2px, -2px);
+    box-shadow: 0.25em 0.25em 0 var(--gumroad-black);
+  }
+}
+
+
+button.mod-cta {
+  background-color: var(--gumroad-black);
+  color: var(--gumroad-white);
+  /* box-shadow: 4px 4px 0 var(--gumroad-yellow); */
+  border: 1px solid black;
+  border-radius: 4px;
+  /* transition: transform 0.1s, box-shadow 0.1s; */
+  /* Already specific, good */
+}
+
+button.mod-cta:hover {
+  /* background-color: var(--gumroad-black); */
+  color: var(--gumroad-black);
+  background-color: var(--gumroad-accent);
+
+  transform: translate(-2px, -2px);
+  box-shadow: 0.25em 0.25em 0 var(--gumroad-black);
+}
+
+button.mod-cta:active {
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 var(--gumroad-accent);
+}
+
+
+
+select, .combobox-button, .dropdown {
+    border: 1px solid var(--gumroad-black);
+    /* box-shadow: var(--input-shadow); */
+    box-shadow: none;
+
+    --input-radius: 4px;
+
+    /* -electron-corner-smoothing: var(--corner-smoothing); */
+    &:hover {
+      box-shadow: none;
+      background-color: none;
+    }
+}
+
+select, .combobox-button, .dropdown {
+  &:active, &:focus, &:focus-visible {
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+  }
+}
+
+
+/* 加粗字体 */
+strong, .cm-strong {
+  font-weight: border;
+  text-decoration: underline;
+  /* color: var(--gumroad-accent) !important; */
+
+  /* padding-bottom: 2px; */
+  /* border-bottom: 1px solid var(--gumroad-black); */
+}
+
+/* 右下角状态栏 */
+
+.status-bar {
+  margin-right: 1em;
+  border: 1px solid var(--gumroad-black);
+  margin-bottom: 1em;
+  border-radius: 4px;
+
+  &:hover {
+    box-shadow: 3px 3px 0 var(--gumroad-black);
+    transform: translate(-1px, -1px);
+  }
+}
+
+/* 元数据 */
+
+.workspace-split.mod-root {
+  .metadata-container {
+    border: 1px solid var(--gumroad-black);
+    padding: 0px;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    border-radius: var(--gumroad-border-radius);
+
+    &:hover {
+      transform: translate(-4px, -2px);
+      box-shadow: 5px 5px 0 var(--gumroad-black);
+      transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+    }
+  }
+
+  /* 标题 */
+  .metadata-properties-heading {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    background-color: var(--gumroad-accent);
+
+    padding: 8px 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gumroad-black);
+    
+    .metadata-properties-title {
+      color: white !important;
+    }
+  }
+      
+  /* 属性表格 */
+  .metadata-property {
+    border-radius: 0px !important;
+    border-bottom: 1px solid var(--gumroad-black);
+  }
+
+  @media (hover: hover) {
+    .metadata-property:hover {
+        --metadata-divider-color: var(--metadata-divider-color-hover);
+        /* 不改背景色 */
+        /* background-color: var(--metadata-property-background-hover); */
+        /* box-shadow: var(--metadata-property-box-shadow-hover);
+        box-shadow: 0 0 0 var(--border-width) var(--background-modifier-border-hover); */
+
+        /* 不改边框 */
+        /* box-shadow: 0 0 0 var(--border-width) var(--gumroad-pink); */
+        /* box-shadow: inherit; */
+        
+        border-radius: var(--metadata-property-radius-hover);
+    }
+
+  }
+
+    .metadata-properties {
+      /* border-bottom: 1px solid var(--gumroad-black); */
+      --metadata-gap: 0px;
+    }
+
+  /* 加号按钮 */
+  .metadata-add-button  {
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    /* border: 1px solid var(--gumroad-black); */
+
+    svg.svg-icon {
+      fill: var(--gumroad-black);
+      stroke: var(--gumroad-accent);
+
+    }
+  }
+
+}
+
+/* Bases 的属性表格 */
+.metadata-property.bases-sort-property-container,
+.filter-expression.metadata-property {
+  border-radius: 0px;
+}
+
+
+/* 嵌入块 */
+.markdown-source-view.mod-cm6 .edit-block-button {
+  color: var(--gumroad-black);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .edit-block-button {
+  color: var(--gumroad-white);
+}
+
+.markdown-embed {
+  border: 1px solid var(--gumroad-black);
+  border-radius: var(--gumroad-border-radius);
+
+  /* 2026-03-27 为啥？？ */
+  /* margin-bottom: 1em; */
+
+  /* box-shadow: 5px 5px 0 var(--gumroad-accent); */
+
+  /* &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 var(--gumroad-black);
+  } */
+}
+
+/* 设置标题项 */
+.setting-item-heading {
+  /* border-top: 1px solid var(--setting-items-border-color); */
+  border: none;
+}
+
+
+/* 设置栏左侧 */
+/* .vertical-tab-header {
+  background-color: var(--gumroad-gray);
+} */
+
+/* .setting-group .setting-item,
+.setting-group .setting-item:first-child,
+.setting-group .setting-item:last-child {
+  padding: 16px;
+} */
+
+.checkbox-container {
+    /* outline-width: 1px; */
+    outline-color: var(--gumroad-black);
+}
+
+input[type="radio"]:checked, input[type=checkbox]:checked {
+  background-color: var(--gumroad-white);
+
+  &:hover {
+    background-color: var(--gumroad-accent) !important;
+  }
+}
+
+/* ! ==== 特定插件 ==== */
+
+/* ! Negative Heading */
+.cm-inline-code .cm-neg-heading-text {
+  color: var(--gumroad-white);
+}
+
+/* ! Easy Typing */
+
+/* 设置的首个配置的 border top */
+.et-settings-section-body>.setting-item:first-child {
+  border-top: 1px solid var(--setting-items-border-color);
+}
+
+.et-settings-nav {
+  gap: 8px;
+  padding-bottom: 1em;
+
+  border-bottom-width: 1px;
+}
+
+/* ! Components */
+
+.components--Picture img {
+  margin: 0;
+  /* 适配圆角 */
+  border-radius: var(--radius-m);
+
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+/* ! Export Image */
+.export-image-preview-out {
+  --background-modifier-border: #CCC;
+
+}
+
+/* ! Notebook Navigator */
+body {
+  /* 原本用的是 modifier-border，改成纯黑了所以背景也纯黑了 */
+  --nn-theme-file-tag-bg: var(--background-secondary);
+
+}
+.nn-split-container.nn-orientation-vertical .nn-resize-handle {
+  background-color: var(--gumroad-black) !important;
+  height: 2px;
+  
+}
+
+
+
+/* Notetoolbar */
+
+
+/* Callouts - The "Brutalist" Look */
+.callout.cg-note-toolbar-callout,
+.markdown-source-view.mod-cm6 .callout.cg-note-toolbar-callout {
+  /* border: 2px solid var(--gumroad-black) !important; */
+  border-width: 1px !important;
+}
+
+.cg-note-toolbar-container[data-tbar-position="text"] {
+  --cg-nt-tbar-text-shadow: 3px 3px 0 var(--gumroad-black) !important;
+
+    .callout.cg-note-toolbar-callout {
+      box-shadow: 3px 3px 0 var(--gumroad-black) !important;
+      border: 2px solid var(--gumroad-black) !important;
+    }
+
+}
+
+
+/* .callout[data-callout="note-toolbar"], */
+.cg-note-toolbar-container[data-tbar-position="text"] .callout[data-callout="note-toolbar"] {
+    & .callout-content {
+      
+        a, span.external-link {
+            outline: 2px solid var(--gumroad-black);
+            box-shadow: none;
+            color: var(--gumroad-black);
+
+        }
+    }
+}
+
+/* Ember */
+.ember-rank-badge {
+  background-color: transparent;
+  border: 1px solid var(--gumroad-black);
+  color: var(--gumroad-black);
+}
+
+/* FolderNotes */
+.fn-is-active {
+  border: 2px solid var(--gumroad-black) !important;
+  box-shadow: 3px 3px 0 var(--gumroad-black);
+  font-weight: 800;
+  transform: translate(-1px, -1px);
+
+  background-color: var(--gumroad-white) !important;
+}
+
+/* Daily Nav bar */
+
+.daily-note-navbar {
+  margin: 5px;
+  gap: 4px;
+}
+/* Linter */
+.linter-border-bottom {
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.setting-item-description code {
+  background-color: var(--gumroad-orange);
+  border: none;
+  color: white;
+}
+
+/* TP */
+.templater_div > .setting-item {
+  border-top: 1px solid var(--gumroad-black) !important;
+}
+
+.templater_div {
+  border-top: none;
+  margin-top: 1em;
+}
+
+/* Reminder */
+.reminder-list-item.svelte-15dajvg {
+    margin-bottom: 5px;
+}
+
+/* === 普通样式 === */
+
+/* 高亮文字 */
+mark,
+.cm-highlight {
+  border: 1px solid var(--gumroad-white);
+  border-radius: var(--gumroad-border-radius-s);
+  padding: 2px 4px;
+  color: var(--gumroad-black);
+  border-bottom: 2px solid var(--gumroad-yellow);
+}
+
+/* 斜体文本 */
+em, .cm-em {
+  color: var(--gumroad-cyan) !important;
+}
+
+/* 标签 */
+a.tag, .cm-hashtag {
+  /* background-color: var(--gumroad-purple); */
+  /* background-color: var(--gumroad-yellow); */
+  border: 1px solid var(--gumroad-black);
+  border-left: none;
+  border-right: none;
+  
+  border-radius: 0px;
+  padding: 0px;
+  color: var(--gumroad-black);
+}
+
+@media (hover: hover) {
+  a.tag:hover {
+    border: 1px solid var(--gumroad-black);
+    border-left: none;
+    border-right: none;
+
+  }
+}
+
+
+/* 表格 */
+.markdown-source-view.mod-cm6 .cm-table-widget th {
+  background-color: var(--gumroad-accent);
+  color: var(--gumroad-white);
+}
+
+
+/* 代码 */
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting),
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+  /* 代码颜色 */
+  --code-background: var(--gumroad-orange);
+  /* padding: 0px; */
+  
+  padding: 0em 0.2em;
+  --code-normal: var(--gumroad-white);
+}
+
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line.hr {
+  max-width: 300%;
+  width: 130% !important;
+  margin-left: -15% !important;
+
+  hr {
+    border-top-width: 1px;
+
+  }
+}
+
+/* 嵌入块（回链） */
+.embedded-backlinks {
+  border-top: none;
+}
+
+
+
+/* toggle 块 */
+/* .checkbox-container:after {
+  transition: transform 0.15s ease-in-out, width 0.1s ease-in-out 0.05s, height 0.1s ease-in-out 0.05s, margin-top 0.1s ease-in-out 0.05s, left 0.1s ease-in-out 0.05s, opacity 0.1s ease-in-out 0.05s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.modal .checkbox-container:after {
+  transform: translateX(var(--toggle-border-width));
+}
+
+.modal .checkbox-container.is-enabled:after {
+    transform: translateX(calc(var(--toggle-width) - var(--toggle-thumb-width) - var(--toggle-border-width)));
+} */
+
+
+.markdown-rendered pre {
+  outline: 1px solid var(--gumroad-black);
+}
+
+.nav-files-container {
+  border-bottom: none;
+}
+
+
+/* ! 模态窗口 */
+.modal-container.mod-dim .modal {
+  --modal-radius: var(--gumroad-border-radius);
+  --modal-border-color: var(--gumroad-black);
+  border: 1px solid var(--gumroad-black);
+  border-radius: 8px;
+
+  /* box-shadow: 7px 7px 0 var(--gumroad-black); */
+  /* margin: 0.5em; */
+
+}
+
+.modal-container.mod-dim .modal:not(.mod-settings) {
+  box-shadow: 7px 7px 0 var(--gumroad-black);
+}
+
+
+/* 模态的 输入框 */
+.modal {
+  textarea, .multi-select-container, input.metadata-input-text, input[type='date'], input[type='datetime-local'], input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+    -webkit-app-region: no-drag;
+    
+    border: 1px solid var(--gumroad-black);
+    border-radius: var(--input-radius);
+
+  }
+
+  textarea:active, .multi-select-container:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, .multi-select-container:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, .multi-select-container:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible {
+      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+  }
+}
+
+/* QuickSwitch 输入框 */
+input.prompt-input:hover, input.prompt-input:focus, input.prompt-input:focus-visible {
+    border-bottom: var(--border-width) solid var(--gumroad-black);
+}
+
+
+
+/* ! 弹出框 */
+
+.prompt {
+  border-radius: var(--gumroad-border-radius);
+  top: 95px;
+
+  box-shadow: 4px 4px 0 var(--gumroad-accent);
+  box-shadow: 7px 7px 0 var(--gumroad-black);
+
+  .prompt-input-container {
+    border-bottom: 1px solid var(--gumroad-black);
+  }
+}
+
+
+/* 仓库工具栏 */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border-top-width: 0px;
+}
+
+.workspace-sidedock-vault-profile {
+  border-right: 1px solid var(--gumroad-black);
+}
+
+input[type="radio"], input[type=checkbox] {
+  border-width: 1px;
+
+  &:hover {
+    transform: translate(-1px -1px);
+    box-shadow: 2px 2px 0 var(--gumroad-black);
+  }
+}
+
+
+
+/* 隐藏滚动条 */
+/* 隐藏所有滚动条 */
+.hide-scroll-bar ::-webkit-scrollbar {
+  display: none;
+}
+
+/* 确保内容仍然可以滚动 */
+/* 阅读视图的编辑器 */
+.hide-scroll-bar .markdown-preview-view, 
+/* 实时预览的编辑器 */
+.hide-scroll-bar .cm-scroller, 
+.hide-scroll-bar .workspace-leaf-content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* 隐藏 External */
+.cm-formatting.cm-url.external-link {
+  display: none;
+}
+
+/* ! YAML 区域 */
+.cm-s-obsidian .cm-hmd-frontmatter.cm-number, .cm-s-obsidian .cm-math.cm-number, .cm-s-obsidian pre.HyperMD-codeblock .cm-number {
+    color: var(--gumroad-blue);
+}
+
+.cm-s-obsidian .cm-hmd-frontmatter.cm-atom, .cm-s-obsidian .cm-templater-command.cm-atom, .cm-s-obsidian .cm-math.cm-atom, .cm-s-obsidian .HyperMD-codeblock .cm-atom, .markdown-preview-view pre.cm-s-obsidian .cm-atom {
+    color: var(--gumroad-cyan);
+}
+
+.cm-hmd-frontmatter.cm-string {
+    color: var(--gumroad-green);
+}
+
+/* ! 特殊：分隔线 */
+
+/* Real-time editing mode */
+.hr + .cm-line:has(.cm-comment) {
+    text-align: center !important;
+    padding-top: 0px !important;
+
+    .cm-formatting {
+        opacity: 0.0;
+    }
+
+    padding-bottom: 0.6em;
+    border-bottom: 1px solid var(--hr-color) !important;
+
+    /* 加宽 */
+    max-width: 300% !important;
+    width: 130% !important;
+    margin-left: -15% !important;
+
+    opacity: 1.0;
+
+}
+
+.hr + .cm-line.cm-active:has(.cm-comment) {
+    .cm-formatting {
+        opacity: 0.8;
+    }
+}
+
+/* Source code mode, only center text and add underline */
+.HyperMD-hr + .cm-comment {
+    text-align: center !important;
+    border-bottom: 1px solid var(--hr-color);
+}
+
+
+/* This version uses *emphesis text* after the underline - it could be used in reading view! */
+
+/* Live Editing */
+.hr + .cm-line:has(.cm-em) {
+    text-align: center !important;
+    padding-top: 0px !important;
+
+    padding-bottom: 0.6em;
+    border-bottom: 1px solid var(--hr-color);
+
+    opacity: 1.0;
+
+    .cm-em {
+        opacity: 0.6;
+    }
+}
+
+
+/* Source Mode */
+.HyperMD-hr + .cm-line:has(.cm-em) {
+    text-align: center !important;
+    border-bottom: 1px solid var(--hr-color);
+}
+
+/* Reading Mode */
+.el-hr + .el-p:has(em) {
+    text-align: center;
+    padding-top: 0px !important;
+
+    p {
+        margin-top: 0em;
+        opacity: 0.8;
+        margin-bottom: 0em;
+    }
+
+    margin-top: -1.5em;
+    margin-bottom: 0em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid var(--hr-color);
+
+    opacity: 1.0;
+}
+
+

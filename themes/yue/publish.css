@@ -1506,6 +1506,25 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
+  --base-h: 0 !important;
+  --base-l: 97% !important;
+  --base-s: 0% !important;
+  --folding-offset: 10px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --icon-muted: 0.5 !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --max-col-width: 18em !important;
+  --max-width: 90% !important;
+  --nested-padding: 1.1em !important;
+  --text-highlight-bg-active: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 50%)
+  ) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1523,18 +1542,7 @@ body.theme-light {
   --purple: #a06fca !important;
   --red: #fc4384 !important;
   --yellow: #e6db74 !important;
-  --text-highlight-bg-active: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    calc(var(--accent-alpha) + 50%)
-  ) !important;
   --base-d: 20% !important;
-  --base-h: 0 !important;
-  --base-l: 97% !important;
-  --base-s: 0% !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --blue: #2e80f2 !important;
   --pink: #da7dae !important;
   --tag-font-color-d: hsl(
@@ -1547,16 +1555,8 @@ body.theme-light {
     var(--accent-s),
     calc(var(--accent-l) - 15%)
   ) !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 90% !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
   --white: #ffffff !important;
-  --nested-padding: 1.1em !important;
   --line-width-adaptive: var(--line-width) !important;
-  --folding-offset: 10px !important;
-  --max-col-width: 18em !important;
   --tag-background-color: hsla(
     var(--accent-h),
     var(--accent-s),
@@ -2609,6 +2609,25 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
+  --base-h: 0 !important;
+  --base-l: 97% !important;
+  --base-s: 0% !important;
+  --folding-offset: 10px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --icon-muted: 0.5 !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --max-col-width: 18em !important;
+  --max-width: 90% !important;
+  --nested-padding: 1.1em !important;
+  --text-highlight-bg-active: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 50%)
+  ) !important;
   --h1-color: var(--h1-text-color-dt) !important;
   --h2-color: var(--h2-text-color-dt) !important;
   --h3-color: var(--h3-text-color-dt) !important;
@@ -2621,18 +2640,7 @@ body.theme-dark {
   --purple: #a06fca !important;
   --red: #fc4384 !important;
   --yellow: #e6db74 !important;
-  --text-highlight-bg-active: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    calc(var(--accent-alpha) + 50%)
-  ) !important;
   --base-d: 20% !important;
-  --base-h: 0 !important;
-  --base-l: 97% !important;
-  --base-s: 0% !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --blue: #2e80f2 !important;
   --pink: #da7dae !important;
   --tag-font-color-d: hsl(
@@ -2645,16 +2653,8 @@ body.theme-dark {
     var(--accent-s),
     calc(var(--accent-l) - 15%)
   ) !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 90% !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
   --white: #ffffff !important;
-  --nested-padding: 1.1em !important;
   --line-width-adaptive: var(--line-width) !important;
-  --folding-offset: 10px !important;
-  --max-col-width: 18em !important;
   --tag-background-color: hsla(
     var(--accent-h),
     var(--accent-s),

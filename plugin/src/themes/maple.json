@@ -97,8 +97,8 @@
       "light": ".color-use-minimal {\n--base-accent-h: var(--setting-color-active-custom-light-h, 210);\n--theme-accent-active-s: var(--setting-color-active-custom-light-s, 6%);\n--theme-accent-active-l: var(--setting-color-active-custom-light-l, 36%);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-light-s, 8%);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-light-l, 70%);\n}\n\n.color-use-minimal:not(.color-highlight-only) {\n--background-primary-hsl: var(--base-accent-h), 6%, 97%;\n--background-primary-alt-hsl: var(--base-accent-h), 10%, 95.5%;\n--background-secondary-hsl: calc(var(--base-accent-h) - 18), 4%, 93%;\n--frame-bg: hsl(\n    var(--base-accent-h),\n    calc(var(--theme-accent-active-s) * 0.2),\n    calc(85% + var(--theme-accent-active-l) * 0.1)\n  );\n}"
     },
     "color-use-custom": {
-      "dark": ".color-use-custom {\n--base-accent-h: var(--setting-accent-h-dark, 207);\n--theme-accent-active-s: 24%;\n--theme-accent-active-l: 52%;\n--theme-accent-inactive-s: 12%;\n--theme-accent-inactive-l: 32%;\n}\n\n.color-use-custom:not(.color-highlight-only) {\n--bg-delta-dark: var(--setting-bg-delta-dark, 0%);\n--background-primary-hsl:\n    var(--base-accent-h), calc(5% + var(--bg-delta-dark) / 2), calc(11% + var(--bg-delta-dark));\n--background-primary-alt-hsl:\n    var(--base-accent-h), calc(10% + var(--bg-delta-dark) / 2), calc(13% + var(--bg-delta-dark));\n--background-secondary-hsl:\n    calc(var(--base-accent-h) - 18), calc(6% + var(--bg-delta-dark) / 2),\n    calc(12% + var(--bg-delta-dark));\n}\n\n.color-active-alt-dark {\n--theme-accent-h: calc(var(--base-accent-h) + 60);\n}\n\n.color-active-custom-dark {\n--theme-accent-active-h: var(--setting-color-active-custom-dark-h);\n--theme-accent-active-s: var(--setting-color-active-custom-dark-s);\n--theme-accent-active-l: var(--setting-color-active-custom-dark-l);\n--theme-accent-inactive-h: var(--setting-color-inactive-custom-dark-h);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-dark-s);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-dark-l);\n}\n\n.color-modify-bg-dark, .color-use-custom:not(.color-highlight-only) {\n--default-mod-bg-hsl: 0, 0%, 7%;\n--background-primary-hsl: var(--setting-bg-primary-dark-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-dark-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-dark-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-dark, hsl(var(--default-mod-bg-hsl)));\n}",
-      "light": ".color-use-custom {\n--base-accent-h: var(--setting-accent-h-light, 35);\n--theme-accent-active-s: 22%;\n--theme-accent-active-l: 56%;\n--theme-accent-inactive-s: 20%;\n--theme-accent-inactive-l: 78%;\n}\n\n.color-active-alt-light {\n--theme-accent-h: calc(var(--base-accent-h) + 60);\n}\n\n.color-active-custom-light {\n--theme-accent-active-h: var(--setting-color-active-custom-light-h);\n--theme-accent-active-s: var(--setting-color-active-custom-light-s);\n--theme-accent-active-l: var(--setting-color-active-custom-light-l);\n--theme-accent-inactive-h: var(--setting-color-inactive-custom-light-h);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-light-s);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-light-l);\n}\n\n.color-modify-bg-light, .color-use-custom:not(.color-highlight-only) {\n--default-mod-bg-hsl: 0, 0%, 93%;\n--background-primary-hsl: var(--setting-bg-primary-light-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-light-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-light-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-light, hsl(var(--default-mod-bg-hsl)));\n}"
+      "dark": ".color-use-custom {\n--base-accent-h: var(--setting-accent-h-dark, 207);\n--theme-accent-active-s: 24%;\n--theme-accent-active-l: 52%;\n--theme-accent-inactive-s: 12%;\n--theme-accent-inactive-l: 32%;\n}\n\n.color-use-custom:not(.color-highlight-only) {\n--bg-delta-dark: var(--setting-bg-delta-dark, 0%);\n--background-primary-hsl:\n    var(--base-accent-h), calc(5% + var(--bg-delta-dark) / 2), calc(11% + var(--bg-delta-dark));\n--background-primary-alt-hsl:\n    var(--base-accent-h), calc(10% + var(--bg-delta-dark) / 2), calc(13% + var(--bg-delta-dark));\n--background-secondary-hsl:\n    calc(var(--base-accent-h) - 18), calc(6% + var(--bg-delta-dark) / 2),\n    calc(12% + var(--bg-delta-dark));\n}\n\n.color-active-alt-dark {\n--theme-accent-h: calc(var(--base-accent-h) + 60);\n}\n\n.color-active-custom-dark {\n--theme-accent-active-h: var(--setting-color-active-custom-dark-h);\n--theme-accent-active-s: var(--setting-color-active-custom-dark-s);\n--theme-accent-active-l: var(--setting-color-active-custom-dark-l);\n--theme-accent-inactive-h: var(--setting-color-inactive-custom-dark-h);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-dark-s);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-dark-l);\n}\n\n.color-modify-bg-dark, .color-use-custom:not(.color-highlight-only) {\n--default-mod-bg-hsl: 0, 0%, 8%;\n--background-primary-hsl: var(--setting-bg-primary-dark-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-dark-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-dark-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-dark, hsl(var(--default-mod-bg-hsl)));\n}",
+      "light": ".color-use-custom {\n--base-accent-h: var(--setting-accent-h-light, 35);\n--theme-accent-active-s: 22%;\n--theme-accent-active-l: 56%;\n--theme-accent-inactive-s: 20%;\n--theme-accent-inactive-l: 78%;\n}\n\n.color-active-alt-light {\n--theme-accent-h: calc(var(--base-accent-h) + 60);\n}\n\n.color-active-custom-light {\n--theme-accent-active-h: var(--setting-color-active-custom-light-h);\n--theme-accent-active-s: var(--setting-color-active-custom-light-s);\n--theme-accent-active-l: var(--setting-color-active-custom-light-l);\n--theme-accent-inactive-h: var(--setting-color-inactive-custom-light-h);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-light-s);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-light-l);\n}\n\n.color-modify-bg-light, .color-use-custom:not(.color-highlight-only) {\n--default-mod-bg-hsl: 0, 0%, 97%;\n--background-primary-hsl: var(--setting-bg-primary-light-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-light-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-light-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-light, hsl(var(--default-mod-bg-hsl)));\n}"
     },
     "color-active-alt-light": {
       "light": ".color-use-custom.color-active-alt-light {\n--theme-accent-h: calc(var(--base-accent-h) + 60);\n}"
@@ -107,7 +107,7 @@
       "light": ".color-use-custom.color-active-custom-light {\n--theme-accent-active-h: var(--setting-color-active-custom-light-h);\n--theme-accent-active-s: var(--setting-color-active-custom-light-s);\n--theme-accent-active-l: var(--setting-color-active-custom-light-l);\n--theme-accent-inactive-h: var(--setting-color-inactive-custom-light-h);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-light-s);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-light-l);\n}"
     },
     "color-modify-bg-light": {
-      "light": ".color-use-custom.color-modify-bg-light {\n--default-mod-bg-hsl: 0, 0%, 93%;\n--background-primary-hsl: var(--setting-bg-primary-light-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-light-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-light-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-light, hsl(var(--default-mod-bg-hsl)));\n}"
+      "light": ".color-use-custom.color-modify-bg-light {\n--default-mod-bg-hsl: 0, 0%, 97%;\n--background-primary-hsl: var(--setting-bg-primary-light-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-light-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-light-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-light, hsl(var(--default-mod-bg-hsl)));\n}"
     },
     "color-active-alt-dark": {
       "dark": ".color-use-custom.color-active-alt-dark {\n--theme-accent-h: calc(var(--base-accent-h) + 60);\n}"
@@ -116,7 +116,7 @@
       "dark": ".color-use-custom.color-active-custom-dark {\n--theme-accent-active-h: var(--setting-color-active-custom-dark-h);\n--theme-accent-active-s: var(--setting-color-active-custom-dark-s);\n--theme-accent-active-l: var(--setting-color-active-custom-dark-l);\n--theme-accent-inactive-h: var(--setting-color-inactive-custom-dark-h);\n--theme-accent-inactive-s: var(--setting-color-inactive-custom-dark-s);\n--theme-accent-inactive-l: var(--setting-color-inactive-custom-dark-l);\n}"
     },
     "color-modify-bg-dark": {
-      "dark": ".color-use-custom.color-modify-bg-dark {\n--default-mod-bg-hsl: 0, 0%, 7%;\n--background-primary-hsl: var(--setting-bg-primary-dark-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-dark-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-dark-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-dark, hsl(var(--default-mod-bg-hsl)));\n}"
+      "dark": ".color-use-custom.color-modify-bg-dark {\n--default-mod-bg-hsl: 0, 0%, 8%;\n--background-primary-hsl: var(--setting-bg-primary-dark-hsl, var(--default-mod-bg-hsl));\n--background-primary-alt-hsl: var(\n    --setting-bg-primary-alt-dark-hsl,\n    var(--default-mod-bg-hsl)\n  );\n--background-secondary-hsl: var(--setting-bg-secondary-dark-hsl, var(--default-mod-bg-hsl));\n--frame-bg: var(--setting-bg-frame-dark, hsl(var(--default-mod-bg-hsl)));\n}"
     },
     "app-layout-card": {
       "general": ".pdf-toolbar {\nbackground-color: transparent;\n}\n\n.setting-group-search) {\nbackground-color: var(--bg-editor);\n}"
@@ -159,7 +159,7 @@
       "general": ":active, :focus) {\n--slider-thumb-ring-factor: 5.2;\n}"
     },
     "modal-toggle-square": {
-      "general": ".modal-toggle-square .checkbox-container {\n--toggle-border-width: var(--size-4-1);\n--toggle-thumb-width: calc(var(--input-height) / 2);\n--toggle-thumb-height: var(--toggle-thumb-width);\n--toggle-thumb-radius: calc(var(--toggle-thumb-width) / 3);\n--toggle-radius: calc(var(--toggle-s-thumb-radius) + var(--toggle-border-width) / 2);\n--toggle-s-border-width: var(--toggle-border-width);\n--toggle-s-thumb-radius: var(--toggle-thumb-radius);\n--toggle-s-thumb-width: var(--toggle-thumb-width);\n--toggle-s-thumb-height: var(--toggle-thumb-height);\n}"
+      "general": ".modal-toggle-square .checkbox-container {\n--toggle-border-width: var(--size-4-1);\n--toggle-thumb-width: calc(var(--input-height) / 2);\n--toggle-thumb-height: var(--toggle-thumb-width);\n--toggle-thumb-radius: calc(var(--toggle-thumb-width) / 3);\n--toggle-radius: calc(var(--toggle-s-thumb-radius) + var(--toggle-border-width) / 2);\n--toggle-s-border-width: var(--toggle-border-width);\n--toggle-s-thumb-radius: var(--toggle-thumb-radius);\n--toggle-s-thumb-width: var(--toggle-thumb-width);\n--toggle-s-thumb-height: var(--toggle-thumb-height);\n}\n\n.modal-toggle-square .checkbox-container:active:after {\nwidth: var(--toggle-thumb-width);\nheight: var(--toggle-thumb-height);\nopacity: 1;\nmargin-top: var(--toggle-border-width);\nleft: var(--size-4-1);\n}"
     },
     "labeled-nav": {
       "general": ".is-fullscreen:not(.colorful-frame) {\n--labeled-nav-top-margin: 0;\n}\n\n.labeled-nav {\n--labeled-nav-top-margin: var(--header-height);\n/* refactor this using a new variable for border above labeled nav\n  in different conditions e.g. OSes and colorful frame */\n}\n\n.labeled-nav:is(:not(.is-hidden-frameless) {\nborder-bottom: var(--tab-outline-width) solid var(--tab-outline-color);\n}\n\n.labeled-nav:is(:not(.is-hidden-frameless) {\n--tab-outline-width: 1px;\n}\n\n.is-active):hover {\nbackground-color: transparent;\n}"
@@ -529,5 +529,52 @@
     "calendar-swap-year-month": {
       "general": "body.calendar-swap-year-month #calendar-container .nav {\npadding-left: var(--size-4-1);\n}\n\nbody.calendar-swap-year-month #calendar-container .nav .title {\ndisplay: flex;\nflex-direction: row-reverse;\nfont-weight: normal;\n}\n\nbody.calendar-swap-year-month #calendar-container .nav .title .year {\ncolor: var(--text-normal);\ndisplay: flex;\nalign-items: center;\n}\n\nbody.calendar-swap-year-month #calendar-container .nav .title .year::after {\ncontent: var(--setting-calendar-year-suffix, \"年\");\nmargin-right: var(--size-2-1);\nmargin-left: var(--size-2-1);\n}\n\nbody.calendar-swap-year-month #calendar-container .nav .title .month {\nheight: var(--size-4-6);\nline-height: var(--size-4-6);\nfont-weight: 550;\ncolor: var(--accent-active);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--setting-text-bold-color": ["--bold-color"],
+    "--setting-divider-color": ["--divider-color"],
+    "--setting-text-italic-color": ["--italic-color"],
+    "--setting-table-header-text": ["--table-header-background"],
+    "--setting-table-header-bg": ["--table-header-color"],
+    "--setting-tag-bg": ["--tag-background"],
+    "--setting-mobile-font-interface": ["--font-interface-theme"],
+    "--setting-mobile-font-text": ["--font-text-theme"],
+    "--setting-mobile-font-monospace": ["--font-monospace-theme"],
+    "--setting-color-active-custom-light-h": [
+      "--base-accent-h",
+      "--theme-accent-active-h"
+    ],
+    "--setting-color-active-custom-dark-h": [
+      "--base-accent-h",
+      "--theme-accent-active-h"
+    ],
+    "--setting-layout-opacity-light": ["--bg-opacity"],
+    "--setting-layout-opacity-dark": ["--bg-opacity"],
+    "--setting-color-active-custom-light-s": ["--theme-accent-active-s"],
+    "--setting-color-active-custom-dark-s": ["--theme-accent-active-s"],
+    "--setting-color-active-custom-light-l": ["--theme-accent-active-l"],
+    "--setting-color-active-custom-dark-l": ["--theme-accent-active-l"],
+    "--setting-color-inactive-custom-light-h": ["--theme-accent-inactive-h"],
+    "--setting-color-inactive-custom-dark-h": ["--theme-accent-inactive-h"],
+    "--setting-color-inactive-custom-light-s": ["--theme-accent-inactive-s"],
+    "--setting-color-inactive-custom-dark-s": ["--theme-accent-inactive-s"],
+    "--setting-color-inactive-custom-light-l": ["--theme-accent-inactive-l"],
+    "--setting-color-inactive-custom-dark-l": ["--theme-accent-inactive-l"],
+    "--setting-bg-primary-alt-light-hsl": ["--background-primary-alt-hsl"],
+    "--setting-bg-primary-alt-dark-hsl": ["--background-primary-alt-hsl"],
+    "--setting-layout-image-light": ["--app-bg-image"],
+    "--setting-layout-image-dark": ["--app-bg-image"],
+    "--setting-editor-p-indent": ["--indent"],
+    "--setting-line-active-color": ["--active-line"],
+    "--setting-link-external-color-underline": [
+      "--link-external-color-underline"
+    ],
+    "--setting-h1-color": ["--h1-color-rgb"],
+    "--setting-h2-color": ["--h2-color-rgb"],
+    "--setting-h3-color": ["--h3-color-rgb"],
+    "--setting-h4-color": ["--h4-color-rgb"],
+    "--setting-h5-color": ["--h5-color-rgb"],
+    "--setting-h6-color": ["--h6-color-rgb"]
   }
 }

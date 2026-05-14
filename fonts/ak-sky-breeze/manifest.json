@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-05-13T16:44:17.819Z",
+  "sourceTheme": "AK Sky Breeze",
+  "fonts": [
+    {
+      "family": "Inter",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "inter.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lexend",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "lexend.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Roboto Mono",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "roboto-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

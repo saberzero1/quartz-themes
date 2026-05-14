@@ -1400,26 +1400,31 @@ body.theme-dark {
     var(--accent-s),
     calc(var(--accent-d) - 10%)
   ) !important;
+  --font-adaptive-normal: var(--font-normal) !important;
+  --font-adaptive-small: var(--font-small) !important;
+  --font-adaptive-smaller: var(--font-smaller) !important;
+  --font-adaptive-smallest: var(--font-smallest) !important;
+  --icon-hex: FFF !important;
   --quote-opening-modifier: hsl(
     var(--base-h),
     var(--base-s),
     calc(var(--base-d) + 10%)
   ) !important;
   --text-code: #c792ea !important;
-  --text-highlight-bg-active: rgba(3, 36, 62, 0.1) !important;
-  --accent-d: 60% !important;
-  --base-d: 15% !important;
   --base-h: 276 !important;
   --base-l: 75% !important;
   --base-s: 68% !important;
-  --text: "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
-  --border-width-alt: 1px !important;
-  --icon-hex: FFF !important;
   --icon-muted: 0.4 !important;
   --line-height: 1.5 !important;
   --line-width: 40rem !important;
   --max-width: 88% !important;
+  --nested-padding: 3.5% !important;
   --normal-weight: 400 !important;
+  --text-highlight-bg-active: rgba(3, 36, 62, 0.1) !important;
+  --accent-d: 60% !important;
+  --base-d: 15% !important;
+  --text: "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
+  --border-width-alt: 1px !important;
   --background-translucent: hsla(
     var(--base-h),
     var(--base-s),
@@ -1435,7 +1440,6 @@ body.theme-dark {
     var(--base-d),
     0
   ) !important;
-  --nested-padding: 3.5% !important;
   --h1: 1.125em !important;
   --h2: 1em !important;
   --text-editor:
@@ -1445,10 +1449,6 @@ body.theme-dark {
   --h4: 0.9em !important;
   --h5: 0.85em !important;
   --h6: 0.85em !important;
-  --font-adaptive-normal: var(--font-normal) !important;
-  --font-adaptive-small: var(--font-small) !important;
-  --font-adaptive-smaller: var(--font-smaller) !important;
-  --font-adaptive-smallest: var(--font-smallest) !important;
   --font-settings: 14px !important;
   --font-settings-small: 12px !important;
 }

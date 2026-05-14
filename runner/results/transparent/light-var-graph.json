@@ -1602,7 +1602,8 @@
     ".is-mobile": ["--background-secondary"],
     ".is-mobile.theme-dark": ["--background-modifier-border"],
     ".is-mobile.theme-light .menu": ["--background-primary"],
-    ".is-phone .modal .modal:not(.mod-lg)": ["--background-modifier-hover"]
+    ".is-phone .modal .modal:not(.mod-lg)": ["--background-modifier-hover"],
+    ".theme-light": ["--tr06"]
   },
   "--interactive-hover": {
     "body": ["--color-base-10"],

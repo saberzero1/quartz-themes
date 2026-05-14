@@ -115,5 +115,14 @@
     "visual-parity-enabled": {
       "general": "body.visual-parity-enabled {\n--p-spacing: calc(1.5 * var(--font-text-size));\n--heading-spacing: calc(var(--p-spacing) * 1);\n/* Fix hr elements */\n.markdown-rendered hr {\n        margin-block: calc(\n            (\n                    var(--font-text-size, 1rem) * var(--line-height-normal) -\n                        var(--hr-thickness)\n                ) / 2 + var(--p-spacing)\n        );\n    };\n/* Fix header top margins */\n;\n;\n/* Fix collapsed headers in live preview */\n;\n/* Fix blockquotes */\n& :not(blockquote) + blockquote,\n    & .cm-line:not(.HyperMD-quote-1) + .HyperMD-quote-1,\n;\n& blockquote:has(+ :not(blockquote)),\n    & .HyperMD-quote-1:has(+ .cm-line:not(.HyperMD-quote-1)),\n;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--wide-width-readable-line-length-custom": ["--file-line-width"],
+    "--background-image-dark-url": ["--background-image-url"],
+    "--background-image-light-url": ["--background-image-url"],
+    "--pane-opacity": ["--background-transparent"],
+    "--ui-opacity": ["--background-partially-transparent"],
+    "--tab-opacity": ["--background-tabs-transparent"]
   }
 }

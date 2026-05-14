@@ -1354,10 +1354,10 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --text-link: #7aa2f7 !important;
   --interactive-success: #9ece6a !important;
+  --interactive-warning: #e0af68 !important;
   --code-number: #e0af68 !important;
   --text-link-hover: #7dcfff !important;
   --interactive-danger: #f7768e !important;
-  --interactive-warning: #e0af68 !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

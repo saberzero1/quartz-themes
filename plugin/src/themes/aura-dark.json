@@ -44,5 +44,6 @@
       "general": "body.aura-soft:not(.is-grabbing) .nav-file-title.is-active.aura-soft:hover, body.aura-soft:not(.is-grabbing) .nav-folder-title.is-active.aura-soft:hover, .nav-file-title.is-active.aura-soft, .nav-folder-title.is-active.aura-soft {\ncolor: #a277ff;\n}\n\n.dropdown.aura-soft {\nbackground-color: #3d375e7f;\n}\n\n.dropdown.aura-soft:hover {\nbackground-color: #af8aff7f;\n}",
       "dark": ".aura-soft {\n--background-primary: #21202e;\n--background-secondary: #1c1b22;\n--ribbon-background: #21202e;\n--titlebar-background: var(--background-secondary);\n--titlebar-background-focused: var(--background-secondary);\n--code-background: var(--background-secondary);\n--indentation-guide-color: #edecee;\n--color-base-30: #61ffca;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

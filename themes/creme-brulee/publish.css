@@ -1411,12 +1411,12 @@ body.theme-light {
   --italic-color: var(--color-cyan) !important;
   --button-background: var(--color-creme-0) !important;
   --button-border: var(--background-modifier-border) !important;
+  --button-background-hover: var(--background-primary-alt) !important;
   --blockquote-padding: var(--blockquote-padding-top)
     var(--blockquote-padding-right) var(--blockquote-padding-bottom)
     var(--blockquote-padding-left) !important;
   --blockquote-accent-color-rgb: var(--color-purple-rgb) !important;
   --bold-italic-color: var(--color-green) !important;
-  --button-background-hover: var(--background-primary-alt) !important;
   --file-bottom-margin: var(--size-4-8) !important;
   --file-left-margin: calc(
     var(--file-right-margin) + var(--scrollbar-width)
@@ -2447,12 +2447,12 @@ body.theme-dark {
   --italic-color: var(--color-cyan) !important;
   --button-background: var(--color-creme-0) !important;
   --button-border: var(--background-modifier-border) !important;
+  --button-background-hover: var(--background-primary-alt) !important;
   --blockquote-padding: var(--blockquote-padding-top)
     var(--blockquote-padding-right) var(--blockquote-padding-bottom)
     var(--blockquote-padding-left) !important;
   --blockquote-accent-color-rgb: var(--color-purple-rgb) !important;
   --bold-italic-color: var(--color-green) !important;
-  --button-background-hover: var(--background-primary-alt) !important;
   --file-bottom-margin: var(--size-4-8) !important;
   --file-left-margin: calc(
     var(--file-right-margin) + var(--scrollbar-width)

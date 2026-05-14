@@ -1373,8 +1373,8 @@ body.theme-light {
   --code-definition: var(--rose) !important;
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
-  --foam: #56949f !important;
   --gold: #ea9d34 !important;
+  --foam: #56949f !important;
   --highlight-high: #cecacd !important;
   --highlight-low: #f4ede8 !important;
   --highlight-med: #dfdad9 !important;
@@ -2388,6 +2388,7 @@ body.theme-dark {
   --code-definition: var(--text-color) !important;
   --white: #f6f6f5 !important;
   --link-unresolved-color-hover: var(--red) !important;
+  --selection: #7c7f8a !important;
   --black: #1c1c1c !important;
   --fg: #f6f6f5 !important;
   --bg: #292a35 !important;
@@ -2413,7 +2414,6 @@ body.theme-dark {
   --gutter-fg: #4b5263 !important;
   --menu: #21222c !important;
   --nontext: #3b4048 !important;
-  --selection: #7c7f8a !important;
   --visual: #3e4452 !important;
 }
 

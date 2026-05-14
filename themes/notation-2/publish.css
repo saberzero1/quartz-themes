@@ -1092,8 +1092,8 @@ body.theme-light {
   --text-rgb: 55, 53, 47 !important;
   --color-gray-rgb: 235, 236, 237 !important;
   --custom-line-height: 1.5em !important;
-  --h-color: var(--text-normal) !important;
   --color-brown: rgb(100, 71, 58) !important;
+  --h-color: var(--text-normal) !important;
   --color-brown-rgb: 233, 229, 227 !important;
   --h1-bg: var(--h-bg) !important;
   --h2-bg: var(--h-bg) !important;
@@ -2116,8 +2116,8 @@ body.theme-dark {
   --text-rgb: 255, 255, 255 !important;
   --color-gray-rgb: 69, 75, 78 !important;
   --custom-line-height: 1.5em !important;
-  --h-color: var(--text-normal) !important;
   --color-brown: rgb(147, 114, 100) !important;
+  --h-color: var(--text-normal) !important;
   --color-brown-rgb: 67, 64, 64 !important;
   --h1-bg: var(--h-bg) !important;
   --h2-bg: var(--h-bg) !important;

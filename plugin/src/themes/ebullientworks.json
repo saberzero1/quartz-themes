@@ -144,5 +144,6 @@
     "ebullientworks-hide-embedded-heading": {
       "general": ".ebullientworks-hide-embedded-heading .markdown-embed .markdown-embed-title, .ebullientworks-hide-embedded-heading .markdown-embed .mod-header {\ndisplay: none;\n}\n\n.ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h1[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h2[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h3[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h4[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h5[data-heading], .ebullientworks-hide-embedded-heading .markdown-embed div.markdown-preview-section div.mod-header + div > h6[data-heading] {\ndisplay: none;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

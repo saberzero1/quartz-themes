@@ -82,5 +82,7 @@
     "hide-sidebar-header": {
       "general": "body.hide-sidebar-header .workspace-drawer-header-name, body.hide-sidebar-header .workspace-drawer-header-icon, body.hide-sidebar-header .workspace-drawer-header-left {\ndisplay: none;\n}"
     }
-  }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": { "--font-monospace": ["--ec-codeFontFml"] }
 }

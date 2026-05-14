@@ -1499,6 +1499,12 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --base-h: 212 !important;
+  --base-l: 97% !important;
+  --base-s: 15% !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1511,29 +1517,23 @@ body.theme-light {
   --h5-color: var(--red) !important;
   --h6-color: var(--purple) !important;
   --inline-title-color: var(--h1-color) !important;
+  --callout-title-size: 1.2rem;
   --green: #79e3aa !important;
   --orange: #ff7641 !important;
   --purple: #895ef7 !important;
   --red: #f03063 !important;
   --yellow: #ffc63c !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --accent-d: 70% !important;
   --base-d: 13% !important;
-  --base-h: 212 !important;
-  --base-l: 97% !important;
-  --base-s: 15% !important;
   --em-color: var(--teal) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --strong-color: var(--pink-light) !important;
   --blue: #4da2f8 !important;
   --pink: #ff22b1 !important;
   --indigo: #6a84ed !important;
   --white: #f8fafc !important;
   --table-text-color: var(--text-normal) !important;
-  --callout-title-size: 1.2rem;
-  --teal: #1fcbdc !important;
   --base: var(--blue) !important;
+  --teal: #1fcbdc !important;
   --quotes-color: var(--text-normal) !important;
   --text-formatted: hsl(
     var(--base-h),
@@ -2562,6 +2562,12 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --base-h: 212 !important;
+  --base-l: 97% !important;
+  --base-s: 15% !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --h1-color: var(--text-normal) !important;
   --h2-color: var(--text-normal) !important;
   --h3-color: var(--blue) !important;
@@ -2569,29 +2575,23 @@ body.theme-dark {
   --h5-color: var(--red) !important;
   --h6-color: var(--purple) !important;
   --inline-title-color: var(--h1-color) !important;
+  --callout-title-size: 1.2rem;
   --green: #79e3aa !important;
   --orange: #ff7641 !important;
   --purple: #895ef7 !important;
   --red: #f03063 !important;
   --yellow: #ffc63c !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --accent-d: 70% !important;
   --base-d: 13% !important;
-  --base-h: 212 !important;
-  --base-l: 97% !important;
-  --base-s: 15% !important;
   --em-color: var(--teal) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --strong-color: var(--pink-light) !important;
   --blue: #4da2f8 !important;
   --pink: #ff22b1 !important;
   --indigo: #6a84ed !important;
   --white: #f8fafc !important;
   --table-text-color: var(--text-normal) !important;
-  --callout-title-size: 1.2rem;
-  --teal: #1fcbdc !important;
   --base: var(--blue) !important;
+  --teal: #1fcbdc !important;
   --quotes-color: var(--text-normal) !important;
   --text-formatted: hsl(
     var(--base-h),

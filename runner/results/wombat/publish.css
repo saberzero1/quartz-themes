@@ -1362,13 +1362,13 @@ body.theme-dark {
   --table-header-background-hover: var(--peach-pale_30) !important;
   --bold-color: var(--peach-pale) !important;
   --italic-color: var(--peach-pale) !important;
-  --table-row-background: var(--dark-grey) !important;
   --cursor-line-background: var(--charcoal-grey) !important;
+  --clay: #d08770 !important;
+  --table-row-background: var(--dark-grey) !important;
   --text-highlight-fg: var(--eggshell) !important;
   --almost-black: #1c1c1c !important;
   --carolina-blue: #87afff !important;
   --charcoal-grey: #585858 !important;
-  --clay: #d08770 !important;
   --dark-grey: #242424 !important;
   --eggshell: #ffffd7 !important;
   --light-maroon: #bf616a !important;

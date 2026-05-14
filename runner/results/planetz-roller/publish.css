@@ -1351,13 +1351,13 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: #e7f2ee !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --inline-title-color: #ff7a8a !important;
-  --background-modifier-form-field-highlighted: #e7f2ee !important;
   --background-modifier-success-hover: #79e8bc !important;
   --blockquote-border: #20c093 !important;
   --syntax-comment: #8d9990 !important;
@@ -1365,6 +1365,8 @@ body.theme-light {
   --syntax-keyword: #ff6b82 !important;
   --syntax-string: #6aba0e !important;
   --embed-background: #f0f7f5 !important;
+  --modal-border: #c5d5c9 !important;
+  --prompt-border: #c5d5c9 !important;
   --background-primary-rgb: 237, 250, 241 !important;
   --sidebar-background: #f6fbf7 !important;
   --text-heading: #1f2521 !important;
@@ -1373,7 +1375,6 @@ body.theme-light {
   --background-secondary-rgb: 228, 243, 234 !important;
   --embed-border: #c5d5c9 !important;
   --interactive-muted: #c5d5c9 !important;
-  --modal-border: #c5d5c9 !important;
   --nav-file-title-color-active: #101411 !important;
   --nav-item-color-selected-active: #20c093 !important;
   --nav-item-icon-color: #ff5d70 !important;
@@ -1382,7 +1383,6 @@ body.theme-light {
   --outline-item-color-active: #3f4642 !important;
   --pane-border-color: #c5d5c9 !important;
   --pane-border-width: 1px !important;
-  --prompt-border: #c5d5c9 !important;
   --ribbon-background-hover: #f0f7f5 !important;
   --syntax-diff-changed: #d1df52 !important;
   --syntax-function: #9278ff !important;
@@ -2375,8 +2375,8 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: #ff7a8a !important;
   --background-modifier-form-field-highlighted: #3d4148 !important;
+  --inline-title-color: #ff7a8a !important;
   --background-modifier-success-hover: #79e8bc !important;
   --blockquote-border: #88ddc1 !important;
   --syntax-comment: #67736b !important;
@@ -2384,6 +2384,8 @@ body.theme-dark {
   --syntax-keyword: #ff6678 !important;
   --syntax-string: #cff075 !important;
   --embed-background: inherit !important;
+  --modal-border: #494d55 !important;
+  --prompt-border: #494d55 !important;
   --background-primary-rgb: 58, 62, 69 !important;
   --sidebar-background: #2b2d31 !important;
   --text-heading: #e4ebe6 !important;
@@ -2392,7 +2394,6 @@ body.theme-dark {
   --background-secondary-rgb: 67, 70, 76 !important;
   --embed-border: #494d55 !important;
   --interactive-muted: #494d55 !important;
-  --modal-border: #494d55 !important;
   --nav-file-title-color-active: #f2f6f3 !important;
   --nav-item-color-selected-active: #84ebc9 !important;
   --nav-item-icon-color: #ff6678 !important;
@@ -2401,7 +2402,6 @@ body.theme-dark {
   --outline-item-color-active: #d2d9d4 !important;
   --pane-border-color: #494d55 !important;
   --pane-border-width: 1px !important;
-  --prompt-border: #494d55 !important;
   --ribbon-background-hover: #3a3e45 !important;
   --syntax-diff-changed: #f2c16f !important;
   --syntax-function: #d0c1ff !important;

@@ -1495,12 +1495,12 @@ body.theme-light {
   --radius-md: 8px !important;
   --radius-sm: 4px !important;
   --color-border: #e2e8f0 !important;
+  --radius-lg: 12px !important;
   --color-bg-primary: #ffffff !important;
   --color-bg-secondary: #f8f9fa !important;
   --color-code-bg: #f1f5f9 !important;
   --color-text-primary: #1a202c !important;
   --color-text-secondary: #718096 !important;
-  --radius-lg: 12px !important;
   --spacing-lg: 1.5rem !important;
   --spacing-md: 1rem !important;
   --spacing-sm: 0.5rem !important;
@@ -2494,12 +2494,12 @@ body.theme-dark {
   --radius-md: 8px !important;
   --radius-sm: 4px !important;
   --color-border: #4a5568 !important;
+  --radius-lg: 12px !important;
   --color-bg-primary: #1a202c !important;
   --color-bg-secondary: #2d3748 !important;
   --color-code-bg: #1e2937 --color-link: #edf2f7 !important;
   --color-text-primary: #edf2f7 !important;
   --color-text-secondary: #a0aec0 !important;
-  --radius-lg: 12px !important;
   --spacing-lg: 1.5rem !important;
   --spacing-md: 1rem !important;
   --spacing-sm: 0.5rem !important;

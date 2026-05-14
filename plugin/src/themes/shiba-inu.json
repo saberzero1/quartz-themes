@@ -681,5 +681,56 @@
     "minimal-cards-style": {
       "general": ".minimal-cards-style .cards .table-view-table > tbody > tr > td {\nborder-bottom: 1px solid var(--cards-background-modifier-border) !important;\nmargin: 10 !important;\n}\n\n.minimal-cards-style .cards .table-view-table > tbody > tr > td:last-child {\nborder-bottom-color: transparent !important;\n}\n\n.minimal-cards-style .cards .table-view-table > tbody > tr > td:first-child {\nwidth: 100% !important;\nborder-bottom: 1px solid var(--cards-background-modifier-border) !important;\n}\n\n.minimal-cards-style .cards .table-view-table > tbody > tr > td:first-child span {\nmargin: 2px calc(var(--cards-padding) * 0.5) 0 calc(var(--cards-padding) * 0.5);\n}\n\n.minimal-cards-style .cards .table-view-table > tbody > tr > td:first-child span a {\npadding: 0 !important;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--text-normal": [
+      "--text-color",
+      "--icon-color-focus",
+      "--ec-uiSelFg",
+      "--ec-frm-edActTabFg",
+      "--ec-frm-trmTtbFg",
+      "--ec-frm-inlBtnFg"
+    ],
+    "--color-accent": ["--shadow-border-accent"],
+    "--background-primary": [
+      "--system-status-background",
+      "--mobile-sidebar-background",
+      "--settings-background",
+      "--settings-home-background",
+      "--keyboard-background",
+      "--modal-sidebar-background"
+    ],
+    "--background-modifier-border": ["--menu-divider-color", "--ec-focusBrd"],
+    "--background-secondary": [
+      "--mobile-sidebar-background",
+      "--settings-background",
+      "--settings-home-background"
+    ],
+    "--cards-min-width": ["--cards-columns"],
+    "--cards-max-width": ["--cards-columns"],
+    "--background-settings-workplace-theme-light-custom": [
+      "--shib-background-image"
+    ],
+    "--background-settings-workplace-theme-dark-custom": [
+      "--shib-background-image"
+    ],
+    "--shib-custom-bg-brightness-light": ["--shib-custom-bg-brightness"],
+    "--shib-custom-bg-brightness-dark": ["--shib-custom-bg-brightness"],
+    "--shib-custom-bg-blur-light": ["--shib-custom-bg-blur"],
+    "--shib-custom-bg-blur-dark": ["--shib-custom-bg-blur"],
+    "--shib-custom-bg-card-fg-opacity-light": [
+      "--shib-custom-bg-card-fg-opacity"
+    ],
+    "--shib-custom-bg-card-fg-opacity-dark": [
+      "--shib-custom-bg-card-fg-opacity"
+    ],
+    "--background-secondary-alt": ["--tab-background-inactive"],
+    "--background-panel-page-theme-dark-custom": [
+      "--panel-page-background-url-theme"
+    ],
+    "--background-panel-page-theme-light-custom": [
+      "--panel-page-background-url-theme"
+    ]
   }
 }

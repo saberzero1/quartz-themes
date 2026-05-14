@@ -88,5 +88,11 @@
     "scrollbar-high-contrast": {
       "general": ".scrollbar-high-contrast {\n--scrollbar-bg: var(--background-secondary);\n--scrollbar-thumb-bg: rgba(var(--fg_dark_x), 0.55);\n--scrollbar-active-thumb-bg: rgba(var(--fg_dark_x), 0.75);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--text-selection": ["--ec-codeSelBg", "--ec-uiSelBg"],
+    "--scrollbar-thumb-bg": ["--ec-sbThumbCol"],
+    "--scrollbar-active-thumb-bg": ["--ec-sbThumbHoverCol"]
   }
 }

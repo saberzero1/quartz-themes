@@ -1542,6 +1542,7 @@ body.theme-light {
     system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter !important;
   --img-border-radius: 2px !important;
   --platinum: #cccccc !important;
+  --link-unresolved-decoration: none !important;
   --bright-red: #fb4934 !important;
   --dark0-hard: #1d2021 !important;
   --dark0-soft: #32302f !important;
@@ -1552,6 +1553,7 @@ body.theme-light {
   --neutral-red: #cc241d !important;
   --neutral-yellow: #d79921 !important;
   --code-orange: #b46629 !important;
+  --text-link-hover: var(--r-deep-orange) !important;
   --button-text-color: var(--text-on-accent) !important;
   --default-codeblock: var(--r-light3) !important;
   --graph-view-line-color: var(--light4) !important;
@@ -1619,14 +1621,12 @@ body.theme-light {
   --r-bg-selection: color-mix(in srgb, #d5520e 25%, transparent) !important;
   --r-pdf-highlight: #fe750e !important;
   --text-card: var(--r-dark2) !important;
-  --text-link-hover: var(--r-deep-orange) !important;
   --text-platinum: var(--platinum) !important;
   --bright-orange-v: #fe8019 !important;
   --bright-yellow-v: #fabd2f !important;
   --callout-bg-darken-pct: 5%;
   --code-light-gray: #cccccc !important;
   --hx-link-ul-transparency-pct: 33% !important;
-  --link-unresolved-decoration: none !important;
   --link-unresolved-decoration-hover: none !important;
   --max-embed-height: 1000px !important;
   --obsidian-codeblock: #1a1a1a !important;
@@ -2678,6 +2678,7 @@ body.theme-dark {
     system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter !important;
   --img-border-radius: 2px !important;
   --platinum: #cccccc !important;
+  --link-unresolved-decoration: none !important;
   --bright-red: #fb4934 !important;
   --dark0-hard: #1d2021 !important;
   --dark0-soft: #32302f !important;
@@ -2688,6 +2689,7 @@ body.theme-dark {
   --neutral-red: #cc241d !important;
   --neutral-yellow: #d79921 !important;
   --code-orange: #b46629 !important;
+  --text-link-hover: var(--text-a-hover) !important;
   --button-text-color: var(--background-secondary-alt) !important;
   --default-codeblock: var(--obsidian-codeblock) !important;
   --graph-view-line-color: var(--dark1) !important;
@@ -2755,14 +2757,12 @@ body.theme-dark {
   --r-bg-selection: color-mix(in srgb, #d5520e 25%, transparent) !important;
   --r-pdf-highlight: #fe750e !important;
   --text-card: var(--r-light2-soft) !important;
-  --text-link-hover: var(--text-a-hover) !important;
   --text-platinum: var(--platinum) !important;
   --bright-orange-v: #fe8019 !important;
   --bright-yellow-v: #fabd2f !important;
   --callout-bg-darken-pct: 0%;
   --code-light-gray: #cccccc !important;
   --hx-link-ul-transparency-pct: 33% !important;
-  --link-unresolved-decoration: none !important;
   --link-unresolved-decoration-hover: none !important;
   --max-embed-height: 1000px !important;
   --obsidian-codeblock: #1a1a1a !important;

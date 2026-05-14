@@ -1390,6 +1390,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--text-muted) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1402,7 +1403,6 @@ body.theme-light {
   --h5-color: var(--color-orange) !important;
   --h6-color: var(--color-pink) !important;
   --inline-title-color: var(--h1-color) !important;
-  --blockquote-color: var(--text-muted) !important;
   --nav-indetation-guide-color: var(--color-base-20) !important;
   --color-dracula-background: #19212d !important;
   --color-dracula-comment: #6272a4 !important;
@@ -1483,6 +1483,8 @@ body.theme-light {
   --color-tokyo-night-purple: #9d7cd8 !important;
   --color-tokyo-night-red: #f7768e !important;
   --color-tokyo-night-yellow: #e0af68 !important;
+  --highlight-background-color--active: rgba(250, 246, 156, 0.2) !important;
+  --highlight-background-color-underline: #ffd500 !important;
   --accent-default-h: 237.45 !important;
   --accent-default-l: 80% !important;
   --accent-default-s: 90% !important;
@@ -1536,10 +1538,8 @@ body.theme-light {
   --color-tokyo-night-light-purple: #41315f !important;
   --color-tokyo-night-light-red: #8c4351 !important;
   --color-tokyo-night-light-yellow: #8f5e15 !important;
-  --highlight-background-color--active: rgba(250, 246, 156, 0.2) !important;
   --highlight-background-color--active-dark: rgb(238, 232, 169, 0.1) !important;
   --highlight-background-color--normal: rgba(255, 213, 0, 0.15) !important;
-  --highlight-background-color-underline: #ffd500 !important;
   --highlight-bg-blue: rgba(11, 208, 200, 0.45) !important;
   --highlight-bg-green: rgba(11, 208, 101, 0.45) !important;
   --highlight-bg-orange: rgba(243, 124, 29, 0.45) !important;
@@ -2553,6 +2553,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--text-muted) !important;
   --h1-color: var(--color-purple) !important;
   --h2-color: var(--color-blue) !important;
   --h3-color: var(--color-green) !important;
@@ -2560,7 +2561,6 @@ body.theme-dark {
   --h5-color: var(--color-orange) !important;
   --h6-color: var(--color-pink) !important;
   --inline-title-color: var(--h1-color) !important;
-  --blockquote-color: var(--text-muted) !important;
   --nav-indetation-guide-color: var(--color-base-20) !important;
   --color-dracula-background: #19212d !important;
   --color-dracula-comment: #6272a4 !important;
@@ -2641,6 +2641,8 @@ body.theme-dark {
   --color-tokyo-night-purple: #9d7cd8 !important;
   --color-tokyo-night-red: #f7768e !important;
   --color-tokyo-night-yellow: #e0af68 !important;
+  --highlight-background-color--active: rgba(250, 246, 156, 0.1) !important;
+  --highlight-background-color-underline: #f6c90e !important;
   --accent-default-h: 237.45 !important;
   --accent-default-l: 80% !important;
   --accent-default-s: 90% !important;
@@ -2694,10 +2696,8 @@ body.theme-dark {
   --color-tokyo-night-light-purple: #41315f !important;
   --color-tokyo-night-light-red: #8c4351 !important;
   --color-tokyo-night-light-yellow: #8f5e15 !important;
-  --highlight-background-color--active: rgba(250, 246, 156, 0.1) !important;
   --highlight-background-color--active-dark: rgb(238, 232, 169, 0.1) !important;
   --highlight-background-color--normal: rgba(255, 213, 0, 0.01) !important;
-  --highlight-background-color-underline: #f6c90e !important;
   --highlight-bg-blue: rgba(156, 250, 246, 0.45) !important;
   --highlight-bg-green: rgba(156, 250, 199, 0.45) !important;
   --highlight-bg-orange: rgba(250, 199, 158, 0.45) !important;

@@ -1455,6 +1455,7 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: rgb(136, 43, 90) !important;
   --interactive-accent-rgb: 226, 72, 34 !important;
+  --background-modifier-form-field-highlighted: rgb(182, 213, 221) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1464,7 +1465,6 @@ body.theme-light {
   --default-font: Cairo !important;
   --opacity-translucency: 0.5 !important;
   --text-error-hover: #cb2c2 !important;
-  --background-modifier-form-field-highlighted: rgb(182, 213, 221) !important;
   --graph-attach: #77f581 !important;
   --graph-circle: #0cd2ec !important;
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;

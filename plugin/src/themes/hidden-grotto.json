@@ -146,5 +146,6 @@
       "general": ".grotto-rounded-ui {\n--grotto-global-border-radius: 1rem;\n}"
     },
     "grotto-blur": { "general": ".grotto-blur {\n--grotto-blur: 4px;\n}" }
-  }
+  },
+  "selectorImpacts": {}
 }

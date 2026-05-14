@@ -2344,9 +2344,9 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 124, 175, 194 !important;
+  --background-modifier-form-field-highlighted: #181818 !important;
   --heading-color: #d8d8d8 !important;
   --inline-title-color: #d8d8d8 !important;
-  --background-modifier-form-field-highlighted: #181818 !important;
   --vim-cursor: #7cafc2 !important;
   --table-row-even-background: transparent !important;
   --table-row-odd-background: transparent !important;

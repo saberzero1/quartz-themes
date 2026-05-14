@@ -1121,19 +1121,20 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --inline-title-align: center !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --table-header-background-hover: var(--background-secondary) !important;
+  --callout-title-size: 0.98em;
   --text-base: 15% !important;
   --font-default-custom: "iA Writer Quattro S" !important;
   --font-monospace-custom: "iA Writer Mono S" !important;
   --font-secondary: "iA Writer Duo S" !important;
   --font-secondary-custom: "iA Writer Duo S" !important;
   --h1-align: var(--h-align-s) !important;
-  --inline-title-align: center !important;
   --h2-align: var(--h-align-s) !important;
   --h3-align: var(--h-align-s) !important;
   --h4-align: var(--h-align-s) !important;
@@ -1144,12 +1145,12 @@ body.theme-light {
     var(--interactive-accent-hsl),
     0.5
   ) !important;
-  --callout-title-size: 0.98em;
   --tag-opacity: 0.25 !important;
   --tag-opacity-hover: 0.2 !important;
   --link-font: var(--font-secondary) !important;
   --color-muted: #797593 !important;
   --color-muted-rgb: 121, 117, 147 !important;
+  --cursor-color: var(--interactive-accent) !important;
   --link-underline-offset: 2px !important;
   --bg-box-top: var(--color-accent-2) !important;
   --c-00: var(--base-c-bg) !important;
@@ -1164,7 +1165,6 @@ body.theme-light {
   --c-50: calc(var(--text-base) + 20%) !important;
   --c-60: calc(var(--text-base) + 15%) !important;
   --c-70: calc(var(--text-base) + 12%) !important;
-  --cursor-color: var(--interactive-accent) !important;
   --editing-file-line-width: var(--file-line-width) !important;
   --font-preview-view: var(--font-secondary) !important;
   --inline-field-size: var(--font-small) !important;
@@ -2245,13 +2245,14 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --inline-title-align: center !important;
   --table-header-background-hover: var(--background-secondary) !important;
+  --callout-title-size: 0.98em;
   --font-default-custom: "iA Writer Quattro S" !important;
   --font-monospace-custom: "iA Writer Mono S" !important;
   --font-secondary: "iA Writer Duo S" !important;
   --font-secondary-custom: "iA Writer Duo S" !important;
   --h1-align: var(--h-align-s) !important;
-  --inline-title-align: center !important;
   --h2-align: var(--h-align-s) !important;
   --h3-align: var(--h-align-s) !important;
   --h4-align: var(--h-align-s) !important;
@@ -2262,12 +2263,12 @@ body.theme-dark {
     var(--interactive-accent-hsl),
     0.5
   ) !important;
-  --callout-title-size: 0.98em;
   --tag-opacity: 0.25 !important;
   --tag-opacity-hover: 0.2 !important;
   --link-font: var(--font-secondary) !important;
   --color-muted: #908caa !important;
   --color-muted-rgb: 144, 140, 170 !important;
+  --cursor-color: var(--interactive-accent) !important;
   --link-underline-offset: 2px !important;
   --base-c-m: calc(var(--base-c) - 10%) !important;
   --bg-box-top: var(--color-accent-2) !important;
@@ -2283,7 +2284,6 @@ body.theme-dark {
   --c-50: calc(var(--base-c-m) + 60%) !important;
   --c-60: calc(var(--base-c-m) + 64%) !important;
   --c-70: calc(var(--base-c-m) + 66%) !important;
-  --cursor-color: var(--interactive-accent) !important;
   --editing-file-line-width: var(--file-line-width) !important;
   --font-preview-view: var(--font-secondary) !important;
   --inline-field-size: var(--font-small) !important;

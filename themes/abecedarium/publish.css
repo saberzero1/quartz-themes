@@ -1365,6 +1365,7 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: #fff !important;
   --interactive-accent-rgb: 38, 157, 255 !important;
+  --background-modifier-form-field-highlighted: #fff !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1395,7 +1396,6 @@ body.theme-light {
   --graph-node-fill-yellow: #ffcf00 !important;
   --text-accent-hover-dark: #4e8ae4 !important;
   --text-error-hover: #cb2c2 !important;
-  --background-modifier-form-field-highlighted: #fff !important;
 }
 
 body.theme-dark {

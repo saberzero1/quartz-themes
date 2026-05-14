@@ -1269,7 +1269,6 @@
     "--font-print": "body",
     "--font-monospace": "body",
     "--font-mermaid": "body",
-    "--pop-callout-slide-out-duration": "body.css-settings-manager",
     "--shiki-code-background": "body",
     "--shiki-code-normal": "body",
     "--shiki-code-comment": "body",
@@ -1295,6 +1294,7 @@
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
     "--shiki-active-tab-border-color": "body",
+    "--pop-callout-slide-out-duration": "body.css-settings-manager",
     "--text-highlight-bg-active": ".color-scheme-golden-book:not(.separate-color-scheme).theme-dark"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1781,7 +1781,6 @@
     "--font-print": "body",
     "--font-monospace": "body",
     "--font-mermaid": "body",
-    "--pop-callout-slide-out-duration": "body.css-settings-manager",
     "--shiki-code-background": "body",
     "--shiki-code-normal": "body",
     "--shiki-code-comment": "body",
@@ -1807,6 +1806,7 @@
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
     "--shiki-active-tab-border-color": "body",
+    "--pop-callout-slide-out-duration": "body.css-settings-manager",
     "--text-highlight-bg-active": ".color-scheme-golden-book:not(.separate-color-scheme).theme-dark"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },

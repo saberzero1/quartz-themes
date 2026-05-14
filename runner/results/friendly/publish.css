@@ -1026,6 +1026,8 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 238, 17, 102 !important;
+  --background-modifier-form-field-highlighted: #121212 !important;
+  --text-highlight-bg-active: #e7cc8855 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1036,10 +1038,8 @@ body.theme-light {
   --default-font: "Lexend Deca Light", monospace !important;
   --opacity-translucency: 0.85 !important;
   --text-error-hover: red !important;
-  --background-modifier-form-field-highlighted: #121212 !important;
-  --header-font: "iA Writer Quattro V Black", serif !important;
   --interactive-success: var(--interactive-normal) !important;
-  --text-highlight-bg-active: #e7cc8855 !important;
+  --header-font: "iA Writer Quattro V Black", serif !important;
   --header-size: 100% !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
@@ -2047,15 +2047,15 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 233, 196, 106 !important;
+  --background-modifier-form-field-highlighted: #001f2b !important;
+  --text-highlight-bg-active: #e9c46a40 !important;
   --mermaid-font: "Ranille Normal", "Segoe UI", serif !important;
   --reveal-font: "Ranille Normal", "Segoe UI", serif !important;
   --default-font: "iA Writer Quattro V", monospace !important;
   --opacity-translucency: 0.85 !important;
   --text-error-hover: #9b2226 !important;
-  --background-modifier-form-field-highlighted: #001f2b !important;
-  --header-font: "Ranille Normal", serif !important;
   --interactive-success: var(--interactive-normal) !important;
-  --text-highlight-bg-active: #e9c46a40 !important;
+  --header-font: "Ranille Normal", serif !important;
   --header-size: 110% !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;

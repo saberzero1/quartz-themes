@@ -1351,6 +1351,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--color-yellow-alpha-100) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1358,7 +1359,7 @@ body.theme-light {
   --shadow-edges: 0 0 transparent !important;
   --default-font: "Inter", sans-serif !important;
   --vault-name-color: var(--text-normal) !important;
-  --text-highlight-bg-active: var(--color-yellow-alpha-100) !important;
+  --callout-title-size: var(--font-ui-medium);
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;
@@ -1370,7 +1371,6 @@ body.theme-light {
   --background-modifier-border-row: var(--color-ash-500) !important;
   --background-primary-low: var(--color-ash-100) !important;
   --bold-background: var(--static-alpha-balck-150) !important;
-  --callout-title-size: var(--font-ui-medium);
   --radius-full: var(--scale-dimension-size-max) !important;
   --scale-radius-1: 2px !important;
   --scale-radius-2: 4px !important;
@@ -2478,9 +2478,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--color-yellow-alpha-50) !important;
   --default-font: "Inter", sans-serif !important;
   --vault-name-color: var(--text-normal) !important;
-  --text-highlight-bg-active: var(--color-yellow-alpha-50) !important;
+  --callout-title-size: var(--font-ui-medium);
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;
@@ -2492,7 +2493,6 @@ body.theme-dark {
   --background-modifier-border-row: var(--color-base-10) !important;
   --background-primary-low: var(--color-base-05) !important;
   --bold-background: var(--static-alpha-balck-150) !important;
-  --callout-title-size: var(--font-ui-medium);
   --radius-full: var(--scale-dimension-size-max) !important;
   --scale-radius-1: 2px !important;
   --scale-radius-2: 4px !important;

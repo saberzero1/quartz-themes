@@ -1402,11 +1402,11 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --mono-font: "Source Code Pro", "Consolas", monospace !important;
+  --overlay-bg: #101f618a !important;
   --settings-red-light: var(--interactive-accent) !important;
   --bgcolor: #07053500 !important;
   --nice-font:
     "Myuppy", "Montserrat", "Roboto", "Segoe Print", sans-serif !important;
-  --overlay-bg: #101f618a !important;
   --settings-blue: #7772d76e !important;
   --settings-red: #d0535375 !important;
 }

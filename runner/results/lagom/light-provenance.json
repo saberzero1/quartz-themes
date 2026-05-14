@@ -895,7 +895,7 @@
     "--theme-dark-opacity": "body",
     "--theme-light-opacity": "body",
     "--headers-align": "body",
-    "--headers-space-simetry": "body",
+    "--headers-space-symmetry": "body",
     "--folder-border-color": "body",
     "--tabs-height": "body",
     "--filename-line-thickness": "body",

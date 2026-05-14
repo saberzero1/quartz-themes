@@ -116,5 +116,10 @@
     "lst-prop-rv-noedit": {
       "general": ".lst-prop-rv-noedit .markdown-reading-view {\n& .metadata-container .metadata-add-button { display: none; };\n& .metadata-property input { pointer-events: none; };\n& .multi-select-pill .multi-select-pill-remove-button { visibility: collapse; };\n/* remove the remove button special for tags property */\n& .metadata-property[data-property-key=\"tags\"] .multi-select-pill-remove-button { display: none; };\n& .metadata-property[data-property-key=\"tags\"] .multi-select-pill-content { margin-right: var(--pill-padding-x); };\n/* adding \"padding to the right after 1.5.1 update \"*/\n& .markdown-reading-view .metadata-property[data-property-key=\"tags\"] .multi-select-pill-content { margin-right: var(--pill-padding-x); };\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--list-indent": ["--indent-dash-width", "--indent-dash-left"],
+    "--line-height-normal": ["--ec-codeLineHt", "--ec-uiLineHt"]
   }
 }

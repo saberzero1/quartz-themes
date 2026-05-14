@@ -996,9 +996,10 @@ body.theme-dark {
   --white: #fff !important;
   --surface: #171a23 !important;
   --light-text: #575279 !important;
+  --base: #171a23 !important;
+  --gold: #f6c177 !important;
   --flashing-background: rgba(235, 111, 146, 0.3) !important;
   --black: #24252a !important;
-  --base: #171a23 !important;
   --code-bg: #242a36 !important;
   --bold: #bdb2a9 !important;
   --link-url-hover: var(--red2) !important;
@@ -1007,7 +1008,6 @@ body.theme-dark {
   --table-row: var(--gray) !important;
   --family: "Geist", sans-serif !important;
   --foam: #9ccfd8 !important;
-  --gold: #f6c177 !important;
   --highlight-high: #524f67 !important;
   --highlight-low: #21202e !important;
   --highlight-med: #403d52 !important;

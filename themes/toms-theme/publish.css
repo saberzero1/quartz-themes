@@ -1136,16 +1136,16 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--color-green) !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: orange !important;
-  --background-modifier-form-field-highlighted: var(--color-green) !important;
   --color-light: #e0f8cf !important;
   --interactive-success: #197300 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --color-darkgreen: #306850 !important;
   --color-nearblack: #071821 !important;
   --color-off-light: #cfe6be !important;
@@ -2124,11 +2124,11 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --text-error-hover: orange !important;
   --background-modifier-form-field-highlighted: var(--color-green) !important;
+  --text-highlight-bg-active: blue !important;
+  --text-error-hover: orange !important;
   --color-light: #e0f8cf !important;
   --interactive-success: var(--color-green) !important;
-  --text-highlight-bg-active: blue !important;
   --color-darkgreen: #306850 !important;
   --color-nearblack: #071821 !important;
   --color-off-light: #cfe6be !important;

@@ -1380,6 +1380,11 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --base-h: var(--ap-base0-h) !important;
+  --base-l: var(--ap-base0-l) !important;
+  --base-s: var(--ap-base0-s) !important;
+  --font-editor-theme: var(--ap-font-text) !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --h1-color: var(--ap-h1) !important;
   --h2-color: var(--ap-h2) !important;
   --h3-color: var(--ap-h3) !important;
@@ -1392,7 +1397,6 @@ body.theme-dark {
   --purple: #9e86c8 !important;
   --red: #e83e3e !important;
   --yellow: #e5b567 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --accent-d: var(--ap-primary-d) !important;
   --ap-base0: hsl(250, 23%, 5%) !important;
   --ap-base1: hsl(249, 33%, 8%) !important;
@@ -1424,11 +1428,7 @@ body.theme-dark {
   --ap-primary: hsl(15, 64%, 88%) !important;
   --ap-secondary: hsl(157, 32%, 58%) !important;
   --base-d: var(--ap-base0-d) !important;
-  --base-h: var(--ap-base0-h) !important;
-  --base-l: var(--ap-base0-l) !important;
-  --base-s: var(--ap-base0-s) !important;
   --em-color: var(--ap-color-italic) !important;
-  --font-editor-theme: var(--ap-font-text) !important;
   --quote-color: var(--ap-color-quote) !important;
   --strong-color: var(--ap-color-strong) !important;
   --ap-aqua: #a8e5e6 !important;

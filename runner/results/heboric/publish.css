@@ -1362,8 +1362,8 @@ body.theme-light {
   --h5-font: var(--sans-serif) !important;
   --h6-font: var(--sans-serif) !important;
   --inline-title-font: var(--h1-font) !important;
-  --color-base-80: #444444 !important;
   --table-header-font: var(--sans-serif) !important;
+  --color-base-80: #444444 !important;
   --mono:
     "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
     Consolas, "DejaVu Sans Mono", monospace !important;
@@ -2343,8 +2343,8 @@ body.theme-dark {
   --h5-font: var(--sans-serif) !important;
   --h6-font: var(--sans-serif) !important;
   --inline-title-font: var(--h1-font) !important;
-  --color-base-80: hsl(221, 8%, 85%) !important;
   --table-header-font: var(--sans-serif) !important;
+  --color-base-80: hsl(221, 8%, 85%) !important;
   --mono:
     "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
     Consolas, "DejaVu Sans Mono", monospace !important;

@@ -161,5 +161,6 @@
     "bold-underline": {
       "general": "body.bold-underline strong, body.bold-underline span.cm-strong {\nborder-bottom: 5.5px solid var(--bold-underline-color);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

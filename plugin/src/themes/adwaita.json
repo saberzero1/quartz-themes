@@ -94,5 +94,6 @@
     "adwaita-icons-always": {
       "general": "body.adwaita-icons-always {\n--titlebar-height: 45px;\n--header-height: 46px;\n}\n\nbody.adwaita-icons-always svg.logo-wireframe {\nstroke-width: 45;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

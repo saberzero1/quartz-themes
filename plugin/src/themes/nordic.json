@@ -107,5 +107,18 @@
       "dark": ".nordic-colored-headers, .theme-light.nordic-colored-headers {\n--h1-color: var(--color-red);\n--h2-color: var(--color-orange);\n--h3-color: var(--color-yellow);\n--h4-color: var(--color-green);\n--h5-color: var(--color-cyan);\n--h6-color: var(--color-blue);\n}",
       "light": ".theme-dark.nordic-colored-headers, .nordic-colored-headers {\n--h1-color: var(--color-red);\n--h2-color: var(--color-orange);\n--h3-color: var(--color-yellow);\n--h4-color: var(--color-green);\n--h5-color: var(--color-cyan);\n--h6-color: var(--color-blue);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--nordic-darken": [
+      "--color-base-00",
+      "--color-base-05",
+      "--color-base-10",
+      "--color-base-20",
+      "--color-base-25",
+      "--color-base-30",
+      "--color-base-35",
+      "--color-base-40"
+    ]
   }
 }

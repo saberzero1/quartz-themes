@@ -1120,6 +1120,9 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: hsl(
+    var(--color-text-highlight-active-background)
+  ) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1130,9 +1133,6 @@ body.theme-light {
   --font-title: "Jomhuria", "Source Sans Pro", sans-serif !important;
   --frost0: 226, 40%, 44% !important;
   --frost2: 226, 40%, 52% !important;
-  --text-highlight-bg-active: hsl(
-    var(--color-text-highlight-active-background)
-  ) !important;
   --color-white: var(--day2) !important;
   --font-headings: "Tahoma", serif !important;
   --color-black: var(--night2) !important;
@@ -2253,14 +2253,14 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: hsl(
+    var(--color-text-highlight-active-background)
+  ) !important;
   --default-font:
     "Consolas", "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
   --font-title: "Jomhuria", "Source Sans Pro", sans-serif !important;
   --frost0: 226, 40%, 44% !important;
   --frost2: 226, 40%, 52% !important;
-  --text-highlight-bg-active: hsl(
-    var(--color-text-highlight-active-background)
-  ) !important;
   --color-white: var(--day3) !important;
   --font-headings: "Tahoma", serif !important;
   --color-black: var(--night3) !important;

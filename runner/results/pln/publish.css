@@ -1363,29 +1363,29 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: var(--shadow-xs) !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    var(--shadow-edges) !important;
-  --shadow-edges: 0 0 transparent !important;
-  --color-yellow-light: #ebcb8b !important;
-  --text-highlight-bg-active: rgba(180, 142, 173, 0.4) !important;
-  --embed-border-left: none !important;
-  --embed-border-right: none !important;
   --cards-columns: repeat(
     auto-fit,
     minmax(var(--cards-min-width), var(--cards-max-width))
   ) !important;
   --cards-aspect-ratio: auto !important;
   --cards-background: transparent !important;
+  --cards-border-width: 1px !important;
   --cards-image-fit: contain !important;
   --cards-image-height: 400px !important;
   --cards-max-width: 1fr !important;
   --cards-min-width: 180px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 1.2em !important;
+  --text-highlight-bg-active: rgba(180, 142, 173, 0.4) !important;
+  --raised-shadow: var(--shadow-xs) !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    var(--shadow-edges) !important;
+  --shadow-edges: 0 0 transparent !important;
+  --color-yellow-light: #ebcb8b !important;
+  --embed-border-left: none !important;
+  --embed-border-right: none !important;
   --color-salmon: #fc6e68 !important;
-  --cards-border-width: 1px !important;
   --pln-cards-color-rgb: var(--w0-rgb) !important;
   --accent-dark-hsl-h: 210 !important;
   --accent-dark-hsl-l: 63% !important;
@@ -2391,24 +2391,24 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --color-yellow-light: #ebcb8b !important;
-  --text-highlight-bg-active: rgba(180, 142, 173, 0.4) !important;
-  --embed-border-left: none !important;
-  --embed-border-right: none !important;
   --cards-columns: repeat(
     auto-fit,
     minmax(var(--cards-min-width), var(--cards-max-width))
   ) !important;
   --cards-aspect-ratio: auto !important;
   --cards-background: transparent !important;
+  --cards-border-width: 1px !important;
   --cards-image-fit: contain !important;
   --cards-image-height: 400px !important;
   --cards-max-width: 1fr !important;
   --cards-min-width: 180px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 1.2em !important;
+  --text-highlight-bg-active: rgba(180, 142, 173, 0.4) !important;
+  --color-yellow-light: #ebcb8b !important;
+  --embed-border-left: none !important;
+  --embed-border-right: none !important;
   --color-salmon: #fc6e68 !important;
-  --cards-border-width: 1px !important;
   --pln-cards-color-rgb: var(--b3-rgb) !important;
   --accent-dark-hsl-h: 210 !important;
   --accent-dark-hsl-l: 63% !important;

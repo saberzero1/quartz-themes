@@ -1389,6 +1389,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--cyan) !important;
+  --text-highlight-bg-active: var(--blue-dim) !important;
   --bg-light: #484848 !important;
   --h1-color: var(--text-title-h1) !important;
   --h2-color: var(--text-title-h2) !important;
@@ -1417,7 +1418,6 @@ body.theme-dark {
   --orange: #ffcfaf !important;
   --red: #dca3a3 !important;
   --yellow: #e8d7b9 !important;
-  --text-highlight-bg-active: var(--blue-dim) !important;
   --blue: #c6eaff !important;
   --cyan: #8cd0d3 !important;
   --white: #dfe4cf !important;
@@ -1432,34 +1432,34 @@ body.theme-dark {
   --table-row-even: var(--black) !important;
   --table-row-odd: var(--black-dim) !important;
   --bg: #3f3f3f !important;
+  --black-bright: #7f7f7f !important;
+  --white-bright: #f8f5ed !important;
+  --blue-bright: #6996bf !important;
+  --cyan-bright: #9ad6d9 !important;
+  --green-bright: #9ece9e !important;
+  --magenta-bright: #dcbecd !important;
+  --red-bright: #ecbcbc !important;
   --orange-light: #ffd7a7 !important;
   --red-dark: #cc9393 !important;
-  --green-bright: #9ece9e !important;
   --color-text-weeknum: var(--red-dim) !important;
   --bg-darker: #0f0f0f !important;
   --bg-darkest: #000000 !important;
   --bg-lighter: #4f4f4f !important;
-  --black-bright: #7f7f7f !important;
   --black-dim: #333333 !important;
-  --blue-bright: #6996bf !important;
   --blue-dim: #6699cc !important;
   --blue-purple: #c0bed1 !important;
-  --cyan-bright: #9ad6d9 !important;
   --cyan-dim: #66cccc !important;
   --font-header-text-theme:
     "Inter Medium", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif !important;
   --green-dim: #709080 !important;
-  --magenta-bright: #dcbecd !important;
   --magenta-dim: #cc99cc !important;
   --orange-brown: #cfbfaf !important;
   --orange-dim: #dfaf8f !important;
   --orange-tan: #efdcbc !important;
-  --red-bright: #ecbcbc !important;
   --red-dim: #bca3a3 !important;
   --red-error: #e37170 !important;
   --red-visual: #f18c96 !important;
-  --white-bright: #f8f5ed !important;
   --white-dim: #dddddd !important;
   --yellow-brighter: #f8f893 !important;
   --yellow-dim: #ffcc66 !important;

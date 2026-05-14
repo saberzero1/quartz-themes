@@ -67,5 +67,10 @@
     "sei-hide-backlinks-status-bar": {
       "general": "body.sei-hide-backlinks-status-bar .status-bar-item.plugin-backlink {\ndisplay: none !important;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--sei-colors-bold": ["--bold-color"],
+    "--sei-colors-italic": ["--italic-color"]
   }
 }

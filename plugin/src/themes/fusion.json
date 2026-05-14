@@ -46,5 +46,6 @@
     "no-note-padding": {
       "general": "body.no-note-padding :is(.cm-content {\npadding-bottom: 0 !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

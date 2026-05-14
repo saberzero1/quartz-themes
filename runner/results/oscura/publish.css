@@ -1414,10 +1414,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --text-error-hover: #ff5c5c !important;
   --background-modifier-form-field-highlighted: #2c2c31 !important;
-  --interactive-success: #4ebe96 !important;
   --text-highlight-bg-active: #5c6974 !important;
+  --text-error-hover: #ff5c5c !important;
+  --interactive-success: #4ebe96 !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

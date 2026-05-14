@@ -249,5 +249,6 @@
     "sQdthOne-hide-folder-icons": {
       "general": ".sQdthOne-hide-folder-icons .nav-folder-title-content {\nmargin-left: -15px !important;\npadding-left: 0px !important;\n}\n\n.sQdthOne-hide-folder-icons .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {\n-webkit-mask-image: url(\"\");\npadding: 0 0 0 0;\nmargin: 0 0 0 0;\n}\n\n.sQdthOne-hide-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before {\n-webkit-mask-image: url(\"\");\npadding: 0 0 0 0;\nmargin: 0 0 0 0;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

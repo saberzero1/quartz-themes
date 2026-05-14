@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-05-13T21:21:34.770Z",
+  "sourceTheme": "Rain-Washed Sky",
+  "fonts": [
+    {
+      "family": "Noto Serif TC",
+      "style": "normal italic",
+      "weight": "400",
+      "file": "noto-serif-tc.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Serif TC",
+      "style": "normal italic",
+      "weight": "600",
+      "file": "noto-serif-tc-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Serif SC",
+      "style": "normal italic",
+      "weight": "400",
+      "file": "noto-serif-sc.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Serif SC",
+      "style": "normal italic",
+      "weight": "600",
+      "file": "noto-serif-sc-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

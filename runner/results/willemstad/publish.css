@@ -1135,6 +1135,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--col-highlight-1) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1151,7 +1152,6 @@ body.theme-light {
     var(--ch-color-base-l-l-90) var(--ch-color-base-l-c-90)
       var(--ch-color-base-l-h-90)
   ) !important;
-  --text-highlight-bg-active: var(--col-highlight-1) !important;
   --color-base-15: oklch(
     var(--ch-color-base-l-l-15) var(--ch-color-base-l-c-15)
       var(--ch-color-base-l-h-15)
@@ -1164,6 +1164,10 @@ body.theme-light {
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --callout-gap: 0.5em;
   --settings-background: var(--background-primary-alt) !important;
+  --color-selection: var(
+    --color-set-l-selection,
+    oklch(80.92% 0.170357 75.4802deg)
+  ) !important;
   --color-base-45: oklch(
     var(--ch-color-base-l-l-45) var(--ch-color-base-l-c-45)
       var(--ch-color-base-l-h-45)
@@ -1193,10 +1197,6 @@ body.theme-light {
   --header-padding: var(--size-2-3) !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / var(--l-threshold) - 1) * -infinity, 0.975) !important;
-  --color-selection: var(
-    --color-set-l-selection,
-    oklch(80.92% 0.170357 75.4802deg)
-  ) !important;
   --account-scrollbar-border: var(--border-scrollbar-non-native) !important;
   --account-scrollbar-size: var(--size-scrollbar-non-native) !important;
   --advanced-tables-helper-size: calc(
@@ -2671,6 +2671,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--col-highlight-1) !important;
   --default-font: var(--font-editor) !important;
   --text-error-hover: var(--color-red-2) !important;
   --table-header-background-hover: var(--color-table-head-hover) !important;
@@ -2682,7 +2683,6 @@ body.theme-dark {
     var(--ch-color-base-d-l-90) var(--ch-color-base-d-c-90)
       var(--ch-color-base-d-h-90)
   ) !important;
-  --text-highlight-bg-active: var(--col-highlight-1) !important;
   --color-base-15: oklch(
     var(--ch-color-base-d-l-15) var(--ch-color-base-d-c-15)
       var(--ch-color-base-d-h-15)
@@ -2695,6 +2695,10 @@ body.theme-dark {
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --callout-gap: 0.5em;
   --settings-background: var(--background-primary-alt) !important;
+  --color-selection: var(
+    --color-set-d-selection,
+    oklch(80.92% 0.170357 75.4802deg)
+  ) !important;
   --color-base-45: oklch(
     var(--ch-color-base-d-l-45) var(--ch-color-base-d-c-45)
       var(--ch-color-base-d-h-45)
@@ -2724,10 +2728,6 @@ body.theme-dark {
   --header-padding: var(--size-2-3) !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / var(--l-threshold) - 1) * -infinity, 0.975) !important;
-  --color-selection: var(
-    --color-set-d-selection,
-    oklch(80.92% 0.170357 75.4802deg)
-  ) !important;
   --account-scrollbar-border: var(--border-scrollbar-non-native) !important;
   --account-scrollbar-size: var(--size-scrollbar-non-native) !important;
   --advanced-tables-helper-size: calc(

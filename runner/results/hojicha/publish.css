@@ -1371,11 +1371,11 @@ body.theme-dark {
   --text: #adacac !important;
   --h1: var(--green) !important;
   --h2: var(--yellow) !important;
+  --border: var(--orange-rgba) !important;
   --h3: var(--orange) !important;
   --h4: var(--red) !important;
   --h5: var(--blue) !important;
   --h6: var(--violet) !important;
-  --border: var(--orange-rgba) !important;
   --dark-red: #9c797d !important;
   --bg: #161616 !important;
   --bg-black: #111111 !important;

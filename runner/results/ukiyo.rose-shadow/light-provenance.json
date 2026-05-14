@@ -1270,7 +1270,6 @@
     "--font-print": "body",
     "--font-monospace": "body",
     "--font-mermaid": "body",
-    "--pop-callout-slide-out-duration": "body.css-settings-manager",
     "--shiki-code-background": "body",
     "--shiki-code-normal": "body",
     "--shiki-code-comment": "body",
@@ -1295,7 +1294,8 @@
     "--shiki-gutter-border-width": "body",
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
-    "--shiki-active-tab-border-color": "body"
+    "--shiki-active-tab-border-color": "body",
+    "--pop-callout-slide-out-duration": "body.css-settings-manager"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
   "div.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1776,7 +1776,6 @@
     "--font-print": "body",
     "--font-monospace": "body",
     "--font-mermaid": "body",
-    "--pop-callout-slide-out-duration": "body.css-settings-manager",
     "--shiki-code-background": "body",
     "--shiki-code-normal": "body",
     "--shiki-code-comment": "body",
@@ -1801,7 +1800,8 @@
     "--shiki-gutter-border-width": "body",
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
-    "--shiki-active-tab-border-color": "body"
+    "--shiki-active-tab-border-color": "body",
+    "--pop-callout-slide-out-duration": "body.css-settings-manager"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
   "svg.lucide-x.svg-icon": { "--focus-ring-color": ":root *" },

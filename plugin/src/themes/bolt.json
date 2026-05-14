@@ -86,5 +86,6 @@
       "dark": ".theme-lumen {\n--accent-h: 233 !important;\n--accent-s: 100% !important;\n--accent-l: 87% !important;\n--primary: hsl(233, 100%, 87%);\n--on-primary:#d8e2ee;\n--primary-container: #abd0ed;\n--on-primary-container: #dee0ff;\n--secondary: hsl(189, 100%, 87%);\n--on-secondary: #1e93a5;\n--secondary-container: #0d596e;\n--on-secondary-container: #e5f4f8;\n--tertiary: #7dffd6;\n--on-tertiary: #004d2d;\n--tertiary-container: #138462;\n--on-tertiary-container: #c3ffdc;\n--background: #18192a;\n--on-background: #e0e0ff;\n--surface: #232341;\n--on-surface: #e0e0ff;\n--outline: #90909a;\n--surface-variant: #46464f;\n--on-surface-variant: #c7c5d0;\n}",
       "light": ".theme-lumen {\n--accent-h: 231 !important;\n--accent-s: 49% !important;\n--accent-l: 50% !important;\n--primary: hsl(232, 43%, 65%);\n--on-primary:#ffffff;\n--primary-container: #dee0ff;\n--on-primary-container: #000f5d;\n--secondary: #006875;\n--on-secondary: #ffffff;\n--secondary-container: #beefe8;\n--on-secondary-container: #001f24;\n--tertiary: #904d00;\n--on-tertiary: #FFFFFF;\n--tertiary-container: #fff0cb;\n--on-tertiary-container: #2f1500;\n--background: #fffefa;\n--on-background: #32345d;\n--surface: #f6f5f2;\n--on-surface: #030865;\n--outline: #767680;\n--surface-variant: #e3e1ec;\n--on-surface-variant: #46464f;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

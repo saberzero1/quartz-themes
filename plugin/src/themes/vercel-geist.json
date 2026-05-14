@@ -83,5 +83,6 @@
     "accent-cyan": {
       "general": ".accent-cyan {\n--accent-blue: #00b8d9;\n--text-accent: #00b8d9;\n--text-accent-hover: #00a3c4;\n--interactive-accent: #00b8d9;\n--interactive-accent-hover: #00a3c4;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

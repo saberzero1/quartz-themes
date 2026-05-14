@@ -112,5 +112,6 @@
     "h6-underline": {
       "general": "body.h6-underline h6 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h6-underline h6 {\nborder-bottom-color: var(--h6-color);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

@@ -1412,6 +1412,9 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--bg_dark) !important;
+  --image-radius: 0px !important;
+  --table-width: 88cqw !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1425,9 +1428,9 @@ body.theme-light {
   --h6-color: var(--blue0) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red) !important;
-  --background-modifier-form-field-highlighted: var(--bg_dark) !important;
   --table-header-background-hover: var(--bg_dark2) !important;
   --bold-color: rgba(var(--green0_x), 0.72) !important;
+  --interactive-success: var(--green) !important;
   --green: rgb(var(--green_x)) !important;
   --orange: rgb(var(--orange_x)) !important;
   --red: rgb(var(--red_x)) !important;
@@ -1436,13 +1439,11 @@ body.theme-light {
   --orange_x: 255, 212, 103 !important;
   --red_x: 255, 32, 144 !important;
   --yellow_x: 255, 212, 103 !important;
-  --interactive-success: var(--green) !important;
   --blue: rgb(var(--blue_x)) !important;
   --pink: rgb(var(--pink_x)) !important;
   --comment: rgb(var(--comment_x)) !important;
   --cyan: rgb(var(--cyan_x)) !important;
   --embed-background: var(--bg_dark) !important;
-  --table-width: 88cqw !important;
   --date-background-color: var(--bg_highlight) !important;
   --flashing-background: rgba(var(--blue0_x), 0.3) !important;
   --mermaid-loopline: var(--blue) !important;
@@ -1451,7 +1452,6 @@ body.theme-light {
   --magenta: rgb(var(--magenta_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
-  --image-radius: 0px !important;
   --bg: rgb(var(--bg_x)) !important;
   --mermaid-actor: var(--fg_dark) !important;
   --color_blue_rgb: var(--blue_x) !important;
@@ -2465,6 +2465,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--bg_dark) !important;
+  --image-radius: 0px !important;
+  --table-width: 88cqw !important;
   --h1-color: var(--blue) !important;
   --h2-color: var(--blue) !important;
   --h3-color: var(--blue) !important;
@@ -2473,9 +2476,9 @@ body.theme-dark {
   --h6-color: var(--blue) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red) !important;
-  --background-modifier-form-field-highlighted: var(--bg_dark) !important;
   --table-header-background-hover: var(--bg_dark2) !important;
   --bold-color: rgba(var(--blue0_x), 0.65) !important;
+  --interactive-success: var(--green) !important;
   --green: rgb(var(--green_x)) !important;
   --orange: rgb(var(--orange_x)) !important;
   --red: rgb(var(--red_x)) !important;
@@ -2484,13 +2487,11 @@ body.theme-dark {
   --orange_x: 255, 250, 194 !important;
   --red_x: 208, 103, 157 !important;
   --yellow_x: 255, 250, 194 !important;
-  --interactive-success: var(--green) !important;
   --blue: rgb(var(--blue_x)) !important;
   --pink: rgb(var(--pink_x)) !important;
   --comment: rgb(var(--comment_x)) !important;
   --cyan: rgb(var(--cyan_x)) !important;
   --embed-background: var(--bg_dark) !important;
-  --table-width: 88cqw !important;
   --date-background-color: var(--bg_highlight) !important;
   --flashing-background: rgba(var(--blue0_x), 0.3) !important;
   --mermaid-loopline: var(--blue) !important;
@@ -2499,7 +2500,6 @@ body.theme-dark {
   --magenta: rgb(var(--magenta_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
-  --image-radius: 0px !important;
   --bg: rgb(var(--bg_x)) !important;
   --mermaid-actor: var(--fg_dark) !important;
   --color_blue_rgb: var(--blue_x) !important;

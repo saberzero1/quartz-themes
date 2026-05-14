@@ -101,5 +101,6 @@
     "shrink-formatting": {
       "general": "span.cm-hashtag.cm-hashtag-begin, span.cm-hashtag.cm-hashtag-begin {\ncolor: var(--text-faint);\nfont-size: var(--font-smaller) !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

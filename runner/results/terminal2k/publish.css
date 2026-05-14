@@ -1359,6 +1359,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width: 800px !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1373,7 +1374,6 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--green-forest) !important;
   --hashtag-color: var(--green-forest) !important;
-  --line-width: 800px !important;
   --inline-code-color: var(--green-forest) !important;
   --white: #ffffff !important;
   --codeblock-background: var(--grey) !important;
@@ -1381,6 +1381,7 @@ body.theme-light {
   --black: #111111 !important;
   --green-light: #e4fff6 !important;
   --hr-height: 0.15em !important;
+  --green-bright: #00e077 !important;
   --file-title-color: var(--black-light-light) !important;
   --quote-background: var(--grey) !important;
   --underline-line-color: var(--green-bright) !important;
@@ -1405,7 +1406,6 @@ body.theme-light {
   --black-light-light: #1f1f1f !important;
   --black-mid: #141715 !important;
   --code-text-size-header: 0.9em !important;
-  --green-bright: #00e077 !important;
   --green-bright-bright: #00ff80 !important;
   --green-bright-dark: #00af6c !important;
   --green-darker: #002922 !important;
@@ -2391,6 +2391,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width: 800px !important;
   --h1-color: var(--green-forest) !important;
   --h2-color: var(--green-forest) !important;
   --h3-color: var(--green-forest) !important;
@@ -2400,7 +2401,6 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--green-forest) !important;
   --hashtag-color: var(--green-bright) !important;
-  --line-width: 800px !important;
   --inline-code-color: var(--green-bright) !important;
   --white: #ffffff !important;
   --codeblock-background: var(--black-light) !important;
@@ -2408,6 +2408,7 @@ body.theme-dark {
   --black: #111111 !important;
   --green-light: #e4fff6 !important;
   --hr-height: 0.15em !important;
+  --green-bright: #00e077 !important;
   --file-title-color: var(--grey) !important;
   --quote-background: var(--black-light) !important;
   --underline-line-color: var(--green-bright) !important;
@@ -2432,7 +2433,6 @@ body.theme-dark {
   --black-light-light: #1f1f1f !important;
   --black-mid: #141715 !important;
   --code-text-size-header: 0.9em !important;
-  --green-bright: #00e077 !important;
   --green-bright-bright: #00ff80 !important;
   --green-bright-dark: #00af6c !important;
   --green-darker: #002922 !important;

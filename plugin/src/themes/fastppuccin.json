@@ -334,5 +334,6 @@
     "toggle-table-transition": {
       "general": "body.toggle-table-transition :is(.markdown-preview-view, .markdown-rendered, body.toggle-table-transition :is(.markdown-preview-view, .markdown-rendered {\nbackground: var(--background-modifier-border);\n/* transform: scale(1.02); */\ntransition: 0.1s cubic-bezier(0.11, 0.33, 0.23, 0.33);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

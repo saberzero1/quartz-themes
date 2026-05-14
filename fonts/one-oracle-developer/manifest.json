@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-05-13T20:35:30.306Z",
+  "sourceTheme": "One Oracle Developer",
+  "fonts": [
+    {
+      "family": "Instrument Serif",
+      "style": "italic",
+      "weight": "100 1000",
+      "file": "instrument-serif.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Instrument Serif",
+      "style": "normal",
+      "weight": "100 1000",
+      "file": "instrument-serif-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

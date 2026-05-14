@@ -247,5 +247,6 @@
     "banner-glow": {
       "general": ".banner-glow .cover-img img[alt*=\"banner\"] {\n-webkit-mask-image: none;\nmask-image: none;\nfilter: brightness(70%);\n}\n\n.banner-glow .cover-img .inline-title {\nposition: relative;\nmargin-top: calc(var(--banner-size) - 160px) !important;\nline-height: 1em !important;\nfont-size: 3em !important;\nmargin-bottom: calc(var(--banner-size) * 0.1);\ntext-align: center;\npadding: 0.8em 1.8em;\nmargin-right: auto;\nmargin-left: auto;\ncolor: hsl(var(--accent-h), var(--accent-s), 99.8%);\nborder-radius: var(--radius-m);\nborder: none;\ntext-shadow: hsl(var(--accent-h), var(--accent-s), 97%) 0px 0px 2px, hsl(var(--accent-h), var(--accent-s), 90%) 0px 0px 10px;\ntransition: text-shadow .15s;\n}\n\n.banner-glow .cover-img .inline-title:hover {\ntext-shadow: hsl(var(--accent-h), var(--accent-s), 95%) 0px 0px 7px, hsl(var(--accent-h), var(--accent-s), 88%) 0px 0px 15px;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

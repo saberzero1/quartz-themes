@@ -179,8 +179,9 @@ code[class*="language-"], pre[class*="language-"] {
     color: var(--code-normal);
 }
 
-.cm-line .cm-strong {
-    color: var(--bold-color) !important;
+body.theme-dark .cm-line .cm-strong,
+body.theme-light .cm-line .cm-strong {
+    color: var(--bold-color);
 }
 
 /* ::selection */

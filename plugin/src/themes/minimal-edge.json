@@ -122,5 +122,7 @@
     "enable-modal-animation": {
       "general": "body.enable-modal-animation .prompt {\nanimation: var(--modal-animation);\n}"
     }
-  }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": { "--h1-color": ["--inline-title-color"] }
 }

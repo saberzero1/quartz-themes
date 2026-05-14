@@ -91,5 +91,12 @@
       "dark": ".blend-images .internal-embed.media-embed.image-embed.is-loaded {\nmix-blend-mode: color-dodge;\n}\n\n.blend-images img {\nfilter: invert(1) saturate(0);\n}",
       "light": ".blend-images .internal-embed.media-embed.image-embed.is-loaded {\nmix-blend-mode: multiply;\n}\n\n.blend-images img {\nfilter: invert(0) saturate(0);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--custom-bold": ["--bold-color"],
+    "--custom-italic": ["--italic-color"],
+    "--bgt_s": ["--background-1-tv1"],
+    "--bgt_l": ["--background-1-tv1"]
   }
 }

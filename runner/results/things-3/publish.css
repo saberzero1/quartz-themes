@@ -1525,7 +1525,7 @@ body.theme-dark {
   --text-accent: var(--color-accent-1) !important;
   --text-accent-hover: var(--color-accent-2) !important;
   --text-error: var(--color-red) !important;
-  --text-faint: var(--color-base-50) !important;
+  --text-faint: #807f7f !important;
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4) !important;
   --text-muted: #c0c0c0 !important;
   --text-normal: var(--color-base-100) !important;
@@ -3996,7 +3996,7 @@ body body.theme-light .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-light .internal-embed {
-  background-color: var(--background-primary-alt);
+  background-color: var(--properties-background);
   color: rgb(55, 58, 62);
   border-radius: 10px;
   border-left: solid;
@@ -4010,7 +4010,7 @@ body body.theme-light .internal-embed {
   padding: 0px 24px 0px 10px;
 }
 body body.theme-light .markdown-embed {
-  background-color: var(--background-primary-alt);
+  background-color: var(--properties-background);
   color: rgb(55, 58, 62);
   border-radius: 10px;
   border-left: solid;
@@ -5352,9 +5352,9 @@ body body.theme-dark del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(102, 102, 102) none 0px;
+  outline: rgb(128, 127, 127) none 0px;
   text-decoration: line-through;
-  text-decoration-color: rgb(102, 102, 102);
+  text-decoration-color: rgb(128, 127, 127);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
@@ -6831,7 +6831,7 @@ body body.theme-dark .markdown-rendered audio {
   padding-inline-start: 0px;
 }
 body body.theme-dark .internal-embed {
-  background-color: var(--background-primary-alt);
+  background-color: var(--properties-background);
   color: rgb(218, 218, 218);
   border-radius: 10px;
   border-left: solid;
@@ -6845,7 +6845,7 @@ body body.theme-dark .internal-embed {
   padding: 0px 24px 0px 10px;
 }
 body body.theme-dark .markdown-embed {
-  background-color: var(--background-primary-alt);
+  background-color: var(--properties-background);
   color: rgb(218, 218, 218);
   border-radius: 10px;
   border-left: solid;
@@ -7199,9 +7199,9 @@ body body.theme-dark abbr {
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
-  color: rgb(102, 102, 102);
-  text-decoration: line-through 1px rgb(102, 102, 102);
-  text-decoration-color: rgb(102, 102, 102);
+  color: rgb(128, 127, 127);
+  text-decoration: line-through 1px rgb(128, 127, 127);
+  text-decoration-color: rgb(128, 127, 127);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(218, 218, 218);

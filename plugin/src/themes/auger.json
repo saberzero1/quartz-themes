@@ -67,5 +67,6 @@
     "is-light-canvas": {
       "dark": ".vignette-linear, .animate, .ptm-fullscreen-writing-focus-element) {\nbackground-color: var(--auger-light-background-primary);\nborder-top-left-radius: var(--card-border-radius-dark, 8px);\nborder-top-right-radius: var(--card-border-radius-dark, 8px);\n}\n\n.vignette-linear, .animate, .ptm-fullscreen-writing-focus-element) .cm-content {\ncolor: var(--auger-light-text-normal);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

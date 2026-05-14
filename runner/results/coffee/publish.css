@@ -1140,6 +1140,8 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--expresso) !important;
+  --text-highlight-bg-active: var(--hazelnut) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1153,11 +1155,9 @@ body.theme-light {
   --h6-color: var(--crema) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red-robusta-beans) !important;
-  --background-modifier-form-field-highlighted: var(--expresso) !important;
   --table-header-background-hover: var(--background-secondary) !important;
-  --interactive-success: var(--red-robusta-beans) !important;
-  --text-highlight-bg-active: var(--hazelnut) !important;
   --table-header-font: var(--milk-foam) !important;
+  --interactive-success: var(--red-robusta-beans) !important;
   --table-text-color: var(--text-normal) !important;
   --nav-indetation-guide-color: var(--dark-beans) !important;
   --text-on-accent-hover: var(--americano) !important;
@@ -2150,6 +2150,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--light-beans) !important;
+  --blockquote-color: var(--crema) !important;
+  --text-highlight-bg-active: var(--golden-brew) !important;
   --h1-color: var(--hazelnut) !important;
   --h2-color: var(--crema) !important;
   --h3-color: var(--caramel) !important;
@@ -2158,12 +2161,9 @@ body.theme-dark {
   --h6-color: var(--caramel) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red-robusta-beans) !important;
-  --background-modifier-form-field-highlighted: var(--light-beans) !important;
-  --blockquote-color: var(--crema) !important;
   --table-header-background-hover: var(--dark-beans) !important;
-  --interactive-success: var(--green-beans) !important;
-  --text-highlight-bg-active: var(--golden-brew) !important;
   --table-header-font: var(--white-luwak) !important;
+  --interactive-success: var(--green-beans) !important;
   --table-text-color: var(--text-normal) !important;
   --nav-indetation-guide-color: var(--crema) !important;
   --hr-text-color: var(--crema) !important;

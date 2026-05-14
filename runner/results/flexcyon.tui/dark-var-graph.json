@@ -2102,17 +2102,6 @@
   "--scroll-fade-offset-right": {
     ".mobile-toolbar-options-container": ["--toolbar-option-width"]
   },
-  "--oz-fta-folder-font-size": { "body.theme-light": ["--font-ui-medium"] },
-  "--oz-fta-file-font-size": { "body.theme-light": ["--font-ui-medium"] },
-  "--flexcyon-new-tab-bg-wrapper": {
-    "body.css-settings-manager": [
-      "--text-accent",
-      "--color-blue",
-      "--color-cyan"
-    ],
-    "body.theme-dark": ["--text-accent", "--color-blue", "--color-cyan"],
-    "body.theme-light": ["--text-accent", "--color-pink", "--color-green"]
-  },
   "--shiki-code-background": { "body": ["--code-background"] },
   "--shiki-code-normal": { "body": ["--text-muted"] },
   "--shiki-code-comment": { "body": ["--text-faint"] },
@@ -2190,6 +2179,17 @@
   },
   "--tooltip-bg": {
     ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
+  },
+  "--oz-fta-folder-font-size": { "body.theme-light": ["--font-ui-medium"] },
+  "--oz-fta-file-font-size": { "body.theme-light": ["--font-ui-medium"] },
+  "--flexcyon-new-tab-bg-wrapper": {
+    "body.css-settings-manager": [
+      "--text-accent",
+      "--color-blue",
+      "--color-cyan"
+    ],
+    "body.theme-dark": ["--text-accent", "--color-blue", "--color-cyan"],
+    "body.theme-light": ["--text-accent", "--color-pink", "--color-green"]
   },
   "--color-red-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-blue"]

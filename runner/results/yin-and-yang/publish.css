@@ -1049,6 +1049,20 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 200, 200, 200 !important;
+  --background-modifier-accent: hsl(
+    var(--l-accent-h),
+    var(--l-accent-s),
+    calc(var(--l-accent-l) - 10%)
+  ) !important;
+  --background-modifier-form-field-highlighted: var(
+    --background-primary
+  ) !important;
+  --base-h: 205 !important;
+  --base-l: 94% !important;
+  --base-s: 23% !important;
+  --line-width: 47rem !important;
+  --max-width: 97% !important;
+  --normal-weight: 400 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1060,9 +1074,6 @@ body.theme-light {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
   --opacity-translucency: 1 !important;
-  --background-modifier-form-field-highlighted: var(
-    --background-primary
-  ) !important;
   --code-block: var(--frost2) !important;
   --inline-code: var(--royalblue) !important;
   --pre-code: hsl(
@@ -1080,20 +1091,12 @@ body.theme-light {
   --text-title-h6: var(--cornflower-blue) !important;
   --vim-cursor: var(--interactive-accent) !important;
   --code-block-border: var(--light2) !important;
-  --background-modifier-accent: hsl(
-    var(--l-accent-h),
-    var(--l-accent-s),
-    calc(var(--l-accent-l) - 10%)
-  ) !important;
   --frost0: #e69ca2 !important;
   --frost2: #81a1c1 !important;
   --purple: #d2b3ff !important;
   --red: #ff5582 !important;
   --yellow: #fff3a3 !important;
   --base-d: 5% !important;
-  --base-h: 205 !important;
-  --base-l: 94% !important;
-  --base-s: 23% !important;
   --em-color: var(--cerulean) !important;
   --strong-color: hsl(var(--boldpink)) !important;
   --pink: #f2b3cf !important;
@@ -1101,9 +1104,6 @@ body.theme-light {
     var(--l-blockquote-h), var(--l-blockquote-s), var(--l-blockquote-l) !important;
   --text-highlight-color: var(--text-normal) !important;
   --blockquote-bg: hsla(var(--blockquote-border), 0.05) !important;
-  --line-width: 47rem !important;
-  --max-width: 97% !important;
-  --normal-weight: 400 !important;
   --background-translucent: hsla(
     var(--base-h),
     var(--base-s),
@@ -1176,6 +1176,7 @@ body.theme-light {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
   --svg-faint: var(--text-faint) !important;
+  --code-line-height: 1.50667em !important;
   --light4: #f9fafb !important;
   --cornflower-blue: #a1c4fd !important;
   --dark5: #0b0b0b !important;
@@ -1192,7 +1193,6 @@ body.theme-light {
     calc(var(--base-s) - 8%),
     calc(var(--base-l) - 5%)
   ) !important;
-  --code-line-height: 1.50667em !important;
   --f-header-1-ed:
     Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -2372,15 +2372,26 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 66, 66, 66 !important;
+  --background-modifier-accent: hsl(
+    var(--d-accent-h),
+    var(--d-accent-s),
+    calc(var(--d-accent-l) - 7%)
+  ) !important;
+  --background-modifier-form-field-highlighted: var(
+    --background-primary-alt
+  ) !important;
+  --base-h: 205 !important;
+  --base-l: 94% !important;
+  --base-s: 23% !important;
+  --line-width: 47rem !important;
+  --max-width: 97% !important;
+  --normal-weight: 400 !important;
   --mermaid-font: "Source Code Pro", monospace !important;
   --default-font:
     Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
   --opacity-translucency: 1 !important;
-  --background-modifier-form-field-highlighted: var(
-    --background-primary-alt
-  ) !important;
   --code-block: var(--paleblue) !important;
   --inline-code: var(--light-cornflower-blue) !important;
   --pre-code: hsl(
@@ -2398,20 +2409,12 @@ body.theme-dark {
   --text-title-h6: var(--paleblue) !important;
   --vim-cursor: var(--interactive-accent) !important;
   --code-block-border: var(--light0) !important;
-  --background-modifier-accent: hsl(
-    var(--d-accent-h),
-    var(--d-accent-s),
-    calc(var(--d-accent-l) - 7%)
-  ) !important;
   --frost0: #e69ca2 !important;
   --frost2: #81a1c1 !important;
   --purple: #d2b3ff !important;
   --red: #ff5582 !important;
   --yellow: #fff3a3 !important;
   --base-d: 5% !important;
-  --base-h: 205 !important;
-  --base-l: 94% !important;
-  --base-s: 23% !important;
   --em-color: var(--cerulean) !important;
   --strong-color: hsl(var(--boldlightpink)) !important;
   --pink: #f2b3cf !important;
@@ -2419,9 +2422,6 @@ body.theme-dark {
     var(--d-blockquote-h), var(--d-blockquote-s), var(--d-blockquote-l) !important;
   --text-highlight-color: var(--text-normal) !important;
   --blockquote-bg: hsla(var(--blockquote-border), 0.05) !important;
-  --line-width: 47rem !important;
-  --max-width: 97% !important;
-  --normal-weight: 400 !important;
   --background-translucent: hsla(
     var(--base-h),
     var(--base-s),
@@ -2494,6 +2494,7 @@ body.theme-dark {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
   --svg-faint: var(--text-faint) !important;
+  --code-line-height: 1.50667em !important;
   --light4: #f9fafb !important;
   --cornflower-blue: #a1c4fd !important;
   --dark5: #0b0b0b !important;
@@ -2510,7 +2511,6 @@ body.theme-dark {
     var(--base-s),
     calc(var(--base-d) + 10%)
   ) !important;
-  --code-line-height: 1.50667em !important;
   --f-header-1-ed:
     Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",

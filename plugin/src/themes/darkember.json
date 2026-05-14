@@ -91,5 +91,6 @@
     "theme-light-purple": {
       "light": ".theme-light-purple {\n--main-background: #f8f0f8;\n--secondary-background: #f0e1f0;\n--secondary-background-low-opacity: #f0e1f054;\n--main-node: #8e44ad;\n--accent-1: #9b59b6;\n--accent-2: #8e44ad;\n--accent-3: #3498db;\n--accent-4: #2980b9;\n--accent-5: #1abc9c;\n--accent-6: #16a085;\n--external-link: #8e44ad;\n--external-link-hidden: #8e44ad99;\n--text-normal: rgb(36, 36, 36);\n--text-accent: var(--main-node);\n--text-accent-hover: var(--main-node-hover);\n--background-primary: var(--main-background);\n--background-secondary: var(--secondary-background);\n--interactive-accent: var(--main-node);\n--interactive-accent-hover: var(--main-node-hover);\n--background-modifier-error: #e74c3c;\n--background-modifier-error-hover: #c0392b;\n--text-highlight-bg: #9b59b6;\n--h1-gradient: #8e44ad, #9b59b6, #8e44ad, #3498db;\n--h2-gradient: #9b59b6, #8e44ad, #eee;\n--h2-icon-color: #8e44ad;\n--h3-h6-icon-color: #9b59b6;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

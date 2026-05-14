@@ -25,13 +25,15 @@ sections:
             value: preset-default
           - label: Orange Autumn
             value: preset-orange
+          - label: True Glass (100% Transparent)
+            value: preset-true-glass
       - id: main-section
         title: Adjust Obsidian Theme
         type: heading
         level: 1
         collapsed: false
-      - id: set-blur
-        title: 🫧 Blur Intensity
+      - id: background-blur
+        title: 🫧 Background Blur
         type: variable-number-slider
         default: 80
         description: 'Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems.'
@@ -39,13 +41,22 @@ sections:
         max: 200
         step: 1
         format: px
+      - id: ui-blur
+        title: 🪟 UI Elements Blur
+        type: variable-number-slider
+        default: 60
+        description: Adjust the blur effect for UI elements like Command Palette, Modals, etc.
+        min: 0
+        max: 100
+        step: 1
+        format: px
       - id: show-scrollbars
         title: Show Scrollbars
         description: ':)'
         type: class-toggle
       - id: bg-type
-        title: Background Image
-        description: Choose between default green background and custom URL.
+        title: 🖼️ Background Image
+        description: Choose your background style. Use 'Translucent OS Window' for 100% transparency (shows your desktop).
         type: class-select
         allowEmpty: false
         default: bg-type-default
@@ -124,3 +135,12 @@ sections:
         title: (Experimental) Accent Everywhere
         description: Applies accent color to more UI elements (headings, sliders, icons).
         type: class-toggle
+      - id: set-blur
+        title: 🫧 Blur Intensity
+        type: variable-number-slider
+        default: 80
+        description: 'Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems.'
+        min: 10
+        max: 200
+        step: 1
+        format: px

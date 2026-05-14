@@ -1412,6 +1412,8 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--ctp-accent) !important;
+  --pdf-dark-opacity: 1 !important;
+  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1425,6 +1427,7 @@ body.theme-light {
   --h6-color: rgb(var(--ctp-mauve)) !important;
   --inline-title-color: var(--text-normal) !important;
   --text-error-hover: rgba(var(--ctp-red), 0.8) !important;
+  --interactive-success: rgb(var(--ctp-green)) !important;
   --anp-bold-color: var(--ctp-red) !important;
   --anp-highlight-color: var(--ctp-yellow) !important;
   --anp-italic-color: var(--ctp-green) !important;
@@ -1460,9 +1463,7 @@ body.theme-light {
   --ctp-teal: var(--ctp-ext-teal, 23, 146, 153) !important;
   --ctp-text: var(--ctp-ext-text, 76, 79, 105) !important;
   --ctp-yellow: var(--ctp-ext-yellow, 228, 147, 32) !important;
-  --interactive-success: rgb(var(--ctp-green)) !important;
   --tab-inactive-color: rgb(var(--ctp-mantle)) !important;
-  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4) !important;
   --text-muted-rgb: var(--ctp-overlay2) !important;
   --anp-header-font: "Noto Serif" !important;
   --anp-header-margin-value: 15px !important;
@@ -1474,7 +1475,6 @@ body.theme-light {
   --anp-table-width-pct: 100% !important;
   --max-width-image: 90% !important;
   --min-width-image: 50% !important;
-  --pdf-dark-opacity: 1 !important;
   --width-image-gallery: 200px !important;
 }
 
@@ -2435,6 +2435,8 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--ctp-accent) !important;
+  --pdf-dark-opacity: 1 !important;
+  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4) !important;
   --h1-color: rgb(var(--ctp-red)) !important;
   --h2-color: rgb(var(--ctp-peach)) !important;
   --h3-color: rgb(var(--ctp-green)) !important;
@@ -2443,6 +2445,7 @@ body.theme-dark {
   --h6-color: rgb(var(--ctp-mauve)) !important;
   --inline-title-color: var(--text-normal) !important;
   --text-error-hover: rgba(var(--ctp-red), 0.8) !important;
+  --interactive-success: rgb(var(--ctp-green)) !important;
   --anp-bold-color: var(--ctp-red) !important;
   --anp-highlight-color: var(--ctp-yellow) !important;
   --anp-italic-color: var(--ctp-green) !important;
@@ -2478,9 +2481,7 @@ body.theme-dark {
   --ctp-teal: var(--ctp-ext-teal, 148, 226, 213) !important;
   --ctp-text: var(--ctp-ext-text, 198, 208, 245) !important;
   --ctp-yellow: var(--ctp-ext-yellow, 249, 226, 175) !important;
-  --interactive-success: rgb(var(--ctp-green)) !important;
   --tab-inactive-color: rgb(var(--ctp-mantle)) !important;
-  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4) !important;
   --text-muted-rgb: var(--ctp-overlay2) !important;
   --anp-header-font: "Noto Serif" !important;
   --anp-header-margin-value: 15px !important;
@@ -2492,7 +2493,6 @@ body.theme-dark {
   --anp-table-width-pct: 100% !important;
   --max-width-image: 90% !important;
   --min-width-image: 50% !important;
-  --pdf-dark-opacity: 1 !important;
   --width-image-gallery: 200px !important;
 }
 

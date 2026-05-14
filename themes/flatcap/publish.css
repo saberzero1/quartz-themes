@@ -1349,33 +1349,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 142, 165, 185 !important;
   --background-modifier-form-field-highlighted: var(--flatcap-2) !important;
-  --blockquote-color: var(--text-muted) !important;
-  --blockquote-style: normal !important;
   --background-table-rows: var(--flatcap-1) !important;
-  --frame-divider-color: var(--flatcap-3) !important;
-  --quote-opening-modifier: var(--flatcap-3) !important;
-  --text-blockquote: var(--flatcap-6) !important;
-  --text-bold: var(--flatcap-8) !important;
-  --text-code: var(--flatcap-13) !important;
-  --text-italic: var(--flatcap-8) !important;
-  --text-formatting: var(--flatcap-4) !important;
-  --background-modifier-active: rgba(255, 255, 255, 0.1) !important;
-  --text-highlight-bg-active: rgba(209, 154, 102, 0.5) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
-  --icon-hex: var(--flatcap-0) !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 88% !important;
-  --normal-weight: 400 !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
-  --shadow-color: rgba(0, 0, 0, 0.3) !important;
-  --nested-padding: 1.1em !important;
-  --folding-offset: 32px !important;
-  --max-col-width: 18em !important;
-  --active-line-bg: rgba(255, 255, 255, 0.04) !important;
-  --font-code: calc(var(--font-adaptive-normal) * 0.9) !important;
+  --blockquote-color: var(--text-muted) !important;
   --font-adaptive-normal: var(
     --font-text-size,
     var(--editor-font-size)
@@ -1383,9 +1358,43 @@ body.theme-dark {
   --font-adaptive-small: calc(var(--font-ui-small) * 1.07) !important;
   --font-adaptive-smaller: var(--font-ui-small) !important;
   --font-adaptive-smallest: var(--font-ui-smaller) !important;
+  --font-code: calc(var(--font-adaptive-normal) * 0.9) !important;
+  --frame-divider-color: var(--flatcap-3) !important;
+  --icon-hex: var(--flatcap-0) !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
+  --quote-opening-modifier: var(--flatcap-3) !important;
+  --text-blockquote: var(--flatcap-6) !important;
+  --text-bold: var(--flatcap-8) !important;
+  --text-code: var(--flatcap-13) !important;
+  --text-formatting: var(--flatcap-4) !important;
+  --text-italic: var(--flatcap-8) !important;
+  --active-line-bg: rgba(255, 255, 255, 0.04) !important;
+  --blockquote-style: normal !important;
+  --btn-shadow-color: rgba(0, 0, 0, 0.2) !important;
+  --folding-offset: 32px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --icon-muted: 0.5 !important;
+  --image-muted: 0.7 !important;
+  --image-radius: 4px !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --list-edit-offset: 0.5em !important;
+  --max-col-width: 18em !important;
+  --max-width: 88% !important;
+  --metadata-label-width-multiplier: 9 !important;
+  --mobile-left-sidebar-width: 280pt !important;
+  --mobile-right-sidebar-width: 240pt !important;
+  --mono0: black !important;
+  --mono100: white !important;
+  --nested-padding: 1.1em !important;
+  --normal-weight: 400 !important;
+  --shadow-color: rgba(0, 0, 0, 0.3) !important;
+  --text-highlight-bg-active: rgba(209, 154, 102, 0.5) !important;
+  --top-left-padding-y: 0px !important;
+  --background-modifier-active: rgba(255, 255, 255, 0.1) !important;
   --sidebar-background: var(--flatcap-1) !important;
   --text-information: var(--flatcap-18) !important;
-  --btn-shadow-color: rgba(0, 0, 0, 0.2) !important;
   --flatcap-0: #121418 !important;
   --flatcap-1: #191c22 !important;
   --flatcap-10: #5e81ac !important;
@@ -1406,15 +1415,6 @@ body.theme-dark {
   --flatcap-7: #cbced5 !important;
   --flatcap-8: #d8dadf !important;
   --flatcap-9: #e4e6e9 !important;
-  --image-muted: 0.7 !important;
-  --image-radius: 4px !important;
-  --list-edit-offset: 0.5em !important;
-  --metadata-label-width-multiplier: 9 !important;
-  --mobile-left-sidebar-width: 280pt !important;
-  --mobile-right-sidebar-width: 240pt !important;
-  --mono0: black !important;
-  --mono100: white !important;
-  --top-left-padding-y: 0px !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

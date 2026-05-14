@@ -1365,13 +1365,13 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: #fff !important;
   --interactive-accent-rgb: #020f2b !important;
+  --background-modifier-form-field-highlighted: #fff !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: #990000 !important;
-  --background-modifier-form-field-highlighted: #fff !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

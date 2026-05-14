@@ -10,9 +10,9 @@ cssclasses:
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-solitude/README.md">Install instructions</a>
 
-| Name           | Modes                     | Compatibility                                                                               | License                                                                                                                                             |
-| -------------- | ------------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `red-solitude` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/red-solitude/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                                                                                                                  | License                                                                                                                                             |
+| -------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `red-solitude` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/red-solitude/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

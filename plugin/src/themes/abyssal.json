@@ -71,5 +71,6 @@
     "at-line-height": {
       "general": ".at-line-height p {\nline-height:        var(--line-height-roomy);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

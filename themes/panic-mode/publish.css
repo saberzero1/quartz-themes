@@ -1540,8 +1540,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: rgba(0, 0, 0, 0.08) !important;
   --interactive-accent-rgb: 72, 54, 153 !important;
-  --text-error-hover: #990000 !important;
   --background-modifier-form-field-highlighted: var(--tag-bg) !important;
+  --text-error-hover: #990000 !important;
   --code-block: var(--text-muted) !important;
   --inline-code: var(--text-muted) !important;
   --text-title-h1: #f6a82a !important;

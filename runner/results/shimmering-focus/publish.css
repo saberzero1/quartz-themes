@@ -1026,6 +1026,9 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --bg1: var(--color-base-00) !important;
+  --bg2: var(--color-base-10) !important;
+  --bg3: var(--color-base-20) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1042,21 +1045,19 @@ body.theme-light {
   --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--text-accent-hover) !important;
   --italic-color: var(--text-accent-hover) !important;
+  --callout-title-size: 110%;
   --inline-code-color: var(--secondary-accent) !important;
   --radius-xs: 2px !important;
   --text-gray: var(--color-base-60) !important;
   --font-heading-theme: "Optima", "Recursive S" !important;
   --hover-accent: #dc388f !important;
   --search-match-color: var(--color-orange) !important;
-  --callout-title-size: 110%;
   --signature: "⟡" !important;
-  --bg1: var(--color-base-00) !important;
-  --bg2: var(--color-base-10) !important;
-  --bg3: var(--color-base-20) !important;
   --bg4: var(--color-base-25) !important;
   --bg5: var(--color-base-30) !important;
   --embed-border: 4px double var(--basic-border-color) !important;
   --vim-cursor-color: #e6e6e6 !important;
+  --thin-border: 1px solid var(--basic-border-color) !important;
   --inactive-pane-opacity: 75% !important;
   --active-line-color: var(--color-accent) !important;
   --basic-border: 2px solid var(--basic-border-color) !important;
@@ -1067,7 +1068,6 @@ body.theme-light {
   --hotkey-color: var(--secondary-accent) !important;
   --muted-border: 2px solid var(--muted-border-color) !important;
   --muted-border-color: var(--color-base-30) !important;
-  --thin-border: 1px solid var(--basic-border-color) !important;
   --thin-muted-border: 1px solid var(--muted-border-color) !important;
   --a-row: #00000008 !important;
   --alt-heading-color: #5460ab !important;
@@ -2064,6 +2064,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --bg1: var(--color-base-00) !important;
+  --bg2: var(--color-base-10) !important;
+  --bg3: var(--color-base-20) !important;
   --inline-title-color: var(--text-gray) !important;
   --table-header-background-hover: var(--bg5) !important;
   --h1-font: var(--font-heading-theme) !important;
@@ -2075,21 +2078,19 @@ body.theme-dark {
   --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--text-accent-hover) !important;
   --italic-color: var(--text-accent-hover) !important;
+  --callout-title-size: 110%;
   --inline-code-color: var(--secondary-accent) !important;
   --radius-xs: 2px !important;
   --text-gray: var(--color-base-60) !important;
   --font-heading-theme: "Optima", "Recursive S" !important;
   --hover-accent: #ed5aa8 !important;
   --search-match-color: var(--color-yellow) !important;
-  --callout-title-size: 110%;
   --signature: "⟡" !important;
-  --bg1: var(--color-base-00) !important;
-  --bg2: var(--color-base-10) !important;
-  --bg3: var(--color-base-20) !important;
   --bg4: var(--color-base-25) !important;
   --bg5: var(--color-base-30) !important;
   --embed-border: 4px double var(--basic-border-color) !important;
   --vim-cursor-color: #b3b3b3 !important;
+  --thin-border: 1px solid var(--basic-border-color) !important;
   --inactive-pane-opacity: 75% !important;
   --active-line-color: var(--color-accent) !important;
   --basic-border: 2px solid var(--basic-border-color) !important;
@@ -2100,7 +2101,6 @@ body.theme-dark {
   --hotkey-color: var(--secondary-accent) !important;
   --muted-border: 2px solid var(--muted-border-color) !important;
   --muted-border-color: var(--color-base-30) !important;
-  --thin-border: 1px solid var(--basic-border-color) !important;
   --thin-muted-border: 1px solid var(--muted-border-color) !important;
   --a-row: #0003 !important;
   --alt-heading-color: #8c96d9 !important;

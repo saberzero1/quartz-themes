@@ -991,10 +991,10 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: rgba(255, 31, 15, 0.4) !important;
   --default-font:
     "Cabin", "Alumni Sans", Helvetica, Inter, sans-serif !important;
   --color-green-light: #74fc74 !important;
-  --text-highlight-bg-active: rgba(255, 31, 15, 0.4) !important;
   --color-white: #ffffff !important;
   --color-grey: #1a1c23 !important;
   --color-dt-blue: #83bdff !important;

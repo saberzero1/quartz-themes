@@ -295,7 +295,7 @@ body.theme-light {
   --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: none !important;
+  --metadata-divider-color: red !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
@@ -939,7 +939,7 @@ body.theme-light {
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-background: transparent !important;
-  --table-border-width: 1px solid !important;
+  --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
@@ -984,6 +984,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --inline-title-align: center !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -996,11 +997,10 @@ body.theme-light {
   --folder-3-open: var(--normal-folder-3-open) !important;
   --folder-icon-size: 1.5em !important;
   --folder-padding: 2.3px !important;
-  --img-align: 0px !important;
+  --img-align: 0 !important;
   --normal-folder-1-open: "╔" !important;
   --normal-folder-2-open: "╔" !important;
   --normal-folder-3-open: "╔" !important;
-  --inline-title-align: center !important;
   --navbar-radius: 11.5px !important;
   --active-line-font-size: calc(var(--default-font-size) + 1px) !important;
   --inline-code-font-size: calc(var(--default-font-size) - 1.5px) !important;
@@ -1019,7 +1019,7 @@ body.theme-light {
   --focus-non-active-line-opacity: 0.55 !important;
   --folder-border-color: #50505088 !important;
   --headers-align: left !important;
-  --headers-space-simetry: 1.3em !important;
+  --headers-space-symmetry: 1.3em !important;
   --hide-add-button: none !important;
   --hide-callout-title: none !important;
   --hide-empty-properties: none !important;
@@ -1340,7 +1340,7 @@ body.theme-dark {
   --menu-radius: var(--radius-m) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: none !important;
+  --metadata-divider-color: red !important;
   --metadata-input-background-active: var(
     --background-modifier-hover
   ) !important;
@@ -1976,7 +1976,7 @@ body.theme-dark {
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-background: transparent !important;
-  --table-border-width: 1px solid !important;
+  --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
@@ -2021,6 +2021,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --inline-title-align: center !important;
   --embed-border-left: none !important;
   --default-font-size: 16px !important;
   --folder-1-open: var(--normal-folder-1-open) !important;
@@ -2028,11 +2029,10 @@ body.theme-dark {
   --folder-3-open: var(--normal-folder-3-open) !important;
   --folder-icon-size: 1.5em !important;
   --folder-padding: 2.3px !important;
-  --img-align: 0px !important;
+  --img-align: 0 !important;
   --normal-folder-1-open: "╔" !important;
   --normal-folder-2-open: "╔" !important;
   --normal-folder-3-open: "╔" !important;
-  --inline-title-align: center !important;
   --navbar-radius: 11.5px !important;
   --active-line-font-size: calc(var(--default-font-size) + 1px) !important;
   --inline-code-font-size: calc(var(--default-font-size) - 1.5px) !important;
@@ -2051,7 +2051,7 @@ body.theme-dark {
   --focus-non-active-line-opacity: 0.55 !important;
   --folder-border-color: #50505088 !important;
   --headers-align: left !important;
-  --headers-space-simetry: 1.3em !important;
+  --headers-space-symmetry: 1.3em !important;
   --hide-add-button: none !important;
   --hide-callout-title: none !important;
   --hide-empty-properties: none !important;
@@ -3019,7 +3019,7 @@ body body.theme-light .published-container .markdown-rendered h1 {
   font-family: var(--h1-font);
   font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h1-letter-spacing);
@@ -3054,7 +3054,7 @@ body body.theme-light .published-container .markdown-rendered h2 {
   font-family: var(--h2-font);
   font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h2-letter-spacing);
@@ -3089,7 +3089,7 @@ body body.theme-light .published-container .markdown-rendered h3 {
   font-family: var(--h3-font);
   font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h3-letter-spacing);
@@ -3124,7 +3124,7 @@ body body.theme-light .published-container .markdown-rendered h4 {
   font-family: var(--h4-font);
   font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h4-letter-spacing);
@@ -3159,7 +3159,7 @@ body body.theme-light .published-container .markdown-rendered h5 {
   font-family: var(--h5-font);
   font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h5-letter-spacing);
@@ -3194,7 +3194,7 @@ body body.theme-light .published-container .markdown-rendered h6 {
   font-family: var(--h6-font);
   font-size: var(--h6-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h6-letter-spacing);
@@ -3856,7 +3856,6 @@ body body.theme-light .markdown-rendered table {
   table-layout: auto;
   text-align: justify;
   border: 0px rgb(128, 128, 128);
-  border-bottom: 1px solid rgb(224, 224, 224);
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
   border-bottom-left-radius: 11.5px;
@@ -3879,7 +3878,6 @@ body body.theme-light .markdown-rendered table {
 body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
-  border-bottom: 0px rgb(224, 224, 224);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3893,7 +3891,7 @@ body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .markdown-rendered th {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(246, 246, 246);
   color: var(--table-header-color);
   font-weight: var(--table-header-weight);
   text-align: center;
@@ -3929,8 +3927,8 @@ body body.theme-light .markdown-rendered td {
   text-decoration: rgb(34, 34, 34);
   border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
   border-right: 1px solid rgb(224, 224, 224);
-  border-top: 0px solid rgb(34, 34, 34);
-  border-bottom: 0px solid rgb(34, 34, 34);
+  border-top: 0px solid rgb(224, 224, 224);
+  border-bottom: 1px solid rgb(224, 224, 224);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3948,7 +3946,6 @@ body body.theme-light .markdown-rendered td {
 body body.theme-light .markdown-rendered tr {
   background-color: var(--background-primary);
   border: 0px rgb(128, 128, 128);
-  border-bottom: 0px rgb(224, 224, 224);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4061,11 +4058,11 @@ body body.theme-light .markdown-rendered video {
 }
 body body.theme-light .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border: 1px solid rgb(224, 224, 224);
+  border-top-left-radius: 11.5px;
+  border-top-right-radius: 11.5px;
+  border-bottom-left-radius: 11.5px;
+  border-bottom-right-radius: 11.5px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -5855,7 +5852,7 @@ body body.theme-dark .published-container .markdown-rendered h1 {
   font-family: var(--h1-font);
   font-size: var(--h1-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h1-letter-spacing);
@@ -5890,7 +5887,7 @@ body body.theme-dark .published-container .markdown-rendered h2 {
   font-family: var(--h2-font);
   font-size: var(--h2-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h2-letter-spacing);
@@ -5925,7 +5922,7 @@ body body.theme-dark .published-container .markdown-rendered h3 {
   font-family: var(--h3-font);
   font-size: var(--h3-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h3-letter-spacing);
@@ -5960,7 +5957,7 @@ body body.theme-dark .published-container .markdown-rendered h4 {
   font-family: var(--h4-font);
   font-size: var(--h4-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h4-letter-spacing);
@@ -5995,7 +5992,7 @@ body body.theme-dark .published-container .markdown-rendered h5 {
   font-family: var(--h5-font);
   font-size: var(--h5-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h5-letter-spacing);
@@ -6030,7 +6027,7 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   font-family: var(--h6-font);
   font-size: var(--h6-size);
   font-weight: var(--font-weight);
-  line-height: var(--headers-space-simetry);
+  line-height: var(--headers-space-symmetry);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h6-letter-spacing);
@@ -6692,7 +6689,6 @@ body body.theme-dark .markdown-rendered table {
   table-layout: auto;
   text-align: justify;
   border: 0px rgb(128, 128, 128);
-  border-bottom: 1px solid rgb(54, 54, 54);
   border-top-left-radius: 11.5px;
   border-top-right-radius: 11.5px;
   border-bottom-left-radius: 11.5px;
@@ -6715,7 +6711,6 @@ body body.theme-dark .markdown-rendered table {
 body body.theme-dark .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
-  border-bottom: 0px rgb(54, 54, 54);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6729,7 +6724,7 @@ body body.theme-dark .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .markdown-rendered th {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(38, 38, 38);
   color: var(--table-header-color);
   font-weight: var(--table-header-weight);
   text-align: center;
@@ -6765,8 +6760,8 @@ body body.theme-dark .markdown-rendered td {
   text-decoration: rgb(218, 218, 218);
   border-left: var(--table-column-first-border-width) solid rgb(54, 54, 54);
   border-right: 1px solid rgb(54, 54, 54);
-  border-top: 0px solid rgb(218, 218, 218);
-  border-bottom: 0px solid rgb(218, 218, 218);
+  border-top: 0px solid rgb(54, 54, 54);
+  border-bottom: 1px solid rgb(54, 54, 54);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6784,7 +6779,6 @@ body body.theme-dark .markdown-rendered td {
 body body.theme-dark .markdown-rendered tr {
   background-color: var(--background-primary);
   border: 0px rgb(128, 128, 128);
-  border-bottom: 0px rgb(54, 54, 54);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6803,7 +6797,7 @@ body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
 body body.theme-dark .markdown-rendered img {
   border-radius: 11.5px;
   box-shadow: var(--background-modifier-box-shadow) 0px 0px 2.5px 0px;
-  filter: grayscale(1);
+  filter: brightness(0.9) grayscale(1);
   max-width: 100%;
   object-fit: fill;
   border: 0px rgb(218, 218, 218);
@@ -6897,11 +6891,11 @@ body body.theme-dark .markdown-rendered video {
 }
 body body.theme-dark .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border: 1px solid rgb(54, 54, 54);
+  border-top-left-radius: 11.5px;
+  border-top-right-radius: 11.5px;
+  border-bottom-left-radius: 11.5px;
+  border-bottom-right-radius: 11.5px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;

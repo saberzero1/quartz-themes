@@ -1368,6 +1368,8 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--color-base-40) !important;
+  --blockquote-style: italic !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1381,7 +1383,6 @@ body.theme-light {
   --h6-color: var(--heading-color) !important;
   --heading-color: var(--color-base-40) !important;
   --inline-title-color: #7c93a4 !important;
-  --blockquote-color: var(--color-base-40) !important;
   --color-accent-alt: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1410,7 +1411,6 @@ body.theme-light {
   --vault-name-color: var(--text-accent) !important;
   --accent-dark: 55% !important;
   --block-margin: 2em 0 !important;
-  --blockquote-style: italic !important;
   --box-shadow-layered:
     0px 3px 10px -100px rgba(26, 40, 51, 0.15),
     0px 11px 35px -100px rgba(26, 40, 51, 0.25),
@@ -2409,6 +2409,8 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--color-accent-alt) !important;
+  --blockquote-style: italic !important;
   --h1-color: var(--heading-color) !important;
   --h2-color: var(--heading-color) !important;
   --h3-color: var(--heading-color) !important;
@@ -2417,7 +2419,6 @@ body.theme-dark {
   --h6-color: var(--heading-color) !important;
   --heading-color: #dee8ed !important;
   --inline-title-color: #3d6681 !important;
-  --blockquote-color: var(--color-accent-alt) !important;
   --color-accent-alt: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -2446,7 +2447,6 @@ body.theme-dark {
   --vault-name-color: var(--text-accent) !important;
   --accent-dark: 55% !important;
   --block-margin: 2em 0 !important;
-  --blockquote-style: italic !important;
   --box-shadow-layered:
     1.5px 0px 5px rgba(10, 17, 20, 0.015),
     3.5px 0px 15px rgba(10, 17, 20, 0.025),

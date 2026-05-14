@@ -387,5 +387,19 @@
     "flexcyon-vault-reverse": {
       "general": "body.flexcyon-vault-reverse .workspace-sidedock-vault-profile {\nflex-direction: row-reverse;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--ribbon-width": ["--frame-left-space"],
+    "--text-normal": [
+      "--text-color",
+      "--icon-color-focus",
+      "--ec-uiSelFg",
+      "--ec-frm-edActTabFg",
+      "--ec-frm-trmTtbFg",
+      "--ec-frm-inlBtnFg"
+    ],
+    "--radius-m": ["--bases-property-menu-item-radius"],
+    "--line-height-normal": ["--ec-codeLineHt", "--ec-uiLineHt"]
   }
 }

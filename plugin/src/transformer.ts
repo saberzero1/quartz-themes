@@ -51,6 +51,7 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
     effectiveMode,
     styleSettingsId,
     classSettings,
+    brokenVarLinks,
   } = composeCSS(options);
 
   const isSingleMode = effectiveMode !== "both";
@@ -99,6 +100,7 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
         settings,
         styleSettingsId,
         classSettings,
+        brokenVarLinks,
       );
 
       if (overrideCSS) {

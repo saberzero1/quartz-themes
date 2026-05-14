@@ -1304,5 +1304,22 @@
     "page-gallery-flexgrow": {
       "general": ".page-gallery-flexgrow .page-gallery__tile {\nmax-width: unset;\nflex-grow: 1;\nheight: flex;\nwidth: fit-content;\nmin-width: 12em;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h1-color-custom": ["--h1-color"],
+    "--h2-color-custom": ["--h2-color"],
+    "--h3-color-custom": ["--h3-color"],
+    "--h4-color-custom": ["--h4-color"],
+    "--h5-color-custom": ["--h5-color"],
+    "--h6-color-custom": ["--h6-color"],
+    "--custom-folder-1": ["--folder-1"],
+    "--custom-folder-1-open": ["--folder-1-open"],
+    "--custom-folder-2": ["--folder-2"],
+    "--custom-folder-2-open": ["--folder-2-open"],
+    "--custom-folder-3": ["--folder-3"],
+    "--custom-folder-3-open": ["--folder-3-open"],
+    "--page-transparency-custom": ["--page-transparency"],
+    "--font-normal": ["--ec-codeFontWg", "--ec-uiFontWg"]
   }
 }

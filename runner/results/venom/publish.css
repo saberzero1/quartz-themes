@@ -1416,10 +1416,10 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #ff0000 !important;
   --interactive-accent-rgb: 76, 120, 204 !important;
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --default-font:
     "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif !important;
   --text-error-hover: #c9626a !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --text-title-h1: var(--red) !important;
   --text-title-h2: #ff8126 !important;
   --text-title-h3: var(--yellow) !important;
@@ -4259,22 +4259,22 @@ body body.theme-dark .page-header .page-title {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 13px;
-  font-weight: 469.75;
+  font-weight: 446.5;
   line-height: 16.9px;
   text-shadow:
-    rgb(225, 196, 255) 0px 0px 2px,
-    rgb(225, 196, 255) 0px 0px 2px,
-    rgb(157, 60, 254) 0px 0px 3px,
-    rgb(157, 60, 254) 0px 0px 3px,
-    rgb(157, 60, 254) 0px 0px 3px,
-    rgb(157, 60, 254) 0px 0px 3px,
-    rgb(157, 60, 254) 0px 0px 3px;
+    rgb(235, 216, 255) 0px 0px 2px,
+    rgb(235, 216, 255) 0px 0px 2px,
+    rgb(147, 40, 254) 0px 0px 3px,
+    rgb(147, 40, 254) 0px 0px 3px,
+    rgb(147, 40, 254) 0px 0px 3px,
+    rgb(147, 40, 254) 0px 0px 3px,
+    rgb(147, 40, 254) 0px 0px 3px;
   background-color: rgba(0, 0, 0, 0);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
   padding: 0px;
   margin: 0px;
-  border-color: rgb(198, 200, 203);
+  border-color: rgb(217, 219, 220);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;

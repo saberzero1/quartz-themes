@@ -1374,18 +1374,20 @@ body.theme-light {
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
   --callout-note: 217, 119, 86;
   --background-primary-rgb: 238, 236, 226 !important;
+  --callout-danger: 192, 57, 43;
+  --tracking-tight: -0.02em !important;
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --primary-color: #d97756 !important;
   --fast: 0.15s ease !important;
   --slow: 0.3s ease !important;
   --callout-cite: 87, 61, 132;
+  --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
   --highlight-bg: #d6b07b !important;
   --weight-bold: 700 !important;
   --weight-medium: 500 !important;
   --weight-normal: 400 !important;
   --weight-semibold: 600 !important;
-  --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
   --editor-max-width: 64ch !important;
   --line-normal: 1.6 !important;
   --reading-max-width: 64ch !important;
@@ -1398,7 +1400,6 @@ body.theme-light {
   --border-thin: 1px !important;
   --bounce: 0.25s cubic-bezier(0.34, 1.15, 0.64, 1) !important;
   --callout-cite-rgb: 87, 61, 132;
-  --callout-danger: 192, 57, 43;
   --callout-danger-rgb: 192, 57, 43;
   --callout-example-rgb: 119, 144, 136;
   --callout-info-rgb: 212, 175, 55;
@@ -1503,7 +1504,6 @@ body.theme-light {
   --theme-folder-opacity: 0.12 !important;
   --tracking-normal: 0em !important;
   --tracking-snug: -0.01em !important;
-  --tracking-tight: -0.02em !important;
   --transition-callout-link:
     transform 0.18s cubic-bezier(0.4, 0, 0.2, 1),
     opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s,
@@ -2505,18 +2505,20 @@ body.theme-dark {
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
   --callout-note: 242, 168, 130;
   --background-primary-rgb: 40, 37, 32 !important;
+  --callout-danger: 231, 76, 60;
+  --tracking-tight: -0.02em !important;
   --background-secondary-rgb: 50, 48, 42 !important;
   --text-normal-rgb: 232, 220, 198 !important;
   --primary-color: #f0916f !important;
   --fast: 0.15s ease !important;
   --slow: 0.3s ease !important;
   --callout-cite: 162, 155, 254;
+  --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
   --highlight-bg: #3a2f20 !important;
   --weight-bold: 700 !important;
   --weight-medium: 500 !important;
   --weight-normal: 400 !important;
   --weight-semibold: 600 !important;
-  --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
   --editor-max-width: 64ch !important;
   --line-normal: 1.6 !important;
   --reading-max-width: 64ch !important;
@@ -2529,7 +2531,6 @@ body.theme-dark {
   --border-thin: 1px !important;
   --bounce: 0.25s cubic-bezier(0.34, 1.15, 0.64, 1) !important;
   --callout-cite-rgb: 162, 155, 254;
-  --callout-danger: 231, 76, 60;
   --callout-danger-rgb: 231, 76, 60;
   --callout-example-rgb: 149, 179, 170;
   --callout-info-rgb: 233, 213, 163;
@@ -2635,7 +2636,6 @@ body.theme-dark {
   --theme-folder-opacity: 0.12 !important;
   --tracking-normal: 0em !important;
   --tracking-snug: -0.01em !important;
-  --tracking-tight: -0.02em !important;
   --transition-callout-link:
     transform 0.18s cubic-bezier(0.4, 0, 0.2, 1),
     opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s,

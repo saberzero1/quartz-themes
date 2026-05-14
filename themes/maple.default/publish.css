@@ -1094,6 +1094,10 @@ body.theme-light {
   --code-variable: var(--color-yellow) !important;
   --code-class: var(--color-orange) !important;
   --folder-color: var(--setting-color-dirs, hsl(46, 81%, 45%)) !important;
+  --bg-surface: hsla(
+    var(--background-secondary-hsl),
+    var(--bg-opacity)
+  ) !important;
   --animation: var(--animation-dur) var(--anim-motion-smooth) !important;
   --accent-active: hsl(
     var(--theme-accent-active-h),
@@ -1143,10 +1147,6 @@ body.theme-light {
   --bg-editor: hsla(
     var(--background-primary-hsl),
     max(var(--bg-opacity), var(--editor-min-opacity))
-  ) !important;
-  --bg-surface: hsla(
-    var(--background-secondary-hsl),
-    var(--bg-opacity)
   ) !important;
   --block-outline-width: var(--size-2-1) !important;
   --blockquote-radius: var(--size-2-3) !important;
@@ -2322,6 +2322,10 @@ body.theme-dark {
   --code-variable: var(--color-yellow) !important;
   --code-class: var(--color-orange) !important;
   --folder-color: var(--setting-color-dirs, hsl(46, 81%, 45%)) !important;
+  --bg-surface: hsla(
+    var(--background-secondary-hsl),
+    var(--bg-opacity)
+  ) !important;
   --animation: var(--animation-dur) var(--anim-motion-smooth) !important;
   --accent-active: hsl(
     var(--theme-accent-active-h),
@@ -2372,10 +2376,6 @@ body.theme-dark {
   --bg-editor: hsla(
     var(--background-primary-hsl),
     max(var(--bg-opacity), var(--editor-min-opacity))
-  ) !important;
-  --bg-surface: hsla(
-    var(--background-secondary-hsl),
-    var(--bg-opacity)
   ) !important;
   --block-outline-width: var(--size-2-1) !important;
   --blockquote-radius: var(--size-2-3) !important;

@@ -63,5 +63,16 @@
     "kanban-full-height-column": {
       "general": "body.kanban-full-height-column button.kanban-plugin__new-item-button {\nalign-self: flex-end;\n}\n\nbody.kanban-full-height-column .kanban-plugin__item-button-wrapper {\nflex-grow: 1;\ndisplay: flex;\n}\n\nbody.kanban-full-height-column .kanban-plugin__lane-wrapper {\nmin-height: 100%;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h-color-theme": [
+      "--h1-color",
+      "--h2-color",
+      "--h3-color",
+      "--h4-color",
+      "--h5-color",
+      "--h6-color"
+    ]
   }
 }

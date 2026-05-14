@@ -1342,6 +1342,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: #333333 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1354,7 +1355,6 @@ body.theme-light {
   --h5-color: #777777 !important;
   --h6-color: #888888 !important;
   --inline-title-color: #000000 !important;
-  --blockquote-color: #333333 !important;
   --vault-name-color: #000000 !important;
   --h1-font: "Arial", sans-serif !important;
   --h2-font: "Arial", sans-serif !important;
@@ -1365,6 +1365,7 @@ body.theme-light {
   --inline-title-font: "Arial", sans-serif !important;
   --bold-color: #000000 !important;
   --italic-color: #000000 !important;
+  --callout-title-size: inherit;
   --status-bar-scroll-padding: 10px !important;
   --vault-name-font-size: 18px !important;
   --vault-name-font-weight: bold !important;
@@ -1377,7 +1378,6 @@ body.theme-light {
   --nav-item-weight-hover: inherit !important;
   --callout-title-color: 0, 0, 0;
   --tab-font-weight: inherit !important;
-  --callout-title-size: inherit;
   --file-header-color: #000000 !important;
   --embed-border-color: #cccccc !important;
   --embed-font-style: inherit !important;
@@ -2363,6 +2363,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: #dddddd !important;
   --h1-color: #cccccc !important;
   --h2-color: #bbbbbb !important;
   --h3-color: #aaaaaa !important;
@@ -2370,7 +2371,6 @@ body.theme-dark {
   --h5-color: #888888 !important;
   --h6-color: #777777 !important;
   --inline-title-color: #ffffff !important;
-  --blockquote-color: #dddddd !important;
   --vault-name-color: #ffffff !important;
   --h1-font: "Arial", sans-serif !important;
   --h2-font: "Arial", sans-serif !important;
@@ -2381,6 +2381,7 @@ body.theme-dark {
   --inline-title-font: "Arial", sans-serif !important;
   --bold-color: #cccccc !important;
   --italic-color: #cccccc !important;
+  --callout-title-size: inherit;
   --text-primary: white !important;
   --text-secondary: #cccccc !important;
   --status-bar-scroll-padding: 10px !important;
@@ -2395,7 +2396,6 @@ body.theme-dark {
   --nav-item-weight-hover: inherit !important;
   --callout-title-color: 255, 255, 255;
   --tab-font-weight: inherit !important;
-  --callout-title-size: inherit;
   --file-header-color: #ffffff !important;
   --embed-border-color: #444444 !important;
   --embed-font-style: inherit !important;

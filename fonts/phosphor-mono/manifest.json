@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-05-13T21:03:52.741Z",
+  "sourceTheme": "Phosphor-Mono",
+  "fonts": [
+    {
+      "family": "Jersey10",
+      "style": "normal",
+      "weight": "400",
+      "file": "jersey10.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

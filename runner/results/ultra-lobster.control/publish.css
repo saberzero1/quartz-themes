@@ -1108,6 +1108,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --inline-title-color: var(--color-base-100) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
@@ -1136,7 +1137,6 @@ body.theme-dark {
   ) !important;
   --font-serif: "Fraunces", serif !important;
   --font-title: var(--ulu-font-title) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --color-accent-rgb: 255, 217, 25 !important;
   --color-accent-hover: var(--color-accent-2) !important;
   --ancestor-editor-color: var(--text-normal) !important;

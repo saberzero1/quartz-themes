@@ -1344,6 +1344,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--blue-1) !important;
+  --text-highlight-bg-active: var(--dark-6) !important;
   --h1-color: var(--red-2) !important;
   --h2-color: var(--purple-2) !important;
   --h3-color: var(--green-2) !important;
@@ -1358,7 +1359,6 @@ body.theme-dark {
   --vault-name-color: var(--text-normal) !important;
   --bold-color: var(--yellow-5) !important;
   --italic-color: var(--yellow-2) !important;
-  --text-highlight-bg-active: var(--dark-6) !important;
   --color-highlight-text: var(--yellow-1) !important;
   --embed-border-left: 2px solid var(--code-comment) !important;
   --embed-border-right: 2px solid var(--code-comment) !important;

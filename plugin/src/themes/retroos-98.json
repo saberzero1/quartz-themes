@@ -198,5 +198,6 @@
     "ROS98-wheat": {
       "light": ".ROS98-wheat {\n--background-primary: #f5ffb6;\n--background-secondary: #e0e0a0;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

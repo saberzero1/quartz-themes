@@ -15,8 +15,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -50,10 +49,7 @@
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -107,8 +103,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
@@ -142,10 +137,7 @@
   --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -223,57 +215,49 @@ html {
   font-family: "Literata";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/literata.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/literata.woff2") format("woff2");
 }
 @font-face {
   font-family: "Literata";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/literata-1.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/literata-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "Literata";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/literata-2.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/literata-2.woff2") format("woff2");
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/open-sans.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/open-sans.woff2") format("woff2");
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/open-sans-1.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/open-sans-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/open-sans-2.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/open-sans-2.woff2") format("woff2");
 }
 @font-face {
   font-family: "Ruslan Display";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/ruslan-display.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/ruslan-display.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn SC";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/vollkorn-sc.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ravenloft/vollkorn-sc.woff2") format("woff2");
 }
 
 body {
@@ -706,24 +690,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -736,18 +705,7 @@ body {
     color: rgb(54, 42, 39);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(54, 42, 39);
     border-top-left-radius: 4px;
@@ -782,15 +740,7 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -1113,79 +1063,24 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(54, 42, 39);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(54, 42, 39);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(54, 42, 39);
   }
 
@@ -1200,8 +1095,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1234,8 +1128,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1268,8 +1161,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1302,8 +1194,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1336,8 +1227,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1370,8 +1260,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1405,8 +1294,7 @@ body {
     letter-spacing: var(--ls-title);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1856,8 +1744,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1868,8 +1755,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -1882,8 +1768,7 @@ body {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1917,8 +1802,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1929,8 +1813,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -1943,8 +1826,7 @@ body {
     --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
@@ -1978,8 +1860,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1990,8 +1871,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2004,8 +1884,7 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -2039,8 +1918,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2051,8 +1929,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2065,8 +1942,7 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -2100,8 +1976,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2112,8 +1987,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2126,8 +2000,7 @@ body {
     --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
@@ -2161,8 +2034,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2173,8 +2045,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2187,8 +2058,7 @@ body {
     --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 185, 78, 0.25);
@@ -2222,8 +2092,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2234,8 +2103,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2248,8 +2116,7 @@ body {
     --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
@@ -2283,8 +2150,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2295,8 +2161,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2309,8 +2174,7 @@ body {
     --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
@@ -2344,8 +2208,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2356,8 +2219,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2370,8 +2232,7 @@ body {
     --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2405,8 +2266,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2417,8 +2277,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2431,8 +2290,7 @@ body {
     --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2466,8 +2324,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2478,8 +2335,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2492,8 +2348,7 @@ body {
     --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2527,8 +2382,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2539,8 +2393,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2553,8 +2406,7 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(120, 82, 238, 0.25);
@@ -2588,8 +2440,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2600,8 +2451,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -2614,8 +2464,7 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
@@ -2649,8 +2498,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2661,8 +2509,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(54, 42, 39);
     padding: 0px;
     padding-block-end: 0px;
@@ -3656,8 +3503,7 @@ body {
     font-weight: 400;
     line-height: 20.8px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(54, 42, 39);
@@ -3870,11 +3716,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -3964,11 +3806,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4058,11 +3896,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4152,11 +3986,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4246,11 +4076,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4340,11 +4166,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4434,11 +4256,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4528,11 +4346,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4622,11 +4436,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4716,11 +4526,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4810,11 +4616,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4904,11 +4706,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -4998,11 +4796,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5092,11 +4886,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5186,11 +4976,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5280,11 +5066,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5374,11 +5156,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5468,11 +5246,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5562,11 +5336,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5656,11 +5426,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5750,11 +5516,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5844,11 +5606,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -5938,11 +5696,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6032,11 +5786,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6126,11 +5876,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6220,11 +5966,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6314,11 +6056,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6408,11 +6146,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6502,11 +6236,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6596,11 +6326,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6690,11 +6416,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6784,11 +6506,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6878,11 +6596,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -6972,11 +6686,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7066,11 +6776,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7160,11 +6866,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7254,11 +6956,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7348,11 +7046,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7442,11 +7136,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7536,11 +7226,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7630,11 +7316,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7724,11 +7406,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7818,11 +7496,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -7912,11 +7586,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8006,11 +7676,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8100,11 +7766,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8194,11 +7856,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8288,11 +7946,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8382,11 +8036,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8476,11 +8126,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8570,11 +8216,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8664,11 +8306,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8758,11 +8396,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8852,11 +8486,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -8946,11 +8576,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9040,11 +8666,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9134,11 +8756,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9228,11 +8846,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9322,11 +8936,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9416,11 +9026,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9510,11 +9116,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9604,11 +9206,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9698,11 +9296,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9792,11 +9386,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9886,11 +9476,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -9980,11 +9566,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -10074,11 +9656,7 @@ body {
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
     --tab-switcher-background: #f6f6f6;
-    --tab-switcher-menubar-background: linear-gradient(
-      to top,
-      #f6f6f6,
-      transparent
-    );
+    --tab-switcher-menubar-background: linear-gradient(to top, #f6f6f6, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
     --tab-text-color: #ababab;
     --tab-text-color-active: #5c5c5c;
@@ -11215,24 +10793,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -11245,18 +10808,7 @@ html[saved-theme="dark"] {
       color: rgb(240, 234, 226);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: var(--background-modifier-hover);
       border: 0px rgb(240, 234, 226);
       border-top-left-radius: 4px;
@@ -11291,15 +10843,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
       color: var(--pill-color);
@@ -11610,10 +11154,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -11625,81 +11166,24 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(240, 234, 226);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(240, 234, 226);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: rgb(240, 234, 226);
     }
 
@@ -11714,8 +11198,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11748,8 +11231,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11782,8 +11264,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11816,8 +11297,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11850,8 +11330,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11884,8 +11363,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -11919,8 +11397,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--ls-title);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -12370,8 +11847,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -12382,8 +11858,7 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12396,8 +11871,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(2, 122, 255, 0.25);
@@ -12431,8 +11905,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -12443,8 +11916,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12457,8 +11929,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(83, 223, 221, 0.25);
@@ -12492,14 +11963,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="abstract"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -12507,8 +11974,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12521,8 +11987,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(2, 122, 255, 0.25);
@@ -12556,8 +12021,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -12568,8 +12032,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12582,8 +12045,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(2, 122, 255, 0.25);
@@ -12617,8 +12079,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -12629,8 +12090,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12643,8 +12103,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(83, 223, 221, 0.25);
@@ -12678,8 +12137,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -12690,8 +12148,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12704,8 +12161,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(68, 207, 110, 0.25);
@@ -12739,8 +12195,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -12751,8 +12206,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12765,8 +12219,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(233, 151, 63, 0.25);
@@ -12800,14 +12253,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="question"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -12815,8 +12264,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12829,8 +12277,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(233, 151, 63, 0.25);
@@ -12864,8 +12311,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -12876,8 +12322,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12890,8 +12335,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -12925,8 +12369,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -12937,8 +12380,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -12951,8 +12393,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -12986,8 +12427,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -12998,8 +12438,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -13012,8 +12451,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -13047,8 +12485,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -13059,8 +12496,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -13073,8 +12509,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(168, 130, 255, 0.25);
@@ -13108,8 +12543,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -13120,8 +12554,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -13134,8 +12567,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       mix-blend-mode: normal;
       border: 0px solid rgba(158, 158, 158, 0.25);
@@ -13169,8 +12601,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -13181,8 +12612,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(240, 234, 226);
       padding: 0px;
       padding-block-end: 0px;
@@ -13918,9 +13348,7 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container
-      li:has(> .folder-outer:not(.open))
-      > .nav-folder-title {
+    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: "Open Sans", sans-serif;
@@ -14178,8 +13606,7 @@ html[saved-theme="dark"] {
       font-weight: 400;
       line-height: 20.8px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       margin: 0px;
       border-color: rgb(240, 234, 226);
@@ -14392,11 +13819,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -14486,11 +13909,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -14580,11 +13999,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -14674,11 +14089,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -14768,11 +14179,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -14862,11 +14269,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -14956,11 +14359,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15050,11 +14449,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15144,11 +14539,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15238,11 +14629,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15332,11 +14719,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15426,11 +14809,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15520,11 +14899,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15614,11 +14989,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15708,11 +15079,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15802,11 +15169,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15896,11 +15259,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -15990,11 +15349,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16084,11 +15439,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16178,11 +15529,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16272,11 +15619,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16366,11 +15709,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16460,11 +15799,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16554,11 +15889,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16648,11 +15979,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16742,11 +16069,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16836,11 +16159,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -16930,11 +16249,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17024,11 +16339,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17118,11 +16429,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17212,11 +16519,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17306,11 +16609,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17400,11 +16699,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17494,11 +16789,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17588,11 +16879,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17682,11 +16969,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17776,11 +17059,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17870,11 +17149,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -17964,11 +17239,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18058,11 +17329,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18152,11 +17419,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18246,11 +17509,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18340,11 +17599,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18434,11 +17689,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18528,11 +17779,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18622,11 +17869,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18716,11 +17959,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18810,11 +18049,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18904,11 +18139,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -18998,11 +18229,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19092,11 +18319,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19186,11 +18409,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19280,11 +18499,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19374,11 +18589,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19468,11 +18679,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19562,11 +18769,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19656,11 +18859,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19750,11 +18949,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19844,11 +19039,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -19938,11 +19129,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20032,11 +19219,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20126,11 +19309,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20220,11 +19399,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20314,11 +19489,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20408,11 +19579,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20502,11 +19669,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -20596,11 +19759,7 @@ html[saved-theme="dark"] {
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
       --tab-switcher-background: #262626;
-      --tab-switcher-menubar-background: linear-gradient(
-        to top,
-        #262626,
-        transparent
-      );
+      --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
       --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
       --tab-text-color: #666666;
       --tab-text-color-active: #b3b3b3;
@@ -21413,10 +20572,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

@@ -131,5 +131,6 @@
     "retro-dm-misty-mirage": {
       "dark": ".retro-dm-misty-mirage {\n--color-base-00: #3b3149;\n--color-base-00-rgb: 59, 49, 73;\n--color-base-05: #443955;\n--color-base-10: #4d4161;\n--color-base-20: #57496c;\n--color-base-25: #605178;\n--color-base-30: #6a5884;\n--color-base-35: #736090;\n--color-base-40: #7d699b;\n--color-base-50: #9181aa;\n--color-base-50-rgb: 145, 129, 170;\n--color-base-60: #a598ba;\n--color-base-70: #bab0ca;\n--color-base-100: #e3dfe9;\n/* Accent color = --leather-color-alt */\n--accent-h: 240 !important;\n--accent-s: 67% !important;\n--accent-l: 84% !important;\n--main-ink: #f9f8fe;\n--main-ink-rgb: 249,248,249;\n--main-ink-muted: rgba(var(--main-ink-rgb),var(--muted));\n--main-ink-fainted: rgba(var(--main-ink-rgb),var(--fainted));\n--secondary-ink: #e6e6fa;\n--secondary-ink-rgb: 230, 230, 250;\n--secondary-ink-muted: rgba(var(--secondary-ink-rgb), var(--muted));\n--secondary-ink-fainted: rgba(var(--secondary-ink-rgb),var(--fainted));\n--bold-accent-ink: #a3b28c;\n--italic-accent-ink: #e6e6fa;\n--light-ink: #000;\n--light-ink-muted: rgba(0,0,0,var(--muted));\n--light-ink-fainted: rgba(0,0,0,var(--fainted));\n--light-ink-alt: #313147;\n--leather-color: #e6e6fa;\n--leather-color-alt: #bcbcf2;\n--leather-color-rgb: 44, 52, 41;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

@@ -162,5 +162,6 @@
     "doc-title-h6": {
       "general": "body.doc-title-h6 .inline-title {\n-webkit-text-fill-color: transparent;\nbackground-clip: text;\n-webkit-background-clip: text;\nbackground-image: linear-gradient(\n    var(--gradientDegree),\n    var(--purple) 0,\n    var(--pink) 100%\n  );\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

@@ -315,5 +315,15 @@
     "ultra-focus": {
       "general": ".classic-layout {\n--workspace-background: var(--background-primary);\n--divider-width: 0px;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--custom-font": ["--font-default"],
+    "--border-width": [
+      "--menu-divider-width",
+      "--cards-border-width",
+      "--ec-tm-inlMarkerBrdWd"
+    ],
+    "--custom-image": ["--workspace-background"]
   }
 }

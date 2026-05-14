@@ -1458,6 +1458,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: var(--teal) !important;
+  --text-highlight-bg-active: var(--green) !important;
   --default-font:
     system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
     Apple Color Emoji, Segoe UI Emoji !important;
@@ -1478,7 +1479,6 @@ body.theme-dark {
   --purple: #c47fd5 !important;
   --red: #e06e6e !important;
   --yellow: #e5c76b !important;
-  --text-highlight-bg-active: var(--green) !important;
   --text-tag: var(--teal) !important;
   --dark0: #0f1619 !important;
   --dark1: #141b1e !important;

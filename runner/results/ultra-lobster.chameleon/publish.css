@@ -1148,13 +1148,14 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--color-base-35) !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --inline-title-color: var(--color-base-100) !important;
-  --background-modifier-form-field-highlighted: var(--color-base-35) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
     --ulu-header2-type,
@@ -1182,7 +1183,6 @@ body.theme-light {
   ) !important;
   --font-serif: "Fraunces", serif !important;
   --font-title: var(--ulu-font-title) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --color-accent-rgb: var(--color-blue-rgb) !important;
   --color-accent-hover: var(--color-accent-2) !important;
   --ancestor-editor-color: var(--text-normal) !important;
@@ -2304,6 +2304,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --inline-title-color: var(--color-base-100) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
@@ -2332,7 +2333,6 @@ body.theme-dark {
   ) !important;
   --font-serif: "Fraunces", serif !important;
   --font-title: var(--ulu-font-title) !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --color-accent-rgb: var(--color-blue-rgb) !important;
   --color-accent-hover: var(--color-accent-2) !important;
   --ancestor-editor-color: var(--text-normal) !important;

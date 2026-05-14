@@ -1373,8 +1373,8 @@ body.theme-light {
   --code-definition: var(--rose) !important;
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
-  --foam: #56949f !important;
   --gold: #ea9d34 !important;
+  --foam: #56949f !important;
   --highlight-high: #cecacd !important;
   --highlight-low: #f4ede8 !important;
   --highlight-med: #dfdad9 !important;

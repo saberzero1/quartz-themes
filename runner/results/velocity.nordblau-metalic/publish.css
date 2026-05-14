@@ -990,6 +990,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--text-muted) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1002,8 +1003,8 @@ body.theme-light {
   --h5-color: var(--color-base-80) !important;
   --h6-color: var(--color-base-70) !important;
   --inline-title-color: var(--h1-color) !important;
-  --blockquote-color: var(--text-muted) !important;
   --bold-color: var(--color-base-100) !important;
+  --bases-table-text-size: var(--table-text-size) !important;
   --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue)) !important;
   --color-base-90: oklch(var(--bl-90) var(--bsat-low) var(--bhue)) !important;
   --font-ui-larger: 24px !important;
@@ -1017,6 +1018,7 @@ body.theme-light {
   ) !important;
   --radius-xs: 6px !important;
   --math-color: var(--color-base-100) !important;
+  --corner-smoothing: 60% !important;
   --tab-font-weight: var(--font-normal) !important;
   --strikethrough-color: var(--text-faint) !important;
   --settings-background: color-mix(
@@ -1025,10 +1027,8 @@ body.theme-light {
     var(--color-base-20)
   ) !important;
   --color-base-55: oklch(var(--bl-55) var(--bsat-xtr) var(--bhue)) !important;
-  --bases-table-text-size: var(--table-text-size) !important;
   --color-highlight: rgb(var(--color-highlight-rgb)) !important;
   --metadata-label-font-weight: var(--font-semi-medium) !important;
-  --corner-smoothing: 60% !important;
   --nav-folder-color: var(--color-base-80) !important;
   --anim-fast-delay: var(--anim-duration-fast) var(--anim-motion-delay) !important;
   --anim-fast-smooth: var(--anim-duration-fast) var(--anim-motion-smooth) !important;
@@ -2197,6 +2197,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --blockquote-color: var(--text-muted) !important;
   --h1-color: oklch(
     calc(var(--bl-100) - 3.75%) var(--bsat-low) var(--bhue)
   ) !important;
@@ -2208,8 +2209,8 @@ body.theme-dark {
   --h5-color: var(--color-base-90) !important;
   --h6-color: var(--color-base-80) !important;
   --inline-title-color: var(--h1-color) !important;
-  --blockquote-color: var(--text-muted) !important;
   --bold-color: var(--color-base-100) !important;
+  --bases-table-text-size: var(--table-text-size) !important;
   --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue)) !important;
   --color-base-90: oklch(var(--bl-90) var(--bsat-str) var(--bhue)) !important;
   --font-ui-larger: 24px !important;
@@ -2223,6 +2224,7 @@ body.theme-dark {
   ) !important;
   --radius-xs: 6px !important;
   --math-color: var(--color-base-100) !important;
+  --corner-smoothing: 60% !important;
   --tab-font-weight: var(--font-normal) !important;
   --strikethrough-color: var(--text-faint) !important;
   --settings-background: color-mix(
@@ -2231,10 +2233,8 @@ body.theme-dark {
     var(--color-base-20)
   ) !important;
   --color-base-55: oklch(var(--bl-55) var(--bsat-xtr) var(--bhue)) !important;
-  --bases-table-text-size: var(--table-text-size) !important;
   --color-highlight: rgb(var(--color-highlight-rgb)) !important;
   --metadata-label-font-weight: var(--font-semi-medium) !important;
-  --corner-smoothing: 60% !important;
   --nav-folder-color: var(--color-base-80) !important;
   --anim-fast-delay: var(--anim-duration-fast) var(--anim-motion-delay) !important;
   --anim-fast-smooth: var(--anim-duration-fast) var(--anim-motion-smooth) !important;

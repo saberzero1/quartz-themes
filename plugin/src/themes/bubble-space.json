@@ -335,5 +335,14 @@
     "h-iblend": {
       "general": ".h-iblend h1 > em {\ncolor: var(--h1-color) !important;\n}\n\n.h-iblend h2 > em {\ncolor: var(--h1-color) !important;\n}\n\n.h-iblend h3 > em {\ncolor: var(--h3-color) !important;\n}\n\n.h-iblend h4 > em {\ncolor: var(--h4-color) !important;\n}\n\n.h-iblend h5 > em {\ncolor: var(--h5-color) !important;\n}\n\n.h-iblend h6 > em {\ncolor: var(--h6-color) !important;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--sh1img": ["--h1img"],
+    "--sh2img": ["--h2img"],
+    "--sh3img": ["--h3img"],
+    "--sh4img": ["--h4img"],
+    "--sh5img": ["--h5img"],
+    "--sh6img": ["--h6img"]
   }
 }

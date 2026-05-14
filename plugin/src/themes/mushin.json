@@ -67,5 +67,6 @@
     "hide-status-bar": {
       "general": ".hide-status-bar .status-bar {\ndisplay: none !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

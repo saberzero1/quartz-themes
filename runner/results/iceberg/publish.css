@@ -1359,11 +1359,11 @@ body.theme-dark {
   --font-family-editor:
     "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
     Meiryo, sans-serif !important;
+  --interactive-success: var(--green) !important;
   --green: #b4be82 !important;
   --orange: #e2a478 !important;
   --purple: #a093c7 !important;
   --red: #e27878 !important;
-  --interactive-success: var(--green) !important;
   --blue: #84a0c6 !important;
   --font-family-preview:
     "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",

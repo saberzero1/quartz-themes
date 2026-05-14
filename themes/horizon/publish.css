@@ -984,12 +984,12 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-code: #f09383 !important;
   --default-font: "Roboto Condensed", sans-serif !important;
   --interactive-before: #fff27d !important;
   --pre-code: #16161c !important;
   --text-link: #689d6a !important;
   --font-size-normal: 16px !important;
-  --text-code: #f09383 !important;
   --font-size-code: 15px !important;
   --font-size-h1: 25px !important;
   --font-size-h2: 21px !important;

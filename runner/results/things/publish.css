@@ -1501,6 +1501,20 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
+  --base-h: 212 !important;
+  --base-l: 97% !important;
+  --base-s: 15% !important;
+  --folding-offset: 10px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --icon-muted: 0.5 !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --max-col-width: 18em !important;
+  --max-width: 90% !important;
+  --nested-padding: 1.1em !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1518,15 +1532,9 @@ body.theme-light {
   --purple: #9e86c8 !important;
   --red: #e83e3e !important;
   --yellow: #e5b567 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --accent-d: 70% !important;
   --base-d: 13% !important;
-  --base-h: 212 !important;
-  --base-l: 97% !important;
-  --base-s: 15% !important;
   --em-color: var(--pink) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --quote-color: var(--green) !important;
   --strong-color: var(--pink) !important;
   --blue: #2e80f2 !important;
@@ -1535,15 +1543,7 @@ body.theme-light {
   --tag-background-color-l: #bde1d3 !important;
   --tag-font-color-d: #ffffff !important;
   --tag-font-color-l: #1d694b !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 90% !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
-  --nested-padding: 1.1em !important;
   --line-width-adaptive: var(--line-width) !important;
-  --folding-offset: 10px !important;
-  --max-col-width: 18em !important;
   --text-formatted: hsl(
     var(--base-h),
     calc(var(--base-s) - 5%),
@@ -1560,14 +1560,14 @@ body.theme-light {
   --atom-yellow: #e35649 !important;
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4) !important;
   --quote-background: transparent !important;
+  --highlight-background-color--active: hsl(50deg 100% 50% / 20%) !important;
+  --highlight-background-color-underline: hsl(50deg 100% 50% / 100%) !important;
   --progress-color-1: #ad5758 !important;
   --progress-color-2: #b87f4c !important;
   --progress-color-3: #d2b874 !important;
   --progress-color-4: #b0c07e !important;
   --progress-color-5: #768399 !important;
-  --highlight-background-color--active: hsl(50deg 100% 50% / 20%) !important;
   --highlight-background-color--normal: hsl(50deg 100% 50% / 15%) !important;
-  --highlight-background-color-underline: hsl(50deg 100% 50% / 100%) !important;
   --code-background-d: #303540 !important;
   --code-background-l: #eceef1 !important;
   --code-block-background-d: #282c34 !important;
@@ -2572,6 +2572,20 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
+  --base-h: 212 !important;
+  --base-l: 97% !important;
+  --base-s: 15% !important;
+  --folding-offset: 10px !important;
+  --font-editor-theme:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
+  --icon-muted: 0.5 !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --max-col-width: 18em !important;
+  --max-width: 90% !important;
+  --nested-padding: 1.1em !important;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --h1-color: var(--text-normal) !important;
   --h2-color: var(--text-normal) !important;
   --h3-color: var(--blue) !important;
@@ -2584,15 +2598,9 @@ body.theme-dark {
   --purple: #9e86c8 !important;
   --red: #e83e3e !important;
   --yellow: #e5b567 !important;
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --accent-d: 70% !important;
   --base-d: 13% !important;
-  --base-h: 212 !important;
-  --base-l: 97% !important;
-  --base-s: 15% !important;
   --em-color: var(--pink) !important;
-  --font-editor-theme:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --quote-color: var(--green) !important;
   --strong-color: var(--pink) !important;
   --blue: #2e80f2 !important;
@@ -2601,15 +2609,7 @@ body.theme-dark {
   --tag-background-color-l: #bde1d3 !important;
   --tag-font-color-d: #ffffff !important;
   --tag-font-color-l: #1d694b !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 90% !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
-  --nested-padding: 1.1em !important;
   --line-width-adaptive: var(--line-width) !important;
-  --folding-offset: 10px !important;
-  --max-col-width: 18em !important;
   --text-formatted: hsl(
     var(--base-h),
     var(--base-s),
@@ -2626,14 +2626,14 @@ body.theme-dark {
   --atom-yellow: #e5c07b !important;
   --text-highlight-bg-d: rgba(255, 208, 0, 0.4) !important;
   --quote-background: transparent !important;
+  --highlight-background-color--active: hsl(50deg 100% 50% / 20%) !important;
+  --highlight-background-color-underline: hsl(50deg 100% 50% / 100%) !important;
   --progress-color-1: #ad5758 !important;
   --progress-color-2: #b87f4c !important;
   --progress-color-3: #d2b874 !important;
   --progress-color-4: #b0c07e !important;
   --progress-color-5: #768399 !important;
-  --highlight-background-color--active: hsl(50deg 100% 50% / 20%) !important;
   --highlight-background-color--normal: hsl(50deg 100% 50% / 15%) !important;
-  --highlight-background-color-underline: hsl(50deg 100% 50% / 100%) !important;
   --code-background-d: #303540 !important;
   --code-background-l: #eceef1 !important;
   --code-block-background-d: #282c34 !important;

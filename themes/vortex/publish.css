@@ -1439,13 +1439,13 @@ body.theme-light {
   --text-title-h5: #2ecc71 !important;
   --text-title-h6: #db3eb1 !important;
   --theme-color: var(--color-accent) !important;
+  --color-italic: var(--theme-color) !important;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
   --callout-color-orange: 255, 150, 50;
   --callout-color-purple: 150, 100, 250;
   --callout-color-red: 255, 80, 80;
   --callout-color-yellow: 255, 204, 0;
-  --color-italic: var(--theme-color) !important;
   --accent-brighter-10: color-mix(
     in srgb,
     var(--theme-color) 90%,
@@ -2548,13 +2548,13 @@ body.theme-dark {
   --text-title-h5: #2ecc71 !important;
   --text-title-h6: #db3eb1 !important;
   --theme-color: var(--color-accent) !important;
+  --color-italic: var(--theme-color) !important;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
   --callout-color-orange: 255, 150, 50;
   --callout-color-purple: 150, 100, 250;
   --callout-color-red: 255, 80, 80;
   --callout-color-yellow: 255, 204, 0;
-  --color-italic: var(--theme-color) !important;
   --accent-brighter-10: color-mix(
     in srgb,
     var(--theme-color) 90%,

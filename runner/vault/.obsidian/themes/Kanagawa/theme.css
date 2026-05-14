@@ -175,6 +175,9 @@
     --interactive-accent-rgb:     var(--springGreen);
     --inline-code:                var(--springGreen);
     --code-block:                 var(--fujiGray);
+    --code-background:            var(--sumiInk0);
+    --code-normal:                var(--fujiGray);
+    --table-border-color:         var(--background-secondary);
     --vim-cursor-backgroung:      var(--fujiWhite);
     --vim-cursor-color:           var(--sumiInk1);
     --text-selection:             rgba(34, 50, 73, 0.5); /* waveBlue1 */
@@ -222,6 +225,9 @@
     --interactive-accent-rgb:     var(--lotusGreen);
     --inline-code:                var(--lotusGreen);
     --code-block:                 var(--lotusGray3);
+    --code-background:            var(--lotusGray);
+    --code-normal:                var(--lotusGray3);
+    --table-border-color:         var(--background-secondary);
     --vim-cursor-backgroung:      var(--lotusGray);
     --vim-cursor-color:           var(--lotusInk1);
     --text-selection:             rgba(183, 208, 174, 0.5); /* lotusGreen3 */
@@ -254,19 +260,19 @@ body.theme-light {
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"]
 {
-    text-shadow: none !important;
-    background-color: var(--pre-code) !important;
+    text-shadow: none;
+    background-color: var(--pre-code);
 }
 
 .graph-view.color-circle,
 .graph-view.color-fill-highlight,
 .graph-view.color-line-highlight
 {
-    color: var(--interactive-accent-rgb) !important;
+    color: var(--interactive-accent-rgb);
 }
 .graph-view.color-text
 {
-    color: var(--text-a-url) !important;
+    color: var(--text-a-url);
 }
 /*
 .graph-view.color-fill
@@ -282,38 +288,38 @@ body.theme-light {
 html,
 body
 {
-    /* font-size: 16px !important; */
+    /* font-size: 16px; */
 }
 
 strong
 {
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 a,
 .cm-hmd-internal-link
 {
-    color: var(--text-a) !important;
-    text-decoration: none !important;
+    color: var(--text-a);
+    text-decoration: none;
 }
 
 a:hover,
 .cm-hmd-internal-link:hover,
 .cm-url
 {
-    color: var(--text-a-url) !important;
-    text-decoration: none !important;
+    color: var(--text-a-url);
+    text-decoration: none;
 }
 
 a.tag, a.tag:hover {
-  color: var(--text-tag) !important;
+  color: var(--text-tag);
   background-color: var(--background-secondary-alt);
   padding: 2px 4px;
   border-radius: 4px;
 }
 
 a.tag:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 
 mark
@@ -332,54 +338,54 @@ mark
 
 .view-actions a
 {
-    color: var(--text-normal) !important;
+    color: var(--text-normal);
 }
 
 .view-actions a:hover
 {
-    color: var(--text-a) !important;
+    color: var(--text-a);
 }
 
 .HyperMD-codeblock-bg
 {
-    background-color: var(--pre-code) !important;
+    background-color: var(--pre-code);
 }
 
 .HyperMD-codeblock
 {
-    line-height: 1.4em !important;
-    color: var(--code-block) !important;
+    line-height: 1.4em;
+    color: var(--code-block);
 }
 
 .HyperMD-codeblock-begin
 {
-    border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .HyperMD-codeblock-end
 {
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 table {
-    border: 1px solid var(--background-secondary) !important;
+    border: 1px solid var(--background-secondary);
     border-collapse: collapse;
 }
   
 th {
-    font-weight: 600 !important;
-    border: 0px !important;
+    font-weight: 600;
+    border: 0px;
     text-align: left;
     background-color: var(--table-header);
     color: var(--neutral-green);
 }
 
 td {
-    border-left: 0px !important;
-    border-right: 0px !important;
-    border-bottom: 1px solid var(--background-secondary) !important;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid var(--background-secondary);
 }
 
 tr:nth-child(even){ background-color: var(--table-row-even) }
@@ -388,119 +394,129 @@ tr:hover { background-color: var(--table-hover); }
   
 thead
 {
-    border-bottom: 2px solid var(--background-modifier-border) !important;
+    border-bottom: 2px solid var(--background-modifier-border);
 }
 
 .HyperMD-table-row
 {
-    line-height: normal !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-    /* background-color: var(--pre-code) !important; */
+    line-height: normal;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* background-color: var(--pre-code); */
 }
 
 .HyperMD-table-row-0
 {
-    /* padding-top: 4px !important; */
+    /* padding-top: 4px; */
 }
 
 .CodeMirror-foldgutter-folded,
 .is-collapsed .nav-folder-collapse-indicator
 {
-    color: var(--text-a) !important;
+    color: var(--text-a);
 }
 
 .nav-file-tag
 {
-    color: var(--text-a) !important;
+    color: var(--text-a);
 }
 
 .is-active .nav-file-title
 {
-    color: var(--text-a) !important;
-    background-color: var(--background-primary-alt) !important;
+    color: var(--text-a);
+    background-color: var(--background-primary-alt);
 }
 
 .nav-file-title
 {
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
-.HyperMD-list-line
+body.theme-dark .cm-line.HyperMD-list-line,
+body.theme-light .cm-line.HyperMD-list-line,
+body.theme-dark .cm-line.HyperMD-task-line,
+body.theme-light .cm-line.HyperMD-task-line
 {
-    padding-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .cm-hashtag-begin
 {
-    color: var(--text-tag) !important;
+    color: var(--text-tag);
     background-color: var(--background-secondary-alt);
     padding: 2px 0 2px 4px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .cm-hashtag-end
 {
-    color: var(--text-tag) !important;
+    color: var(--text-tag);
     background-color: var(--background-secondary-alt);
     padding: 2px 4px 2px 0;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .cm-hashtag-begin:hover, .cm-hashtag-end:hover
 {
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 
 .markdown-preview-section pre code,
 .markdown-preview-section code
 {
-    font-size: 0.9em !important;
-    background-color: var(--pre-code) !important;
+    font-size: 0.9em;
+    background-color: var(--pre-code);
 }
 
 .markdown-preview-section pre code
 {
-    padding: 4px !important;
-    line-height: 1.4em !important;
-    display: block !important;
-    color: var(--code-block) !important;
+    padding: 4px;
+    line-height: 1.4em;
+    display: block;
+    color: var(--code-block);
 }
 
-.markdown-preview-section code
+body.theme-dark .markdown-rendered :not(pre) > code,
+body.theme-light .markdown-rendered :not(pre) > code,
+body.theme-dark .markdown-preview-section :not(pre) > code,
+body.theme-light .markdown-preview-section :not(pre) > code
 {
-    color: var(--inline-code) !important;
+    color: var(--inline-code);
 }
 
 .cm-s-obsidian,
 .cm-inline-code
 {
-    -webkit-font-smoothing: auto !important;
+    -webkit-font-smoothing: auto;
 }
 
-.cm-inline-code
+body.theme-dark .cm-line .cm-inline-code,
+body.theme-light .cm-line .cm-inline-code
 {
-    color: var(--inline-code) !important;
-    background-color: var(--pre-code) !important;
-    padding: 1px !important;
+    color: var(--inline-code);
+    background-color: var(--pre-code);
+    padding: 1px;
 }
 
 .workspace-leaf-header-title
 {
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 .side-dock-title
 {
-    padding-top: 15px !important;
-    font-size: 20px !important;
+    padding-top: 15px;
+    font-size: 20px;
 }
 
 .side-dock-ribbon-tab:hover,
@@ -514,7 +530,7 @@ thead
 
 .side-dock
 {
-    border-right: 0 !important;
+    border-right: 0;
 }
 
 /* vertical resize-handle */
@@ -522,14 +538,14 @@ thead
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle
 {
-    width: 1px !important;
+    width: 1px;
     background-color: var(--background-secondary-alt);
 }
 
 /* horizontal resize-handle */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
 {
-    height: 1px !important;
+    height: 1px;
     background-color: var(--background-secondary-alt);
 }
 
@@ -544,68 +560,68 @@ thead
 
 .markdown-embed-title
 {
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 .markdown-embed
 {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .cm-header-1.cm-link,
 h1 a
 {
-    color: var(--text-title-h1) !important;
+    color: var(--text-title-h1);
 }
 
 .cm-header-2.cm-link,
 h2 a
 {
-    color: var(--text-title-h2) !important;
+    color: var(--text-title-h2);
 }
 
 .cm-header-3.cm-link,
 h3 a
 {
-    color: var(--text-title-h3) !important;
+    color: var(--text-title-h3);
 }
 .cm-header-4.cm-link,
 h4 a
 {
-    color: var(--text-title-h4) !important;
+    color: var(--text-title-h4);
 }
 .cm-header-5.cm-link,
 h5 a
 {
-    color: var(--text-title-h5) !important;
+    color: var(--text-title-h5);
 }
 .cm-header-6.cm-link,
 h6 a
 {
-    color: var(--text-title-h6) !important;
+    color: var(--text-title-h6);
 }
 
 .cm-header {
-    font-weight: 500 !important;
+    font-weight: 500;
 }
 
 .HyperMD-header-1,
 .markdown-preview-section h1
 {
-    font-weight: 500 !important;
-    font-size: 2.2em !important;
-    color: var(--text-title-h1) !important;
+    font-weight: 500;
+    font-size: 2.2em;
+    color: var(--text-title-h1);
 }
 
 .HyperMD-header-2,
 .markdown-preview-section h2
 {
-    font-weight: 500 !important;
-    font-size: 2.0em !important;
-    color: var(--text-title-h2) !important;
+    font-weight: 500;
+    font-size: 2.0em;
+    color: var(--text-title-h2);
     /* text-transform: uppercase; */
 
 }
@@ -613,43 +629,38 @@ h6 a
 .HyperMD-header-3,
 .markdown-preview-section h3
 {
-    font-weight: 500 !important;
-    font-size: 1.8em !important;
-    color: var(--text-title-h3) !important;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: var(--text-title-h3);
 }
 
 .HyperMD-header-4,
 .markdown-preview-section h4
 {
-    font-weight: 500 !important;
-    font-size: 1.6em !important;
-    color: var(--text-title-h4) !important;
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--text-title-h4);
 }
 
 .HyperMD-header-5,
 .markdown-preview-section h5
 {
-    font-weight: 500 !important;
-    font-size: 1.4em !important;
-    color: var(--text-title-h5) !important;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: var(--text-title-h5);
 }
 
 .HyperMD-header-6,
 .markdown-preview-section h6
 {
-    font-weight: 500 !important;
-    font-size: 1.2em !important;
-    color: var(--text-title-h6) !important;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--text-title-h6);
 }
 
 .suggestion-item.is-selected
 {
     background-color: var(--background-secondary);
-}
-
-.empty-state-action:hover
-{
-    color: var(--interactive-accent);
 }
 
 .empty-state-action:hover
@@ -669,27 +680,27 @@ h6 a
 
 .mod-cta
 {
-    color: var(--background-secondary-alt) !important;
-    font-weight: 600 !important;
+    color: var(--background-secondary-alt);
+    font-weight: 600;
 }
 
 .mod-cta a
 {
-    color: var(--background-secondary-alt) !important;
-    font-weight: 600 !important;
+    color: var(--background-secondary-alt);
+    font-weight: 600;
 }
 
 .mod-cta:hover
 {
-    background-color: var(--interactive-before) !important;
-    font-weight: 600 !important;
+    background-color: var(--interactive-before);
+    font-weight: 600;
 }
 
 .CodeMirror-cursor
 {
-    background-color: var(--vim-cursor-background) !important;
-    color: var(--vim-cursor-color) !important;
-    opacity: 60% !important;
+    background-color: var(--vim-cursor-background);
+    color: var(--vim-cursor-color);
+    opacity: 60%;
 }
 
 input.task-list-item-checkbox {
@@ -706,15 +717,15 @@ input.task-list-item-checkbox:checked
 
 ::selection
 {
-    background-color: var(--text-selection) !important;
+    background-color: var(--text-selection);
 }
 
 .mermaid .note
 {
-    fill: var(--dark3) !important;
+    fill: var(--dark3);
 }
 .cm-line .cm-strong
 {
-    color: var(--bold-color) !important;
+    color: var(--bold-color);
 }
 

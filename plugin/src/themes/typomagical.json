@@ -527,5 +527,7 @@
     "background-color-enable": {
       "general": ".background-color-enable {\n--ss-background-color: #000000 ;\n}\n\n.background-color-enable {\n--background-primary: var(--ss-background-color) ;\n}"
     }
-  }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": { "--ss-background-color": ["--background-primary"] }
 }

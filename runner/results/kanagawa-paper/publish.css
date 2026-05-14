@@ -645,14 +645,14 @@ body.theme-light {
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: var(--lotusGray) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal) !important;
+  --code-normal: var(--lotusGray3) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -994,7 +994,7 @@ body.theme-light {
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--background-modifier-border) !important;
+  --table-border-color: var(--background-secondary) !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
@@ -1565,7 +1565,6 @@ body.theme-light {
   --winterGreen: #2b3328 !important;
   --winterRed: #43242b !important;
   --winterYellow: #49443c !important;
-  --vim-cursor-background: var(--lotusGray) !important;
   --dragonAqua: #8ea4a2 !important;
   --dragonAsh: #737c73 !important;
   --dragonBlack0: #0d0c0c !important;
@@ -1589,10 +1588,11 @@ body.theme-light {
   --dragonViolet: #8992a7 !important;
   --dragonWhite: #c5c9c5 !important;
   --dragonYellow: #c4b28a !important;
-  --lotusInk0: #3d3d5e !important;
   --oniViolet2: #b8b4d0 !important;
   --sumiInk5: #363646 !important;
   --sumiInk6: #54546d !important;
+  --vim-cursor-background: var(--lotusGray) !important;
+  --lotusInk0: #3d3d5e !important;
 }
 
 body.theme-dark {
@@ -1729,14 +1729,14 @@ body.theme-dark {
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: var(--dragonBlack0) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal) !important;
+  --code-normal: var(--dragonGray2) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -2076,7 +2076,7 @@ body.theme-dark {
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--background-modifier-border) !important;
+  --table-border-color: var(--background-secondary) !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
@@ -2649,7 +2649,6 @@ body.theme-dark {
   --winterGreen: #2b3328 !important;
   --winterRed: #43242b !important;
   --winterYellow: #49443c !important;
-  --vim-cursor-background: var(--dragonWhite) !important;
   --dragonAqua: #8ea4a2 !important;
   --dragonAsh: #737c73 !important;
   --dragonBlack0: #0d0c0c !important;
@@ -2673,10 +2672,11 @@ body.theme-dark {
   --dragonViolet: #8992a7 !important;
   --dragonWhite: #c5c9c5 !important;
   --dragonYellow: #c4b28a !important;
-  --lotusInk0: #3d3d5e !important;
   --oniViolet2: #b8b4d0 !important;
   --sumiInk5: #363646 !important;
   --sumiInk6: #54546d !important;
+  --vim-cursor-background: var(--dragonWhite) !important;
+  --lotusInk0: #3d3d5e !important;
 }
 
 body {
@@ -2700,7 +2700,7 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-a);
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -2748,7 +2748,7 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-a);
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -2796,7 +2796,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-a);
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
@@ -3583,7 +3583,7 @@ body body.theme-light .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-light .footnote-backref {
-  color: var(--text-a);
+  color: var(--text-faint);
   text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
@@ -4600,10 +4600,10 @@ body body.theme-light .markdown-rendered th {
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width) solid rgb(84, 84, 100);
-  border-right: 0px solid rgb(84, 84, 100);
-  border-top: var(--table-header-border-width) solid rgb(84, 84, 100);
-  border-bottom: 0px solid rgb(84, 84, 100);
+  border-left: var(--table-column-first-border-width) solid rgb(220, 213, 172);
+  border-right: 1px solid rgb(220, 213, 172);
+  border-top: var(--table-header-border-width) solid rgb(220, 213, 172);
+  border-bottom: 1px solid rgb(220, 213, 172);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4626,10 +4626,8 @@ body body.theme-light .markdown-rendered td {
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  border-left: var(--table-column-first-border-width) solid rgb(84, 84, 100);
-  border-right: 0px solid rgb(84, 84, 100);
-  border-top: 0px solid rgb(84, 84, 100);
-  border-bottom: 1px solid rgb(220, 213, 172);
+  border: 1px solid rgb(220, 213, 172);
+  border-left: var(--table-column-first-border-width) solid rgb(220, 213, 172);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4801,7 +4799,7 @@ body body.theme-light .markdown-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin: 0px 10px;
-  padding: 0px 10px;
+  padding: 0px;
 }
 body body.theme-light .file-embed {
   background-color: var(--background-primary-alt);
@@ -5049,7 +5047,7 @@ body body.theme-light kbd {
   color: var(--code-normal);
   font-family: var(--font-monospace);
   font-size: var(--code-size);
-  border: 0px rgb(84, 84, 100);
+  border: 0px rgb(138, 137, 128);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -5697,7 +5695,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-a);
+  color: var(--link-external-color);
   cursor: var(--cursor-link);
   filter: var(--link-external-filter);
   backdrop-filter: none;
@@ -5725,9 +5723,9 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(148, 159, 181) none 0px;
+  outline: rgb(135, 169, 135) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(148, 159, 181);
+  text-decoration-color: rgb(135, 169, 135);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -5745,7 +5743,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-a);
+  color: var(--link-color);
   cursor: var(--cursor-link);
   filter: none;
   backdrop-filter: none;
@@ -5773,9 +5771,9 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(148, 159, 181) none 0px;
+  outline: rgb(135, 169, 135) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(148, 159, 181);
+  text-decoration-color: rgb(135, 169, 135);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -5793,7 +5791,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--text-a);
+  color: var(--link-unresolved-color);
   cursor: var(--cursor-link);
   filter: var(--link-unresolved-filter);
   backdrop-filter: none;
@@ -5821,7 +5819,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(148, 159, 181) none 0px;
+  outline: rgb(135, 169, 135) none 0px;
   text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
@@ -6580,7 +6578,7 @@ body body.theme-dark .markdown-rendered blockquote {
   letter-spacing: normal;
 }
 body body.theme-dark .footnote-backref {
-  color: var(--text-a);
+  color: var(--text-faint);
   text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
@@ -7597,10 +7595,10 @@ body body.theme-dark .markdown-rendered th {
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width) solid rgb(197, 201, 197);
-  border-right: 0px solid rgb(197, 201, 197);
-  border-top: var(--table-header-border-width) solid rgb(197, 201, 197);
-  border-bottom: 0px solid rgb(197, 201, 197);
+  border-left: var(--table-column-first-border-width) solid rgb(29, 28, 25);
+  border-right: 1px solid rgb(29, 28, 25);
+  border-top: var(--table-header-border-width) solid rgb(29, 28, 25);
+  border-bottom: 1px solid rgb(29, 28, 25);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7623,10 +7621,8 @@ body body.theme-dark .markdown-rendered td {
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  border-left: var(--table-column-first-border-width) solid rgb(197, 201, 197);
-  border-right: 0px solid rgb(197, 201, 197);
-  border-top: 1px solid rgb(139, 164, 176);
-  border-bottom: 1px solid rgb(29, 28, 25);
+  border: 1px solid rgb(29, 28, 25);
+  border-left: var(--table-column-first-border-width) solid rgb(29, 28, 25);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7800,7 +7796,7 @@ body body.theme-dark .markdown-embed {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin: 0px 10px;
-  padding: 0px 10px;
+  padding: 0px;
 }
 body body.theme-dark .file-embed {
   background-color: var(--background-primary-alt);
@@ -8048,7 +8044,7 @@ body body.theme-dark kbd {
   color: var(--code-normal);
   font-family: var(--font-monospace);
   font-size: var(--code-size);
-  border: 0px rgb(197, 201, 197);
+  border: 0px rgb(158, 155, 147);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;

@@ -105,5 +105,6 @@
       "dark": ".w95-scheme-wheat, .theme-light.w95-scheme-wheat {\n--background-primary: #dede9c;\n--background-secondary: #dede9c;\n--border-highlight: #eeeecd;\n--border-shadow: #bdba39;\n--scrollbar-track: #dede9c;\n--scrollbar-thumb: #dede9c;\n--nav-item-background-active: #7b7d00;\n--interactive-accent: #7b7d00;\n}",
       "light": ".theme-dark.w95-scheme-wheat, .w95-scheme-wheat {\n--background-primary: #dede9c;\n--background-secondary: #dede9c;\n--border-highlight: #eeeecd;\n--border-shadow: #bdba39;\n--scrollbar-track: #dede9c;\n--scrollbar-thumb: #dede9c;\n--nav-item-background-active: #7b7d00;\n--interactive-accent: #7b7d00;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

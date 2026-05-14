@@ -1006,6 +1006,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --text-highlight-bg-active: var(--color-highlight-bg) !important;
   --h1-color: var(--color-yellow-900) !important;
   --h2-color: var(--color-purple-700) !important;
   --h3-color: var(--color-cyan-533) !important;
@@ -1020,7 +1021,6 @@ body.theme-dark {
     Helvetica, Arial, sans-serif !important;
   --bold-color: var(--color-yellowish-355) !important;
   --italic-color: var(--color-purple-577) !important;
-  --text-highlight-bg-active: var(--color-highlight-bg) !important;
   --color-highlight-text: var(--color-cyan-530) !important;
   --embed-border-left: 2px solid var(--color-orange-500) !important;
   --embed-border-right: none !important;
@@ -1033,6 +1033,9 @@ body.theme-dark {
   --indentation-guide-active: var(--border-300) !important;
   --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
   --color-black: hsl(230, 9%, 13%) !important;
+  --color-slate-300: hsl(220, 23%, 90%) !important;
+  --color-slate-700: hsl(223, 18%, 68%) !important;
+  --color-slate-900: hsl(225, 14%, 40%) !important;
   --bold-italic-color: var(--color-gray-10) !important;
   --window-border: 1px solid var(--window-border-color) !important;
   --window-border-color: var(--color-gray-70) !important;
@@ -1170,10 +1173,7 @@ body.theme-dark {
     #9977d6,
     #916ec9
   ) !important;
-  --color-slate-300: hsl(220, 23%, 90%) !important;
   --color-slate-500: hsl(224, 37%, 80%) !important;
-  --color-slate-700: hsl(223, 18%, 68%) !important;
-  --color-slate-900: hsl(225, 14%, 40%) !important;
   --color-slate-gradient-1: linear-gradient(
     180deg,
     #eff1f5,

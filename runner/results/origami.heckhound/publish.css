@@ -1089,6 +1089,7 @@ body.theme-dark {
     calc(var(--accent-s) * 1.55),
     calc(var(--accent-l) * 1.29)
   ) !important;
+  --transition-duration: 700ms !important;
   --background-transparent: #55555599 !important;
   --color-accent-rgb: var(--color-red-rgb) !important;
   --ancestor-editor-color: var(--text-normal) !important;
@@ -1132,7 +1133,6 @@ body.theme-dark {
   --color-yellow-hsl: 64.9, 91.7%, 76.5% !important;
   --shadow-lm-only: none !important;
   --text-cite: 87, 161, 132 !important;
-  --transition-duration: 700ms !important;
   --transition-duration-short: 350ms !important;
   --transition-ease: ease !important;
 }

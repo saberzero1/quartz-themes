@@ -170,5 +170,10 @@
     "simple-border": {
       "general": ".simple-border .markdown-rendered mark {\nborder-radius: 4px;\n}\n\n.simple-border a:is([href=\"#red\"], [href=\"#rot\"], [href=\"#green\"], [href=\"#grün\"], [href=\"#blue\"], [href=\"#blau\"], [href=\"#gray\"], [href=\"#grau\"])+mark {\nborder-radius: 4px;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--bold-color-c": ["--bold-color"],
+    "--italic-color-c": ["--italic-color"]
   }
 }

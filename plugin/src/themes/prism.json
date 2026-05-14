@@ -387,5 +387,39 @@
     "pt-alternative-checkboxes-color-background": {
       "general": "body.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\"/\"] {\n--line-background: var(--color-grey-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\"-\"] {\n--line-background: var(--color-red-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\">\"] {\n--line-background: var(--color-blue-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\"<\"] {\n--line-background: var(--color-green-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\"?\"] {\n--line-background: var(--color-yellow-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\"!\"] {\n--line-background: var(--color-orange-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=\"*\"] {\n--line-background: var(--color-yellow-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task='\"'] {\n--line-background: var(--color-grey-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=l] {\n--line-background: var(--color-red-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=b] {\n--line-background: var(--color-mint-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=i] {\n--line-background: var(--color-blue-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=S] {\n--line-background: var(--color-green-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=I] {\n--line-background: var(--color-yellow-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=p] {\n--line-background: var(--color-green-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=c] {\n--line-background: var(--color-red-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=f] {\n--line-background: var(--color-orange-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=k] {\n--line-background: var(--color-cyan-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=w] {\n--line-background: var(--color-yellow-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=u] {\n--line-background: var(--color-green-base);\n}\n\nbody.enable-alternative-checkboxes.pt-alternative-checkboxes-color-background ul > li[data-task=d] {\n--line-background: var(--color-red-base);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--inline-title-color-lt": ["--inline-title-color"],
+    "--inline-title-color-dt": ["--inline-title-color"],
+    "--color-accent-tint-lt": [
+      "--interactive-accent-hover",
+      "--interactive-accent-tint-hsl",
+      "--interactive-accent-tint"
+    ],
+    "--color-accent-tint-dt": [
+      "--interactive-accent-hover",
+      "--interactive-accent-tint-hsl",
+      "--interactive-accent-tint"
+    ],
+    "--radius-m": ["--bases-property-menu-item-radius"],
+    "--highlight-text-accent-custom-lt": ["--highlight-text-normal"],
+    "--highlight-text-accent-custom-dt": ["--highlight-text-normal"],
+    "--color-accent-base-lt": [
+      "--interactive-accent-base-hsl",
+      "--interactive-accent-base"
+    ],
+    "--color-accent-base-dt": [
+      "--interactive-accent-base-hsl",
+      "--interactive-accent-base"
+    ],
+    "--color-accent-text-lt": [
+      "--interactive-accent-text-hsl",
+      "--interactive-accent-text"
+    ],
+    "--color-accent-text-dt": [
+      "--interactive-accent-text-hsl",
+      "--interactive-accent-text"
+    ]
   }
 }

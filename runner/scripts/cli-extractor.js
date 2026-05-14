@@ -1432,6 +1432,45 @@ function generateFullExtractionScript(selectors) {
       fs.writeFileSync(alternatesFile, JSON.stringify(alternatesMap, null, 2));
     }
 
+    // Build declared-var-uses map: for every extracted selector+property where
+    // the CSSOM winning rule's declared value contains var(), record the
+    // declared text. This lets generate.js preserve var() references instead
+    // of using the computed (resolved) value.
+    const declaredVarUses = {};
+    for (const [resultSelector, props] of Object.entries(results)) {
+      if (resultSelector === "html" || resultSelector === "body") continue;
+      const isPseudo = resultSelector.includes("::");
+      let el;
+      try {
+        const baseSel = isPseudo
+          ? resultSelector.replace(/::[\w-]+(\(.*?\))?$/g, "").trim()
+          : resultSelector;
+        el = baseSel === "html" ? document.documentElement
+          : baseSel === "body" ? document.body
+          : document.querySelector(baseSel);
+      } catch (e) {
+        continue;
+      }
+      if (!el) continue;
+
+      for (const prop of Object.keys(props)) {
+        if (prop.startsWith("--")) continue;
+
+        const declared = isPseudo
+          ? getDeclaredValueForPseudo(el, resultSelector.match(/::[\w-]+/)?.[0] || "", prop)
+          : getDeclaredValue(el, prop);
+        if (!declared || !declared.includes("var(")) continue;
+
+        if (!declaredVarUses[resultSelector]) declaredVarUses[resultSelector] = {};
+        declaredVarUses[resultSelector][prop] = declared;
+      }
+    }
+
+    const declaredVarUsesFile = RESULT_FILE.replace(/\.json$/, "-declared-var-uses.json");
+    if (Object.keys(declaredVarUses).length > 0) {
+      fs.writeFileSync(declaredVarUsesFile, JSON.stringify(declaredVarUses, null, 2));
+    }
+
     return Object.keys(results).length;
   } catch (topLevelError) {
     try {
@@ -1544,6 +1583,10 @@ async function extractFull(cli, selectors, retries = 2) {
             /\.json$/,
             "-alternates.json",
           );
+          const declaredVarUsesTmp = TEMP_RESULT_FILE.replace(
+            /\.json$/,
+            "-declared-var-uses.json",
+          );
           parsed.__provenance = existsSync(provenanceTmp)
             ? JSON.parse(readFileSync(provenanceTmp, "utf-8"))
             : null;
@@ -1553,9 +1596,13 @@ async function extractFull(cli, selectors, retries = 2) {
           parsed.__alternates = existsSync(alternatesTmp)
             ? JSON.parse(readFileSync(alternatesTmp, "utf-8"))
             : null;
+          parsed.__declaredVarUses = existsSync(declaredVarUsesTmp)
+            ? JSON.parse(readFileSync(declaredVarUsesTmp, "utf-8"))
+            : null;
           if (existsSync(provenanceTmp)) unlinkSync(provenanceTmp);
           if (existsSync(varGraphTmp)) unlinkSync(varGraphTmp);
           if (existsSync(alternatesTmp)) unlinkSync(alternatesTmp);
+          if (existsSync(declaredVarUsesTmp)) unlinkSync(declaredVarUsesTmp);
           if (existsSync(TEMP_SCRIPT_FILE)) unlinkSync(TEMP_SCRIPT_FILE);
           if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
           if (existsSync(TEMP_ERROR_FILE)) unlinkSync(TEMP_ERROR_FILE);
@@ -1695,6 +1742,7 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
   const modeProvenance = {};
   const modeVarGraph = {};
   const modeAlternates = {};
+  const modeDeclaredVarUses = {};
 
   for (const file of [...EXTRACTION_FILES, ...extraFiles]) {
     const fileStart = Date.now();
@@ -1749,6 +1797,10 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
       Object.assign(modeAlternates, fileResults.__alternates);
       delete fileResults.__alternates;
     }
+    if (fileResults.__declaredVarUses) {
+      Object.assign(modeDeclaredVarUses, fileResults.__declaredVarUses);
+      delete fileResults.__declaredVarUses;
+    }
 
     const count = Object.keys(fileResults).length;
     for (const [selector, styles] of Object.entries(fileResults)) {
@@ -1762,6 +1814,7 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
   modeResults.__provenance = modeProvenance;
   modeResults.__varGraph = modeVarGraph;
   modeResults.__alternates = modeAlternates;
+  modeResults.__declaredVarUses = modeDeclaredVarUses;
   return modeResults;
 }
 
@@ -1797,6 +1850,7 @@ async function extractBaseline(cli, selectors) {
     delete results[mode].__provenance;
     delete results[mode].__varGraph;
     delete results[mode].__alternates;
+    delete results[mode].__declaredVarUses;
     saveBaseline(mode, results[mode]);
     console.log(
       `  Baseline ${mode}: ${Object.keys(results[mode]).length} selectors saved`,
@@ -2016,11 +2070,14 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
     delete rawResults.__varGraph;
     const alternates = rawResults.__alternates;
     delete rawResults.__alternates;
+    const declaredVarUses = rawResults.__declaredVarUses;
+    delete rawResults.__declaredVarUses;
     const modeBaseline = baseline ? baseline[mode] : null;
     results[mode] = deduplicateAgainstBaseline(rawResults, modeBaseline);
     results[mode + "Provenance"] = provenance;
     results[mode + "VarGraph"] = varGraph;
     results[mode + "Alternates"] = alternates;
+    results[mode + "DeclaredVarUses"] = declaredVarUses;
 
     // Extract syntax highlighting token colors for this mode
     codeTokens[mode] = await extractCodeTokenColors(cli);
@@ -2141,6 +2198,15 @@ function saveResults(themeName, results, codeTokens, domStructure) {
       writeFileSync(
         join(themeDir, `${mode}-alternates.json`),
         JSON.stringify(results[mode + "Alternates"], null, 2),
+      );
+    }
+    if (
+      results[mode + "DeclaredVarUses"] &&
+      Object.keys(results[mode + "DeclaredVarUses"]).length > 0
+    ) {
+      writeFileSync(
+        join(themeDir, `${mode}-declared-var-uses.json`),
+        JSON.stringify(results[mode + "DeclaredVarUses"], null, 2),
       );
     }
   }

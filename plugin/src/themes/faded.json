@@ -119,5 +119,6 @@
     "fileIcons": {
       "general": ".fileIcons .nav-file-icon::before {\ncontent: '\\e800';\ntext-align: center;\ncolor: var(--custom-file-icon);\nfont-family: 'its';\nmargin-right: 6px;\nvertical-align: top;\nfont-size: 13px;\nfont-weight: 10 !important;\n}\n\n.fileIcons .nav-folder-children .nav-file-title > .nav-file-title-content::before {\ncontent: '\\e800';\ntext-align: center;\ncolor: var(--custom-file-icon);\n}\n\n.fileIcons .nav-file-title:hover > .nav-file-title-content::before {\ncolor: var(--custom-file-icon-hover);\n}\n\n.fileIcons .file-tree-plugin-view .oz-nav-file-title .oz-nav-file-title-content::before {\ncontent: '\\e800';\ntext-align: center;\ncolor: var(--custom-file-icon);\n}\n\n.fileIcons .file-tree-plugin-view .oz-nav-file-title:hover .oz-nav-file-title-content::before {\ncolor: var(--custom-file-icon-hover);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

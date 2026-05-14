@@ -561,7 +561,7 @@
   },
   "--checkbox-border-color": { "body": ["--text-faint"] },
   "--checkbox-border-color-hover": { "body": ["--text-muted"] },
-  "--checklist-done-color": { "body": ["--text-faint"] },
+  "--checklist-done-color": { "body": ["--text-normal"] },
   "--code-border-color": { "body": ["--background-modifier-border"] },
   "--code-bracket-background": { "body": ["--background-modifier-hover"] },
   "--code-radius": { "body": ["--radius-s"] },
@@ -1567,12 +1567,13 @@
   "--tag-color": { "body": ["--text-accent"] },
   "--tag-color-hover": { "body": ["--text-accent"] },
   "--tag-background": {
-    "body": ["--interactive-accent-hsl"],
-    ".is-mobile.theme-dark": ["--interactive-accent-hsl"]
+    "body": ["--background-primary-alt"],
+    ".is-mobile.theme-dark": ["--background-primary-alt"]
   },
   "--tag-background-hover": { "body": ["--interactive-accent-hsl"] },
   "--tag-border-color": { "body": ["--interactive-accent-hsl"] },
   "--tag-border-color-hover": { "body": ["--interactive-accent-hsl"] },
+  "--tag-padding-x": { "body": ["--size-2-3"] },
   "--tag-radius": { "body": ["--radius-m"] },
   "--traffic-lights-offset-x": { "body": ["--header-height"] },
   "--traffic-lights-offset-y": { "body": ["--header-height"] },
@@ -2152,17 +2153,6 @@
   "--he-title-bar-inactive-action": {
     ".popover.hover-editor .popover-titlebar": ["--text-normal"],
     ".popover.hover-editor.is-active .popover-titlebar": ["--base-05"]
-  },
-  "--cards-min-width": { "body": ["--cards-mobile-width"] },
-  "--cards-columns": { "body": ["--cards-min-width", "--cards-max-width"] },
-  "--table-edge-cell-padding-first": {
-    ".cards table.dataview": ["--cards-padding"]
-  },
-  "--table-edge-cell-padding-last": {
-    ".cards table.dataview": ["--cards-padding"]
-  },
-  "--table-cell-padding": {
-    ".cards table.dataview": ["--cards-padding", "--cards-padding"]
   },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },

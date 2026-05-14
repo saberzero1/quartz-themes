@@ -1009,6 +1009,7 @@ body.theme-dark {
   --red-rgb: 218, 1, 77 !important;
   --yellow-rgb: 242, 208, 3 !important;
   --callout-title-color: var(--blue-400);
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1) !important;
   --blue-100: oklch(25.5% 0.091 260.58) !important;
   --blue-200: oklch(35.5% 0.127 260.58) !important;
   --blue-300: oklch(48.5% 0.173 260.58) !important;
@@ -1100,7 +1101,6 @@ body.theme-dark {
   --text-inverse: var(--gray-25) !important;
   --blue-25: oklch(12% 0.038 260.58) !important;
   --blue-75: oklch(18% 0.061 260.58) !important;
-  --ease-out: cubic-bezier(0.33, 1, 0.68, 1) !important;
   --gray-25: oklch(12% 0.009 279.29) !important;
   --gray-75: oklch(18% 0.014 279.29) !important;
   --green-25: oklch(12% 0.032 140.09) !important;

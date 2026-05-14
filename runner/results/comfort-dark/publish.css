@@ -990,6 +990,17 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
+  --base-h: 212 !important;
+  --base-l: 15% !important;
+  --base-s: 15% !important;
+  --folding-offset: 10px !important;
+  --icon-muted: 0.5 !important;
+  --line-height: 1.5 !important;
+  --line-width: 40rem !important;
+  --max-col-width: 18em !important;
+  --max-width: 90% !important;
+  --nested-padding: 1.1em !important;
   --h1-color: var(--text-title-h1) !important;
   --h2-color: var(--text-title-h2) !important;
   --h3-color: var(--text-title-h3) !important;
@@ -1004,22 +1015,13 @@ body.theme-dark {
   --text-title-h4: #a79645 !important;
   --text-title-h5: #859676 !important;
   --text-title-h6: #799097 !important;
-  --base-h: 212 !important;
-  --base-l: 15% !important;
-  --base-s: 15% !important;
   --em-color: var(--text-highlight) !important;
   --quote-color: var(--text-highlight) !important;
   --strong-color: var(--text-highlight) !important;
-  --icon-muted: 0.5 !important;
-  --line-height: 1.5 !important;
-  --line-width: 40rem !important;
-  --max-width: 90% !important;
-  --line-width-wide: calc(var(--line-width) + 12.5%) !important;
   --code-variable: #8cdcfe !important;
   --text-highlight: #db711a !important;
   --code-bracket: #ffd700 !important;
   --code-number: #b5cea8 !important;
-  --nested-padding: 1.1em !important;
   --color-prime: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1031,8 +1033,6 @@ body.theme-dark {
   --code-oper: #d4d4d4 !important;
   --code-package: #3f9486 !important;
   --dot-graph: #bbc0c5 !important;
-  --folding-offset: 10px !important;
-  --max-col-width: 18em !important;
   --tag-background-color: #123b2b !important;
   --tag-background-color-hover: #194a37 !important;
   --tag-font-color: #bbc0c5 !important;

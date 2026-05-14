@@ -14,9 +14,9 @@
   --background-primary: #ffffff;
   --background-secondary: #f8f8f8;
   --background-secondary-alt: #ffffff;
-  --border-color: #bbb;
-  --link-color: #333;
-  --link-color-hover: #888;
+  --border-color: #bbbbbb;
+  --link-color: #333333;
+  --link-color-hover: #888888;
   --text-normal: #000000;
 }
 
@@ -27,8 +27,8 @@
   --accent-l: 60%;
   --background-secondary: #262626;
   --link-color: #dcdcdc;
-  --link-color-hover: #999;
-  --border-color: #bbb;
+  --link-color-hover: #999999;
+  --border-color: #bbbbbb;
 }
 
 /* ===== 全局变量 ===== */
@@ -217,7 +217,7 @@ a.internal-link::before {
   pointer-events: none;
 }
 
-body {
+:where(body) {
   --link-decoration: none;
   --link-decoration-hover: none;
 }
@@ -442,7 +442,7 @@ body .callout[data-callout-metadata*=revert] {
   padding: 0px;
 
   & > .callout-content {
-    padding: 0 8px 8px 8px;
+    padding: 0 8px 8px;
   }
   & > .callout-title {
     background-color: transparent;
@@ -499,7 +499,7 @@ body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-conta
 
     /* 未折叠 */
     &:not(.is-collapsed) {
-      padding: 0px 0px 4px 0px;
+      padding: 0px 0px 4px;
 
       & > .callout-title {
         background-color: rgba(var(--callout-color), 0.1);
@@ -561,7 +561,7 @@ body .callout[data-callout=abstract] {
 
 /* ===== css/checkbox.css ===== */
 
-body {
+:where(body) {
   --checklist-done-color: var(--text-faint);
 }
 
@@ -670,7 +670,7 @@ body div.table-wrapper div.cm-scroller {
 /* ===== css/ui.css ===== */
 
 
-body {
+:where(body) {
     --tab-text-color-focused-active-current: var(--text-accent);
 }
 
@@ -710,7 +710,7 @@ body .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
     --tab-radius-active: 6px;
     margin: 0 2px;
     border: 1px solid var(--color-base-30);
-    padding: 1px 0px 0px 0px;
+    padding: 1px 0px 0px;
 }
 body .theme-dark .mod-root .workspace-tab-header.is-active {
     box-shadow: none;
@@ -827,7 +827,7 @@ body .canvas-node .cm-gutters {
 
 /* ===== 可配置变量（Style Settings 插件） ===== */
 
-body {
+:where(body) {
     --sidenote-default-position: right;
     --sidenote-width: 15rem;
     --sidenote-edgeout: unset;

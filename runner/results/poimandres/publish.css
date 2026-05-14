@@ -1347,6 +1347,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --background-modifier-form-field-highlighted: var(--bg_dark2) !important;
   --h1-color: var(--cyan) !important;
   --h2-color: var(--cyan0) !important;
   --h3-color: var(--unknown) !important;
@@ -1355,15 +1356,14 @@ body.theme-dark {
   --h6-color: var(--yellow) !important;
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--fg) !important;
-  --background-modifier-form-field-highlighted: var(--bg_dark2) !important;
   --table-header-background-hover: var(--bg_dark2) !important;
   --bold-color: var(--cyan) !important;
   --italic-color: var(--cyan) !important;
+  --interactive-success: var(--green) !important;
   --green: #7bbfb0 !important;
   --orange: #f2a070 !important;
   --red: #d1889a !important;
   --yellow: #dcb583 !important;
-  --interactive-success: var(--green) !important;
   --comment: #7da0b3 !important;
   --cyan: #84bfcf !important;
   --embed-background: var(--bg_highlight) !important;

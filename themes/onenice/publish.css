@@ -1363,13 +1363,13 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: #fff !important;
   --interactive-accent-rgb: 21, 146, 255 !important;
+  --background-modifier-form-field-highlighted: #fff !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --text-error-hover: #f86959 !important;
-  --background-modifier-form-field-highlighted: #fff !important;
   --text-title-h1: #e45649 !important;
   --text-title-h2: #50a14f !important;
   --text-title-h3: #c18401 !important;
@@ -2370,8 +2370,8 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-accent: #000 !important;
-  --text-error-hover: #c9626a !important;
   --background-modifier-form-field-highlighted: #00000038 !important;
+  --text-error-hover: #c9626a !important;
   --text-title-h1: #e55561 !important;
   --text-title-h2: #8ebd6b !important;
   --text-title-h3: #cc9057 !important;

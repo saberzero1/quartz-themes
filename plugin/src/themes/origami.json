@@ -350,5 +350,10 @@
     "o-kanban-notion": {
       "general": ".o-kanban-notion .kanban-plugin__item {\nfont-size: 1em;\nmargin-bottom: 5px;\nborder: none;\nborder-left: var(--bb-border-dashed);\nborder-radius: 0;\n}\n\n.o-kanban-notion .kanban-plugin__lane-header-wrapper {\nborder-bottom: var(--bb-border);\n}\n\n.o-kanban-notion .kanban-plugin__lane {\nbackground: var(--background-primary);\nborder: 1px solid var(--background-primary);\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--o-font-general": ["--font-text-theme"],
+    "--o-font-title": ["--font-title"]
   }
 }

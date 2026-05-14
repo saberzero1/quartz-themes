@@ -1212,6 +1212,7 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --accent-1: 33% !important;
+  --blockquote-color: var(--text-muted) !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1225,7 +1226,6 @@ body.theme-light {
   --h6-color: var(--medium-grey-6) !important;
   --inline-title-color: var(--text-normal) !important;
   --light-green: #cdd3c3 !important;
-  --blockquote-color: var(--text-muted) !important;
   --table-header-background-hover: var(--medium-light-grey-3) !important;
   --vault-name-color: var(--dark-grey-3) !important;
   --h1-font: "Noto Sans", sans-serif !important;
@@ -1238,6 +1238,8 @@ body.theme-light {
   --table-last-border-width: 1px !important;
   --bold-color: var(--green-04) !important;
   --italic-color: var(--medium-grey-2) !important;
+  --table-header-font: "Noto Sans", sans-serif !important;
+  --callout-title-size: 18px;
   --embed-border-left: 1px solid var(--text-normal) !important;
   --embed-border-right: 1px solid var(--text-normal) !important;
   --nav-item-children-margin-left: var(--size-4-5) !important;
@@ -1250,14 +1252,12 @@ body.theme-light {
   --tag-weight: 400 !important;
   --pill-weight: 400 !important;
   --nav-item-weight-active: 500 !important;
-  --table-header-font: "Noto Sans", sans-serif !important;
   --white: #a3a3a3 !important;
   --table-text-color: var(--text-normal) !important;
   --nav-item-weight: 400 !important;
   --nav-item-weight-hover: 500 !important;
   --tab-font-weight: 400 !important;
   --black: #202020 !important;
-  --callout-title-size: 18px;
   --list-marker-min-width: var(--list-indent) !important;
   --light-gold: #f8f1d8 !important;
   --metadata-label-font-weight: 500 !important;
@@ -2239,6 +2239,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --accent-1: 45% !important;
+  --blockquote-color: var(--text-muted) !important;
   --h1-color: var(--green-11) !important;
   --h2-color: var(--gold-06) !important;
   --h3-color: var(--green-10) !important;
@@ -2247,7 +2248,6 @@ body.theme-dark {
   --h6-color: var(--gold-04) !important;
   --inline-title-color: var(--text-normal) !important;
   --light-green: #cdd3c3 !important;
-  --blockquote-color: var(--text-muted) !important;
   --table-header-background-hover: var(--dark-grey-3) !important;
   --vault-name-color: var(--medium-light-grey-3) !important;
   --h1-font: "Noto Sans", sans-serif !important;
@@ -2260,6 +2260,8 @@ body.theme-dark {
   --table-last-border-width: 1px !important;
   --bold-color: var(--green-11) !important;
   --italic-color: var(--gold-03) !important;
+  --table-header-font: "Noto Sans", sans-serif !important;
+  --callout-title-size: 18px;
   --embed-border-left: 1px solid var(--text-normal) !important;
   --embed-border-right: 1px solid var(--text-normal) !important;
   --nav-item-children-margin-left: var(--size-4-5) !important;
@@ -2272,14 +2274,12 @@ body.theme-dark {
   --tag-weight: 400 !important;
   --pill-weight: 400 !important;
   --nav-item-weight-active: 500 !important;
-  --table-header-font: "Noto Sans", sans-serif !important;
   --white: #a3a3a3 !important;
   --table-text-color: var(--text-normal) !important;
   --nav-item-weight: 400 !important;
   --nav-item-weight-hover: 500 !important;
   --tab-font-weight: 400 !important;
   --black: #202020 !important;
-  --callout-title-size: 18px;
   --list-marker-min-width: var(--list-indent) !important;
   --light-gold: #f8f1d8 !important;
   --metadata-label-font-weight: 500 !important;

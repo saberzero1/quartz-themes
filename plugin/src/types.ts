@@ -62,6 +62,13 @@ export interface ThemeData {
    * Maps selectors to the setting effects that can influence them.
    */
   selectorImpacts?: Record<string, SelectorImpactRecord>;
+  /**
+   * Broken var() chain map: targetVar → dependentVars[].
+   * Records edges where the source CSS declared `--b: var(--a)` but the
+   * generated theme CSS resolved it to a static value. Used by the runtime
+   * to re-emit bridge declarations when a user overrides a target variable.
+   */
+  brokenVarLinks?: Record<string, string[]>;
 }
 
 /** Mode-scoped CSS for a single class-toggle or class-select setting. */

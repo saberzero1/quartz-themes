@@ -115,5 +115,6 @@
     "h1-accent": {
       "general": ".h1-accent {\n--h1-color: var(--color-accent) !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

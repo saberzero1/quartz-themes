@@ -1109,6 +1109,7 @@ body.theme-light {
   --background-tertiary: oklch(
     from var(--accent-2) 60% calc(c * var(--chroma-accent)) h
   ) !important;
+  --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --color-magenta: oklch(
     from var(--hue-magenta) var(--lightness) var(--chroma) h
   ) !important;
@@ -1211,7 +1212,6 @@ body.theme-light {
   --img-border-color: oklch(
     from var(--background-tertiary) l var(--chroma) h
   ) !important;
-  --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --outline-color: oklch(from var(--base-accent) 25% c h) !important;
   --radius-xxs: var(--button-border-radius) !important;
   --retroma-folder-bg-color: var(--background-primary) !important;
@@ -2314,6 +2314,7 @@ body.theme-dark {
     from var(--accent-2) calc(var(--lightness-accent) - 0.1)
       calc(c * var(--chroma-accent)) h
   ) !important;
+  --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --color-magenta: oklch(
     from var(--hue-magenta) var(--lightness) var(--chroma) h
   ) !important;
@@ -2415,7 +2416,6 @@ body.theme-dark {
   --img-border-color: oklch(
     from var(--background-tertiary) l var(--chroma) h
   ) !important;
-  --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --outline-color: oklch(from var(--base-accent) 25% c h) !important;
   --radius-xxs: var(--button-border-radius) !important;
   --retroma-folder-bg-color: var(--background-primary) !important;

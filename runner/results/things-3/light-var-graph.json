@@ -1572,7 +1572,10 @@
   },
   "--text-normal": { "body": ["--color-base-100"] },
   "--text-muted": { "body": ["--color-base-70"] },
-  "--text-faint": { "body": ["--color-base-50"] },
+  "--text-faint": {
+    "body": ["--color-base-50"],
+    "body.is-mobile.theme-dark": ["--icon-color"]
+  },
   "--text-error": { "body": ["--color-red"] },
   "--text-warning": { "body": ["--color-orange"] },
   "--text-success": { "body": ["--color-green"] },

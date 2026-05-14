@@ -73,5 +73,6 @@
     "hide-only-tab_interactive": {
       "general": ".hide-only-tab_interactive {\n--only-tab-background: transparent;\n--only-tab-background-hover: transparent;\n--only-tab-background-active: var(--background-hover);\n--only-tab-text: transparent;\n--only-tab-text-hover: var(--text-faint);\n--only-tab-close-button: var(--background-active);\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }

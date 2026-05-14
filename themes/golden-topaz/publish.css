@@ -1398,6 +1398,7 @@ body.theme-light {
   --zoom-factor: 1 !important;
   --background-accent: #e6eff4 !important;
   --interactive-accent-rgb: 70, 142, 235 !important;
+  --background-modifier-form-field-highlighted: #e6eff4 !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1412,7 +1413,6 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --accent-strong: #5667a4 !important;
   --text-error-hover: #4c5064 !important;
-  --background-modifier-form-field-highlighted: #e6eff4 !important;
   --light-purple: #b77dca !important;
   --light-yellow: #ffe168 !important;
   --folder-title: #4c5064 !important;
@@ -2523,6 +2523,7 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-accent: #786b54 !important;
   --interactive-accent-rgb: 45, 135, 211 !important;
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --h1-color: #d1ccbd !important;
   --h2-color: #d1ccbd !important;
   --h3-color: #d1ccbd !important;
@@ -2532,7 +2533,6 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --accent-strong: #786b54 !important;
   --text-error-hover: #e1b87f !important;
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --light-yellow: #e1b87f !important;
   --folder-title: #007672 !important;
   --mark-highlight: #007672 !important;

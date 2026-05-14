@@ -444,5 +444,46 @@
     "aura-toggle-metadata": {
       "general": ".aura-toggle-metadata .frontmatter-container {\ndisplay: none;\n}"
     }
+  },
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--h6-size": ["--callout-title-size"],
+    "--aura-workspace-background-workspace-slider-light": [
+      "--ribbon-background",
+      "--ribbon-background-collapsed",
+      "--titlebar-background",
+      "--titlebar-background-focused",
+      "--background-primary",
+      "--background-primary-alt",
+      "--background-secondary",
+      "--background-secondary-alt"
+    ],
+    "--aura-workspace-background-workspace-slider-dark": [
+      "--ribbon-background",
+      "--ribbon-background-collapsed",
+      "--titlebar-background",
+      "--titlebar-background-focused",
+      "--background-primary",
+      "--background-primary-alt",
+      "--background-secondary",
+      "--background-secondary-alt",
+      "--card-background-color"
+    ],
+    "--aura-colorful-frame-opacity": [
+      "--tab-container-background",
+      "--titlebar-background",
+      "--titlebar-background-focused",
+      "--tab-container-background-focused"
+    ],
+    "--font-default-custom": ["--font-default"],
+    "--font-monospace-custom": ["--font-monospace"],
+    "--font-secondary-custom": ["--font-secondary"],
+    "--aura-workspace-background-image-light-custom-option": [
+      "--workspace-background-image"
+    ],
+    "--aura-workspace-background-image-dark-custom-option": [
+      "--workspace-background-image"
+    ],
+    "--cpt-accent": ["--tab-container-background-focused"]
   }
 }

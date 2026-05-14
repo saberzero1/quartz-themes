@@ -1357,6 +1357,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --font-code: var(--interface-color-foreground-alt) !important;
   --interfa-color-icon: var(--interface-color-border) !important;
   --interface-color-action: var(--text-normal) !important;
   --interface-color-background-alt: #242424 !important;
@@ -1376,12 +1377,11 @@ body.theme-dark {
   --interface-color-three-dots: #21842e !important;
   --font-weight-normal: 400 !important;
   --font-family: Avenir, Avenir Next, sans-serif !important;
-  --font-code: var(--interface-color-foreground-alt) !important;
+  --font-line-height: 22px !important;
   --font-code-back: var(--interface-color-background-alt) !important;
   --font-a: #d88736 !important;
   --font-a-hover: #f8c38e !important;
   --font-color-text-normal: #c2c2c2 !important;
-  --font-line-height: 22px !important;
   --font-line-height-side: 17px !important;
   --font-selection: rgba(100, 110, 125, 0.7) !important;
   --font-size: 14.5px !important;

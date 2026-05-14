@@ -67,5 +67,6 @@
     "frontmatter-properties": {
       "general": ".frontmatter-properties .frontmatter.language-yaml {\ndisplay: none !important;\n}"
     }
-  }
+  },
+  "selectorImpacts": {}
 }
