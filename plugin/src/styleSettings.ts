@@ -269,24 +269,22 @@ export function processStyleSettings(
     }
   }
 
+  const settingIdToValue = new Map<string, string | number | boolean>();
+  const classSelectValues = new Set<string>();
+
   for (const [key, value] of Object.entries(settings)) {
     const matchedId = themeIds.find((id) => key.startsWith(`${id}@@`));
     if (!matchedId) continue;
     const settingId = key.slice(matchedId.length + 2);
+    settingIdToValue.set(settingId, value);
 
-    if (typeof value === "boolean") {
-      if (value && classSettingsMap?.[settingId]) {
-        emitClassSettingCSS(classSettingsMap[settingId], settingId, classCSS);
-      }
-      continue;
-    }
-
+    if (typeof value === "boolean") continue;
     if (typeof value === "string" && !value) continue;
 
     if (typeof value === "string" && classSettingsMap) {
       const entry = classSettingsMap[value];
       if (entry !== undefined) {
-        emitClassSettingCSS(entry, value, classCSS);
+        classSelectValues.add(value);
         continue;
       }
     }
@@ -306,6 +304,22 @@ export function processStyleSettings(
       lightVars.push(`  --${settingId}: ${value};`);
       darkVars.push(`  --${settingId}: ${value};`);
       overriddenVarNames.add(`--${settingId}`);
+    }
+  }
+
+  // Emit class-toggle/class-select CSS in classSettingsMap declaration order
+  // (not config key order). Obsidian injects snippets in Style Settings YAML
+  // declaration order, so later-declared settings win via CSS cascade.
+  if (classSettingsMap) {
+    for (const [classId, entry] of Object.entries(classSettingsMap)) {
+      const boolValue = settingIdToValue.get(classId);
+      if (boolValue === true) {
+        emitClassSettingCSS(entry, classId, classCSS);
+        continue;
+      }
+      if (classSelectValues.has(classId)) {
+        emitClassSettingCSS(entry, classId, classCSS);
+      }
     }
   }
 

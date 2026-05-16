@@ -75,6 +75,17 @@ function extractClassSettings(themeSlug, styleSettings) {
   if (classSettingIds.length === 0) return null;
 
   const css = readFileSync(cssPath, "utf8");
+
+  // Sort by first appearance in the CSS source so that emitted CSS respects
+  // the cascade order Obsidian uses (all classes on body, last declaration wins).
+  classSettingIds.sort((a, b) => {
+    const escA = a.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const escB = b.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const posA = css.search(new RegExp(`\\.${escA}(?=[\\s{,:]|$)`));
+    const posB = css.search(new RegExp(`\\.${escB}(?=[\\s{,:]|$)`));
+    return (posA === -1 ? Infinity : posA) - (posB === -1 ? Infinity : posB);
+  });
+
   const result = {};
   for (const classId of classSettingIds) {
     try {
