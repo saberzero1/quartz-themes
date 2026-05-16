@@ -307,16 +307,17 @@ export function processStyleSettings(
     }
   }
 
-  // Emit class-toggle/class-select CSS in classSettingsMap declaration order
-  // (not config key order). Obsidian injects snippets in Style Settings YAML
-  // declaration order, so later-declared settings win via CSS cascade.
+  // Emit class-toggle CSS first, then class-select CSS, both in declaration
+  // order. Class-select options are refinements of broader class-toggle
+  // settings (e.g. "tables-no-alt-background" overrides variables set by
+  // "drwn"), so they must appear later in the cascade to win.
   if (classSettingsMap) {
     for (const [classId, entry] of Object.entries(classSettingsMap)) {
-      const boolValue = settingIdToValue.get(classId);
-      if (boolValue === true) {
+      if (settingIdToValue.get(classId) === true) {
         emitClassSettingCSS(entry, classId, classCSS);
-        continue;
       }
+    }
+    for (const [classId, entry] of Object.entries(classSettingsMap)) {
       if (classSelectValues.has(classId)) {
         emitClassSettingCSS(entry, classId, classCSS);
       }
