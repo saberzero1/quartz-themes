@@ -4397,7 +4397,7 @@ body body.theme-light .metadata-container {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin: 0px 0px 24px;
+  margin: 0px 0px 32px;
   padding: 9.6px 16px 12.8px;
 }
 body body.theme-light .metadata-properties {
@@ -7232,7 +7232,7 @@ body body.theme-dark .metadata-container {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin: 0px 0px 24px;
+  margin: 0px 0px 32px;
   padding: 9.6px 16px 12.8px;
 }
 body body.theme-dark .metadata-properties {

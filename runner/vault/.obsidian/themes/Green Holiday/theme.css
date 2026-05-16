@@ -1,6 +1,7 @@
 /* ============================================================
    Green Holiday — Obsidian Theme
    A lime green tinted theme for focused writing.
+   Version: 0.2.1
    ============================================================ */
 
 /* ── Dark Mode ─────────────────────────────────────────────── */
@@ -28,9 +29,9 @@
   --interactive-accent: #6bfa6e;
   --interactive-accent-hover: #8ffb91;
 
-  --background-modifier-border:        #3e7840;
-  --background-modifier-border-hover:  #548e56;
-  --divider-color:                     #3e7840;
+  --background-modifier-border: #3e7840;
+  --background-modifier-border-hover: #548e56;
+  --divider-color: #3e7840;
 
   --tag-background: rgba(107, 250, 110, 0.1);
   --tag-background-hover: rgba(107, 250, 110, 0.2);
@@ -108,7 +109,9 @@
   background:
     radial-gradient(circle, rgba(0, 80, 0, 0.25) 1px, transparent 1px),
     linear-gradient(to bottom, #e2fce2 0%, #6bfa6e 100%) !important;
-  background-size: 20px 20px, 100% 100% !important;
+  background-size:
+    20px 20px,
+    100% 100% !important;
 }
 .theme-light .markdown-source-view.mod-cm6,
 .theme-light .cm-editor,
@@ -125,7 +128,9 @@
   background:
     radial-gradient(circle, rgba(100, 255, 100, 0.18) 1px, transparent 1px),
     linear-gradient(to bottom, #0d2210 0%, #234824 100%) !important;
-  background-size: 20px 20px, 100% 100% !important;
+  background-size:
+    20px 20px,
+    100% 100% !important;
 }
 .theme-dark .markdown-source-view.mod-cm6,
 .theme-dark .cm-editor,
@@ -159,39 +164,12 @@ body {
   color: #6bfa6e !important;
 }
 
-/* ── Headings spacing ────────────────────────────────────────── */
-
-/* Reading mode */
-.markdown-preview-view h1, .markdown-rendered h1 { margin-top: 1.5em; margin-bottom: 0.75em; }
-.markdown-preview-view h2, .markdown-rendered h2 { margin-top: 1.5em; margin-bottom: 0.5em; }
-.markdown-preview-view h3, .markdown-rendered h3 { margin-top: 1.25em; margin-bottom: 0.4em; }
-.markdown-preview-view h4, .markdown-rendered h4,
-.markdown-preview-view h5, .markdown-rendered h5,
-.markdown-preview-view h6, .markdown-rendered h6 { margin-top: 1em; margin-bottom: 0.3em; }
-.markdown-preview-view p, .markdown-rendered p { margin-bottom: 0.75em; }
-
-/* Live preview (CM6) */
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
-  margin-top: 0 !important;
-  margin-bottom: 0.4em !important;
-}
-
-.markdown-source-view.mod-cm6 .cm-content .cm-line:not([class*="HyperMD"]) {
-  margin-bottom: 0.3em !important;
-}
-
 /* ── Properties (frontmatter metadata) ─────────────────────── */
 .metadata-container {
   background-color: rgba(0, 80, 0, 0.06);
   border: 1px solid rgba(0, 80, 0, 0.12);
   border-radius: 8px;
   padding: 0.6em 1em 0.8em;
-  margin-bottom: 1.5em;
 }
 
 .theme-dark .metadata-container {
@@ -349,10 +327,14 @@ body {
 }
 
 /* ── Active line highlight: コードブロック内のみ ────────────── */
-.theme-dark .markdown-source-view.cm-s-obsidian.mod-cm6 .cm-active.cm-line.HyperMD-codeblock {
+.theme-dark
+  .markdown-source-view.cm-s-obsidian.mod-cm6
+  .cm-active.cm-line.HyperMD-codeblock {
   background-color: #1a3318;
 }
-.theme-light .markdown-source-view.cm-s-obsidian.mod-cm6 .cm-active.cm-line.HyperMD-codeblock {
+.theme-light
+  .markdown-source-view.cm-s-obsidian.mod-cm6
+  .cm-active.cm-line.HyperMD-codeblock {
   background-color: #224422;
 }
 
@@ -377,7 +359,7 @@ body {
 
 /* ── Code block border: ダークモードのみ ────────────────────── */
 .theme-dark .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  border-left:  1px solid #346636;
+  border-left: 1px solid #346636;
   border-right: 1px solid #346636;
 }
 .theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {

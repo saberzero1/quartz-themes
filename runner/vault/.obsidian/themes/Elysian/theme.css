@@ -129,6 +129,7 @@ body {
 	--checkbox-border-color: var(--light-theme-white);
 	--collapse-icon-color-collapsed: var(--text-theme-dark);
 	--inline-title-font: "Sans Condensed Black";
+	--inline-title-color: var(--dark-theme-black);
 }
 
 .theme-light{
@@ -144,6 +145,7 @@ body {
 	--canvas-dot-pattern: var(--light-theme-black);
 	--collapse-icon-color-collapsed: var(--text-theme-light);
 	--inline-title-font: "Roboto Light";
+	--inline-title-color: var(--light-theme-white);
 }
 
 
@@ -176,13 +178,11 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 /* Inline title*/
 .theme-dark .inline-title{
 	background-color: var(--light-theme-white);
-	color: var(--dark-theme-black);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
 
 .theme-light .inline-title {
-	color: var(--light-theme-white);
 	background-color: #495050;
 	text-transform: uppercase;
 	font-weight: 100;

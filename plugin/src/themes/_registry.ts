@@ -1736,6 +1736,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["jost", "satoshi", "syne", "jetbrains-mono"],
   },
   molecule: { name: "molecule", modes: ["dark"], variations: [], fonts: [] },
+  "monkey-king": {
+    name: "monkey-king",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "mono-black-monochrome-charcoal": {
     name: "mono-black-monochrome-charcoal",
     modes: ["dark"],

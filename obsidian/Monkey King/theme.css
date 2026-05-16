@@ -1,0 +1,2639 @@
+@charset "UTF-8";
+/* @settings
+name: Monkey King Theme
+id: monkey-king-theme
+settings:
+    -
+        id: h-sec-stage
+        title: 短诗定场
+        description: 仙山灵石，久孕猿猴，碎开新篇。
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: h-note-fontpack-quick
+        title: 必读：预设字体
+        type: info-text
+        markdown: true
+        description: "本主题搭配了多款免费字体，预设字体缺失会**明显影响观感**。请先下载安装字体包：[主链Github](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) ｜ [备用123网盘](https://www.123865.com/s/b62hTd-lg8Hv)。安装后建议*重启 Obsidian*。"
+    -
+        id: h-note-mode-huaguo
+        title: 一条涧壑藤萝密，四面原堤草色新。
+        type: info-text
+    -
+        id: h-note-mode-hall
+        title: 金钉攒玉户，彩凤舞朱门。
+        type: info-text
+    -
+        id: style-mode
+        title: ① 搭台布景
+        type: class-select
+        default: 'style-huaguo-mount'
+        description: 先定场景：花果山偏灵动，凌霄宝殿偏肃整。
+        options:
+            -
+                label: "花果山"
+                value: 'style-huaguo-mount'
+            -
+                label: "凌霄宝殿"
+                value: 'style-great-hall'
+    -
+        id: color-scheme-light
+        title: ② 登台亮相
+        type: class-select
+        default: 'scheme-monkey'
+        description: 再定昼光下的主色走向。
+        options:
+            -
+                label: "美猴王"
+                value: 'scheme-monkey'
+            -
+                label: "哪吒"
+                value: 'scheme-kid'
+    -
+        id: color-scheme-dark
+        title: ② 登台亮相
+        type: class-select
+        default: 'scheme-lord'
+        description: 再定夜色下的主色走向。
+        options:
+            -
+                label: "太上老君"
+                value: 'scheme-lord'
+            -
+                label: "李天王"
+                value: 'scheme-pagoda'
+    -
+        id: u-font-theme-zh
+        title: ③ 念白开场
+        description: 最后确定正文的字体
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: h-sec-optimize
+        title: 看桃放马
+        description: 恭恭敬敬，规规矩矩，小打小闹。
+        type: heading
+        level: 1
+        collapsed: true
+
+    -
+            id: bg-tune-override
+            title: 亲调天光
+            type: class-toggle
+            default: false
+            description: 关闭时跟随默认背景；开启后使用滑块微调背景。
+    -
+            id: u-bg-tune
+            title: 天光偏移
+            type: variable-number-slider
+            default: 0
+            min: -20
+            max: 20
+            step: 1
+            description: 微调背景与文字的对比度，0 为不偏移。
+    -
+        id: gap-strategy
+        title: 疏密有致
+        type: class-select
+        default: 'gap-auto'
+        description: 调整元素间距。
+        options:
+            -
+                label: "顺应场景"
+                value: 'gap-auto'
+            -
+                label: "舒展"
+                value: 'gap-loose'
+            -
+                label: "利落"
+                value: 'gap-compact'
+    -
+        id: line-width-strategy
+        title: 线条浓淡
+        type: class-select
+        default: 'line-width-auto'
+        description: 控制分隔线、表格边线、链接下划线等线条强度。
+        options:
+            -
+                label: "顺应场景"
+                value: 'line-width-auto'
+            -
+                label: "纤细"
+                value: 'line-width-thin'
+            -
+                label: "平衡"
+                value: 'line-width-regular'
+            -
+                label: "浓重"
+                value: 'line-width-bold'
+    -
+        id: h-sec-advance
+        title: 大闹天宫
+        type: heading
+        level: 1
+        collapsed: true
+        description: 踢丹炉，碎金匾，铁棒到处生烟。
+    -
+        id: h-group-editor
+        title: 编辑器
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h-note-limitation
+        title: 注意
+        type: info-text
+        description: 目前只实现了对元素的字体调整。
+    -
+        id: h-note-fontpack-advanced
+        title: 预设字库下载
+        type: info-text
+        markdown: true
+        description: "若风格与预期不符，请先安装预设字体包：[主链Github](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) ｜ [备用123网盘](https://www.123865.com/s/b62hTd-lg8Hv) 。"
+    -
+        id: h-group-font-base
+        title: 正文与代码
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: cancel-font-override
+        title: 回归原本
+        type: class-toggle
+        default: false
+        description: 关闭：在style-setting设置正文和代码字体。开启：改用你在设置面板中设置的字体。
+    -
+        id: h-sub-font-theme
+        title: 正文
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: u-font-theme-west
+        title: 正文西文
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "衬线"
+                value: 'var(--stack-serif)'
+            -   
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: font-theme-zh-placeholder
+        title: 正文中文
+        type: variable-text
+        default: ""
+        description: 已在前方“③ 念白开场”设置，这里不重复提供。
+    -
+        id: font-stack-override-theme
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+    -
+        id: u-font-stack-theme
+        title: 字体栈（CSS）
+        type: variable-text
+        default: initial
+        description: 直接填写完整 font-family 字体栈。
+    -
+        id: u-font-theme-weight
+        title: 正文字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    -
+        id: h-sub-font-mono
+        title: 代码
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: u-font-mono-west
+        title: 代码西文
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "衬线"
+                value: 'var(--stack-serif)'
+            -   
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: u-font-mono-zh
+        title: 代码中文
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: font-stack-override-mono
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+    -
+        id: u-font-stack-mono
+        title: 字体栈（CSS）
+        type: variable-text
+        default: "var(--res-font-mono-west), var(--res-font-mono-zh)"
+        description: 直接填写完整 font-family 字体栈。
+    -
+        id: u-font-mono-weight
+        title: 代码字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    -
+        id: h-group-font-headings
+        title: 标题
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: u-font-headings-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: u-font-headings-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: font-stack-override-headings
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+    -
+        id: u-font-stack-headings
+        title: 字体栈（CSS）
+        type: variable-text
+        default: "var(--res-font-headings-west), var(--res-font-headings-zh)"
+        description: 直接填写完整 font-family 字体栈。
+    -
+        id: u-font-headings-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    -
+        id: h-group-font-quote
+        title: 引用块
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: u-font-quote-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: u-font-quote-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: font-stack-override-quote
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+    -
+        id: u-font-stack-quote
+        title: 字体栈（CSS）
+        type: variable-text
+        default: "var(--res-font-quote-west), var(--res-font-quote-zh)"
+        description: 直接填写完整 font-family 字体栈。
+    -
+        id: u-font-quote-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    -
+        id: h-group-font-em
+        title: 强调块（*text*）
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: u-font-em-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: u-font-em-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: font-stack-override-em
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+    -
+        id: u-font-stack-em
+        title: 字体栈（CSS）
+        type: variable-text
+        default: "var(--res-font-em-west), var(--res-font-em-zh)"
+        description: 直接填写完整 font-family 字体栈。
+    -
+        id: u-font-em-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    -
+        id: h-group-font-strong
+        title: 加重块（**text**）
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: u-font-strong-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: u-font-strong-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+            - 
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: font-stack-override-strong
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+    -
+        id: u-font-stack-strong
+        title: 字体栈（CSS）
+        type: variable-text
+        default: "var(--res-font-strong-west), var(--res-font-strong-zh)"
+        description: 直接填写完整 font-family 字体栈。
+    -
+        id: u-font-strong-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    -
+        id: h-group-font-table
+        title: 表格表头
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: u-font-th-west
+        title: 表头西文
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "衬线"
+                value: 'var(--stack-serif)'
+            -
+                label: "非衬线"
+                value: 'var(--stack-sans)'
+            -
+                label: "手写体"
+                value: 'var(--stack-hand)'
+            -
+                label: "系统衬线斜体"
+                value: 'var(--stack-serif-i)'
+            -
+                label: "系统非衬线斜体"
+                value: 'var(--stack-sans-i)'
+    -
+        id: u-font-th-zh
+        title: 表头中文
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "黑体"
+                value: 'var(--stack-hei)'
+            -
+                label: "宋体"
+                value: 'var(--stack-song)'
+            -
+                label: "楷体"
+                value: 'var(--stack-kai)'
+            -
+                label: "仿宋"
+                value: 'var(--stack-fang)'
+    -
+        id: u-font-th-weight
+        title: 表头字重
+        type: variable-select
+        default: initial
+        options:
+            -
+                label: "顺应场景"
+                value: initial
+            -
+                label: "细体 300"
+                value: 300
+            -
+                label: "常规 400"
+                value: 400
+            -
+                label: "中等 500"
+                value: 500
+            -
+                label: "半粗 600"
+                value: 600
+            -
+                label: "粗体 700"
+                value: 700
+            -
+                label: "特粗 800"
+                value: 800
+            -
+                label: "黑体 900"
+                value: 900
+    - 
+        id: h-group-navigation
+        title: 导航栏
+        type: heading
+        description: 针对文件夹，书签，搜索，链接，标签等导航栏的样式。
+        level: 2
+        collapsed: true
+    - 
+        id: cancel-nav-item-rotate
+        title: 取消导航项悬停动效
+        type: class-toggle
+        default: false
+        description: 关闭：导航项在悬停时会有旋转的动效。开启：取消悬停动效，回归默认静态样式。
+    - 
+        id: cancel-nav-item-color
+        title: 取消导航项强调色
+        type: class-toggle
+        default: false
+        description: 关闭：导航项使用主题强调色。开启：回归阴影颜色。
+*/
+@font-face {
+  font-family: "SystemHei";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Han Sans SC"), local("Noto Sans SC"), local("PingFang SC"), local("Hiragino Sans GB"), local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("SimHei");
+}
+@font-face {
+  font-family: "SystemSong";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Han Serif SC"), local("Noto Serif SC"), local("Songti SC"), local("STSong"), local("SimSun"), local("NSimSun");
+}
+@font-face {
+  font-family: "SystemKai";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaiti SC"), local("STKaiti"), local("KaiTi"), local("KaiTi_GB2312");
+}
+@font-face {
+  font-family: "SystemFang";
+  font-style: normal;
+  font-weight: 400;
+  src: local("STFangsong"), local("FangSong"), local("FangSong_GB2312");
+}
+@font-face {
+  font-family: "SystemHei";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Source Han Sans SC Bold"), local("SourceHanSansSC-Bold"), local("Noto Sans SC Bold"), local("NotoSansSC-Bold"), local("PingFang SC Semibold"), local("PingFang SC Bold"), local("PingFangSC-Semibold"), local("Hiragino Sans GB W6"), local("Microsoft YaHei Bold"), local("Microsoft YaHei-Bold"), local("Microsoft YaHei UI Bold");
+}
+@font-face {
+  font-family: "SystemSong";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold"), local("Songti SC Bold"), local("Songti-SC-Bold");
+}
+@font-face {
+  font-family: "SystemSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Segoe UI"), local("Roboto"), local("Oxygen"), local("Ubuntu"), local("Cantarell"), local("Fira Sans"), local("Droid Sans"), local("Helvetica Neue"), local("Helvetica"), local("Arial"), local("Verdana"), local("Tahoma");
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemSerif";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Georgia"), local("Charter"), local("Bitstream Charter"), local("Times New Roman"), local("Times");
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemHand";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bradley Hand"), local("Bradley Hand IT Mirror"), local("Chalkboard SE"), local("Hannotate SC"), local("Wawati SC"), local("Segoe Print"), local("Ink Free"), local("Gabriola"), local("Comic Sans MS");
+  size-adjust: 92%;
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemCursive";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Snell Roundhand"), local("Savoye LET"), local("Zapfino"), local("Kunstler Script"), local("Edwardian Script ITC"), local("Vladimir Script"), local("Mistral"), local("Script MT Bold");
+  size-adjust: 92%;
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemSans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Segoe UI Bold"), local("Segoe UI-Bold"), local("Roboto Bold"), local("Roboto-Bold"), local("Oxygen Bold"), local("Oxygen-Bold"), local("Ubuntu Bold"), local("Ubuntu-Bold"), local("Cantarell Bold"), local("Cantarell-Bold"), local("Fira Sans Bold"), local("Fira Sans-Bold"), local("Droid Sans Bold"), local("Droid Sans-Bold"), local("Helvetica Neue Bold"), local("Helvetica Neue-Bold"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Arial Bold"), local("Arial-Bold"), local("Verdana Bold"), local("Verdana-Bold"), local("Tahoma Bold"), local("Tahoma-Bold");
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemSerif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Georgia Bold"), local("Georgia-Bold"), local("Charter Bold"), local("Charter-Bold"), local("Bitstream Charter Bold"), local("Bitstream Charter-Bold"), local("Times New Roman Bold"), local("Times New Roman-Bold"), local("Times Bold"), local("Times-Bold");
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemSansItalic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Segoe UI Italic"), local("Segoe UI-Italic"), local("Roboto Italic"), local("Roboto-Italic"), local("Oxygen Italic"), local("Oxygen-Italic"), local("Ubuntu Italic"), local("Ubuntu-Italic"), local("Cantarell Italic"), local("Cantarell-Italic"), local("Fira Sans Italic"), local("Fira Sans-Italic"), local("Droid Sans Italic"), local("Droid Sans-Italic"), local("Helvetica Neue Italic"), local("Helvetica Neue-Italic"), local("Helvetica Italic"), local("Helvetica-Italic"), local("Arial Italic"), local("Arial-Italic"), local("Verdana Italic"), local("Verdana-Italic"), local("Tahoma Italic"), local("Tahoma-Italic");
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+@font-face {
+  font-family: "SystemSerifItalic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Georgia Italic"), local("Georgia-Italic"), local("Charter Italic"), local("Charter-Italic"), local("Bitstream Charter Italic"), local("Bitstream Charter-Italic"), local("Times New Roman Italic"), local("Times New Roman-Italic"), local("Times Italic"), local("Times-Italic");
+  unicode-range: U+0000-007F, U+0080-00B6, U+00B8-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-2013, U+2100-214F;
+}
+/* --------------------------------------------------------
+  1) style-* 模式注入
+-------------------------------------------------------- */
+body.style-huaguo-mount {
+  --preset-stack-hei: "HONOR Sans CN";
+  --preset-stack-song: "屏显臻宋";
+  --preset-stack-kai: "Yozai";
+  --preset-stack-fang: "朱雀仿宋（预览测试版）";
+  --preset-stack-serif: "";
+  --preset-stack-sans: "";
+  --preset-stack-hand: "";
+  --preset-font-interface-weight: normal;
+  --preset-font-theme-zh: var(--stack-song);
+  --preset-font-theme-weight: normal;
+  --preset-font-headings-west: var(--stack-sans);
+  --preset-font-headings-zh: var(--stack-hei);
+  --preset-font-headings-weight: 900;
+  --preset-font-quote-west: var(--stack-hand);
+  --preset-font-quote-zh: var(--stack-kai);
+  --preset-font-quote-weight: normal;
+  --preset-font-th-zh: var(--stack-hei);
+  --preset-font-th-weight: 700;
+  --preset-font-em-west: var(--stack-sans-i);
+  --preset-font-em-zh: var(--stack-kai);
+  --preset-font-em-weight: 600;
+  --preset-font-strong-zh: var(--stack-hei);
+  --preset-font-strong-weight: 700;
+  --preset-font-tag-west: var(--stack-hei);
+  --preset-font-tag-zh: var(--stack-hei);
+  --preset-font-tag-weight: normal;
+  --preset-gap-p-line-height: 12;
+  --preset-gap-p-spacing: 12;
+  --preset-gap-h1-font-size: 14;
+  --preset-gap-h1-line-height: 18;
+  --preset-gap-h1-margin-top: 9;
+  --preset-gap-h1-margin-bottom: 2;
+  --preset-gap-h2-font-size: 12;
+  --preset-gap-h2-line-height: 16;
+  --preset-gap-h2-margin-top: 7;
+  --preset-gap-h2-margin-bottom: 2;
+  --preset-gap-h3-font-size: 11;
+  --preset-gap-h3-line-height: 15;
+  --preset-gap-h3-margin-top: 6;
+  --preset-gap-h3-margin-bottom: 1;
+  --preset-gap-h4-font-size: 10;
+  --preset-gap-h4-line-height: 14;
+  --preset-gap-h4-margin-top: 5;
+  --preset-gap-h4-margin-bottom: 1;
+  --preset-gap-h5-font-size: 9;
+  --preset-gap-h5-line-height: 13;
+  --preset-gap-h5-margin-top: 4;
+  --preset-gap-h5-margin-bottom: 0;
+  --preset-gap-h6-font-size: 8;
+  --preset-gap-h6-line-height: 12;
+  --preset-gap-h6-margin-top: 4;
+  --preset-gap-h6-margin-bottom: 0;
+  --preset-gap-list-margin-block-start: -12;
+  --preset-radius-s: 8px;
+  --preset-radius-m: 12px;
+  --preset-radius-l: 16px;
+  --preset-radius-xl: 18px;
+}
+
+body.style-great-hall {
+  --preset-stack-hei: "MiSans";
+  --preset-stack-song: "GenWanMin2 JP";
+  --preset-stack-kai: "霞鹜文楷";
+  --preset-stack-fang: "朱雀仿宋（预览测试版）";
+  --preset-stack-serif: "";
+  --preset-stack-sans: "";
+  --preset-stack-hand: "";
+  --preset-font-interface-weight: normal;
+  --preset-font-theme-zh: var(--stack-song);
+  --preset-font-theme-weight: normal;
+  --preset-font-headings-zh: var(--stack-fang);
+  --preset-font-headings-weight: normal;
+  --preset-font-quote-west: var(--stack-hand);
+  --preset-font-quote-zh: var(--stack-kai);
+  --preset-font-quote-weight: normal;
+  --preset-font-th-zh: var(--stack-hei);
+  --preset-font-th-weight: 500;
+  --preset-font-em-west: var(--stack-serif-i);
+  --preset-font-em-zh: var(--stack-kai);
+  --preset-font-em-weight: normal;
+  --preset-font-strong-zh: var(--stack-hei);
+  --preset-font-strong-weight: 500;
+  --preset-font-tag-west: var(--stack-hei);
+  --preset-font-tag-zh: var(--stack-hei);
+  --preset-font-tag-weight: normal;
+  --preset-gap-p-line-height: 14;
+  --preset-gap-p-spacing: 14;
+  --preset-gap-h1-font-size: 14;
+  --preset-gap-h1-line-height: 20;
+  --preset-gap-h1-margin-top: 18;
+  --preset-gap-h1-margin-bottom: 18;
+  --preset-gap-h2-font-size: 12;
+  --preset-gap-h2-line-height: 18;
+  --preset-gap-h2-margin-top: 12;
+  --preset-gap-h2-margin-bottom: 12;
+  --preset-gap-h3-font-size: 11;
+  --preset-gap-h3-line-height: 17;
+  --preset-gap-h3-margin-top: 13;
+  --preset-gap-h3-margin-bottom: 12;
+  --preset-gap-h4-font-size: 10;
+  --preset-gap-h4-line-height: 16;
+  --preset-gap-h4-margin-top: 15;
+  --preset-gap-h4-margin-bottom: 11;
+  --preset-gap-h5-font-size: 9;
+  --preset-gap-h5-line-height: 15;
+  --preset-gap-h5-margin-top: 7;
+  --preset-gap-h5-margin-bottom: 6;
+  --preset-gap-h6-font-size: 8;
+  --preset-gap-h6-line-height: 14;
+  --preset-gap-h6-margin-top: 9;
+  --preset-gap-h6-margin-bottom: 5;
+  --preset-gap-list-margin-block-start: 14;
+  --preset-radius-s: 0px;
+  --preset-radius-m: 0px;
+  --preset-radius-l: 0px;
+  --preset-radius-xl: 0px;
+}
+
+/* --------------------------------------------------------
+  2) 无 style setting 时的默认模式
+-------------------------------------------------------- */
+body:not(.css-settings-manager) {
+  --preset-stack-hei: "HONOR Sans CN";
+  --preset-stack-song: "屏显臻宋";
+  --preset-stack-kai: "Yozai";
+  --preset-stack-fang: "朱雀仿宋（预览测试版）";
+  --preset-stack-serif: "";
+  --preset-stack-sans: "";
+  --preset-stack-hand: "";
+  --preset-font-interface-weight: normal;
+  --preset-font-theme-zh: var(--stack-song);
+  --preset-font-theme-weight: normal;
+  --preset-font-headings-west: var(--stack-sans);
+  --preset-font-headings-zh: var(--stack-hei);
+  --preset-font-headings-weight: 900;
+  --preset-font-quote-west: var(--stack-hand);
+  --preset-font-quote-zh: var(--stack-kai);
+  --preset-font-quote-weight: normal;
+  --preset-font-th-zh: var(--stack-hei);
+  --preset-font-th-weight: 700;
+  --preset-font-em-west: var(--stack-sans-i);
+  --preset-font-em-zh: var(--stack-kai);
+  --preset-font-em-weight: 600;
+  --preset-font-strong-zh: var(--stack-hei);
+  --preset-font-strong-weight: 700;
+  --preset-font-tag-west: var(--stack-hei);
+  --preset-font-tag-zh: var(--stack-hei);
+  --preset-font-tag-weight: normal;
+  --preset-gap-p-line-height: 12;
+  --preset-gap-p-spacing: 12;
+  --preset-gap-h1-font-size: 14;
+  --preset-gap-h1-line-height: 18;
+  --preset-gap-h1-margin-top: 9;
+  --preset-gap-h1-margin-bottom: 2;
+  --preset-gap-h2-font-size: 12;
+  --preset-gap-h2-line-height: 16;
+  --preset-gap-h2-margin-top: 7;
+  --preset-gap-h2-margin-bottom: 2;
+  --preset-gap-h3-font-size: 11;
+  --preset-gap-h3-line-height: 15;
+  --preset-gap-h3-margin-top: 6;
+  --preset-gap-h3-margin-bottom: 1;
+  --preset-gap-h4-font-size: 10;
+  --preset-gap-h4-line-height: 14;
+  --preset-gap-h4-margin-top: 5;
+  --preset-gap-h4-margin-bottom: 1;
+  --preset-gap-h5-font-size: 9;
+  --preset-gap-h5-line-height: 13;
+  --preset-gap-h5-margin-top: 4;
+  --preset-gap-h5-margin-bottom: 0;
+  --preset-gap-h6-font-size: 8;
+  --preset-gap-h6-line-height: 12;
+  --preset-gap-h6-margin-top: 4;
+  --preset-gap-h6-margin-bottom: 0;
+  --preset-gap-list-margin-block-start: -12;
+  --preset-radius-s: 8px;
+  --preset-radius-m: 12px;
+  --preset-radius-l: 16px;
+  --preset-radius-xl: 18px;
+}
+
+/* --------------------------------------------------------
+  3) 手动 gap 策略覆盖
+-------------------------------------------------------- */
+body.gap-loose {
+  --preset-gap-p-line-height: 14;
+  --preset-gap-p-spacing: 14;
+  --preset-gap-h1-font-size: 14;
+  --preset-gap-h1-line-height: 20;
+  --preset-gap-h1-margin-top: 18;
+  --preset-gap-h1-margin-bottom: 18;
+  --preset-gap-h2-font-size: 12;
+  --preset-gap-h2-line-height: 18;
+  --preset-gap-h2-margin-top: 12;
+  --preset-gap-h2-margin-bottom: 12;
+  --preset-gap-h3-font-size: 11;
+  --preset-gap-h3-line-height: 17;
+  --preset-gap-h3-margin-top: 13;
+  --preset-gap-h3-margin-bottom: 12;
+  --preset-gap-h4-font-size: 10;
+  --preset-gap-h4-line-height: 16;
+  --preset-gap-h4-margin-top: 15;
+  --preset-gap-h4-margin-bottom: 11;
+  --preset-gap-h5-font-size: 9;
+  --preset-gap-h5-line-height: 15;
+  --preset-gap-h5-margin-top: 7;
+  --preset-gap-h5-margin-bottom: 6;
+  --preset-gap-h6-font-size: 8;
+  --preset-gap-h6-line-height: 14;
+  --preset-gap-h6-margin-top: 9;
+  --preset-gap-h6-margin-bottom: 5;
+  --preset-gap-list-margin-block-start: 14;
+}
+
+body.gap-compact {
+  --preset-gap-p-line-height: 12;
+  --preset-gap-p-spacing: 12;
+  --preset-gap-h1-font-size: 14;
+  --preset-gap-h1-line-height: 18;
+  --preset-gap-h1-margin-top: 9;
+  --preset-gap-h1-margin-bottom: 2;
+  --preset-gap-h2-font-size: 12;
+  --preset-gap-h2-line-height: 16;
+  --preset-gap-h2-margin-top: 7;
+  --preset-gap-h2-margin-bottom: 2;
+  --preset-gap-h3-font-size: 11;
+  --preset-gap-h3-line-height: 15;
+  --preset-gap-h3-margin-top: 6;
+  --preset-gap-h3-margin-bottom: 1;
+  --preset-gap-h4-font-size: 10;
+  --preset-gap-h4-line-height: 14;
+  --preset-gap-h4-margin-top: 5;
+  --preset-gap-h4-margin-bottom: 1;
+  --preset-gap-h5-font-size: 9;
+  --preset-gap-h5-line-height: 13;
+  --preset-gap-h5-margin-top: 4;
+  --preset-gap-h5-margin-bottom: 0;
+  --preset-gap-h6-font-size: 8;
+  --preset-gap-h6-line-height: 12;
+  --preset-gap-h6-margin-top: 4;
+  --preset-gap-h6-margin-bottom: 0;
+  --preset-gap-list-margin-block-start: -12;
+}
+
+/* --------------------------------------------------------
+  4) 配色注入 (theme + scheme)
+-------------------------------------------------------- */
+body.theme-light.scheme-monkey {
+  --preset-bg0-h: 51.67deg;
+  --preset-bg0-s: 72%;
+  --preset-bg0-l: 90.2%;
+  --preset-bg1-h: 45deg;
+  --preset-bg1-s: 42.11%;
+  --preset-bg1-l: 92.55%;
+  --preset-bg2-h: 127.89deg;
+  --preset-bg2-s: 51.35%;
+  --preset-bg2-l: 85.49%;
+  --preset-bg3-h: 140.25deg;
+  --preset-bg3-s: 32.79%;
+  --preset-bg3-l: 52.16%;
+  --preset-bg4-h: 44.77deg;
+  --preset-bg4-s: 100%;
+  --preset-bg4-l: 74.51%;
+  --preset-tx1: #000000;
+  --preset-tx2: #212121;
+  --preset-tx3: #404040;
+  --preset-tx-sup: #5b7163;
+  --preset-tx-strong: #03632b;
+  --preset-tx-accent: hsl(357, 63%, 40%);
+  --preset-ax0: hsl(357, 70%, 46%);
+  --preset-ax0-rgb: 199, 35, 43;
+  --preset-ax0-h: 357;
+  --preset-ax0-s: 70%;
+  --preset-ax0-l: 46%;
+}
+
+body.theme-light.scheme-kid {
+  --preset-bg0-h: 18deg;
+  --preset-bg0-s: 88%;
+  --preset-bg0-l: 91%;
+  --preset-bg1-h: 6deg;
+  --preset-bg1-s: 84%;
+  --preset-bg1-l: 88%;
+  --preset-bg2-h: 16deg;
+  --preset-bg2-s: 68%;
+  --preset-bg2-l: 79%;
+  --preset-bg3-h: 44deg;
+  --preset-bg3-s: 72%;
+  --preset-bg3-l: 50%;
+  --preset-bg4-h: 0deg;
+  --preset-bg4-s: 83%;
+  --preset-bg4-l: 60%;
+  --preset-tx1: #000000;
+  --preset-tx2: #212121;
+  --preset-tx3: #404040;
+  --preset-tx-sup: #a36947;
+  --preset-tx-strong: #9c0606;
+  --preset-tx-accent: hsl(264, 92%, 23%);
+  --preset-ax0: hsl(265, 53%, 32%);
+  --preset-ax0-rgb: 74, 38, 125;
+  --preset-ax0-h: 265;
+  --preset-ax0-s: 53%;
+  --preset-ax0-l: 32%;
+}
+
+body.theme-dark.scheme-lord {
+  --preset-bg0-h: 203deg;
+  --preset-bg0-s: 10%;
+  --preset-bg0-l: 8%;
+  --preset-bg1-h: 0deg;
+  --preset-bg1-s: 6%;
+  --preset-bg1-l: 16%;
+  --preset-bg2-h: 16deg;
+  --preset-bg2-s: 63%;
+  --preset-bg2-l: 15%;
+  --preset-bg3-h: 16deg;
+  --preset-bg3-s: 88%;
+  --preset-bg3-l: 6%;
+  --preset-bg4-h: 203deg;
+  --preset-bg4-s: 100%;
+  --preset-bg4-l: 15%;
+  --preset-tx1: #ebebeb;
+  --preset-tx2: #dadada;
+  --preset-tx3: #b3b3b3;
+  --preset-tx-sup: #8b7d57;
+  --preset-tx-strong: #e00623;
+  --preset-tx-accent: hsl(192, 77%, 54%);
+  --preset-ax0: hsl(192, 82%, 63%);
+  --preset-ax0-rgb: 83, 207, 238;
+  --preset-ax0-h: 192;
+  --preset-ax0-s: 82%;
+  --preset-ax0-l: 63%;
+}
+
+body.theme-dark.scheme-pagoda {
+  --preset-bg0-h: 358deg;
+  --preset-bg0-s: 0%;
+  --preset-bg0-l: 6%;
+  --preset-bg1-h: 358deg;
+  --preset-bg1-s: 72%;
+  --preset-bg1-l: 22%;
+  --preset-bg2-h: 358deg;
+  --preset-bg2-s: 72%;
+  --preset-bg2-l: 22%;
+  --preset-bg3-h: 0deg;
+  --preset-bg3-s: 0%;
+  --preset-bg3-l: 0%;
+  --preset-bg4-h: 147deg;
+  --preset-bg4-s: 85%;
+  --preset-bg4-l: 16%;
+  --preset-tx1: #ebebeb;
+  --preset-tx2: #d9d9d9;
+  --preset-tx3: #b3b3b3;
+  --preset-tx-sup: #a86871;
+  --preset-tx-strong: #00ad4e;
+  --preset-tx-accent: hsl(56, 61%, 56%);
+  --preset-ax0: hsl(56, 84%, 63%);
+  --preset-ax0-rgb: 211, 202, 74;
+  --preset-ax0-h: 56;
+  --preset-ax0-s: 84%;
+  --preset-ax0-l: 63%;
+}
+
+/* --------------------------------------------------------
+  5) 每个 theme mode 的默认配色
+-------------------------------------------------------- */
+body.theme-light:not(.css-settings-manager) {
+  --preset-bg0-h: 51.67deg;
+  --preset-bg0-s: 72%;
+  --preset-bg0-l: 90.2%;
+  --preset-bg1-h: 45deg;
+  --preset-bg1-s: 42.11%;
+  --preset-bg1-l: 92.55%;
+  --preset-bg2-h: 127.89deg;
+  --preset-bg2-s: 51.35%;
+  --preset-bg2-l: 85.49%;
+  --preset-bg3-h: 140.25deg;
+  --preset-bg3-s: 32.79%;
+  --preset-bg3-l: 52.16%;
+  --preset-bg4-h: 44.77deg;
+  --preset-bg4-s: 100%;
+  --preset-bg4-l: 74.51%;
+  --preset-tx1: #000000;
+  --preset-tx2: #212121;
+  --preset-tx3: #404040;
+  --preset-tx-sup: #5b7163;
+  --preset-tx-strong: #03632b;
+  --preset-tx-accent: hsl(357, 63%, 40%);
+  --preset-ax0: hsl(357, 70%, 46%);
+  --preset-ax0-rgb: 199, 35, 43;
+  --preset-ax0-h: 357;
+  --preset-ax0-s: 70%;
+  --preset-ax0-l: 46%;
+}
+
+body.theme-dark:not(.css-settings-manager) {
+  --preset-bg0-h: 203deg;
+  --preset-bg0-s: 10%;
+  --preset-bg0-l: 8%;
+  --preset-bg1-h: 0deg;
+  --preset-bg1-s: 6%;
+  --preset-bg1-l: 16%;
+  --preset-bg2-h: 16deg;
+  --preset-bg2-s: 63%;
+  --preset-bg2-l: 15%;
+  --preset-bg3-h: 16deg;
+  --preset-bg3-s: 88%;
+  --preset-bg3-l: 6%;
+  --preset-bg4-h: 203deg;
+  --preset-bg4-s: 100%;
+  --preset-bg4-l: 15%;
+  --preset-tx1: #ebebeb;
+  --preset-tx2: #dadada;
+  --preset-tx3: #b3b3b3;
+  --preset-tx-sup: #8b7d57;
+  --preset-tx-strong: #e00623;
+  --preset-tx-accent: hsl(192, 77%, 54%);
+  --preset-ax0: hsl(192, 82%, 63%);
+  --preset-ax0-rgb: 83, 207, 238;
+  --preset-ax0-h: 192;
+  --preset-ax0-s: 82%;
+  --preset-ax0-l: 63%;
+}
+
+/* --------------------------------------------------------
+  6) 背景微调默认值与矩阵
+-------------------------------------------------------- */
+body.theme-light:not(.css-settings-manager) {
+  --preset-bg-tune: 0;
+}
+
+body.theme-dark:not(.css-settings-manager) {
+  --preset-bg-tune: 5;
+}
+
+body.theme-light.style-great-hall {
+  --preset-bg-tune: 8;
+}
+
+body.theme-light.style-huaguo-mount {
+  --preset-bg-tune: 0;
+}
+
+body.theme-dark.style-great-hall {
+  --preset-bg-tune: 0;
+}
+
+body.theme-dark.style-huaguo-mount {
+  --preset-bg-tune: 5;
+}
+
+/* =========================================================
+  Style Settings 注入的静态变量
+========================================================= */
+:root {
+  /* 用户自定义字体 */
+  --u-font-text-theme: initial;
+  --u-bg-tune: 0;
+}
+
+body {
+  /* =========================================================
+      字体栈 (用户自定义 > 系统栈 > 兜底)
+    ========================================================= */
+  --stack-hei: var(--preset-stack-hei, ""), "SystemHei", sans-serif;
+  --stack-song: var(--preset-stack-song, ""), "SystemSong", serif;
+  --stack-kai:
+    var(--preset-stack-kai, ""), "SystemKai", "SystemHei", sans-serif;
+  --stack-fang: var(--preset-stack-fang, ""), "SystemFang", "SystemSong", serif;
+  --stack-serif: var(--preset-stack-serif, ""), "SystemSerif";
+  --stack-sans: var(--preset-stack-sans, ""), "SystemSans";
+  --stack-hand: var(--preset-stack-hand, ""), "SystemHand", "SystemSans";
+  --stack-serif-i: "SystemSerifItalic", "SystemHand";
+  --stack-sans-i: "SystemSansItalic", "SystemHand";
+  --res-font-interface-west: var(
+    --u-font-interface-west,
+    var(
+      --preset-font-interface-west,
+      ""
+    )
+  );
+  --res-font-interface-zh: var(
+    --u-font-interface-zh,
+    var(
+      --preset-font-interface-zh,
+      ""
+    )
+  );
+  --res-font-interface-weight: var(
+    --u-font-interface-weight,
+    var(
+      --preset-font-interface-weight,
+      normal
+    )
+  );
+  --res-font-theme-west: var(
+    --u-font-theme-west,
+    var(
+      --preset-font-theme-west,
+      ""
+    )
+  );
+  --res-font-theme-zh: var(
+    --u-font-theme-zh,
+    var(
+      --preset-font-theme-zh,
+      ""
+    )
+  );
+  --res-font-theme-weight: var(
+    --u-font-theme-weight,
+    var(
+      --preset-font-theme-weight,
+      normal
+    )
+  );
+  --res-font-mono-west: var(
+    --u-font-mono-west,
+    var(
+      --preset-font-mono-west,
+      ""
+    )
+  );
+  --res-font-mono-zh: var(
+    --u-font-mono-zh,
+    var(
+      --preset-font-mono-zh,
+      ""
+    )
+  );
+  --res-font-mono-weight: var(
+    --u-font-mono-weight,
+    var(
+      --preset-font-mono-weight,
+      normal
+    )
+  );
+  --res-font-headings-west: var(
+    --u-font-headings-west,
+    var(
+      --preset-font-headings-west,
+      ""
+    )
+  );
+  --res-font-headings-zh: var(
+    --u-font-headings-zh,
+    var(
+      --preset-font-headings-zh,
+      ""
+    )
+  );
+  --res-font-headings-weight: var(
+    --u-font-headings-weight,
+    var(
+      --preset-font-headings-weight,
+      normal
+    )
+  );
+  --res-font-quote-west: var(
+    --u-font-quote-west,
+    var(
+      --preset-font-quote-west,
+      ""
+    )
+  );
+  --res-font-quote-zh: var(
+    --u-font-quote-zh,
+    var(
+      --preset-font-quote-zh,
+      ""
+    )
+  );
+  --res-font-quote-weight: var(
+    --u-font-quote-weight,
+    var(
+      --preset-font-quote-weight,
+      normal
+    )
+  );
+  --res-font-th-west: var(
+    --u-font-th-west,
+    var(
+      --preset-font-th-west,
+      ""
+    )
+  );
+  --res-font-th-zh: var(
+    --u-font-th-zh,
+    var(
+      --preset-font-th-zh,
+      ""
+    )
+  );
+  --res-font-th-weight: var(
+    --u-font-th-weight,
+    var(
+      --preset-font-th-weight,
+      normal
+    )
+  );
+  --res-font-em-west: var(
+    --u-font-em-west,
+    var(
+      --preset-font-em-west,
+      ""
+    )
+  );
+  --res-font-em-zh: var(
+    --u-font-em-zh,
+    var(
+      --preset-font-em-zh,
+      ""
+    )
+  );
+  --res-font-em-weight: var(
+    --u-font-em-weight,
+    var(
+      --preset-font-em-weight,
+      normal
+    )
+  );
+  --res-font-strong-west: var(
+    --u-font-strong-west,
+    var(
+      --preset-font-strong-west,
+      ""
+    )
+  );
+  --res-font-strong-zh: var(
+    --u-font-strong-zh,
+    var(
+      --preset-font-strong-zh,
+      ""
+    )
+  );
+  --res-font-strong-weight: var(
+    --u-font-strong-weight,
+    var(
+      --preset-font-strong-weight,
+      normal
+    )
+  );
+  --res-font-tag-west: var(
+    --u-font-tag-west,
+    var(
+      --preset-font-tag-west,
+      ""
+    )
+  );
+  --res-font-tag-zh: var(
+    --u-font-tag-zh,
+    var(
+      --preset-font-tag-zh,
+      ""
+    )
+  );
+  --res-font-tag-weight: var(
+    --u-font-tag-weight,
+    var(
+      --preset-font-tag-weight,
+      normal
+    )
+  );
+  --gap-unit: calc(var(--font-text-size) / 8);
+  --res-gap-p-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-p-line-height)
+  );
+  --res-gap-p-spacing: calc(
+    var(--gap-unit) * var(--preset-gap-p-spacing)
+  );
+  --res-gap-h1-font-size: calc(
+    var(--gap-unit) * var(--preset-gap-h1-font-size)
+  );
+  --res-gap-h1-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-h1-line-height)
+  );
+  --res-gap-h1-margin-top: calc(
+    var(--gap-unit) * var(--preset-gap-h1-margin-top)
+  );
+  --res-gap-h1-margin-bottom: calc(
+    var(--gap-unit) * var(--preset-gap-h1-margin-bottom)
+  );
+  --res-gap-h2-font-size: calc(
+    var(--gap-unit) * var(--preset-gap-h2-font-size)
+  );
+  --res-gap-h2-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-h2-line-height)
+  );
+  --res-gap-h2-margin-top: calc(
+    var(--gap-unit) * var(--preset-gap-h2-margin-top)
+  );
+  --res-gap-h2-margin-bottom: calc(
+    var(--gap-unit) * var(--preset-gap-h2-margin-bottom)
+  );
+  --res-gap-h3-font-size: calc(
+    var(--gap-unit) * var(--preset-gap-h3-font-size)
+  );
+  --res-gap-h3-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-h3-line-height)
+  );
+  --res-gap-h3-margin-top: calc(
+    var(--gap-unit) * var(--preset-gap-h3-margin-top)
+  );
+  --res-gap-h3-margin-bottom: calc(
+    var(--gap-unit) * var(--preset-gap-h3-margin-bottom)
+  );
+  --res-gap-h4-font-size: calc(
+    var(--gap-unit) * var(--preset-gap-h4-font-size)
+  );
+  --res-gap-h4-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-h4-line-height)
+  );
+  --res-gap-h4-margin-top: calc(
+    var(--gap-unit) * var(--preset-gap-h4-margin-top)
+  );
+  --res-gap-h4-margin-bottom: calc(
+    var(--gap-unit) * var(--preset-gap-h4-margin-bottom)
+  );
+  --res-gap-h5-font-size: calc(
+    var(--gap-unit) * var(--preset-gap-h5-font-size)
+  );
+  --res-gap-h5-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-h5-line-height)
+  );
+  --res-gap-h5-margin-top: calc(
+    var(--gap-unit) * var(--preset-gap-h5-margin-top)
+  );
+  --res-gap-h5-margin-bottom: calc(
+    var(--gap-unit) * var(--preset-gap-h5-margin-bottom)
+  );
+  --res-gap-h6-font-size: calc(
+    var(--gap-unit) * var(--preset-gap-h6-font-size)
+  );
+  --res-gap-h6-line-height: calc(
+    var(--gap-unit) * var(--preset-gap-h6-line-height)
+  );
+  --res-gap-h6-margin-top: calc(
+    var(--gap-unit) * var(--preset-gap-h6-margin-top)
+  );
+  --res-gap-h6-margin-bottom: calc(
+    var(--gap-unit) * var(--preset-gap-h6-margin-bottom)
+  );
+  --res-gap-list-margin-block-start: calc(
+    var(--gap-unit) * var(--preset-gap-list-margin-block-start)
+  );
+  --res-bg-tune: clamp(-30, var(--preset-bg-tune, 0), 30);
+  --res-bg-ds: calc(var(--res-bg-tune) * 1.106%);
+  --res-bg-dl: calc(var(--res-bg-tune) * 0.278%);
+  --res-bg0-h: var(--preset-bg0-h);
+  --res-bg0-s: clamp(
+    0%,
+    calc(var(--preset-bg0-s) + var(--res-bg-ds)),
+    100%
+  );
+  --res-bg0-l: clamp(
+    0%,
+    calc(var(--preset-bg0-l) + var(--res-bg-dl)),
+    100%
+  );
+  --res-bg0: hsl(
+    var(--res-bg0-h) var(--res-bg0-s) var(--res-bg0-l)
+  );
+  --res-bg1-h: var(--preset-bg1-h);
+  --res-bg1-s: clamp(
+    0%,
+    calc(var(--preset-bg1-s) + var(--res-bg-ds)),
+    100%
+  );
+  --res-bg1-l: clamp(
+    0%,
+    calc(var(--preset-bg1-l) + var(--res-bg-dl)),
+    100%
+  );
+  --res-bg1: hsl(
+    var(--res-bg1-h) var(--res-bg1-s) var(--res-bg1-l)
+  );
+  --res-bg2-h: var(--preset-bg2-h);
+  --res-bg2-s: clamp(
+    0%,
+    calc(var(--preset-bg2-s) + var(--res-bg-ds)),
+    100%
+  );
+  --res-bg2-l: clamp(
+    0%,
+    calc(var(--preset-bg2-l) + var(--res-bg-dl)),
+    100%
+  );
+  --res-bg2: hsl(
+    var(--res-bg2-h) var(--res-bg2-s) var(--res-bg2-l)
+  );
+  --res-bg3-h: var(--preset-bg3-h);
+  --res-bg3-s: clamp(
+    0%,
+    calc(var(--preset-bg3-s) + var(--res-bg-ds)),
+    100%
+  );
+  --res-bg3-l: clamp(
+    0%,
+    calc(var(--preset-bg3-l) + var(--res-bg-dl)),
+    100%
+  );
+  --res-bg3: hsl(
+    var(--res-bg3-h) var(--res-bg3-s) var(--res-bg3-l)
+  );
+  --res-bg4-h: var(--preset-bg4-h);
+  --res-bg4-s: clamp(
+    0%,
+    calc(var(--preset-bg4-s) + var(--res-bg-ds)),
+    100%
+  );
+  --res-bg4-l: clamp(
+    0%,
+    calc(var(--preset-bg4-l) + var(--res-bg-dl)),
+    100%
+  );
+  --res-bg4: hsl(
+    var(--res-bg4-h) var(--res-bg4-s) var(--res-bg4-l)
+  );
+  --res-tx1: var(--preset-tx1);
+  --res-tx2: var(--preset-tx2);
+  --res-tx3: var(--preset-tx3);
+  --res-tx-sup: var(--preset-tx-sup);
+  --res-tx-strong: var(--preset-tx-strong);
+  --res-tx-accent: var(--preset-tx-accent);
+  --res-ax0: var(--preset-ax0);
+  --res-ax0-rgb: var(--preset-ax0-rgb);
+  --res-ax0-h: var(--preset-ax0-h);
+  --res-ax0-s: var(--preset-ax0-s);
+  --res-ax0-l: var(--preset-ax0-l);
+  --radius-s: var(--preset-radius-s, 0px);
+  --radius-m: var(--preset-radius-m, 0px);
+  --radius-l: var(--preset-radius-l, 0px);
+  --radius-xl: var(--preset-radius-xl, 0px);
+  --background-primary: var(--res-bg0);
+  --background-primary-alt: var(--res-bg1);
+  --background-secondary: var(--res-bg2);
+  --icon-color: var(--res-tx1);
+  --ribbon-background: var(--res-bg3);
+  --tab-container-background: var(--res-bg3);
+  --nav-item-color: var(--text-normal);
+  --text-normal: var(--res-tx2);
+  --text-muted: var(--res-tx3);
+  --text-faint: var(--res-tx-sup);
+  --h1-color: var(--res-tx1);
+  --h2-color: var(--res-tx-accent);
+  --h3-color: var(--res-tx1);
+  --h4-color: var(--res-tx-accent);
+  --h5-color: var(--res-tx1);
+  --h6-color: var(--res-tx-accent);
+  --text-highlight: var(--res-bg0);
+  --background-modifier-hover: rgba(var(--res-ax0-rgb), 0.15);
+  --background-modifier-active-hover: var(--res-bg2);
+  --background-modifier-border: var(--res-tx-sup);
+}
+
+body.bg-tune-override {
+  --res-bg-tune: clamp(-30, var(--u-bg-tune, var(--preset-bg-tune, 0)), 30);
+}
+
+.theme-dark,
+.theme-light {
+  --background-secondary-alt: var(--res-bg4);
+  --color-accent: hsl(var(--res-ax0-h), var(--res-ax0-s), var(--res-ax0-l));
+  --color-accent-hsl: var(--res-ax0-h), var(--res-ax0-s), var(--res-ax0-l);
+  --interactive-normal: var(--res-bg1);
+  --interactive-hover: var(--res-bg2);
+  --text-accent: var(--res-tx-accent);
+  --interactive-accent: var(--res-ax0);
+}
+
+.theme-light {
+  --color-accent-1: hsl(
+    calc(var(--res-ax0-h) - 1),
+    calc(var(--res-ax0-s) * 1.01),
+    calc(var(--res-ax0-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--res-ax0-h) - 3),
+    calc(var(--res-ax0-s) * 1.02),
+    calc(var(--res-ax0-l) * 1.15)
+  );
+}
+
+.theme-dark {
+  --color-accent-1: hsl(
+    calc(var(--res-ax0-h) - 3),
+    calc(var(--res-ax0-s) * 1.02),
+    calc(var(--res-ax0-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--res-ax0-h) - 5),
+    calc(var(--res-ax0-s) * 1.05),
+    calc(var(--res-ax0-l) * 1.29)
+  );
+}
+
+/* ============================================================
+   阴影重置 
+   ============================================================ */
+body {
+  --bases-cards-shadow: none;
+  --tab-stacked-shadow: none;
+  --tab-switcher-preview-shadow: none;
+  --embed-block-shadow-hover: none;
+  --metadata-property-box-shadow-hover: none;
+  --swatch-shadow: none;
+  --raised-shadow: none;
+  --menu-shadow: none;
+  --modal-shadow: none;
+  --prompt-shadow: none;
+}
+
+.theme-light,
+.theme-dark {
+  --shadow-xs: none;
+  --shadow-s: none;
+  --shadow-l: none;
+  --shadow-edges: none;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --button-shadow: none;
+  --background-modifier-box-shadow: none;
+  --pdf-shadow: none;
+  --pdf-thumbnail-shadow: none;
+}
+
+.modal,
+.menu,
+.vertical-tab-content-container,
+.popover,
+.tooltip,
+.prompt,
+.file-embed,
+.markdown-embed {
+  border: 1px solid var(--background-modifier-border);
+}
+
+.nav-file-tag {
+  line-height: var(--line-height-title);
+}
+
+.modal.mod-settings,
+div.prompt {
+  border: var(--divider-width) solid var(--background-modifier-border);
+}
+
+.mod-settings .vertical-tab-content-container {
+  border-width: 0;
+}
+
+.tree-item.graph-control-section .tree-item-self:hover {
+  transform: none;
+  box-shadow: none;
+  --nav-collapse-icon-color: var(--text-faint);
+}
+
+body {
+  --mkk-line-width: 2px;
+}
+
+body.style-great-hall {
+  --mkk-line-width: 1px;
+}
+
+body.line-width-thin {
+  --mkk-line-width: 1px;
+}
+
+body.line-width-regular {
+  --mkk-line-width: 2px;
+}
+
+body.line-width-bold {
+  --mkk-line-width: 3px;
+}
+
+/* 设置指针 */
+body {
+  --cursor: pointer;
+}
+
+/* -------  修补：变指针  ----------- */
+/* 页签（Tabs）的指针 */
+.workspace-tab-header {
+  cursor: pointer;
+}
+
+/* -------  修补：变箭头 ----------- */
+/* 编辑器列表指示器 */
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+  cursor: default;
+}
+
+/* 取消文件夹的指针 */
+.tree-item-self.is-clickable.nav-folder-title {
+  cursor: default;
+}
+
+/* 收藏栏的折叠项 */
+.tree-item-self.is-clickable.bookmark.mod-collapsible {
+  cursor: default;
+}
+
+/* 折叠按钮 */
+/* 菜单项的折叠按钮 */
+.tree-item-self .tree-item-icon.collapse-icon {
+  cursor: default;
+}
+
+/* 编辑器阅读模式折叠按钮 */
+.markdown-preview-view .collapse-indicator {
+  cursor: default;
+}
+
+body {
+  --mkk-font-stack-theme: var(--res-font-theme-west), var(--res-font-theme-zh);
+  --mkk-font-stack-mono: var(--res-font-mono-west), var(--res-font-mono-zh);
+  --file-line-width: calc(var(--font-text-size) * 35);
+  --font-text-theme: var(--mkk-font-stack-theme);
+  --font-monospace-theme: var(--mkk-font-stack-mono);
+  --line-height-normal: var(--res-gap-p-line-height);
+  --p-spacing: var(--res-gap-p-spacing);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + div > :is(blockquote, p, ol, ul, pre) {
+  margin-top: 0;
+}
+
+body.font-stack-override-theme {
+  --mkk-font-stack-theme: var(
+    --u-font-stack-theme,
+    var(--res-font-theme-west),
+    var(--res-font-theme-zh)
+  );
+}
+
+body.font-stack-override-mono {
+  --mkk-font-stack-mono: var(
+    --u-font-stack-mono,
+    var(--res-font-mono-west),
+    var(--res-font-mono-zh)
+  );
+}
+
+body:not(.cancel-font-override) {
+  --font-text:
+    var(--font-text-theme), var(--font-text-override), var(--font-default);
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default);
+}
+
+body {
+  --hr-color: var(--res-tx-sup);
+  --hr-thickness: var(--mkk-line-width);
+}
+
+body {
+  --mkk-font-stack-headings: var(--res-font-headings-west), var(--res-font-headings-zh);
+  --h1-font: var(--mkk-font-stack-headings);
+  --h1-weight: var(--res-font-headings-weight);
+  --h1-size: var(--res-gap-h1-font-size);
+  --h1-line-height: var(--res-gap-h1-line-height);
+  --h2-font: var(--mkk-font-stack-headings);
+  --h2-weight: var(--res-font-headings-weight);
+  --h2-size: var(--res-gap-h2-font-size);
+  --h2-line-height: var(--res-gap-h2-line-height);
+  --h3-font: var(--mkk-font-stack-headings);
+  --h3-weight: var(--res-font-headings-weight);
+  --h3-size: var(--res-gap-h3-font-size);
+  --h3-line-height: var(--res-gap-h3-line-height);
+  --h4-font: var(--mkk-font-stack-headings);
+  --h4-weight: var(--res-font-headings-weight);
+  --h4-size: var(--res-gap-h4-font-size);
+  --h4-line-height: var(--res-gap-h4-line-height);
+  --h5-font: var(--mkk-font-stack-headings);
+  --h5-weight: var(--res-font-headings-weight);
+  --h5-size: var(--res-gap-h5-font-size);
+  --h5-line-height: var(--res-gap-h5-line-height);
+  --h6-font: var(--mkk-font-stack-headings);
+  --h6-weight: var(--res-font-headings-weight);
+  --h6-size: var(--res-gap-h6-font-size);
+  --h6-line-height: var(--res-gap-h6-line-height);
+}
+
+body.font-stack-override-headings {
+  --mkk-font-stack-headings: var(
+    --u-font-stack-headings,
+    var(--res-font-headings-west), var(--res-font-headings-zh)
+  );
+}
+
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .cm-line.HyperMD-header {
+  padding-top: 0;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered h1 {
+  margin-top: var(--res-gap-h1-margin-top) !important;
+  margin-bottom: var(--res-gap-h1-margin-bottom);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:has(> :is(h1)) + div > h1 {
+  margin-block-start: 0 !important;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered h2 {
+  margin-top: var(--res-gap-h2-margin-top) !important;
+  margin-bottom: var(--res-gap-h2-margin-bottom);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:has(> :is(h1, h2)) + div > h2 {
+  margin-block-start: 0 !important;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered h3 {
+  margin-top: var(--res-gap-h3-margin-top) !important;
+  margin-bottom: var(--res-gap-h3-margin-bottom);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:has(> :is(h1, h2, h3)) + div > h3 {
+  margin-block-start: 0 !important;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered h4 {
+  margin-top: var(--res-gap-h4-margin-top) !important;
+  margin-bottom: var(--res-gap-h4-margin-bottom);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:has(> :is(h1, h2, h3, h4)) + div > h4 {
+  margin-block-start: 0 !important;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered h5 {
+  margin-top: var(--res-gap-h5-margin-top) !important;
+  margin-bottom: var(--res-gap-h5-margin-bottom);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:has(> :is(h1, h2, h3, h4, h5)) + div > h5 {
+  margin-block-start: 0 !important;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered h6 {
+  margin-top: var(--res-gap-h6-margin-top) !important;
+  margin-bottom: var(--res-gap-h6-margin-bottom);
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered div:has(> :is(h1, h2, h3, h4, h5, h6)) + div > h6 {
+  margin-block-start: 0 !important;
+}
+
+body.style-great-hall .markdown-reading-view .markdown-preview-view.markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+  text-align: center;
+}
+body.style-great-hall .markdown-reading-view .markdown-preview-view.markdown-rendered .inline-title,
+body.style-great-hall .markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .inline-title {
+  text-align: center;
+}
+
+body {
+  --list-spacing: 0;
+}
+
+.markdown-reading-view .markdown-preview-view.markdown-rendered .el-p + div > :is(ul, ol) {
+  margin-block-start: var(--res-gap-list-margin-block-start);
+}
+
+/* Table Styles for Obsidian */
+table {
+  --table-text-size: calc(var(--font-text-size) * 0.9);
+  --table-header-border-color: var(--res-tx-sup);
+  --table-header-border-width: 0px;
+  --table-header-font: var(--res-font-th-west), var(--res-font-th-zh);
+  --table-header-weight: var(--res-font-th-weight);
+  --table-header-background: rgba(var(--res-ax0-rgb), 0.35);
+  --table-header-background-hover: var(--table-header-background);
+  --table-row-alt-background: var(--res-bg2);
+  --table-row-background-hover: var(--res-bg4);
+  --table-row-alt-background-hover: var(--res-bg4);
+  --table-column-first-border-width: 0px;
+  --table-column-last-border-width: 0px;
+  --table-row-first-border-width: 0px;
+  --table-row-last-border-width: var(--mkk-line-width);
+  --table-border-width: var(--mkk-line-width);
+  --table-border-color: var(--res-tx-sup);
+}
+
+.cm-html-embed th,
+.markdown-rendered th {
+  border-bottom-width: calc(var(--mkk-line-width) + 1px);
+  border-bottom-color: var(--res-tx-accent) !important;
+}
+
+tbody tr:hover {
+  transform: translateX(5px);
+}
+
+/* For reading view */
+.markdown-reading-view .markdown-preview-view.markdown-rendered :is(td, th) {
+  border-inline: 0px;
+}
+
+/* specify for mode */
+.style-great-hall .cm-html-embed td,
+.style-great-hall .markdown-rendered td {
+  border-block-style: dashed;
+}
+
+body {
+  --mkk-font-stack-quote: var(--res-font-quote-west), var(--res-font-quote-zh);
+}
+
+body.font-stack-override-quote {
+  --mkk-font-stack-quote: var(
+    --u-font-stack-quote,
+    var(--res-font-quote-west), var(--res-font-quote-zh)
+  );
+}
+
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .cm-quote,
+.markdown-reading-view .markdown-preview-view.markdown-rendered blockquote {
+  font-family: var(--mkk-font-stack-quote);
+  font-weight: var(--res-font-quote-weight);
+  color: var(--res-tx3);
+}
+
+body {
+  --mkk-font-stack-em: var(--res-font-em-west), var(--res-font-em-zh);
+}
+
+body.font-stack-override-em {
+  --mkk-font-stack-em: var(
+    --u-font-stack-em,
+    var(--res-font-em-west), var(--res-font-em-zh)
+  );
+}
+
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .cm-em,
+.markdown-reading-view .markdown-preview-view.markdown-rendered em {
+  font-family: var(--mkk-font-stack-em);
+  font-weight: var(--res-font-em-weight);
+  font-style: normal;
+  color: var(--res-tx-sup);
+}
+
+body {
+  --mkk-font-stack-strong: var(--res-font-strong-west), var(--res-font-strong-zh);
+}
+
+body.font-stack-override-strong {
+  --mkk-font-stack-strong: var(
+    --u-font-stack-strong,
+    var(--res-font-strong-west), var(--res-font-strong-zh)
+  );
+}
+
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .cm-strong,
+.markdown-reading-view .markdown-preview-view.markdown-rendered strong {
+  font-family: var(--mkk-font-stack-strong);
+  font-weight: var(--res-font-strong-weight);
+  color: var(--res-tx-strong);
+}
+
+body {
+  --link-color: var(--text-normal);
+  --link-color-hover: var(--text-normal);
+  --link-decoration-thickness: var(--mkk-line-width);
+  --mkk-link-underline-offset: 4px;
+  --mkk-link-decoration-color: var(--res-tx-sup);
+  --mkk-link-decoration-color-hover: var(--interactive-accent);
+  --mkk-link-decoration-thickness-hover: calc(var(--mkk-line-width) * 2);
+  --link-unresolved-color: var(--text-normal);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-decoration-style: dashed;
+  --mkk-link-unresolved-decoration-style-hover: solid;
+  --link-unresolved-decoration-color: var(--res-tx-sup);
+  --link-external-color-hover: var(--interactive-accent);
+}
+
+@media (hover: hover) {
+  .cm-s-obsidian span.cm-hmd-internal-link:hover,
+  .cm-s-obsidian span.cm-link:hover {
+    text-decoration-line: none;
+  }
+}
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-underline-offset: var(--mkk-link-underline-offset);
+  text-decoration-color: var(--mkk-link-decoration-color);
+}
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+  text-decoration-color: var(--mkk-link-decoration-color-hover);
+  text-decoration-thickness: var(--mkk-link-decoration-thickness-hover);
+}
+@media (hover: hover) {
+  .markdown-source-view.mod-cm6 .is-unresolved .cm-underline:hover {
+    text-decoration-style: var(--mkk-link-unresolved-decoration-style-hover);
+  }
+}
+
+a {
+  text-underline-offset: var(--mkk-link-underline-offset);
+  text-decoration-color: var(--mkk-link-decoration-color);
+}
+a:hover {
+  text-decoration-color: var(--mkk-link-decoration-color-hover);
+  text-decoration-thickness: var(--mkk-link-decoration-thickness-hover);
+}
+
+@media (hover: hover) {
+  .metadata-property-value .internal-link.is-unresolved:hover,
+  .markdown-rendered .internal-link.is-unresolved:hover {
+    text-decoration-style: var(--mkk-link-unresolved-decoration-style-hover);
+    text-decoration-color: var(--mkk-link-decoration-color-hover);
+  }
+}
+
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .cm-formatting-highlight,
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview .cm-highlight,
+.markdown-reading-view .markdown-preview-view.markdown-rendered mark {
+  color: var(--text-highlight);
+  background-color: var(--res-tx-accent);
+}
+
+.style-settings-heading[data-level="0"][data-id=monkey-king-theme] {
+  padding-left: 4px;
+}
+
+.style-settings-heading[data-level="0"][data-id=monkey-king-theme] + .style-settings-container {
+  padding-left: 6px;
+}
+
+[data-id=monkey-king-theme] + .style-settings-container {
+  width: 100%;
+  background: transparent;
+}
+[data-id=monkey-king-theme] + .style-settings-container input,
+[data-id=monkey-king-theme] + .style-settings-container select,
+[data-id=monkey-king-theme] + .style-settings-container textarea {
+  width: 100%;
+  flex: 1 1 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 8px;
+  row-gap: 4px;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container .style-settings-heading {
+  width: 100%;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item:not(.style-settings-heading) {
+  width: auto;
+  min-width: min(180px, 100%);
+  flex: 1 1 180px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item:not(.style-settings-heading) .setting-item-info,
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item:not(.style-settings-heading) .setting-item-control {
+  flex: none;
+}
+
+.theme-light [data-id=color-scheme-dark] {
+  display: none;
+}
+
+.theme-dark [data-id=color-scheme-light] {
+  display: none;
+}
+
+[data-id=u-bg-tune] {
+  display: none;
+}
+
+.bg-tune-override [data-id=u-bg-tune] {
+  display: flex;
+}
+
+[data-id=u-font-stack-headings],
+[data-id=u-font-stack-quote],
+[data-id=u-font-stack-em],
+[data-id=u-font-stack-strong],
+[data-id=u-font-stack-theme],
+[data-id=u-font-stack-mono] {
+  display: none;
+}
+
+.font-stack-override-headings [data-id=u-font-stack-headings],
+.font-stack-override-quote [data-id=u-font-stack-quote],
+.font-stack-override-em [data-id=u-font-stack-em],
+.font-stack-override-strong [data-id=u-font-stack-strong],
+.font-stack-override-theme [data-id=u-font-stack-theme],
+.font-stack-override-mono [data-id=u-font-stack-mono] {
+  display: flex;
+}
+
+.cancel-font-override [data-id*=font-theme-],
+.cancel-font-override [data-id=h-sub-font-theme],
+.cancel-font-override [data-id*=font-mono-],
+.cancel-font-override [data-id=font-stack-override-theme],
+.cancel-font-override [data-id=u-font-stack-theme],
+.cancel-font-override [data-id$=-mono] {
+  display: none;
+}
+
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item[data-id^=u-font-stack-] {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
+  align-self: stretch;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item[data-id=font-theme-zh-placeholder] {
+  min-width: 120px;
+  flex: 1 1 120px;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.85;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item[data-id=font-theme-zh-placeholder] .setting-item-control {
+  display: none !important;
+}
+
+.scheme-pagoda [data-id=monkey-king-theme] + .style-settings-container {
+  outline: 1px solid color-mix(in srgb, var(--background-modifier-border) 58%, transparent 42%);
+  outline-offset: 0;
+}
+
+.scheme-pagoda [data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item:not(.style-settings-heading) {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--background-modifier-border) 74%, transparent 26%);
+}
+
+[data-id=monkey-king-theme] + .style-settings-container {
+  --mk-group-line: color-mix(
+    in srgb,
+    var(--interactive-accent) 62%,
+    transparent 38%
+  );
+  --mk-group-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 10%,
+    var(--background-primary) 90%
+  );
+  --mk-sub-line: color-mix(in srgb, var(--text-muted) 78%, transparent 22%);
+  --mk-sub-bg: color-mix(
+    in srgb,
+    var(--background-primary-alt) 90%,
+    transparent 10%
+  );
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading {
+  width: 100%;
+  position: relative;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-s);
+  border: 1px solid transparent;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading .setting-item-name {
+  line-height: 1.3;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .style-settings-heading[data-id^=h-sec-]:first-child {
+  margin-top: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-sec-] {
+  padding: 10px 12px;
+  border-color: var(--background-modifier-border);
+  border-left: 8px solid color-mix(in srgb, var(--interactive-accent) 78%, transparent 22%);
+  background: color-mix(in srgb, var(--interactive-accent) 14%, var(--background-primary) 86%);
+  margin-bottom: 3px;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-sec-] .setting-item-name {
+  font-size: 1.08em;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-group-] {
+  padding: 9px 12px;
+  border-color: var(--background-modifier-border);
+  border-left: 6px solid var(--mk-group-line);
+  background: var(--mk-group-bg);
+  margin-bottom: 4px;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-group-] .setting-item-name {
+  font-size: 1.02em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-sub-] {
+  padding: 7px 10px;
+  border-style: dashed;
+  border-color: var(--background-modifier-border);
+  border-left: 3px solid var(--mk-sub-line);
+  background: var(--mk-sub-bg);
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-sub-] .setting-item-name {
+  font-size: 0.94em;
+  font-weight: 700;
+  opacity: 0.95;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-group-] + .style-settings-container,
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-sub-] + .style-settings-container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  margin-left: 0;
+  padding-left: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-group-] + .style-settings-container {
+  border-left: 2px solid var(--mk-group-line);
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id^=h-sub-] + .style-settings-container {
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading.is-collapsed[data-id^=h-group-] + .style-settings-container,
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading.is-collapsed[data-id^=h-sub-] + .style-settings-container {
+  border-left: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading.is-collapsed[data-id^=h-sec-] + .style-settings-container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id^=h-note-] {
+  border: 1px dashed color-mix(in srgb, var(--background-modifier-border) 62%, transparent 38%);
+  border-left: 3px solid color-mix(in srgb, var(--interactive-accent) 68%, transparent 32%);
+  background: color-mix(in srgb, var(--background-primary-alt) 82%, transparent 18%);
+  padding: 8px 12px;
+  border-radius: var(--radius-s);
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id^=h-note-] .setting-item-description {
+  line-height: 1.45;
+  user-select: text;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id^=h-note-] .setting-item-control {
+  display: none;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id^=h-note-] a {
+  color: var(--interactive-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo],
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] {
+  display: none;
+  width: 100%;
+  min-width: 100%;
+  flex: 0 0 100%;
+  border-style: solid;
+  border-left-width: 4px;
+  border-left-color: var(--res-tx-sup);
+  border-color: color-mix(in srgb, var(--res-tx-sup) 45%, transparent 55%);
+  background: color-mix(in srgb, var(--background-primary-alt) 90%, transparent 10%);
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] .setting-item-info,
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] .setting-item-info {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] .setting-item-info::before,
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] .setting-item-info::before {
+  content: "“";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--res-tx-sup);
+  font-family: var(--font-monospace-default), monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(var(--font-text-size) * 1.15);
+  line-height: 1;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] .setting-item-name,
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] .setting-item-name {
+  font-family: var(--mkk-font-stack-quote);
+  font-weight: var(--res-font-quote-weight, 400);
+  font-size: calc(var(--font-text-size) * 0.85);
+  color: var(--res-tx3);
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] {
+  width: 100%;
+  min-width: 100%;
+  flex: 0 0 100%;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description {
+  font-family: var(--mkk-font-stack-theme);
+  font-weight: var(--res-font-theme-weight, 400);
+  font-size: calc(var(--font-text-size) * 0.85);
+  line-height: 1.45;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-name {
+  font-family: var(--mkk-font-stack-headings);
+  font-weight: var(--res-font-headings-weight, 700);
+  font-size: calc(var(--font-text-size) * 1);
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description strong {
+  font-family: var(--mkk-font-stack-strong, var(--mkk-font-stack-theme));
+  font-weight: var(--res-font-strong-weight, 700);
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description em {
+  font-family: var(--mkk-font-stack-em, var(--mkk-font-stack-theme));
+  font-weight: var(--res-font-em-weight, 400);
+  font-style: normal;
+}
+
+body.style-huaguo-mount [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] {
+  display: flex;
+}
+
+body.style-great-hall [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] {
+  display: flex;
+}
+
+.dataview.inline-field-value,
+.dataview.inline-field-key {
+  color: var(--res-tx2);
+}
+
+.setting-item select.dropdown,
+.setting-item button,
+.setting-item input {
+  border: 1px solid var(--text-muted);
+  border-radius: var(--radius-s);
+}
+
+body {
+  --divider-width: 2px;
+  /* --background-modifier-border >> --divider-color */
+  --tab-outline-width: 2px;
+  --divider-color: black;
+}
+
+body.theme-dark {
+  --divider-color: black;
+}
+
+.titlebar-button-container {
+  display: flex;
+  position: absolute;
+  top: calc(-1 * var(--tab-outline-width));
+}
+
+.mod-root .workspace-tab-header-container-inner {
+  padding-top: var(--tab-outline-width);
+}
+
+body:not(.cancel-nav-item-color) {
+  --nav-item-background-hover: var(--color-accent);
+  --nav-item-background-active: var(--res-tx-accent);
+  --nav-item-background-selected: var(--res-tx-accent);
+  --nav-item-color-hover: var(--res-bg4);
+  --nav-item-color-active: var(--res-bg4);
+  --nav-item-color-selected: var(--res-bg4);
+  --nav-heading-color-collapsed-hover: var(--res-bg4);
+}
+
+body:not(.cancel-nav-item-rotate) .tree-item-self:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+body:not(.cancel-nav-item-color) .tree-item-self:hover {
+  box-shadow: 3px 3px 0px rgba(34, 34, 34, 0.9098039216);
+}
+body:not(.cancel-nav-item-color) .tree-item-self:hover .tree-item-inner-subtext {
+  color: var(--res-bg4);
+}
+body:not(.cancel-nav-item-color) .tree-item-self.is-active:not(.is-selected) {
+  font-weight: bold;
+  box-shadow: 3px 3px 0px rgba(15, 15, 15, 0.9098039216);
+}
+body:not(.cancel-nav-item-color) .tree-item-self:is(:hover, .is-active, .is-selected, .is-being-renamed) {
+  --icon-color: var(--nav-item-color-hover);
+  --nav-collapse-icon-color: var(--res-bg4);
+}
+body:not(.cancel-nav-item-color) .tree-item-self:is(:hover, .is-active, .is-selected, .is-being-renamed) .nav-file-tag {
+  color: var(--res-bg4);
+  outline: 1px solid var(--res-bg4);
+}
+body:not(.cancel-nav-item-color) .tree-item-self:is(:hover, .is-active, .is-selected, .is-being-renamed) .tree-item-flair {
+  color: var(--res-bg4);
+}
+body:not(.cancel-nav-item-color) .tree-item-self.is-being-renamed {
+  background-color: var(--res-tx-accent);
+  caret-color: var(--res-bg4);
+  --text-selection: hsla(calc(var(--res-ax0-h) + 180), 100%, 50%, 0.2);
+}
+body:not(.cancel-nav-item-color) .tree-item.nav-folder.is-being-dragged-over > .nav-folder-title.is-selected {
+  color: var(--res-bg4);
+}
+body:not(.cancel-nav-item-color) .search-result .search-result-file-title {
+  color: var(--nav-item-color);
+}
+body:not(.cancel-nav-item-color) .search-result .tree-item-self:hover .tree-item-icon.collapse-icon {
+  --nav-collapse-icon-color: var(--res-tx-accent);
+  background: var(--res-bg4);
+  border-radius: inherit;
+}
+
+.tree-item-self:is(.nav-folder-title, .mod-collapsible) {
+  font-weight: bold;
+  --nav-item-weight-hover: bold;
+}
+
+.nav-buttons-container {
+  justify-content: left;
+}
+
+.mod-sidedock .workspace-tab-header.is-active {
+  --icon-color-focused: var(--res-bg4);
+  --tab-text-color-focused-active-current: var(--res-bg4);
+  --background-modifier-hover: var(--res-tx-accent);
+  --tab-text-color-focused-active: var(--res-bg4);
+}
+
+/*# sourceMappingURL=theme.css.map */

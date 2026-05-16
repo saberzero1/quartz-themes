@@ -995,7 +995,11 @@
   "--indentation-guide-width-active": { "body": ["--border-width"] },
   "--indentation-guide-color": { "body": ["--mono-rgb-100"] },
   "--indentation-guide-color-active": { "body": ["--mono-rgb-100"] },
-  "--inline-title-color": { "body": ["--h1-color"] },
+  "--inline-title-color": {
+    "body": ["--h1-color"],
+    ".theme-dark": ["--dark-theme-black"],
+    ".theme-light": ["--light-theme-white"]
+  },
   "--inline-title-font": { "body": ["--h1-font"] },
   "--inline-title-line-height": { "body": ["--h1-line-height"] },
   "--inline-title-size": { "body": ["--h1-size"] },

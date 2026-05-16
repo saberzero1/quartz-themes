@@ -1032,6 +1032,7 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
+  --inline-title-color: var(--light-theme-white) !important;
   --inline-title-font: "Roboto Light" !important;
   --bold-color: var(--purple-color) !important;
   --checkbox-hover-color: var(--red-color) !important;
@@ -2029,6 +2030,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --inline-title-color: var(--dark-theme-black) !important;
   --inline-title-font: "Sans Condensed Black" !important;
   --bold-color: var(--blue-color) !important;
   --checkbox-hover-color: var(--red-color) !important;

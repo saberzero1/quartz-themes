@@ -1469,7 +1469,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--light-theme-white);
+    color: var(--inline-title-color);
     font-family: var(--inline-title-font);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
@@ -4067,7 +4067,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--light-theme-white);
+    color: var(--inline-title-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -11859,7 +11859,7 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--dark-theme-black);
+      color: var(--inline-title-color);
       font-family: var(--inline-title-font);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
@@ -14457,7 +14457,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--dark-theme-black);
+      color: var(--inline-title-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
