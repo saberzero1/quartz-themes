@@ -165,6 +165,8 @@ function rewriteClassSelectors(css: string, className: string): string {
               ':root[saved-theme="light"]',
             );
             s = s.replace(classRe, ":root");
+            // Fix `body:root` → `:root` (body can never be the root element)
+            s = s.replace(/\bbody:root\b/g, ":root");
             s = s.replace(/(:root(?:\[[^\]]*\])?)\s+:root\b/g, "$1");
             return s.trim();
           })
@@ -209,6 +211,64 @@ export function processStyleSettings(
   const classCSS: string[] = [];
   const overriddenVarNames = new Set<string>();
 
+  // Collect variables that are exclusively consumed by disabled boolean
+  // toggles. These should not be emitted or bridged because they have no
+  // effect without the toggle being active.
+  const suppressedVarNames = new Set<string>();
+  if (classSettingsMap) {
+    for (const [key, value] of Object.entries(settings)) {
+      const matchedId = themeIds.find((id) => key.startsWith(`${id}@@`));
+      if (!matchedId) continue;
+      const settingId = key.slice(matchedId.length + 2);
+      if (typeof value === "boolean" && !value) {
+        const entry = classSettingsMap[settingId];
+        if (entry) {
+          // Extract variable names referenced in this class setting's CSS
+          const allCSS = [entry.general, entry.dark, entry.light]
+            .filter(Boolean)
+            .join(" ");
+          const varRefs = allCSS.matchAll(/var\(--([a-zA-Z0-9_-]+)/g);
+          for (const match of varRefs) {
+            suppressedVarNames.add(`--${match[1]}`);
+          }
+        }
+      }
+    }
+    // Un-suppress variables that are also consumed by ACTIVE class settings
+    // or referenced elsewhere
+    for (const [key, value] of Object.entries(settings)) {
+      const matchedId = themeIds.find((id) => key.startsWith(`${id}@@`));
+      if (!matchedId) continue;
+      const settingId = key.slice(matchedId.length + 2);
+      // Active boolean toggle
+      if (typeof value === "boolean" && value) {
+        const entry = classSettingsMap[settingId];
+        if (entry) {
+          const allCSS = [entry.general, entry.dark, entry.light]
+            .filter(Boolean)
+            .join(" ");
+          const varRefs = allCSS.matchAll(/var\(--([a-zA-Z0-9_-]+)/g);
+          for (const match of varRefs) {
+            suppressedVarNames.delete(`--${match[1]}`);
+          }
+        }
+      }
+      // Active string class setting
+      if (typeof value === "string" && value) {
+        const entry = classSettingsMap[value];
+        if (entry) {
+          const allCSS = [entry.general, entry.dark, entry.light]
+            .filter(Boolean)
+            .join(" ");
+          const varRefs = allCSS.matchAll(/var\(--([a-zA-Z0-9_-]+)/g);
+          for (const match of varRefs) {
+            suppressedVarNames.delete(`--${match[1]}`);
+          }
+        }
+      }
+    }
+  }
+
   for (const [key, value] of Object.entries(settings)) {
     const matchedId = themeIds.find((id) => key.startsWith(`${id}@@`));
     if (!matchedId) continue;
@@ -233,13 +293,16 @@ export function processStyleSettings(
 
     if (settingId.endsWith("@@dark")) {
       const varName = settingId.slice(0, -6);
+      if (suppressedVarNames.has(`--${varName}`)) continue;
       darkVars.push(`  --${varName}: ${value};`);
       overriddenVarNames.add(`--${varName}`);
     } else if (settingId.endsWith("@@light")) {
       const varName = settingId.slice(0, -7);
+      if (suppressedVarNames.has(`--${varName}`)) continue;
       lightVars.push(`  --${varName}: ${value};`);
       overriddenVarNames.add(`--${varName}`);
     } else {
+      if (suppressedVarNames.has(`--${settingId}`)) continue;
       lightVars.push(`  --${settingId}: ${value};`);
       darkVars.push(`  --${settingId}: ${value};`);
       overriddenVarNames.add(`--${settingId}`);
