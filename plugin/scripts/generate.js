@@ -926,29 +926,6 @@ function buildModeCSS(
   const { varGraph, provenance, declaredVarUses, styleSettingsTargetVars } =
     sidecars;
 
-  function declaredValueReferencesTarget(declaredValue) {
-    if (!styleSettingsTargetVars || styleSettingsTargetVars.size === 0)
-      return false;
-    if (!declaredValue || !declaredValue.includes("var(")) return false;
-    const varRefRe = /var\(\s*(--[a-zA-Z0-9_-]+)/g;
-    let match;
-    while ((match = varRefRe.exec(declaredValue)) !== null) {
-      const refName = match[1];
-      if (styleSettingsTargetVars.has(refName)) return true;
-      if (varGraph) {
-        const deps = varGraph[refName];
-        if (deps) {
-          for (const refs of Object.values(deps)) {
-            for (const ref of refs) {
-              if (styleSettingsTargetVars.has(ref)) return true;
-            }
-          }
-        }
-      }
-    }
-    return false;
-  }
-
   const aspectSelectors = new Map();
   const baseVars = {};
 
@@ -1069,16 +1046,25 @@ function buildModeCSS(
     if (!selector) return;
 
     for (const prop of mapping.properties || []) {
-      const value = style[prop];
+      let value = style[prop];
       if (
         value === undefined ||
         value === null ||
         value === "" ||
-        value === "inherit" ||
-        prop === "--callout-icon"
+        value === "inherit"
       ) {
-        continue;
+        if (declaredVarUses) {
+          const declared = declaredVarUses[mapping.obsidianSelector]?.[prop];
+          if (declared) {
+            value = declared;
+          } else {
+            continue;
+          }
+        } else {
+          continue;
+        }
       }
+      if (prop === "--callout-icon") continue;
       if (
         classToggleVarPrefixes &&
         classToggleVarPrefixes.length > 0 &&
@@ -1086,13 +1072,17 @@ function buildModeCSS(
         value.includes("var(")
       ) {
         const varRefMatch = value.match(/var\(\s*--([^,)]+)/);
-        if (
-          varRefMatch &&
-          classToggleVarPrefixes.some((prefix) =>
-            varRefMatch[1].startsWith(prefix),
-          )
-        ) {
-          continue;
+        if (varRefMatch) {
+          const refVar = `--${varRefMatch[1]}`;
+          if (
+            !baseVars[refVar] &&
+            classToggleVarPrefixes.some((prefix) => {
+              const ref = varRefMatch[1];
+              return ref === prefix || ref.startsWith(prefix + "-");
+            })
+          ) {
+            continue;
+          }
         }
       }
       let normalized = normalizeSvgDataUriValue(value);
@@ -1107,7 +1097,7 @@ function buildModeCSS(
       ) {
         const obsidianSel = mapping.obsidianSelector;
         const declared = declaredVarUses[obsidianSel]?.[prop];
-        if (declared && declaredValueReferencesTarget(declared)) {
+        if (declared) {
           normalized = declared;
         }
       }
@@ -1162,13 +1152,17 @@ function buildModeCSS(
       // separately in classSettings.
       if (classToggleVarPrefixes && classToggleVarPrefixes.length > 0) {
         const varRefMatch = value.match(/var\(\s*--([^,)]+)/);
-        if (
-          varRefMatch &&
-          classToggleVarPrefixes.some((prefix) =>
-            varRefMatch[1].startsWith(prefix),
-          )
-        ) {
-          continue;
+        if (varRefMatch) {
+          const refVar = `--${varRefMatch[1]}`;
+          if (
+            !baseVars[refVar] &&
+            classToggleVarPrefixes.some((prefix) => {
+              const ref = varRefMatch[1];
+              return ref === prefix || ref.startsWith(prefix + "-");
+            })
+          ) {
+            continue;
+          }
         }
       }
       let selectorMap = aspectSelectors.get(aspect);
@@ -1885,7 +1879,7 @@ async function main() {
     });
 
     const brokenVarLinks = {};
-    if (styleSettingsTargetVars.size > 0) {
+    {
       const emittedCss =
         flattenAspectCssToString(darkAspectCSS) +
         "\n" +
@@ -1899,7 +1893,6 @@ async function main() {
         for (const [varName, selectorRefs] of Object.entries(vg)) {
           for (const refs of Object.values(selectorRefs)) {
             for (const ref of refs) {
-              if (!styleSettingsTargetVars.has(ref)) continue;
               const chainPattern = `${varName}:`;
               const varRefPattern = `var(${ref}`;
               const hasLiveChain =
