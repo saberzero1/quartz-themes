@@ -3,35 +3,35 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 300 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/simple/fira-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/simple/fira-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/simple/inter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/simple/inter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBMRegular";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/simple/ibmregular.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/simple/ibmregular.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBMBold";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/simple/ibmbold.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/simple/ibmbold.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iaWriterQuattro";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/simple/iawriterquattro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/simple/iawriterquattro.woff2")
     format("woff2");
 }
 body.theme-light {

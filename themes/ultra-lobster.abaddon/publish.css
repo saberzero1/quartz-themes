@@ -3,154 +3,154 @@
   font-family: "Getai";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/getai.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/getai.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Instrument";
   font-style: normal;
   font-weight: 100 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/instrument.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/instrument.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Instrument";
   font-style: italic;
   font-weight: 100 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/instrument-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/instrument-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Monaspace";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/monaspace.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/monaspace.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/fraunces.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/fraunces.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Fraunces";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/fraunces-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/fraunces-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/satoshi.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/satoshi.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Nightingale";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/nightingale.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/nightingale.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DobbinTextSF-Roman";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/dobbintextsf-roman.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/dobbintextsf-roman.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Eurostile";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/eurostile.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/eurostile.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "General Sans";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/general-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/general-sans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "General Sans";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/general-sans-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/general-sans-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Martian Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/martian-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/martian-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 500 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/space-grotesk.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/space-grotesk.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Aspekta";
   font-style: normal;
   font-weight: 100 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/aspekta.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/aspekta.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 500 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/lexend.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/lexend.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IAWriter";
   font-style: normal;
   font-weight: 500 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/iawriter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/iawriter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IAWriter";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/iawriter-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/iawriter-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/inter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/inter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 500 1000;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/inter-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/inter-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Newsreader";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/newsreader.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/newsreader.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Newsreader";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/ultra-lobster.abaddon/newsreader-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/ultra-lobster.abaddon/newsreader-1.woff2")
     format("woff2");
 }
 body.theme-dark {

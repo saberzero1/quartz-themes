@@ -3,14 +3,14 @@
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 350;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/vesnea-vibe/josefin-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/vesnea-vibe/josefin-sans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v3.0.0/fonts/vesnea-vibe/work-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/vesnea-vibe/work-sans.woff2")
     format("woff2");
 }
 body.theme-light {
