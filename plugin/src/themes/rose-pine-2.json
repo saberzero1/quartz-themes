@@ -68,23 +68,11 @@
   },
   "extras": null,
   "classSettings": {
-    "rose-norm": {
-      "dark": ".rose-norm {\n--rp-base: #191724;\n--rp-surface: #1f1d2e;\n--rp-overlay: #26233a;\n--rp-muted: #6e6a86;\n--rp-subtle: #908caa;\n--rp-text: #e0def4;\n--rp-love: #eb6f92;\n--rp-gold: #f6c177;\n--rp-rose: #ebbcba;\n--rp-iris: #c4a7e7;\n--rp-pine: #31748f;\n--rp-foam: #9ccfd8;\n--rp-highlightLow: #21202e;\n--rp-highlightMed: #403d52;\n--rp-highlightHigh: #524f67;\n}"
-    },
-    "rose-moon": {
-      "dark": ".rose-moon {\n--rp-base: #232136;\n--rp-surface: #2a273f;\n--rp-overlay: #393552;\n--rp-muted: #6e6a86;\n--rp-subtle: #908caa;\n--rp-text: #e0def4;\n--rp-love: #eb6f92;\n--rp-gold: #f6c177;\n--rp-rose: #ea9a97;\n--rp-iris: #c4a7e7;\n--rp-pine: #3e8fb0;\n--rp-foam: #9ccfd8;\n--rp-highlightLow: #2a283e;\n--rp-highlightMed: #44415a;\n--rp-highlightHigh: #56526e;\n}"
-    },
-    "rp-accent-full": {
-      "general": ".rp-accent-full {\n--rp-accent: var(--rp-rose)\n;\n}"
-    },
-    "rp-accent-love": {
-      "general": ".rp-accent-love {\n--rp-accent: var(--rp-love)\n;\n}"
-    },
     "rp-accent-rose": {
       "general": ".rp-accent-rose {\n--rp-accent: var(--rp-rose)\n;\n}"
     },
-    "rp-accent-gold": {
-      "general": ".rp-accent-gold {\n--rp-accent: var(--rp-gold)\n;\n}"
+    "rp-accent-full": {
+      "general": ".rp-accent-full {\n--rp-accent: var(--rp-rose)\n;\n}"
     },
     "rp-accent-iris": {
       "general": ".rp-accent-iris {\n--rp-accent: var(--rp-iris)\n;\n}"
@@ -94,6 +82,18 @@
     },
     "rp-accent-foam": {
       "general": ".rp-accent-foam {\n--rp-accent: var(--rp-foam)\n;\n}"
+    },
+    "rp-accent-gold": {
+      "general": ".rp-accent-gold {\n--rp-accent: var(--rp-gold)\n;\n}"
+    },
+    "rp-accent-love": {
+      "general": ".rp-accent-love {\n--rp-accent: var(--rp-love)\n;\n}"
+    },
+    "rose-moon": {
+      "dark": ".rose-moon {\n--rp-base: #232136;\n--rp-surface: #2a273f;\n--rp-overlay: #393552;\n--rp-muted: #6e6a86;\n--rp-subtle: #908caa;\n--rp-text: #e0def4;\n--rp-love: #eb6f92;\n--rp-gold: #f6c177;\n--rp-rose: #ea9a97;\n--rp-iris: #c4a7e7;\n--rp-pine: #3e8fb0;\n--rp-foam: #9ccfd8;\n--rp-highlightLow: #2a283e;\n--rp-highlightMed: #44415a;\n--rp-highlightHigh: #56526e;\n}"
+    },
+    "rose-norm": {
+      "dark": ".rose-norm {\n--rp-base: #191724;\n--rp-surface: #1f1d2e;\n--rp-overlay: #26233a;\n--rp-muted: #6e6a86;\n--rp-subtle: #908caa;\n--rp-text: #e0def4;\n--rp-love: #eb6f92;\n--rp-gold: #f6c177;\n--rp-rose: #ebbcba;\n--rp-iris: #c4a7e7;\n--rp-pine: #31748f;\n--rp-foam: #9ccfd8;\n--rp-highlightLow: #21202e;\n--rp-highlightMed: #403d52;\n--rp-highlightHigh: #524f67;\n}"
     }
   },
   "selectorImpacts": {},

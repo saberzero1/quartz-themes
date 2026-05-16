@@ -64,19 +64,19 @@
   },
   "extras": null,
   "classSettings": {
-    "dark-theme-midnight": {
-      "dark": ".dark-theme-midnight {\n--base-05: hsl(var(--base-hue), var(--base-sat, 16%), 90%);\n--base-10: hsl(var(--base-hue), var(--base-sat, 14%), 79%);\n--base-15: hsl(var(--base-hue), var(--base-sat, 12%), 70%);\n--base-20: hsl(var(--base-hue), var(--base-sat, 12%), 60%);\n--base-25: hsl(var(--base-hue), var(--base-sat, 10%), 49%);\n--base-30: hsl(var(--base-hue), var(--base-sat, 10%), 37%);\n--base-35: hsl(var(--base-hue), var(--base-sat, 12%), 26%);\n--base-40: hsl(var(--base-hue), var(--base-sat, 13%), 19%);\n--base-45: hsl(var(--base-hue), var(--base-sat, 12%), 15%);\n--base-50: hsl(var(--base-hue), var(--base-sat, 10%), 12%);\n--base-55: hsl(var(--base-hue), var(--base-sat, 8%), 8%);\n--base-60: hsl(var(--base-hue), var(--base-sat, 8%), 5%);\n--text-accent: hsl(var(--accent-h), 82%, 78%);\n--text-accent-hover: hsl(var(--accent-h), 90%, 84%);\n}"
-    },
     "headings-color-white": {
       "general": "body.headings-color-white {\n--h1-color: initial;\n--h2-color: initial;\n--h3-color: initial;\n--h4-color: initial;\n--h5-color: initial;\n--h6-color: initial;\n}"
     },
     "headings-color-colorful": {
       "general": "body.headings-color-colorful {\n--h1-color: hsl(\n    mod(var(--accent-h, 0), 360),\n    min(var(--accent-s), 72%),\n    min(var(--accent-l), 72%)\n  );\n--h2-color: hsl(\n    mod(calc(var(--accent-h, 0) - 30), 360),\n    min(var(--accent-s), 66%),\n    min(var(--accent-l), 64%)\n  );\n--h3-color: hsl(\n    mod(calc(var(--accent-h, 0) - 60), 360),\n    min(var(--accent-s), 52%),\n    min(var(--accent-l), 62%)\n  );\n--h4-color: hsl(\n    mod(calc(var(--accent-h, 0) - 90), 360),\n    min(var(--accent-s), 50%),\n    min(var(--accent-l), 60%)\n  );\n--h5-color: hsl(\n    mod(calc(var(--accent-h, 0) - 120), 360),\n    min(var(--accent-s), 50%),\n    min(var(--accent-l), 64%)\n  );\n--h6-color: hsl(\n    mod(calc(var(--accent-h, 0) - 150), 360),\n    min(var(--accent-s), 48%),\n    min(var(--accent-l), 62%)\n  );\n}"
     },
+    "neutral-bg": { "general": ".neutral-bg {\n--base-sat: 0%;\n}" },
     "accent-affect-bg": {
       "general": ".accent-affect-bg {\n--base-hue: var(--accent-h);\n}"
     },
-    "neutral-bg": { "general": ".neutral-bg {\n--base-sat: 0%;\n}" }
+    "dark-theme-midnight": {
+      "dark": ".dark-theme-midnight {\n--base-05: hsl(var(--base-hue), var(--base-sat, 16%), 90%);\n--base-10: hsl(var(--base-hue), var(--base-sat, 14%), 79%);\n--base-15: hsl(var(--base-hue), var(--base-sat, 12%), 70%);\n--base-20: hsl(var(--base-hue), var(--base-sat, 12%), 60%);\n--base-25: hsl(var(--base-hue), var(--base-sat, 10%), 49%);\n--base-30: hsl(var(--base-hue), var(--base-sat, 10%), 37%);\n--base-35: hsl(var(--base-hue), var(--base-sat, 12%), 26%);\n--base-40: hsl(var(--base-hue), var(--base-sat, 13%), 19%);\n--base-45: hsl(var(--base-hue), var(--base-sat, 12%), 15%);\n--base-50: hsl(var(--base-hue), var(--base-sat, 10%), 12%);\n--base-55: hsl(var(--base-hue), var(--base-sat, 8%), 8%);\n--base-60: hsl(var(--base-hue), var(--base-sat, 8%), 5%);\n--text-accent: hsl(var(--accent-h), 82%, 78%);\n--text-accent-hover: hsl(var(--accent-h), 90%, 84%);\n}"
+    }
   },
   "selectorImpacts": {},
   "brokenVarLinks": {

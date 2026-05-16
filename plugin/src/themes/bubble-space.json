@@ -170,11 +170,11 @@
   },
   "extras": null,
   "classSettings": {
-    "rainbow-space": {
-      "light": ".rainbow-space {\n--bubspace-mgrad1: #ffc9c9 ;\n--bubspace-mgrad2: #fad2ab ;\n--bubspace-mgrad3: #f4e8b0 ;\n--bubspace-mgrad4: #d9f3bd ;\n--bubspace-mgrad5: #acdfdc ;\n--bubspace-mgrad6: #b0d2f5 ;\n--bubspace-mgrad7: #c9bef8 ;\n--bubspace-mgrad8: #f7cbef ;\n}"
-    },
     "rainbowMD": {
       "light": ".rainbowMD {\n--bold-color: rgb(203, 120, 255);\n--italic-color: rgb(7, 224, 210);\n--comment-color: rgb(198, 112, 46);\n--math-color: rgb(155, 8, 184);\n--strike-color: rgb(125, 122, 122);\n--h1-color: rgb(220, 83, 185);\n--h4-color: rgb(93, 156, 228);\n--h2-color: rgb(141, 119, 236);\n--h5-color: rgb(174, 107, 218);\n--h3-color: rgb(67, 189, 211);\n--h6-color: rgb(218, 168, 74);\n--h1-col1: rgb(220, 83, 185);\n--h4-col1: rgb(93, 156, 228);\n--h2-col1: rgb(141, 119, 236);\n--h5-col1: rgb(174, 107, 218);\n--h3-col1: rgb(67, 189, 211);\n--h6-col1: rgb(218, 168, 74);\n--h1-col2: rgb(242,160,114);\n--h4-col2: rgb(177, 99, 201);\n--h2-col2: rgb(111, 231, 157);\n--h5-col2: rgb(167, 167, 167);\n--h3-col2: rgb(214, 202, 33);\n--h6-col2: rgb(10, 62, 75);\n}"
+    },
+    "rainbow-space": {
+      "light": ".rainbow-space {\n--bubspace-mgrad1: #ffc9c9 ;\n--bubspace-mgrad2: #fad2ab ;\n--bubspace-mgrad3: #f4e8b0 ;\n--bubspace-mgrad4: #d9f3bd ;\n--bubspace-mgrad5: #acdfdc ;\n--bubspace-mgrad6: #b0d2f5 ;\n--bubspace-mgrad7: #c9bef8 ;\n--bubspace-mgrad8: #f7cbef ;\n}"
     },
     "vanilla": {
       "light": ".vanilla {\n/* ⁡⁢⁣⁢# Quick Change⁡ */\n/* ! Background */\n--bubspace-bg1: rgb(255, 255, 255);\n--bubspace-bg2: rgb(235, 235, 235);\n--bubspace-bg3: rgb(214, 213, 213);\n--bubspace-bg4: hsl(0, 1%, 68%);\n--workspace-background-translucent: rgba(255, 255, 255, 0.536);\n/* ! Text Colors */\n--bubspace-col1: rgb(98, 98, 98);\n--bubspace-col2: rgb(145, 145, 145);\n--bubspace-col3: rgb(149, 149, 149);\n--bubspace-col4: rgb(255, 255, 255);\n/* ! Main Gradient Backgrounds (6-color) */\n--bubspace-mgrad1: #f4f4f4;\n--bubspace-mgrad2: #f0f0f2;\n--bubspace-mgrad3: #e2e7e7;\n--bubspace-mgrad4: #E4E6E7;\n--bubspace-mgrad5: #DEE1E3;\n--bubspace-mgrad6: #D9DCDF;\n--bubspace-mgrad7: #D3D8DA;\n--bubspace-mgrad8: #ced3d6;\n/* # Images */\n--vault-img: var(--vault-img-vanilla) ;\n}"
@@ -215,26 +215,11 @@
     "quick-hfont": {
       "light": ".quick-hfont {\n--bh1-font: var(--bub-head);\n--bh4-font: var(--bub-head);\n--bh2-font: var(--bub-head);\n--bh5-font: var(--bub-head);\n--bh3-font: var(--bub-head);\n--bh6-font: var(--bub-head);\n}"
     },
-    "hmarker": {
-      "general": ".hmarker h1::before {\ncontent: \" H1 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h1font);\ncolor: var(--head1);\n}\n\n.hmarker h2::before {\ncontent: \" H2 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h2font);\ncolor: var(--head2);\n}\n\n.hmarker h3::before {\ncontent: \" H3 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h3font);\ncolor: var(--head3);\n}\n\n.hmarker h4::before {\ncontent: \" H4 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h4font);\ncolor: var(--head4);\n}\n\n.hmarker h5::before {\ncontent: \" H5 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h5font);\ncolor: var(--head5);\n}\n\n.hmarker h6::before {\ncontent: \" H6 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h6font);\ncolor: var(--head6);\n}"
-    },
     "h1-under": {
       "general": "⁡ .h1-under h1::after {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h1-col1);\n}\n\n.h1-decograd h1::after {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\n}"
     },
     "h1-over": {
       "general": ".h1-over h1::before {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h1-col1);\n}\n\n.h1-decograd h1::before {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\n}"
-    },
-    "h1-border": {
-      "general": ".h1-border h1 {\nborder: 3px solid var(--h1-col1);\nborder-radius: var(--h1-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h1-decograd h1 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\n}"
-    },
-    "h1-colbg": {
-      "general": ".h1-colbg h1 {\nbackground-color: var(--h1-col1);\nborder-radius: var(--h1-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h1-decograd h1 {\nbackground: linear-gradient(148deg, var(--h1-col1) 27%, var(--h1-col2) 65%);\npadding: 5px;\n}"
-    },
-    "h1-imgbg": {
-      "general": ".h1-imgbg h1 {\nbackground: var(--bh1img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h1-bor);\n}"
-    },
-    "h1-decograd": {
-      "general": ".h1-under.h1-decograd h1::after, .h1-over.h1-decograd h1::before, .h1-border.h1-decograd h1 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\n}\n\n.h1-colbg.h1-decograd h1 {\nbackground: linear-gradient(148deg, var(--h1-col1) 27%, var(--h1-col2) 65%);\npadding: 5px;\n}"
     },
     "h2-under": {
       "general": ".h2-under h2::after {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h2-col1);\n}\n\n.h2-decograd h2::after {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\n}"
@@ -242,35 +227,11 @@
     "h2-over": {
       "general": ".h2-over h2::before {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h2-col1);\n}\n\n.h2-decograd h2::before {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\n}"
     },
-    "h2-border": {
-      "general": ".h2-border h2 {\nborder: 3px solid var(--h2-col1);\nborder-radius: var(--h2-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h2-decograd h2 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\n}"
-    },
-    "h2-colbg": {
-      "general": ".h2-colbg h2 {\nbackground-color: var(--h2-col1);\nborder-radius: var(--h2-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h2-decograd h2 {\nbackground: linear-gradient(148deg, var(--h2-col1) 27%, var(--h2-col2) 65%);\npadding: 5px;\n}"
-    },
-    "h2-imgbg": {
-      "general": ".h2-imgbg h2 {\nbackground: var(--bh2img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h2-bor);\n}"
-    },
-    "h2-decograd": {
-      "general": ".h2-under.h2-decograd h2::after, .h2-over.h2-decograd h2::before, .h2-border.h2-decograd h2 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\n}\n\n.h2-colbg.h2-decograd h2 {\nbackground: linear-gradient(148deg, var(--h2-col1) 27%, var(--h2-col2) 65%);\npadding: 5px;\n}"
-    },
     "h3-under": {
       "general": ".h3-under h3::after {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h3-col1);\n}\n\n.h3-decograd h3::after {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\n}"
     },
     "h3-over": {
       "general": ".h3-over h3::before {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h3-col1);\n}\n\n.h3-decograd h3::before {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\n}"
-    },
-    "h3-border": {
-      "general": ".h3-border h3 {\nborder: 3px solid var(--h3-col1);\nborder-radius: var(--h3-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h3-decograd h3 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\n}"
-    },
-    "h3-colbg": {
-      "general": ".h3-colbg h3 {\nbackground-color: var(--h3-col1);\nborder-radius: var(--h3-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h3-decograd h3 {\nbackground: linear-gradient(148deg, var(--h3-col1) 27%, var(--h3-col2) 65%);\npadding: 5px;\n}"
-    },
-    "h3-imgbg": {
-      "general": ".h3-imgbg h3 {\nbackground: var(--bh3img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h3-bor);\n}"
-    },
-    "h3-decograd": {
-      "general": ".h3-under.h3-decograd h3::after, .h3-over.h3-decograd h3::before, .h3-border.h3-decograd h3 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\n}\n\n.h3-colbg.h3-decograd h3 {\nbackground: linear-gradient(148deg, var(--h3-col1) 27%, var(--h3-col2) 65%);\npadding: 5px;\n}"
     },
     "h4-under": {
       "general": ".h4-under h4::after {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h4-col1);\n}\n\n.h4-decograd h4::after {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\n}"
@@ -278,35 +239,11 @@
     "h4-over": {
       "general": ".h4-over h4::before {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h4-col1);\n}\n\n.h4-decograd h4::before {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\n}"
     },
-    "h4-border": {
-      "general": ".h4-border h4 {\nborder: 3px solid var(--h4-col1);\nborder-radius: var(--h4-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h4-decograd h4 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\n}"
-    },
-    "h4-colbg": {
-      "general": ".h4-colbg h4 {\nbackground-color: var(--h4-col1);\nborder-radius: var(--h4-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h4-decograd h4 {\nbackground: linear-gradient(148deg, var(--h4-col1) 27%, var(--h4-col2) 65%);\npadding: 5px;\n}"
-    },
-    "h4-imgbg": {
-      "general": ".h4-imgbg h4 {\nbackground: var(--bh4img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h4-bor);\n}"
-    },
-    "h4-decograd": {
-      "general": ".h4-under.h4-decograd h4::after, .h4-over.h4-decograd h4::before, .h4-border.h4-decograd h4 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\n}\n\n.h4-colbg.h4-decograd h4 {\nbackground: linear-gradient(148deg, var(--h4-col1) 27%, var(--h4-col2) 65%);\npadding: 5px;\n}"
-    },
     "h5-under": {
       "general": ".h5-under h5::after {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h5-col1);\n}\n\n.h5-decograd h5::after {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\n}"
     },
     "h5-over": {
       "general": ".h5-over h5::before {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h5-col1);\n}\n\n.h5-decograd h5::before {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\n}"
-    },
-    "h5-border": {
-      "general": ".h5-border h5 {\nborder: 3px solid var(--h5-col1);\nborder-radius: var(--h5-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h5-decograd h5 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\n}"
-    },
-    "h5-colbg": {
-      "general": ".h5-colbg h5 {\nbackground-color: var(--h5-col1);\nborder-radius: var(--h5-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h5-decograd h5 {\nbackground: linear-gradient(148deg, var(--h5-col1) 27%, var(--h5-col2) 65%);\npadding: 5px;\n}"
-    },
-    "h5-imgbg": {
-      "general": ".h5-imgbg h5 {\nbackground: var(--bh5img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h5-bor);\n}"
-    },
-    "h5-decograd": {
-      "general": ".h5-under.h5-decograd h5::after, .h5-over.h5-decograd h5::before, .h5-border.h5-decograd h5 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\n}\n\n.h5-colbg.h5-decograd h5 {\nbackground: linear-gradient(148deg, var(--h5-col1) 27%, var(--h5-col2) 65%);\npadding: 5px;\n}"
     },
     "h6-under": {
       "general": ".h6-under h6::after {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h6-col1);\n}\n\n.h6-decograd h6::after {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\n}"
@@ -314,17 +251,80 @@
     "h6-over": {
       "general": ".h6-over h6::before {\ncontent: \"  \";\ndisplay: block;\nfont-size: 0px;\nborder-top: 3px solid var(--h6-col1);\n}\n\n.h6-decograd h6::before {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\n}"
     },
+    "h1-border": {
+      "general": ".h1-border h1 {\nborder: 3px solid var(--h1-col1);\nborder-radius: var(--h1-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h1-decograd h1 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\n}"
+    },
+    "h2-border": {
+      "general": ".h2-border h2 {\nborder: 3px solid var(--h2-col1);\nborder-radius: var(--h2-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h2-decograd h2 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\n}"
+    },
+    "h3-border": {
+      "general": ".h3-border h3 {\nborder: 3px solid var(--h3-col1);\nborder-radius: var(--h3-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h3-decograd h3 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\n}"
+    },
+    "h4-border": {
+      "general": ".h4-border h4 {\nborder: 3px solid var(--h4-col1);\nborder-radius: var(--h4-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h4-decograd h4 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\n}"
+    },
+    "h5-border": {
+      "general": ".h5-border h5 {\nborder: 3px solid var(--h5-col1);\nborder-radius: var(--h5-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h5-decograd h5 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\n}"
+    },
     "h6-border": {
       "general": ".h6-border h6 {\nborder: 3px solid var(--h6-col1);\nborder-radius: var(--h6-bor);\npadding: 0px;\npadding-left: 8px;\npadding-top: 4px;\n}\n\n.h6-decograd h6 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\n}"
+    },
+    "h1-decograd": {
+      "general": ".h1-under.h1-decograd h1::after, .h1-over.h1-decograd h1::before, .h1-border.h1-decograd h1 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h1-col1), var(--h1-col2)) 1;\n}\n\n.h1-colbg.h1-decograd h1 {\nbackground: linear-gradient(148deg, var(--h1-col1) 27%, var(--h1-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h2-decograd": {
+      "general": ".h2-under.h2-decograd h2::after, .h2-over.h2-decograd h2::before, .h2-border.h2-decograd h2 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h2-col1), var(--h2-col2)) 1;\n}\n\n.h2-colbg.h2-decograd h2 {\nbackground: linear-gradient(148deg, var(--h2-col1) 27%, var(--h2-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h3-decograd": {
+      "general": ".h3-under.h3-decograd h3::after, .h3-over.h3-decograd h3::before, .h3-border.h3-decograd h3 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h3-col1), var(--h3-col2)) 1;\n}\n\n.h3-colbg.h3-decograd h3 {\nbackground: linear-gradient(148deg, var(--h3-col1) 27%, var(--h3-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h4-decograd": {
+      "general": ".h4-under.h4-decograd h4::after, .h4-over.h4-decograd h4::before, .h4-border.h4-decograd h4 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h4-col1), var(--h4-col2)) 1;\n}\n\n.h4-colbg.h4-decograd h4 {\nbackground: linear-gradient(148deg, var(--h4-col1) 27%, var(--h4-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h5-decograd": {
+      "general": ".h5-under.h5-decograd h5::after, .h5-over.h5-decograd h5::before, .h5-border.h5-decograd h5 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h5-col1), var(--h5-col2)) 1;\n}\n\n.h5-colbg.h5-decograd h5 {\nbackground: linear-gradient(148deg, var(--h5-col1) 27%, var(--h5-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h6-decograd": {
+      "general": ".h6-under.h6-decograd h6::after, .h6-over.h6-decograd h6::before, .h6-border.h6-decograd h6 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\n}\n\n.h6-colbg.h6-decograd h6 {\nbackground: linear-gradient(148deg, var(--h6-col1) 27%, var(--h6-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h1-colbg": {
+      "general": ".h1-colbg h1 {\nbackground-color: var(--h1-col1);\nborder-radius: var(--h1-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h1-decograd h1 {\nbackground: linear-gradient(148deg, var(--h1-col1) 27%, var(--h1-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h2-colbg": {
+      "general": ".h2-colbg h2 {\nbackground-color: var(--h2-col1);\nborder-radius: var(--h2-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h2-decograd h2 {\nbackground: linear-gradient(148deg, var(--h2-col1) 27%, var(--h2-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h3-colbg": {
+      "general": ".h3-colbg h3 {\nbackground-color: var(--h3-col1);\nborder-radius: var(--h3-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h3-decograd h3 {\nbackground: linear-gradient(148deg, var(--h3-col1) 27%, var(--h3-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h4-colbg": {
+      "general": ".h4-colbg h4 {\nbackground-color: var(--h4-col1);\nborder-radius: var(--h4-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h4-decograd h4 {\nbackground: linear-gradient(148deg, var(--h4-col1) 27%, var(--h4-col2) 65%);\npadding: 5px;\n}"
+    },
+    "h5-colbg": {
+      "general": ".h5-colbg h5 {\nbackground-color: var(--h5-col1);\nborder-radius: var(--h5-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h5-decograd h5 {\nbackground: linear-gradient(148deg, var(--h5-col1) 27%, var(--h5-col2) 65%);\npadding: 5px;\n}"
     },
     "h6-colbg": {
       "general": ".h6-colbg h6 {\nbackground-color: var(--h6-col1);\nborder-radius: var(--h6-bor);\npadding-bottom: 0px;\npadding-left: 6px;\n}\n\n.h6-decograd h6 {\nbackground: linear-gradient(148deg, var(--h6-col1) 27%, var(--h6-col2) 65%);\npadding: 5px;\n}"
     },
+    "h1-imgbg": {
+      "general": ".h1-imgbg h1 {\nbackground: var(--bh1img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h1-bor);\n}"
+    },
+    "h2-imgbg": {
+      "general": ".h2-imgbg h2 {\nbackground: var(--bh2img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h2-bor);\n}"
+    },
+    "h3-imgbg": {
+      "general": ".h3-imgbg h3 {\nbackground: var(--bh3img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h3-bor);\n}"
+    },
+    "h4-imgbg": {
+      "general": ".h4-imgbg h4 {\nbackground: var(--bh4img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h4-bor);\n}"
+    },
+    "h5-imgbg": {
+      "general": ".h5-imgbg h5 {\nbackground: var(--bh5img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h5-bor);\n}"
+    },
     "h6-imgbg": {
       "general": ".h6-imgbg h6 {\nbackground: var(--bh6img) no-repeat;\nbackground-size: cover !important;\npadding: 5px;\nborder-radius: var(--h6-bor);\n}"
     },
-    "h6-decograd": {
-      "general": ".h6-under.h6-decograd h6::after, .h6-over.h6-decograd h6::before, .h6-border.h6-decograd h6 {\nborder-width: 3px;\n-o-border-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\nborder-image: linear-gradient(45deg, var(--h6-col1), var(--h6-col2)) 1;\n}\n\n.h6-colbg.h6-decograd h6 {\nbackground: linear-gradient(148deg, var(--h6-col1) 27%, var(--h6-col2) 65%);\npadding: 5px;\n}"
+    "hmarker": {
+      "general": ".hmarker h1::before {\ncontent: \" H1 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h1font);\ncolor: var(--head1);\n}\n\n.hmarker h2::before {\ncontent: \" H2 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h2font);\ncolor: var(--head2);\n}\n\n.hmarker h3::before {\ncontent: \" H3 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h3font);\ncolor: var(--head3);\n}\n\n.hmarker h4::before {\ncontent: \" H4 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h4font);\ncolor: var(--head4);\n}\n\n.hmarker h5::before {\ncontent: \" H5 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h5font);\ncolor: var(--head5);\n}\n\n.hmarker h6::before {\ncontent: \" H6 \";\nfont-size: 50%;\nopacity: 0.8;\nfont-family: var(--h6font);\ncolor: var(--head6);\n}"
     },
     "h-liblend": {
       "general": ".h-liblend h1 > a.internal-link {\ncolor: var(--h1-color) !important;\n}\n\n.h-liblend h2 > a.internal-link {\ncolor: var(--h1-color) !important;\n}\n\n.h-liblend h3 > a.internal-link {\ncolor: var(--h3-color) !important;\n}\n\n.h-liblend h4 > a.internal-link {\ncolor: var(--h4-color) !important;\n}\n\n.h-liblend h5 > a.internal-link {\ncolor: var(--h5-color) !important;\n}\n\n.h-liblend h6 > a.internal-link {\ncolor: var(--h6-color) !important;\n}\n\n.h-liblend h1 > a.internal-link, .h-liblend h2 > a.internal-link, .h-liblend h3 > a.internal-link, .h-liblend h4 > a.internal-link, .h-liblend h5 > a.internal-link, .h-liblend h6 > a.internal-link {\ntext-decoration: underline !important;\n}"

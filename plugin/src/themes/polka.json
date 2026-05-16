@@ -64,6 +64,9 @@
   },
   "extras": null,
   "classSettings": {
+    "ss-polka-dots": {
+      "general": ".ss-polka-dots {\n--polka-dots: none;\n--ribbon-border: var(--divider-width) solid var(--accent-soft-light);\n}"
+    },
     "ss-light-zero-contrast": {
       "light": ".ss-light-zero-contrast {\n--background-secondary: var(--background-primary);\n--divider-color: var(--accent-soft-light) !important;\n--kanban-checkbox-border: var(--accent-soft-dark);\n}"
     },
@@ -75,6 +78,18 @@
     },
     "ss-dark-highlights": {
       "general": ".ss-dark-highlights {\n--ss-dark-highlight-bg: rgb(220, 193, 45);\n}"
+    },
+    "ss-table-monospace": {
+      "general": ".ss-table-monospace {\n--table-body-font: var(--font-monospace);\n--table-body-font-size: 0.875em;\n}"
+    },
+    "ss-round-checkboxes": {
+      "general": ".ss-round-checkboxes {\n--checkbox-radius: 50px !important;\n}"
+    },
+    "ss-tab-outline": {
+      "general": ".ss-tab-outline {\n--tab-outline-color: transparent;\n}"
+    },
+    "ss-embed-borders": {
+      "general": ".ss-embed-borders {\n--ss-embed-border-style: none;\n--embed-padding: 0;\n}"
     },
     "dracula-code-colors": {
       "general": ".dracula-code-colors {\n--code-background: #282A36 !important;\n--code-normal: #F8F8F2 !important;\n--code-punctuation: var(--code-normal) !important;\n--code-comment: #6272A4 !important;\n--code-indentation-guide-color: var(--code-comment) !important;\n--color-yellow: #F1FA8C !important;\n--color-orange: #FFB86C !important;\n--color-pink: #FF79C6 !important;\n--color-red: #FF5555 !important;\n--color-cyan: #8BE9FD !important;\n--color-green: #50FA7B !important;\n--color-purple: #BD93F9 !important;\n}"
@@ -96,21 +111,6 @@
     "solarized-code-colors": {
       "dark": ".solarized-code-colors {\n--code-background: #002b36 !important;\n--code-normal: #93a1a1 !important;\n--code-punctuation: var(--code-normal) !important;\n--code-comment: #586e75 !important;\n--code-indentation-guide-color: var(--code-comment) !important;\n--color-yellow: #b58900 !important;\n--color-orange: #cb4b16 !important;\n--color-pink: #d33682 !important;\n--color-red: #dc322f !important;\n--color-cyan: #2aa198 !important;\n--color-green: #859900 !important;\n--color-purple: #6c71c4 !important;\n}",
       "light": ".solarized-code-colors {\n--code-background: #eee8d5 !important;\n--code-normal: #839496 !important;\n--code-punctuation: var(--code-normal) !important;\n--code-comment: #586e75 !important;\n--code-indentation-guide-color: var(--code-comment) !important;\n--color-yellow: #b58900 !important;\n--color-orange: #cb4b16 !important;\n--color-pink: #d33682 !important;\n--color-red: #dc322f !important;\n--color-cyan: #2aa198 !important;\n--color-green: #859900 !important;\n--color-purple: #6c71c4 !important;\n}"
-    },
-    "ss-round-checkboxes": {
-      "general": ".ss-round-checkboxes {\n--checkbox-radius: 50px !important;\n}"
-    },
-    "ss-table-monospace": {
-      "general": ".ss-table-monospace {\n--table-body-font: var(--font-monospace);\n--table-body-font-size: 0.875em;\n}"
-    },
-    "ss-embed-borders": {
-      "general": ".ss-embed-borders {\n--ss-embed-border-style: none;\n--embed-padding: 0;\n}"
-    },
-    "ss-tab-outline": {
-      "general": ".ss-tab-outline {\n--tab-outline-color: transparent;\n}"
-    },
-    "ss-polka-dots": {
-      "general": ".ss-polka-dots {\n--polka-dots: none;\n--ribbon-border: var(--divider-width) solid var(--accent-soft-light);\n}"
     }
   },
   "selectorImpacts": {},

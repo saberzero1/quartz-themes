@@ -64,23 +64,72 @@
   },
   "extras": null,
   "classSettings": {
-    "i-border-layout": {
-      "general": ";\n;\n&:not(.is-hidden-frameless) .titlebar {\n\t\tbackground-color: var(--i-layout-color);\n\t};\n;\n;\n;\n;\n;\n}\n\n&.i-border-layout {\n--status-bar-border-color: var(--i-layout-border-color);\n--status-bar-border-width: 0 1px 1px;\n--status-bar-radius: 0 0 var(--i-border-radius) var(--i-border-radius);\n}\n\n&.i-border-layout:not(.i-hide-status-bar, .i-focus-mode.i-focus-mode-status-bar {\nborder-bottom-color: var(--background-modifier-border);\nborder-radius: var(--i-border-radius) var(--i-border-radius) 0 0;\n}"
-    },
-    "i-default-layout": {
-      "general": "&.i-default-layout:not(.is-hidden-frameless) {\n--titlebar-background: var(--background-primary);\n}\n\n&.i-default-layout .status-bar {\nmargin-bottom: 8px;\n}\n\n&:not(.i-centered-status-bar).i-default-layout .status-bar {\nmargin-right: 8px;\n}"
-    },
     "i-lt-layout-s": {
       "general": ".i-lt-layout-s {\n--i-lt-layout-s: var(--i-lt-custom-layout-s);\n}"
     },
     "i-dk-layout-s": {
       "general": ".i-dk-layout-s {\n--i-dk-layout-s: var(--i-dk-custom-layout-s);\n}"
     },
-    "i-active-line-border": {
-      "general": "&.i-active-line-border {\n&.i-spacing .HyperMD-header.cm-active.cm-line::after {\n\t\t\tbottom: calc(var(--i-spacing-below-headings) + 0.25em);\n\t\t};\n;\n;\n;\n;\n;\n;\n;\n;\n;\n}"
+    "i-default-layout": {
+      "general": "&.i-default-layout:not(.is-hidden-frameless) {\n--titlebar-background: var(--background-primary);\n}\n\n&.i-default-layout .status-bar {\nmargin-bottom: 8px;\n}\n\n&:not(.i-centered-status-bar).i-default-layout .status-bar {\nmargin-right: 8px;\n}"
+    },
+    "i-border-layout": {
+      "general": ";\n;\n&:not(.is-hidden-frameless) .titlebar {\n\t\tbackground-color: var(--i-layout-color);\n\t};\n;\n;\n;\n;\n;\n}\n\n&.i-border-layout {\n--status-bar-border-color: var(--i-layout-border-color);\n--status-bar-border-width: 0 1px 1px;\n--status-bar-radius: 0 0 var(--i-border-radius) var(--i-border-radius);\n}\n\n&.i-border-layout:not(.i-hide-status-bar, .i-focus-mode.i-focus-mode-status-bar {\nborder-bottom-color: var(--background-modifier-border);\nborder-radius: var(--i-border-radius) var(--i-border-radius) 0 0;\n}"
+    },
+    "i-hide-vault-profile": {
+      "general": ".i-hide-vault-profile:not(.i-focus-mode-main.i-focus-mode) {\n--vault-profile-display: none;\n}"
+    },
+    "i-focus-mode-main": {
+      "general": "&.i-focus-mode.i-focus-mode-main {\n--i-card-radius: var(--i-card-radius-macos);\n}\n\n;\n&:not(.i-border-layout {\n\t\tmargin-top: 3px;\n\t\tborder-top: 1px solid var(--i-layout-border-color);\n\t\tborder-radius: var(--i-card-radius);\n\t};\n\n\t};\n\n\t};\n;\n&.i-default-layout:not(.is-hidden-frameless) {\n\t\t--titlebar-background: var(--background-primary);\n\t};\n;\n;\n\n.titlebar-button {\n\t\t\tpadding: 0 6px;\n\t\t}\n\n&:not(.is-fullscreen {\n\t\t\tpadding-top: 16px;\n\t\t}\n\t};\n}"
+    },
+    "i-focus-mode": {
+      "general": "&.i-focus-mode-main {\n--i-card-radius: var(--i-card-radius-macos);\n}\n\n;\n&:not(.i-border-layout {\n\t\tmargin-top: 3px;\n\t\tborder-top: 1px solid var(--i-layout-border-color);\n\t\tborder-radius: var(--i-card-radius);\n\t};\n\n\t};\n\n\t};\n;\n&.i-default-layout:not(.is-hidden-frameless) {\n\t\t--titlebar-background: var(--background-primary);\n\t};\n;\n;\n\n.titlebar-button {\n\t\t\tpadding: 0 6px;\n\t\t}\n\n&:not(.is-fullscreen {\n\t\t\tpadding-top: 16px;\n\t\t}\n\t};\n}"
+    },
+    "i-scrollbar": {
+      "general": "&.i-scrollbar-square ::-webkit-scrollbar-thumb {\nborder-radius: 0 !important;\n}\n\n&.i-scrollbar-hide ::-webkit-scrollbar {\ndisplay: none;\n}"
+    },
+    "i-scrollbar-square": {
+      "general": "&.i-scrollbar-square ::-webkit-scrollbar-thumb {\nborder-radius: 0 !important;\n}"
+    },
+    "i-scrollbar-hide": {
+      "general": "&.i-scrollbar-hide ::-webkit-scrollbar {\ndisplay: none;\n}"
+    },
+    "i-hide-status-bar": {
+      "general": ".i-hide-status-bar .status-bar {\ndisplay: none;\n}"
+    },
+    "i-autohide-status-bar": {
+      "general": ".i-autohide-status-bar {\n--status-bar-background: var(--i-1);\n--status-bar-border-width: 1px;\n--status-bar-radius: 8px;\n.status-bar {\n\t\topacity: 0;\n\t\ttransform: translateY(12px);\n\t\ttransition: transform 100ms ease-in-out, opacity 100ms ease-in-out;\n\n\t\t&:hover {\n\t\t\topacity: 1;\n\t\t\ttransform: translateY(0);\n\t\t}\n\n&::before {\n\t\t\tposition: absolute;\n\t\t\tinset: 27px 0 -17px;\n\t\t\tcontent: '';\n\t\t}\n\t};\n&:not(.i-default-layout) .status-bar {\n\t\tmargin-bottom: 16px;\n\t};\n&:not(.i-centered-status-bar) .status-bar {\n\t\tmargin-right: 16px;\n\t};\n&.i-default-layout .status-bar {\n\t\tmargin-bottom: 8px;\n\t};\n&:not(.i-centered-status-bar).i-default-layout .status-bar {\n\t\tmargin-right: 8px;\n\t};\n}\n\n&.i-autohide-status-bar {\n.status-bar {\n\t\t\tleft: 0;\n\t\t\twidth: fit-content;\n\t\t\tmargin-inline: auto;\n\t\t};\n}"
+    },
+    "i-full-width-status-bar": {
+      "general": ".i-full-width-status-bar:not(.i-autohide-status-bar) {\n--status-bar-border-width: 1px 0 0;\n--status-bar-position: static;\n--status-bar-radius: 0;\n&.i-border-layout {\n\t\t--status-bar-border-color: var(--i-layout-border-color);\n\t\t--status-bar-border-width: 0 1px 1px;\n\t\t--status-bar-radius: 0 0 var(--i-border-radius) var(--i-border-radius);\n\t};\n&.i-border-layout:not(.i-hide-status-bar, .i-focus-mode.i-focus-mode-status-bar {\n\t\tborder-bottom-color: var(--background-modifier-border);\n\t\tborder-radius: var(--i-border-radius) var(--i-border-radius) 0 0;\n\t};\n&:not(.i-border-layout, .i-default-layout, .i-hide-status-bar, .i-focus-mode.i-focus-mode-status-bar {\n\t\tpadding-bottom: 3px;\n\t};\n&:not(.i-border-layout, .i-default-layout) {\n\t\t--status-bar-border-color: var(--i-layout-border-color);\n\t};\n}\n\n&.i-full-width-status-bar .status-bar {\njustify-content: center;\n}"
+    },
+    "i-centered-status-bar": {
+      "general": ".i-centered-status-bar {\n&:not(.i-full-width-status-bar, .i-autohide-status-bar) {\n\t\t--status-bar-border-width: 1px 1px 0;\n\t\t--status-bar-radius: 8px 8px 0 0;\n\t};\n&:not(.i-full-width-status-bar),\n&.i-autohide-status-bar {\n\t\t.status-bar {\n\t\t\tleft: 0;\n\t\t\twidth: fit-content;\n\t\t\tmargin-inline: auto;\n\t\t}\n\t};\n&.i-full-width-status-bar .status-bar {\n\t\tjustify-content: center;\n\t};\n}"
+    },
+    "i-tab-titlebar-autohide": { "general": ";\n\n\t};\n;\n;\n}" },
+    "i-hide-tab-titlebar-buttons": {
+      "general": ".view-actions) {\ndisplay: none;\n}"
+    },
+    "i-autohide-tab-titlebar-buttons": {
+      "general": ".view-actions) {\nopacity: 0;\ntransition: opacity 100ms ease-in-out;\n&:hover {\n\t\topacity: 1;\n\t};\n}"
+    },
+    "i-tab-titlebar-border-solid": {
+      "general": ".i-tab-titlebar-border-solid {\n--file-header-border: 1px solid var(--background-modifier-border);\n}"
+    },
+    "i-tab-titlebar-border-dashed": {
+      "general": ".i-tab-titlebar-border-dashed {\n--file-header-border: 1px dashed var(--background-modifier-border);\n}"
+    },
+    "i-autohide-vault-profile": {
+      "general": ".i-autohide-vault-profile:not(.i-focus-mode-main.i-focus-mode {\nposition: absolute;\nbottom: 0;\nz-index: 1;\nheight: 16px;\noverflow: hidden;\nopacity: 0;\ntransition: height 100ms ease-in-out, opacity 100ms ease-in-out;\n&:hover {\n\t\theight: 44px;\n\t\topacity: 1;\n\t};\n}"
     },
     "i-active-line-highlight": {
       "general": "&.i-active-line-highlight {\n.workspace-leaf.mod-active .cm-active.cm-line {\n\t\t\tbackground-color: var(--i-active-line-highlight);\n\t\t\tbox-shadow: -128px 0 var(--i-active-line-highlight), 128px 0 var(--i-active-line-highlight);\n\t\t};\n;\n}\n\n&.i-active-line-highlight-border {\n.workspace-leaf.mod-active .cm-active.cm-line {\n\t\t\tbackground-color: var(--i-active-line-highlight);\n\t\t\tbox-shadow: -10px 0 var(--i-active-line-highlight), 10px 0 var(--i-active-line-highlight);\n\t\t};\n;\n;\n;\n;\n;\n;\n;\n}"
+    },
+    "i-active-line-border": {
+      "general": "&.i-active-line-border {\n&.i-spacing .HyperMD-header.cm-active.cm-line::after {\n\t\t\tbottom: calc(var(--i-spacing-below-headings) + 0.25em);\n\t\t};\n;\n;\n;\n;\n;\n;\n;\n;\n;\n}"
+    },
+    "i-spacing": {
+      "general": ";\n.markdown-rendered {\n\t\th1,\n\t\th2,\n\t\th3,\n\t\th4,\n\t\th5,\n\t\th6 {\n\t\t\tmargin-bottom: var(--i-spacing-below-headings);\n\t\t}\n\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-p, .el-blockquote, .el-ul, .el-ol) > *,\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-pre :is(pre, .internal-query),\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-div .callout,\n:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, pre, .callout, .internal-query) {\n\t\t\tmargin-top: 0;\n\t\t}\n\nhr {\n\t\t\tmargin: calc(var(--p-spacing) * 1.5 - var(--hr-thickness) / 2) 0;\n\t\t}\n\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-hr hr,\n:is(h1, h2, h3, h4, h5, h6) + hr {\n\t\t\tmargin-top: calc((var(--p-spacing) - var(--hr-thickness)) / 2 + var(--i-spacing-below-headings));\n\t\t}\n\n\t\t.el-hr + .el-hr hr,\nhr + hr {\n\t\t\tmargin-top: calc(var(--p-spacing) * 2 - var(--hr-thickness));\n\t\t}\n\npre {\n\t\t\tpadding: calc(var(--code-size) * var(--line-height-normal)) 16px;\n\t\t\tline-height: calc(var(--code-size) * var(--line-height-normal));\n\t\t}\n\n:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-table table {\n\t\t\tmargin-top: calc(16px + var(--i-spacing-below-headings));\n\t\t}\n\n.el-table table {\n\t\t\tmargin: 16px 0;\n\t\t}\n\n:is(h1, h2, h3, h4, h5, h6) + table {\n\t\t\tmargin-top: calc(16px + var(--p-spacing) + var(--i-spacing-below-headings));\n\t\t}\n\ntable + table {\n\t\t\tmargin-top: calc(var(--p-spacing) + 32px);\n\t\t}\n\t};\n.markdown-rendered :is(blockquote, pre, .el-table),\n;\n.callout :is(h1, h2, h3, h4, h5, h6) + table,\nh2, h3, h4, h5, h6) + .callout {\n\t\tmargin-top: 0;\n\t};\n.callout table + table {\n\t\tmargin-top: var(--p-spacing);\n\t};\n}\n\n.el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-pre .block-language-dataview, h2, h3, h4, h5, h6) + .block-language-dataview {\nmargin-top: 0;\n}"
     },
     "i-active-line-highlight-border": {
       "general": "&.i-active-line-highlight-border {\n.workspace-leaf.mod-active .cm-active.cm-line {\n\t\t\tbackground-color: var(--i-active-line-highlight);\n\t\t\tbox-shadow: -10px 0 var(--i-active-line-highlight), 10px 0 var(--i-active-line-highlight);\n\t\t};\n;\n;\n;\n;\n;\n;\n;\n}"
@@ -100,26 +149,29 @@
     "i-callout-outlined-filled": {
       "general": ".i-callout-outlined-filled {\n--callout-content-padding: calc(var(--p-spacing) - 1em) 1em 1em;\n}\n\n.i-callout-outlined-filled {\n&.theme-light .callout {\n\t\tbackground-color: oklch(from rgb(var(--callout-color)) 0.65 c h / 0.06);\n\t\tborder-color: oklch(from rgb(var(--callout-color)) 0.65 c h / 0.3);\n\t};\n&.theme-dark .callout {\n\t\tbackground-color: oklch(from rgb(var(--callout-color)) 0.75 c h / 0.08);\n\t\tborder-color: oklch(from rgb(var(--callout-color)) 0.75 c h / 0.2);\n\t};\n}"
     },
+    "i-strike-completed-tasks": {
+      "general": ".i-strike-completed-tasks {\n--checklist-done-decoration: line-through;\n}"
+    },
     "i-dotted-bg": {
       "general": ".i-dotted-bg:is(.i-tab-titlebar-border-solid {\nbackground-position-y: calc((var(--i-pattern-width) - var(--i-pattern-line-width)) / 2);\n}"
-    },
-    "i-lt-heading-colored": {
-      "light": ".markdown-rendered) {\n--h1-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h)));\n--h2-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.2));\n--h3-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.4));\n--h4-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.6));\n--h5-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.8));\n--h6-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h6-h)));\n}"
-    },
-    "i-lt-heading-highlighted": {
-      "light": ".i-lt-heading-highlighted {\n:is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {\n\t\tpadding-block: var(--i-lt-heading-highlighted-padding);\n\t};\n.markdown-rendered h1 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h)) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h2 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.2) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h3 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.4) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h4 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.6) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h5 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.8) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h6 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h6-h)) / var(--i-lt-heading-highlighted-a, 50%));};\n}"
     },
     "i-lt-heading-accent": {
       "general": ".i-lt-heading-accent {\n--i-lt-heading-accent: var(--color-accent);\n}"
     },
+    "i-dk-heading-accent": {
+      "general": ".i-dk-heading-accent {\n--i-dk-heading-accent: var(--color-accent);\n}"
+    },
+    "i-lt-heading-colored": {
+      "light": ".markdown-rendered) {\n--h1-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h)));\n--h2-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.2));\n--h3-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.4));\n--h4-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.6));\n--h5-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.8));\n--h6-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-colored-l, 50%) var(--i-lt-heading-colored-c, 50%) calc(h + var(--i-lt-h6-h)));\n}"
+    },
     "i-dk-heading-colored": {
       "dark": ".markdown-rendered) {\n--h1-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-colored-l, 80%) var(--i-dk-heading-colored-c, 20%) calc(h + var(--i-dk-h1-h)));\n--h2-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-colored-l, 80%) var(--i-dk-heading-colored-c, 20%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.2));\n--h3-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-colored-l, 80%) var(--i-dk-heading-colored-c, 20%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.4));\n--h4-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-colored-l, 80%) var(--i-dk-heading-colored-c, 20%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.6));\n--h5-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-colored-l, 80%) var(--i-dk-heading-colored-c, 20%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.8));\n--h6-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-colored-l, 80%) var(--i-dk-heading-colored-c, 20%) calc(h + var(--i-dk-h6-h)));\n}"
     },
+    "i-lt-heading-highlighted": {
+      "light": ".i-lt-heading-highlighted {\n:is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {\n\t\tpadding-block: var(--i-lt-heading-highlighted-padding);\n\t};\n.markdown-rendered h1 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h)) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h2 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.2) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h3 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.4) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h4 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.6) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h5 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h1-h) + (var(--i-lt-h6-h) - var(--i-lt-h1-h)) * 0.8) / var(--i-lt-heading-highlighted-a, 50%));};\n.markdown-rendered h6 {background-color: oklch(from var(--i-lt-heading-accent, red) var(--i-lt-heading-highlighted-l, 95%) var(--i-lt-heading-highlighted-c, 8%) calc(h + var(--i-lt-h6-h)) / var(--i-lt-heading-highlighted-a, 50%));};\n}"
+    },
     "i-dk-heading-highlighted": {
       "dark": ".i-dk-heading-highlighted {\n:is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {\n\t\tpadding-block: var(--i-dk-heading-highlighted-padding);\n\t};\n.markdown-rendered h1 {background-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-highlighted-l, 40%) var(--i-dk-heading-highlighted-c, 15%) calc(h + var(--i-dk-h1-h)) / var(--i-dk-heading-highlighted-a, 50%));};\n.markdown-rendered h2 {background-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-highlighted-l, 40%) var(--i-dk-heading-highlighted-c, 15%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.2) / var(--i-dk-heading-highlighted-a, 50%));};\n.markdown-rendered h3 {background-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-highlighted-l, 40%) var(--i-dk-heading-highlighted-c, 15%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.4) / var(--i-dk-heading-highlighted-a, 50%));};\n.markdown-rendered h4 {background-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-highlighted-l, 40%) var(--i-dk-heading-highlighted-c, 15%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.6) / var(--i-dk-heading-highlighted-a, 50%));};\n.markdown-rendered h5 {background-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-highlighted-l, 40%) var(--i-dk-heading-highlighted-c, 15%) calc(h + var(--i-dk-h1-h) + (var(--i-dk-h6-h) - var(--i-dk-h1-h)) * 0.8) / var(--i-dk-heading-highlighted-a, 50%));};\n.markdown-rendered h6 {background-color: oklch(from var(--i-dk-heading-accent, red) var(--i-dk-heading-highlighted-l, 40%) var(--i-dk-heading-highlighted-c, 15%) calc(h + var(--i-dk-h6-h)) / var(--i-dk-heading-highlighted-a, 50%));};\n}"
-    },
-    "i-dk-heading-accent": {
-      "general": ".i-dk-heading-accent {\n--i-dk-heading-accent: var(--color-accent);\n}"
     },
     "i-headings": {
       "general": ".i-headings {\n--h1-letter-spacing: 0;\n--h2-letter-spacing: 0;\n--h3-letter-spacing: 0;\n--h4-letter-spacing: 0;\n--h5-letter-spacing: 0;\n--h6-letter-spacing: 0;\n--h1-line-height: var(--line-height-normal);\n--h2-line-height: var(--line-height-normal);\n--h3-line-height: var(--line-height-normal);\n--h4-line-height: var(--line-height-normal);\n--h1-size: var(--i-h1-size);\n--h2-size: var(--i-h2-size);\n--h3-size: var(--i-h3-size);\n--h4-size: var(--i-h4-size);\n--h5-size: var(--i-h5-size);\n--h6-size: var(--i-h6-size);\n--h1-weight: 600;\n--h2-weight: 600;\n--h3-weight: 600;\n--h4-weight: 600;\n--h5-weight: 600;\n--h6-weight: 600;\n}"
@@ -130,14 +182,14 @@
     "i-center-images": {
       "general": ".i-center-images {\n.markdown-rendered img {\n\t\tdisplay: block;\n\t\tmargin-inline: auto;\n\t};\n;\n}"
     },
-    "i-inline-title-centered": {
-      "general": "&.i-inline-title-centered .inline-title:not([data-level]) {\nalign-self: center;\n}\n\n.i-inline-title-centered .inline-title:not([data-level]) {\ntext-align: center;\n}"
-    },
     "i-colored-inline-title": {
       "general": ".i-colored-inline-title {\n--inline-title-color: var(--i-inline-title-accent-text-color);\n}"
     },
     "i-highlighted-inline-title": {
       "general": ".i-highlighted-inline-title {\n.inline-title:not([data-level]) {\n\t\twidth: fit-content;\n\t\tpadding-inline: 0.3em;\n\t\tbackground-color: var(--i-inline-title-accent-bg);\n\t\tborder-radius: var(--radius-s);\n\t};\n;\n&.i-inline-title-centered .inline-title:not([data-level]) {\n\t\talign-self: center;\n\t};\n}"
+    },
+    "i-inline-title-centered": {
+      "general": "&.i-inline-title-centered .inline-title:not([data-level]) {\nalign-self: center;\n}\n\n.i-inline-title-centered .inline-title:not([data-level]) {\ntext-align: center;\n}"
     },
     "i-hide-link-underline": {
       "general": ".i-hide-link-underline {\n--link-decoration: none;\n--link-external-decoration: none;\n}\n\n.i-hide-link-underline-hover {\n--link-decoration-hover: none;\n--link-external-decoration-hover: none;\n}"
@@ -145,14 +197,9 @@
     "i-hide-link-underline-hover": {
       "general": ".i-hide-link-underline-hover {\n--link-decoration-hover: none;\n--link-external-decoration-hover: none;\n}"
     },
-    "i-strike-completed-tasks": {
-      "general": ".i-strike-completed-tasks {\n--checklist-done-decoration: line-through;\n}"
-    },
-    "i-hide-add-property-button": {
-      "general": ".i-hide-add-property-button .metadata-container .metadata-add-button {\ndisplay: none;\n}"
-    },
-    "i-hide-property-icons": {
-      "general": ".i-hide-property-icons .metadata-container .metadata-property-icon {\ndisplay: none;\n}"
+    "i-highlight-active-property": {
+      "dark": ":where(.i-highlight-active-property .metadata-container .metadata-property:not([data-property-key=tags]):is(:hover, :focus-within) .multi-select-pill) {\n--pill-background: hsl(from var(--i-5) h var(--i-properties-s) l);\n}\n\n.i-highlight-active-property .metadata-container {\n--metadata-property-background-hover: hsl(from var(--i-2) h var(--i-properties-s) l);\n}",
+      "light": ":where(.i-highlight-active-property .metadata-container .metadata-property:not([data-property-key=tags]):is(:hover, :focus-within) .multi-select-pill) {\n--pill-background: hsl(var(--accent-h) var(--i-properties-s) calc(100% - var(--i-lt-l-multiplier) * 8%));\n}\n\n.i-highlight-active-property .metadata-container {\n--metadata-property-background-hover: hsl(from var(--i-1) h var(--i-properties-s) l);\n}"
     },
     "i-lt-properties-background": {
       "light": ".i-lt-properties-background {\n--i-properties-s: var(--i-lt-s);\n}"
@@ -160,21 +207,20 @@
     "i-dk-properties-accent": {
       "dark": ".i-dk-properties-accent {\n--i-properties-s: var(--accent-s);\n}"
     },
-    "i-highlight-active-property": {
-      "dark": ":where(.i-highlight-active-property .metadata-container .metadata-property:not([data-property-key=tags]):is(:hover, :focus-within) .multi-select-pill) {\n--pill-background: hsl(from var(--i-5) h var(--i-properties-s) l);\n}\n\n.i-highlight-active-property .metadata-container {\n--metadata-property-background-hover: hsl(from var(--i-2) h var(--i-properties-s) l);\n}",
-      "light": ":where(.i-highlight-active-property .metadata-container .metadata-property:not([data-property-key=tags]):is(:hover, :focus-within) .multi-select-pill) {\n--pill-background: hsl(var(--accent-h) var(--i-properties-s) calc(100% - var(--i-lt-l-multiplier) * 8%));\n}\n\n.i-highlight-active-property .metadata-container {\n--metadata-property-background-hover: hsl(from var(--i-1) h var(--i-properties-s) l);\n}"
+    "i-hide-add-property-button": {
+      "general": ".i-hide-add-property-button .metadata-container .metadata-add-button {\ndisplay: none;\n}"
     },
-    "i-spacing": {
-      "general": ";\n.markdown-rendered {\n\t\th1,\n\t\th2,\n\t\th3,\n\t\th4,\n\t\th5,\n\t\th6 {\n\t\t\tmargin-bottom: var(--i-spacing-below-headings);\n\t\t}\n\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-p, .el-blockquote, .el-ul, .el-ol) > *,\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-pre :is(pre, .internal-query),\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-div .callout,\n:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, pre, .callout, .internal-query) {\n\t\t\tmargin-top: 0;\n\t\t}\n\nhr {\n\t\t\tmargin: calc(var(--p-spacing) * 1.5 - var(--hr-thickness) / 2) 0;\n\t\t}\n\n\t\t:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-hr hr,\n:is(h1, h2, h3, h4, h5, h6) + hr {\n\t\t\tmargin-top: calc((var(--p-spacing) - var(--hr-thickness)) / 2 + var(--i-spacing-below-headings));\n\t\t}\n\n\t\t.el-hr + .el-hr hr,\nhr + hr {\n\t\t\tmargin-top: calc(var(--p-spacing) * 2 - var(--hr-thickness));\n\t\t}\n\npre {\n\t\t\tpadding: calc(var(--code-size) * var(--line-height-normal)) 16px;\n\t\t\tline-height: calc(var(--code-size) * var(--line-height-normal));\n\t\t}\n\n:is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-table table {\n\t\t\tmargin-top: calc(16px + var(--i-spacing-below-headings));\n\t\t}\n\n.el-table table {\n\t\t\tmargin: 16px 0;\n\t\t}\n\n:is(h1, h2, h3, h4, h5, h6) + table {\n\t\t\tmargin-top: calc(16px + var(--p-spacing) + var(--i-spacing-below-headings));\n\t\t}\n\ntable + table {\n\t\t\tmargin-top: calc(var(--p-spacing) + 32px);\n\t\t}\n\t};\n.markdown-rendered :is(blockquote, pre, .el-table),\n;\n.callout :is(h1, h2, h3, h4, h5, h6) + table,\nh2, h3, h4, h5, h6) + .callout {\n\t\tmargin-top: 0;\n\t};\n.callout table + table {\n\t\tmargin-top: var(--p-spacing);\n\t};\n}\n\n.el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-pre .block-language-dataview, h2, h3, h4, h5, h6) + .block-language-dataview {\nmargin-top: 0;\n}"
-    },
-    "i-highlight-active-row": {
-      "general": ".i-highlight-active-row {\n--table-row-alt-background-hover: var(--table-row-background-hover);\n--table-row-background-hover: hsl(var(--accent-h) var(--i-s) 50% / 0.05);\n.cm-table-widget tr:focus-within {\n\t\tbackground-color: var(--table-row-background-hover);\n\t};\n&.i-striped-rows :is(.cm-html-embed, .markdown-rendered) tr:is(:hover, :focus-within) {\n\t\tbackground-color: hsl(var(--accent-h) var(--i-s) 50% / 0.1);\n\t};\n}"
+    "i-hide-property-icons": {
+      "general": ".i-hide-property-icons .metadata-container .metadata-property-icon {\ndisplay: none;\n}"
     },
     "i-striped-rows": {
       "general": ".i-striped-rows :is(.cm-html-embed, .markdown-rendered) tbody tr:nth-child(even) {\nbackground-color:hsl(var(--accent-h) var(--i-s) 50% / 0.05);\n}\n\n&.i-striped-rows :is(.cm-html-embed, .markdown-rendered) tr:is(:hover, :focus-within) {\nbackground-color: hsl(var(--accent-h) var(--i-s) 50% / 0.1);\n}"
     },
     "i-striped-columns": {
       "general": ".i-striped-columns {\n--table-column-alt-background: hsl(var(--accent-h) var(--i-s) 50% / 0.05);\n}"
+    },
+    "i-highlight-active-row": {
+      "general": ".i-highlight-active-row {\n--table-row-alt-background-hover: var(--table-row-background-hover);\n--table-row-background-hover: hsl(var(--accent-h) var(--i-s) 50% / 0.05);\n.cm-table-widget tr:focus-within {\n\t\tbackground-color: var(--table-row-background-hover);\n\t};\n&.i-striped-rows :is(.cm-html-embed, .markdown-rendered) tr:is(:hover, :focus-within) {\n\t\tbackground-color: hsl(var(--accent-h) var(--i-s) 50% / 0.1);\n\t};\n}"
     },
     "i-center-table-header-text": {
       "general": ".i-center-table-header-text :is(.cm-html-embed, .markdown-rendered) th {\ntext-align: center;\n}"
@@ -185,74 +231,32 @@
     "i-smaller-tags": {
       "general": ".i-smaller-tags {\n--tag-padding-x: 0.4em;\n--tag-padding-y: 0.14em;\n}"
     },
-    "i-focus-mode": {
-      "general": "&.i-focus-mode-main {\n--i-card-radius: var(--i-card-radius-macos);\n}\n\n;\n&:not(.i-border-layout {\n\t\tmargin-top: 3px;\n\t\tborder-top: 1px solid var(--i-layout-border-color);\n\t\tborder-radius: var(--i-card-radius);\n\t};\n\n\t};\n\n\t};\n;\n&.i-default-layout:not(.is-hidden-frameless) {\n\t\t--titlebar-background: var(--background-primary);\n\t};\n;\n;\n\n.titlebar-button {\n\t\t\tpadding: 0 6px;\n\t\t}\n\n&:not(.is-fullscreen {\n\t\t\tpadding-top: 16px;\n\t\t}\n\t};\n}"
-    },
-    "i-focus-mode-main": {
-      "general": "&.i-focus-mode.i-focus-mode-main {\n--i-card-radius: var(--i-card-radius-macos);\n}\n\n;\n&:not(.i-border-layout {\n\t\tmargin-top: 3px;\n\t\tborder-top: 1px solid var(--i-layout-border-color);\n\t\tborder-radius: var(--i-card-radius);\n\t};\n\n\t};\n\n\t};\n;\n&.i-default-layout:not(.is-hidden-frameless) {\n\t\t--titlebar-background: var(--background-primary);\n\t};\n;\n;\n\n.titlebar-button {\n\t\t\tpadding: 0 6px;\n\t\t}\n\n&:not(.is-fullscreen {\n\t\t\tpadding-top: 16px;\n\t\t}\n\t};\n}"
-    },
-    "i-remove-fade-effects": {
-      "general": ".i-remove-fade-effects {\n--tab-switcher-menubar-background: var(--tab-switcher-background);\n&.is-mobile.is-floating-nav {\n\t\t.workspace-drawer .workspace-leaf-content::after,\n\t\t.workspace-drawer .nav-buttons-container::after,\n\t\t&.is-phone .workspace-drawer .nav-buttons-container::after {\n\t\t\tdisplay: none;\n\t\t}\n\n\t};\n\n\t\t}\n\n\t\t&.is-floating-nav,\n&.is-hidden-nav {\n\t\t\t--view-bottom-fade-mask: linear-gradient(to top, #000 0%, #000 1px);\n\t\t\t--view-top-fade-mask: linear-gradient(to bottom, #000 0%, #000 1px);\n\t\t}\n\n.workspace-drawer-tab-options-list {\n\t\t\tbox-shadow: none;\n\t\t}\n\n\t};\n}"
-    },
-    "i-anchored-toolbar": {
-      "general": ".i-anchored-toolbar {\n&.is-mobile {\n\t\t--mobile-toolbar-height: var(--input-height);\n\t};\n&.is-floating-nav .mobile-toolbar {\n\t\tbackground-color: var(--background-primary);\n\t\tbox-shadow: none;\n\t};\n&.is-floating-nav .mobile-toolbar-options-container {\n\t\twidth: 100%;\n\t};\n.mobile-toolbar-options-container {\n\t\tmargin-block: 2px;\n\t};\n.mobile-toolbar-options-list-container,\n.mobile-toolbar-options-list {\n\t\tborder-radius: 0;\n\t};\n.mobile-toolbar {\n\t\t--raised-background: transparent;\n\t\t--raised-blur: none;\n\t\t--raised-mask-display: none;\n\t\t--raised-shadow: none;\n\t};\n;\n}"
-    },
-    "i-translucent-floating-nav": { "general": ";\n;\n}" },
-    "i-scrollbar": {
-      "general": "&.i-scrollbar-square ::-webkit-scrollbar-thumb {\nborder-radius: 0 !important;\n}\n\n&.i-scrollbar-hide ::-webkit-scrollbar {\ndisplay: none;\n}"
-    },
-    "i-scrollbar-square": {
-      "general": "&.i-scrollbar-square ::-webkit-scrollbar-thumb {\nborder-radius: 0 !important;\n}"
-    },
-    "i-scrollbar-hide": {
-      "general": "&.i-scrollbar-hide ::-webkit-scrollbar {\ndisplay: none;\n}"
-    },
-    "i-autohide-status-bar": {
-      "general": ".i-autohide-status-bar {\n--status-bar-background: var(--i-1);\n--status-bar-border-width: 1px;\n--status-bar-radius: 8px;\n.status-bar {\n\t\topacity: 0;\n\t\ttransform: translateY(12px);\n\t\ttransition: transform 100ms ease-in-out, opacity 100ms ease-in-out;\n\n\t\t&:hover {\n\t\t\topacity: 1;\n\t\t\ttransform: translateY(0);\n\t\t}\n\n&::before {\n\t\t\tposition: absolute;\n\t\t\tinset: 27px 0 -17px;\n\t\t\tcontent: '';\n\t\t}\n\t};\n&:not(.i-default-layout) .status-bar {\n\t\tmargin-bottom: 16px;\n\t};\n&:not(.i-centered-status-bar) .status-bar {\n\t\tmargin-right: 16px;\n\t};\n&.i-default-layout .status-bar {\n\t\tmargin-bottom: 8px;\n\t};\n&:not(.i-centered-status-bar).i-default-layout .status-bar {\n\t\tmargin-right: 8px;\n\t};\n}\n\n&.i-autohide-status-bar {\n.status-bar {\n\t\t\tleft: 0;\n\t\t\twidth: fit-content;\n\t\t\tmargin-inline: auto;\n\t\t};\n}"
-    },
-    "i-hide-status-bar": {
-      "general": ".i-hide-status-bar .status-bar {\ndisplay: none;\n}"
-    },
-    "i-centered-status-bar": {
-      "general": ".i-centered-status-bar {\n&:not(.i-full-width-status-bar, .i-autohide-status-bar) {\n\t\t--status-bar-border-width: 1px 1px 0;\n\t\t--status-bar-radius: 8px 8px 0 0;\n\t};\n&:not(.i-full-width-status-bar),\n&.i-autohide-status-bar {\n\t\t.status-bar {\n\t\t\tleft: 0;\n\t\t\twidth: fit-content;\n\t\t\tmargin-inline: auto;\n\t\t}\n\t};\n&.i-full-width-status-bar .status-bar {\n\t\tjustify-content: center;\n\t};\n}"
-    },
-    "i-full-width-status-bar": {
-      "general": ".i-full-width-status-bar:not(.i-autohide-status-bar) {\n--status-bar-border-width: 1px 0 0;\n--status-bar-position: static;\n--status-bar-radius: 0;\n&.i-border-layout {\n\t\t--status-bar-border-color: var(--i-layout-border-color);\n\t\t--status-bar-border-width: 0 1px 1px;\n\t\t--status-bar-radius: 0 0 var(--i-border-radius) var(--i-border-radius);\n\t};\n&.i-border-layout:not(.i-hide-status-bar, .i-focus-mode.i-focus-mode-status-bar {\n\t\tborder-bottom-color: var(--background-modifier-border);\n\t\tborder-radius: var(--i-border-radius) var(--i-border-radius) 0 0;\n\t};\n&:not(.i-border-layout, .i-default-layout, .i-hide-status-bar, .i-focus-mode.i-focus-mode-status-bar {\n\t\tpadding-bottom: 3px;\n\t};\n&:not(.i-border-layout, .i-default-layout) {\n\t\t--status-bar-border-color: var(--i-layout-border-color);\n\t};\n}\n\n&.i-full-width-status-bar .status-bar {\njustify-content: center;\n}"
-    },
-    "i-tab-titlebar-autohide": { "general": ";\n\n\t};\n;\n;\n}" },
-    "i-autohide-tab-titlebar-buttons": {
-      "general": ".view-actions) {\nopacity: 0;\ntransition: opacity 100ms ease-in-out;\n&:hover {\n\t\topacity: 1;\n\t};\n}"
-    },
-    "i-hide-tab-titlebar-buttons": {
-      "general": ".view-actions) {\ndisplay: none;\n}"
-    },
-    "i-tab-titlebar-border-solid": {
-      "general": ".i-tab-titlebar-border-solid {\n--file-header-border: 1px solid var(--background-modifier-border);\n}"
-    },
-    "i-tab-titlebar-border-dashed": {
-      "general": ".i-tab-titlebar-border-dashed {\n--file-header-border: 1px dashed var(--background-modifier-border);\n}"
-    },
-    "i-autohide-vault-profile": {
-      "general": ".i-autohide-vault-profile:not(.i-focus-mode-main.i-focus-mode {\nposition: absolute;\nbottom: 0;\nz-index: 1;\nheight: 16px;\noverflow: hidden;\nopacity: 0;\ntransition: height 100ms ease-in-out, opacity 100ms ease-in-out;\n&:hover {\n\t\theight: 44px;\n\t\topacity: 1;\n\t};\n}"
-    },
-    "i-hide-vault-profile": {
-      "general": ".i-hide-vault-profile:not(.i-focus-mode-main.i-focus-mode) {\n--vault-profile-display: none;\n}"
-    },
     "i-bases-hide-table-header-icons": {
       "general": ".i-bases-hide-table-header-icons {\n--bases-table-header-icon-display: none;\n}"
     },
     "i-bases-highlight-active-row": {
       "general": ".i-bases-highlight-active-row {\n--bases-table-row-background-hover: hsl(var(--accent-h) var(--i-s) 50% / 0.05);\n}"
     },
+    "i-lt-folder-bg-accent": {
+      "general": ".i-lt-folder-bg-accent {\n--i-lt-folder-bg-accent: var(--color-accent);\n}"
+    },
+    "i-dk-folder-bg-accent": {
+      "general": ".i-dk-folder-bg-accent {\n--i-dk-folder-bg-accent: var(--color-accent);\n}"
+    },
     "i-lt-folder-bg": {
       "general": ".i-lt-folder-bg-accent {\n--i-lt-folder-bg-accent: var(--color-accent);\n}",
       "light": ".i-lt-white-folder-names .nav-files-container .nav-folder-title {\n--nav-item-color: #fff;\n}\n\n;\n&:nth-child(6n + 3) .nav-folder-title:not(:hover) {background-color: var(--i-lt-folder-bg-2, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 60) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title:not(:hover) {background-color: var(--i-lt-folder-bg-3, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 120) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title:not(:hover) {background-color: var(--i-lt-folder-bg-4, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 180) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title:not(:hover) {background-color: var(--i-lt-folder-bg-5, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 240) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title:not(:hover) {background-color: var(--i-lt-folder-bg-6, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 300) / var(--i-lt-folder-bg-a, 25%)));};\n}\n\n;\n&:nth-child(6n + 3) .nav-folder-title {background-color: var(--i-lt-folder-bg-2, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 60) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title {background-color: var(--i-lt-folder-bg-3, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 120) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title {background-color: var(--i-lt-folder-bg-4, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 180) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title {background-color: var(--i-lt-folder-bg-5, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 240) / var(--i-lt-folder-bg-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title {background-color: var(--i-lt-folder-bg-6, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-bg-l, 90%) var(--i-lt-folder-bg-c, 20%) calc(h + 300) / var(--i-lt-folder-bg-a, 25%)));};\n}\n\n.i-lt-folder-bg:not(.i-lt-folder-borders-off) .nav-files-container > div > .nav-folder {\n&:nth-child(6n + 2) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-lt-folder-border-1, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-border-l, 35%) var(--i-lt-folder-border-c, 10%) h / var(--i-lt-folder-border-a, 25%)));};\n&:nth-child(6n + 3) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-lt-folder-border-2, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-border-l, 35%) var(--i-lt-folder-border-c, 10%) calc(h + 60) / var(--i-lt-folder-border-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-lt-folder-border-3, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-border-l, 35%) var(--i-lt-folder-border-c, 10%) calc(h + 120) / var(--i-lt-folder-border-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-lt-folder-border-4, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-border-l, 35%) var(--i-lt-folder-border-c, 10%) calc(h + 180) / var(--i-lt-folder-border-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-lt-folder-border-5, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-border-l, 35%) var(--i-lt-folder-border-c, 10%) calc(h + 240) / var(--i-lt-folder-border-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-lt-folder-border-6, oklch(from var(--i-lt-folder-bg-accent, red) var(--i-lt-folder-border-l, 35%) var(--i-lt-folder-border-c, 10%) calc(h + 300) / var(--i-lt-folder-border-a, 25%)));};\n}"
     },
-    "i-lt-folder-bg-accent": {
-      "general": ".i-lt-folder-bg-accent {\n--i-lt-folder-bg-accent: var(--color-accent);\n}"
-    },
     "i-lt-white-folder-names": {
       "light": ".i-lt-folder-bg.i-lt-white-folder-names .nav-files-container .nav-folder-title {\n--nav-item-color: #fff;\n}"
+    },
+    "i-dk-black-folder-names": {
+      "dark": ".i-dk-folder-bg.i-dk-black-folder-names .nav-files-container .nav-folder-title {\n--nav-item-color: #000;\n}"
+    },
+    "i-dk-folder-bg": {
+      "general": ".i-dk-folder-bg-accent {\n--i-dk-folder-bg-accent: var(--color-accent);\n}",
+      "dark": ".i-dk-black-folder-names .nav-files-container .nav-folder-title {\n--nav-item-color: #000;\n}\n\n:is(.theme-light.i-lt-folder-bg:not(.i-lt-folder-borders-off), .i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: 5px;\n}\n\n.i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: var(--nav-item-radius);\n}\n\n;\n&:nth-child(6n + 3) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-2, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 60) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-3, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 120) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-4, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 180) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-5, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 240) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-6, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 300) / var(--i-dk-folder-bg-a, 25%)));};\n}\n\n;\n&:nth-child(6n + 3) .nav-folder-title {background-color: var(--i-dk-folder-bg-2, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 60) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title {background-color: var(--i-dk-folder-bg-3, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 120) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title {background-color: var(--i-dk-folder-bg-4, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 180) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title {background-color: var(--i-dk-folder-bg-5, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 240) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title {background-color: var(--i-dk-folder-bg-6, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 300) / var(--i-dk-folder-bg-a, 25%)));};\n}\n\n.i-dk-folder-bg:not(.i-dk-folder-borders-off) .nav-files-container > div > .nav-folder {\n&:nth-child(6n + 2) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-1, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) h / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 3) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-2, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 60) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-3, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 120) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-4, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 180) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-5, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 240) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-6, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 300) / var(--i-dk-folder-border-a, 25%)));};\n}",
+      "light": ":is(.i-lt-folder-bg:not(.i-lt-folder-borders-off), .theme-dark.i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: 5px;\n}\n\n.theme-dark.i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: var(--nav-item-radius);\n}"
     },
     "i-lt-folder-name": {
       "general": ".i-lt-folder-name-accent {\n--i-lt-folder-name-accent: var(--color-accent);\n}",
@@ -261,24 +265,20 @@
     "i-lt-folder-name-accent": {
       "general": ".i-lt-folder-name-accent {\n--i-lt-folder-name-accent: var(--color-accent);\n}"
     },
-    "i-dk-folder-bg": {
-      "general": ".i-dk-folder-bg-accent {\n--i-dk-folder-bg-accent: var(--color-accent);\n}",
-      "dark": ".i-dk-black-folder-names .nav-files-container .nav-folder-title {\n--nav-item-color: #000;\n}\n\n:is(.theme-light.i-lt-folder-bg:not(.i-lt-folder-borders-off), .i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: 5px;\n}\n\n.i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: var(--nav-item-radius);\n}\n\n;\n&:nth-child(6n + 3) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-2, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 60) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-3, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 120) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-4, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 180) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-5, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 240) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title:not(:hover) {background-color: var(--i-dk-folder-bg-6, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 300) / var(--i-dk-folder-bg-a, 25%)));};\n}\n\n;\n&:nth-child(6n + 3) .nav-folder-title {background-color: var(--i-dk-folder-bg-2, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 60) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title {background-color: var(--i-dk-folder-bg-3, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 120) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title {background-color: var(--i-dk-folder-bg-4, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 180) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title {background-color: var(--i-dk-folder-bg-5, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 240) / var(--i-dk-folder-bg-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title {background-color: var(--i-dk-folder-bg-6, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-bg-l, 70%) var(--i-dk-folder-bg-c, 25%) calc(h + 300) / var(--i-dk-folder-bg-a, 25%)));};\n}\n\n.i-dk-folder-bg:not(.i-dk-folder-borders-off) .nav-files-container > div > .nav-folder {\n&:nth-child(6n + 2) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-1, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) h / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 3) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-2, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 60) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 4) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-3, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 120) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 5) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-4, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 180) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 6) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-5, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 240) / var(--i-dk-folder-border-a, 25%)));};\n&:nth-child(6n + 7) .nav-folder-title {box-shadow: inset 0 0 0 1px var(--i-dk-folder-border-6, oklch(from var(--i-dk-folder-bg-accent, red) var(--i-dk-folder-border-l, 90%) var(--i-dk-folder-border-c, 25%) calc(h + 300) / var(--i-dk-folder-border-a, 25%)));};\n}",
-      "light": ":is(.i-lt-folder-bg:not(.i-lt-folder-borders-off), .theme-dark.i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: 5px;\n}\n\n.theme-dark.i-dk-folder-bg:not(.i-dk-folder-borders-off)) .nav-files-container .nav-folder .nav-folder-title {\nborder-radius: var(--nav-item-radius);\n}"
-    },
-    "i-dk-folder-bg-accent": {
-      "general": ".i-dk-folder-bg-accent {\n--i-dk-folder-bg-accent: var(--color-accent);\n}"
-    },
-    "i-dk-black-folder-names": {
-      "dark": ".i-dk-folder-bg.i-dk-black-folder-names .nav-files-container .nav-folder-title {\n--nav-item-color: #000;\n}"
+    "i-dk-folder-name-accent": {
+      "general": ".i-dk-folder-name-accent {\n--i-dk-folder-name-accent: var(--color-accent);\n}"
     },
     "i-dk-folder-name": {
       "general": ".i-dk-folder-name-accent {\n--i-dk-folder-name-accent: var(--color-accent);\n}",
       "dark": ".i-dk-folder-name .nav-files-container > div > .nav-folder {\n&:nth-child(6n + 2) .nav-folder-title {--nav-item-color: var(--i-dk-folder-name-1, oklch(from var(--i-dk-folder-name-accent, red) var(--i-dk-folder-name-l, 80%) var(--i-dk-folder-name-c, 20%) h));};\n&:nth-child(6n + 3) .nav-folder-title {--nav-item-color: var(--i-dk-folder-name-2, oklch(from var(--i-dk-folder-name-accent, red) var(--i-dk-folder-name-l, 80%) var(--i-dk-folder-name-c, 20%) calc(h + 60)));};\n&:nth-child(6n + 4) .nav-folder-title {--nav-item-color: var(--i-dk-folder-name-3, oklch(from var(--i-dk-folder-name-accent, red) var(--i-dk-folder-name-l, 80%) var(--i-dk-folder-name-c, 20%) calc(h + 120)));};\n&:nth-child(6n + 5) .nav-folder-title {--nav-item-color: var(--i-dk-folder-name-4, oklch(from var(--i-dk-folder-name-accent, red) var(--i-dk-folder-name-l, 80%) var(--i-dk-folder-name-c, 20%) calc(h + 180)));};\n&:nth-child(6n + 6) .nav-folder-title {--nav-item-color: var(--i-dk-folder-name-5, oklch(from var(--i-dk-folder-name-accent, red) var(--i-dk-folder-name-l, 80%) var(--i-dk-folder-name-c, 20%) calc(h + 240)));};\n&:nth-child(6n + 7) .nav-folder-title {--nav-item-color: var(--i-dk-folder-name-6, oklch(from var(--i-dk-folder-name-accent, red) var(--i-dk-folder-name-l, 80%) var(--i-dk-folder-name-c, 20%) calc(h + 300)));};\n}"
     },
-    "i-dk-folder-name-accent": {
-      "general": ".i-dk-folder-name-accent {\n--i-dk-folder-name-accent: var(--color-accent);\n}"
-    }
+    "i-anchored-toolbar": {
+      "general": ".i-anchored-toolbar {\n&.is-mobile {\n\t\t--mobile-toolbar-height: var(--input-height);\n\t};\n&.is-floating-nav .mobile-toolbar {\n\t\tbackground-color: var(--background-primary);\n\t\tbox-shadow: none;\n\t};\n&.is-floating-nav .mobile-toolbar-options-container {\n\t\twidth: 100%;\n\t};\n.mobile-toolbar-options-container {\n\t\tmargin-block: 2px;\n\t};\n.mobile-toolbar-options-list-container,\n.mobile-toolbar-options-list {\n\t\tborder-radius: 0;\n\t};\n.mobile-toolbar {\n\t\t--raised-background: transparent;\n\t\t--raised-blur: none;\n\t\t--raised-mask-display: none;\n\t\t--raised-shadow: none;\n\t};\n;\n}"
+    },
+    "i-remove-fade-effects": {
+      "general": ".i-remove-fade-effects {\n--tab-switcher-menubar-background: var(--tab-switcher-background);\n&.is-mobile.is-floating-nav {\n\t\t.workspace-drawer .workspace-leaf-content::after,\n\t\t.workspace-drawer .nav-buttons-container::after,\n\t\t&.is-phone .workspace-drawer .nav-buttons-container::after {\n\t\t\tdisplay: none;\n\t\t}\n\n\t};\n\n\t\t}\n\n\t\t&.is-floating-nav,\n&.is-hidden-nav {\n\t\t\t--view-bottom-fade-mask: linear-gradient(to top, #000 0%, #000 1px);\n\t\t\t--view-top-fade-mask: linear-gradient(to bottom, #000 0%, #000 1px);\n\t\t}\n\n.workspace-drawer-tab-options-list {\n\t\t\tbox-shadow: none;\n\t\t}\n\n\t};\n}"
+    },
+    "i-translucent-floating-nav": { "general": ";\n;\n}" }
   },
   "selectorImpacts": {},
   "brokenVarLinks": {

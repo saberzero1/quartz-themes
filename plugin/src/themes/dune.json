@@ -90,26 +90,11 @@
   },
   "extras": "/* Slow gradient animation for accent elements */\n@keyframes gradient-slow {\n  from {\n    background-position: right;\n  }\n  to {\n    background-position: left;\n  }\n}\n\n/* Contrast reduction for inactive notes */\n@keyframes contrastFx {\n  0% {\n    filter: contrast(1);\n  }\n  100% {\n    filter: contrast(0.8);\n  }\n}\n\n.mod-left-split .workspace-leaf-content,\n.mod-right-split .workspace-leaf-content {\n  animation: contrastFx 0.3s ease forwards;\n}\n",
   "classSettings": {
-    "fontmod-1": {
-      "general": ".markdown-preview-section h1, h1) {\nfont-size: calc(var(--h1-size) + (var(--custom-fsz-1)));\n}\n\n.markdown-preview-section h2, h2) {\nfont-size: calc(var(--h2-size) + (var(--custom-fsz-1) / 2));\n}\n\n.markdown-preview-section h3, h3) {\nfont-size: calc(var(--h3-size) + (var(--custom-fsz-1) / 2.5));\n}\n\n.markdown-preview-section h4, h4) {\nfont-size: calc(var(--h4-size) + (var(--custom-fsz-1) / 3));\n}\n\n.markdown-preview-section h5, h5) {\nfont-size: calc(var(--h5-size) + (var(--custom-fsz-1) / 3.5));\n}\n\n.markdown-preview-section h6, h6) {\nfont-size: calc(var(--h6-size) + (var(--custom-fsz-1) / 4));\n}\n\n.fontmod-1 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {\nfont-family: var(--modern-font-h);\ntext-align: inherit;\n}\n\n.fontmod-1 .markdown-preview-view :is(p, li, th, td, .callout-title-inner) {\nfont-family: var(--modern-font-c);\nfont-size: var(--custom-fsz-1);\n}\n\n.fontmod-1 .callout[data-callout~=\"schrift-g\"] .callout-content p, .fontmod-1 .callout[data-callout~=\"font-l\"] .callout-content p {\nfont-size: var(--fraction-lg);\n}\n\n.fontmod-1 .callout[data-callout~=\"schrift-k\"] .callout-content p, .fontmod-1 .callout[data-callout~=\"font-s\"] .callout-content p {\nfont-size: var(--fraction-sm);\n}"
-    },
-    "fontmod-2": {
-      "general": ".markdown-preview-section h1, h1) {\nfont-size: calc(var(--h1-size) + (var(--custom-fsz-2)));\n}\n\n.markdown-preview-section h2, h2) {\nfont-size: calc(var(--h2-size) + (var(--custom-fsz-2) / 2));\n}\n\n.markdown-preview-section h3, h3) {\nfont-size: calc(var(--h3-size) + (var(--custom-fsz-2) / 2.5));\n}\n\n.markdown-preview-section h4, h4) {\nfont-size: calc(var(--h4-size) + (var(--custom-fsz-2) / 3));\n}\n\n.markdown-preview-section h5, h5) {\nfont-size: calc(var(--h5-size) + (var(--custom-fsz-2) / 3.5));\n}\n\n.markdown-preview-section h6, h6) {\nfont-size: calc(var(--h6-size) + (var(--custom-fsz-2) / 4));\n}\n\n.fontmod-2 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {\nfont-family: var(--poetry-font-h);\ntext-align: inherit;\n}\n\n.fontmod-2 .markdown-preview-view :is(p, li, th, td, .callout-title-inner) {\nfont-family: var(--poetry-font-c);\nfont-size: var(--custom-fsz-2);\n}\n\n.fontmod-2 .callout[data-callout~=\"schrift-g\"] .callout-content p, .fontmod-2 .callout[data-callout~=\"font-l\"] .callout-content p {\nfont-size: var(--fraction-lg);\n}\n\n.fontmod-2 .callout[data-callout~=\"schrift-k\"] .callout-content p, .fontmod-2 .callout[data-callout~=\"font-s\"] .callout-content p {\nfont-size: var(--fraction-sm);\n}"
-    },
-    "fontmod-3": {
-      "general": ".markdown-preview-section h1, h1) {\nfont-size: calc(var(--h1-size) + (var(--custom-fsz-3)));\n}\n\n.markdown-preview-section h2, h2) {\nfont-size: calc(var(--h2-size) + (var(--custom-fsz-3) / 2));\n}\n\n.markdown-preview-section h3, h3) {\nfont-size: calc(var(--h3-size) + (var(--custom-fsz-3) / 2.5));\n}\n\n.markdown-preview-section h4, h4) {\nfont-size: calc(var(--h4-size) + (var(--custom-fsz-3) / 3));\n}\n\n.markdown-preview-section h5, h5) {\nfont-size: calc(var(--h5-size) + (var(--custom-fsz-3) / 3.5));\n}\n\n.markdown-preview-section h6, h6) {\nfont-size: calc(var(--h6-size) + (var(--custom-fsz-3) / 4));\n}\n\n.fontmod-3 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {\nfont-family: var(--custom-font-h);\ntext-align: inherit;\n}\n\n.fontmod-3 .markdown-preview-view :is(p, li, th, td, .callout-title-inner) {\nfont-family: var(--custom-font-c);\nfont-size: var(--custom-fsz-3);\n}\n\n.fontmod-3 .callout[data-callout~=\"schrift-g\"] .callout-content p, .fontmod-3 .callout[data-callout~=\"font-l\"] .callout-content p {\nfont-size: var(--fraction-lg);\n}\n\n.fontmod-3 .callout[data-callout~=\"schrift-k\"] .callout-content p, .fontmod-3 .callout[data-callout~=\"font-s\"] .callout-content p {\nfont-size: var(--fraction-sm);\n}"
-    },
-    "prg-break": {
-      "general": ".prg-break .markdown-preview-view :is(p) {\nmargin-top: 0;\nmargin-bottom: 0;\n}"
-    },
-    "add-link-space": {
-      "general": ".add-link-space a:is(a.external-link, a.internal-link, h2 a, h3 a, h4 a, h5 a, h6 a) {\npadding-left: 4px;\npadding-right: 4px;\n}"
-    },
-    "profile-pic-mono": {
-      "dark": ".theme-dark .nav-folder.mod-root>.nav-folder-title>.nav-folder-title-content::after {\nfilter: invert(1);\n}"
-    },
     "col-mod-0": {
       "light": ".col-mod-0 {\n--light-base-c: #433721;\n--link-color-dune: var(--text-accent);\n--prefs-title: var(--light-base-c);\n--h1-color-c: var(--light-base-c);\n--header-col: var(--h1-color-c);\n--text-selection-c: #DD94178A;\n--text-selection: var(--text-selection-c);\n}\n\n.col-mod-0 {\n--text-accent: var(--color-accent);\n--button-background: var(--interactive-accent);\n--prefs-shadow: var(--background-primary);\n--prefs-grad: var(--background-primary);\n--input-bg: var(--background-secondary);\n--text-muted-c: var(--color-base-70);\n--text-faint-c: var(--color-base-50);\n--link-color-c: var(--text-accent);\n--text-muted: var(--text-muted-c);\n--text-faint: var(--text-faint-c);\n--link-color: var(--link-color-c);\n--text-normal-c: var(--color-base-100);\n--bold-color-c: inherit;\n--italic-color-c: inherit;\n--text-normal: var(--text-normal-c);\n--bold-color: var(--bold-color-c);\n--italic-color: var(--italic-color-c);\n--background-primary-c: var(--color-base-00);\n--background-secondary-c: var(--color-base-20);\n--background-primary: var(--background-primary-c);\n--background-secondary: var(--background-secondary-c);\n--background-modifier-border-c: var(--color-base-40);\n--background-modifier-border: var(--background-modifier-border-c);\n--wm-b-col: var(--background-secondary);\n}"
+    },
+    "col-mod-1": {
+      "dark": ".col-mod-1 {\n--dark-base-c: #F3F2E9;\n--link-color-dune: var(--text-accent);\n--prefs-title: var(--dark-base-c);\n--h1-color-c: var(--dark-base-c);\n--header-col: var(--h1-color-c);\n--text-selection-c: #4A6CB0A1;\n--text-selection: var(--text-selection-c);\n}\n\n.col-mod-1 {\n--text-accent: var(--color-accent);\n--button-background: var(--interactive-accent);\n--prefs-shadow: var(--background-primary);\n--prefs-grad: var(--background-primary);\n--input-bg: var(--background-secondary);\n--text-muted-c: var(--color-base-70);\n--text-faint-c: var(--color-base-50);\n--link-color-c: var(--text-accent);\n--text-muted: var(--text-muted-c);\n--text-faint: var(--text-faint-c);\n--link-color: var(--link-color-c);\n--text-normal-c: var(--color-base-100);\n--bold-color-c: inherit;\n--italic-color-c: inherit;\n--text-normal: var(--text-normal-c);\n--bold-color: var(--bold-color-c);\n--italic-color: var(--italic-color-c);\n--background-primary-c: var(--color-base-00);\n--background-secondary-c: var(--color-base-20);\n--background-primary: var(--background-primary-c);\n--background-secondary: var(--background-secondary-c);\n--background-modifier-border-c: var(--color-base-40);\n--background-modifier-border: var(--background-modifier-border-c);\n--wm-b-col: var(--background-secondary);\n}"
     },
     "col-mod-a": {
       "light": ".col-mod-a {\n--header-col: #3f78a4;\n--header-cco: 206 25%;\n--background-primary: #e6e3d1;\n--background-primary-alt: #e6e3d1;\n--background-secondary: #B1AD97;\n--background-secondary-alt: #B1AD97;\n--background-modifier-border: #88867b;\n--text-normal: #433721;\n--text-muted: #466585;\n--text-faint: #466585;\n--link-color-dune: rgb(64, 100, 128);\n--subsup-col: #17418b;\n--bold-color: #1b3f5b;\n--italic-color: #1b3f5b;\n--prefs-shadow: transparent;\n}"
@@ -120,9 +105,6 @@
     "col-mod-c": {
       "light": ".col-mod-c {\n--header-col: #b64a36;\n--header-cco: 9 21%;\n--background-primary: #f0d1bc;\n--background-primary-alt: #f0d1bc;\n--background-secondary: #CA9F83;\n--background-secondary-alt: #CA9F83;\n--background-modifier-border: #88867b;\n--text-normal: #432A19;\n--text-muted: #603F30;\n--text-faint: #603F30;\n--link-color-dune: rgb(128, 65, 54);\n--subsup-col: #2b547e;\n--bold-color: #142D41;\n--italic-color: #142D41;\n--prefs-shadow: transparent;\n}"
     },
-    "col-mod-1": {
-      "dark": ".col-mod-1 {\n--dark-base-c: #F3F2E9;\n--link-color-dune: var(--text-accent);\n--prefs-title: var(--dark-base-c);\n--h1-color-c: var(--dark-base-c);\n--header-col: var(--h1-color-c);\n--text-selection-c: #4A6CB0A1;\n--text-selection: var(--text-selection-c);\n}\n\n.col-mod-1 {\n--text-accent: var(--color-accent);\n--button-background: var(--interactive-accent);\n--prefs-shadow: var(--background-primary);\n--prefs-grad: var(--background-primary);\n--input-bg: var(--background-secondary);\n--text-muted-c: var(--color-base-70);\n--text-faint-c: var(--color-base-50);\n--link-color-c: var(--text-accent);\n--text-muted: var(--text-muted-c);\n--text-faint: var(--text-faint-c);\n--link-color: var(--link-color-c);\n--text-normal-c: var(--color-base-100);\n--bold-color-c: inherit;\n--italic-color-c: inherit;\n--text-normal: var(--text-normal-c);\n--bold-color: var(--bold-color-c);\n--italic-color: var(--italic-color-c);\n--background-primary-c: var(--color-base-00);\n--background-secondary-c: var(--color-base-20);\n--background-primary: var(--background-primary-c);\n--background-secondary: var(--background-secondary-c);\n--background-modifier-border-c: var(--color-base-40);\n--background-modifier-border: var(--background-modifier-border-c);\n--wm-b-col: var(--background-secondary);\n}"
-    },
     "col-mod-d": {
       "dark": ".col-mod-d {\n--header-col: orange;\n--header-cco: 39 0%;\n--background-primary: #1F1432;\n--background-primary-alt: #1F1432;\n--background-secondary: #302347;\n--background-secondary-alt: #302347;\n--background-modifier-border: #77736A;\n--text-normal: #f3f2e9;\n--text-muted: #999999;\n--text-faint: #999999;\n--link-color-dune: navajowhite;\n--subsup-col: navajowhite;\n--bold-color: #fff;\n--italic-color: #dfb06b;\n--prefs-shadow: transparent;\n}"
     },
@@ -131,6 +113,47 @@
     },
     "col-mod-f": {
       "dark": ".col-mod-f {\n--header-col: #ff824d;\n--header-cco: 18 30%;\n--background-primary: #121314;\n--background-primary-alt: #2c2f31;\n--background-secondary: #2F2F2F;\n--background-secondary-alt: #2F2F2F;\n--background-modifier-border: #77736A;\n--text-normal: #f3f2e9;\n--text-muted: #999999;\n--text-faint: #999999;\n--link-color-dune: navajowhite;\n--subsup-col: navajowhite;\n--bold-color: #fff;\n--italic-color: #efb36b;\n--prefs-shadow: transparent;\n}"
+    },
+    "show-scrollbars": {
+      "general": "body.show-scrollbars ::-webkit-scrollbar {\nwidth: 8px;\nheight: 0;\n}"
+    },
+    "slim-bars": {
+      "general": ".mobile-tab-switcher-inner-scroll) {\nbackground-color: var(--background-primary);\n}"
+    },
+    "profile-pic-mono": {
+      "dark": ".theme-dark .nav-folder.mod-root>.nav-folder-title>.nav-folder-title-content::after {\nfilter: invert(1);\n}"
+    },
+    "hide-sidepanels": {
+      "general": ".hide-sidepanels .workspace-sidedock-vault-profile:not(:hover) :is(.workspace-drawer-vault-actions, .workspace-drawer-vault-switcher) {\nopacity: 0;\ntransition: opacity 4s ease-in-out;\n}"
+    },
+    "fontmod-1": {
+      "general": ".markdown-preview-section h1, h1) {\nfont-size: calc(var(--h1-size) + (var(--custom-fsz-1)));\n}\n\n.markdown-preview-section h2, h2) {\nfont-size: calc(var(--h2-size) + (var(--custom-fsz-1) / 2));\n}\n\n.markdown-preview-section h3, h3) {\nfont-size: calc(var(--h3-size) + (var(--custom-fsz-1) / 2.5));\n}\n\n.markdown-preview-section h4, h4) {\nfont-size: calc(var(--h4-size) + (var(--custom-fsz-1) / 3));\n}\n\n.markdown-preview-section h5, h5) {\nfont-size: calc(var(--h5-size) + (var(--custom-fsz-1) / 3.5));\n}\n\n.markdown-preview-section h6, h6) {\nfont-size: calc(var(--h6-size) + (var(--custom-fsz-1) / 4));\n}\n\n.fontmod-1 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {\nfont-family: var(--modern-font-h);\ntext-align: inherit;\n}\n\n.fontmod-1 .markdown-preview-view :is(p, li, th, td, .callout-title-inner) {\nfont-family: var(--modern-font-c);\nfont-size: var(--custom-fsz-1);\n}\n\n.fontmod-1 .callout[data-callout~=\"schrift-g\"] .callout-content p, .fontmod-1 .callout[data-callout~=\"font-l\"] .callout-content p {\nfont-size: var(--fraction-lg);\n}\n\n.fontmod-1 .callout[data-callout~=\"schrift-k\"] .callout-content p, .fontmod-1 .callout[data-callout~=\"font-s\"] .callout-content p {\nfont-size: var(--fraction-sm);\n}"
+    },
+    "fontmod-2": {
+      "general": ".markdown-preview-section h1, h1) {\nfont-size: calc(var(--h1-size) + (var(--custom-fsz-2)));\n}\n\n.markdown-preview-section h2, h2) {\nfont-size: calc(var(--h2-size) + (var(--custom-fsz-2) / 2));\n}\n\n.markdown-preview-section h3, h3) {\nfont-size: calc(var(--h3-size) + (var(--custom-fsz-2) / 2.5));\n}\n\n.markdown-preview-section h4, h4) {\nfont-size: calc(var(--h4-size) + (var(--custom-fsz-2) / 3));\n}\n\n.markdown-preview-section h5, h5) {\nfont-size: calc(var(--h5-size) + (var(--custom-fsz-2) / 3.5));\n}\n\n.markdown-preview-section h6, h6) {\nfont-size: calc(var(--h6-size) + (var(--custom-fsz-2) / 4));\n}\n\n.fontmod-2 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {\nfont-family: var(--poetry-font-h);\ntext-align: inherit;\n}\n\n.fontmod-2 .markdown-preview-view :is(p, li, th, td, .callout-title-inner) {\nfont-family: var(--poetry-font-c);\nfont-size: var(--custom-fsz-2);\n}\n\n.fontmod-2 .callout[data-callout~=\"schrift-g\"] .callout-content p, .fontmod-2 .callout[data-callout~=\"font-l\"] .callout-content p {\nfont-size: var(--fraction-lg);\n}\n\n.fontmod-2 .callout[data-callout~=\"schrift-k\"] .callout-content p, .fontmod-2 .callout[data-callout~=\"font-s\"] .callout-content p {\nfont-size: var(--fraction-sm);\n}"
+    },
+    "fontmod-3": {
+      "general": ".markdown-preview-section h1, h1) {\nfont-size: calc(var(--h1-size) + (var(--custom-fsz-3)));\n}\n\n.markdown-preview-section h2, h2) {\nfont-size: calc(var(--h2-size) + (var(--custom-fsz-3) / 2));\n}\n\n.markdown-preview-section h3, h3) {\nfont-size: calc(var(--h3-size) + (var(--custom-fsz-3) / 2.5));\n}\n\n.markdown-preview-section h4, h4) {\nfont-size: calc(var(--h4-size) + (var(--custom-fsz-3) / 3));\n}\n\n.markdown-preview-section h5, h5) {\nfont-size: calc(var(--h5-size) + (var(--custom-fsz-3) / 3.5));\n}\n\n.markdown-preview-section h6, h6) {\nfont-size: calc(var(--h6-size) + (var(--custom-fsz-3) / 4));\n}\n\n.fontmod-3 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {\nfont-family: var(--custom-font-h);\ntext-align: inherit;\n}\n\n.fontmod-3 .markdown-preview-view :is(p, li, th, td, .callout-title-inner) {\nfont-family: var(--custom-font-c);\nfont-size: var(--custom-fsz-3);\n}\n\n.fontmod-3 .callout[data-callout~=\"schrift-g\"] .callout-content p, .fontmod-3 .callout[data-callout~=\"font-l\"] .callout-content p {\nfont-size: var(--fraction-lg);\n}\n\n.fontmod-3 .callout[data-callout~=\"schrift-k\"] .callout-content p, .fontmod-3 .callout[data-callout~=\"font-s\"] .callout-content p {\nfont-size: var(--fraction-sm);\n}"
+    },
+    "simple-border": {
+      "general": ".simple-border .markdown-rendered mark {\nborder-radius: 4px;\n}\n\n.simple-border a:is([href=\"#red\"], [href=\"#rot\"], [href=\"#green\"], [href=\"#grün\"], [href=\"#blue\"], [href=\"#blau\"], [href=\"#gray\"], [href=\"#grau\"])+mark {\nborder-radius: 4px;\n}"
+    },
+    "add-link-space": {
+      "general": ".add-link-space a:is(a.external-link, a.internal-link, h2 a, h3 a, h4 a, h5 a, h6 a) {\npadding-left: 4px;\npadding-right: 4px;\n}"
+    },
+    "prg-break": {
+      "general": ".prg-break .markdown-preview-view :is(p) {\nmargin-top: 0;\nmargin-bottom: 0;\n}"
+    },
+    "simple-aside": {
+      "general": ".simple-aside .callout:is([data-callout=\"aside\"], [data-callout=\"seite\"]) {\nbox-shadow: none;\nbackground: transparent;\ndisplay: flex;\n}",
+      "dark": ".theme-dark :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"l\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"l\"]), .theme-dark .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"lh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"lv\"]:hover) {\nborder-right: 4px solid navajowhite;\nborder-radius: 0;\npadding-left: 0;\n}\n\n.theme-dark :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"r\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"r\"]), .theme-dark .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"rh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"rv\"]:hover) {\nborder-left: 4px solid navajowhite;\nborder-radius: 0;\npadding-right: 0;\n}",
+      "light": ".theme-light :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"l\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"l\"]), .theme-light .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"lh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"lv\"]:hover) {\nborder-right: 4px solid var(--interactive-accent);\nborder-radius: 0;\npadding-left: 0;\n}\n\n.theme-light :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"r\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"r\"]), .theme-light .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"rh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"rv\"]:hover) {\nborder-left: 4px solid var(--interactive-accent);\nborder-radius: 0;\npadding-right: 0;\n}"
+    },
+    "monoch-admo": {
+      "general": ".monoch-admo {\n--yellow-bg: rgba(211, 166, 0, 0.3);\n--yellow-border: none;\n--orange-bg: rgba(210, 114, 40, 0.3);\n--orange-border: none;\n--red-bg: rgba(195, 32, 105, 0.3);\n--red-border: none;\n--blue-bg: rgba(32, 157, 207, 0.3);\n--blue-border: none;\n--gray-bg: rgba(115, 115, 115, 0.3);\n--gray-border: none;\n--sea-bg: rgba(36, 174, 166, 0.3);\n--sea-border: none;\n--green-bg: rgba(50, 163, 30, 0.3);\n--green-border: none;\n--violet-bg: rgba(155, 93, 255, 0.3);\n--violet-border: none;\n--border-rad: 4px;\n}"
+    },
+    "edgy-banners": {
+      "general": ".edgy-banners img[alt=\"banner-a\"] {\nmask-image: linear-gradient(180deg, white, white, white, transparent);\n}\n\n.edgy-banners img[alt=\"banner-b\"] {\nmask-image: linear-gradient(360deg, white, white, white, transparent);\n}"
     },
     "dark-1": {
       "dark": ".theme-dark .dark-1 img, .theme-dark img {\nfilter: brightness(1);\n}"
@@ -146,29 +169,6 @@
     },
     "dark-5": {
       "dark": ".theme-dark .dark-5 img, .theme-dark img {\nfilter: brightness(0.6);\n}"
-    },
-    "hide-sidepanels": {
-      "general": ".hide-sidepanels .workspace-sidedock-vault-profile:not(:hover) :is(.workspace-drawer-vault-actions, .workspace-drawer-vault-switcher) {\nopacity: 0;\ntransition: opacity 4s ease-in-out;\n}"
-    },
-    "slim-bars": {
-      "general": ".mobile-tab-switcher-inner-scroll) {\nbackground-color: var(--background-primary);\n}"
-    },
-    "show-scrollbars": {
-      "general": "body.show-scrollbars ::-webkit-scrollbar {\nwidth: 8px;\nheight: 0;\n}"
-    },
-    "edgy-banners": {
-      "general": ".edgy-banners img[alt=\"banner-a\"] {\nmask-image: linear-gradient(180deg, white, white, white, transparent);\n}\n\n.edgy-banners img[alt=\"banner-b\"] {\nmask-image: linear-gradient(360deg, white, white, white, transparent);\n}"
-    },
-    "monoch-admo": {
-      "general": ".monoch-admo {\n--yellow-bg: rgba(211, 166, 0, 0.3);\n--yellow-border: none;\n--orange-bg: rgba(210, 114, 40, 0.3);\n--orange-border: none;\n--red-bg: rgba(195, 32, 105, 0.3);\n--red-border: none;\n--blue-bg: rgba(32, 157, 207, 0.3);\n--blue-border: none;\n--gray-bg: rgba(115, 115, 115, 0.3);\n--gray-border: none;\n--sea-bg: rgba(36, 174, 166, 0.3);\n--sea-border: none;\n--green-bg: rgba(50, 163, 30, 0.3);\n--green-border: none;\n--violet-bg: rgba(155, 93, 255, 0.3);\n--violet-border: none;\n--border-rad: 4px;\n}"
-    },
-    "simple-aside": {
-      "general": ".simple-aside .callout:is([data-callout=\"aside\"], [data-callout=\"seite\"]) {\nbox-shadow: none;\nbackground: transparent;\ndisplay: flex;\n}",
-      "dark": ".theme-dark :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"l\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"l\"]), .theme-dark .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"lh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"lv\"]:hover) {\nborder-right: 4px solid navajowhite;\nborder-radius: 0;\npadding-left: 0;\n}\n\n.theme-dark :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"r\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"r\"]), .theme-dark .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"rh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"rv\"]:hover) {\nborder-left: 4px solid navajowhite;\nborder-radius: 0;\npadding-right: 0;\n}",
-      "light": ".theme-light :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"l\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"l\"]), .theme-light .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"lh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"lv\"]:hover) {\nborder-right: 4px solid var(--interactive-accent);\nborder-radius: 0;\npadding-left: 0;\n}\n\n.theme-light :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"r\"], .callout[data-callout=\"seite\"][data-callout-metadata~=\"r\"]), .theme-light .markdown-preview-view :is(.callout[data-callout=\"aside\"][data-callout-metadata~=\"rh\"]:hover, .callout[data-callout=\"seite\"][data-callout-metadata~=\"rv\"]:hover) {\nborder-left: 4px solid var(--interactive-accent);\nborder-radius: 0;\npadding-right: 0;\n}"
-    },
-    "simple-border": {
-      "general": ".simple-border .markdown-rendered mark {\nborder-radius: 4px;\n}\n\n.simple-border a:is([href=\"#red\"], [href=\"#rot\"], [href=\"#green\"], [href=\"#grün\"], [href=\"#blue\"], [href=\"#blau\"], [href=\"#gray\"], [href=\"#grau\"])+mark {\nborder-radius: 4px;\n}"
     }
   },
   "selectorImpacts": {},

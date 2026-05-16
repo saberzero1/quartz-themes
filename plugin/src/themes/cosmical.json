@@ -82,6 +82,9 @@
   },
   "extras": null,
   "classSettings": {
+    "centered-file-title": {
+      "general": ".centered-file-title {\n--file-header-justify:center;\n}"
+    },
     "subtheme-ocean": {
       "general": ".subtheme-ocean {\n--theme-color-1-chroma:0.15;\n--theme-color-1-hue:262;\n--theme-color-2-chroma:0.15;\n--theme-color-2-hue:70;\n}"
     },
@@ -97,20 +100,17 @@
     "subtheme-night": {
       "general": ".subtheme-night {\n--theme-color-1-chroma:0.06;\n--theme-color-1-hue:205;\n--theme-color-2-chroma:0.18;\n--theme-color-2-hue:145;\n}"
     },
-    "colored-headings": {
-      "general": ".colored-headings h1, .colored-headings h2, .colored-headings h3, .colored-headings h4, .colored-headings h5, .colored-headings h6 {\ncolor:var(--theme-color-1-high);\n}\n\n.colored-headings {\n--inline-title-color:var(--theme-color-1-high);\n--heading-underline-color:var(--theme-color-1-transparent);\n}\n\nbody.colored-headings {\n--nn-theme-file-selected-name-color:var(--theme-color-1-high);\n}"
-    },
     "wider-callouts": {
       "general": ".wider-callouts {\n--callout-padding:0.75em;\n}\n\n.wider-callouts .cm-embed-block.cm-callout {\ntranslate:-.75em;\nwidth:calc(var(--file-line-width) + 1.5em);\n}"
-    },
-    "custom-caret": {
-      "general": ".custom-caret {\n--caret-color:var(--theme-color-1-normal);\n}"
     },
     "headings-underline": {
       "general": ".headings-underline h1, .headings-underline h2, .headings-underline h3, .headings-underline h4 {\ntext-decoration:underline var(--heading-underline-color);\n}"
     },
-    "centered-file-title": {
-      "general": ".centered-file-title {\n--file-header-justify:center;\n}"
+    "colored-headings": {
+      "general": ".colored-headings h1, .colored-headings h2, .colored-headings h3, .colored-headings h4, .colored-headings h5, .colored-headings h6 {\ncolor:var(--theme-color-1-high);\n}\n\n.colored-headings {\n--inline-title-color:var(--theme-color-1-high);\n--heading-underline-color:var(--theme-color-1-transparent);\n}\n\nbody.colored-headings {\n--nn-theme-file-selected-name-color:var(--theme-color-1-high);\n}"
+    },
+    "show-properties-label": {
+      "general": ".show-properties-label .metadata-properties-heading {\ndisplay:inline-block;\n}"
     },
     "metadata-container-alt-separator": {
       "general": ".metadata-container-alt-separator .metadata-container {\nborder-bottom:2px dashed var(--theme-color-1-transparent);\nmargin-bottom:var(--size-4-2);\npadding-bottom:var(--size-4-4);\n}"
@@ -118,11 +118,11 @@
     "metadata-container-alt-outline": {
       "general": ".metadata-container-alt-outline .metadata-container {\nborder:2px solid var(--background-modifier-border);\nborder-radius:var(--radius-l);\nmargin-bottom:var(--size-4-2);\npadding:var(--size-4-3) var(--size-4-4);\n}"
     },
-    "show-properties-label": {
-      "general": ".show-properties-label .metadata-properties-heading {\ndisplay:inline-block;\n}"
-    },
     "improve-multilist-ux": {
       "general": ".improve-multilist-ux .multi-select-pill .multi-select-pill-remove-button {\nvisibility:hidden;\nwidth:0;\n}\n\n.improve-multilist-ux .metadata-property-value:focus .multi-select-pill-remove-button, .improve-multilist-ux .metadata-property-value:focus-within .multi-select-pill-remove-button {\nvisibility:visible;\nwidth:auto;\n}"
+    },
+    "custom-caret": {
+      "general": ".custom-caret {\n--caret-color:var(--theme-color-1-normal);\n}"
     }
   },
   "selectorImpacts": {},

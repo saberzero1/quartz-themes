@@ -68,12 +68,6 @@
   },
   "extras": null,
   "classSettings": {
-    "vercel-dark": {
-      "general": ".vercel-dark {\n/* Explicitly set dark theme variables */\n--background-1: var(--vercel-gray-900);\n--background-2: var(--vercel-gray-900);\n--background-3: var(--vercel-gray-700);\n--text-1: var(--vercel-gray-100);\n--text-2: var(--vercel-gray-400);\n}"
-    },
-    "vercel-light": {
-      "general": ".vercel-light {\n/* Explicitly set light theme variables */\n--background-1: var(--vercel-gray-100);\n--background-2: var(--vercel-gray-200);\n--background-3: var(--vercel-gray-300);\n--text-1: var(--vercel-gray-900);\n--text-2: var(--vercel-gray-600);\n}"
-    },
     "accent-blue": {
       "general": ".accent-blue {\n--accent-blue: var(--vercel-blue-500);\n--text-accent: var(--vercel-blue-500);\n--text-accent-hover: var(--vercel-blue-600);\n--interactive-accent: var(--vercel-blue-500);\n--interactive-accent-hover: var(--vercel-blue-600);\n}"
     },
@@ -82,6 +76,12 @@
     },
     "accent-cyan": {
       "general": ".accent-cyan {\n--accent-blue: #00b8d9;\n--text-accent: #00b8d9;\n--text-accent-hover: #00a3c4;\n--interactive-accent: #00b8d9;\n--interactive-accent-hover: #00a3c4;\n}"
+    },
+    "vercel-light": {
+      "general": ".vercel-light {\n/* Explicitly set light theme variables */\n--background-1: var(--vercel-gray-100);\n--background-2: var(--vercel-gray-200);\n--background-3: var(--vercel-gray-300);\n--text-1: var(--vercel-gray-900);\n--text-2: var(--vercel-gray-600);\n}"
+    },
+    "vercel-dark": {
+      "general": ".vercel-dark {\n/* Explicitly set dark theme variables */\n--background-1: var(--vercel-gray-900);\n--background-2: var(--vercel-gray-900);\n--background-3: var(--vercel-gray-700);\n--text-1: var(--vercel-gray-100);\n--text-2: var(--vercel-gray-400);\n}"
     }
   },
   "selectorImpacts": {},

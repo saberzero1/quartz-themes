@@ -81,11 +81,11 @@
   },
   "extras": null,
   "classSettings": {
-    "page-style-read-mode": {
-      "general": ".page-style-read-mode .markdown-preview-view:not(.markdown-embed .markdown-preview-view) {\npadding-top: 5px !important;\ntop: 85px !important;\nmargin: 0px 15px 0px 15px !important;\nborder-top-left-radius: var(--radius-s);\nborder-top-right-radius: var(--radius-s);\npadding-left: var(--padding-note-content);\npadding-right: var(--padding-note-content);\nborder: 0.5px solid var(--background-modifier-border);\nbox-shadow: var(--mac-terminal-shadow);\n}\n\n.page-style-read-mode .markdown-embed .markdown-preview-view {\nmargin: 0 !important;\ntop: unset !important;\npadding-top: unset !important;\npadding-left: var(--padding-default-note-style) !important;\npadding-right: var(--padding-default-note-style) !important;\nborder: none !important;\nborder-radius: 0 !important;\nbox-shadow: none !important;\n}"
-    },
     "page-style-editor-mode": {
       "general": ".page-style-editor-mode .markdown-embed .markdown-preview-view {\nmargin: 0 !important;\ntop: unset !important;\npadding-top: unset !important;\npadding-left: var(--padding-default-note-style) !important;\npadding-right: var(--padding-default-note-style) !important;\nborder: none !important;\nborder-radius: 0 !important;\nbox-shadow: none !important;\n}"
+    },
+    "page-style-read-mode": {
+      "general": ".page-style-read-mode .markdown-preview-view:not(.markdown-embed .markdown-preview-view) {\npadding-top: 5px !important;\ntop: 85px !important;\nmargin: 0px 15px 0px 15px !important;\nborder-top-left-radius: var(--radius-s);\nborder-top-right-radius: var(--radius-s);\npadding-left: var(--padding-note-content);\npadding-right: var(--padding-note-content);\nborder: 0.5px solid var(--background-modifier-border);\nbox-shadow: var(--mac-terminal-shadow);\n}\n\n.page-style-read-mode .markdown-embed .markdown-preview-view {\nmargin: 0 !important;\ntop: unset !important;\npadding-top: unset !important;\npadding-left: var(--padding-default-note-style) !important;\npadding-right: var(--padding-default-note-style) !important;\nborder: none !important;\nborder-radius: 0 !important;\nbox-shadow: none !important;\n}"
     },
     "magazine-style": {
       "general": ".magazine-style .inline-title {\nfont-family: var(--magazine-title-font) !important;\nheight: 90vh !important;\ndisplay: flex !important;\nalign-items: center;\nmin-height: 90svh;\nplace-items: center;\nbox-sizing: border-box;\nmargin: calc(var(--padding-default-note-style) * -1) !important;\nmargin-bottom: 20px !important;\npadding: 2rem !important;\nfont-size: 200% !important;\nline-height: 1.1;\noverflow-wrap: break-word;\nbackground-image: linear-gradient(rgba(255, 255, 255, var(--magazine-opacity)), rgba(255, 255, 255, var(--magazine-opacity))), var(--magazine-background) !important;\nbackground-size: cover;\nbackground-position: center;\nbackground-repeat: no-repeat;\nmask-image: linear-gradient(\n        to bottom,\n        transparent 0%,\n        black 20%,\n        black 80%,\n        transparent 100%\n    );\ntext-align: var(--inline-title-align) !important;\n/* font-size: var(--inline-title-size); — removed: duplicate, overridden by 200% !important above */\nfont-weight: var(--inline-title-bold);\nletter-spacing: var(--letter-spacing-note);\n}"
@@ -93,20 +93,20 @@
     "inline-title-always-uppercase": {
       "general": ".inline-title-always-uppercase .inline-title {\ntext-transform: uppercase;\n}"
     },
+    "pill-style-alias": {
+      "general": ".pill-style-alias .metadata-property[data-property-key=\"aliases\"] .multi-select-pill {\nbackground: var(--background-secondary);\nborder: 0.5px solid var(--text-accent);\nborder-radius: var(--radius-s);\ncolor: var(--text-accent);\npadding-left: 12px !important;\npadding-right: 12px !important;\n}"
+    },
     "hide-embed-title": {
       "general": ".hide-embed-title .markdown-preview-view .markdown-embed-title {\nborder-bottom: 0px solid var(--text-accent);\ndisplay: none;\n}\n\n.hide-embed-title .markdown-embed-content {\npadding-top: 20px;\n}"
     },
-    "grayscale-dark-mode": {
-      "dark": ".theme-dark img {\nfilter: brightness(90%) grayscale(100%) !important;\nopacity: var(--opacity-grayscale-images);\n}"
-    },
-    "pill-style-alias": {
-      "general": ".pill-style-alias .metadata-property[data-property-key=\"aliases\"] .multi-select-pill {\nbackground: var(--background-secondary);\nborder: 0.5px solid var(--text-accent);\nborder-radius: var(--radius-s);\ncolor: var(--text-accent);\npadding-left: 12px !important;\npadding-right: 12px !important;\n}"
+    "disable-root-file-lines": {
+      "general": ".disable-root-file-lines .nav-file {\nborder-bottom: none !important;\n}"
     },
     "enable-icon-file": {
       "general": ".enable-icon-file .nav-file-title::after {\ncontent: var(--icon-file-indicator) !important;\nfont-size: var(--icon-file-size) !important;\npadding-right: 5px;\nmargin-left: -15px;\norder: -1;\n}"
     },
-    "disable-root-file-lines": {
-      "general": ".disable-root-file-lines .nav-file {\nborder-bottom: none !important;\n}"
+    "grayscale-dark-mode": {
+      "dark": ".theme-dark img {\nfilter: brightness(90%) grayscale(100%) !important;\nopacity: var(--opacity-grayscale-images);\n}"
     }
   },
   "selectorImpacts": {},

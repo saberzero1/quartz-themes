@@ -64,6 +64,27 @@
   },
   "extras": null,
   "classSettings": {
+    "panorama-accent-highlight": {
+      "general": ".panorama-accent-highlight {\n--text-highlight-bg: hsl(var(--hsl-panorama-accent), 0.5);\n.cm-s-obsidian .cm-highlight,\n\t.markdown-rendered mark {\n\t\tpadding: 0 4px;\n\t\tborder-radius: var(--size-4-1);\n\t};\n}"
+    },
+    "panorama-bold-folder": {
+      "general": ".panorama-bold-folder .nav-folder-title {\nfont-weight: bold;\n}"
+    },
+    "panorama-centered-h1": {
+      "general": ".panorama-centered-h1 {\n.HyperMD-header.HyperMD-header-1 {\n\t\ttext-align: center;\n\t};\n.markdown-preview-view h1 {\n\t\ttext-align: center;\n\t};\n}"
+    },
+    "panorama-centered-table": {
+      "general": ".panorama-centered-table {\ntable,\n\t.table-wrapper {\n\t\tmargin-inline: auto;\n\t};\n}"
+    },
+    "panorama-latex-background": {
+      "general": ".panorama-latex-background {\nmjx-container[display='true'] {\n\t\tbackground-color: var(--color-base-10);\n\t\tborder: var(--size-2-1) solid var(--color-base-30);\n\t\tborder-radius: var(--size-4-1);\n\t};\n}"
+    },
+    "panorama-dynamic-callouts": {
+      "general": ".panorama-dynamic-callouts {\ndiv.callout {\n\t\tbackground-color: var(--color-base-10);\n\t\tborder: 2px solid var(--color-base-30);\n\t};\ndiv.callout-title, div.callout-icon > svg.svg-icon {\n\t\tgap: var(--size-4-2);\n\t\tcolor: var(--color-base-70);\n\t};\n}"
+    },
+    "panorama-hide-comment": {
+      "general": ".panorama-hide-comment {\n.cm-line:not(.cm-active) .cm-comment.cm-comment-start,\n\t.cm-line:not(.cm-active) .cm-comment.cm-comment-end {\n\t\tdisplay: none;\n\t};\n}"
+    },
     "panorama-lavender": {
       "general": "&.panorama-lavender {\n--hsl-color-base-00: 258, 68%, 90%;\n--hsl-color-base-05: 257, 54%, 75%;\n--hsl-color-base-10: 257, 54%, 75%;\n--hsl-color-base-20: 257, 54%, 75%;\n--hsl-color-base-25: 258, 53%, 65%;\n--hsl-color-base-30: 258, 53%, 65%;\n--hsl-color-base-35: 258, 53%, 65%;\n--hsl-color-base-40: 258, 52%, 55%;\n--hsl-color-base-50: 258, 51%, 45%;\n--hsl-color-base-60: 258, 51%, 45%;\n--hsl-color-base-70: 257, 53%, 35%;\n--hsl-color-base-100: 257, 54%, 25%;\n--hsl-panorama-accent: 254, 77%, 60%;\n}"
     },
@@ -84,27 +105,6 @@
     },
     "panorama-caves": {
       "general": "&.panorama-caves {\n--hsl-color-base-00: 24, 10%, 10%;\n--hsl-color-base-05: 12, 6%, 15%;\n--hsl-color-base-10: 12, 6%, 15%;\n--hsl-color-base-20: 12, 6%, 15%;\n--hsl-color-base-25: 30, 6%, 25%;\n--hsl-color-base-30: 30, 6%, 25%;\n--hsl-color-base-35: 33, 5%, 32%;\n--hsl-color-base-40: 17, 9%, 45%;\n--hsl-color-base-50: 17, 9%, 45%;\n--hsl-color-base-60: 17, 9%, 45%;\n--hsl-color-base-70: 16, 8%, 64%;\n--hsl-color-base-100: 15, 9%, 83%;\n--hsl-panorama-accent: 32, 39%, 55%;\n}"
-    },
-    "panorama-accent-highlight": {
-      "general": ".panorama-accent-highlight {\n--text-highlight-bg: hsl(var(--hsl-panorama-accent), 0.5);\n.cm-s-obsidian .cm-highlight,\n\t.markdown-rendered mark {\n\t\tpadding: 0 4px;\n\t\tborder-radius: var(--size-4-1);\n\t};\n}"
-    },
-    "panorama-bold-folder": {
-      "general": ".panorama-bold-folder .nav-folder-title {\nfont-weight: bold;\n}"
-    },
-    "panorama-centered-h1": {
-      "general": ".panorama-centered-h1 {\n.HyperMD-header.HyperMD-header-1 {\n\t\ttext-align: center;\n\t};\n.markdown-preview-view h1 {\n\t\ttext-align: center;\n\t};\n}"
-    },
-    "panorama-centered-table": {
-      "general": ".panorama-centered-table {\ntable,\n\t.table-wrapper {\n\t\tmargin-inline: auto;\n\t};\n}"
-    },
-    "panorama-latex-background": {
-      "general": ".panorama-latex-background {\nmjx-container[display='true'] {\n\t\tbackground-color: var(--color-base-10);\n\t\tborder: var(--size-2-1) solid var(--color-base-30);\n\t\tborder-radius: var(--size-4-1);\n\t};\n}"
-    },
-    "panorama-hide-comment": {
-      "general": ".panorama-hide-comment {\n.cm-line:not(.cm-active) .cm-comment.cm-comment-start,\n\t.cm-line:not(.cm-active) .cm-comment.cm-comment-end {\n\t\tdisplay: none;\n\t};\n}"
-    },
-    "panorama-dynamic-callouts": {
-      "general": ".panorama-dynamic-callouts {\ndiv.callout {\n\t\tbackground-color: var(--color-base-10);\n\t\tborder: 2px solid var(--color-base-30);\n\t};\ndiv.callout-title, div.callout-icon > svg.svg-icon {\n\t\tgap: var(--size-4-2);\n\t\tcolor: var(--color-base-70);\n\t};\n}"
     }
   },
   "selectorImpacts": {},

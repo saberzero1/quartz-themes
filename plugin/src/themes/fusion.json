@@ -37,14 +37,14 @@
   },
   "extras": null,
   "classSettings": {
-    "fusion-black": {
-      "general": ":root body.fusion-black {\n--accent-s: 60%;\n--accent-l: 60%;\n--color-base-00: rgb(var(--mono-rgb-0));\n}"
+    "no-note-padding": {
+      "general": "body.no-note-padding :is(.cm-content {\npadding-bottom: 0 !important;\n}"
     },
     "high-contrast-text": {
       "general": ":root:root body.high-contrast-text {\n--color-base-100: rgb(var(--mono-rgb-100));\n}"
     },
-    "no-note-padding": {
-      "general": "body.no-note-padding :is(.cm-content {\npadding-bottom: 0 !important;\n}"
+    "fusion-black": {
+      "general": ":root body.fusion-black {\n--accent-s: 60%;\n--accent-l: 60%;\n--color-base-00: rgb(var(--mono-rgb-0));\n}"
     }
   },
   "selectorImpacts": {},

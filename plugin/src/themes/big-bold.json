@@ -1162,6 +1162,118 @@
   },
   "extras": null,
   "classSettings": {
+    "remove-file-icons": {
+      "general": ".remove-file-icons .nav-file-title:before {\ncontent: \"\" !important;\npadding-right: 0;\n}"
+    },
+    "no-special-files": {
+      "general": ".no-special-files .nav-file-title:before {\ncontent: \"📄\" !important;\n}"
+    },
+    "folder-custom": {
+      "general": ".folder-custom {\n--custom-folder-1-open: \"🌟\";\n--custom-folder-1: \"⭐\";\n--custom-folder-2-open: \"🌷\";\n--custom-folder-2: \"🌺\";\n--custom-folder-3: \"🐱\";\n--custom-folder-3-open: \"😸\";\n}\n\n.folder-custom {\n--folder-1: var(--custom-folder-1);\n--folder-1-open: var(--custom-folder-1-open);\n--folder-2: var(--custom-folder-2);\n--folder-2-open: var(--custom-folder-2-open);\n--folder-3: var(--custom-folder-3);\n--folder-3-open: var(--custom-folder-3-open);\n}\n\n.folder-custom .style-settings-heading[data-id=\"custom-folders-heading\"] {\ndisplay: block;\n}"
+    },
+    "folder-notebooks": {
+      "general": ".folder-notebooks {\n--folder-icon-size: 1.6em;\n--normal-folder-1-open: \"📖\";\n--normal-folder-1: \"📒\";\n--normal-folder-2-open: \"📑\";\n--normal-folder-2: \"📑\";\n--normal-folder-3: \"🔖\";\n--normal-folder-3-open: \"🔖\";\n}"
+    },
+    "folder-folders": {
+      "general": ".folder-folders {\n--normal-folder-1: \"📁\";\n--normal-folder-1-open: \"📂\";\n--normal-folder-2: \"📁\";\n--normal-folder-2-open: \"📂\";\n--normal-folder-3: \"📁\";\n--normal-folder-3-open: \"📂\";\n}\n\n.folder-folders-2 {\n--normal-folder-1-open: \"🗃️\";\n--normal-folder-1: \"🗄️\";\n--normal-folder-2: \"🗂️\";\n--normal-folder-2-open: \"🗂️\";\n--normal-folder-3: \"📁\";\n--normal-folder-3-open: \"📂\";\n}"
+    },
+    "folder-navigator": {
+      "general": ".folder-navigator {\n--normal-folder-1-open: \"🌐\";\n--normal-folder-1: \"🌍\";\n--normal-folder-2: \"🧭\";\n--normal-folder-2-open: \"🗺️\";\n--normal-folder-3: \"🏝️\";\n--normal-folder-3-open: \"📌\";\n}"
+    },
+    "folder-folders-2": {
+      "general": ".folder-folders-2 {\n--normal-folder-1-open: \"🗃️\";\n--normal-folder-1: \"🗄️\";\n--normal-folder-2: \"🗂️\";\n--normal-folder-2-open: \"🗂️\";\n--normal-folder-3: \"📁\";\n--normal-folder-3-open: \"📂\";\n}"
+    },
+    "folder-library": {
+      "general": ".folder-library {\n--normal-folder-1: \"📚\";\n--normal-folder-1-open: \"📚\";\n--normal-folder-2: \"📕\";\n--normal-folder-2-open: \"📖\";\n--normal-folder-3: \"📑\";\n--normal-folder-3-open: \"🔖\";\n}"
+    },
+    "folder-garden": {
+      "general": ".folder-garden {\n--normal-folder-1: \"🌱\";\n--normal-folder-1-open: \"🌳\";\n--normal-folder-2: \"🌷\";\n--normal-folder-2-open: \"🌺\";\n--normal-folder-3: \"🌹\";\n--normal-folder-3-open: \"💐\";\n}"
+    },
+    "full-screen-modal": {
+      "general": ".full-screen-modal {\n--modal-max-width: 100%;\n--modal-width: 100%;\n--modal-height: 100%;\n--modal-max-width-narrow: 75%;\n--modal-radius: 0px;\n--modal-max-height: 100;\n}"
+    },
+    "custom-doc": {
+      "general": ".custom-doc {\n--doc-background: var(--custom-doc-bg) !important;\n}"
+    },
+    "doc-1": {
+      "general": ".doc-1 {\n--custom-doc-bg: var(--color-accent-1);\n}"
+    },
+    "doc-2": {
+      "general": ".doc-2 {\n--custom-doc-bg: var(--color-accent-2);\n}"
+    },
+    "doc-3": {
+      "general": ".doc-3 {\n--custom-doc-bg: var(--color-accent-3);\n}"
+    },
+    "floating-doc": {
+      "general": ".floating-doc {\n--ribbon-background-collapsed: transparent;\n--ribbon-background: transparent;\n}"
+    },
+    "enable-bg-img": {
+      "general": ".enable-bg-img {\n--page-transparency-custom: 75%;\n}\n\n.enable-bg-img {\n--page-transparency: var(--page-transparency-custom);\n}"
+    },
+    "page-shadow": {
+      "general": ".page-shadow .vertical-tab-content, .page-shadow .vertical-tab-header {\nbox-shadow: 0 0 70px var(--shadow-color) inset;\n}\n\n.page-shadow {\n--ribbon-background-collapsed: var(--background-secondary);\n--ribbon-background: transparent;\n}"
+    },
+    "theme-library": {
+      "general": ".theme-library img, .theme-library .page-gallery__tile-image--image {\nfilter: sepia(15%) contrast(95%);\n}",
+      "light": ".theme-light {\n--vault-icon: \"📚\";\n--accent-h: 21 !important;\n--accent-s: 43% !important;\n--accent-l: 57% !important;\n--color-red-rgb: 211, 130, 101;\n--color-red: #c56c4b;\n--color-green-rgb: 151, 203, 77;\n--color-green: #93ab70;\n--color-orange-rgb: 174, 141, 80;\n--color-orange: #c2762e;\n--color-yellow-rgb: 202, 204, 67;\n--color-yellw: #cc9c43;\n--color-cyan-rgb: 107, 192, 138;\n--color-cyan: #61945f;\n--color-blue-rgb: 124, 198, 185;\n--color-blue: #6eada1;\n--color-purple-rgb: 130, 159, 181;\n--color-purple: #5084ad;\n--color-pink-rgb: 189, 144, 169;\n--color-pink: #ab618a;\n}\n\n.theme-light {\n--doc-bg: hsl(41, 53%, 89%);\n--color-base-00: hsla(43, 58%, 95%, var(--page-transparency));\n--color-base-05: hsl(43, 54%, 93%);\n--color-base-10: hsl(42, 55%, 89%);\n--color-base-20: hsl(42, 54%, 85%);\n--color-base-25: #eadbc4;\n--color-base-30: #6c390537;\n--color-base-35: #c2ab87;\n--color-base-40: #b69781;\n--color-base-50: #9f8465;\n--color-base-60: #8d6b4e;\n--color-base-70: #7a6141;\n--color-base-100: #49392d;\n--panel-child: hsl(43, 50%, 94.15%);\n}"
+    },
+    "p-indent-bab": { "general": ".p-indent-bab p {\ntext-indent: 0.25in;\n}" },
+    "headings-medium": {
+      "general": ".headings-medium {\n--h1-size: 2.2em;\n--h2-size: 1.87em;\n--h3-size: 1.57em;\n--h4-size: 1.35em;\n--h5-size: 1.3em;\n--h6-size: 1.1em;\n}"
+    },
+    "headings-small": {
+      "general": ".headings-small {\n--h1-size: 1.75em;\n--h2-size: 1.55em;\n--h3-size: 1.45em;\n--h4-size: 1.3em;\n--h5-size: 1.25em;\n--h6-size: 1.05em;\n}"
+    },
+    "headings-tiny": {
+      "general": ".headings-tiny {\n--h1-size: 1.5em;\n--h2-size: 1.4em;\n--h3-size: 1.3em;\n--h4-size: 1.2em;\n--h5-size: 1.1em;\n--h6-size: 1em;\n}"
+    },
+    "headings-large": {
+      "general": ".headings-large {\n--h1-size: 2.5em;\n--h2-size: 2.2em;\n--h3-size: 1.87em;\n--h4-size: 1.57em;\n--h5-size: 1.35em;\n--h6-size: 1.3em;\n}"
+    },
+    "headings-huge": {
+      "general": ".headings-huge {\n--h1-size: 2.8em;\n--h2-size: 2.35em;\n--h3-size: 2em;\n--h4-size: 1.75em;\n--h5-size: 1.5em;\n--h6-size: 1.25em;\n}"
+    },
+    "left-align-h1": { "general": ".left-align-h1 {\n--h1-align: left;\n}" },
+    "colored-headings": {
+      "general": ".colored-headings {\n--h1-color: var(--h1-color-custom);\n--h2-color: var(--h2-color-custom);\n--h3-color: var(--h3-color-custom);\n--h4-color: var(--h4-color-custom);\n--h5-color: var(--h5-color-custom);\n--h6-color: var(--h6-color-custom);\n}"
+    },
+    "title-shadow": {
+      "general": ".title-shadow .inline-title {\ntext-shadow:\n    rgba(0, 0, 0, 0.153) 0.01em 0.02em 0.03em,\n    rgba(0, 0, 0, 0.171) 0.05em 0.02em 0.05em;\n}"
+    },
+    "header-shadow": {
+      "general": ".header-shadow h1, .header-shadow h2, .header-shadow h3, .header-shadow h4, .header-shadow h5, .header-shadow h6 {\ntext-shadow: rgba(0, 0, 0, 0.155) 0em 0.04em 0.05em;\n}"
+    },
+    "hide-title": {
+      "general": ".hide-title .inline-title {\nopacity: 0;\nmargin: 0px !important;\npadding: 0px !important;\nheight: 0px !important;\n}"
+    },
+    "hide-m": {
+      "general": ".hide-m .metadata-container {\nopacity: 0 !important;\nmargin: 0px !important;\npadding: 0px !important;\nheight: 0px !important;\n}"
+    },
+    "icon-square": {
+      "general": ".icon-square .icon .inline-title::first-letter {\nborder-radius: 12px;\n}"
+    },
+    "icon-circle": {
+      "general": ".icon-circle .icon .inline-title::first-letter {\nborder-radius: 100px;\npadding: 18px;\n}"
+    },
+    "icon-bordered": {
+      "general": ".icon-bordered .icon .inline-title::first-letter {\nborder-radius: 100px;\nborder-width: 2px;\nborder-color: var(--text-normal);\npadding: 18px;\n}"
+    },
+    "icon-no-border": {
+      "general": ".icon-no-border .icon .inline-title::first-letter {\nborder: none;\n}"
+    },
+    "hide-tag-icons": {
+      "general": ".hide-tag-icons a.tag::before {\ndisplay: none;\n}"
+    },
+    "minimal-m": {
+      "general": ".minimal-m .frontmatter-container {\nbackground-color: var(--background-secondary-alt);\nclear: right !important;\nfloat: right !important;\nmargin: 0px 0px 0.5em 0.5em !important;\n}\n\n.minimal-m .frontmatter-container.is-collapsed {\nmax-width: 120px;\nbackground-color: transparent;\n}\n\n.minimal-m .frontmatter-container .frontmatter-container-header {\nborder-radius: var(--radius-l);\nmargin: 0px auto;\nwidth: fit-content;\nfont-size: var(--font-ui-small);\n}\n\n.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header:hover {\ncolor: var(--interactive-accent);\nbackground-color: var(--interactive-hover) !important;\nborder-color: var(--background-modifier-border-hover);\n}\n\n.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header {\nbackground-color: var(--background-primary-alt);\ncolor: var(--text-muted);\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header {\ncolor: transparent;\nmax-height: 1px;\nmin-height: 1px;\npadding: 0px;\nmargin: 0px;\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header::before {\ncolor: var(--text-faint);\ncontent: \"❌\";\nfont-family: \"Noto Emoji\";\nfont-size: 0.5em;\nopacity: 0;\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header:hover::before {\ncolor: var(--color-red);\ncontent: \"❌\";\nopacity: 1;\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) {\nmax-width: 30%;\nfont-size: var(--font-ui-medium);\nfloat: left;\nmargin: 0px 2em 1.5em 0px;\n}\n\n.minimal-m .frontmatter-section-label::after {\ncontent: none;\n}\n\n.minimal-m .frontmatter-section-label, .minimal-m .frontmatter-section {\nfont-size: var(--font-ui-small);\ndisplay: block;\nmargin-bottom: 0px;\npadding-bottom: 0px;\ntext-align: center;\n}\n\n.minimal-m .frontmatter-section-label {\nfont-weight: var(--h1-weight);\nfont-family: var(--h1-font);\nfont-size: var(--font-ui-small);\n}\n\n.minimal-m .frontmatter-section {\nmargin: 5px 0px;\nwidth: 100%;\npadding: 5px;\nborder: none;\nbackground-color: transparent;\n}"
+    },
+    "img-center": { "general": ".img-center {\n--img-align: auto;\n}" },
+    "page-gallery-flexgrow": {
+      "general": ".page-gallery-flexgrow .page-gallery__tile {\nmax-width: unset;\nflex-grow: 1;\nheight: flex;\nwidth: fit-content;\nmin-width: 12em;\n}"
+    },
+    "no-shadows": {
+      "general": ".no-shadows {\n--shadow-ui: none;\n--shadow-s: none;\n--shadow-l: none;\n}"
+    },
     "theme-matcha-light": {
       "light": ".theme-light {\n--vault-icon: \"🍵\";\n--accent-h: 85 !important;\n--accent-s: 55% !important;\n--accent-l: 55% !important;\n--color-red-rgb: 211, 130, 101;\n--color-red: #c57c4b;\n--color-green-rgb: 151, 203, 77;\n--color-green: #8ab252;\n--color-orange-rgb: 174, 141, 80;\n--color-orange: #c2982e;\n--color-yellow-rgb: 202, 204, 67;\n--color-yellow: #adad46;\n--color-cyan-rgb: 107, 192, 138;\n--color-cyan: #359c5b;\n--color-blue-rgb: 124, 198, 185;\n--color-blue: #399d8b;\n--color-purple-rgb: 130, 159, 181;\n--color-purple: #5097ad;\n--color-pink-rgb: 189, 144, 169;\n--color-pink: #7985ab;\n}\n\n.theme-light {\n--doc-bg: #e4efd9;\n--shadow-color: #e5ecdb !important;\n--color-base-05: hsl(90, 57%, 97%);\n--color-base-00: hsla(96, 100%, 99%, var(--page-transparency));\n--color-base-10: #e9f3df;\n--color-base-20: #e9f4db;\n--color-base-25: #e1edd3;\n--color-base-30: #6c983f37;\n--color-base-35: #d1ddc6;\n--color-base-40: #c8d9c1;\n--color-base-50: #80907a;\n--color-base-60: #849b81;\n--color-base-70: #6c826c;\n--color-base-100: #272d28;\n--panel-child: hsl(90, 80%, 97.5%);\n}"
     },
@@ -1170,10 +1282,6 @@
     },
     "theme-nord-light": {
       "light": ".theme-light {\n--vault-icon: \"❄️\";\n--accent-h: 210 !important;\n--accent-s: 44% !important;\n--accent-l: 59% !important;\n}\n\n.theme-light {\n--doc-bg: hsl(207, 40%, 90%);\n--color-base-00: hsla(208, 44%, 96%, var(--page-transparency));\n--color-base-05: hsl(208, 45%, 95%);\n--color-base-10: hsl(208, 48%, 93%);\n--color-base-20: hsl(208, 48%, 91%);\n--color-base-25: hsl(208, 47%, 88%);\n--color-base-30: hsl(208, 30%, 85%);\n--color-base-35: hsl(209, 45%, 81%);\n--color-base-40: hsl(210, 40%, 77%);\n--color-base-50: hsl(210, 30%, 61%);\n--color-base-60: hsl(210, 27%, 62%);\n--color-base-70: hsl(210, 22%, 53%);\n--color-base-100: hsl(210, 30%, 18%);\n--panel-child: hsl(208, 45%, 95.8%);\n--color-red-rgb: 191, 97, 106;\n--color-red: #bb5a64;\n--color-green-rgb: 163, 190, 140;\n--color-green: #8fad76;\n--color-orange-rgb: 208, 135, 112;\n--color-orange: #cf7b62;\n--color-yellow-rgb: 235, 203, 139;\n--color-yellow: #d3ad61;\n--color-cyan-rgb: 136, 192, 208;\n--color-cyan: #6ab0c4;\n--color-blue-rgb: 129, 161, 193;\n--color-blue: #6997c4;\n--color-purple-rgb: 94, 129, 172;\n--color-purple: #5e81ac;\n--color-pink-rgb: 180, 142, 173;\n--color-pink: #aa7aa1;\n}"
-    },
-    "theme-library": {
-      "general": ".theme-library img, .theme-library .page-gallery__tile-image--image {\nfilter: sepia(15%) contrast(95%);\n}",
-      "light": ".theme-light {\n--vault-icon: \"📚\";\n--accent-h: 21 !important;\n--accent-s: 43% !important;\n--accent-l: 57% !important;\n--color-red-rgb: 211, 130, 101;\n--color-red: #c56c4b;\n--color-green-rgb: 151, 203, 77;\n--color-green: #93ab70;\n--color-orange-rgb: 174, 141, 80;\n--color-orange: #c2762e;\n--color-yellow-rgb: 202, 204, 67;\n--color-yellw: #cc9c43;\n--color-cyan-rgb: 107, 192, 138;\n--color-cyan: #61945f;\n--color-blue-rgb: 124, 198, 185;\n--color-blue: #6eada1;\n--color-purple-rgb: 130, 159, 181;\n--color-purple: #5084ad;\n--color-pink-rgb: 189, 144, 169;\n--color-pink: #ab618a;\n}\n\n.theme-light {\n--doc-bg: hsl(41, 53%, 89%);\n--color-base-00: hsla(43, 58%, 95%, var(--page-transparency));\n--color-base-05: hsl(43, 54%, 93%);\n--color-base-10: hsl(42, 55%, 89%);\n--color-base-20: hsl(42, 54%, 85%);\n--color-base-25: #eadbc4;\n--color-base-30: #6c390537;\n--color-base-35: #c2ab87;\n--color-base-40: #b69781;\n--color-base-50: #9f8465;\n--color-base-60: #8d6b4e;\n--color-base-70: #7a6141;\n--color-base-100: #49392d;\n--panel-child: hsl(43, 50%, 94.15%);\n}"
     },
     "theme-gleam": {
       "light": ".theme-light {\n--vault-icon: \"✨\";\n--accent-h: 232 !important;\n--accent-s: 75% !important;\n--accent-l: 70% !important;\n--doc-bg: hsl(229, 13%, 83%);\n--shadow-color: hsl(0, 0%, 92%);\n--color-red-rgb: 255, 114, 114;\n--color-red: rgb(255, 114, 114);\n--color-green-rgb: 132, 204, 124;\n--color-green: rgb(132, 204, 124);\n--color-orange-rgb: 255, 160, 88;\n--color-orange: rgb(255, 160, 88);\n--color-yellow-rgb: 219, 202, 103;\n--color-yellow: rgb(219, 202, 103);\n--color-cyan-rgb: 84, 186, 182;\n--color-cyan: rgb(84, 186, 182);\n--color-blue-rgb: 131, 145, 237;\n--color-blue: rgb(131, 145, 237);\n--color-purple-rgb: 183, 140, 218;\n--color-purple: rgb(183, 140, 218);\n--color-pink-rgb: 233, 145, 196;\n--color-pink: rgb(233, 145, 196);\n--color-base-00: hsla(237, 10%, 97%, var(--page-transparency));\n--color-base-05: hsl(210, 10%, 96%);\n--color-base-10: hsl(220, 9%, 95%);\n--color-base-20: hsl(229, 14%, 91%);\n--color-base-25: #d9dde8;\n--color-base-30: #9496ac66;\n--color-base-35: hsl(220, 5%, 78%);\n--color-base-40: hsl(242, 19%, 72%);\n--color-base-50: #787689;\n--color-base-60: #7f7d8f;\n--color-base-70: #6d6b78;\n--color-base-100: #3e3a4f;\n}"
@@ -1195,114 +1303,6 @@
     },
     "theme-black": {
       "dark": ".theme-dark {\n--vault-icon: \"🌙\";\n--accent-h: 0 !important;\n--accent-s: 0% !important;\n--accent-l: 73% !important;\n--doc-bg: hsl(193, 0%, 8%);\n--highlight-mix-blend-mode: lighten;\n--color-base-00: hsla(216, 0%, 0%, var(--page-transparency));\n--color-base-10: hsl(216, 0%, 5%);\n--color-base-20: hsl(216, 10%, 9%);\n--color-base-25: hsl(216, 10%, 16%);\n--color-base-30: hsl(216, 10%, 6%);\n--color-base-35: hsl(216, 10%, 13%);\n--color-base-40: hsl(216, 10%, 15%);\n--color-base-50: hsl(216, 12%, 69%);\n--color-base-60: hsl(216, 13%, 78%);\n--color-base-70: hsl(218, 14%, 85%);\n--color-base-100: hsl(0, 0%, 100%);\n--panel-child: hsl(216, 10%, 9%);\n}"
-    },
-    "page-shadow": {
-      "general": ".page-shadow .vertical-tab-content, .page-shadow .vertical-tab-header {\nbox-shadow: 0 0 70px var(--shadow-color) inset;\n}\n\n.page-shadow {\n--ribbon-background-collapsed: var(--background-secondary);\n--ribbon-background: transparent;\n}"
-    },
-    "floating-doc": {
-      "general": ".floating-doc {\n--ribbon-background-collapsed: transparent;\n--ribbon-background: transparent;\n}"
-    },
-    "custom-doc": {
-      "general": ".custom-doc {\n--doc-background: var(--custom-doc-bg) !important;\n}"
-    },
-    "doc-1": {
-      "general": ".doc-1 {\n--custom-doc-bg: var(--color-accent-1);\n}"
-    },
-    "doc-2": {
-      "general": ".doc-2 {\n--custom-doc-bg: var(--color-accent-2);\n}"
-    },
-    "doc-3": {
-      "general": ".doc-3 {\n--custom-doc-bg: var(--color-accent-3);\n}"
-    },
-    "hide-m": {
-      "general": ".hide-m .metadata-container {\nopacity: 0 !important;\nmargin: 0px !important;\npadding: 0px !important;\nheight: 0px !important;\n}"
-    },
-    "minimal-m": {
-      "general": ".minimal-m .frontmatter-container {\nbackground-color: var(--background-secondary-alt);\nclear: right !important;\nfloat: right !important;\nmargin: 0px 0px 0.5em 0.5em !important;\n}\n\n.minimal-m .frontmatter-container.is-collapsed {\nmax-width: 120px;\nbackground-color: transparent;\n}\n\n.minimal-m .frontmatter-container .frontmatter-container-header {\nborder-radius: var(--radius-l);\nmargin: 0px auto;\nwidth: fit-content;\nfont-size: var(--font-ui-small);\n}\n\n.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header:hover {\ncolor: var(--interactive-accent);\nbackground-color: var(--interactive-hover) !important;\nborder-color: var(--background-modifier-border-hover);\n}\n\n.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header {\nbackground-color: var(--background-primary-alt);\ncolor: var(--text-muted);\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header {\ncolor: transparent;\nmax-height: 1px;\nmin-height: 1px;\npadding: 0px;\nmargin: 0px;\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header::before {\ncolor: var(--text-faint);\ncontent: \"❌\";\nfont-family: \"Noto Emoji\";\nfont-size: 0.5em;\nopacity: 0;\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header:hover::before {\ncolor: var(--color-red);\ncontent: \"❌\";\nopacity: 1;\n}\n\n.minimal-m .frontmatter-container:not(.is-collapsed) {\nmax-width: 30%;\nfont-size: var(--font-ui-medium);\nfloat: left;\nmargin: 0px 2em 1.5em 0px;\n}\n\n.minimal-m .frontmatter-section-label::after {\ncontent: none;\n}\n\n.minimal-m .frontmatter-section-label, .minimal-m .frontmatter-section {\nfont-size: var(--font-ui-small);\ndisplay: block;\nmargin-bottom: 0px;\npadding-bottom: 0px;\ntext-align: center;\n}\n\n.minimal-m .frontmatter-section-label {\nfont-weight: var(--h1-weight);\nfont-family: var(--h1-font);\nfont-size: var(--font-ui-small);\n}\n\n.minimal-m .frontmatter-section {\nmargin: 5px 0px;\nwidth: 100%;\npadding: 5px;\nborder: none;\nbackground-color: transparent;\n}"
-    },
-    "no-shadows": {
-      "general": ".no-shadows {\n--shadow-ui: none;\n--shadow-s: none;\n--shadow-l: none;\n}"
-    },
-    "remove-file-icons": {
-      "general": ".remove-file-icons .nav-file-title:before {\ncontent: \"\" !important;\npadding-right: 0;\n}"
-    },
-    "no-special-files": {
-      "general": ".no-special-files .nav-file-title:before {\ncontent: \"📄\" !important;\n}"
-    },
-    "folder-notebooks": {
-      "general": ".folder-notebooks {\n--folder-icon-size: 1.6em;\n--normal-folder-1-open: \"📖\";\n--normal-folder-1: \"📒\";\n--normal-folder-2-open: \"📑\";\n--normal-folder-2: \"📑\";\n--normal-folder-3: \"🔖\";\n--normal-folder-3-open: \"🔖\";\n}"
-    },
-    "folder-library": {
-      "general": ".folder-library {\n--normal-folder-1: \"📚\";\n--normal-folder-1-open: \"📚\";\n--normal-folder-2: \"📕\";\n--normal-folder-2-open: \"📖\";\n--normal-folder-3: \"📑\";\n--normal-folder-3-open: \"🔖\";\n}"
-    },
-    "folder-folders": {
-      "general": ".folder-folders {\n--normal-folder-1: \"📁\";\n--normal-folder-1-open: \"📂\";\n--normal-folder-2: \"📁\";\n--normal-folder-2-open: \"📂\";\n--normal-folder-3: \"📁\";\n--normal-folder-3-open: \"📂\";\n}\n\n.folder-folders-2 {\n--normal-folder-1-open: \"🗃️\";\n--normal-folder-1: \"🗄️\";\n--normal-folder-2: \"🗂️\";\n--normal-folder-2-open: \"🗂️\";\n--normal-folder-3: \"📁\";\n--normal-folder-3-open: \"📂\";\n}"
-    },
-    "folder-folders-2": {
-      "general": ".folder-folders-2 {\n--normal-folder-1-open: \"🗃️\";\n--normal-folder-1: \"🗄️\";\n--normal-folder-2: \"🗂️\";\n--normal-folder-2-open: \"🗂️\";\n--normal-folder-3: \"📁\";\n--normal-folder-3-open: \"📂\";\n}"
-    },
-    "folder-navigator": {
-      "general": ".folder-navigator {\n--normal-folder-1-open: \"🌐\";\n--normal-folder-1: \"🌍\";\n--normal-folder-2: \"🧭\";\n--normal-folder-2-open: \"🗺️\";\n--normal-folder-3: \"🏝️\";\n--normal-folder-3-open: \"📌\";\n}"
-    },
-    "folder-garden": {
-      "general": ".folder-garden {\n--normal-folder-1: \"🌱\";\n--normal-folder-1-open: \"🌳\";\n--normal-folder-2: \"🌷\";\n--normal-folder-2-open: \"🌺\";\n--normal-folder-3: \"🌹\";\n--normal-folder-3-open: \"💐\";\n}"
-    },
-    "folder-custom": {
-      "general": ".folder-custom {\n--custom-folder-1-open: \"🌟\";\n--custom-folder-1: \"⭐\";\n--custom-folder-2-open: \"🌷\";\n--custom-folder-2: \"🌺\";\n--custom-folder-3: \"🐱\";\n--custom-folder-3-open: \"😸\";\n}\n\n.folder-custom {\n--folder-1: var(--custom-folder-1);\n--folder-1-open: var(--custom-folder-1-open);\n--folder-2: var(--custom-folder-2);\n--folder-2-open: var(--custom-folder-2-open);\n--folder-3: var(--custom-folder-3);\n--folder-3-open: var(--custom-folder-3-open);\n}\n\n.folder-custom .style-settings-heading[data-id=\"custom-folders-heading\"] {\ndisplay: block;\n}"
-    },
-    "enable-bg-img": {
-      "general": ".enable-bg-img {\n--page-transparency-custom: 75%;\n}\n\n.enable-bg-img {\n--page-transparency: var(--page-transparency-custom);\n}"
-    },
-    "headings-tiny": {
-      "general": ".headings-tiny {\n--h1-size: 1.5em;\n--h2-size: 1.4em;\n--h3-size: 1.3em;\n--h4-size: 1.2em;\n--h5-size: 1.1em;\n--h6-size: 1em;\n}"
-    },
-    "headings-small": {
-      "general": ".headings-small {\n--h1-size: 1.75em;\n--h2-size: 1.55em;\n--h3-size: 1.45em;\n--h4-size: 1.3em;\n--h5-size: 1.25em;\n--h6-size: 1.05em;\n}"
-    },
-    "headings-medium": {
-      "general": ".headings-medium {\n--h1-size: 2.2em;\n--h2-size: 1.87em;\n--h3-size: 1.57em;\n--h4-size: 1.35em;\n--h5-size: 1.3em;\n--h6-size: 1.1em;\n}"
-    },
-    "headings-large": {
-      "general": ".headings-large {\n--h1-size: 2.5em;\n--h2-size: 2.2em;\n--h3-size: 1.87em;\n--h4-size: 1.57em;\n--h5-size: 1.35em;\n--h6-size: 1.3em;\n}"
-    },
-    "headings-huge": {
-      "general": ".headings-huge {\n--h1-size: 2.8em;\n--h2-size: 2.35em;\n--h3-size: 2em;\n--h4-size: 1.75em;\n--h5-size: 1.5em;\n--h6-size: 1.25em;\n}"
-    },
-    "left-align-h1": { "general": ".left-align-h1 {\n--h1-align: left;\n}" },
-    "header-shadow": {
-      "general": ".header-shadow h1, .header-shadow h2, .header-shadow h3, .header-shadow h4, .header-shadow h5, .header-shadow h6 {\ntext-shadow: rgba(0, 0, 0, 0.155) 0em 0.04em 0.05em;\n}"
-    },
-    "colored-headings": {
-      "general": ".colored-headings {\n--h1-color: var(--h1-color-custom);\n--h2-color: var(--h2-color-custom);\n--h3-color: var(--h3-color-custom);\n--h4-color: var(--h4-color-custom);\n--h5-color: var(--h5-color-custom);\n--h6-color: var(--h6-color-custom);\n}"
-    },
-    "title-shadow": {
-      "general": ".title-shadow .inline-title {\ntext-shadow:\n    rgba(0, 0, 0, 0.153) 0.01em 0.02em 0.03em,\n    rgba(0, 0, 0, 0.171) 0.05em 0.02em 0.05em;\n}"
-    },
-    "hide-title": {
-      "general": ".hide-title .inline-title {\nopacity: 0;\nmargin: 0px !important;\npadding: 0px !important;\nheight: 0px !important;\n}"
-    },
-    "p-indent-bab": { "general": ".p-indent-bab p {\ntext-indent: 0.25in;\n}" },
-    "img-center": { "general": ".img-center {\n--img-align: auto;\n}" },
-    "hide-tag-icons": {
-      "general": ".hide-tag-icons a.tag::before {\ndisplay: none;\n}"
-    },
-    "icon-square": {
-      "general": ".icon-square .icon .inline-title::first-letter {\nborder-radius: 12px;\n}"
-    },
-    "icon-circle": {
-      "general": ".icon-circle .icon .inline-title::first-letter {\nborder-radius: 100px;\npadding: 18px;\n}"
-    },
-    "icon-bordered": {
-      "general": ".icon-bordered .icon .inline-title::first-letter {\nborder-radius: 100px;\nborder-width: 2px;\nborder-color: var(--text-normal);\npadding: 18px;\n}"
-    },
-    "icon-no-border": {
-      "general": ".icon-no-border .icon .inline-title::first-letter {\nborder: none;\n}"
-    },
-    "full-screen-modal": {
-      "general": ".full-screen-modal {\n--modal-max-width: 100%;\n--modal-width: 100%;\n--modal-height: 100%;\n--modal-max-width-narrow: 75%;\n--modal-radius: 0px;\n--modal-max-height: 100;\n}"
-    },
-    "page-gallery-flexgrow": {
-      "general": ".page-gallery-flexgrow .page-gallery__tile {\nmax-width: unset;\nflex-grow: 1;\nheight: flex;\nwidth: fit-content;\nmin-width: 12em;\n}"
     }
   },
   "selectorImpacts": {},

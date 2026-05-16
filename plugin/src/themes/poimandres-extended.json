@@ -64,9 +64,6 @@
   },
   "extras": null,
   "classSettings": {
-    "pm-variant-storm": {
-      "dark": ".theme-dark {\n--bg_dark2_x: 16, 16, 16;\n--bg_dark2: rgb(var(--bg_dark2_x));\n--bg_dark_x: 37, 43, 55;\n--bg_dark: rgb(var(--bg_dark_x));\n--bg_x: 37, 43, 55;\n--bg: rgb(var(--bg_x));\n--bg_highlight_x: 64, 67, 80;\n--bg_highlight: rgb(var(--bg_highlight_x));\n--bg_highlight_dark_x: 16, 16, 16;\n--bg_highlight_dark: rgb(var(--bg_highlight_dark_x));\n--terminal_black_x: 16, 16, 16;\n--terminal_black: rgb(var(--terminal_black_x));\n--fg_dark_x: 134, 140, 173;\n--fg_dark: rgb(var(--fg_dark_x));\n--bold-color: rgba(var(--blue0_x), 0.65);\n--comment_x: 134, 140, 173;\n--comment: rgb(var(--comment_x));\n--code-background: rgba(16, 16, 16, 0.35);\n}"
-    },
     "h1-divider-on": {
       "general": ".markdown-rendered > h1 {\ncontent: \"\";\nposition: absolute;\nheight: 2px;\nwidth: 100%;\nright: 0px;\nopacity: 0.5;\nbottom: 0;\nbackground-image: linear-gradient(\n    to left,\n    var(--h1-color) 30%,\n    transparent 70%\n  );\n}"
     },
@@ -87,6 +84,9 @@
     },
     "scrollbar-high-contrast": {
       "general": ".scrollbar-high-contrast {\n--scrollbar-bg: var(--background-secondary);\n--scrollbar-thumb-bg: rgba(var(--fg_dark_x), 0.55);\n--scrollbar-active-thumb-bg: rgba(var(--fg_dark_x), 0.75);\n}"
+    },
+    "pm-variant-storm": {
+      "dark": ".theme-dark {\n--bg_dark2_x: 16, 16, 16;\n--bg_dark2: rgb(var(--bg_dark2_x));\n--bg_dark_x: 37, 43, 55;\n--bg_dark: rgb(var(--bg_dark_x));\n--bg_x: 37, 43, 55;\n--bg: rgb(var(--bg_x));\n--bg_highlight_x: 64, 67, 80;\n--bg_highlight: rgb(var(--bg_highlight_x));\n--bg_highlight_dark_x: 16, 16, 16;\n--bg_highlight_dark: rgb(var(--bg_highlight_dark_x));\n--terminal_black_x: 16, 16, 16;\n--terminal_black: rgb(var(--terminal_black_x));\n--fg_dark_x: 134, 140, 173;\n--fg_dark: rgb(var(--fg_dark_x));\n--bold-color: rgba(var(--blue0_x), 0.65);\n--comment_x: 134, 140, 173;\n--comment: rgb(var(--comment_x));\n--code-background: rgba(16, 16, 16, 0.35);\n}"
     }
   },
   "selectorImpacts": {},

@@ -74,13 +74,6 @@
   },
   "extras": null,
   "classSettings": {
-    "ROS98": {
-      "dark": ".ROS98-DC {\n--background-primary: #3c3c3c;\n--background-secondary: #707070;\n}\n\n.ROS98-Jungle {\n--background-primary: #625437;\n--background-secondary: #958054;\n}\n\n.ROS98-mystery {\n--background-primary: #343c34;\n--background-secondary: #607060;\n}\n\n.ROS98-Travel {\n--background-primary: #3f3731;\n--background-secondary: #726559;\n}\n\n.ROS98-Snow {\n--background-primary: #1a1c0e;\n--background-secondary: #4b4f2a;\n}\n\n.ROS98-Space {\n--background-primary: #3b4247;\n--background-secondary: #66737a;\n}\n\n.ROS98-steam {\n--background-primary: #3e4637;\n--background-secondary: #4c5844;\n}\n\n.ROS98-Water {\n--background-primary: #15294e;\n--background-secondary: #2a509a;\n}\n\n.ROS98-Ancient {\n--background-primary: #2b221a;\n--background-secondary: #7a614a;\n}",
-      "light": ".ROS98-Tropical {\n--background-primary: #dacea6;\n--background-secondary: #8e866c;\n}\n\n.ROS98-Photo {\n--background-primary: #dac9ad;\n--background-secondary: #8e8371;\n}\n\n.ROS98-Peanuts {\n--background-primary: #b9d8ba;\n--background-secondary: #9d9d9d;\n}\n\n.ROS98-Horror {\n--background-primary: #dfefa3;\n--background-secondary: #98a36f;\n}\n\n.ROS98-Foxtrot {\n--background-primary: #b8c0cd;\n--background-secondary: #747981;\n}\n\n.ROS98-Tree {\n--background-primary: #bcbfe7;\n--background-secondary: #7e809b;\n}\n\n.ROS98-reman {\n--background-primary: #d4d5b5;\n--background-secondary: #c1a600;\n}\n\n.ROS98-Messy {\n--background-secondary: #8284bc;\n}\n\n.ROS98-Horses {\n--background-primary: #f2d6e0;\n--background-secondary: #a6939a;\n}\n\n.ROS98-baseball {\n--background-primary: #ffcc87;\n--background-secondary: #d1a86f;\n}\n\n.ROS98-Bugs {\n--background-primary: #bfd2a0;\n--background-secondary: #7a8666;\n}\n\n.ROS98-brick {\n--background-primary: #fffbd8;\n--background-secondary: #c2bfa5;\n}\n\n.ROS98-desert {\n--background-primary: #fff4df;\n--background-secondary: #d5ccbb;\n}\n\n.ROS98-eggplant {\n--background-primary: #cefcf1;\n--background-secondary: #90b0a8;\n}\n\n.ROS98-GoldenEra {\n--background-secondary: #b8c8b9;\n--background-primary: #f8f1da;\n}\n\n.ROS98-lilac {\n--background-primary: #d6c4ff;\n--background-secondary: #afa0d0;\n}\n\n.ROS98-maple {\n--background-primary: #fff3ad;\n--background-secondary: #e0cc98;\n}\n\n.ROS98-marine {\n--background-primary: #c8e0d8;\n--background-secondary: #88c0b8;\n}\n\n.ROS98-MW {\n--background-secondary: #7c828a;\n--background-primary: #cad3e1;\n}\n\n.ROS98-nature {\n--background-secondary: #b09d82;\n--background-primary: #ebe3d4;\n}\n\n.ROS98-plum {\n--background-primary: #d8d0c8;\n--background-secondary: #a89890;\n}\n\n.ROS98-pumpkin {\n--background-primary: #ffecaa;\n--background-secondary: #f0d4a0;\n}\n\n.ROS98-rainyday {\n--background-secondary: #8098b0;\n--background-primary: #b7dafc;\n}\n\n.ROS98-rose {\n--background-secondary: #d0b0b8;\n--background-primary: #ffd7e1;\n}\n\n.ROS98-Science {\n--background-secondary: #8398b1;\n--background-primary: #bbd9fd;\n}\n\n.ROS98-slate {\n--background-secondary: #9db9c8;\n--background-primary: #c8ebff;\n}\n\n.ROS98-sports {\n--background-secondary: #afe1a0;\n--background-primary: #bcffb5;\n}\n\n.ROS98-spruce {\n--background-primary: #ceffd7;\n--background-secondary: #a2c8a9;\n}\n\n.ROS98-USA {\n--background-secondary: #d168d8;\n}\n\n.ROS98-Vinci {\n--background-primary: #ffdcd5;\n--background-secondary: #bfa5a0;\n}\n\n.ROS98-wheat {\n--background-primary: #f5ffb6;\n--background-secondary: #e0e0a0;\n}"
-    },
-    "ROS98-Ancient": {
-      "dark": ".ROS98-Ancient {\n--background-primary: #2b221a;\n--background-secondary: #7a614a;\n}"
-    },
     "ROS98-DC": {
       "dark": ".ROS98-DC {\n--background-primary: #3c3c3c;\n--background-secondary: #707070;\n}"
     },
@@ -105,14 +98,44 @@
     "ROS98-Water": {
       "dark": ".ROS98-Water {\n--background-primary: #15294e;\n--background-secondary: #2a509a;\n}"
     },
+    "ROS98-Ancient": {
+      "dark": ".ROS98-Ancient {\n--background-primary: #2b221a;\n--background-secondary: #7a614a;\n}"
+    },
+    "ROS98-Tropical": {
+      "light": ".ROS98-Tropical {\n--background-primary: #dacea6;\n--background-secondary: #8e866c;\n}"
+    },
+    "ROS98-Photo": {
+      "light": ".ROS98-Photo {\n--background-primary: #dac9ad;\n--background-secondary: #8e8371;\n}"
+    },
+    "ROS98-Peanuts": {
+      "light": ".ROS98-Peanuts {\n--background-primary: #b9d8ba;\n--background-secondary: #9d9d9d;\n}"
+    },
+    "ROS98-Horror": {
+      "light": ".ROS98-Horror {\n--background-primary: #dfefa3;\n--background-secondary: #98a36f;\n}"
+    },
+    "ROS98-Foxtrot": {
+      "light": ".ROS98-Foxtrot {\n--background-primary: #b8c0cd;\n--background-secondary: #747981;\n}"
+    },
+    "ROS98-Tree": {
+      "light": ".ROS98-Tree {\n--background-primary: #bcbfe7;\n--background-secondary: #7e809b;\n}"
+    },
+    "ROS98-reman": {
+      "light": ".ROS98-reman {\n--background-primary: #d4d5b5;\n--background-secondary: #c1a600;\n}"
+    },
+    "ROS98-Messy": {
+      "light": ".ROS98-Messy {\n--background-secondary: #8284bc;\n}"
+    },
+    "ROS98-Horses": {
+      "light": ".ROS98-Horses {\n--background-primary: #f2d6e0;\n--background-secondary: #a6939a;\n}"
+    },
     "ROS98-baseball": {
       "light": ".ROS98-baseball {\n--background-primary: #ffcc87;\n--background-secondary: #d1a86f;\n}"
     },
-    "ROS98-brick": {
-      "light": ".ROS98-brick {\n--background-primary: #fffbd8;\n--background-secondary: #c2bfa5;\n}"
-    },
     "ROS98-Bugs": {
       "light": ".ROS98-Bugs {\n--background-primary: #bfd2a0;\n--background-secondary: #7a8666;\n}"
+    },
+    "ROS98-brick": {
+      "light": ".ROS98-brick {\n--background-primary: #fffbd8;\n--background-secondary: #c2bfa5;\n}"
     },
     "ROS98-desert": {
       "light": ".ROS98-desert {\n--background-primary: #fff4df;\n--background-secondary: #d5ccbb;\n}"
@@ -120,14 +143,8 @@
     "ROS98-eggplant": {
       "light": ".ROS98-eggplant {\n--background-primary: #cefcf1;\n--background-secondary: #90b0a8;\n}"
     },
-    "ROS98-Foxtrot": {
-      "light": ".ROS98-Foxtrot {\n--background-primary: #b8c0cd;\n--background-secondary: #747981;\n}"
-    },
-    "ROS98-Horses": {
-      "light": ".ROS98-Horses {\n--background-primary: #f2d6e0;\n--background-secondary: #a6939a;\n}"
-    },
-    "ROS98-Horror": {
-      "light": ".ROS98-Horror {\n--background-primary: #dfefa3;\n--background-secondary: #98a36f;\n}"
+    "ROS98-GoldenEra": {
+      "light": ".ROS98-GoldenEra {\n--background-secondary: #b8c8b9;\n--background-primary: #f8f1da;\n}"
     },
     "ROS98-lilac": {
       "light": ".ROS98-lilac {\n--background-primary: #d6c4ff;\n--background-secondary: #afa0d0;\n}"
@@ -138,20 +155,11 @@
     "ROS98-marine": {
       "light": ".ROS98-marine {\n--background-primary: #c8e0d8;\n--background-secondary: #88c0b8;\n}"
     },
-    "ROS98-Messy": {
-      "light": ".ROS98-Messy {\n--background-secondary: #8284bc;\n}"
-    },
     "ROS98-MW": {
       "light": ".ROS98-MW {\n--background-secondary: #7c828a;\n--background-primary: #cad3e1;\n}"
     },
     "ROS98-nature": {
       "light": ".ROS98-nature {\n--background-secondary: #b09d82;\n--background-primary: #ebe3d4;\n}"
-    },
-    "ROS98-Peanuts": {
-      "light": ".ROS98-Peanuts {\n--background-primary: #b9d8ba;\n--background-secondary: #9d9d9d;\n}"
-    },
-    "ROS98-Photo": {
-      "light": ".ROS98-Photo {\n--background-primary: #dac9ad;\n--background-secondary: #8e8371;\n}"
     },
     "ROS98-plum": {
       "light": ".ROS98-plum {\n--background-primary: #d8d0c8;\n--background-secondary: #a89890;\n}"
@@ -161,9 +169,6 @@
     },
     "ROS98-rainyday": {
       "light": ".ROS98-rainyday {\n--background-secondary: #8098b0;\n--background-primary: #b7dafc;\n}"
-    },
-    "ROS98-reman": {
-      "light": ".ROS98-reman {\n--background-primary: #d4d5b5;\n--background-secondary: #c1a600;\n}"
     },
     "ROS98-rose": {
       "light": ".ROS98-rose {\n--background-secondary: #d0b0b8;\n--background-primary: #ffd7e1;\n}"
@@ -183,20 +188,15 @@
     "ROS98-USA": {
       "light": ".ROS98-USA {\n--background-secondary: #d168d8;\n}"
     },
-    "ROS98-GoldenEra": {
-      "light": ".ROS98-GoldenEra {\n--background-secondary: #b8c8b9;\n--background-primary: #f8f1da;\n}"
-    },
-    "ROS98-Tree": {
-      "light": ".ROS98-Tree {\n--background-primary: #bcbfe7;\n--background-secondary: #7e809b;\n}"
-    },
-    "ROS98-Tropical": {
-      "light": ".ROS98-Tropical {\n--background-primary: #dacea6;\n--background-secondary: #8e866c;\n}"
-    },
     "ROS98-Vinci": {
       "light": ".ROS98-Vinci {\n--background-primary: #ffdcd5;\n--background-secondary: #bfa5a0;\n}"
     },
     "ROS98-wheat": {
       "light": ".ROS98-wheat {\n--background-primary: #f5ffb6;\n--background-secondary: #e0e0a0;\n}"
+    },
+    "ROS98": {
+      "dark": ".ROS98-DC {\n--background-primary: #3c3c3c;\n--background-secondary: #707070;\n}\n\n.ROS98-Jungle {\n--background-primary: #625437;\n--background-secondary: #958054;\n}\n\n.ROS98-mystery {\n--background-primary: #343c34;\n--background-secondary: #607060;\n}\n\n.ROS98-Travel {\n--background-primary: #3f3731;\n--background-secondary: #726559;\n}\n\n.ROS98-Snow {\n--background-primary: #1a1c0e;\n--background-secondary: #4b4f2a;\n}\n\n.ROS98-Space {\n--background-primary: #3b4247;\n--background-secondary: #66737a;\n}\n\n.ROS98-steam {\n--background-primary: #3e4637;\n--background-secondary: #4c5844;\n}\n\n.ROS98-Water {\n--background-primary: #15294e;\n--background-secondary: #2a509a;\n}\n\n.ROS98-Ancient {\n--background-primary: #2b221a;\n--background-secondary: #7a614a;\n}",
+      "light": ".ROS98-Tropical {\n--background-primary: #dacea6;\n--background-secondary: #8e866c;\n}\n\n.ROS98-Photo {\n--background-primary: #dac9ad;\n--background-secondary: #8e8371;\n}\n\n.ROS98-Peanuts {\n--background-primary: #b9d8ba;\n--background-secondary: #9d9d9d;\n}\n\n.ROS98-Horror {\n--background-primary: #dfefa3;\n--background-secondary: #98a36f;\n}\n\n.ROS98-Foxtrot {\n--background-primary: #b8c0cd;\n--background-secondary: #747981;\n}\n\n.ROS98-Tree {\n--background-primary: #bcbfe7;\n--background-secondary: #7e809b;\n}\n\n.ROS98-reman {\n--background-primary: #d4d5b5;\n--background-secondary: #c1a600;\n}\n\n.ROS98-Messy {\n--background-secondary: #8284bc;\n}\n\n.ROS98-Horses {\n--background-primary: #f2d6e0;\n--background-secondary: #a6939a;\n}\n\n.ROS98-baseball {\n--background-primary: #ffcc87;\n--background-secondary: #d1a86f;\n}\n\n.ROS98-Bugs {\n--background-primary: #bfd2a0;\n--background-secondary: #7a8666;\n}\n\n.ROS98-brick {\n--background-primary: #fffbd8;\n--background-secondary: #c2bfa5;\n}\n\n.ROS98-desert {\n--background-primary: #fff4df;\n--background-secondary: #d5ccbb;\n}\n\n.ROS98-eggplant {\n--background-primary: #cefcf1;\n--background-secondary: #90b0a8;\n}\n\n.ROS98-GoldenEra {\n--background-secondary: #b8c8b9;\n--background-primary: #f8f1da;\n}\n\n.ROS98-lilac {\n--background-primary: #d6c4ff;\n--background-secondary: #afa0d0;\n}\n\n.ROS98-maple {\n--background-primary: #fff3ad;\n--background-secondary: #e0cc98;\n}\n\n.ROS98-marine {\n--background-primary: #c8e0d8;\n--background-secondary: #88c0b8;\n}\n\n.ROS98-MW {\n--background-secondary: #7c828a;\n--background-primary: #cad3e1;\n}\n\n.ROS98-nature {\n--background-secondary: #b09d82;\n--background-primary: #ebe3d4;\n}\n\n.ROS98-plum {\n--background-primary: #d8d0c8;\n--background-secondary: #a89890;\n}\n\n.ROS98-pumpkin {\n--background-primary: #ffecaa;\n--background-secondary: #f0d4a0;\n}\n\n.ROS98-rainyday {\n--background-secondary: #8098b0;\n--background-primary: #b7dafc;\n}\n\n.ROS98-rose {\n--background-secondary: #d0b0b8;\n--background-primary: #ffd7e1;\n}\n\n.ROS98-Science {\n--background-secondary: #8398b1;\n--background-primary: #bbd9fd;\n}\n\n.ROS98-slate {\n--background-secondary: #9db9c8;\n--background-primary: #c8ebff;\n}\n\n.ROS98-sports {\n--background-secondary: #afe1a0;\n--background-primary: #bcffb5;\n}\n\n.ROS98-spruce {\n--background-primary: #ceffd7;\n--background-secondary: #a2c8a9;\n}\n\n.ROS98-USA {\n--background-secondary: #d168d8;\n}\n\n.ROS98-Vinci {\n--background-primary: #ffdcd5;\n--background-secondary: #bfa5a0;\n}\n\n.ROS98-wheat {\n--background-primary: #f5ffb6;\n--background-secondary: #e0e0a0;\n}"
     }
   },
   "selectorImpacts": {},

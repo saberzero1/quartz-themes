@@ -64,11 +64,26 @@
   },
   "extras": null,
   "classSettings": {
-    "cg-bg-abyss": {
-      "dark": ".theme-dark {\n--cg-bg-primary: #000000;\n--cg-bg-secondary: #080810;\n--cg-bg-tertiary: #101018;\n}"
+    "cg-slim-scrollbars": {
+      "general": ".cg-slim-scrollbars * {\nscrollbar-width: thin;\nscrollbar-color: rgba(var(--cg-primary-rgb), 0.15) transparent;\n}"
     },
-    "cg-bg-elevated": {
-      "dark": ".theme-dark {\n--cg-bg-primary: #141420;\n--cg-bg-secondary: #1c1c2a;\n--cg-bg-tertiary: #242435;\n}"
+    "cg-hide-borders": {
+      "general": "body.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-card-layout .menu {\nborder: none;\n}"
+    },
+    "cg-card-layout": {
+      "general": "body.cg-hide-borders.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-hide-borders.cg-card-layout .menu {\nborder: none;\n}\n\nbody.cg-card-layout {\n--cg-card-bg: var(--cg-bg-primary);\n--cg-card-fg: var(--cg-bg-secondary);\n--cg-card-outline-color: rgba(var(--cg-primary-rgb), 0.08);\n--cg-card-radius: var(--radius-xl, 12px);\n--cg-card-padding: 8px;\n--cg-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);\n--divider-color: transparent;\n--divider-color-hover: rgba(var(--cg-primary-rgb), 0.1);\n--divider-width: 4px;\n--divider-width-hover: 4px;\n--tab-container-background: var(--cg-card-bg);\n--ribbon-padding: 0;\n}\n\nbody.cg-card-layout .workspace-drop-overlay:before {\nwidth: calc(100% - 6px - var(--cg-card-padding) * 2);\nheight: calc(100% - 6px - var(--cg-card-padding) * 2);\nmargin: auto;\n}"
+    },
+    "cg-tab-floating": {
+      "general": "body.cg-tab-floating {\n--cg-custom-tab-height: 40px;\n--header-height: var(--cg-custom-tab-height, 40px);\n}"
+    },
+    "cg-card-filebrowser": {
+      "general": "body.cg-card-filebrowser .nav-files-container {\npadding: 4px;\n}\n\nbody.cg-card-filebrowser .nav-folder-children {\nbackground-color: var(--cg-bg-secondary);\nborder-radius: 8px;\npadding: 4px;\nmargin: 2px 0;\n}"
+    },
+    "cg-status-bar": {
+      "general": ".cg-status-bar .status-bar {\ndisplay: flex;\n}"
+    },
+    "cg-autohide-titlebar": {
+      "general": ":focus-within)::before {\ntransform: translateY(var(--cg-titlebar-target-translate-y));\n}\n\n:focus-within) {\ntransform: translateY(var(--cg-titlebar-translate-y));\n}\n\n:focus-within) > div {\nvisibility: hidden;\n}"
     },
     "cg-colored-bold": {
       "general": ".cg-colored-bold strong, .cg-colored-bold .cm-strong {\ncolor: var(--cg-primary);\n}"
@@ -79,29 +94,14 @@
     "cg-colored-headings": {
       "general": ".cg-colored-headings .markdown-rendered h1 {\ncolor: #00FFFF;\n}\n\n.cg-colored-headings .markdown-rendered h2 {\ncolor: #33CCFF;\n}\n\n.cg-colored-headings .markdown-rendered h3 {\ncolor: #6699FF;\n}\n\n.cg-colored-headings .markdown-rendered h4 {\ncolor: #9966FF;\n}\n\n.cg-colored-headings .markdown-rendered h5 {\ncolor: #CC33FF;\n}\n\n.cg-colored-headings .markdown-rendered h6 {\ncolor: #FF00FF;\n}"
     },
-    "cg-autohide-titlebar": {
-      "general": ":focus-within)::before {\ntransform: translateY(var(--cg-titlebar-target-translate-y));\n}\n\n:focus-within) {\ntransform: translateY(var(--cg-titlebar-translate-y));\n}\n\n:focus-within) > div {\nvisibility: hidden;\n}"
-    },
-    "cg-slim-scrollbars": {
-      "general": ".cg-slim-scrollbars * {\nscrollbar-width: thin;\nscrollbar-color: rgba(var(--cg-primary-rgb), 0.15) transparent;\n}"
-    },
-    "cg-status-bar": {
-      "general": ".cg-status-bar .status-bar {\ndisplay: flex;\n}"
-    },
-    "cg-tab-floating": {
-      "general": "body.cg-tab-floating {\n--cg-custom-tab-height: 40px;\n--header-height: var(--cg-custom-tab-height, 40px);\n}"
-    },
     "cg-tab-minimal": {
       "general": "body.cg-tab-minimal {\n--cg-custom-tab-height: 40px;\n--header-height: var(--cg-custom-tab-height, 40px);\n}\n\nbody.cg-tab-minimal {\n--tab-stacked-header-width: 40px;\n}"
     },
-    "cg-card-layout": {
-      "general": "body.cg-hide-borders.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-hide-borders.cg-card-layout .menu {\nborder: none;\n}\n\nbody.cg-card-layout {\n--cg-card-bg: var(--cg-bg-primary);\n--cg-card-fg: var(--cg-bg-secondary);\n--cg-card-outline-color: rgba(var(--cg-primary-rgb), 0.08);\n--cg-card-radius: var(--radius-xl, 12px);\n--cg-card-padding: 8px;\n--cg-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);\n--divider-color: transparent;\n--divider-color-hover: rgba(var(--cg-primary-rgb), 0.1);\n--divider-width: 4px;\n--divider-width-hover: 4px;\n--tab-container-background: var(--cg-card-bg);\n--ribbon-padding: 0;\n}\n\nbody.cg-card-layout .workspace-drop-overlay:before {\nwidth: calc(100% - 6px - var(--cg-card-padding) * 2);\nheight: calc(100% - 6px - var(--cg-card-padding) * 2);\nmargin: auto;\n}"
+    "cg-bg-abyss": {
+      "dark": ".theme-dark {\n--cg-bg-primary: #000000;\n--cg-bg-secondary: #080810;\n--cg-bg-tertiary: #101018;\n}"
     },
-    "cg-hide-borders": {
-      "general": "body.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-card-layout .menu {\nborder: none;\n}"
-    },
-    "cg-card-filebrowser": {
-      "general": "body.cg-card-filebrowser .nav-files-container {\npadding: 4px;\n}\n\nbody.cg-card-filebrowser .nav-folder-children {\nbackground-color: var(--cg-bg-secondary);\nborder-radius: 8px;\npadding: 4px;\nmargin: 2px 0;\n}"
+    "cg-bg-elevated": {
+      "dark": ".theme-dark {\n--cg-bg-primary: #141420;\n--cg-bg-secondary: #1c1c2a;\n--cg-bg-tertiary: #242435;\n}"
     }
   },
   "selectorImpacts": {},

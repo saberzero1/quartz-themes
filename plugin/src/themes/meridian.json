@@ -64,17 +64,17 @@
   },
   "extras": null,
   "classSettings": {
-    "minimal-image-captions": {
-      "general": ".minimal-image-captions .image-captions-figure {\nbackground-color: transparent !important;\n}\n\n.minimal-image-captions .image-captions-caption {\nbackground-color: transparent !important;\nfont-size: 0.8em !important;\ntext-align: left !important;\n}"
-    },
     "deemphasize-status-bar": {
       "general": ".deemphasize-status-bar .status-bar {\nfilter: saturate(0);\nopacity: 0.5;\nborder: none;\ntransition:\n    filter 0.3s ease,\n    opacity 0.3s ease;\n}\n\n.deemphasize-status-bar .status-bar:hover, .deemphasize-status-bar .status-bar:focus-within {\nfilter: saturate(1);\nopacity: 1;\n}"
+    },
+    "deemphasize-embedded-backlinks": {
+      "general": ".deemphasize-embedded-backlinks .embedded-backlinks {\nfilter: grayscale(1);\nopacity: 0.3;\ntransition:\n    filter 0.3s ease,\n    opacity 0.3s ease;\n}\n\n.deemphasize-embedded-backlinks .embedded-backlinks:hover, .deemphasize-embedded-backlinks .embedded-backlinks:focus-within {\nfilter: grayscale(0);\nopacity: 1;\n}"
     },
     "deemphasize-file-properties": {
       "general": ".deemphasize-file-properties .metadata-container {\nfilter: grayscale(1);\nopacity: 0.3;\ntransition:\n    filter 0.3s ease,\n    opacity 0.3s ease;\n}\n\n.deemphasize-file-properties .metadata-container:hover, .deemphasize-file-properties .metadata-container:focus-within {\nfilter: grayscale(0);\nopacity: 1;\n}"
     },
-    "deemphasize-embedded-backlinks": {
-      "general": ".deemphasize-embedded-backlinks .embedded-backlinks {\nfilter: grayscale(1);\nopacity: 0.3;\ntransition:\n    filter 0.3s ease,\n    opacity 0.3s ease;\n}\n\n.deemphasize-embedded-backlinks .embedded-backlinks:hover, .deemphasize-embedded-backlinks .embedded-backlinks:focus-within {\nfilter: grayscale(0);\nopacity: 1;\n}"
+    "minimal-image-captions": {
+      "general": ".minimal-image-captions .image-captions-figure {\nbackground-color: transparent !important;\n}\n\n.minimal-image-captions .image-captions-caption {\nbackground-color: transparent !important;\nfont-size: 0.8em !important;\ntext-align: left !important;\n}"
     }
   },
   "selectorImpacts": {},

@@ -64,26 +64,11 @@
   },
   "extras": null,
   "classSettings": {
-    "fancy-code": {
-      "general": "body.fancy-code .markdown-reading-view pre[class*=\"language-\"]::before {\ndisplay: block;\ncontent: \" \";\nline-height: 1.5em;\nbackground-color: var(--code-block-alt-bg);\nborder-top-right-radius: calc(var(--codeblock-roundness) * 0.8);\nborder-top-left-radius: calc(var(--codeblock-roundness) * 0.8);\n}\n\nbody.fancy-code pre[class*=\"language-\"]::after {\ncontent: attr(class);\nfont-size: 0.9rem;\ntext-shadow: none;\ncolor: var(--text-muted);\nposition: absolute;\ntop: 2px;\nright: 5px;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-2);\n}\n\nbody.fancy-code .copy-code-button.copy-code-button.copy-code-button {\nbackground-color: var(--interactive-normal);\ntop: unset;\nbottom: 0;\npadding: 0 var(--size-2-2);\n}\n\nbody.fancy-code .markdown-preview-view.markdown-preview-view pre {\npadding: 0;\nmargin-top: var(--size-4-2);\nborder: var(--codeblock-border);\nborder-radius: var(--codeblock-roundness);\n}\n\nbody.fancy-code .markdown-reading-view .markdown-preview-view pre code {\ndisplay: block;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-5);\n}"
-    },
-    "fancy-highlight": {
-      "general": "body.fancy-highlight span.cm-highlight, body.fancy-highlight .markdown-preview-view mark, body.fancy-highlight .markdown-rendered mark, body.fancy-highlight span.search-result-file-matched-text {\nbackground-image: linear-gradient(\n    0deg,\n    var(--highlight-background-color-underline) 0%,\n    var(--highlight-background-color-underline) 2px,\n    var(--highlight-background-color--active) 2px,\n    var(--highlight-background-color--active) 100%\n  ) !important;\nbackground-color: var(--highlight-text-color--active) !important;\n}"
-    },
-    "progress-color": {
-      "general": ".progress-color {\n.markdown-rendered progress,\n  .markdown-source-view.is-live-preview progress,\n  .markdown-preview-view progress {\n    &[value^=\"1\"]::-webkit-progress-value,\n    &[value^=\"2\"]::-webkit-progress-value,\n    &[value^=\"3\"]::-webkit-progress-value {\n      background-color: var(--progress-color-1);\n    }\n    &[value^=\"4\"]::-webkit-progress-value,\n&[value^=\"5\"]::-webkit-progress-value {\n      background-color: var(--progress-color-2);\n    }\n    &[value^=\"6\"]::-webkit-progress-value,\n&[value^=\"7\"]::-webkit-progress-value {\n      background-color: var(--progress-color-3);\n    }\n    &[value^=\"8\"]::-webkit-progress-value,\n&[value^=\"9\"]::-webkit-progress-value {\n      background-color: var(--progress-color-4);\n    }\n    &[value=\"1\"]::-webkit-progress-value,\n&[value=\"100\"]::-webkit-progress-value {\n      background-color: var(--progress-color-5);\n    }\n\n    &[value=\"0\"]::-webkit-progress-value,\n    &[value=\"2\"]::-webkit-progress-value,\n    &[value=\"3\"]::-webkit-progress-value,\n    &[value=\"4\"]::-webkit-progress-value,\n    &[value=\"5\"]::-webkit-progress-value,\n    &[value=\"6\"]::-webkit-progress-value,\n    &[value=\"7\"]::-webkit-progress-value,\n    &[value=\"8\"]::-webkit-progress-value,\n&[value=\"9\"]::-webkit-progress-value {\n      background-color: var(--progress-color-1);\n    }\n  };\n}"
-    },
-    "heading-underline-color": {
-      "general": "body.h1-underline h1 {\nborder-bottom-color: var(--h1-color);\n}\n\nbody.heading-underline-color:not(.h2-no-underline) .markdown-preview-view h2, body.heading-underline-color:not(.h2-no-underline) .markdown-rendered h2 {\nborder-bottom-color: var(--h2-color);\n}\n\nbody.h3-underline h3 {\nborder-bottom-color: var(--h3-color);\n}\n\nbody.h4-underline h4 {\nborder-bottom-color: var(--h4-color);\n}\n\nbody.h5-underline h5 {\nborder-bottom-color: var(--h5-color);\n}\n\nbody.h6-underline h6 {\nborder-bottom-color: var(--h6-color);\n}"
+    "h2-no-underline": {
+      "general": "body.h2-no-underline .markdown-preview-view h2, body.h2-no-underline .markdown-rendered h2 {\nborder-bottom: none;\npadding-bottom: 0;\nmargin-bottom: revert;\n}"
     },
     "h1-small-caps": {
       "general": "body.h1-small-caps h1 {\nfont-variant-caps: small-caps;\n}"
-    },
-    "h1-underline": {
-      "general": "body.h1-underline h1 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h1-underline h1 {\nborder-bottom-color: var(--h1-color);\n}"
-    },
-    "h2-no-underline": {
-      "general": "body.h2-no-underline .markdown-preview-view h2, body.h2-no-underline .markdown-rendered h2 {\nborder-bottom: none;\npadding-bottom: 0;\nmargin-bottom: revert;\n}"
     },
     "h2-small-caps": {
       "general": "body.h2-small-caps h2 {\nfont-variant-caps: small-caps;\n}"
@@ -91,26 +76,41 @@
     "h3-small-caps": {
       "general": "body.h3-small-caps h3 {\nfont-variant-caps: small-caps;\n}"
     },
-    "h3-underline": {
-      "general": "body.h3-underline h3 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h3-underline h3 {\nborder-bottom-color: var(--h3-color);\n}"
-    },
     "h4-small-caps": {
       "general": "body.h4-small-caps h4 {\nfont-variant-caps: small-caps;\n}"
-    },
-    "h4-underline": {
-      "general": "body.h4-underline h4 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h4-underline h4 {\nborder-bottom-color: var(--h4-color);\n}"
     },
     "h5-small-caps": {
       "general": "body.h5-small-caps h5 {\nfont-variant-caps: small-caps;\n}"
     },
-    "h5-underline": {
-      "general": "body.h5-underline h5 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h5-underline h5 {\nborder-bottom-color: var(--h5-color);\n}"
-    },
     "h6-small-caps": {
       "general": "body.h6-small-caps h6 {\nfont-variant-caps: small-caps;\n}"
     },
+    "h1-underline": {
+      "general": "body.h1-underline h1 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h1-underline h1 {\nborder-bottom-color: var(--h1-color);\n}"
+    },
+    "h3-underline": {
+      "general": "body.h3-underline h3 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h3-underline h3 {\nborder-bottom-color: var(--h3-color);\n}"
+    },
+    "h4-underline": {
+      "general": "body.h4-underline h4 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h4-underline h4 {\nborder-bottom-color: var(--h4-color);\n}"
+    },
+    "h5-underline": {
+      "general": "body.h5-underline h5 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h5-underline h5 {\nborder-bottom-color: var(--h5-color);\n}"
+    },
     "h6-underline": {
       "general": "body.h6-underline h6 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\nmargin-bottom: 8px !important;\n}\n\nbody.heading-underline-color.h6-underline h6 {\nborder-bottom-color: var(--h6-color);\n}"
+    },
+    "heading-underline-color": {
+      "general": "body.h1-underline h1 {\nborder-bottom-color: var(--h1-color);\n}\n\nbody.heading-underline-color:not(.h2-no-underline) .markdown-preview-view h2, body.heading-underline-color:not(.h2-no-underline) .markdown-rendered h2 {\nborder-bottom-color: var(--h2-color);\n}\n\nbody.h3-underline h3 {\nborder-bottom-color: var(--h3-color);\n}\n\nbody.h4-underline h4 {\nborder-bottom-color: var(--h4-color);\n}\n\nbody.h5-underline h5 {\nborder-bottom-color: var(--h5-color);\n}\n\nbody.h6-underline h6 {\nborder-bottom-color: var(--h6-color);\n}"
+    },
+    "fancy-highlight": {
+      "general": "body.fancy-highlight span.cm-highlight, body.fancy-highlight .markdown-preview-view mark, body.fancy-highlight .markdown-rendered mark, body.fancy-highlight span.search-result-file-matched-text {\nbackground-image: linear-gradient(\n    0deg,\n    var(--highlight-background-color-underline) 0%,\n    var(--highlight-background-color-underline) 2px,\n    var(--highlight-background-color--active) 2px,\n    var(--highlight-background-color--active) 100%\n  ) !important;\nbackground-color: var(--highlight-text-color--active) !important;\n}"
+    },
+    "fancy-code": {
+      "general": "body.fancy-code .markdown-reading-view pre[class*=\"language-\"]::before {\ndisplay: block;\ncontent: \" \";\nline-height: 1.5em;\nbackground-color: var(--code-block-alt-bg);\nborder-top-right-radius: calc(var(--codeblock-roundness) * 0.8);\nborder-top-left-radius: calc(var(--codeblock-roundness) * 0.8);\n}\n\nbody.fancy-code pre[class*=\"language-\"]::after {\ncontent: attr(class);\nfont-size: 0.9rem;\ntext-shadow: none;\ncolor: var(--text-muted);\nposition: absolute;\ntop: 2px;\nright: 5px;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-2);\n}\n\nbody.fancy-code .copy-code-button.copy-code-button.copy-code-button {\nbackground-color: var(--interactive-normal);\ntop: unset;\nbottom: 0;\npadding: 0 var(--size-2-2);\n}\n\nbody.fancy-code .markdown-preview-view.markdown-preview-view pre {\npadding: 0;\nmargin-top: var(--size-4-2);\nborder: var(--codeblock-border);\nborder-radius: var(--codeblock-roundness);\n}\n\nbody.fancy-code .markdown-reading-view .markdown-preview-view pre code {\ndisplay: block;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-5);\n}"
+    },
+    "progress-color": {
+      "general": ".progress-color {\n.markdown-rendered progress,\n  .markdown-source-view.is-live-preview progress,\n  .markdown-preview-view progress {\n    &[value^=\"1\"]::-webkit-progress-value,\n    &[value^=\"2\"]::-webkit-progress-value,\n    &[value^=\"3\"]::-webkit-progress-value {\n      background-color: var(--progress-color-1);\n    }\n    &[value^=\"4\"]::-webkit-progress-value,\n&[value^=\"5\"]::-webkit-progress-value {\n      background-color: var(--progress-color-2);\n    }\n    &[value^=\"6\"]::-webkit-progress-value,\n&[value^=\"7\"]::-webkit-progress-value {\n      background-color: var(--progress-color-3);\n    }\n    &[value^=\"8\"]::-webkit-progress-value,\n&[value^=\"9\"]::-webkit-progress-value {\n      background-color: var(--progress-color-4);\n    }\n    &[value=\"1\"]::-webkit-progress-value,\n&[value=\"100\"]::-webkit-progress-value {\n      background-color: var(--progress-color-5);\n    }\n\n    &[value=\"0\"]::-webkit-progress-value,\n    &[value=\"2\"]::-webkit-progress-value,\n    &[value=\"3\"]::-webkit-progress-value,\n    &[value=\"4\"]::-webkit-progress-value,\n    &[value=\"5\"]::-webkit-progress-value,\n    &[value=\"6\"]::-webkit-progress-value,\n    &[value=\"7\"]::-webkit-progress-value,\n    &[value=\"8\"]::-webkit-progress-value,\n&[value=\"9\"]::-webkit-progress-value {\n      background-color: var(--progress-color-1);\n    }\n  };\n}"
     }
   },
   "selectorImpacts": {},

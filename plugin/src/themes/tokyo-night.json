@@ -82,6 +82,10 @@
     "h6-divider-on": {
       "general": ".markdown-rendered>h6 {\ncontent: \"\";\nposition: absolute;\nheight: 2px;\nwidth: 100%;\nright: 0px;\nopacity: 0.5;\nbottom: 0;\nbackground-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%);\n}"
     },
+    "callout-style-3": {
+      "dark": ".callout-style-3:is(.theme-light, .theme-dark) {\n--callout-border-width: 0 0 0 4px;\n--callout-border-opacity: 1;\n--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 0;\n--callout-title-size: inherit;\n--callout-content-padding: 0;\n--callout-content-background: transparent;\n--callout-content-radius: 0px;\n}",
+      "light": ".callout-style-3:is(.theme-light, .theme-dark) {\n--callout-border-width: 0 0 0 4px;\n--callout-border-opacity: 1;\n--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 0;\n--callout-title-size: inherit;\n--callout-content-padding: 0;\n--callout-content-background: transparent;\n--callout-content-radius: 0px;\n}"
+    },
     "callout-style-1": {
       "dark": ".theme-dark {\n--callout-border-width: 1px;\n--callout-border-opacity: 0.25;\n--callout-padding: 0;\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 8px 16px;\n--callout-title-size: inherit;\n--callout-content-padding: 0px 16px;\n--callout-content-background: #00000040;\n--callout-content-radius: 0px;\n}",
       "light": ".theme-light {\n--callout-border-width: 1px;\n--callout-border-opacity: 0.25;\n--callout-padding: 0;\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 8px 16px;\n--callout-title-size: inherit;\n--callout-content-padding: 0px 16px;\n--callout-content-background: #FFFFFFBF;\n--callout-content-radius: 0px;\n}"
@@ -89,10 +93,6 @@
     "callout-style-2": {
       "dark": ".theme-dark {\n--callout-border-width: 1px;\n--callout-border-opacity: 0.25;\n--callout-padding: 0 6px 6px;\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 8px 16px;\n--callout-title-size: inherit;\n--callout-content-padding: 0px 16px;\n--callout-content-background: #00000040;\n--callout-content-radius: 4px;\n}",
       "light": ".theme-light {\n--callout-border-width: 1px;\n--callout-border-opacity: 0.25;\n--callout-padding: 0 6px 6px;\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 8px 16px;\n--callout-title-size: inherit;\n--callout-content-padding: 0px 16px;\n--callout-content-background: #FFFFFFBF;\n--callout-content-radius: 4px;\n}"
-    },
-    "callout-style-3": {
-      "dark": ".callout-style-3:is(.theme-light, .theme-dark) {\n--callout-border-width: 0 0 0 4px;\n--callout-border-opacity: 1;\n--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 0;\n--callout-title-size: inherit;\n--callout-content-padding: 0;\n--callout-content-background: transparent;\n--callout-content-radius: 0px;\n}",
-      "light": ".callout-style-3:is(.theme-light, .theme-dark) {\n--callout-border-width: 0 0 0 4px;\n--callout-border-opacity: 1;\n--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 0;\n--callout-title-size: inherit;\n--callout-content-padding: 0;\n--callout-content-background: transparent;\n--callout-content-radius: 0px;\n}"
     },
     "callout-style-4": {
       "dark": ".theme-dark {\n--callout-border-width: 0 0 0 4px;\n--callout-border-opacity: 1;\n--callout-padding: 0;\n--callout-radius: var(--radius-s);\n--callout-title-color: inherit;\n--callout-title-padding: 8px 16px;\n--callout-title-size: inherit;\n--callout-content-padding: 0px 16px;\n--callout-content-background: #00000040;\n--callout-content-radius: 0px;\n}",

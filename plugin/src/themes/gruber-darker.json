@@ -64,27 +64,6 @@
   },
   "extras": null,
   "classSettings": {
-    "gd-readable-line-length": {
-      "general": ".gd-readable-line-length .cm-content {\nwidth: 100% !important;\nmax-width: 100% !important;\n}"
-    },
-    "gd-smooth-scroll": {
-      "general": ".gd-smooth-scroll .markdown-reading-view {\nscroll-behavior: smooth;\n}\n\n.gd-smooth-scroll .markdown-preview-view {\nscroll-behavior: smooth;\n}"
-    },
-    "gd-code-border": {
-      "dark": ".gd-code-border .theme-dark pre {\nborder: 1px solid var(--gd-bg-light) !important;\nborder-radius: 6px;\n}"
-    },
-    "gd-compact-statusbar": {
-      "general": ".gd-compact-statusbar .status-bar {\nheight: 18px;\nfont-size: 0.72em;\n}"
-    },
-    "gd-vim-cursor-block": {
-      "general": ".gd-vim-cursor-block .cm-fat-cursor .cm-cursor, .gd-vim-cursor-block .cm-fat-cursor .cm-cursor-primary {\nbackground-color: var(--gd-vim-cursor-color-normal) !important;\nborder-left: none !important;\nwidth: 1ch !important;\nopacity: 0.8;\n}"
-    },
-    "gd-vim-cursor-underline": {
-      "general": ".gd-vim-cursor-underline .cm-fat-cursor .cm-cursor, .gd-vim-cursor-underline .cm-fat-cursor .cm-cursor-primary {\nbackground-color: transparent !important;\nborder-left: none !important;\nborder-bottom: 2px solid var(--gd-vim-cursor-color-normal) !important;\nwidth: 1ch !important;\n}"
-    },
-    "gd-vim-cursor-bar": {
-      "general": ".gd-vim-cursor-bar .cm-fat-cursor .cm-cursor, .gd-vim-cursor-bar .cm-fat-cursor .cm-cursor-primary {\nbackground-color: transparent !important;\nborder-left: 2px solid var(--gd-vim-cursor-color-normal) !important;\nwidth: 0 !important;\n}"
-    },
     "gd-cursor-blink-solid": {
       "general": ".gd-cursor-blink-solid .cm-cursorLayer {\nanimation: none !important;\n}\n\n.gd-cursor-blink-solid .cm-cursor, .gd-cursor-blink-solid .cm-cursor-primary {\nanimation: none !important;\nopacity: 1 !important;\nvisibility: visible !important;\n}"
     },
@@ -100,8 +79,29 @@
     "gd-cursor-blink-expand": {
       "general": ".gd-cursor-blink-expand .cm-cursorLayer {\nanimation: none !important;\n}\n\n.gd-cursor-blink-expand .cm-cursor, .gd-cursor-blink-expand .cm-cursor-primary {\nanimation: gd-expand 1.2s ease-in-out infinite !important;\ntransform-origin: bottom center;\n}"
     },
+    "gd-vim-cursor-block": {
+      "general": ".gd-vim-cursor-block .cm-fat-cursor .cm-cursor, .gd-vim-cursor-block .cm-fat-cursor .cm-cursor-primary {\nbackground-color: var(--gd-vim-cursor-color-normal) !important;\nborder-left: none !important;\nwidth: 1ch !important;\nopacity: 0.8;\n}"
+    },
+    "gd-vim-cursor-underline": {
+      "general": ".gd-vim-cursor-underline .cm-fat-cursor .cm-cursor, .gd-vim-cursor-underline .cm-fat-cursor .cm-cursor-primary {\nbackground-color: transparent !important;\nborder-left: none !important;\nborder-bottom: 2px solid var(--gd-vim-cursor-color-normal) !important;\nwidth: 1ch !important;\n}"
+    },
+    "gd-vim-cursor-bar": {
+      "general": ".gd-vim-cursor-bar .cm-fat-cursor .cm-cursor, .gd-vim-cursor-bar .cm-fat-cursor .cm-cursor-primary {\nbackground-color: transparent !important;\nborder-left: 2px solid var(--gd-vim-cursor-color-normal) !important;\nwidth: 0 !important;\n}"
+    },
     "gd-vim-statusbar": {
       "general": ".gd-vim-statusbar .status-bar-item.plugin-cm-vim-mode-indicator, .gd-vim-statusbar .status-bar-item[class*=\"vim-mode\"] {\nfont-weight: 700;\nfont-family: var(--font-monospace);\nletter-spacing: 0.06em;\nfont-size: 0.72em;\nborder-radius: 3px;\npadding: 1px 7px;\nmargin-right: 2px;\ntransition: background-color 80ms ease, color 80ms ease;\n}\n\n.gd-vim-statusbar .status-bar-item[data-vim-mode=\"NORMAL\"] {\nbackground-color: var(--gd-vim-cursor-color-normal);\ncolor: var(--gd-bg-dark);\n}\n\n.gd-vim-statusbar .status-bar-item[data-vim-mode=\"INSERT\"] {\nbackground-color: var(--gd-vim-cursor-color-insert);\ncolor: var(--gd-bg-dark);\n}\n\n.gd-vim-statusbar .status-bar-item[data-vim-mode=\"VISUAL\"] {\nbackground-color: var(--gd-vim-cursor-color-visual);\ncolor: var(--gd-bg-dark);\n}\n\n.gd-vim-statusbar .status-bar-item[data-vim-mode=\"REPLACE\"] {\nbackground-color: var(--gd-vim-cursor-color-replace);\ncolor: var(--gd-bg-dark);\n}"
+    },
+    "gd-code-border": {
+      "dark": ".gd-code-border .theme-dark pre {\nborder: 1px solid var(--gd-bg-light) !important;\nborder-radius: 6px;\n}"
+    },
+    "gd-readable-line-length": {
+      "general": ".gd-readable-line-length .cm-content {\nwidth: 100% !important;\nmax-width: 100% !important;\n}"
+    },
+    "gd-compact-statusbar": {
+      "general": ".gd-compact-statusbar .status-bar {\nheight: 18px;\nfont-size: 0.72em;\n}"
+    },
+    "gd-smooth-scroll": {
+      "general": ".gd-smooth-scroll .markdown-reading-view {\nscroll-behavior: smooth;\n}\n\n.gd-smooth-scroll .markdown-preview-view {\nscroll-behavior: smooth;\n}"
     }
   },
   "selectorImpacts": {},

@@ -88,17 +88,14 @@
     "h6-underline": {
       "general": "body.h6-underline h6 {\nborder-bottom: 2px var(--h6-underline-style, solid)\n        var(--background-modifier-border);\npadding-bottom: 2px;\n}"
     },
+    "external-link-remove-icon": {
+      "general": "body.external-link-remove-icon {\n& .cm-formatting.external-link {\n        display: none;\n    };\n& a.external-link {\n        background-image: none;\n        padding-right: unset;\n    };\n}"
+    },
     "image-embed-enable-zoom": {
       "general": "body.image-embed-enable-zoom {\n& .image-embed {\n        & img {\n            cursor: zoom-out;\n        }\n\n&:active {\n            --zoom-embed-size: min(\n                90%,\n                calc(var(--readable-line-length-custom, 700px) + 120px)\n            );\n            display: flex !important;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            position: fixed;\n            max-width: 100%;\n            width: 100% !important;\n            margin: auto 0 !important;\n            inset: 0;\n            object-fit: contain;\n            z-index: 1;\n        }\n&:active img {\n            width: var(--zoom-embed-size) !important;\n            max-height: 80%;\n            margin: 0 !important;\n            user-select: none;\n            object-fit: contain;\n        }\n&:active::after {\n            margin-inline: 0 !important;\n            padding: 1ch;\n            font-size: large;\n            box-sizing: border-box;\n            width: var(--zoom-embed-size) !important;\n            background-color: var(--background-primary);\n        }\n&:active::before {\n            content: \"\";\n            position: absolute;\n            background-color: var(--color-base-00);\n            width: 100%;\n            height: 100%;\n            z-index: -1;\n            opacity: 0.75;\n        }\n    };\n/* Option to disable dragging */\n&.image-embed-no-drag .image-embed:active img {\n        pointer-events: none;\n    };\n/* Hacky fix for callouts */\n& .cm-embed-block.cm-callout:has(.image-embed:active) {\n        contain: none !important;\n    };\n}"
     },
     "image-embed-no-drag": {
       "general": "&.image-embed-no-drag .image-embed:active img {\npointer-events: none;\n}"
-    },
-    "image-embed-stretch": {
-      "general": ".image-embed-stretch {\n--img-width: 100;\n}"
-    },
-    "external-link-remove-icon": {
-      "general": "body.external-link-remove-icon {\n& .cm-formatting.external-link {\n        display: none;\n    };\n& a.external-link {\n        background-image: none;\n        padding-right: unset;\n    };\n}"
     },
     "centered-tables": {
       "general": "body.centered-tables table {\nmargin-inline: auto;\n}"
@@ -114,6 +111,9 @@
     },
     "visual-parity-enabled": {
       "general": "body.visual-parity-enabled {\n--p-spacing: calc(1.5 * var(--font-text-size));\n--heading-spacing: calc(var(--p-spacing) * 1);\n/* Fix hr elements */\n.markdown-rendered hr {\n        margin-block: calc(\n            (\n                    var(--font-text-size, 1rem) * var(--line-height-normal) -\n                        var(--hr-thickness)\n                ) / 2 + var(--p-spacing)\n        );\n    };\n/* Fix header top margins */\n;\n;\n/* Fix collapsed headers in live preview */\n;\n/* Fix blockquotes */\n& :not(blockquote) + blockquote,\n    & .cm-line:not(.HyperMD-quote-1) + .HyperMD-quote-1,\n;\n& blockquote:has(+ :not(blockquote)),\n    & .HyperMD-quote-1:has(+ .cm-line:not(.HyperMD-quote-1)),\n;\n}"
+    },
+    "image-embed-stretch": {
+      "general": ".image-embed-stretch {\n--img-width: 100;\n}"
     }
   },
   "selectorImpacts": {},

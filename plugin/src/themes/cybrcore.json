@@ -37,6 +37,825 @@
   "light": {},
   "extras": null,
   "classSettings": {
+    "cybr-p-re": {
+      "general": "body.cybr-p-re {\n--cybr-p0: var(--cybr-re0);\n--cybr-p1: var(--cybr-re1);\n--cybr-p2: var(--cybr-re2);\n}"
+    },
+    "cybr-p-gr": {
+      "general": "body.cybr-p-gr {\n--cybr-p0: var(--cybr-gr0);\n--cybr-p1: var(--cybr-gr1);\n--cybr-p2: var(--cybr-gr2);\n}"
+    },
+    "cybr-p-ye": {
+      "general": "body.cybr-p-ye {\n--cybr-p0: var(--cybr-ye0);\n--cybr-p1: var(--cybr-ye1);\n--cybr-p2: var(--cybr-ye2);\n}"
+    },
+    "cybr-p-bl": {
+      "general": "body.cybr-p-bl {\n--cybr-p0: var(--cybr-bl0);\n--cybr-p1: var(--cybr-bl1);\n--cybr-p2: var(--cybr-bl2);\n}"
+    },
+    "cybr-p-vi": {
+      "general": "body.cybr-p-vi {\n--cybr-p0: var(--cybr-vi0);\n--cybr-p1: var(--cybr-vi1);\n--cybr-p2: var(--cybr-vi2);\n}"
+    },
+    "cybr-p-cy": {
+      "general": "body.cybr-p-cy {\n--cybr-p0: var(--cybr-cy0);\n--cybr-p1: var(--cybr-cy1);\n--cybr-p2: var(--cybr-cy2);\n}"
+    },
+    "cybr-p-or": {
+      "general": "body.cybr-p-or {\n--cybr-p0: var(--cybr-or0);\n--cybr-p1: var(--cybr-or1);\n--cybr-p2: var(--cybr-or2);\n}"
+    },
+    "cybr-p-pi": {
+      "general": "body.cybr-p-pi {\n--cybr-p0: var(--cybr-pi0);\n--cybr-p1: var(--cybr-pi1);\n--cybr-p2: var(--cybr-pi2);\n}"
+    },
+    "cybr-p-wh": {
+      "general": "body.cybr-p-wh {\n--cybr-p0: var(--cybr-wh0);\n--cybr-p1: var(--cybr-wh1);\n--cybr-p2: var(--cybr-wh2);\n}"
+    },
+    "cybr-p-me": {
+      "general": "body.cybr-p-me {\n--cybr-p0: var(--cybr-me0);\n--cybr-p1: var(--cybr-me1);\n--cybr-p2: var(--cybr-me2);\n}"
+    },
+    "cybr-p-no": {
+      "general": "body.cybr-p-no {\n--cybr-p0: var(--cybr-no0);\n--cybr-p1: var(--cybr-no1);\n--cybr-p2: var(--cybr-no2);\n}"
+    },
+    "cybr-s-cy": {
+      "general": "body.cybr-s-cy {\n--cybr-s0: var(--cybr-cy0);\n--cybr-s1: var(--cybr-cy1);\n--cybr-s2: var(--cybr-cy2);\n}"
+    },
+    "cybr-s-re": {
+      "general": "body.cybr-s-re {\n--cybr-s0: var(--cybr-re0);\n--cybr-s1: var(--cybr-re1);\n--cybr-s2: var(--cybr-re2);\n}"
+    },
+    "cybr-s-gr": {
+      "general": "body.cybr-s-gr {\n--cybr-s0: var(--cybr-gr0);\n--cybr-s1: var(--cybr-gr1);\n--cybr-s2: var(--cybr-gr2);\n}"
+    },
+    "cybr-s-ye": {
+      "general": "body.cybr-s-ye {\n--cybr-s0: var(--cybr-ye0);\n--cybr-s1: var(--cybr-ye1);\n--cybr-s2: var(--cybr-ye2);\n}"
+    },
+    "cybr-s-bl": {
+      "general": "body.cybr-s-bl {\n--cybr-s0: var(--cybr-bl0);\n--cybr-s1: var(--cybr-bl1);\n--cybr-s2: var(--cybr-bl2);\n}"
+    },
+    "cybr-s-vi": {
+      "general": "body.cybr-s-vi {\n--cybr-s0: var(--cybr-vi0);\n--cybr-s1: var(--cybr-vi1);\n--cybr-s2: var(--cybr-vi2);\n}"
+    },
+    "cybr-s-or": {
+      "general": "body.cybr-s-or {\n--cybr-s0: var(--cybr-or0);\n--cybr-s1: var(--cybr-or1);\n--cybr-s2: var(--cybr-or2);\n}"
+    },
+    "cybr-s-pi": {
+      "general": "body.cybr-s-pi {\n--cybr-s0: var(--cybr-pi0);\n--cybr-s1: var(--cybr-pi1);\n--cybr-s2: var(--cybr-pi2);\n}"
+    },
+    "cybr-s-wh": {
+      "general": "body.cybr-s-wh {\n--cybr-s0: var(--cybr-wh0);\n--cybr-s1: var(--cybr-wh1);\n--cybr-s2: var(--cybr-wh2);\n}"
+    },
+    "cybr-s-me": {
+      "general": "body.cybr-s-me {\n--cybr-s0: var(--cybr-me0);\n--cybr-s1: var(--cybr-me1);\n--cybr-s2: var(--cybr-me2);\n}"
+    },
+    "cybr-s-no": {
+      "general": "body.cybr-s-no {\n--cybr-s0: var(--cybr-no0);\n--cybr-s1: var(--cybr-no1);\n--cybr-s2: var(--cybr-no2);\n}"
+    },
+    "cybr-t-gr": {
+      "general": "body.cybr-t-gr {\n--cybr-t0: var(--cybr-gr0);\n--cybr-t1: var(--cybr-gr1);\n--cybr-t2: var(--cybr-gr2);\n}"
+    },
+    "cybr-t-re": {
+      "general": "body.cybr-t-re {\n--cybr-t0: var(--cybr-re0);\n--cybr-t1: var(--cybr-re1);\n--cybr-t2: var(--cybr-re2);\n}"
+    },
+    "cybr-t-ye": {
+      "general": "body.cybr-t-ye {\n--cybr-t0: var(--cybr-ye0);\n--cybr-t1: var(--cybr-ye1);\n--cybr-t2: var(--cybr-ye2);\n}"
+    },
+    "cybr-t-bl": {
+      "general": "body.cybr-t-bl {\n--cybr-t0: var(--cybr-bl0);\n--cybr-t1: var(--cybr-bl1);\n--cybr-t2: var(--cybr-bl2);\n}"
+    },
+    "cybr-t-vi": {
+      "general": "body.cybr-t-vi {\n--cybr-t0: var(--cybr-vi0);\n--cybr-t1: var(--cybr-vi1);\n--cybr-t2: var(--cybr-vi2);\n}"
+    },
+    "cybr-t-cy": {
+      "general": "body.cybr-t-cy {\n--cybr-t0: var(--cybr-cy0);\n--cybr-t1: var(--cybr-cy1);\n--cybr-t2: var(--cybr-cy2);\n}"
+    },
+    "cybr-t-or": {
+      "general": "body.cybr-t-or {\n--cybr-t0: var(--cybr-or0);\n--cybr-t1: var(--cybr-or1);\n--cybr-t2: var(--cybr-or2);\n}"
+    },
+    "cybr-t-pi": {
+      "general": "body.cybr-t-pi {\n--cybr-t0: var(--cybr-pi0);\n--cybr-t1: var(--cybr-pi1);\n--cybr-t2: var(--cybr-pi2);\n}"
+    },
+    "cybr-t-wh": {
+      "general": "body.cybr-t-wh {\n--cybr-t0: var(--cybr-wh0);\n--cybr-t1: var(--cybr-wh1);\n--cybr-t2: var(--cybr-wh2);\n}"
+    },
+    "cybr-t-me": {
+      "general": "body.cybr-t-me {\n--cybr-t0: var(--cybr-me0);\n--cybr-t1: var(--cybr-me1);\n--cybr-t2: var(--cybr-me2);\n}"
+    },
+    "cybr-t-no": {
+      "general": "body.cybr-t-no {\n--cybr-t0: var(--cybr-no0);\n--cybr-t1: var(--cybr-no1);\n--cybr-t2: var(--cybr-no2);\n}"
+    },
+    "cybr-h1-p": {
+      "general": "body.cybr-h1-p {\n--cybr-h1:var(--cybr-p0);\n}\n\nbody.cybr-h1-pi {\n--cybr-h1:var(--cybr-pi0);\n}"
+    },
+    "cybr-h1-re": {
+      "general": "body.cybr-h1-re {\n--cybr-h1:var(--cybr-re0);\n}"
+    },
+    "cybr-h1-gr": {
+      "general": "body.cybr-h1-gr {\n--cybr-h1:var(--cybr-gr0);\n}"
+    },
+    "cybr-h1-ye": {
+      "general": "body.cybr-h1-ye {\n--cybr-h1:var(--cybr-ye0);\n}"
+    },
+    "cybr-h1-bl": {
+      "general": "body.cybr-h1-bl {\n--cybr-h1:var(--cybr-bl0);\n}"
+    },
+    "cybr-h1-vi": {
+      "general": "body.cybr-h1-vi {\n--cybr-h1:var(--cybr-vi0);\n}"
+    },
+    "cybr-h1-cy": {
+      "general": "body.cybr-h1-cy {\n--cybr-h1:var(--cybr-cy0);\n}"
+    },
+    "cybr-h1-or": {
+      "general": "body.cybr-h1-or {\n--cybr-h1:var(--cybr-or0);\n}"
+    },
+    "cybr-h1-pi": {
+      "general": "body.cybr-h1-pi {\n--cybr-h1:var(--cybr-pi0);\n}"
+    },
+    "cybr-h1-s": {
+      "general": "body.cybr-h1-s {\n--cybr-h1:var(--cybr-s0);\n}"
+    },
+    "cybr-h1-t": {
+      "general": "body.cybr-h1-t {\n--cybr-h1:var(--cybr-t0);\n}"
+    },
+    "cybr-h1-wh": {
+      "general": "body.cybr-h1-wh {\n--cybr-h1:var(--cybr-wh0);\n}"
+    },
+    "cybr-h1-me": {
+      "general": "body.cybr-h1-me {\n--cybr-h1:var(--cybr-me0);\n}"
+    },
+    "cybr-h2-p": {
+      "general": "body.cybr-h2-p {\n--cybr-h2:var(--cybr-p0);\n}\n\nbody.cybr-h2-pi {\n--cybr-h2:var(--cybr-pi0);\n}"
+    },
+    "cybr-h2-re": {
+      "general": "body.cybr-h2-re {\n--cybr-h2:var(--cybr-re0);\n}"
+    },
+    "cybr-h2-gr": {
+      "general": "body.cybr-h2-gr {\n--cybr-h2:var(--cybr-gr0);\n}"
+    },
+    "cybr-h2-ye": {
+      "general": "body.cybr-h2-ye {\n--cybr-h2:var(--cybr-ye0);\n}"
+    },
+    "cybr-h2-bl": {
+      "general": "body.cybr-h2-bl {\n--cybr-h2:var(--cybr-bl0);\n}"
+    },
+    "cybr-h2-vi": {
+      "general": "body.cybr-h2-vi {\n--cybr-h2:var(--cybr-vi0);\n}"
+    },
+    "cybr-h2-cy": {
+      "general": "body.cybr-h2-cy {\n--cybr-h2:var(--cybr-cy0);\n}"
+    },
+    "cybr-h2-or": {
+      "general": "body.cybr-h2-or {\n--cybr-h2:var(--cybr-or0);\n}"
+    },
+    "cybr-h2-pi": {
+      "general": "body.cybr-h2-pi {\n--cybr-h2:var(--cybr-pi0);\n}"
+    },
+    "cybr-h2-s": {
+      "general": "body.cybr-h2-s {\n--cybr-h2:var(--cybr-s0);\n}"
+    },
+    "cybr-h2-t": {
+      "general": "body.cybr-h2-t {\n--cybr-h2:var(--cybr-t0);\n}"
+    },
+    "cybr-h2-wh": {
+      "general": "body.cybr-h2-wh {\n--cybr-h2:var(--cybr-wh0);\n}"
+    },
+    "cybr-h2-me": {
+      "general": "body.cybr-h2-me {\n--cybr-h2:var(--cybr-me0);\n}"
+    },
+    "cybr-h3-p": {
+      "general": "body.cybr-h3-p {\n--cybr-h3:var(--cybr-p0);\n}\n\nbody.cybr-h3-pi {\n--cybr-h3:var(--cybr-pi0);\n}"
+    },
+    "cybr-h3-re": {
+      "general": "body.cybr-h3-re {\n--cybr-h3:var(--cybr-re0);\n}"
+    },
+    "cybr-h3-gr": {
+      "general": "body.cybr-h3-gr {\n--cybr-h3:var(--cybr-gr0);\n}"
+    },
+    "cybr-h3-ye": {
+      "general": "body.cybr-h3-ye {\n--cybr-h3:var(--cybr-ye0);\n}"
+    },
+    "cybr-h3-bl": {
+      "general": "body.cybr-h3-bl {\n--cybr-h3:var(--cybr-bl0);\n}"
+    },
+    "cybr-h3-vi": {
+      "general": "body.cybr-h3-vi {\n--cybr-h3:var(--cybr-vi0);\n}"
+    },
+    "cybr-h3-cy": {
+      "general": "body.cybr-h3-cy {\n--cybr-h3:var(--cybr-cy0);\n}"
+    },
+    "cybr-h3-or": {
+      "general": "body.cybr-h3-or {\n--cybr-h3:var(--cybr-or0);\n}"
+    },
+    "cybr-h3-pi": {
+      "general": "body.cybr-h3-pi {\n--cybr-h3:var(--cybr-pi0);\n}"
+    },
+    "cybr-h3-s": {
+      "general": "body.cybr-h3-s {\n--cybr-h3:var(--cybr-s0);\n}"
+    },
+    "cybr-h3-t": {
+      "general": "body.cybr-h3-t {\n--cybr-h3:var(--cybr-t0);\n}"
+    },
+    "cybr-h3-wh": {
+      "general": "body.cybr-h3-wh {\n--cybr-h3:var(--cybr-wh0);\n}"
+    },
+    "cybr-h3-me": {
+      "general": "body.cybr-h3-me {\n--cybr-h3:var(--cybr-me0);\n}"
+    },
+    "cybr-h4-p": {
+      "general": "body.cybr-h4-p {\n--cybr-h4:var(--cybr-p0);\n}\n\nbody.cybr-h4-pi {\n--cybr-h4:var(--cybr-pi0);\n}"
+    },
+    "cybr-h4-re": {
+      "general": "body.cybr-h4-re {\n--cybr-h4:var(--cybr-re0);\n}"
+    },
+    "cybr-h4-gr": {
+      "general": "body.cybr-h4-gr {\n--cybr-h4:var(--cybr-gr0);\n}"
+    },
+    "cybr-h4-ye": {
+      "general": "body.cybr-h4-ye {\n--cybr-h4:var(--cybr-ye0);\n}"
+    },
+    "cybr-h4-bl": {
+      "general": "body.cybr-h4-bl {\n--cybr-h4:var(--cybr-bl0);\n}"
+    },
+    "cybr-h4-vi": {
+      "general": "body.cybr-h4-vi {\n--cybr-h4:var(--cybr-vi0);\n}"
+    },
+    "cybr-h4-cy": {
+      "general": "body.cybr-h4-cy {\n--cybr-h4:var(--cybr-cy0);\n}"
+    },
+    "cybr-h4-or": {
+      "general": "body.cybr-h4-or {\n--cybr-h4:var(--cybr-or0);\n}"
+    },
+    "cybr-h4-pi": {
+      "general": "body.cybr-h4-pi {\n--cybr-h4:var(--cybr-pi0);\n}"
+    },
+    "cybr-h4-s": {
+      "general": "body.cybr-h4-s {\n--cybr-h4:var(--cybr-s0);\n}"
+    },
+    "cybr-h4-t": {
+      "general": "body.cybr-h4-t {\n--cybr-h4:var(--cybr-t0);\n}"
+    },
+    "cybr-h4-wh": {
+      "general": "body.cybr-h4-wh {\n--cybr-h4:var(--cybr-wh0);\n}"
+    },
+    "cybr-h4-me": {
+      "general": "body.cybr-h4-me {\n--cybr-h4:var(--cybr-me0);\n}"
+    },
+    "cybr-h5-p": {
+      "general": "body.cybr-h5-p {\n--cybr-h5:var(--cybr-p0);\n}\n\nbody.cybr-h5-pi {\n--cybr-h5:var(--cybr-pi0);\n}"
+    },
+    "cybr-h5-re": {
+      "general": "body.cybr-h5-re {\n--cybr-h5:var(--cybr-re0);\n}"
+    },
+    "cybr-h5-gr": {
+      "general": "body.cybr-h5-gr {\n--cybr-h5:var(--cybr-gr0);\n}"
+    },
+    "cybr-h5-ye": {
+      "general": "body.cybr-h5-ye {\n--cybr-h5:var(--cybr-ye0);\n}"
+    },
+    "cybr-h5-bl": {
+      "general": "body.cybr-h5-bl {\n--cybr-h5:var(--cybr-bl0);\n}"
+    },
+    "cybr-h5-vi": {
+      "general": "body.cybr-h5-vi {\n--cybr-h5:var(--cybr-vi0);\n}"
+    },
+    "cybr-h5-cy": {
+      "general": "body.cybr-h5-cy {\n--cybr-h5:var(--cybr-cy0);\n}"
+    },
+    "cybr-h5-or": {
+      "general": "body.cybr-h5-or {\n--cybr-h5:var(--cybr-or0);\n}"
+    },
+    "cybr-h5-pi": {
+      "general": "body.cybr-h5-pi {\n--cybr-h5:var(--cybr-pi0);\n}"
+    },
+    "cybr-h5-s": {
+      "general": "body.cybr-h5-s {\n--cybr-h5:var(--cybr-s0);\n}"
+    },
+    "cybr-h5-t": {
+      "general": "body.cybr-h5-t {\n--cybr-h5:var(--cybr-t0);\n}"
+    },
+    "cybr-h5-wh": {
+      "general": "body.cybr-h5-wh {\n--cybr-h5:var(--cybr-wh0);\n}"
+    },
+    "cybr-h5-me": {
+      "general": "body.cybr-h5-me {\n--cybr-h5:var(--cybr-me0);\n}"
+    },
+    "cybr-h6-p": {
+      "general": "body.cybr-h6-p {\n--cybr-h6:var(--cybr-p0);\n}\n\nbody.cybr-h6-pi {\n--cybr-h6:var(--cybr-pi0);\n}"
+    },
+    "cybr-h6-re": {
+      "general": "body.cybr-h6-re {\n--cybr-h6:var(--cybr-re0);\n}"
+    },
+    "cybr-h6-gr": {
+      "general": "body.cybr-h6-gr {\n--cybr-h6:var(--cybr-gr0);\n}"
+    },
+    "cybr-h6-ye": {
+      "general": "body.cybr-h6-ye {\n--cybr-h6:var(--cybr-ye0);\n}"
+    },
+    "cybr-h6-bl": {
+      "general": "body.cybr-h6-bl {\n--cybr-h6:var(--cybr-bl0);\n}"
+    },
+    "cybr-h6-vi": {
+      "general": "body.cybr-h6-vi {\n--cybr-h6:var(--cybr-vi0);\n}"
+    },
+    "cybr-h6-cy": {
+      "general": "body.cybr-h6-cy {\n--cybr-h6:var(--cybr-cy0);\n}"
+    },
+    "cybr-h6-or": {
+      "general": "body.cybr-h6-or {\n--cybr-h6:var(--cybr-or0);\n}"
+    },
+    "cybr-h6-pi": {
+      "general": "body.cybr-h6-pi {\n--cybr-h6:var(--cybr-pi0);\n}"
+    },
+    "cybr-h6-s": {
+      "general": "body.cybr-h6-s {\n--cybr-h6:var(--cybr-s0);\n}"
+    },
+    "cybr-h6-t": {
+      "general": "body.cybr-h6-t {\n--cybr-h6:var(--cybr-t0);\n}"
+    },
+    "cybr-h6-wh": {
+      "general": "body.cybr-h6-wh {\n--cybr-h6:var(--cybr-wh0);\n}"
+    },
+    "cybr-h6-me": {
+      "general": "body.cybr-h6-me {\n--cybr-h6:var(--cybr-me0);\n}"
+    },
+    "cybr-bq-p": {
+      "general": "body.cybr-bq-p {\n--cybr-bq0:var(--cybr-p0);\n--cybr-bq2:var(--cybr-p2);\n}\n\nbody.cybr-bq-pi {\n--cybr-bq0:var(--cybr-pi0);\n--cybr-bq2:var(--cybr-pi2);\n}"
+    },
+    "cybr-bq-s": {
+      "general": "body.cybr-bq-s {\n--cybr-bq0:var(--cybr-s0);\n--cybr-bq2:var(--cybr-s2);\n}"
+    },
+    "cybr-bq-re": {
+      "general": "body.cybr-bq-re {\n--cybr-bq0:var(--cybr-re0);\n--cybr-bq2:var(--cybr-re2);\n}"
+    },
+    "cybr-bq-gr": {
+      "general": "body.cybr-bq-gr {\n--cybr-bq0:var(--cybr-gr0);\n--cybr-bq2:var(--cybr-gr2);\n}"
+    },
+    "cybr-bq-ye": {
+      "general": "body.cybr-bq-ye {\n--cybr-bq0:var(--cybr-ye0);\n--cybr-bq2:var(--cybr-ye2);\n}"
+    },
+    "cybr-bq-bl": {
+      "general": "body.cybr-bq-bl {\n--cybr-bq0:var(--cybr-bl0);\n--cybr-bq2:var(--cybr-bl2);\n}"
+    },
+    "cybr-bq-vi": {
+      "general": "body.cybr-bq-vi {\n--cybr-bq0:var(--cybr-vi0);\n--cybr-bq2:var(--cybr-vi2);\n}"
+    },
+    "cybr-bq-cy": {
+      "general": "body.cybr-bq-cy {\n--cybr-bq0:var(--cybr-cy0);\n--cybr-bq2:var(--cybr-cy2);\n}"
+    },
+    "cybr-bq-or": {
+      "general": "body.cybr-bq-or {\n--cybr-bq0:var(--cybr-or0);\n--cybr-bq2:var(--cybr-or2);\n}"
+    },
+    "cybr-bq-pi": {
+      "general": "body.cybr-bq-pi {\n--cybr-bq0:var(--cybr-pi0);\n--cybr-bq2:var(--cybr-pi2);\n}"
+    },
+    "cybr-bq-t": {
+      "general": "body.cybr-bq-t {\n--cybr-bq0:var(--cybr-t0);\n--cybr-bq2:var(--cybr-t2);\n}"
+    },
+    "cybr-bq-wh": {
+      "general": "body.cybr-bq-wh {\n--cybr-bq0:var(--cybr-wh0);\n--cybr-bq2:var(--cybr-wh2);\n}"
+    },
+    "cybr-prop-p": {
+      "general": "body.cybr-prop-p {\n--cybr-prop0:var(--cybr-p0);\n--cybr-prop1:var(--cybr-p1);\n--cybr-prop2:var(--cybr-p2);\n}\n\nbody.cybr-prop-pi {\n--cybr-prop0:var(--cybr-pi0);\n--cybr-prop1:var(--cybr-pi1);\n--cybr-prop2:var(--cybr-pi2);\n}"
+    },
+    "cybr-prop-s": {
+      "general": "body.cybr-prop-s {\n--cybr-prop0:var(--cybr-s0);\n--cybr-prop1:var(--cybr-s1);\n--cybr-prop2:var(--cybr-s2);\n}"
+    },
+    "cybr-prop-re": {
+      "general": "body.cybr-prop-re {\n--cybr-prop0:var(--cybr-re0);\n--cybr-prop1:var(--cybr-re1);\n--cybr-prop2:var(--cybr-re2);\n}"
+    },
+    "cybr-prop-gr": {
+      "general": "body.cybr-prop-gr {\n--cybr-prop0:var(--cybr-gr0);\n--cybr-prop1:var(--cybr-gr1);\n--cybr-prop2:var(--cybr-gr2);\n}"
+    },
+    "cybr-prop-ye": {
+      "general": "body.cybr-prop-ye {\n--cybr-prop0:var(--cybr-ye0);\n--cybr-prop1:var(--cybr-ye1);\n--cybr-prop2:var(--cybr-ye2);\n}"
+    },
+    "cybr-prop-bl": {
+      "general": "body.cybr-prop-bl {\n--cybr-prop0:var(--cybr-bl0);\n--cybr-prop1:var(--cybr-bl1);\n--cybr-prop2:var(--cybr-bl2);\n}"
+    },
+    "cybr-prop-vi": {
+      "general": "body.cybr-prop-vi {\n--cybr-prop0:var(--cybr-vi0);\n--cybr-prop1:var(--cybr-vi1);\n--cybr-prop2:var(--cybr-vi2);\n}"
+    },
+    "cybr-prop-cy": {
+      "general": "body.cybr-prop-cy {\n--cybr-prop0:var(--cybr-cy0);\n--cybr-prop1:var(--cybr-cy1);\n--cybr-prop2:var(--cybr-cy2);\n}"
+    },
+    "cybr-prop-or": {
+      "general": "body.cybr-prop-or {\n--cybr-prop0:var(--cybr-or0);\n--cybr-prop1:var(--cybr-or1);\n--cybr-prop2:var(--cybr-or2);\n}"
+    },
+    "cybr-prop-pi": {
+      "general": "body.cybr-prop-pi {\n--cybr-prop0:var(--cybr-pi0);\n--cybr-prop1:var(--cybr-pi1);\n--cybr-prop2:var(--cybr-pi2);\n}"
+    },
+    "cybr-prop-t": {
+      "general": "body.cybr-prop-t {\n--cybr-prop0:var(--cybr-t0);\n--cybr-prop1:var(--cybr-t1);\n--cybr-prop2:var(--cybr-t2);\n}"
+    },
+    "cybr-prop-wh": {
+      "general": "body.cybr-prop-wh {\n--cybr-prop0:var(--cybr-wh0);\n--cybr-prop1:var(--cybr-wh1);\n--cybr-prop2:var(--cybr-wh2);\n}"
+    },
+    "cybr-caret-re": {
+      "general": "body.cybr-caret-re {\n--cybr-caret:var(--cybr-re0);\n}"
+    },
+    "cybr-caret-gr": {
+      "general": "body.cybr-caret-gr {\n--cybr-caret:var(--cybr-gr0);\n}"
+    },
+    "cybr-caret-ye": {
+      "general": "body.cybr-caret-ye {\n--cybr-caret:var(--cybr-ye0);\n}"
+    },
+    "cybr-caret-bl": {
+      "general": "body.cybr-caret-bl {\n--cybr-caret:var(--cybr-bl0);\n}"
+    },
+    "cybr-caret-vi": {
+      "general": "body.cybr-caret-vi {\n--cybr-caret:var(--cybr-vi0);\n}"
+    },
+    "cybr-caret-cy": {
+      "general": "body.cybr-caret-cy {\n--cybr-caret:var(--cybr-cy0);\n}"
+    },
+    "cybr-caret-or": {
+      "general": "body.cybr-caret-or {\n--cybr-caret:var(--cybr-or0);\n}"
+    },
+    "cybr-caret-pi": {
+      "general": "body.cybr-caret-pi {\n--cybr-caret:var(--cybr-pi0);\n}"
+    },
+    "cybr-status-p": {
+      "general": "body.cybr-status-p {\n--cybr-status-bg:var(--cybr-p0);\n}\n\nbody.cybr-status-pi {\n--cybr-status-bg:var(--cybr-pi0);\n}"
+    },
+    "cybr-status-re": {
+      "general": "body.cybr-status-re {\n--cybr-status-bg:var(--cybr-re0);\n}"
+    },
+    "cybr-status-gr": {
+      "general": "body.cybr-status-gr {\n--cybr-status-bg:var(--cybr-gr0);\n}"
+    },
+    "cybr-status-ye": {
+      "general": "body.cybr-status-ye {\n--cybr-status-bg:var(--cybr-ye0);\n}"
+    },
+    "cybr-status-bl": {
+      "general": "body.cybr-status-bl {\n--cybr-status-bg:var(--cybr-bl0);\n}"
+    },
+    "cybr-status-vi": {
+      "general": "body.cybr-status-vi {\n--cybr-status-bg:var(--cybr-vi0);\n}"
+    },
+    "cybr-status-cy": {
+      "general": "body.cybr-status-cy {\n--cybr-status-bg:var(--cybr-cy0);\n}"
+    },
+    "cybr-status-or": {
+      "general": "body.cybr-status-or {\n--cybr-status-bg:var(--cybr-or0);\n}"
+    },
+    "cybr-status-pi": {
+      "general": "body.cybr-status-pi {\n--cybr-status-bg:var(--cybr-pi0);\n}"
+    },
+    "cybr-fc1-re": {
+      "general": "body.cybr-fc1-re .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc1-or": {
+      "general": "body.cybr-fc1-or .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc1-ye": {
+      "general": "body.cybr-fc1-ye .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc1-gr": {
+      "general": "body.cybr-fc1-gr .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc1-cy": {
+      "general": "body.cybr-fc1-cy .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc1-bl": {
+      "general": "body.cybr-fc1-bl .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc1-vi": {
+      "general": "body.cybr-fc1-vi .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc1-pi": {
+      "general": "body.cybr-fc1-pi .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc1-me": {
+      "general": "body.cybr-fc1-me .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc1-p": {
+      "general": "body.cybr-fc1-pi .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc1-p .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc1-s": {
+      "general": "body.cybr-fc1-s .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc1-t": {
+      "general": "body.cybr-fc1-t .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc1-wh": {
+      "general": "body.cybr-fc1-wh .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc2-re": {
+      "general": "body.cybr-fc2-re .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc2-or": {
+      "general": "body.cybr-fc2-or .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc2-ye": {
+      "general": "body.cybr-fc2-ye .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc2-gr": {
+      "general": "body.cybr-fc2-gr .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc2-cy": {
+      "general": "body.cybr-fc2-cy .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc2-bl": {
+      "general": "body.cybr-fc2-bl .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc2-vi": {
+      "general": "body.cybr-fc2-vi .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc2-pi": {
+      "general": "body.cybr-fc2-pi .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc2-me": {
+      "general": "body.cybr-fc2-me .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc2-p": {
+      "general": "body.cybr-fc2-pi .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc2-p .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc2-s": {
+      "general": "body.cybr-fc2-s .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc2-t": {
+      "general": "body.cybr-fc2-t .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc2-wh": {
+      "general": "body.cybr-fc2-wh .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc3-re": {
+      "general": "body.cybr-fc3-re .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc3-or": {
+      "general": "body.cybr-fc3-or .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc3-ye": {
+      "general": "body.cybr-fc3-ye .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc3-gr": {
+      "general": "body.cybr-fc3-gr .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc3-cy": {
+      "general": "body.cybr-fc3-cy .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc3-bl": {
+      "general": "body.cybr-fc3-bl .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc3-vi": {
+      "general": "body.cybr-fc3-vi .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc3-pi": {
+      "general": "body.cybr-fc3-pi .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc3-me": {
+      "general": "body.cybr-fc3-me .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc3-p": {
+      "general": "body.cybr-fc3-pi .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc3-p .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc3-s": {
+      "general": "body.cybr-fc3-s .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc3-t": {
+      "general": "body.cybr-fc3-t .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc3-wh": {
+      "general": "body.cybr-fc3-wh .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc4-re": {
+      "general": "body.cybr-fc4-re .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc4-or": {
+      "general": "body.cybr-fc4-or .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc4-ye": {
+      "general": "body.cybr-fc4-ye .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc4-gr": {
+      "general": "body.cybr-fc4-gr .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc4-cy": {
+      "general": "body.cybr-fc4-cy .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc4-bl": {
+      "general": "body.cybr-fc4-bl .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc4-vi": {
+      "general": "body.cybr-fc4-vi .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc4-pi": {
+      "general": "body.cybr-fc4-pi .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc4-me": {
+      "general": "body.cybr-fc4-me .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc4-p": {
+      "general": "body.cybr-fc4-pi .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc4-p .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc4-s": {
+      "general": "body.cybr-fc4-s .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc4-t": {
+      "general": "body.cybr-fc4-t .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc4-wh": {
+      "general": "body.cybr-fc4-wh .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc5-re": {
+      "general": "body.cybr-fc5-re .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc5-or": {
+      "general": "body.cybr-fc5-or .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc5-ye": {
+      "general": "body.cybr-fc5-ye .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc5-gr": {
+      "general": "body.cybr-fc5-gr .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc5-cy": {
+      "general": "body.cybr-fc5-cy .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc5-bl": {
+      "general": "body.cybr-fc5-bl .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc5-vi": {
+      "general": "body.cybr-fc5-vi .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc5-pi": {
+      "general": "body.cybr-fc5-pi .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc5-me": {
+      "general": "body.cybr-fc5-me .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc5-p": {
+      "general": "body.cybr-fc5-pi .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc5-p .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc5-s": {
+      "general": "body.cybr-fc5-s .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc5-t": {
+      "general": "body.cybr-fc5-t .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc5-wh": {
+      "general": "body.cybr-fc5-wh .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc6-re": {
+      "general": "body.cybr-fc6-re .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc6-or": {
+      "general": "body.cybr-fc6-or .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc6-ye": {
+      "general": "body.cybr-fc6-ye .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc6-gr": {
+      "general": "body.cybr-fc6-gr .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc6-cy": {
+      "general": "body.cybr-fc6-cy .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc6-bl": {
+      "general": "body.cybr-fc6-bl .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc6-vi": {
+      "general": "body.cybr-fc6-vi .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc6-pi": {
+      "general": "body.cybr-fc6-pi .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc6-me": {
+      "general": "body.cybr-fc6-me .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc6-p": {
+      "general": "body.cybr-fc6-pi .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc6-p .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc6-s": {
+      "general": "body.cybr-fc6-s .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc6-t": {
+      "general": "body.cybr-fc6-t .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc6-wh": {
+      "general": "body.cybr-fc6-wh .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc7-re": {
+      "general": "body.cybr-fc7-re .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc7-or": {
+      "general": "body.cybr-fc7-or .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc7-ye": {
+      "general": "body.cybr-fc7-ye .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc7-gr": {
+      "general": "body.cybr-fc7-gr .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc7-cy": {
+      "general": "body.cybr-fc7-cy .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc7-bl": {
+      "general": "body.cybr-fc7-bl .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc7-vi": {
+      "general": "body.cybr-fc7-vi .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc7-pi": {
+      "general": "body.cybr-fc7-pi .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc7-me": {
+      "general": "body.cybr-fc7-me .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc7-p": {
+      "general": "body.cybr-fc7-pi .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc7-p .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc7-s": {
+      "general": "body.cybr-fc7-s .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc7-t": {
+      "general": "body.cybr-fc7-t .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc7-wh": {
+      "general": "body.cybr-fc7-wh .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybr-fc8-re": {
+      "general": "body.cybr-fc8-re .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-re0);\n}"
+    },
+    "cybr-fc8-or": {
+      "general": "body.cybr-fc8-or .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-or0);\n}"
+    },
+    "cybr-fc8-ye": {
+      "general": "body.cybr-fc8-ye .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-ye0);\n}"
+    },
+    "cybr-fc8-gr": {
+      "general": "body.cybr-fc8-gr .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-gr0);\n}"
+    },
+    "cybr-fc8-cy": {
+      "general": "body.cybr-fc8-cy .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-cy0);\n}"
+    },
+    "cybr-fc8-bl": {
+      "general": "body.cybr-fc8-bl .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-bl0);\n}"
+    },
+    "cybr-fc8-vi": {
+      "general": "body.cybr-fc8-vi .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-vi0);\n}"
+    },
+    "cybr-fc8-pi": {
+      "general": "body.cybr-fc8-pi .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-pi0);\n}"
+    },
+    "cybr-fc8-me": {
+      "general": "body.cybr-fc8-me .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-me0);\n}"
+    },
+    "cybr-fc8-p": {
+      "general": "body.cybr-fc8-pi .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc8-p .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-p0);\n}"
+    },
+    "cybr-fc8-s": {
+      "general": "body.cybr-fc8-s .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-s0);\n}"
+    },
+    "cybr-fc8-t": {
+      "general": "body.cybr-fc8-t .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-t0);\n}"
+    },
+    "cybr-fc8-wh": {
+      "general": "body.cybr-fc8-wh .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-wh0);\n}"
+    },
+    "cybrcore-underline-internal": {
+      "general": "body.cybrcore-underline-internal .internal-link {\ntext-decoration: underline;\n}"
+    },
+    "cybrcore-underline-external": {
+      "general": "body.cybrcore-underline-external .external-link {\ntext-decoration: underline;\n}"
+    },
+    "cybr-cards-2": {
+      "general": "body.cybr-cards-2 .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(2, 1fr);\n}"
+    },
+    "cybr-cards-3": {
+      "general": "body.cybr-cards-3 .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(3, 1fr);\n}"
+    },
+    "cybr-cards-4": {
+      "general": "body.cybr-cards-4 .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(4, 1fr);\n}"
+    },
+    "cybr-cards-auto": {
+      "general": "body.cybr-cards-auto .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n}"
+    },
+    "cybrcore-maximize-media": {
+      "general": "body.cybrcore-maximize-media .image-embed img, body.cybrcore-maximize-media .video-embed video, body.cybrcore-maximize-media iframe {\nwidth: 100%;\n}"
+    },
+    "cybrcore-image-grids": {
+      "general": "body.cybrcore-image-grids .markdown-preview-view p > .image-embed {\ndisplay: inline-block;\nvertical-align: top;\n}"
+    },
+    "cybrcore-hide-status-bar": {
+      "general": "body.cybrcore-hide-status-bar .status-bar {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-tooltips": {
+      "general": "body.cybrcore-hide-tooltips .tooltip {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-system-icons": {
+      "general": "body.cybrcore-hide-system-icons .frame-controls-container, body.cybrcore-hide-system-icons .window-controls, body.cybrcore-hide-system-icons .titlebar-inner {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-scrollbars": {
+      "general": "body.cybrcore-hide-scrollbars ::-webkit-scrollbar {\ndisplay: none !important;\n}\n\nbody.cybrcore-hide-scrollbars {\nscrollbar-width: none !important;\n}"
+    },
+    "cybrcore-hide-instructions": {
+      "general": "body.cybrcore-hide-instructions .prompt-instructions {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-search-suggestions": {
+      "general": "body.cybrcore-hide-search-suggestions .search-suggest-container {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-search-count": {
+      "general": "body.cybrcore-hide-search-count .search-result-count {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-properties-reading": {
+      "general": "body.cybrcore-hide-properties-reading .markdown-preview-view .metadata-container {\ndisplay: none !important;\n}"
+    },
+    "cybrcore-hide-bottom-nav": {
+      "general": "body.cybrcore-hide-bottom-nav .workspace-sidedock-vault-profile {\ndisplay: none !important;\n}"
+    },
     "cybr-wp-none": {
       "general": "body.cybr-wp-none {\n--cybr-wp-url: none;\n}"
     },
@@ -108,825 +927,6 @@
     },
     "cybr-bg-pi": {
       "general": "body.cybrcore-solid-bg.cybr-bg-pi {\n--cybr-bg-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-p-re": {
-      "general": "body.cybr-p-re {\n--cybr-p0: var(--cybr-re0);\n--cybr-p1: var(--cybr-re1);\n--cybr-p2: var(--cybr-re2);\n}"
-    },
-    "cybr-p-gr": {
-      "general": "body.cybr-p-gr {\n--cybr-p0: var(--cybr-gr0);\n--cybr-p1: var(--cybr-gr1);\n--cybr-p2: var(--cybr-gr2);\n}"
-    },
-    "cybr-p-ye": {
-      "general": "body.cybr-p-ye {\n--cybr-p0: var(--cybr-ye0);\n--cybr-p1: var(--cybr-ye1);\n--cybr-p2: var(--cybr-ye2);\n}"
-    },
-    "cybr-p-bl": {
-      "general": "body.cybr-p-bl {\n--cybr-p0: var(--cybr-bl0);\n--cybr-p1: var(--cybr-bl1);\n--cybr-p2: var(--cybr-bl2);\n}"
-    },
-    "cybr-p-vi": {
-      "general": "body.cybr-p-vi {\n--cybr-p0: var(--cybr-vi0);\n--cybr-p1: var(--cybr-vi1);\n--cybr-p2: var(--cybr-vi2);\n}"
-    },
-    "cybr-p-cy": {
-      "general": "body.cybr-p-cy {\n--cybr-p0: var(--cybr-cy0);\n--cybr-p1: var(--cybr-cy1);\n--cybr-p2: var(--cybr-cy2);\n}"
-    },
-    "cybr-p-or": {
-      "general": "body.cybr-p-or {\n--cybr-p0: var(--cybr-or0);\n--cybr-p1: var(--cybr-or1);\n--cybr-p2: var(--cybr-or2);\n}"
-    },
-    "cybr-p-pi": {
-      "general": "body.cybr-p-pi {\n--cybr-p0: var(--cybr-pi0);\n--cybr-p1: var(--cybr-pi1);\n--cybr-p2: var(--cybr-pi2);\n}"
-    },
-    "cybr-p-wh": {
-      "general": "body.cybr-p-wh {\n--cybr-p0: var(--cybr-wh0);\n--cybr-p1: var(--cybr-wh1);\n--cybr-p2: var(--cybr-wh2);\n}"
-    },
-    "cybr-p-me": {
-      "general": "body.cybr-p-me {\n--cybr-p0: var(--cybr-me0);\n--cybr-p1: var(--cybr-me1);\n--cybr-p2: var(--cybr-me2);\n}"
-    },
-    "cybr-p-no": {
-      "general": "body.cybr-p-no {\n--cybr-p0: var(--cybr-no0);\n--cybr-p1: var(--cybr-no1);\n--cybr-p2: var(--cybr-no2);\n}"
-    },
-    "cybr-s-re": {
-      "general": "body.cybr-s-re {\n--cybr-s0: var(--cybr-re0);\n--cybr-s1: var(--cybr-re1);\n--cybr-s2: var(--cybr-re2);\n}"
-    },
-    "cybr-s-gr": {
-      "general": "body.cybr-s-gr {\n--cybr-s0: var(--cybr-gr0);\n--cybr-s1: var(--cybr-gr1);\n--cybr-s2: var(--cybr-gr2);\n}"
-    },
-    "cybr-s-ye": {
-      "general": "body.cybr-s-ye {\n--cybr-s0: var(--cybr-ye0);\n--cybr-s1: var(--cybr-ye1);\n--cybr-s2: var(--cybr-ye2);\n}"
-    },
-    "cybr-s-bl": {
-      "general": "body.cybr-s-bl {\n--cybr-s0: var(--cybr-bl0);\n--cybr-s1: var(--cybr-bl1);\n--cybr-s2: var(--cybr-bl2);\n}"
-    },
-    "cybr-s-vi": {
-      "general": "body.cybr-s-vi {\n--cybr-s0: var(--cybr-vi0);\n--cybr-s1: var(--cybr-vi1);\n--cybr-s2: var(--cybr-vi2);\n}"
-    },
-    "cybr-s-cy": {
-      "general": "body.cybr-s-cy {\n--cybr-s0: var(--cybr-cy0);\n--cybr-s1: var(--cybr-cy1);\n--cybr-s2: var(--cybr-cy2);\n}"
-    },
-    "cybr-s-or": {
-      "general": "body.cybr-s-or {\n--cybr-s0: var(--cybr-or0);\n--cybr-s1: var(--cybr-or1);\n--cybr-s2: var(--cybr-or2);\n}"
-    },
-    "cybr-s-pi": {
-      "general": "body.cybr-s-pi {\n--cybr-s0: var(--cybr-pi0);\n--cybr-s1: var(--cybr-pi1);\n--cybr-s2: var(--cybr-pi2);\n}"
-    },
-    "cybr-s-wh": {
-      "general": "body.cybr-s-wh {\n--cybr-s0: var(--cybr-wh0);\n--cybr-s1: var(--cybr-wh1);\n--cybr-s2: var(--cybr-wh2);\n}"
-    },
-    "cybr-s-me": {
-      "general": "body.cybr-s-me {\n--cybr-s0: var(--cybr-me0);\n--cybr-s1: var(--cybr-me1);\n--cybr-s2: var(--cybr-me2);\n}"
-    },
-    "cybr-s-no": {
-      "general": "body.cybr-s-no {\n--cybr-s0: var(--cybr-no0);\n--cybr-s1: var(--cybr-no1);\n--cybr-s2: var(--cybr-no2);\n}"
-    },
-    "cybr-t-re": {
-      "general": "body.cybr-t-re {\n--cybr-t0: var(--cybr-re0);\n--cybr-t1: var(--cybr-re1);\n--cybr-t2: var(--cybr-re2);\n}"
-    },
-    "cybr-t-gr": {
-      "general": "body.cybr-t-gr {\n--cybr-t0: var(--cybr-gr0);\n--cybr-t1: var(--cybr-gr1);\n--cybr-t2: var(--cybr-gr2);\n}"
-    },
-    "cybr-t-ye": {
-      "general": "body.cybr-t-ye {\n--cybr-t0: var(--cybr-ye0);\n--cybr-t1: var(--cybr-ye1);\n--cybr-t2: var(--cybr-ye2);\n}"
-    },
-    "cybr-t-bl": {
-      "general": "body.cybr-t-bl {\n--cybr-t0: var(--cybr-bl0);\n--cybr-t1: var(--cybr-bl1);\n--cybr-t2: var(--cybr-bl2);\n}"
-    },
-    "cybr-t-vi": {
-      "general": "body.cybr-t-vi {\n--cybr-t0: var(--cybr-vi0);\n--cybr-t1: var(--cybr-vi1);\n--cybr-t2: var(--cybr-vi2);\n}"
-    },
-    "cybr-t-cy": {
-      "general": "body.cybr-t-cy {\n--cybr-t0: var(--cybr-cy0);\n--cybr-t1: var(--cybr-cy1);\n--cybr-t2: var(--cybr-cy2);\n}"
-    },
-    "cybr-t-or": {
-      "general": "body.cybr-t-or {\n--cybr-t0: var(--cybr-or0);\n--cybr-t1: var(--cybr-or1);\n--cybr-t2: var(--cybr-or2);\n}"
-    },
-    "cybr-t-pi": {
-      "general": "body.cybr-t-pi {\n--cybr-t0: var(--cybr-pi0);\n--cybr-t1: var(--cybr-pi1);\n--cybr-t2: var(--cybr-pi2);\n}"
-    },
-    "cybr-t-wh": {
-      "general": "body.cybr-t-wh {\n--cybr-t0: var(--cybr-wh0);\n--cybr-t1: var(--cybr-wh1);\n--cybr-t2: var(--cybr-wh2);\n}"
-    },
-    "cybr-t-me": {
-      "general": "body.cybr-t-me {\n--cybr-t0: var(--cybr-me0);\n--cybr-t1: var(--cybr-me1);\n--cybr-t2: var(--cybr-me2);\n}"
-    },
-    "cybr-t-no": {
-      "general": "body.cybr-t-no {\n--cybr-t0: var(--cybr-no0);\n--cybr-t1: var(--cybr-no1);\n--cybr-t2: var(--cybr-no2);\n}"
-    },
-    "cybr-caret-re": {
-      "general": "body.cybr-caret-re {\n--cybr-caret:var(--cybr-re0);\n}"
-    },
-    "cybr-caret-gr": {
-      "general": "body.cybr-caret-gr {\n--cybr-caret:var(--cybr-gr0);\n}"
-    },
-    "cybr-caret-ye": {
-      "general": "body.cybr-caret-ye {\n--cybr-caret:var(--cybr-ye0);\n}"
-    },
-    "cybr-caret-bl": {
-      "general": "body.cybr-caret-bl {\n--cybr-caret:var(--cybr-bl0);\n}"
-    },
-    "cybr-caret-vi": {
-      "general": "body.cybr-caret-vi {\n--cybr-caret:var(--cybr-vi0);\n}"
-    },
-    "cybr-caret-cy": {
-      "general": "body.cybr-caret-cy {\n--cybr-caret:var(--cybr-cy0);\n}"
-    },
-    "cybr-caret-or": {
-      "general": "body.cybr-caret-or {\n--cybr-caret:var(--cybr-or0);\n}"
-    },
-    "cybr-caret-pi": {
-      "general": "body.cybr-caret-pi {\n--cybr-caret:var(--cybr-pi0);\n}"
-    },
-    "cybr-prop-p": {
-      "general": "body.cybr-prop-p {\n--cybr-prop0:var(--cybr-p0);\n--cybr-prop1:var(--cybr-p1);\n--cybr-prop2:var(--cybr-p2);\n}\n\nbody.cybr-prop-pi {\n--cybr-prop0:var(--cybr-pi0);\n--cybr-prop1:var(--cybr-pi1);\n--cybr-prop2:var(--cybr-pi2);\n}"
-    },
-    "cybr-prop-s": {
-      "general": "body.cybr-prop-s {\n--cybr-prop0:var(--cybr-s0);\n--cybr-prop1:var(--cybr-s1);\n--cybr-prop2:var(--cybr-s2);\n}"
-    },
-    "cybr-prop-t": {
-      "general": "body.cybr-prop-t {\n--cybr-prop0:var(--cybr-t0);\n--cybr-prop1:var(--cybr-t1);\n--cybr-prop2:var(--cybr-t2);\n}"
-    },
-    "cybr-prop-re": {
-      "general": "body.cybr-prop-re {\n--cybr-prop0:var(--cybr-re0);\n--cybr-prop1:var(--cybr-re1);\n--cybr-prop2:var(--cybr-re2);\n}"
-    },
-    "cybr-prop-gr": {
-      "general": "body.cybr-prop-gr {\n--cybr-prop0:var(--cybr-gr0);\n--cybr-prop1:var(--cybr-gr1);\n--cybr-prop2:var(--cybr-gr2);\n}"
-    },
-    "cybr-prop-ye": {
-      "general": "body.cybr-prop-ye {\n--cybr-prop0:var(--cybr-ye0);\n--cybr-prop1:var(--cybr-ye1);\n--cybr-prop2:var(--cybr-ye2);\n}"
-    },
-    "cybr-prop-bl": {
-      "general": "body.cybr-prop-bl {\n--cybr-prop0:var(--cybr-bl0);\n--cybr-prop1:var(--cybr-bl1);\n--cybr-prop2:var(--cybr-bl2);\n}"
-    },
-    "cybr-prop-vi": {
-      "general": "body.cybr-prop-vi {\n--cybr-prop0:var(--cybr-vi0);\n--cybr-prop1:var(--cybr-vi1);\n--cybr-prop2:var(--cybr-vi2);\n}"
-    },
-    "cybr-prop-cy": {
-      "general": "body.cybr-prop-cy {\n--cybr-prop0:var(--cybr-cy0);\n--cybr-prop1:var(--cybr-cy1);\n--cybr-prop2:var(--cybr-cy2);\n}"
-    },
-    "cybr-prop-wh": {
-      "general": "body.cybr-prop-wh {\n--cybr-prop0:var(--cybr-wh0);\n--cybr-prop1:var(--cybr-wh1);\n--cybr-prop2:var(--cybr-wh2);\n}"
-    },
-    "cybr-prop-or": {
-      "general": "body.cybr-prop-or {\n--cybr-prop0:var(--cybr-or0);\n--cybr-prop1:var(--cybr-or1);\n--cybr-prop2:var(--cybr-or2);\n}"
-    },
-    "cybr-prop-pi": {
-      "general": "body.cybr-prop-pi {\n--cybr-prop0:var(--cybr-pi0);\n--cybr-prop1:var(--cybr-pi1);\n--cybr-prop2:var(--cybr-pi2);\n}"
-    },
-    "cybr-bq-p": {
-      "general": "body.cybr-bq-p {\n--cybr-bq0:var(--cybr-p0);\n--cybr-bq2:var(--cybr-p2);\n}\n\nbody.cybr-bq-pi {\n--cybr-bq0:var(--cybr-pi0);\n--cybr-bq2:var(--cybr-pi2);\n}"
-    },
-    "cybr-bq-s": {
-      "general": "body.cybr-bq-s {\n--cybr-bq0:var(--cybr-s0);\n--cybr-bq2:var(--cybr-s2);\n}"
-    },
-    "cybr-bq-t": {
-      "general": "body.cybr-bq-t {\n--cybr-bq0:var(--cybr-t0);\n--cybr-bq2:var(--cybr-t2);\n}"
-    },
-    "cybr-bq-re": {
-      "general": "body.cybr-bq-re {\n--cybr-bq0:var(--cybr-re0);\n--cybr-bq2:var(--cybr-re2);\n}"
-    },
-    "cybr-bq-gr": {
-      "general": "body.cybr-bq-gr {\n--cybr-bq0:var(--cybr-gr0);\n--cybr-bq2:var(--cybr-gr2);\n}"
-    },
-    "cybr-bq-ye": {
-      "general": "body.cybr-bq-ye {\n--cybr-bq0:var(--cybr-ye0);\n--cybr-bq2:var(--cybr-ye2);\n}"
-    },
-    "cybr-bq-bl": {
-      "general": "body.cybr-bq-bl {\n--cybr-bq0:var(--cybr-bl0);\n--cybr-bq2:var(--cybr-bl2);\n}"
-    },
-    "cybr-bq-vi": {
-      "general": "body.cybr-bq-vi {\n--cybr-bq0:var(--cybr-vi0);\n--cybr-bq2:var(--cybr-vi2);\n}"
-    },
-    "cybr-bq-cy": {
-      "general": "body.cybr-bq-cy {\n--cybr-bq0:var(--cybr-cy0);\n--cybr-bq2:var(--cybr-cy2);\n}"
-    },
-    "cybr-bq-wh": {
-      "general": "body.cybr-bq-wh {\n--cybr-bq0:var(--cybr-wh0);\n--cybr-bq2:var(--cybr-wh2);\n}"
-    },
-    "cybr-bq-or": {
-      "general": "body.cybr-bq-or {\n--cybr-bq0:var(--cybr-or0);\n--cybr-bq2:var(--cybr-or2);\n}"
-    },
-    "cybr-bq-pi": {
-      "general": "body.cybr-bq-pi {\n--cybr-bq0:var(--cybr-pi0);\n--cybr-bq2:var(--cybr-pi2);\n}"
-    },
-    "cybr-h1-p": {
-      "general": "body.cybr-h1-p {\n--cybr-h1:var(--cybr-p0);\n}\n\nbody.cybr-h1-pi {\n--cybr-h1:var(--cybr-pi0);\n}"
-    },
-    "cybr-h1-s": {
-      "general": "body.cybr-h1-s {\n--cybr-h1:var(--cybr-s0);\n}"
-    },
-    "cybr-h1-t": {
-      "general": "body.cybr-h1-t {\n--cybr-h1:var(--cybr-t0);\n}"
-    },
-    "cybr-h1-re": {
-      "general": "body.cybr-h1-re {\n--cybr-h1:var(--cybr-re0);\n}"
-    },
-    "cybr-h1-gr": {
-      "general": "body.cybr-h1-gr {\n--cybr-h1:var(--cybr-gr0);\n}"
-    },
-    "cybr-h1-ye": {
-      "general": "body.cybr-h1-ye {\n--cybr-h1:var(--cybr-ye0);\n}"
-    },
-    "cybr-h1-bl": {
-      "general": "body.cybr-h1-bl {\n--cybr-h1:var(--cybr-bl0);\n}"
-    },
-    "cybr-h1-vi": {
-      "general": "body.cybr-h1-vi {\n--cybr-h1:var(--cybr-vi0);\n}"
-    },
-    "cybr-h1-cy": {
-      "general": "body.cybr-h1-cy {\n--cybr-h1:var(--cybr-cy0);\n}"
-    },
-    "cybr-h1-wh": {
-      "general": "body.cybr-h1-wh {\n--cybr-h1:var(--cybr-wh0);\n}"
-    },
-    "cybr-h1-me": {
-      "general": "body.cybr-h1-me {\n--cybr-h1:var(--cybr-me0);\n}"
-    },
-    "cybr-h1-or": {
-      "general": "body.cybr-h1-or {\n--cybr-h1:var(--cybr-or0);\n}"
-    },
-    "cybr-h1-pi": {
-      "general": "body.cybr-h1-pi {\n--cybr-h1:var(--cybr-pi0);\n}"
-    },
-    "cybr-h2-p": {
-      "general": "body.cybr-h2-p {\n--cybr-h2:var(--cybr-p0);\n}\n\nbody.cybr-h2-pi {\n--cybr-h2:var(--cybr-pi0);\n}"
-    },
-    "cybr-h2-s": {
-      "general": "body.cybr-h2-s {\n--cybr-h2:var(--cybr-s0);\n}"
-    },
-    "cybr-h2-t": {
-      "general": "body.cybr-h2-t {\n--cybr-h2:var(--cybr-t0);\n}"
-    },
-    "cybr-h2-re": {
-      "general": "body.cybr-h2-re {\n--cybr-h2:var(--cybr-re0);\n}"
-    },
-    "cybr-h2-gr": {
-      "general": "body.cybr-h2-gr {\n--cybr-h2:var(--cybr-gr0);\n}"
-    },
-    "cybr-h2-ye": {
-      "general": "body.cybr-h2-ye {\n--cybr-h2:var(--cybr-ye0);\n}"
-    },
-    "cybr-h2-bl": {
-      "general": "body.cybr-h2-bl {\n--cybr-h2:var(--cybr-bl0);\n}"
-    },
-    "cybr-h2-vi": {
-      "general": "body.cybr-h2-vi {\n--cybr-h2:var(--cybr-vi0);\n}"
-    },
-    "cybr-h2-cy": {
-      "general": "body.cybr-h2-cy {\n--cybr-h2:var(--cybr-cy0);\n}"
-    },
-    "cybr-h2-wh": {
-      "general": "body.cybr-h2-wh {\n--cybr-h2:var(--cybr-wh0);\n}"
-    },
-    "cybr-h2-me": {
-      "general": "body.cybr-h2-me {\n--cybr-h2:var(--cybr-me0);\n}"
-    },
-    "cybr-h2-or": {
-      "general": "body.cybr-h2-or {\n--cybr-h2:var(--cybr-or0);\n}"
-    },
-    "cybr-h2-pi": {
-      "general": "body.cybr-h2-pi {\n--cybr-h2:var(--cybr-pi0);\n}"
-    },
-    "cybr-h3-p": {
-      "general": "body.cybr-h3-p {\n--cybr-h3:var(--cybr-p0);\n}\n\nbody.cybr-h3-pi {\n--cybr-h3:var(--cybr-pi0);\n}"
-    },
-    "cybr-h3-s": {
-      "general": "body.cybr-h3-s {\n--cybr-h3:var(--cybr-s0);\n}"
-    },
-    "cybr-h3-t": {
-      "general": "body.cybr-h3-t {\n--cybr-h3:var(--cybr-t0);\n}"
-    },
-    "cybr-h3-re": {
-      "general": "body.cybr-h3-re {\n--cybr-h3:var(--cybr-re0);\n}"
-    },
-    "cybr-h3-gr": {
-      "general": "body.cybr-h3-gr {\n--cybr-h3:var(--cybr-gr0);\n}"
-    },
-    "cybr-h3-ye": {
-      "general": "body.cybr-h3-ye {\n--cybr-h3:var(--cybr-ye0);\n}"
-    },
-    "cybr-h3-bl": {
-      "general": "body.cybr-h3-bl {\n--cybr-h3:var(--cybr-bl0);\n}"
-    },
-    "cybr-h3-vi": {
-      "general": "body.cybr-h3-vi {\n--cybr-h3:var(--cybr-vi0);\n}"
-    },
-    "cybr-h3-cy": {
-      "general": "body.cybr-h3-cy {\n--cybr-h3:var(--cybr-cy0);\n}"
-    },
-    "cybr-h3-wh": {
-      "general": "body.cybr-h3-wh {\n--cybr-h3:var(--cybr-wh0);\n}"
-    },
-    "cybr-h3-me": {
-      "general": "body.cybr-h3-me {\n--cybr-h3:var(--cybr-me0);\n}"
-    },
-    "cybr-h3-or": {
-      "general": "body.cybr-h3-or {\n--cybr-h3:var(--cybr-or0);\n}"
-    },
-    "cybr-h3-pi": {
-      "general": "body.cybr-h3-pi {\n--cybr-h3:var(--cybr-pi0);\n}"
-    },
-    "cybr-h4-p": {
-      "general": "body.cybr-h4-p {\n--cybr-h4:var(--cybr-p0);\n}\n\nbody.cybr-h4-pi {\n--cybr-h4:var(--cybr-pi0);\n}"
-    },
-    "cybr-h4-s": {
-      "general": "body.cybr-h4-s {\n--cybr-h4:var(--cybr-s0);\n}"
-    },
-    "cybr-h4-t": {
-      "general": "body.cybr-h4-t {\n--cybr-h4:var(--cybr-t0);\n}"
-    },
-    "cybr-h4-re": {
-      "general": "body.cybr-h4-re {\n--cybr-h4:var(--cybr-re0);\n}"
-    },
-    "cybr-h4-gr": {
-      "general": "body.cybr-h4-gr {\n--cybr-h4:var(--cybr-gr0);\n}"
-    },
-    "cybr-h4-ye": {
-      "general": "body.cybr-h4-ye {\n--cybr-h4:var(--cybr-ye0);\n}"
-    },
-    "cybr-h4-bl": {
-      "general": "body.cybr-h4-bl {\n--cybr-h4:var(--cybr-bl0);\n}"
-    },
-    "cybr-h4-vi": {
-      "general": "body.cybr-h4-vi {\n--cybr-h4:var(--cybr-vi0);\n}"
-    },
-    "cybr-h4-cy": {
-      "general": "body.cybr-h4-cy {\n--cybr-h4:var(--cybr-cy0);\n}"
-    },
-    "cybr-h4-wh": {
-      "general": "body.cybr-h4-wh {\n--cybr-h4:var(--cybr-wh0);\n}"
-    },
-    "cybr-h4-me": {
-      "general": "body.cybr-h4-me {\n--cybr-h4:var(--cybr-me0);\n}"
-    },
-    "cybr-h4-or": {
-      "general": "body.cybr-h4-or {\n--cybr-h4:var(--cybr-or0);\n}"
-    },
-    "cybr-h4-pi": {
-      "general": "body.cybr-h4-pi {\n--cybr-h4:var(--cybr-pi0);\n}"
-    },
-    "cybr-h5-p": {
-      "general": "body.cybr-h5-p {\n--cybr-h5:var(--cybr-p0);\n}\n\nbody.cybr-h5-pi {\n--cybr-h5:var(--cybr-pi0);\n}"
-    },
-    "cybr-h5-s": {
-      "general": "body.cybr-h5-s {\n--cybr-h5:var(--cybr-s0);\n}"
-    },
-    "cybr-h5-t": {
-      "general": "body.cybr-h5-t {\n--cybr-h5:var(--cybr-t0);\n}"
-    },
-    "cybr-h5-re": {
-      "general": "body.cybr-h5-re {\n--cybr-h5:var(--cybr-re0);\n}"
-    },
-    "cybr-h5-gr": {
-      "general": "body.cybr-h5-gr {\n--cybr-h5:var(--cybr-gr0);\n}"
-    },
-    "cybr-h5-ye": {
-      "general": "body.cybr-h5-ye {\n--cybr-h5:var(--cybr-ye0);\n}"
-    },
-    "cybr-h5-bl": {
-      "general": "body.cybr-h5-bl {\n--cybr-h5:var(--cybr-bl0);\n}"
-    },
-    "cybr-h5-vi": {
-      "general": "body.cybr-h5-vi {\n--cybr-h5:var(--cybr-vi0);\n}"
-    },
-    "cybr-h5-cy": {
-      "general": "body.cybr-h5-cy {\n--cybr-h5:var(--cybr-cy0);\n}"
-    },
-    "cybr-h5-wh": {
-      "general": "body.cybr-h5-wh {\n--cybr-h5:var(--cybr-wh0);\n}"
-    },
-    "cybr-h5-me": {
-      "general": "body.cybr-h5-me {\n--cybr-h5:var(--cybr-me0);\n}"
-    },
-    "cybr-h5-or": {
-      "general": "body.cybr-h5-or {\n--cybr-h5:var(--cybr-or0);\n}"
-    },
-    "cybr-h5-pi": {
-      "general": "body.cybr-h5-pi {\n--cybr-h5:var(--cybr-pi0);\n}"
-    },
-    "cybr-h6-p": {
-      "general": "body.cybr-h6-p {\n--cybr-h6:var(--cybr-p0);\n}\n\nbody.cybr-h6-pi {\n--cybr-h6:var(--cybr-pi0);\n}"
-    },
-    "cybr-h6-s": {
-      "general": "body.cybr-h6-s {\n--cybr-h6:var(--cybr-s0);\n}"
-    },
-    "cybr-h6-t": {
-      "general": "body.cybr-h6-t {\n--cybr-h6:var(--cybr-t0);\n}"
-    },
-    "cybr-h6-re": {
-      "general": "body.cybr-h6-re {\n--cybr-h6:var(--cybr-re0);\n}"
-    },
-    "cybr-h6-gr": {
-      "general": "body.cybr-h6-gr {\n--cybr-h6:var(--cybr-gr0);\n}"
-    },
-    "cybr-h6-ye": {
-      "general": "body.cybr-h6-ye {\n--cybr-h6:var(--cybr-ye0);\n}"
-    },
-    "cybr-h6-bl": {
-      "general": "body.cybr-h6-bl {\n--cybr-h6:var(--cybr-bl0);\n}"
-    },
-    "cybr-h6-vi": {
-      "general": "body.cybr-h6-vi {\n--cybr-h6:var(--cybr-vi0);\n}"
-    },
-    "cybr-h6-cy": {
-      "general": "body.cybr-h6-cy {\n--cybr-h6:var(--cybr-cy0);\n}"
-    },
-    "cybr-h6-wh": {
-      "general": "body.cybr-h6-wh {\n--cybr-h6:var(--cybr-wh0);\n}"
-    },
-    "cybr-h6-me": {
-      "general": "body.cybr-h6-me {\n--cybr-h6:var(--cybr-me0);\n}"
-    },
-    "cybr-h6-or": {
-      "general": "body.cybr-h6-or {\n--cybr-h6:var(--cybr-or0);\n}"
-    },
-    "cybr-h6-pi": {
-      "general": "body.cybr-h6-pi {\n--cybr-h6:var(--cybr-pi0);\n}"
-    },
-    "cybr-fc1-p": {
-      "general": "body.cybr-fc1-pi .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc1-p .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc1-s": {
-      "general": "body.cybr-fc1-s .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc1-t": {
-      "general": "body.cybr-fc1-t .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc1-re": {
-      "general": "body.cybr-fc1-re .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc1-gr": {
-      "general": "body.cybr-fc1-gr .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc1-ye": {
-      "general": "body.cybr-fc1-ye .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc1-bl": {
-      "general": "body.cybr-fc1-bl .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc1-vi": {
-      "general": "body.cybr-fc1-vi .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc1-cy": {
-      "general": "body.cybr-fc1-cy .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc1-wh": {
-      "general": "body.cybr-fc1-wh .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc1-me": {
-      "general": "body.cybr-fc1-me .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc1-or": {
-      "general": "body.cybr-fc1-or .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc1-pi": {
-      "general": "body.cybr-fc1-pi .nav-files-container > div > .tree-item:nth-child(2) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc2-p": {
-      "general": "body.cybr-fc2-pi .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc2-p .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc2-s": {
-      "general": "body.cybr-fc2-s .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc2-t": {
-      "general": "body.cybr-fc2-t .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc2-re": {
-      "general": "body.cybr-fc2-re .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc2-gr": {
-      "general": "body.cybr-fc2-gr .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc2-ye": {
-      "general": "body.cybr-fc2-ye .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc2-bl": {
-      "general": "body.cybr-fc2-bl .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc2-vi": {
-      "general": "body.cybr-fc2-vi .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc2-cy": {
-      "general": "body.cybr-fc2-cy .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc2-wh": {
-      "general": "body.cybr-fc2-wh .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc2-me": {
-      "general": "body.cybr-fc2-me .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc2-or": {
-      "general": "body.cybr-fc2-or .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc2-pi": {
-      "general": "body.cybr-fc2-pi .nav-files-container > div > .tree-item:nth-child(3) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc3-p": {
-      "general": "body.cybr-fc3-pi .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc3-p .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc3-s": {
-      "general": "body.cybr-fc3-s .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc3-t": {
-      "general": "body.cybr-fc3-t .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc3-re": {
-      "general": "body.cybr-fc3-re .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc3-gr": {
-      "general": "body.cybr-fc3-gr .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc3-ye": {
-      "general": "body.cybr-fc3-ye .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc3-bl": {
-      "general": "body.cybr-fc3-bl .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc3-vi": {
-      "general": "body.cybr-fc3-vi .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc3-cy": {
-      "general": "body.cybr-fc3-cy .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc3-wh": {
-      "general": "body.cybr-fc3-wh .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc3-me": {
-      "general": "body.cybr-fc3-me .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc3-or": {
-      "general": "body.cybr-fc3-or .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc3-pi": {
-      "general": "body.cybr-fc3-pi .nav-files-container > div > .tree-item:nth-child(4) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc4-p": {
-      "general": "body.cybr-fc4-pi .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc4-p .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc4-s": {
-      "general": "body.cybr-fc4-s .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc4-t": {
-      "general": "body.cybr-fc4-t .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc4-re": {
-      "general": "body.cybr-fc4-re .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc4-gr": {
-      "general": "body.cybr-fc4-gr .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc4-ye": {
-      "general": "body.cybr-fc4-ye .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc4-bl": {
-      "general": "body.cybr-fc4-bl .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc4-vi": {
-      "general": "body.cybr-fc4-vi .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc4-cy": {
-      "general": "body.cybr-fc4-cy .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc4-wh": {
-      "general": "body.cybr-fc4-wh .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc4-me": {
-      "general": "body.cybr-fc4-me .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc4-or": {
-      "general": "body.cybr-fc4-or .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc4-pi": {
-      "general": "body.cybr-fc4-pi .nav-files-container > div > .tree-item:nth-child(5) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc5-p": {
-      "general": "body.cybr-fc5-pi .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc5-p .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc5-s": {
-      "general": "body.cybr-fc5-s .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc5-t": {
-      "general": "body.cybr-fc5-t .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc5-re": {
-      "general": "body.cybr-fc5-re .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc5-gr": {
-      "general": "body.cybr-fc5-gr .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc5-ye": {
-      "general": "body.cybr-fc5-ye .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc5-bl": {
-      "general": "body.cybr-fc5-bl .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc5-vi": {
-      "general": "body.cybr-fc5-vi .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc5-cy": {
-      "general": "body.cybr-fc5-cy .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc5-wh": {
-      "general": "body.cybr-fc5-wh .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc5-me": {
-      "general": "body.cybr-fc5-me .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc5-or": {
-      "general": "body.cybr-fc5-or .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc5-pi": {
-      "general": "body.cybr-fc5-pi .nav-files-container > div > .tree-item:nth-child(6) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc6-p": {
-      "general": "body.cybr-fc6-pi .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc6-p .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc6-s": {
-      "general": "body.cybr-fc6-s .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc6-t": {
-      "general": "body.cybr-fc6-t .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc6-re": {
-      "general": "body.cybr-fc6-re .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc6-gr": {
-      "general": "body.cybr-fc6-gr .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc6-ye": {
-      "general": "body.cybr-fc6-ye .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc6-bl": {
-      "general": "body.cybr-fc6-bl .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc6-vi": {
-      "general": "body.cybr-fc6-vi .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc6-cy": {
-      "general": "body.cybr-fc6-cy .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc6-wh": {
-      "general": "body.cybr-fc6-wh .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc6-me": {
-      "general": "body.cybr-fc6-me .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc6-or": {
-      "general": "body.cybr-fc6-or .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc6-pi": {
-      "general": "body.cybr-fc6-pi .nav-files-container > div > .tree-item:nth-child(7) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc7-p": {
-      "general": "body.cybr-fc7-pi .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc7-p .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc7-s": {
-      "general": "body.cybr-fc7-s .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc7-t": {
-      "general": "body.cybr-fc7-t .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc7-re": {
-      "general": "body.cybr-fc7-re .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc7-gr": {
-      "general": "body.cybr-fc7-gr .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc7-ye": {
-      "general": "body.cybr-fc7-ye .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc7-bl": {
-      "general": "body.cybr-fc7-bl .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc7-vi": {
-      "general": "body.cybr-fc7-vi .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc7-cy": {
-      "general": "body.cybr-fc7-cy .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc7-wh": {
-      "general": "body.cybr-fc7-wh .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc7-me": {
-      "general": "body.cybr-fc7-me .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc7-or": {
-      "general": "body.cybr-fc7-or .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc7-pi": {
-      "general": "body.cybr-fc7-pi .nav-files-container > div > .tree-item:nth-child(8) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybr-fc8-p": {
-      "general": "body.cybr-fc8-pi .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-pi0);\n}\n\nbody.cybr-fc8-p .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-p0);\n}"
-    },
-    "cybr-fc8-s": {
-      "general": "body.cybr-fc8-s .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-s0);\n}"
-    },
-    "cybr-fc8-t": {
-      "general": "body.cybr-fc8-t .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-t0);\n}"
-    },
-    "cybr-fc8-re": {
-      "general": "body.cybr-fc8-re .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-re0);\n}"
-    },
-    "cybr-fc8-gr": {
-      "general": "body.cybr-fc8-gr .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-gr0);\n}"
-    },
-    "cybr-fc8-ye": {
-      "general": "body.cybr-fc8-ye .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-ye0);\n}"
-    },
-    "cybr-fc8-bl": {
-      "general": "body.cybr-fc8-bl .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-bl0);\n}"
-    },
-    "cybr-fc8-vi": {
-      "general": "body.cybr-fc8-vi .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-vi0);\n}"
-    },
-    "cybr-fc8-cy": {
-      "general": "body.cybr-fc8-cy .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-cy0);\n}"
-    },
-    "cybr-fc8-wh": {
-      "general": "body.cybr-fc8-wh .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-wh0);\n}"
-    },
-    "cybr-fc8-me": {
-      "general": "body.cybr-fc8-me .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-me0);\n}"
-    },
-    "cybr-fc8-or": {
-      "general": "body.cybr-fc8-or .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-or0);\n}"
-    },
-    "cybr-fc8-pi": {
-      "general": "body.cybr-fc8-pi .nav-files-container > div > .tree-item:nth-child(9) {\n--folder-color: var(--cybr-pi0);\n}"
-    },
-    "cybrcore-underline-internal": {
-      "general": "body.cybrcore-underline-internal .internal-link {\ntext-decoration: underline;\n}"
-    },
-    "cybrcore-underline-external": {
-      "general": "body.cybrcore-underline-external .external-link {\ntext-decoration: underline;\n}"
-    },
-    "cybrcore-hide-bottom-nav": {
-      "general": "body.cybrcore-hide-bottom-nav .workspace-sidedock-vault-profile {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-hide-system-icons": {
-      "general": "body.cybrcore-hide-system-icons .frame-controls-container, body.cybrcore-hide-system-icons .window-controls, body.cybrcore-hide-system-icons .titlebar-inner {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-hide-status-bar": {
-      "general": "body.cybrcore-hide-status-bar .status-bar {\ndisplay: none !important;\n}"
-    },
-    "cybr-status-p": {
-      "general": "body.cybr-status-p {\n--cybr-status-bg:var(--cybr-p0);\n}\n\nbody.cybr-status-pi {\n--cybr-status-bg:var(--cybr-pi0);\n}"
-    },
-    "cybr-status-re": {
-      "general": "body.cybr-status-re {\n--cybr-status-bg:var(--cybr-re0);\n}"
-    },
-    "cybr-status-gr": {
-      "general": "body.cybr-status-gr {\n--cybr-status-bg:var(--cybr-gr0);\n}"
-    },
-    "cybr-status-ye": {
-      "general": "body.cybr-status-ye {\n--cybr-status-bg:var(--cybr-ye0);\n}"
-    },
-    "cybr-status-bl": {
-      "general": "body.cybr-status-bl {\n--cybr-status-bg:var(--cybr-bl0);\n}"
-    },
-    "cybr-status-vi": {
-      "general": "body.cybr-status-vi {\n--cybr-status-bg:var(--cybr-vi0);\n}"
-    },
-    "cybr-status-cy": {
-      "general": "body.cybr-status-cy {\n--cybr-status-bg:var(--cybr-cy0);\n}"
-    },
-    "cybr-status-or": {
-      "general": "body.cybr-status-or {\n--cybr-status-bg:var(--cybr-or0);\n}"
-    },
-    "cybr-status-pi": {
-      "general": "body.cybr-status-pi {\n--cybr-status-bg:var(--cybr-pi0);\n}"
-    },
-    "cybrcore-hide-scrollbars": {
-      "general": "body.cybrcore-hide-scrollbars ::-webkit-scrollbar {\ndisplay: none !important;\n}\n\nbody.cybrcore-hide-scrollbars {\nscrollbar-width: none !important;\n}"
-    },
-    "cybrcore-hide-tooltips": {
-      "general": "body.cybrcore-hide-tooltips .tooltip {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-hide-instructions": {
-      "general": "body.cybrcore-hide-instructions .prompt-instructions {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-hide-search-suggestions": {
-      "general": "body.cybrcore-hide-search-suggestions .search-suggest-container {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-hide-search-count": {
-      "general": "body.cybrcore-hide-search-count .search-result-count {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-hide-properties-reading": {
-      "general": "body.cybrcore-hide-properties-reading .markdown-preview-view .metadata-container {\ndisplay: none !important;\n}"
-    },
-    "cybrcore-maximize-media": {
-      "general": "body.cybrcore-maximize-media .image-embed img, body.cybrcore-maximize-media .video-embed video, body.cybrcore-maximize-media iframe {\nwidth: 100%;\n}"
-    },
-    "cybrcore-image-grids": {
-      "general": "body.cybrcore-image-grids .markdown-preview-view p > .image-embed {\ndisplay: inline-block;\nvertical-align: top;\n}"
-    },
-    "cybr-cards-2": {
-      "general": "body.cybr-cards-2 .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(2, 1fr);\n}"
-    },
-    "cybr-cards-3": {
-      "general": "body.cybr-cards-3 .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(3, 1fr);\n}"
-    },
-    "cybr-cards-4": {
-      "general": "body.cybr-cards-4 .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(4, 1fr);\n}"
-    },
-    "cybr-cards-auto": {
-      "general": "body.cybr-cards-auto .cards .markdown-preview-view div > ul {\ngrid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n}"
     }
   },
   "selectorImpacts": {},

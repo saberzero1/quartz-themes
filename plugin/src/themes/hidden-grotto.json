@@ -136,11 +136,11 @@
     "preset-ursaluna": {
       "general": ".preset-ursaluna {\n--grotto-accent-h: 40;\n--grotto-accent-s: 40%;\n--grotto-accent-l: 50%;\n--grotto-dark-0: hsl(20, 20%, 14%);\n--grotto-dark-1: hsl(20, 20%, 20%);\n--grotto-dark-2: hsl(20, 20%, 32%);\n--grotto-light-0: hsl(20, 10%, 74%);\n--grotto-light-1: hsl(20, 10%, 80%);\n--grotto-light-2: hsl(20, 10%, 70%);\n--grotto-accent: hsl(40, 40%, 50%);\n}"
     },
-    "grotto-tag-rounded": {
-      "general": ".grotto-tag-rounded {\n--grotto-tag-border-radius: 2rem;\n}"
-    },
     "grotto-tag-accented": {
       "general": ".grotto-tag-accented {\n--grotto-tag-color: var(--grotto-text-color-on-accent);\n--grotto-tag-background-color: var(--grotto-accent);\n--grotto-tag-border-color: var(--text-normal);\n}"
+    },
+    "grotto-tag-rounded": {
+      "general": ".grotto-tag-rounded {\n--grotto-tag-border-radius: 2rem;\n}"
     },
     "grotto-rounded-ui": {
       "general": ".grotto-rounded-ui {\n--grotto-global-border-radius: 1rem;\n}"

@@ -64,18 +64,6 @@
   },
   "extras": null,
   "classSettings": {
-    "wrap-titles": {
-      "general": ".wrap-titles {\n--nav-item-white-space: wrap;\n}\n\n.wrap-titles .nav-file-title .nav-file-tag {\nalign-self: flex-start;\nmargin-top: .2em;\n}"
-    },
-    "border-invisible": {
-      "general": ".border-invisible {\n--divider-color: transparent;\n}"
-    },
-    "colorful-tooltips": {
-      "general": ".accent-turquoise .tooltip, .accent-mustard .tooltip, .accent-bubblegum .tooltip, .accent-pumpkin .tooltip {\ncolor: var(--text-on-accent);\n}\n\n.colorful-tooltips .tooltip {\nbackground-color: var(--color-accent);\n}"
-    },
-    "ct-jotter": {
-      "dark": ".ct-jotter {\n--color-red: #bf616a;\n--color-red-rgb: 191, 97, 106;\n--color-green: #8fbcbb;\n--color-green-rgb: 143, 188, 187;\n--color-orange: #d08770;\n--color-orange-rgb: 208, 135, 112;\n--color-yellow: #ebc88b;\n--color-yellow-rgb: 235, 200, 139;\n--color-cyan: #88c0d0;\n--color-cyan-rgb: 136, 192, 208;\n--color-blue: #81a1c1;\n--color-blue-rgb: 129, 161, 193;\n--color-purple: #8b81c1;\n--color-purple-rgb: 139, 129, 193;\n--color-pink: #bd81c1;\n--color-pink-rgb: 189, 129, 193;\n}"
-    },
     "ct-reporter": {
       "general": ".ct-reporter {\n--color-red: #bf616a;\n--color-red-rgb: 191, 97, 106;\n--color-green: #8fbcbb;\n--color-green-rgb: 143, 188, 187;\n--color-orange: #d08770;\n--color-orange-rgb: 208, 135, 112;\n--color-yellow: #ebc88b;\n--color-yellow-rgb: 235, 200, 139;\n--color-cyan: #88c0d0;\n--color-cyan-rgb: 136, 192, 208;\n--color-blue: #81a1c1;\n--color-blue-rgb: 129, 161, 193;\n--color-purple: #8b81c1;\n--color-purple-rgb: 139, 129, 193;\n--color-pink: #bd81c1;\n--color-pink-rgb: 189, 129, 193;\n}",
       "dark": ".ct-reporter {\n--background-primary: #252423;\n--background-primary-alt: #302e2c;\n--background-secondary: #21201f;\n--background-modifier-border: hsla(37, 5%, 20%);\n--background-modifier-border-hover: hsla(37, 5%, 25%);\n--indentation-guide-color-active: hsl(37, 5%, 35%);\n--interactive-normal: var(--background-modifier-border);\n--interactive-hover: var(--background-modifier-border-hover);\n--text-normal: #d7cdc1;\n--text-muted: #938d89;\n--text-faint: #65615f;\n}",
@@ -93,6 +81,9 @@
     "ct-undercover": {
       "dark": ".ct-undercover {\n--background-primary: #08090D;\n--background-primary-alt: #171c23;\n--background-secondary: #090C10;\n--code-background: #131820;\n--background-modifier-border: hsl(219, 20%, 27%);\n--background-modifier-border-hover: hsl(219, 20%, 37%);\n--indentation-guide-color-active: hsl(221, 16%, 40%);\n--interactive-normal: #1d232c;\n--interactive-hover: #242c36;\n--text-normal: #eff0f2;\n--text-muted: #7b87a0;\n--text-faint: #4b5870;\n}",
       "light": ".ct-undercover {\n--background-primary: #FCFCFC;\n--background-primary-alt: #dbe1eb;\n--background-secondary: #EFF1F5;\n--code-background: #eaf0f8;\n--background-modifier-border: hsl(218, 11%, 86%);\n--background-modifier-border-hover: hsl(218, 11%, 81%);\n--indentation-guide-color-active: hsl(218, 11%, 70%);\n--interactive-normal: var(--background-modifier-border);\n--interactive-hover: hsl(218, 11%, 90%);\n--text-normal: #212834;\n--text-muted: #7787A9;\n--text-faint: #A1ACC2;\n}"
+    },
+    "ct-jotter": {
+      "dark": ".ct-jotter {\n--color-red: #bf616a;\n--color-red-rgb: 191, 97, 106;\n--color-green: #8fbcbb;\n--color-green-rgb: 143, 188, 187;\n--color-orange: #d08770;\n--color-orange-rgb: 208, 135, 112;\n--color-yellow: #ebc88b;\n--color-yellow-rgb: 235, 200, 139;\n--color-cyan: #88c0d0;\n--color-cyan-rgb: 136, 192, 208;\n--color-blue: #81a1c1;\n--color-blue-rgb: 129, 161, 193;\n--color-purple: #8b81c1;\n--color-purple-rgb: 139, 129, 193;\n--color-pink: #bd81c1;\n--color-pink-rgb: 189, 129, 193;\n}"
     },
     "ct-obsidian": {
       "dark": ".theme-light.ct-obsidian, .ct-obsidian {\n--background-primary: var(--color-base-00);\n--background-primary-alt: var(--color-base-10);\n--background-secondary: var(--color-base-20);\n--background-modifier-border: var(--color-base-30);\n--background-modifier-border-hover: var(--color-base-35);\n--background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);\n--indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);\n--indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);\n--interactive-normal: var(--color-base-00);\n--interactive-hover: var(--color-base-10);\n--text-normal: var(--color-base-100);\n--text-muted: var(--color-base-70);\n--text-faint: var(--color-base-50);\n}",
@@ -131,14 +122,23 @@
     "accent-mauve": {
       "general": ".predefined-accent-color.accent-mauve {\n--accent: var(--mauve);\n--accent-h: 287;\n--accent-s: 30%;\n--accent-l: 41%;\n}"
     },
-    "accent-wine": {
-      "general": ".predefined-accent-color.accent-wine {\n--accent: var(--wine);\n--accent-h: 353;\n--accent-s: 42%;\n--accent-l: 32%;\n}"
-    },
     "accent-bubblegum": {
       "general": ".predefined-accent-color.accent-bubblegum {\n--accent: var(--bubblegum);\n--accent-h: 352;\n--accent-s: 100%;\n--accent-l: 85%;\n}\n\n.accent-bubblegum {\n--text-on-accent: #353132;\n}\n\n.colorful-tooltips.accent-bubblegum .tooltip {\ncolor: var(--text-on-accent);\n}"
     },
+    "accent-wine": {
+      "general": ".predefined-accent-color.accent-wine {\n--accent: var(--wine);\n--accent-h: 353;\n--accent-s: 42%;\n--accent-l: 32%;\n}"
+    },
     "accent-slate": {
       "general": ".predefined-accent-color.accent-slate {\n--accent: var(--slate);\n--accent-h: 211;\n--accent-s: 10%;\n--accent-l: 56%;\n}"
+    },
+    "border-invisible": {
+      "general": ".border-invisible {\n--divider-color: transparent;\n}"
+    },
+    "wrap-titles": {
+      "general": ".wrap-titles {\n--nav-item-white-space: wrap;\n}\n\n.wrap-titles .nav-file-title .nav-file-tag {\nalign-self: flex-start;\nmargin-top: .2em;\n}"
+    },
+    "colorful-tooltips": {
+      "general": ".accent-turquoise .tooltip, .accent-mustard .tooltip, .accent-bubblegum .tooltip, .accent-pumpkin .tooltip {\ncolor: var(--text-on-accent);\n}\n\n.colorful-tooltips .tooltip {\nbackground-color: var(--color-accent);\n}"
     },
     "hide-note-title": {
       "general": ".hide-note-title .inline-title {\ndisplay: none;\n}"
@@ -155,11 +155,11 @@
     "h6-uppercase": {
       "general": ".h6-uppercase h6, .h6-uppercase .markdown-rendered h6 {\ntext-transform: uppercase;\nfont-weight: 500;\n}"
     },
-    "em-underline": {
-      "general": "body.em-underline em, body.em-underline span.cm-em {\nborder-bottom: 5.5px solid var(--italic-underline-color);\n}"
-    },
     "bold-underline": {
       "general": "body.bold-underline strong, body.bold-underline span.cm-strong {\nborder-bottom: 5.5px solid var(--bold-underline-color);\n}"
+    },
+    "em-underline": {
+      "general": "body.em-underline em, body.em-underline span.cm-em {\nborder-bottom: 5.5px solid var(--italic-underline-color);\n}"
     }
   },
   "selectorImpacts": {},

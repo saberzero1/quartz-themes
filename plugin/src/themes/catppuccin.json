@@ -609,18 +609,18 @@
     "ctp-accent-lavender": {
       "general": ".ctp-accent-lavender {\n--ctp-accent: var(--ctp-lavender);\n}"
     },
+    "ctp-bold-folder-title": {
+      "general": ".ctp-bold-folder-title .nav-folder-title-content {\nfont-weight: var(--font-bold);\n}"
+    },
     "ctp-icon-hide": {
       "general": ".ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before, .ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {\ndisplay: none;\n}"
     },
-    "ctp-bold-folder-title": {
-      "general": ".ctp-bold-folder-title .nav-folder-title-content {\nfont-weight: var(--font-bold);\n}"
+    "ctp-tag-pill": {
+      "general": ".ctp-tag-pill {\n--tag-size: var(--font-smaller);\n--tag-decoration: none;\n--tag-decoration-hover: none;\n--tag-background: hsla(var(--interactive-accent-hsl), 0.1);\n--tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);\n--tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);\n--tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);\n--tag-border-width: 0px;\n--tag-padding-x: 0.65em;\n--tag-padding-y: 0.25em;\n--tag-radius: 2em;\n--tag-weight: inherit;\n}"
     },
     "ctp-seamless-pdf": {
       "dark": ".theme-light.ctp-seamless-pdf, .ctp-seamless-pdf {\n--pdf-shadow: none;\n}",
       "light": ".ctp-seamless-pdf, .theme-dark.ctp-seamless-pdf {\n--pdf-shadow: none;\n}"
-    },
-    "ctp-tag-pill": {
-      "general": ".ctp-tag-pill {\n--tag-size: var(--font-smaller);\n--tag-decoration: none;\n--tag-decoration-hover: none;\n--tag-background: hsla(var(--interactive-accent-hsl), 0.1);\n--tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);\n--tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);\n--tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);\n--tag-border-width: 0px;\n--tag-padding-x: 0.65em;\n--tag-padding-y: 0.25em;\n--tag-radius: 2em;\n--tag-weight: inherit;\n}"
     }
   },
   "selectorImpacts": {},

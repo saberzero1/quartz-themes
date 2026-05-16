@@ -90,23 +90,23 @@
   },
   "extras": null,
   "classSettings": {
+    "special-h6": {
+      "general": ".special-h6 h6 {\nbackground-color: var(--h6-background);\ntext-align: center;\nmargin-bottom: 0.2;\npadding:0.2em;\n}"
+    },
     "hide-frontmatter": {
       "general": ".hide-frontmatter .frontmatter-container {\ndisplay: none;\n}"
     },
     "frontmatter-blockquote": {
       "general": ".frontmatter-blockquote .frontmatter-container.is-collapsed .frontmatter-container-header {\nwidth: fit-content;\ncolor: var(--text-faint);\n}\n\n.frontmatter-blockquote .frontmatter-container .frontmatter-container-header {\nborder-bottom: none;\npadding: 0.2em 0.4em;\n}\n\n.frontmatter-blockquote .frontmatter-container .frontmatter-section-label {\npadding-right: 0.5em;\npadding-left: 2em;\n}\n\n.frontmatter-blockquote .frontmatter-container .frontmatter-section-label:after {\ncontent: \":\";\n}\n\n.frontmatter-blockquote .frontmatter-container .frontmatter-section > * {\nfont-size: var(--font-ui-medium) !important;\ncolor: var(--text-normal);\nfont-style: italic;\n}"
     },
-    "special-h6": {
-      "general": ".special-h6 h6 {\nbackground-color: var(--h6-background);\ntext-align: center;\nmargin-bottom: 0.2;\npadding:0.2em;\n}"
-    },
-    "hide-callout-icons": {
-      "general": ".hide-callout-icons .callout-icon .svg-icon {\ndisplay: none;\n}"
-    },
     "hide-callout-title": {
       "general": ".hide-callout-title .callout[data-callout=\"info\"] .callout-content p:first-of-type {\nmargin: 0px;\n/* close gaps in infobox when info callout title is hidden */\n}\n\n.hide-callout-title .callout[data-callout=\"info\"] .callout-title {\ndisplay: none;\n}"
     },
     "info-normal": {
       "general": ".info-normal .callout[data-callout=\"info\"] {\n--h6-background: rgba(var(--callout-color), 20%);\n/* make header 6 match callout color */\n}"
+    },
+    "hide-callout-icons": {
+      "general": ".hide-callout-icons .callout-icon .svg-icon {\ndisplay: none;\n}"
     },
     "no-float": {
       "general": ".no-float .markdown-rendered img, .no-float img ~ img {\nfloat: none;\nclear: none;\nwidth: revert;\nmargin: 1em 0px;\n}"

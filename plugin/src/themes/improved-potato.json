@@ -64,12 +64,6 @@
   },
   "extras": null,
   "classSettings": {
-    "fancy-code": {
-      "general": "body.fancy-code .markdown-reading-view pre[class*='language-']::before {\ndisplay: block;\ncontent: ' ';\nline-height: 1.5em;\nbackground-color: var(--code-block-alt-bg);\nborder-top-right-radius: calc(var(--codeblock-roundness) * 0.8);\nborder-top-left-radius: calc(var(--codeblock-roundness) * 0.8);\n}\n\nbody.fancy-code pre[class*='language-']::after {\ncontent: attr(class);\nfont-size: 0.9rem;\ntext-shadow: none;\ncolor: var(--text-muted);\nposition: absolute;\ntop: 2px;\nright: 5px;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-2);\n}\n\nbody.fancy-code .copy-code-button.copy-code-button.copy-code-button {\nbackground-color: var(--interactive-normal);\ntop: unset;\nbottom: 0;\npadding: 0 var(--size-2-2);\n}\n\nbody.fancy-code .markdown-preview-view.markdown-preview-view pre {\npadding: 0;\nmargin-top: var(--size-4-2);\nborder: var(--codeblock-border);\nborder-radius: var(--codeblock-roundness);\n}\n\nbody.fancy-code .markdown-reading-view .markdown-preview-view pre code {\ndisplay: block;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-5);\n}"
-    },
-    "fancy-mermaid": {
-      "general": "body.fancy-mermaid .edgeLabel:not(:empty) {\nbackground-color: var(--background-primary);\ncolor: var(--text-normal);\nborder: 1px solid var(--divider-color);\nborder-radius: var(--radius-m);\npadding: 2px;\n}"
-    },
     "h1-underline": {
       "general": "body.h1-underline h1 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\n}"
     },
@@ -87,6 +81,12 @@
     },
     "h6-underline": {
       "general": "body.h6-underline h6 {\nborder-bottom: 2px solid var(--background-modifier-border);\nwidth: 100%;\npadding-bottom: 2px;\n}"
+    },
+    "fancy-mermaid": {
+      "general": "body.fancy-mermaid .edgeLabel:not(:empty) {\nbackground-color: var(--background-primary);\ncolor: var(--text-normal);\nborder: 1px solid var(--divider-color);\nborder-radius: var(--radius-m);\npadding: 2px;\n}"
+    },
+    "fancy-code": {
+      "general": "body.fancy-code .markdown-reading-view pre[class*='language-']::before {\ndisplay: block;\ncontent: ' ';\nline-height: 1.5em;\nbackground-color: var(--code-block-alt-bg);\nborder-top-right-radius: calc(var(--codeblock-roundness) * 0.8);\nborder-top-left-radius: calc(var(--codeblock-roundness) * 0.8);\n}\n\nbody.fancy-code pre[class*='language-']::after {\ncontent: attr(class);\nfont-size: 0.9rem;\ntext-shadow: none;\ncolor: var(--text-muted);\nposition: absolute;\ntop: 2px;\nright: 5px;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-2);\n}\n\nbody.fancy-code .copy-code-button.copy-code-button.copy-code-button {\nbackground-color: var(--interactive-normal);\ntop: unset;\nbottom: 0;\npadding: 0 var(--size-2-2);\n}\n\nbody.fancy-code .markdown-preview-view.markdown-preview-view pre {\npadding: 0;\nmargin-top: var(--size-4-2);\nborder: var(--codeblock-border);\nborder-radius: var(--codeblock-roundness);\n}\n\nbody.fancy-code .markdown-reading-view .markdown-preview-view pre code {\ndisplay: block;\n}\n\nbody.fancy-code .markdown-preview-view pre code {\npadding: var(--size-4-1) var(--size-4-5);\n}"
     }
   },
   "selectorImpacts": {},

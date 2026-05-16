@@ -76,10 +76,6 @@
       "dark": ".cn-bg-zen {\n--cn-bg-primary: #1f1c19;\n--cn-bg-secondary: #181613;\n--cn-bg-tertiary: #25221f;\n--cn-bg-elevated: #2a2724;\n}\n\n.cn-sidebar-lifted.cn-bg-zen {\n--background-secondary: #110f0d;\n--cn-bg-note-tray: #0a0908;\n}",
       "light": ".cn-bg-zen {\n--cn-bg-primary: #f5f3ef;\n--cn-bg-secondary: #eeece8;\n--cn-bg-tertiary: #ece9e4;\n--cn-bg-elevated: #e9e6e1;\n}\n\n.cn-sidebar-lifted.cn-bg-zen {\n--background-secondary: #e6e3de;\n--cn-bg-note-tray: #c8c5c0;\n}"
     },
-    "cn-sidebar-lifted": {
-      "dark": ".cn-sidebar-lifted {\n--background-secondary: #1b1b1b;\n--cn-bg-note-tray: #0d0d0d;\n}\n\n.cn-bg-black {\n--background-secondary: #0a0a0a;\n--cn-bg-note-tray: #000000;\n}\n\n.cn-bg-warm {\n--background-secondary: #1f1d1c;\n--cn-bg-note-tray: #131110;\n}\n\n.cn-bg-zen {\n--background-secondary: #110f0d;\n--cn-bg-note-tray: #0a0908;\n}",
-      "light": ".cn-sidebar-lifted {\n--background-secondary: #f1f0ed;\n--cn-bg-note-tray: #cdcbc6;\n}\n\n.cn-bg-black {\n--background-secondary: #f0f0f0;\n--cn-bg-note-tray: #e2e2e2;\n}\n\n.cn-bg-warm {\n--background-secondary: #ebe5d9;\n--cn-bg-note-tray: #ddd6c8;\n}\n\n.cn-bg-zen {\n--background-secondary: #e6e3de;\n--cn-bg-note-tray: #c8c5c0;\n}\n\nbody.is-translucent.cn-sidebar-lifted .titlebar {\nbackground-color: var(--background-secondary);\n}"
-    },
     "cn-translucent-off": {
       "dark": ".cn-translucent-off {\n--cn-tint-alpha: 0.0;\n}"
     },
@@ -92,13 +88,9 @@
     "cn-translucent-heavy": {
       "dark": ".cn-translucent-heavy {\n--cn-tint-alpha: 0.32;\n}"
     },
-    "cn-headings-compact": {
-      "dark": ".cn-headings-compact, .theme-light.cn-headings-compact {\n--h1-size: 2.0em;\n--h2-size: 1.65em;\n--h3-size: 1.35em;\n--h4-size: 1.15em;\n--h5-size: 1.05em;\n--h6-size: 1.0em;\n}",
-      "light": ".theme-dark.cn-headings-compact, .cn-headings-compact {\n--h1-size: 2.0em;\n--h2-size: 1.65em;\n--h3-size: 1.35em;\n--h4-size: 1.15em;\n--h5-size: 1.05em;\n--h6-size: 1.0em;\n}"
-    },
-    "cn-headings-large": {
-      "dark": ".cn-headings-large, .theme-light.cn-headings-large {\n--h1-size: 2.9em;\n--h2-size: 2.3em;\n--h3-size: 1.8em;\n--h4-size: 1.4em;\n--h5-size: 1.2em;\n--h6-size: 1.05em;\n}",
-      "light": ".theme-dark.cn-headings-large, .cn-headings-large {\n--h1-size: 2.9em;\n--h2-size: 2.3em;\n--h3-size: 1.8em;\n--h4-size: 1.4em;\n--h5-size: 1.2em;\n--h6-size: 1.05em;\n}"
+    "cn-sidebar-lifted": {
+      "dark": ".cn-sidebar-lifted {\n--background-secondary: #1b1b1b;\n--cn-bg-note-tray: #0d0d0d;\n}\n\n.cn-bg-black {\n--background-secondary: #0a0a0a;\n--cn-bg-note-tray: #000000;\n}\n\n.cn-bg-warm {\n--background-secondary: #1f1d1c;\n--cn-bg-note-tray: #131110;\n}\n\n.cn-bg-zen {\n--background-secondary: #110f0d;\n--cn-bg-note-tray: #0a0908;\n}",
+      "light": ".cn-sidebar-lifted {\n--background-secondary: #f1f0ed;\n--cn-bg-note-tray: #cdcbc6;\n}\n\n.cn-bg-black {\n--background-secondary: #f0f0f0;\n--cn-bg-note-tray: #e2e2e2;\n}\n\n.cn-bg-warm {\n--background-secondary: #ebe5d9;\n--cn-bg-note-tray: #ddd6c8;\n}\n\n.cn-bg-zen {\n--background-secondary: #e6e3de;\n--cn-bg-note-tray: #c8c5c0;\n}\n\nbody.is-translucent.cn-sidebar-lifted .titlebar {\nbackground-color: var(--background-secondary);\n}"
     },
     "cn-ui-inter": {
       "general": "body.cn-ui-inter {\n--font-interface-theme: \"Inter\", -apple-system, system-ui, sans-serif;\n}"
@@ -129,6 +121,14 @@
     },
     "cn-heading-georgia": {
       "general": "body.cn-heading-georgia {\n--cn-heading-font: Georgia, serif;\n}"
+    },
+    "cn-headings-compact": {
+      "dark": ".cn-headings-compact, .theme-light.cn-headings-compact {\n--h1-size: 2.0em;\n--h2-size: 1.65em;\n--h3-size: 1.35em;\n--h4-size: 1.15em;\n--h5-size: 1.05em;\n--h6-size: 1.0em;\n}",
+      "light": ".theme-dark.cn-headings-compact, .cn-headings-compact {\n--h1-size: 2.0em;\n--h2-size: 1.65em;\n--h3-size: 1.35em;\n--h4-size: 1.15em;\n--h5-size: 1.05em;\n--h6-size: 1.0em;\n}"
+    },
+    "cn-headings-large": {
+      "dark": ".cn-headings-large, .theme-light.cn-headings-large {\n--h1-size: 2.9em;\n--h2-size: 2.3em;\n--h3-size: 1.8em;\n--h4-size: 1.4em;\n--h5-size: 1.2em;\n--h6-size: 1.05em;\n}",
+      "light": ".theme-dark.cn-headings-large, .cn-headings-large {\n--h1-size: 2.9em;\n--h2-size: 2.3em;\n--h3-size: 1.8em;\n--h4-size: 1.4em;\n--h5-size: 1.2em;\n--h6-size: 1.05em;\n}"
     }
   },
   "selectorImpacts": {},

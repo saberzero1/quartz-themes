@@ -68,23 +68,105 @@
   },
   "extras": null,
   "classSettings": {
+    "metadata-heading-off": {
+      "general": "body.metadata-heading-off .metadata-properties-heading {\ndisplay: none;\n}"
+    },
+    "metadata-dividers": {
+      "general": ".metadata-dividers {\n--metadata-divider-width: 1px;\n--metadata-gap: 0px;\n}"
+    },
+    "metadata-icons-off": {
+      "general": ".metadata-icons-off .metadata-property-icon {\ndisplay: none;\n}"
+    },
+    "tab-stack-top-flipped": {
+      "general": ".tab-stack-top-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: right;\n}"
+    },
+    "tab-stack-center": {
+      "general": ".tab-stack-center {\n--tab-stacked-text-align: center;\n}\n\n.tab-stack-center-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: center;\n}"
+    },
+    "tab-stack-center-flipped": {
+      "general": ".tab-stack-center-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: center;\n}"
+    },
+    "tab-stack-bottom": {
+      "general": ".tab-stack-bottom {\n--tab-stacked-text-transform: rotate(180deg);\n}\n\n.tab-stack-bottom-flipped {\n--tab-stacked-text-align: right;\n}"
+    },
+    "tab-stack-bottom-flipped": {
+      "general": ".tab-stack-bottom-flipped {\n--tab-stacked-text-align: right;\n}"
+    },
+    "window-title-off": {
+      "general": "body.window-title-off .titlebar-text {\ndisplay: none;\n}"
+    },
     "callouts-outlined": {
       "general": ".callouts-outlined .callout .callout-title {\nbackground-color: var(--background-primary);\nmargin-top: -24px;\nz-index: 200;\nwidth: fit-content;\npadding: 0 0.5em;\nmargin-left: -0.75em;\nletter-spacing: 0.05em;\nfont-variant-caps: all-small-caps;\n}\n\n.callouts-outlined .callout {\noverflow: visible;\n--callout-border-width: 1px;\n--callout-border-opacity: 0.5;\n--callout-title-size: 0.8em;\n--callout-blend-mode: normal;\nbackground-color: transparent;\n}\n\n.callouts-outlined .cm-embed-block.cm-callout {\npadding-top: 12px;\n}\n\n.callouts-outlined .callout-content .callout {\nmargin-top: 18px;\n}"
+    },
+    "checkbox-square": {
+      "general": ".checkbox-square {\n--checkbox-size: calc(var(--font-text-size) * 0.85);\n--checkbox-radius: 4px;\n--checkbox-top: 1px;\n--checkbox-left: 0px;\n--checkbox-margin: 0px 8px 0px -2em;\n}"
+    },
+    "minimal-strike-lists": {
+      "general": "body.minimal-strike-lists {\n--checklist-done-decoration: line-through;\n}"
     },
     "minimal-code-scroll": {
       "general": ".minimal-code-scroll {\n--code-white-space: pre;\n}"
     },
-    "trim-cols": {
-      "general": ".trim-cols {\n--table-white-space: normal;\n}\n\n.trim-cols .markdown-preview-view .table-view-table > tbody > tr > td {\nwhite-space: nowrap;\ntext-overflow: ellipsis;\noverflow: hidden;\n}"
-    },
     "embed-strict": {
       "general": ".embed-strict {\n--embed-background: transparent;\n--embed-border-start: 0;\n--embed-border-left: 0;\n--embed-padding: 0;\n}\n\n.embed-strict .markdown-embed-content {\n--folding-offset: 0px;\n}\n\n.embed-strict .internal-embed .markdown-embed, .embed-strict .markdown-preview-view .markdown-embed, .markdown-preview-view .markdown-embed {\npadding: 0;\n}\n\n.embed-strict .markdown-embed-title, .embed-strict .internal-embed .markdown-embed .markdown-embed-title {\ndisplay: none;\n}\n\n.embed-strict .internal-embed:not([src*=\"#^\"]) .markdown-embed-link {\nwidth: 24px;\nopacity: 0;\n}"
+    },
+    "embed-underline": {
+      "general": ".embed-underline .internal-embed:not(.pdf-embed, .bases-embed) {\ntext-decoration-line: underline;\ntext-decoration-style: var(--embed-decoration-style);\ntext-decoration-color: var(--embed-decoration-color);\n}"
     },
     "embed-hide-title": {
       "general": ".embed-hide-title .markdown-embed-title {\ndisplay: none;\n}"
     },
-    "embed-underline": {
-      "general": ".embed-underline .internal-embed:not(.pdf-embed, .bases-embed) {\ntext-decoration-line: underline;\ntext-decoration-style: var(--embed-decoration-style);\ntext-decoration-color: var(--embed-decoration-color);\n}"
+    "minimal-unstyled-tags": {
+      "general": "body.minimal-unstyled-tags {\n--tag-background: transparent;\n--tag-background-hover: transparent;\n--tag-border-width: 0px;\n--tag-padding-x: 0;\n--tag-padding-y: 0;\n--tag-size: inherit;\n--tag-color-hover: var(--text-accent-hover);\n}"
+    },
+    "disable-animations": {
+      "general": ".disable-animations {\n--ribbon-animation-duration: 0ms;\n--focus-animation-duration: 0ms;\n}"
+    },
+    "fast-animations": {
+      "general": ".fast-animations {\n--ribbon-animation-duration: 0.05s;\n--focus-animation-duration: 0.05s;\n}"
+    },
+    "maximize-tables-auto": {
+      "general": ".maximize-tables-auto {\n--container-table-max-width: 100%;\n--container-table-width: 100%;\n--container-dataview-table-width: 100%;\n--container-table-margin: 0;\n--table-drag-padding: var(--table-drag-space) 0;\n--table-max-width: 100%;\n--table-margin: var(--content-margin-start) auto;\n--table-width: auto;\n}\n\n.maximize-tables-auto .cards {\n--container-table-max-width: var(--max-width);\n}\n\n.maximize-tables-auto .cards .block-language-dataview {\n--table-margin: auto;\n}"
+    },
+    "maximize-tables": {
+      "general": ".maximize-tables-auto {\n--container-table-max-width: 100%;\n--container-table-width: 100%;\n--container-dataview-table-width: 100%;\n--container-table-margin: 0;\n--table-drag-padding: var(--table-drag-space) 0;\n--table-max-width: 100%;\n--table-margin: var(--content-margin-start) auto;\n--table-width: auto;\n}\n\n.maximize-tables-auto .cards {\n--container-table-max-width: var(--max-width);\n}\n\n.maximize-tables-auto .cards .block-language-dataview {\n--table-margin: auto;\n}\n\n.maximize-tables {\n--container-table-max-width: 100%;\n--container-table-width: 100%;\n--container-table-margin: 0;\n--table-drag-padding: var(--table-drag-space) 0;\n--table-min-width: min(var(--line-width), var(--max-width));\n--table-max-width: 100%;\n--table-margin: auto;\n--table-width: auto;\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n--table-wrapper-width: auto;\n}"
+    },
+    "trim-cols": {
+      "general": ".trim-cols {\n--table-white-space: normal;\n}\n\n.trim-cols .markdown-preview-view .table-view-table > tbody > tr > td {\nwhite-space: nowrap;\ntext-overflow: ellipsis;\noverflow: hidden;\n}"
+    },
+    "row-hover": {
+      "general": ".row-hover {\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n--table-row-background-hover: var(--hl1);\n--table-row-alt-background-hover: var(--hl1);\n}\n\nbody.row-hover .table-view-table > tbody > tr:hover {\nbackground-color: var(--table-row-background-hover);\n}"
+    },
+    "row-alt": {
+      "general": ".row-alt {\n--table-row-alt-background: var(--background-table-rows);\n--table-row-alt-background-hover: var(--background-table-rows);\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n}"
+    },
+    "col-alt": {
+      "general": ".col-alt .markdown-rendered:not(.cards) {\n--table-column-alt-background: var(--background-table-rows);\n}"
+    },
+    "table-tabular": {
+      "general": ".table-tabular table:not(.calendar) {\nfont-variant-numeric: tabular-nums;\n}"
+    },
+    "table-lines": {
+      "general": ".table-lines {\n--table-border-width: var(--border-width);\n--table-header-border-width: var(--border-width);\n--table-column-first-border-width: var(--border-width);\n--table-column-last-border-width:var(--border-width);\n--table-row-last-border-width: var(--border-width);\n--table-edge-cell-padding: 8px;\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n--table-add-button-border-width: 1px;\n}"
+    },
+    "table-nowrap": {
+      "general": ".table-nowrap {\n--table-white-space: nowrap;\n}\n\n.table-nowrap-first table thead > tr > th:first-child, .table-nowrap-first table tbody > tr > td:first-child {\n--table-white-space: nowrap;\n}\n\n.table-nowrap .table-wrap {\n--table-white-space: normal;\n}"
+    },
+    "table-numbers": {
+      "general": ".table-numbers {\n--table-numbers-padding-right: 0.5em;\n}\n\n.table-numbers table:not(.calendar) {\ncounter-reset: section;\n}\n\n.table-numbers table:not(.calendar) > thead > tr > th:first-child {\nwhite-space: nowrap;\n}\n\n.table-numbers table:not(.calendar) > thead > tr > th:first-child::before {\ncontent: \" \";\npadding-right: var(--table-numbers-padding-right);\ndisplay: inline-block;\nmin-width: 2em;\n}\n\n.table-numbers table:not(.calendar) > thead > tr > th:first-child .table-cell-wrapper {\ndisplay: inline-block;\nmin-width: 10px;\n}\n\n.table-numbers table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child, .table-numbers table:not(.calendar).table-editor > tbody > tr > td:first-child .table-cell-wrapper {\nwhite-space: nowrap;\n}\n\n.table-numbers table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child::before, .table-numbers table:not(.calendar).table-editor > tbody > tr > td:first-child .table-cell-wrapper::before {\ncounter-increment: section;\ncontent: counter(section) \" \";\ntext-align: center;\npadding-right: var(--table-numbers-padding-right);\ndisplay: inline-block;\nmin-width: 2em;\ncolor: var(--text-faint);\nfont-variant-numeric: tabular-nums;\n}\n\n.table-numbers .table-editor {\n--table-numbers-padding-right: 0;\n}"
+    },
+    "row-lines": {
+      "general": ".row-lines-off {\n--table-row-last-border-width: 0;\n--bases-table-row-border-width: 0;\n}\n\n.row-lines-off table:not(.calendar) tbody > tr > td, .row-lines-off .table-view-table > tbody > tr > td, .row-lines-off table:not(.calendar) tbody > tr:last-child > td {\nborder-bottom: none;\n}\n\n.row-lines:not(.table-lines) .markdown-preview-view:not(.cards) {\n--table-row-last-border-width: 0;\n}\n\n.row-lines:not(.table-lines) .markdown-preview-view:not(.cards) table:not(.calendar) tbody > tr:not(:last-child) > td, .row-lines:not(.table-lines) .markdown-preview-view:not(.cards) .table-view-table > tbody > tr:not(:last-child) > td {\nborder-bottom: var(--table-border-width) solid var(--table-border-color);\n}"
+    },
+    "col-lines": {
+      "general": ".col-lines {\n--bases-table-column-border-width: var(--table-border-width);\n}\n\n.col-lines table:not(.calendar) tbody > tr > td:not(:last-child), .col-lines .table-view-table thead > tr > th:not(:last-child), .col-lines .table-view-table > tbody > tr > td:not(:last-child) {\nborder-right: var(--table-border-width) solid var(--background-modifier-border);\n}"
+    },
+    "image-blend-light": {
+      "general": ".image-blend-light {\n--image-mix: multiply;\n}"
+    },
+    "tabs-modern": {
+      "dark": ".theme-light.minimal-eink-light.tabs-modern, .minimal-eink-dark.tabs-modern {\n--minimal-tab-text-color-active: var(--bg1);\n--tab-text-color-focused: var(--bg1);\n--tab-text-color-focused-active-current: var(--bg1);\n}",
+      "light": ".minimal-eink-light.tabs-modern, .theme-dark.minimal-eink-dark.tabs-modern {\n--minimal-tab-text-color-active: var(--bg1);\n--tab-text-color-focused: var(--bg1);\n--tab-text-color-focused-active-current: var(--bg1);\n}"
     },
     "h1-l": {
       "general": ".h1-l .markdown-reading-view h1:not(.embedded-note-title) {\nborder-bottom: 1px solid var(--h1l);\npadding-bottom: 0.4em;\nmargin-block-end: 0.6em;\n}"
@@ -104,90 +186,8 @@
     "h6-l": {
       "general": ".h6-l .markdown-reading-view h6 {\nborder-bottom: 1px solid var(--h6l);\npadding-bottom: 0.4em;\nmargin-block-end: 0.6em;\n}"
     },
-    "image-blend-light": {
-      "general": ".image-blend-light {\n--image-mix: multiply;\n}"
-    },
-    "checkbox-square": {
-      "general": ".checkbox-square {\n--checkbox-size: calc(var(--font-text-size) * 0.85);\n--checkbox-radius: 4px;\n--checkbox-top: 1px;\n--checkbox-left: 0px;\n--checkbox-margin: 0px 8px 0px -2em;\n}"
-    },
-    "minimal-strike-lists": {
-      "general": "body.minimal-strike-lists {\n--checklist-done-decoration: line-through;\n}"
-    },
-    "metadata-heading-off": {
-      "general": "body.metadata-heading-off .metadata-properties-heading {\ndisplay: none;\n}"
-    },
-    "metadata-icons-off": {
-      "general": ".metadata-icons-off .metadata-property-icon {\ndisplay: none;\n}"
-    },
-    "metadata-dividers": {
-      "general": ".metadata-dividers {\n--metadata-divider-width: 1px;\n--metadata-gap: 0px;\n}"
-    },
-    "maximize-tables-auto": {
-      "general": ".maximize-tables-auto {\n--container-table-max-width: 100%;\n--container-table-width: 100%;\n--container-dataview-table-width: 100%;\n--container-table-margin: 0;\n--table-drag-padding: var(--table-drag-space) 0;\n--table-max-width: 100%;\n--table-margin: var(--content-margin-start) auto;\n--table-width: auto;\n}\n\n.maximize-tables-auto .cards {\n--container-table-max-width: var(--max-width);\n}\n\n.maximize-tables-auto .cards .block-language-dataview {\n--table-margin: auto;\n}"
-    },
-    "maximize-tables": {
-      "general": ".maximize-tables-auto {\n--container-table-max-width: 100%;\n--container-table-width: 100%;\n--container-dataview-table-width: 100%;\n--container-table-margin: 0;\n--table-drag-padding: var(--table-drag-space) 0;\n--table-max-width: 100%;\n--table-margin: var(--content-margin-start) auto;\n--table-width: auto;\n}\n\n.maximize-tables-auto .cards {\n--container-table-max-width: var(--max-width);\n}\n\n.maximize-tables-auto .cards .block-language-dataview {\n--table-margin: auto;\n}\n\n.maximize-tables {\n--container-table-max-width: 100%;\n--container-table-width: 100%;\n--container-table-margin: 0;\n--table-drag-padding: var(--table-drag-space) 0;\n--table-min-width: min(var(--line-width), var(--max-width));\n--table-max-width: 100%;\n--table-margin: auto;\n--table-width: auto;\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n--table-wrapper-width: auto;\n}"
-    },
-    "row-lines": {
-      "general": ".row-lines-off {\n--table-row-last-border-width: 0;\n--bases-table-row-border-width: 0;\n}\n\n.row-lines-off table:not(.calendar) tbody > tr > td, .row-lines-off .table-view-table > tbody > tr > td, .row-lines-off table:not(.calendar) tbody > tr:last-child > td {\nborder-bottom: none;\n}\n\n.row-lines:not(.table-lines) .markdown-preview-view:not(.cards) {\n--table-row-last-border-width: 0;\n}\n\n.row-lines:not(.table-lines) .markdown-preview-view:not(.cards) table:not(.calendar) tbody > tr:not(:last-child) > td, .row-lines:not(.table-lines) .markdown-preview-view:not(.cards) .table-view-table > tbody > tr:not(:last-child) > td {\nborder-bottom: var(--table-border-width) solid var(--table-border-color);\n}"
-    },
-    "col-lines": {
-      "general": ".col-lines {\n--bases-table-column-border-width: var(--table-border-width);\n}\n\n.col-lines table:not(.calendar) tbody > tr > td:not(:last-child), .col-lines .table-view-table thead > tr > th:not(:last-child), .col-lines .table-view-table > tbody > tr > td:not(:last-child) {\nborder-right: var(--table-border-width) solid var(--background-modifier-border);\n}"
-    },
-    "table-lines": {
-      "general": ".table-lines {\n--table-border-width: var(--border-width);\n--table-header-border-width: var(--border-width);\n--table-column-first-border-width: var(--border-width);\n--table-column-last-border-width:var(--border-width);\n--table-row-last-border-width: var(--border-width);\n--table-edge-cell-padding: 8px;\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n--table-add-button-border-width: 1px;\n}"
-    },
-    "row-alt": {
-      "general": ".row-alt {\n--table-row-alt-background: var(--background-table-rows);\n--table-row-alt-background-hover: var(--background-table-rows);\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n}"
-    },
-    "col-alt": {
-      "general": ".col-alt .markdown-rendered:not(.cards) {\n--table-column-alt-background: var(--background-table-rows);\n}"
-    },
-    "table-tabular": {
-      "general": ".table-tabular table:not(.calendar) {\nfont-variant-numeric: tabular-nums;\n}"
-    },
-    "table-numbers": {
-      "general": ".table-numbers {\n--table-numbers-padding-right: 0.5em;\n}\n\n.table-numbers table:not(.calendar) {\ncounter-reset: section;\n}\n\n.table-numbers table:not(.calendar) > thead > tr > th:first-child {\nwhite-space: nowrap;\n}\n\n.table-numbers table:not(.calendar) > thead > tr > th:first-child::before {\ncontent: \" \";\npadding-right: var(--table-numbers-padding-right);\ndisplay: inline-block;\nmin-width: 2em;\n}\n\n.table-numbers table:not(.calendar) > thead > tr > th:first-child .table-cell-wrapper {\ndisplay: inline-block;\nmin-width: 10px;\n}\n\n.table-numbers table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child, .table-numbers table:not(.calendar).table-editor > tbody > tr > td:first-child .table-cell-wrapper {\nwhite-space: nowrap;\n}\n\n.table-numbers table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child::before, .table-numbers table:not(.calendar).table-editor > tbody > tr > td:first-child .table-cell-wrapper::before {\ncounter-increment: section;\ncontent: counter(section) \" \";\ntext-align: center;\npadding-right: var(--table-numbers-padding-right);\ndisplay: inline-block;\nmin-width: 2em;\ncolor: var(--text-faint);\nfont-variant-numeric: tabular-nums;\n}\n\n.table-numbers .table-editor {\n--table-numbers-padding-right: 0;\n}"
-    },
-    "table-nowrap": {
-      "general": ".table-nowrap {\n--table-white-space: nowrap;\n}\n\n.table-nowrap-first table thead > tr > th:first-child, .table-nowrap-first table tbody > tr > td:first-child {\n--table-white-space: nowrap;\n}\n\n.table-nowrap .table-wrap {\n--table-white-space: normal;\n}"
-    },
-    "row-hover": {
-      "general": ".row-hover {\n--table-edge-cell-padding-first: 8px;\n--table-edge-cell-padding-last: 8px;\n--table-row-background-hover: var(--hl1);\n--table-row-alt-background-hover: var(--hl1);\n}\n\nbody.row-hover .table-view-table > tbody > tr:hover {\nbackground-color: var(--table-row-background-hover);\n}"
-    },
-    "tabs-modern": {
-      "dark": ".theme-light.minimal-eink-light.tabs-modern, .minimal-eink-dark.tabs-modern {\n--minimal-tab-text-color-active: var(--bg1);\n--tab-text-color-focused: var(--bg1);\n--tab-text-color-focused-active-current: var(--bg1);\n}",
-      "light": ".minimal-eink-light.tabs-modern, .theme-dark.minimal-eink-dark.tabs-modern {\n--minimal-tab-text-color-active: var(--bg1);\n--tab-text-color-focused: var(--bg1);\n--tab-text-color-focused-active-current: var(--bg1);\n}"
-    },
     "tab-stack-top": {
       "general": ".tab-stack-top-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: right;\n}"
-    },
-    "tab-stack-top-flipped": {
-      "general": ".tab-stack-top-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: right;\n}"
-    },
-    "tab-stack-bottom": {
-      "general": ".tab-stack-bottom {\n--tab-stacked-text-transform: rotate(180deg);\n}\n\n.tab-stack-bottom-flipped {\n--tab-stacked-text-align: right;\n}"
-    },
-    "tab-stack-bottom-flipped": {
-      "general": ".tab-stack-bottom-flipped {\n--tab-stacked-text-align: right;\n}"
-    },
-    "tab-stack-center": {
-      "general": ".tab-stack-center {\n--tab-stacked-text-align: center;\n}\n\n.tab-stack-center-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: center;\n}"
-    },
-    "tab-stack-center-flipped": {
-      "general": ".tab-stack-center-flipped {\n--tab-stacked-text-transform: rotate(180deg);\n--tab-stacked-text-align: center;\n}"
-    },
-    "minimal-unstyled-tags": {
-      "general": "body.minimal-unstyled-tags {\n--tag-background: transparent;\n--tag-background-hover: transparent;\n--tag-border-width: 0px;\n--tag-padding-x: 0;\n--tag-padding-y: 0;\n--tag-size: inherit;\n--tag-color-hover: var(--text-accent-hover);\n}"
-    },
-    "window-title-off": {
-      "general": "body.window-title-off .titlebar-text {\ndisplay: none;\n}"
-    },
-    "disable-animations": {
-      "general": ".disable-animations {\n--ribbon-animation-duration: 0ms;\n--focus-animation-duration: 0ms;\n}"
-    },
-    "fast-animations": {
-      "general": ".fast-animations {\n--ribbon-animation-duration: 0.05s;\n--focus-animation-duration: 0.05s;\n}"
     }
   },
   "selectorImpacts": {},

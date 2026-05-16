@@ -64,9 +64,14 @@
   },
   "extras": null,
   "classSettings": {
-    "accent-override": {
-      "dark": ".accent-override {\n--color-accent: var(--accent-colour, #0f0f3d);\n/* Skip the dim-down formula — use the picked colour as-is. */\n--background-primary: oklch(from var(--color-accent) l c h);\n}\n\n.accent-override[data-folder-accent] {\n--background-primary: oklch(from var(--color-accent) calc(l * 0.4 + 0.06) calc(c * 0.8) h);\n}",
-      "light": ".accent-override {\n--color-accent: var(--accent-colour, #0d0d73);\n}"
+    "highlight-subtle": {
+      "general": "body.highlight-subtle {\n--text-highlight-bg: oklch(from var(--complement)\n\t\tclamp(0.2, calc(var(--dynamic-switch) - var(--dynamic-switch)) * 0.7 + 0.1, 0.8)\n\t\tc\n\t\th\n\t\t/ 0.8\n\t);\n--text-highlight: oklch(from var(--complement)\n\t\tclamp(0.5, calc((0.9 - calc(var(--dynamic-switch) - var(--dynamic-switch))) * 0.7 + 0.25), 0.9)\n\t\tcalc(c * 0.8)\n\t\th\n\t\t/ 0.8\n\t);\n}"
+    },
+    "highlight-monochrome-high": {
+      "general": "body.highlight-monochrome-high {\n--text-highlight-bg: var(--text-muted);\n--text-highlight: var(--background-primary);\n}"
+    },
+    "highlight-monochrome-low": {
+      "general": "body.highlight-monochrome-low {\n--text-highlight-bg: var(--background-modifier-border);\n--text-highlight: var(--text-muted);\n}"
     },
     "heading-colour": {
       "general": "body.heading-colour {\n--h-l-min: 0.4;\n--h-l-max: 0.9;\n--h1-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 10) / 1.0);\n--h2-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 5) / 0.95);\n--h3-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 0) / 0.90);\n--h4-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 5) / 0.85);\n--h5-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 10) / 0.80);\n--h6-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 15) / 0.75);\n}\n\nbody.heading-colourful {\n--h1-color: oklch(from var(--complement)  clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 1.00);\n--h2-color: oklch(from var(--hue-4)   clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.95);\n--h3-color: oklch(from var(--triadic)     clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.90);\n--h4-color: oklch(from var(--hue-3) clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.85);\n--h5-color: oklch(from var(--hue-2) clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.80);\n--h6-color: oklch(from var(--hue-1) clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.75);\n}",
@@ -82,15 +87,6 @@
       "dark": ".checkbox-coloured {\n--cb-h2-color: oklch(from var(--hue-4)   clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.95);\n--cb-h3-color: oklch(from var(--triadic)     clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.90);\n--cb-h5-color: oklch(from var(--hue-2) clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.80);\n--cb-h6-color: oklch(from var(--hue-1) clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.75);\n}",
       "light": ".checkbox-coloured {\n--cb-h2-color: oklch(from var(--hue-4)   clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.95);\n--cb-h3-color: oklch(from var(--triadic)     clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.90);\n--cb-h5-color: oklch(from var(--hue-2) clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.80);\n--cb-h6-color: oklch(from var(--hue-1) clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.75);\n}"
     },
-    "highlight-subtle": {
-      "general": "body.highlight-subtle {\n--text-highlight-bg: oklch(from var(--complement)\n\t\tclamp(0.2, calc(var(--dynamic-switch) - var(--dynamic-switch)) * 0.7 + 0.1, 0.8)\n\t\tc\n\t\th\n\t\t/ 0.8\n\t);\n--text-highlight: oklch(from var(--complement)\n\t\tclamp(0.5, calc((0.9 - calc(var(--dynamic-switch) - var(--dynamic-switch))) * 0.7 + 0.25), 0.9)\n\t\tcalc(c * 0.8)\n\t\th\n\t\t/ 0.8\n\t);\n}"
-    },
-    "highlight-monochrome-high": {
-      "general": "body.highlight-monochrome-high {\n--text-highlight-bg: var(--text-muted);\n--text-highlight: var(--background-primary);\n}"
-    },
-    "highlight-monochrome-low": {
-      "general": "body.highlight-monochrome-low {\n--text-highlight-bg: var(--background-modifier-border);\n--text-highlight: var(--text-muted);\n}"
-    },
     "heading-size-compact": {
       "general": "body.heading-size-compact {\n--h1-size: 1.8em;\n--h2-size: 1.5em;\n--h3-size: 1.3em;\n--h4-size: 1.15em;\n--h5-size: 1.05em;\n--h6-size: 1em;\n}"
     },
@@ -103,17 +99,18 @@
     "line-height-compact": {
       "general": "body.line-height-compact {\n--line-height-normal: 1.4;\n}"
     },
-    "enable-uppercase": {
-      "general": "body.enable-uppercase .inline-title {\ntext-transform: uppercase;\nletter-spacing: 0.01em;\n}\n\nbody.enable-uppercase .titlebar button, body.enable-uppercase .view-actions button, body.enable-uppercase .view-action {\ntext-transform: uppercase;\nletter-spacing: 0.05em;\n}\n\nbody.enable-uppercase th {\ntext-transform: uppercase;\nletter-spacing: 0.03em;\n}"
-    },
-    "table-alternate-rows": {
-      "general": "body.table-alternate-rows tr:nth-child(even) td {\nbackground: oklch(from var(--cursor-line-color) l c h / 0.2);\n}"
+    "accent-override": {
+      "dark": ".accent-override {\n--color-accent: var(--accent-colour, #0f0f3d);\n/* Skip the dim-down formula — use the picked colour as-is. */\n--background-primary: oklch(from var(--color-accent) l c h);\n}\n\n.accent-override[data-folder-accent] {\n--background-primary: oklch(from var(--color-accent) calc(l * 0.4 + 0.06) calc(c * 0.8) h);\n}",
+      "light": ".accent-override {\n--color-accent: var(--accent-colour, #0d0d73);\n}"
     },
     "folder-inverted": {
       "general": "body.folder-inverted .nav-folder-title-content {\ntext-decoration: none;\nbackground-color: var(--text-muted);\ncolor: var(--background-primary);\n}"
     },
     "folder-plain": {
       "general": "body.folder-plain .nav-folder-title-content {\nbackground-color: transparent;\nfont-weight: inherit;\nfont-size: inherit;\n}"
+    },
+    "canvas-hide-title": {
+      "general": "body.canvas-hide-title .canvas-node .inline-title {\ndisplay: none;\n}"
     },
     "link-wavy": {
       "general": "body.link-wavy {\n--internal-link-decoration-style: wavy;\n}"
@@ -124,8 +121,11 @@
     "link-none": {
       "general": "body.link-none {\n--internal-link-decoration-style: none;\n--link-decoration: none;\n}"
     },
-    "canvas-hide-title": {
-      "general": "body.canvas-hide-title .canvas-node .inline-title {\ndisplay: none;\n}"
+    "table-alternate-rows": {
+      "general": "body.table-alternate-rows tr:nth-child(even) td {\nbackground: oklch(from var(--cursor-line-color) l c h / 0.2);\n}"
+    },
+    "enable-uppercase": {
+      "general": "body.enable-uppercase .inline-title {\ntext-transform: uppercase;\nletter-spacing: 0.01em;\n}\n\nbody.enable-uppercase .titlebar button, body.enable-uppercase .view-actions button, body.enable-uppercase .view-action {\ntext-transform: uppercase;\nletter-spacing: 0.05em;\n}\n\nbody.enable-uppercase th {\ntext-transform: uppercase;\nletter-spacing: 0.03em;\n}"
     }
   },
   "selectorImpacts": {},

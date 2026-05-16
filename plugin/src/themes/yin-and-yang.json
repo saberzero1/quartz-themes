@@ -82,8 +82,8 @@
   },
   "extras": null,
   "classSettings": {
-    "rainbow-headers": {
-      "general": ".rainbow-headers .markdown-preview-section h1 {\ncolor: var(--text-title-h1);\n}\n\n.rainbow-headers .markdown-preview-section h2 {\ncolor: var(--text-title-h2);\n}\n\n.rainbow-headers .markdown-preview-section h3 {\ncolor: var(--text-title-h3);\n}\n\n.rainbow-headers .markdown-preview-section h4 {\ncolor: var(--text-title-h4);\n}\n\n.rainbow-headers .markdown-preview-section h5 {\ncolor: var(--text-title-h5);\n}\n\n.rainbow-headers .markdown-preview-section h6 {\ncolor: var(--text-title-h6);\n}"
+    "no-show-titlebar-text": {
+      "general": ".no-show-titlebar-text .titlebar-text {\ndisplay: none;\n}"
     },
     "spec-font-head": {
       "general": ".spec-font-head .markdown-preview-view h1 {\nfont-family: var(--f-header-1-pre);\n}\n\n.spec-font-head .markdown-preview-section h2 {\nfont-family: var(--f-header-2-pre);\n}\n\n.spec-font-head .markdown-preview-section h3 {\nfont-family: var(--f-header-3-pre);\n}\n\n.spec-font-head .markdown-preview-section h4 {\nfont-family: var(--f-header-4-pre);\n}\n\n.spec-font-head .markdown-preview-section h5 {\nfont-family: var(--f-header-5-pre);\n}\n\n.spec-font-head .markdown-preview-section h6 {\nfont-family: var(--f-header-6-pre);\n}"
@@ -94,20 +94,11 @@
     "spec-color-head": {
       "general": ".spec-color-head .markdown-preview-section h1 {\ncolor: var(--sphd-pre-1);\n}\n\n.spec-color-head .markdown-preview-section h2 {\ncolor: var(--sphd-pre-2);\n}\n\n.spec-color-head .markdown-preview-section h3 {\ncolor: var(--sphd-pre-3);\n}\n\n.spec-color-head .markdown-preview-section h4 {\ncolor: var(--sphd-pre-4);\n}\n\n.spec-color-head .markdown-preview-section h5 {\ncolor: var(--sphd-pre-5);\n}\n\n.spec-color-head .markdown-preview-section h6 {\ncolor: var(--sphd-pre-6);\n}"
     },
-    "min-clean-embed": {
-      "general": ".min-clean-embed .markdown-preview-view .markdown-embed-content {\noverflow: visible;\n}\n\n.min-clean-embed .markdown-embed-title {\ndisplay: none;\n}\n\n.min-clean-embed .internal-embed .markdown-embed {\nborder: none;\nbackground-color: transparent;\n}\n\n.min-clean-embed .internal-embed .markdown-embed .markdown-preview-view {\npadding: 0;\nmargin: 0;\n}\n\n.min-clean-embed .internal-embed .markdown-embed-link {\ntop: -5px;\nright: -5px;\nline-height: inherit;\n}\n\n.min-clean-embed .markdown-preview-view .markdown-embed-content, .min-clean-embed .markdown-preview-view .markdown-embed-content > .markdown-preview-view {\nmax-height: none;\n}"
+    "rainbow-headers": {
+      "general": ".rainbow-headers .markdown-preview-section h1 {\ncolor: var(--text-title-h1);\n}\n\n.rainbow-headers .markdown-preview-section h2 {\ncolor: var(--text-title-h2);\n}\n\n.rainbow-headers .markdown-preview-section h3 {\ncolor: var(--text-title-h3);\n}\n\n.rainbow-headers .markdown-preview-section h4 {\ncolor: var(--text-title-h4);\n}\n\n.rainbow-headers .markdown-preview-section h5 {\ncolor: var(--text-title-h5);\n}\n\n.rainbow-headers .markdown-preview-section h6 {\ncolor: var(--text-title-h6);\n}"
     },
     "naked-bq": {
       "general": ".naked-bq .markdown-preview-view blockquote:before {\ncontent: \"\";\nmargin-right: 0em;\n}"
-    },
-    "no-show-titlebar-text": {
-      "general": ".no-show-titlebar-text .titlebar-text {\ndisplay: none;\n}"
-    },
-    "show-fx-folder-icons": {
-      "general": ".show-fx-folder-icons .nav-folder-title .collapse-icon {\ndisplay: none;\n}\n\n.show-fx-folder-icons .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {\nbackground-color: currentColor;\n-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path fill=\"red\" d=\"M20 18H4V8h16m0-2h-8l-2-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z\"></path></svg>');\nfont-size: calc(var(--large-font-size) + 5px);\ndisplay: inline-block;\nvertical-align: -0.125em;\nmargin-right: 8px;\nmargin-left: -1px;\n}\n\n.show-fx-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before {\ncontent: \"☐\";\nfont-family: sans-serif;\nalign-items: center;\njustify-content: center;\nbackground-color: currentColor;\n-webkit-mask-repeat: no-repeat;\n-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path fill=\"red\" d=\"M6.1 10L4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5H6.1M19 18H6l1.6-6h13L19 18z\"></path></svg>');\nfont-size: calc(var(--large-font-size) + 5px);\ndisplay: inline-block;\nvertical-align: -0.125em;\nmargin-right: 8px;\nmargin-left: -1px;\n}"
-    },
-    "no-fx-reverse": {
-      "general": ".no-fx-reverse .nav-file-title-content:before {\ncontent: \"\";\n}"
     },
     "no-status-icon": {
       "general": ".no-status-icon .status-bar-item::before {\npadding-left: unset;\ncolor: unset;\ncontent: unset;\npadding-bottom: unset;\ntext-align: unset;\nalign-items: unset;\njustify-content: unset;\nbackground-color: unset;\n-webkit-mask-image: unset;\n}"
@@ -115,6 +106,15 @@
     "fx-rel-lines": {
       "general": ".fx-rel-lines .nav-folder-children .nav-folder-children {\nmargin-left: 12px;\npadding-left: 0;\nborder-left: 1px solid var(--background-modifier-border);\ntransition: all 0.5s ease-in-out;\n}\n\n.fx-rel-lines .nav-folder-children .nav-folder-children:hover {\nborder-left-color: var(--background-modifier-accent);\n}",
       "light": ".fx-rel-lines .theme-light .nav-folder-children .nav-folder-children {\nborder-left: 1px solid var(--background-tertiary);\n}"
+    },
+    "min-clean-embed": {
+      "general": ".min-clean-embed .markdown-preview-view .markdown-embed-content {\noverflow: visible;\n}\n\n.min-clean-embed .markdown-embed-title {\ndisplay: none;\n}\n\n.min-clean-embed .internal-embed .markdown-embed {\nborder: none;\nbackground-color: transparent;\n}\n\n.min-clean-embed .internal-embed .markdown-embed .markdown-preview-view {\npadding: 0;\nmargin: 0;\n}\n\n.min-clean-embed .internal-embed .markdown-embed-link {\ntop: -5px;\nright: -5px;\nline-height: inherit;\n}\n\n.min-clean-embed .markdown-preview-view .markdown-embed-content, .min-clean-embed .markdown-preview-view .markdown-embed-content > .markdown-preview-view {\nmax-height: none;\n}"
+    },
+    "show-fx-folder-icons": {
+      "general": ".show-fx-folder-icons .nav-folder-title .collapse-icon {\ndisplay: none;\n}\n\n.show-fx-folder-icons .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {\nbackground-color: currentColor;\n-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path fill=\"red\" d=\"M20 18H4V8h16m0-2h-8l-2-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z\"></path></svg>');\nfont-size: calc(var(--large-font-size) + 5px);\ndisplay: inline-block;\nvertical-align: -0.125em;\nmargin-right: 8px;\nmargin-left: -1px;\n}\n\n.show-fx-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before {\ncontent: \"☐\";\nfont-family: sans-serif;\nalign-items: center;\njustify-content: center;\nbackground-color: currentColor;\n-webkit-mask-repeat: no-repeat;\n-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path fill=\"red\" d=\"M6.1 10L4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5H6.1M19 18H6l1.6-6h13L19 18z\"></path></svg>');\nfont-size: calc(var(--large-font-size) + 5px);\ndisplay: inline-block;\nvertical-align: -0.125em;\nmargin-right: 8px;\nmargin-left: -1px;\n}"
+    },
+    "no-fx-reverse": {
+      "general": ".no-fx-reverse .nav-file-title-content:before {\ncontent: \"\";\n}"
     },
     "macOS-translucent": {
       "general": ".is-translucent .titlebar {\nbackground-color: var(--background-translucent);\n}"

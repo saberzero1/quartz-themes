@@ -128,26 +128,68 @@
   },
   "extras": null,
   "classSettings": {
-    "hide-properties-in-statusbar": {
-      "general": ".hide-properties-in-statusbar .status-bar-item.plugin-properties {\ndisplay:none;\n}"
+    "angular-shapes": {
+      "general": ".angular-shapes {\n--radius-xs:0;\n--radius-s:0;\n--radius-m:0;\n--radius-l:0;\n--radius-xl:0;\n--input-radius:0;\n--tab-radius-active:0;\n}\n\nbody.angular-shapes .checkbox-container {\nborder-radius:0;\nwidth:20px;\nheight:20px;\n}"
     },
-    "hide-backlinks-status-bar": {
-      "general": ".hide-backlinks-status-bar .status-bar-item.plugin-backlink {\ndisplay:none;\n}"
+    "unrestricted-line-length-tables": {
+      "general": ".markdown-preview-view):has(table {\n--file-line-width:100%;\n}"
     },
-    "hide-pane-relief-focus-lock-status-bar": {
-      "general": ".hide-pane-relief-focus-lock-status-bar .status-bar-item.plugin-pane-relief {\ndisplay:none;\n}"
+    "uncolored-bold": {
+      "general": ".uncolored-bold :is(strong, .cm-strong) {\n--bold-color:var(--text-normal);\n}"
     },
-    "hide-languagetool-status-bar": {
-      "general": ".hide-languagetool-status-bar .status-bar-item.plugin-obsidian-languagetool-plugin {\ndisplay:none;\n}"
+    "uncolored-italic": {
+      "general": ".uncolored-italic :is(em, .cm-em) {\n--italic-color:var(--text-normal);\n}"
+    },
+    "notices-at-bottom-right": {
+      "general": ".notices-at-bottom-right .notice-container {\nbottom:calc(var(--status-bar-font-size) + var(--notice-spacing));\ntop:unset;\nflex-direction:column-reverse;\ndisplay:flex;\n}"
     },
     "hide-pandoc-reference-list-status-bar": {
       "general": ".hide-pandoc-reference-list-status-bar .status-bar-item.plugin-obsidian-pandoc-reference-list {\ndisplay:none;\n}"
     },
+    "hide-longform-status-bar": {
+      "general": ".hide-longform-status-bar .status-bar-item.plugin-longform {\ndisplay:none;\n}"
+    },
+    "hide-languagetool-status-bar": {
+      "general": ".hide-languagetool-status-bar .status-bar-item.plugin-obsidian-languagetool-plugin {\ndisplay:none;\n}"
+    },
+    "hide-pane-relief-focus-lock-status-bar": {
+      "general": ".hide-pane-relief-focus-lock-status-bar .status-bar-item.plugin-pane-relief {\ndisplay:none;\n}"
+    },
+    "hide-properties-in-statusbar": {
+      "general": ".hide-properties-in-statusbar .status-bar-item.plugin-properties {\ndisplay:none;\n}"
+    },
     "hide-harper-status-bar": {
       "general": ".hide-harper-status-bar .status-bar-item.plugin-harper {\ndisplay:none;\n}"
     },
-    "notices-at-bottom-right": {
-      "general": ".notices-at-bottom-right .notice-container {\nbottom:calc(var(--status-bar-font-size) + var(--notice-spacing));\ntop:unset;\nflex-direction:column-reverse;\ndisplay:flex;\n}"
+    "hide-backlinks-status-bar": {
+      "general": ".hide-backlinks-status-bar .status-bar-item.plugin-backlink {\ndisplay:none;\n}"
+    },
+    "readable-line-length-toggle": {
+      "general": ".readable-line-length-toggle {\n--file-line-width:100%;\n}"
+    },
+    "vim-active-visual-line": {
+      "general": ".vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer .cm-fat-cursor.cm-cursor-primary {\n--cursorline-bg:hsl(var(--color-accent-hsl),12.5%);\nborder-image:conic-gradient(var(--cursorline-bg)0 0)fill 0/0/0 100vw;\nmix-blend-mode:hard-light;\n}\n\n.vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer {\nanimation:none!important;\n}"
+    },
+    "no-mouse-hovers": {
+      "general": ".no-mouse-hovers .tooltip:not(.mod-error) {\ndisplay:none;\n}"
+    },
+    "show-various-complements-icon": {
+      "general": ".show-various-complements-icon .various-complements__suggestion-item {\npadding-left:25px!important;\n}\n\n.show-various-complements-icon .various-complements__suggestion-item:before {\nmargin-top:0;\n}"
+    },
+    "hide-attachment-folders": {
+      "general": ".hide-attachment-folders .nav-folder-title:is([data-path$=\\/attachments i], [data-path=attachments i]) {\ndisplay:none;\n}"
+    },
+    "bases-hide-column-header-icons": {
+      "general": "body.bases-hide-column-header-icons .bases-table-header-icon {\ndisplay:none;\n}"
+    },
+    "longform-text-indent": {
+      "general": ".longform-text-indent div:has(>p)+div>p {\ntext-indent:1.5em;\nmargin-top:0;\n}\n\n.longform-text-indent div:has(+div>p)>p {\nmargin-bottom:0;\n}"
+    },
+    "longform-tasks-different": {
+      "general": "body.longform-tasks-different :is(.writing, ul.contains-task-list) {\ncolor:var(--text-faint);\n}"
+    },
+    "wordcount-only-when-writing": {
+      "general": ".longform-leaf)))+.status-bar :is(.plugin-word-count, .plugin-better-word-count) {\ndisplay:none;\n}"
     },
     "colorscheme-macos-native": {
       "dark": ".theme-light, .theme-dark {\n--bg-hue:0;\n--bg-sat:0%;\n}",
@@ -164,48 +206,6 @@
     "colorscheme-grubox": {
       "dark": ".theme-dark {\n--color-red:#f84935;\n--color-green:#b8ba26;\n--color-yellow:#fabd2e;\n--color-blue:#83a598;\n--color-purple:#d4879c;\n--color-cyan:#8ec07c;\n--color-orange:#fe811b;\n--color-pink:var(--color-purple);\n--color-pink-rgb:211,134,155;\n--color-red-rgb:248,73,52;\n--color-green-rgb:184,187,38;\n--color-yellow-rgb:250,189,47;\n--color-blue-rgb:131,165,152;\n--color-purple-rgb:211,134,155;\n--color-cyan-rgb:142,192,124;\n--color-orange-rgb:254,128,25;\n--color-base-00:#1f1f1f;\n--color-base-05:#292929;\n--color-base-10:#32302f;\n--color-base-20:#3b3735;\n--color-base-25:#4f4945;\n--color-base-30:#655b53;\n--color-base-35:#7d6f64;\n--color-base-40:#918273;\n--color-base-50:#a89985;\n--color-base-60:#bdaf93;\n--color-base-75:#b1a38b;\n--color-base-85:#c9ba9c;\n--color-base-90:#ebdbb2;\n--color-base-95:#f2e5bb;\n--color-base-100:#fbf0c6;\n--bg1:var(--color-base-05);\n--bg2:var(--color-base-10);\n--bg3:var(--color-base-05);\n--bg4:var(--color-base-10);\n--bg5:var(--color-base-10);\n--bg6:var(--color-base-05);\n--background-primary:var(--color-base-05);\n--background-primary-alt:var(--color-base-10);\n--background-secondary:var(--color-base-05);\n--background-secondary-alt:var(--color-base-25);\n--background-modifier-hover:var(--color-base-10);\n--background-modifier-active-hover:var(--color-base-20);\n--background-modifier-border:var(--color-base-25);\n--background-modifier-border-hover:var(--color-base-30);\n--background-modifier-border-focus:var(--color-base-20);\n--background-modifier-error-rgb:248,73,52;\n--background-modifier-error:var(--color-red);\n--background-modifier-error-hover:var(--color-red-rgb);\n--background-modifier-success-rgb:184,187,38;\n--background-modifier-success:var(--color-green);\n--background-modifier-message:var(--color-base-10);\n--background-modifier-form-field:var(--color-base-20);\n--h1-color:var(--color-orange);\n--h2-color:var(--color-green);\n--h3-color:var(--color-yellow);\n--h4-color:var(--color-red);\n--h5-color:var(--color-cyan);\n--h6-color:var(--color-blue);\n--alt-heading-color:var(--color-green);\n--text-normal:var(--color-base-90);\n--icon-color:var(--color-red);\n--color-accent:var(--color-red);\n--color-accent-hsl:358 100% 31%;\n--interactive-accent:var(--color-orange);\n--secondary-accent:var(--color-green);\n--hover-accent:#d85f0e;\n--link-unresolved-color:var(--color-cyan);\n}\n\n.theme-dark ::selection {\nbackground-color:var(--color-base-20);\ncolor:var(--color-base-100);\n}\n\n.theme-dark :is(.nav-file-title, .nav-folder-title) {\ncolor:var(--color-base-85);\n}",
       "light": ".theme-light {\n--color-red:#9e0005;\n--color-green:#77710e;\n--color-yellow:#b37614;\n--color-blue:#076678;\n--color-purple:#8e3e6f;\n--color-cyan:#427b58;\n--color-orange:#b03a03;\n--color-red-rgb:157,0,6;\n--color-green-rgb:121,116,14;\n--color-yellow-rgb:181,118,20;\n--color-blue-rgb:7,2,120;\n--color-purple-rgb:143,63,113;\n--color-cyan-rgb:66,123,88;\n--color-orange-rgb:175,58,3;\n--color-pink:var(--color-purple);\n--color-pink-rgb:var(--color-purple-rgb);\n--color-base-00:#fbf0c6;\n--color-base-05:#f2e5bb;\n--color-base-10:#ebdbb2;\n--color-base-20:#d4c3a0;\n--color-base-25:#c9ba9c;\n--color-base-30:#bdaf93;\n--color-base-35:#b1a38b;\n--color-base-40:#a89985;\n--color-base-50:#918273;\n--color-base-60:#7d6f64;\n--color-base-70:#655b53;\n--color-base-80:#4f4945;\n--color-base-85:#46403e;\n--color-base-90:#3b3735;\n--color-base-95:#32302f;\n--color-base-100:#292929;\n--bg-hue:39;\n--bg-sat:0%;\n--bg2:var(--color-base-05);\n--bg3:var(--color-base-10);\n--bg4:var(--color-base-20);\n--bg5:var(--color-base-25);\n--bg6:var(--color-base-30);\n--color-accent:var(--color-red);\n--color-accent-hsl:358 100% 31%;\n--interactive-accent:var(--color-orange);\n--secondary-accent:var(--color-blue);\n--hover-accent:#d85f0e;\n--link-unresolved-color:var(--color-cyan);\n}\n\n.theme-light ::selection {\nbackground-color:var(--color-base-40);\ncolor:var(--color-base-100);\n}"
-    },
-    "angular-shapes": {
-      "general": ".angular-shapes {\n--radius-xs:0;\n--radius-s:0;\n--radius-m:0;\n--radius-l:0;\n--radius-xl:0;\n--input-radius:0;\n--tab-radius-active:0;\n}\n\nbody.angular-shapes .checkbox-container {\nborder-radius:0;\nwidth:20px;\nheight:20px;\n}"
-    },
-    "uncolored-bold": {
-      "general": ".uncolored-bold :is(strong, .cm-strong) {\n--bold-color:var(--text-normal);\n}"
-    },
-    "uncolored-italic": {
-      "general": ".uncolored-italic :is(em, .cm-em) {\n--italic-color:var(--text-normal);\n}"
-    },
-    "readable-line-length-toggle": {
-      "general": ".readable-line-length-toggle {\n--file-line-width:100%;\n}"
-    },
-    "unrestricted-line-length-tables": {
-      "general": ".markdown-preview-view):has(table {\n--file-line-width:100%;\n}"
-    },
-    "vim-active-visual-line": {
-      "general": ".vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer .cm-fat-cursor.cm-cursor-primary {\n--cursorline-bg:hsl(var(--color-accent-hsl),12.5%);\nborder-image:conic-gradient(var(--cursorline-bg)0 0)fill 0/0/0 100vw;\nmix-blend-mode:hard-light;\n}\n\n.vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus))+.cm-vimCursorLayer {\nanimation:none!important;\n}"
-    },
-    "no-mouse-hovers": {
-      "general": ".no-mouse-hovers .tooltip:not(.mod-error) {\ndisplay:none;\n}"
-    },
-    "wordcount-only-when-writing": {
-      "general": ".longform-leaf)))+.status-bar :is(.plugin-word-count, .plugin-better-word-count) {\ndisplay:none;\n}"
-    },
-    "hide-longform-status-bar": {
-      "general": ".hide-longform-status-bar .status-bar-item.plugin-longform {\ndisplay:none;\n}"
-    },
-    "longform-tasks-different": {
-      "general": "body.longform-tasks-different :is(.writing, ul.contains-task-list) {\ncolor:var(--text-faint);\n}"
-    },
-    "longform-text-indent": {
-      "general": ".longform-text-indent div:has(>p)+div>p {\ntext-indent:1.5em;\nmargin-top:0;\n}\n\n.longform-text-indent div:has(+div>p)>p {\nmargin-bottom:0;\n}"
-    },
-    "hide-attachment-folders": {
-      "general": ".hide-attachment-folders .nav-folder-title:is([data-path$=\\/attachments i], [data-path=attachments i]) {\ndisplay:none;\n}"
-    },
-    "bases-hide-column-header-icons": {
-      "general": "body.bases-hide-column-header-icons .bases-table-header-icon {\ndisplay:none;\n}"
-    },
-    "show-various-complements-icon": {
-      "general": ".show-various-complements-icon .various-complements__suggestion-item {\npadding-left:25px!important;\n}\n\n.show-various-complements-icon .various-complements__suggestion-item:before {\nmargin-top:0;\n}"
     }
   },
   "selectorImpacts": {},

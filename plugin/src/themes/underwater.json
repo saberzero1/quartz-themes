@@ -64,8 +64,32 @@
   },
   "extras": null,
   "classSettings": {
-    "rose-pine": {
-      "dark": ".rose-pine-moon {\n--love-rgb: 235, 111, 146;\n--gold-rgb: 246, 193, 119;\n--rose-rgb: 234, 154, 151;\n--pine-rgb: 62, 143, 176;\n--foam-rgb: 156, 207, 216;\n--iris-rgb: 196, 167, 231;\n--base: #232136;\n--surface-rgb: 42, 39, 63;\n--overlay: #393552;\n--muted: #6e6a86;\n--subtle: #908caa;\n--text: #e0def4;\n--highlight-low: #2a283e;\n--highlight-med-rgb: 68, 65, 90;\n--highlight-high: #56526e;\n--accent-h: 193;\n--accent-s: 46%;\n--accent-l: 75%;\n--color-accent-hsl: 193, 46%, 75%;\n}"
+    "nord-bright": {
+      "light": ".nord-bright {\n--love-rgb: 191, 97, 106;\n/*nord11*/\n--gold-rgb: 208, 135, 112;\n/*nord12*/\n--rose-rgb: 180, 142, 173;\n/*nord15*/\n--pine-rgb: 129, 161, 193;\n/*nord9*/\n--foam-rgb: 136, 192, 208;\n/*nord7*/\n--iris-rgb: 94, 129, 172;\n/*nord10*/\n--base: #E5E9F0;\n/*nord5*/\n--surface-rgb: 236, 239, 244;\n/*nord6*/\n--overlay: #D8DEE9;\n/*nord4*/\n--muted: #4C566A;\n/*nord3*/\n--subtle: #4C566A;\n/*nord3*/\n--text: #434C5E;\n/*nord2*/\n--highlight-low: #E5E9F0;\n/*nord5*/\n--highlight-med-rgb: 216, 222, 233;\n/*nord4*/\n--highlight-high: #d8dee9;\n/*nord4*/\n--accent-h: 210;\n--accent-s: 34%;\n--accent-l: 63%;\n--color-accent-hsl: 210, 34%, 63%;\n/*nord9*/\n}"
+    },
+    "catppuccin-latte": {
+      "light": ".catppuccin-latte {\n--love-rgb: 230, 69, 83;\n/*maroon*/\n--gold-rgb: 223, 142, 29;\n/*yellow*/\n--rose-rgb: 221, 120, 120;\n/*flamingo*/\n--pine-rgb: 4, 165, 229;\n/*sky*/\n--foam-rgb: 32, 159, 181;\n/*sapphire*/\n--iris-rgb: 114, 135, 253;\n/*lavender*/\n--base: #e6e9ef;\n/*mantle*/\n--surface-rgb: 239, 241, 245;\n/*base*/\n--overlay: #dce0e8;\n/*crust*/\n--muted: #6c6f85;\n/*subtext0*/\n--subtle: #5c5f77;\n/*subtext1*/\n--text: #4c4f69;\n/*text*/\n--highlight-low: #ccd0da;\n/*surface0*/\n--highlight-med-rgb: 188, 192, 204;\n/*surface1*/\n--highlight-high: #acb0be;\n/*surface2*/\n--accent-h: 11;\n--accent-s: 59%;\n--accent-l: 67%;\n--color-accent-hsl: 11, 59%, 67%;\n/*Rosewater*/\n}"
+    },
+    "everforest-light": {
+      "light": ".everforest-light {\n--love-rgb: 248, 85, 82;\n/*statusline3*/\n--gold-rgb: 223, 160, 0;\n/*yellow*/\n--rose-rgb: 245, 125, 38;\n/*orange*/\n--pine-rgb: 53, 167, 124;\n/*aqua*/\n--foam-rgb: 58, 148, 197;\n/*blue*/\n--iris-rgb: 223, 105, 186;\n/*purple*/\n--base: #efebd4;\n/*bg_dim*/\n--surface-rgb: 253, 246, 227;\n/*bg0*/\n--overlay: #eaedc8;\n/*bg_visual*/\n--muted: #939f91;\n/*gray1*/\n--subtle: #829181;\n/*gray2*/\n--text: #5c6a72;\n/*fg*/\n--highlight-low: #efebd4;\n/*bg2*/\n--highlight-med-rgb: 230, 226, 204;\n/*bg3*/\n--highlight-high: #e0dcc7;\n/*bg4*/\n--accent-h: 97;\n--accent-s: 38%;\n--accent-l: 53%;\n--color-accent-hsl: 97, 38%, 53%;\n/*green/statusline1*/\n}"
+    },
+    "gruvbox-light": {
+      "light": ".gruvbox-light {\n--love-rgb: 204, 36, 29;\n/*red*/\n--gold-rgb: 215, 153, 33;\n/*yellow*/\n--rose-rgb: 152, 151, 26;\n/*green*/\n--pine-rgb: 69, 133, 136;\n/*blue*/\n--foam-rgb: 104, 157, 106;\n/*aqua*/\n--iris-rgb: 177, 98, 134;\n/*purple*/\n--base: #ebdbb2;\n/*bg1*/\n--surface-rgb: 251, 241, 199;\n/*bg*/\n--overlay: #f2e5bc;\n/*bg0_s*/\n--muted: #7c6f54;\n/*fg4*/\n--subtle: #504945;\n/*fg2*/\n--text: #3c3836;\n/*fg*/\n--highlight-low: #d5c4a1;\n/*bg2*/\n--highlight-med-rgb: 189, 174, 147;\n/*bg3*/\n--highlight-high: #a89984;\n/*bg4*/\n--accent-h: 122;\n--accent-s: 22%;\n--accent-l: 51%;\n--color-accent-hsl: 122, 22%, 51%;\n/*aqua*/\n}"
+    },
+    "obsidian-light": {
+      "light": ".obsidian-light {\n--love-rgb: 233, 49, 71;\n/*red*/\n--gold-rgb: 224, 172, 0;\n/*yellow*/\n--rose-rgb: 236, 117, 0;\n/*orange*/\n--pine-rgb: 8, 109, 221\t;\n/*blue*/\n--foam-rgb: 8, 185, 78;\n/*green*/\n--iris-rgb: 120, 82, 238;\n/*purple*/\n--base: #f6f6f6;\n/*color-base-20*/\n--surface-rgb: 255, 255, 255;\n/*color-base-00*/\n--overlay: #e3e3e3;\n/*color-base-25*/\n--muted: #ababab;\n/*color-base-50*/\n--subtle: #707070;\n/*color-base-60*/\n--text: #222222;\n/*color-base-100*/\n--highlight-low: #fafafa;\n/*color-base-10*/\n--highlight-med-rgb: 224, 224, 224;\n/*e0e0e0*/\n/*color-base-30*/\n--highlight-high: #d4d4d4;\n/*color-base-35*/\n--accent-h: 258;\n--accent-s: 88%;\n--accent-l: 66%;\n--color-accent-hsl: 258, 88%, 66%;\n/*default purple*/\n}"
+    },
+    "uw-octopus": {
+      "light": ".uw-octopus {\n--love-rgb: 205, 106, 94;\n--gold-rgb: 230, 161, 73;\n--rose-rgb: 127, 111, 134;\n--pine-rgb: 86, 139, 187;\n--foam-rgb: 106, 168, 149;\n--iris-rgb: 204, 135, 90;\n--base: #F2EDF4;\n--surface-rgb: 252, 251, 250;\n--overlay: #eee9f0;\n--muted: #798094;\n--subtle: #616980;\n--text: #475669;\n--highlight-low: #e3e9eb;\n--highlight-med-rgb: 206, 222, 227;\n--highlight-high: #B4C3C8;\n--accent-h: 6;\n--accent-s: 53%;\n--accent-l: 59%;\n--color-accent-hsl: 6, 53%, 59%;\n/*foam*/\n}"
+    },
+    "uw-coral": {
+      "light": ".uw-coral {\n--love-rgb: 145, 121, 123;\n--gold-rgb: 242, 154, 99;\n--rose-rgb: 145, 166, 204;\n--pine-rgb: 119, 166, 155;\n--foam-rgb: 138, 182, 189;\n--iris-rgb: 222, 152, 137;\n--base: #F3E9E2;\n--surface-rgb: 255, 244, 237;\n--overlay: #FBE1DB;\n--muted: #A79A8C;\n--subtle: #928577;\n--text: #6C6156;\n--highlight-low: #EDE2DA;\n--highlight-med-rgb: 231, 214, 196;\n--highlight-high: #D9C6B9;\n--accent-h: 11;\n--accent-s: 56%;\n--accent-l: 70%;\n--color-accent-hsl: 11, 56%, 70%;\n/*iris*/\n}"
+    },
+    "uw-aqua": {
+      "light": ".uw-aqua {\n--love-rgb: 194, 105, 128;\n--gold-rgb: 183, 195, 121;\n--rose-rgb: 215, 131, 116;\n--pine-rgb: 123, 168, 149;\n--foam-rgb: 96, 161, 169;\n--iris-rgb: 128, 127, 152;\n--base: #f0efec;\n--surface-rgb: 255, 251, 245;\n--overlay: #e6eeec;\n--muted: #80766f;\n--subtle: #7c726b;\n--text: #4e4c49;\n--highlight-low: #e9eef0;\n--highlight-med-rgb: 220, 227, 230;\n--highlight-high: #cfdadf;\n--accent-h: 187;\n--accent-s: 40%;\n--accent-l: 60%;\n--color-accent-hsl: 187, 40%, 60%;\n/*foam*/\n}"
+    },
+    "uw-oyster": {
+      "light": ".uw-oyster {\n--love-rgb: 64, 45, 48;\n--gold-rgb: 255, 150, 0;\n--rose-rgb: 140, 35, 51;\n--pine-rgb: 50, 111, 144;\n--foam-rgb: 70, 102, 67;\n--iris-rgb: 103, 67, 100;\n--base: #EEE6E5;\n--surface-rgb: 245, 239, 238;\n--overlay: #E6DAD7;\n--muted: #7F8284;\n--subtle: #545557;\n--text: #2C2E2F;\n--highlight-low: #EAE5E0;\n--highlight-med-rgb: 209, 201, 193;\n--highlight-high: #B8B3AD;\n--accent-h: 201;\n--accent-s: 48%;\n--accent-l: 38%;\n--color-accent-hsl: 201, 48%, 38%;\n/*pine*/\n}"
     },
     "rose-pine-moon": {
       "dark": ".rose-pine-moon {\n--love-rgb: 235, 111, 146;\n--gold-rgb: 246, 193, 119;\n--rose-rgb: 234, 154, 151;\n--pine-rgb: 62, 143, 176;\n--foam-rgb: 156, 207, 216;\n--iris-rgb: 196, 167, 231;\n--base: #232136;\n--surface-rgb: 42, 39, 63;\n--overlay: #393552;\n--muted: #6e6a86;\n--subtle: #908caa;\n--text: #e0def4;\n--highlight-low: #2a283e;\n--highlight-med-rgb: 68, 65, 90;\n--highlight-high: #56526e;\n--accent-h: 193;\n--accent-s: 46%;\n--accent-l: 75%;\n--color-accent-hsl: 193, 46%, 75%;\n}"
@@ -97,47 +121,14 @@
     "uw-sand": {
       "dark": ".uw-sand {\n--love-rgb: 232, 157, 149;\n--gold-rgb: 246, 173, 119;\n--rose-rgb: 187, 163, 121;\n--pine-rgb: 121, 166, 222;\n--foam-rgb: 195, 230, 148;\n--iris-rgb: 145, 145, 188;\n--base: #151527;\n--surface-rgb: 25, 25, 46;\n--overlay: #212037;\n--muted: #a09a79;\n--subtle: #b8b28e;\n--text: #CED9BF;\n--highlight-low: #1A2230;\n--highlight-med-rgb: 48, 62, 85;\n--highlight-high: #37465F;\n--accent-h: 213;\n--accent-s: 60%;\n--accent-l: 67%;\n--color-accent-hsl: 213, 60%, 67%%;\n/*pine*/\n}"
     },
-    "nord-bright": {
-      "light": ".nord-bright {\n--love-rgb: 191, 97, 106;\n/*nord11*/\n--gold-rgb: 208, 135, 112;\n/*nord12*/\n--rose-rgb: 180, 142, 173;\n/*nord15*/\n--pine-rgb: 129, 161, 193;\n/*nord9*/\n--foam-rgb: 136, 192, 208;\n/*nord7*/\n--iris-rgb: 94, 129, 172;\n/*nord10*/\n--base: #E5E9F0;\n/*nord5*/\n--surface-rgb: 236, 239, 244;\n/*nord6*/\n--overlay: #D8DEE9;\n/*nord4*/\n--muted: #4C566A;\n/*nord3*/\n--subtle: #4C566A;\n/*nord3*/\n--text: #434C5E;\n/*nord2*/\n--highlight-low: #E5E9F0;\n/*nord5*/\n--highlight-med-rgb: 216, 222, 233;\n/*nord4*/\n--highlight-high: #d8dee9;\n/*nord4*/\n--accent-h: 210;\n--accent-s: 34%;\n--accent-l: 63%;\n--color-accent-hsl: 210, 34%, 63%;\n/*nord9*/\n}"
+    "focus-mode": {
+      "general": ".focus-mode {\n.workspace-tab-header-container, .view-header, .status-bar, .metadata-properties-heading, ::-webkit-scrollbar {\n    display: none !important;\n};\n}"
     },
-    "catppuccin-latte": {
-      "light": ".catppuccin-latte {\n--love-rgb: 230, 69, 83;\n/*maroon*/\n--gold-rgb: 223, 142, 29;\n/*yellow*/\n--rose-rgb: 221, 120, 120;\n/*flamingo*/\n--pine-rgb: 4, 165, 229;\n/*sky*/\n--foam-rgb: 32, 159, 181;\n/*sapphire*/\n--iris-rgb: 114, 135, 253;\n/*lavender*/\n--base: #e6e9ef;\n/*mantle*/\n--surface-rgb: 239, 241, 245;\n/*base*/\n--overlay: #dce0e8;\n/*crust*/\n--muted: #6c6f85;\n/*subtext0*/\n--subtle: #5c5f77;\n/*subtext1*/\n--text: #4c4f69;\n/*text*/\n--highlight-low: #ccd0da;\n/*surface0*/\n--highlight-med-rgb: 188, 192, 204;\n/*surface1*/\n--highlight-high: #acb0be;\n/*surface2*/\n--accent-h: 11;\n--accent-s: 59%;\n--accent-l: 67%;\n--color-accent-hsl: 11, 59%, 67%;\n/*Rosewater*/\n}"
+    "no-links": {
+      "general": ".no-links {\n.markdown-source-view.mod-cm6 .cm-hmd-internal-link,\n  .markdown-rendered .internal-link {\n    background-color: transparent;\n    padding: 0px;\n\n    &:hover {\n      color: var(--link-color-hover);\n      transition: color 0.3s ease-out;\n      background-color: transparent;\n}};\n}"
     },
-    "everforest-light": {
-      "light": ".everforest-light {\n--love-rgb: 248, 85, 82;\n/*statusline3*/\n--gold-rgb: 223, 160, 0;\n/*yellow*/\n--rose-rgb: 245, 125, 38;\n/*orange*/\n--pine-rgb: 53, 167, 124;\n/*aqua*/\n--foam-rgb: 58, 148, 197;\n/*blue*/\n--iris-rgb: 223, 105, 186;\n/*purple*/\n--base: #efebd4;\n/*bg_dim*/\n--surface-rgb: 253, 246, 227;\n/*bg0*/\n--overlay: #eaedc8;\n/*bg_visual*/\n--muted: #939f91;\n/*gray1*/\n--subtle: #829181;\n/*gray2*/\n--text: #5c6a72;\n/*fg*/\n--highlight-low: #efebd4;\n/*bg2*/\n--highlight-med-rgb: 230, 226, 204;\n/*bg3*/\n--highlight-high: #e0dcc7;\n/*bg4*/\n--accent-h: 97;\n--accent-s: 38%;\n--accent-l: 53%;\n--color-accent-hsl: 97, 38%, 53%;\n/*green/statusline1*/\n}"
-    },
-    "gruvbox-light": {
-      "light": ".gruvbox-light {\n--love-rgb: 204, 36, 29;\n/*red*/\n--gold-rgb: 215, 153, 33;\n/*yellow*/\n--rose-rgb: 152, 151, 26;\n/*green*/\n--pine-rgb: 69, 133, 136;\n/*blue*/\n--foam-rgb: 104, 157, 106;\n/*aqua*/\n--iris-rgb: 177, 98, 134;\n/*purple*/\n--base: #ebdbb2;\n/*bg1*/\n--surface-rgb: 251, 241, 199;\n/*bg*/\n--overlay: #f2e5bc;\n/*bg0_s*/\n--muted: #7c6f54;\n/*fg4*/\n--subtle: #504945;\n/*fg2*/\n--text: #3c3836;\n/*fg*/\n--highlight-low: #d5c4a1;\n/*bg2*/\n--highlight-med-rgb: 189, 174, 147;\n/*bg3*/\n--highlight-high: #a89984;\n/*bg4*/\n--accent-h: 122;\n--accent-s: 22%;\n--accent-l: 51%;\n--color-accent-hsl: 122, 22%, 51%;\n/*aqua*/\n}"
-    },
-    "obsidian-light": {
-      "light": ".obsidian-light {\n--love-rgb: 233, 49, 71;\n/*red*/\n--gold-rgb: 224, 172, 0;\n/*yellow*/\n--rose-rgb: 236, 117, 0;\n/*orange*/\n--pine-rgb: 8, 109, 221\t;\n/*blue*/\n--foam-rgb: 8, 185, 78;\n/*green*/\n--iris-rgb: 120, 82, 238;\n/*purple*/\n--base: #f6f6f6;\n/*color-base-20*/\n--surface-rgb: 255, 255, 255;\n/*color-base-00*/\n--overlay: #e3e3e3;\n/*color-base-25*/\n--muted: #ababab;\n/*color-base-50*/\n--subtle: #707070;\n/*color-base-60*/\n--text: #222222;\n/*color-base-100*/\n--highlight-low: #fafafa;\n/*color-base-10*/\n--highlight-med-rgb: 224, 224, 224;\n/*e0e0e0*/\n/*color-base-30*/\n--highlight-high: #d4d4d4;\n/*color-base-35*/\n--accent-h: 258;\n--accent-s: 88%;\n--accent-l: 66%;\n--color-accent-hsl: 258, 88%, 66%;\n/*default purple*/\n}"
-    },
-    "uw-octopus": {
-      "light": ".uw-octopus {\n--love-rgb: 205, 106, 94;\n--gold-rgb: 230, 161, 73;\n--rose-rgb: 127, 111, 134;\n--pine-rgb: 86, 139, 187;\n--foam-rgb: 106, 168, 149;\n--iris-rgb: 204, 135, 90;\n--base: #F2EDF4;\n--surface-rgb: 252, 251, 250;\n--overlay: #eee9f0;\n--muted: #798094;\n--subtle: #616980;\n--text: #475669;\n--highlight-low: #e3e9eb;\n--highlight-med-rgb: 206, 222, 227;\n--highlight-high: #B4C3C8;\n--accent-h: 6;\n--accent-s: 53%;\n--accent-l: 59%;\n--color-accent-hsl: 6, 53%, 59%;\n/*foam*/\n}"
-    },
-    "uw-coral": {
-      "light": ".uw-coral {\n--love-rgb: 145, 121, 123;\n--gold-rgb: 242, 154, 99;\n--rose-rgb: 145, 166, 204;\n--pine-rgb: 119, 166, 155;\n--foam-rgb: 138, 182, 189;\n--iris-rgb: 222, 152, 137;\n--base: #F3E9E2;\n--surface-rgb: 255, 244, 237;\n--overlay: #FBE1DB;\n--muted: #A79A8C;\n--subtle: #928577;\n--text: #6C6156;\n--highlight-low: #EDE2DA;\n--highlight-med-rgb: 231, 214, 196;\n--highlight-high: #D9C6B9;\n--accent-h: 11;\n--accent-s: 56%;\n--accent-l: 70%;\n--color-accent-hsl: 11, 56%, 70%;\n/*iris*/\n}"
-    },
-    "uw-aqua": {
-      "light": ".uw-aqua {\n--love-rgb: 194, 105, 128;\n--gold-rgb: 183, 195, 121;\n--rose-rgb: 215, 131, 116;\n--pine-rgb: 123, 168, 149;\n--foam-rgb: 96, 161, 169;\n--iris-rgb: 128, 127, 152;\n--base: #f0efec;\n--surface-rgb: 255, 251, 245;\n--overlay: #e6eeec;\n--muted: #80766f;\n--subtle: #7c726b;\n--text: #4e4c49;\n--highlight-low: #e9eef0;\n--highlight-med-rgb: 220, 227, 230;\n--highlight-high: #cfdadf;\n--accent-h: 187;\n--accent-s: 40%;\n--accent-l: 60%;\n--color-accent-hsl: 187, 40%, 60%;\n/*foam*/\n}"
-    },
-    "uw-oyster": {
-      "light": ".uw-oyster {\n--love-rgb: 64, 45, 48;\n--gold-rgb: 255, 150, 0;\n--rose-rgb: 140, 35, 51;\n--pine-rgb: 50, 111, 144;\n--foam-rgb: 70, 102, 67;\n--iris-rgb: 103, 67, 100;\n--base: #EEE6E5;\n--surface-rgb: 245, 239, 238;\n--overlay: #E6DAD7;\n--muted: #7F8284;\n--subtle: #545557;\n--text: #2C2E2F;\n--highlight-low: #EAE5E0;\n--highlight-med-rgb: 209, 201, 193;\n--highlight-high: #B8B3AD;\n--accent-h: 201;\n--accent-s: 48%;\n--accent-l: 38%;\n--color-accent-hsl: 201, 48%, 38%;\n/*pine*/\n}"
-    },
-    "callout-solid": {
-      "general": ".callout-solid {\n--callout-border-width: 2px 6px 6px 2px;\n}"
-    },
-    "callout-outlined": {
-      "general": ".callout-outlined {\n--callout-border-width: 1px;\n--callout-content-background: var(--background-primary);\n--callout-content-padding: 0px var(--size-4-6);\n--callout-padding: 0px;\n--callout-title-padding: 7px 15px;\n}"
-    },
-    "callout-math": {
-      "general": ".callout-math .callout {\nborder-width: 2px;\nborder-color: rgba(var(--callout-color));\nborder-radius: 0px;\nbackground-color: transparent;\n}"
-    },
-    "table-minimal": {
-      "general": ".table-minimal {\n--table-header-background: transparent;\n--table-header-background-hover: var(--table-header-background);\n--table-header-color: var(--text-normal);\n--table-row-alt-background: transparent;\n--table-row-alt-background-hover: var(--table-row-alt-background);\n}"
-    },
-    "checkbox-circle": {
-      "general": ".checkbox-circle {\n--checkbox-radius: 100px;\n}"
+    "box-links": {
+      "general": ".box-links {\n.markdown-source-view.mod-cm6 .cm-hmd-internal-link,\n  .markdown-rendered .internal-link {\n    border: 1px solid var(--highlight-med);\n    background-color: transparent;\n    \n    &:hover {\n      background-color: var(--highlight-med);\n      color: var(--link-color);\n    }\n};\n}"
     },
     "vault-school": {
       "general": ".vault-school {\n--vault-icon: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M840-320v-236L518-381q-18 10-38 10t-38-10L104-565q-11-6-15.5-15T84-600q0-11 4.5-20t15.5-15l338-184q9-5 18.5-7.5T480-829q10 0 19.5 2.5T518-819l381 208q10 5 15.5 14.5T920-576v256q0 17-11.5 28.5T880-280q-17 0-28.5-11.5T840-320ZM442-141 242-249q-20-11-31-30t-11-41v-152l242 131q18 10 38 10t38-10l242-131v152q0 22-11 41t-31 30L518-141q-9 5-18.5 7.5T480-131q-10 0-19.5-2.5T442-141Z'/%3E%3C/svg%3E\");\n}"
@@ -160,25 +151,11 @@
     "vault-dev": {
       "general": ".vault-dev {\n--vault-icon: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNWY2MzY4Ij48cGF0aCBkPSJtMzUzLTQ4MCA1OS01OXExMi0xMiAxMi0yOHQtMTItMjhxLTEyLTEyLTI4LjUtMTJUMzU1LTU5NWwtODcgODdxLTYgNi04LjUgMTN0LTIuNSAxNXEwIDggMi41IDE1dDguNSAxM2w4NyA4N3ExMiAxMiAyOC41IDEydDI4LjUtMTJxMTItMTIgMTItMjh0LTEyLTI4bC01OS01OVptMjU0IDAtNTkgNTlxLTEyIDEyLTEyIDI4dDEyIDI4cTEyIDEyIDI4LjUgMTJ0MjguNS0xMmw4Ny04N3E2LTYgOC41LTEzdDIuNS0xNXEwLTgtMi41LTE1dC04LjUtMTNsLTg3LTg3cS02LTYtMTMuNS05dC0xNS0zcS03LjUgMC0xNSAzdC0xMy41IDlxLTEyIDEyLTEyIDI4dDEyIDI4bDU5IDU5Wk0yMDAtMTIwcS0zMyAwLTU2LjUtMjMuNVQxMjAtMjAwdi01NjBxMC0zMyAyMy41LTU2LjVUMjAwLTg0MGg1NjBxMzMgMCA1Ni41IDIzLjVUODQwLTc2MHY1NjBxMCAzMy0yMy41IDU2LjVUNzYwLTEyMEgyMDBaIi8+PC9zdmc+\");\n}"
     },
-    "box-links": {
-      "general": ".box-links {\n.markdown-source-view.mod-cm6 .cm-hmd-internal-link,\n  .markdown-rendered .internal-link {\n    border: 1px solid var(--highlight-med);\n    background-color: transparent;\n    \n    &:hover {\n      background-color: var(--highlight-med);\n      color: var(--link-color);\n    }\n};\n}"
-    },
-    "no-links": {
-      "general": ".no-links {\n.markdown-source-view.mod-cm6 .cm-hmd-internal-link,\n  .markdown-rendered .internal-link {\n    background-color: transparent;\n    padding: 0px;\n\n    &:hover {\n      color: var(--link-color-hover);\n      transition: color 0.3s ease-out;\n      background-color: transparent;\n}};\n}"
-    },
-    "no-center": {
-      "general": ".no-center {\n:is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered) :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed) {\n  margin-inline: 0;\n  display: inline;\n  border-radius: 10px;\n};\ntable, .table-wrapper {\n  margin-inline: 0;\n};\n}"
-    },
-    "visible-properties": {
-      "general": ".visible-properties {\n--metadata-display-reading: block;\n}"
-    },
-    "no-tooltips": { "general": ".no-tooltips .tooltip {\ndisplay: none;\n}" },
-    "focus-mode": {
-      "general": ".focus-mode {\n.workspace-tab-header-container, .view-header, .status-bar, .metadata-properties-heading, ::-webkit-scrollbar {\n    display: none !important;\n};\n}"
-    },
-    "workspace-bg": { "general": ";\n}" },
     "kanban-modern": {
       "general": ".kanban-modern {\n.kanban-plugin__lane {\n    background-color: var(--background-primary) !important;\n  };\n.kanban-plugin__lane:hover {\n    outline: 1px solid var(--highlight-med);\n  };\n.kanban-plugin__item-title-wrapper {\n    background-color: var(--overlay);\n    border-radius: 10px;\n    border: 1px solid var(--highlight-high);\n    padding: 10px;\n    transition-duration: .3s;\n    transition-property: border-color, box-shadow, background-color;\n  };\n.kanban-plugin__item, .kanban-plugin__item-button-wrapper, .kanban-plugin__item-form /*fix*/ {\n    outline: none;\n    border: none;\n  };\n.kanban-plugin__item-title-wrapper:hover {\n    border: 1px solid var(--text-faint);\n    cursor: pointer;\n  };\nbutton.kanban-plugin__new-item-button {\n    background-color: transparent;\n    color: var(--text-faint);\n  };\nbutton.kanban-plugin__new-item-button:hover {\n    background-color: transparent;\n    color: var(--color-pink);\n};\n}"
+    },
+    "tokei-plugin": {
+      "general": ".tokei-plugin {\n.time {\n    padding: 20px;\n    font-size: 3.2em;\n    text-shadow: none;\n    color: var(--pine);\n  };\n.date {\n    font-size: 1.5em;\n    color: var(--rose);\n  };\n.timezone-container {\n    padding: 15px;\n    gap: 15px;\n  };\n.timezone-pair {\n    flex-direction: row;\n    border: 2px dotted var(--highlight-high);\n    background-color: transparent;\n    border-radius: 5px;\n  };\n.timezone-name {\n    color: var(--subtle);\n    writing-mode: vertical-rl;\n    transform: rotate(180deg);\n  };\n.timezone-time {\n    color: var(--text-normal);\n};\n}"
     },
     "dotted": {
       "general": ".dotted .excalidraw {\nbackground-image: radial-gradient(var(--background-modifier-border) 1px, transparent 0);\nbackground-size: 20px 20px;\nbackground-position: -19px -19px;\n}"
@@ -186,8 +163,31 @@
     "seamless-dataview": {
       "general": "th) {\nborder: 1px solid var(--table-border-color);\nfont-size: var(--font-text-size);\n}"
     },
-    "tokei-plugin": {
-      "general": ".tokei-plugin {\n.time {\n    padding: 20px;\n    font-size: 3.2em;\n    text-shadow: none;\n    color: var(--pine);\n  };\n.date {\n    font-size: 1.5em;\n    color: var(--rose);\n  };\n.timezone-container {\n    padding: 15px;\n    gap: 15px;\n  };\n.timezone-pair {\n    flex-direction: row;\n    border: 2px dotted var(--highlight-high);\n    background-color: transparent;\n    border-radius: 5px;\n  };\n.timezone-name {\n    color: var(--subtle);\n    writing-mode: vertical-rl;\n    transform: rotate(180deg);\n  };\n.timezone-time {\n    color: var(--text-normal);\n};\n}"
+    "callout-solid": {
+      "general": ".callout-solid {\n--callout-border-width: 2px 6px 6px 2px;\n}"
+    },
+    "callout-outlined": {
+      "general": ".callout-outlined {\n--callout-border-width: 1px;\n--callout-content-background: var(--background-primary);\n--callout-content-padding: 0px var(--size-4-6);\n--callout-padding: 0px;\n--callout-title-padding: 7px 15px;\n}"
+    },
+    "callout-math": {
+      "general": ".callout-math .callout {\nborder-width: 2px;\nborder-color: rgba(var(--callout-color));\nborder-radius: 0px;\nbackground-color: transparent;\n}"
+    },
+    "table-minimal": {
+      "general": ".table-minimal {\n--table-header-background: transparent;\n--table-header-background-hover: var(--table-header-background);\n--table-header-color: var(--text-normal);\n--table-row-alt-background: transparent;\n--table-row-alt-background-hover: var(--table-row-alt-background);\n}"
+    },
+    "checkbox-circle": {
+      "general": ".checkbox-circle {\n--checkbox-radius: 100px;\n}"
+    },
+    "visible-properties": {
+      "general": ".visible-properties {\n--metadata-display-reading: block;\n}"
+    },
+    "no-tooltips": { "general": ".no-tooltips .tooltip {\ndisplay: none;\n}" },
+    "no-center": {
+      "general": ".no-center {\n:is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered) :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed) {\n  margin-inline: 0;\n  display: inline;\n  border-radius: 10px;\n};\ntable, .table-wrapper {\n  margin-inline: 0;\n};\n}"
+    },
+    "workspace-bg": { "general": ";\n}" },
+    "rose-pine": {
+      "dark": ".rose-pine-moon {\n--love-rgb: 235, 111, 146;\n--gold-rgb: 246, 193, 119;\n--rose-rgb: 234, 154, 151;\n--pine-rgb: 62, 143, 176;\n--foam-rgb: 156, 207, 216;\n--iris-rgb: 196, 167, 231;\n--base: #232136;\n--surface-rgb: 42, 39, 63;\n--overlay: #393552;\n--muted: #6e6a86;\n--subtle: #908caa;\n--text: #e0def4;\n--highlight-low: #2a283e;\n--highlight-med-rgb: 68, 65, 90;\n--highlight-high: #56526e;\n--accent-h: 193;\n--accent-s: 46%;\n--accent-l: 75%;\n--color-accent-hsl: 193, 46%, 75%;\n}"
     }
   },
   "selectorImpacts": {},

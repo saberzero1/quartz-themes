@@ -64,14 +64,8 @@
   },
   "extras": null,
   "classSettings": {
-    "more-drag-desktop": {
-      "general": "body.more-drag-desktop .titlebar-inner {\n-webkit-app-region: drag;\n}"
-    },
-    "dim-light-mode": {
-      "light": "body.dim-light-mode {\n--background: hsl(var(--accent-h), calc(var(--accent-s) * 0.15), 95%);\n--surface: hsl(var(--accent-h), calc(var(--accent-s) * 0.10), 98%);\n}"
-    },
-    "space-above-document": {
-      "general": "body.space-above-document .markdown-embed-content .cm-sizer, body.space-above-document .canvas-node-container .cm-sizer {\npadding-top: inherit !important;\n}"
+    "hide-sidebar-header": {
+      "general": "body.hide-sidebar-header .workspace-drawer-header-name, body.hide-sidebar-header .workspace-drawer-header-icon, body.hide-sidebar-header .workspace-drawer-header-left {\ndisplay: none;\n}"
     },
     "disable-tooltip-animation": {
       "general": "body.disable-tooltip-animation .tooltip {\nanimation: none !important;\n}"
@@ -79,8 +73,14 @@
     "enable-mica": {
       "general": "body.mod-mac.enable-mica {\nbackground-color: transparent !important;\n}"
     },
-    "hide-sidebar-header": {
-      "general": "body.hide-sidebar-header .workspace-drawer-header-name, body.hide-sidebar-header .workspace-drawer-header-icon, body.hide-sidebar-header .workspace-drawer-header-left {\ndisplay: none;\n}"
+    "more-drag-desktop": {
+      "general": "body.more-drag-desktop .titlebar-inner {\n-webkit-app-region: drag;\n}"
+    },
+    "space-above-document": {
+      "general": "body.space-above-document .markdown-embed-content .cm-sizer, body.space-above-document .canvas-node-container .cm-sizer {\npadding-top: inherit !important;\n}"
+    },
+    "dim-light-mode": {
+      "light": "body.dim-light-mode {\n--background: hsl(var(--accent-h), calc(var(--accent-s) * 0.15), 95%);\n--surface: hsl(var(--accent-h), calc(var(--accent-s) * 0.10), 98%);\n}"
     }
   },
   "selectorImpacts": {},

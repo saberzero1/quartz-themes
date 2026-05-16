@@ -37,9 +37,9 @@
   },
   "extras": null,
   "classSettings": {
-    "w95-reactionary": {
-      "dark": ".w95-reactionary, .theme-light.w95-reactionary {\n--background-primary: #d4d0c8;\n--background-secondary: #d4d0c8;\n--text-normal: #181612;\n--nav-item-background-active: #3a6ea5;\n--nav-item-color-active: var(--accent-1);\n}",
-      "light": ".theme-dark.w95-reactionary, .w95-reactionary {\n--background-primary: #d4d0c8;\n--background-secondary: #d4d0c8;\n--text-normal: #181612;\n--nav-item-background-active: #3a6ea5;\n--nav-item-color-active: var(--accent-1);\n}"
+    "w95-scheme-rose": {
+      "dark": ".w95-scheme-rose, .theme-light.w95-scheme-rose {\n--background-primary: #cdaeb4;\n--background-secondary: #cdaeb4;\n--border-highlight: #e6d6de;\n--border-shadow: #8a525c;\n--scrollbar-track: #ead8df;\n--scrollbar-thumb: #e6c6cc;\n--nav-item-background-active: #9c5d6a;\n--interactive-accent: #9c5d6a;\n}",
+      "light": ".theme-dark.w95-scheme-rose, .w95-scheme-rose {\n--background-primary: #cdaeb4;\n--background-secondary: #cdaeb4;\n--border-highlight: #e6d6de;\n--border-shadow: #8a525c;\n--scrollbar-track: #ead8df;\n--scrollbar-thumb: #e6c6cc;\n--nav-item-background-active: #9c5d6a;\n--interactive-accent: #9c5d6a;\n}"
     },
     "w95-scheme-brick": {
       "dark": ".w95-scheme-brick, .theme-light.w95-scheme-brick {\n--background-primary: #bdbea4;\n--background-secondary: #bdbea4;\n--border-highlight: #dedecd;\n--border-shadow: #514e35;\n--scrollbar-track: #d4d5c1;\n--scrollbar-thumb: #d5d6ba;\n--nav-item-background-active: #8b855a;\n--interactive-accent: #8b855a;\n}",
@@ -81,10 +81,6 @@
       "dark": ".w95-scheme-rainy-day, .theme-light.w95-scheme-rainy-day {\n--background-primary: #7b95ac;\n--background-secondary: #7b95ac;\n--border-highlight: #bdcad5;\n--border-shadow: #4a617b;\n--scrollbar-track: #b0c2d3;\n--scrollbar-thumb: #9ab4cc;\n--nav-item-background-active: #4a617b;\n--interactive-accent: #4a617b;\n}",
       "light": ".theme-dark.w95-scheme-rainy-day, .w95-scheme-rainy-day {\n--background-primary: #7b95ac;\n--background-secondary: #7b95ac;\n--border-highlight: #bdcad5;\n--border-shadow: #4a617b;\n--scrollbar-track: #b0c2d3;\n--scrollbar-thumb: #9ab4cc;\n--nav-item-background-active: #4a617b;\n--interactive-accent: #4a617b;\n}"
     },
-    "w95-scheme-rose": {
-      "dark": ".w95-scheme-rose, .theme-light.w95-scheme-rose {\n--background-primary: #cdaeb4;\n--background-secondary: #cdaeb4;\n--border-highlight: #e6d6de;\n--border-shadow: #8a525c;\n--scrollbar-track: #ead8df;\n--scrollbar-thumb: #e6c6cc;\n--nav-item-background-active: #9c5d6a;\n--interactive-accent: #9c5d6a;\n}",
-      "light": ".theme-dark.w95-scheme-rose, .w95-scheme-rose {\n--background-primary: #cdaeb4;\n--background-secondary: #cdaeb4;\n--border-highlight: #e6d6de;\n--border-shadow: #8a525c;\n--scrollbar-track: #ead8df;\n--scrollbar-thumb: #e6c6cc;\n--nav-item-background-active: #9c5d6a;\n--interactive-accent: #9c5d6a;\n}"
-    },
     "w95-scheme-slate": {
       "dark": ".w95-scheme-slate, .theme-light.w95-scheme-slate {\n--background-primary: #9cb6c5;\n--background-secondary: #9cb6c5;\n--border-highlight: #cddade;\n--border-shadow: #527d94;\n--scrollbar-track: #c6d6df;\n--scrollbar-thumb: #b2cad8;\n--nav-item-background-active: #527d94;\n--interactive-accent: #527d94;\n}",
       "light": ".theme-dark.w95-scheme-slate, .w95-scheme-slate {\n--background-primary: #9cb6c5;\n--background-secondary: #9cb6c5;\n--border-highlight: #cddade;\n--border-shadow: #527d94;\n--scrollbar-track: #c6d6df;\n--scrollbar-thumb: #b2cad8;\n--nav-item-background-active: #527d94;\n--interactive-accent: #527d94;\n}"
@@ -104,6 +100,10 @@
     "w95-scheme-wheat": {
       "dark": ".w95-scheme-wheat, .theme-light.w95-scheme-wheat {\n--background-primary: #dede9c;\n--background-secondary: #dede9c;\n--border-highlight: #eeeecd;\n--border-shadow: #bdba39;\n--scrollbar-track: #dede9c;\n--scrollbar-thumb: #dede9c;\n--nav-item-background-active: #7b7d00;\n--interactive-accent: #7b7d00;\n}",
       "light": ".theme-dark.w95-scheme-wheat, .w95-scheme-wheat {\n--background-primary: #dede9c;\n--background-secondary: #dede9c;\n--border-highlight: #eeeecd;\n--border-shadow: #bdba39;\n--scrollbar-track: #dede9c;\n--scrollbar-thumb: #dede9c;\n--nav-item-background-active: #7b7d00;\n--interactive-accent: #7b7d00;\n}"
+    },
+    "w95-reactionary": {
+      "dark": ".w95-reactionary, .theme-light.w95-reactionary {\n--background-primary: #d4d0c8;\n--background-secondary: #d4d0c8;\n--text-normal: #181612;\n--nav-item-background-active: #3a6ea5;\n--nav-item-color-active: var(--accent-1);\n}",
+      "light": ".theme-dark.w95-reactionary, .w95-reactionary {\n--background-primary: #d4d0c8;\n--background-secondary: #d4d0c8;\n--text-normal: #181612;\n--nav-item-background-active: #3a6ea5;\n--nav-item-color-active: var(--accent-1);\n}"
     }
   },
   "selectorImpacts": {},

@@ -64,6 +64,18 @@
   },
   "extras": "/* Screen/multiply blending for translucent layering effect */\n.workspace-leaf-content {\n  mix-blend-mode: screen;\n}\n\n.theme-light .workspace-leaf-content {\n  mix-blend-mode: multiply;\n}\n",
   "classSettings": {
+    "enhanced-folders": {
+      "general": ".enhanced-folders .tree-item.nav-folder:not(.is-collapsed):not(:has(.tree-item.nav-folder:not(.is-collapsed))) {\nbackground: var(--background-3-2);\nborder-radius: .8em;\ntransition: .4s;\n}"
+    },
+    "hide-scrollbars": {
+      "general": "body:not(.native-scrollbars).hide-scrollbars ::-webkit-scrollbar {\nwidth: 0px;\nheight: 0px;\n}"
+    },
+    "cv1": {
+      "general": "body.cv1 .callout {\nmix-blend-mode: normal !important;\n--callout-padding: 0;\nborder-left: .3em solid var(--tc);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\n}\n\nbody.cv1 .cm-embed-block.cm-callout {\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbottom: 0 !important;\noverflow: hidden !important;\n}"
+    },
+    "bv1": {
+      "general": "body.bv1 .markdown-rendered blockquote, body.bv1 .blockquote {\nborder-left: .3em solid var(--tc);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\npadding-left: .8em;\npadding-right: .8em !important;\nmargin-top: 1em;\nmargin-bottom: 1em;\n}"
+    },
     "smartlists": {
       "general": "body.smartlists li:not(:first-of-type) {\nmargin-top: .8em;\nmargin-bottom: 0em;\n}"
     },
@@ -73,27 +85,15 @@
     "hv2": {
       "general": "body.hv2 .markdown-rendered h1 {\ncolor: var(--main-color-2);\nborder-bottom: .1em solid var(--tc);\n}\n\nbody.hv2 .markdown-rendered h2 {\ncolor: var(--main-color-2);\nborder-bottom: .1em solid var(--tc);\n}\n\nbody.hv2 .markdown-rendered h3 {\ncolor: var(--main-color-2);\nborder-bottom: .1em solid var(--tc);\n}"
     },
-    "bv1": {
-      "general": "body.bv1 .markdown-rendered blockquote, body.bv1 .blockquote {\nborder-left: .3em solid var(--tc);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\npadding-left: .8em;\npadding-right: .8em !important;\nmargin-top: 1em;\nmargin-bottom: 1em;\n}"
-    },
-    "cv1": {
-      "general": "body.cv1 .callout {\nmix-blend-mode: normal !important;\n--callout-padding: 0;\nborder-left: .3em solid var(--tc);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\n}\n\nbody.cv1 .cm-embed-block.cm-callout {\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbottom: 0 !important;\noverflow: hidden !important;\n}"
+    "status-bar-hover": {
+      "general": "body.status-bar-hover .status-bar {\nopacity: 0;\ntransition: all .5s;\n&:hover {        \n        opacity: 1;\n    };\n}"
     },
     "nc": {
       "general": "body.nc .markdown-embed-content .node-insert-event {\nbackground: var(--canvas-color) !important;\n}"
     },
-    "status-bar-hover": {
-      "general": "body.status-bar-hover .status-bar {\nopacity: 0;\ntransition: all .5s;\n&:hover {        \n        opacity: 1;\n    };\n}"
-    },
     "greyscale-toggle": {
       "dark": ".theme-dark img {\nborder-radius: 10px;\nmix-blend-mode: screen !important;\nfilter: invert(1) grayscale(100%) !important;\n}",
       "light": ".theme-light img {\nborder-radius: 10px;\nmix-blend-mode: multiply !important;\nfilter: grayscale(100%) !important;\n}"
-    },
-    "enhanced-folders": {
-      "general": ".enhanced-folders .tree-item.nav-folder:not(.is-collapsed):not(:has(.tree-item.nav-folder:not(.is-collapsed))) {\nbackground: var(--background-3-2);\nborder-radius: .8em;\ntransition: .4s;\n}"
-    },
-    "hide-scrollbars": {
-      "general": "body:not(.native-scrollbars).hide-scrollbars ::-webkit-scrollbar {\nwidth: 0px;\nheight: 0px;\n}"
     }
   },
   "selectorImpacts": {},

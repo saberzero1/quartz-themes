@@ -106,6 +106,12 @@
   },
   "extras": null,
   "classSettings": {
+    "purple-mystic": {
+      "general": ".purple-mystic {\n--hue-bg: 265;\n--hue-fg: 265;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
+    },
+    "indigo-harmony": {
+      "general": ".indigo-harmony {\n--hue-bg: 238;\n--hue-fg: 255;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
+    },
     "red-passion": {
       "general": ".red-passion {\n--hue-bg: 340;\n--hue-fg: 320;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
     },
@@ -118,30 +124,22 @@
     "green-serenity": {
       "general": ".green-serenity {\n--hue-bg: 120;\n--hue-fg: 120;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
     },
-    "indigo-harmony": {
-      "general": ".indigo-harmony {\n--hue-bg: 238;\n--hue-fg: 255;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
-    },
     "blue-ocean": {
       "general": ".blue-ocean {\n--hue-bg: 228;\n--hue-fg: 220;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
-    },
-    "purple-mystic": {
-      "general": ".purple-mystic {\n--hue-bg: 265;\n--hue-fg: 265;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
     },
     "white-dawn": {
       "general": ".white-dawn {\n--hue-bg: 228;\n--hue-fg: 220;\n--sat-bg: 20%;\n--sat-fg: 20%;\n&.theme-light {\n    --sat-bg: 30%;\n    --sat-fg: 0%;\n    --lum-bg: 90%;\n    --lum-fg: 0%;\n    &.intensity-abyss {\n      --lum-bg: 100%;\n    }\n&.intensity-dawn {\n      --lum-bg: 80%;\n    }\n  };\n}"
     },
-    "black-night": {
-      "general": ".black-night {\n--hue-bg: 0;\n--hue-fg: 0;\n--sat-bg: 0%;\n--sat-fg: 0%;\n&.theme-light {\n    --lum-fg: 20%;\n    --lum-bg: 80%;\n  };\n}"
-    },
     "intensity-abyss": {
       "general": "&.intensity-abyss {\n--lum-bg: 100%;\n}\n\n.intensity-abyss {\n--lum: 0%;\n--background-modifier-border: var(--color-base-40) !important;\n}"
     },
-    "intensity-twilight": {
-      "general": ".intensity-twilight {\n--lum: 11%;\n}"
-    },
     "intensity-dawn": {
       "general": "&.intensity-dawn {\n--lum-bg: 80%;\n}\n\n.intensity-dawn {\n--lum: 22%;\n--background-secondary: var(--color-base-00) !important;\n--titlebar-background-focused: var(--color-base-05) !important;\n--background-modifier-form-field: var(--color-base-05) !important;\n}"
-    }
+    },
+    "black-night": {
+      "general": ".black-night {\n--hue-bg: 0;\n--hue-fg: 0;\n--sat-bg: 0%;\n--sat-fg: 0%;\n&.theme-light {\n    --lum-fg: 20%;\n    --lum-bg: 80%;\n  };\n}"
+    },
+    "intensity-twilight": { "general": ".intensity-twilight {\n--lum: 11%;\n}" }
   },
   "selectorImpacts": {},
   "brokenVarLinks": {

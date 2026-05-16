@@ -64,14 +64,14 @@
   },
   "extras": null,
   "classSettings": {
+    "vauxhall-indigo": {
+      "general": ".vauxhall-indigo {\n--hue-bg: 238;\n--hue-fg: 255;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
+    },
     "vauxhall-teal": {
       "general": ".vauxhall-teal {\n--hue-bg: 200;\n--hue-fg: 180;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 30%;\n    --lum-bg: 95%;\n  };\n}"
     },
     "vauxhall-blue": {
       "general": ".vauxhall-blue {\n--hue-bg: 228;\n--hue-fg: 220;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
-    },
-    "vauxhall-indigo": {
-      "general": ".vauxhall-indigo {\n--hue-bg: 238;\n--hue-fg: 255;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
     },
     "vauxhall-purple": {
       "general": ".vauxhall-purple {\n--hue-bg: 265;\n--hue-fg: 265;\n--sat-bg: 60%;\n--sat-fg: 100%;\n&.theme-light {\n    --lum-fg: 50%;\n    --lum-bg: 95%;\n  };\n}"
@@ -88,11 +88,14 @@
     "intensity-void": {
       "general": "&.intensity-void {\n--lum-bg: 100%;\n}\n\n.intensity-void {\n--lum: 0%;\n--background-modifier-border: var(--color-base-40);\n}"
     },
+    "intensity-nebula": {
+      "general": "&.intensity-nebula {\n--lum-bg: 80%;\n}\n\n.intensity-nebula {\n--lum: 22%;\n--background-secondary: var(--color-base-00) !important;\n--titlebar-background-focused: var(--color-base-05) !important;\n--background-modifier-form-field: var(--color-base-05) !important;\n}"
+    },
     "intensity-standard": {
       "general": ".intensity-standard {\n--lum: 11%;\n}"
     },
-    "intensity-nebula": {
-      "general": "&.intensity-nebula {\n--lum-bg: 80%;\n}\n\n.intensity-nebula {\n--lum: 22%;\n--background-secondary: var(--color-base-00) !important;\n--titlebar-background-focused: var(--color-base-05) !important;\n--background-modifier-form-field: var(--color-base-05) !important;\n}"
+    "headers-gradient-cyan-to-purple": {
+      "general": ".headers-gradient-cyan-to-purple {\n--h1-color: var(--cool-cyan);\n--h2-color: var(--light-blue);\n--h3-color: var(--blue);\n--h4-color: var(--blue-violet);\n--h5-color: var(--violet);\n--h6-color: var(--purple);\n}"
     },
     "headers-mono": {
       "general": ".headers-mono {\n--h1-color: var(--vauxhall-fg);\n--h2-color: var(--vauxhall-fg);\n--h3-color: var(--vauxhall-fg);\n--h4-color: var(--vauxhall-fg);\n--h5-color: var(--vauxhall-fg);\n--h6-color: var(--vauxhall-fg);\n}\n\n.headers-mono-gradient {\n--h1-color: hsl(var(--hue-fg), var(--sat-fg), 65%);\n--h2-color: hsl(var(--hue-fg), var(--sat-fg), 75%);\n--h3-color: hsl(var(--hue-fg), var(--sat-fg), 80%);\n--h4-color: hsl(var(--hue-fg), var(--sat-fg), 80%);\n--h5-color: hsl(var(--hue-fg), var(--sat-fg), 90%);\n--h6-color: hsl(var(--hue-fg), var(--sat-fg), 95%);\n}"
@@ -105,9 +108,6 @@
     },
     "headers-gradient-mint-to-blue": {
       "general": ".headers-gradient-mint-to-blue {\n--h1-color: var(--mint);\n--h2-color: color-mix(in srgb, var(--mint) 50%, var(--cool-cyan));\n--h3-color: var(--cool-cyan);\n--h4-color: color-mix(in srgb, var(--cool-cyan) 60%, var(--blue));\n--h5-color: color-mix(in srgb, var(--cool-cyan) 40%, var(--blue));\n--h6-color: var(--blue);\n}"
-    },
-    "headers-gradient-cyan-to-purple": {
-      "general": ".headers-gradient-cyan-to-purple {\n--h1-color: var(--cool-cyan);\n--h2-color: var(--light-blue);\n--h3-color: var(--blue);\n--h4-color: var(--blue-violet);\n--h5-color: var(--violet);\n--h6-color: var(--purple);\n}"
     },
     "headers-gradient-blue-to-red": {
       "general": ".headers-gradient-blue-to-red {\n--h1-color: var(--light-blue);\n--h2-color: var(--blue);\n--h3-color: var(--violet);\n--h4-color: var(--purple);\n--h5-color: var(--magenta);\n--h6-color: var(--hot-red);\n}"
