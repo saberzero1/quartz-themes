@@ -1032,13 +1032,6 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --h1-color: #495050 !important;
-  --h2-color: #495050 !important;
-  --h3-color: #495050 !important;
-  --inline-title-color: var(--h1-color) !important;
-  --h1-font: "Roboto Light" !important;
-  --h2-font: "Roboto Light" !important;
-  --h3-font: "Roboto Light" !important;
   --inline-title-font: "Roboto Light" !important;
   --bold-color: var(--purple-color) !important;
   --checkbox-hover-color: var(--red-color) !important;
@@ -2036,9 +2029,6 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --h1-font: "Sans Condensed Black" !important;
-  --h2-font: "Sans Condensed Black" !important;
-  --h3-font: "Sans Condensed Black" !important;
   --inline-title-font: "Sans Condensed Black" !important;
   --bold-color: var(--blue-color) !important;
   --checkbox-hover-color: var(--red-color) !important;
@@ -2934,7 +2924,7 @@ body body.theme-light .search-results {
 body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(97, 101, 112);
-  cursor: auto;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3956,7 +3946,7 @@ body body.theme-light .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px rgb(73, 80, 80);
+  border: 0px rgb(97, 101, 112);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4317,8 +4307,8 @@ body body.theme-light kbd {
   background-color: var(--code-background);
   box-shadow: none;
   color: var(--code-normal);
-  font-family: var(--font-monospace);
-  font-size: var(--code-size);
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-smaller);
   border: 0px rgb(97, 101, 112);
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
@@ -4328,7 +4318,7 @@ body body.theme-light kbd {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  padding: 2px 6px;
   padding-block-end: 1.3125px;
   padding-block-start: 1.3125px;
   padding-inline-end: 3.28125px;
@@ -5801,7 +5791,7 @@ body body.theme-dark .search-results {
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(209, 214, 192);
-  cursor: auto;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -7184,8 +7174,8 @@ body body.theme-dark kbd {
   background-color: var(--code-background);
   box-shadow: none;
   color: var(--code-normal);
-  font-family: var(--font-monospace);
-  font-size: var(--code-size);
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-smaller);
   border: 0px rgb(209, 214, 192);
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
@@ -7195,7 +7185,7 @@ body body.theme-dark kbd {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  padding: 2px 6px;
   padding-block-end: 1.3125px;
   padding-block-start: 1.3125px;
   padding-inline-end: 3.28125px;

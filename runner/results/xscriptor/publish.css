@@ -1012,8 +1012,8 @@ body.theme-light {
   --border-color: #dadce0 !important;
   --italic-color: #8b4513 !important;
   --interactive-success: #137333 !important;
-  --tag-text: #1565c0 !important;
   --callout-note: 245, 245, 245;
+  --tag-text: #1565c0 !important;
   --background-primary-rgb: 255, 255, 255 !important;
   --border-color-hover: #bdc1c6 !important;
   --table-row-even: #fafafa !important;
@@ -2069,8 +2069,8 @@ body.theme-dark {
   --border-color: #404040 !important;
   --italic-color: #8be3eb !important;
   --interactive-success: #90ff9f !important;
-  --tag-text: #90caf9 !important;
   --callout-note: 31, 31, 31;
+  --tag-text: #90caf9 !important;
   --background-primary-rgb: 10, 10, 10 !important;
   --border-color-hover: #505050 !important;
   --table-row-even: #151515 !important;

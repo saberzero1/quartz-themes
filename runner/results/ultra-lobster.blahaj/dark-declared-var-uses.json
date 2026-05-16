@@ -436,6 +436,22 @@
     "color": "var(--text-muted)",
     "font-size": "var(--font-smaller)"
   },
+  "div.multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--text-normal)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  ".multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--text-normal)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "background-color": "rgb(from var(--mono-rgb-100) r g b/0.05)",
     "box-shadow": "inset 0 1px 2px rgb(from var(--mono-rgb-0) r g b/0.3),\n        0 1px 0 rgb(from var(--mono-rgb-100) r g b/0.05)",
@@ -519,33 +535,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"S\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
   "pre": { "background-color": "var(--code-background)" },
-  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
-  "div.multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--text-normal)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  ".multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--text-normal)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  }
+  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" }
 }

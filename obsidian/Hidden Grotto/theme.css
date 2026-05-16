@@ -1,4 +1,4 @@
-/* Version 2.0.12 */
+/* Version 2.0.13 */
 /* Default Palette */
 body {
   --grotto-accent-h: 16;
@@ -148,26 +148,26 @@ body {
 .preset-eldegoss {
   --grotto-accent-h: 44;
   --grotto-accent-s: 56%;
-  --grotto-accent-l: 50%;
-  --grotto-dark-0: hsl(86, 40%, 20%);
-  --grotto-dark-1: hsl(86, 40%, 28%);
-  --grotto-dark-2: hsl(86, 40%, 36%);
+  --grotto-accent-l: 48%;
+  --grotto-dark-0: hsl(86, 40%, 18%);
+  --grotto-dark-1: hsl(86, 40%, 26%);
+  --grotto-dark-2: hsl(86, 40%, 34%);
   --grotto-light-0: hsl(44, 40%, 80%);
   --grotto-light-1: hsl(44, 40%, 86%);
   --grotto-light-2: hsl(44, 40%, 76%);
-  --grotto-accent: hsl(44, 56%, 50%);
+  --grotto-accent: hsl(44, 56%, 48%);
 }
 .preset-butterfree {
   --grotto-accent-h: 80;
   --grotto-accent-s: 30%;
-  --grotto-accent-l: 56%;
-  --grotto-dark-0: hsl(180, 30%, 24%);
-  --grotto-dark-1: hsl(180, 30%, 32%);
+  --grotto-accent-l: 52%;
+  --grotto-dark-0: hsl(180, 30%, 22%);
+  --grotto-dark-1: hsl(180, 30%, 30%);
   --grotto-dark-2: hsl(280, 20%, 36%);
   --grotto-light-0: hsl(80, 30%, 90%);
   --grotto-light-1: hsl(80, 30%, 96%);
   --grotto-light-2: hsl(80, 30%, 86%);
-  --grotto-accent: hsl(80, 30%, 56%);
+  --grotto-accent: hsl(80, 30%, 52%);
 }
 .preset-hisuian-typhlosion {
   --grotto-accent-h: 310;
@@ -185,9 +185,9 @@ body {
   --grotto-accent-h: 48;
   --grotto-accent-s: 52%;
   --grotto-accent-l: 52%;
-  --grotto-dark-0: hsl(200, 38%, 26%);
-  --grotto-dark-1: hsl(200, 34%, 34%);
-  --grotto-dark-2: hsl(200, 24%, 24%);
+  --grotto-dark-0: hsl(200, 38%, 24%);
+  --grotto-dark-1: hsl(200, 34%, 32%);
+  --grotto-dark-2: hsl(200, 24%, 22%);
   --grotto-light-0: hsl(48, 20%, 90%);
   --grotto-light-1: hsl(48, 20%, 96%);
   --grotto-light-2: hsl(48, 40%, 84%);
@@ -302,9 +302,9 @@ body {
   --grotto-accent-h: 145;
   --grotto-accent-s: 64%;
   --grotto-accent-l: 40%;
-  --grotto-dark-0: hsl(20, 20%, 20%);
-  --grotto-dark-1: hsl(20, 20%, 28%);
-  --grotto-dark-2: hsl(20, 20%, 36%);
+  --grotto-dark-0: hsl(20, 20%, 18%);
+  --grotto-dark-1: hsl(20, 20%, 26%);
+  --grotto-dark-2: hsl(20, 20%, 34%);
   --grotto-light-0: hsl(40, 20%, 90%);
   --grotto-light-1: hsl(40, 20%, 96%);
   --grotto-light-2: hsl(40, 20%, 86%);
@@ -326,13 +326,13 @@ body {
   --grotto-accent-h: 100;
   --grotto-accent-s: 36%;
   --grotto-accent-l: 56%;
-  --grotto-dark-0: hsl(340, 32%, 30%);
-  --grotto-dark-1: hsl(340, 32%, 38%);
+  --grotto-dark-0: hsl(340, 32%, 28%);
+  --grotto-dark-1: hsl(340, 32%, 36%);
   --grotto-dark-2: hsl(340, 32%, 48%);
   --grotto-light-0: hsl(20, 24%, 86%);
   --grotto-light-1: hsl(20, 24%, 92%);
   --grotto-light-2: hsl(20, 24%, 82%);
-  --grotto-accent: hsl(100, 36%, 56%);
+  --grotto-accent: hsl(100, 36%, 50%);
 }
 .preset-ursaluna {
   --grotto-accent-h: 40;

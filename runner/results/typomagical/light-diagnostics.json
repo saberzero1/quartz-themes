@@ -2,54 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--bases-embed-border-color",
-      "references": "--callout-color",
-      "selector": ".callout",
-      "aspect": "scrollbars"
-    },
-    {
-      "property": "--bases-table-border-color",
-      "references": "--callout-color",
-      "selector": ".callout",
-      "aspect": "scrollbars"
-    },
-    {
-      "property": "--bases-table-header-background-hover",
-      "references": "--callout-color",
-      "selector": ".callout",
-      "aspect": "scrollbars"
-    },
-    {
-      "property": "--table-border-color",
-      "references": "--callout-color",
-      "selector": ".callout",
-      "aspect": "scrollbars"
-    },
-    {
-      "property": "--bases-embed-border-color",
-      "references": "--callout-color",
-      "selector": ".callout[data-callout=\"note\"]",
-      "aspect": "callouts"
-    },
-    {
-      "property": "--bases-table-border-color",
-      "references": "--callout-color",
-      "selector": ".callout[data-callout=\"note\"]",
-      "aspect": "callouts"
-    },
-    {
-      "property": "--bases-table-header-background-hover",
-      "references": "--callout-color",
-      "selector": ".callout[data-callout=\"note\"]",
-      "aspect": "callouts"
-    },
-    {
-      "property": "--table-border-color",
-      "references": "--callout-color",
-      "selector": ".callout[data-callout=\"note\"]",
-      "aspect": "callouts"
-    },
-    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

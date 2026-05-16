@@ -1027,9 +1027,9 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --color-yellow-light: #ffe5a7 !important;
   --vault-name-font-weight: 700 !important;
+  --callout-note: 8, 109, 221;
   --border-width-alt: 1px !important;
   --color-gray-rgb: 240, 240, 240 !important;
-  --callout-note: 8, 109, 221;
   --color-salmon: #ff8671 !important;
   --tab-font-weight: 500 !important;
   --color-salmon-rgb: 255, 134, 113 !important;
@@ -2034,9 +2034,9 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --color-yellow-light: #ffe5a7 !important;
   --vault-name-font-weight: 700 !important;
+  --callout-note: 2, 122, 255;
   --border-width-alt: 1px !important;
   --color-gray-rgb: 240, 240, 240 !important;
-  --callout-note: 2, 122, 255;
   --color-salmon: #ff8671 !important;
   --tab-font-weight: 500 !important;
   --color-salmon-rgb: 255, 134, 113 !important;

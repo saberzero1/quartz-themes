@@ -41,12 +41,22 @@
     --gold: rgb(253, 233, 9);
   }
 
-.theme-light {
+.theme-dark,
+.theme-light
+{
+	/* Obsidian "Lihght" import so dark mode looks the same*/
+	--color-scheme: light;
+	
     /* Background */
     --background-primary: var(--white);
     --background-secondary: var(--white-smoke);
     --background-secondary-alt: var(--anti-flash-white);
     --background-code: var(--anti-flash-white);
+	
+	/* Others */
+	--divider-color: #e0e0e0;
+	--tab-divider-color: #d4d4d4;
+	--table-border-color: #e0e0e0;
 
     /* Text */
     --text-normal: var(--rich-black);

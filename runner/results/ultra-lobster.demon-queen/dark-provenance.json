@@ -968,7 +968,15 @@
     "--ulu-custom-l-cyan": "body",
     "--ulu-custom-l-blue": "body",
     "--ulu-custom-l-purple": "body",
-    "--ulu-custom-l-pink": "body"
+    "--ulu-custom-l-pink": "body",
+    "--ulu-fold-size": "body",
+    "--ulu-fold-crescent": "body",
+    "--ulu-fold-fill": "body",
+    "--ulu-fold-color": "body",
+    "--ulu-fold-color-hover": "body",
+    "--ulu-fold-color-active": "body",
+    "--ulu-fold-duration": "body",
+    "--ulu-fold-ease": "body"
   },
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
@@ -1142,8 +1150,10 @@
     "--inline-title-color": "body",
     "--inline-title-font": "body",
     "--inline-title-line-height": "body",
+    "--inline-title-size": "body",
     "--inline-title-style": "body",
     "--inline-title-variant": "body",
+    "--inline-title-weight": "body",
     "--input-padding": "body",
     "--input-corner-shape": "body",
     "--input-font-weight": "body",
@@ -1430,7 +1440,10 @@
     "--color-accent-hover": "body",
     "--font-title": "body",
     "--ulu-card-bg": "body",
-    "--ulu-card-radius": "body"
+    "--ulu-card-radius": "body",
+    "--ulu-fold-color": "body",
+    "--ulu-fold-color-hover": "body",
+    "--ulu-fold-color-active": "body"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
   "div.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1683,8 +1696,10 @@
     "--inline-title-color": "body",
     "--inline-title-font": "body",
     "--inline-title-line-height": "body",
+    "--inline-title-size": "body",
     "--inline-title-style": "body",
     "--inline-title-variant": "body",
+    "--inline-title-weight": "body",
     "--input-padding": "body",
     "--input-corner-shape": "body",
     "--input-font-weight": "body",
@@ -1971,7 +1986,10 @@
     "--color-accent-hover": "body",
     "--font-title": "body",
     "--ulu-card-bg": "body",
-    "--ulu-card-radius": "body"
+    "--ulu-card-radius": "body",
+    "--ulu-fold-color": "body",
+    "--ulu-fold-color-hover": "body",
+    "--ulu-fold-color-active": "body"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
   "svg.lucide-x.svg-icon": { "--focus-ring-color": ":root *" },

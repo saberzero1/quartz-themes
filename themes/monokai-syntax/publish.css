@@ -74,10 +74,7 @@ body.theme-light {
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --monokai-success-color,
-    var(--monokai-default-success)
-  ) !important;
+  --blockquote-border-color: #cc7a0a !important;
   --blur-background: color-mix(
       in srgb,
       var(--background-primary) var(--blur-opacity-s),
@@ -152,7 +149,7 @@ body.theme-light {
   --code-normal: #3d3d3d !important;
   --code-operator: #f63d77 !important;
   --code-property: #14748a !important;
-  --code-punctuation: #666 !important;
+  --code-punctuation: #666666 !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: #cc7a0a !important;
@@ -248,7 +245,7 @@ body.theme-light {
   --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --hr-color: var(--background-modifier-border) !important;
-  --icon-color: #666 !important;
+  --icon-color: #666666 !important;
   --icon-color-active: #14748a !important;
   --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: #3d3d3d !important;
@@ -358,7 +355,7 @@ body.theme-light {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
-  --nav-item-color: #666 !important;
+  --nav-item-color: #666666 !important;
   --nav-item-color-active: #3d3d3d !important;
   --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: #3d3d3d !important;
@@ -545,7 +542,7 @@ body.theme-light {
     --monokai-warning-color,
     var(--monokai-default-warning)
   ) !important;
-  --text-muted: #666 !important;
+  --text-muted: #666666 !important;
   --text-normal: #3d3d3d !important;
   --text-selection: hsla(var(--color-accent-hsl), 0.2) !important;
   --text-success: var(--color-green) !important;
@@ -1027,13 +1024,31 @@ body.theme-light {
   ) !important;
   --monokai-inline-code-background: var(--code-background) !important;
   --monokai-blockquote-border: #cc7a0a !important;
-  --monokai-callout-error-bg: #e1477524 !important;
+  --monokai-callout-abstract-bg: rgb(107 83 148 / 13%) !important;
+  --monokai-callout-abstract-border: #6b5394 !important;
+  --monokai-callout-bug-bg: rgb(225 71 117 / 14%) !important;
+  --monokai-callout-bug-border: #e14775 !important;
+  --monokai-callout-error-bg: rgb(225 71 117 / 14%) !important;
   --monokai-callout-error-border: #e14775 !important;
-  --monokai-callout-note-bg: #14748a24 !important;
+  --monokai-callout-example-bg: rgb(225 96 50 / 14%) !important;
+  --monokai-callout-example-border: #e16032 !important;
+  --monokai-callout-failure-bg: rgb(225 71 117 / 14%) !important;
+  --monokai-callout-failure-border: #e14775 !important;
+  --monokai-callout-info-bg: rgb(20 116 138 / 14%) !important;
+  --monokai-callout-info-border: #14748a !important;
+  --monokai-callout-note-bg: rgb(20 116 138 / 14%) !important;
   --monokai-callout-note-border: #14748a !important;
-  --monokai-callout-success-bg: #269d6924 !important;
+  --monokai-callout-question-bg: rgb(107 83 148 / 13%) !important;
+  --monokai-callout-question-border: #6b5394 !important;
+  --monokai-callout-quote-bg: rgb(61 61 61 / 8%) !important;
+  --monokai-callout-quote-border: #6f6f6f !important;
+  --monokai-callout-success-bg: rgb(38 157 105 / 14%) !important;
   --monokai-callout-success-border: #269d69 !important;
-  --monokai-callout-warning-bg: #e1603224 !important;
+  --monokai-callout-tip-bg: rgb(38 157 105 / 14%) !important;
+  --monokai-callout-tip-border: #269d69 !important;
+  --monokai-callout-todo-bg: rgb(151 116 0 / 14%) !important;
+  --monokai-callout-todo-border: #977400 !important;
+  --monokai-callout-warning-bg: rgb(225 96 50 / 14%) !important;
   --monokai-callout-warning-border: #e16032 !important;
   --monokai-checkbox-checked-color: #269d69 !important;
   --monokai-checkbox-unchecked-color: #cc7a0a !important;
@@ -1041,21 +1056,12 @@ body.theme-light {
   --monokai-default-code-background: #f5f0e6 !important;
   --monokai-default-link: #14748a !important;
   --monokai-default-success: #269d69 !important;
-  --monokai-default-warning: #e8b30a3d !important;
+  --monokai-default-warning: rgb(232 179 10 / 24%) !important;
   --monokai-filter-name: "classic" !important;
-  --monokai-graph-background: #f5f0e6 !important;
-  --monokai-graph-focused: #c83f67 !important;
-  --monokai-graph-line: #14748a6b !important;
-  --monokai-graph-node: #4f5a55 !important;
-  --monokai-graph-node-attachment: #269d69 !important;
-  --monokai-graph-node-tag: #7058be !important;
-  --monokai-graph-node-unresolved: #a39a8d !important;
-  --monokai-graph-panel: #f2ead8 !important;
-  --monokai-graph-ring: #14748a2e !important;
   --monokai-heading-weight: 700 !important;
   --monokai-inline-code-color: #269d69 !important;
-  --monokai-table-border: #3d3d3d2e !important;
-  --monokai-task-done-color: #3d3d3da8 !important;
+  --monokai-table-border: rgb(61 61 61 / 18%) !important;
+  --monokai-task-done-color: rgb(61 61 61 / 66%) !important;
 }
 
 body.theme-dark {
@@ -1126,10 +1132,7 @@ body.theme-dark {
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
-  --blockquote-border-color: var(
-    --monokai-success-color,
-    var(--monokai-default-success)
-  ) !important;
+  --blockquote-border-color: #e6db74 !important;
   --blur-background: color-mix(
       in srgb,
       var(--interactive-normal) var(--blur-opacity-s),
@@ -2066,13 +2069,31 @@ body.theme-dark {
   ) !important;
   --monokai-inline-code-background: var(--code-background) !important;
   --monokai-blockquote-border: #e6db74 !important;
-  --monokai-callout-error-bg: #f926721f !important;
+  --monokai-callout-abstract-bg: rgb(174 129 255 / 12%) !important;
+  --monokai-callout-abstract-border: #ae81ff !important;
+  --monokai-callout-bug-bg: rgb(249 38 114 / 12%) !important;
+  --monokai-callout-bug-border: #f92672 !important;
+  --monokai-callout-error-bg: rgb(249 38 114 / 12%) !important;
   --monokai-callout-error-border: #f92672 !important;
-  --monokai-callout-note-bg: #66d9ef1f !important;
+  --monokai-callout-example-bg: rgb(253 151 31 / 12%) !important;
+  --monokai-callout-example-border: #fd971f !important;
+  --monokai-callout-failure-bg: rgb(249 38 114 / 12%) !important;
+  --monokai-callout-failure-border: #f92672 !important;
+  --monokai-callout-info-bg: rgb(102 217 239 / 12%) !important;
+  --monokai-callout-info-border: #66d9ef !important;
+  --monokai-callout-note-bg: rgb(102 217 239 / 12%) !important;
   --monokai-callout-note-border: #66d9ef !important;
-  --monokai-callout-success-bg: #a6e22e1f !important;
+  --monokai-callout-question-bg: rgb(174 129 255 / 12%) !important;
+  --monokai-callout-question-border: #ae81ff !important;
+  --monokai-callout-quote-bg: rgb(248 248 242 / 8%) !important;
+  --monokai-callout-quote-border: #8f908a !important;
+  --monokai-callout-success-bg: rgb(166 226 46 / 12%) !important;
   --monokai-callout-success-border: #a6e22e !important;
-  --monokai-callout-warning-bg: #fd971f1f !important;
+  --monokai-callout-tip-bg: rgb(166 226 46 / 12%) !important;
+  --monokai-callout-tip-border: #a6e22e !important;
+  --monokai-callout-todo-bg: rgb(230 219 116 / 12%) !important;
+  --monokai-callout-todo-border: #e6db74 !important;
+  --monokai-callout-warning-bg: rgb(253 151 31 / 12%) !important;
   --monokai-callout-warning-border: #fd971f !important;
   --monokai-checkbox-checked-color: #a6e22e !important;
   --monokai-checkbox-unchecked-color: #e6db74 !important;
@@ -2080,21 +2101,12 @@ body.theme-dark {
   --monokai-default-code-background: #1e1f1c !important;
   --monokai-default-link: #66d9ef !important;
   --monokai-default-success: #a6e22e !important;
-  --monokai-default-warning: #e6db7447 !important;
+  --monokai-default-warning: rgb(230 219 116 / 28%) !important;
   --monokai-filter-name: "classic" !important;
-  --monokai-graph-background: #1e1f1c !important;
-  --monokai-graph-focused: #ff6188 !important;
-  --monokai-graph-line: #78dce86b !important;
-  --monokai-graph-node: #c1c1bd !important;
-  --monokai-graph-node-attachment: #a9dc76 !important;
-  --monokai-graph-node-tag: #ab9df2 !important;
-  --monokai-graph-node-unresolved: #72736f !important;
-  --monokai-graph-panel: #2b2c26 !important;
-  --monokai-graph-ring: #66d9ef47 !important;
   --monokai-heading-weight: 600 !important;
   --monokai-inline-code-color: #a6e22e !important;
-  --monokai-table-border: #f8f8f22e !important;
-  --monokai-task-done-color: #f8f8f2ad !important;
+  --monokai-table-border: rgb(248 248 242 / 18%) !important;
+  --monokai-task-done-color: rgb(248 248 242 / 68%) !important;
 }
 
 body {
@@ -3362,12 +3374,12 @@ body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(107, 83, 148, 0.13) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(107, 83, 148);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3446,12 +3458,12 @@ body body.theme-light .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(151, 116, 0, 0.14) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(151, 116, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3488,12 +3500,12 @@ body body.theme-light .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(38, 157, 105, 0.14) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(38, 157, 105);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3572,12 +3584,12 @@ body body.theme-light .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(107, 83, 148, 0.13) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(107, 83, 148);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3698,12 +3710,12 @@ body body.theme-light .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(225, 71, 117, 0.14) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(225, 71, 117);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3740,12 +3752,12 @@ body body.theme-light .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(225, 71, 117, 0.14) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(225, 71, 117);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3782,12 +3794,12 @@ body body.theme-light .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(225, 96, 50, 0.14) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(225, 96, 50);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -3824,12 +3836,12 @@ body body.theme-light .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+  background: rgba(61, 61, 61, 0.08) none repeat scroll 0% 0% / auto padding-box
     border-box;
   color: rgb(61, 61, 61);
   mix-blend-mode: normal;
   border: 0px solid rgb(61, 61, 61);
-  border-left: 2px solid rgb(20, 116, 138);
+  border-left: 2px solid rgb(111, 111, 111);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6211,12 +6223,12 @@ body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(174, 129, 255, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(174, 129, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6295,12 +6307,12 @@ body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(230, 219, 116, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(230, 219, 116);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6337,12 +6349,12 @@ body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(166, 226, 46, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(166, 226, 46);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6421,12 +6433,12 @@ body body.theme-dark .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(174, 129, 255, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(174, 129, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6547,12 +6559,12 @@ body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(249, 38, 114, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(249, 38, 114);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6589,12 +6601,12 @@ body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(249, 38, 114, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(249, 38, 114);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6631,12 +6643,12 @@ body body.theme-dark .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(253, 151, 31, 0.12) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(253, 151, 31);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
@@ -6673,12 +6685,12 @@ body body.theme-dark .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
   background-color: var(--callout-background, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(248, 248, 242, 0.08) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(248, 248, 242);
   mix-blend-mode: normal;
   border: 0px solid rgb(248, 248, 242);
-  border-left: 2px solid rgb(102, 217, 239);
+  border-left: 2px solid rgb(143, 144, 138);
   border-top-left-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;

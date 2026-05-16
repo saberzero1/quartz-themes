@@ -638,45 +638,6 @@
     "padding-top": "var(--list-spacing)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
-  "li.task-list-item[data-task=\"-\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "li.task-list-item[data-task=\">\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "input[type=\"checkbox\"]:checked": {
-    "background-color": "var(--checkbox-color)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
-    "height": "var(--checkbox-size)",
-    "width": "var(--checkbox-size)"
-  },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
   "li.task-list-item[data-task=\"l\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)",
@@ -726,6 +687,15 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "input[type=\"checkbox\"]:checked": {
+    "background-color": "var(--checkbox-color)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "height": "var(--checkbox-size)",
+    "width": "var(--checkbox-size)"
+  },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
   },
   "li.task-list-item[data-task=\"S\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -838,6 +808,16 @@
     "height": "var(--input-height)"
   },
   "div.prompt-results": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "li.task-list-item[data-task=\">\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "li.task-list-item[data-task=\"?\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
   ".canvas-node": {

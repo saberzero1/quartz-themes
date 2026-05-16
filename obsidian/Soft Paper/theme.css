@@ -11,27 +11,74 @@
  * License: GPL-3.0
  */
 
+/*===============================================================
+ * STYLE SETTINGS METADATA
+ *===============================================================*/
+
 /* @settings
 name: Soft Paper
-id: soft-paper-settings
+id: soft-paper-dark-settings
 settings:
   -
-    id: sp-hide-scrollbars
-    title: Hide scrollbars
+    id: sp-see-more
+    title: The "See More" Settings
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: sp-compact-all
+    title: Condense everything
+    description: Enables all condensing settings at once
     type: class-toggle
-    default: true
+    default: false
   -
     id: sp-compact-bases
-    title: Make bases compact
+    title: Make bases condensed
     description: Tighter vertical spacing in Bases plugin tables
     type: class-toggle
     default: false
   -
     id: sp-compact-explorer
-    title: Make file explorer compact
+    title: Make file explorer condensed
     description: Tighter vertical spacing in the file explorer
     type: class-toggle
     default: false
+  -
+    id: sp-compact-explorer-extra
+    title: Make file explorer extra condensed
+    description: Even tighter spacing (18px rows, matches sidebar panes)
+    type: class-toggle
+    default: false
+  -
+    id: sp-compact-panes
+    title: Make sidebar panes condensed
+    description: Tighter vertical spacing in Tags, Properties, Backlinks, Outgoing Links, Outline, Bookmarks, and Search panes
+    type: class-toggle
+    default: false
+  -
+    id: sp-compact-properties
+    title: Make in-note properties condensed
+    description: Tighter vertical spacing in the properties/metadata section of notes
+    type: class-toggle
+    default: false
+  -
+    id: sp-compact-body
+    title: Make body text condensed
+    description: Tighter line spacing and paragraph gaps in the editor (keeps font size unchanged)
+    type: class-toggle
+    default: false
+  -
+    id: sp-compact-settings
+    title: Make settings popup condensed
+    description: Tighter spacing in the Settings modal sidebar and main content
+    type: class-toggle
+    default: false
+  -
+    id: sp-special-tweaks
+    title: Special Tweaks
+    type: heading
+    level: 2
+    collapsed: true
   -
     id: sp-hide-add-property
     title: Hide "Add property" button
@@ -39,77 +86,68 @@ settings:
     type: class-toggle
     default: false
   -
+    id: sp-hide-scrollbars
+    title: Hide scrollbars
+    type: class-toggle
+    default: true
+  -
     id: sp-status-bar-blue
     title: Make status bar blue
     description: Toggle the lower-right file details bar between blue and beige
     type: class-toggle
     default: false
   -
-    id: sp-settings-transparent
-    title: Make settings see-through
-    description: Settings window at 90% opacity so you can see changes live
-    type: class-toggle
-    default: false
-  -
-    id: sp-deprecated
-    title: Deprecated
-    type: heading
-    level: 2
-    collapsed: true
-  -
-    id: sp-fix-base-icons
-    title: Fix invisible Bases view icons
-    description: Forces clickable icons to be visible (legacy fix, may not be needed)
+    id: sp-settings-transparent-80
+    title: Make settings more see-through
+    description: Settings window at 80% opacity for even more visibility
     type: class-toggle
     default: false
 */
 
-/*-- Fix invisible Bases view icons (deprecated toggle) --*/
-.sp-fix-base-icons .clickable-icon {
-  -webkit-app-region: no-drag;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--size-2-2) var(--size-2-3);
-  cursor: var(--cursor);
-  border-radius: var(--clickable-icon-radius);
-  color: #494949;
-  opacity: var(--icon-opacity);
-  transition: opacity 0.15s ease-in-out;
-  height: auto;
-}
-.sp-fix-base-icons .clickable-icon:hover {
-  box-shadow: none;
-  opacity: 75%;
-  color: #494949;
-  background-color: var(--background-modifier-hover);
+/*===============================================================
+ * CSS CUSTOM PROPERTIES — FREQUENTLY USED COLORS
+ *===============================================================*/
+
+:root {
+  --sp-teal-link: #0AD1D0;
+  --sp-teal-active: #0AD1D0; 
+  --sp-blue-light: #4B8FAB;
+  --sp-teal-dark: #1A9CAA;
+  --sp-surface-gray: #232634;
+  --sp-cream-light: #DDD0C6;
 }
 
-/*-- Inline title color --*/
-.inline-title {
-  color: #575279 !important;
+/*===============================================================
+ * GLOBAL BASE STYLES & SCROLLBARS
+ *===============================================================*/
+
+/* Inline title color */
+.theme-light .inline-title {
+  color: #575279;
 }
 
-/*-- Properties bottom divider --*/
+.metadata-properties-heading {
+  --bold-weight: var(--font-medium);
+}
+
+/* Properties bottom divider */
 .metadata-container {
-  border-bottom: 1px solid var(--background-modifier-border) !important;
-  padding-bottom: 16px !important;
-  margin-bottom: 20px !important;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
 }
 
-/*-- Callout title alignment --*/
+/* Callout title alignment */
 .callout .callout-title {
   align-items: center;
 }
 
-/*-- Hide "Add property" button (Style Settings toggle) --*/
+/* Hide "Add property" button (Style Settings toggle) */
 .sp-hide-add-property .metadata-add-button {
-  display: none !important;
+  display: none;
 }
 
-/*-- Hide Scrollbars (Style Settings toggle) --*/
-/*-- Default scrollbar: thin and transparent --*/
+/* Default scrollbar: thin and transparent */
 *::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -125,19 +163,18 @@ settings:
   background: rgba(0, 0, 0, 0.25);
 }
 
-/*-- Hide scrollbars (Style Settings toggle) --*/
+/* Hide scrollbars (Style Settings toggle) */
 .sp-hide-scrollbars *::-webkit-scrollbar {
   display: none;
 }
 
 /*===============================================================
- * PHASE 1: COLOR VARIABLES
- * Light: Rosé Pine Light with custom overrides
- * Dark: Frappé with custom overrides
+ * LIGHT THEME — CONSOLIDATED COLOR VARIABLES & MAPPINGS
  *===============================================================*/
 
-/* Light mode — Rosé Pine Light base + Nick's overrides */
+/* Light mode — Rosé Pine Light base colors */
 .theme-light {
+  /* Base color palette */
   --ctp-rosewater: 188, 112, 141;
   --ctp-flamingo: 214, 129, 125;
   --ctp-pink: 210, 112, 162;
@@ -164,14 +201,133 @@ settings:
   --ctp-base: 238, 230, 221;
   --ctp-mantle: 230, 219, 209;
   --ctp-crust: 221, 208, 198;
+
+  /* Color mappings to Obsidian variables */
+  --mono-rgb-0: var(--ctp-crust);
+  --mono-rgb-100: var(--ctp-text);
+  --color-red-rgb: var(--ctp-red);
+  --color-red: rgb(var(--ctp-red));
+  --color-green-rgb: var(--ctp-green);
+  --color-green: rgb(var(--ctp-green));
+  --color-orange-rgb: var(--ctp-peach);
+  --color-orange: rgb(var(--ctp-peach));
+  --color-yellow-rgb: var(--ctp-yellow);
+  --color-yellow: rgb(var(--ctp-yellow));
+  --color-cyan-rgb: var(--ctp-sky);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-blue-rgb: var(--ctp-blue);
+  --color-blue: rgb(var(--ctp-blue));
+  --color-purple-rgb: var(--ctp-lavender);
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-pink-rgb: var(--ctp-pink);
+  --color-pink: rgb(var(--ctp-pink));
+  
+  /* Base color scales */
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-10: rgb(var(--ctp-mantle));
+  --color-base-20: rgb(var(--ctp-base));
+  --color-base-25: rgb(var(--ctp-surface0));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-base-60: rgb(var(--ctp-overlay2));
+  --color-base-70: rgb(var(--ctp-subtext0));
+  --color-base-100: rgb(var(--ctp-text));
+  
+  /* Highlighting */
+  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
+  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
+  
+  /* Shadows and effects */
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
+    0 1px 2px 0 rgba(var(--ctp-crust), 0.2),
+    0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
+    0 1px 2px 0 rgba(var(--ctp-crust), 0.4),
+    0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
+    0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
+    0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  
+  /* Background colors */
+  --background-primary: rgb(var(--ctp-base));
+  --background-primary-alt: rgb(var(--ctp-mantle));
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
+  --background-modifier-success: rgba(var(--ctp-green), 1);
+  --background-modifier-success-hover: rgba(var(--ctp-green), 0.9);
+  --background-modifier-success-rgb: var(--ctp-green);
+  --background-modifier-error: rgba(var(--ctp-red), 1);
+  --background-modifier-error-rgb: var(--ctp-red);
+  --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
+  --background-modifier-message: rgba(var(--ctp-crust), 0.9);
+  --background-modifier-border: rgb(var(--ctp-surface1));
+  --background-modifier-border-hover: rgb(var(--ctp-surface2));
+  --background-modifier-border-focus: rgb(var(--ctp-overlay0));
+  --background-modifier-cover: #00000022;
+  
+  /* Text colors */
+  --modal-border-color: rgb(var(--ctp-surface0));
+  --text-normal: rgb(var(--ctp-text));
+  --text-muted: rgb(var(--ctp-overlay2));
+  --text-muted-rgb: var(--ctp-overlay2);
+  --text-faint: rgb(var(--ctp-subtext0));
+  --text-error: rgb(var(--ctp-red));
+  --text-error-hover: rgba(var(--ctp-red), 0.8);
+  --text-success: rgb(var(--ctp-green));
+  --text-on-accent: rgb(var(--ctp-base));
+  
+  /* Interactive elements */
+  --interactive-normal: rgb(var(--ctp-surface0));
+  --interactive-hover: rgb(var(--ctp-surface1));
+  --interactive-success: rgb(var(--ctp-green));
+  
+  /* Workspace and other elements */
+  --workspace-background-translucent: rgba(var(--ctp-crust), 0.6);
+  --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
+  --drag-ghost-background: rgb(var(--ctp-text));
+  --drag-ghost-text-color: rgb(var(--ctp-crust));
+  --nav-indentation-guide-color: rgba(var(--ctp-crust), 0.4);
+  --titlebar-text-color-focused: var(--color-accent);
+  --callout-title-padding: var(--size-4-2);
+  --embed-block-shadow-hover: none;
+  --tag-radius: 2px;
+  --tag-border-width: 4px;
+  --anp-speech-bubble-opacity: 0.5;
+  --icon-color-focused: var(--sp-cream-light);
+  
+  /* Color scheme and rendering */
+  color-scheme: light;
+  --highlight-mix-blend-mode: none;
+  --link-decoration: none;
+  --link-decoration-hover: none;
 }
 
-/* Dark mode — Frappé base + Nick's overrides */
+.theme-light.theme-light {
+  --canvas-color: var(--ctp-overlay0);
+}
+
+/*===============================================================
+ * DARK THEME — CONSOLIDATED COLOR VARIABLES & MAPPINGS  
+ *===============================================================*/
+
+/* Dark mode — Frappé base colors */
 .theme-dark {
+  /* Base color palette */
   --ctp-rosewater: 188, 112, 141;
   --ctp-flamingo: 238, 190, 190;
   --ctp-pink: 229, 139, 185;
-  --ctp-mauve: 141, 141, 141;
+  --ctp-mauve: 170, 170, 170;
   --ctp-red: 231, 130, 132;
   --ctp-maroon: 234, 153, 156;
   --ctp-peach: 239, 159, 118;
@@ -194,9 +350,199 @@ settings:
   --ctp-base: 48, 52, 70;
   --ctp-mantle: 41, 44, 60;
   --ctp-crust: 35, 38, 52;
+
+  /* Color mappings to Obsidian variables */
+  --mono-rgb-0: var(--ctp-text);
+  --mono-rgb-100: var(--ctp-crust);
+  --color-red-rgb: var(--ctp-red);
+  --color-red: rgb(var(--ctp-red));
+  --color-green-rgb: var(--ctp-green);
+  --color-green: rgb(var(--ctp-green));
+  --color-orange-rgb: var(--ctp-peach);
+  --color-orange: rgb(var(--ctp-peach));
+  --color-yellow-rgb: var(--ctp-yellow);
+  --color-yellow: rgb(var(--ctp-yellow));
+  --color-cyan-rgb: var(--ctp-sky);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-blue-rgb: var(--ctp-blue);
+  --color-blue: rgb(var(--ctp-blue));
+  --color-purple-rgb: var(--ctp-lavender);
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-pink-rgb: var(--ctp-pink);
+  --color-pink: rgb(var(--ctp-pink));
+  
+  /* Base color scales */
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-10: rgb(var(--ctp-mantle));
+  --color-base-20: rgb(var(--ctp-base));
+  --color-base-25: rgb(var(--ctp-surface0));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface1));
+  --color-base-40: rgb(var(--ctp-surface2));
+  --color-base-50: rgb(var(--ctp-overlay0));
+  --color-base-60: rgb(var(--ctp-overlay1));
+  --color-base-70: rgb(var(--ctp-overlay2));
+  --color-base-100: rgb(var(--ctp-text));
+  
+  /* Background colors */
+  --background-primary: rgb(var(--ctp-base));
+  --background-primary-alt: rgb(var(--ctp-mantle));
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --background-modifier-border: rgb(var(--ctp-surface0));
+  --background-modifier-border-hover: rgb(var(--ctp-surface1));
+  --background-modifier-border-focus: rgb(var(--ctp-surface2));
+  --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
+  
+  /* Text colors */
+  --text-normal: rgb(var(--ctp-text));
+  --text-muted: rgb(var(--ctp-subtext1));
+  --text-faint: rgb(var(--ctp-overlay2));
+  --text-on-accent: rgb(var(--ctp-base));
+  
+  /* Icons and interface elements */
+  --icon-color: rgb(var(--ctp-subtext1));
+  --icon-color-hover: rgb(var(--ctp-text));
+  --icon-color-active: rgb(var(--ctp-text));
+  --icon-color-focused: rgb(var(--ctp-text));
+  --tab-text-color-focused-active: rgb(var(--ctp-text));
+  --tab-text-color-focused-active-current: rgb(var(--ctp-text));
+  --nav-item-color-active: rgb(var(--ctp-text));
+  --nav-item-color-hover: rgb(var(--ctp-text));
+  
+  /* Cards and tabs */
+  --card-background-color: rgb(var(--ctp-crust));
+  --card-foreground-color: rgb(var(--ctp-base));
+  --tab-inactive-color: rgb(var(--ctp-mantle));
+  
+  /* Inline title and headings */
+  --inline-title-color: #C6CEEF;
+  --h1-color: #E78284;
+  --h2-color: #EF9F76;
+  --h3-color: var(--sp-teal-link);
+  --h4-color: #67C48F;
+  --h5-color: #BB93D6;
+  --h6-color: #8D8D8D;
+  
+  /* Color scheme and rendering */
+  color-scheme: dark;
+  --highlight-mix-blend-mode: none;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
 }
 
-/*-- Accent: Sapphire --*/
+.theme-dark.theme-dark {
+  --canvas-color: var(--ctp-overlay0);
+}
+
+/* Dark mode inline title */
+.theme-dark .inline-title {
+  color: var(--inline-title-color);
+}
+
+/*===============================================================
+ * DARK THEME — SCOPED LINK COLORS & FILE EXPLORER FIX
+ *===============================================================*/
+
+/* Link colors scoped to editor/content only - NOT file explorer */
+.theme-dark .workspace-leaf-content,
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-preview-view,
+.theme-dark .metadata-container {
+  --link-color: var(--sp-teal-link);
+  --link-color-hover: var(--sp-teal-link);
+  --link-external-color: var(--sp-teal-link);
+  --link-external-color-hover: var(--sp-teal-link);
+  --link-unresolved-color: var(--sp-teal-link);
+  --link-unresolved-opacity: 0.7;
+}
+
+/* Specific link element colors in dark mode */
+.theme-dark .markdown-rendered .internal-link,
+.theme-dark .cm-hmd-internal-link,
+.theme-dark .data-link-text,
+.theme-dark span.data-link-text,
+.theme-dark .cm-hmd-internal-link .data-link-text,
+.theme-dark .cm-link,
+.theme-dark .cm-url,
+.theme-dark .cm-underline,
+.theme-dark .markdown-rendered .external-link,
+.theme-dark .markdown-source-view .external-link,
+.theme-dark .multi-select-pill-content.internal-link,
+.theme-dark .metadata-container .internal-link,
+.theme-dark .tree-item-inner .internal-link,
+.theme-dark .search-result-file-match .internal-link {
+  color: var(--sp-teal-link);
+}
+
+.theme-dark .markdown-rendered .internal-link:hover,
+.theme-dark .markdown-rendered .internal-link:active,
+.theme-dark .cm-hmd-internal-link:hover,
+.theme-dark .data-link-text:hover,
+.theme-dark span.data-link-text:hover,
+.theme-dark .cm-link:hover,
+.theme-dark .multi-select-pill-content.internal-link:hover,
+.theme-dark .metadata-container a[href]:hover {
+  color: var(--sp-teal-link);
+  text-decoration: none;
+}
+
+.theme-dark .markdown-rendered .external-link:hover,
+.theme-dark .markdown-rendered a[href^="http"]:hover {
+  color: var(--sp-teal-link);
+  text-decoration: underline;
+}
+
+/* FIXED: File explorer specific selectors - no more wildcard bleeding */
+.theme-dark .nav-files-container .nav-file-title,
+.theme-dark .nav-files-container .nav-folder-title {
+  --link-color: inherit;
+  --link-color-hover: inherit;
+}
+
+.theme-dark .nav-files-container .data-link-icon,
+.theme-dark .nav-files-container .data-link-icon::after,
+.theme-dark .suggestion-title.data-link-icon,
+.theme-dark .suggestion-title.data-link-icon::after,
+.theme-dark .nav-files-container .nav-file-title-content {
+  color: inherit;
+}
+
+/* File explorer hover effects */
+.theme-dark:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-folder-title:hover,
+.theme-dark:not(.is-grabbing) .nav-files-container > div .nav-file .nav-file-title:hover {
+  filter: brightness(0.85);
+}
+
+/* Dark mode: sidebar pane text (tags, backlinks, etc.) */
+.theme-dark .tree-item-inner-text {
+  color: #C6CEEF;
+}
+
+/* Dark mode: popover titlebar — cyan instead of purple */
+.theme-dark .popover-titlebar {
+  background-color: #12B7C5;
+}
+
+/* Dark callout and task text */
+.theme-dark .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
+  color: rgb(var(--ctp-text));
+}
+
+.theme-dark [data-task="0"], .theme-dark [data-task="1"], .theme-dark [data-task="2"],
+.theme-dark [data-task="3"], .theme-dark [data-task="4"], .theme-dark [data-task="5"],
+.theme-dark [data-task="6"], .theme-dark [data-task="7"], .theme-dark [data-task="8"],
+.theme-dark [data-task="9"] {
+  color: rgb(var(--ctp-text));
+}
+
+/*===============================================================
+ * ACCENT COLOR & GLOBAL VARIABLES
+ *===============================================================*/
+
+/* Accent: Sapphire */
 body {
   --ctp-accent: var(--ctp-sapphire);
   --color-accent: rgb(var(--ctp-accent));
@@ -217,124 +563,13 @@ body {
   --tag-border-color-hover: rgba(var(--ctp-accent), 0.15);
   --nav-item-background-selected: rgba(var(--ctp-accent), 0.2);
   --heading-formatting: rgb(var(--ctp-accent));
-  --icon-color-focused: #DDD0C6;
-}
-
-/*-- Color Mapping --*/
-.theme-dark, .theme-light {
-  --mono-rgb-0: var(--ctp-crust);
-  --mono-rgb-100: var(--ctp-text);
-  --color-red-rgb: var(--ctp-red);
-  --color-red: rgb(var(--ctp-red));
-  --color-green-rgb: var(--ctp-green);
-  --color-green: rgb(var(--ctp-green));
-  --color-orange-rgb: var(--ctp-peach);
-  --color-orange: rgb(var(--ctp-peach));
-  --color-yellow-rgb: var(--ctp-yellow);
-  --color-yellow: rgb(var(--ctp-yellow));
-  --color-cyan-rgb: var(--ctp-sky);
-  --color-cyan: rgb(var(--ctp-sky));
-  --color-blue-rgb: var(--ctp-blue);
-  --color-blue: rgb(var(--ctp-blue));
-  --color-purple-rgb: var(--ctp-lavender);
-  --color-purple: rgb(var(--ctp-lavender));
-  --color-pink-rgb: var(--ctp-pink);
-  --color-pink: rgb(var(--ctp-pink));
-  --color-base-00: rgb(var(--ctp-crust));
-  --color-base-10: rgb(var(--ctp-mantle));
-  --color-base-20: rgb(var(--ctp-base));
-  --color-base-25: rgb(var(--ctp-surface0));
-  --color-base-30: rgb(var(--ctp-surface1));
-  --color-base-35: rgb(var(--ctp-surface2));
-  --color-base-40: rgb(var(--ctp-overlay0));
-  --color-base-50: rgb(var(--ctp-overlay1));
-  --color-base-60: rgb(var(--ctp-overlay2));
-  --color-base-70: rgb(var(--ctp-subtext0));
-  --color-base-100: rgb(var(--ctp-text));
-  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
-  --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
-    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
-    0 1px 2px 0 rgba(var(--ctp-crust), 0.2),
-    0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
-    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
-    0 1px 2px 0 rgba(var(--ctp-crust), 0.4),
-    0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
-    0px 15px 30px rgba(var(--ctp-crust), 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
-    0px 30px 90px rgba(var(--ctp-crust), 0.2);
-  --background-primary: rgb(var(--ctp-base));
-  --background-primary-alt: rgb(var(--ctp-mantle));
-  --background-secondary: rgb(var(--ctp-mantle));
-  --background-secondary-alt: rgb(var(--ctp-crust));
-  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
-  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-success: rgba(var(--ctp-green), 1);
-  --background-modifier-success-hover: rgba(var(--ctp-green), 0.9);
-  --background-modifier-success-rgb: var(--ctp-green);
-  --background-modifier-error: rgba(var(--ctp-red), 1);
-  --background-modifier-error-rgb: var(--ctp-red);
-  --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
-  --background-modifier-message: rgba(var(--ctp-crust), 0.9);
-  --modal-border-color: rgb(var(--ctp-surface0));
-  --text-normal: rgb(var(--ctp-text));
-  --text-muted: rgb(var(--ctp-overlay2));
-  --text-muted-rgb: var(--ctp-overlay2);
-  --text-faint: rgb(var(--ctp-subtext0));
-  --text-error: rgb(var(--ctp-red));
-  --text-error-hover: rgba(var(--ctp-red), 0.8);
-  --text-success: rgb(var(--ctp-green));
-  --text-on-accent: rgb(var(--ctp-base));
-  --interactive-normal: rgb(var(--ctp-surface0));
-  --interactive-hover: rgb(var(--ctp-surface1));
-  --interactive-success: rgb(var(--ctp-green));
-  --workspace-background-translucent: rgba(var(--ctp-crust), 0.6);
-  --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
-  --drag-ghost-background: rgb(var(--ctp-text));
-  --drag-ghost-text-color: rgb(var(--ctp-crust));
-  --nav-indentation-guide-color: rgba(var(--ctp-crust), 0.4);
-  --titlebar-text-color-focused: var(--color-accent);
-  --callout-title-padding: var(--size-4-2);
-  --embed-block-shadow-hover: none;
-  --tag-radius: 2px;
-  --tag-border-width: 4px;
-}
-
-.theme-dark {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: none;
-  --background-modifier-border: rgb(var(--ctp-surface0));
-  --background-modifier-border-hover: rgb(var(--ctp-surface1));
-  --background-modifier-border-focus: rgb(var(--ctp-surface2));
-  --anp-speech-bubble-opacity: 0.9;
-  --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
-}
-.theme-dark.theme-dark {
-  --canvas-color: var(--ctp-overlay0);
-}
-
-.theme-light {
-  color-scheme: light;
-  --highlight-mix-blend-mode: none;
-  --background-modifier-border: rgb(var(--ctp-surface1));
-  --background-modifier-border-hover: rgb(var(--ctp-surface2));
-  --background-modifier-border-focus: rgb(var(--ctp-overlay0));
-  --anp-speech-bubble-opacity: 0.5;
-  --background-modifier-cover: #00000022;
-}
-.theme-light.theme-light {
-  --canvas-color: var(--ctp-overlay0);
+  --icon-color-focused: rgb(var(--ctp-text));
 }
 
 /*===============================================================
- * PHASE 2: HEADINGS
+ * HEADINGS & TYPOGRAPHY
  *===============================================================*/
+
 body {
   --h1-font: "Source Serif Pro", serif;
   --h2-font: "Source Serif Pro", serif;
@@ -342,25 +577,27 @@ body {
   --h4-font: "Source Serif Pro", serif;
   --h5-font: "Source Serif Pro", serif;
   --h6-font: "Source Serif Pro", serif;
-  --h1-size: 2.1em;
-  --h1-weight: 900;
+  --h1-size: 1.75em;
+  --h1-weight: var(--font-black);
   --h1-line-height: 1.2;
   --h1-color: #BA7184;
-  --h2-size: 1.9em;
-  --h2-weight: 800;
+  --h2-size: 1.50em;
+  --h2-weight: var(--font-bold);
   --h2-color: #DD7F67;
-  --h3-size: 1.6em;
-  --h3-weight: 700;
-  --h3-color: rgb(var(--ctp-teal));
-  --h4-size: 1.35em;
-  --h4-weight: 700;
-  --h4-color: rgb(var(--ctp-green));
-  --h5-size: 1.25em;
-  --h5-weight: 700;
+  --h3-size: 1.35em;
+  --h3-weight: var(--font-bold);
+  --h3-color: #6E9A8D;
+  --h4-size: 1.2em;
+  --h4-weight: var(--font-semibold);
+  --h4-color: #5BA57B;
+  --h5-size: 1.2em;
+  --h5-weight: var(--font-semibold);
   --h5-color: #9A85AE;
   --h6-size: 1.1em;
-  --h6-weight: 700;
+  --h6-weight: var(--font-semibold);
   --h6-color: #8D8D8D;
+  --bold-weight: var(--font-bold);
+  --code-comment: var(--color-orange-text);
   --anp-header-font: "Source Serif Pro", serif;
   --anp-rainbow-folder-bg-opacity: 0.9;
   --anp-rainbow-folder-border-opacity: 1;
@@ -374,8 +611,6 @@ body {
   --card-background-color: rgba(var(--ctp-accent), 1);
   --tab-inactive-color: rgb(var(--ctp-mantle));
   --code-normal: var(--text-normal);
-  --callout-padding: 0;
-  --callout-content-padding: var(--size-4-2);
   --background-modifier-active: hsla(var(--color-accent-hsl), 0.1);
   --pdf-background: var(--background-primary);
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
@@ -399,10 +634,10 @@ body {
 .cm-formatting-header-6 { color: var(--h6-color); }
 
 /*===============================================================
- * PHASE 3: LAYOUT — Card Layout + Safari Tabs
+ * CARD LAYOUT & SAFARI TABS
  *===============================================================*/
 
-/*-- Card Layout (always on) --*/
+/* Card Layout (always on) */
 body {
   --card-foreground-color: var(--background-primary);
   --divider-color: transparent;
@@ -426,6 +661,7 @@ body {
 .workspace-tabs.mod-top {
   --tab-container-background: var(--card-background-color);
 }
+
 .workspace-tabs.mod-top:has(.obsidian-banner-wrapper) {
   --file-header-border: none;
 }
@@ -446,6 +682,7 @@ body {
 .workspace-ribbon.mod-left {
   margin-right: var(--anp-card-layout-padding, 10px);
 }
+
 .side-dock-actions {
   border-radius: 0px var(--anp-card-radius, var(--radius-xl)) var(--anp-card-radius, var(--radius-xl)) 0px;
   margin-top: 2px;
@@ -455,30 +692,36 @@ body {
   background-color: var(--card-foreground-color);
   padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
 }
+
 .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   border: none;
   margin: var(--anp-card-layout-padding, 10px);
   margin-bottom: 0;
-  background-color: transparent;
+  background-color: rgba(var(--ctp-accent), 1) !important;
 }
+
 .workspace-ribbon.mod-left {
   margin-top: calc(var(--header-height) - 1px);
 }
+
 .workspace-tab-header-container,
 .workspace-ribbon.mod-left:before {
   border-bottom: none;
 }
+
 .mod-vertical .workspace-tabs {
   padding-left: var(--anp-card-layout-padding, 10px);
   padding-right: var(--anp-card-layout-padding, 10px);
 }
+
 .mod-vertical .workspace-tabs .workspace-tab-header-container {
   padding-left: var(--anp-card-header-left-padding, 20px);
 }
+
 .mod-vertical .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
   margin: 6px -5px calc(var(--tab-outline-width) * -1);
-  z-index: 1;
 }
+
 .mod-left-split .workspace-tab-container,
 .mod-right-split .workspace-tab-container {
   padding-left: var(--anp-card-layout-padding, 10px);
@@ -506,9 +749,11 @@ body {
   border: none;
   margin-bottom: 0px;
 }
+
 .workspace-split.mod-horizontal > * {
   width: unset;
 }
+
 .workspace .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
   border-style: solid;
   border-radius: var(--anp-card-radius, var(--radius-xl)) 0px 0px var(--anp-card-radius, var(--radius-xl));
@@ -516,6 +761,7 @@ body {
   border-color: var(--tab-outline-color);
   border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
 }
+
 .workspace .workspace-tabs.mod-stacked .workspace-leaf {
   border-left-width: 0px;
   border-top-width: var(--tab-outline-width);
@@ -524,6 +770,7 @@ body {
   border-color: var(--tab-outline-color);
   border-radius: 0 var(--anp-card-radius, var(--radius-xl)) var(--anp-card-radius, var(--radius-xl)) 0;
 }
+
 .workspace .workspace-tabs.mod-stacked .workspace-tab-container {
   padding-bottom: var(--anp-card-layout-padding, 10px);
 }
@@ -537,8 +784,8 @@ body {
   background-color: var(--tab-container-background);
 }
 
-/*-- Safari Tabs (always on, animated) --*/
-.workspace-split.mod-vertical.mod-root {
+/* Safari Tabs (always on, animated) */
+.theme-light .workspace-split.mod-vertical.mod-root {
   --tab-background-inactive: var(--background-secondary-alt);
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -547,14 +794,27 @@ body {
   --tab-text-color-focused-active: #1A7DA4;
   --tab-text-color-focused-highlighted: var(--text-normal);
   --tab-text-color-focused-active-current: #1A7DA4;
+}
+
+.theme-dark .workspace-split.mod-vertical.mod-root {
+  --tab-background-inactive: var(--background-secondary-alt);
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--sp-teal-link);
+  --tab-text-color-active: var(--sp-teal-active);
+  --tab-text-color-focused: var(--sp-teal-link);
+  --tab-text-color-focused-active: var(--sp-teal-active);
+  --tab-text-color-focused-highlighted: var(--sp-teal-active);
+  --tab-text-color-focused-active-current: var(--sp-teal-active);
   --tab-divider-color: var(--background-modifier-border-hover);
   --tab-width: 200px;
   --tab-max-width: 320px;
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
-  margin: 5px 0 !important;
+  margin: 5px 0;
   gap: 3px;
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
   border-radius: 5px;
   border: 1px solid var(--tab-outline-color);
@@ -562,33 +822,57 @@ body {
   color: var(--text-muted);
   max-width: var(--tab-max-width);
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:not(.is-active) {
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-muted);
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-title {
   margin-top: 3px;
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header::before,
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header::after {
   display: none;
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   background-color: var(--tab-background-active);
   max-width: var(--tab-max-width);
   box-shadow: none;
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   background-color: transparent;
 }
+
+/* Light mode: Maintain blue background on sidebar tab hover with subtle shade change */
+.theme-light .mod-left-split .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
+.theme-light .mod-right-split .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  background-color: rgba(75, 143, 171, 0.92); /* Very subtle hover shade */
+}
+/* Light mode: Active sidebar tab hover — keep blue bg, slightly lighter */
+.theme-light .mod-left-split .workspace-tab-header.is-active:hover,
+.theme-light .mod-right-split .workspace-tab-header.is-active:hover {
+  background-color: #6097AE !important;
+}
+/* Dark mode: Active sidebar tab hover */
+.theme-dark .mod-left-split .workspace-tab-header.is-active:hover,
+.theme-dark .mod-right-split .workspace-tab-header.is-active:hover {
+  background-color: #1E8F9D !important;
+}
+
 .workspace-tab-header-container-inner {
-  width: 100%;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 /* Safari tabs — animations removed for performance */
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
   transition: none;
 }
+
 .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   flex-grow: 1.67;
   max-width: 300px;
@@ -605,28 +889,60 @@ body,
 }
 
 .workspace-split.mod-vertical .workspace-tab-header-spacer {
-  display: none;
+  flex-shrink: 1;
+  min-width: 0;
 }
+
+/*---------------------------------------------------------------
+ * TITLEBAR DRAG REGION FIX
+ * The container-inner must not flex-grow, otherwise it expands
+ * to cover the entire tab header bar, blocking Obsidian's native
+ * -webkit-app-region: drag on the titlebar. flex-grow: 0 lets
+ * it size to its tabs and leaves empty space for window dragging.
+ * See: .workspace-tab-header-container-inner { flex: 0 1 auto }
+ *---------------------------------------------------------------*/
+
 .workspace-split.mod-vertical .workspace-tab-header-new-tab {
   margin-left: auto;
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.theme-light .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-light .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: #1A7DA4;
 }
 
+.theme-dark .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: #8A6DE3;
+}
+
+/* Dark mode: inactive center tab text */
+.theme-dark .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title {
+  color: var(--sp-teal-link);
+}
+
+.theme-dark .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon {
+  color: var(--sp-teal-link);
+}
+
 /* Tab hover tooltip: dark text */
-.tooltip,
-.workspace-tab-header:hover .workspace-tab-header-inner-title {
-  color: var(--text-normal) !important;
+.tooltip {
+  color: var(--text-normal);
+}
+
+.theme-light .workspace-tab-header:hover .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+
+.theme-dark .mod-root .workspace-tab-header:hover .workspace-tab-header-inner-title {
+  color: var(--sp-teal-link);
 }
 
 /*===============================================================
- * PHASE 4: FEATURES
+ * INTERFACE FEATURES & STYLING
  *===============================================================*/
 
-/*-- Pointer Cursor --*/
+/* Pointer cursor */
 .workspace-tab-header,
 .clickable-icon,
 .dropdown,
@@ -666,10 +982,7 @@ input.slider,
   cursor: pointer;
 }
 
-/*-- No Active Line Highlight --*/
-/* (intentionally empty — no highlight styles applied) */
-
-/*-- Decoration Toggle (bold/italic colors) --*/
+/* Decoration toggle (bold/italic colors) */
 body {
   --italic-color: rgb(var(--ctp-green));
   --bold-color: rgb(var(--ctp-red));
@@ -678,22 +991,23 @@ body {
 .cm-s-obsidian span.cm-formatting-strong, .cm-s-obsidian span.cm-strong {
   color: var(--bold-color);
 }
+
 .cm-s-obsidian span.cm-formatting-em, .cm-s-obsidian span.cm-em {
   color: var(--italic-color);
 }
 
-/*-- Editor LP Font: Space Grotesk --*/
+/* Editor LP Font: Space Grotesk */
 .markdown-source-view.is-live-preview {
   --font-text: "Space Grotesk", var(--font-text-override), var(--font-text-theme), var(--font-interface);
   font-weight: 400;
 }
 
-/*-- Bold weight --*/
+/* Bold weight */
 strong, .cm-strong {
   font-weight: 700;
 }
 
-/*-- Colorful Frame (opacity 1) --*/
+/* Colorful Frame (opacity 1) — stays consistent focused or unfocused */
 body {
   --titlebar-background: rgb(var(--ctp-accent));
   --titlebar-background-focused: rgb(var(--ctp-accent));
@@ -701,78 +1015,351 @@ body {
   --titlebar-text-color-focused: var(--background-secondary-alt);
   --colorful-frame-color: rgb(var(--ctp-accent));
   --anp-colorful-frame-opacity: 1;
-  background-color: rgba(var(--ctp-accent), 1) !important;
+  background-color: rgba(var(--ctp-accent), 1);
 }
 
-/*-- Sidebar tab header containers: blue background --*/
+/* Sidebar tab header containers: blue background */
 .mod-left-split .workspace-tab-header-container,
 .mod-right-split .workspace-tab-header-container {
-  background-color: rgba(var(--ctp-accent), 1) !important;
+  background-color: rgba(var(--ctp-accent), 1);
 }
 
-/*-- Cream icons on blue: sidebar headers, titlebar, vault bar --*/
-.mod-left-split .workspace-tab-header-container .clickable-icon,
-.mod-right-split .workspace-tab-header-container .clickable-icon,
-.mod-left-split .workspace-tab-header .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header .workspace-tab-header-inner-icon,
-.is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.titlebar-button-container .titlebar-button,
-.titlebar-button-container .clickable-icon,
-.mod-top-right-space .clickable-icon,
-.workspace-sidedock-vault-profile .clickable-icon,
-.mod-root .workspace-tab-header-tab-list .clickable-icon,
-.mod-root .workspace-tab-header-new-tab .clickable-icon {
-  --icon-color: #DDD0C6 !important;
-  --icon-color-hover: #DDD0C6 !important;
-  --icon-color-focused: #DDD0C6 !important;
-  color: #DDD0C6 !important;
+/* Force all panes to keep accent color when unfocused */
+.mod-root .workspace-tab-header-container {
+  background-color: rgb(var(--ctp-accent));
 }
 
-/*-- Active sidebar tab highlight --*/
-.mod-left-split .workspace-tab-header.is-active,
-.mod-right-split .workspace-tab-header.is-active,
-.mod-left-split .workspace-tab-header-status-icon.is-active,
-.mod-right-split .workspace-tab-header-status-icon.is-active {
-  background-color: #4B8FAB !important;
+.mod-root .workspace-tabs.mod-top {
+  background-color: rgb(var(--ctp-accent));
 }
+
+.mod-left-split .workspace-tab-container,
+.mod-right-split .workspace-tab-container {
+  background-color: rgb(var(--ctp-accent));
+}
+
+/* Cream icons on blue: sidebar headers, titlebar, vault bar */
+/* Light mode: active sidebar tab icon must be cream on blue bg — always, even when focused */
+.theme-light .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-light .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-light .is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-light .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--sp-cream-light) !important;
+  --icon-color: var(--sp-cream-light) !important;
+}
+/* Dark mode: active sidebar tab icon must be dark on teal bg */
+.theme-dark .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--sp-surface-gray) !important;
+  --icon-color: var(--sp-surface-gray) !important;
+}
+
+.theme-light .mod-left-split .workspace-tab-header-container .clickable-icon,
+.theme-light .mod-right-split .workspace-tab-header-container .clickable-icon,
+.theme-light .mod-left-split .workspace-tab-header .workspace-tab-header-inner-icon,
+.theme-light .mod-right-split .workspace-tab-header .workspace-tab-header-inner-icon,
+.theme-light .is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-light .is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.theme-light .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-light .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.theme-light .titlebar-button-container .titlebar-button,
+.theme-light .titlebar-button-container .clickable-icon,
+.theme-light .mod-top-right-space .clickable-icon,
+.theme-light .workspace-sidedock-vault-profile .clickable-icon,
+.theme-light .mod-root .workspace-tab-header-tab-list .clickable-icon,
+.theme-light .mod-root .workspace-tab-header-new-tab .clickable-icon {
+  --icon-color: var(--sp-cream-light);
+  --icon-color-hover: var(--sp-cream-light);
+  --icon-color-focused: var(--sp-cream-light);
+  color: var(--sp-cream-light);
+}
+
+.theme-dark .mod-left-split .workspace-tab-header-container .clickable-icon,
+.theme-dark .mod-right-split .workspace-tab-header-container .clickable-icon,
+.theme-dark .mod-left-split .workspace-tab-header .workspace-tab-header-inner-icon,
+.theme-dark .mod-right-split .workspace-tab-header .workspace-tab-header-inner-icon,
+.theme-dark .is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .is-focused .mod-left-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.theme-dark .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.theme-dark .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.theme-dark .titlebar-button-container .titlebar-button,
+.theme-dark .titlebar-button-container .clickable-icon,
+.theme-dark .mod-top-right-space .clickable-icon,
+.theme-dark .workspace-sidedock-vault-profile .clickable-icon,
+.theme-dark .mod-root .workspace-tab-header-tab-list .clickable-icon,
+.theme-dark .mod-root .workspace-tab-header-new-tab .clickable-icon {
+  --icon-color: var(--sp-surface-gray);
+  --icon-color-hover: var(--sp-surface-gray);
+  --icon-color-focused: var(--sp-surface-gray);
+  color: var(--sp-surface-gray);
+}
+
+/* Vault profile chevron: dark on accent background */
+.theme-dark .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher svg,
+.theme-dark .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher .clickable-icon,
+.theme-dark .workspace-sidedock-vault-profile svg.svg-icon {
+  color: #414459;
+  --icon-color: #414459;
+}
+
+/* Active sidebar tab highlight */
+.theme-light .mod-left-split .workspace-tab-header.is-active,
+.theme-light .mod-right-split .workspace-tab-header.is-active,
+.theme-light .mod-left-split .workspace-tab-header-status-icon.is-active,
+.theme-light .mod-right-split .workspace-tab-header-status-icon.is-active {
+  background-color: var(--sp-blue-light);
+}
+
+.theme-dark .mod-left-split .workspace-tab-header.is-active,
+.theme-dark .mod-right-split .workspace-tab-header.is-active,
+.theme-dark .mod-left-split .workspace-tab-header-status-icon.is-active,
+.theme-dark .mod-right-split .workspace-tab-header-status-icon.is-active {
+  background-color: var(--sp-teal-dark);
+}
+
+/* Light mode: pinned icon color in sidebar tab bar */
+.theme-light .mod-left-split .workspace-tab-header-status-icon.mod-pinned,
+.theme-light .mod-right-split .workspace-tab-header-status-icon.mod-pinned {
+  color: var(--sp-cream-light);
+  --icon-color: var(--sp-cream-light);
+}
+/* Dark mode: pinned icon color in sidebar tab bar */
+.theme-dark .mod-left-split .workspace-tab-header-status-icon.mod-pinned,
+.theme-dark .mod-right-split .workspace-tab-header-status-icon.mod-pinned {
+  color: var(--sp-surface-gray);
+  --icon-color: var(--sp-surface-gray);
+}
+/* Dark mode: pinned icon in center pane tabs — match cyan text */
+.theme-dark .mod-root .workspace-tab-header-status-icon.mod-pinned {
+  color: var(--sp-teal-active);
+  --icon-color: var(--sp-teal-active);
+}
+
 .mod-left-split .workspace-tab-header-status-icon.is-active .clickable-icon,
 .mod-right-split .workspace-tab-header-status-icon.is-active .clickable-icon,
 .mod-left-split .workspace-tab-header-status-icon.is-active,
 .mod-right-split .workspace-tab-header-status-icon.is-active {
-  --icon-color: #DDD0C6 !important;
-  color: #DDD0C6 !important;
+  --icon-color: var(--sp-surface-gray);
+  color: var(--sp-surface-gray);
 }
 
-/*-- Nav action buttons (bottom pane toggles): match sidebar active style --*/
-.nav-buttons-container .nav-action-button.is-active {
-  color: #4B8FAB !important;
-  background-color: transparent !important;
-  --icon-color: #4B8FAB !important;
+/* Nav action buttons: dark gray when inactive (not on blue bg) */
+.theme-light .nav-action-button {
+  color: var(--text-muted) !important;
+  --icon-color: var(--text-muted) !important;
 }
 
-/*-- Vault name bar --*/
+/* Dark mode: inactive nav action buttons */
+.theme-dark .nav-action-button:not(.is-active) {
+  color: #C6CEEF;
+  --icon-color: #C6CEEF;
+}
+
+/* Nav action buttons (bottom pane toggles): match sidebar active style */
+.theme-light .nav-buttons-container .nav-action-button.is-active {
+  color: var(--sp-blue-light);
+  background-color: #DAD5D0;
+  --icon-color: var(--sp-blue-light);
+}
+
+.theme-dark .nav-buttons-container .nav-action-button.is-active,
+.theme-dark .text-icon-button.is-active {
+  color: var(--sp-teal-dark);
+  background-color: transparent;
+  --icon-color: var(--sp-teal-dark);
+}
+
+/* Vault name bar */
 .workspace-drawer-vault,
 .workspace-sidedock-vault-profile {
-  background-color: rgba(var(--ctp-accent), 1) !important;
-  color: #DDD0C6;
+  background-color: rgba(var(--ctp-accent), 1);
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+
+body.theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
   color: #C4C5C1;
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover {
+
+body.theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover {
   color: #EEE6DD;
 }
 
-/*-- File items: gray background only at root level --*/
-.nav-files-container > div > .nav-file > .nav-file-title {
+body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+  color: var(--sp-surface-gray);
+}
+
+body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover {
+  color: var(--sp-surface-gray);
+}
+
+/* File items: gray background only at root level */
+.theme-light .nav-files-container > div > .nav-file > .nav-file-title {
   background-color: #D0CFCE;
   border-radius: var(--radius-s);
 }
 
-/*-- Rainbow folder color sequence fix --*/
+.theme-dark .nav-files-container > div > .nav-file > .nav-file-title {
+  color: #C6CEEF;
+  background-color: rgb(var(--ctp-surface2));
+  border-radius: var(--radius-s);
+}
+
+/* Status bar: beige (light) / surface0 (dark), blue when toggled */
+.theme-light .status-bar {
+  background-color: #E6DBD1;
+  color: rgb(var(--ctp-text));
+}
+
+.theme-dark .status-bar {
+  background-color: rgb(var(--ctp-surface0));
+  color: rgb(var(--ctp-text));
+}
+
+.theme-light.sp-status-bar-blue .status-bar {
+  background-color: rgba(var(--ctp-accent), 1);
+  color: var(--sp-cream-light);
+}
+
+.theme-dark.sp-status-bar-blue .status-bar {
+  background-color: rgba(var(--ctp-accent), 1);
+  color: var(--sp-surface-gray);
+}
+
+.sidebar-toggle-button {
+  padding: var(--size-4-1);
+  background-color: var(--background-primary);
+  height: calc(var(--header-height) - 5px);
+  margin-right: 0;
+  border-radius: 0 0 var(--radius-m) var(--radius-m);
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: var(--tab-outline-color);
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-muted);
+}
+
+/* Sidebar toggle icons: dark in light mode, light in dark mode */
+.theme-light .view-header .clickable-icon,
+.theme-light .view-header-nav-buttons .clickable-icon {
+  --icon-color: rgb(var(--ctp-overlay2));
+  --icon-color-hover: rgb(var(--ctp-text));
+  color: rgb(var(--ctp-overlay2));
+}
+
+.theme-light .sidebar-toggle-button,
+.theme-light .sidebar-toggle-button .clickable-icon {
+  --icon-color: var(--sp-cream-light);
+  --icon-color-hover: var(--sp-cream-light);
+  --icon-color-focused: var(--sp-cream-light);
+  color: var(--sp-cream-light);
+}
+
+.theme-light .sidebar-toggle-button {
+  background-color: var(--sp-blue-light);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.theme-dark .sidebar-toggle-button,
+.theme-dark .sidebar-toggle-button .clickable-icon {
+  --icon-color: var(--sp-surface-gray);
+  --icon-color-hover: var(--sp-surface-gray);
+  --icon-color-focused: var(--sp-surface-gray);
+  color: var(--sp-surface-gray);
+}
+
+.theme-dark .sidebar-toggle-button {
+  background-color: var(--sp-teal-dark);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/*===============================================================
+ * CALLOUTS
+ *===============================================================*/
+
+/* Sleek Callouts with color toggle */
+.callout:not([data-callout-metadata*=revert]) {
+  --callout-blend-mode: normal;
+}
+
+.callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
+  flex-grow: 0;
+}
+
+.theme-light .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
+  color: var(--text-normal);
+}
+
+.callout:not([data-callout-metadata*=revert]):not(.is-collapsible) > .callout-title .callout-title-inner {
+  font-weight: 500;
+}
+
+.callout:not([data-callout-metadata*=revert]) .callout-title {
+  --bold-color: currentColor;
+  --italic-color: currentColor;
+}
+
+.theme-light .callout:not([data-callout-metadata*=revert],
+[data-callout=blank-container],
+[data-callout=multi-column]) {
+  --callout-padding: 0;
+  --callout-content-padding: var(--size-4-2) var(--size-4-3);
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.4;
+  background-color: rgba(var(--ctp-mantle), 0.4);
+}
+.theme-dark .callout:not([data-callout-metadata*=revert],
+[data-callout=blank-container],
+[data-callout=multi-column]) {
+  --callout-padding: 0;
+  --callout-content-padding: var(--size-4-2) var(--size-4-3);
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.4;
+  background-color: transparent;
+  padding: 0;
+}
+
+.theme-light .callout:not([data-callout-metadata*=revert],
+[data-callout=blank-container],
+[data-callout=multi-column]) > .callout-title {
+  background-color: rgba(var(--callout-color), var(--callout-title-opacity, 0.1));
+}
+.theme-dark .callout:not([data-callout-metadata*=revert],
+[data-callout=blank-container],
+[data-callout=multi-column]) > .callout-title {
+  background-color: rgba(var(--callout-color), 0.15);
+  padding: var(--size-4-1) var(--size-4-2);
+}
+
+.callout:not([data-callout-metadata*=revert],
+[data-callout=blank-container],
+[data-callout=multi-column]) > .callout-content {
+  border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
+}
+
+.callout-content > p:first-child, .callout-content > ul:first-child, .callout-content > ol:first-child { margin-top: 0px; }
+.callout-content > p:last-child, .callout-content > ul:last-child, .callout-content > ol:last-child { margin-bottom: 0px; }
+
+/* Callout Colors */
+.callout[data-callout=abstract], .callout[data-callout=summary], .callout[data-callout=tldr], .callout[data-callout=seealso] { --callout-color: var(--ctp-blue); }
+.callout[data-callout=info], .callout[data-callout=todo], .callout[data-callout=tip], .callout[data-callout=hint], .callout[data-callout=important] { --callout-color: var(--ctp-teal); }
+.callout[data-callout=success], .callout[data-callout=check], .callout[data-callout=done], .callout[data-callout=question], .callout[data-callout=help], .callout[data-callout=faq] { --callout-color: var(--ctp-green); }
+.callout[data-callout=warning], .callout[data-callout=caution], .callout[data-callout=attention] { --callout-color: var(--ctp-yellow); }
+.callout[data-callout=failure], .callout[data-callout=fail], .callout[data-callout=missing] { --callout-color: var(--ctp-maroon); }
+.callout[data-callout=danger], .callout[data-callout=error], .callout[data-callout=bug] { --callout-color: var(--ctp-red); }
+.callout[data-callout=example] { --callout-color: var(--ctp-mauve); }
+.callout[data-callout=quote], .callout[data-callout=cite] { --callout-color: var(--ctp-surface2); }
+.callout[data-callout=note] { --callout-color: var(--ctp-accent); }
+
+/*===============================================================
+ * RAINBOW FOLDERS
+ *===============================================================*/
+
+/* Rainbow folder color sequence */
 .nav-folder-children > .nav-folder:nth-child(11n + 2),
 .nav-files-container > div > .nav-folder:nth-child(11n + 2),
 [data-type="bookmarks"] .tree-item:nth-child(11n + 2) { --rainbow-folder-color: var(--ctp-red); }
@@ -813,241 +1400,129 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .nav-files-container > div > .nav-folder:nth-child(11n + 11),
 [data-type="bookmarks"] .tree-item:nth-child(11n + 11) { --rainbow-folder-color: var(--ctp-mauve); }
 
-/* Status bar: beige by default, blue when toggled */
-.status-bar {
-  background-color: #E6DBD1 !important;
-  color: rgb(var(--ctp-text));
-}
-.sp-status-bar-blue .status-bar {
-  background-color: rgba(var(--ctp-accent), 1) !important;
-  color: #DDD0C6;
+/* Subfolders inherit parent color */
+.nav-files-container .nav-folder.nav-folder .nav-folder,
+[data-type=bookmarks] .tree-item .tree-item {
+  --rainbow-folder-color: inherit;
 }
 
-.sidebar-toggle-button {
-  padding: var(--size-4-1);
-  background-color: var(--background-primary) !important;
-  height: calc(var(--header-height) - 5px);
-  margin-right: 0;
-  border-radius: 0 0 var(--radius-m) var(--radius-m);
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: var(--tab-outline-color);
-  --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
+/* Full rainbow style */
+.theme-light .nav-files-container > div > .nav-folder .nav-folder-title,
+.theme-light .nav-files-container > div > .nav-folder .nav-file-title {
+  color: #EEE6DD;
 }
-/* Sidebar toggle icons: always dark on beige */
-.mod-left-split .sidebar-toggle-button,
-.mod-left-split .sidebar-toggle-button .clickable-icon,
-.mod-right-split .sidebar-toggle-button,
-.mod-right-split .sidebar-toggle-button .clickable-icon,
-.sidebar-toggle-button,
-.sidebar-toggle-button .clickable-icon {
-  --icon-color: var(--text-muted) !important;
-  --icon-color-hover: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal) !important;
-  color: var(--text-muted) !important;
-  background-color: var(--background-primary) !important;
+.theme-light .nav-files-container .collapse-icon svg.svg-icon {
+  color: var(--background-primary);
+}
+.theme-light .tree-item-self .tree-item-icon {
+  color: #525252;
+  --icon-color: #525252;
 }
 
-/*-- Sleek Callouts with color toggle --*/
-.callout:not([data-callout-metadata*=revert]) {
-  --callout-blend-mode: normal;
+.theme-dark .nav-files-container > div > .nav-folder .nav-folder-title,
+.theme-dark .nav-files-container > div > .nav-folder .nav-file-title {
+  color: #414459;
 }
-.callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
-  flex-grow: 0;
+.theme-dark .nav-files-container .collapse-icon svg.svg-icon {
+  color: #414459;
+  --icon-color: #414459;
 }
-.theme-light .callout:not([data-callout-metadata*=revert]) > .callout-title > .callout-title-inner {
-  color: var(--text-normal);
-}
-.callout:not([data-callout-metadata*=revert]):not(.is-collapsible) > .callout-title .callout-title-inner {
-  font-weight: 500;
-}
-.callout:not([data-callout-metadata*=revert]) .callout-title {
-  --bold-color: currentColor;
-  --italic-color: currentColor;
+.theme-dark .tree-item-self .tree-item-icon {
+  color: #C6CEEF;
+  --icon-color: #C6CEEF;
 }
 
-.callout:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) {
-  --callout-padding: 0;
-  --callout-border-width: 1px;
-  --callout-border-opacity: 0.4;
-  background-color: rgba(var(--ctp-mantle), 0.4);
-}
-.callout:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title {
-  background-color: rgba(var(--callout-color), var(--callout-title-opacity, 0.1));
-}
-.callout:not([data-callout-metadata*=revert],
-[data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content {
-  border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
+/* File icons inside rainbow folders - light mode */
+.theme-light .nav-files-container .nav-folder .nav-file-title {
+  --icon-color: var(--background-primary);
 }
 
-.callout-content > p:first-child, .callout-content > ul:first-child, .callout-content > ol:first-child { margin-top: 0px; }
-.callout-content > p:last-child, .callout-content > ul:last-child, .callout-content > ol:last-child { margin-bottom: 0px; }
-
-/* Callout Colors */
-.callout[data-callout=abstract], .callout[data-callout=summary], .callout[data-callout=tldr], .callout[data-callout=seealso] { --callout-color: var(--ctp-blue); }
-.callout[data-callout=info], .callout[data-callout=todo], .callout[data-callout=tip], .callout[data-callout=hint], .callout[data-callout=important] { --callout-color: var(--ctp-teal); }
-.callout[data-callout=success], .callout[data-callout=check], .callout[data-callout=done], .callout[data-callout=question], .callout[data-callout=help], .callout[data-callout=faq] { --callout-color: var(--ctp-green); }
-.callout[data-callout=warning], .callout[data-callout=caution], .callout[data-callout=attention] { --callout-color: var(--ctp-yellow); }
-.callout[data-callout=failure], .callout[data-callout=fail], .callout[data-callout=missing] { --callout-color: var(--ctp-maroon); }
-.callout[data-callout=danger], .callout[data-callout=error], .callout[data-callout=bug] { --callout-color: var(--ctp-red); }
-.callout[data-callout=example] { --callout-color: var(--ctp-mauve); }
-.callout[data-callout=quote], .callout[data-callout=cite] { --callout-color: var(--ctp-surface2); }
-.callout[data-callout=note] { --callout-color: var(--ctp-accent); }
-
-/*-- Graph --*/
-.workspace-split:not(.mod-root) .graph-controls.is-close,
-.workspace-split:not(.mod-root) .graph-controls,
-.workspace-split:not(.mod-root) .graph-controls:not(.is-close),
-.workspace-leaf .graph-controls.is-close,
-.workspace-leaf .graph-controls,
-.workspace-leaf .graph-controls:not(.is-close) {
-  background-color: rgb(var(--ctp-mantle));
+/* File icons inside rainbow folders - dark mode */
+.theme-dark .nav-files-container .nav-folder .nav-file-title {
+  --icon-color: #414459;
 }
 
-/*-- Links --*/
-.markdown-rendered .internal-link {
-  text-decoration-line: none;
+.theme-light .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
+  color: #EEE6DD;
 }
-.markdown-rendered .internal-link:hover,
-.markdown-rendered .internal-link:active,
-.markdown-rendered .internal-link.is-unresolved:hover,
-.markdown-rendered .internal-link.is-unresolved {
-  text-decoration-line: none;
-}
-.external-link, .external-link:hover {
-  background-image: none;
-  padding-right: 0px;
+.theme-dark .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
+  color: #414459;
 }
 
-/*-- Blockquote spacing --*/
-.markdown-rendered blockquote {
-  padding: 5px 5px 5px 10px;
+.nav-files-container > div > .nav-folder .nav-folder-children {
+  border-color: rgba(var(--ctp-crust), 0.4);
 }
 
-/*-- Highlights --*/
-.markdown-rendered .search-highlight > div {
-  box-shadow: none;
-  opacity: 0.3;
-  background-color: rgba(var(--ctp-text), 0.4);
-  mix-blend-mode: var(--highlight-mix-blend-mode);
-  border-radius: 2px;
-}
-.markdown-rendered .search-highlight > div.is-active {
-  box-shadow: 0 0 0px 2px rgba(var(--ctp-yellow), 0.5);
-  background-color: rgba(var(--ctp-yellow), 0.2);
-  opacity: 1;
+.nav-files-container .nav-folder > .nav-folder-children {
+  padding: 0 5px 0 5px;
 }
 
-/*-- Slider checkboxes --*/
-.checkbox-container.is-enabled:after {
-  background-color: var(--background-primary);
+.nav-files-container > div > .nav-folder {
+  transition: background-color 0.4s;
+  background-color: rgba(var(--rainbow-folder-color), var(--anp-rainbow-folder-bg-opacity));
+  margin-bottom: 2px;
+  border-radius: 5px;
 }
 
-/*-- Notices --*/
-.notice {
-  color: rgb(var(--ctp-text));
+body.theme-light:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-folder-title:hover,
+body.theme-light:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file .nav-file-title:hover {
+  background-color: rgba(var(--ctp-base), 0.1);
+  color: var(--background-primary);
 }
 
-/*-- Copy code button --*/
-.markdown-rendered button.copy-code-button {
-  background-color: rgb(var(--ctp-crust));
+body.theme-light:not(.is-grabbing) .nav-files-container > div > .nav-file .nav-file-title:hover {
+  filter: brightness(0.9);
 }
 
-/*-- Suggestion selected --*/
-.suggestion-item.is-selected {
-  background-color: rgba(var(--ctp-text), 0.075);
+body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.is-active {
+  border-color: rgba(var(--ctp-base), 0.2);
+  background-color: rgba(var(--ctp-base), 0.2);
 }
 
-/*-- Canvas --*/
-.canvas-card-menu {
-  box-shadow: none;
-  border: 1px solid var(--background-modifier-border);
-  background-color: var(--background-secondary);
-}
-.canvas-controls button {
-  background-color: var(--background-secondary);
+/* Dark mode: remove colored backgrounds from files, keep on folders only */
+.nav-file { overflow-y: hidden; }
+
+.nav-file-title-content.is-being-renamed,
+.nav-folder-title-content.is-being-renamed {
+  cursor: text;
+  border-color: var(--interactive-accent);
+  background-color: rgba(var(--ctp-crust), 0.2);
 }
 
-/*-- Gutter number highlight --*/
-.cm-lineNumbers .cm-gutterElement.cm-active {
-  color: var(--interactive-accent);
-}
-
-/*-- Nav file label align --*/
-.nav-file-title-content { flex-grow: 1; }
-.nav-folder-title-content { flex-grow: 1; }
-
-/*-- Hide empty frontmatter --*/
-.frontmatter-container:not(:has(.frontmatter-section)) {
-  display: none;
-}
-
-/*-- Popover animation --*/
-.popover.hover-popover.is-loaded {
-  animation: fade 0.2s;
-}
-
-/*-- Settings modal: see-through toggle --*/
-.sp-settings-transparent .modal-container .modal.mod-settings {
-  opacity: 0.90 !important;
-}
-
-/*-- Settings modal headings --*/
-.modal.mod-settings, .modal.mod-community-theme, .modal.mod-community-plugin {
-  --h1-font: var(--font-interface);
-  --h2-font: var(--font-interface);
-  --h3-font: var(--font-interface);
-  --h4-font: var(--font-interface);
-  --h5-font: var(--font-interface);
-  --h6-font: var(--font-interface);
-  --h1-weight: 600;
-  --h1-color: #BA7184;
-  --h2-color: #DD7F67;
-  --h3-color: rgb(var(--ctp-teal));
-  --h4-color: rgb(var(--ctp-green));
-  --h5-color: #9A85AE;
-  --h6-color: #8D8D8D;
-}
-
-/*-- Translucent support --*/
-body.is-translucent {
-  background-color: transparent;
-}
-.is-translucent .workspace {
-  background-color: transparent;
+/* Rainbow indentation lines */
+.nav-files-container .nav-folder > .nav-folder-children {
+  border-color: rgba(var(--rainbow-folder-color), 0.5);
 }
 
 /*===============================================================
  * CUSTOM CHECKBOXES
  *===============================================================*/
+
 [data-task=x] > input[type=checkbox]:checked,
 [data-task=x] > p > input[type=checkbox]:checked, [data-task=x][type=checkbox]:checked {
   --checkbox-color: rgb(var(--ctp-green));
   --checkbox-color-hover: rgb(var(--ctp-green));
 }
+
 [data-task="!"] > input[type=checkbox]:checked,
 [data-task="!"] > p > input[type=checkbox]:checked, [data-task="!"][type=checkbox]:checked {
   --checkbox-color: rgb(var(--ctp-yellow));
   --checkbox-color-hover: rgb(var(--ctp-yellow));
 }
+
 [data-task="!"] > input[type=checkbox]:checked:after,
 [data-task="!"] > p > input[type=checkbox]:checked:after, [data-task="!"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
   -webkit-mask-size: 20%;
 }
+
 [data-task="?"] > input[type=checkbox]:checked,
 [data-task="?"] > p > input[type=checkbox]:checked, [data-task="?"][type=checkbox]:checked {
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
 }
+
 [data-task="?"] > input[type=checkbox]:checked:after,
 [data-task="?"] > p > input[type=checkbox]:checked:after, [data-task="?"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
@@ -1055,178 +1530,217 @@ body.is-translucent {
   background-color: rgb(var(--ctp-peach));
   left: 0px;
 }
+
 [data-task="-"] {
   text-decoration: var(--checklist-done-decoration);
   color: var(--checklist-done-color);
 }
+
 [data-task="-"] > input[type=checkbox]:checked,
 [data-task="-"] > p > input[type=checkbox]:checked, [data-task="-"][type=checkbox]:checked {
   --checkbox-color: rgb(var(--ctp-red));
   --checkbox-color-hover: rgb(var(--ctp-red));
 }
+
 [data-task="-"] > input[type=checkbox]:checked:after,
 [data-task="-"] > p > input[type=checkbox]:checked:after, [data-task="-"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   -webkit-mask-size: 50%;
 }
+
 [data-task=b] > input[type=checkbox]:checked,
 [data-task=b] > p > input[type=checkbox]:checked, [data-task=b][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=b] > input[type=checkbox]:checked:after,
 [data-task=b] > p > input[type=checkbox]:checked:after, [data-task=b][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-red)); left: 0px;
 }
+
 [data-task=I] > input[type=checkbox]:checked,
 [data-task=I] > p > input[type=checkbox]:checked, [data-task=I][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=I] > input[type=checkbox]:checked:after,
 [data-task=I] > p > input[type=checkbox]:checked:after, [data-task=I][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-yellow)); left: 0px;
 }
+
 [data-task=p] > input[type=checkbox]:checked,
 [data-task=p] > p > input[type=checkbox]:checked, [data-task=p][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=p] > input[type=checkbox]:checked:after,
 [data-task=p] > p > input[type=checkbox]:checked:after, [data-task=p][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-green)); left: 0px;
 }
+
 [data-task=c] > input[type=checkbox]:checked,
 [data-task=c] > p > input[type=checkbox]:checked, [data-task=c][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=c] > input[type=checkbox]:checked:after,
 [data-task=c] > p > input[type=checkbox]:checked:after, [data-task=c][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
   -webkit-mask-size: 100%; background-color: rgb(var(--ctp-red)); left: 0px;
 }
+
 [data-task=i] > input[type=checkbox]:checked,
 [data-task=i] > p > input[type=checkbox]:checked, [data-task=i][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=i] > input[type=checkbox]:checked:after,
 [data-task=i] > p > input[type=checkbox]:checked:after, [data-task=i][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-blue)); left: 0px;
 }
+
 [data-task=l] > input[type=checkbox]:checked,
 [data-task=l] > p > input[type=checkbox]:checked, [data-task=l][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=l] > input[type=checkbox]:checked:after,
 [data-task=l] > p > input[type=checkbox]:checked:after, [data-task=l][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-mauve)); left: 0px;
 }
+
 [data-task="*"] > input[type=checkbox]:checked,
 [data-task="*"] > p > input[type=checkbox]:checked, [data-task="*"][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task="*"] > input[type=checkbox]:checked:after,
 [data-task="*"] > p > input[type=checkbox]:checked:after, [data-task="*"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-yellow)); left: 0px;
 }
+
 [data-task=n] > input[type=checkbox]:checked,
 [data-task=n] > p > input[type=checkbox]:checked, [data-task=n][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=n] > input[type=checkbox]:checked:after,
 [data-task=n] > p > input[type=checkbox]:checked:after, [data-task=n][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-maroon)); left: 0px;
 }
+
 [data-task=S] > input[type=checkbox]:checked,
 [data-task=S] > p > input[type=checkbox]:checked, [data-task=S][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=S] > input[type=checkbox]:checked:after,
 [data-task=S] > p > input[type=checkbox]:checked:after, [data-task=S][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2.7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3.8.9 2.6.2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2.4 2.7.9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3.7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-green)); left: 0px;
 }
+
 [data-task="/"] > input[type=checkbox]:checked,
 [data-task="/"] > p > input[type=checkbox]:checked, [data-task="/"][type=checkbox]:checked {
   --checkbox-color: rgba(var(--ctp-subtext0), 0.3);
   --checkbox-color-hover: rgba(var(--ctp-subtext0), 0.3);
-  border-color: rgb(var(--ctp-subtext0)) !important;
+  border-color: rgb(var(--ctp-subtext0));
 }
+
 [data-task="/"] > input[type=checkbox]:checked:after,
 [data-task="/"] > p > input[type=checkbox]:checked:after, [data-task="/"][type=checkbox]:checked:after {
   background-color: transparent;
 }
+
 [data-task="<"] > input[type=checkbox]:checked,
 [data-task="<"] > p > input[type=checkbox]:checked, [data-task="<"][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task="<"] > input[type=checkbox]:checked:after,
 [data-task="<"] > p > input[type=checkbox]:checked:after, [data-task="<"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-teal)); left: 0px;
 }
+
 [data-task=">"] > input[type=checkbox]:checked,
 [data-task=">"] > p > input[type=checkbox]:checked, [data-task=">"][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=">"] > input[type=checkbox]:checked:after,
 [data-task=">"] > p > input[type=checkbox]:checked:after, [data-task=">"][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-sapphire)); left: 0px;
 }
+
 [data-task='"'] > input[type=checkbox]:checked,
 [data-task='"'] > p > input[type=checkbox]:checked, [data-task='"'][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task='"'] > input[type=checkbox]:checked:after,
 [data-task='"'] > p > input[type=checkbox]:checked:after, [data-task='"'][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-subtext0)); left: 0px;
 }
+
 [data-task=u] > input[type=checkbox]:checked,
 [data-task=u] > p > input[type=checkbox]:checked, [data-task=u][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=u] > input[type=checkbox]:checked:after,
 [data-task=u] > p > input[type=checkbox]:checked:after, [data-task=u][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRyZW5kaW5nLXVwIj48cG9seWxpbmUgcG9pbnRzPSIyMiA3IDEzLjUgMTUuNSA4LjUgMTAuNSAyIDE3Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTYgNyAyMiA3IDIyIDEzIi8+PC9zdmc+");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-green)); left: 0px;
 }
+
 [data-task=d] > input[type=checkbox]:checked,
 [data-task=d] > p > input[type=checkbox]:checked, [data-task=d][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=d] > input[type=checkbox]:checked:after,
 [data-task=d] > p > input[type=checkbox]:checked:after, [data-task=d][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRyZW5kaW5nLWRvd24iPjxwb2x5bGluZSBwb2ludHM9IjIyIDE3IDEzLjUgOC41IDguNSAxMy41IDIgNyIvPjxwb2x5bGluZSBwb2ludHM9IjE2IDE3IDIyIDE3IDIyIDExIi8+PC9zdmc+");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-red)); left: 0px;
 }
+
 [data-task=f] > input[type=checkbox]:checked,
 [data-task=f] > p > input[type=checkbox]:checked, [data-task=f][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=f] > input[type=checkbox]:checked:after,
 [data-task=f] > p > input[type=checkbox]:checked:after, [data-task=f][type=checkbox]:checked:after {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+");
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS6IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-red)); left: 0px;
 }
+
 [data-task=k] > input[type=checkbox]:checked,
 [data-task=k] > p > input[type=checkbox]:checked, [data-task=k][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=k] > input[type=checkbox]:checked:after,
 [data-task=k] > p > input[type=checkbox]:checked:after, [data-task=k][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWtleS1yb3VuZCI+PHBhdGggZD0iTTIgMTh2M2MwIC42LjQgMSAxIDFoNHYtM2gzdi0zaDJsMS40LTEuNGE2LjUgNi41IDAgMSAwLTQtNFoiLz48Y2lyY2xlIGN4PSIxNi41IiBjeT0iNy41IiByPSIuNSIvPjwvc3ZnPg==");
   -webkit-mask-size: contain; background-color: rgb(var(--ctp-yellow)); left: 0px;
 }
+
 [data-task=w] > input[type=checkbox]:checked,
 [data-task=w] > p > input[type=checkbox]:checked, [data-task=w][type=checkbox]:checked {
   --checkbox-color: transparent; --checkbox-color-hover: transparent; border-width: 0;
 }
+
 [data-task=w] > input[type=checkbox]:checked:after,
 [data-task=w] > p > input[type=checkbox]:checked:after, [data-task=w][type=checkbox]:checked:after {
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNha2UiPjxwYXRoIGQ9Ik0yMCAyMXYtOGEyIDIgMCAwIDAtMi0ySDZhMiAyIDAgMCAwLTIgMnY4Ii8+PHBhdGggZD0iTTQgMTZzLjUtMSAyLTEgMi41IDIgNCAyIDIuNS0yIDQtMiAyLjUgMiA0IDIgMi0xIDItMSIvPjxwYXRoIGQ9Ik0yIDIxaDIwIi8+PHBhdGggZD0iTTcgOHYzIi8+PHBhdGggZD0iTTEyIDh2MyIvPjxwYXRoIGQ9Ik0xNyA4djMiLz48cGF0aCBkPSJNNyA0aDAuMDEiLz48cGF0aCBkPSJNMTIgNGgwLjAxIi8+PHBhdGggZD0iTTE3IDRoMC4wMSIvPjwvc3ZnPg==");
@@ -1236,6 +1750,7 @@ body.is-translucent {
 /*===============================================================
  * SPEECH BUBBLES
  *===============================================================*/
+
 [data-task="0"],
 [data-task="1"],
 [data-task="2"],
@@ -1254,22 +1769,16 @@ body.is-translucent {
   --bold-color: var(--text-normal);
   --italic-color: var(--text-normal);
 }
+
 [data-task="0"] p, [data-task="1"] p, [data-task="2"] p, [data-task="3"] p,
 [data-task="4"] p, [data-task="5"] p, [data-task="6"] p, [data-task="7"] p,
 [data-task="8"] p, [data-task="9"] p { margin-top: 0; margin-bottom: 0; }
+
 [data-task="0"] .task-list-item-checkbox, [data-task="1"] .task-list-item-checkbox,
 [data-task="2"] .task-list-item-checkbox, [data-task="3"] .task-list-item-checkbox,
 [data-task="4"] .task-list-item-checkbox, [data-task="5"] .task-list-item-checkbox,
 [data-task="6"] .task-list-item-checkbox, [data-task="7"] .task-list-item-checkbox,
 [data-task="8"] .task-list-item-checkbox, [data-task="9"] .task-list-item-checkbox { display: none; }
-
-.theme-dark [data-task="0"], .theme-dark [data-task="1"], .theme-dark [data-task="2"],
-.theme-dark [data-task="3"], .theme-dark [data-task="4"], .theme-dark [data-task="5"],
-.theme-dark [data-task="6"], .theme-dark [data-task="7"], .theme-dark [data-task="8"],
-.theme-dark [data-task="9"] {
-  --text-normal: var(--background-primary);
-  transition: background-color 0.2s, background 0.2s, border-radius 0.2s;
-}
 
 .is-live-preview [data-task="0"].cm-active, .is-live-preview [data-task="1"].cm-active,
 .is-live-preview [data-task="2"].cm-active, .is-live-preview [data-task="3"].cm-active,
@@ -1280,6 +1789,7 @@ body.is-translucent {
   --text-normal: rgb(var(--ctp-text));
   background: rgba(var(--ctp-surface1), 0.4);
 }
+
 .is-live-preview [data-task="0"]:not(.cm-active), .is-live-preview [data-task="1"]:not(.cm-active),
 .is-live-preview [data-task="2"]:not(.cm-active), .is-live-preview [data-task="3"]:not(.cm-active),
 .is-live-preview [data-task="4"]:not(.cm-active), .is-live-preview [data-task="5"]:not(.cm-active),
@@ -1302,19 +1812,24 @@ body.is-translucent {
 /*===============================================================
  * FILE ICONS
  *===============================================================*/
+
 .nav-file .nav-file-title[data-path] { align-items: center; }
+
 .nav-file .nav-file-title[data-path]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6'/%3E%3C/svg%3E%0A");
   -webkit-mask-repeat: no-repeat; background-color: var(--icon-color); content: ""; display: flex;
   flex-shrink: 0; height: var(--size-4-4); margin-left: calc(-1 * var(--size-4-5));
   opacity: var(--icon-opacity); position: absolute; width: var(--size-4-4);
 }
+
 .nav-file .nav-file-title[data-path$=".md"]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6m-4 5H8m8 4H8m2-8H8'/%3E%3C/svg%3E%0A");
 }
+
 .nav-file .nav-file-title[data-path$=".canvas"]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3h7v9H3zm11 0h7v5h-7zm0 9h7v9h-7zM3 16h7v5H3z'/%3E%3C/svg%3E");
 }
+
 .nav-file .nav-file-title[data-path$=".svg"]::before,
 .nav-file .nav-file-title[data-path$=".jpg"]::before,
 .nav-file .nav-file-title[data-path$=".jpeg"]::before,
@@ -1324,6 +1839,7 @@ body.is-translucent {
 .nav-file .nav-file-title[data-path$=".bmp"]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6'/%3E%3Ccircle cx='10' cy='13' r='2'/%3E%3Cpath d='m20 17-1.09-1.09a2 2 0 0 0-2.82 0L10 22'/%3E%3C/svg%3E%0A");
 }
+
 .nav-file .nav-file-title[data-path$=".mp3"]::before,
 .nav-file .nav-file-title[data-path$=".wav"]::before,
 .nav-file .nav-file-title[data-path$=".m4a"]::before,
@@ -1331,6 +1847,7 @@ body.is-translucent {
 .nav-file .nav-file-title[data-path$=".flac"]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18V5l12-2v13M9 9l12-2'/%3E%3Ccircle cx='6' cy='18' r='3'/%3E%3Ccircle cx='18' cy='16' r='3'/%3E%3C/svg%3E");
 }
+
 .nav-file .nav-file-title[data-path$=".mp4"]::before,
 .nav-file .nav-file-title[data-path$=".mov"]::before,
 .nav-file .nav-file-title[data-path$=".mkv"]::before {
@@ -1338,66 +1855,150 @@ body.is-translucent {
 }
 
 /*===============================================================
- * RAINBOW FOLDERS — Supporting styles
- * (Color sequence defined above in "Rainbow folder color sequence fix")
+ * ADDITIONAL INTERFACE ELEMENTS
  *===============================================================*/
 
-/* Subfolders inherit parent color */
-.nav-files-container .nav-folder.nav-folder .nav-folder,
-[data-type=bookmarks] .tree-item .tree-item {
-  --rainbow-folder-color: inherit;
+/* Graph controls */
+.workspace-split:not(.mod-root) .graph-controls.is-close,
+.workspace-split:not(.mod-root) .graph-controls,
+.workspace-split:not(.mod-root) .graph-controls:not(.is-close),
+.workspace-leaf .graph-controls.is-close,
+.workspace-leaf .graph-controls,
+.workspace-leaf .graph-controls:not(.is-close) {
+  background-color: rgb(var(--ctp-mantle));
 }
 
-/* Full rainbow style */
-.nav-files-container > div > .nav-folder .nav-folder-title,
-.nav-files-container > div > .nav-folder .nav-file-title,
-.nav-files-container .collapse-icon svg.svg-icon,
-.tree-item-self .tree-item-icon {
-  color: var(--background-primary);
-  --icon-color: var(--background-primary);
-}
-.nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
-  color: var(--background-primary);
-}
-.nav-files-container > div > .nav-folder .nav-folder-children {
-  border-color: rgba(var(--ctp-crust), 0.4);
-}
-.nav-files-container .nav-folder > .nav-folder-children {
-  padding: 0 5px 0 5px;
-}
-.nav-files-container > div > .nav-folder {
-  transition: background-color 0.4s;
-  background-color: rgba(var(--rainbow-folder-color), var(--anp-rainbow-folder-bg-opacity));
-  margin-bottom: 2px;
-  border-radius: 5px;
-}
-body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-folder-title:hover,
-body:not(.is-grabbing) .nav-files-container > div .nav-file .nav-file-title:hover {
-  background-color: rgba(var(--ctp-base), 0.1);
-}
-body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.is-active {
-  border-color: rgba(var(--ctp-base), 0.2);
-  background-color: rgba(var(--ctp-base), 0.2);
-}
-.nav-file { overflow-y: hidden; }
-.nav-file-title-content.is-being-renamed,
-.nav-folder-title-content.is-being-renamed {
-  cursor: text;
-  border-color: var(--interactive-accent);
-  background-color: rgba(var(--ctp-crust), 0.2);
+/* Links - internal: no underline; external: keep underline */
+.markdown-rendered .internal-link,
+.markdown-rendered .internal-link:hover,
+.markdown-rendered .internal-link:active,
+.markdown-rendered .internal-link.is-unresolved,
+.markdown-rendered .internal-link.is-unresolved:hover,
+.cm-hmd-internal-link,
+.cm-hmd-internal-link:hover,
+.data-link-text,
+span.data-link-text,
+.multi-select-pill-content.internal-link,
+.metadata-container .internal-link,
+.tree-item-inner .internal-link,
+.search-result-file-match .internal-link {
+  text-decoration: none !important;
 }
 
-/* Rainbow indentation lines */
-.nav-files-container .nav-folder > .nav-folder-children {
-  border-color: rgba(var(--rainbow-folder-color), 0.5);
+.external-link, .external-link:hover {
+  background-image: none;
+  padding-right: 0px;
+}
+
+/* Blockquote spacing */
+.markdown-rendered blockquote {
+  padding: 5px 5px 5px 10px;
+}
+
+/* Highlights */
+.markdown-rendered .search-highlight > div {
+  box-shadow: none;
+  opacity: 0.3;
+  background-color: rgba(var(--ctp-text), 0.4);
+  mix-blend-mode: var(--highlight-mix-blend-mode);
+  border-radius: 2px;
+}
+
+.markdown-rendered .search-highlight > div.is-active {
+  box-shadow: 0 0 0px 2px rgba(var(--ctp-yellow), 0.5);
+  background-color: rgba(var(--ctp-yellow), 0.2);
+  opacity: 1;
+}
+
+/* Slider checkboxes */
+.checkbox-container.is-enabled:after {
+  background-color: var(--background-primary);
+}
+
+/* Notices */
+.notice {
+  color: rgb(var(--ctp-text));
+}
+
+/* Copy code button */
+.markdown-rendered button.copy-code-button {
+  background-color: rgb(var(--ctp-crust));
+}
+
+/* Suggestion selected */
+.suggestion-item.is-selected {
+  background-color: rgba(var(--ctp-text), 0.075);
+}
+
+/* Canvas */
+.canvas-card-menu {
+  box-shadow: none;
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+}
+
+.canvas-controls button {
+  background-color: var(--background-secondary);
+}
+
+/* Gutter number highlight */
+.cm-lineNumbers .cm-gutterElement.cm-active {
+  color: var(--interactive-accent);
+}
+
+/* Nav file label align */
+.nav-file-title-content { flex-grow: 1; }
+.nav-folder-title-content { flex-grow: 1; }
+
+/* Hide empty frontmatter */
+.frontmatter-container:not(:has(.frontmatter-section)) {
+  display: none;
+}
+
+/* Popover animation */
+.popover.hover-popover.is-loaded {
+  animation: fade 0.2s;
+}
+
+/* Settings modal: see-through toggle */
+.sp-settings-transparent-80 .modal-container .modal.mod-settings {
+  opacity: 0.80;
+}
+
+/* Settings modal headings */
+.modal.mod-settings, .modal.mod-community-theme, .modal.mod-community-plugin {
+  --h1-font: var(--font-interface);
+  --h2-font: var(--font-interface);
+  --h3-font: var(--font-interface);
+  --h4-font: var(--font-interface);
+  --h5-font: var(--font-interface);
+  --h6-font: var(--font-interface);
+  --h1-weight: 600;
+  --h1-color: #BA7184;
+  --h2-color: #DD7F67;
+  --h3-color: rgb(var(--ctp-teal));
+  --h4-color: rgb(var(--ctp-green));
+  --h5-color: #9A85AE;
+  --h6-color: #8D8D8D;
+}
+
+/* Translucent support */
+body.is-translucent {
+  background-color: transparent;
+}
+
+.is-translucent .workspace {
+  background-color: transparent;
 }
 
 /*===============================================================
- * PHASE 5: COMPACT SPACING
+ * CONDENSED SPACING - STYLE SETTINGS TOGGLES
  *===============================================================*/
 
-/* FILE EXPLORER — Compact Spacing (Style Settings toggle) */
-.sp-compact-explorer .nav-files-container .tree-item-self {
+/* MASTER CONDENSE TOGGLE — mirrors every sp-compact-* selector */
+
+/* FILE EXPLORER — Condensed Spacing */
+:is(.sp-compact-explorer, .sp-compact-all) .nav-files-container .tree-item-self {
   min-height: 22px;
   line-height: 22px;
   padding-top: 0;
@@ -1405,18 +2006,230 @@ body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.
   display: flex;
   align-items: center;
 }
-.sp-compact-explorer .nav-folder-children {
+
+:is(.sp-compact-explorer, .sp-compact-all) .nav-folder-children {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* BASES PLUGIN — Compact Tables (Style Settings toggle) */
-body.sp-compact-bases .bases-view { --bases-table-row-height: 20px !important; --bases-table-font-size: 13px !important; }
-body.sp-compact-bases .bases-table-row, body.sp-compact-bases .bases-table-header-row { min-height: 20px !important; height: 20px !important; max-height: 20px !important; }
-body.sp-compact-bases .bases-table-cell, body.sp-compact-bases .bases-table-header-cell { padding: 0px 6px !important; line-height: 1.2 !important; }
-body.sp-compact-bases .bases-table-cell-content { padding: 0 !important; margin: 0 !important; line-height: 1.2 !important; min-height: unset !important; height: auto !important; }
-body.sp-compact-bases .bases-table-cell-content * { margin-top: 0 !important; margin-bottom: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
-body.sp-compact-bases .bases-table-row td, body.sp-compact-bases .bases-table-row th { padding-top: 0 !important; padding-bottom: 0 !important; }
-body.sp-compact-bases .bases-table-row[style], body.sp-compact-bases .bases-table-cell[style] { height: 20px !important; min-height: 20px !important; }
+/* FILE EXPLORER — Extra Condensed Spacing */
+:is(.sp-compact-explorer-extra, .sp-compact-all) .nav-files-container .tree-item-self {
+  min-height: 18px;
+  line-height: 18px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+:is(.sp-compact-explorer-extra, .sp-compact-all) .nav-folder-children {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+:is(.sp-compact-explorer-extra, .sp-compact-all) .nav-files-container .tree-item-icon {
+  min-height: 18px;
+  line-height: 18px;
+}
+
+/* BASES PLUGIN — Condensed Tables */
+body:is(.sp-compact-bases, .sp-compact-all) .bases-view { --bases-table-row-height: 20px; --bases-table-font-size: 13px; }
+body:is(.sp-compact-bases, .sp-compact-all) .bases-table-row, body:is(.sp-compact-bases, .sp-compact-all) .bases-table-header-row { min-height: 20px; height: 20px; max-height: 20px; }
+body:is(.sp-compact-bases, .sp-compact-all) .bases-table-cell, body:is(.sp-compact-bases, .sp-compact-all) .bases-table-header-cell { padding: 0px 6px; line-height: 1.2; }
+body:is(.sp-compact-bases, .sp-compact-all) .bases-table-cell-content { padding: 0; margin: 0; line-height: 1.2; min-height: unset; height: auto; }
+body:is(.sp-compact-bases, .sp-compact-all) .bases-table-cell-content * { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+body:is(.sp-compact-bases, .sp-compact-all) .bases-table-row td, body:is(.sp-compact-bases, .sp-compact-all) .bases-table-row th { padding-top: 0; padding-bottom: 0; }
+body:is(.sp-compact-bases, .sp-compact-all) .bases-table-row[style], body:is(.sp-compact-bases, .sp-compact-all) .bases-table-cell[style] { height: 20px; min-height: 20px; }
+
+/* SIDEBAR PANES — Condensed Spacing */
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="tag"] .tree-item-self,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="all-properties"] .tree-item-self,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="backlink"] .tree-item-self,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="outgoing-link"] .tree-item-self,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="outline"] .tree-item-self,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="bookmarks"] .tree-item-self,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="search"] .tree-item-self {
+  min-height: 18px;
+  line-height: 18px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="tag"] .tree-item-children,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="all-properties"] .tree-item-children,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="backlink"] .tree-item-children,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="outgoing-link"] .tree-item-children,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="outline"] .tree-item-children,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="bookmarks"] .tree-item-children,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="search"] .tree-item-children {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="backlink"] .search-result-file-matches,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="outgoing-link"] .search-result-file-matches,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="search"] .search-result-file-matches {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="backlink"] .search-result-file-match,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="outgoing-link"] .search-result-file-match,
+body:is(.sp-compact-panes, .sp-compact-all) [data-type="search"] .search-result-file-match {
+  min-height: 18px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* IN-NOTE PROPERTIES — Condensed Spacing */
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 21px;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-key,
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-value {
+  line-height: 1.2;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 20px;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-key input,
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-value input,
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-value .multi-select-pill-content {
+  line-height: 1.3;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-properties {
+  gap: 0;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container {
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-properties-heading {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  min-height: 20px;
+}
+
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-select-pill {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* BODY TEXT — Condensed Spacing */
+body:is(.sp-compact-body, .sp-compact-all) {
+  --line-height-normal: 1.25;
+  --p-spacing: 0.15em;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-source-view .cm-content {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-source-view .cm-line {
+  line-height: 1.25;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-source-view .HyperMD-list-line {
+  line-height: 1.25;
+  min-height: unset;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view {
+  line-height: 1.25;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view p {
+  margin-block-start: 0.15em;
+  margin-block-end: 0.15em;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view ul,
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view ol {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view li {
+  line-height: 1.25;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view blockquote {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view hr {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-preview-view :is(h1,h2,h3,h4,h5,h6) {
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+body:is(.sp-compact-body, .sp-compact-all) .markdown-source-view .HyperMD-header {
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+/* SETTINGS POPUP — Condensed Spacing */
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .vertical-tab-nav-item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  min-height: 20px;
+  line-height: 1.3;
+}
+
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .vertical-tab-header-group-title {
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .vertical-tab-nav-item-chevron {
+  padding: 0;
+}
+
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .setting-item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: unset;
+}
+
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .setting-item-info {
+  padding-right: 8px;
+}
+
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .setting-item-name {
+  line-height: 1.3;
+}
+
+body:is(.sp-compact-settings, .sp-compact-all) .modal.mod-settings .setting-item-description {
+  line-height: 1.3;
+  margin-top: 1px;
+}

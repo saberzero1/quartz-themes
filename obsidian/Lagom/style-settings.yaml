@@ -429,6 +429,10 @@ sections:
     id: yaml-values
     collapsed: false
     settings:
+      - id: pill-style-alias
+        title: Pill-style alias
+        type: class-toggle
+        default: true
       - id: hide-empty-properties
         title: Show empty properties
         type: variable-select

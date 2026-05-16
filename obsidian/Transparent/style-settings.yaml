@@ -16,63 +16,116 @@ sections:
         type: info-text
         markdown: true
       - id: preset-mode
-        title: 🎨 Theme Presets
+        title: 🎨 Theme Preset
+        description: A coordinated look out of the box. Each preset works in both Dark and Light mode — just pick one and go.
         type: class-select
         allowEmpty: false
         default: preset-default
         options:
-          - label: Base settings
+          - label: Base
             value: preset-default
           - label: Orange Autumn
             value: preset-orange
           - label: True Glass (100% Transparent)
             value: preset-true-glass
-      - id: main-section
-        title: Adjust Obsidian Theme
+      - id: bg-section
+        title: 🖼️ Background
+        type: heading
+        level: 1
+        collapsed: false
+      - id: bg-style-info
+        title: How it works
+        description: '**Auto** uses a blurred wallpaper in Dark mode and a soft gradient in Light mode. All other styles apply to both modes at once.'
+        type: info-text
+        markdown: true
+      - id: bg-type
+        title: Background Style
+        description: Choose what appears behind your notes.
+        type: class-select
+        allowEmpty: false
+        default: bg-auto
+        options:
+          - label: Auto (Wallpaper / Gradient)
+            value: bg-auto
+          - label: Gradient
+            value: bg-gradient
+          - label: Solid Color (from Tint)
+            value: bg-solid
+          - label: Custom Image URL
+            value: bg-custom
+          - label: True Glass (100% Transparent)
+            value: bg-glass
+      - id: bg-custom-url
+        title: Custom Image URL
+        description: 'Paste your image URL. Example: url(''https://example.com/photo.jpg''). Works in both Dark and Light mode.'
+        type: variable-text
+        default: url('')
+      - id: gradient-section
+        title: 🌈 Gradient
+        type: heading
+        level: 2
+        collapsed: false
+      - id: gradient-from
+        title: Start Color
+        description: First color of the gradient (top-left corner at default angle).
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#e8f5ee'
+        alt-format: []
+      - id: gradient-to
+        title: End Color
+        description: Second color of the gradient (bottom-right corner at default angle).
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#c8e6d4'
+        alt-format: []
+      - id: gradient-angle
+        title: Angle
+        description: Direction of the gradient. 0 = top to bottom, 90 = left to right, 135 = diagonal.
+        type: variable-number-slider
+        default: 135
+        min: 0
+        max: 360
+        step: 5
+        format: deg
+      - id: blur-section
+        title: 💨 Blur
         type: heading
         level: 1
         collapsed: false
       - id: background-blur
-        title: 🫧 Background Blur
+        title: Background Blur
+        description: Blur intensity on the background. Higher = smoother look, more GPU cost.
         type: variable-number-slider
         default: 80
-        description: 'Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems.'
         min: 10
         max: 200
         step: 1
         format: px
       - id: ui-blur
-        title: 🪟 UI Elements Blur
+        title: UI Elements Blur
+        description: Blur on panels like Command Palette, Settings, and context menus.
         type: variable-number-slider
         default: 60
-        description: Adjust the blur effect for UI elements like Command Palette, Modals, etc.
         min: 0
         max: 100
         step: 1
         format: px
-      - id: show-scrollbars
-        title: Show Scrollbars
-        description: ':)'
-        type: class-toggle
-      - id: bg-type
-        title: 🖼️ Background Image
-        description: Choose your background style. Use 'Translucent OS Window' for 100% transparency (shows your desktop).
-        type: class-select
-        allowEmpty: false
-        default: bg-type-default
-        options:
-          - label: Default Green
-            value: bg-type-default
-          - label: Custom Background
-            value: bg-type-custom
-      - id: bg-custom-url
-        title: Custom Background URL
-        description: Paste your image URL inside the quotes. E.g. url('https://...')
-        type: variable-text
-        default: url('')
+      - id: tint-section
+        title: 🎨 Color Tint
+        type: heading
+        level: 1
+        collapsed: false
+      - id: tint-info
+        title: What is a tint?
+        description: A color overlay applied on top of the background. Works in both Dark and Light mode. Set Intensity to 0 to disable — zero performance cost when off.
+        type: info-text
+        markdown: true
       - id: bg-tint-color
         title: Tint Color
-        description: Pick the color you want to overlay on the background.
+        description: Pick any color to overlay on the background.
         type: variable-color
         opacity: false
         format: hsl-split
@@ -80,43 +133,50 @@ sections:
         alt-format: []
       - id: bg-tint-opacity
         title: Tint Intensity
-        description: How strongly the tint is applied. 0 = off (no performance cost), 0.3 = maximum.
+        description: How strongly the tint is applied. 0 = off, 0.3 = strong.
         type: variable-number-slider
         default: 0
         min: 0
         max: 0.3
         step: 0.01
       - id: animation-settings-section
-        title: ⚛️ Animation settings
-        description: work in progress, though you can use some of the animations
+        title: ⚛️ Animations
         type: heading
         level: 1
         collapsed: false
       - id: animate-modal-open
         title: Animate Settings / Modal Opening
-        description: Smooth scale + fade animation when opening Settings or any modal window.
+        description: Smooth scale + fade when opening any modal or settings window.
         type: class-toggle
         default: true
       - id: animate-note-open
-        title: (beta) Animate Note Opening
-        description: Adds a smooth fade-in + slide-up animation when opening or switching notes.
+        title: Animate Note Opening (beta)
+        description: Slide-up + fade when opening or switching notes.
         type: class-toggle
       - id: no-animation
         title: Disable All Animations
-        description: Turn off every animation possbile in obsidian
+        description: Kill switch — turns off every animation in Obsidian.
         type: class-toggle
         default: false
       - id: snippets-section
-        title: 🧩 Snippets / Addons
+        title: 🧩 Extras
         type: heading
         level: 1
+      - id: disable-drawer-dimming
+        title: Disable Drawer Dimming (beta)
+        description: Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled.
+        type: class-toggle
+      - id: show-scrollbars
+        title: Show Scrollbars
+        description: Always show scrollbars instead of hiding them until hover.
+        type: class-toggle
       - id: hide-canvas-dots
         title: Hide Canvas Dots
-        description: Removes the dot pattern from the canvas background.
+        description: Remove the dot grid from the Canvas background.
         type: class-toggle
       - id: file-line-width
         title: Note Max Width
-        description: Changes the maximum width of currently displayed note.
+        description: Maximum width of the note editor.
         type: variable-number-slider
         default: 700
         min: 400
@@ -125,16 +185,21 @@ sections:
         format: px
       - id: border-opacity
         title: Border Opacity
-        description: Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible. not recommend above 0.50
+        description: Visibility of subtle borders on tables and horizontal rules. 0 = invisible.
         type: variable-number-slider
         default: 0.063
         min: 0
         max: 1
         step: 0.001
       - id: accent-everywhere
-        title: (Experimental) Accent Everywhere
-        description: Applies accent color to more UI elements (headings, sliders, icons).
+        title: Accent Color Everywhere
+        description: Apply your accent color to headings, icons, and sliders throughout the UI.
         type: class-toggle
+      - id: main-section
+        title: Adjust Obsidian Theme
+        type: heading
+        level: 1
+        collapsed: false
       - id: set-blur
         title: 🫧 Blur Intensity
         type: variable-number-slider

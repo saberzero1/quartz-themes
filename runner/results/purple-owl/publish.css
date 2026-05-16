@@ -1423,6 +1423,7 @@ body.theme-dark {
   --text-highlight-bg-active: rgba(3, 36, 62, 0.1) !important;
   --accent-d: 60% !important;
   --base-d: 15% !important;
+  --font-ui: "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
   --text: "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
   --border-width-alt: 1px !important;
   --background-translucent: hsla(
@@ -1432,7 +1433,6 @@ body.theme-dark {
     0.85
   ) !important;
   --background-tertiary: #082632 !important;
-  --font-ui: "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
   --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2) !important;
   --background-transparent: hsla(
     var(--base-h),

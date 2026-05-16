@@ -1,0 +1,57 @@
+mode: replace
+sections:
+  - name: Cognia Noir
+    id: cognia-noir
+    collapsed: false
+    settings:
+      - id: cn-look
+        title: Look and feel
+        type: heading
+        level: 2
+        collapsed: false
+      - id: cn-accent
+        title: Accent color
+        description: Used for links, focus rings, and selection. Defaults clear WCAG AA against each theme's canvas.
+        type: variable-themed-color
+        format: hex
+        default-dark: '#5b8def'
+        default-light: '#3a5fc7'
+        alt-format: []
+      - id: cn-inline-code
+        title: Inline code color
+        description: Color of `inline code` text. Defaults clear WCAG AA against each theme's code background.
+        type: variable-themed-color
+        format: hex
+        default-dark: '#ee6666'
+        default-light: '#a8201a'
+        alt-format: []
+      - id: cn-editor-font-size
+        title: Editor font size
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 20
+        step: 1
+        format: px
+      - id: cn-note-line-height
+        title: Note line height
+        description: Line spacing for note content. 1.65 is the default comfortable reading density.
+        type: variable-number-slider
+        default: 1.65
+        min: 1.4
+        max: 2
+        step: 0.05
+      - id: file-line-width
+        title: Line width
+        description: Maximum width of the note content area. Obsidian default is 700px.
+        type: variable-number-slider
+        default: 700
+        min: 500
+        max: 1400
+        step: 50
+        format: px
+      - id: cn-bubble-nav
+        title: Bubble nav buttons
+        description: Collapses the file explorer / bookmarks action row (new note, new folder, sort, expand) into a small pill that expands on hover. Inspired by Velocity.
+        type: class-toggle
+        default: true

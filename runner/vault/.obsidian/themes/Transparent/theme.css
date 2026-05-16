@@ -259,6 +259,7 @@ div.setting-item[data-id="info-section"] {
   padding-bottom: 0px;
   transform-origin: top center;
   animation: st-open 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
 }
 
 @keyframes st-open {
@@ -283,7 +284,7 @@ div.setting-item[data-id="info-section"] {
   /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
 
-  --tr: transparent;
+  --tr: #00000000;
 
   /* Gradient background */
   --gradient-from: #e8f5ee;
@@ -503,6 +504,7 @@ body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
   contain: strict;
   z-index: -1;
   pointer-events: none;
+  transform: translateZ(0);
 }
 
 /* === AUTO (default) === */
@@ -510,6 +512,7 @@ body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
 body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
   background-image: var(--background-image-base64);
   filter: brightness(0.54) blur(var(--background-blur));
+  -webkit-backdrop-filter: brightness(0.54) blur(var(--background-blur));
   backdrop-filter: brightness(0.54) blur(var(--background-blur));
 }
 
@@ -518,6 +521,7 @@ body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass)
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -526,6 +530,7 @@ body.bg-gradient .app-container::before {
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -538,6 +543,7 @@ body.theme-light.bg-solid .app-container::before {
   background-image: none;
   background-color: hsl(var(--bg-tint-color-h), 30%, 90%);
   filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -545,6 +551,7 @@ body.theme-dark.bg-solid .app-container::before {
   background-image: none;
   background-color: hsl(var(--bg-tint-color-h), 30%, 15%);
   filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -554,6 +561,7 @@ body.bg-custom .app-container::before {
   background-size: cover;
   background-position: center;
   filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -569,6 +577,7 @@ body.theme-dark.preset-true-glass .app-container::before {
   background-image: none;
   background-color: unset;
   filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -641,6 +650,7 @@ body.is-focused .workspace-ribbon.mod-left {
 }
 
 .modal {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   contain: layout style paint;
   border: 1px solid var(--tr);
@@ -658,6 +668,7 @@ is-tablet
 is-mobile - tablet and phone
 */
 .is-phone .modal {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   /* brightness at 1 is as if it wasn't there at all */
 }
@@ -670,6 +681,7 @@ is-mobile - tablet and phone
 .theme-dark .menu,
 /* Specificity hack to override default Obsidian background */
 .theme-light .menu {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   background-color: var(--overlay-color);
   border: 1px solid var(--tr);
@@ -690,6 +702,7 @@ hr {
 
 body.theme-light .prompt,
 body.theme-dark .prompt {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   border: 1px solid var(--tr);
   background-color: var(--overlay-color);
@@ -771,6 +784,7 @@ input[type="range"] {
 
 .suggestion-container.mod-search-suggestion {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   border-color: var(--tr);
   max-height: 600px;
@@ -824,17 +838,20 @@ select,
 
 .suggestion {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   /* tasks plugin integration */
 }
 
 /* blur of 80px looks bad there */
 .status-bar {
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
 .notice {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   color: var(--kolorboku);
   animation: tr-notice-in-desktop var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
@@ -880,6 +897,9 @@ select,
 /* graph view */
 .graph-controls {
   background-color: #00000080;
+  -webkit-backdrop-filter:
+    /*brightness(var(--brightness))*/
+    blur(12px);
   backdrop-filter:
     /*brightness(var(--brightness))*/
     blur(12px);
@@ -997,7 +1017,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .canvas-control-group {
   box-shadow: none;
-  background-color: transparent;
+  background-color: var(--tr);
 }
 
 .canvas-color-picker-item {
@@ -1008,6 +1028,7 @@ body.hide-canvas-dots svg.canvas-background {
 /* hover on links */
 .popover.hover-popover .markdown-preview-view {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -1022,6 +1043,7 @@ body.hide-canvas-dots svg.canvas-background {
 .mk-menu-container {
   width: auto;
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -1096,11 +1118,13 @@ body.hide-canvas-dots svg.canvas-background {
 .formula-editor .cm-tooltip.cm-tooltip-autocomplete,
 .suggestion-container {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
 .combobox .search-input-container {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -1130,6 +1154,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .mobile-toolbar-options-list {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   border-color: var(--tr);
 }
@@ -1141,6 +1166,7 @@ body.hide-canvas-dots svg.canvas-background {
 }
 
 .is-mobile .mod-raised {
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -1150,6 +1176,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .is-phone .mobile-tab-switcher {
   background-color: var(--tr06);
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
 }
 
@@ -1178,8 +1205,8 @@ body.hide-canvas-dots svg.canvas-background {
 .is-phone .workspace-drawer .nav-files-container {
   -webkit-mask-image: linear-gradient(to bottom,
       black calc(100% - 120px),
-      transparent);
-  mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+      var(--tr));
+  mask-image: linear-gradient(to bottom, black calc(100% - 120px), var(--tr));
 }
 
 .setting-group .setting-items {
@@ -1244,26 +1271,31 @@ body .cm-html-embed thead tr>th {
 }
 
 .is-mobile.is-floating-nav .mod-raised {
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(12px);
   backdrop-filter: brightness(var(--brightness)) blur(12px);
 }
 
 /* Remove backdrop-filter specifically from the settings icon in the mobile drawer header when beta option is enabled */
 body.disable-drawer-dimming .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings {
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
 
 /* blur + dimming when sliding sidebars is disabled */
 .workspace-drawer-inner {
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
 body.disable-drawer-dimming .workspace-drawer-inner {
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
 
 /* when sliding sidebars is enabled - no blur or dimming */
 .is-sliding .workspace-drawer-inner {
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
 
@@ -1275,7 +1307,7 @@ body.disable-drawer-dimming .workspace-drawer-inner {
 }
 
 .is-sliding .workspace-drawer-backdrop {
-  background-color: transparent;
+  background-color: var(--tr);
 }
 
 .is-mobile .suggestion-container {
@@ -1299,6 +1331,7 @@ body.disable-drawer-dimming .workspace-drawer-inner {
 }
 
 .canvas-controls {
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 24px;
   /* fixed because of difference between mobile and desktop */
@@ -1464,6 +1497,7 @@ body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-ty
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
   animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
 
 /* ===================== Animate Note Opening ===================== */
@@ -1477,3 +1511,13 @@ body.no-animation *::after {
 }
 
 /* ===================== No animations ===================== */
+
+/* ===================== iOS Fixes ===================== */
+body.is-ios .app-container .workspace,
+body.is-ios .app-container .workspace-split,
+body.is-ios .app-container .workspace-leaf,
+body.is-ios .app-container .workspace-leaf-content,
+body.is-ios .app-container .view-content,
+body.is-ios .app-container .view-header {
+  background-color: var(--tr);
+}

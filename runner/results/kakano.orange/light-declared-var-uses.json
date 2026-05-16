@@ -607,6 +607,19 @@
   "details summary": {
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
+  "video": {
+    "background-color": "var(--embed-background)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "audio": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
   "div.multi-select-pill": {
     "background-color": "var(--theme-color-tagBgSidebar)",
     "color": "var(--theme-color-tagSidebar)",

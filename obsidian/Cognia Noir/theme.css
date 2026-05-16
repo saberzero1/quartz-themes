@@ -1,0 +1,2872 @@
+/* Cognia Noir
+   Notion-inspired, minimal. SF Pro typography. Dark and light modes.
+   True macOS vibrancy when Obsidian's "Translucent window" is on, via the
+   `body.is-translucent:not(.is-fullscreen)` pattern (workspace layers go
+   transparent so the NSVisualEffectView shows through). Light mode uses a
+   white wash over vibrancy; dark mode uses a black wash.
+   Plugin-safe: workspace leaves for Excalidraw and Smart Connections (the
+   related-notes view, data-type="smart-connections-view") are opted out of
+   the translucent leaf-content force-paint, plus core Canvas as a defensive
+   measure. Highlightr is
+   editor-content only (no workspace leaf), so it needs no opt-out and is
+   unaffected by the force-paint either way.
+   v1.7.2 (light mode opaque Notion-style + force-paint outer shell
+           when Translucent Window is enabled in Obsidian settings.
+           Obsidian's own internal CSS makes surfaces transparent in
+           is-translucent mode regardless of theme; we now explicitly
+           paint sidebar/ribbon/tabs/titlebar with --cn-bg-secondary
+           and editor area with --cn-bg-primary to override that.)
+   v1.7.3 (audit pass: WCAG AA fixes for light-mode accent, inline code,
+           text-secondary, text-faint; brighter dark inline-code to clear
+           AA on bg-tertiary; fixed sidebar-lifted no-op in light
+           translucent (force-paint was using --cn-bg-secondary, bypassing
+           the variant override of --background-secondary); removed dead
+           .cm-tag-pane pill selector that collided with active state;
+           tokenized popover shadow and print modal-bg backdrop;
+           opted plugin leaves out of translucent leaf-content force-paint;
+           scoped .cm-line padding to markdown source view; documented
+           the three remaining !important declarations.)
+   v1.7.4 (perf audit: verified no backdrop-filter on scrolling containers,
+           no transition: all, no will-change, no :has(), no @keyframes,
+           no brightness/contrast filters, no universal-selector traps.
+           Theme is perf-clean. Corrected header comment that misdescribed
+           Highlightr as an opted-out leaf — it has no leaf to opt out of.
+           When adding a plugin opt-out: update the translucent-dark
+           :not() chain (section 4, dark block), the translucent-light
+           :not() chain (section 4, light block), and the .mod-root
+           :not() chain (section 4b). Search "workspace-leaf-content:not"
+           to locate all three. Verify the plugin registers a workspace
+           leaf before adding it.)
+   v1.7.5 (note panel softened: dark Charcoal --cn-bg-primary lifted from
+           #191919 to #1d1d1d so the note sits closer to the sidebar tone,
+           and added section 4b to round the note's top-left and
+           bottom-left corners (left edge against the sidebar). Note
+           panel forced solid in dark translucent mode so the color
+           difference reads. Variant tones (Pure black, Warm, Zen) keep
+           their existing primary values intentionally.)
+   v1.7.6 (rounded note corners now visible in light mode and in dark
+           non-translucent mode: paint the workspace-tab-container behind
+           the leaf with --background-secondary so the rounded leaf
+           reveals the sidebar tone at the corners, and add overflow:
+           hidden to leaf-content so the .view-header above the note
+           body clips to the rounded shape instead of painting over it.
+           Tab-container stays transparent in dark translucent mode so
+           macOS vibrancy still shows through.)
+   v1.7.7 (rounded note corners were technically rendering but invisible
+           because --background-secondary is only ~3-8 units off the note
+           color in both modes, so the rounded reveal looked square.
+           Introduced --cn-bg-note-tray as a dedicated tray tone with
+           real contrast against the note: #131313 in dark (10 units
+           darker than the #1d1d1d note), #d8d6d1 in light (~30 units
+           darker than the #ffffff note). Section 4b now uses this var.
+           Tray is intentionally darker than the note in both modes so
+           the note reads as a lifted card on a base, consistent across
+           dark and light.)
+   v1.7.8 (extended section 4b to round the sidebars too. Left sidebar
+           rounds top-right and bottom-right; right sidebar rounds
+           top-left and bottom-left. Each sidebar's tab-container is
+           painted with --cn-bg-note-tray so the rounded inside edges
+           reveal the same tray tone the note panel sits on. Outer
+           edges stay flat against the window. Tab-container trays
+           opt out of opaque paint in dark translucent mode so vibrancy
+           still shows through the chrome.)
+   v1.7.9 (sidebar rounding only worked at the top because the file
+           explorer's top action-icons row and bottom vault switcher
+           sit outside .workspace-leaf-content, so the leaf-content
+           clip didn't include them. Moved sidebar rounding up one
+           level to .workspace-tabs so the entire pane (including the
+           action row and vault switcher) clips to the rounded shape.
+           Tray paint also moved up one level from .workspace-tab-
+           container to .workspace-split so the higher-level rounded
+           shape reveals the tray. Existing section 4 dark-translucent
+           transparency on .workspace-split still wins by specificity.)
+   v1.7.10 (v1.7.9 broke the note rounding because painting only
+            workspace-split with tray meant the note's rounded leaf-
+            content revealed the unpainted tab-container in between
+            (default white). Now paint both .workspace-split AND its
+            .workspace-tab-container with tray so whichever parent is
+            "behind" the rounded element shows the right tone. Note
+            rounding (on leaf-content) and sidebar rounding (on
+            workspace-tabs) both work. Tab-container trays opt out of
+            opaque paint in dark translucent mode so vibrancy still
+            shows through.)
+   v1.10.16 (audit pass: bugs, dead CSS, and performance. (1) BUG: Pure
+            Black dark variant -- --cn-bg-note-tray was inheriting
+            #131313 from .theme-dark while --cn-bg-primary is #0d0d0d,
+            making the tray LIGHTER than the note and inverting the
+            lifted-card hierarchy. Fixed: --cn-bg-note-tray: #050505
+            added to .theme-dark.cn-bg-black. (2) BUG: .modal-title
+            font-family was hardcoded to "SF Pro Display" -- missed in
+            the v1.10.14 pass that fixed inline-title. Changed to
+            var(--cn-heading-font) so New York / Georgia Style Settings
+            selections apply to modal titles. (3) BUG: Sidebar border
+            option (cn-sidebar-border) added border-left AND border-right
+            to both sidebars, including the outer edge against the window
+            frame. Fixed: left sidebar gets border-right only; right
+            sidebar gets border-left only. (4) BUG: Resize divider colors
+            were hardcoded hex (#b8b8bb dark / #888888 light) that do not
+            adapt to Pure Black, Warm, or Zen variants. Replaced with
+            var(--cn-divider) / var(--divider-color-hover). Transition
+            changed from raw 0.15s ease to var(--cn-transition-fast) to
+            match the theme token system. (5) DEAD CSS: .modal in section
+            10 set border-radius: var(--cn-radius-lg) (12px) that was
+            always overridden by the section 19b 18px value; .suggestion-
+            container, .menu similarly set var(--cn-radius) (8px) always
+            overridden by 14px. Consolidated: authoritative values now
+            live in section 10; section 19b duplicate overrides removed.
+            (6) DEAD CSS: --h1-size through --h6-size, --h1-weight through
+            --h6-weight, --h1-line-height through --h6-line-height,
+            --cn-editor-font-size, --cn-note-line-height, and
+            --cn-heading-font were defined identically in both .theme-dark
+            and .theme-light. Moved to :root following the same pattern as
+            --inline-title-* vars in v1.10.9. Themed blocks now only
+            contain mode-sensitive tokens. (7) DEAD CSS: Two identical
+            body:not(.is-phone).mod-root.view-header .view-actions
+            selectors (padding and margin-left) merged into one rule.
+            (8) DEAD CSS: Light Zen cn-sidebar-lifted tray was #cdcbc6 --
+            the same as Charcoal, which lacks Zen's warm hue. Changed to
+            #c8c5c0 (one stop darker, warm undertone). (9) PERF: Added
+            contain: layout to .nav-buttons-container so the max-height
+            hover animation does not cascade layout recalculations to
+            parent/sibling elements. clip-path was evaluated as a
+            compositor-friendly alternative but rejected: it does not
+            collapse layout height, leaving a 40px gap at rest.
+            CORRECTIONS (found during post-session review): (a) BUG-1
+            left cn-sidebar-lifted.cn-bg-black at #050505, identical to
+            the new default Pure Black tray -- Lifted had no visible
+            effect. Updated to #000000. (b) BUG-4 used var(--cn-divider)
+            (rgba 0.22) for the resize divider default state; on Pure
+            Black this renders at ~2:1 contrast, below the 3:1 minimum
+            for interactive elements. Replaced with rgba(255,255,255,0.35)
+            dark / rgba(55,53,47,0.28) light -- visible and non-stark.)
+   v1.10.15 (split-pane resize divider visibility. --divider-color was
+            not set by the theme, so it resolved through
+            --background-modifier-border -> --cn-border-subtle ->
+            rgba(255,255,255,0.06) in dark mode, making the center line
+            between split windows nearly invisible. Fixed: --divider-color
+            now set to --cn-divider (rgba(255,255,255,0.22) dark /
+            rgba(55,53,47,0.16) light), matching the value already used
+            for hr elements in section 9. --divider-color-hover added for
+            a visible affordance on hover. A 0.15s transition on
+            .workspace-leaf-resize-divider gives a smooth brighten effect.)
+   v1.10.14 (three bug fixes. (1) Bubble nav reverted from v1.10.12's
+            scale(0.65)/opacity approach back to a height-collapse model:
+            .nav-buttons-container collapses to max-height:0 at rest and
+            expands to max-height:40px on hover/focus-within. A 28x3px
+            pill-dash indicator added via ::after on .nav-header gives a
+            visible hover affordance when buttons are folded. (2) Light
+            mode missing variables: --cn-note-line-height and
+            --cn-heading-font were defined only in .theme-dark; in light
+            mode note content fell back to browser-default line height and
+            headings fell back to Inter. Both variables now defined in
+            .theme-light at the same defaults as dark. (3) Inline title
+            font: was hardcoded to "SF Pro Display" regardless of the
+            Style Settings heading font knob. Changed to
+            var(--cn-heading-font) so New York and Georgia selections now
+            apply to the inline title as well as the headings.)
+   v1.10.13 (post-v1.10.12 audit follow-ups. (1) Default accent and
+            inline code now clear WCAG AA on every text-bearing surface
+            in every default Background tone variant, not just Zen.
+            Earlier audits had only checked canvas, sidebar, and code
+            surfaces; bg-elevated (modals, popovers, dropdowns) was
+            missed. Fixed: dark Charcoal bg-elevated #2a2a2a -> #282828
+            (accent ratio 4.44 -> 4.56). Dark Warm bg-elevated
+            #2f2c2a -> #2b2826 (accent 4.29 -> 4.53, inline 4.44 ->
+            4.69). Light Charcoal bg-elevated #e3e2e0 -> #e8e7e5
+            (accent 4.45 -> 4.67). Light Warm bg-tertiary #e6e0d4 ->
+            #ece6d9 (accent 4.39 -> 4.64) and bg-elevated #ddd6c8 ->
+            #e9e3d5 (accent 3.99 -> 4.51). Pure Black and Zen variants
+            already passed at v1.10.12. Lifted-tray values for non-Zen
+            variants are decorative chrome (no text lands on them) and
+            are unchanged. (2) Kanban added to the translucent leaf-
+            content force-paint opt-out chain in all three locations
+            (sections 4 dark, 4 light, and the .mod-root chain).
+            obsidian-community/obsidian-kanban registers a full Preact
+            leaf with data-type "kanban"; without the opt-out, the
+            theme would paint over its internal styling the same way
+            it would for Excalidraw or Canvas. (3) Bubble nav comment
+            tightened to be honest about which transitions are
+            compositor-friendly: transform and opacity are; the
+            background-color and border-color hover changes still
+            paint, but the size reveal does not reflow. (4) Modal-
+            backdrop !important cluster (.modal-bg) now carries an
+            inline rationale comment matching the documentation
+            pattern used for other !important uses. (5) Empty
+            authorUrl field removed from manifest.json; the field is
+            optional in Obsidian's manifest spec and an empty string
+            is metadata noise.)
+   v1.10.12 (deferred visual changes from the v1.10.11 review pass.
+            (1) Zen Background tone reworked for WCAG AA. Approach
+            picked: adjust surface luminance, keep the shared default
+            accent and inline code. The Zen identity now carries via
+            warm hue (red/orange undertone) instead of mid-gray
+            lightness, so every Zen surface clears AA against the
+            default accent (#5b8def dark / #3a5fc7 light), default
+            inline code (#ee6666 dark / #a8201a light), and primary
+            text (#e8e8e8 dark / #37352f light). Dark Zen surfaces
+            moved from #5a5755 / #4f4c4a / #656260 / #6e6b68 to
+            #1f1c19 / #181613 / #25221f / #2a2724. Light Zen surfaces
+            moved from #ebe9e5 / #e0ddd8 / #d6d3ce / #cbc7c1 to
+            #f5f3ef / #eeece8 / #ece9e4 / #e9e6e1. Sidebar-lifted
+            and lifted-tray overrides retuned for the new scale; the
+            old Zen-specific border override (rgba 0.08 / 0.14) is
+            dropped because the darker dark-Zen surfaces no longer
+            need the bump above the theme-dark default (rgba 0.06 /
+            0.10). Verified contrast ratios in order bg-primary /
+            bg-secondary / bg-tertiary / bg-elevated:
+              Dark Zen primary: 13.84, 14.74, 12.91, 12.12.
+              Dark Zen accent:   5.25,  5.59,  4.90,  4.60.
+              Dark Zen inline:   5.43,  5.78,  5.07,  4.76.
+              Light Zen primary:11.06, 10.39, 10.13,  9.85.
+              Light Zen accent:  5.20,  4.89,  4.76,  4.63.
+              Light Zen inline:  6.56,  6.17,  6.01,  5.84.
+            All ratios clear the 4.5:1 body-text threshold. Charcoal,
+            Pure Black, and Warm tone variants are unchanged in
+            appearance and contrast. (2) Bubble nav animation moved
+            off layout-triggering max-height / max-width to
+            compositor-friendly transform: scale and opacity. The
+            visual idiom is refined: buttons stay visible at rest,
+            scaled to 65 percent with reduced opacity, and spring to
+            full size on hover or focus-within. No layout reflow per
+            frame. Children no longer toggle opacity 0 to 1; the
+            scale-in carries the reveal. The universal section-22
+            prefers-reduced-motion block still neutralizes the new
+            transitions.)
+   v1.10.11 (review-driven fixes from outside-eye audit before the
+            obsidian-releases submission was reviewed. (1) Excalidraw
+            opt-out narrowed: replaced the previous all: unset block on
+            .excalidraw form controls with targeted color/font overrides
+            and a checkbox appearance restore. all: unset stripped
+            inheritance the plugin relies on for layout, accessibility
+            affordances, and its own custom controls; the new block
+            keeps the theme out of Excalidraw's way without nuking
+            anything. (2) Core Canvas added to the translucent leaf-
+            content opt-out chain (data-type="canvas") in all three
+            opt-out selectors. Defensive: keeps Cognia Noir from force-
+            painting or force-transparency on Canvas leaves where
+            Canvas's own grid, cards, and edges should win. (3) Smart
+            Connections reference comments corrected: the data-type
+            "smart-connections-view" is the related-notes view, not a
+            graph canvas. The header comment on line 7 and the rule
+            comment near line 1926 now agree with the section 19 head
+            comment about what that view actually is.)
+   v1.10.10 (resize + transition fixes. (1) Removed the
+            .workspace-split.mod-left-split > hr /
+            hr.workspace-leaf-resize-handle display:none rule that
+            evolved across v1.9.5-v1.9.8. In current Obsidian the
+            sidebar-width drag handle IS an hr.workspace-leaf-resize-
+            handle that is a direct child of .mod-left-split, so the
+            rule killed the resize cursor and drag interaction. The
+            original target (decorative hr between file-explorer
+            column and vault profile) does not appear in current DOM;
+            if it returns, scope by a more specific selector that
+            excludes the boundary handle. (2) Snappier hover/focus
+            feedback via new --cn-transition-fast (100ms ease-out)
+            replacing var(--cn-transition) (150ms symmetric ease-in-
+            out) which read as laggy. Applied to nav titles, tab
+            headers, links, modal/dropdown inputs, hover-state buttons
+            and clickable-icons in tab-header / view-header / nav-
+            buttons / status-bar, and tag pills. Deliberately NOT
+            applied to checkboxes (state-change, not hover), scrollbar
+            thumbs (fade behavior), bubble-nav layout reflow, or
+            clickable-icon press transforms. Those benefit from the
+            slower symmetric easing.)
+   v1.10.9 (housekeeping. (1) --inline-title-size, --inline-title-weight,
+            --inline-title-line-height moved from both themed blocks to
+            :root (only --inline-title-color stays themed, references
+            --h1-color). (2) Changelog reordered to strict descending
+            version order (1.10.6/5/4 had been listed after 1.10.3,
+            making the history hard to follow). (3) Section 19 header
+            expanded with a 19a/19b subsection index listing all 14
+            subsections in the 500-line quality-of-life block.)
+   v1.10.8 (follow-up hardening. (1) Shared constants block (section 0):
+            --cn-radius, --cn-radius-lg, --cn-transition, --radius-s/m/l
+            moved from .theme-dark and .theme-light into :root so each
+            is defined once. (2) Section table of contents added to the
+            file header for navigation in a 2600-line file. (3) Bubble
+            nav transition: removed padding from the animated list (was
+            a third layout-triggering property per frame; now only
+            max-height and max-width animate). Padding unified to 3px 6px
+            in both collapsed and expanded states so there is no jump.)
+   v1.10.7 (perf audit: added @media (prefers-reduced-motion: reduce)
+            block that disables all transitions for users with macOS
+            Reduce Motion enabled (accessibility + perf gap). Removed
+            redundant border-radius: 10px from .workspace-tab-header
+            .is-active rule (already set on base rule; cascade no-op).
+            Removed redundant border-radius: 14px / empty .is-active
+            rule from .mod-sidedock .workspace-tab-header. Added
+            comment on bubble-nav transition noting that max-height,
+            max-width, and padding trigger layout reflow on hover.)
+   v1.10.6 (three new Style Settings knobs. (1) Heading font:
+            class-select matching note font options (SF Pro
+            Display default, New York, Georgia). Heading font-
+            family rule now uses --cn-heading-font variable
+            instead of hardcoded SF Pro Display. (2) Note line
+            height: variable-number-slider 1.4-2.0 step 0.05,
+            default 1.65. Replaces the hardcoded value in the
+            markdown view block. (3) Line width: variable-number-
+            slider 500-1400px step 50, default 700. Sets
+            --file-line-width which Obsidian picks up natively.)
+   v1.10.5 (note font Style Settings knob. New cn-note-font class-
+            select offers SF Pro (default), New York (Apple serif),
+            Georgia (classic serif), and Avenir Next. Sets
+            --font-text-theme on body; headings keep SF Pro Display
+            from section 3 regardless of selection.)
+   v1.10.4 (extended non-CTA settings button fix from v1.10.3 to
+            cover light mode on iPhone. Selector changed from
+            body.is-phone.theme-dark to body.is-phone so both
+            themes get the tertiary-fill + border treatment.)
+   v1.10.3 (three regression fixes from user spot-check.
+            (1) View-header right-side action icons (+ new note,
+            book/reading-mode toggle, ... overflow) had drifted
+            flush left on desktop. v1.10.2 hid the redundant
+            centered title via display:none on .view-header-
+            title-container — but that container carries flex:1
+            in Obsidian's stock layout and was the spacer pushing
+            .view-actions to the right. Now the inner .view-
+            header-title gets visibility:hidden instead, so the
+            container stays as a flex spacer and the actions
+            stick to the right. Belt-and-suspenders rule pins
+            .view-actions with margin-left:auto.
+            (2) Mobile + new-note action icon was not visible on
+            iPhone — only the ... overflow rendered. Cause: the
+            section 19b -electron-corner-smoothing chain and pill-
+            shaped clickable-icon rule were missing the :not(.is-
+            phone) guard that every other section 19b rule
+            carries (lock-comment at lines 2075-2088). 32px min-
+            height + 10px horizontal padding in the tight mobile
+            view-header was clipping the + icon. Both rules now
+            scoped to body:not(.is-phone). iPad keeps the desktop
+            chrome.
+            (3) Settings cards on iPhone in dark mode had nearly
+            zero contrast against the page (Account, Catalyst
+            license, Help, etc. blended into the background) and
+            Open / Manage / Log out / Upgrade / Purchase buttons
+            rendered as bare text. Added a phone+dark-only
+            section 20 that paints settings card surfaces with
+            --cn-bg-elevated + a subtle border, and gives non-CTA
+            buttons a --cn-bg-tertiary fill so they read as
+            buttons. Light mode and iPad are unchanged.)
+   v1.10.2 (two visual cleanups surfaced by user spot-check on
+            v1.10.1.
+            (1) Active tab pill showed two small detached
+            circles at its bottom-left/bottom-right. Cause:
+            Obsidian paints decorative ::before/::after pseudo-
+            elements on .workspace-tab-header to draw the
+            curved "tab ear" connectors that join an active
+            tab to the bar below it. With section 19b's
+            bordered self-contained pill style those curves
+            no longer connect to anything and render as
+            floating dots. Hidden via display:none on both
+            pseudos, scoped to the same selector chain as the
+            pill rules so stock styling stays intact wherever
+            pills don't apply.
+            (2) Note title appeared three times: tab label,
+            small centered .view-header-title text, and the
+            large bold .inline-title at the top of the note
+            body. The middle one is fully redundant when the
+            other two are visible. Hidden via display:none on
+            .view-header-title-container, scoped to .mod-root
+            so sidebar leaf headers (search, outline, etc.)
+            keep their titles. The view-header itself stays in
+            the layout — only the title text is suppressed —
+            so right-side action icons keep their container.)
+   v1.10.1 (regression fix on v1.10.0 panel-box selector.
+            v1.10.0's broadened sidebar panel-box rule reused
+            section 4's translucent-force-paint exclusion list
+            verbatim — terminal, excalidraw, smart-connections-
+            view. That mechanical reuse was wrong: the two
+            exclusion lists serve different purposes. Section 4
+            opts out views whose internal styling collides with
+            our bg-primary force-paint over macOS vibrancy.
+            Section 19b's panel box only needs to opt out views
+            whose content fights a margin-bordered container
+            (full-canvas painters like terminal and excalidraw).
+            Smart Connections' related-notes side panel
+            (data-type=smart-connections-view) is a normal
+            scrollable list and SHOULD get the box; v1.10.0
+            silently suppressed it. Dropped smart-connections-
+            view from the section 19b exclusion list and
+            rewrote the panel-box rule's head comment to spell
+            out the per-list rationale so the next audit
+            doesn't repeat the mistake. Verified by Cowork V7
+            run that flagged the data-type identity question;
+            confirmed against local Smart Connections plugin
+            source that smart-connections-view is the related-
+            notes panel, not a graph/canvas view.)
+   v1.10.0 (hardening pass on top of v1.9.9 audit. (1) Ribbon
+            top-margin: split into a 36px default that aligns
+            with the folder-box top in non-frameless and non-
+            macOS layouts, plus the existing 60px override for
+            macOS frameless (traffic-light clearance). (2)
+            Section 19b folder-box selector broadened: instead
+            of enumerating data-types (file-explorer, bookmarks,
+            outline, etc.), now matches every sidebar leaf via
+            :is(.mod-left-split, .mod-right-split) ... .view-
+            content with the same plugin-safe-zone exclusion
+            list section 4 uses (terminal, excalidraw, smart-
+            connections-view). File-explorer keeps its dedicated
+            .nav-files-container selector. Smart Connections
+            nav, Dataview, Periodic Notes, Outliner, etc. now
+            pick up panel-box chrome automatically. (3) iPad
+            scope decision (:not(.is-phone)) documented in a
+            block comment above the top-bar tab-pill rule so
+            the choice isn't relitigated. (4) Vault-profile
+            pseudo-element parent-width dependency documented
+            in a defensive comment, and the horizontal inset
+            (8px) now derives from a shared --cn-panel-side-
+            inset CSS var that the folder box also uses, so
+            the two stay edge-locked. (5) !important audit:
+            three previously undocumented uses (sync-status-
+            icon, hide-metadata, vault-profile border-top) now
+            carry one-line "needed because X" comments; print-
+            block !important cluster gets a block-level rationale.
+            Ribbon align-self/height workaround re-confirmed
+            load-bearing per v1.8.6 with a clearer comment.
+            Visual regression sweep for light mode, dark
+            translucent, multi-pane right sidebar, and print
+            preview is the user's responsibility — not testable
+            from the editor side.
+            CORRECTION (see v1.10.1 entry above): item (2)'s
+            exclusion list mechanically copied section 4's
+            translucent-force-paint opt-out and incorrectly
+            suppressed the panel box on Smart Connections'
+            related-notes side panel. Fixed in v1.10.1.)
+   v1.9.9  (desktop+mobile audit fixes: cn-sidebar-lifted
+            now overrides --cn-bg-note-tray (was a no-op in
+            opaque mode because section 4b paints tray
+            directly, bypassing --background-secondary);
+            light-mode --text-selection switched from
+            hardcoded blue to color-mix on --cn-accent so it
+            follows Style Settings; HR rule in Live Preview
+            now centers via translateY(-50%); section 4b
+            tray paint, note clip, and sidebar rounding
+            scoped to body:not(.is-mobile) so mobile drawers
+            are untouched; section 19b chrome (sidebar tab
+            pills, view-action FAB, ribbon box, panel boxes,
+            vault-profile pseudo) switched from :not(.is-
+            mobile) to :not(.is-phone) so iPad gets the full
+            desktop look matching the top-bar tabs; click-
+            feedback scale on .clickable-icon scoped to
+            :not(.is-mobile) so it no longer stacks on top
+            of iOS/Android tap-highlight.)
+   v1.9.8  (audit pass: scoped resize-handle hide to mod-
+            left-split only — the v1.9.7 universal selector
+            would have hidden inter-pane resize handles in
+            the right sidebar too, breaking that feature
+            silently for anyone with multiple panes stacked
+            on the right.)
+   v1.9.7  (the hr.workspace-leaf-resize-handle was visible
+            even with opacity:0 + transparent border/bg
+            (likely a child pseudo-element or stronger
+            inline override). Switched to display:none which
+            removes it from render entirely. Column resize
+            still works because that's a different element
+            (.workspace-leaf-resize-divider). Also zeroed any
+            top border on the vault profile defensively.)
+   v1.9.6  (workspace-leaf-resize-handle was still showing
+            as a line because Obsidian sets opacity:1 inline
+            on the element. Override with !important on the
+            hr's border, background, and opacity so the line
+            disappears regardless of inline styling.)
+   v1.9.5  (hide the workspace-leaf-resize-handle <hr> that
+            sits between the file explorer column and the
+            vault profile. With the new bordered boxes around
+            both, the hr's default border-top showed up as an
+            awkward horizontal divider. Now transparent — the
+            element stays in place so resize drag still works,
+            but no visible line.)
+   v1.9.4  (vault box rebuilt around DevTools data: the
+            workspace-sidedock-vault-profile is a flex child
+            that's force-stretched to the full sidebar width
+            (234.5px in the user's window) regardless of
+            margins, which is why every margin attempt drifted
+            unpredictably. Now the element keeps its natural
+            full-width position and a ::after pseudo-element
+            with absolute positioning (top:0 bottom:0 left:8px
+            right:8px) draws the visible box. 8px matches the
+            folder box's nav-files-container horizontal margin,
+            and both elements live in 234.5px-wide parents, so
+            the boxes end up at identical x-coordinates.)
+   v1.9.3  (vault box: shifted left edge right by +15px
+            (margin-left -3 → 12) and right edge right by
+            +11px (margin-right -14 → -25) to bring both
+            edges in line with the folder box.)
+   v1.9.2  (vault box left margin nudged from -18 to -3
+            after the right edge aligned but the left edge
+            extended ~15px past the folder box's left.)
+   v1.9.1  (vault box uses negative margins on BOTH sides
+            (-18px left, -14px right) — its parent container
+            is narrower than the folder-list column, so to
+            reach the folder box's left/right x-coordinates
+            the box has to extend past its parent's bounds.
+            Acceptable since the gaps on either side are
+            empty space inside the left split.)
+   v1.9.0  (vault box uses negative left margin (-18px) to
+            counter the ~28px extra left inset coming from the
+            vault-profile's parent or internal layout, plus
+            38px right margin to bring the right edge in to
+            match the folder box. Net effect: box left/right
+            edges now align with the folder box.)
+   v1.8.9  (vault box reverted to margin-based sizing — the
+            width: calc approach truncated "Master Vault" to
+            "Master V..." because Obsidian's internal layout
+            on the vault-profile constrained the inner content
+            width below the box width. Now uses margin: 4px
+            28px 8px 12px (asymmetric to counter the slight
+            leftward content shift), which matched closely in
+            v1.8.7 testing.)
+   v1.8.8  (vault box now uses centered-width sizing
+            (margin-inline: auto + width: calc(100% - 36px))
+            to match the folder box's horizontal extent. More
+            reliable than asymmetric margins because the
+            vault-profile's internal layout shifts content
+            unpredictably under fixed margins.)
+   v1.8.7  (mobile audit + box tuning. All three left-column
+            box rules (ribbon, sidebar leaves, vault profile)
+            now scoped with body:not(.is-mobile) so mobile/
+            tablet drawer layouts are untouched. macOS
+            frameless ribbon top reduced from 70px to 60px to
+            better match folder-box top. Vault box margins
+            switched to asymmetric 8px-left / 32px-right to
+            counter the vault-profile element's internal
+            rightward content offset, so the box now visually
+            lines up with the folder box's horizontal extent.)
+   v1.8.6  (ribbon and vault box tuning. Ribbon: stronger
+            border (--cn-border-strong instead of -subtle) so
+            it reads against the dark column where there's no
+            adjacent content for contrast; align-self stretch
+            and height auto force the container to fill the
+            workspace height so the bottom edge isn't clipped
+            to the icon list; macOS top margin reduced from
+            88px to 70px to match folder-box top. Vault box:
+            asymmetric horizontal margin (28px left, 40px right)
+            so the box width visually matches the folder box,
+            since the vault-profile has different parent
+            padding than .view-content.)
+   v1.8.5  (ribbon-box vertical alignment: top now starts at
+            88px (matches folder-box top — below the sidebar
+            tab-pills + nav-header on macOS frameless). Bottom
+            margin reduced to 8px so the ribbon box ends at
+            the same y as the vault-profile box. Vault-profile
+            horizontal margin bumped to 24px so its width
+            visually matches the folder box.)
+   v1.8.4  (ribbon-box layout polish: bumped macOS frameless
+            top margin to 44px for cleaner clearance from the
+            traffic lights; added 52px bottom margin so the
+            ribbon box ends where the vault-profile box begins
+            (left column reads as ribbon-top + vault-bottom
+            with a gap between, mirroring the folder side);
+            widened vault profile horizontal margin to 16px
+            so its box visually matches the folder-box width.)
+   v1.8.3  (fixed traffic-light overlap on macOS frameless —
+            ribbon box now starts below the traffic lights via
+            scoped margin-top. Added matching panel box around
+            the bottom-left vault profile (vault switcher,
+            help, settings gear) so the left column reads as
+            three stacked panels: ribbon / folder list / vault
+            profile.)
+   v1.8.2  (ribbon now wears its own bordered rounded box so
+            it reads as a sibling panel to the folder box.
+            Dropped the right-border separator since the box
+            border provides separation. Both columns share
+            12px radius, 1px subtle border, and matching
+            margins.)
+   v1.8.1  (added ribbon-to-sidebar separator + bordered box
+            around left/right sidebar leaf content (file
+            explorer, bookmarks, recent files, outline,
+            backlinks, etc.) — folder tree now reads as a
+            distinct panel inside the sidebar.)
+   v1.8.0  (Velocity-inspired chrome shapes — section 19b. Top-bar
+            tabs become bordered pill rectangles with min-height 32px
+            and radius 10px. Clickable icons in workspace-ribbon, view-
+            header, sidebar toggle, vault profile, and tab-list become
+            pill-shaped (radius-xl, padding 6px 10px). View-header
+            action icons (the right-side + and reading-glasses) become
+            circular FAB-style buttons with subtle border. Status bar
+            rounded on the left edge. Modal/menu/popover radii bumped
+            (modal 18px, menu 14px). Electron corner smoothing applied
+            to all rounded chrome surfaces. Colors and translucency
+            behaviors are unchanged — shapes only.)
+
+   SECTIONS
+      0   Shared constants (theme-independent vars: radius, transition)
+      1   CSS variables -- dark theme
+      1b  CSS variables -- light theme
+      2   Typography
+      3   Headings
+      4   Workspace (translucency, leaf layout, note card, tray paint)
+      5   File explorer & sidebar lists
+      6   Editor content
+      7   Code blocks
+      8   Callouts
+      9   Blockquotes & dividers
+     10   Inputs, buttons
+     11   Checkboxes
+     12   Tables
+     13   Scrollbars
+     14   Status bar
+     15   Plugin safe-zones
+     16   Tags
+     17   Properties / frontmatter panel
+     18   Focus indicators
+     19   Quality-of-life (tab pills, sidebar chrome, bubble nav, FABs)
+     20   Print / PDF export
+     21   Mobile settings
+     22   Reduced motion
+*/
+
+/* @settings
+
+name: Cognia Noir
+id: cognia-noir
+settings:
+  -
+    id: cn-look
+    title: Look and feel
+    type: heading
+    level: 2
+    collapsed: false
+  -
+    id: cn-accent
+    title: Accent color
+    description: Used for links, focus rings, and selection. Defaults clear WCAG AA against each theme's canvas.
+    type: variable-themed-color
+    format: hex
+    default-dark: '#5b8def'
+    default-light: '#3a5fc7'
+  -
+    id: cn-inline-code
+    title: Inline code color
+    description: Color of `inline code` text. Defaults clear WCAG AA against each theme's code background.
+    type: variable-themed-color
+    format: hex
+    default-dark: '#ee6666'
+    default-light: '#a8201a'
+  -
+    id: cn-bg-tone
+    title: Background tone
+    description: Charcoal is default. Pure black is OLED-friendly. Warm charcoal adds a touch of warmth.
+    type: class-select
+    default: cn-bg-charcoal
+    options:
+      -
+        value: cn-bg-charcoal
+        label: Charcoal (default)
+      -
+        value: cn-bg-black
+        label: Pure black
+      -
+        value: cn-bg-warm
+        label: Warm charcoal
+      -
+        value: cn-bg-zen
+        label: Zen (soft warm gray)
+  -
+    id: cn-sidebar-style
+    title: Sidebar contrast
+    description: How the sidebars separate from the main editor.
+    type: class-select
+    default: cn-sidebar-flat
+    options:
+      -
+        value: cn-sidebar-flat
+        label: Flat (default)
+      -
+        value: cn-sidebar-border
+        label: Subtle border
+      -
+        value: cn-sidebar-lifted
+        label: Lifted (slightly darker)
+  -
+    id: cn-translucency
+    title: Translucency tint
+    description: Strength of the dark wash layered over macOS vibrancy. Pure shows raw vibrancy; Heavy dims it for legibility on bright wallpapers. Requires Settings -> Appearance -> Translucent window enabled (otherwise this knob has no effect).
+    type: class-select
+    default: cn-translucent-medium
+    options:
+      -
+        value: cn-translucent-off
+        label: Pure vibrancy
+      -
+        value: cn-translucent-light
+        label: Light
+      -
+        value: cn-translucent-medium
+        label: Medium (default)
+      -
+        value: cn-translucent-heavy
+        label: Heavy
+  -
+    id: cn-heading-scale
+    title: Heading scale
+    type: class-select
+    default: cn-headings-comfortable
+    options:
+      -
+        value: cn-headings-compact
+        label: Compact
+      -
+        value: cn-headings-comfortable
+        label: Comfortable (default)
+      -
+        value: cn-headings-large
+        label: Large
+  -
+    id: cn-editor-font-size
+    title: Editor font size
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 20
+    step: 1
+    format: 'px'
+  -
+    id: cn-ui-font
+    title: UI font
+    description: Font for UI chrome (sidebars, tabs, buttons, dialogs).
+    type: class-select
+    default: cn-ui-inter
+    options:
+      -
+        value: cn-ui-inter
+        label: Inter (default)
+      -
+        value: cn-ui-avenir
+        label: Avenir Next
+      -
+        value: cn-ui-system
+        label: System (SF Pro)
+  -
+    id: cn-note-font
+    title: Note font
+    description: Font for note content (editor and reading view).
+    type: class-select
+    default: cn-note-sfpro
+    options:
+      -
+        value: cn-note-sfpro
+        label: SF Pro (default)
+      -
+        value: cn-note-newyork
+        label: New York (Apple serif)
+      -
+        value: cn-note-georgia
+        label: Georgia (classic serif)
+      -
+        value: cn-note-avenir
+        label: Avenir Next
+  -
+    id: cn-heading-font
+    title: Heading font
+    description: Font for H1-H6. Pair with the note font above for a matched look.
+    type: class-select
+    default: cn-heading-sfpro
+    options:
+      -
+        value: cn-heading-sfpro
+        label: SF Pro Display (default)
+      -
+        value: cn-heading-newyork
+        label: New York (Apple serif)
+      -
+        value: cn-heading-georgia
+        label: Georgia (classic serif)
+  -
+    id: cn-note-line-height
+    title: Note line height
+    description: Line spacing for note content. 1.65 is the default comfortable reading density.
+    type: variable-number-slider
+    default: 1.65
+    min: 1.4
+    max: 2.0
+    step: 0.05
+    format: ''
+  -
+    id: file-line-width
+    title: Line width
+    description: Maximum width of the note content area. Obsidian default is 700px.
+    type: variable-number-slider
+    default: 700
+    min: 500
+    max: 1400
+    step: 50
+    format: 'px'
+  -
+    id: cn-bubble-nav
+    title: Bubble nav buttons
+    description: Collapses the file explorer / bookmarks action row (new note, new folder, sort, expand) into a small pill that expands on hover. Inspired by Velocity.
+    type: class-toggle
+    default: true
+*/
+
+/* ============================================================
+   0. SHARED CONSTANTS — theme-independent values referenced in
+   both .theme-dark and .theme-light. Defined once here; do not
+   duplicate in either themed block.
+   ============================================================ */
+
+:root {
+  --cn-radius: 8px;
+  --cn-radius-lg: 12px;
+  --cn-transition: 150ms cubic-bezier(0.2, 0, 0.2, 1);
+  --cn-transition-fast: 100ms ease-out;
+  --radius-s: 4px;
+  --radius-m: var(--cn-radius);
+  --radius-l: var(--cn-radius-lg);
+  /* Inline title — size/weight/line-height are mode-independent.
+     --inline-title-color stays in each themed block (references --h1-color). */
+  --inline-title-size: 1.6em;
+  --inline-title-weight: 700;
+  --inline-title-line-height: 1.2;
+  /* Editor font size and line height — driven by Style Settings sliders.
+     Previously duplicated identically in both .theme-dark and .theme-light. */
+  --cn-editor-font-size: 16px;
+  --cn-note-line-height: 1.65;
+  /* Heading font default — overridden by body.cn-heading-* class rules from
+     Style Settings. Previously duplicated in both themed blocks. */
+  --cn-heading-font: "SF Pro Display", -apple-system, system-ui, sans-serif;
+  /* Heading sizes, weights, line-heights — mode-independent (same in dark and
+     light). Colors stay in each themed block (--h1-color through --h6-color).
+     Compressed scale: H1-H4 as linear hierarchy; H5/H6 as eyebrow labels. */
+  --h1-size: 2.1em;
+  --h2-size: 1.6em;
+  --h3-size: 1.3em;
+  --h4-size: 1.1em;
+  --h5-size: 1.0em;
+  --h6-size: 0.9em;
+  --h1-weight: 800;
+  --h2-weight: 700;
+  --h3-weight: 700;
+  --h4-weight: 600;
+  --h5-weight: 700;
+  --h6-weight: 700;
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.25;
+  --h3-line-height: 1.3;
+  --h4-line-height: 1.35;
+  --h5-line-height: 1.4;
+  --h6-line-height: 1.4;
+  /* Shared horizontal inset for sidebar panel boxes (folder box,
+     plugin-leaf boxes, vault-profile pseudo). Locks all left-column
+     panels to the same x-coordinate. Previously a standalone :root
+     block in section 19b; moved here per the section 0 pattern. */
+  --cn-panel-side-inset: 8px;
+}
+
+/* ============================================================
+   1. CSS VARIABLES — DARK THEME
+   ============================================================ */
+
+.theme-dark {
+  /* Base palette. bg-primary lifted slightly off bg-secondary so the
+     note panel reads as a distinct surface against the sidebar without
+     the seam feeling stark. Paired with the rounded inside corners in
+     section 4b. */
+  --cn-bg-primary: #1d1d1d;
+  --cn-bg-secondary: #202020;
+  --cn-bg-tertiary: #252525;
+  --cn-bg-elevated: #282828;
+  /* Tray painted behind the note panel in section 4b. Needs to be
+     visibly different from --cn-bg-primary or the rounded corners
+     of the note read as the same color and look square. Sits a few
+     stops below the note so the note feels lifted on a darker base. */
+  --cn-bg-note-tray: #131313;
+  --cn-border-subtle: rgba(255, 255, 255, 0.06);
+  --cn-border-strong: rgba(255, 255, 255, 0.10);
+  --cn-text-primary: #e8e8e8;
+  --cn-text-secondary: rgba(255, 255, 255, 0.65);
+  --cn-text-faint: rgba(255, 255, 255, 0.40);
+  --cn-accent: #5b8def;
+  --cn-accent-hover: #7aa3ff;
+  /* Used by rgba()-based effects (selection, focus ring, link underline)
+     so they follow the user's Style Settings accent automatically.
+     color-mix gives us alpha control without a parallel RGB variable. */
+  /* Inline code red: brightened from #eb5757 (4.40:1 on bg-tertiary, just
+     under WCAG AA) to #ee6666 (~4.6:1) for body-text contrast. */
+  --cn-inline-code: #ee6666;
+
+  /* Theme-aware tokens — flipped in .theme-light so shared rules below
+     (bold text, dividers, hover overlays, scrollbar, checkboxes, sidebar
+     lifted tint) work correctly in both modes. */
+  --cn-strong-color: #ffffff;
+  --cn-divider: rgba(255, 255, 255, 0.22);
+  --cn-soft-overlay: rgba(255, 255, 255, 0.05);
+  --cn-medium-overlay: rgba(255, 255, 255, 0.09);
+  --cn-strong-overlay: rgba(255, 255, 255, 0.15);
+  --cn-checkbox-fill: rgba(255, 255, 255, 0.92);
+  --cn-checkbox-check: #1a1a1a;
+  --cn-lifted-tint: rgba(0, 0, 0, 0.18);
+
+  /* Modal chrome — backdrop dim behind dialogs and shadow under the dialog
+     itself. Heavy in dark (matches the moody aesthetic), much lighter in
+     light (a 0.65 black overlay in light mode darkens the whole UI to
+     near-unreadable when Cmd-K or Settings open). */
+  --cn-modal-backdrop: rgba(0, 0, 0, 0.65);
+  --cn-modal-shadow: rgba(0, 0, 0, 0.55);
+
+  /* Translucency tint over macOS vibrancy. The vibrancy itself comes from
+     Obsidian's Translucent Window setting (Electron NSVisualEffectView at
+     the window level). The theme's job is purely to make every workspace
+     layer transparent so the vibrancy can show through, and optionally
+     overlay a faint tint via --workspace-background-translucent. The Style
+     Settings "Translucency intensity" knob adjusts that tint's alpha. */
+  --cn-tint-alpha: 0.18;
+  --workspace-background-translucent: rgba(0, 0, 0, var(--cn-tint-alpha));
+
+  /* Default mapping (Translucent Window OFF or fullscreen): solid surfaces.
+     Under .is-translucent the workspace layers are forced transparent in
+     section 4 so vibrancy shows through. */
+  --background-primary: var(--cn-bg-primary);
+  --background-primary-alt: var(--cn-bg-secondary);
+  --background-secondary: var(--cn-bg-secondary);
+  --background-secondary-alt: var(--cn-bg-tertiary);
+  --background-modifier-border: var(--cn-border-subtle);
+  --background-modifier-border-hover: var(--cn-border-strong);
+  --divider-color: var(--cn-divider);
+  --divider-color-hover: rgba(255, 255, 255, 0.42);
+  --background-modifier-border-focus: var(--cn-accent);
+  --background-modifier-hover: var(--cn-bg-tertiary);
+  --background-modifier-active-hover: var(--cn-bg-elevated);
+  --background-modifier-form-field: var(--cn-bg-tertiary);
+
+  --text-normal: var(--cn-text-primary);
+  --text-muted: var(--cn-text-secondary);
+  --text-faint: var(--cn-text-faint);
+  --text-on-accent: #ffffff;
+  --text-accent: var(--cn-accent);
+  --text-accent-hover: var(--cn-accent-hover);
+  --text-selection: color-mix(in srgb, var(--cn-accent) 30%, transparent);
+  --text-highlight-bg: rgba(255, 213, 79, 0.28);
+  --text-highlight-bg-active: rgba(255, 213, 79, 0.45);
+
+  --interactive-accent: var(--cn-accent);
+  --interactive-accent-hover: var(--cn-accent-hover);
+
+  /* Heading colors — mode-specific. Sizes/weights/line-heights are in :root. */
+  --h1-color: #ffffff;
+  --h2-color: #ffffff;
+  --h3-color: #ffffff;
+  --h4-color: #ffffff;
+  --h5-color: var(--cn-text-secondary);
+  --h6-color: var(--cn-text-faint);
+
+  /* size / weight / line-height are in :root (mode-independent) */
+  --inline-title-color: var(--h1-color);
+
+  --tab-background-active: var(--cn-bg-primary);
+  --tab-text-color-focused-active: var(--cn-text-primary);
+  --tab-outline-color: var(--cn-border-subtle);
+  --titlebar-background: var(--cn-bg-secondary);
+  --titlebar-background-focused: var(--cn-bg-secondary);
+}
+
+/* ============================================================
+   1b. CSS VARIABLES — LIGHT THEME (Notion-warm off-white)
+   Mirrors the dark block: same tokens, flipped values. Heading scale,
+   weight cascade, inline-title sizing, and Style Settings knobs all
+   carry over so the two modes feel like one design.
+   ============================================================ */
+
+.theme-light {
+  /* Notion light-mode palette — pure white canvas, warm near-black text,
+     subtle off-white sidebar. Fully opaque (Notion does not use macOS
+     vibrancy in light mode). High contrast, no decoration. */
+  --cn-bg-primary: #ffffff;
+  --cn-bg-secondary: #f7f6f3;
+  --cn-bg-tertiary: #ebebea;
+  --cn-bg-elevated: #e8e7e5;
+  /* Tray painted behind the note panel in section 4b. Sits a few stops
+     below the white note so the rounded corners of the leaf read against
+     a clearly different tone instead of disappearing into the canvas. */
+  --cn-bg-note-tray: #d8d6d1;
+  --cn-border-subtle: rgba(55, 53, 47, 0.09);
+  --cn-border-strong: rgba(55, 53, 47, 0.16);
+  --cn-text-primary: #37352f;
+  /* Secondary text: was #787774 (4.48:1 on white, fails AA by 0.02 and drops
+     to 4.05:1 on the warm canvas). #666564 clears 4.5:1 on white, both
+     sidebars (default + warm + lifted), and bg-tertiary default. Borderline
+     4.43:1 on warm bg-tertiary, where text-secondary rarely lands. */
+  --cn-text-secondary: #666564;
+  /* Faint text: was #9b9a97 (2.81:1 on white, 2.54:1 on warm; below 3:1 UI
+     minimum). #7d7c79 clears 4:1 while keeping a "muted" feel. */
+  --cn-text-faint: #7d7c79;
+  /* Accent darkened for light mode: #5b8def yields 3.23:1 on white (link
+     contrast fails AA). #3a5fc7 clears ~4.6:1 on white. Hover stays one
+     step darker for visual feedback. */
+  --cn-accent: #3a5fc7;
+  --cn-accent-hover: #2c4eb0;
+  /* Inline code: #eb5757 yields 2.92:1 on bg-tertiary in light mode.
+     #c0392b only clears 4.14:1 on the warm bg-tertiary; #a8201a holds
+     5.5:1+ across both default and warm code backgrounds. */
+  --cn-inline-code: #a8201a;
+
+  /* Theme-aware tokens — Notion light values. Bold text uses the same
+     color as body and lets font-weight do the work (Notion convention). */
+  --cn-strong-color: #37352f;
+  --cn-divider: rgba(55, 53, 47, 0.16);
+  --cn-soft-overlay: rgba(55, 53, 47, 0.06);
+  --cn-medium-overlay: rgba(55, 53, 47, 0.10);
+  --cn-strong-overlay: rgba(55, 53, 47, 0.18);
+  --cn-checkbox-fill: #37352f;
+  --cn-checkbox-check: #ffffff;
+  --cn-lifted-tint: rgba(55, 53, 47, 0.04);
+
+  /* Modal chrome — Notion-style: ~30% backdrop dim, soft 10% shadow. */
+  --cn-modal-backdrop: rgba(15, 15, 15, 0.30);
+  --cn-modal-shadow: rgba(15, 15, 15, 0.10);
+
+  /* Translucency vars set as no-ops — light mode is opaque. The wash on
+     .workspace still exists but doesn't show through opaque surfaces.
+     Style Settings translucency tint knob has no effect in light mode. */
+  --cn-tint-alpha: 0.0;
+  --workspace-background-translucent: rgba(255, 255, 255, var(--cn-tint-alpha));
+
+  --background-primary: var(--cn-bg-primary);
+  --background-primary-alt: var(--cn-bg-secondary);
+  --background-secondary: var(--cn-bg-secondary);
+  --background-secondary-alt: var(--cn-bg-tertiary);
+  --background-modifier-border: var(--cn-border-subtle);
+  --background-modifier-border-hover: var(--cn-border-strong);
+  --divider-color: var(--cn-divider);
+  --divider-color-hover: rgba(55, 53, 47, 0.38);
+  --background-modifier-border-focus: var(--cn-accent);
+  --background-modifier-hover: var(--cn-soft-overlay);
+  --background-modifier-active-hover: var(--cn-medium-overlay);
+  --background-modifier-form-field: #ffffff;
+
+  --text-normal: var(--cn-text-primary);
+  --text-muted: var(--cn-text-secondary);
+  --text-faint: var(--cn-text-faint);
+  --text-on-accent: #ffffff;
+  --text-accent: var(--cn-accent);
+  --text-accent-hover: var(--cn-accent-hover);
+  --text-selection: color-mix(in srgb, var(--cn-accent) 22%, transparent);
+  --text-highlight-bg: rgba(255, 212, 0, 0.32);
+  --text-highlight-bg-active: rgba(255, 212, 0, 0.50);
+
+  --interactive-accent: var(--cn-accent);
+  --interactive-accent-hover: var(--cn-accent-hover);
+
+  /* Heading colors — mode-specific. Sizes/weights/line-heights are in :root. */
+  --h1-color: #37352f;
+  --h2-color: #37352f;
+  --h3-color: #37352f;
+  --h4-color: #37352f;
+  --h5-color: var(--cn-text-secondary);
+  --h6-color: var(--cn-text-faint);
+
+  /* size / weight / line-height are in :root (mode-independent) */
+  --inline-title-color: var(--h1-color);
+
+  --tab-background-active: var(--cn-bg-primary);
+  --tab-text-color-focused-active: var(--cn-text-primary);
+  --tab-outline-color: var(--cn-border-subtle);
+  --titlebar-background: var(--cn-bg-secondary);
+  --titlebar-background-focused: var(--cn-bg-secondary);
+}
+
+/* Background tone variants */
+.theme-dark.cn-bg-black {
+  --cn-bg-primary: #0d0d0d;
+  --cn-bg-secondary: #141414;
+  --cn-bg-tertiary: #1c1c1c;
+  --cn-bg-elevated: #222222;
+  /* Tray must be darker than bg-primary so the note card reads as lifted
+     on a base. The .theme-dark default tray (#131313) is lighter than
+     #0d0d0d, inverting the hierarchy. Setting to #050505 restores it.
+     (The cn-sidebar-lifted override correctly had #050505 already; this
+     fixes the default Flat sidebar setting.) */
+  --cn-bg-note-tray: #050505;
+}
+
+.theme-dark.cn-bg-warm {
+  --cn-bg-primary: #1c1a18;
+  --cn-bg-secondary: #232120;
+  --cn-bg-tertiary: #2a2725;
+  --cn-bg-elevated: #2b2826;
+}
+
+/* Zen: warm-gray identity carried via hue (red/orange undertone) rather
+   than mid-gray lightness. v1.10.12 pulled the surfaces toward charcoal-
+   warm so the default accent and inline code clear WCAG AA on every
+   surface (full ratio table in the v1.10.12 entry). Sidebar slightly
+   darker than canvas to mirror Zen browser's layout. Borders and
+   overlays already use rgba so they adapt to the new surface tones
+   without explicit overrides. */
+.theme-dark.cn-bg-zen {
+  --cn-bg-primary: #1f1c19;
+  --cn-bg-secondary: #181613;
+  --cn-bg-tertiary: #25221f;
+  --cn-bg-elevated: #2a2724;
+}
+
+/* Background tone variants — light mode. The "Pure black" knob inverts
+   to pure white (clean, no warm tint) since the OLED rationale doesn't
+   apply in light mode but the contrast preference still does. */
+.theme-light.cn-bg-black {
+  --cn-bg-primary: #ffffff;
+  --cn-bg-secondary: #f7f7f7;
+  --cn-bg-tertiary: #efefef;
+  --cn-bg-elevated: #e6e6e6;
+}
+
+.theme-light.cn-bg-warm {
+  --cn-bg-primary: #f7f3ec;
+  --cn-bg-secondary: #f0ebe1;
+  --cn-bg-tertiary: #ece6d9;
+  --cn-bg-elevated: #e9e3d5;
+}
+
+/* Zen light parity. v1.10.12 raised the surfaces toward near-white-warm
+   so the default light accent (#3a5fc7) and inline code (#a8201a) clear
+   AA on every surface, including bg-elevated. Sidebar slightly darker
+   than canvas to mirror Zen browser's layout. */
+.theme-light.cn-bg-zen {
+  --cn-bg-primary: #f5f3ef;
+  --cn-bg-secondary: #eeece8;
+  --cn-bg-tertiary: #ece9e4;
+  --cn-bg-elevated: #e9e6e1;
+}
+
+/* Translucency tint intensity (alpha of the dark wash over macOS vibrancy).
+   Off = 0 (pure vibrancy). Heavy = 0.32 (more dimmed). Only takes effect
+   when Obsidian's "Translucent window" toggle is on. */
+.theme-dark.cn-translucent-off    { --cn-tint-alpha: 0.0; }
+.theme-dark.cn-translucent-light  { --cn-tint-alpha: 0.10; }
+.theme-dark.cn-translucent-medium { --cn-tint-alpha: 0.18; }
+.theme-dark.cn-translucent-heavy  { --cn-tint-alpha: 0.32; }
+
+/* Light mode is opaque (Notion-style) so the Translucency tint knob has
+   no effect there. The .theme-light.cn-translucent-* class rules were
+   removed; --cn-tint-alpha stays at the .theme-light block default (0.0). */
+
+/* Sidebar contrast variants — dark */
+/* Sidebar border on the inner edge only -- the edge that faces the note.
+   Left sidebar's left edge and right sidebar's right edge sit against
+   the window frame (no adjacent content), so a border there is noise.
+   The panel boxes in section 19b provide their own inner border; this
+   option adds a separator at the split level for users who want it. */
+.theme-dark.cn-sidebar-border .workspace-split.mod-left-split {
+  border-right: 1px solid var(--cn-border-subtle);
+}
+.theme-dark.cn-sidebar-border .workspace-split.mod-right-split {
+  border-left: 1px solid var(--cn-border-subtle);
+}
+
+/* Lifted sets both --background-secondary (panel) and --cn-bg-note-tray (workspace-split
+   tray, which bypasses --background-secondary in opaque mode -- see section 4b). */
+.theme-dark.cn-sidebar-lifted              { --background-secondary: #1b1b1b; --cn-bg-note-tray: #0d0d0d; }
+/* Pure Black tray (#000000): one stop darker than default (#050505). */
+.theme-dark.cn-sidebar-lifted.cn-bg-black  { --background-secondary: #0a0a0a; --cn-bg-note-tray: #000000; }
+.theme-dark.cn-sidebar-lifted.cn-bg-warm   { --background-secondary: #1f1d1c; --cn-bg-note-tray: #131110; }
+.theme-dark.cn-sidebar-lifted.cn-bg-zen    { --background-secondary: #110f0d; --cn-bg-note-tray: #0a0908; }
+
+/* Sidebar contrast variants — light */
+/* Same inner-edge-only rule for light mode. */
+.theme-light.cn-sidebar-border .workspace-split.mod-left-split {
+  border-right: 1px solid var(--cn-border-subtle);
+}
+.theme-light.cn-sidebar-border .workspace-split.mod-right-split {
+  border-left: 1px solid var(--cn-border-subtle);
+}
+
+.theme-light.cn-sidebar-lifted             { --background-secondary: #f1f0ed; --cn-bg-note-tray: #cdcbc6; }
+.theme-light.cn-sidebar-lifted.cn-bg-black { --background-secondary: #f0f0f0; --cn-bg-note-tray: #e2e2e2; }
+.theme-light.cn-sidebar-lifted.cn-bg-warm  { --background-secondary: #ebe5d9; --cn-bg-note-tray: #ddd6c8; }
+/* Zen tray: one stop darker than default (#d8d6d1), with warm undertone to match Zen surfaces. */
+.theme-light.cn-sidebar-lifted.cn-bg-zen   { --background-secondary: #e6e3de; --cn-bg-note-tray: #c8c5c0; }
+
+
+/* Sidebar-lifted in dark translucent mode: outer-shell containers are
+   forced transparent, so paint a subtle dark tint to give Lifted a
+   visible effect over the vibrancy. Light mode is opaque so this rule
+   only fires in dark. */
+body.is-translucent.theme-dark:not(.is-fullscreen).cn-sidebar-lifted .workspace-split.mod-left-split,
+body.is-translucent.theme-dark:not(.is-fullscreen).cn-sidebar-lifted .workspace-split.mod-right-split,
+body.is-translucent.theme-dark:not(.is-fullscreen).cn-sidebar-lifted .workspace-ribbon.mod-left {
+  background-color: var(--cn-lifted-tint);
+}
+
+/* Sidebar-lifted in light translucent mode: the section 4 force-paint
+   block paints sidebar with var(--cn-bg-secondary), but cn-sidebar-lifted
+   only overrides --background-secondary (Obsidian's token). Without this
+   higher-specificity rule, the lifted setting is a silent no-op when
+   Translucent Window is enabled in light mode. We pull from
+   var(--background-secondary) here because the .cn-sidebar-lifted +
+   bg-tone variants set that variable to the lifted hex. */
+body.is-translucent.theme-light.cn-sidebar-lifted .workspace-split.mod-left-split,
+body.is-translucent.theme-light.cn-sidebar-lifted .workspace-split.mod-right-split,
+body.is-translucent.theme-light.cn-sidebar-lifted .workspace-ribbon.mod-left,
+body.is-translucent.theme-light.cn-sidebar-lifted .workspace-tabs.mod-top,
+body.is-translucent.theme-light.cn-sidebar-lifted .mod-left-split .workspace-tab-header-container,
+body.is-translucent.theme-light.cn-sidebar-lifted .mod-right-split .workspace-tab-header-container,
+body.is-translucent.theme-light.cn-sidebar-lifted .titlebar {
+  background-color: var(--background-secondary);
+}
+
+/* ============================================================
+   2. TYPOGRAPHY
+   - UI chrome: Inter (Linear/Notion-style, slick + neutral)
+   - Note content: SF Pro Text / Display (Apple's content-optimized stack)
+   - Code: SF Mono
+   The UI font is overridable via the Style Settings "UI font" knob.
+   ============================================================ */
+
+body {
+  --font-interface-theme: "Inter", -apple-system, "SF Pro Text", system-ui, BlinkMacSystemFont, sans-serif;
+  --font-text-theme: "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  --font-monospace-theme: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  font-family: var(--font-interface-theme);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Inter looks best with calt + ss01 (single-storey 'a'), kern, liga */
+  font-feature-settings: "calt", "ss01", "kern", "liga";
+  letter-spacing: -0.005em;
+}
+
+/* UI font variants — selected via Style Settings */
+body.cn-ui-inter      { --font-interface-theme: "Inter", -apple-system, system-ui, sans-serif; }
+/* Avenir is a touch wider -- bump letter-spacing back to 0 */
+body.cn-ui-avenir     { --font-interface-theme: "Avenir Next", "Avenir", -apple-system, system-ui, sans-serif; letter-spacing: 0; font-feature-settings: "kern", "liga"; }
+body.cn-ui-system     { --font-interface-theme: -apple-system, "SF Pro Text", system-ui, BlinkMacSystemFont, sans-serif; font-feature-settings: "ss01", "ss02", "kern", "liga"; }
+
+/* Note font variants — selected via Style Settings */
+body.cn-note-sfpro   { --font-text-theme: "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, sans-serif; }
+body.cn-note-newyork { --font-text-theme: "New York", Georgia, serif; }
+body.cn-note-georgia { --font-text-theme: Georgia, serif; }
+body.cn-note-avenir  { --font-text-theme: "Avenir Next", "Avenir", -apple-system, system-ui, sans-serif; }
+
+/* Heading font variants — selected via Style Settings */
+body.cn-heading-sfpro   { --cn-heading-font: "SF Pro Display", -apple-system, system-ui, sans-serif; }
+body.cn-heading-newyork { --cn-heading-font: "New York", Georgia, serif; }
+body.cn-heading-georgia { --cn-heading-font: Georgia, serif; }
+
+.markdown-source-view,
+.markdown-preview-view,
+.markdown-rendered {
+  font-family: var(--font-text-theme);
+  font-size: var(--cn-editor-font-size);
+  line-height: var(--cn-note-line-height);
+  letter-spacing: -0.003em;
+}
+
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-line {
+  font-size: var(--cn-editor-font-size);
+}
+
+/* ============================================================
+   3. HEADINGS — tight tracking, dramatic scale
+   Font driven by --cn-heading-font (Style Settings knob, default SF Pro
+   Display). Sizes driven by --h{n}-size variables (set in section 1).
+   Both apply in reading mode and Live Preview.
+   ============================================================ */
+
+/* Negative tracking belongs only on display-size headers (H1/H2). Applying
+   it to H3–H6 makes them look cramped without buying any visual benefit
+   at those sizes — small text wants normal or slightly open tracking. */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.cm-header, .HyperMD-header {
+  font-family: var(--cn-heading-font);
+  letter-spacing: 0;
+}
+
+.markdown-rendered h1, .HyperMD-header-1 {
+  font-size: var(--h1-size); font-weight: var(--h1-weight); color: var(--h1-color);
+  line-height: var(--h1-line-height); letter-spacing: -0.018em;
+  margin-top: 1.6em; margin-bottom: 0.5em;
+}
+.markdown-rendered h2, .HyperMD-header-2 {
+  font-size: var(--h2-size); font-weight: var(--h2-weight); color: var(--h2-color);
+  line-height: var(--h2-line-height); letter-spacing: -0.012em;
+  margin-top: 1.5em; margin-bottom: 0.4em;
+}
+.markdown-rendered h3, .HyperMD-header-3 {
+  font-size: var(--h3-size); font-weight: var(--h3-weight); color: var(--h3-color);
+  line-height: var(--h3-line-height);
+  margin-top: 1.2em;
+}
+.markdown-rendered h4, .HyperMD-header-4 {
+  font-size: var(--h4-size); font-weight: var(--h4-weight); color: var(--h4-color);
+  line-height: var(--h4-line-height);
+}
+.markdown-rendered h5, .HyperMD-header-5 {
+  font-size: var(--h5-size); font-weight: var(--h5-weight); color: var(--h5-color);
+  line-height: var(--h5-line-height);
+}
+.markdown-rendered h6, .HyperMD-header-6 {
+  font-size: var(--h6-size); font-weight: var(--h6-weight); color: var(--h6-color);
+  line-height: var(--h6-line-height);
+  font-style: italic;
+}
+
+/* Heading scale variants — keep the same modular step ratio across themes */
+.theme-dark.cn-headings-compact,
+.theme-light.cn-headings-compact {
+  --h1-size: 2.0em; --h2-size: 1.65em; --h3-size: 1.35em;
+  --h4-size: 1.15em; --h5-size: 1.05em; --h6-size: 1.0em;
+}
+.theme-dark.cn-headings-large,
+.theme-light.cn-headings-large {
+  --h1-size: 2.9em; --h2-size: 2.3em; --h3-size: 1.8em;
+  --h4-size: 1.4em; --h5-size: 1.2em; --h6-size: 1.05em;
+}
+
+.markdown-source-view .inline-title,
+.markdown-preview-view .inline-title,
+.inline-title {
+  font-family: var(--cn-heading-font);
+  font-weight: var(--inline-title-weight);
+  font-size: var(--inline-title-size);
+  line-height: var(--inline-title-line-height);
+  letter-spacing: -0.01em;
+  color: var(--inline-title-color);
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+/* ============================================================
+   4. WORKSPACE
+   - Default (Translucent window OFF or fullscreen): solid surfaces.
+   - body.is-translucent + macOS: every workspace layer is forced transparent
+     so Obsidian's NSVisualEffectView (set by Electron when the toggle is
+     on) shows through with native macOS vibrancy. A faint dark wash is
+     applied via --workspace-background-translucent for legibility.
+   - Reference: AnuPpuccin translucency.scss; Things obsidian.css; Catppuccin
+     _app-variables.scss; Obsidian docs CSS variables.
+   ============================================================ */
+
+.workspace-tab-header {
+  background-color: transparent;
+  border: none;
+  transition: background-color var(--cn-transition-fast), color var(--cn-transition-fast);
+}
+
+.workspace-tab-header-inner { border-radius: var(--radius-s); }
+
+.workspace-tab-header.is-active {
+  background-color: var(--cn-soft-overlay);
+  border-bottom: none;
+  border-radius: var(--radius-s);
+}
+
+/* --- Translucent mode --- */
+
+/* All translucent-mode rules are scoped to .theme-dark. Light mode is
+   opaque (Notion-style) and ignores the Translucent Window setting —
+   keeping outer-shell containers transparent in light mode would let
+   raw macOS vibrancy show through and look gray over dark wallpapers. */
+
+body.is-translucent.theme-dark { background-color: transparent; }
+
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-ribbon.mod-left,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-ribbon.mod-left::before,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-tabs,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-tabs .workspace-leaf,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-leaf,
+/* Plugin leaves (Terminal, Excalidraw, Smart Connections graph) assume
+   an opaque container; opt them out of the transparent force so they
+   render correctly over vibrancy. */
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-leaf-content:not([data-type="terminal"]):not([data-type="canvas"]):not([data-type="excalidraw"]):not([data-type="kanban"]):not([data-type="smart-connections-view"]),
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-root,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-left-split,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-right-split,
+body.is-translucent.theme-dark:not(.is-fullscreen) .mod-left-split .workspace-tab-header-container,
+body.is-translucent.theme-dark:not(.is-fullscreen) .mod-right-split .workspace-tab-header-container,
+body.is-translucent.theme-dark:not(.is-fullscreen) .mod-top .workspace-tab-header-container,
+body.is-translucent.theme-dark:not(.is-fullscreen) .view-header,
+body.is-translucent.theme-dark:not(.is-fullscreen) .horizontal-main-container,
+body.is-translucent.theme-dark:not(.is-fullscreen) .titlebar {
+  /* .status-bar removed from this transparent-force list. Section 14
+     turns the status bar into a floating pill that needs a body of its
+     own to stay legible over vibrancy. */
+  background-color: transparent;
+}
+
+/* Workspace wash on top of macOS vibrancy — dark mode only. Controlled
+   by Style Settings Translucency tint knob via --cn-tint-alpha. */
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace {
+  background-color: var(--workspace-background-translucent);
+}
+
+/* Stacked tabs need an opaque fallback so text stays readable */
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-tabs.mod-stacked .workspace-leaf,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-tabs.mod-stacked .workspace-tab-container {
+  background-color: var(--cn-bg-primary);
+}
+
+/* Translucent-mode hover/active states use theme-aware overlay tokens
+   (rgba whites in dark) so they tint the vibrancy rather than punch
+   opaque holes in it. Dark-only since light mode is opaque. */
+body.is-translucent.theme-dark:not(.is-fullscreen) {
+  --background-modifier-hover: var(--cn-soft-overlay);
+  --background-modifier-active-hover: var(--cn-medium-overlay);
+}
+
+/* Light mode opaque-restore: when Translucent Window is enabled in
+   Obsidian's Appearance settings, Obsidian's own internal CSS sets
+   workspace surfaces to transparent so vibrancy can show through.
+   Light mode is fully opaque (Notion-style), so explicitly paint the
+   outer-shell containers with our solid colors to override Obsidian's
+   internal transparency. */
+body.is-translucent.theme-light .workspace-split.mod-left-split,
+body.is-translucent.theme-light .workspace-split.mod-right-split,
+body.is-translucent.theme-light .workspace-ribbon.mod-left,
+body.is-translucent.theme-light .workspace-tabs.mod-top,
+body.is-translucent.theme-light .mod-left-split .workspace-tab-header-container,
+body.is-translucent.theme-light .mod-right-split .workspace-tab-header-container,
+body.is-translucent.theme-light .titlebar {
+  background-color: var(--cn-bg-secondary);
+}
+
+body.is-translucent.theme-light .workspace,
+body.is-translucent.theme-light .workspace-split.mod-root,
+body.is-translucent.theme-light .workspace-leaf,
+/* Plugin leaves opted out for the same reason as the dark counterpart
+   above: their internal styling assumes an opaque container, and our
+   bg-primary force-paint can collide with their own backgrounds. */
+body.is-translucent.theme-light .workspace-leaf-content:not([data-type="terminal"]):not([data-type="canvas"]):not([data-type="excalidraw"]):not([data-type="kanban"]):not([data-type="smart-connections-view"]) {
+  background-color: var(--cn-bg-primary);
+}
+
+body.is-translucent.theme-light {
+  background-color: var(--cn-bg-primary);
+}
+
+/* ============================================================
+   4b. NOTE PANEL — soft card edge against the sidebar
+   The note pane in the main split rounds its top-left and
+   bottom-left corners (where it meets the sidebar) so the
+   boundary reads as a soft transition rather than a sharp
+   90-degree seam. Right edges stay flat against the window.
+
+   Two requirements for the rounded edge to be visible:
+   1. The parent area behind the leaf (workspace-tab-container)
+      must be painted with a contrasting tone so the rounded
+      corners reveal something different from the note. We use
+      --background-secondary (sidebar tone) so the rounded
+      note reads as a card sitting on the sidebar tray.
+   2. The leaf-content must clip its children with overflow:
+      hidden, otherwise the .view-header above the note body
+      paints its own background over the rounded corners.
+
+   The note also stays solid in dark translucent mode so the
+   color difference reads cleanly. The tray behind it stays
+   transparent in translucent mode so macOS vibrancy still
+   shows through the chrome.
+   ============================================================ */
+
+/* Tray painted at two levels so the rounded reveal shows the same
+   tone whether the rounded element is .workspace-tabs (sidebars,
+   reveals .workspace-split) or .workspace-leaf-content (note,
+   reveals .workspace-tab-container). Painting both means it
+   doesn't matter which parent is "behind" each rounded child.
+   Scoped to non-mobile because mobile uses drawer-overlay sidebars
+   where tray paint changes drawer color unexpectedly. */
+body:not(.is-mobile) .workspace-split.mod-root,
+body:not(.is-mobile) .workspace-split.mod-left-split,
+body:not(.is-mobile) .workspace-split.mod-right-split,
+body:not(.is-mobile) .workspace-split.mod-root .workspace-tab-container,
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tab-container,
+body:not(.is-mobile) .workspace-split.mod-right-split .workspace-tab-container {
+  background-color: var(--cn-bg-note-tray);
+}
+
+/* Translucent dark: keep the tab-containers transparent so vibrancy
+   shows through the chrome. Workspace-splits are already forced
+   transparent in section 4. */
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-root .workspace-tab-container,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-left-split .workspace-tab-container,
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-right-split .workspace-tab-container {
+  background-color: transparent;
+}
+
+/* Note panel: previously rounded the left edge facing the sidebar.
+   Removed — the corner clipping interfered with editor padding and read
+   as visual noise more than chrome. The sidebar pane already has its
+   own rounded inside edge (below) which is enough separation. Keep
+   overflow:hidden so any decoratively positioned children still clip
+   at the leaf boundary. Scoped to non-mobile so mobile drawer chrome
+   isn't affected. */
+body:not(.is-mobile) .workspace-split.mod-root .workspace-leaf-content {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* Left sidebar: round the entire pane on the inside edge (right side
+   facing the note). Targets workspace-tabs (one level up from the
+   leaf) so the action-icons row at top and the vault switcher at
+   bottom also clip to the rounded shape. Non-mobile only — mobile
+   sidebars are drawer overlays where rounding clips the drawer
+   header. */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs {
+  border-top-right-radius: var(--cn-radius-lg);
+  border-bottom-right-radius: var(--cn-radius-lg);
+  overflow: hidden;
+}
+
+/* Right sidebar (when open): mirror — round the inside edge (left). */
+body:not(.is-mobile) .workspace-split.mod-right-split .workspace-tabs {
+  border-top-left-radius: var(--cn-radius-lg);
+  border-bottom-left-radius: var(--cn-radius-lg);
+  overflow: hidden;
+}
+
+/* Translucent dark: section 4 already forces workspace-splits
+   transparent so vibrancy shows through. Force the note leaf body
+   solid so the rounded card still reads against the vibrancy. */
+body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-root .workspace-leaf-content:not([data-type="terminal"]):not([data-type="canvas"]):not([data-type="excalidraw"]):not([data-type="kanban"]):not([data-type="smart-connections-view"]) {
+  background-color: var(--cn-bg-primary);
+}
+
+/* ============================================================
+   5. FILE EXPLORER & SIDEBAR LISTS
+   ============================================================ */
+
+.nav-folder-title, .nav-file-title {
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+  color: var(--cn-text-secondary);
+  font-size: 0.92em;
+  transition: background-color var(--cn-transition-fast), color var(--cn-transition-fast);
+}
+
+.nav-file-title:hover, .nav-folder-title:hover {
+  background-color: var(--background-modifier-hover);
+  color: var(--cn-text-primary);
+}
+
+.nav-file-title.is-active, .nav-folder-title.is-active {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--cn-text-primary);
+  font-weight: 500;
+}
+
+.nav-folder-title { font-weight: 500; color: var(--cn-text-primary); }
+
+/* Active-state for tree items in the file explorer, tag pane, and
+   outline. Obsidian sets the active background via internal CSS that
+   uses the same selector at equal specificity; without !important the
+   active state visually flickers when a sibling rule (e.g., hover)
+   loads in a different cascade order. */
+.tree-item-self.is-active {
+  background-color: var(--background-modifier-active-hover) !important;
+  color: var(--cn-text-primary) !important;
+}
+
+/* ============================================================
+   6. EDITOR CONTENT
+   ============================================================ */
+
+.markdown-source-view.mod-cm6 .cm-content { caret-color: var(--cn-accent); }
+.markdown-source-view.mod-cm6 .cm-line { padding: 1px 0; }
+
+/* CodeMirror 6 paints .cm-selectionBackground via an internal stylesheet
+   that ships at equal or higher specificity; !important is required to
+   keep the theme's accent-tinted selection from being overwritten on
+   editor focus changes. */
+.cm-selectionBackground,
+::selection { background: var(--text-selection) !important; }
+
+/* Links */
+.cm-link, .cm-hmd-internal-link, a.internal-link, a.external-link {
+  color: var(--cn-accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--cn-accent) 30%, transparent);
+  transition: color var(--cn-transition-fast), border-color var(--cn-transition-fast);
+}
+
+a.internal-link:hover, a.external-link:hover, .cm-link:hover {
+  color: var(--cn-accent-hover);
+  border-bottom-color: var(--cn-accent-hover);
+}
+
+/* Bold — color only; let font-weight cascade so bold inside an H1 (weight
+   900) renders heavier than the surrounding heading rather than capping
+   at 700. Body bold gets weight 700 from the user-agent default for <strong>.
+   Color flips per theme via --cn-strong-color (#ffffff dark, #000 light). */
+strong, .cm-strong { color: var(--cn-strong-color); }
+em, .cm-em { color: var(--cn-text-primary); }
+
+/* Native ==highlight== — soft amber, readable on dark */
+.markdown-rendered mark,
+.markdown-preview-view mark,
+.cm-highlight {
+  background: var(--text-highlight-bg);
+  color: var(--cn-text-primary);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* ============================================================
+   7. CODE — scoped to markdown content (not plugin UIs)
+   ============================================================ */
+
+.markdown-rendered code,
+.markdown-preview-view code,
+.cm-inline-code {
+  background-color: var(--cn-bg-tertiary);
+  color: var(--cn-inline-code);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.88em;
+  border: none;
+}
+
+/* Codeblock background: HyperMD applies an inline-equivalent background
+   via Obsidian's internal CodeMirror styling. !important is needed to
+   theme the codeblock surface in Live Preview consistently with reading
+   mode. */
+.markdown-rendered pre,
+.HyperMD-codeblock-bg {
+  background: var(--cn-bg-tertiary) !important;
+}
+
+.markdown-rendered pre {
+  border-radius: var(--cn-radius);
+  border: none;
+  padding: 14px 16px;
+}
+
+.markdown-rendered pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.88em;
+  color: var(--cn-text-primary);
+}
+
+.HyperMD-codeblock-begin-bg { border-top-left-radius: var(--cn-radius); border-top-right-radius: var(--cn-radius); }
+.HyperMD-codeblock-end-bg   { border-bottom-left-radius: var(--cn-radius); border-bottom-right-radius: var(--cn-radius); }
+
+/* ============================================================
+   8. CALLOUTS — boxed, highlight-style, amber default
+   Each callout type sets its own --callout-color (RGB triplet);
+   we override [!note] and the unspecified default to amber so the
+   default callout reads as a yellow highlight, not a blue note.
+   ============================================================ */
+
+/* Override default note callout color from Obsidian's blue to amber */
+.callout[data-callout="note"],
+.callout:not([data-callout]) {
+  --callout-color: 234, 179, 8;
+}
+
+.callout {
+  background-color: rgba(var(--callout-color, 234, 179, 8), 0.10);
+  border: 1px solid rgba(var(--callout-color, 234, 179, 8), 0.28);
+  border-left: 3px solid rgba(var(--callout-color, 234, 179, 8), 0.75);
+  border-radius: var(--cn-radius);
+  padding: 12px 16px;
+  margin: 1.2em 0;
+}
+
+.callout-title {
+  padding: 0 0 4px 0;
+  background: transparent;
+  font-weight: 600;
+  color: var(--cn-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-title-inner { color: var(--cn-text-primary); }
+
+.callout-content {
+  padding: 6px 0 0 0;
+  color: var(--cn-text-primary);
+}
+
+.callout-icon {
+  color: rgb(var(--callout-color, 234, 179, 8));
+  display: inline-flex;
+  align-items: center;
+}
+
+.callout-icon svg { color: rgb(var(--callout-color, 234, 179, 8)); }
+
+/* ============================================================
+   9. BLOCKQUOTES & DIVIDERS
+   ============================================================ */
+
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--cn-border-strong);
+  background: transparent;
+  color: var(--cn-text-secondary);
+  margin: 1em 0;
+  padding: 4px 0 4px 14px;
+}
+
+.markdown-rendered hr,
+.markdown-preview-view hr,
+hr {
+  border: none;
+  border-top: 1px solid var(--cn-divider);
+  margin: 2em 0;
+}
+
+/* HR rendered in Live Preview (CodeMirror).
+   Obsidian applies `.HyperMD-hr-line` to the parent .cm-line in BOTH the
+   rendered and active-edit states; `.cm-hr` is only present on the inline
+   span when the line is inactive, so `:has(.cm-hr)` misses the active row.
+   Targeting the line class draws the rule consistently and hides the
+   dashes whether the cursor is on the line or not. The caret remains
+   visible for editing, and source mode still shows the raw markup. */
+.cm-line.HyperMD-hr-line {
+  position: relative;
+  color: transparent;
+}
+
+.cm-line.HyperMD-hr-line .cm-hr {
+  color: transparent;
+  background: transparent;
+}
+
+.cm-line.HyperMD-hr-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 1px solid var(--cn-divider);
+  pointer-events: none;
+}
+
+/* ============================================================
+   10. INPUTS, BUTTONS — scoped to Obsidian containers only
+   ============================================================ */
+
+.modal input[type="text"],
+.modal input[type="search"],
+.modal input[type="email"],
+.modal input[type="password"],
+.modal textarea,
+.suggestion-container input,
+.workspace-leaf-content[data-type="search"] input,
+.search-input-container input,
+.view-header input[type="text"] {
+  background-color: var(--cn-bg-tertiary);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--radius-s);
+  color: var(--cn-text-primary);
+  transition: border-color var(--cn-transition-fast), background-color var(--cn-transition-fast);
+}
+
+/* Dropdowns — preserve Obsidian's native chevron icon. Use background-color
+   only; the `background` shorthand would reset background-repeat to `repeat`
+   and tile the chevron across the select. */
+.modal select,
+.dropdown {
+  background-color: var(--cn-bg-tertiary);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--radius-s);
+  color: var(--cn-text-primary);
+  transition: border-color var(--cn-transition-fast), background-color var(--cn-transition-fast);
+}
+
+.modal input:focus,
+.modal textarea:focus,
+.modal select:focus,
+.suggestion-container input:focus,
+.workspace-leaf-content[data-type="search"] input:focus,
+.search-input-container input:focus {
+  border-color: var(--cn-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--cn-accent) 15%, transparent);
+}
+
+.modal button,
+.suggestion-container button,
+.view-header button.clickable-icon,
+.nav-buttons-container button,
+.status-bar button,
+.workspace-tab-header-container .clickable-icon {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-s);
+  color: var(--cn-text-primary);
+  transition: background-color var(--cn-transition-fast), border-color var(--cn-transition-fast);
+}
+
+.modal button:hover,
+.suggestion-container button:hover,
+.view-header button.clickable-icon:hover,
+.nav-buttons-container button:hover,
+.status-bar button:hover,
+.workspace-tab-header-container .clickable-icon:hover {
+  background-color: var(--cn-soft-overlay);
+  border-color: transparent;
+}
+
+.modal button.mod-cta {
+  background: var(--cn-accent);
+  color: #ffffff;
+  border: none;
+}
+
+.modal button.mod-cta:hover { background: var(--cn-accent-hover); }
+
+/* Modals — restore opaque variables inside dialogs so any internal
+   Obsidian rule that paints with --background-primary/-secondary
+   gets a solid surface again. !important is required because the
+   translucent-mode body-level override (body.is-translucent.theme-light)
+   has higher selector specificity than .modal, so without !important
+   the Settings dialog goes see-through and the file explorer ghosts
+   through it. */
+.modal,
+.modal-container,
+.menu,
+.suggestion-container {
+  --background-primary: var(--cn-bg-primary) !important;
+  --background-primary-alt: var(--cn-bg-secondary) !important;
+  --background-secondary: var(--cn-bg-secondary) !important;
+  --background-secondary-alt: var(--cn-bg-tertiary) !important;
+  --background-modifier-hover: var(--cn-bg-tertiary) !important;
+  --background-modifier-active-hover: var(--cn-bg-elevated) !important;
+}
+
+.modal {
+  /* 18px radius: chunkier than --cn-radius-lg (12px) without going
+     full Velocity (22px). Authoritative value -- the section 19b
+     duplicate override has been removed. */
+  border-radius: 18px;
+  background-color: var(--cn-bg-secondary);
+  border: 1px solid var(--cn-border-subtle);
+  box-shadow: 0 12px 48px var(--cn-modal-shadow);
+}
+
+/* Inner surfaces of the Settings dialog and other multi-pane modals */
+.modal-content,
+.modal-sidebar,
+.vertical-tab-content-container,
+.vertical-tab-content,
+.vertical-tab-header,
+.vertical-tab-nav-item {
+  background-color: var(--cn-bg-secondary);
+}
+
+.vertical-tab-nav-item.is-active {
+  background-color: var(--cn-bg-elevated);
+}
+
+/* !important needed because Obsidian sets the modal backdrop's
+   background-color and backdrop-filter via app.css at equal
+   specificity; without !important the cascade order leaves either
+   the dim or the blur from stock styling in place. */
+.modal-bg {
+  background-color: var(--cn-modal-backdrop) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+}
+
+.modal-title {
+  /* var(--cn-heading-font) follows the Style Settings heading font knob
+     (same fix as v1.10.14 applied to inline-title). */
+  font-family: var(--cn-heading-font);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Suggestion menu (cmd-P, file switcher) */
+.suggestion-container, .menu {
+  background-color: var(--cn-bg-secondary);
+  border: 1px solid var(--cn-border-subtle);
+  /* 14px radius: matches the section 19b chrome model. Authoritative
+     value -- the section 19b duplicate override has been removed. */
+  border-radius: 14px;
+  /* Per-theme shadow alpha (heavy in dark, soft in light) so popovers
+     match the rest of the modal chrome and don't drop a heavy black
+     shadow over a light canvas. */
+  box-shadow: 0 8px 32px var(--cn-modal-shadow);
+}
+
+.suggestion-item.is-selected,
+.menu-item.selected,
+.menu-item:hover { background: var(--cn-bg-tertiary); }
+
+/* ============================================================
+   11. CHECKBOXES — scoped to markdown task lists only
+   ============================================================ */
+
+.markdown-source-view input[type="checkbox"],
+.markdown-rendered input[type="checkbox"],
+.markdown-preview-view input[type="checkbox"],
+.HyperMD-task-line input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--cn-border-strong);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: background-color var(--cn-transition), border-color var(--cn-transition);
+  vertical-align: middle;
+}
+
+.markdown-source-view input[type="checkbox"]:hover,
+.markdown-rendered input[type="checkbox"]:hover,
+.markdown-preview-view input[type="checkbox"]:hover { border-color: var(--cn-text-secondary); }
+
+.markdown-source-view input[type="checkbox"]:checked,
+.markdown-rendered input[type="checkbox"]:checked,
+.markdown-preview-view input[type="checkbox"]:checked {
+  background-color: var(--cn-checkbox-fill);
+  border-color: var(--cn-checkbox-fill);
+}
+
+.markdown-source-view input[type="checkbox"]:checked::after,
+.markdown-rendered input[type="checkbox"]:checked::after,
+.markdown-preview-view input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--cn-checkbox-check);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.task-list-item-checkbox:checked ~ * { color: var(--cn-text-faint); }
+
+/* ============================================================
+   12. TABLES
+   ============================================================ */
+
+.markdown-rendered table {
+  border-collapse: collapse;
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--cn-radius);
+  overflow: hidden;
+}
+
+.markdown-rendered th {
+  background: var(--cn-bg-tertiary);
+  color: var(--cn-text-primary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--cn-border-subtle);
+}
+
+.markdown-rendered td {
+  border-top: 1px solid var(--cn-border-subtle);
+  color: var(--cn-text-primary);
+}
+
+/* ============================================================
+   13. SCROLLBARS — minimal, scroll-triggered on workspace panels
+   Default thumb stays visible (modals, settings, code blocks etc.).
+   Inside .workspace-leaf-content (file explorer, outline, note view,
+   side panels) the thumb is transparent and only fades in while the
+   panel is actively scrolling. Requires the local "Scrollbar on Scroll"
+   plugin (.obsidian/plugins/scrollbar-on-scroll), which toggles the
+   .is-scrolling class on scroll events with a ~700ms tail.
+   ============================================================ */
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--cn-medium-overlay);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background-color var(--cn-transition);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cn-strong-overlay);
+}
+
+.workspace-leaf-content ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.workspace-leaf-content.is-scrolling ::-webkit-scrollbar-thumb {
+  background-color: var(--cn-medium-overlay);
+}
+.workspace-leaf-content.is-scrolling ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cn-strong-overlay);
+}
+
+/* ============================================================
+   14. STATUS BAR — floating pill, bottom-right
+   Detached from the bottom edge so it reads as a free-floating
+   chip in the same idiom as the file-explorer action-icon row.
+   Sizes to fit its contents.
+   ============================================================ */
+
+body:not(.is-mobile) .status-bar {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  left: auto;
+  top: auto;
+  width: fit-content;
+  max-width: calc(100vw - 16px);
+  height: auto;
+  background-color: var(--cn-bg-secondary);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: 999px;
+  color: var(--cn-text-faint);
+  font-size: 0.78em;
+  padding: 3px 10px;
+  gap: 2px;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/* Force every status-bar child fully visible. Obsidian core dims some
+   built-in buttons (the "+" new-tab shortcut, sidebar toggles) until
+   the bar is hovered; in a floating-pill layout that hover-only reveal
+   reads as broken. !important is required because Obsidian's internal
+   stylesheet sets opacity inline at equal specificity. */
+body:not(.is-mobile) .status-bar > * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Obsidian Sync — paint the syncing/working state amber so it reads
+   distinct from idle. The "synced" green check (.mod-success) and the
+   error state (.mod-error) keep their defaults. Targeting
+   .sync-status-icon without those modifiers covers the in-progress
+   state regardless of which exact class name the plugin uses
+   (.mod-syncing, .mod-progress, etc). Color matches the theme's amber
+   highlight tokens. */
+/* !important needed because the Obsidian Sync plugin paints the
+   status icon via inline currentColor on the SVG and a status-
+   class color on the parent; without !important the amber tint
+   loses to those higher-specificity / inline values. */
+.sync-status-icon:not(.mod-success):not(.mod-error) {
+  color: #ffd54f !important;
+}
+
+.sync-status-icon:not(.mod-success):not(.mod-error) svg {
+  color: #ffd54f !important;
+  stroke: #ffd54f !important;
+}
+
+/* ============================================================
+   15. PLUGIN SAFE-ZONES
+   Plugin UIs (Excalidraw, Smart Connections graph) should render
+   with their own styles. Theme rules above are scoped narrowly so
+   they do not leak in. The block below catches any residual leakage.
+   ============================================================ */
+
+/* Excalidraw: plugin owns its full UI surface. Targeted overrides only
+   so Excalidraw's own CSS cascades unimpeded. The previous `all: unset`
+   approach was a sledgehammer that stripped layout, accessibility
+   affordances, and inheritance the plugin relies on; v1.10.11 narrowed
+   it to color/font reset on form controls and a checkbox appearance
+   restore so checkboxes inside Excalidraw still look like checkboxes
+   rather than picking up the theme's custom checkbox styling.
+   If a future audit finds Cognia Noir styles leaking into Excalidraw
+   form controls, scope a targeted fix to that exact property rather
+   than reintroducing all: unset. */
+.excalidraw {
+  color: initial;
+}
+
+.excalidraw button,
+.excalidraw input,
+.excalidraw textarea,
+.excalidraw select {
+  font: inherit;
+}
+
+.excalidraw input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+/* Smart Connections related-notes view: leave any inline canvas
+   element alone. The data-type "smart-connections-view" is the
+   related-notes panel, not a graph canvas. The canvas selector here
+   is defensive in case a future Smart Connections build embeds a
+   canvas inside that view. */
+.smart-connections-view canvas { background: revert; }
+
+/* ============================================================
+   16. TAGS — pill style, accent-tinted
+   ============================================================ */
+
+/* Pill styling for tags rendered inline in markdown content (a.tag, .tag,
+   .cm-hashtag) and in the Live Preview hashtag block. The legacy
+   .cm-tag-pane .tree-item-self selector was removed: it targeted a
+   CodeMirror 5 era class that no longer matches modern Obsidian's tag
+   pane, and it collided with the .tree-item-self.is-active !important
+   rule, causing a jarring fill/overlay swap on click. */
+a.tag,
+.tag,
+.cm-hashtag {
+  background-color: color-mix(in srgb, var(--cn-accent) 12%, transparent);
+  color: var(--cn-accent);
+  border: 1px solid color-mix(in srgb, var(--cn-accent) 22%, transparent);
+  border-radius: 12px;
+  padding: 1px 8px;
+  font-size: 0.82em;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--cn-transition-fast), border-color var(--cn-transition-fast);
+}
+
+a.tag:hover, .tag:hover {
+  background-color: color-mix(in srgb, var(--cn-accent) 22%, transparent);
+  border-color: color-mix(in srgb, var(--cn-accent) 38%, transparent);
+  color: var(--cn-accent-hover);
+}
+
+/* Live Preview hashtag — keep it inline (no pill) so writing flow isn't disrupted;
+   accent color only. */
+.cm-hashtag-begin, .cm-hashtag-end {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: var(--cn-accent);
+}
+
+/* ============================================================
+   17. PROPERTIES / FRONTMATTER PANEL
+   The metadata editor at the top of notes — used for frontmatter keys
+   like tags, aliases, dates. Minimal, blends into the translucent surface.
+   ============================================================ */
+
+.metadata-container {
+  background-color: transparent;
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--cn-radius);
+  padding: 8px 12px;
+  margin-bottom: 1.5em;
+}
+
+.metadata-properties-heading {
+  color: var(--cn-text-faint);
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 0;
+  border: none;
+}
+
+.metadata-property {
+  border-top: 1px solid var(--cn-border-subtle);
+  padding: 4px 0;
+}
+.metadata-property:first-of-type { border-top: none; }
+
+.metadata-property-key {
+  color: var(--cn-text-secondary);
+  font-size: 0.88em;
+  font-weight: 500;
+}
+
+.metadata-property-key-input {
+  background-color: transparent;
+  color: var(--cn-text-secondary);
+  border: 1px solid transparent;
+  border-radius: var(--radius-s);
+}
+.metadata-property-key-input:focus {
+  background-color: var(--cn-bg-tertiary);
+  border-color: var(--cn-border-subtle);
+}
+
+.metadata-property-icon { color: var(--cn-text-faint); }
+
+.metadata-property-value {
+  color: var(--cn-text-primary);
+  font-size: 0.92em;
+}
+
+.metadata-input-longtext,
+.metadata-input-text,
+.metadata-property-value input[type="text"],
+.metadata-property-value input[type="number"],
+.metadata-property-value textarea {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-s);
+  color: var(--cn-text-primary);
+  padding: 2px 6px;
+}
+
+.metadata-input-longtext:focus,
+.metadata-input-text:focus,
+.metadata-property-value input:focus,
+.metadata-property-value textarea:focus {
+  background-color: var(--cn-bg-tertiary);
+  border-color: var(--cn-border-subtle);
+  outline: none;
+}
+
+.metadata-add-button {
+  color: var(--cn-text-faint);
+  font-size: 0.85em;
+  background-color: transparent;
+  border: none;
+  padding: 4px 0;
+}
+.metadata-add-button:hover {
+  color: var(--cn-text-primary);
+  background-color: transparent;
+}
+
+.multi-select-pill {
+  background-color: var(--cn-bg-tertiary);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--radius-s);
+  color: var(--cn-text-primary);
+  font-size: 0.85em;
+}
+.multi-select-pill:hover { background-color: var(--cn-bg-elevated); }
+
+/* ============================================================
+   18. FOCUS INDICATORS — keyboard accessibility
+   :focus-visible only fires on keyboard focus, not mouse click,
+   so we don't pollute the visual when clicking around.
+   ============================================================ */
+
+a.internal-link:focus-visible,
+a.external-link:focus-visible,
+.nav-file-title:focus-visible,
+.nav-folder-title:focus-visible,
+.tree-item-self:focus-visible,
+.workspace-tab-header:focus-visible,
+.modal button:focus-visible,
+.suggestion-container button:focus-visible,
+.menu-item:focus-visible,
+.clickable-icon:focus-visible {
+  outline: 2px solid var(--cn-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
+}
+
+/* ============================================================
+   19. QUALITY-OF-LIFE — Velocity-inspired refinements
+
+   19a. Functional extras (always-on or toggleable)
+        - Centered sidebar tab icons
+        - Bubble nav (file-explorer action row collapses to pill)
+        - Click feedback (scale-down on :active for all icons)
+        - CSS class utilities for per-note overrides
+
+   19b. Chrome shapes (desktop + iPad, guarded :not(.is-phone))
+        - Apple continuous corners on all rounded surfaces
+        - Pill-shaped clickable icons (ribbon, sidebar, FABs)
+        - Top-right window controls (chevron + sidebar toggle)
+        - Top-bar tab pills (bordered pill, 32px, radius 10px)
+        - Sidebar tab chips (larger pill, 34px, radius 14px)
+        - Vault profile / vault switcher pill
+        - View-header right-side action FABs
+        - Status bar items
+        - Popover / tooltip corner radius (modal/menu radii moved to section 10)
+        - Ribbon box, folder panel box, vault-profile pseudo box
+   ============================================================ */
+
+/* --- Centered sidebar tab icons ---
+   Pushes the tab-header-inner (file explorer / bookmarks /
+   recent files icons) to the horizontal center of the
+   sidebar header by giving it auto margins. Avoids flex: 1,
+   which on macOS would stretch the inner under the
+   absolutely-positioned traffic-light region and clip the
+   first tab. */
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+  margin-inline: auto;
+}
+
+/* --- Bubble nav buttons (Velocity pattern) ---
+   Collapses .nav-buttons-container into a slim pill at rest;
+   expands on hover/focus to reveal the action icons. Mobile
+   excluded (touch needs persistent affordances). Toggle:
+   cn-bubble-nav. */
+body.cn-bubble-nav:not(.is-mobile) .nav-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 6px 4px;
+  position: relative;
+}
+
+/* Small pill dash visible at rest as the hover affordance.
+   Fades out when buttons expand so it doesn't compete with them. */
+body.cn-bubble-nav:not(.is-mobile) .nav-header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 3px;
+  border-radius: 999px;
+  background-color: var(--cn-border-strong);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity var(--cn-transition);
+}
+
+body.cn-bubble-nav:not(.is-mobile) .nav-header:hover::after,
+body.cn-bubble-nav:not(.is-mobile) .nav-header:focus-within::after {
+  opacity: 0;
+}
+
+body.cn-bubble-nav:not(.is-mobile) .nav-buttons-container {
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: var(--cn-soft-overlay);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: 999px;
+  padding: 3px 6px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  /* contain: layout isolates the max-height reflow to this element so the
+     animation does not cascade to parent/sibling layout recalculations.
+     clip-path was evaluated as an alternative (compositor-friendly, no
+     reflow) but rejected: clip-path does not collapse layout height, so
+     the container would still occupy 40px of space at rest, creating a
+     gap that pushes the search input down. max-height remains the correct
+     approach; contain: layout limits its propagation cost.
+     Section-22 prefers-reduced-motion block neutralizes every transition. */
+  contain: layout;
+  transition: max-height var(--cn-transition),
+              opacity var(--cn-transition),
+              background-color var(--cn-transition),
+              border-color var(--cn-transition);
+}
+
+body.cn-bubble-nav:not(.is-mobile) .nav-header:hover .nav-buttons-container,
+body.cn-bubble-nav:not(.is-mobile) .nav-header:focus-within .nav-buttons-container {
+  max-height: 40px;
+  opacity: 1;
+  background-color: var(--cn-medium-overlay);
+  border-color: var(--cn-border-strong);
+}
+
+/* Search input below the bubble shouldn't slide as the bubble
+   expands — give it a stable margin */
+body.cn-bubble-nav:not(.is-mobile) .nav-header > .search-input-container {
+  margin-block-start: 8px;
+}
+
+/* --- Click feedback on clickable icons ---
+   Subtle scale-down on press for tactile feedback. Desktop only —
+   on mobile the OS provides its own tap-highlight, and stacking
+   our scale animation on top reads as laggy. */
+body:not(.is-mobile) .clickable-icon > .svg-icon {
+  transition: transform var(--cn-transition);
+}
+body:not(.is-mobile) .clickable-icon:active > .svg-icon {
+  transform: scale(0.85);
+}
+
+/* --- CSS class utilities (Velocity-inspired) ---
+   Apply via frontmatter:
+     cssclasses: [hide-metadata, hide-title, style-justify, style-wide, style-margin-top]
+   Each only fires on the note that opts in. */
+/* !important needed because Obsidian sets display on the
+   metadata-container via internal rules at equal specificity;
+   the cssclass opt-in must win regardless of cascade order. */
+.hide-metadata .metadata-container { display: none !important; }
+
+.hide-title .inline-title:not([data-level]) { display: none; }
+.show-title .inline-title:not([data-level]) { display: block; }
+
+.style-justify :is(p, .cm-line:not(.HyperMD-header)) {
+  text-align: justify;
+}
+
+.style-wide { --file-line-width: 1400px; }
+
+.style-margin-top.markdown-source-view { padding-top: 28px; }
+.style-margin-top.markdown-preview-view { padding-top: 56px; }
+
+/* ============================================================
+   19b. CHROME SHAPES — Velocity-inspired
+   Brings Velocity's button/tab/icon geometry to Cognia Noir
+   without changing colors, transparency behavior, or
+   typography. Targets: top tab bar, ribbon icons, sidebar
+   toggles, view-header action icons, vault profile, status
+   bar, modals/menus.
+   Notes:
+     - All radii are literal pixel values so they don't bleed
+       into editor content via the global --radius-* tokens
+       (which Cognia Noir keeps at the small Notion scale).
+     - -electron-corner-smoothing gives Apple-style continuous
+       corners on rounded surfaces.
+     - Translucency-aware: shape changes only — no background
+       paint that would fight section 4's transparent chrome.
+   ============================================================ */
+
+/* --- Apple-style continuous corners on rounded chrome ---
+   Scoped to :not(.is-phone) for consistency with the rest of
+   section 19b. The Electron-only -electron-corner-smoothing
+   property is a no-op on iOS WebKit anyway, but the modal/
+   menu/popover entries here would still fire on iPad if not
+   guarded, and on phones the .view-actions clickable-icon
+   chrome was leaking pill paint into the mobile view-header
+   and clipping the new-note + icon (v1.10.3 fix). */
+body:not(.is-phone) :is(
+  .workspace-tab-header,
+  .workspace-tab-header-inner,
+  .status-bar,
+  .status-bar-item.mod-clickable,
+  .modal,
+  .suggestion-container,
+  .menu,
+  .popover,
+  .notice,
+  .tooltip,
+  .checkbox-container,
+  .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher,
+  .view-actions .clickable-icon,
+  .workspace-ribbon .clickable-icon,
+  .sidebar-toggle-button .clickable-icon,
+  .workspace-tab-header-tab-list .clickable-icon,
+  .view-header .clickable-icon) {
+  -electron-corner-smoothing: 60%;
+}
+
+/* --- Pill-shaped clickable icons in chrome ---
+   Ribbon, vault profile, sidebar toggle, top-bar tab list, and
+   view-header buttons become Velocity's chunky pill shape.
+   Padding gives them real body so the rounding reads.
+
+   :not(.is-phone) guard is load-bearing: on iPhone, applying
+   min-height:32px + 10px horizontal padding to every view-header
+   clickable-icon was clipping the + new-note action so the only
+   visible action was the ... overflow (v1.10.3 fix). iPad keeps
+   the desktop pill chrome. */
+body:not(.is-phone) :is(.workspace-ribbon,
+    .workspace-sidedock-vault-profile,
+    .workspace-tab-header-tab-list,
+    .sidebar-toggle-button,
+    .view-header) .clickable-icon {
+  border-radius: 10px;
+  min-height: 32px;
+  padding: 6px 10px;
+}
+
+/* --- Top-right window controls (dropdown chevron + sidebar
+   toggle) appear visually grouped in a rounded container in
+   the reference design. Round the inner icons consistently. */
+.workspace-tabs.mod-top .workspace-tab-header-tab-list,
+.workspace-tabs.mod-top .sidebar-toggle-button {
+  border-radius: 12px;
+}
+
+/* --- Top-bar tab pills ---
+   Bordered rounded rectangles, always visible, with min-height
+   for body. Active and hover states get a brighter overlay.
+   Cognia Noir's existing transparent-until-active behavior is
+   replaced with a faint persistent outline so the tabs read as
+   discrete pills (matches the reference screenshot).
+
+   Mobile scope decision (locked v1.9.9, do not relitigate):
+   guarded with :not(.is-phone), NOT :not(.is-mobile). iPad
+   carries .is-mobile but not .is-phone in Obsidian's body
+   classes, so this selector intentionally treats iPad as
+   desktop and gives it the bordered pill chrome. Rationale:
+   iPad with an external keyboard / Magic Keyboard runs
+   Obsidian as a near-desktop experience and the desktop
+   chrome reads better than the iOS-native compact tabs.
+   Phones still get the native mobile tab styling. The same
+   :not(.is-phone) guard is applied to every other section
+   19b chrome rule (sidebar tab pills, view-action FAB,
+   ribbon box, panel boxes, vault-profile pseudo) for
+   consistency — flip them together if this decision is
+   ever revisited. */
+body:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+  border-radius: 10px;
+  min-height: 32px;
+  padding: 0 2px;
+  margin-inline: 2px;
+  background-color: transparent;
+  border: 1px solid var(--cn-border-subtle);
+}
+
+body:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover {
+  border-color: var(--cn-border-strong);
+}
+
+body:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+  background-color: var(--cn-soft-overlay);
+  border-color: var(--cn-border-strong);
+}
+
+/* Hide Obsidian's default tab "ear" pseudo-elements that paint
+   the curved bottom-corner connectors between an active tab and
+   the bar below it. With our bordered-pill style the tab is a
+   self-contained shape, so those pseudos render as detached
+   small circles at the bottom-left/bottom-right of the active
+   tab. Scope to the same selector chain as the pill rules so
+   stock styling stays intact wherever pills don't apply. */
+body:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before,
+body:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header::after {
+  display: none;
+}
+
+/* Inner of the tab keeps its own rounding so the close button
+   region clips correctly. Removes the section 4 small radius. */
+body:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
+  border-radius: 8px;
+  min-height: 28px;
+  padding-inline: 8px;
+}
+
+/* New-tab "+" button matches the tab pill height so the row
+   reads as a single band. */
+body:not(.is-phone) .workspace-tab-header-new-tab {
+  border-radius: 10px;
+  min-height: 32px;
+}
+
+body:not(.is-phone) .workspace-tab-header-new-tab > .clickable-icon {
+  border-radius: 10px;
+  min-height: 28px;
+  min-width: 28px;
+}
+
+/* --- Sidebar tab headers (file explorer / bookmarks tabs) ---
+   Larger pill so they read as round chips like Velocity's
+   sidebar tab strip. iPad gets the desktop look (is-phone guard)
+   to match the rest of section 19b. */
+body:not(.is-phone) .mod-sidedock .workspace-tab-header {
+  border-radius: 14px;
+  min-height: 34px;
+  min-width: 34px;
+}
+
+/* --- Vault profile / vault switcher (bottom-left) ---
+   Rounded chunk so the dropdown chevron and vault name read
+   as a single pill button. */
+.workspace-split.mod-left-split > .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+  border-radius: 14px;
+}
+
+/* --- View-header right-side action icons ---
+   In the reference, the "+" and reading-mode toggle (the
+   round "60"/glasses icon) are circular FAB-style buttons
+   with a faint border. Apply to non-bookmark view-actions
+   icons in markdown leaves only — the bookmark star stays a
+   regular pill so it doesn't visually compete. */
+body:not(.is-phone) .view-actions .clickable-icon:not(.mod-bookmark) {
+  border-radius: 999px;
+  min-height: 32px;
+  min-width: 32px;
+  padding: 6px;
+  border: 1px solid var(--cn-border-subtle);
+}
+
+body:not(.is-phone) .view-actions .clickable-icon:not(.mod-bookmark):hover {
+  border-color: var(--cn-border-strong);
+}
+
+/* Breathing room around the FAB cluster. The icons sit too close
+   to the tab pill above and to the window's right edge by default,
+   so they read as crammed into the corner. Small top padding pushes
+   the whole group down a few pixels, and the right padding shifts
+   them inward. margin-left: auto pins .view-actions to the right
+   edge so any future stock-layout change in Obsidian cannot drift
+   the action icons left again. Scoped to non-phone in line with
+   the FAB rule above -- mobile uses native iOS spacing. */
+body:not(.is-phone) .mod-root .view-header .view-actions {
+  padding-top: 10px;
+  padding-right: 12px;
+  margin-left: auto;
+}
+
+/* Hide the centered .view-header-title text. With pill tabs
+   (which already show the file name) AND the inline-title at
+   the top of the note body (large bold), the view-header's
+   small centered title is a third redundant copy of the same
+   string. The view-header itself stays in the layout so the
+   right-side action icons (the FAB rule above) keep their
+   container; only the title text is suppressed. mod-root scope
+   keeps sidebar leaf headers (search, outline, etc.) untouched
+   in case any of those rely on a title to identify the leaf.
+
+   visibility:hidden (NOT display:none) on the inner title is
+   load-bearing: the .view-header-title-container element carries
+   flex:1 in Obsidian's stock layout and acts as the spacer that
+   pushes .view-actions to the right edge. Collapsing the
+   container with display:none lets .view-actions slide flush
+   left, which is the bug v1.10.3 fixed. Keep this rule targeting
+   the inner .view-header-title only. */
+body:not(.is-phone) .mod-root .view-header-title-container .view-header-title {
+  visibility: hidden;
+}
+
+/* --- Status bar items —
+   Section 14 handles the parent pill (position, radius, body).
+   This block only styles the clickable items inside. */
+.status-bar-item.mod-clickable {
+  border-radius: 999px;
+  padding: 2px 6px;
+}
+
+/* --- Popover / tooltip corner radius ---
+   Modal (18px) and suggestion-container/menu (14px) radii are set
+   directly in section 10 where those elements are first defined.
+   Popovers and tooltips aren't in section 10 so they stay here. */
+.popover,
+.tooltip {
+  border-radius: 10px;
+}
+
+/* --- Ribbon, folder, and vault-profile boxes ---
+   The workspace-ribbon, sidebar leaf content, and vault
+   profile (bottom-left) all become bordered rounded panels
+   with matching margin and radius so they read as sibling
+   panels stacked in the left column. Border-only fill so
+   they work in both opaque and translucent modes without
+   fighting section 4 paint logic. All scoped to non-mobile —
+   on mobile (phone or tablet) Obsidian uses drawer layouts
+   where these box rules would interfere with the native UI. */
+body:not(.is-phone) .workspace-ribbon.mod-left {
+  border: 1px solid var(--cn-border-strong);
+  border-radius: 12px;
+  /* Default top margin (36px) lines the ribbon-box top up with
+     the folder-box top in non-frameless / non-macOS layouts:
+     sidebar tab-pills (~34px min-height per section 19b) plus a
+     small nudge. The macOS frameless override below adds extra
+     clearance for traffic lights. Tested on Linux GTK windowed
+     and macOS with native title bar; if drift appears on a
+     specific platform, override with another body-level rule
+     rather than tweaking this default. */
+  margin: 36px 4px 8px 8px;
+  -electron-corner-smoothing: 60%;
+  /* Load-bearing per v1.8.6: without these the ribbon container
+     sizes to its icon list, which leaves the bottom of the box
+     clipped above the vault profile. Confirmed still needed on
+     Obsidian 1.5+ — Obsidian's flex layout assigns the ribbon
+     intrinsic content height by default. */
+  align-self: stretch;
+  height: auto;
+}
+
+/* macOS frameless: bump the ribbon top so the box clears the
+   traffic-light region (which floats over the workspace when
+   the native title bar is hidden) AND aligns with the folder-
+   box top in that layout. mod-macos already excludes iOS;
+   :not(.is-phone) is for consistency with section 19b. */
+body.mod-macos.is-hidden-frameless:not(.is-phone) .workspace-ribbon.mod-left {
+  margin-top: 60px;
+}
+
+/* Sidebar leaf "panel boxes" — bordered rounded panels around
+   the content area of every sidebar leaf, so plugin views (Smart
+   Connections related-notes, Dataview, Periodic Notes, Outliner,
+   etc.) pick up the same chrome as the core leaves without
+   needing to be enumerated. File Explorer is special-cased on
+   its own line because its scroll container is
+   .nav-files-container, not .view-content.
+
+   Exclusion list rationale (panel-box-specific, NOT inherited
+   from section 4):
+     - terminal: xterm canvas needs the full leaf surface; a
+       bordered margin would crop the prompt.
+     - excalidraw: full-canvas drawing surface, same reason.
+   Any other plugin leaf gets the box. Don't reflexively copy
+   section 4's translucent-force-paint exclusion list here —
+   that list exists to avoid bg-primary collisions over vibrancy
+   and includes views (e.g. smart-connections-view) that are
+   normal scrollable lists and benefit from the panel box. The
+   two concerns are separate; only add a data-type to this list
+   if its content actively fights a margin-bordered container.
+
+   The horizontal inset (--cn-panel-side-inset) is shared with
+   the vault-profile pseudo box below so the two panels stay
+   edge-aligned. */
+body:not(.is-phone) :is(.mod-left-split, .mod-right-split) .workspace-leaf-content:not([data-type="file-explorer"]):not([data-type="terminal"]):not([data-type="excalidraw"]) .view-content,
+body:not(.is-phone) .mod-left-split .workspace-leaf-content[data-type="file-explorer"] .nav-files-container {
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: 12px;
+  margin: 4px var(--cn-panel-side-inset) 8px;
+  padding: 6px 4px;
+  -electron-corner-smoothing: 60%;
+}
+
+/* Vault profile (bottom-left strip with vault switcher,
+   help, settings gear). The vault-profile is a flex child
+   whose width is forced to the full sidebar width by the
+   parent's flex stretch — margins on the element itself
+   don't change its rendered width or position reliably.
+   Solution: leave the element at its natural full-sidebar
+   width and draw the visual box via a pseudo-element with
+   absolute positioning, anchored by --cn-panel-side-inset
+   on left and right so the box matches the folder-box's
+   horizontal extent.
+
+   Alignment dependency: this works only because the vault-
+   profile's parent (.workspace-split.mod-left-split) is the
+   same width as the file-explorer column. If a workspace
+   plugin ever relocates the vault profile into a parent of
+   a different width, this pseudo will drift relative to the
+   folder box. The shared --cn-panel-side-inset var keeps
+   the inset values locked together; the parent-width
+   assumption still has to hold for the alignment to read.
+   See section 19b head-comment for the full chrome model. */
+body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-profile {
+  position: relative;
+  margin-block: 4px 8px;
+}
+
+body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-profile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--cn-panel-side-inset);
+  right: var(--cn-panel-side-inset);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: 12px;
+  pointer-events: none;
+  -electron-corner-smoothing: 60%;
+}
+
+/* v1.10.10  Removed the rule that hid hr.workspace-leaf-resize-handle
+   inside .workspace-split.mod-left-split. In current Obsidian the
+   sidebar-width drag handle IS an hr.workspace-leaf-resize-handle that
+   is a direct child of .mod-left-split, so the old rule killed the
+   sidebar resize cursor and drag interaction. The original target (a
+   decorative hr between file-explorer column and vault profile) does
+   not appear in the current DOM; if it returns, scope by a more
+   specific selector that excludes the boundary handle. */
+
+/* Defensive: zero any top border on the vault profile. !important
+   is here because Obsidian has historically set a 1px top border
+   on this element via internal CSS, and removing it without
+   !important left a thin line above the vault box in some builds.
+   If a future audit confirms current Obsidian no longer paints
+   that border, the !important (and the rule itself) can be
+   dropped — verify by toggling display:none on this rule and
+   inspecting for a stray top border in DevTools. */
+.workspace-split.mod-left-split > .workspace-sidedock-vault-profile {
+  border-top: none !important;
+}
+
+/* v1.10.15  Split-pane resize divider visibility.
+   DevTools confirmed: the element is hr.workspace-leaf-resize-handle
+   (not .workspace-leaf-resize-divider), and Obsidian renders the
+   visible line via border-inline-end (not background-color). Scoped to
+   .mod-root so the sidebar resize handle is not affected.
+   Values are fixed rgba overlays calibrated for findability at rest and
+   a clear brightening on hover, without being as stark as the original
+   hardcoded #b8b8bb (dark) / #888888 (light). Using pure --cn-divider
+   (0.22 opacity) was a v1.10.16 regression: on Pure Black it rendered
+   at ~2:1 contrast, below the 3:1 interactive-element minimum. */
+.theme-dark .workspace-split.mod-root .workspace-leaf-resize-handle {
+  border-inline-end-color: rgba(255, 255, 255, 0.35) !important;
+  transition: border-inline-end-color var(--cn-transition-fast);
+}
+.theme-dark .workspace-split.mod-root .workspace-leaf-resize-handle:hover {
+  border-inline-end-color: rgba(255, 255, 255, 0.55) !important;
+}
+.theme-light .workspace-split.mod-root .workspace-leaf-resize-handle {
+  border-inline-end-color: rgba(55, 53, 47, 0.28) !important;
+  transition: border-inline-end-color var(--cn-transition-fast);
+}
+.theme-light .workspace-split.mod-root .workspace-leaf-resize-handle:hover {
+  border-inline-end-color: rgba(55, 53, 47, 0.50) !important;
+}
+
+/* ============================================================
+   20. PRINT / PDF EXPORT — force opaque so vibrancy doesn't
+   leave transparent gaps in the exported document.
+   Every !important in this block is needed because the
+   translucent-mode body-level overrides above carry higher
+   specificity than print-scoped rules; without !important the
+   PDF export would inherit transparent backgrounds and clear
+   backdrop-filter would not unset.
+   ============================================================ */
+
+@media print {
+  body,
+  body.is-translucent,
+  body.is-translucent:not(.is-fullscreen) {
+    background-color: var(--cn-bg-primary) !important;
+  }
+
+  .theme-dark,
+  .theme-light {
+    --background-primary: var(--cn-bg-primary);
+    --background-primary-alt: var(--cn-bg-secondary);
+    --background-secondary: var(--cn-bg-secondary);
+    --background-secondary-alt: var(--cn-bg-tertiary);
+  }
+
+  body.is-translucent:not(.is-fullscreen) .workspace,
+  body.is-translucent:not(.is-fullscreen) .workspace-leaf,
+  body.is-translucent:not(.is-fullscreen) .workspace-leaf-content,
+  body.is-translucent:not(.is-fullscreen) .workspace-split.mod-root,
+  body.is-translucent:not(.is-fullscreen) .markdown-preview-view,
+  body.is-translucent:not(.is-fullscreen) .markdown-rendered {
+    background-color: var(--cn-bg-primary) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Drop shadows and decorative blur in print */
+  .modal, .suggestion-container, .menu { box-shadow: none !important; }
+  .modal-bg { backdrop-filter: none !important; background-color: var(--cn-modal-backdrop) !important; }
+}
+
+/* ============================================================
+   21. MOBILE SETTINGS — card contrast + button visibility
+   ============================================================
+   On iPhone, Obsidian groups the Settings screen content into
+   stacked cards (Account, Catalyst license, Help, etc.) that
+   paint with --background-secondary. In dark mode our --cn-bg-
+   primary (#1d1d1d) and --cn-bg-secondary sit only ~3-8 units
+   apart (intentional for desktop note-vs-tab-tray tone), which
+   makes the cards nearly indistinguishable from the page. Light
+   mode is unaffected because the equivalent values are far
+   enough apart and stock iOS Obsidian renders them as crisp
+   white cards.
+
+   This block is phone-only. iPad inherits the desktop modal
+   chrome (section 10) and is fine. Light mode card surfaces
+   are opaque by default so no fill is needed here; the button
+   fix below covers both modes. */
+body.is-phone.theme-dark .modal.mod-settings .vertical-tab-content,
+body.is-phone.theme-dark .modal.mod-settings .modal-content {
+  background-color: var(--cn-bg-elevated);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--cn-radius);
+}
+
+/* Non-CTA settings buttons (Open, Manage, Log out, Upgrade,
+   Purchase) are bare text without this. Give them a tertiary
+   fill + subtle border so they read as buttons, not floating
+   labels. The blue Activate button (.mod-cta) keeps its accent
+   paint from section 10. Applies to both dark and light mode. */
+body.is-phone .modal.mod-settings button:not(.mod-cta) {
+  background-color: var(--cn-bg-tertiary);
+  border: 1px solid var(--cn-border-subtle);
+}
+
+/* ============================================================
+   22. REDUCED MOTION -- disable all transitions and animations
+   for users who have enabled Reduce Motion in macOS System
+   Settings > Accessibility > Display. The broad * selector is
+   deliberate: it is free in normal operation because the media
+   query only activates when the OS opt-in fires.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

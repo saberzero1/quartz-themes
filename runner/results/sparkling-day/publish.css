@@ -546,7 +546,7 @@ body.theme-light {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --divider-color: var(--background-modifier-border) !important;
+  --divider-color: #e0e0e0 !important;
   --divider-color-hover: var(--interactive-accent) !important;
   --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
@@ -837,7 +837,7 @@ body.theme-light {
   --sync-avatar-color-8: var(--color-pink) !important;
   --tab-background-active: var(--background-primary) !important;
   --tab-container-background: var(--background-secondary) !important;
-  --tab-divider-color: var(--background-modifier-border-hover) !important;
+  --tab-divider-color: #d4d4d4 !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-outline-color: var(--divider-color) !important;
   --tab-radius: var(--radius-s) !important;
@@ -860,7 +860,7 @@ body.theme-light {
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
-  --table-border-color: var(--background-modifier-border) !important;
+  --table-border-color: #e0e0e0 !important;
   --table-column-alt-background: var(--table-background) !important;
   --table-column-first-border-width: var(--table-border-width) !important;
   --table-column-last-border-width: var(--table-border-width) !important;
@@ -1375,6 +1375,7 @@ body.theme-light {
   --h5-color: var(--ylmn-blue) !important;
   --h6-color: var(--ylmn-blue) !important;
   --inline-title-color: var(--h1-color) !important;
+  --color-scheme: light !important;
   --inline-code-color: var(--tropical-indigo) !important;
   --background-code: var(--anti-flash-white) !important;
   --white: #fcfcfc !important;

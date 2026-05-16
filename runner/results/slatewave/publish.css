@@ -1344,8 +1344,8 @@ body.theme-dark {
   --table-header-background-hover: #2c313a !important;
   --bold-color: #f1f5f9 !important;
   --italic-color: #cbd5e1 !important;
-  --callout-abstract: 94, 234, 212;
   --callout-note: 56, 189, 248;
+  --callout-abstract: 94, 234, 212;
   --link-unresolved-color-hover: #fda4af !important;
   --indentation-guide: #3a3f4c !important;
   --indentation-guide-active: rgba(94, 234, 212, 0.6) !important;

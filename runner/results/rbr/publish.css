@@ -1372,11 +1372,11 @@ body.theme-dark {
   --italic-color: var(--rbr-livery-blue-bright) !important;
   --interactive-success: var(--rbr-paddock-green) !important;
   --vault-name-font-weight: 700 !important;
+  --callout-note: var(--rbr-oracle-blue-rgb);
+  --callout-abstract: var(--rbr-oracle-blue-rgb);
   --toggle-border-color: var(--rbr-overlay-1) !important;
   --tag-weight: 600 !important;
   --code-number: var(--rbr-light-grey) !important;
-  --callout-abstract: var(--rbr-oracle-blue-rgb);
-  --callout-note: var(--rbr-oracle-blue-rgb);
   --indentation-guide: var(--rbr-overlay-0) !important;
   --indentation-guide-active: var(--rbr-accent) !important;
   --table-row-background: transparent !important;

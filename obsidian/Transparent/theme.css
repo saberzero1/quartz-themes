@@ -19,22 +19,23 @@ settings:
         title: "✨ Obsidian-Transparent"
         description: |
             I'm actively developing this theme to provide the best transparent experience for Obsidian:)
-            
+
             **Support the project:**
             If you find this theme useful, please consider dropping a ⭐ on GitHub. It's a huge motivation for me to keep shipping updates and new features!
-            
+
             [View Repository on GitHub](https://github.com/Oczko24/Obsidian-transparent)
         type: info-text
         markdown: true
     -
         id: preset-mode
-        title: "🎨 Theme Presets"
+        title: "🎨 Theme Preset"
+        description: "A coordinated look out of the box. Each preset works in both Dark and Light mode — just pick one and go."
         type: class-select
         allowEmpty: false
         default: "preset-default"
         options:
             -
-                label: "Base settings"
+                label: "Base"
                 value: preset-default
             -
                 label: "Orange Autumn"
@@ -43,88 +44,120 @@ settings:
                 label: "True Glass (100% Transparent)"
                 value: preset-true-glass
     -
-        id: main-section
-        title: "Adjust Obsidian Theme"
+        id: bg-section
+        title: "🖼️ Background"
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: bg-style-info
+        title: "How it works"
+        description: "**Auto** uses a blurred wallpaper in Dark mode and a soft gradient in Light mode. All other styles apply to both modes at once."
+        type: info-text
+        markdown: true
+    -
+        id: bg-type
+        title: "Background Style"
+        description: "Choose what appears behind your notes."
+        type: class-select
+        allowEmpty: false
+        default: "bg-auto"
+        options:
+            -
+                label: "Auto (Wallpaper / Gradient)"
+                value: bg-auto
+            -
+                label: "Gradient"
+                value: bg-gradient
+            -
+                label: "Solid Color (from Tint)"
+                value: bg-solid
+            -
+                label: "Custom Image URL"
+                value: bg-custom
+            -
+                label: "True Glass (100% Transparent)"
+                value: bg-glass
+    -
+        id: bg-custom-url
+        title: "Custom Image URL"
+        description: "Paste your image URL. Example: url('https://example.com/photo.jpg'). Works in both Dark and Light mode."
+        type: variable-text
+        default: url('')
+    -
+        id: gradient-section
+        title: "🌈 Gradient"
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: gradient-from
+        title: "Start Color"
+        description: "First color of the gradient (top-left corner at default angle)."
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#e8f5ee'
+    -
+        id: gradient-to
+        title: "End Color"
+        description: "Second color of the gradient (bottom-right corner at default angle)."
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#c8e6d4'
+    -
+        id: gradient-angle
+        title: "Angle"
+        description: "Direction of the gradient. 0 = top to bottom, 90 = left to right, 135 = diagonal."
+        type: variable-number-slider
+        default: 135
+        min: 0
+        max: 360
+        step: 5
+        format: deg
+    -
+        id: blur-section
+        title: "💨 Blur"
         type: heading
         level: 1
         collapsed: false
     -
         id: background-blur
-        title: "🫧 Background Blur"
+        title: "Background Blur"
+        description: "Blur intensity on the background. Higher = smoother look, more GPU cost."
         type: variable-number-slider
         default: 80
-        description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
         min: 10
         max: 200
         step: 1
         format: px
     -
         id: ui-blur
-        title: "🪟 UI Elements Blur"
+        title: "UI Elements Blur"
+        description: "Blur on panels like Command Palette, Settings, and context menus."
         type: variable-number-slider
         default: 60
-        description: "Adjust the blur effect for UI elements like Command Palette, Modals, etc."
         min: 0
         max: 100
         step: 1
         format: px
     -
-        id: show-scrollbars
-        title: "Show Scrollbars"
-        description: ":)"
-        type: class-toggle
-    # -
-    #     id: variant-info
-    #     title: "Theme Variants Guide"
-    #     description: |
-    #         Match the variant with your Obsidian appearance settings:
-    #         * **Default:** Standard transparency for all-around use.
-    #         * **AMOLED:** Deep black background. Designed specifically for **Dark** mode.
-    #         * **Pure White:** Clean aesthetic. Designed specifically for **Light** mode.
-    #         
-    #         *AMOLED and Pure White variants are currently in beta. Feedback on GitHub is appreciated!*
-    #     type: info-text
-    #     markdown: true
-    # -
-    #     id: tr
-    #     title: "🧩 Select Variant"
-    #     type: variable-select
-    #     allowEmpty: false
-    #     default: transparent
-    #     options:
-    #         -
-    #             label: "Default (Transparent)"
-    #             value: transparent
-    #         -
-    #             label: "AMOLED (Dark Mode Only)"
-    #             value: '#000000'
-    #         -
-    #             label: "Pure White (Light Mode Only)"
-    #             value: '#ffffff'
+        id: tint-section
+        title: "🎨 Color Tint"
+        type: heading
+        level: 1
+        collapsed: false
     -
-        id: bg-type
-        title: "🖼️ Background Image"
-        description: "Choose your background style. Use 'Translucent OS Window' for 100% transparency (shows your desktop)."
-        type: class-select
-        allowEmpty: false
-        default: bg-type-default
-        options:
-            -
-                label: "Default Green"
-                value: bg-type-default
-            -
-                label: "Custom Background"
-                value: bg-type-custom
-    -
-        id: bg-custom-url
-        title: "Custom Background URL"
-        description: "Paste your image URL inside the quotes. E.g. url('https://...')"
-        type: variable-text
-        default: url('')
+        id: tint-info
+        title: "What is a tint?"
+        description: "A color overlay applied on top of the background. Works in both Dark and Light mode. Set Intensity to 0 to disable — zero performance cost when off."
+        type: info-text
+        markdown: true
     -
         id: bg-tint-color
         title: "Tint Color"
-        description: "Pick the color you want to overlay on the background."
+        description: "Pick any color to overlay on the background."
         type: variable-color
         opacity: false
         format: hsl-split
@@ -132,7 +165,7 @@ settings:
     -
         id: bg-tint-opacity
         title: "Tint Intensity"
-        description: "How strongly the tint is applied. 0 = off (no performance cost), 0.3 = maximum."
+        description: "How strongly the tint is applied. 0 = off, 0.3 = strong."
         type: variable-number-slider
         default: 0
         min: 0
@@ -140,42 +173,51 @@ settings:
         step: 0.01
     -
         id: animation-settings-section
-        title: "⚛️ Animation settings"
-        description: "work in progress, though you can use some of the animations"
+        title: "⚛️ Animations"
         type: heading
         level: 1
         collapsed: false
     -
         id: animate-modal-open
         title: "Animate Settings / Modal Opening"
-        description: "Smooth scale + fade animation when opening Settings or any modal window."
+        description: "Smooth scale + fade when opening any modal or settings window."
         type: class-toggle
         default: true
     -
         id: animate-note-open
-        title: "(beta) Animate Note Opening"
-        description: "Adds a smooth fade-in + slide-up animation when opening or switching notes."
+        title: "Animate Note Opening (beta)"
+        description: "Slide-up + fade when opening or switching notes."
         type: class-toggle
     -
         id: no-animation
         title: "Disable All Animations"
-        description: "Turn off every animation possbile in obsidian"
+        description: "Kill switch — turns off every animation in Obsidian."
         type: class-toggle
         default: false
     -
         id: snippets-section
-        title: "🧩 Snippets / Addons"
+        title: "🧩 Extras"
         type: heading
         level: 1
     -
+        id: disable-drawer-dimming
+        title: "Disable Drawer Dimming (beta)"
+        description: "Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled."
+        type: class-toggle
+    -
+        id: show-scrollbars
+        title: "Show Scrollbars"
+        description: "Always show scrollbars instead of hiding them until hover."
+        type: class-toggle
+    -
         id: hide-canvas-dots
         title: "Hide Canvas Dots"
-        description: "Removes the dot pattern from the canvas background."
+        description: "Remove the dot grid from the Canvas background."
         type: class-toggle
     -
         id: file-line-width
         title: "Note Max Width"
-        description: "Changes the maximum width of currently displayed note."
+        description: "Maximum width of the note editor."
         type: variable-number-slider
         default: 700
         min: 400
@@ -185,7 +227,7 @@ settings:
     -
         id: border-opacity
         title: "Border Opacity"
-        description: "Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible. not recommend above 0.50"
+        description: "Visibility of subtle borders on tables and horizontal rules. 0 = invisible."
         type: variable-number-slider
         default: 0.063
         min: 0
@@ -193,39 +235,65 @@ settings:
         step: 0.001
     -
         id: accent-everywhere
-        title: "(Experimental) Accent Everywhere"
-        description: "Applies accent color to more UI elements (headings, sliders, icons)."
+        title: "Accent Color Everywhere"
+        description: "Apply your accent color to headings, icons, and sliders throughout the UI."
         type: class-toggle
 */
-/* Style Settings UI Styling */
-div.setting-item[data-id="info-section"] {
-  background-color: #00000060;
+/* ===================== Style Settings UI Premium Styling ===================== */
+
+
+
+div.setting-item.setting-item-heading.style-settings-heading[data-id="obsidian-transparent"] .setting-item-info .setting-item-name {
+  color: var(--interactive-accent);
 }
 
-[data-id="main-section"]+.style-settings-container {
-  background-color: #00000030;
-  border-radius: var(--radius-l);
+div.setting-item[data-id="info-section"] {
+  background: var(--interactive-normal);
+  border-radius: 8px;
+  border: 1px solid var(--background-modifier-border);
+  padding: 1em;
+  margin-bottom: 1.5em;
 }
 
 .style-settings-container {
   padding-bottom: 0px;
+  transform-origin: top center;
+  animation: st-open 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes st-open {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 /* ===================== vars ===================== */
 :root {
-  /* fallback values: tint off by default */
+  /* tint - hsl-split vars (set by Style Settings color picker) */
   --bg-tint-color-h: 240;
-  /* hue (set by Style Settings)        */
   --bg-tint-color-s: 100%;
-  /* saturation (set by Style Settings) */
   --bg-tint-color-l: 50%;
-  /* lightness (set by Style Settings)  */
   --bg-tint-opacity: 0;
-  /* 0 = off, max 0.5 (slider capped)   */
+  /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
-  /* subtle borders on tables, bases, hr (≈ #ffffff10) */
 
-  --tr: transparent;
+  --tr: #00000000;
+
+  /* Gradient background */
+  --gradient-from: #e8f5ee;
+  --gradient-to: #c8e6d4;
+  --gradient-angle: 135deg;
+
+  /* Custom image URL */
+  --bg-custom-url: url('');
+
   --background-blur: 80px;
   --ui-blur: 60px;
   --mobile-sidebar-min-width: 100vw;
@@ -234,14 +302,26 @@ div.setting-item[data-id="info-section"] {
 }
 
 /* ===================== Theme Presets ===================== */
-/* ===================== Orange ===================== */
+/* ===================== Orange Autumn ===================== */
 body.preset-orange {
+  /* Warm orange tint color — intensity controlled per-theme below */
   --bg-tint-color-h: 21;
   --bg-tint-color-s: 100%;
   --bg-tint-color-l: 35%;
-  --bg-tint-opacity: 0.3;
   --border-opacity: 0.063;
   --file-line-width: 700px;
+}
+
+/* Dark mode: rich orange tint over wallpaper */
+body.theme-dark.preset-orange {
+  --bg-tint-opacity: 0.28;
+}
+
+/* Light mode: warm autumn gradient, very subtle tint */
+body.theme-light.preset-orange {
+  --gradient-from: #fff8f0;
+  --gradient-to: #ffd9b3;
+  --bg-tint-opacity: 0.07;
 }
 
 body.preset-orange svg.canvas-background {
@@ -343,7 +423,7 @@ body .h-scroll-handle {
 
 /* ===================== vars ===================== */
 
-/* Centralized variables definition to prevent code duplication and ensure consistency */
+/* Global variables */
 
 /* ===================== theme-light ===================== */
 .theme-light .workspace {
@@ -396,80 +476,116 @@ body .h-scroll-handle {
 
 /* ===================== theme-dark ===================== */
 
-/* ===================== blurred background via pseudo-element ===================== */
-/* instead of backdrop-filter (which creates stacking context issues),
-   background image is placed on a ::before pseudo with filter: blur.
-   isolation: isolate ensures z-index:-1 stays above .app-container bg
-   but below all children. No stacking context traps for drawer/navbar. 
-   Fixes all fundamental problems with mobile version of this theme */
+/* ===================== Background System ===================== */
+/*
+   Priority (high wins): bg-glass / preset-true-glass > bg-custom > bg-solid > bg-gradient > bg-auto
+   bg-auto: dark = base64 wallpaper (dimmed), light = soft gradient
+   All styles work in both dark and light mode.
+*/
+
+/* Conditional UI: hide custom URL input unless bg-custom is selected */
+body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
+  display: none;
+}
+
+/* isolation: isolate is mandatory — keeps z-index: -1 scoped inside .app-container */
 .app-container {
   position: relative;
   isolation: isolate;
 }
 
+/* === BASE pseudo-element layout === */
 .app-container::before {
   content: "";
   position: fixed;
-  /* blur x 2 because of weird and miserable border around the edges */
   inset: calc(-2 * var(--background-blur));
-  /* this variable holds the entire wallpaper as a base64 photo.
-     it fills the whole screen; you can't crop it or slap it on a
-     button. it only makes sense here, on this one ::before:)))) */
-  background-image: var(--background-image-base64);
   background-size: cover;
   background-position: center;
   contain: strict;
   z-index: -1;
   pointer-events: none;
+  transform: translateZ(0);
 }
 
-/* Style Settings UI logic - hide custom URL input if custom type is not selected */
-body:not(.bg-type-custom) .setting-item[data-id="bg-custom-url"] {
-  display: none;
+/* === AUTO (default) === */
+/* Dark auto: base64 wallpaper, dimmed */
+body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
+  background-image: var(--background-image-base64);
+  filter: brightness(0.54) blur(var(--background-blur));
+  -webkit-backdrop-filter: brightness(0.54) blur(var(--background-blur));
+  backdrop-filter: brightness(0.54) blur(var(--background-blur));
 }
 
-body.bg-type-custom .app-container::before {
-  /* This stacks the custom image on top of the base64 green image. 
-     If the custom URL is invalid/empty, it becomes transparent, leaving the green background visible. */
-  background-image: var(--bg-custom-url), var(--background-image-base64);
+/* Light auto: soft gradient */
+body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
+  background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
+  background-color: unset;
+  filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
 }
 
+/* === GRADIENT (both modes) === */
+body.bg-gradient .app-container::before {
+  background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
+  background-color: unset;
+  filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
+}
+
+body.theme-dark.bg-gradient .app-container::before {
+  filter: brightness(0.75) blur(var(--background-blur));
+}
+
+/* === SOLID (from tint hue, both modes) === */
+body.theme-light.bg-solid .app-container::before {
+  background-image: none;
+  background-color: hsl(var(--bg-tint-color-h), 30%, 90%);
+  filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
+}
+
+body.theme-dark.bg-solid .app-container::before {
+  background-image: none;
+  background-color: hsl(var(--bg-tint-color-h), 30%, 15%);
+  filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
+}
+
+/* === CUSTOM URL (both modes) === */
+body.bg-custom .app-container::before {
+  background-image: var(--bg-custom-url);
+  background-size: cover;
+  background-position: center;
+  filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
+}
+
+body.theme-dark.bg-custom .app-container::before {
+  filter: brightness(0.54) blur(var(--background-blur));
+}
+
+/* === GLASS / TRUE GLASS (both modes) === */
+body.bg-glass .app-container::before,
 body.preset-true-glass .app-container::before,
 body.theme-light.preset-true-glass .app-container::before,
 body.theme-dark.preset-true-glass .app-container::before {
   background-image: none;
-}
-
-.theme-dark .app-container::before {
-  filter: brightness(0.54) blur(var(--background-blur));
-  backdrop-filter: brightness(0.54) blur(var(--background-blur));
-}
-
-/* Custom background from Style Settings (bg-type-custom) in light mode needs brightening for readability */
-body.theme-light.bg-type-custom .app-container::before {
-  filter: brightness(4) blur(var(--background-blur));
-  backdrop-filter: brightness(4) blur(var(--background-blur));
-}
-
-body.theme-light.preset-true-glass .app-container::before {
+  background-color: unset;
   filter: blur(var(--background-blur));
-  backdrop-filter: blur(var(--background-blur));
-}
-
-/* Default background in light mode: elegant, two-color green gradient instead of an overexposed wallpaper */
-body.theme-light:not(.bg-type-custom):not(.preset-true-glass) .app-container::before {
-  background-image: linear-gradient(135deg, #f0fdf4 0%, #bbf7d0 100%);
-  filter: blur(var(--background-blur));
+  -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
 /* ===================== Background Color Tint ===================== */
 /*
-   Overlay tint on the background image via ::after pseudo-element.
-   --bg-tint-color is set by the Style Settings color picker (with opacity).
-   Default: fully transparent (#00000000) = invisible = zero perf cost.
-   The overlay only has visual impact when the user picks a color with
-   non-zero opacity. No extra GPU layer is created when transparent.
+   Tint overlay via ::after. Works in both dark and light mode.
+   Default opacity: 0 — zero GPU cost when off.
+   mix-blend-mode: color preserves background luminosity, applies only the hue.
 */
 
 .app-container::after {
@@ -534,6 +650,7 @@ body.is-focused .workspace-ribbon.mod-left {
 }
 
 .modal {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   contain: layout style paint;
   border: 1px solid var(--tr);
@@ -551,6 +668,7 @@ is-tablet
 is-mobile - tablet and phone
 */
 .is-phone .modal {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   /* brightness at 1 is as if it wasn't there at all */
 }
@@ -563,8 +681,8 @@ is-mobile - tablet and phone
 .theme-dark .menu,
 /* Specificity hack to override default Obsidian background */
 .theme-light .menu {
-  backdrop-filter: blur(20px);
-  /* 20px looks objectively better than 80px */
+  -webkit-backdrop-filter: blur(var(--ui-blur));
+  backdrop-filter: blur(var(--ui-blur));
   background-color: var(--overlay-color);
   border: 1px solid var(--tr);
 }
@@ -584,12 +702,13 @@ hr {
 
 body.theme-light .prompt,
 body.theme-dark .prompt {
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   border: 1px solid var(--tr);
   background-color: var(--overlay-color);
 }
 
-body:not(.is-phone) .prompt {
+body:not(.is-mobile) .prompt {
   animation: promptSlideUp var(--anim-duration-moderate) cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -604,6 +723,36 @@ body:not(.is-phone) .prompt {
     transform: translateY(0);
   }
 }
+
+/* ==================== Mobile menu & prompt animations ==================== */
+/* is-mobile covers both phone and tablet */
+
+.is-mobile .menu {
+  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.is-mobile .prompt {
+  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes tr-mobile-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile toolbar options list (tablet & phone bottom toolbar) */
+/*.is-mobile .mobile-toolbar-options-container {
+  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}
+  commented out because it wasnt really good looking 
+*/
 
 /* High specificity required to override default Obsidian styling */
 body.theme-dark .modal-container .modal.mod-settings .vertical-tab-content,
@@ -635,6 +784,7 @@ input[type="range"] {
 
 .suggestion-container.mod-search-suggestion {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   border-color: var(--tr);
   max-height: 600px;
@@ -688,17 +838,20 @@ select,
 
 .suggestion {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   /* tasks plugin integration */
 }
 
 /* blur of 80px looks bad there */
 .status-bar {
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
 .notice {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   color: var(--kolorboku);
   animation: tr-notice-in-desktop var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
@@ -744,6 +897,9 @@ select,
 /* graph view */
 .graph-controls {
   background-color: #00000080;
+  -webkit-backdrop-filter:
+    /*brightness(var(--brightness))*/
+    blur(12px);
   backdrop-filter:
     /*brightness(var(--brightness))*/
     blur(12px);
@@ -861,7 +1017,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .canvas-control-group {
   box-shadow: none;
-  background-color: transparent;
+  background-color: var(--tr);
 }
 
 .canvas-color-picker-item {
@@ -872,6 +1028,7 @@ body.hide-canvas-dots svg.canvas-background {
 /* hover on links */
 .popover.hover-popover .markdown-preview-view {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -886,6 +1043,7 @@ body.hide-canvas-dots svg.canvas-background {
 .mk-menu-container {
   width: auto;
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -960,11 +1118,13 @@ body.hide-canvas-dots svg.canvas-background {
 .formula-editor .cm-tooltip.cm-tooltip-autocomplete,
 .suggestion-container {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
 .combobox .search-input-container {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -994,6 +1154,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .mobile-toolbar-options-list {
   background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   border-color: var(--tr);
 }
@@ -1005,6 +1166,7 @@ body.hide-canvas-dots svg.canvas-background {
 }
 
 .is-mobile .mod-raised {
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
@@ -1014,6 +1176,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .is-phone .mobile-tab-switcher {
   background-color: var(--tr06);
+  -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
 }
 
@@ -1042,8 +1205,8 @@ body.hide-canvas-dots svg.canvas-background {
 .is-phone .workspace-drawer .nav-files-container {
   -webkit-mask-image: linear-gradient(to bottom,
       black calc(100% - 120px),
-      transparent);
-  mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+      var(--tr));
+  mask-image: linear-gradient(to bottom, black calc(100% - 120px), var(--tr));
 }
 
 .setting-group .setting-items {
@@ -1108,17 +1271,31 @@ body .cm-html-embed thead tr>th {
 }
 
 .is-mobile.is-floating-nav .mod-raised {
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(12px);
   backdrop-filter: brightness(var(--brightness)) blur(12px);
+}
+
+/* Remove backdrop-filter specifically from the settings icon in the mobile drawer header when beta option is enabled */
+body.disable-drawer-dimming .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 /* blur + dimming when sliding sidebars is disabled */
 .workspace-drawer-inner {
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
+body.disable-drawer-dimming .workspace-drawer-inner {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
 /* when sliding sidebars is enabled - no blur or dimming */
 .is-sliding .workspace-drawer-inner {
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
 
@@ -1130,7 +1307,7 @@ body .cm-html-embed thead tr>th {
 }
 
 .is-sliding .workspace-drawer-backdrop {
-  background-color: transparent;
+  background-color: var(--tr);
 }
 
 .is-mobile .suggestion-container {
@@ -1154,6 +1331,7 @@ body .cm-html-embed thead tr>th {
 }
 
 .canvas-controls {
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 24px;
   /* fixed because of difference between mobile and desktop */
@@ -1319,6 +1497,7 @@ body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-ty
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
   animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
 
 /* ===================== Animate Note Opening ===================== */
@@ -1332,3 +1511,13 @@ body.no-animation *::after {
 }
 
 /* ===================== No animations ===================== */
+
+/* ===================== iOS Fixes ===================== */
+body.is-ios .app-container .workspace,
+body.is-ios .app-container .workspace-split,
+body.is-ios .app-container .workspace-leaf,
+body.is-ios .app-container .workspace-leaf-content,
+body.is-ios .app-container .view-content,
+body.is-ios .app-container .view-header {
+  background-color: var(--tr);
+}

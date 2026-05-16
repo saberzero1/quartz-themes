@@ -1387,6 +1387,7 @@ body.theme-light {
   --yellow-3: #f6d32d !important;
   --yellow-4: #f5c211 !important;
   --yellow-5: #e5a50a !important;
+  --button-transition: linear 100ms background-color !important;
   --orange-1: #ffbe6f !important;
   --blue-1-rgb: 153, 193, 241 !important;
   --blue-2-rgb: 98, 160, 234 !important;
@@ -1446,7 +1447,6 @@ body.theme-light {
   --brown-4-rgb: 134, 94, 60 !important;
   --brown-5: #63452c !important;
   --brown-5-rgb: 99, 69, 44 !important;
-  --button-transition: linear 100ms background-color !important;
   --color-invert-filter-b: none !important;
   --color-invert-filter-w: invert() !important;
   --cyan-3-rgb: 52, 170, 180 !important;
@@ -2479,6 +2479,7 @@ body.theme-dark {
   --yellow-3: #f6d32d !important;
   --yellow-4: #f5c211 !important;
   --yellow-5: #e5a50a !important;
+  --button-transition: linear 100ms background-color !important;
   --orange-1: #ffbe6f !important;
   --blue-1-rgb: 153, 193, 241 !important;
   --blue-2-rgb: 98, 160, 234 !important;
@@ -2538,7 +2539,6 @@ body.theme-dark {
   --brown-4-rgb: 134, 94, 60 !important;
   --brown-5: #63452c !important;
   --brown-5-rgb: 99, 69, 44 !important;
-  --button-transition: linear 100ms background-color !important;
   --color-invert-filter-b: invert() !important;
   --color-invert-filter-w: none !important;
   --cyan-3-rgb: 52, 170, 180 !important;

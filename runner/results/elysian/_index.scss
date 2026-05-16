@@ -184,7 +184,7 @@
 }
 
 html[saved-theme="light"] body {
-  --qt-code-header: rgb(73, 80, 80);
+  --qt-code-header: rgb(97, 101, 112);
   --qt-code-default: rgb(92, 92, 92);
   --qt-code-background: rgba(208, 208, 208, 0.314);
   --qt-code-border-color: rgba(0, 0, 0, 0);
@@ -1197,7 +1197,7 @@ body {
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(97, 101, 112);
-    cursor: auto;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -1291,7 +1291,7 @@ body {
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(73, 80, 80);
+    border: 0px rgb(97, 101, 112);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1324,7 +1324,7 @@ body {
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(73, 80, 80);
+    border: 0px rgb(97, 101, 112);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1357,7 +1357,7 @@ body {
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(73, 80, 80);
+    border: 0px rgb(97, 101, 112);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2845,7 +2845,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px rgb(73, 80, 80);
+    border: 0px rgb(97, 101, 112);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3225,8 +3225,8 @@ body {
     background-color: var(--code-background);
     box-shadow: none;
     color: var(--code-normal);
-    font-family: var(--font-monospace);
-    font-size: var(--code-size);
+    font-family: var(--font-interface);
+    font-size: var(--font-ui-smaller);
     border: 0px rgb(97, 101, 112);
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
@@ -3236,7 +3236,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    padding: 1.4px 3.5px;
+    padding: 2px 6px;
     padding-block-end: 1.3125px;
     padding-block-start: 1.3125px;
     padding-inline-end: 3.28125px;
@@ -11587,7 +11587,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > * {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(209, 214, 192);
-      cursor: auto;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -13615,8 +13615,8 @@ html[saved-theme="dark"] {
       background-color: var(--code-background);
       box-shadow: none;
       color: var(--code-normal);
-      font-family: var(--font-monospace);
-      font-size: var(--code-size);
+      font-family: var(--font-interface);
+      font-size: var(--font-ui-smaller);
       border: 0px rgb(209, 214, 192);
       border-top-left-radius: 1px;
       border-top-right-radius: 1px;
@@ -13626,7 +13626,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 4px;
       border-end-start-radius: 4px;
       border-end-end-radius: 4px;
-      padding: 1.4px 3.5px;
+      padding: 2px 6px;
       padding-block-end: 1.3125px;
       padding-block-start: 1.3125px;
       padding-inline-end: 3.28125px;

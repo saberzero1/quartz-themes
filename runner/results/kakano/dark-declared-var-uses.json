@@ -572,6 +572,19 @@
   "details summary": {
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
+  "video": {
+    "background-color": "var(--embed-background)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "audio": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
   ".view-header-breadcrumb": {
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },

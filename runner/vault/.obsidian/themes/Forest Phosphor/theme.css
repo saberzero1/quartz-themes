@@ -17,39 +17,49 @@
 .theme-dark,
 .theme-light {
   /* ---- Internal palette tokens (named shortcuts used by component rules) ---- */
-  --fp-bg-editor:       #0f180c;  /* editor.background */
-  --fp-bg-chrome:       #0e170b;  /* tabs / activitybar / titlebar */
-  --fp-bg-sidebar:      #101c0c;  /* sideBar.background */
-  --fp-bg-elevated:     #131c10;  /* code blocks, callout bg, line highlight */
-  --fp-bg-selected:     #1a2c16;  /* list.activeSelectionBackground */
-  --fp-bg-hover:        #131c10;
+  --fp-bg-editor: #0f180c; /* editor.background */
+  --fp-bg-chrome: #0e170b; /* tabs / activitybar / titlebar */
+  --fp-bg-sidebar: #101c0c; /* sideBar.background */
+  --fp-bg-elevated: #131c10; /* code blocks, callout bg, line highlight */
+  --fp-bg-selected: #1a2c16; /* list.activeSelectionBackground */
+  --fp-bg-hover: #131c10;
 
-  --fp-border-subtle:   #1e3119;
-  --fp-border-medium:   #2e4a29;
+  --fp-border-subtle: #1e3119;
+  --fp-border-medium: #2e4a29;
 
-  --fp-fg-primary:      #a2eba1;
-  --fp-fg-heading:      #7cbf78;
-  --fp-fg-muted:        #4e7249;
-  --fp-fg-dim:          #3d5e39;
+  --fp-fg-primary: #a2eba1;
+  --fp-fg-heading: #7cbf78;
+  --fp-fg-muted: #4e7249;
+  --fp-fg-dim: #3d5e39;
 
-  --fp-phosphor:        #7af8ff;
-  --fp-phosphor-soft:   #7af8ffcc;
-  --fp-phosphor-dim:    #7af8ffaa;
-  --fp-coral:           #f8906e;
-  --fp-coral-soft:      #f8906ecc;
-  --fp-blue:            #77b0ff;
-  --fp-blue-link:       #328eee;
-  --fp-magenta:         #c07ac8;
-  --fp-magenta-soft:    #c07ac8cc;
-  --fp-yellow:          #d4d256;
-  --fp-yellow-soft:     #d4d256cc;
-  --fp-green-string:    #73e165;
-  --fp-green-comment:   #5c8656;
+  --fp-phosphor: #7af8ff;
+  --fp-phosphor-soft: #7af8ffcc;
+  --fp-phosphor-dim: #7af8ffaa;
+  --fp-coral: #ea9575;
+  --fp-coral-soft: #ea9575cc;
+  --fp-blue: #77b0ff;
+  --fp-blue-link: #328eee;
+  --fp-magenta: #c07ac8;
+  --fp-magenta-soft: #c07ac8cc;
+  --fp-orchid: #ffb4e2; /* abstract types — interfaces, generics, primitives */
+  --fp-amber: #e8a030; /* structural keywords — function, class, return, import */
+  --fp-yellow: #d4d256; /* CSS-specific yellow (ids/classes), markdown italic */
+  --fp-yellow-soft: #d4d256cc;
+  --fp-yellow-fn: #d1cf32; /* function/method names in code */
+  --fp-white: #e8f0e8; /* literal values — numbers, booleans, null, lifetimes, delimiters */
+  --fp-green-string: #73e165;
+  --fp-green-comment: #5c8656;
+  --fp-green-doc: #7cbf78; /* JSDoc/TSDoc tags */
+  --fp-deprecated: #dd7975; /* desaturated coral, strikethrough */
 
-  --fp-error:           #f8906e;
-  --fp-warning:         #d4a24a;
-  --fp-info:            #77b0ff;
-  --fp-success:         #5ae66a;
+  --fp-error: #ea9575;
+  --fp-warning: #d4a24a;
+  --fp-info: #77b0ff;
+  --fp-success: #5ae66a;
+
+  /* ---- Motion (phosphor-glow link transitions, etc.) ---- */
+  --fp-duration-fast: 140ms;
+  --fp-ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
 
   /* ---- Foundation: base color scale (used by Obsidian's derived vars) ---- */
   --color-base-00: #0f180c;
@@ -69,22 +79,23 @@
   --color-base-bg2: #0e170b;
 
   /* ---- Foundation: accent palette ---- */
-  --color-red:     #f8906e;
-  --color-orange:  #d4a24a;
-  --color-yellow:  #d4d256;
-  --color-green:   #5ae66a;
-  --color-cyan:    #7af8ff;
-  --color-blue:    #77b0ff;
-  --color-purple:  #c07ac8;
-  --color-pink:    #c07ac8;
+  --color-red: #ea9575;
+  --color-orange: #d4a24a;
+  --color-yellow: #d4d256;
+  --color-green: #5ae66a;
+  --color-cyan: #7af8ff;
+  --color-blue: #77b0ff;
+  --color-purple: #c07ac8;
+  --color-pink: #ffb4e2;
 
-  --color-red-rgb:    248, 144, 110;
+  --color-red-rgb: 234, 149, 117;
   --color-orange-rgb: 212, 162, 74;
   --color-yellow-rgb: 212, 210, 86;
-  --color-green-rgb:  90, 230, 106;
-  --color-cyan-rgb:   122, 248, 255;
-  --color-blue-rgb:   119, 176, 255;
+  --color-green-rgb: 90, 230, 106;
+  --color-cyan-rgb: 122, 248, 255;
+  --color-blue-rgb: 119, 176, 255;
   --color-purple-rgb: 192, 122, 200;
+  --color-pink-rgb: 255, 180, 226;
 
   /* ---- Accent (primary brand color: phosphor cyan) ---- */
   --color-accent: #7af8ff;
@@ -110,9 +121,9 @@
   --background-modifier-form-field-highlighted: var(--fp-bg-elevated);
   --background-modifier-message: var(--fp-bg-elevated);
   --background-modifier-success: rgba(90, 230, 106, 0.12);
-  --background-modifier-error: rgba(248, 144, 110, 0.12);
-  --background-modifier-error-hover: rgba(248, 144, 110, 0.2);
-  --background-modifier-error-rgb: 248, 144, 110;
+  --background-modifier-error: rgba(234, 149, 117, 0.12);
+  --background-modifier-error-hover: rgba(234, 149, 117, 0.2);
+  --background-modifier-error-rgb: 234, 149, 117;
 
   /* ---- Text ---- */
   --text-normal: var(--fp-fg-primary);
@@ -140,42 +151,61 @@
   --h5-color: var(--fp-fg-heading);
   --h6-color: var(--fp-fg-muted);
 
-  /* ---- Links ---- */
-  --link-color: var(--fp-blue-link);
-  --link-color-hover: var(--fp-phosphor);
-  --link-external-color: var(--fp-blue-link);
-  --link-external-color-hover: var(--fp-phosphor);
+  /* ---- Links ----
+     Phosphor-glow scheme:
+       External (action — leaves the vault): function-yellow `#d1cf32`,
+         hover yellow-bright `#e8e640`, active yellow-hot `#f5f55a`.
+       Internal (action — navigates within): cyan `#7af8ff`,
+         hover/active intensify on the same hue.
+       Unresolved internal: coral attention, dimmed.
+     Halos use rgba so the bg-elevated tint doesn't clip them.
+
+     IMPORTANT cascade fact: Obsidian's default link rules read --link-color
+     for the BASE link color across both internal and external. We bind it
+     to cyan (internal-default) and override external via .external-link
+     selectors and --link-external-color where Obsidian actually uses it. */
+  --link-color: var(--fp-phosphor);
+  --link-color-hover: #a8fcff;
+  --link-color-active: #d4fdff;
+  --link-external-color: var(--fp-yellow-fn);
+  --link-external-color-hover: #e8e640;
+  --link-external-color-active: #f5f55a;
+  --external-link-color: var(--fp-yellow-fn);
+  --external-link-color-hover: #e8e640;
   --link-unresolved-color: var(--fp-coral);
   --link-unresolved-opacity: 0.75;
   --link-unresolved-filter: none;
 
   /* ---- Tags ---- */
-  --tag-color: var(--fp-phosphor);
-  --tag-color-hover: #a2eba1;
-  --tag-background: rgba(122, 248, 255, 0.10);
-  --tag-background-hover: rgba(122, 248, 255, 0.18);
+  --tag-color: var(--fp-orchid);
+  --tag-color-hover: #ffd2ed;
+  --tag-background: rgba(255, 180, 226, 0.08);
+  --tag-background-hover: rgba(255, 180, 226, 0.14);
   --tag-border-color: transparent;
-  --tag-border-color-hover: rgba(122, 248, 255, 0.4);
+  --tag-border-color-hover: rgba(255, 180, 226, 0.4);
 
   /* ---- Code (inline + block, Obsidian markdown vars) ---- */
+  /* Mapped to Forest Phosphor source-of-truth role assignments:
+     keywords→amber (structural), tags→amber, functions→yellow,
+     properties→blue, values/numbers→white, imports→amber. */
   --code-background: var(--fp-bg-elevated);
-  --code-normal: var(--fp-phosphor);
+  --code-normal: var(--fp-fg-primary);
   --code-comment: var(--fp-green-comment);
-  --code-keyword: var(--fp-coral);
+  --code-keyword: var(--fp-amber);
   --code-string: var(--fp-green-string);
-  --code-function: var(--fp-blue);
-  --code-property: var(--fp-yellow);
-  --code-tag: var(--fp-coral);
-  --code-value: var(--fp-phosphor);
-  --code-operator: var(--fp-phosphor);
-  --code-punctuation: var(--fp-phosphor-dim);
+  --code-function: var(--fp-yellow-fn);
+  --code-property: var(--fp-blue);
+  --code-tag: var(--fp-amber);
+  --code-value: var(--fp-white);
+  --code-operator: var(--fp-fg-primary);
+  --code-punctuation: var(--fp-fg-primary);
   --code-important: var(--fp-coral);
-  --code-imports: var(--fp-magenta);
+  --code-imports: var(--fp-amber);
 
   /* ---- Bold / italic markdown ---- */
   --bold-color: var(--fp-coral);
   --bold-weight: 700;
-  --italic-color: var(--fp-yellow);
+  --italic-color: var(--fp-amber);
 
   /* ---- Lists / blockquote ---- */
   --list-marker-color: var(--fp-phosphor);
@@ -366,8 +396,19 @@
   font-style: italic;
 }
 
-/* Inline code — bordered chip */
+/* Inline code — bordered cyan chip
+   In edit mode (CM6), Obsidian tags inline code content with .cm-inline-code
+   and the backtick formatting characters with .cm-formatting.cm-formatting-code.
+   Obsidian's own default rules use .markdown-source-view.mod-cm6 .cm-inline-code
+   (specificity 0,3,0) which wins over a flat .cm-inline-code (0,1,0). We match
+   that prefix so our color wins, and we cover both the content span and the
+   formatting backticks so the entire chip reads cyan end-to-end. */
+.markdown-source-view.mod-cm6 .cm-line .cm-inline-code,
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting-code,
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting.cm-formatting-code,
 .cm-inline-code,
+.cm-formatting-code,
+.cm-formatting.cm-formatting-code,
 code:not(pre code),
 .markdown-rendered code:not(pre code) {
   color: var(--fp-phosphor);
@@ -378,28 +419,75 @@ code:not(pre code),
   font-size: 0.9em;
 }
 
+/* The backtick wrappers (.cm-formatting-code) take the same color and bg as
+   the content, but no extra side padding — that would double-pad the chip
+   at the edges. Let the .cm-inline-code rule above provide the chip's
+   padding, and let the formatting wrapper sit flush against it. */
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting-code,
+.cm-formatting-code {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Headings — phosphor accents (deviates from VSCode markup.heading which is
-   primary fg + bold; phosphor reads better against Obsidian's darker frame) */
+   primary fg + bold; phosphor reads better against Obsidian's darker frame).
+
+   All headings get generous top margin so they read as section breaks
+   rather than bumping up against the prose above. h1 gets the most;
+   subsequent levels scale down so deeper headings don't visually outweigh
+   their parents. .cm-header-* rules apply in edit mode. */
 .cm-header-1,
 .markdown-rendered h1 {
   color: var(--fp-phosphor);
   border-bottom: 1px solid var(--fp-border-subtle);
   padding-bottom: 0.3em;
+  margin-top: 2.4em;
+  margin-bottom: 0.7em;
 }
 .cm-header-2,
 .markdown-rendered h2 {
   color: var(--fp-phosphor);
   border-bottom: 1px solid var(--fp-border-subtle);
   padding-bottom: 0.2em;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
 }
 .cm-header-3,
-.markdown-rendered h3 { color: var(--fp-phosphor); }
+.markdown-rendered h3 {
+  color: var(--fp-phosphor);
+  margin-top: 1.7em;
+  margin-bottom: 0.5em;
+}
 .cm-header-4,
-.markdown-rendered h4 { color: var(--fp-fg-heading); }
+.markdown-rendered h4 {
+  color: var(--fp-fg-heading);
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
 .cm-header-5,
-.markdown-rendered h5 { color: var(--fp-fg-heading); }
+.markdown-rendered h5 {
+  color: var(--fp-fg-heading);
+  margin-top: 1.3em;
+  margin-bottom: 0.4em;
+}
 .cm-header-6,
-.markdown-rendered h6 { color: var(--fp-fg-muted); }
+.markdown-rendered h6 {
+  color: var(--fp-fg-muted);
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+/* First heading in a document shouldn't push everything down — strip
+   the top margin when the heading is the first child of the rendered
+   container or the editor content. */
+.markdown-rendered > h1:first-child,
+.markdown-rendered > h2:first-child,
+.markdown-rendered > h3:first-child,
+.markdown-rendered > h4:first-child,
+.markdown-rendered > h5:first-child,
+.markdown-rendered > h6:first-child {
+  margin-top: 0.4em;
+}
 
 /* Bold / italic */
 .cm-strong,
@@ -409,37 +497,377 @@ code:not(pre code),
 }
 .cm-em,
 .markdown-rendered em {
-  color: var(--fp-yellow);
+  color: var(--fp-amber);
   font-style: italic;
 }
 
-/* Links */
-.cm-link,
-.cm-url,
-.markdown-rendered a,
-a.external-link {
-  color: var(--fp-blue-link);
-  text-decoration: underline;
-}
-.cm-link:hover,
-.markdown-rendered a:hover {
-  color: var(--fp-phosphor);
-}
-.internal-link {
-  color: var(--fp-blue);
-}
-.internal-link.is-unresolved {
-  color: var(--fp-coral);
-  opacity: 0.75;
+/* Highlights — ==marked text==
+   In code, bright green `#73e165` is the string-literal color: the actual
+   text *content* between the quotes. Markdown's closest analog is highlight
+   syntax (==...==) — text marked off as a quoted string of attention. So
+   `==foo==` reads as a "string literal" in prose, completing the cross-
+   surface color story (bright green = string content everywhere).
+
+   No background, no border — the saturated bright green against the deep
+   editor green substrate is enough contrast on its own. The phosphor color
+   IS the highlight; it doesn't need a yellow chip behind it.
+
+   Edit mode (CM6) tags highlight content with .cm-highlight and the
+   formatting `==` marks with .cm-formatting-highlight. We color the
+   content green and leave the formatting marks green too (they fade
+   when the cursor isn't on the line, same as bold/italic markers). */
+.cm-highlight,
+.cm-formatting-highlight,
+.markdown-rendered mark,
+.markdown-rendered .cm-highlight {
+  color: var(--fp-green-string) !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  padding: 0;
+  border-radius: 0;
 }
 
-/* Tags */
+/* Literal values — numbers, booleans, null/undefined — near-white. */
+.token.number,
+.token.boolean {
+  color: var(--fp-white);
+}
+
+/* =============================================================================
+   Links — phosphor-glow
+       External links act like function calls (they go *somewhere*, kick off
+       a navigation). Yellow `#d1cf32` matches the function/method color in
+       code; the warm-yellow halo (`rgba(212, 162, 74, …)`) gives the CRT
+       phosphor bloom characteristic of the brand site.
+
+       Internal links share the same shape (no underline, glow halo, color
+       intensification on hover/active) but use cyan — they're navigations
+       *within* the vault, the same role as variable references in code.
+
+       Unresolved internal links keep the coral attention treatment but
+       lose the underline + add a faint coral halo so they fit the family.
+
+       External vs internal distinction is carried by .external-link /
+       .internal-link in read mode and .cm-link / .cm-url (URL syntax) /
+       .cm-hmd-internal-link (wiki syntax) in edit mode.
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   Read mode — both link types
+   .markdown-rendered a:not(.internal-link)  →  external (yellow)
+   .markdown-rendered a.internal-link         →  internal (cyan)
+   Both selectors share specificity (0,2,1) so we keep them parallel and let
+   each rule own its color cleanly. No bare `.internal-link` — keep it scoped
+   under `.markdown-rendered` so we beat any bare-`a` rule from other styles.
+   ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   Read mode — external links (yellow)
+
+   Specificity nuke: body-scoped selectors (0,2,1) plus !important on every
+   property beat anything Obsidian's defaults can throw. We discovered the
+   problem the hard way — Obsidian 1.7+ has internal default rules like
+   `.markdown-rendered a.external-link` that resolve via --text-accent
+   (which we have set to cyan for headings/UI), and merely matching their
+   specificity wasn't enough. Body-prefix is the cleanest brute force.
+
+   Also covers .cm-link with external-link sibling (markdown-link syntax in
+   live preview) — the `:has(~ .external-link)` trick from the Obsidian
+   forum solution. Modern browsers all support :has(). */
+body.theme-dark a.external-link,
+body.theme-dark a.external-link:visited,
+body.theme-dark a.external-link:focus,
+body.theme-light a.external-link,
+body.theme-light a.external-link:visited,
+body.theme-light a.external-link:focus,
+.markdown-rendered a.external-link,
+.markdown-preview-view a.external-link,
+.markdown-reading-view a.external-link {
+  color: var(--link-external-color) !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
+  text-shadow: 0 0 18px rgba(212, 162, 74, 0.35) !important;
+  transition:
+    color var(--fp-duration-fast) var(--fp-ease-out),
+    text-shadow var(--fp-duration-fast) var(--fp-ease-out);
+}
+body.theme-dark a.external-link:hover,
+body.theme-light a.external-link:hover,
+.markdown-rendered a.external-link:hover,
+.markdown-preview-view a.external-link:hover,
+.markdown-reading-view a.external-link:hover {
+  cursor: pointer;
+  color: var(--link-external-color-hover) !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 28px rgba(212, 162, 74, 0.6) !important;
+}
+body.theme-dark a.external-link:active,
+body.theme-light a.external-link:active,
+.markdown-rendered a.external-link:active,
+.markdown-preview-view a.external-link:active,
+.markdown-reading-view a.external-link:active {
+  color: var(--link-external-color-active) !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 40px rgba(212, 162, 74, 0.85) !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Read mode — internal links (cyan)
+
+   `:not(.is-unresolved)` explicitly excludes dead/unresolved links from
+   this rule, so the unresolved rule below wins by EXCLUSION, not by
+   specificity battle. This is the cleanest fix for the issue where
+   Obsidian's cascade was painting unresolved links cyan.
+
+   Internal links are `<a class="internal-link">` in every read-mode context. */
+body.theme-dark a.internal-link:not(.is-unresolved),
+body.theme-dark a.internal-link:not(.is-unresolved):visited,
+body.theme-dark a.internal-link:not(.is-unresolved):focus,
+body.theme-light a.internal-link:not(.is-unresolved),
+body.theme-light a.internal-link:not(.is-unresolved):visited,
+body.theme-light a.internal-link:not(.is-unresolved):focus,
+.markdown-rendered a.internal-link:not(.is-unresolved),
+.markdown-preview-view a.internal-link:not(.is-unresolved),
+.markdown-reading-view a.internal-link:not(.is-unresolved) {
+  color: var(--fp-phosphor) !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
+  text-shadow: 0 0 18px rgba(122, 248, 255, 0.35) !important;
+  transition:
+    color var(--fp-duration-fast) var(--fp-ease-out),
+    text-shadow var(--fp-duration-fast) var(--fp-ease-out);
+}
+body.theme-dark a.internal-link:not(.is-unresolved):hover,
+body.theme-light a.internal-link:not(.is-unresolved):hover,
+.markdown-rendered a.internal-link:not(.is-unresolved):hover,
+.markdown-preview-view a.internal-link:not(.is-unresolved):hover,
+.markdown-reading-view a.internal-link:not(.is-unresolved):hover {
+  cursor: pointer;
+  color: #a8fcff !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 28px rgba(122, 248, 255, 0.6) !important;
+}
+body.theme-dark a.internal-link:not(.is-unresolved):active,
+body.theme-light a.internal-link:not(.is-unresolved):active,
+.markdown-rendered a.internal-link:not(.is-unresolved):active,
+.markdown-preview-view a.internal-link:not(.is-unresolved):active,
+.markdown-reading-view a.internal-link:not(.is-unresolved):active {
+  color: #d4fdff !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 40px rgba(122, 248, 255, 0.85) !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Edit mode — internal (wiki) links FIRST so explicit cyan is set before
+   any .cm-link rule below has a chance to repaint the same span yellow.
+
+   CM6 fact pattern for `[[NoteTitle]]`: tokens get .cm-hmd-internal-link
+   on the link-text spans AND .cm-link on the same spans (compound, not
+   parent/child). The brackets [[ ]] get .cm-formatting-link plus
+   .cm-formatting-link-start / .cm-formatting-link-end.
+
+   To win against any `.cm-link { color: yellow }` rule emitted later or
+   from defaults, we use compound selectors (.cm-hmd-internal-link.cm-link)
+   for higher specificity AND mark the cyan declarations !important. The
+   external-link rule below also uses :not(.cm-hmd-internal-link) so a
+   span carrying both classes never gets repainted yellow.
+   ----------------------------------------------------------------------------- */
+.cm-hmd-internal-link,
+.cm-hmd-internal-link.cm-link,
+.cm-link-alias,
+.cm-link-alias-pipe,
+.cm-formatting-link.cm-formatting-link-start,
+.cm-formatting-link.cm-formatting-link-end {
+  color: var(--fp-phosphor) !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
+  text-shadow: 0 0 18px rgba(122, 248, 255, 0.35) !important;
+  transition:
+    color var(--fp-duration-fast) var(--fp-ease-out),
+    text-shadow var(--fp-duration-fast) var(--fp-ease-out);
+}
+.cm-hmd-internal-link:hover,
+.cm-hmd-internal-link.cm-link:hover,
+.cm-link-alias:hover {
+  cursor: pointer;
+  color: #a8fcff !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 28px rgba(122, 248, 255, 0.6) !important;
+}
+.cm-hmd-internal-link:active,
+.cm-hmd-internal-link.cm-link:active {
+  color: #d4fdff !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 40px rgba(122, 248, 255, 0.85) !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Edit mode — external markdown links [label](url).
+   .cm-link              displayed label
+   .cm-url               url portion
+   .cm-formatting-link   the [ ] ( ) wrappers (when not part of a wiki link)
+   .cm-formatting-link-string  inline url string
+
+   :not(.cm-hmd-internal-link) on .cm-link prevents wiki-link spans (which
+   carry BOTH .cm-link and .cm-hmd-internal-link) from getting repainted
+   yellow here. Belt and suspenders alongside the !important above.
+   ----------------------------------------------------------------------------- */
+.cm-link:not(.cm-hmd-internal-link),
+.cm-url,
+.cm-formatting-link:not(.cm-formatting-link-start):not(.cm-formatting-link-end),
+.cm-formatting-link-string {
+  color: var(--link-external-color);
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
+  text-shadow: 0 0 18px rgba(212, 162, 74, 0.35);
+  transition:
+    color var(--fp-duration-fast) var(--fp-ease-out),
+    text-shadow var(--fp-duration-fast) var(--fp-ease-out);
+}
+.cm-link:not(.cm-hmd-internal-link):hover,
+.cm-url:hover {
+  cursor: pointer;
+  color: var(--link-external-color-hover);
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 28px rgba(212, 162, 74, 0.6);
+}
+.cm-link:not(.cm-hmd-internal-link):active,
+.cm-url:active {
+  color: var(--link-external-color-active);
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 40px rgba(212, 162, 74, 0.85);
+}
+
+/* -----------------------------------------------------------------------------
+   Unresolved / dead links — coral attention `#ea9575`
+
+   When a wiki link points to a note that doesn't exist yet, Obsidian flags
+   it as unresolved with the .is-unresolved class. Same shape as the link
+   family (no underline, glow halo, color intensification on hover) but the
+   color shifts from cyan to coral.
+
+   IMPORTANT — edit mode limitation (researched and confirmed):
+     Obsidian does NOT apply .is-unresolved to wiki links in edit mode
+     (source or live preview). It is a known gap, with an open feature
+     request to add it. We can only style unresolved links in READ mode.
+     Edit mode unresolved links will render with the standard cyan internal
+     link styling — there is no CSS hook to differentiate them.
+
+   We use TWO mechanisms together for maximum reliability:
+
+   1. Obsidian's --link-unresolved-color CSS variable. Obsidian's own
+      internal rules consume this variable to color unresolved links, so
+      setting it locally gives us coral coloring with zero specificity
+      battles — Obsidian's rule wins against our resolved rule on its
+      own merits, just with our coral value substituted in.
+
+   2. An ultra-specific fallback rule (4 classes + element) with !important
+      that targets the exact unresolved anchor across every possible read
+      mode wrapper. Belt and suspenders against version drift. */
+
+/* Mechanism 1 — set the variable Obsidian itself uses for unresolved links */
+body.theme-dark,
+body.theme-light {
+  --link-unresolved-color: var(--fp-coral);
+  --link-unresolved-color-hover: var(--fp-coral);
+  --link-unresolved-decoration-color: var(--fp-coral);
+  --link-unresolved-decoration-style: none;
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity: 0.75;
+}
+
+/* Mechanism 2 — high-specificity fallback. Uses the .is-unresolved chain
+   alongside body theme classes to land at specificity (0,4,1), which beats
+   our resolved internal-link rules (0,3,1) decisively. */
+body.theme-dark a.internal-link.is-unresolved,
+body.theme-dark a.internal-link.is-unresolved:visited,
+body.theme-dark a.internal-link.is-unresolved:focus,
+body.theme-light a.internal-link.is-unresolved,
+body.theme-light a.internal-link.is-unresolved:visited,
+body.theme-light a.internal-link.is-unresolved:focus,
+.markdown-rendered a.internal-link.is-unresolved,
+.markdown-preview-view a.internal-link.is-unresolved,
+.markdown-reading-view a.internal-link.is-unresolved,
+.workspace a.internal-link.is-unresolved {
+  color: var(--fp-coral) !important;
+  opacity: 0.75;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
+  text-shadow: 0 0 18px rgba(234, 149, 117, 0.3) !important;
+  transition:
+    color var(--fp-duration-fast) var(--fp-ease-out),
+    opacity var(--fp-duration-fast) var(--fp-ease-out),
+    text-shadow var(--fp-duration-fast) var(--fp-ease-out);
+}
+body.theme-dark a.internal-link.is-unresolved:hover,
+body.theme-light a.internal-link.is-unresolved:hover,
+.markdown-rendered a.internal-link.is-unresolved:hover,
+.markdown-preview-view a.internal-link.is-unresolved:hover,
+.markdown-reading-view a.internal-link.is-unresolved:hover,
+.workspace a.internal-link.is-unresolved:hover {
+  cursor: pointer;
+  color: var(--fp-coral) !important;
+  opacity: 0.95;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 28px rgba(234, 149, 117, 0.6) !important;
+}
+body.theme-dark a.internal-link.is-unresolved:active,
+body.theme-light a.internal-link.is-unresolved:active,
+.markdown-rendered a.internal-link.is-unresolved:active,
+.markdown-preview-view a.internal-link.is-unresolved:active,
+.markdown-reading-view a.internal-link.is-unresolved:active,
+.workspace a.internal-link.is-unresolved:active {
+  color: var(--fp-coral) !important;
+  opacity: 1;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-shadow: 0 0 40px rgba(234, 149, 117, 0.85) !important;
+}
+
+/* =============================================================================
+   Tags — phosphor-glow pink
+       Tags describe *kind* — they're more like type annotations than data
+       references. Pink (abstract type / contract) fits the role.
+       Same shape as the link family for visual consistency.
+   ============================================================================= */
+
 .cm-hashtag,
 .tag {
-  color: var(--fp-phosphor);
-  background-color: rgba(122, 248, 255, 0.07);
+  color: var(--fp-orchid);
+  background-color: rgba(255, 180, 226, 0.08);
   border-radius: 4px;
   padding: 0 0.3em;
+  text-decoration: none;
+  text-shadow: 0 0 14px rgba(255, 180, 226, 0.35);
+  transition:
+    color var(--fp-duration-fast) var(--fp-ease-out),
+    background-color var(--fp-duration-fast) var(--fp-ease-out),
+    text-shadow var(--fp-duration-fast) var(--fp-ease-out);
+}
+.cm-hashtag:hover,
+.tag:hover {
+  cursor: pointer;
+  color: #ffd2ed;
+  background-color: rgba(255, 180, 226, 0.14);
+  text-shadow: 0 0 22px rgba(255, 180, 226, 0.55);
+}
+.cm-hashtag:active,
+.tag:active {
+  color: #ffe8f6;
+  text-shadow: 0 0 32px rgba(255, 180, 226, 0.8);
 }
 
 /* List bullets — phosphor accent */
@@ -457,8 +885,12 @@ pre {
 
 /* =============================================================================
    4. CODE BLOCKS — Prism token mapping
-       Matches VSCode TextMate tokenColors as closely as Prism's coarser
-       category model allows.
+       Maps Prism's `.token.*` classes to the Forest Phosphor source-of-truth
+       role assignments (see Forest_Phosphor-color-theme.json). Prism's
+       category model is coarser than VSCode's TextMate scopes, so a few
+       tokens collapse roles (e.g. .token.keyword covers both flow and
+       structural keywords — we resolve to amber since structural is more
+       informative when only one color is available).
    ============================================================================= */
 
 /* Specificity (0,2,1) beats Prism's `pre[class*="language-"]` (0,1,1); source
@@ -466,18 +898,84 @@ pre {
 pre,
 pre[class*="language-"],
 .markdown-rendered pre {
+  position: relative; /* anchor for ::before/::after */
   background-color: var(--fp-bg-elevated);
   border: 1px solid var(--fp-border-subtle);
   border-radius: 6px;
-  padding: 1em;
+  padding: 1.6em 1em 1em; /* extra top padding for the hairline + pill */
+  margin: 0.9em 0;
+  transition:
+    box-shadow var(--fp-duration-fast) var(--fp-ease-out),
+    border-color var(--fp-duration-fast) var(--fp-ease-out);
 }
 .markdown-rendered pre code,
 pre[class*="language-"] code {
   background-color: transparent;
-  color: var(--fp-fg-primary);
+  /* Default to cyan (the variable role) inside fenced blocks. Prism's
+     basic JSX/Svelte taggers leave most identifiers untagged — they fall
+     through to this default. Tagged tokens (.token.keyword, .token.string,
+     .token.number, etc.) override this with their assigned role colors.
+     Net effect: variables read cyan, keywords read amber, strings read
+     bright green, numbers/booleans read white — close to image 3's
+     read-mode color identity even when Prism's parser is sparse. */
+  color: var(--fp-phosphor);
   border: none;
   padding: 0;
   font-size: 0.9em;
+}
+
+/* (2) Top-bar hairline — a single phosphor-cyan rule along the top of every
+   fenced block. Drawn as ::before so it sits inside the rounded border and
+   inherits the parent's clipping. Very low alpha to read as a hint, not an
+   accent line. */
+.markdown-rendered pre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(122, 248, 255, 0),
+    rgba(122, 248, 255, 0.35) 18%,
+    rgba(122, 248, 255, 0.35) 82%,
+    rgba(122, 248, 255, 0)
+  );
+  pointer-events: none;
+}
+
+/* (1) Language pill — pulls `data-language` injected by Obsidian's renderer
+   onto fenced-code <pre> elements. Sits in the top-right, recessed (comment
+   green), uppercased small caps. Only renders when data-language is set, so
+   blocks without a language (plain ``` ... ```) have no pill. */
+.markdown-rendered pre[data-language]::after {
+  content: attr(data-language);
+  position: absolute;
+  top: 0.45em;
+  right: 0.7em;
+  font-family: var(--font-monospace, "Iosevka", "Menlo", monospace);
+  font-size: 0.65em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fp-green-comment);
+  opacity: 0.75;
+  pointer-events: none;
+  transition:
+    opacity var(--fp-duration-fast) var(--fp-ease-out),
+    color var(--fp-duration-fast) var(--fp-ease-out);
+}
+
+/* (3) Hover glow — soft inset cyan bloom + slightly brighter border on hover.
+   Matches the callout treatment so code blocks feel "live" when focused. */
+.markdown-rendered pre:hover {
+  border-color: rgba(122, 248, 255, 0.25);
+  box-shadow: inset 0 0 24px rgba(122, 248, 255, 0.04);
+}
+.markdown-rendered pre[data-language]:hover::after {
+  opacity: 1;
+  color: var(--fp-green-doc);
 }
 
 /* Strip Prism per-token backgrounds. Specificity (0,2,4) far exceeds
@@ -486,7 +984,119 @@ pre[class*="language-"] code {
   background-color: transparent;
 }
 
-/* Comments — italic */
+/* (4) Edit-mode parity — Obsidian's CodeMirror tags every line inside a
+   fenced block with .HyperMD-codeblock. Without dedicated styling the
+   block reads as colored text on the editor background, with no visible
+   panel boundary. We give the block:
+     • the same elevated bg as read-mode panels
+     • a 1px subtle border on the LEFT only (forms a vertical rail —
+       drawing all four sides per line would create stacked borders
+       between consecutive lines)
+     • the top-bar hairline on the opening fence line
+     • the bottom-bar hairline on the closing fence line
+     • the hover glow when the cursor sits inside any line of the block
+   The visual effect is a continuous panel even though it's actually
+   N independent .cm-line elements. */
+/* Edit-mode code block panels
+   ------------------------------------------------------------------------
+   CM6 doesn't wrap fenced code blocks in a parent element — every line
+   that's inside a fence gets .cm-line.HyperMD-codeblock individually.
+   To make N stacked lines READ as a single panel:
+
+   • Every codeblock line gets the elevated bg (--fp-bg-elevated). With
+     all lines sharing one bg color the block visually unifies.
+   • Left and right borders use box-shadow inset, which draws inside the
+     line's content box and renders identically on every line —
+     consecutive box-shadows align perfectly into a continuous rail
+     where 1px borders sometimes have sub-pixel rendering gaps.
+   • The opening fence (.HyperMD-codeblock-begin) gets a top border via
+     box-shadow + the cyan hairline ::before from the read-mode rules.
+   • The closing fence (.HyperMD-codeblock-end) gets a bottom border via
+     box-shadow + rounded bottom corners.
+   • Rounded corners on begin/end give the panel its softness.
+
+   Specificity: Obsidian's default rules use
+   `.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock` (0,3,1).
+   We match that prefix so our colors win. */
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.cm-line.HyperMD-codeblock {
+  background-color: var(--fp-bg-elevated);
+  /* Inset shadows: left rail + right rail. Consistent on every line. */
+  box-shadow:
+    inset 1px 0 0 0 var(--fp-border-subtle),
+    inset -1px 0 0 0 var(--fp-border-subtle);
+  position: relative;
+}
+
+/* Opening fence — top border, top-rounded corners, hairline glow.
+   The third box-shadow draws the top edge, completing the upper panel. */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin,
+.cm-line.HyperMD-codeblock-begin {
+  box-shadow:
+    inset 1px 0 0 0 var(--fp-border-subtle),
+    inset -1px 0 0 0 var(--fp-border-subtle),
+    inset 0 1px 0 0 var(--fp-border-subtle);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+}
+.cm-line.HyperMD-codeblock-begin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(122, 248, 255, 0),
+    rgba(122, 248, 255, 0.35) 18%,
+    rgba(122, 248, 255, 0.35) 82%,
+    rgba(122, 248, 255, 0)
+  );
+  pointer-events: none;
+}
+
+/* Closing fence — bottom border, bottom-rounded corners. */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end,
+.cm-line.HyperMD-codeblock-end {
+  box-shadow:
+    inset 1px 0 0 0 var(--fp-border-subtle),
+    inset -1px 0 0 0 var(--fp-border-subtle),
+    inset 0 -1px 0 0 var(--fp-border-subtle);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Language pill on the opening fence (edit mode). The Obsidian renderer
+   sets data-language on the .HyperMD-codeblock-begin line; we mirror the
+   read-mode pill styling so the edit panel feels visually identical. */
+.cm-line.HyperMD-codeblock-begin[data-language]::after {
+  content: attr(data-language);
+  position: absolute;
+  top: 0.45em;
+  right: 0.7em;
+  font-family: var(--font-monospace, "Iosevka", "Menlo", monospace);
+  font-size: 0.65em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fp-green-comment);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+/* Edit-mode hover/focus glow — intentionally NOT applied per-line.
+   Hovering individual .cm-line elements would produce stepped bg shifts
+   as the cursor moves down through a multi-line block. The static
+   elevated bg + box-shadow rails already give the block a clear panel
+   boundary; the read-mode hover glow is enough for the focused state. */
+
+/* Comments — muted forest green, italic */
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -495,23 +1105,7 @@ pre[class*="language-"] code {
   font-style: italic;
 }
 
-/* Keywords, control flow, storage */
-.token.keyword,
-.token.storage,
-.token.important,
-.token.atrule,
-.token.rule {
-  color: var(--fp-coral);
-}
-
-/* Operators */
-.token.operator,
-.token.entity,
-.token.url {
-  color: var(--fp-phosphor-soft);
-}
-
-/* Strings */
+/* Strings — bright green. Includes attr-value (HTML/JSX), regex content, chars. */
 .token.string,
 .token.char,
 .token.attr-value,
@@ -519,86 +1113,174 @@ pre[class*="language-"] code {
   color: var(--fp-green-string);
 }
 
-/* Template literal interpolation */
+/* Structural keywords — amber.
+   Prism's .token.keyword conflates flow keywords (if/else/return) with
+   structural ones (function/class/import). Amber is the source-of-truth
+   color for the structural set; the few flow keywords that fall through
+   read fine in amber. .storage covers `let`/`var`/`const` declarations,
+   .atrule covers CSS @media/@import, .important covers CSS !important. */
+.token.keyword,
+.token.storage,
+.token.atrule,
+.token.rule,
+.token.important {
+  color: var(--fp-amber);
+}
+
+/* Operators — read with the foreground; they're part of the language flow. */
+.token.operator,
+.token.entity,
+.token.url {
+  color: var(--fp-fg-primary);
+}
+
+/* Punctuation — foreground. Brackets, semicolons, commas should not shout. */
+.token.punctuation {
+  color: var(--fp-fg-primary);
+}
+
+/* Template literal delimiters — white (special syntax delimiter, not attention). */
 .token.template-punctuation,
 .token.interpolation-punctuation {
-  color: var(--fp-coral);
+  color: var(--fp-white);
 }
 .token.interpolation {
   color: var(--fp-fg-primary);
 }
 
-/* Numbers, constants, booleans */
+/* Literal values — numbers, booleans, null/undefined — near-white. */
 .token.number,
-.token.boolean,
+.token.boolean {
+  color: var(--fp-white);
+}
+
+/* Constants & symbols — cyan (variables/macros/enum members). */
 .token.constant,
 .token.symbol {
   color: var(--fp-phosphor);
 }
 
-/* Functions, builtins */
+/* Function & method calls — yellow. Same color for declarations and calls. */
 .token.function,
-.token.builtin {
-  color: var(--fp-blue);
-}
-
-/* Method calls — italic blue */
 .token.method,
 .token.function-variable {
-  color: var(--fp-blue);
-  font-style: italic;
+  color: var(--fp-yellow-fn);
 }
 
-/* Types, classes, interfaces */
+/* Built-ins (console, Object, Promise, len, …) — cyan.
+   Prism tags both built-in objects and built-in functions as .builtin;
+   leaving them cyan groups them with variables/macros, which reads
+   correctly for `console.log` (cyan object → blue prop → yellow call). */
+.token.builtin {
+  color: var(--fp-phosphor);
+}
+
+/* Concrete shapes — classes, structs, enums — purple. */
 .token.class-name,
-.token.interface,
 .token.namespace,
 .token.maybe-class-name {
   color: var(--fp-magenta);
 }
 
-/* Properties, fields, attributes */
-.token.property,
-.token.tag,
-.token.attr-name,
-.token.property-access {
-  color: var(--fp-yellow);
+/* Abstract shapes — interfaces, type aliases, generics, primitives — pink.
+   Prism's .interface fires for TS interface declarations. .token.type-name
+   (some grammars) covers type aliases. */
+.token.interface,
+.token.type-name {
+  color: var(--fp-orchid);
 }
 
-/* Function parameters — italic dim yellow */
+/* Properties, fields, object keys, HTML/XML attribute names — blue. */
+.token.property,
+.token.attr-name,
+.token.property-access {
+  color: var(--fp-blue);
+}
+
+/* Tags (HTML/XML/JSX) — amber. Tag is structural; same color as keyword. */
+.token.tag {
+  color: var(--fp-amber);
+}
+
+/* JSX/TSX/Svelte — Prism's JSX module emits extra wrapper tokens.
+   .script wraps {expression} blocks; .script-punctuation wraps the { }.
+   .attr-equals is the = between an attr-name and attr-value.
+   .plain-text is leftover prose inside an expression. */
+.token.script {
+  color: var(--fp-phosphor); /* JS expression default → variable role */
+}
+.token.script-punctuation {
+  color: var(--fp-white); /* {} delimiters around expressions */
+}
+.token.attr-equals {
+  color: var(--fp-fg-primary); /* = between attr=value reads as flow */
+}
+.token.plain-text {
+  color: var(--fp-fg-primary); /* prose-like content reads as flow */
+}
+
+/* JSX directive prefixes (Svelte's `on:`, `bind:`, `use:`, `class:`,
+   `style:`, `transition:`, etc.) are tagged as .token.namespace within
+   attribute names by Prism. The earlier .namespace rule colors them
+   purple (concrete shape), which is *correct* per philosophy — they are
+   compile-time directives that wire up specific behaviors. Override only
+   if it reads wrong in practice. */
+
+/* Variables — cyan. */
+.token.variable {
+  color: var(--fp-phosphor);
+}
+
+/* Function parameters — foreground italic. */
 .token.parameter {
-  color: var(--fp-yellow-soft);
+  color: var(--fp-fg-primary);
   font-style: italic;
 }
 
-/* Punctuation */
-.token.punctuation {
-  color: var(--fp-phosphor-dim);
-}
-
-/* Variables */
-.token.variable {
-  color: var(--fp-fg-primary);
-}
-
-/* CSS-specific tokens */
-.token.selector {
-  color: var(--fp-yellow);
-}
-.token.unit {
-  color: var(--fp-coral-soft);
-}
-.token.hexcode,
-.token.color {
-  color: var(--fp-phosphor);
-}
-.token.pseudo-class,
-.token.pseudo-element {
+/* Decorators — purple, italic. Concrete attached metadata (Python @decorator,
+   TS @inject, Rust #[derive] is .meta below). */
+.token.decorator,
+.token.annotation {
   color: var(--fp-magenta);
   font-style: italic;
 }
 
-/* Diff / git */
+/* Rust-style attributes / metadata — purple. */
+.token.meta {
+  color: var(--fp-magenta);
+}
+
+/* CSS-specific tokens
+   ------------------------------------------------------------------------- */
+
+/* CSS class & id selectors — secondary yellow (ids/classes get their own
+   yellow per the source-of-truth design philosophy). */
+.token.selector,
+.token.selector .class,
+.token.selector .id {
+  color: var(--fp-yellow);
+}
+
+/* CSS units (px, em, rem, %) — foreground; they read with the number. */
+.token.unit {
+  color: var(--fp-fg-primary);
+}
+
+/* CSS hex codes / color literals — white (literal value). */
+.token.hexcode,
+.token.color {
+  color: var(--fp-white);
+}
+
+/* CSS pseudo-classes & pseudo-elements — pink (abstract type/contract). */
+.token.pseudo-class,
+.token.pseudo-element {
+  color: var(--fp-orchid);
+  font-style: italic;
+}
+
+/* Diff / git
+   ------------------------------------------------------------------------- */
 .token.deleted {
   color: var(--fp-warning);
 }
@@ -606,20 +1288,14 @@ pre[class*="language-"] code {
   color: var(--fp-success);
 }
 
-/* Decorators — italic magenta */
-.token.decorator,
-.token.annotation {
-  color: var(--fp-magenta);
-  font-style: italic;
-}
-
-/* Invalid / deprecated */
+/* Invalid / deprecated
+   ------------------------------------------------------------------------- */
 .token.invalid {
   color: var(--fp-error);
   text-decoration: underline;
 }
 .token.deprecated {
-  color: #dd7975;
+  color: var(--fp-deprecated);
   text-decoration: line-through;
 }
 
@@ -673,7 +1349,7 @@ pre[class*="language-"] code {
 .callout[data-callout="danger"],
 .callout[data-callout="error"],
 .callout[data-callout="bug"] {
-  --callout-color: 248, 144, 110;
+  --callout-color: 234, 149, 117;
 }
 .callout[data-callout="example"] {
   --callout-color: 192, 122, 200;

@@ -1,7 +1,7 @@
 # Sacred Geometry Systems
 
 - Theme: Sacred Geometry Systems
-- Author: <a href="https://github.com/livastar" target="_blank" rel="noopener noreferrer">Stanislav Ivanov</a>
+- Author: <a href="https://github.com/livastar" target="_blank" rel="noopener noreferrer">livastar</a>
 
 ## Preview
 

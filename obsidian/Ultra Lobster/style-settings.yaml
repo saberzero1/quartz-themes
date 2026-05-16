@@ -256,13 +256,13 @@ sections:
         type: class-toggle
       - id: ulu-enable-custom-bg
         title: Enable Custom Workspace Background
-        description: ⚠️ currently only supported when using the 'abaddon glass' dark subtheme.
+        description: '⚠️ only supported with the ''abaddon glass'' dark subtheme. for a local image or base64: drop ultra-lobster-bg.css (from theme snippets/) + your image into your obsidian snippets folder and enable the snippet. for a web url: paste below. both can be active — url field takes priority.'
         type: class-toggle
       - id: ulu-custom-bg-url
-        title: Custom Background Image URL
-        description: 'paste a direct image link wrapped in url(""). example: url("https://i.imgur.com/image.png")'
+        title: Custom Background Web URL
+        description: takes priority over the snippet. paste a direct image link wrapped in url("https://..."). leave as 'none' to use the snippet instead.
         type: variable-text
-        default: url("https://512pixels.net/downloads/macos-wallpapers/11-0-color-day.jpg")
+        default: none
       - id: ulu-interface-blur
         title: 🌫️ Blur
         type: heading
@@ -420,9 +420,6 @@ sections:
         type: variable-number
         default: 1
         format: em
-      - id: ulu-accent-title
-        title: Accent Titles
-        type: class-toggle
       - id: ulu-accent-bold-italic
         title: Accent Bold & Italic
         description: applies distinct accent colors to bold and italic text
@@ -443,8 +440,28 @@ sections:
         title: Print / PDF — Show Link URLs
         description: when printing or exporting to PDF, append the URL after external links
         type: class-toggle
+      - id: ulu-inline-title-heading
+        title: Inline Title
+        type: heading
+        level: 2
+        collapsed: true
+      - id: ulu-inline-title-size
+        title: Size
+        description: in em
+        type: variable-number
+        default: 2.5
+        format: em
+      - id: ulu-inline-title-weight
+        title: Weight
+        description: numeric font weight e.g. 300 400 500 600 700
+        type: variable-number
+        default: 500
+      - id: ulu-title-underline
+        title: Underline
+        type: class-toggle
+        default: false
       - id: ulu-shimmer-title
-        title: Shimmer Inline Title
+        title: Shimmer
         description: animates the note title with a flowing accent-colour shimmer gradient
         type: class-toggle
         default: false
@@ -525,6 +542,11 @@ sections:
         title: Rough Marker Highlight
         description: gives ==highlighted== text an organic hand-drawn marker edge via SVG displacement
         type: class-toggle
+      - id: ulu-indent-dashed
+        title: Indent Guide — Dashed
+        description: switch the indent guide line from solid to dashed in both reading and editing modes
+        type: class-toggle
+        default: false
       - id: ulu-headings
         title: ⌨️ Headings
         type: heading
@@ -538,11 +560,47 @@ sections:
         description: turns off text-wrap balance on headings (escape hatch for browsers where it misbehaves)
         type: class-toggle
         default: false
-      - id: ulu-fold-hover
-        title: Fold Indicator — Hover to Reveal
-        description: hide the teardrop/circle fold indicator until you hover over a heading (default is always visible)
+      - id: ulu-teardrop-fold
+        title: Teardrop Fold Indicator
+        description: enables the animated water-drop / circle fold indicator for headings; teardrop hangs point-up (open), morphs to a circle on collapse with physics animation. obsidian's native chevron is used by default.
         type: class-toggle
         default: false
+      - id: ulu-fold-hover
+        title: Fold Indicator — Hover to Reveal
+        description: hide the fold indicator until you hover over a heading; works with both teardrop and the native obsidian indicator
+        type: class-toggle
+        default: false
+      - id: h1-size
+        title: H1 Size (em)
+        description: custom size in em units; active preset overrides this — clear the preset above to use custom sizes
+        type: variable-number
+        default: 2
+        format: em
+      - id: h2-size
+        title: H2 Size (em)
+        type: variable-number
+        default: 1.6
+        format: em
+      - id: h3-size
+        title: H3 Size (em)
+        type: variable-number
+        default: 1.37
+        format: em
+      - id: h4-size
+        title: H4 Size (em)
+        type: variable-number
+        default: 1.25
+        format: em
+      - id: h5-size
+        title: H5 Size (em)
+        type: variable-number
+        default: 1.12
+        format: em
+      - id: h6-size
+        title: H6 Size (em)
+        type: variable-number
+        default: 1
+        format: em
       - id: ulu-no-h2-line
         title: Disable H2 Underline
         description: removes the gradient underline from h2 headings
@@ -827,6 +885,9 @@ sections:
           `<span class="smcp">text</span>`
           → small caps (requires a font with OpenType `smcp` glyphs)
 
+          `<span class="spoiler">hidden text</span>`
+          → hidden behind a bar until hovered; works across multiple lines
+
           `==highlighted text==` uses the global highlight color set in Style Settings.
           For per-mark color overrides use `<mark class="ulu-X">text</mark>`:
           `ulu-r` red &nbsp; `ulu-g` green &nbsp; `ulu-b` blue &nbsp; `ulu-p` purple &nbsp; `ulu-o` orange &nbsp; `ulu-y` yellow
@@ -875,6 +936,9 @@ sections:
         markdown: true
         type: info-text
         level: 2
+      - id: ulu-accent-title
+        title: Accent Titles
+        type: class-toggle
       - id: ulu-minimal-properties
         title: minimal properties card
         description: removes the glass slab styling from the properties card

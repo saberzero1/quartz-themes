@@ -1047,10 +1047,10 @@ body.theme-light {
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
   --font-title: "Ruslan Display", serif !important;
+  --font-ui: "Open Sans", sans-serif !important;
   --accent: #92342c !important;
   --background-tertiary: var(--bg-ter) !important;
   --font-heading: "Vollkorn SC", serif !important;
-  --font-ui: "Open Sans", sans-serif !important;
   --code-bg: #eae1d7 !important;
   --font-body: "Literata", serif !important;
   --accent-hover: var(--accent-h) !important;
@@ -2060,10 +2060,10 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --font-title: "Ruslan Display", serif !important;
+  --font-ui: "Open Sans", sans-serif !important;
   --accent: #c0564b !important;
   --background-tertiary: var(--bg-ter) !important;
   --font-heading: "Vollkorn SC", serif !important;
-  --font-ui: "Open Sans", sans-serif !important;
   --code-bg: #2a1f1e !important;
   --font-body: "Literata", serif !important;
   --accent-hover: var(--accent-h) !important;

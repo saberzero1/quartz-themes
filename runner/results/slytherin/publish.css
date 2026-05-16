@@ -1025,6 +1025,9 @@ body.theme-dark {
   --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
   --accent-d: 60% !important;
   --base-d: 15% !important;
+  --font-ui:
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif !important;
   --text:
     system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", sans-serif !important;
@@ -1036,9 +1039,6 @@ body.theme-dark {
     0.85
   ) !important;
   --background-tertiary: #101517 !important;
-  --font-ui:
-    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, "Helvetica Neue", sans-serif !important;
   --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2) !important;
   --background-transparent: hsla(
     var(--base-h),

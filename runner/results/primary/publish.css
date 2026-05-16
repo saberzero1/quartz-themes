@@ -1058,6 +1058,7 @@ body.theme-light {
     var(--link-external-color) var(--link-decoration-opacity),
     transparent
   ) !important;
+  --ribbon-border-width: 1px !important;
   --editor-border-color: var(--background-modifier-border) !important;
   --color-gray-rgb: 182, 175, 166 !important;
   --inline-code-color: var(--color-l-red-10) !important;
@@ -1121,7 +1122,6 @@ body.theme-light {
   --h4-border-width: 0px !important;
   --h5-border-width: 0px !important;
   --h6-border-width: 0px !important;
-  --ribbon-border-width: 1px !important;
   --toggle-shadow:
     inset 0 4px 10px rgba(0, 0, 0, 0.09),
     inset 0px 0px 0px 1px rgba(0, 0, 0, 0.06), inset 0 0 1px rgba(0, 0, 0, 0.28) !important;
@@ -3254,6 +3254,7 @@ body.theme-dark {
     var(--link-external-color) var(--link-decoration-opacity),
     transparent
   ) !important;
+  --ribbon-border-width: 1px !important;
   --editor-border-color: var(--background-modifier-border) !important;
   --color-gray-rgb: 166, 150, 142 !important;
   --inline-code-color: var(--color-d-red-20) !important;
@@ -3318,7 +3319,6 @@ body.theme-dark {
   --h4-border-width: 0px !important;
   --h5-border-width: 0px !important;
   --h6-border-width: 0px !important;
-  --ribbon-border-width: 1px !important;
   --toggle-shadow:
     inset 0 4px 10px rgba(0, 0, 0, 0.19),
     inset 0px 0px 0px 1px rgba(255, 255, 255, 0.09),

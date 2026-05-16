@@ -1391,8 +1391,8 @@ body.theme-light {
   --h5-color: #a89880 !important;
   --h6-color: #b8a788 !important;
   --inline-title-color: var(--h1-color) !important;
-  --callout-abstract: 91, 127, 165;
   --callout-note: 217, 119, 87;
+  --callout-abstract: 91, 127, 165;
   --callout-danger: 199, 86, 70;
 }
 
@@ -2397,8 +2397,8 @@ body.theme-dark {
   --h5-color: #a89880 !important;
   --h6-color: #8b7e6a !important;
   --inline-title-color: var(--h1-color) !important;
-  --callout-abstract: 130, 160, 196;
   --callout-note: 232, 148, 90;
+  --callout-abstract: 130, 160, 196;
   --callout-danger: 224, 96, 80;
 }
 

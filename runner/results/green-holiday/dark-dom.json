@@ -3029,8 +3029,8 @@
     "attrs": { "tabindex": "-1", "data-property-count": "1" },
     "styles": {
       "color": "rgb(156, 200, 158)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgb(62, 120, 64)",
+      "backgroundColor": "rgba(100, 255, 100, 0.06)",
+      "borderColor": "rgba(100, 255, 100, 0.12)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },

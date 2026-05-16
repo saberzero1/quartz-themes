@@ -1,0 +1,61 @@
+mode: replace
+sections:
+  - name: Sacred Geometry Systems
+    id: sacred-geometry-systems
+    collapsed: false
+    settings:
+      - id: sgs-info
+        title: Atlas Controls
+        description: Tune glow, flow, and geometry presence for long writing sessions and living Canvas maps.
+        type: info-text
+        markdown: true
+      - id: sgs-colors
+        title: Signal Colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: sg-gold
+        title: Structure gold
+        type: variable-themed-color
+        format: hex
+        default-light: '#93631d'
+        default-dark: '#d8a84f'
+        alt-format: []
+      - id: sg-signal-cyan
+        title: Signal cyan
+        type: variable-themed-color
+        format: hex
+        default-light: '#00778c'
+        default-dark: '#16c7e8'
+        alt-format: []
+      - id: sg-copper
+        title: Boundary copper
+        type: variable-themed-color
+        format: hex
+        default-light: '#955f3f'
+        default-dark: '#b87345'
+        alt-format: []
+      - id: sg-orbit-violet
+        title: Orbit violet
+        type: variable-themed-color
+        format: hex
+        default-light: '#62509b'
+        default-dark: '#8f67ff'
+        alt-format: []
+      - id: sgs-atlas-controls
+        title: Atlas Controls
+        type: heading
+        level: 2
+        collapsed: true
+      - id: sgs-reduce-glow
+        title: Reduce glow intensity
+        type: class-toggle
+        default: false
+      - id: sgs-disable-geometry-texture
+        title: Disable geometry texture
+        type: class-toggle
+        default: false
+      - id: sgs-strong-focus-boundaries
+        title: Stronger focus boundaries
+        type: class-toggle
+        default: false

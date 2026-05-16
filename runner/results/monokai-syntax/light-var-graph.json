@@ -502,11 +502,13 @@
   },
   "--callout-radius": {
     "body": ["--radius-s"],
-    "body.theme-dark": ["--radius-s"]
+    "body:is(.theme-dark, .theme-light)": ["--radius-s"]
   },
   "--callout-blend-mode": { "body": ["--highlight-mix-blend-mode"] },
   "--callout-title-weight": { "body": ["--font-weight", "--bold-modifier"] },
-  "--callout-content-padding": { "body.theme-dark": ["--spacing-4"] },
+  "--callout-content-padding": {
+    "body:is(.theme-dark, .theme-light)": ["--spacing-4"]
+  },
   "--callout-bug": { "body": ["--color-red-rgb"] },
   "--callout-default": { "body": ["--color-blue-rgb"] },
   "--callout-error": { "body": ["--color-red-rgb"] },
@@ -1981,8 +1983,8 @@
   },
   "--monokai-inline-code-background": {
     ".markdown-source-view": ["--code-background"],
-    ".theme-dark": ["--code-background"],
-    ".theme-light": ["--code-background"]
+    "body.theme-dark": ["--code-background"],
+    "body.theme-light": ["--code-background"]
   },
   "--monokai-file-icon-color": {
     "body.monokai-syntax-monochrome-icons .nav-file-title::before": [
@@ -2003,76 +2005,82 @@
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"note\"]": [
       "--monokai-callout-note-bg"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"note\"])": [
-      "--monokai-callout-note-bg"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"abstract\"]": [
+      "--monokai-callout-abstract-bg"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"info\"])": [
-      "--monokai-callout-note-bg"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"info\"]": [
+      "--monokai-callout-info-bg"
+    ],
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"todo\"]": [
+      "--monokai-callout-todo-bg"
+    ],
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"tip\"]": [
+      "--monokai-callout-tip-bg"
+    ],
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"question\"]": [
+      "--monokai-callout-question-bg"
     ],
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"warning\"]": [
-      "--monokai-callout-warning-bg"
-    ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"warning\"])": [
-      "--monokai-callout-warning-bg"
-    ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"caution\"])": [
       "--monokai-callout-warning-bg"
     ],
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"error\"]": [
       "--monokai-callout-error-bg"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"error\"])": [
-      "--monokai-callout-error-bg"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"failure\"]": [
+      "--monokai-callout-failure-bg"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"danger\"])": [
-      "--monokai-callout-error-bg"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"bug\"]": [
+      "--monokai-callout-bug-bg"
     ],
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"success\"]": [
       "--monokai-callout-success-bg"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"success\"])": [
-      "--monokai-callout-success-bg"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"example\"]": [
+      "--monokai-callout-example-bg"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"check\"])": [
-      "--monokai-callout-success-bg"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"quote\"]": [
+      "--monokai-callout-quote-bg"
     ]
   },
   "--callout-border": {
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"note\"]": [
       "--monokai-callout-note-border"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"note\"])": [
-      "--monokai-callout-note-border"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"abstract\"]": [
+      "--monokai-callout-abstract-border"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"info\"])": [
-      "--monokai-callout-note-border"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"info\"]": [
+      "--monokai-callout-info-border"
+    ],
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"todo\"]": [
+      "--monokai-callout-todo-border"
+    ],
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"tip\"]": [
+      "--monokai-callout-tip-border"
+    ],
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"question\"]": [
+      "--monokai-callout-question-border"
     ],
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"warning\"]": [
-      "--monokai-callout-warning-border"
-    ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"warning\"])": [
-      "--monokai-callout-warning-border"
-    ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"caution\"])": [
       "--monokai-callout-warning-border"
     ],
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"error\"]": [
       "--monokai-callout-error-border"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"error\"])": [
-      "--monokai-callout-error-border"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"failure\"]": [
+      "--monokai-callout-failure-border"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"danger\"])": [
-      "--monokai-callout-error-border"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"bug\"]": [
+      "--monokai-callout-bug-border"
     ],
     "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"success\"]": [
       "--monokai-callout-success-border"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"success\"])": [
-      "--monokai-callout-success-border"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"example\"]": [
+      "--monokai-callout-example-border"
     ],
-    "body .markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout=\"check\"])": [
-      "--monokai-callout-success-border"
+    "body .markdown-preview-view.markdown-rendered .callout[data-callout=\"quote\"]": [
+      "--monokai-callout-quote-border"
     ]
   },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },

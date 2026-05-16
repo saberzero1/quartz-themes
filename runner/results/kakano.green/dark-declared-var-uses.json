@@ -478,7 +478,6 @@
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
   "svg.lucide-help-circle.svg-icon": {
-    "color": "rgb(var(--callout-color))",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
@@ -544,11 +543,9 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--ec-codeFg)",
-    "font-family": "var(--ec-codeFontFml)",
-    "font-size": "var(--ec-codeFontSize)",
-    "font-weight": "var(--ec-codeFontWg)",
-    "line-height": "var(--ec-codeLineHt)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
   "li[data-line=\"0\"]": {
@@ -569,7 +566,7 @@
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
   ".markdown-embed": {
-    "background-color": "var(--embed-background)",
+    "background-color": "var(--background-primary)",
     "font-style": "var(--embed-font-style)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
@@ -584,9 +581,9 @@
   },
   "kbd": {
     "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)",
+    "color": "var(--theme-color-textSelected)",
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
   "dl": {
@@ -737,5 +734,118 @@
     "line-height": "var(--line-height-tight)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
     "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.quartz-icon-selector": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "a.external-link[data-tooltip-position=\"top\"]": {
+    "color": "var(--link-external-color)",
+    "cursor": "var(--cursor-link)",
+    "filter": "var(--link-external-filter)",
+    "font-weight": "var(--link-weight)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "text-decoration-line": "var(--link-external-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
+    "color": "var(--link-unresolved-color)",
+    "cursor": "var(--cursor-link)",
+    "filter": "var(--link-unresolved-filter)",
+    "font-weight": "var(--link-weight)",
+    "opacity": "var(--link-unresolved-opacity)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "text-decoration-color": "var(--link-unresolved-decoration-color)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-style": "var(--link-unresolved-decoration-style)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "strong > em": {
+    "color": "var(--italic-color)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "div.is-selected.mod-complex.suggestion-item": {
+    "background-color": "var(--theme-color-controlBgActive)",
+    "color": "var(--theme-color-controlActive)",
+    "cursor": "var(--cursor)",
+    "font-size": "var(--font-ui-medium)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "div.mod-complex.suggestion-item": {
+    "background-color": "var(--theme-color-controlBgActive)",
+    "color": "var(--theme-color-controlActive)",
+    "cursor": "var(--cursor)",
+    "font-size": "var(--font-ui-medium)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "blockquote": {
+    "background-color": "var(--blockquote-background-color)",
+    "color": "var(--blockquote-color)",
+    "font-style": "var(--blockquote-font-style)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "a.footnote-backref.footnote-link": {
+    "color": "var(--text-faint)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--link-weight)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "div.prompt": {
+    "background-color": "var(--background-prompt)",
+    "backdrop-filter": "var(--prompt-backdrop-filter)",
+    "box-shadow": "var(--shadow-l)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "max-height": "var(--prompt-max-height)",
+    "max-width": "var(--prompt-max-width)",
+    "width": "var(--prompt-width)"
+  },
+  "input.prompt-input[type=\"text\"]": {
+    "box-shadow": "0 0 0 var(--input-border-width) var(--theme-color-base)",
+    "color": "var(--text-normal)",
+    "font-size": "var(--font-ui-small)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "height": "var(--input-height)"
+  },
+  "div.prompt-results": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "li.task-list-item[data-task=\">\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  "li.task-list-item[data-task=\"?\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".canvas-node": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".canvas-node-content": {
+    "background-color": "var(--background-primary)",
+    "font-style": "var(--embed-font-style)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".canvas-node-container .markdown-rendered": {
+    "color": "var(--text-normal)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".canvas-card-menu": {
+    "background-color": "var(--background-secondary)",
+    "box-shadow": "var(--theme-shadow-input)",
+    "font-size": "var(--font-ui-medium)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".canvas-node-group": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".footnotes": {
+    "font-size": "var(--footnote-size)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   }
 }

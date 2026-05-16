@@ -993,8 +993,8 @@ body.theme-dark {
   --small: 0.7rem !important;
   --border: 0.5px solid hsl(246, 28%, 48%) !important;
   --black: hsl(240, 7%, 12%) !important;
-  --font: "Fira Code", monospace !important;
   --tab-background: hsl(240, 7%, 7%) !important;
+  --font: "Fira Code", monospace !important;
   --sidebar-background: hsl(240, 7%, 12%) !important;
   --current-line-bg: hsl(240, 7%, 12%) !important;
   --editor-icons: hsl(211, 19%, 60%) !important;

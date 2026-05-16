@@ -315,6 +315,7 @@
     "box-shadow": "0 8px 24px -6px rgb(from var(--mono-rgb-0) r g b/0.15),\n        inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),\n        inset -1px -1px 0 0 rgba(var(--callout-color), 0.15),\n        0 0 0 1px rgba(var(--callout-color), 0.1)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -579,6 +580,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-text)",
     "font-size": "var(--responsive-text, 1em)",
+    "font-weight": "var(--ulu-body-weight, 400)",
     "line-height": "var(--line-height-normal)"
   },
   ".canvas-card-menu": {

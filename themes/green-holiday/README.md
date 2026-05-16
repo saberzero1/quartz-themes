@@ -1,7 +1,7 @@
 # Green Holiday
 
 - Theme: Green Holiday
-- Author: Masaaki Sumimoto
+- Author: <a href="https://github.com/masa-sumimoto" target="_blank" rel="noopener noreferrer">Masaaki Sumimoto</a>
 
 ## Preview
 

@@ -1,0 +1,33 @@
+body {
+  --p-spacing: 8px;
+}
+
+.theme-dark {
+  --background-primary: #3F4041;
+  --background-secondary: #353637;
+  --background-secondary-alt: #353637;
+  --background-modifier-border: #5C5F61;
+  --text-selection: #7D8082;
+  --text-faint: #7D8082;
+  --code-background: #323234;
+}
+
+.theme-light {
+  --background-primary: #D7DBDD;
+  --background-secondary: #CACFD2;
+  --background-secondary-alt: #CACFD2;
+  --background-modifier-border: #A6ACAF;
+  --text-selection: #909497;
+  --text-faint: #909497;
+  --code-background: #E5E7E9;
+}
+
+.markdown-rendered pre {
+  margin-block: var(--p-spacing) var(--p-spacing);
+}
+
+.markdown-source-view :is(.cm-line:not(.HyperMD-list-line):not(.HyperMD-codeblock):not(.HyperMD-callout)) {
+  padding-top: var(--p-spacing);
+  padding-bottom: var(--p-spacing);
+}
+

@@ -1,0 +1,2178 @@
+/* =============================================
+   COLOURS by Emma
+   Accent-tinted · Minimal
+
+   Github:  https://github.com/wrongvibe/
+   Support: https://buymeacoffee.com/wrongvibe/
+
+   Copyright (C) 2026 Emma
+   SPDX-License-Identifier: GPL-3.0-only
+   ============================================= */
+
+/* @settings
+name: COLOURS
+id: colours-theme
+settings:
+    - id: colours-colours
+      title: Colours
+      type: heading
+      level: 1
+      collapsed: false
+
+    - id: accent-override
+      title: Override System Accent
+      description: "When off (default), Obsidian's appearance-settings accent is used. Turn on to use the per-mode colours below."
+      type: class-toggle
+      level: 2
+      default: false
+
+    - id: accent-colour
+      title: Accent Colour
+      description: "Only applied when 'Override System Accent' is enabled above."
+      type: variable-themed-color
+      format: hex
+      opacity: false
+      default-light: '#0d0d73'
+      default-dark: '#0f0f3d'
+
+    - id: heading-preset
+      title: Heading Style
+      description: "Monochrome uses a low-saturation accent tint (default). 'A little bit colour' and 'Go Crazy' progressively increase chroma and hue variation across heading levels."
+      type: class-select
+      default: heading-monochrome
+      options:
+        - label: Monochrome
+          value: heading-monochrome
+        - label: A little bit colour
+          value: heading-colour
+        - label: Go Crazy
+          value: heading-colourful
+
+    - id: checkbox-coloured
+      title: Coloured Alternate Checkboxes
+      description: "Apply the Go Crazy hue palette to alternate checkbox backgrounds. Turn off to fall back to the Heading Style setting."
+      type: class-toggle
+      default: true
+
+    - id: highlight-preset
+      title: Highlight Style
+      description: "Colourful uses the accent complement hue (default). Other options reduce saturation or remove hue entirely."
+      type: class-select
+      default: highlight-default
+      options:
+        - label: Colourful
+          value: highlight-default
+        - label: Subtle Colour
+          value: highlight-subtle
+        - label: Monochrome (High contrast)
+          value: highlight-monochrome-high
+        - label: Monochrome (Low contrast)
+          value: highlight-monochrome-low
+
+    - id: colours-typography
+      title: Typography
+      type: heading
+      level: 2
+      collapsed: false
+
+    - id: font-heading-override
+      title: Heading Font
+      type: variable-text
+      default: ""
+      description: "Set font for headings. Use quotes for names with spaces. \n Default font: 'Overused Grotesk Roman', 'Helvetica Neue', 'Inter', sans-serif"
+
+    - id: heading-size-preset
+      title: Heading Sizes
+      type: class-select
+      default: heading-size-default
+      options:
+        - label: Default
+          value: heading-size-default
+        - label: Compact
+          value: heading-size-compact
+        - label: Large
+          value: heading-size-large
+
+    - id: line-height-style
+      title: Line Height
+      type: class-select
+      default: line-height-default
+      options:
+        - label: Default
+          value: line-height-default
+        - label: Relaxed
+          value: line-height-relaxed
+        - label: Compact
+          value: line-height-compact
+
+    - id: enable-uppercase
+      title: Enable Uppercase
+      description: "Applies uppercase to the note title, table headers, and UI buttons"
+      type: class-toggle
+      default: false
+
+    - id: font-brightness
+      title: Font Brightness
+      description: "Scales text opacity. Lower values give a softer, more muted look."
+      type: variable-number-slider
+      default: 1
+      min: 0.5
+      max: 1
+      step: 0.05
+
+    - id: colours-layout
+      title: Layout
+      type: heading
+      level: 2
+      collapsed: false
+
+    - id: table-style
+      title: Table Style
+      type: class-select
+      default: table-default
+      options:
+        - label: Tinted header row
+          value: table-default
+        - label: Tinted alternate rows
+          value: table-alternate-rows
+
+    - id: folder-style
+      title: Folder Style
+      type: class-select
+      default: folder-default
+      options:
+        - label: Light Background
+          value: folder-default
+        - label: Inverted Background
+          value: folder-inverted
+        - label: Plain
+          value: folder-plain
+
+    - id: internal-link-style
+      title: Internal Link Decoration
+      type: class-select
+      default: link-wavy
+      options:
+        - label: Wavy
+          value: link-wavy
+        - label: Underline
+          value: link-underline
+        - label: None
+          value: link-none
+
+    - id: auto-hide-scrollbar
+      title: Auto-hide Scrollbar
+      description: "Use the OS overlay scrollbar — appears while scrolling or hovering, hides otherwise. Replaces the theme's custom thin scrollbar."
+      type: class-toggle
+      default: false
+
+    - id: no-cursor-line
+      title: Disable Cursor Line Highlight
+      description: "Remove the background tint on the active editor line."
+      type: class-toggle
+      default: false
+
+    - id: canvas-hide-title
+      title: Hide Inline Title in Canvas
+      description: "Show the inline note title in the editor but hide it inside Canvas cards."
+      type: class-toggle
+      default: false
+
+    - id: readable-line-width
+      title: Readable Line Width
+      description: "Custom line width when Readable line length is on in Obsidian settings."
+      type: variable-number-slider
+      default: 700
+      min: 400
+      max: 1400
+      step: 10
+      format: px
+
+    - id: bases-embed-width-override
+      title: Base Embed Width Multiplier
+      description: "Controls how wide embedded Bases are relative to the readable line width. 1 = same width, 5 = 5× wider."
+      type: variable-number-slider
+      default: 1
+      min: 1
+      max: 5
+      step: 0.1
+ */
+
+
+/* --- Shared: fonts, radius, structural -------------------------- */
+body {
+	--font-interface: var(--font-interface-override), 'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
+	--font-text:      var(--font-text-override),      'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
+	--font-monospace: var(--font-monospace-override), 'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
+	--font-heading:   var(--font-heading-override,    'Overused Grotesk Roman', 'Helvetica Neue', 'Inter', sans-serif);
+
+	/* Hue shift */
+	--hue-4:			 oklch(from var(--background-primary) l c calc(h + 240));
+	--complement:  oklch(from var(--background-primary) l c calc(h + 180));
+	--split-comp:  oklch(from var(--background-primary) l c calc(h + 150));
+	--triadic:     oklch(from var(--background-primary) l c calc(h + 120));
+	--hue-3: 			 oklch(from var(--background-primary) l c calc(h + 90));
+	--analogous:   oklch(from var(--background-primary) l c calc(h + 30));
+	--hue-2: 			 oklch(from var(--background-primary) l c calc(h + 10));
+	--hue-1: 			 oklch(from var(--background-primary) l c calc(h - 20));
+
+	/* Theme default accent */
+	--accent-h: 240;
+	--accent-s: 80%;
+	--accent-l: 25%;
+
+	/* Radius overrides */
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--radius-xl: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+
+	--input-border-width: 1px;
+
+	--divider-color-hover: var(--text-highlight-bg);
+	--divider-width: 1px;
+
+	--font-brightness: 1;
+	--readable-line-width: 700px;
+
+	/* Heading sizes */
+	--h1-size: 2.5em;
+	--h2-size: 2.1em;
+	--h3-size: 1.7em;
+	--h4-size: 1.4em;
+	--h5-size: 1.2em;
+	--h6-size: 1.1em;
+
+	/* Tag structure */
+	--tag-size: 0.8em;
+	--tag-padding-x: 8px;
+	--tag-padding-y: 1px;
+
+	/* Link decoration remove default setting */
+	--link-decoration: none;
+	--link-decoration-hover: none;
+	--link-unresolved-color: none;
+	--link-unresolved-decoration-color: none;
+	--link-unresolved-opacity: 60%;
+	--link-external-decoration-hover: none;
+
+	/* Canvas */
+	--canvas-dot-pattern: var(--text-faint);
+
+	/* Blockquote */
+	--blockquote-border-thickness: 6px;
+	--blockquote-border-color:	   var(--background-modifier-border);
+	--blockquote-font-style:       italic;
+	--blockquote-color: 					 var(--text-muted);
+
+	/* Notebook Navigator */
+	--nn-theme-calendar-day-active-border-color: var(--cursor-line-color);
+	--nn-theme-calendar-day-today-bg: var(--text-highlight-bg);	
+	--nn-theme-calendar-day-today-color: var(--text-highlight);
+	--nn-theme-mobile-toolbar-button-active-icon-color: var(--background-primary);
+	--nn-theme-divider-resize-handle-hover-bg: var(--text-highlight-bg);
+}
+
+/* --- Highlight Presets (Style Settings) ------------------------- */
+body.highlight-subtle {
+	--text-highlight-bg: oklch(from var(--complement)
+		clamp(0.2, calc(var(--dynamic-switch) - var(--dynamic-switch)) * 0.7 + 0.1, 0.8)
+		c
+		h
+		/ 0.8
+	);
+	--text-highlight: oklch(from var(--complement)
+		clamp(0.5, calc((0.9 - calc(var(--dynamic-switch) - var(--dynamic-switch))) * 0.7 + 0.25), 0.9)
+		calc(c * 0.8)
+		h
+		/ 0.8
+	);
+}
+
+body.highlight-monochrome-high {
+	--text-highlight-bg: var(--text-muted);
+	--text-highlight: var(--background-primary);
+}
+
+body.highlight-monochrome-low {
+	--text-highlight-bg: var(--background-modifier-border);
+	--text-highlight: var(--text-muted);
+}
+
+/* --- Heading Presets (Style Settings) --------------------------- */
+/* A bit colour */
+.theme-light.heading-colour {
+	--h-l-min: 0.45;
+	--h-l-max: 0.9;
+}
+.theme-dark.heading-colour {
+	--h-l-min: 0.4;
+	--h-l-max: 0.7;
+}
+body.heading-colour {
+	--h-l-min: 0.4;
+	--h-l-max: 0.9;
+
+	--h1-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 10) / 1.0);
+	--h2-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 5) / 0.95);
+	--h3-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 0) / 0.90);
+	--h4-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 5) / 0.85);
+	--h5-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 10) / 0.80);
+	--h6-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 15) / 0.75);
+}
+
+/* Colourful */
+.theme-light.heading-colourful {
+	--h-l: 0.2;
+	--h-l-min: 0.45;
+	--h-l-max: 0.7;
+	--h-c: 1.2;
+	--h-c-max: 0.3;
+}
+.theme-dark.heading-colourful {
+	--h-l: 0.0;
+	--h-l-min: 0.4;
+	--h-l-max: 0.7;
+	--h-c: 0.75;
+	--h-c-max: 0.3;
+}
+body.heading-colourful {
+	--h1-color: oklch(from var(--complement)  clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 1.00);
+	--h2-color: oklch(from var(--hue-4)   clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.95);
+	--h3-color: oklch(from var(--triadic)     clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.90);
+	--h4-color: oklch(from var(--hue-3) clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.85);
+	--h5-color: oklch(from var(--hue-2) clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.80);
+	--h6-color: oklch(from var(--hue-1) clamp(var(--h-l-min), var(--dynamic-switch) + var(--h-l), var(--h-l-max)) clamp(c, c * var(--h-c), var(--h-c-max)) h / 0.75);
+}
+
+/* --- Coloured Checkboxes (Style Settings) — mirrors heading-colourful palette */
+.theme-light.checkbox-coloured {
+	--cb-h2-color: oklch(from var(--hue-4)   clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.95);
+	--cb-h3-color: oklch(from var(--triadic)     clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.90);
+	--cb-h5-color: oklch(from var(--hue-2) clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.80);
+	--cb-h6-color: oklch(from var(--hue-1) clamp(0.45, var(--dynamic-switch) + 0.2, 0.7) clamp(c, c * 1.2, 0.3) h / 0.75);
+}
+.theme-dark.checkbox-coloured {
+	--cb-h2-color: oklch(from var(--hue-4)   clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.95);
+	--cb-h3-color: oklch(from var(--triadic)     clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.90);
+	--cb-h5-color: oklch(from var(--hue-2) clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.80);
+	--cb-h6-color: oklch(from var(--hue-1) clamp(0.40, var(--dynamic-switch), 0.7) clamp(c, c * 0.75, 0.3) h / 0.75);
+}
+
+/* --- Heading size presets --------------------------------------- */
+body.heading-size-compact {
+	--h1-size: 1.8em;
+	--h2-size: 1.5em;
+	--h3-size: 1.3em;
+	--h4-size: 1.15em;
+	--h5-size: 1.05em;
+	--h6-size: 1em;
+}
+body.heading-size-large {
+	--h1-size: 3em;
+	--h2-size: 2.5em;
+	--h3-size: 2em;
+	--h4-size: 1.6em;
+	--h5-size: 1.3em;
+	--h6-size: 1.15em;
+}
+
+/* --- Line height presets ---------------------------------------- */
+body.line-height-relaxed { --line-height-normal: 1.8; }
+body.line-height-compact  { --line-height-normal: 1.4; }
+
+/* --- Tab header cleanup (from template) ------------------------- */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+/* --- Tab drag-reorder indicator --------------------------------- */
+.workspace-drop-overlay:before {
+	background-color: var(--text-highlight-bg);
+	opacity: 1;
+}
+
+/* --- SVG stroke cleanup (from template) ------------------------- */
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+/* --- Menu padding (from template) ------------------------------- */
+.menu {
+	padding: var(--size-2-1);
+}
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+
+/* =============================================
+   LIGHT MODE PALETTE
+   ============================================= */
+
+.theme-light {
+	/* --- Accent lightness detection --------------------------------- */
+	--contrast-threshold: 1.11;
+	--dynamic-switch:     round(calc(var(--contrast-threshold) - l));
+
+	/* --- Highlight system ------------------------------------------- */
+	--text-highlight-bg: oklch(from var(--complement)
+		clamp(0.2, calc((1 - calc(var(--dynamic-switch) - var(--dynamic-switch))) * 0.7 + 0.1), 0.9)
+		calc(c * 0.6)
+		h
+	);
+	--text-highlight: oklch(from var(--complement)
+		clamp(0.2, calc(calc(var(--dynamic-switch) - var(--dynamic-switch)) * 0.7 + 0.1), 0.9)
+		c
+		h
+	);
+
+	/* --- Backgrounds ------------------------------------------------ */
+	--background-primary:               oklch(from var(--color-accent) l c h);
+	--background-primary-alt:						oklch(from var(--color-accent) calc(l * 0.95) c h);
+	--background-secondary:             var(--background-primary);
+	--background-secondary-alt:         oklch(from var(--color-accent) clamp(0.20, var(--dynamic-switch), 0.80) c h / 0.2);
+	--background-modifier-hover:        oklch(from var(--color-accent) clamp(0.10, l * 0.8, 0.8) calc(c * 0.75) h / 0.5);
+	--background-modifier-border:       oklch(from var(--color-accent) clamp(0.30, var(--dynamic-switch), 0.80) c h / 0.2);
+	--background-modifier-border-hover: var(--text-muted);
+	--background-modifier-border-focus: var(--text-normal);
+	--background-modifier-form-field:   var(--background-primary);
+	--background-modifier-form-field-highlighted: var(--background-secondary-alt);
+
+	--titlebar-background:         var(--background-modifier-hover);
+	--titlebar-background-focused: var(--background-primary);
+	--workspace-background-translucent:    oklch(from var(--color-accent) calc(l * 1.2) c h / 0.5);
+	--workspace-background-translucent-nn: oklch(from var(--workspace-background-translucent) l c h / 0);
+
+	/* --- Cursor line bg colour -------------------------------------- */
+	--cursor-line-color: oklch(from var(--hue-2) clamp(0.2, l * 0.8, 0.8) c h / 0.5);
+
+	/* --- Code blocks: step function --------------------------------- */
+	--code-bg-bias:      0;
+	--code-bg-threshold: 0.75;
+	--code-bg-light:     0.95;
+	--code-bg-dark:      0.2;
+	--code-bg-range:     calc(var(--code-bg-light) - var(--code-bg-dark));
+	--code-background:	 oklch(from var(--color-accent)
+		calc(
+			var(--code-bg-dark) +
+			clamp(0.1, calc((l - var(--code-bg-threshold)) * 1000), 0.99) *
+			var(--code-bg-range) +
+			var(--code-bg-bias)
+		)
+		calc(c * 0.7)
+		h / 0.85
+	);
+	--code-border: oklch(from var(--color-accent)
+		calc(
+			var(--code-bg-dark) +
+			clamp(0.4, calc((l - var(--code-bg-threshold)) * 1000), 0.85) *
+			var(--code-bg-range) +
+			var(--code-bg-bias) +
+			0.05
+		)
+		calc(c * 1)
+		h / 0.5
+	);
+	--code-normal:  oklch(from var(--code-background) clamp(0.15, calc(1 - l) + 0.1, 0.95) calc(c * 0.3) h);
+	--code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.95) calc(c * 0.5) h);
+
+	/* --- Text colours ----------------------------------------------- */
+
+	--text-normal:       oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.95) calc(c * 0.1) h / calc(1 * var(--font-brightness)));
+	--text-muted:        oklch(from var(--color-accent) clamp(0.25, var(--dynamic-switch), 0.90) calc(c * 0.3) h / calc(0.9  * var(--font-brightness)));
+	--text-faint:        oklch(from var(--color-accent) clamp(0.30, var(--dynamic-switch), 0.80) calc(c * 0.3) h / calc(0.75 * var(--font-brightness)));
+	--text-accent:       oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.95) calc(c * 0.1) h);
+	--text-on-accent:    oklch(from var(--color-accent) clamp(0.20, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
+	--text-accent-hover: oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
+	--text-selection: 	 var(--background-secondary-alt);
+
+	--link-color: var(--text-muted);
+
+	--interactive-accent: 			var(--background-primary);
+	--interactive-accent-hover: var(--background-modifier-border);
+
+	/* --- Headings --------------------------------------------------- */
+	--h1-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.95);
+	--h2-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.95);
+	--h3-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.9);
+	--h4-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.8);
+	--h5-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.7);
+	--h6-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.6);
+
+	/* --- Tags ------------------------------------------------------- */
+	--tag-color:            var(--background-primary);
+	--tag-background:       var(--text-normal);
+	--tag-background-hover: var(--background-modifier-hover);
+
+	/* --- Graph view (hsl only, oklch breaks rendering) -------------- */
+	--contrast-threshold-graph: 45%;
+	--lightness-offset: 		 calc(sin((var(--accent-h) - 140) * 3.14159 / 180) * 10%);
+	--dynamic-switch-graph:  calc(calc(var(--accent-l) - var(--lightness-offset) - var(--contrast-threshold-graph)) * -1000);
+	--graph-text:            hsl(var(--accent-h),             calc(var(--accent-s) * 0.5), clamp(10%, var(--dynamic-switch-graph), 90%), 90%);
+	--graph-line:            hsl(var(--accent-h),             calc(var(--accent-s) * 0.2), clamp(20%, var(--dynamic-switch-graph), 80%), 30%);
+	--graph-node:            hsl(calc(var(--accent-h) + 180), calc(var(--accent-s) * 1.5), clamp(30%, var(--accent-l) * 1.8      , 80%), 60%);
+	--graph-node-unresolved: hsl(calc(var(--accent-h) +  60), calc(var(--accent-s) * 0.5), clamp(50%, var(--accent-l)            , 90%), 80%);
+	--graph-node-focused:    hsl(calc(var(--accent-h) + 180), calc(var(--accent-s) * 1.5), clamp(20%, var(--accent-l)            , 90%), 90%);
+	--graph-node-tag:        hsl(calc(var(--accent-h) + 240), calc(var(--accent-s) * 0.7), clamp(30%, var(--accent-l)            , 80%));
+	--graph-node-attachment: hsl(calc(var(--accent-h) + 120), calc(var(--accent-s) * 0.7), clamp(30%, var(--accent-l)            , 80%));
+}
+
+	/* --- Graph drag highlight --------------------------------------- */
+	.graph-view.color-fill-highlight,
+	.graph-view.color-line-highlight {
+		color: var(--graph-node-focused);
+	}
+
+/* =============================================
+   DARK MODE PALETTE
+   ============================================= */
+.theme-dark {
+
+	/* --- Accent lightness detection --------------------------------- */
+	--dynamic-switch:     1;
+
+	/* --- Highlight system ------------------------------------------- */
+	--text-highlight-bg: oklch(from var(--complement)
+		clamp(0.2, calc((var(--dynamic-switch)) * 0.75 + 0.1), 0.75)
+		calc(c * 0.9)
+		h
+	);
+	--text-highlight: oklch(from var(--complement)
+		clamp(0.2, calc(1 - var(--dynamic-switch) * 0.75 + 0.1), 0.9)
+		c
+		h
+	);
+
+	/* --- Backgrounds ------------------------------------------------ */
+	--background-primary:               oklch(from var(--color-accent) calc(l * 0.4 + 0.06) calc(c * 0.8) h);
+	--background-primary-alt:						oklch(from var(--background-primary) calc(l * 0.95) c h);
+	--background-secondary:             var(--background-primary);
+	--background-secondary-alt:         oklch(from var(--background-primary) clamp(0.2, l * 0.8, 0.8) c h / 0.5);
+	--background-modifier-hover:        oklch(from var(--background-primary) clamp(0.3, l * 0.8, 0.8) calc(c * 0.8) h / 0.5);
+	--background-modifier-border:       oklch(from var(--background-primary) clamp(0.5, l * 1.5, 0.8) c h / 0.5);
+	--background-modifier-border-hover: var(--text-muted);
+	--background-modifier-border-focus: var(--text-normal);
+	--background-modifier-form-field:   var(--background-primary);
+	--background-modifier-form-field-highlighted: var(--background-secondary-alt);
+
+	--titlebar-background:         var(--background-modifier-hover);
+	--titlebar-background-focused: var(--background-primary);
+	--workspace-background-translucent: oklch(from var(--background-primary) calc(l * 0.8 + 0.08) calc(c) calc(h) / 0.2);
+	--workspace-background-translucent-nn: oklch(from var(--workspace-background-translucent) l c h / 0);
+
+	/* Cursor line colour */
+	--cursor-line-color: oklch(from var(--hue-2) clamp(0.3, l * 1.2, 0.5) c h / 0.5);
+
+	/* --- Code blocks: always dark ----------------------------------- */
+	--code-bg-bias:      0;
+	--code-bg-threshold: 0.75;
+	--code-bg-light:     0.95;
+	--code-bg-dark:      0.15;
+	--code-bg-range:     calc(var(--code-bg-light) - var(--code-bg-dark));
+	--code-background:   oklch(from var(--background-primary) clamp(0.25, l * 0.3, 1.00) calc(c * 0.8) h / 0.9);
+	--code-border:       oklch(from var(--background-primary) clamp(0.40, l * 2, 0.60) calc(c * 1.0) h / 0.9);
+
+	--code-normal: 	oklch(from var(--code-background) clamp(0.20, calc(1 - l) + 0.1, 0.8) calc(c * 0.3) h);
+	--code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.8) calc(c * 0.5) h);
+
+	/* --- Text colours ----------------------------------------------- */
+	--text-normal:       oklch(from var(--background-primary) clamp(0.20, var(--dynamic-switch), 0.90) calc(c * 0.1) h / calc(1   * var(--font-brightness)));
+	--text-muted:        oklch(from var(--background-primary) clamp(0.30, var(--dynamic-switch), 0.80) calc(c * 0.5) h / calc(0.8 * var(--font-brightness)));
+	--text-faint:        oklch(from var(--background-primary) clamp(0.40, var(--dynamic-switch), 0.70) calc(c * 0.5) h / calc(0.7 * var(--font-brightness)));
+	--text-accent:       oklch(from var(--background-primary) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
+	--text-on-accent:    oklch(from var(--background-primary) clamp(0.20, var(--dynamic-switch), 0.85) calc(c * 0.1) h);
+	--text-accent-hover: oklch(from var(--background-primary) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
+	--text-selection:    oklch(from var(--color-accent) 0.55 c h / 0.35);
+
+	--link-color: var(--text-muted);
+
+	--interactive-accent: 			var(--background-primary);
+	--interactive-accent-hover: var(--background-modifier-border);
+
+	/* --- Headings --------------------------------------------------- */
+	--h1-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.95);
+	--h2-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.9);
+	--h3-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.85);
+	--h4-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.8);
+	--h5-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.7);
+	--h6-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.6);
+
+	/* --- Tags ------------------------------------------------------- */
+	--tag-color:            var(--background-primary) !important;
+	--tag-background:       var(--text-normal) !important;
+	--tag-background-hover: var(--background-modifier-hover) !important;
+
+	/* --- Graph view (hsl only, oklch breaks rendering) -------------- */
+	--graph-text:            hsl(var(--accent-h),             calc(var(--accent-s) * 0.2), clamp(70%, var(--accent-l) * 1.8, 95%), 90%);
+	--graph-line:            hsl(var(--accent-h),             calc(var(--accent-s) * 0.2), clamp(30%, var(--accent-l) * 1.5, 50%), 80%);
+	--graph-node:            hsl(calc(var(--accent-h) + 180), calc(var(--accent-s) * 2.0), clamp(30%, var(--accent-l) * 1.0, 90%), 80%);
+	--graph-node-unresolved: hsl(calc(var(--accent-h) +  60), calc(var(--accent-s) * 0.2), clamp(50%, var(--accent-l) * 1.0, 80%), 70%);
+	--graph-node-focused:    hsl(calc(var(--accent-h) + 180), calc(var(--accent-s) * 1.5), clamp(30%, var(--accent-l)      , 60%), 90%);
+	--graph-node-tag:        hsl(calc(var(--accent-h) + 240), calc(var(--accent-s) * 0.7), clamp(30%, var(--accent-l)      , 80%));
+	--graph-node-attachment: hsl(calc(var(--accent-h) + 120), calc(var(--accent-s) * 0.7), clamp(30%, var(--accent-l)      , 80%));
+}
+
+/* =============================================
+   ACCENT OVERRIDE (Style Settings)
+   Replaces Obsidian's --color-accent per mode.
+   Graph view keeps the theme's fixed --accent-h/s/l.
+   ============================================= */
+.theme-light.accent-override {
+	--color-accent: var(--accent-colour, #0d0d73);
+}
+.theme-dark.accent-override {
+	--color-accent: var(--accent-colour, #0f0f3d);
+	/* Skip the dim-down formula — use the picked colour as-is. */
+	--background-primary: oklch(from var(--color-accent) l c h);
+}
+
+/* Folder Accents plugin sets one colour per folder via [data-folder-accent].
+   Restore the dim-down formula so its colours render correctly in dark mode
+   regardless of the Style Settings override. */
+.theme-dark.accent-override[data-folder-accent] {
+	--background-primary: oklch(from var(--color-accent) calc(l * 0.4 + 0.06) calc(c * 0.8) h);
+}
+
+/* =============================================
+   COMPONENT STYLES (shared across modes)
+   ============================================= */
+
+/* --- Strip all rounded corners ---------------------------------- */
+*, *::before, *::after {
+	border-radius: 0 !important;
+}
+
+/* --- Hard borders ----------------------------------------------- */
+.modal,
+.menu,
+.suggestion-container {
+	border: 1px solid var(--background-modifier-border);
+}
+
+/* --- Status Bar ----------------------------------------------- */
+.status-bar {
+  color: var(--text-faint);
+}
+.status-bar-item.mod-clickable:hover {
+  color: var(--text-normal);
+}
+
+/* --- Scrollbar: thin and monochrome ----------------------------- */
+/* Skipped when body.auto-hide-scrollbar is set, so Chromium falls
+   back to the OS overlay scrollbar (auto-hides + appears on scroll). */
+body:not(.auto-hide-scrollbar) ::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+body:not(.auto-hide-scrollbar) ::-webkit-scrollbar:hover { opacity: 0.8; }
+body:not(.auto-hide-scrollbar) ::-webkit-scrollbar-track { background: transparent; }
+body:not(.auto-hide-scrollbar) ::-webkit-scrollbar-thumb { background: var(--text-faint); }
+
+/* --- Dividers --------------------------------------------------- */
+.workspace-leaf-resize-handle {
+  width:  2px;
+  height: 2px;
+}
+.mod-left-split .workspace-leaf-content,
+.mod-right-split .workspace-leaf-content {
+  padding-inline-end: 1px;
+}
+
+/* --- Flashing --------------------------------------------------- */
+.is-flashing {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight);
+  mix-blend-mode: normal;
+}
+
+/* --- Bold folder names in file explorer ------------------------- */
+/* --- Default: Light background ---------------------------------- */
+.nav-folder-title-content {
+  font-weight: 500;
+  font-size: 1.05em;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: var(--cursor-line-color);
+}
+/* --- Inverted preset -------------------------------------------- */
+body.folder-inverted .nav-folder-title-content {
+  text-decoration: none;
+  background-color: var(--text-muted);
+  color: var(--background-primary);
+}
+/* --- Plain preset ----------------------------------------------- */
+body.folder-plain .nav-folder-title-content {
+  background-color: transparent;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* --- Outline Panel Headings ------------------------------------- */
+/* --- Outline Panel Headings (by nesting depth) ------------------ */
+/* Obsidian outline has no data-level attribute. Level = how deep it's nested. */
+/* --- H1 --------------------------------------------------------- */
+.workspace-leaf-content[data-type="outline"] .view-content .tree-item:not(.tree-item-children *) > .tree-item-self .tree-item-inner {
+	text-decoration: underline dotted;
+	color: var(--h1-color);
+}
+/* --- H2 --------------------------------------------------------- */
+.workspace-leaf-content[data-type="outline"] .view-content .tree-item-children .tree-item:not(.tree-item-children .tree-item-children *) > .tree-item-self .tree-item-inner {
+	color: var(--h2-color);
+}
+/* --- H3 --------------------------------------------------------- */
+.workspace-leaf-content[data-type="outline"] .view-content .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children *) > .tree-item-self .tree-item-inner {
+	color: var(--h3-color);
+}
+/* --- H4 --------------------------------------------------------- */
+.workspace-leaf-content[data-type="outline"] .view-content .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children *) > .tree-item-self .tree-item-inner {
+	color: var(--h4-color);
+}
+/* --- H5 --------------------------------------------------------- */
+.workspace-leaf-content[data-type="outline"] .view-content .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children *) > .tree-item-self .tree-item-inner {
+	color: var(--h5-color);
+}
+/* --- H6 --------------------------------------------------------- */
+.workspace-leaf-content[data-type="outline"] .view-content .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children *) > .tree-item-self .tree-item-inner {
+	color: var(--h6-color);
+}
+
+/* --- Title ------------------------------------------------------ */
+.inline-title {
+	color: var(--text-accent);
+	font-size: 4em !important;
+	font-weight: 700;
+	font-family: var(--font-heading) !important;
+}
+
+body.canvas-hide-title .canvas-node .inline-title {
+	display: none;
+}
+
+/* --- Header Font ------------------------------------------------ */
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6,
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-reading-view h3,
+.markdown-reading-view h4,
+.markdown-reading-view h5,
+.markdown-reading-view h6 {
+	font-family: var(--font-heading);
+}
+
+/* --- Header Weight (decreasing h1 → h6) ------------------------- */
+.cm-header-1, .markdown-reading-view h1 { font-weight: 700; }
+.cm-header-2, .markdown-reading-view h2 { font-weight: 600; }
+.cm-header-3, .markdown-reading-view h3 { font-weight: 500; }
+.cm-header-4, .markdown-reading-view h4 { font-weight: 400; }
+.cm-header-5, .markdown-reading-view h5 { font-weight: 400; }
+.cm-header-6, .markdown-reading-view h6 { font-weight: 300; }
+
+/* --- Date icon -------------------------------------------------- */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 0.8 !important;
+    background-color: var(--text-normal);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    width:  0.7em;
+    height: 0.7em;
+    left: 7px !important;
+}
+
+/* --- Task checkbox ---------------------------------------------- */
+
+body {
+	--checkbox-marker-color: var(--interactive-accent);
+	--checkbox-marker-color-hover: var(--text-normal);
+	--checkbox-border-color: var(--text-muted);
+	--checkbox-border-color-hover: var(--interactive-accent-hover);
+	--checklist-done-color: var(--text-normal);
+}
+
+.task-list-item-checkbox:hover,
+.task-list-item-checkbox:checked:hover,
+input[type="checkbox"]:checked:hover {
+	background-color: var(--interactive-accent-hover);
+	--checkbox-color-hover: var(--interactive-accent-hover);
+	--checkbox-marker-color: var(--text-normal);
+  border: 1px solid var(--checkbox-border-color-hover);
+}
+
+.task-list-item-checkbox:checked,
+input[type="checkbox"]:checked {
+	--checkbox-color: var(--text-normal);
+	--checkbox-marker-color: var(--interactive-accent);
+	border-color: var(--checkbox-border-color);
+}
+
+/* --- Alternate Checkboxes --- */
+
+/* --- Base group: hide default checkmark, enable ::after --------- */
+input[data-task="/"]:checked,
+input[data-task=">"]:checked,
+input[data-task="<"]:checked,
+li[data-task="/"] > input:checked,
+li[data-task=">"] > input:checked,
+li[data-task="<"] > input:checked,
+li[data-task="/"] > p > input:checked,
+li[data-task=">"] > p > input:checked,
+li[data-task="<"] > p > input:checked {
+	--checkbox-marker-color: transparent;
+}
+input[data-task="?"]:checked,
+input[data-task="-"]:checked,
+input[data-task="!"]:checked,
+input[data-task="i"]:checked,
+input[data-task="*"]:checked,
+input[data-task="b"]:checked,
+input[data-task="l"]:checked,
+input[data-task="k"]:checked,
+input[data-task="u"]:checked,
+input[data-task="d"]:checked,
+input[data-task="p"]:checked,
+input[data-task="c"]:checked,
+li[data-task="?"] > input:checked,
+li[data-task="-"] > input:checked,
+li[data-task="!"] > input:checked,
+li[data-task="i"] > input:checked,
+li[data-task="*"] > input:checked,
+li[data-task="l"] > input:checked,
+li[data-task="b"] > input:checked,
+li[data-task="p"] > input:checked,
+li[data-task="c"] > input:checked,
+li[data-task="k"] > input:checked,
+li[data-task="u"] > input:checked,
+li[data-task="d"] > input:checked,
+li[data-task="?"] > p > input:checked,
+li[data-task="-"] > p > input:checked,
+li[data-task="!"] > p > input:checked,
+li[data-task="i"] > p > input:checked,
+li[data-task="*"] > p > input:checked,
+li[data-task="l"] > p > input:checked,
+li[data-task="b"] > p > input:checked,
+li[data-task="p"] > p > input:checked,
+li[data-task="c"] > p > input:checked,
+li[data-task="k"] > p > input:checked,
+li[data-task="u"] > p > input:checked,
+li[data-task="d"] > p > input:checked {
+	--checkbox-marker-color: transparent;
+	border: none;
+}
+
+/* --- Icon overlay (text-normal color via mask) ------------------ */
+input[data-task="/"]:checked::after,
+input[data-task=">"]:checked::after,
+input[data-task="<"]:checked::after,
+li[data-task="/"] > input:checked::after,
+li[data-task=">"] > input:checked::after,
+li[data-task="<"] > input:checked::after,
+li[data-task="/"] > p > input:checked::after,
+li[data-task=">"] > p > input:checked::after,
+li[data-task="<"] > p > input:checked::after {
+	inset: -0.5px -0.8px;
+	background-color: var(--interactive-accent); /* icon colour = bg primary */
+	-webkit-mask-size: var(--checkbox-icon);
+	-webkit-mask-position: 50% 50%;
+	-webkit-mask-repeat: no-repeat;
+	pointer-events: none;
+}
+input[data-task="-"]:checked::after,
+input[data-task="!"]:checked::after,
+input[data-task="?"]:checked::after,
+input[data-task="i"]:checked::after,
+input[data-task="*"]:checked::after,
+input[data-task="l"]:checked::after,
+input[data-task="b"]:checked::after,
+input[data-task="p"]:checked::after,
+input[data-task="c"]:checked::after,
+input[data-task="k"]:checked::after,
+input[data-task="u"]:checked::after,
+input[data-task="d"]:checked::after,
+li[data-task="-"] > input:checked::after,
+li[data-task="!"] > input:checked::after,
+li[data-task="?"] > input:checked::after,
+li[data-task="i"] > input:checked::after,
+li[data-task="*"] > input:checked::after,
+li[data-task="l"] > input:checked::after,
+li[data-task="b"] > input:checked::after,
+li[data-task="p"] > input:checked::after,
+li[data-task="c"] > input:checked::after,
+li[data-task="k"] > input:checked::after,
+li[data-task="u"] > input:checked::after,
+li[data-task="d"] > input:checked::after,
+li[data-task="-"] > p > input:checked::after,
+li[data-task="!"] > p > input:checked::after,
+li[data-task="?"] > p > input:checked::after,
+li[data-task="i"] > p > input:checked::after,
+li[data-task="*"] > p > input:checked::after,
+li[data-task="l"] > p > input:checked::after,
+li[data-task="b"] > p > input:checked::after,
+li[data-task="p"] > p > input:checked::after,
+li[data-task="c"] > p > input:checked::after,
+li[data-task="k"] > p > input:checked::after,
+li[data-task="u"] > p > input:checked::after,
+li[data-task="d"] > p > input:checked::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--interactive-accent); /* icon colour = bg primary */
+	-webkit-mask-size: var(--checkbox-icon);
+	-webkit-mask-position: 50% 50%;
+	-webkit-mask-repeat: no-repeat;
+	pointer-events: none;
+	border: none;
+}
+
+/* --- Hover overrides for alternate checkboxes ------------------- */
+
+/* Group 2 alternates: block the base hover rule's border — these have border:none
+   at rest, so adding a border on hover shifts the ::after. Box-bg types get an
+   inset box-shadow instead for the visible ring. */
+input[data-task="-"]:checked:hover,
+input[data-task="!"]:checked:hover,
+input[data-task="?"]:checked:hover,
+input[data-task="i"]:checked:hover,
+input[data-task="*"]:checked:hover,
+input[data-task="b"]:checked:hover,
+input[data-task="l"]:checked:hover,
+input[data-task="k"]:checked:hover,
+input[data-task="u"]:checked:hover,
+input[data-task="d"]:checked:hover,
+input[data-task="p"]:checked:hover,
+input[data-task="c"]:checked:hover,
+li[data-task="-"] > input:checked:hover,
+li[data-task="!"] > input:checked:hover,
+li[data-task="?"] > input:checked:hover,
+li[data-task="i"] > input:checked:hover,
+li[data-task="*"] > input:checked:hover,
+li[data-task="b"] > input:checked:hover,
+li[data-task="l"] > input:checked:hover,
+li[data-task="k"] > input:checked:hover,
+li[data-task="u"] > input:checked:hover,
+li[data-task="d"] > input:checked:hover,
+li[data-task="p"] > input:checked:hover,
+li[data-task="c"] > input:checked:hover,
+li[data-task="-"] > p > input:checked:hover,
+li[data-task="!"] > p > input:checked:hover,
+li[data-task="?"] > p > input:checked:hover,
+li[data-task="i"] > p > input:checked:hover,
+li[data-task="*"] > p > input:checked:hover,
+li[data-task="b"] > p > input:checked:hover,
+li[data-task="l"] > p > input:checked:hover,
+li[data-task="k"] > p > input:checked:hover,
+li[data-task="u"] > p > input:checked:hover,
+li[data-task="d"] > p > input:checked:hover,
+li[data-task="p"] > p > input:checked:hover,
+li[data-task="c"] > p > input:checked:hover {
+	border: none;
+}
+
+/* Box-bg alternates: ring via inset shadow (no layout shift) */
+input[data-task=">"]:checked:hover,
+input[data-task="<"]:checked:hover,
+input[data-task="-"]:checked:hover,
+input[data-task="!"]:checked:hover,
+input[data-task="?"]:checked:hover,
+input[data-task="i"]:checked:hover,
+input[data-task="u"]:checked:hover,
+input[data-task="d"]:checked:hover,
+input[data-task="p"]:checked:hover,
+input[data-task="c"]:checked:hover,
+li[data-task=">"] > input:checked:hover,
+li[data-task="<"] > input:checked:hover,
+li[data-task="-"] > input:checked:hover,
+li[data-task="!"] > input:checked:hover,
+li[data-task="?"] > input:checked:hover,
+li[data-task="i"] > input:checked:hover,
+li[data-task="u"] > input:checked:hover,
+li[data-task="d"] > input:checked:hover,
+li[data-task="p"] > input:checked:hover,
+li[data-task="c"] > input:checked:hover,
+li[data-task=">"] > p > input:checked:hover,
+li[data-task="<"] > p > input:checked:hover,
+li[data-task="-"] > p > input:checked:hover,
+li[data-task="!"] > p > input:checked:hover,
+li[data-task="?"] > p > input:checked:hover,
+li[data-task="i"] > p > input:checked:hover,
+li[data-task="u"] > p > input:checked:hover,
+li[data-task="d"] > p > input:checked:hover,
+li[data-task="p"] > p > input:checked:hover,
+li[data-task="c"] > p > input:checked:hover {
+	box-shadow: inset 0 0 0 1px var(--checkbox-border-color-hover);
+}
+
+/* Icon-only (*, b, l, k): suppress bg — only icon color changes */
+input[data-task="*"]:checked:hover,
+input[data-task="b"]:checked:hover,
+input[data-task="l"]:checked:hover,
+input[data-task="k"]:checked:hover,
+li[data-task="*"] > input:checked:hover,
+li[data-task="b"] > input:checked:hover,
+li[data-task="l"] > input:checked:hover,
+li[data-task="k"] > input:checked:hover,
+li[data-task="*"] > p > input:checked:hover,
+li[data-task="b"] > p > input:checked:hover,
+li[data-task="l"] > p > input:checked:hover,
+li[data-task="k"] > p > input:checked:hover {
+	background-color: transparent;
+}
+
+/* All SVG alternates: icon flips to --text-normal on hover */
+input[data-task=">"]:checked:hover::after,
+input[data-task="<"]:checked:hover::after,
+input[data-task="-"]:checked:hover::after,
+input[data-task="!"]:checked:hover::after,
+input[data-task="?"]:checked:hover::after,
+input[data-task="i"]:checked:hover::after,
+input[data-task="*"]:checked:hover::after,
+input[data-task="b"]:checked:hover::after,
+input[data-task="l"]:checked:hover::after,
+input[data-task="k"]:checked:hover::after,
+input[data-task="u"]:checked:hover::after,
+input[data-task="d"]:checked:hover::after,
+input[data-task="p"]:checked:hover::after,
+input[data-task="c"]:checked:hover::after,
+li[data-task=">"] > input:checked:hover::after,
+li[data-task="<"] > input:checked:hover::after,
+li[data-task="-"] > input:checked:hover::after,
+li[data-task="!"] > input:checked:hover::after,
+li[data-task="?"] > input:checked:hover::after,
+li[data-task="i"] > input:checked:hover::after,
+li[data-task="*"] > input:checked:hover::after,
+li[data-task="b"] > input:checked:hover::after,
+li[data-task="l"] > input:checked:hover::after,
+li[data-task="k"] > input:checked:hover::after,
+li[data-task="u"] > input:checked:hover::after,
+li[data-task="d"] > input:checked:hover::after,
+li[data-task="p"] > input:checked:hover::after,
+li[data-task="c"] > input:checked:hover::after,
+li[data-task=">"] > p > input:checked:hover::after,
+li[data-task="<"] > p > input:checked:hover::after,
+li[data-task="-"] > p > input:checked:hover::after,
+li[data-task="!"] > p > input:checked:hover::after,
+li[data-task="?"] > p > input:checked:hover::after,
+li[data-task="i"] > p > input:checked:hover::after,
+li[data-task="*"] > p > input:checked:hover::after,
+li[data-task="b"] > p > input:checked:hover::after,
+li[data-task="l"] > p > input:checked:hover::after,
+li[data-task="k"] > p > input:checked:hover::after,
+li[data-task="u"] > p > input:checked:hover::after,
+li[data-task="d"] > p > input:checked:hover::after,
+li[data-task="p"] > p > input:checked:hover::after,
+li[data-task="c"] > p > input:checked:hover::after {
+	background-color: var(--text-normal);
+}
+
+/* --- [/] Incomplete --------------------------------------------- */
+input[data-task="/"]:checked,
+li[data-task="/"] > input:checked,
+li[data-task="/"] > p > input:checked {
+  background-color: var(--interactive-accent);
+  border: 1px solid var(--checkbox-border-color);
+}
+input[data-task="/"]:checked:after,
+li[data-task="/"] > input:checked:after,
+li[data-task="/"] > p > input:checked:after {
+	background: linear-gradient(315deg, transparent 50%, var(--text-normal) 50%);
+	-webkit-mask-image: none;
+	border-color: var(--checkbox-border-color);
+}
+
+/* --- [>] Forwarded ---------------------------------------------- */
+input[data-task=">"]:checked::after,
+li[data-task=">"] > input:checked::after,
+li[data-task=">"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpolyline points='9 18 15 12 9 6'/%3E%3C/svg%3E");
+}
+
+/* --- [<] Scheduling --------------------------------------------- */
+input[data-task="<"]:checked::after,
+li[data-task="<"] > input:checked::after,
+li[data-task="<"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpolyline points='15 18 9 12 15 6'/%3E%3C/svg%3E");
+}
+
+/* --- [-] Canceled ----------------------------------------------- */
+input[data-task="-"]:checked,
+li[data-task="-"] > input:checked,
+li[data-task="-"] > p > input:checked {
+	background-color: var(--text-faint);
+}
+input[data-task="-"]:checked::after,
+li[data-task="-"] > input:checked::after,
+li[data-task="-"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E");
+}
+
+body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+  color: var(--text-faint);
+  text-decoration: line-through solid var(--text-faint) 1px;
+}
+
+/* --- [!] Important ---------------------------------------------- */
+input[data-task="!"]:checked,
+li[data-task="!"] > input:checked,
+li[data-task="!"] > p > input:checked {
+	background-color: oklch(from var(--text-highlight-bg) calc(l * 1.2) calc(c * 2) h);
+}
+input[data-task="!"]:checked::after,
+li[data-task="!"] > input:checked::after,
+li[data-task="!"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cline x1='12' y1='5' x2='12' y2='14'/%3E%3Cline x1='12' y1='19' x2='12' y2='19'/%3E%3C/svg%3E");
+  background-color: var(--text-highlight);
+}
+body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="!"]),
+body:not(.tasks) .markdown-preview-view ul li[data-task="!"].task-list-item.is-checked,
+body:not(.tasks) li[data-task="!"].task-list-item.is-checked {
+	font-weight: 500;
+	color: var(--text-accent);
+}
+
+/* --- [?] Question ----------------------------------------------- */
+input[data-task="?"]:checked,
+li[data-task="?"] > input:checked,
+li[data-task="?"] > p > input:checked {
+	background-color: var(--cb-h6-color, var(--h6-color));
+}
+input[data-task="?"]:checked::after,
+li[data-task="?"] > input:checked::after,
+li[data-task="?"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cline x1='12' y1='17' x2='12.01' y2='17'/%3E%3C/svg%3E");
+  background-color: var(--interactive-accent);
+}
+body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="?"]),
+body:not(.tasks) .markdown-preview-view ul li[data-task="?"].task-list-item.is-checked,
+body:not(.tasks) li[data-task="?"].task-list-item.is-checked {
+	font-style: italic;
+}
+
+/* --- [i] Info --------------------------------------------------- */
+input[data-task="i"]:checked,
+li[data-task="i"] > input:checked,
+li[data-task="i"] > p > input:checked {
+	background-color: var(--cb-h5-color, var(--h5-color));
+}
+input[data-task="i"]:checked::after,
+li[data-task="i"] > input:checked::after,
+li[data-task="i"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20' fill='white' stroke='none'%3E%3Crect x='10.75' y='6' width='2.5' height='2.5'/%3E%3Crect x='11.25' y='10' width='2' height='7.5'/%3E%3Crect x='8.5' y='10' width='3' height='1.5'/%3E%3Crect x='7.5' y='17.5' width='9' height='1.75'/%3E%3C/svg%3E");
+  background-color: var(--interactive-accent);
+}
+
+/* --- [*] Star --------------------------------------------------- */
+input[data-task="*"]:checked,
+li[data-task="*"] > input:checked,
+li[data-task="*"] > p > input:checked {
+	background-color: transparent;
+}
+input[data-task="*"]:checked::after,
+li[data-task="*"] > input:checked::after,
+li[data-task="*"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpolygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'/%3E%3C/svg%3E");
+	background-color: oklch(from var(--text-highlight-bg) calc(l * 1.2) calc(c * 2) h);
+}
+
+/* --- [b] Bug ----------------------------------------------- */
+input[data-task="b"]:checked,
+li[data-task="b"] > input:checked,
+li[data-task="b"] > p > input:checked {
+	background-color: transparent;
+}
+input[data-task="b"]:checked::after,
+li[data-task="b"] > input:checked::after,
+li[data-task="b"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-bug-icon lucide-bug'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+		background-color: rgb(225 0 0 / 80%);
+}
+
+body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="b"]),
+body:not(.tasks) .markdown-preview-view ul li[data-task="b"].task-list-item.is-checked,
+body:not(.tasks) li[data-task="b"].task-list-item.is-checked {
+	font-size: 0.9em;
+	font-family: var(--font-monospace);
+	background-color: var(--code-background);
+	color: var(--code-normal);
+}
+
+/* --- [l] Location ----------------------------------------------- */
+input[data-task="l"]:checked,
+li[data-task="l"] > input:checked,
+li[data-task="l"] > p > input:checked {
+	background-color: transparent;
+}
+input[data-task="l"]:checked::after,
+li[data-task="l"] > input:checked::after,
+li[data-task="l"] > p > input:checked::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 22' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 21l-4.95-7.05a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+	background-color: var(--cb-h5-color, var(--h5-color));
+}
+
+/* --- [k] Key ---------------------------------------------------- */
+input[data-task="k"]:checked,
+li[data-task="k"] > input:checked,
+li[data-task="k"] > p > input:checked {
+	background-color: transparent;
+}
+input[data-task="k"]:checked::after,
+li[data-task="k"] > input:checked::after,
+li[data-task="k"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath fill='none' d='M12.4 2.7a2.5 2.5 0 0 1 3.4 0l5.5 5.5a2.5 2.5 0 0 1 0 3.4l-3.7 3.7a2.5 2.5 0 0 1-3.4 0L8.7 9.8a2.5 2.5 0 0 1 0-3.4z'/%3E%3Cpath stroke='none' fill-rule='evenodd' d='M12.4 2.7a2.5 2.5 0 0 1 3.4 0l5.5 5.5a2.5 2.5 0 0 1 0 3.4l-3.7 3.7a2.5 2.5 0 0 1-3.4 0L8.7 9.8a2.5 2.5 0 0 1 0-3.4z M13.3 7.7 L14.7 6.3 L17.7 9.3 L16.3 10.7 z'/%3E%3Cpath fill='none' d='m9.4 10.6-6.814 6.814A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814'/%3E%3C/svg%3E");
+	background-color: var(--cb-h5-color, var(--h5-color));
+}
+
+/* --- [u] Up ----------------------------------------------------- */
+input[data-task="u"]:checked,
+li[data-task="u"] > input:checked,
+li[data-task="u"] > p > input:checked {
+	background-color: var(--cb-h2-color, var(--h2-color));
+}
+input[data-task="u"]:checked::after,
+li[data-task="u"] > input:checked::after,
+li[data-task="u"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cline x1='12' y1='19' x2='12' y2='5'/%3E%3Cpolyline points='5 12 12 5 19 12'/%3E%3C/svg%3E");
+}
+
+/* --- [d] Down --------------------------------------------------- */
+input[data-task="d"]:checked,
+li[data-task="d"] > input:checked,
+li[data-task="d"] > p > input:checked {
+	background-color: var(--cb-h3-color, var(--h3-color));
+}
+input[data-task="d"]:checked::after,
+li[data-task="d"] > input:checked::after,
+li[data-task="d"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cpolyline points='19 12 12 19 5 12'/%3E%3C/svg%3E");
+}
+
+/* --- [p] Pros --------------------------------------------------- */
+input[data-task="p"]:checked,
+li[data-task="p"] > input:checked,
+li[data-task="p"] > p > input:checked {
+	background-color: var(--cb-h2-color, var(--h2-color));
+}
+input[data-task="p"]:checked::after,
+li[data-task="p"] > input:checked::after,
+li[data-task="p"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3C/svg%3E");
+}
+
+/* --- [c] Cons --------------------------------------------------- */
+input[data-task="c"]:checked,
+li[data-task="c"] > input:checked,
+li[data-task="c"] > p > input:checked {
+	background-color: var(--cb-h3-color, var(--h3-color));
+}
+input[data-task="c"]:checked::after,
+li[data-task="c"] > input:checked::after,
+li[data-task="c"] > p > input:checked::after {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3C/svg%3E");
+}
+
+
+
+/* --- Blockquote ------------------------------------------------- */
+.markdown-rendered blockquote,
+.markdown-source-view blockquote {
+	background: var(--background-secondary-alt);
+	padding: 0.5rem 1rem;
+	margin:  1rem 0;
+	font-style: var(--blockquote-font-style);
+}
+.markdown-rendered blockquote cite {
+	display: block;
+	text-align: right;
+	font-style: normal;
+	margin-block-end: 0;
+}
+.markdown-rendered blockquote cite + p:empty,
+.markdown-rendered blockquote cite + br {
+	display: none;
+}
+.is-live-preview .cm-line:has(cite) {
+	text-align: right;
+}
+.is-live-preview .cm-line:has(cite) cite {
+	font-style: normal;
+}
+/* --- Live Preview — quote lines --------------------------------- */
+.cm-line.HyperMD-quote {
+	font-style: italic;
+}
+/* --- The > marker in Live Preview ------------------------------- */
+.cm-line.HyperMD-quote .cm-formatting-quote {
+	font-style: italic;
+}
+
+/* --- Slider ----------------------------------------------------- */
+input[type="range"]::-webkit-slider-thumb {
+	background: var(--text-normal);
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+	background: var(--text-muted);
+}
+
+/* --- Buttons: inverted, uppercase ------------------------------- */
+.modal button,
+.modal .mod-cta,
+.setting-item button,
+.setting-item .mod-cta,
+.workspace-ribbon button,
+.titlebar button,
+.view-header button,
+.view-actions button,
+.view-action {
+	background: var(--text-normal) !important;
+	color: var(--background-primary) !important;
+	border: 1px solid var(--text-normal) !important;
+	font-family: var(--font-interface);
+	font-size: 0.8em;
+	box-shadow: none;
+	outline: none;
+}
+
+.modal button:hover,
+.modal .mod-cta:hover,
+.setting-item button:hover,
+.setting-item .mod-cta:hover,
+.view-header button:hover,
+.view-actions button:hover,
+.view-action:hover {
+	background: var(--background-primary) !important;
+	color: var(--text-accent) !important;
+}
+
+.markdown-source-view button:not(.clickable-icon),
+.markdown-preview-view button:not(.clickable-icon) {
+	background-color: var(--text-normal);
+	color: var(--background-primary);
+}
+
+/* --- Embedded not found --- */
+.file-embed {
+	border: 1px solid var(--background-modifier-border);
+}
+
+/* --- Tags ------------------------------------------------------- */
+.cm-hashtag.cm-hashtag-end {
+	letter-spacing: 0.05em;
+}
+.cm-hashtag.cm-hashtag-end:hover {
+	color: var(--complement);
+}
+
+/* --- Selected text ---------------------------------------------- */
+.cm-editor ::selection {
+	background: var(--h6-color) !important;
+	color: var(--background-primary) !important;
+}
+
+/* --- Settings --------------------------------------------------- */
+.modal {
+	border-bottom: 1px solid var(--background-modifier-border) !important;
+}
+
+.modal-bg {
+	background: hsla(var(--accent-h), calc(var(--accent-s) * 0.6), calc(var(--accent-l) * 0.4), 80%) !important;
+}
+
+/* --- Settings sidebar nav --------------------------------------- */
+.vertical-tab-nav-item.is-active,
+.vertical-tab-nav-item:hover {
+	background: var(--text-normal) !important;
+	color: var(--background-primary) !important;
+}
+.vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon,
+.vertical-tab-nav-item:hover .vertical-tab-nav-item-icon {
+	color: var(--background-primary);
+}
+
+.setting-items {
+	background: var(--background-primary) !important;
+	border-bottom: 1px solid var(--background-modifier-border) !important;
+}
+
+/* --- Dropdown --------------------------------------------------- */
+.dropdown {
+	background-color: var(--text-normal);
+	color: var(--background-primary);
+	box-shadow: none !important;
+	outline: none !important;
+	background-image: none;
+	background-blend-mode: normal;
+}
+
+/* Arrow colour fix */
+.dropdown {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.5%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E");
+	background-blend-mode: difference;
+}
+
+.dropdown:hover {
+	background-color: var(--background-primary) !important;
+	color: var(--text-normal) !important;
+	border: 1px solid var(--text-normal) !important;
+}
+
+/* --- White padding fix ------------------------------------------ */
+.setting-item,
+.setting-group-search,
+.settings-search-input.is-active, 
+.settings-search-input:hover {
+	background: var(--background-primary) !important;
+}
+
+/* --- Inputs ----------------------------------------------------- */
+.setting-item input[type="text"] {
+	background-color: var(--background-primary);
+	outline: none;
+}
+.setting-item input[type="text"]:hover {
+	background-color: var(--background-secondary-alt);
+	border-color: var(--text-normal);
+	outline: none;
+}
+.setting-item input[type="text"]:focus {
+	background-color: var(--background-modifier-hover);
+	border-color: var(--text-normal);
+	box-shadow: none;
+}
+
+/* --- Accent colour picker border fix ---------------------------- */
+input[type="color"]::-webkit-color-swatch {
+	--swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.5), 0 0 0 1px var(--background-modifier-border-hover);
+}
+
+/* --- Toggles ---------------------------------------------------- */
+.checkbox-container.is-enabled {
+	background-color: var(--code-background);
+	--toggle-thumb-color: var(--text-normal);
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+.checkbox-container.is-enabled:hover {
+	--toggle-thumb-color: var(--text-accent);
+	box-shadow: inset 0 0 0 1px var(--text-faint);
+}
+.checkbox-container {
+	background-color: var(--background-modifier-hover);
+	--toggle-thumb-color: var(--text-faint);
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+.checkbox-container:hover {
+	--toggle-thumb-color: var(--text-normal);
+	box-shadow: inset 0 0 0 1px var(--text-faint);
+}
+
+/* --- Cursor line highlight -------------------------------------- */
+.cm-active.cm-line {
+	background: var(--cursor-line-color) !important;
+}
+.cm-active.cm-line .cm-inline-code {
+	mix-blend-mode: normal;
+}
+
+/* --- Code blocks ------------------------------------------------ */
+.HyperMD-codeblock-begin {
+	border-top: 1px solid var(--code-border) !important;
+}
+.HyperMD-codeblock-end {
+	border-bottom: 1px solid var(--code-border) !important;
+}
+
+.theme-light .cm-line.HyperMD-codeblock {
+		--code-colour-mix: 100%;
+}
+.theme-dark .cm-line.HyperMD-codeblock {
+		--code-colour-mix: 80%;
+}
+
+.cm-line.HyperMD-codeblock {
+	border-left: 1px solid var(--code-border) !important;
+	border-right: 1px solid var(--code-border) !important;
+
+	--code-function:  color-mix(in srgb, var(--color-yellow)   var(--code-colour-mix), var(--code-background));
+	--code-important: color-mix(in srgb, var(--color-orange)   var(--code-colour-mix), var(--code-background));
+	--code-keyword:   color-mix(in srgb, var(--color-pink)     var(--code-colour-mix), var(--code-background));
+	--code-operator:  color-mix(in srgb, var(--color-red)      var(--code-colour-mix), var(--code-background));
+	--code-property:  color-mix(in srgb, var(--color-cyan)     var(--code-colour-mix), var(--code-background));
+	--code-punctuation: color-mix(in srgb, var(--color-base-70) var(--code-colour-mix), var(--code-background));
+	--code-string:    color-mix(in srgb, var(--color-green)    var(--code-colour-mix), var(--code-background));
+	--code-tag:       color-mix(in srgb, var(--color-red)      var(--code-colour-mix), var(--code-background));
+	--code-value:     color-mix(in srgb, var(--color-purple)   var(--code-colour-mix), var(--code-background));
+}
+
+/* --- Cursor line and code block mix --- */
+.cm-active.cm-line.HyperMD-codeblock,
+.cm-active.cm-line.HyperMD-codeblock-begin,
+.cm-active.cm-line.HyperMD-codeblock-end {
+  background: color-mix(in srgb, var(--cursor-line-color) 30%, var(--code-background)) !important;
+}
+
+/* --- Disable cursor line highlight (Style Settings) ------------- */
+body.no-cursor-line .cm-active.cm-line {
+	background: transparent !important;
+}
+body.no-cursor-line .cm-active.cm-line.HyperMD-codeblock,
+body.no-cursor-line .cm-active.cm-line.HyperMD-codeblock-begin,
+body.no-cursor-line .cm-active.cm-line.HyperMD-codeblock-end {
+	background: var(--code-background) !important;
+}
+
+/* --- Inline code ------------------------------------------------ */
+.cm-inline-code {
+	border: 1px solid var(--code-border) !important;
+	padding: 1px 3px;
+	font-size: 0.9em;
+	mix-blend-mode: multiply;
+}
+
+/* --- Code block markdown fix ------------------------------------ */
+.HyperMD-codeblock .cm-header-1,
+.HyperMD-codeblock .cm-header-2,
+.HyperMD-codeblock .cm-header-3,
+pre .cm-header-1,
+pre .cm-header-2,
+pre .cm-header-3 {
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+/* --- Raw HTML source lines in editor ---------------------------- */
+.cm-line:has(.cm-hmd-html-begin),
+.cm-line:has(.cm-hmd-html-end),
+.cm-line:has(.cm-tag),
+.cm-line:has(.cm-attribute) {
+	font-size: 0.8em;
+}
+
+/* --- Highlighted text ------------------------------------------- */
+mark, .cm-highlight {
+	background: var(--text-highlight-bg) !important;
+	color: var(--text-highlight) !important;
+}
+
+/* --- Links ------------------------------------------------------ */
+/* Style Settings: internal link decoration style */
+body.link-wavy      { --internal-link-decoration-style: wavy; }
+body.link-underline { --internal-link-decoration-style: solid; }
+body.link-none      { --internal-link-decoration-style: none; --link-decoration: none; }
+
+/* --- Editing View + Reading Mode: resolved links --- */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+.markdown-rendered .internal-link {
+	text-decoration: underline var(--internal-link-decoration-style, wavy);
+	text-underline-offset: 4px;
+	text-decoration-color: var(--text-faint);
+}
+
+/* --- Editing View + Reading Mode: unresolved links --- */
+.markdown-source-view.mod-cm6 .is-unresolved,
+.markdown-rendered .internal-link.is-unresolved {
+	color: var(--link-unresolved-color);
+	text-decoration: underline var(--internal-link-decoration-style, wavy);
+	text-underline-offset: 4px;
+	text-decoration-color: red;
+}
+/* --- Hover state — resolved links --- */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover,
+.markdown-rendered .internal-link:hover {
+	background: var(--text-muted);
+	color: var(--background-primary);
+	text-decoration: underline var(--internal-link-decoration-style, wavy);
+	text-underline-offset: 4px;
+	text-decoration-color: var(--text-muted) !important;
+}
+/* --- Hover state — unresolved links --- */
+.markdown-source-view.mod-cm6 .is-unresolved:hover,
+.markdown-rendered .internal-link.is-unresolved:hover {
+	background: var(--background-modifier-hover);
+	color: var(--background-primary);
+	text-decoration: underline var(--internal-link-decoration-style, wavy);
+	text-underline-offset: 4px;
+	text-decoration-color: red !important;
+}
+
+/* --- Tables ----------------------------------------------------- */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 0.85em;
+}
+th, td {
+	border: 1px solid var(--text-normal);
+	padding: 4px 8px;
+	text-align: left;
+}
+th {
+	background-color: var(--cursor-line-color) !important;
+	font-weight: 700;
+}
+
+tr:hover td {
+	background: var(--background-modifier-hover) !important;
+}
+
+/* --- Table Presets (Style Settings) ----------------------------- */
+body.table-alternate-rows tr:nth-child(even) td {
+	background: oklch(from var(--cursor-line-color) l c h / 0.2);
+}
+
+/* --- Readable Line Width (Style Settings) ----------------------- */
+.is-readable-line-width .markdown-preview-view .markdown-preview-sizer,
+.is-readable-line-width .cm-sizer {
+	--file-line-width: var(--readable-line-width);
+}
+
+/* =============================================
+   Base - override readable line length
+   ============================================= */
+
+body {
+	--bases-embed-width-override: 1;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content > .bases-embed,
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content > .cm-lang-base  {
+  --bases-embed-width: calc(var(--file-line-width) * var(--bases-embed-width-override));
+  --bases-embed-transform: translateX(calc(
+    (var(--file-line-width) - var(--bases-embed-width)) / 2 
+    / var(--bases-embed-width) * 100%
+  ));
+}
+
+/* =============================================
+   EMPTY STATE (when no file open)
+   =============================================  */
+
+.empty-state-action,
+.is-mobile .empty-state-action {
+	background: var(--text-normal);
+	color: var(--background-primary);
+	border: 1px solid var(--background-primary);
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 0.9em;
+}
+.empty-state-action:hover,
+.is-mobile .empty-state-action:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-accent);
+	border-color: var(--text-accent);
+}
+.canvas-empty-embed-action-list .empty-state-action:not(.mod-warning) {
+	background: var(--text-normal);
+	color: var(--background-primary);
+}
+
+/* =============================================
+		Vim mode cursor colour
+    =============================================  */
+
+.cm-focused .cm-fat-cursor {
+   background-color: oklch(from var(--text-highlight-bg) calc(l * 1.2) c h) !important;
+   color: var(--text-highlight) !important;
+}
+
+/* =============================================
+   MOBILE
+   ============================================= */
+
+/* --- Navigation bar --------------------------------------------- */
+.is-mobile .mobile-navbar,
+.is-mobile .mobile-navbar.mod-raised,
+.is-mobile .mobile-navbar-actions,
+.is-mobile .mobile-navbar-action {
+	background-color: var(--text-normal) !important;
+	background-image: none !important;
+	box-shadow: none !important;
+}
+.is-mobile .mobile-navbar-action .svg-icon,
+.is-mobile .mobile-navbar-actions .clickable-icon {
+	color: var(--background-primary) !important;
+	stroke: var(--background-primary) !important;
+	fill: none !important;
+}
+
+.is-mobile .mobile-navbar-action:hover .svg-icon,
+.is-mobile .mobile-navbar-action:active .svg-icon,
+.is-mobile .mobile-navbar-actions .clickable-icon:hover svg {
+	color: var(--background-primary) !important;
+	stroke: var(--background-primary) !important;
+}
+
+/* --- Toolbar ---------------------------------------------------- */
+.mobile-toolbar-options-list {
+	background-color: var(--text-normal) !important;
+	border: 1px solid var(--text-normal) !important;
+	background-image: none !important;
+	box-shadow: none !important;
+}
+
+/* --- The floating buttons (keyboard) ---------------------------- */
+.mobile-toolbar-floating-options {
+	background-color: var(--text-normal) !important;
+	border: 1px solid var(--text-normal) !important;
+	background-image: none !important;
+	box-shadow: none !important;
+}
+
+.mobile-toolbar-option .svg-icon,
+.mobile-toolbar-option svg {
+	color: var(--background-primary) !important;
+	stroke: var(--background-primary) !important;
+	fill: none !important;
+}
+
+/* --- Settings gear icon in left sidebar drawer ------------------ */
+.is-mobile.is-floating-nav .mod-raised {
+	background-color: var(--text-normal) !important;
+	color: var(--background-primary) !important;
+	background-image: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+/* --- Properties ------------------------------------------------- */
+.is-mobile .metadata-content {
+	background-color: transparent;
+}
+
+/* iOS overrides the transparent input background with native white —
+   explicitly set bg + text so the prompt stays readable in all accents */
+.is-phone input.prompt-input {
+	background-color: var(--background-primary);
+	color: var(--text-normal);
+}
+
+/* --- Delete warning --------------------------------------------- */
+.menu-item.is-warning {
+	background-color: var(--text-normal) !important;
+	color: var(--text-error) !important;
+	font-weight: bold !important;
+}
+.menu-item.is-warning .menu-item-icon {
+	color: var(--background-primary) !important;
+}
+
+.workspace-drawer-tab-select .workspace-tab-header-inner,
+.workspace-drawer-tab-options-list {
+	background-color: var(--background-primary) !important;
+	border: 1px solid var(--background-modifier-border);
+}
+
+/* =============================================
+   Canvas
+   ============================================= */
+
+/* --- Canvas card editor background ----------------------------- */
+/* CodeMirror applies an inline style that captures the default background at
+   render time. !important overrides it so the active folder accent applies. */
+.canvas-node .markdown-source-view.mod-cm6 .cm-editor {
+	background-color: var(--background-primary) !important;
+}
+
+/* --- Node borders (default uncolored nodes) --------------------- */
+.canvas-node:not(.is-themed) .canvas-node-container {
+	border-color: var(--background-modifier-border) !important;
+}
+.canvas-node.is-selected:not(.is-themed) .canvas-node-container,
+.canvas-node.is-focused:not(.is-themed) .canvas-node-container {
+	border-color: var(--text-accent) !important;
+}
+
+/* --- Edges & arrows (default uncolored edges) ------------------- */
+.canvas-edges path.canvas-display-path {
+	stroke: var(--text-muted) !important;
+}
+.canvas-edges polygon.canvas-path-end {
+	fill: var(--text-muted) !important;
+	stroke: var(--text-muted) !important;
+}
+
+/* --- Arrow labels ----------------------------------------------- */
+.canvas-path-label {
+	color: var(--text-muted);
+}
+
+/* --- Focused/hovered edge --------------------------------------- */
+.canvas-edges g.is-focused path.canvas-display-path,
+.canvas:not(.is-connecting) .canvas-edges g:hover  {
+	stroke: var(--text-accent) !important;
+}
+
+/* --- Alignment guideline ---------------------------------------- */
+.canvas-snaps line {
+  stroke-width: 1px;
+  stroke: var(--text-muted);
+}
+
+/* --- Controls - top right --------------------------------------- */
+.canvas-control-group {
+	background-color: var(--text-normal);
+}
+.canvas-control-item:hover {
+	background-color: var(--text-normal);
+	color: var(--background-primary);
+}
+
+/* --- Bottom floating buttons (Add card, note, media) ------------ */
+.canvas-card-menu .canvas-card-menu-button:hover {
+	color: var(--text-normal) !important;
+	background-color: var(--background-modifier-hover);
+}
+
+/* =============================================
+   Callouts
+   ============================================= */
+
+.callout {
+	background-color: rgba(var(--callout-color), 0.25) !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+	border: 1px solid rgba(var(--callout-color), 0.5);
+}
+
+.callout-title {
+  color: var(--text-muted) !important;
+ 	padding: 5px;
+ 	background-color: var(--callout-color) !important;
+	border-bottom: 1px solid rgba(var(--callout-color), 0.3);
+}
+
+.callout-icon {
+  padding: 0px 5px;
+}
+
+.callout-content {
+  padding: 0px 20px;
+}
+
+.search-result-file-matched-text {
+    color: var(--text-highlight);
+    background-color: var(--text-highlight-bg);
+}
+
+/* =============================================
+   Mermaid
+   ============================================= */
+
+.theme-dark .mermaid > svg {
+  filter: invert(0%) hue-rotate(0deg) saturate(1);
+}
+
+body {
+	--code-background-mm: oklch(from var(--code-background) l c h / 2);
+}
+
+.mermaid svg a {
+  text-decoration: none !important;
+}
+
+.mermaid svg [id$="pointEnd"] path,
+.mermaid svg [id$="arrowhead"] path {
+	fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.mermaid svg .node * {
+  fill:   var(--code-background) !important;
+  stroke: var(--code-border) !important;
+}
+
+/* ── FLOWCHART ───────────────────────────────────────────── */
+.mermaid svg .node foreignObject div span {
+  color: var(--code-normal) !important;
+}
+.mermaid svg .flowchart-link {
+  stroke: var(--text-muted) !important;
+}
+.mermaid svg .edgeLabel foreignObject div span {
+  color: var(--text-highlight) !important;
+}
+.mermaid svg .edgeLabel * {
+  background-color: var(--text-highlight-bg) !important;
+}
+
+/* ── SEQUENCE ────────────────────────────────────────────── */
+.mermaid svg .actor {
+  fill: var(--code-background) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg text.actor > tspan {
+  fill: var(--code-normal) !important;
+}
+.mermaid svg .actor-line {
+  stroke: var(--text-highlight-bg) !important;
+}
+.mermaid svg .messageLine0,
+.mermaid svg .messageLine1 {
+  stroke: var(--text-muted) !important;
+}
+.mermaid svg .messageText {
+  fill: var(--text-normal) !important;
+}
+.mermaid svg .labelBox {
+  fill: var(--code-background-mm) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg .labelText {
+  fill: var(--code-normal) !important;
+}
+.mermaid svg .loopText,
+.mermaid svg .loopLine {
+  fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
+.mermaid svg .note {
+  fill: var(--code-background-mm) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg .noteText {
+  fill: var(--text-normal) !important;
+}
+
+/* ── CLASS DIAGRAM ───────────────────────────────────────── */
+.mermaid svg .classBox rect,
+.mermaid svg g.classGroup rect {
+  fill: var(--code-background-mm) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg .classBox text,
+.mermaid svg g.classGroup text {
+  fill: var(--code-normal) !important;
+}
+.mermaid svg .relation {
+  stroke: var(--text-muted) !important;
+  fill: none !important;
+}
+.mermaid svg[aria-roledescription="class"] marker path {
+  stroke: var(--text-muted) !important;
+}
+
+/* ── STATE DIAGRAM ───────────────────────────────────────── */
+.mermaid svg .transition {
+  stroke: var(--text-muted) !important;
+}
+.mermaid svg .node circle.state-start {
+	fill: var(--text-muted) !important;
+}
+
+/* end state — outer ring */
+.mermaid svg [id^="state-root_end"] > g > path:nth-child(2) {
+  stroke: var(--text-muted) !important;
+}
+
+/* end state — inner dot */
+.mermaid svg [id^="state-root_end"] > g > g > path:first-child {
+  fill: var(--text-highlight-bg) !important;
+}
+.mermaid svg [id^="state-root_end"] > g > g > path:nth-child(2) {
+  stroke: var(--text-highlight-bg) !important;
+  fill: var(--text-highlight-bg) !important;
+}
+
+/* start state — solid circle */
+.mermaid svg [id^="state-root_start"] > g > path:first-child {
+  fill: var(--text-muted) !important;
+}
+.mermaid svg [id^="state-root_start"] > g > path:nth-child(2) {
+  stroke: var(--text-muted) !important;
+}
+
+
+.mermaid svg[aria-roledescription="stateDiagram"] marker path {
+  fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
+
+/* ── ER DIAGRAM ──────────────────────────────────────────── */
+.mermaid svg .er.entityBox {
+  fill: var(--code-background-mm) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg .er.entityLabel {
+  fill: var(--code-normal) !important;
+}
+.mermaid svg .er.relationshipLine {
+  stroke: var(--text-muted) !important;
+}
+.mermaid svg .er.attributeBoxOdd {
+	fill: oklch(from var(--code-background-mm) calc(l * 1.5) c h) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg .er.attributeBoxEven {
+	fill: oklch(from var(--code-background-mm) calc(l * 1.3) c h) !important;
+  stroke: var(--code-border) !important;
+}
+.mermaid svg .er.relationshipLabelBox {
+	fill: var(--code-background-mm) !important;
+}
+
+/* one or more */
+.mermaid svg defs [id$="-ONE_OR_MORE_START"] path,
+.mermaid svg defs [id$="-ONE_OR_MORE_END"] path {
+  stroke: var(--text-muted) !important;
+}
+/* zero or more */
+.mermaid svg defs [id$="-ZERO_OR_MORE_START"] circle,
+.mermaid svg defs [id$="-ZERO_OR_MORE_END"] circle {
+  stroke: var(--text-muted) !important;
+  fill: var(--code-background-mm) !important;
+}
+/* only one */
+.mermaid svg defs [id$="-ONLY_ONE_START"] path,
+.mermaid svg defs [id$="-ONLY_ONE_END"] path {
+  stroke: var(--text-muted) !important;
+}
+/* zero or one */
+.mermaid svg defs [id$="-ZERO_OR_ONE_START"] path,
+.mermaid svg defs [id$="-ZERO_OR_ONE_END"] path {
+  stroke: var(--text-muted) !important;
+  fill: var(--code-background-mm) !important;
+}
+.mermaid svg[aria-roledescription="er"] marker path {
+  stroke: var(--text-muted) !important;
+}
+
+/* ── GANTT ───────────────────────────────────────────────── */
+.mermaid svg .sectionTitle,
+.mermaid svg .grid .tick text {
+	fill: var(--text-muted) !important;
+}
+
+/* ── PIE ─────────────────────────────────────────────────── */
+.mermaid svg .pieTitleText {
+  fill: var(--text-muted) !important;
+}
+.mermaid svg .legend text {
+  fill: var(--text-muted) !important;
+}
+
+/* ── GITGRAPH ────────────────────────────────────────────── */
+.mermaid svg .commit-label {
+  fill: var(--code-normal) !important;
+}
+.mermaid svg .commit-label-bkg {
+  fill: var(--code-background-mm) !important;
+}
+.mermaid svg .branch-label foreignObject div {
+  color: var(--text-muted) !important;
+}
+
+/* ── MINDMAP ─────────────────────────────────────────────── */
+.mermaid svg .mindmap-node rect,
+.mermaid svg .mindmap-node circle,
+.mermaid svg .mindmap-node polygon {
+  fill: var(--text-highlight-bg) !important;
+  stroke: var(--text-highlight) !important;
+}
+.mermaid svg .mindmap-node foreignObject div {
+  color: var(--text-muted) !important;
+}
+
+/* ── TIMELINE ─────────────────────────────────────────────── */
+.mermaid svg > text {
+  fill: var(--text-normal) !important;
+}
+
+.mermaid svg .lineWrapper line {
+  fill: var(--code-background-mm) !important;
+  stroke: var(--text-muted) !important;
+}
+
+/* ── Quadrant ────	─────────────────────────────────────────── */
+/* all text (axis labels, quadrant labels, data point labels) */
+.mermaid svg[aria-roledescription="quadrantChart"] text {
+  fill: var(--text-normal) !important;
+}
+/* quadrant background boxes */
+.mermaid svg[aria-roledescription="quadrantChart"] rect {
+  fill: var(--code-background) !important;
+  stroke: var(--code-border) !important;
+}
+/* axis lines */
+.mermaid svg[aria-roledescription="quadrantChart"] line {
+  stroke: var(--code-border) !important;
+}
+/* data points (circles) */
+.mermaid svg[aria-roledescription="quadrantChart"] circle {
+  fill: var(--text-highlight-bg) !important;
+  stroke: var(--text-highlight-bg) !important;
+}
+
+/* =============================================
+   TRANSLUCENT WINDOW SUPPORT
+   ============================================= */
+
+body.is-translucent {
+	--nn-theme-nav-bg: var(--workspace-background-translucent);
+	--nn-theme-list-bg: var(--workspace-background-translucent);
+	--nn-theme-mobile-bg: var(--workspace-background-translucent);
+}
+
+/* --- Notebook Navigator plugin ---------------------------------- */
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .notebook-navigator,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-pane,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-pane-header{
+	background-color: var(--workspace-background-translucent-nn) !important;
+}
+
+/* --- Inner containers must be fully transparent so they don't... */
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-pane-chrome,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-pane-panel,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-pane-scroller,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane-chrome,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane-panel,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane-scroller,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-shortcut-pinned,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-calendar-overlay,
+body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-calendar-header * {
+	background-color: transparent !important;
+}
+
+/* --- Enable Uppercase (Style Settings toggle) ------------------- */
+body.enable-uppercase .inline-title {
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+body.enable-uppercase .modal button,
+body.enable-uppercase .modal .mod-cta,
+body.enable-uppercase .setting-item button,
+body.enable-uppercase .setting-item .mod-cta,
+body.enable-uppercase .workspace-ribbon button,
+body.enable-uppercase .titlebar button,
+body.enable-uppercase .view-header button,
+body.enable-uppercase .view-actions button,
+body.enable-uppercase .view-action {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+body.enable-uppercase th {
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}

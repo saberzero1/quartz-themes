@@ -81,10 +81,12 @@
     "padding-top": "var(--list-spacing)"
   },
   "code": {
-    "background-color": "var(--citrus-inline-code-bg)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-monospace-theme)",
-    "font-size": "var(--code-size)"
+    "background-color": "var(--code-background)",
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": {
     "background-color": "var(--citrus-code-bg)",
@@ -578,5 +580,14 @@
   "svg.lucide-info.svg-icon": {
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
+  },
+  ".tag": {
+    "background-color": "var(--citrus-tag-bg)",
+    "color": "var(--citrus-tag-text)",
+    "cursor": "var(--cursor-link)",
+    "font-size": "var(--tag-size)",
+    "font-weight": "var(--tag-weight)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
   }
 }

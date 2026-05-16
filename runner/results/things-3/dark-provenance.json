@@ -853,6 +853,7 @@
     "--shiki-active-tab-border-color": "body",
     "--color-red-trans": "body",
     "--element-shadow": "body",
+    "--tab-shadow": "body",
     "--color-grey": "body",
     "--accent-color": ".theme-dark",
     "--div-color": ".theme-dark",
@@ -865,7 +866,14 @@
     "--liquid-shadow-light": "body",
     "--liquid-shadow-dark": "body",
     "--glass-edge": ".theme-dark",
-    "--dnc-stroke": "body"
+    "--dnc-stroke": "body",
+    "--nn-theme-list-bg": "body",
+    "--nn-selected-file-bg-color": "body",
+    "--nn-theme-file-selected-bg": "body",
+    "--nn-file-item-border-radius": "body",
+    "--nn-theme-file-border-radius": "body",
+    "--nn-computed-file-selected-inactive-bg": "body",
+    "--nn-theme-navitem-icon-color": "body"
   },
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
@@ -1266,7 +1274,14 @@
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
     "--shiki-active-tab-border-color": "body",
-    "--glass-edge": ".theme-dark"
+    "--glass-edge": ".theme-dark",
+    "--nn-theme-list-bg": "body",
+    "--nn-selected-file-bg-color": "body",
+    "--nn-theme-file-selected-bg": "body",
+    "--nn-file-item-border-radius": "body",
+    "--nn-theme-file-border-radius": "body",
+    "--nn-computed-file-selected-inactive-bg": "body",
+    "--nn-theme-navitem-icon-color": "body"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
   "div.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1742,7 +1757,14 @@
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
     "--shiki-active-tab-border-color": "body",
-    "--glass-edge": ".theme-dark"
+    "--glass-edge": ".theme-dark",
+    "--nn-theme-list-bg": "body",
+    "--nn-selected-file-bg-color": "body",
+    "--nn-theme-file-selected-bg": "body",
+    "--nn-file-item-border-radius": "body",
+    "--nn-theme-file-border-radius": "body",
+    "--nn-computed-file-selected-inactive-bg": "body",
+    "--nn-theme-navitem-icon-color": "body"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
   "svg.lucide-x.svg-icon": { "--focus-ring-color": ":root *" },

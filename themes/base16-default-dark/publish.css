@@ -2353,9 +2353,9 @@ body.theme-dark {
   --bold-color: #ab4642 !important;
   --italic-color: #a1b56c !important;
   --interactive-success: #a1b56c !important;
+  --checkbox-border-width: 1.5px !important;
   --bases-charts-accent: var(--interactive-accent) !important;
   --bullet-new-color: rgb(72, 72, 72) !important;
-  --checkbox-border-width: 1.5px !important;
   --font-weight-normal: 450 !important;
   --inline-code-color: #dc9656 !important;
   --link-internal-color: #7cafc2 !important;

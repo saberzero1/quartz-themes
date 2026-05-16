@@ -1,0 +1,126 @@
+mode: replace
+sections:
+  - name: CyberGlow
+    id: cyberglow-settings
+    collapsed: false
+    settings:
+      - id: cg-colors-header
+        title: Colors
+        description: Theme Accent, Active Color, Background Intensity
+        type: heading
+        level: 1
+        collapsed: true
+      - id: cg-editor-header
+        title: Editor
+        description: Bold, Italic, Headings styling
+        type: heading
+        level: 1
+        collapsed: true
+      - id: cg-colored-bold
+        title: Colored Bold
+        description: Bold text uses the primary theme color
+        type: class-toggle
+        default: false
+      - id: cg-colored-italic
+        title: Colored Italic
+        description: Italic text uses the active theme color
+        type: class-toggle
+        default: false
+      - id: cg-colored-headings
+        title: Neon Gradient Headings
+        description: Headings use neon gradient colors
+        type: class-toggle
+        default: false
+      - id: cg-ui-header
+        title: Workspace
+        description: Layout, Cards, Tabs, Status Bar, Scrollbars, etc.
+        type: heading
+        level: 1
+        collapsed: true
+      - id: cg-autohide-titlebar
+        title: Auto-hide Titlebar
+        description: Title bar hides until hover
+        type: class-toggle
+        default: false
+      - id: cg-slim-scrollbars
+        title: Slim Scrollbars
+        description: Minimalist scrollbars with accent color
+        type: class-toggle
+        default: false
+      - id: cg-statusbar-header
+        title: Status Bar
+        description: Select status bar style
+        type: heading
+        level: 2
+        collapsed: true
+      - id: cg-status-bar
+        title: Show Status Bar
+        description: Show the bottom status bar (hidden by default)
+        type: class-toggle
+        default: false
+      - id: cg-tabs-header
+        title: Tabs
+        description: Tab bar appearance and behavior
+        type: heading
+        level: 2
+        collapsed: true
+      - id: cg-tab-gap
+        title: Tab Gap
+        description: Spacing between workspace tabs
+        type: variable-number
+        default: 10
+        format: px
+      - id: cg-custom-tab-height
+        title: Custom tab height
+        description: Adjust the height of workspace tabs
+        type: variable-number
+        default: 40
+        format: px
+      - id: cg-workspace-layout-header
+        title: Workspace Layout
+        description: Workspace layout and arrangement
+        type: heading
+        level: 2
+        collapsed: true
+      - id: cg-hide-borders
+        title: Hide Borders
+        description: Remove UI borders for a cleaner look
+        type: class-toggle
+        default: true
+      - id: cg-card-layout-settings-header
+        title: Card Layout Settings
+        description: Card radius, padding, and component toggles
+        type: heading
+        level: 3
+        collapsed: true
+      - id: cg-card-filebrowser
+        title: Card Layout — File Browser
+        description: Card style for the file explorer
+        type: class-toggle
+        default: true
+      - id: cg-card-actions
+        title: Card Layout — Actions Panel
+        description: Card style for the side actions panel
+        type: class-toggle
+        default: true
+      - id: cg-card-shadows
+        title: Card Shadows
+        description: Add shadows to layout cards
+        type: class-toggle
+        default: false
+      - id: cg-support-header
+        title: Support CyberGlow
+        description: If you like the theme, here are some ways to support development
+        type: heading
+        level: 1
+        collapsed: true
+      - id: cg-support-star
+        title: ⭐ Star the Theme on GitHub
+        description: https://github.com/DevM0nk3y/CyberGlow
+        type: info-text
+        markdown: true
+      - id: cg-support-issue
+        title: 🐛 Submit an Issue on GitHub
+        description: https://github.com/DevM0nk3y/CyberGlow/issues
+        type: info-text
+        markdown: true

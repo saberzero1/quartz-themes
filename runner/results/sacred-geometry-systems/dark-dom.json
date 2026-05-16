@@ -2885,7 +2885,7 @@
         },
         "styles": {
           "color": "rgb(245, 234, 214)",
-          "backgroundColor": "rgb(11, 21, 29)",
+          "backgroundColor": "rgb(42, 42, 42)",
           "borderColor": "color(srgb 0.847059 0.658824 0.309804 / 0.42)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"

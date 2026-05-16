@@ -1,0 +1,86 @@
+mode: replace
+sections:
+  - name: COLOURS
+    id: colours-theme
+    collapsed: false
+    settings:
+      - id: colours-colours
+        title: Colours
+        type: heading
+        level: 1
+        collapsed: false
+      - id: accent-override
+        title: Override System Accent
+        description: When off (default), Obsidian's appearance-settings accent is used. Turn on to use the per-mode colours below.
+        type: class-toggle
+        level: 2
+        default: false
+      - id: accent-colour
+        title: Accent Colour
+        description: Only applied when 'Override System Accent' is enabled above.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0d0d73'
+        default-dark: '#0f0f3d'
+        alt-format: []
+      - id: checkbox-coloured
+        title: Coloured Alternate Checkboxes
+        description: Apply the Go Crazy hue palette to alternate checkbox backgrounds. Turn off to fall back to the Heading Style setting.
+        type: class-toggle
+        default: true
+      - id: colours-typography
+        title: Typography
+        type: heading
+        level: 2
+        collapsed: false
+      - id: enable-uppercase
+        title: Enable Uppercase
+        description: Applies uppercase to the note title, table headers, and UI buttons
+        type: class-toggle
+        default: false
+      - id: font-brightness
+        title: Font Brightness
+        description: Scales text opacity. Lower values give a softer, more muted look.
+        type: variable-number-slider
+        default: 1
+        min: 0.5
+        max: 1
+        step: 0.05
+      - id: colours-layout
+        title: Layout
+        type: heading
+        level: 2
+        collapsed: false
+      - id: auto-hide-scrollbar
+        title: Auto-hide Scrollbar
+        description: Use the OS overlay scrollbar — appears while scrolling or hovering, hides otherwise. Replaces the theme's custom thin scrollbar.
+        type: class-toggle
+        default: false
+      - id: no-cursor-line
+        title: Disable Cursor Line Highlight
+        description: Remove the background tint on the active editor line.
+        type: class-toggle
+        default: false
+      - id: canvas-hide-title
+        title: Hide Inline Title in Canvas
+        description: Show the inline note title in the editor but hide it inside Canvas cards.
+        type: class-toggle
+        default: false
+      - id: readable-line-width
+        title: Readable Line Width
+        description: Custom line width when Readable line length is on in Obsidian settings.
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 1400
+        step: 10
+        format: px
+      - id: bases-embed-width-override
+        title: Base Embed Width Multiplier
+        description: Controls how wide embedded Bases are relative to the readable line width. 1 = same width, 5 = 5× wider.
+        type: variable-number-slider
+        default: 1
+        min: 1
+        max: 5
+        step: 0.1

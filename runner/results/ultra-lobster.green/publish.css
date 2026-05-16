@@ -388,10 +388,13 @@ body.theme-light {
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height) !important;
-  --inline-title-size: clamp(2.5rem, 8vw - 2rem, 3rem) !important;
+  --inline-title-size: var(
+    --ulu-inline-title-size,
+    clamp(2.5rem, 8vw - 2rem, 3rem)
+  ) !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
-  --inline-title-weight: 500 !important;
+  --inline-title-weight: var(--ulu-inline-title-weight, 500) !important;
   --input-border-width: var(--border-width) !important;
   --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint) !important;
@@ -1122,7 +1125,10 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --shadow-edges: 0 0 transparent !important;
-  --inline-title-color: var(--color-base-100) !important;
+  --inline-title-color: var(
+    --ulu-inline-title-color,
+    var(--color-base-100)
+  ) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
     --ulu-header2-type,
@@ -1167,6 +1173,9 @@ body.theme-light {
   --color-accent-1-rgb: var(--color-purple-rgb) !important;
   --ulu-card-bg: var(--color-base-25) !important;
   --ulu-card-radius: var(--ulu-radius) !important;
+  --ulu-fold-color: var(--text-muted) !important;
+  --ulu-fold-color-active: var(--text-normal) !important;
+  --ulu-fold-color-hover: var(--color-accent) !important;
   --ulu-glass-inset-br-dark: inset -0.5px -0.5px 0 0
     rgb(from var(--mono-rgb-100) r g b / 0.1) !important;
   --ulu-glass-inset-tl-dark: inset 0.5px 0.5px 0 0
@@ -1240,6 +1249,11 @@ body.theme-light {
   --ulu-ease-out: cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   --ulu-ease-soft: cubic-bezier(0.25, 0.46, 0.46, 0.95) !important;
   --ulu-ease-std: ease !important;
+  --ulu-fold-crescent: 4px !important;
+  --ulu-fold-duration: 1.4s !important;
+  --ulu-fold-ease: cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+  --ulu-fold-fill: 10px !important;
+  --ulu-fold-size: 10px !important;
   --ulu-font-general: "Instrument", sans-serif !important;
   --ulu-font-title: "Getai" !important;
   --ulu-glass-inset-br-light: inset -1px -1px 0 0 rgb(0 0 0 / 0.05) !important;
@@ -1505,10 +1519,13 @@ body.theme-dark {
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height) !important;
-  --inline-title-size: clamp(2.5rem, 8vw - 2rem, 3rem) !important;
+  --inline-title-size: var(
+    --ulu-inline-title-size,
+    clamp(2.5rem, 8vw - 2rem, 3rem)
+  ) !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
-  --inline-title-weight: 500 !important;
+  --inline-title-weight: var(--ulu-inline-title-weight, 500) !important;
   --input-border-width: var(--border-width) !important;
   --input-corner-shape: var(--corner-shape) !important;
   --input-date-separator: var(--text-faint) !important;
@@ -2226,7 +2243,10 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --inline-title-color: var(--color-base-100) !important;
+  --inline-title-color: var(
+    --ulu-inline-title-color,
+    var(--color-base-100)
+  ) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
     --ulu-header2-type,
@@ -2270,6 +2290,9 @@ body.theme-dark {
   --color-accent-1-rgb: var(--color-purple-rgb) !important;
   --ulu-card-bg: var(--color-base-25) !important;
   --ulu-card-radius: var(--ulu-radius) !important;
+  --ulu-fold-color: var(--text-muted) !important;
+  --ulu-fold-color-active: var(--text-normal) !important;
+  --ulu-fold-color-hover: var(--color-accent) !important;
   --ulu-glass-inset-br-dark: inset -0.5px -0.5px 0 0
     rgb(from var(--mono-rgb-100) r g b / 0.1) !important;
   --ulu-glass-inset-tl-dark: inset 0.5px 0.5px 0 0
@@ -2345,6 +2368,11 @@ body.theme-dark {
   --ulu-ease-out: cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   --ulu-ease-soft: cubic-bezier(0.25, 0.46, 0.46, 0.95) !important;
   --ulu-ease-std: ease !important;
+  --ulu-fold-crescent: 4px !important;
+  --ulu-fold-duration: 1.4s !important;
+  --ulu-fold-ease: cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+  --ulu-fold-fill: 10px !important;
+  --ulu-fold-size: 10px !important;
   --ulu-font-general: "Instrument", sans-serif !important;
   --ulu-font-title: "Getai" !important;
   --ulu-glass-inset-br-light: inset -1px -1px 0 0 rgb(0 0 0 / 0.05) !important;
@@ -2981,7 +3009,7 @@ body body.theme-light .markdown-rendered ul > li {
   list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
-  padding-left: 7.5px;
+  padding-left: 15px;
   padding-right: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -3016,7 +3044,7 @@ body body.theme-light .markdown-rendered ol > li {
   list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
-  padding-left: 7.5px;
+  padding-left: 15px;
   padding-right: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -5840,7 +5868,7 @@ body body.theme-dark .markdown-rendered ul > li {
   list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
-  padding-left: 7.5px;
+  padding-left: 15px;
   padding-right: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -5875,7 +5903,7 @@ body body.theme-dark .markdown-rendered ol > li {
   list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
-  padding-left: 7.5px;
+  padding-left: 15px;
   padding-right: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;

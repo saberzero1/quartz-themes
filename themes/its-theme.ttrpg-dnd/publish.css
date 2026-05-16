@@ -1021,6 +1021,7 @@ body.theme-light {
   --nav-item-children-padding-left: 2px !important;
   --vault-name-font-size: 20px !important;
   --vault-name-font-weight: var(--font-bold) !important;
+  --ribbon-border-width: 0 !important;
   --accent: #79c78e !important;
   --text: #697580 !important;
   --bullet: "" !important;
@@ -1052,6 +1053,7 @@ body.theme-light {
   --tag-background-color: var(--tag-background) !important;
   --tab-font-weight: 500 !important;
   --callout-margin: 5px 0;
+  --tab-background: var(--outer-bar) !important;
   --graph-bg: var(--note) !important;
   --input-bg: var(--td) !important;
   --he-text-on-accent-active: var(--headers) !important;
@@ -1066,7 +1068,6 @@ body.theme-light {
   --h5-border-color: var(--theme-rainbow-5) !important;
   --h6-border-color: var(--theme-rainbow-6) !important;
   --h1-background: var(--header-background) !important;
-  --tab-background: var(--outer-bar) !important;
   --r-heading-color: var(--headers) !important;
   --r-heading-font: var(--font) !important;
   --r-main-font: var(--font-default) !important;
@@ -1421,7 +1422,6 @@ body.theme-light {
   --rainbow-4: #3333cc !important;
   --rainbow-5: #a824a8 !important;
   --rainbow-6: #e83b94 !important;
-  --ribbon-border-width: 0 !important;
   --ribbon-icon-gap: 15px !important;
   --rmx: "remixicon" !important;
   --root-list-bullet-spacing: 0 !important;
@@ -2465,6 +2465,7 @@ body.theme-dark {
   --nav-item-children-padding-left: 2px !important;
   --vault-name-font-size: 20px !important;
   --vault-name-font-weight: var(--font-bold) !important;
+  --ribbon-border-width: 0 !important;
   --accent: #548b67 !important;
   --text: #dcdedd !important;
   --bullet: "" !important;
@@ -2496,6 +2497,7 @@ body.theme-dark {
   --tag-background-color: var(--tag-background) !important;
   --tab-font-weight: 500 !important;
   --callout-margin: 5px 0;
+  --tab-background: var(--outer-bar) !important;
   --graph-bg: var(--note) !important;
   --input-bg: rgba(0, 0, 0, 0.3) !important;
   --he-text-on-accent-active: var(--headers) !important;
@@ -2510,7 +2512,6 @@ body.theme-dark {
   --h5-border-color: var(--theme-rainbow-5) !important;
   --h6-border-color: var(--theme-rainbow-6) !important;
   --h1-background: var(--header-background) !important;
-  --tab-background: var(--outer-bar) !important;
   --r-heading-color: var(--headers) !important;
   --r-heading-font: var(--font) !important;
   --r-main-font: var(--font-default) !important;
@@ -2865,7 +2866,6 @@ body.theme-dark {
   --rainbow-4: #3232c5 !important;
   --rainbow-5: #7f307f !important;
   --rainbow-6: #dd4794 !important;
-  --ribbon-border-width: 0 !important;
   --ribbon-icon-gap: 15px !important;
   --rmx: "remixicon" !important;
   --root-list-bullet-spacing: 0 !important;

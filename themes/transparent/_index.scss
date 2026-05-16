@@ -86,9 +86,12 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
 
+  --bg-custom-url: url("");
+  --gradient-from: #e8f5ee;
+  --gradient-to: #c8e6d4;
+  --gradient-angle: 135deg;
   --background-blur: 80px;
   --ui-blur: 60px;
-  --bg-custom-url: url("");
   --bg-tint-color: #b13d00;
   --bg-tint-opacity: 0;
   --file-line-width: 700px;
@@ -180,9 +183,12 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
 
+  --bg-custom-url: url("");
+  --gradient-from: #e8f5ee;
+  --gradient-to: #c8e6d4;
+  --gradient-angle: 135deg;
   --background-blur: 80px;
   --ui-blur: 60px;
-  --bg-custom-url: url("");
   --bg-tint-color: #b13d00;
   --bg-tint-opacity: 0;
   --file-line-width: 700px;
@@ -4291,7 +4297,7 @@ body {
     --gradient-from: #e8f5ee;
     --gradient-to: #c8e6d4;
     --mobile-sidebar-min-width: 100vw;
-    --tr: transparent;
+    --tr: #00000000;
     --ui-blur: 60px;
   }
 
@@ -8741,7 +8747,7 @@ html[saved-theme="dark"] {
       --gradient-from: #e8f5ee;
       --gradient-to: #c8e6d4;
       --mobile-sidebar-min-width: 100vw;
-      --tr: transparent;
+      --tr: #00000000;
       --ui-blur: 60px;
     }
   }

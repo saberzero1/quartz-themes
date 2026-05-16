@@ -1383,7 +1383,7 @@ body.theme-light {
   --kolorboku: #1d1d1f !important;
   --mobile-sidebar-min-width: 100vw !important;
   --overlay-color: rgba(255, 255, 255, 0.4) !important;
-  --tr: transparent !important;
+  --tr: #00000000 !important;
   --tr06: rgba(255, 255, 255, 0.5) !important;
   --ui-blur: 60px !important;
 }
@@ -2382,7 +2382,7 @@ body.theme-dark {
   --kolorboku: #e2e0dc !important;
   --mobile-sidebar-min-width: 100vw !important;
   --overlay-color: #00000080 !important;
-  --tr: transparent !important;
+  --tr: #00000000 !important;
   --tr06: #00000060 !important;
   --ui-blur: 60px !important;
 }

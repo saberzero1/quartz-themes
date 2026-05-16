@@ -31,7 +31,7 @@
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: #f9f9f9 !important;
+  --code-background: var(--properties-background) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
@@ -182,7 +182,7 @@
 html[saved-theme="light"] body {
   --qt-code-header: rgb(55, 58, 62);
   --qt-code-default: rgb(73, 73, 73);
-  --qt-code-background: rgb(249, 249, 249);
+  --qt-code-background: rgb(245, 246, 248);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 html[saved-theme="dark"] body {

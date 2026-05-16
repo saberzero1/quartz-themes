@@ -1437,9 +1437,9 @@
                     "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(238, 230, 221)",
+                      "color": "rgb(82, 82, 82)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(238, 230, 221)",
+                      "borderColor": "rgb(82, 82, 82)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -1568,9 +1568,9 @@
                             "classes": ["tree-item-icon", "collapse-icon"],
                             "attrs": {},
                             "styles": {
-                              "color": "rgb(238, 230, 221)",
+                              "color": "rgb(82, 82, 82)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(238, 230, 221)",
+                              "borderColor": "rgb(82, 82, 82)",
                               "fill": "rgb(0, 0, 0)",
                               "stroke": "none"
                             },
@@ -1683,9 +1683,9 @@
                             "classes": ["tree-item-icon", "collapse-icon"],
                             "attrs": {},
                             "styles": {
-                              "color": "rgb(238, 230, 221)",
+                              "color": "rgb(82, 82, 82)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(238, 230, 221)",
+                              "borderColor": "rgb(82, 82, 82)",
                               "fill": "rgb(0, 0, 0)",
                               "stroke": "none"
                             },
@@ -1798,9 +1798,9 @@
                             "classes": ["tree-item-icon", "collapse-icon"],
                             "attrs": {},
                             "styles": {
-                              "color": "rgb(238, 230, 221)",
+                              "color": "rgb(82, 82, 82)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(238, 230, 221)",
+                              "borderColor": "rgb(82, 82, 82)",
                               "fill": "rgb(0, 0, 0)",
                               "stroke": "none"
                             },
@@ -1969,9 +1969,9 @@
                     "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(238, 230, 221)",
+                      "color": "rgb(82, 82, 82)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(238, 230, 221)",
+                      "borderColor": "rgb(82, 82, 82)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -2266,9 +2266,9 @@
                     "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(238, 230, 221)",
+                      "color": "rgb(82, 82, 82)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(238, 230, 221)",
+                      "borderColor": "rgb(82, 82, 82)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },

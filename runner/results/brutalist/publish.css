@@ -1244,6 +1244,39 @@ body.theme-light {
   --h6-color: var(--text-normal) !important;
   --inline-title-color: var(--h1-color) !important;
   --checkbox-border-width: 0px !important;
+  --dashboard-border-width: 1px !important;
+  --drag-border-width: 3px !important;
+  --font-ui: var(--font-interface-override) !important;
+  --mobile-active-bg: #d6d6d6 !important;
+  --nav-guide-border-width: 1px !important;
+  --settings-border-width: 0px !important;
+  --tab-hover-bg-doc: var(--surface-highlight) !important;
+  --tab-hover-bg-ui: color-mix(
+    in srgb,
+    var(--text-muted),
+    transparent 90%
+  ) !important;
+  --tab-hover-text-ui: var(--text-muted) !important;
+  --callout-note: 84, 122, 155;
+  --dashboard-col-width: 300px !important;
+  --dashboard-gap: 4px !important;
+  --editor-width: 600px !important;
+  --metadata-content-radius: 0px !important;
+  --prompt-border-radius: var(--modal-radius) !important;
+  --shadow-checkbox-inset: none !important;
+  --shadow-focus-inset: inset 0 0 0 1px var(--text-normal) !important;
+  --shadow-focus-ring: 0 0 0 2px var(--interactive-accent) !important;
+  --suggestion-item-border-radius: 0 !important;
+  --suggestion-radius: 0 !important;
+  --tab-active-bg-sidebar: color-mix(
+    in srgb,
+    #ffffff,
+    transparent 60%
+  ) !important;
+  --text-align-mode: left !important;
+  --toggle-on-color: #ff7700 !important;
+  --toggle-track-radius: 0 !important;
+  --callout-abstract: 88, 139, 150;
   --bases-text-color: var(--text-normal) !important;
   --button-bg-dynamic: #d0d0d0 !important;
   --button-text-dynamic: var(--text-normal) !important;
@@ -1255,7 +1288,6 @@ body.theme-light {
     var(--ui-font-color-dark),
     white 20%
   ) !important;
-  --font-ui: var(--font-interface-override) !important;
   --input-bg-std: #cdcdcd !important;
   --menu-custom-bg: var(--surface-highlight) !important;
   --mobile-drawer-color-dark: var(--background-primary) !important;
@@ -1264,18 +1296,8 @@ body.theme-light {
   --mobile-navbar-border-color-light: var(--background-secondary) !important;
   --mobile-navbar-color-dark: var(--background-secondary) !important;
   --mobile-navbar-color-light: var(--background-secondary) !important;
-  --prompt-border-radius: var(--modal-radius) !important;
   --settings-icon-fill: var(--ui-font-color-light) !important;
-  --shadow-focus-inset: inset 0 0 0 1px var(--text-normal) !important;
-  --shadow-focus-ring: 0 0 0 2px var(--interactive-accent) !important;
   --surface-highlight: var(--surface-highlight-light) !important;
-  --tab-hover-bg-doc: var(--surface-highlight) !important;
-  --tab-hover-bg-ui: color-mix(
-    in srgb,
-    var(--text-muted),
-    transparent 90%
-  ) !important;
-  --tab-hover-text-ui: var(--text-muted) !important;
   --vertical-tab-active-color: var(--text-muted) !important;
   --vertical-tab-header-color: var(--ui-font-color-light) !important;
   --body-font-color-dark: #b0a589 !important;
@@ -1284,28 +1306,19 @@ body.theme-light {
   --button-text-hover-dynamic: #000000 !important;
   --calendar-dot-bg: #d10000 !important;
   --calendar-today-color: #d10000 !important;
-  --callout-abstract: 88, 139, 150;
-  --callout-note: 84, 122, 155;
   --canvas-node-border-color: #232323 !important;
   --checkbox-bg-unchecked: #a9a9a9 !important;
   --cta-text-dynamic: #ffffff !important;
   --dashboard-banner-height: 600px !important;
   --dashboard-banner-offset: 150px !important;
   --dashboard-banner-opacity: 1 !important;
-  --dashboard-border-width: 1px !important;
   --dashboard-card-transparency: 20% !important;
-  --dashboard-col-width: 300px !important;
-  --dashboard-gap: 4px !important;
   --drag-bg: #ffffff !important;
   --drag-border: none !important;
-  --drag-border-width: 3px !important;
-  --editor-width: 600px !important;
   --font-text-destructive: #ff4b4b !important;
   --footnote-link-color: #bd4b00 !important;
   --input-border: transparent !important;
   --light-accent-custom: #000000 !important;
-  --metadata-content-radius: 0px !important;
-  --mobile-active-bg: #d6d6d6 !important;
   --mobile-drawer-bg: #b0b0b0 !important;
   --mobile-navbar-border-style-dark: solid !important;
   --mobile-navbar-border-style-light: solid !important;
@@ -1314,27 +1327,14 @@ body.theme-light {
   --mobile-navbar-opacity-dark: 0.7 !important;
   --mobile-navbar-opacity-light: 0.7 !important;
   --mobile-navbar-radius: 20px !important;
-  --nav-guide-border-width: 1px !important;
   --new-tab-hover-bg: color-mix(in srgb, #505050, transparent 90%) !important;
   --new-tab-hover-text: #000000 !important;
   --settings-bg-color: #b0b0b0 !important;
   --settings-border-color: #000000 !important;
-  --settings-border-width: 0px !important;
-  --shadow-checkbox-inset: none !important;
   --shadow-floating-card: none !important;
   --status-bar-active-bg: #ff7700 !important;
-  --suggestion-item-border-radius: 0 !important;
-  --suggestion-radius: 0 !important;
   --surface-highlight-dark: #262626 !important;
   --surface-highlight-light: #d6d6d6 !important;
-  --tab-active-bg-sidebar: color-mix(
-    in srgb,
-    #ffffff,
-    transparent 60%
-  ) !important;
-  --text-align-mode: left !important;
-  --toggle-on-color: #ff7700 !important;
-  --toggle-track-radius: 0 !important;
   --ui-font-color-dark: #c8bc9f !important;
   --ui-font-color-light: #222222 !important;
   --canvas-color-arrow: var(--light-accent-custom) !important;
@@ -2352,6 +2352,39 @@ body.theme-dark {
   --h6-color: var(--dark-accent-custom) !important;
   --inline-title-color: var(--h1-color) !important;
   --checkbox-border-width: 0px !important;
+  --dashboard-border-width: 1px !important;
+  --drag-border-width: 3px !important;
+  --font-ui: var(--font-interface-override) !important;
+  --mobile-active-bg: #505050 !important;
+  --nav-guide-border-width: 1px !important;
+  --settings-border-width: 0px !important;
+  --tab-hover-bg-doc: var(--surface-highlight) !important;
+  --tab-hover-bg-ui: color-mix(
+    in srgb,
+    var(--text-muted),
+    transparent 90%
+  ) !important;
+  --tab-hover-text-ui: var(--text-muted) !important;
+  --callout-note: 96, 138, 176;
+  --dashboard-col-width: 300px !important;
+  --dashboard-gap: 4px !important;
+  --editor-width: 600px !important;
+  --metadata-content-radius: 0px !important;
+  --prompt-border-radius: var(--modal-radius) !important;
+  --shadow-checkbox-inset: none !important;
+  --shadow-focus-inset: inset 0 0 0 1px var(--text-normal) !important;
+  --shadow-focus-ring: 0 0 0 2px var(--interactive-accent) !important;
+  --suggestion-item-border-radius: 0 !important;
+  --suggestion-radius: 0 !important;
+  --tab-active-bg-sidebar: color-mix(
+    in srgb,
+    #ffffff,
+    transparent 95%
+  ) !important;
+  --text-align-mode: left !important;
+  --toggle-on-color: #448494 !important;
+  --toggle-track-radius: 0 !important;
+  --callout-abstract: 109, 163, 174;
   --bases-text-color: var(--body-font-color-dark) !important;
   --button-bg-dynamic: var(--light-accent-custom) !important;
   --button-text-dynamic: var(--text-normal) !important;
@@ -2367,7 +2400,6 @@ body.theme-dark {
     var(--ui-font-color-dark),
     white 20%
   ) !important;
-  --font-ui: var(--font-interface-override) !important;
   --input-bg-std: var(--light-accent-custom) !important;
   --menu-custom-bg: var(--surface-highlight) !important;
   --mobile-drawer-color-dark: var(--background-primary) !important;
@@ -2376,18 +2408,8 @@ body.theme-dark {
   --mobile-navbar-border-color-light: var(--background-secondary) !important;
   --mobile-navbar-color-dark: var(--background-secondary) !important;
   --mobile-navbar-color-light: var(--background-secondary) !important;
-  --prompt-border-radius: var(--modal-radius) !important;
   --settings-icon-fill: var(--ui-font-color-dark) !important;
-  --shadow-focus-inset: inset 0 0 0 1px var(--text-normal) !important;
-  --shadow-focus-ring: 0 0 0 2px var(--interactive-accent) !important;
   --surface-highlight: var(--surface-highlight-dark) !important;
-  --tab-hover-bg-doc: var(--surface-highlight) !important;
-  --tab-hover-bg-ui: color-mix(
-    in srgb,
-    var(--text-muted),
-    transparent 90%
-  ) !important;
-  --tab-hover-text-ui: var(--text-muted) !important;
   --vertical-tab-active-color: var(--text-muted) !important;
   --vertical-tab-header-color: var(--ui-font-color-dark) !important;
   --body-font-color-dark: #b0a589 !important;
@@ -2396,28 +2418,19 @@ body.theme-dark {
   --button-text-hover-dynamic: #ffffff !important;
   --calendar-dot-bg: #feb43f !important;
   --calendar-today-color: #feb43f !important;
-  --callout-abstract: 109, 163, 174;
-  --callout-note: 96, 138, 176;
   --canvas-node-border-color: #c0c0c0 !important;
   --checkbox-bg-unchecked: #2f2f2f !important;
   --cta-text-dynamic: #000000 !important;
   --dashboard-banner-height: 600px !important;
   --dashboard-banner-offset: 150px !important;
   --dashboard-banner-opacity: 1 !important;
-  --dashboard-border-width: 1px !important;
   --dashboard-card-transparency: 20% !important;
-  --dashboard-col-width: 300px !important;
-  --dashboard-gap: 4px !important;
   --drag-bg: #000000 !important;
   --drag-border: none !important;
-  --drag-border-width: 3px !important;
-  --editor-width: 600px !important;
   --font-text-destructive: #ff4b4b !important;
   --footnote-link-color: #7bb3c0 !important;
   --input-border: transparent !important;
   --light-accent-custom: #000000 !important;
-  --metadata-content-radius: 0px !important;
-  --mobile-active-bg: #505050 !important;
   --mobile-drawer-bg: #3c3c3c !important;
   --mobile-navbar-border-style-dark: solid !important;
   --mobile-navbar-border-style-light: solid !important;
@@ -2426,27 +2439,14 @@ body.theme-dark {
   --mobile-navbar-opacity-dark: 0.7 !important;
   --mobile-navbar-opacity-light: 0.7 !important;
   --mobile-navbar-radius: 20px !important;
-  --nav-guide-border-width: 1px !important;
   --new-tab-hover-bg: color-mix(in srgb, #bfbfbf, transparent 85%) !important;
   --new-tab-hover-text: #ffffff !important;
   --settings-bg-color: #3c3c3c !important;
   --settings-border-color: #6a6a6a !important;
-  --settings-border-width: 0px !important;
-  --shadow-checkbox-inset: none !important;
   --shadow-floating-card: none !important;
   --status-bar-active-bg: #798ccf !important;
-  --suggestion-item-border-radius: 0 !important;
-  --suggestion-radius: 0 !important;
   --surface-highlight-dark: #262626 !important;
   --surface-highlight-light: #d6d6d6 !important;
-  --tab-active-bg-sidebar: color-mix(
-    in srgb,
-    #ffffff,
-    transparent 95%
-  ) !important;
-  --text-align-mode: left !important;
-  --toggle-on-color: #448494 !important;
-  --toggle-track-radius: 0 !important;
   --ui-font-color-dark: #c8bc9f !important;
   --ui-font-color-light: #222222 !important;
 }

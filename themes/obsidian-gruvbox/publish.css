@@ -1386,8 +1386,8 @@ body.theme-light {
   --italic-color: var(--neutral-yellow) !important;
   --cursor-line-background: rgba(var(--light1_x), 0.5) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
-  --gray: rgb(146, 131, 116) !important;
   --callout-note: var(--neutral-blue_x);
+  --gray: rgb(146, 131, 116) !important;
   --calendar-background-hover: var(--light1) !important;
   --calendar-hover: var(--bright-red) !important;
   --calendar-today: var(--bright-red) !important;
@@ -2468,8 +2468,8 @@ body.theme-dark {
   --italic-color: var(--neutral-yellow) !important;
   --cursor-line-background: rgba(var(--dark1_x), 0.5) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
-  --gray: rgb(146, 131, 116) !important;
   --callout-note: var(--neutral-blue_x);
+  --gray: rgb(146, 131, 116) !important;
   --calendar-background-hover: var(--dark1) !important;
   --calendar-hover: var(--bright-red) !important;
   --calendar-today: var(--neutral-orange) !important;

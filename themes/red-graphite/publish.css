@@ -1495,6 +1495,8 @@ body.theme-light {
   ) !important;
   --vault-name-font-size: var(--font-ui-medium) !important;
   --vault-name-font-weight: var(--font-medium) !important;
+  --color-text-heading: var(--nav-item-color) !important;
+  --color-text-title: var(--nav-item-color) !important;
   --color-base-15: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
@@ -1645,8 +1647,6 @@ body.theme-light {
   --red-graphite-interface-font: "Avenir" !important;
   --red-graphite-monospace-font: "" !important;
   --red-graphite-text-font: "Avenir" !important;
-  --color-text-heading: var(--nav-item-color) !important;
-  --color-text-title: var(--nav-item-color) !important;
   --mk-ui-border: var(--color-base-90) !important;
   --mk-ui-text-secondary: var(--color-base-40) !important;
 }

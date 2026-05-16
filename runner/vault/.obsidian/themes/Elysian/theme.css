@@ -128,9 +128,6 @@ body {
 	--text-selection: #5CC1D730;
 	--checkbox-border-color: var(--light-theme-white);
 	--collapse-icon-color-collapsed: var(--text-theme-dark);
-	--h1-font: "Sans Condensed Black";
-	--h2-font: "Sans Condensed Black";
-	--h3-font: "Sans Condensed Black";
 	--inline-title-font: "Sans Condensed Black";
 }
 
@@ -146,14 +143,9 @@ body {
 	--checkbox-border-color: var(--light-theme-black);
 	--canvas-dot-pattern: var(--light-theme-black);
 	--collapse-icon-color-collapsed: var(--text-theme-light);
-	--h1-color: #495050;
-	--h1-font: "Roboto Light";
-	--h2-color: #495050;
-	--h2-font: "Roboto Light";
-	--h3-color: #495050;
-	--h3-font: "Roboto Light";
 	--inline-title-font: "Roboto Light";
 }
+
 
 
 /*Italic and bold*/
@@ -161,6 +153,24 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
   color: var(--yellow-color);
 }
 
+/* Change list to use dashes instead of dots*/
+.list-bullet:after {
+    content: '-';
+    border-radius: 0;
+    width: 0;
+}
+
+.list-bullet:before {
+    display: none;
+}
+
+.list-bullet {
+    color: var(--text-normal);
+}
+
+.cm-formatting-list .list-bullet:after {
+    display: none;
+}
 
 
 /* Inline title*/
@@ -179,7 +189,7 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 	letter-spacing: 0.05em;
 }
 
-/* The upcoming section is responsible for the size of the white background and correct position */
+/* The upcoming section is responsible for the size of the background on inline titles and thier correct position */
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer > *:not(.inline-titile) {
     width: 100%;
     max-width: var(--file-line-width);
@@ -192,7 +202,7 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
     max-width: var(--file-line-width);
     margin-left: max(0px, calc((100% - var(--file-line-width))/2));
     margin-right: auto;
-	padding: 2px 12px 1px 12px;
+	padding: 2px 12px 1px;
 	text-align: left;
 	box-sizing: border-box;
 }
@@ -203,7 +213,7 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
     margin-left: max(0px, calc((100% - var(--file-line-width))/2));
     margin-right: auto;
 	margin-top: 1em;
-	padding: 2px 12px 1px 12px;
+	padding: 2px 12px 1px;
 	text-align: left;
 	box-sizing: border-box;
 }
@@ -213,7 +223,7 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
     max-width: var(--file-line-width);
 	margin-right: auto;
 	margin-top: auto;
-	padding: 2px 12px 1px 12px;
+	padding: 2px 12px 1px;
 	text-align: left;
 	box-sizing: border-box;
 }
@@ -224,7 +234,7 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 	margin-left: 0px;
 	margin-right: auto;
 	margin-top: 1em;
-	padding: 2px 12px 1px 12px;
+	padding: 2px 12px 1px;
 	text-align: left;
 	box-sizing: border-box;
 }
@@ -235,10 +245,9 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 	width: fit-content;
 	background-color: var(--light-theme-white);
 	color: var(--dark-theme-black);
-	padding: 0;
 	margin-left: 24px;
 	font-family: "Sans Condensed Black";
-	padding: 0px 8px 0px 8px;
+	padding: 0px 8px;
 	letter-spacing: 0.1em;
 }
 
@@ -246,13 +255,11 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 	width: fit-content;
 	background-color: #495050;
 	color: var(--light-theme-white);
-	padding: 0;
 	margin-left: 24px;
 	font-family: "Roboto Light";
-	padding: 0px 8px 0px 8px;
+	padding: 0px 8px;
 	letter-spacing: 0.1em;
 }
-
 
 
 
@@ -292,17 +299,23 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 
 
 /* Background headache starts here*/
+
+/* Allows for image scrolling even if applied position absolute */
 .markdown-reading-view {
     overflow-y: auto;
 }
 
 .markdown-preview-view {
     overflow: visible;
-    height: 100%;
+    height: unset;
 }
 
-.markdown-reading-view > .markdown-preview-view,
-.cm-scroller > .cm-sizer {
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view > .markdown-preview-view > .markdown-preview-sizer {
+	padding-bottom: 1em !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view > .markdown-preview-view,
+.workspace-leaf-content[data-type="markdown"] .cm-scroller > .cm-sizer {
   position: relative;
   overflow: visible; /* Ensure the background isn't clipped */
   padding: var(--file-margins);
@@ -322,34 +335,26 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
 
 
 /* Both (floating/scrollable background) */
-.theme-dark .markdown-reading-view > .markdown-preview-view::before,
-.theme-dark .view-content > .markdown-source-view .cm-sizer::before{
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view > .markdown-preview-view::before,
+.workspace-leaf-content[data-type="markdown"] .view-content > .markdown-source-view .cm-sizer::before{
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	min-height: 92vh;
     background-image: var(--scrollable-background);
     background-size: 100% auto; 
 	background-repeat: repeat-y;
 	z-index: -1;
 }
 
-.theme-light .markdown-reading-view > .markdown-preview-view::before,
-.theme-light .view-content > .markdown-source-view .cm-sizer::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    background-image: var(--scrollable-background);
-    background-size: 100% auto; 
-	background-repeat: repeat-y;
+.theme-light .workspace-leaf-content[data-type="markdown"] .markdown-reading-view > .markdown-preview-view::before,
+.theme-light .workspace-leaf-content[data-type="markdown"] .view-content > .markdown-source-view .cm-sizer::before{
 	filter: invert(1);
-	z-index: -1;
 }
+
 .markdown-reading-view > .markdown-preview-view{
 	padding: 2px;
 }
@@ -370,6 +375,6 @@ body .cm-em .cm-strong, body .cm-strong .cm-em, body .cm-strong.cm-em, body em s
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.15;
+  opacity: 0.17;
   filter: blur(10px);
 }

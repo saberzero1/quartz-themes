@@ -1699,11 +1699,11 @@ body.theme-light {
   --table-last-border-width: 2px !important;
   --interactive-success: var(--nous-sage) !important;
   --vault-name-font-size: 15px !important;
+  --callout-note: 107, 142, 94;
+  --callout-abstract: 150, 138, 118;
   --shadow-m:
     0 0 0 1px var(--nous-ring-warm), 0 4px 24px rgba(20, 20, 19, 0.05) !important;
   --table-text-color: var(--nous-near-black) !important;
-  --callout-abstract: 150, 138, 118;
-  --callout-note: 107, 142, 94;
   --callout-danger: 181, 51, 51;
   --callout-failure: 181, 51, 51;
   --font-smoothing: antialiased !important;
@@ -2725,10 +2725,10 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --table-header-background-hover: transparent !important;
   --interactive-success: var(--nous-sage) !important;
+  --callout-note: 143, 166, 125;
+  --callout-abstract: 180, 168, 148;
   --shadow-m: 0 0 0 1px #3d3d3a, 0 4px 24px rgba(0, 0, 0, 0.35) !important;
   --table-text-color: #e8e6dc !important;
-  --callout-abstract: 180, 168, 148;
-  --callout-note: 143, 166, 125;
   --callout-danger: 224, 133, 133;
   --callout-failure: 224, 133, 133;
   --font-smoothing: antialiased !important;

@@ -1420,6 +1420,7 @@ body.theme-dark {
   --yellow: #e8d7b9 !important;
   --blue: #c6eaff !important;
   --cyan: #8cd0d3 !important;
+  --color-text-weeknum: var(--red-dim) !important;
   --white: #dfe4cf !important;
   --text-tag: var(--red-visual) !important;
   --black: #3f3f3f !important;
@@ -1441,7 +1442,6 @@ body.theme-dark {
   --red-bright: #ecbcbc !important;
   --orange-light: #ffd7a7 !important;
   --red-dark: #cc9393 !important;
-  --color-text-weeknum: var(--red-dim) !important;
   --bg-darker: #0f0f0f !important;
   --bg-darkest: #000000 !important;
   --bg-lighter: #4f4f4f !important;

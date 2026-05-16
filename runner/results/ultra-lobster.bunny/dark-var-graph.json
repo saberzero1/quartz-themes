@@ -1013,17 +1013,17 @@
   "--indentation-guide-color": { "body": ["--mono-rgb-100"] },
   "--indentation-guide-color-active": { "body": ["--mono-rgb-100"] },
   "--inline-title-color": {
-    "body": ["--color-base-100"],
+    "body": ["--ulu-inline-title-color", "--color-base-100"],
     ".ulu-accent-title": ["--color-accent"]
   },
   "--inline-title-font": {
     "body": ["--ulu-inline-title-font", "--font-title"]
   },
   "--inline-title-line-height": { "body": ["--h1-line-height"] },
-  "--inline-title-size": { "body": ["--h1-size"] },
+  "--inline-title-size": { "body": ["--ulu-inline-title-size"] },
   "--inline-title-style": { "body": ["--h1-style"] },
   "--inline-title-variant": { "body": ["--h1-variant"] },
-  "--inline-title-weight": { "body": ["--h1-weight"] },
+  "--inline-title-weight": { "body": ["--ulu-inline-title-weight"] },
   "--input-height": {
     ".metadata-container": ["--metadata-input-height"],
     ".bases-cards-item": ["--bases-cards-line-height"],
@@ -2452,6 +2452,31 @@
   "--font-title": { "body": ["--ulu-font-title"] },
   "--ulu-card-bg": { "body": ["--color-base-25"] },
   "--ulu-card-radius": { "body": ["--ulu-radius"] },
+  "--ulu-fold-color": { "body": ["--text-muted"] },
+  "--ulu-fold-color-hover": { "body": ["--color-accent"] },
+  "--ulu-fold-color-active": { "body": ["--text-normal"] },
+  "--ulu-indent-guide-color": {
+    ".markdown-source-view.mod-cm6 .cm-indent::before": [
+      "--mono-rgb-100",
+      "--ulu-indent-guide-opacity"
+    ],
+    ".markdown-preview-view ul li:has(> ul)": [
+      "--mono-rgb-100",
+      "--ulu-indent-guide-opacity"
+    ],
+    "body.ulu-indent-accent .markdown-preview-view ul li:has(> ul)": [
+      "--color-accent"
+    ],
+    "body.ulu-indent-accent .markdown-source-view.mod-cm6 .cm-indent::before": [
+      "--color-accent"
+    ],
+    "body.ulu-indent-contrast .markdown-preview-view ul li:has(> ul)": [
+      "--mono-rgb-100"
+    ],
+    "body.ulu-indent-contrast .markdown-source-view.mod-cm6 .cm-indent::before": [
+      "--mono-rgb-100"
+    ]
+  },
   "--ulu-marker-color": {
     "body.ulu-highlight-accent mark": ["--color-accent"]
   },

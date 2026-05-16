@@ -856,6 +856,7 @@
     "--shiki-active-tab-border-color": "body",
     "--color-red-trans": "body",
     "--element-shadow": "body",
+    "--tab-shadow": "body",
     "--color-grey": "body",
     "--accent-color": ".theme-light",
     "--div-color": ".theme-light",
@@ -868,7 +869,14 @@
     "--liquid-shadow-light": "body",
     "--liquid-shadow-dark": "body",
     "--glass-edge": ".theme-light",
-    "--dnc-stroke": "body"
+    "--dnc-stroke": "body",
+    "--nn-theme-list-bg": "body",
+    "--nn-selected-file-bg-color": "body",
+    "--nn-theme-file-selected-bg": "body",
+    "--nn-file-item-border-radius": "body",
+    "--nn-theme-file-border-radius": "body",
+    "--nn-computed-file-selected-inactive-bg": "body",
+    "--nn-theme-navitem-icon-color": "body"
   },
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
@@ -955,6 +963,7 @@
     "--code-bracket-background": "body",
     "--code-radius": "body",
     "--code-size": "body",
+    "--code-background": ".theme-light",
     "--code-normal": "body",
     "--code-comment": "body",
     "--code-property": "body",
@@ -1267,7 +1276,14 @@
     "--shiki-gutter-text-color-highlight": "body",
     "--shiki-active-tab-border-color": "body",
     "--properties-background": ".theme-light",
-    "--glass-edge": ".theme-light"
+    "--glass-edge": ".theme-light",
+    "--nn-theme-list-bg": "body",
+    "--nn-selected-file-bg-color": "body",
+    "--nn-theme-file-selected-bg": "body",
+    "--nn-file-item-border-radius": "body",
+    "--nn-theme-file-border-radius": "body",
+    "--nn-computed-file-selected-inactive-bg": "body",
+    "--nn-theme-navitem-icon-color": "body"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
   "div.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1429,6 +1445,7 @@
     "--code-bracket-background": "body",
     "--code-radius": "body",
     "--code-size": "body",
+    "--code-background": ".theme-light",
     "--code-normal": "body",
     "--code-comment": "body",
     "--code-property": "body",
@@ -1741,7 +1758,14 @@
     "--shiki-gutter-text-color-highlight": "body",
     "--shiki-active-tab-border-color": "body",
     "--properties-background": ".theme-light",
-    "--glass-edge": ".theme-light"
+    "--glass-edge": ".theme-light",
+    "--nn-theme-list-bg": "body",
+    "--nn-selected-file-bg-color": "body",
+    "--nn-theme-file-selected-bg": "body",
+    "--nn-file-item-border-radius": "body",
+    "--nn-theme-file-border-radius": "body",
+    "--nn-computed-file-selected-inactive-bg": "body",
+    "--nn-theme-navitem-icon-color": "body"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
   "svg.lucide-x.svg-icon": { "--focus-ring-color": ":root *" },
@@ -1749,6 +1773,7 @@
   "img": { "--focus-ring-color": ":root *" },
   "figure": {
     "--focus-ring-color": ":root *",
+    "--code-background": ".expressive-code .frame",
     "--header-border-radius": ".expressive-code .frame",
     "--button-spacing": ".expressive-code .frame"
   },

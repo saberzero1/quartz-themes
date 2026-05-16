@@ -31,49 +31,15 @@
   --background-modifier-border:        #3e7840;
   --background-modifier-border-hover:  #548e56;
   --divider-color:                     #3e7840;
-}
 
-/* ── Light Mode ─────────────────────────────────────────────── */
-.theme-light {
-  /* base スケール: エディタ→テキスト方向 */
-  --color-base-00: #6bfa6e;
-  --color-base-05: #5ef061;
-  --color-base-10: #4de350;
-  --color-base-20: #38cc3b;
-  --color-base-25: #28b02b;
-  --color-base-30: #1c9620;
-  --color-base-35: #137d17;
-  --color-base-40: #0c6510;
-  --color-base-50: #074e0a;
-  --color-base-60: #043a07;
-  --color-base-70: #022904;
-  --color-base-100: #011502;
+  --tag-background: rgba(107, 250, 110, 0.1);
+  --tag-background-hover: rgba(107, 250, 110, 0.2);
+  --tag-color: #9cc89e;
+  --tag-color-hover: #6bfa6e;
+  --tag-border-color: rgba(107, 250, 110, 0.28);
 
-  /* サイドバーを明るく・脱彩色して独立させる */
-  --background-secondary: #e2fce2;
-  --background-secondary-alt: #d4f8d4;
-  --background-modifier-hover: rgba(0, 0, 0, 0.06);
-  --background-modifier-active-hover: rgba(0, 0, 0, 0.1);
+  --hr-color: rgba(180, 255, 180, 0.2);
 
-  --color-accent-h: 122;
-  --color-accent-s: 85%;
-  --color-accent-l: 20%;
-  --color-accent: #0d5c10;
-  --color-accent-1: #157519;
-  --color-accent-2: #08420a;
-
-  --interactive-accent: #0d5c10;
-  --interactive-accent-hover: #157519;
-}
-
-/* ── Typography ─────────────────────────────────────────────── */
-body {
-  --font-text-size: 16px;
-  --line-height-normal: 1.7;
-}
-
-/* ── Code blocks (Dark mode) ────────────────────────────────── */
-.theme-dark {
   --code-background: #0d2210;
   --code-normal: #d4f0d4;
   --code-comment: #4a7a4c;
@@ -89,9 +55,37 @@ body {
   --code-value: #ffd27a;
 }
 
-/* ── Code blocks (Light mode) ───────────────────────────────── */
-/* ライト背景が明るい緑なので、コードブロックは暗く浮かせる */
+/* ── Light Mode ─────────────────────────────────────────────── */
 .theme-light {
+  /* base スケール: 淡い緑から濃い緑へ滑らかに */
+  --color-base-00: #e2fce2;
+  --color-base-05: #cdf5cd;
+  --color-base-10: #b5ecb5;
+  --color-base-20: #9ae29a;
+  --color-base-25: #7dd47d;
+  --color-base-30: #5ec05e;
+  --color-base-35: #42a842;
+  --color-base-40: #2d8e2d;
+  --color-base-50: #1a721a;
+  --color-base-60: #0e5a0e;
+  --color-base-70: #084408;
+  --color-base-100: #011502;
+
+  --background-secondary: #cef4ce;
+  --background-secondary-alt: #bfefbf;
+  --background-modifier-hover: rgba(0, 0, 0, 0.05);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.08);
+
+  /* accent はユーザー設定に委ねる（Settings > Appearance > Accent color が反映される） */
+
+  --tag-background: rgba(255, 255, 255, 0.65);
+  --tag-background-hover: rgba(255, 255, 255, 0.9);
+  --tag-color: #084408;
+  --tag-color-hover: #031f04;
+  --tag-border-color: rgba(8, 68, 8, 0.28);
+
+  --hr-color: rgba(0, 80, 0, 0.2);
+
   --code-background: #1a351a;
   --code-normal: #d4f0d4;
   --code-comment: #4a7a4c;
@@ -107,14 +101,254 @@ body {
   --code-value: #ffd27a;
 }
 
+/* ── Background gradient + dot grid ────────────────────────── */
+
+/* Light */
+.theme-light .workspace-leaf-content[data-type="markdown"] .view-content {
+  background:
+    radial-gradient(circle, rgba(0, 80, 0, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, #e2fce2 0%, #6bfa6e 100%) !important;
+  background-size: 20px 20px, 100% 100% !important;
+}
+.theme-light .markdown-source-view.mod-cm6,
+.theme-light .cm-editor,
+.theme-light .cm-scroller {
+  background: transparent !important;
+}
+.theme-light .markdown-reading-view,
+.theme-light .markdown-preview-view {
+  background: transparent !important;
+}
+
+/* Dark */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content {
+  background:
+    radial-gradient(circle, rgba(100, 255, 100, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, #0d2210 0%, #234824 100%) !important;
+  background-size: 20px 20px, 100% 100% !important;
+}
+.theme-dark .markdown-source-view.mod-cm6,
+.theme-dark .cm-editor,
+.theme-dark .cm-scroller {
+  background: transparent !important;
+}
+.theme-dark .markdown-reading-view,
+.theme-dark .markdown-preview-view {
+  background: transparent !important;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+body {
+  --font-text-size: 16px;
+  --line-height-normal: 1.7;
+  --p-spacing: 1em;
+}
+
+/* ── Inline title (file name) ───────────────────────────────── */
+.inline-title {
+  font-size: 2.4em !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+.theme-light .inline-title {
+  color: #031f04 !important;
+}
+.theme-dark .inline-title {
+  color: #6bfa6e !important;
+}
+
+/* ── Headings spacing ────────────────────────────────────────── */
+
+/* Reading mode */
+.markdown-preview-view h1, .markdown-rendered h1 { margin-top: 1.5em; margin-bottom: 0.75em; }
+.markdown-preview-view h2, .markdown-rendered h2 { margin-top: 1.5em; margin-bottom: 0.5em; }
+.markdown-preview-view h3, .markdown-rendered h3 { margin-top: 1.25em; margin-bottom: 0.4em; }
+.markdown-preview-view h4, .markdown-rendered h4,
+.markdown-preview-view h5, .markdown-rendered h5,
+.markdown-preview-view h6, .markdown-rendered h6 { margin-top: 1em; margin-bottom: 0.3em; }
+.markdown-preview-view p, .markdown-rendered p { margin-bottom: 0.75em; }
+
+/* Live preview (CM6) */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+  margin-top: 0 !important;
+  margin-bottom: 0.4em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .cm-line:not([class*="HyperMD"]) {
+  margin-bottom: 0.3em !important;
+}
+
+/* ── Properties (frontmatter metadata) ─────────────────────── */
+.metadata-container {
+  background-color: rgba(0, 80, 0, 0.06);
+  border: 1px solid rgba(0, 80, 0, 0.12);
+  border-radius: 8px;
+  padding: 0.6em 1em 0.8em;
+  margin-bottom: 1.5em;
+}
+
+.theme-dark .metadata-container {
+  background-color: rgba(100, 255, 100, 0.06);
+  border-color: rgba(100, 255, 100, 0.12);
+}
+
+/* ── Inline code (GitHub-style) ────────────────────────────── */
+.theme-light {
+  --inline-code-background: rgba(255, 255, 255, 0.75);
+  --inline-code-color: #1a3a1a;
+}
+.theme-dark {
+  --inline-code-background: rgba(255, 255, 255, 0.1);
+  --inline-code-color: #d4f0d4;
+}
+
+/* Reading mode */
+.markdown-preview-view :not(pre) > code,
+.markdown-rendered :not(pre) > code {
+  background: var(--inline-code-background) !important;
+  color: var(--inline-code-color) !important;
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-size: 85%;
+}
+
+/* Live preview (CM6) */
+.cm-s-obsidian .cm-inline-code {
+  background: var(--inline-code-background) !important;
+  color: var(--inline-code-color) !important;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+/* ── Table ──────────────────────────────────────────────────── */
+.markdown-preview-view table,
+.markdown-rendered table,
+.markdown-source-view table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-preview-view th,
+.markdown-rendered th,
+.markdown-source-view th {
+  background: rgba(255, 255, 255, 0.55) !important;
+}
+
+.markdown-preview-view td,
+.markdown-rendered td,
+.markdown-source-view td {
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+
+.theme-dark .markdown-preview-view th,
+.theme-dark .markdown-rendered th,
+.theme-dark .markdown-source-view th {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.theme-dark .markdown-preview-view td,
+.theme-dark .markdown-rendered td,
+.theme-dark .markdown-source-view td {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* ── Highlight (==text==) ───────────────────────────────────── */
+.theme-light mark,
+.theme-light .markdown-preview-view mark,
+.theme-light .markdown-rendered mark {
+  background: #c6ff4e !important;
+  color: #0a2a00 !important;
+  padding: 0.05em 0.1em;
+  border-radius: 2px;
+}
+.theme-light .cm-s-obsidian .cm-highlight {
+  background: #c6ff4e !important;
+  color: #0a2a00 !important;
+  border-radius: 2px;
+}
+
+.theme-dark mark,
+.theme-dark .markdown-preview-view mark,
+.theme-dark .markdown-rendered mark {
+  background: #aaee2a !important;
+  color: #061400 !important;
+  padding: 0.05em 0.1em;
+  border-radius: 2px;
+}
+.theme-dark .cm-s-obsidian .cm-highlight {
+  background: #aaee2a !important;
+  color: #061400 !important;
+  border-radius: 2px;
+}
+
+/* ── Tags (#tag) ────────────────────────────────────────────── */
+/* Reading mode + Properties (both use .tag class) */
+.tag {
+  background: var(--tag-background) !important;
+  color: var(--tag-color) !important;
+  border: 1px solid var(--tag-border-color) !important;
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  font-size: 85%;
+  text-decoration: none;
+}
+.tag:hover {
+  background: var(--tag-background-hover) !important;
+  color: var(--tag-color-hover) !important;
+}
+
+/* Live preview (CM6) */
+.cm-s-obsidian span.cm-hashtag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border-radius: 4px;
+  padding: 0.05em 0.25em;
+  font-size: 90%;
+}
+.cm-s-obsidian span.cm-hashtag-begin {
+  border-radius: 4px 0 0 4px;
+  padding-right: 0;
+}
+.cm-s-obsidian span.cm-hashtag-end {
+  border-radius: 0 4px 4px 0;
+  padding-left: 0;
+}
+
+/* ── Horizontal Rule (---) ──────────────────────────────────── */
+.markdown-preview-view hr,
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px dotted var(--hr-color);
+  margin: 1.5em 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-hr {
+  border-bottom: 1px dotted var(--hr-color);
+}
+
 /* ── Code block background (source / live preview mode) ─────── */
-/* --code-background はプレビュー用のため、ソースモードでも明示指定 */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
   background-color: var(--code-background);
 }
 
+/* ── Math (inline / block) ──────────────────────────────────── */
+/* light モード: cm-math スパン群をダークで読めるように上書き */
+.theme-light .cm-math {
+  color: #1a4a1a !important;
+}
+.theme-light .cm-formatting-math {
+  color: #3a8a3e !important;
+  opacity: 0.8;
+}
+
 /* ── Active line highlight: コードブロック内のみ ────────────── */
-/* .cm-s-obsidian を加えて詳細度を上げ !important を不要にする  */
 .theme-dark .markdown-source-view.cm-s-obsidian.mod-cm6 .cm-active.cm-line.HyperMD-codeblock {
   background-color: #1a3318;
 }
@@ -123,11 +357,9 @@ body {
 }
 
 /* ── Cursor ─────────────────────────────────────────────────── */
-/* ライト通常行: ライム背景に映える濃い緑 */
 .theme-light .markdown-source-view.mod-cm6 .cm-content {
   caret-color: #031f04;
 }
-/* ライトのコードブロック行: ダークモードと同じ明るいライムグリーン */
 .theme-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
   caret-color: #6bfa6e;
 }
@@ -160,4 +392,3 @@ body {
   border-radius: 6px;
   padding: 1em 1.2em;
 }
-

@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Things 3 Theme for Obsidian
-Version 2.6.21
-@paralloid, 2026-05-11
+Version 2.6.22
+@paralloid, 2026-05-15
 ───────────────────────────────────────*/
 
 /* @settings
@@ -103,6 +103,7 @@ body {
     --nav-item-background-hover: none;
     --setting-items-radius: var(--radius-l);
     --button-radius: var(--radius-l);
+    --tab-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .is-translucent:not(.is-fullscreen) {
@@ -279,7 +280,7 @@ body.is-tablet.theme-dark.tablet-full-black {
     --bases-cards-shadow: 0 0 5px rgba(0,0,0,0.1);
     --checkbox-border-color: rgba(128,128,128,0.3);
     --checklist-done-color: #82868a;
-    --code-background: #f9f9f9;
+    --code-background: var(--properties-background);
     --color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) * 0.8), calc(var(--accent-l) * 1.35)) !important;
     --color-accent: #0062c1 !important;
     --div-color: rgba(210, 210, 210, 0.5);
@@ -543,7 +544,7 @@ body.button-close-left .workspace-tab-header-inner-title {
 }
 
 body.is-focused.theme-light .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active {
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--tab-shadow);
     color: var(--text-extreme);
     transition: box-shadow 0.15s ease-out;
 }
@@ -2588,4 +2589,45 @@ body.zenmode-active:not(.is-mobile) .inline-title {
     border-radius: var(--radius-m) !important;
     border: 1px solid rgba(255, 255, 255, 0.10) !important;
     background-color: var(--background-secondary);
+}
+
+/* Notebook Navigator */
+
+body {
+    --nn-theme-list-bg: var(--background-secondary);
+    --nn-selected-file-bg-color: var(--background-primary);
+    --nn-theme-file-selected-bg: var(--background-primary);
+    --nn-file-item-border-radius: var(--radius-s);
+    --nn-theme-file-border-radius: var(--radius-s);
+    --nn-computed-file-selected-inactive-bg: var(--background-primary);
+    --nn-theme-navitem-icon-color: var(--icon-color);
+}
+
+.nn-file-content,
+.nn-file {
+    border-radius: var(--radius-s);
+}
+
+.nn-file.nn-selected,
+.nn-file.nn-selected:hover {
+    box-shadow: var(--tab-shadow);
+}
+
+.nn-file.nn-selected .nn-file-tag:not(.nn-file-property):not([data-has-color='true']):not([data-has-background='true']),
+.nn-file-tag {
+    --nn-file-pill-border-color-resolved: transparent;
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    font-weight: 550;
+    font-size: var(--tag-size);
+}
+
+.nn-quick-actions-panel {
+    border-radius: 12px;
+    padding: 8px;
+    animation: fade-in 150ms linear;
+}
+
+.nn-navitem-icon svg {
+    stroke-width: 2.1px !important;
 }

@@ -1100,9 +1100,9 @@ body.theme-light {
   --em-color: var(--cerulean) !important;
   --strong-color: hsl(var(--boldpink)) !important;
   --pink: #f2b3cf !important;
+  --text-highlight-color: var(--text-normal) !important;
   --blockquote-border:
     var(--l-blockquote-h), var(--l-blockquote-s), var(--l-blockquote-l) !important;
-  --text-highlight-color: var(--text-normal) !important;
   --blockquote-bg: hsla(var(--blockquote-border), 0.05) !important;
   --background-translucent: hsla(
     var(--base-h),
@@ -2418,9 +2418,9 @@ body.theme-dark {
   --em-color: var(--cerulean) !important;
   --strong-color: hsl(var(--boldlightpink)) !important;
   --pink: #f2b3cf !important;
+  --text-highlight-color: var(--text-normal) !important;
   --blockquote-border:
     var(--d-blockquote-h), var(--d-blockquote-s), var(--d-blockquote-l) !important;
-  --text-highlight-color: var(--text-normal) !important;
   --blockquote-bg: hsla(var(--blockquote-border), 0.05) !important;
   --background-translucent: hsla(
     var(--base-h),

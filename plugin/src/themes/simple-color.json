@@ -36,5 +36,398 @@
   "light": {},
   "extras": null,
   "classSettings": null,
-  "selectorImpacts": {}
+  "selectorImpacts": {},
+  "brokenVarLinks": {
+    "--text-primary-color": [
+      "--message-bar-close-button-color",
+      "--message-bar-close-button-color-hover",
+      "--message-bar-fg-color",
+      "--button-secondary-fg-color",
+      "--input-text-fg-color"
+    ],
+    "--csstools-color-scheme--dark": [
+      "--csstools-light-dark-toggle--24",
+      "--csstools-light-dark-toggle--25",
+      "--csstools-light-dark-toggle--26",
+      "--csstools-light-dark-toggle--27",
+      "--csstools-light-dark-toggle--0",
+      "--csstools-light-dark-toggle--1",
+      "--csstools-light-dark-toggle--2",
+      "--csstools-light-dark-toggle--29",
+      "--csstools-light-dark-toggle--30",
+      "--csstools-light-dark-toggle--31",
+      "--csstools-light-dark-toggle--32",
+      "--csstools-light-dark-toggle--3",
+      "--csstools-light-dark-toggle--4",
+      "--csstools-light-dark-toggle--5",
+      "--csstools-light-dark-toggle--33",
+      "--csstools-light-dark-toggle--6",
+      "--csstools-light-dark-toggle--7",
+      "--csstools-light-dark-toggle--8",
+      "--csstools-light-dark-toggle--9",
+      "--csstools-light-dark-toggle--10",
+      "--csstools-light-dark-toggle--11",
+      "--csstools-light-dark-toggle--12",
+      "--csstools-light-dark-toggle--13",
+      "--csstools-light-dark-toggle--14",
+      "--csstools-light-dark-toggle--34",
+      "--csstools-light-dark-toggle--35",
+      "--csstools-light-dark-toggle--36",
+      "--csstools-light-dark-toggle--15",
+      "--csstools-light-dark-toggle--16",
+      "--csstools-light-dark-toggle--17",
+      "--csstools-light-dark-toggle--18",
+      "--csstools-light-dark-toggle--19",
+      "--csstools-light-dark-toggle--37",
+      "--csstools-light-dark-toggle--38",
+      "--csstools-light-dark-toggle--39",
+      "--csstools-light-dark-toggle--40",
+      "--csstools-light-dark-toggle--28",
+      "--csstools-light-dark-toggle--20",
+      "--csstools-light-dark-toggle--21",
+      "--csstools-light-dark-toggle--41",
+      "--csstools-light-dark-toggle--22",
+      "--csstools-light-dark-toggle--23"
+    ],
+    "--csstools-light-dark-toggle--24": [
+      "--message-bar-close-button-hover-bg-color"
+    ],
+    "--csstools-light-dark-toggle--25": [
+      "--message-bar-close-button-active-bg-color"
+    ],
+    "--csstools-light-dark-toggle--26": [
+      "--message-bar-close-button-focus-bg-color"
+    ],
+    "--csstools-light-dark-toggle--0": ["--text-primary-color"],
+    "--csstools-light-dark-toggle--6": ["--text-primary-color"],
+    "--csstools-light-dark-toggle--1": ["--message-bar-icon-color"],
+    "--csstools-light-dark-toggle--22": ["--message-bar-icon-color"],
+    "--csstools-light-dark-toggle--2": ["--message-bar-bg-color"],
+    "--csstools-light-dark-toggle--20": ["--message-bar-bg-color"],
+    "--csstools-light-dark-toggle--21": ["--message-bar-fg-color"],
+    "--csstools-light-dark-toggle--29": ["--message-bar-border-color"],
+    "--csstools-light-dark-toggle--41": ["--message-bar-border-color"],
+    "--csstools-light-dark-toggle--30": ["--undo-button-bg-color"],
+    "--csstools-light-dark-toggle--31": ["--undo-button-bg-color-hover"],
+    "--csstools-light-dark-toggle--32": ["--undo-button-bg-color-active"],
+    "--csstools-light-dark-toggle--3": ["--undo-button-border"],
+    "--message-bar-fg-color": ["--undo-button-fg-color"],
+    "--undo-button-fg-color": [
+      "--undo-button-fg-color-hover",
+      "--undo-button-fg-color-active"
+    ],
+    "--csstools-light-dark-toggle--4": ["--dialog-bg-color"],
+    "--csstools-light-dark-toggle--5": ["--dialog-border-color"],
+    "--csstools-light-dark-toggle--33": ["--dialog-shadow"],
+    "--csstools-light-dark-toggle--7": ["--text-secondary-color"],
+    "--csstools-light-dark-toggle--8": ["--link-fg-color"],
+    "--csstools-light-dark-toggle--9": ["--link-hover-fg-color"],
+    "--csstools-light-dark-toggle--10": ["--separator-color"],
+    "--csstools-light-dark-toggle--11": ["--textarea-bg-color"],
+    "--text-secondary-color": ["--textarea-fg-color"],
+    "--csstools-light-dark-toggle--12": ["--radio-bg-color"],
+    "--csstools-light-dark-toggle--13": ["--radio-checked-bg-color"],
+    "--csstools-light-dark-toggle--14": ["--radio-checked-border-color"],
+    "--csstools-light-dark-toggle--34": ["--button-secondary-bg-color"],
+    "--button-secondary-bg-color": [
+      "--button-secondary-border-color",
+      "--button-secondary-active-border-color",
+      "--button-secondary-disabled-bg-color"
+    ],
+    "--csstools-light-dark-toggle--35": ["--button-secondary-active-bg-color"],
+    "--button-secondary-fg-color": [
+      "--button-secondary-active-fg-color",
+      "--button-secondary-hover-fg-color",
+      "--button-secondary-disabled-fg-color"
+    ],
+    "--csstools-light-dark-toggle--36": ["--button-secondary-hover-bg-color"],
+    "--button-secondary-hover-bg-color": [
+      "--button-secondary-hover-border-color"
+    ],
+    "--button-secondary-border-color": [
+      "--button-secondary-disabled-border-color"
+    ],
+    "--csstools-light-dark-toggle--15": ["--button-primary-bg-color"],
+    "--csstools-light-dark-toggle--16": ["--button-primary-fg-color"],
+    "--button-primary-bg-color": [
+      "--button-primary-border-color",
+      "--button-primary-disabled-bg-color"
+    ],
+    "--csstools-light-dark-toggle--17": ["--button-primary-active-bg-color"],
+    "--button-primary-fg-color": [
+      "--button-primary-active-fg-color",
+      "--button-primary-hover-fg-color",
+      "--button-primary-disabled-fg-color"
+    ],
+    "--button-primary-active-bg-color": [
+      "--button-primary-active-border-color"
+    ],
+    "--csstools-light-dark-toggle--18": ["--button-primary-hover-bg-color"],
+    "--button-primary-hover-bg-color": ["--button-primary-hover-border-color"],
+    "--button-primary-border-color": ["--button-primary-disabled-border-color"],
+    "--csstools-light-dark-toggle--19": ["--input-text-bg-color"],
+    "--hcm-highlight-filter": ["--highlight-backdrop-filter"],
+    "--hcm-highlight-selected-filter": ["--highlight-selected-backdrop-filter"],
+    "--scale-factor": ["--page-border", "--total-scale-factor"],
+    "--focus-ring-color": ["--focus-ring-outline"],
+    "--user-unit": ["--total-scale-factor"],
+    "--size-4-4": [
+      "--bases-header-padding-start",
+      "--bases-header-padding-end",
+      "--dropdown-padding",
+      "--dropdown-padding-start",
+      "--file-margins",
+      "--input-padding",
+      "--menu-padding",
+      "--table-drag-handle-size",
+      "--bases-view-padding",
+      "--textarea-padding",
+      "--prompt-top",
+      "--ec-codePadInl",
+      "--ec-uiPadInl"
+    ],
+    "--ec-cs-closedBrdWd": ["--border-width"],
+    "--ec-cs-openBrdWd": ["--border-width"],
+    "--touch-radius-s": ["--canvas-controls-radius", "--modal-radius"],
+    "--icon-l": ["--canvas-controls-icon-size", "--icon-size"],
+    "--icon-l-stroke-width": ["--canvas-controls-icon-stroke", "--icon-stroke"],
+    "--ec-frm-trmBg": ["--code-background"],
+    "--safe-area-inset-left": ["--dialog-max-width"],
+    "--safe-area-inset-right": ["--dialog-max-width"],
+    "--safe-area-inset-top": [
+      "--dialog-max-height",
+      "--modal-header-height",
+      "--modal-max-height",
+      "--view-top-fade-mask",
+      "--view-top-spacing-markdown",
+      "--view-top-spacing",
+      "--view-header-top-offset",
+      "--content-height",
+      "--prompt-top"
+    ],
+    "--background-modifier-active-hover": ["--flair-background"],
+    "--text-error": [
+      "--flair-background",
+      "--icon-color",
+      "--pill-color",
+      "--pill-color-remove",
+      "--text-color"
+    ],
+    "--icon-xl": ["--icon-size"],
+    "--canvas-controls-icon-size": ["--icon-size"],
+    "--icon-xl-stroke-width": ["--icon-stroke"],
+    "--canvas-controls-icon-stroke": ["--icon-stroke"],
+    "--icon-color-active": ["--icon-color", "--icon-color-hover"],
+    "--h1-font": ["--inline-title-font"],
+    "--bases-cards-line-height": ["--input-height"],
+    "--bases-table-row-height": ["--input-height"],
+    "--touch-radius-m": ["--input-radius"],
+    "--bases-group-heading-value-color": [
+      "--link-color",
+      "--link-color-hover",
+      "--link-unresolved-color"
+    ],
+    "--bases-group-heading-value-weight": ["--link-weight"],
+    "--touch-radius-xs": [
+      "--nav-item-radius",
+      "--modal-radius",
+      "--setting-items-radius"
+    ],
+    "--safe-area-inset-bottom": [
+      "--menu-padding",
+      "--navbar-bottom-offset",
+      "--view-bottom-spacing",
+      "--view-bottom-fade-mask"
+    ],
+    "--blur-m": [
+      "--menu-backdrop-filter",
+      "--prompt-backdrop-filter",
+      "--suggestion-backdrop-filter"
+    ],
+    "--metadata-divider-color-hover": ["--metadata-divider-color"],
+    "--metadata-sidebar-label-font-size": [
+      "--metadata-label-font-size",
+      "--metadata-input-font-size"
+    ],
+    "--bases-table-font-size": ["--metadata-input-font-size"],
+    "--settings-background": ["--modal-background"],
+    "--size-4-12": ["--modal-header-height"],
+    "--metadata-input-text-color": ["--pill-color"],
+    "--tag-decoration": ["--pill-decoration"],
+    "--tag-decoration-hover": ["--pill-decoration-hover"],
+    "--tag-padding-x": ["--pill-padding-x"],
+    "--tag-padding-y": ["--pill-padding-y"],
+    "--tag-radius": ["--pill-radius"],
+    "--tag-weight": ["--pill-weight"],
+    "--footnote-size": ["--popover-font-size"],
+    "--shadow-xs": ["--raised-shadow"],
+    "--sidebar-left-toggle-inner-width-open": [
+      "--sidebar-left-toggle-inner-width"
+    ],
+    "--sidebar-right-toggle-inner-width-open": [
+      "--sidebar-right-toggle-inner-width"
+    ],
+    "--titlebar-background": [
+      "--tab-container-background",
+      "--system-status-background"
+    ],
+    "--titlebar-background-focused": [
+      "--tab-container-background",
+      "--titlebar-background"
+    ],
+    "--background-secondary-alt": ["--titlebar-background-focused"],
+    "--color-base-00": [
+      "--background-primary",
+      "--background-modifier-form-field",
+      "--interactive-normal"
+    ],
+    "--color-base-20": ["--background-secondary"],
+    "--background-modifier-error-rgb": [
+      "--background-modifier-border-focus",
+      "--background-modifier-form-field"
+    ],
+    "--color-base-05": ["--background-secondary-alt"],
+    "--shadow-edges": ["--shadow-xs"],
+    "--size-4-6": ["--table-drag-handle-size"],
+    "--ribbon-width": ["--frame-left-space"],
+    "--callout-important": ["--callout-color"],
+    "--list-indent-source": ["--list-padding-inline-start"],
+    "--list-indent-editing": ["--list-padding-inline-start"],
+    "--size-4-1": ["--bases-table-cell-edge-padding", "--bases-embed-padding"],
+    "--size-4-3": [
+      "--bases-view-padding",
+      "--navbar-bottom-offset",
+      "--textarea-padding",
+      "--view-top-spacing-markdown",
+      "--view-header-top-offset",
+      "--ec-codePadBlk"
+    ],
+    "--size-4-2": [
+      "--bases-view-padding",
+      "--bases-embed-padding",
+      "--view-top-spacing-markdown",
+      "--ec-uiPadBlk"
+    ],
+    "--background-modifier-border-hover": [
+      "--metadata-property-box-shadow",
+      "--menu-divider-color"
+    ],
+    "--radius-m": ["--bases-property-menu-item-radius"],
+    "--canvas-color-1": ["--canvas-color"],
+    "--canvas-color-2": ["--canvas-color"],
+    "--canvas-color-3": ["--canvas-color"],
+    "--canvas-color-4": ["--canvas-color"],
+    "--canvas-color-5": ["--canvas-color"],
+    "--canvas-color-6": ["--canvas-color"],
+    "--color-accent": ["--shadow-border-accent"],
+    "--touch-size-l": [
+      "--view-header-height",
+      "--mobile-toolbar-height",
+      "--navbar-height",
+      "--navbar-radius"
+    ],
+    "--touch-size-m": ["--view-header-height"],
+    "--view-header-height": [
+      "--view-header-action-radius",
+      "--view-top-fade-mask",
+      "--view-top-spacing-markdown",
+      "--view-top-spacing",
+      "--hidden-nav-offset"
+    ],
+    "--background-primary": [
+      "--system-status-background",
+      "--mobile-sidebar-background",
+      "--settings-background",
+      "--settings-home-background",
+      "--keyboard-background",
+      "--modal-sidebar-background"
+    ],
+    "--border-width": ["--menu-divider-width", "--ec-tm-inlMarkerBrdWd"],
+    "--background-modifier-border": ["--menu-divider-color", "--ec-focusBrd"],
+    "--background-secondary": [
+      "--mobile-sidebar-background",
+      "--settings-background",
+      "--settings-home-background"
+    ],
+    "--touch-radius-xxs": ["--textarea-radius"],
+    "--keyboard-height": ["--view-bottom-spacing", "--view-bottom-fade-mask"],
+    "--navbar-height": [
+      "--view-bottom-spacing",
+      "--hidden-nav-navbar-transform"
+    ],
+    "--view-bottom-fade-opacity": ["--view-bottom-fade-mask"],
+    "--view-top-fade-opacity": ["--view-top-fade-mask"],
+    "--file-margins-x": ["--bases-embed-width", "--bases-embed-transform"],
+    "--text-normal": [
+      "--icon-color-focus",
+      "--ec-uiSelFg",
+      "--ec-frm-edActTabFg",
+      "--ec-frm-trmTtbFg",
+      "--ec-frm-inlBtnFg"
+    ],
+    "--text-muted": ["--icon-color-focus"],
+    "--view-header-top-offset": ["--hidden-nav-offset"],
+    "--navbar-bottom-offset": ["--hidden-nav-navbar-transform"],
+    "--header-height": ["--prompt-top"],
+    "--toolbar-option-width": ["--scroll-fade-offset-right"],
+    "--ec-gtrBrdCol": ["--ecLineBrdCol"],
+    "--ec-tm-markBrdCol": ["--ecLineBrdCol", "--tmInlineBrdCol"],
+    "--ec-tm-insBrdCol": ["--ecLineBrdCol", "--tmInlineBrdCol"],
+    "--ec-tm-delBrdCol": ["--ecLineBrdCol", "--tmInlineBrdCol"],
+    "--ec-gtrBrdWd": ["--ecGtrBrdWd"],
+    "--ec-tm-lineMarkerAccentWd": ["--ecGtrBrdWd"],
+    "--ec-cs-closedBrdCol": ["--border-color"],
+    "--ec-cs-openBrdCol": ["--border-color"],
+    "--ec-tm-markBg": ["--tmLineBgCol", "--tmInlineBgCol"],
+    "--ec-tm-insBg": ["--tmLineBgCol", "--tmInlineBgCol"],
+    "--ec-tm-delBg": ["--tmLineBgCol", "--tmInlineBgCol"],
+    "--ec-tm-insDiffIndContent": ["--tmLabel"],
+    "--ec-tm-delDiffIndContent": ["--tmLabel"],
+    "--ec-tm-inlMarkerBrdWd": ["--tmBrdL", "--tmBrdR"],
+    "--ec-tm-inlMarkerBrdRad": ["--tmRadL", "--tmRadR"],
+    "--ec-frm-edTabBrdRad": ["--tab-border-radius"],
+    "--ec-brdWd": ["--tab-border-radius", "--button-spacing"],
+    "--ec-uiPadBlk": ["--button-spacing"],
+    "--ec-frm-edActTabIndHt": ["--button-spacing"],
+    "--ec-frm-tooltipSuccessBg": ["--tooltip-bg"],
+    "--shiki-code-block-border-radius": ["--ec-brdRad"],
+    "--shiki-code-block-border-width": ["--ec-brdWd"],
+    "--shiki-code-block-border-color": ["--ec-brdCol"],
+    "--font-monospace": ["--ec-codeFontFml"],
+    "--code-size": ["--ec-codeFontSize"],
+    "--font-normal": ["--ec-codeFontWg", "--ec-uiFontWg"],
+    "--line-height-normal": ["--ec-codeLineHt", "--ec-uiLineHt"],
+    "--shiki-code-background": [
+      "--ec-codeBg",
+      "--ec-frm-edActTabBg",
+      "--ec-frm-edBg",
+      "--ec-frm-trmTtbBg",
+      "--ec-frm-trmBg"
+    ],
+    "--shiki-code-normal": ["--ec-codeFg", "--ec-cs-closedTextCol"],
+    "--text-selection": ["--ec-codeSelBg", "--ec-uiSelBg"],
+    "--shiki-gutter-border-color": ["--ec-gtrBrdCol"],
+    "--shiki-gutter-border-width": ["--ec-gtrBrdWd"],
+    "--shiki-gutter-text-color": ["--ec-gtrFg"],
+    "--shiki-gutter-text-color-highlight": ["--ec-gtrHlFg"],
+    "--font-interface": ["--ec-uiFontFml"],
+    "--font-text-size": ["--ec-uiFontSize"],
+    "--scrollbar-thumb-bg": ["--ec-sbThumbCol"],
+    "--scrollbar-active-thumb-bg": ["--ec-sbThumbHoverCol"],
+    "--shiki-highlight-neutral-background": ["--ec-tm-markBg"],
+    "--shiki-highlight-neutral": ["--ec-tm-markBrdCol"],
+    "--shiki-highlight-green-background": ["--ec-tm-insBg"],
+    "--shiki-highlight-green": ["--ec-tm-insBrdCol", "--ec-tm-insDiffIndCol"],
+    "--shiki-highlight-red-background": ["--ec-tm-delBg"],
+    "--shiki-highlight-red": ["--ec-tm-delBrdCol", "--ec-tm-delDiffIndCol"],
+    "--shiki-active-tab-border-width": ["--ec-frm-edActTabIndHt"],
+    "--shiki-active-tab-border-color": ["--ec-frm-edActTabIndTopCol"],
+    "--shiki-code-border-radius": ["--ec-frm-edTabBrdRad"],
+    "--color-primary": ["--ec-frm-edTabBarBg"],
+    "--shiki-terminal-dots-color": ["--ec-frm-trmTtbDotsFg"],
+    "--background-modifier-hover": ["--ec-frm-inlBtnBg"],
+    "--shiki-code-border-color": ["--ec-frm-inlBtnBrd"],
+    "--shiki-tooltip-background": ["--ec-frm-tooltipSuccessBg"],
+    "--shiki-tooltip-text-color": ["--ec-frm-tooltipSuccessFg"]
+  }
 }

@@ -1152,12 +1152,12 @@ body.theme-light {
     var(--ch-color-base-l-l-90) var(--ch-color-base-l-c-90)
       var(--ch-color-base-l-h-90)
   ) !important;
+  --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-base-15: oklch(
     var(--ch-color-base-l-l-15) var(--ch-color-base-l-c-15)
       var(--ch-color-base-l-h-15)
   ) !important;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
-  --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-red-2: oklch(
     from var(--color-red) calc(l - 0.1) c calc(h + 4)
   ) !important;
@@ -2683,12 +2683,12 @@ body.theme-dark {
     var(--ch-color-base-d-l-90) var(--ch-color-base-d-c-90)
       var(--ch-color-base-d-h-90)
   ) !important;
+  --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-base-15: oklch(
     var(--ch-color-base-d-l-15) var(--ch-color-base-d-c-15)
       var(--ch-color-base-d-h-15)
   ) !important;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
-  --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-red-2: oklch(
     from var(--color-red) calc(l - 0.1) c calc(h + 4)
   ) !important;

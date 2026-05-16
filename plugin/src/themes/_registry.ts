@@ -140,6 +140,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   atom: { name: "atom", modes: ["dark", "light"], variations: [], fonts: [] },
   atomus: { name: "atomus", modes: ["dark"], variations: [], fonts: [] },
+  aubade: {
+    name: "aubade",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   auger: { name: "auger", modes: ["dark", "light"], variations: [], fonts: [] },
   aura: {
     name: "aura",
@@ -478,8 +484,20 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "cognia-noir": {
+    name: "cognia-noir",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "colored-candy": {
     name: "colored-candy",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  colours: {
+    name: "colours",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -564,6 +582,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["ballet", "oxanium", "space-wham", "orbitron"],
+  },
+  cyberglow: {
+    name: "cyberglow",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   cybertron: {
     name: "cybertron",
@@ -2895,6 +2919,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     ],
   },
   silence: { name: "silence", modes: ["dark"], variations: [], fonts: [] },
+  silver: {
+    name: "silver",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   simple: {
     name: "simple",
     modes: ["dark", "light"],

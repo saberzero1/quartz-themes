@@ -620,6 +620,27 @@
     "font-size": "var(--font-smaller)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
   },
+  "div.multi-select-pill": {
+    "background-color": "var(--theme-color-tagBgSidebar)",
+    "color": "var(--theme-color-tagSidebar)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--tag-weight)",
+    "line-height": "var(--line-height-tight)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.multi-select-pill-content": {
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
+  },
+  ".multi-select-pill": {
+    "background-color": "var(--theme-color-tagBgSidebar)",
+    "color": "var(--theme-color-tagSidebar)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--tag-weight)",
+    "line-height": "var(--line-height-tight)",
+    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
     "color": "var(--link-color)",
     "cursor": "var(--cursor-link)",
@@ -743,27 +764,6 @@
   "pre": {
     "background-color": "var(--code-background)",
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  "div.multi-select-pill": {
-    "background-color": "var(--theme-color-tagBgSidebar)",
-    "color": "var(--theme-color-tagSidebar)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--tag-weight)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "div.multi-select-pill-content": {
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"
-  },
-  ".multi-select-pill": {
-    "background-color": "var(--theme-color-tagBgSidebar)",
-    "color": "var(--theme-color-tagSidebar)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--tag-weight)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-color": "var(--theme-color-baseTransparent25) transparent",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
   },
   "div.quartz-icon-selector": {
     "scrollbar-color": "var(--theme-color-baseTransparent25) transparent"

@@ -1622,10 +1622,10 @@ body.theme-light {
     0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   --background-primary-rgb: var(--bg_x) !important;
   --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
+  --tab-background: rgba(240, 242, 246, 0.9) !important;
   --magenta: rgb(var(--magenta_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
-  --tab-background: rgba(240, 242, 246, 0.9) !important;
   --bg: rgb(var(--bg_x)) !important;
   --purple-light: rgb(var(--purple-light_x)) !important;
   --background-secondary-rgb: var(--bg_dark_x) !important;
@@ -2744,10 +2744,10 @@ body.theme-dark {
   --background-primary-rgb: var(--bg_x) !important;
   --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
   --bg-primary: #020202 !important;
+  --tab-background: rgba(2, 2, 2, 0.9) !important;
   --magenta: rgb(var(--magenta_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
-  --tab-background: rgba(2, 2, 2, 0.9) !important;
   --bg: rgb(var(--bg_x)) !important;
   --purple-light: rgb(var(--purple-light_x)) !important;
   --background-secondary-rgb: var(--bg_dark_x) !important;

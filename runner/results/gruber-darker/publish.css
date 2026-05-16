@@ -2630,10 +2630,10 @@ body.theme-dark {
   --italic-color: var(--gd-quartz) !important;
   --callout-title-size: var(--font-small);
   --interactive-success: var(--gd-green) !important;
+  --suggestion-radius: 4px !important;
   --tag-weight: normal !important;
   --nav-item-weight-active: normal !important;
   --graph-control-bg: var(--gd-bg-dark) !important;
-  --suggestion-radius: 4px !important;
   --callout-danger: 244, 56, 65;
   --input-focus-border-color: var(--gd-niagara) !important;
   --flashing-background: rgba(255, 221, 51, 0.15) !important;

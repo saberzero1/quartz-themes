@@ -78,16 +78,15 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--ec-codeFg)",
-    "font-family": "var(--ec-codeFontFml)",
-    "font-size": "var(--ec-codeFontSize)",
-    "font-weight": "var(--ec-codeFontWg)",
-    "line-height": "var(--ec-codeLineHt)"
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   "pre": {
     "background-color": "var(--code-background)",
     "box-shadow": "0 10px 28px var(--sg-shadow)",
-    "color": "var(--sg-code-text)"
+    "color": "var(--sg-code-text)",
+    "font-family": "var(--font-monospace)"
   },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "height": "var(--checkbox-size)",
@@ -399,6 +398,145 @@
     "min-width": "var(--table-column-min-width)"
   },
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout-title": {
+    "color": "var(--sg-gold-bright)",
+    "font-size": "var(--callout-title-size)",
+    "line-height": "var(--line-height-tight)"
+  },
+  "div.callout-title-inner": {
+    "color": "var(--callout-title-color)",
+    "font-weight": "var(--font-weight)"
+  },
+  "div.callout-content": {
+    "background-color": "var(--callout-content-background)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-pencil.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-clipboard-list.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "border-left-color": "var(--sg-role-mission)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-check-circle-2.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "border-left-color": "var(--sg-role-agent)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-flame.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "border-left-color": "var(--sg-role-agent)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-check.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-help-circle.svg-icon": {
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-role-decision) 10%, var(--sg-card))",
+    "border-left-color": "var(--sg-role-decision)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-copper) 16%, var(--sg-card))",
+    "border-left-color": "var(--sg-copper-bright)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-zap.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-copper) 16%, var(--sg-card))",
+    "border-left-color": "var(--sg-copper-bright)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-bug.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
+    "background-color": "color-mix(in srgb, var(--sg-card) 86%, var(--sg-card-muted))",
+    "border-left-color": "var(--sg-role-knowledge)",
+    "box-shadow": "0 10px 26px var(--sg-shadow)",
+    "color": "var(--sg-text)"
+  },
+  "svg.lucide-quote.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
   ".internal-embed": {
     "background-color": "var(--background-primary-alt)",
     "color": "var(--text-muted)",
@@ -477,13 +615,35 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
-  "svg.lucide-pencil.svg-icon": {
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "color": "var(--sg-text)",
+    "font-style": "var(--embed-font-style)"
   },
-  "svg.lucide-info.svg-icon": {
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
+  ".canvas-node": {
+    "background-color": "var(--canvas-color-node)",
+    "box-shadow": "0 12px 30px var(--sg-shadow)"
+  },
+  ".canvas-node-content": {
+    "background-color": "var(--embed-background)",
+    "color": "var(--sg-text)",
+    "font-style": "var(--embed-font-style)"
+  },
+  ".canvas-node-container .markdown-rendered": {
+    "background-color": "var(--sg-bg)",
+    "color": "var(--sg-text)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)"
+  },
+  ".canvas-card-menu": {
+    "background-color": "var(--background-secondary)",
+    "box-shadow": "0 10px 28px var(--sg-shadow)",
+    "font-size": "var(--font-ui-medium)"
+  },
+  ".canvas-node-group": {
+    "background-color": "var(--canvas-color-node)",
+    "box-shadow": "0 12px 30px var(--sg-shadow)"
   },
   ".tag": {
     "background-color": "var(--tag-background)",

@@ -1133,6 +1133,7 @@ body.theme-light {
   --font-title: "Jomhuria", "Source Sans Pro", sans-serif !important;
   --frost0: 226, 40%, 44% !important;
   --frost2: 226, 40%, 52% !important;
+  --color-text-title: var(--color-purple) !important;
   --color-white: var(--day2) !important;
   --font-headings: "Tahoma", serif !important;
   --color-black: var(--night2) !important;
@@ -1147,7 +1148,6 @@ body.theme-light {
   --teal2: 160, 50%, 42% !important;
   --teal3: 160, 50%, 46% !important;
   --teal4: 160, 50%, 50% !important;
-  --color-text-title: var(--color-purple) !important;
   --color-alternate: var(--color-pink) !important;
   --color-base-0: var(--day0) !important;
   --color-base-1: var(--day1) !important;
@@ -2261,6 +2261,7 @@ body.theme-dark {
   --font-title: "Jomhuria", "Source Sans Pro", sans-serif !important;
   --frost0: 226, 40%, 44% !important;
   --frost2: 226, 40%, 52% !important;
+  --color-text-title: var(--color-pink) !important;
   --color-white: var(--day3) !important;
   --font-headings: "Tahoma", serif !important;
   --color-black: var(--night3) !important;
@@ -2275,7 +2276,6 @@ body.theme-dark {
   --teal2: 160, 50%, 42% !important;
   --teal3: 160, 50%, 46% !important;
   --teal4: 160, 50%, 50% !important;
-  --color-text-title: var(--color-pink) !important;
   --color-alternate: var(--color-pink) !important;
   --color-base-0: var(--night0) !important;
   --color-base-1: var(--night1) !important;

@@ -1,0 +1,288 @@
+mode: replace
+sections:
+  - name: Aubade Color Presets
+    id: aubade-presets
+    collapsed: false
+    settings:
+      - id: color-preset
+        title: Color Scheme
+        description: Choose a primary color palette for the theme.
+        type: class-select
+        allowEmpty: false
+        default: preset-default
+        options:
+          - label: Default (Brutalist)
+            value: preset-default
+          - label: Solarized (Classic)
+            value: preset-solarized
+          - label: Warm (Amber/Cream)
+            value: preset-warm
+          - label: Cool (Teal/Slate)
+            value: preset-cool
+          - label: Monochrome (Pure B&W)
+            value: preset-mono
+          - label: Ocean (Deep Blue)
+            value: preset-ocean
+          - label: Forest (Earthy Green)
+            value: preset-forest
+          - label: Lavender (Soft Purple)
+            value: preset-lavender
+          - label: Sunset (Orange/Pink)
+            value: preset-sunset
+          - label: Midnight (Dark Navy)
+            value: preset-midnight
+          - label: Reader (Newspaper)
+            value: preset-reader
+          - label: Amber (IBM Terminal)
+            value: preset-amber
+          - label: Gunmetal/Ice
+            value: preset-gunmetal
+  - name: Aubade Editor Layout
+    id: aubade-layout
+    collapsed: false
+    settings:
+      - id: hide-ribbon
+        title: Autohide Ribbon
+        description: Collapses the left ribbon to a thin strip and expands it on hover.
+        type: class-toggle
+        default: false
+      - id: show-tooltips
+        title: Show Tooltips
+        description: Enable the hover labels for icons and buttons. (Hidden by default).
+        type: class-toggle
+        default: false
+      - id: expand-all-longtext
+        title: Expand all long-text properties
+        description: Permanently expands all long-text fields in the frontmatter without clicking.
+        type: class-toggle
+        default: true
+      - id: editor-width
+        title: Readable Line Width
+        description: Global max-width when "Readable Line Length" is ON.
+        type: variable-number-slider
+        default: 700
+        min: 500
+        max: 1600
+        step: 50
+        format: px
+      - id: text-align-mode
+        title: Text Alignment
+        description: Controls the text alignment for the whole editor.
+        type: variable-select
+        default: left
+        options:
+          - label: Left Align
+            value: left
+          - label: Justify
+            value: justify
+          - label: Center
+            value: center
+          - label: Right Align
+            value: right
+      - id: line-height-custom
+        title: Line Spacing
+        description: Slider to adjust text spacing.
+        type: variable-number-slider
+        default: 1.5
+        min: 1
+        max: 3
+        step: 0.1
+      - id: inline-title-size
+        title: Inline Title Size
+        description: Adjust the size of the inline title.
+        type: variable-number-slider
+        default: 3
+        min: 1
+        max: 5
+        step: 0.1
+        format: em
+      - id: inline-title-alignment
+        title: Inline Title Alignment
+        description: Controls the text alignment for the inline title.
+        type: variable-select
+        default: center
+        options:
+          - label: Left Align
+            value: left
+          - label: Centre
+            value: center
+          - label: Right Align
+            value: right
+  - name: Aubade Typography & Colours
+    id: aubade-typography
+    collapsed: false
+    settings:
+      - id: user-font-ui
+        title: UI Font
+        description: Used for file explorer, tabs, sidebars, and headers.
+        type: variable-select
+        default: '''Space Mono'', monospace'
+        options:
+          - label: Space Mono (Default) (Mono)
+            value: '''Space Mono'', monospace'
+          - label: Azeret Mono (Mono)
+            value: '''Azeret Mono'', monospace'
+          - label: iA Writer Mono S (Mono)
+            value: '''iA Writer Mono S'', monospace'
+          - label: JetBrains Mono (Mono)
+            value: '''JetBrains Mono'', monospace'
+          - label: Sen (Sans)
+            value: '''Sen'', sans-serif'
+          - label: Montserrat (Sans)
+            value: '''Montserrat'', sans-serif'
+          - label: iA Writer Quattro S (Sans)
+            value: '''iA Writer Quattro S'', sans-serif'
+          - label: iA Writer Duo S (Sans)
+            value: '''iA Writer Duo S'', sans-serif'
+          - label: Marcellus (Serif)
+            value: '''Marcellus'', serif'
+          - label: IBM Plex Serif (Serif)
+            value: '''IBM Plex Serif'', serif'
+          - label: Lora (Serif)
+            value: '''Lora'', serif'
+      - id: user-font-body
+        title: Body Font
+        description: Used for the main text editor.
+        type: variable-select
+        default: '''iA Writer Quattro S'', sans-serif'
+        options:
+          - label: iA Writer Quattro S (Default Body) (Sans)
+            value: '''iA Writer Quattro S'', sans-serif'
+          - label: Azeret Mono (Mono)
+            value: '''Azeret Mono'', monospace'
+          - label: Space Mono (Mono)
+            value: '''Space Mono'', monospace'
+          - label: iA Writer Mono S (Mono)
+            value: '''iA Writer Mono S'', monospace'
+          - label: JetBrains Mono (Mono)
+            value: '''JetBrains Mono'', monospace'
+          - label: Sen (Sans)
+            value: '''Sen'', sans-serif'
+          - label: Montserrat (Sans)
+            value: '''Montserrat'', sans-serif'
+          - label: iA Writer Duo S (Sans)
+            value: '''iA Writer Duo S'', sans-serif'
+          - label: IBM Plex Serif (Serif)
+            value: '''IBM Plex Serif'', serif'
+          - label: Lora (Serif)
+            value: '''Lora'', serif'
+      - id: user-font-mono
+        title: Monospace / Code Font
+        description: Used for code blocks and frontmatter.
+        type: variable-select
+        default: '''Space Mono'', monospace'
+        options:
+          - label: Space Mono (Default) (Mono)
+            value: '''Space Mono'', monospace'
+          - label: Azeret Mono (Mono)
+            value: '''Azeret Mono'', monospace'
+          - label: iA Writer Mono S (Mono)
+            value: '''iA Writer Mono S'', monospace'
+          - label: JetBrains Mono (Mono)
+            value: '''JetBrains Mono'', monospace'
+      - id: section-typography-light
+        title: Light Mode Colours
+        type: heading
+        level: 2
+      - id: ui-font-color-light
+        title: UI Font Colour (Light Mode)
+        type: variable-select
+        default: '#222222'
+        options:
+          - label: '#505050 (Soft Grey)'
+            value: '#505050'
+          - label: '#404040 (Charcoal)'
+            value: '#404040'
+          - label: '#303030 (Deep Charcoal)'
+            value: '#303030'
+          - label: '#222222 (Default)'
+            value: '#222222'
+          - label: '#202020 (Near Black)'
+            value: '#202020'
+          - label: '#101010 (Pitch Black)'
+            value: '#101010'
+          - label: '#000000 (Pure Black)'
+            value: '#000000'
+      - id: body-font-color-light
+        title: Body Font Color (Light Mode)
+        type: variable-select
+        default: '#323232'
+        options:
+          - label: '#505050 (Soft Grey)'
+            value: '#505050'
+          - label: '#404040 (Charcoal)'
+            value: '#404040'
+          - label: '#303030 (Deep Charcoal)'
+            value: '#303030'
+          - label: '#323232 (Default)'
+            value: '#323232'
+          - label: '#202020 (Near Black)'
+            value: '#202020'
+          - label: '#101010 (Pitch Black)'
+            value: '#101010'
+          - label: '#000000 (Pure Black)'
+            value: '#000000'
+      - id: link-color-light-custom
+        title: Internal Link Colour (Light Mode)
+        type: variable-color
+        format: hex
+        default: '#000000'
+        alt-format: []
+      - id: link-ext-color-light-custom
+        title: External Link Colour (Light Mode)
+        type: variable-color
+        format: hex
+        default: '#000000'
+        alt-format: []
+      - id: section-typography-dark
+        title: Dark Mode Colours
+        type: heading
+        level: 2
+      - id: ui-font-color-dark
+        title: UI Font Colour (Dark Mode)
+        type: variable-select
+        default: '#b3b3b3'
+        options:
+          - label: '#a0a0a0 (Dark Grey)'
+            value: '#a0a0a0'
+          - label: '#a9a9a9 (Silver Grey)'
+            value: '#a9a9a9'
+          - label: '#b3b3b3 (Light Grey - Default)'
+            value: '#b3b3b3'
+          - label: '#ffffff (Pure White)'
+            value: '#ffffff'
+          - label: '#c8bc9f (Everforest)'
+            value: '#c8bc9f'
+          - label: '#bcb094 (Deep Everforest)'
+            value: '#bcb094'
+          - label: '#b0a589 (Dark Everforest)'
+            value: '#b0a589'
+      - id: body-font-color-dark
+        title: Body Font Color (Dark Mode)
+        type: variable-select
+        default: '#b3b3b3'
+        options:
+          - label: '#a0a0a0 (Dark Grey)'
+            value: '#a0a0a0'
+          - label: '#b3b3b3 (Light Grey - Default)'
+            value: '#b3b3b3'
+          - label: '#ffffff (Pure White)'
+            value: '#ffffff'
+          - label: '#c8bc9f (Everforest)'
+            value: '#c8bc9f'
+          - label: '#bcb094 (Deep Everforest)'
+            value: '#bcb094'
+          - label: '#b0a589 (Dark Everforest)'
+            value: '#b0a589'
+      - id: link-color-dark-custom
+        title: Internal Link Colour (Dark Mode)
+        type: variable-color
+        format: hex
+        default: '#a0a0a0'
+        alt-format: []
+      - id: link-ext-color-dark-custom
+        title: External Link Colour (Dark Mode)
+        type: variable-color
+        format: hex
+        default: '#a0a0a0'
+        alt-format: []

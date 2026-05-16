@@ -6,7 +6,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: Masaaki Sumimoto
+- Theme author: <a href="https://github.com/masa-sumimoto" target="_blank" rel="noopener noreferrer">Masaaki Sumimoto</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/green-holiday/README.md">Install instructions</a>
 

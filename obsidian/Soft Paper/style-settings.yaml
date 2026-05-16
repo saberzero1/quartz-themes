@@ -1,31 +1,76 @@
 mode: replace
 sections:
   - name: Soft Paper
-    id: soft-paper-settings
+    id: soft-paper-dark-settings
     collapsed: false
     settings:
-      - id: sp-hide-scrollbars
-        title: Hide scrollbars
+      - id: sp-see-more
+        title: The "See More" Settings
+        type: heading
+        level: 2
+        collapsed: true
+      - id: sp-compact-all
+        title: Condense everything
+        description: Enables all condensing settings at once
         type: class-toggle
-        default: true
+        default: false
       - id: sp-compact-bases
-        title: Make bases compact
+        title: Make bases condensed
         description: Tighter vertical spacing in Bases plugin tables
         type: class-toggle
         default: false
       - id: sp-compact-explorer
-        title: Make file explorer compact
+        title: Make file explorer condensed
         description: Tighter vertical spacing in the file explorer
         type: class-toggle
         default: false
+      - id: sp-compact-explorer-extra
+        title: Make file explorer extra condensed
+        description: Even tighter spacing (18px rows, matches sidebar panes)
+        type: class-toggle
+        default: false
+      - id: sp-compact-panes
+        title: Make sidebar panes condensed
+        description: Tighter vertical spacing in Tags, Properties, Backlinks, Outgoing Links, Outline, Bookmarks, and Search panes
+        type: class-toggle
+        default: false
+      - id: sp-compact-properties
+        title: Make in-note properties condensed
+        description: Tighter vertical spacing in the properties/metadata section of notes
+        type: class-toggle
+        default: false
+      - id: sp-compact-body
+        title: Make body text condensed
+        description: Tighter line spacing and paragraph gaps in the editor (keeps font size unchanged)
+        type: class-toggle
+        default: false
+      - id: sp-compact-settings
+        title: Make settings popup condensed
+        description: Tighter spacing in the Settings modal sidebar and main content
+        type: class-toggle
+        default: false
+      - id: sp-special-tweaks
+        title: Special Tweaks
+        type: heading
+        level: 2
+        collapsed: true
       - id: sp-hide-add-property
         title: Hide "Add property" button
         description: Remove the "Add property" button below properties
         type: class-toggle
         default: false
+      - id: sp-hide-scrollbars
+        title: Hide scrollbars
+        type: class-toggle
+        default: true
       - id: sp-status-bar-blue
         title: Make status bar blue
         description: Toggle the lower-right file details bar between blue and beige
+        type: class-toggle
+        default: false
+      - id: sp-settings-transparent-80
+        title: Make settings more see-through
+        description: Settings window at 80% opacity for even more visibility
         type: class-toggle
         default: false
       - id: sp-settings-transparent

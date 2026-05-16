@@ -1,0 +1,396 @@
+{
+  "extractedAt": "2026-05-16T11:54:42.641Z",
+  "sourceTheme": "Aubade",
+  "fonts": [
+    {
+      "family": "Lora",
+      "style": "normal",
+      "weight": "normal",
+      "file": "lora.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lora",
+      "style": "normal",
+      "weight": "bold",
+      "file": "lora-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lora",
+      "style": "italic",
+      "weight": "normal",
+      "file": "lora-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lora",
+      "style": "italic",
+      "weight": "bold",
+      "file": "lora-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Serif",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ibm-plex-serif.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Serif",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ibm-plex-serif-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Serif",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ibm-plex-serif-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Serif",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ibm-plex-serif-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Space Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "space-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Space Mono",
+      "style": "italic",
+      "weight": "normal",
+      "file": "space-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Space Mono",
+      "style": "normal",
+      "weight": "bold",
+      "file": "space-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Sen",
+      "style": "normal",
+      "weight": "normal",
+      "file": "sen.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Sen",
+      "style": "normal",
+      "weight": "bold",
+      "file": "sen-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "italic",
+      "weight": "normal",
+      "file": "montserrat.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "italic",
+      "weight": "bold",
+      "file": "montserrat-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "normal",
+      "file": "montserrat-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "bold",
+      "file": "montserrat-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Marcellus",
+      "style": "normal",
+      "weight": "normal",
+      "file": "marcellus.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-duo-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-duo-s-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-duo-s-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-duo-s-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-mono-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-mono-s-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-mono-s-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-mono-s-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-quattro-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-quattro-s-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-quattro-s-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-quattro-s-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Azeret Mono",
+      "style": "italic",
+      "weight": "bold",
+      "file": "azeret-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Azeret Mono",
+      "style": "italic",
+      "weight": "900",
+      "file": "azeret-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Azeret Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "azeret-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Azeret Mono",
+      "style": "italic",
+      "weight": "normal",
+      "file": "azeret-mono-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Azeret Mono",
+      "style": "normal",
+      "weight": "bold",
+      "file": "azeret-mono-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "italic",
+      "weight": "bold",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "bold",
+      "file": "jetbrains-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "jetbrains-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "italic",
+      "weight": "normal",
+      "file": "jetbrains-mono-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -315,6 +315,7 @@
     "box-shadow": "0 8px 24px -6px rgb(from var(--mono-rgb-100) r g b/0.15),\n        inset 1px 1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.7),\n        inset -1px -1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.2),\n        0 0 0 1px rgba(var(--callout-color), 0.28)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -392,13 +393,6 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
-  },
-  "pre": { "background-color": "var(--code-background)" },
   "strong": {
     "color": "var(--text-normal)",
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
@@ -410,6 +404,12 @@
   "mark": {
     "background-color": "var(--text-highlight-bg)",
     "color": "var(--text-normal)"
+  },
+  "code": {
+    "background-color": "var(--code-background)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   "li[data-line=\"0\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -533,17 +533,7 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"S\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
+  "pre": { "background-color": "var(--code-background)" },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "color": "var(--color-accent)",
@@ -589,6 +579,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-text)",
     "font-size": "var(--responsive-text, 1em)",
+    "font-weight": "var(--ulu-body-weight, 400)",
     "line-height": "var(--line-height-normal)"
   },
   ".canvas-card-menu": {
