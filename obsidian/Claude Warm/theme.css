@@ -19,6 +19,22 @@ body {
   --input-radius: 8px;
   --tab-radius-active: 8px 8px 0 0;
   --checkbox-radius: 4px;
+
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-normal);
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-muted);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-muted);
+  --h1-size: 1.85em;
+  --h2-size: 1.45em;
+  --h3-size: 1.2em;
+  --heading-spacing: 1.25rem;
+  --file-line-width: 760px;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.35;
 }
 
 .theme-dark {
@@ -45,7 +61,7 @@ body {
   --background-modifier-active-hover: rgba(229, 229, 226, 0.1);
   --background-modifier-border: rgba(203, 199, 187, 0.14);
   --background-modifier-border-hover: rgba(203, 199, 187, 0.22);
-  --background-modifier-border-focus: rgba(234, 146, 138, 0.42);
+  --background-modifier-border-focus: rgba(230, 191, 122, 0.46);
   --background-modifier-form-field: #3d3d3a;
   --background-modifier-form-field-highlighted: #42433f;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.26);
@@ -58,33 +74,33 @@ body {
   --text-error: #f2a29a;
   --text-warning: #e6bf7a;
   --text-success: #a9c79a;
-  --text-selection: rgba(234, 146, 138, 0.22);
-  --text-highlight-bg: rgba(220, 174, 94, 0.26);
-  --text-accent: #f0a097;
-  --text-accent-hover: #f7b5ae;
+  --text-selection: rgba(230, 191, 122, 0.24);
+  --text-highlight-bg: rgba(230, 191, 122, 0.28);
+  --text-accent: #e6bf7a;
+  --text-accent-hover: #f0cf92;
 
-  --color-accent: #ea928a;
-  --color-accent-1: #f1a59e;
-  --color-accent-2: #d47d76;
-  --interactive-accent-rgb: 234, 146, 138;
-  --interactive-accent-hsl: 5, 68%, 72%;
+  --color-accent: #e6bf7a;
+  --color-accent-1: #f0cf92;
+  --color-accent-2: #c99b47;
+  --interactive-accent-rgb: 230, 191, 122;
+  --interactive-accent-hsl: 38, 68%, 69%;
   --interactive-normal: #343533;
   --interactive-hover: #3b3c39;
-  --interactive-accent: #ea928a;
-  --interactive-accent-hover: #f1a59e;
+  --interactive-accent: #e6bf7a;
+  --interactive-accent-hover: #f0cf92;
   --interactive-success: #9ab889;
-  --input-focus-border-color: rgba(234, 146, 138, 0.42);
-  --input-focus-ring-color: rgba(234, 146, 138, 0.16);
+  --input-focus-border-color: rgba(230, 191, 122, 0.46);
+  --input-focus-ring-color: rgba(230, 191, 122, 0.18);
 
-  --link-color: #f0a097;
-  --link-color-hover: #f7b5ae;
+  --link-color: #e6bf7a;
+  --link-color-hover: #f0cf92;
   --link-external-color: #d9b77a;
   --link-external-color-hover: #e9c98e;
 
-  --tag-color: #f0b5ae;
-  --tag-background: rgba(234, 146, 138, 0.12);
-  --tag-background-hover: rgba(234, 146, 138, 0.2);
-  --cw-tag-border-color: rgba(240, 181, 174, 0.22);
+  --tag-color: #f0cf92;
+  --tag-background: rgba(230, 191, 122, 0.12);
+  --tag-background-hover: rgba(230, 191, 122, 0.2);
+  --cw-tag-border-color: rgba(240, 207, 146, 0.24);
 
   --titlebar-background: #2a2b2a;
   --titlebar-background-focused: #2a2b2a;
@@ -99,7 +115,7 @@ body {
   --nav-item-color-hover: hsl(50, 14%, 91%);
   --nav-item-color-active: hsl(50, 14%, 91%);
   --nav-item-background-hover: rgba(229, 229, 226, 0.06);
-  --nav-item-background-active: rgba(234, 146, 138, 0.12);
+  --nav-item-background-active: rgba(230, 191, 122, 0.12);
 
   --blockquote-border-color: #736b5d;
   --blockquote-color: hsl(48, 12%, 80%);
@@ -107,13 +123,13 @@ body {
   --code-normal: #abb2bf;
   --code-comment: #7f857c;
   --code-function: #e5c07b;
-  --code-important: #ea928a;
+  --code-important: #e6bf7a;
   --code-keyword: #c891d9;
   --code-operator: #d6cbc0;
   --code-property: #98c379;
   --code-punctuation: #b8b2a8;
   --code-string: #b5c88d;
-  --code-tag: #ea928a;
+  --code-tag: #e6bf7a;
   --code-value: #d19a66;
 
   --table-header-background: #343533;
@@ -134,6 +150,10 @@ body {
   --color-blue-rgb: 137, 168, 206;
   --color-purple-rgb: 198, 145, 217;
   --color-pink-rgb: 229, 151, 192;
+
+  --accent-h: 38;
+  --accent-s: 68%;
+  --accent-l: 69%;
 }
 
 .theme-light {
@@ -152,15 +172,15 @@ body {
   --color-base-70: #5f584d;
   --color-base-100: #29271d;
 
-  --background-primary: hsl(51, 24%, 95%);
-  --background-primary-alt: hsl(40, 23%, 98%);
+  --background-primary: hsl(51, 28%, 95%);
+  --background-primary-alt: hsl(45, 32%, 98%);
   --background-secondary: #f8f7f2;
-  --background-secondary-alt: hsl(51, 16%, 85%);
+  --background-secondary-alt: hsl(51, 19%, 87%);
   --background-modifier-hover: rgba(61, 57, 41, 0.06);
   --background-modifier-active-hover: rgba(61, 57, 41, 0.09);
   --background-modifier-border: rgba(88, 83, 66, 0.18);
   --background-modifier-border-hover: rgba(88, 83, 66, 0.28);
-  --background-modifier-border-focus: rgba(124, 27, 19, 0.34);
+  --background-modifier-border-focus: rgba(183, 121, 31, 0.36);
   --background-modifier-form-field: #ffffff;
   --background-modifier-form-field-highlighted: #fffdf8;
   --background-modifier-box-shadow: rgba(68, 57, 32, 0.14);
@@ -171,35 +191,35 @@ body {
   --text-on-accent: #fff8f3;
   --text-on-accent-inverted: hsl(49, 19.6%, 13.3%);
   --text-error: #7c1b13;
-  --text-warning: #795313;
+  --text-warning: #8a5e16;
   --text-success: #4b6f3d;
-  --text-selection: rgba(124, 27, 19, 0.14);
-  --text-highlight-bg: rgba(226, 188, 103, 0.34);
-  --text-accent: #7c1b13;
-  --text-accent-hover: #9b3328;
+  --text-selection: rgba(183, 121, 31, 0.16);
+  --text-highlight-bg: rgba(226, 188, 103, 0.36);
+  --text-accent: #b7791f;
+  --text-accent-hover: #9f6819;
 
-  --color-accent: #7c1b13;
-  --color-accent-1: #963025;
-  --color-accent-2: #63130e;
-  --interactive-accent-rgb: 124, 27, 19;
-  --interactive-accent-hsl: 5, 74%, 28%;
+  --color-accent: #b7791f;
+  --color-accent-1: #c98a2a;
+  --color-accent-2: #8a5e16;
+  --interactive-accent-rgb: 183, 121, 31;
+  --interactive-accent-hsl: 36, 71%, 42%;
   --interactive-normal: #ffffff;
   --interactive-hover: #f0eee6;
-  --interactive-accent: #7c1b13;
-  --interactive-accent-hover: #963025;
+  --interactive-accent: #b7791f;
+  --interactive-accent-hover: #c98a2a;
   --interactive-success: #5f7f4b;
-  --input-focus-border-color: rgba(124, 27, 19, 0.34);
-  --input-focus-ring-color: rgba(124, 27, 19, 0.14);
+  --input-focus-border-color: rgba(183, 121, 31, 0.36);
+  --input-focus-ring-color: rgba(183, 121, 31, 0.14);
 
-  --link-color: #7c1b13;
-  --link-color-hover: #9b3328;
-  --link-external-color: #795313;
-  --link-external-color-hover: #966a20;
+  --link-color: #b7791f;
+  --link-color-hover: #9f6819;
+  --link-external-color: #8a5e16;
+  --link-external-color-hover: #a8731d;
 
-  --tag-color: #7c1b13;
-  --tag-background: rgba(124, 27, 19, 0.08);
-  --tag-background-hover: rgba(124, 27, 19, 0.13);
-  --cw-tag-border-color: rgba(124, 27, 19, 0.18);
+  --tag-color: #8a5e16;
+  --tag-background: rgba(183, 121, 31, 0.09);
+  --tag-background-hover: rgba(183, 121, 31, 0.14);
+  --cw-tag-border-color: rgba(183, 121, 31, 0.2);
 
   --titlebar-background: #f8f7f2;
   --titlebar-background-focused: #f8f7f2;
@@ -214,22 +234,22 @@ body {
   --nav-item-color-hover: hsl(47, 15%, 25%);
   --nav-item-color-active: hsl(47, 15%, 25%);
   --nav-item-background-hover: rgba(61, 57, 41, 0.06);
-  --nav-item-background-active: rgba(124, 27, 19, 0.08);
+  --nav-item-background-active: rgba(183, 121, 31, 0.09);
 
   --blockquote-border-color: #c7b893;
   --blockquote-color: hsl(45, 12%, 34%);
   --code-background: rgba(61, 57, 41, 0.06);
   --code-normal: #2f3440;
   --code-comment: #80796c;
-  --code-function: #825e15;
-  --code-important: #7c1b13;
+  --code-function: #8a5e16;
+  --code-important: #b7791f;
   --code-keyword: #6f3f82;
   --code-operator: #4c463b;
   --code-property: #4f6f2b;
   --code-punctuation: #5b554b;
   --code-string: #536b2c;
-  --code-tag: #7c1b13;
-  --code-value: #8a4f18;
+  --code-tag: #b7791f;
+  --code-value: #8a5e16;
 
   --table-header-background: hsl(51, 19%, 87%);
   --table-header-background-hover: hsl(51, 19%, 84%);
@@ -243,45 +263,22 @@ body {
 
   --color-red-rgb: 124, 27, 19;
   --color-orange-rgb: 138, 79, 24;
-  --color-yellow-rgb: 130, 94, 21;
+  --color-yellow-rgb: 183, 121, 31;
   --color-green-rgb: 79, 111, 43;
   --color-cyan-rgb: 44, 111, 117;
   --color-blue-rgb: 55, 91, 135;
   --color-purple-rgb: 111, 63, 130;
   --color-pink-rgb: 143, 57, 101;
+
+  --accent-h: 36;
+  --accent-s: 71%;
+  --accent-l: 42%;
 }
 
-.theme-dark,
-.theme-light {
-  --accent-h: 5;
-  --accent-s: 68%;
-  --accent-l: 72%;
-  --bold-color: var(--text-normal);
-  --italic-color: var(--text-normal);
-  --h1-color: var(--text-normal);
-  --h2-color: var(--text-normal);
-  --h3-color: var(--text-normal);
-  --h4-color: var(--text-muted);
-  --h5-color: var(--text-muted);
-  --h6-color: var(--text-muted);
-  --h1-size: 1.85em;
-  --h2-size: 1.45em;
-  --h3-size: 1.2em;
-  --heading-spacing: 1.25rem;
-  --file-line-width: 760px;
-  --line-height-normal: 1.65;
-  --line-height-tight: 1.35;
-}
 
-.theme-light {
-  --accent-h: 5;
-  --accent-s: 74%;
-  --accent-l: 28%;
-}
 
 .workspace,
 .workspace-leaf,
-.workspace-leaf-content,
 .markdown-source-view,
 .markdown-reading-view,
 .empty-state {
@@ -294,17 +291,19 @@ body {
 .workspace-ribbon,
 .status-bar,
 .titlebar,
-.view-header,
 .workspace-tab-header-container {
   background-color: var(--background-secondary);
   border-color: var(--background-modifier-border);
 }
 
 .workspace-leaf-content {
+  background-color: var(--background-primary);
   border-radius: 0;
 }
 
 .view-header {
+  background-color: var(--background-secondary);
+  border-color: var(--background-modifier-border);
   box-shadow: 0 1px 0 var(--background-modifier-border);
 }
 
@@ -345,14 +344,18 @@ body {
   font-weight: 600;
 }
 
-.markdown-source-view.mod-cm6 .cm-scroller,
-.markdown-preview-view {
+.markdown-source-view.mod-cm6 .cm-scroller {
   color: var(--text-normal);
   font-family: var(--font-text-theme);
 }
 
-.markdown-source-view.mod-cm6 .cm-content,
 .markdown-preview-view {
+  color: var(--text-normal);
+  font-family: var(--font-text-theme);
+  padding-top: 24px;
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
   padding-top: 24px;
 }
 
@@ -368,13 +371,13 @@ body {
   padding: 0.12em 0.35em;
 }
 
-.markdown-rendered pre,
 .HyperMD-codeblock,
 .cm-line.HyperMD-codeblock {
   background-color: var(--background-secondary-alt);
 }
 
 .markdown-rendered pre {
+  background-color: var(--background-secondary-alt);
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-l);
   box-shadow: var(--cw-shadow-soft);
@@ -404,9 +407,9 @@ body {
 .markdown-rendered th {
   background-color: var(--table-header-background);
   color: var(--text-normal);
+  border-color: var(--background-modifier-border);
 }
 
-.markdown-rendered th,
 .markdown-rendered td {
   border-color: var(--background-modifier-border);
 }

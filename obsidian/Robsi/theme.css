@@ -1,8 +1,8 @@
 /*
 Robsi Theme - A modern theme for Obsidian.
 By Riffaells - 2026
-Built: 2026-01-26T12:57:05.821883
-Files included: 24
+Built: 2026-05-16T18:27:21.280005
+Files included: 26
 */
 
 /* base/variables.css */
@@ -98,14 +98,36 @@ Files included: 24
     --checkbox-radius: var(--radius-s);
     --checkbox-size: 16px;
 
-    /* Callouts */
+    /* Callouts */ 
     --callout-radius: var(--radius-m);
-    --callout-padding: 16px;
+    --callout-padding: 10px;
     --callout-title-padding: 0;
     --callout-content-padding: 0;
 
     /* Tables */
     --table-border-width: 1px;
+    --table-white-space: break-spaces;
+    --table-line-height: 1.4;
+    --table-header-weight: 600;
+    --table-header-size: var(--font-text-size);
+    --table-header-color: var(--text-normal);
+    --table-text-size: var(--font-text-size);
+    --table-text-color: inherit;
+    --table-column-min-width: 6ch;
+    --table-column-max-width: none;
+    --table-cell-vertical-alignment: middle;
+    --table-selection-border-width: 2px;
+    --table-selection-border-radius: 4px;
+    --table-selection-border-color: var(--interactive-accent);
+    --table-drag-handle-color: var(--text-faint);
+    --table-drag-handle-color-active: var(--text-on-accent);
+
+    /* Cursor */
+    --cursor-move-speed: 120ms;
+    --cursor-move-easing: ease;
+    --cursor-blink-rate: 1000ms;
+    --cursor-blink-count: 10;
+    --cursor-blink-easing: ease-in-out;
 
     /* Scrollbars */
     --scrollbar-width: 10px; /* Increased for visibility */
@@ -171,6 +193,9 @@ Files included: 24
     --h5-color: var(--blue);
     --h6-color: var(--yellow);
 
+    --hr-color: var(--text-normal);
+    --hr-thickness: 3px;
+
     /* Links */
     --link-color: var(--purple);
     --link-color-hover: var(--cyan);
@@ -178,6 +203,11 @@ Files included: 24
     --internal-link-color-hover: var(--blue);
     --link-external-color: var(--purple);
     --link-external-color-hover: var(--cyan);
+	--link-decoration: none;
+	--link-decoration-hover: none;
+	--link-external-decoration: none;
+    --link-external-decoration-hover: none;
+    
 
     /* UI Elements */
     --tag-color: var(--magenta);
@@ -196,9 +226,7 @@ Files included: 24
     --checkbox-border-color-hover: var(--comment);
 
 
-    --table-header-background: var(--bg_dark2);
-    --table-header-background-hover: var(--bg_dark2);
-    --table-border-color: var(--border-color);
+    /* Table color overrides are defined in styles/editor/tables.css */
 
     /* Callout Colors */
     --callout-default: var(--blue_x);
@@ -223,9 +251,10 @@ Files included: 24
 
     --nav-item-color-hover: var(--fg);
     --nav-item-background-hover: var(--bg_highlight);
-    --nav-item-background-active: rgba(var(--bg_highlight), 0.2);
+    --nav-item-background-active: rgba(var(--bg_highlight_x), 0.9);
     --nav-item-padding: var(--size-2-2) var(--size-4-1) var(--size-2-2) var(--size-4-6);
     --nav-item-parent-padding: var(--nav-item-padding);
+    --nav-item-weight-active: 600;
     --nav-file-tag: rgba(var(--yellow_x), 0.9);
 
     --graph-line: var(--comment);
@@ -236,10 +265,9 @@ Files included: 24
 	--bullet-new-color: var(--purple);
 
 	--setting-items-background: transparent;
-	--link-decoration: none;
-	--link-decoration-hover: none;
 
-	--divider-vertical-height: 0%;
+	--divider-vertical-height: 100%;
+	--embed-padding: 0;
 }
 
 
@@ -402,6 +430,14 @@ Files included: 24
         radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
         radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
 
+    /* Tables */
+    --table-border-color: rgba(var(--comment_x), 0.3);
+    --table-header-background: rgba(var(--bg_highlight_x), 0.5);
+    --table-header-background-hover: rgba(var(--bg_highlight_x), 0.7);
+    --table-row-alt-background: rgba(var(--bg_highlight_x), 0.08);
+    --table-row-alt-background-hover: rgba(var(--bg_highlight_x), 0.25);
+    --table-row-background-hover: rgba(var(--bg_highlight_x), 0.3);
+
     /* Navigation */
     --nav-item-color: rgba(220, 220, 220, 0.9);
 }
@@ -561,6 +597,14 @@ Files included: 24
         radial-gradient(circle 1px at 60px 36px, rgba(100, 100, 100, 0.7) 50%, transparent 50%),
         radial-gradient(circle 1px at 85px 22px, rgba(100, 100, 100, 0.5) 50%, transparent 50%);
 
+    /* Tables */
+    --table-border-color: rgba(var(--comment_x), 0.2);
+    --table-header-background: rgba(var(--bg_dark_x), 0.6);
+    --table-header-background-hover: rgba(var(--bg_dark_x), 0.8);
+    --table-row-alt-background: rgba(var(--bg_dark_x), 0.25);
+    --table-row-alt-background-hover: rgba(var(--bg_dark_x), 0.4);
+    --table-row-background-hover: rgba(var(--bg_dark_x), 0.35);
+
     /* Navigation */
     --nav-item-color: rgba(30, 35, 42, 0.9);
 }
@@ -717,10 +761,6 @@ Files included: 24
     border-radius: 8px;
 }
 
-/* Splitters */
-.workspace-leaf-resize-handle {
-    background: transparent;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                           2. Tabs & Headers                                */
@@ -772,7 +812,7 @@ Files included: 24
 /* Active and focus styles for inner element */
 .workspace-tab-header.is-active .workspace-tab-header-inner,
 .workspace-tab-header:focus .workspace-tab-header-inner {
-    background-color: var(--background-modifier-hover);
+    background-color: transparent;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -889,6 +929,7 @@ Files included: 24
     background-color: var(--background-modifier-active-hover);
     border-left-color: var(--interactive-accent);
     color: var(--text-normal);
+    font-weight: bold;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -907,7 +948,7 @@ Files included: 24
 
 /* The actual content inside popover/embed */
 .markdown-embed {
-    background-color: rgba(var(--background-primary-rgb), 0.2);
+    background-color: rgba(var(--background-primary-rgb), 0.1);
     backdrop-filter: blur(16px);
     border: 1px solid var(--background-modifier-border);
     border-radius: 12px;
@@ -934,10 +975,10 @@ Files included: 24
     }
 }
 
-/* Input Tweaks from old file */
-body:not(.is-ios):not(.is-android) input[type='date'], 
-body:not(.is-ios):not(.is-android) input[type='datetime-local'] {
-    padding-inline-start: 24px;
+/* Input Tweaks - Date/DateTime inputs */
+body:not(.is-ios):not(.is-android) input[type='date']:not([disabled="true"]), 
+body:not(.is-ios):not(.is-android) input[type='datetime-local']:not([disabled="true"]) {
+    padding-left: 32px;
 }
 
 
@@ -948,17 +989,280 @@ body:not(.is-ios):not(.is-android) input[type='datetime-local'] {
 /*                                  BUTTONS                                   */
 /* ========================================================================== */
 
-/* Primary CTA Button (Call to Action) */
-.mod-cta {
-    background-color: var(--interactive-accent);
-    color: var(--text-on-accent);
-    border: none;
-    transition: background-color 0.15s ease;
+/* Base button styles */
+button {
+    background-color: rgba(var(--background-primary-rgb), 0.4);
+    border: 2px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: var(--text-normal);
+    cursor: pointer;
+    transition: all 0.2s var(--motion-easing-standard);
+    box-shadow: var(--shadow-s);
+    font-weight: 500;
+    font-size: 0.95em;
 }
 
-.mod-cta:hover {
-    background-color: var(--interactive-accent-hover);
+button:hover {
+    background-color: rgba(var(--background-primary-rgb), 0.6);
+    border-color: var(--interactive-accent);
+    box-shadow: var(--shadow-m);
+}
+
+button:active {
+    box-shadow: var(--shadow-s);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Primary CTA Button (Call to Action) */
+.mod-cta,
+button.mod-cta {
+    background-color: var(--interactive-accent);
+    border: 1.5px solid rgba(var(--interactive-accent-rgb), 0.6);
     color: var(--text-on-accent);
+    font-weight: 600;
+}
+
+.mod-cta:hover,
+button.mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+    border-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.mod-cta:active,
+button.mod-cta:active {
+    box-shadow: 0 1px 4px rgba(var(--interactive-accent-rgb), 0.3);
+}
+
+/* Warning/Destructive buttons */
+.mod-warning,
+button.mod-warning,
+.mod-destructive,
+button.mod-destructive {
+    border-color: rgba(var(--text-error-rgb), 0.4);
+}
+
+.mod-warning:hover,
+button.mod-warning:hover,
+.mod-destructive:hover,
+button.mod-destructive:hover {
+    background-color: rgba(var(--text-error-rgb), 0.12);
+    border-color: var(--text-error);
+}
+
+/* Secondary/Ghost buttons */
+.mod-secondary,
+button.mod-secondary {
+    background-color: transparent;
+    border-color: var(--background-modifier-border);
+}
+
+.mod-secondary:hover,
+button.mod-secondary:hover {
+    background-color: rgba(var(--background-primary-rgb), 0.3);
+}
+
+/* Small buttons */
+.mod-small,
+button.mod-small {
+    padding: 4px 10px;
+    font-size: 0.85em;
+    border-radius: 6px;
+}
+
+/* Icon buttons */
+.clickable-icon {
+    border-radius: 6px;
+    padding: 6px;
+    transition: all 0.15s var(--motion-easing-standard);
+    cursor: pointer;
+}
+
+.clickable-icon:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+
+
+/* ================================================= */
+
+/* components/community-modal.css */
+/* ========================================================================== */
+/*                           COMMUNITY MODAL                                  */
+/* ========================================================================== */
+
+/* Main info container */
+.community-modal-info {
+    background: rgba(var(--background-primary-rgb), 0.3) !important;
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius-l);
+    padding: 16px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* Meta section - compact layout */
+.community-modal-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Plugin name and flair */
+.community-modal-info-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.community-modal-info-name .flair {
+    font-size: 0.6em;
+    padding: 3px 10px;
+    border-radius: 10px;
+    background: rgba(var(--interactive-accent-rgb), 0.15);
+    color: var(--interactive-accent);
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(var(--interactive-accent-rgb), 0.3);
+}
+
+/* Compact meta info */
+.community-modal-info-downloads,
+.community-modal-info-version,
+.community-modal-info-author,
+.community-modal-info-repo {
+    padding: 4px 0;
+    color: var(--text-muted);
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.4;
+}
+
+.community-modal-info-downloads {
+    color: var(--text-normal);
+    font-weight: 500;
+}
+
+.community-modal-info-downloads svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+}
+
+.community-modal-info-downloads-text {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Compact description */
+.community-modal-info-desc {
+    margin: 12px 0;
+    padding: 12px;
+    background: rgba(var(--background-secondary-rgb), 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius-m);
+    border-left: 2px solid var(--interactive-accent);
+    color: var(--text-normal);
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* Compact button container */
+.community-modal-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(var(--background-modifier-border-hover-rgb), 0.3);
+}
+
+.community-modal-button-container button {
+    background-color: rgba(var(--background-primary-rgb), 0.4);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid var(--background-modifier-border);
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: var(--text-normal);
+    cursor: pointer;
+    transition: all 0.15s var(--motion-easing-standard);
+    box-shadow: var(--shadow-s);
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.community-modal-button-container button:hover {
+    background-color: rgba(var(--background-primary-rgb), 0.6);
+    border-color: var(--interactive-accent);
+    box-shadow: var(--shadow-m);
+}
+
+.community-modal-button-container button:active {
+    box-shadow: var(--shadow-s);
+}
+
+.community-modal-button-container button.mod-destructive {
+    border-color: rgba(var(--text-error-rgb), 0.4);
+    color: var(--text-error);
+}
+
+.community-modal-button-container button.mod-destructive:hover {
+    background-color: rgba(var(--text-error-rgb), 0.12);
+    border-color: var(--text-error);
+}
+
+/* Readme section - compact */
+.community-modal-readme {
+    margin-top: 16px;
+    padding: 16px;
+    background: rgba(var(--background-secondary-rgb), 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius-m);
+    border: 1px solid var(--background-modifier-border);
+}
+
+.community-modal-readme.markdown-rendered {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Compact headings in readme */
+.community-modal-readme h1 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.community-modal-readme h2 {
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.community-modal-readme h3 {
+    font-size: 1.1em;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+}
+
+/* Compact lists in readme */
+.community-modal-readme ul,
+.community-modal-readme ol {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+}
+
+.community-modal-readme li {
+    margin: 0.3em 0;
 }
 
 
@@ -983,12 +1287,11 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 textarea {
-    background-color: var(--background-modifier-form-field);
-    border: 1px solid var(--background-modifier-border);
-    border-radius: 8px;
-    padding: 6px 10px;
+    background-color: rgba(var(--background-modifier-form-field), 0.3);
+    border: 2px solid var(--background-modifier-border);
+    border-radius: 12px;
     color: var(--text-normal);
-    transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 input[type="text"]:focus,
@@ -998,9 +1301,7 @@ input[type="password"]:focus,
 input[type="number"]:focus,
 textarea:focus {
     border-color: var(--interactive-accent);
-    background-color: rgba(var(--background-primary-rgb), 0.7);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+    background-color: rgba(var(--background-primary-rgb), 0.5);
     outline: none;
 }
 
@@ -1014,10 +1315,11 @@ input.prompt-input {
 
 /* --- Dropdowns (Select) --- */
 .dropdown {
-    background-color: var(--background-modifier-form-field);
-    border: 1px solid var(--background-modifier-border);
-    border-radius: 6px;
-    padding: 4px 24px 4px 8px; /* Right padding for arrow */
+    background-color: rgba(var(--background-primary-rgb), 0.4);
+    backdrop-filter: blur(12px);
+    border: 2px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 6px 28px 6px 12px; /* Right padding for arrow */
     color: var(--text-normal);
     cursor: pointer;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
@@ -1026,19 +1328,27 @@ input.prompt-input {
     background-size: 14px;
     -webkit-appearance: none; /* Hide default arrow */
     appearance: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    transition: all 0.2s var(--motion-easing-standard);
+    box-shadow: var(--shadow-s);
 }
 
 .dropdown:hover {
     border-color: var(--text-muted);
+    background-color: rgba(var(--background-primary-rgb), 0.5);
+    box-shadow: var(--shadow-m);
 }
 
 .dropdown:focus {
     border-color: var(--interactive-accent);
-    background-color: rgba(var(--background-primary-rgb), 0.7);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+    background-color: rgba(var(--background-primary-rgb), 0.8);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 0 3px rgba(var(--interactive-accent-rgb), 0.2), var(--shadow-m);
     outline: none;
+}
+
+/* Dropdown options */
+.dropdown option {
+    font-weight: normal;    
 }
 
 /* --- Range Sliders --- */
@@ -1164,11 +1474,57 @@ a.internal-link:hover,
   text-decoration: none !important;
 }
 
+/* --- Unresolved Links --- */
+a.internal-link.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+.markdown-preview-view .internal-link.is-unresolved,
+.markdown-rendered .internal-link.is-unresolved {
+  color: var(--link-unresolved-color);
+  opacity: 0.7;
+}
+
+a.internal-link.is-unresolved:hover,
+.cm-hmd-internal-link.is-unresolved:hover,
+.internal-link.is-unresolved:hover {
+  color: var(--link-unresolved-color);
+  opacity: 0.7;
+}
+
+/* --- Links inside bold / italic / both --- */
+/* Prevent bold-color and italic-color from overriding link color */
+.cm-strong .cm-hmd-internal-link,
+.cm-em .cm-hmd-internal-link,
+.cm-strong.cm-em .cm-hmd-internal-link,
+strong a.internal-link,
+em a.internal-link,
+strong em a.internal-link,
+em strong a.internal-link {
+  color: var(--internal-link-color) !important;
+}
+
+.cm-strong .cm-hmd-internal-link:hover,
+.cm-em .cm-hmd-internal-link:hover,
+strong a.internal-link:hover,
+em a.internal-link:hover {
+  color: var(--internal-link-color-hover) !important;
+}
+
 /* Helper for data-link-text */
 /* Lower specificity to allow plugin overrides via data-link-type */
 .data-link-text a.cm-underline {
   color: var(--internal-link-color);
   text-decoration: none !important;
+}
+
+/* --- Links without plugin recognition (no data-link-text wrapper) --- */
+/* These are unresolved links not handled by Periodic Notes or similar plugins */
+.cm-hmd-internal-link:not(:has(.data-link-text)) {
+  color: var(--link-unresolved-color) !important;
+  opacity: 0.7;
+}
+
+.cm-hmd-internal-link:not(:has(.data-link-text)):hover {
+  opacity: 1;
 }
 
 
@@ -1244,6 +1600,7 @@ a.internal-link:hover,
     background-color: rgba(var(--background-primary-rgb), 0.25) !important; /* Lighter background */
     border: 1px solid var(--background-modifier-border);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
 }
 
 /* Ensure content areas are transparent to show the blur */
@@ -1274,6 +1631,7 @@ a.internal-link:hover,
     border: 1px solid var(--background-modifier-border);
     border-radius: var(--radius-m);
 }
+
 
 
 /* ================================================= */
@@ -1324,8 +1682,31 @@ a.internal-link:hover,
 .setting-item-control {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     flex-shrink: 0;
+}
+
+/* Buttons in settings */
+.setting-item-control button {
+    background-color: rgba(var(--background-primary-rgb), 0.4);
+    backdrop-filter: blur(12px);
+    border: 2px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 6px 16px;
+    color: var(--text-normal);
+    cursor: pointer;
+    transition: all 0.2s var(--motion-easing-standard);
+    box-shadow: var(--shadow-s);
+    font-weight: 500;
+}
+
+.setting-item-control button:hover {
+    border-color: var(--interactive-accent);
+    box-shadow: var(--shadow-m);
+}
+
+.setting-item-control button:active {
+    box-shadow: var(--shadow-s);
 }
 
 /* --- General Checkboxes --- */
@@ -1341,13 +1722,26 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: var(--background-modifier-form-field);
+    background-color: rgba(var(--background-primary-rgb), 0.3);
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--background-modifier-border);
     border-radius: 12px;
+    transition: all 0.2s var(--motion-easing-standard);
+    box-shadow: var(--shadow-s);
+}
+
+.checkbox-container:hover {
+    background-color: rgba(var(--background-primary-rgb), 0.4);
+    border-color: var(--text-muted);
+    box-shadow: var(--shadow-m);
 }
 
 /* Enabled state - Default Obsidian checkmark behavior */
 .checkbox-container.is-enabled {
     background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 8px rgba(var(--interactive-accent-rgb), 0.3);
 }
 
 /* Disabled state */
@@ -1601,21 +1995,28 @@ blockquote p {
 /*                           EDITOR INTERFACE                                 */
 /* ========================================================================== */
 
-
 /* Bottom Panels (Search/Replace) */
 .ͼ2 .cm-panels-bottom {
-    border-top: var(--border-width) solid var(--bg_highlight);
+	border-top: var(--border-width) solid var(--bg_highlight);
 }
 
 /* Vim Mode Messages */
-.cm-vim-message { color: var(--red); }
+.cm-vim-message {
+	color: var(--red);
+}
 
 /* Tag Pills */
-.multi-select-pill { line-height: normal; }
+.multi-select-pill {
+	line-height: normal;
+}
 
 /* Remove line-height from metadata tags */
 .metadata-property-value[data-property-type="tags"] .multi-select-pill {
-    line-height: unset;
+	line-height: unset;
+}
+
+.metadata-container {
+	margin-block-end: 0px;
 }
 
 
@@ -1722,7 +2123,7 @@ ul > li.task-list-item > .task-list-item-checkbox {
 .token.italic { font-style: italic; }
 
 /* MathJax */
-mjx-math { font-size: 110% !important; }
+.MathJax { font-size: 130% !important; }
 
 /* Frontmatter */
 span.cm-hmd-frontmatter.cm-meta { color: rgba(var(--blue0_x), 0.9); }
@@ -1730,6 +2131,133 @@ span.cm-hmd-frontmatter.cm-meta { color: rgba(var(--blue0_x), 0.9); }
 
 /* Inline Code Atoms */
 .cm-atom { color: var(--blue); }
+
+
+/* ================================================= */
+
+/* editor/tables.css */
+/* ========================================================================== */
+/*                              TABLES                                        */
+/* ========================================================================== */
+
+/* --- Table Container --- */
+.markdown-rendered table,
+.markdown-preview-view table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 0.9em;
+    line-height: var(--table-line-height);
+    background: transparent;
+    margin: 1.2em 0;
+    border-radius: var(--radius-m);
+    border: none;
+    box-shadow: none;
+    transition: box-shadow var(--motion-duration-fast) var(--motion-easing-standard);
+}
+
+/* Внешняя рамка при фокусе */
+.markdown-rendered table:focus-within,
+.markdown-preview-view table:focus-within {
+    box-shadow: 0 0 0 var(--table-border-width) var(--table-border-color);
+}
+
+/* --- Header --- */
+.markdown-rendered thead tr,
+.markdown-preview-view thead tr {
+    background: var(--table-header-background);
+}
+
+.markdown-rendered th,
+.markdown-preview-view th {
+    padding: 7px 12px;
+    font-weight: var(--table-header-weight);
+    color: var(--table-header-color);
+    font-size: var(--table-header-size);
+    text-align: left;
+    border-bottom: 2px solid var(--table-border-color);
+    border-top: none;
+    white-space: nowrap;
+}
+
+/* Скругление углов шапки */
+.markdown-rendered thead tr th:first-child,
+.markdown-preview-view thead tr th:first-child {
+    border-radius: var(--radius-m) 0 0 0;
+}
+
+.markdown-rendered thead tr th:last-child,
+.markdown-preview-view thead tr th:last-child {
+    border-radius: 0 var(--radius-m) 0 0;
+}
+
+/* Убираем боковые границы у крайних ячеек */
+.markdown-rendered th:first-child,
+.markdown-rendered td:first-child,
+.markdown-preview-view th:first-child,
+.markdown-preview-view td:first-child {
+    border-left: none;
+}
+
+.markdown-rendered th:last-child,
+.markdown-rendered td:last-child,
+.markdown-preview-view th:last-child,
+.markdown-preview-view td:last-child {
+    border-right: none;
+}
+
+/* --- Body Cells --- */
+.markdown-rendered td,
+.markdown-preview-view td {
+    padding: 5px 12px;
+    color: var(--table-text-color);
+    vertical-align: var(--table-cell-vertical-alignment);
+    border-bottom: var(--table-border-width) solid var(--table-border-color);
+    white-space: var(--table-white-space);
+    min-width: var(--table-column-min-width);
+    max-width: var(--table-column-max-width);
+}
+
+/* Последняя строка — убираем нижнюю границу */
+.markdown-rendered tbody tr:last-child td,
+.markdown-preview-view tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.markdown-rendered tbody tr:last-child td:first-child,
+.markdown-preview-view tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--radius-m);
+}
+
+.markdown-rendered tbody tr:last-child td:last-child,
+.markdown-preview-view tbody tr:last-child td:last-child {
+    border-radius: 0 0 var(--radius-m) 0;
+}
+
+/* --- Alternating rows --- */
+.markdown-rendered tbody tr:nth-child(even),
+.markdown-preview-view tbody tr:nth-child(even) {
+    background: var(--table-row-alt-background);
+}
+
+/* --- Row hover --- */
+.markdown-rendered tbody tr:hover,
+.markdown-preview-view tbody tr:hover {
+    background: var(--table-row-background-hover);
+    transition: background var(--motion-duration-fast) var(--motion-easing-standard);
+}
+
+.markdown-rendered tbody tr:nth-child(even):hover,
+.markdown-preview-view tbody tr:nth-child(even):hover {
+    background: var(--table-row-alt-background-hover);
+}
+
+/* --- Live editor (CM6) source mode --- */
+.cm-editor .HyperMD-table-row {
+    line-height: var(--table-line-height);
+}
+
+
 
 
 /* ================================================= */
@@ -1782,6 +2310,21 @@ mark:hover, .cm-highlight:hover {
 ins, .cm-ins {
     text-decoration: none;
     border-bottom: 2px solid var(--insertion-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           Horizontal Rule (hr)                             */
+/* -------------------------------------------------------------------------- */
+
+hr,
+.markdown-rendered hr,
+.markdown-preview-view hr {
+    border: none;
+    height: var(--hr-thickness);
+    background: var(--hr-color);
+    border-radius: 4px;
+    margin: 2em 0;
+    opacity: 0.3;
 }
 
 

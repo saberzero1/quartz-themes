@@ -1197,6 +1197,7 @@ body.theme-light {
   --header-padding: var(--size-2-3) !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / var(--l-threshold) - 1) * -infinity, 0.975) !important;
+  --checkbox-margin-inline-end: 0.25em !important;
   --account-scrollbar-border: var(--border-scrollbar-non-native) !important;
   --account-scrollbar-size: var(--size-scrollbar-non-native) !important;
   --advanced-tables-helper-size: calc(
@@ -1489,7 +1490,6 @@ body.theme-light {
   --ch-color-base-l-c-pax-num: 0.035 !important;
   --ch-color-base-l-h-pax-delta: 0 !important;
   --ch-color-base-l-h-pax-num: 270 !important;
-  --checkbox-margin-inline-end: 0.25em !important;
   --col-base-alpha-alh: 0.25 !important;
   --col-highlight-0: hsl(46deg 100% 50%) !important;
   --col-highlight-0-org: hsl(60deg 100% 50%) !important;
@@ -2728,6 +2728,7 @@ body.theme-dark {
   --header-padding: var(--size-2-3) !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / var(--l-threshold) - 1) * -infinity, 0.975) !important;
+  --checkbox-margin-inline-end: 0.25em !important;
   --account-scrollbar-border: var(--border-scrollbar-non-native) !important;
   --account-scrollbar-size: var(--size-scrollbar-non-native) !important;
   --advanced-tables-helper-size: calc(
@@ -3083,7 +3084,6 @@ body.theme-dark {
   --ch-color-base-l-c-pax-num: 0.035 !important;
   --ch-color-base-l-h-pax-delta: 0 !important;
   --ch-color-base-l-h-pax-num: 270 !important;
-  --checkbox-margin-inline-end: 0.25em !important;
   --col-base-alpha-alh: 0.25 !important;
   --col-highlight-0: hsl(46deg 100% 50%) !important;
   --col-highlight-0-org: hsl(60deg 100% 50%) !important;

@@ -567,6 +567,9 @@
   },
   "--checkbox-border-color": { "body": ["--text-faint"] },
   "--checkbox-border-color-hover": { "body": ["--text-muted"] },
+  "--checkbox-margin-inline-start": {
+    "body": ["--list-indent", "--checkbox-start-margin"]
+  },
   "--checklist-done-color": { "body": ["--text-muted"] },
   "--code-border-color": { "body": ["--background-modifier-border"] },
   "--code-bracket-background": { "body": ["--background-modifier-hover"] },
@@ -664,7 +667,7 @@
     "body": ["--background-modifier-border", "--background-modifier-border"]
   },
   "--file-margins": {
-    "body": ["--size-4-8", "--size-4-8"],
+    "body": ["--file-margins-x", "--file-margins-y"],
     ".mod-right-split .markdown-preview-view": ["--size-4-5"],
     ".popover.hover-popover > .markdown-embed[data-type=\"footnote\"] > .markdown-embed-content .cm-scroller": [
       "--size-4-3",
@@ -1136,10 +1139,14 @@
   "--link-unresolved-decoration-color": {
     "body": ["--interactive-accent-hsl"]
   },
-  "--list-indent": { "body": ["--indent-unit", "--indent-size"] },
+  "--list-indent": {
+    "body": ["--checkbox-size"],
+    ".callout ol:has(li:nth-child(10))": ["--checkbox-size"]
+  },
   "--list-marker-color": { "body": ["--text-faint"] },
   "--list-marker-color-hover": { "body": ["--text-muted"] },
   "--list-marker-color-collapsed": { "body": ["--text-accent"] },
+  "--list-bullet-end-padding": { "body": ["--list-indent"] },
   "--nav-item-size": {
     "body": ["--font-ui-small"],
     ".is-mobile": ["--font-ui-medium"],
@@ -1533,7 +1540,8 @@
     "body": ["--background-modifier-border"],
     ".callout": ["--callout-color", "--background-primary"],
     ".theme-light": ["--color-base-50"],
-    ".theme-dark": ["--color-base-50"]
+    ".theme-dark": ["--color-base-50"],
+    ".callout table": ["--table-header-border-color"]
   },
   "--table-header-background": { "body": ["--table-background"] },
   "--table-header-border-width": { "body": ["--table-border-width"] },
@@ -2020,10 +2028,10 @@
   "--tooltip-bg": {
     ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
   },
-  "--checkbox-indent": { "body": ["--checkbox-size"] },
-  "--checkbox-indent-editing": { "body": ["--checkbox-size"] },
-  "--checkbox-end-margin": { "body": ["--checkbox-size"] },
-  "--checkbox-end-margin-editing": { "body": ["--checkbox-size"] },
+  "--checkbox-start-margin": {
+    "body": ["--checkbox-size", "--checkbox-end-margin"]
+  },
+  "--checkbox-margin-inline-end": { "body": ["--checkbox-end-margin"] },
   "--strike-color": {
     ".theme-light": ["--text-muted"],
     ".theme-dark": ["--text-muted"]

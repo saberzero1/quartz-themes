@@ -5,7 +5,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View" target="_blank" rel="noopener noreferrer">Gustavo Salgado</a>
+- Theme author: <a href="https://github.com/GustavoSZ124" target="_blank" rel="noopener noreferrer">Gustavo Salgado</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/seamless-view/README.md">Install instructions</a>
 

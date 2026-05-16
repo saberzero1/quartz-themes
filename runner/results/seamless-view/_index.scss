@@ -68,7 +68,7 @@
   --callout-content-padding: 0;
   --callout-quote: 158, 158, 158;
   --callout-title-padding: 0;
-  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-margin-inline-start: calc(var(--list-indent) + var(--checkbox-start-margin)) !important;
   --code-border-width: 0px !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
@@ -85,11 +85,10 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --checkbox-end-margin: calc(var(--checkbox-size) * 0.5) !important;
-  --checkbox-end-margin-editing: calc(var(--checkbox-size) * -0.25 + 0.5px) !important;
-  --checkbox-indent: calc(var(--checkbox-size) * 0.5 - 1px) !important;
-  --checkbox-indent-editing: calc(var(--checkbox-size) * 0.25 + 1px) !important;
-  --checkbox-vertical-align: -2px !important;
+  --checkbox-margin-inline-end: calc(var(--checkbox-end-margin) - 0.27rem) !important;
+  --checkbox-start-margin: calc(var(--checkbox-size) * -1 - var(--checkbox-end-margin)) !important;
+  --checkbox-end-margin: 1px !important;
+  --checkbox-vertical-align: -0.1em !important;
 
   --font-interface-override: "??";
   --font-text-override: "??";
@@ -1060,7 +1059,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 0px 30.5391px;
+    margin: 0px 0px 0px 18px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -1097,7 +1096,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 0px 30.5391px;
+    margin: 0px 0px 0px 18px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -1173,7 +1172,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    overflow-x: hidden;
+    overflow-x: visible;
     padding: 21px 12px 21px 18px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1199,7 +1198,7 @@ body {
     padding-block-start: 1px;
     padding-inline-end: 2px;
     padding-inline-start: 2px;
-    margin: 0px 8px 0px -24px;
+    margin: 0px 1px 0px -17px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -1606,7 +1605,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 4px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -3140,7 +3139,7 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 0px 0px 32px;
+    margin: 0px;
     padding: 0px;
   }
 
@@ -3572,7 +3571,7 @@ body {
   }
 
   .katex-display > .katex {
-    display: inline-block;
+    display: block;
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;

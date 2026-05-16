@@ -23,6 +23,7 @@
     "width": "var(--divider-width-hover)"
   },
   "input[type=\"search\"]": {
+    "background-color": "rgba(var(--background-modifier-form-field), 0.3)",
     "color": "var(--text-normal)",
     "font-size": "var(--font-ui-small)",
     "height": "var(--input-height)"
@@ -87,6 +88,7 @@
     "min-height": "var(--input-height)"
   },
   "input[type=\"text\"]": {
+    "background-color": "rgba(var(--background-modifier-form-field), 0.3)",
     "color": "var(--text-normal)",
     "font-size": "var(--font-ui-small)",
     "font-weight": "var(--metadata-label-font-weight)",

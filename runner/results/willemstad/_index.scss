@@ -86,6 +86,7 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --callout-gap: 0.5em;
+  --checkbox-margin-inline-end: 0.25em !important;
   --callout-border-base-width: var(--callout-border-base-width-override, var(--callout-border-base-width-preset, 0px));
   --callout-border-left-width: calc(var(--callout-border-other-width) + var(--callout-border-left-extra));
   --callout-border-other-width: var(--callout-border-base-width);
@@ -94,7 +95,6 @@
   --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size)) !important;
   --callout-border-left-extra: 5px;
   --callout-title-gap: 0.75em;
-  --checkbox-margin-inline-end: 0.25em !important;
   --icon-width-sidebar: 24% !important;
 
   --shape-roundish: 6px;
@@ -397,6 +397,7 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --callout-gap: 0.5em;
+  --checkbox-margin-inline-end: 0.25em !important;
   --callout-border-base-width: var(--callout-border-base-width-override, var(--callout-border-base-width-preset, 0px));
   --callout-border-left-width: calc(var(--callout-border-other-width) + var(--callout-border-left-extra));
   --callout-border-other-width: var(--callout-border-base-width);
@@ -405,7 +406,6 @@
   --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size)) !important;
   --callout-border-left-extra: 5px;
   --callout-title-gap: 0.75em;
-  --checkbox-margin-inline-end: 0.25em !important;
   --icon-width-sidebar: 24% !important;
 
   --shape-roundish: 6px;
